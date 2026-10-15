@@ -40,7 +40,10 @@ UA = "Mozilla/5.0 (market-digest-bot)"
 MAX_PER_FEED = 25
 MAX_DESC = 280
 DIGEST_WINDOW_MAX_H = 24
-SLOT_GRACE_MIN = 90       # GitHub может запустить расписание с опозданием
+SLOT_GRACE_MIN = 180      # окно утреннего слота: опоздание GitHub + повторы, если ИИ отказал (15.10 вечерняя выжимка пропала)
+LAST_CHANCE_MIN = 150     # после стольких минут от слота — отправляем то, что готово, даже без части блоков
+EVENING_GRACE_MIN = 90    # вечером окно короче: поздние рассылки владелец не хочет — не успели, ждём утро
+EVENING_LAST_CHANCE_MIN = 60
 EVENT_LEAD_MIN = 75       # за сколько минут до события присылать анонс
 
 
@@ -742,7 +745,9 @@ def run_morning(state, now, dry, tzmin):
         push_to_bot(f"morning {tzmin} {local:%Y-%m-%d}", blocks)
 
 
-def run_digest(state, now, dry):
+def run_digest(state, now, dry, final=True):
+    """Возвращает True, если выпуск отправлен. ИИ отказал на блоке и это не последняя попытка (final=False) —
+    сохраняем для приложения ленту, котировки и календарь, а выпуск повторяем в следующем запуске."""
     last = state.get("last_digest_ts")
     since = datetime.fromisoformat(last) if last else now - timedelta(hours=18)
     since = max(since, now - timedelta(hours=DIGEST_WINDOW_MAX_H))
@@ -792,16 +797,30 @@ def run_digest(state, now, dry):
             publish(text, dry)
 
     emit("header", f"<b>☀️ #ВЫЖИМКА | {date}</b>\n<i>Рынок США · Крипта · Нефть, золото, доллар · Что говорят · Итог дня</i>")
+    failed = []
     for block in prompts.BLOCKS:
         head = f"<b>{block['title']} | {date}</b>"
         table = quote_lines(block["quotes"], q)
-        body = ask_ai(prompts.COMMON + "\n" + block["focus"], user)
+        try:
+            body = ask_ai(prompts.COMMON + "\n" + block["focus"], user)
+        except Exception as e:
+            print(f"Блок {block['key']} не собран: {str(e)[:150]}", file=sys.stderr)
+            failed.append(block["key"])
+            continue
         text = head + "\n\n"
         if table:
             text += "<blockquote>" + "\n".join(table) + "</blockquote>\n\n"
         emit(block["key"], text + body)
         time.sleep(2)
-    emit("summary", f"<b>🧭 #ИТОГ_ДНЯ | {date}</b>\n\n" + edition.not_advice(ask_ai(prompts.SUMMARY, user)))
+    if not failed:  # итог дня — по всем блокам; если ИИ уже отказал, не тратим время
+        try:
+            emit("summary", f"<b>🧭 #ИТОГ_ДНЯ | {date}</b>\n\n" + edition.not_advice(ask_ai(prompts.SUMMARY, user)))
+        except Exception as e:
+            print(f"Итог дня не собран: {str(e)[:150]}", file=sys.stderr)
+            failed.append("summary")
+    hold = bool(failed) and not final
+    if failed:
+        print(f"ИИ отказал: {', '.join(failed)} — " + ("выпуск повторю в следующем запуске" if hold else "отправляю то, что готово"), file=sys.stderr)
     news = []
     for b in out:
         news += parse_news(b["block"], "\n".join(b["html"]))
@@ -819,7 +838,7 @@ def run_digest(state, now, dry):
                    "previous": e.get("previous", ""), "impact": e.get("impact", "")} for e in week]
     group_of = {k: g for g, keys in QUOTE_GROUPS.items() for k in keys}
     quotes = [{"key": k, "name": QUOTE_NAMES.get(k, k), "group": group_of.get(k, ""), **v} for k, v in q.items()]
-    outlook = make_outlook(user, events)
+    outlook = None if failed else make_outlook(user, events)
     print(f"Для приложения: новостей {len(news)}, событий {len(events)}, картина: {'да' if outlook else 'нет'}", file=sys.stderr)
     if not dry:
         meta = {"news": news, "events": events, "quotes": quotes}
@@ -836,6 +855,9 @@ def run_digest(state, now, dry):
             print("Ключевые показатели:", e, file=sys.stderr)
         if outlook:
             meta["outlook"] = outlook
+        if hold:  # только данные для приложения, без блоков — сервер ничего не разошлёт
+            push_to_bot(f"{local:%Y-%m-%d %H:%M}", [], meta)
+            return False
         try:  # выпуск: карточка + 4 главные новости целиком
             ed = edition.build_edition(ask_ai, news, "\n".join(quotes_for_ai(q)), now, len(news),
                                        qlines=quote_lines(["^GSPC", "^IXIC", "bitcoin", "BZ=F", "GC=F", "IMOEX", "USDRUB_CBR"], q), today=today_lines(events, local))
@@ -855,7 +877,10 @@ def run_digest(state, now, dry):
         except Exception as e:
             print("Выпуск «Россия» не собран:", e, file=sys.stderr)
         push_to_bot(f"{local:%Y-%m-%d %H:%M}", out, meta)
+    elif hold:
+        return False
     state["last_digest_ts"] = now.isoformat()
+    return True
 
 
 def run_events(state, now, dry):
@@ -945,9 +970,10 @@ def due_digest_slot(state, now):
         h, m = map(int, slot.strip().split(":"))
         start = local.replace(hour=h, minute=m, second=0, microsecond=0)
         key = f"{local:%Y-%m-%d} {slot.strip()}"
-        if start <= local < start + timedelta(minutes=SLOT_GRACE_MIN) and key not in state["sent_digests"]:
-            return key
-    return None
+        grace, last = (EVENING_GRACE_MIN, EVENING_LAST_CHANCE_MIN) if h >= 12 else (SLOT_GRACE_MIN, LAST_CHANCE_MIN)
+        if start <= local < start + timedelta(minutes=grace) and key not in state["sent_digests"]:
+            return key, local >= start + timedelta(minutes=last)
+    return None, False
 
 
 def main():
@@ -994,9 +1020,8 @@ def main():
         report.run(dry, test=(mode == "report_test"))
         return
     else:
-        slot = due_digest_slot(state, now)
-        if slot:
-            run_digest(state, now, dry)
+        slot, final = due_digest_slot(state, now)
+        if slot and run_digest(state, now, dry, final):
             state["sent_digests"].append(slot)
         run_events(state, now, dry)
         run_results(state, now, dry)
