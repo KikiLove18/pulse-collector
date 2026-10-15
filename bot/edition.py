@@ -56,9 +56,18 @@ urgent=true — ТОЛЬКО исключительное (не чаще раз�
  "text": "2–3 предложения по-русски с цифрами: что произошло и что это обычно значит для рынка; главное следствие оберни в <u></u>",
  "sent": "pos|neg|neu", "block": "us|crypto|commodities|ru|x", "tag": "1–2 слова", "theme": "один из: THEMES",
  "metrics": [{"value": "...", "label": "..."}], "photo": ["2–3 англ. слова: предмет или место из новости", "более общий запрос", "1–2 слова: самое общее"],
- "feed": [{"pick": номер, "title": "заголовок до 90 знаков", "text": "1–2 предложения по-русски с цифрами и следствием для рынка; главное — в <u></u>", "block": "us|crypto|commodities|ru|x", "sent": "pos|neg|neu", "icon": "1 эмодзи-флаг или тема"}]}
+ "feed": [{"pick": номер, "title": "заголовок до 90 знаков", "text": "3–5 предложений по-русски, 400–600 знаков (не меньше 350): что произошло; цифры и контекст — кто, сколько, по сравнению с чем; почему это важно для рынка — главное следствие в <u></u>", "block": "us|crypto|commodities|ru|x", "sent": "pos|neg|neu", "icon": "1 эмодзи-флаг или тема",
+           "imp": 1|2|3, "also": [номера других новостей списка о том же событии]}]}
 photo — для поиска фото на Wikimedia Commons, без имён людей. Никаких советов «покупай/продавай». Цифры только из входных данных.
 feed — ВСЕГДА (даже при send=false): до 6 самых заметных новостей из списка для ленты приложения — разные темы, без рутины и рекламы, дубли склеивай.
+Текст в feed — подробнее, чем text для чата: читатель открыл Ленту, чтобы разобраться. Только факты из входных данных, ничего не додумывай;
+если в источнике мало подробностей — лучше 3 коротких предложения, чем выдумка.
+Одно событие — ОДНА запись в feed. pick — самый надёжный источник: официальный (ЦБ, ФРС, Минфин, биржа, сама компания) >
+крупные СМИ (Reuters, Bloomberg, CNBC, Интерфакс, ТАСС, РИА, РБК, Коммерсант, Ведомости) > Telegram-каналы > X. Остальные новости о том же — в also.
+«УЖЕ В ЛЕНТЕ» ниже — то, что уже показано за сутки: такое событие не добавляй снова, кроме случая, когда появились НОВЫЕ факты
+(решение принято, вышли цифры, реакция рынка) — тогда заголовок начни с того, что нового.
+imp — сила влияния на рынок: 3 — двигает рынок целиком (ставки ЦБ/ФРС, макроданные, ОПЕК+, санкции, движение индекса/BTC/нефти 3%+);
+2 — заметно для отрасли, крупной компании или актива; 1 — фон, контекст.
 """.replace("THEMES", THEMES)
 
 
@@ -207,7 +216,21 @@ def build_edition(ask_ai, news, quotes_text, now, total_news, focus="", qlines=N
     return card_id, html, url
 
 
-def push_feed(feed, items, now, dry):
+MAJOR_MEDIA = ("reuters", "bloomberg", "cnbc", "wsj", "financial times", "интерфакс", "тасс", "риа", "рбк", "коммерсант",
+               "ведомости", "банк россии", "фрс", "минфин", "мосбиржа", "московская биржа", "marketwatch", "coindesk", "the block")
+
+
+def source_rank(it):
+    """Чем меньше, тем надёжнее: крупные СМИ и официальные > прочие сайты > Telegram-каналы > X."""
+    src = it["source"]
+    if src.startswith("X @"):
+        return 3
+    if src.startswith("TG @"):
+        return 2
+    return 0 if any(m in src.lower() for m in MAJOR_MEDIA) else 1
+
+
+def push_feed(feed, items, now, dry, state=None):
     """Свежие новости — в ленту приложения (сервер склеит с прошлыми и хранит 7 дней)."""
     out = []
     for f in feed[:FEED_PER_RUN]:
@@ -217,12 +240,34 @@ def push_feed(feed, items, now, dry):
             continue
         if not f.get("title"):
             continue
+        name = lambda it: it["source"].replace("TG @", "").replace("X @", "")
+        group = [src]
+        for i in f.get("also") or []:
+            try:
+                group.append(items[int(i)])
+            except Exception:
+                continue
+        src = min(group, key=source_rank)  # главный — самый надёжный источник (ИИ это часто путает)
+        also = []
+        for it in group:
+            if name(it) != name(src) and name(it) not in also:
+                also.append(name(it))
+        try:
+            imp = min(3, max(1, int(f.get("imp") or 1)))
+        except Exception:
+            imp = 1
         out.append({"block": f.get("block") or "us", "icon": (f.get("icon") or "")[:8], "title": f["title"][:120], "text": f.get("text", ""),
                     "sent": f.get("sent") if f.get("sent") in ("pos", "neg", "neu") else "neu", "url": src["link"],
-                    "source": src["source"].replace("TG @", "").replace("X @", ""), "ts": now.isoformat()})
+                    "source": name(src), "also": also[:10], "imp": imp, "ts": now.isoformat()})
     if not out:
         return
-    print(f"Лента: +{len(out)} новостей", file=sys.stderr)
+    if state is not None:  # что уже в ленте за сутки — ИИ не повторит это событие в следующих проверках
+        day_ago = (now - timedelta(hours=24)).isoformat()
+        state["feed_recent"] = [r for r in state.get("feed_recent", []) if r[0] > day_ago][-150:] + [[o["ts"], o["title"]] for o in out]
+    print(f"Лента: +{len(out)} новостей, текст в среднем {sum(len(o['text']) for o in out) // len(out)} знаков", file=sys.stderr)
+    if dry:
+        for o in out:
+            print(f"Лента (образец): [imp {o['imp']}] {o['title']} — {o['text'][:120]}… | {o['source']} + также {o['also']}", file=sys.stderr)
     if not dry:
         try:
             _post("/api/ingest", {"edition": "feed", "blocks": [], "meta": {"news": out}})
@@ -243,14 +288,15 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
         return None
     gap_ok = not b["last"] or now - datetime.fromisoformat(b["last"]) >= timedelta(minutes=DAY_NEWS_GAP_MIN)
     can_send = force or (8 <= local.hour < 22 and (b["urgent_count"] < URGENT_PER_DAY or (b["day_count"] < DAY_NEWS_PER_DAY and gap_ok)))
-    lst = "\n".join(f'{i}. {it["source"]} | {it["title"]} — {it["desc"][:240]} | {it["link"]}' for i, it in enumerate(items[:80]))
+    lst = "\n".join(f'{i}. {it["source"]} | {it["title"]} — {it["desc"][:600]} | {it["link"]}' for i, it in enumerate(items[:80]))
     try:
         data = _json(ask_ai(NEWS_NOW + ("\nДЛЯ ОБРАЗЦА: обязательно выбери самую важную новость, send=true." if force else ""),
-                            lst + "\n\nУже отправленные сегодня (не повторять): " + "; ".join(b["titles"])))
+                            lst + "\n\nУже отправленные сегодня (не повторять): " + "; ".join(b["titles"])
+                            + "\n\nУЖЕ В ЛЕНТЕ за сутки: " + "; ".join(r[1] for r in state.get("feed_recent", []))))
     except Exception as e:
         print("Новости дня: разбор не удался:", e, file=sys.stderr)
         return None
-    push_feed(data.get("feed") or [], items, now, force)
+    push_feed(data.get("feed") or [], items, now, force, state)
     if not can_send:
         return None
     urgent = bool(data.get("urgent")) and b["urgent_count"] < URGENT_PER_DAY
