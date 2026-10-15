@@ -18,6 +18,7 @@ import json
 import os
 import re
 import sys
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -359,6 +360,34 @@ AI_TIMEOUT = 120
 _AI_START = time.time()
 
 
+def _fetch_json(req, timeout):
+    """Запрос с пределом по часам: OpenRouter, пока думает, шлёт пробелы-«пульс», и тайм-аут сокета не срабатывает
+    (15.10 один запрос шёл 53 мин). Зависший поток — фоновый, выходу из программы не мешает."""
+    box = {}
+
+    def run():
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                box["data"] = json.loads(r.read())
+        except BaseException as e:
+            box["err"] = e
+
+    t = threading.Thread(target=run, daemon=True)
+    t.start()
+    t.join(timeout)
+    if t.is_alive():
+        raise TimeoutError(f"нет ответа за {int(timeout)} с")
+    if "err" in box:
+        raise box["err"]
+    return box["data"]
+
+
+def _retry_delay(raw):
+    """Минутный лимит Gemini: в ответе «retry in 30s» / "retryDelay": "30s" — ждём столько (не больше минуты)."""
+    m = re.search(r'retry(?:Delay)?"?:?\s*(?:in\s*)?"?([\d.]+)s', raw, re.I)
+    return min(60.0, float(m.group(1)) + 1) if m else 8
+
+
 def _ai_timeout():
     left = AI_RUN_BUDGET - (time.time() - _AI_START)
     if left <= 5:
@@ -436,9 +465,8 @@ def ask_openrouter(system, user):
         for attempt in range(2):
             timeout = _ai_timeout()  # вне try: «время вышло» прерывает все повторы сразу
             try:
-                with urllib.request.urlopen(req, timeout=timeout) as r:
-                    data = json.loads(r.read())
-                text = data["choices"][0]["message"]["content"].strip()
+                data = _fetch_json(req, timeout)
+                text = (data["choices"][0]["message"].get("content") or "").strip()  # бывает None у «думающих» моделей
                 if text:
                     print(f"ИИ: {model}", file=sys.stderr)
                     AI_CALLS[model] = AI_CALLS.get(model, 0) + 1
@@ -474,8 +502,7 @@ def ask_gemini(system, user):
         for attempt in range(2):
             timeout = _ai_timeout()  # вне try: «время вышло» прерывает все повторы сразу
             try:
-                with urllib.request.urlopen(req, timeout=timeout) as r:
-                    data = json.loads(r.read())
+                data = _fetch_json(req, timeout)
                 parts = data["candidates"][0]["content"]["parts"]
                 text = "".join(p.get("text", "") for p in parts if not p.get("thought")).strip()
                 if text:
@@ -488,6 +515,11 @@ def ask_gemini(system, user):
                 if e.code == 429 and _day_quota_over(model, raw):  # повтор через 8 с не поможет
                     print(f"Gemini {model}: ошибка {last_err}", file=sys.stderr)
                     break
+                if e.code == 429:  # минутный лимит — ждём, сколько просит Google
+                    wait = _retry_delay(raw)
+                    print(f"Gemini {model}: минутный лимит, жду {int(wait)} с", file=sys.stderr)
+                    time.sleep(wait)
+                    continue
             except Exception as e:
                 last_err = e
             print(f"Gemini {model}: ошибка {last_err}", file=sys.stderr)
