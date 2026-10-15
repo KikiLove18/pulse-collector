@@ -15,6 +15,13 @@ from bot import cards, photos
 
 MSK = timezone(timedelta(hours=3))
 THEMES = ", ".join(cards.THEMES)
+# Юрист 15.10: каждое сообщение в чат — с пометкой кодом, не через ИИ (выпуски персональные, ст. 6.1 39-ФЗ)
+NOT_ADVICE = "Не инвестрекомендация."
+
+
+def not_advice(html):
+    """Дописать пометку, если ИИ её пропустил."""
+    return html if "рекомендаци" in html else html.rstrip() + f"\n\n<i>{NOT_ADVICE}</i>"
 DAY_NEWS_PER_DAY = 12    # днём — всего за сутки (сервер присылает человеку его лимит: 4 или 10, по его рынкам)
 DAY_NEWS_GAP_MIN = 40    # не чаще, чем раз в 40 минут
 FEED_PER_RUN = 6         # в ленту приложения — до 6 заметных новостей за каждую проверку (каждые 30 минут)
@@ -143,7 +150,7 @@ def build_morning(ask_ai, items, now, tzmin, qlines, qlines_ru, today, today_ru,
         if not heads:
             continue
         head = f"<b>☀️ Доброе утро! Что было ночью и что ждём днём{tag} · {local.day} {MONTHS[local.month - 1]}</b>"
-        html = head + "\n\n" + morning_html(heads, [0, 1, 2][:len(heads)], ql, td) + "\n\n<i>Подробности, влияние на цены и календарь — в приложении 👇</i>"
+        html = head + "\n\n" + morning_html(heads, [0, 1, 2][:len(heads)], ql, td) + f"\n\n<i>Подробности, влияние на цены и календарь — в приложении 👇 {NOT_ADVICE}</i>"
         out.append({"block": f"morning_{tzmin}" + ("_ru" if key == "ru" else ""), "html": [card_id, html[:4000], "#today"]})
         if key == "all":
             publish_channel(html, url)
@@ -187,11 +194,12 @@ def build_edition(ask_ai, news, quotes_text, now, total_news, focus="", qlines=N
     head = (f"<b>☀️ Доброе утро! Что было ночью и что ждём днём{tag} · {local.day} {MONTHS[local.month - 1]}</b>" if morning
             else f"<b>🌙 Добрый вечер! Итоги дня{tag} · {local.day} {MONTHS[local.month - 1]}</b>")
     if morning:
-        html = head + "\n\n" + morning_html(news, pick, qlines or [], today or []) + "\n\n<i>Подробности, влияние на цены и календарь — в приложении 👇</i>"
+        html = head + "\n\n" + morning_html(news, pick, qlines or [], today or []) + f"\n\n<i>Подробности, влияние на цены и календарь — в приложении 👇 {NOT_ADVICE}</i>"
         return card_id, html[:4000], url
     body = "\n\n".join(news_html(news[i]) for i in pick)
     rest = max(0, total_news - len(pick))
-    tail = f"\n\n<i>Ещё {rest} новостей, влияние на цены и календарь — в приложении 👇</i>" if rest else ""
+    tail = (f"\n\n<i>Ещё {rest} новостей, влияние на цены и календарь — в приложении 👇 {NOT_ADVICE}</i>" if rest
+            else f"\n\n<i>{NOT_ADVICE}</i>")
     html = head + "\n\n" + body + tail
     if len(html) > 4000:  # лимит Telegram — укорачиваем тексты
         body = "\n\n".join(news_html({**news[i], "text": re.sub("<[^>]+>", "", news[i].get("text", ""))[:300] + "…"}) for i in pick)
@@ -263,7 +271,7 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
     url, _ = upload_card(card, card_id, date_label(now))
     n = {"title": card["title"], "text": data.get("text", ""), "sent": card["sent"], "url": src["link"], "source": src["source"].replace("TG @", "").replace("X @", "")}
     head = f"⚡ <b>Срочно · {card['tag']}</b>" if urgent else f"🌤 <b>Главное сейчас · {card['tag']}</b>"
-    html = head + "\n\n" + news_html(n)
+    html = head + "\n\n" + news_html(n) + f"\n\n<i>{NOT_ADVICE}</i>"
     out = {"kind": "urgent" if urgent else "day", "card": card_id, "html": html, "block": data.get("block") or "", "hash": "#feed"}
     if force:
         return out

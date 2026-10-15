@@ -755,7 +755,7 @@ def run_digest(state, now, dry):
             text += "<blockquote>" + "\n".join(table) + "</blockquote>\n\n"
         emit(block["key"], text + body)
         time.sleep(2)
-    emit("summary", f"<b>🧭 #ИТОГ_ДНЯ | {date}</b>\n\n" + ask_ai(prompts.SUMMARY, user))
+    emit("summary", f"<b>🧭 #ИТОГ_ДНЯ | {date}</b>\n\n" + edition.not_advice(ask_ai(prompts.SUMMARY, user)))
     news = []
     for b in out:
         news += parse_news(b["block"], "\n".join(b["html"]))
@@ -830,7 +830,7 @@ def run_events(state, now, dry):
         if dry and not has_ai_key():
             publish("[нет ключа] Анонс: " + user, dry)
         else:
-            publish(ask_ai(system, user), dry)
+            publish(edition.not_advice(ask_ai(system, user)), dry)
         state["sent_events"].append(key)
 
 
