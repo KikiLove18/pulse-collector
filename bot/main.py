@@ -352,6 +352,18 @@ def quotes_for_ai(q):
 AI_DEAD = {"day": set()}
 GEMINI_MODELS = "gemini-3.5-flash,gemini-3.8-flash,gemini-flash-latest,gemini-flash-lite-latest"
 AI_CALLS = {}
+# Общий лимит времени на ИИ за запуск: 15.10 вечерняя выжимка висела больше часа (тайм-аут 180 с × повторы × 9 вызовов)
+# и держала очередь. Вышло время — дальше ИИ не зовём, запуск завершается, следующий слот работает.
+AI_RUN_BUDGET = 15 * 60
+AI_TIMEOUT = 120
+_AI_START = time.time()
+
+
+def _ai_timeout():
+    left = AI_RUN_BUDGET - (time.time() - _AI_START)
+    if left <= 5:
+        raise RuntimeError("время на ИИ за запуск вышло (15 мин)")
+    return min(AI_TIMEOUT, left)
 
 
 def _quota_day():
@@ -422,8 +434,9 @@ def ask_openrouter(system, user):
             headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"},
         )
         for attempt in range(2):
+            timeout = _ai_timeout()  # вне try: «время вышло» прерывает все повторы сразу
             try:
-                with urllib.request.urlopen(req, timeout=180) as r:
+                with urllib.request.urlopen(req, timeout=timeout) as r:
                     data = json.loads(r.read())
                 text = data["choices"][0]["message"]["content"].strip()
                 if text:
@@ -459,8 +472,9 @@ def ask_gemini(system, user):
         req = urllib.request.Request(
             url, data=body, headers={"Content-Type": "application/json", "x-goog-api-key": key})
         for attempt in range(2):
+            timeout = _ai_timeout()  # вне try: «время вышло» прерывает все повторы сразу
             try:
-                with urllib.request.urlopen(req, timeout=180) as r:
+                with urllib.request.urlopen(req, timeout=timeout) as r:
                     data = json.loads(r.read())
                 parts = data["candidates"][0]["content"]["parts"]
                 text = "".join(p.get("text", "") for p in parts if not p.get("thought")).strip()

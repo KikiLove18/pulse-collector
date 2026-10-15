@@ -17,6 +17,7 @@ concurrency: news-bot
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 20       # 15.10 выжимка зависла на 56 мин и держала очередь; ИИ сам ограничен 15 мин (AI_RUN_BUDGET)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
