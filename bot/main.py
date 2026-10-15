@@ -24,6 +24,7 @@ import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 import feedparser
@@ -345,6 +346,46 @@ def quotes_for_ai(q):
 
 # ---------- ИИ ----------
 
+# Модели с исчерпанной ДНЕВНОЙ квотой (429 с «PerDay»/«per-day») больше не зовём до её сброса — полночь
+# по Калифорнии, список хранится в state. 14.10 каждый вызов тратил ~50 с на 3 модели с исчерпанной квотой.
+# Минутные 429 — как раньше: пауза и повтор.
+AI_DEAD = {"day": set()}
+GEMINI_MODELS = "gemini-3.5-flash,gemini-3.8-flash,gemini-flash-latest,gemini-flash-lite-latest"
+AI_CALLS = {}
+
+
+def _quota_day():
+    return datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()
+
+
+def ai_dead_load(state):
+    d = state.get("ai_dead") or {}
+    if d.get("date") == _quota_day():
+        AI_DEAD["day"] = set(d.get("models", []))
+
+
+def ai_dead_save(state):
+    state["ai_dead"] = {"date": _quota_day(), "models": sorted(AI_DEAD["day"])}
+
+
+def _day_quota_over(model, err_text):
+    if "PerDay" not in err_text and "per-day" not in err_text:
+        return False
+    AI_DEAD["day"].add(model)
+    print(f"ИИ: {model} — дневная квота исчерпана, до сброса не зову", file=sys.stderr)
+    return True
+
+
+def _alive(model):
+    return model not in AI_DEAD["day"]
+
+
+def gemini_all_dead():
+    """Все модели Gemini исчерпали дневную квоту — работаем на запасном OpenRouter (50 запросов в сутки)."""
+    models = os.environ.get("GEMINI_MODEL") or GEMINI_MODELS
+    return all(not _alive(m.strip()) for m in models.split(",") if m.strip())
+
+
 def has_ai_key():
     return bool(os.environ.get("GEMINI_API_KEY") or os.environ.get("OPENROUTER_API_KEY"))
 
@@ -364,11 +405,13 @@ def ask_ai(system, user):
 
 def ask_openrouter(system, user):
     """Бесплатные модели бывают перегружены — пробуем по очереди из списка через запятую."""
-    key = os.environ["OPENROUTER_API_KEY"]
+    key = os.environ["OPENROUTER_API_KEY"].strip()
+    if not key.isascii() or not key.startswith("sk-or-"):  # 15.10 в секрете оказалось слово «ключ» вместо ключа
+        raise RuntimeError("секрет OPENROUTER_API_KEY — не ключ OpenRouter (должен начинаться с sk-or-)")
     models = os.environ.get("OPENROUTER_MODEL") or \
         "google/gemma-4-31b-it:free,nvidia/nemotron-3-super-120b-a12b:free"
     last_err = None
-    for model in [m.strip() for m in models.split(",") if m.strip()]:
+    for model in [m.strip() for m in models.split(",") if m.strip() and _alive(m.strip())]:
         body = {
             "model": model,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
@@ -385,26 +428,33 @@ def ask_openrouter(system, user):
                 text = data["choices"][0]["message"]["content"].strip()
                 if text:
                     print(f"ИИ: {model}", file=sys.stderr)
+                    AI_CALLS[model] = AI_CALLS.get(model, 0) + 1
                     return text
+            except urllib.error.HTTPError as e:
+                raw = e.read().decode("utf-8", "replace")
+                last_err = f"{e.code} {raw[:300]!r}"
+                print(f"OpenRouter {model}: ошибка {last_err}", file=sys.stderr)
+                if e.code == 429 and _day_quota_over(model, raw):
+                    break
+                time.sleep(10)
             except Exception as e:
                 last_err = e
                 print(f"OpenRouter {model}: ошибка {e}", file=sys.stderr)
                 time.sleep(10)
-    raise RuntimeError(f"Все модели OpenRouter недоступны: {last_err}")
+    raise RuntimeError(f"Все модели OpenRouter недоступны: {last_err or 'дневная квота исчерпана'}")
 
 
 def ask_gemini(system, user):
     """Бесплатные модели бывают перегружены (503) — пробуем по очереди из списка через запятую."""
     key = os.environ["GEMINI_API_KEY"]
-    models = os.environ.get("GEMINI_MODEL") or \
-        "gemini-3.5-flash,gemini-3.8-flash,gemini-flash-latest,gemini-flash-lite-latest"
+    models = os.environ.get("GEMINI_MODEL") or GEMINI_MODELS
     body = json.dumps({
         "system_instruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": user}]}],
         "generationConfig": {"temperature": 0.3},
     }).encode()
     last_err = None
-    for model in [m.strip() for m in models.split(",") if m.strip()]:
+    for model in [m.strip() for m in models.split(",") if m.strip() and _alive(m.strip())]:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         req = urllib.request.Request(
             url, data=body, headers={"Content-Type": "application/json", "x-goog-api-key": key})
@@ -416,14 +466,19 @@ def ask_gemini(system, user):
                 text = "".join(p.get("text", "") for p in parts if not p.get("thought")).strip()
                 if text:
                     print(f"ИИ: {model}", file=sys.stderr)
+                    AI_CALLS[model] = AI_CALLS.get(model, 0) + 1
                     return text
             except urllib.error.HTTPError as e:
-                last_err = f"{e.code} {e.read()[:300]!r}"
+                raw = e.read().decode("utf-8", "replace")
+                last_err = f"{e.code} {raw[:300]!r}"
+                if e.code == 429 and _day_quota_over(model, raw):  # повтор через 8 с не поможет
+                    print(f"Gemini {model}: ошибка {last_err}", file=sys.stderr)
+                    break
             except Exception as e:
                 last_err = e
             print(f"Gemini {model}: ошибка {last_err}", file=sys.stderr)
             time.sleep(8)
-    raise RuntimeError(f"Все модели Gemini недоступны: {last_err}")
+    raise RuntimeError(f"Все модели Gemini недоступны: {last_err or 'дневная квота исчерпана'}")
 
 
 # ---------- Telegram ----------
@@ -576,8 +631,17 @@ def run_breaking(state, now, dry):
     last = state.get("breaking_ts")
     since = datetime.fromisoformat(last) if last else now - timedelta(minutes=35)
     minutes = min(60, max(35, int((now - since).total_seconds() // 60)))
+    if os.environ.get("GEMINI_API_KEY") and gemini_all_dead() and now.minute < 30:
+        # на запасном ИИ проверяем раз в час, а не в 30 мин: 50 запросов в сутки (окно ниже само вырастет до 60 мин)
+        print("Новости дня: Gemini исчерпан — экономлю запасной ИИ, проверю в :30", file=sys.stderr)
+        return
     allit = fresh_items(now, minutes)
-    print(f"Новости дня: свежих {len(allit)}", file=sys.stderr)
+    seen = set(state.get("news_seen", []))
+    print(f"Новости дня: свежих {len(allit)}, новых с прошлой проверки {sum(it['link'] not in seen for it in allit)}", file=sys.stderr)
+    state["news_seen"] = [it["link"] for it in allit][:300]
+    if allit and all(it["link"] in seen for it in allit):  # ИИ уже видел ровно эти новости — не зовём
+        state["breaking_ts"] = now.isoformat()
+        return
     edition.run_news_now(ask_ai, allit, state, now, publish_card if not dry else (lambda h, u: publish(h, True)))
     state["breaking_ts"] = now.isoformat()
 
@@ -846,6 +910,10 @@ def main():
     mode = next((a for a in args if not a.startswith("--")), "auto")
     now = datetime.now(timezone.utc)
     state = load_state()
+    ai_dead_load(state)
+    if mode == "ai_check":  # проверка запасного ИИ: Gemini «исчерпан» (только в памяти), образец через OpenRouter — в тестовый канал
+        AI_DEAD["day"] |= {m.strip() for m in (os.environ.get("GEMINI_MODEL") or GEMINI_MODELS).split(",")}
+        mode = "preview"
 
     if mode == "digest":
         run_digest(state, now, dry)
@@ -892,7 +960,10 @@ def main():
             except Exception as e:
                 print("Срочные: ошибка", e, file=sys.stderr)
 
+    if AI_CALLS:
+        print(f"ИИ за запуск: {sum(AI_CALLS.values())} {AI_CALLS}", file=sys.stderr)
     if not dry:
+        ai_dead_save(state)
         save_state(state)
 
 

@@ -7,12 +7,19 @@
     "2026-10-12 07:30",
     "2026-10-12 19:30",
     "2026-10-13 07:30",
-    "2026-10-14 07:30"
+    "2026-10-14 07:30",
+    "2026-10-14 19:30",
+    "2026-10-15 07:30"
   ],
-  "sent_events": [],
-  "last_digest_ts": "2026-10-14T04:30:37.058782+00:00",
+  "sent_events": [
+    "2026-10-14T08:30:00-04:00|Core CPI m/m",
+    "2026-10-14T08:30:00-04:00|Core CPI y/y",
+    "2026-10-14T08:30:00-04:00|CPI m/m",
+    "2026-10-14T08:30:00-04:00|CPI y/y"
+  ],
+  "last_digest_ts": "2026-10-15T04:31:15.857150+00:00",
   "calendar": {
-    "ts": "2026-10-14T04:00:46.356018+00:00",
+    "ts": "2026-10-15T04:01:26.508793+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -295,22 +302,6 @@
         "previous": ""
       },
       {
-        "title": "M2 Money Supply y/y",
-        "country": "CNY",
-        "date": "2026-10-14T04:03:00-04:00",
-        "impact": "Low",
-        "forecast": "7.4%",
-        "previous": "7.5%"
-      },
-      {
-        "title": "New Loans",
-        "country": "CNY",
-        "date": "2026-10-14T04:03:00-04:00",
-        "impact": "Low",
-        "forecast": "1025B",
-        "previous": "60B"
-      },
-      {
         "title": "ECB President Lagarde Speaks",
         "country": "EUR",
         "date": "2026-10-14T04:30:00-04:00",
@@ -319,9 +310,25 @@
         "previous": ""
       },
       {
+        "title": "M2 Money Supply y/y",
+        "country": "CNY",
+        "date": "2026-10-14T05:00:00-04:00",
+        "impact": "Low",
+        "forecast": "7.4%",
+        "previous": "7.5%"
+      },
+      {
+        "title": "New Loans",
+        "country": "CNY",
+        "date": "2026-10-14T05:01:00-04:00",
+        "impact": "Low",
+        "forecast": "1025B",
+        "previous": "60B"
+      },
+      {
         "title": "German 30-y Bond Auction",
         "country": "EUR",
-        "date": "2026-10-14T05:34:00-04:00",
+        "date": "2026-10-14T05:38:00-04:00",
         "impact": "Low",
         "forecast": "",
         "previous": "3.80|1.6"
@@ -699,7 +706,7 @@
         "country": "USD",
         "date": "2026-10-15T10:30:00-04:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "76B",
         "previous": "85B"
       },
       {
@@ -707,7 +714,7 @@
         "country": "USD",
         "date": "2026-10-15T12:00:00-04:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "0.2M",
         "previous": "-3.2M"
       },
       {
@@ -819,7 +826,7 @@
         "country": "CAD",
         "date": "2026-10-16T08:30:00-04:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "23.59B",
         "previous": "20.65B"
       },
       {
@@ -908,10 +915,11 @@
     "2026-10-09|первичные заявки на пособие|08:30",
     "2026-10-10|настроения потребителей (мичиган)|10:00",
     "2026-10-13|earn|JPM",
-    "2026-10-13|earn|GS"
+    "2026-10-13|earn|GS",
+    "2026-10-14|продажи вторичного жилья|10:00"
   ],
   "macro": {
-    "day": "2026-10-14",
+    "day": "2026-10-15",
     "data": {
       "fed": {
         "lo": 3.75,
@@ -921,9 +929,9 @@
         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
       },
       "cpi": {
-        "value": 3.4,
-        "month": "2026-08",
-        "core": 2.4
+        "value": 3.7,
+        "month": "2026-09",
+        "core": 2.6
       },
       "unemp": {
         "value": 4.2,
@@ -948,14 +956,132 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-14T08:30:36.006524+00:00",
+  "breaking_ts": "2026-10-15T09:31:17.589928+00:00",
   "news_now": {
-    "day": "2026-10-14",
-    "day_count": 1,
+    "day": "2026-10-15",
+    "day_count": 2,
     "urgent_count": 0,
-    "last": "2026-10-14T05:30:34.251588+00:00",
+    "last": "2026-10-15T07:31:14.208381+00:00",
     "titles": [
-      "ASML прогнозирует продажи в IV квартале выше ожиданий"
+      "Индекс Южной Кореи KOSPI рухнул на 8%, сработали стоп-торги",
+      "TSMC отчиталась за III квартал лучше прогнозов"
     ]
+  },
+  "news_seen": [
+    "https://www.rbc.ru/economics/15/10/2026/6ad09cea9a7947453808f05c",
+    "https://www.wsj.com/finance/banking/rising-rates-threaten-wall-streets-golden-goose-in-trading-db7fc8cb?mod=rss_markets_main",
+    "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-to-Resume-Russian-Oil-Refinery-Strikes-After-Failed-Energy-Ceasefire.html",
+    "https://tass.ru/ekonomika/28217227",
+    "https://tass.ru/mezhdunarodnaya-panorama/28217257",
+    "https://t.me/lookonchainchannel/10646",
+    "https://www.vedomosti.ru/business/news/2026/10/15/1237291-novak-prodazhu",
+    "https://t.me/forklog/50268",
+    "https://www.wsj.com/world/europe/eurozone-industrial-output-continued-to-decline-in-august-55722fb3?mod=rss_socialeconomyfeed",
+    "https://t.me/FinancialJuice/140636",
+    "https://t.me/FinancialJuice/140635",
+    "https://t.me/FinancialJuice/140634",
+    "https://t.me/invest_zonaa/38997",
+    "https://tass.ru/proisshestviya/28217233",
+    "https://t.me/interfaxonline/80156",
+    "https://tass.ru/politika/28217225",
+    "https://www.kommersant.ru/doc/9027132",
+    "https://www.wsj.com/economy/u-k-economy-continues-growth-path-helped-by-industry-a3e7497f?mod=rss_socialeconomyfeed",
+    "https://tass.ru/nedvizhimost/28217211",
+    "https://tass.ru/proisshestviya/28217167",
+    "https://www.vedomosti.ru/investments/news/2026/10/15/1237283-viruchka-henderson",
+    "https://tass.ru/sport/28217217",
+    "https://tass.ru/obschestvo/28217209",
+    "https://tass.ru/obschestvo/28217089",
+    "https://www.kommersant.ru/doc/9027135",
+    "https://t.me/rbc_news/158750",
+    "https://tass.ru/sport/28217195",
+    "https://tass.ru/ekonomika/28217215",
+    "https://t.me/bitkogan_hotline/27859",
+    "https://www.kommersant.ru/doc/9027133",
+    "https://tass.ru/ekonomika/28217213",
+    "https://tass.ru/ekonomika/28217153",
+    "https://tass.ru/obschestvo/28217029",
+    "https://t.me/nainspire/5511",
+    "https://t.me/markettwits/388992",
+    "https://tass.ru/mezhdunarodnaya-panorama/28217181",
+    "https://www.coindesk.com/policy/2026/10/15/hex-founder-richard-heart-arrested-in-istanbul-turkish-media-report",
+    "https://t.me/markettwits/388991",
+    "https://tass.ru/proisshestviya/28216991",
+    "https://t.me/banksta/103433",
+    "https://www.rbc.ru/rbcfreenews/6ab2a2f36227e026339c3468",
+    "https://www.interfax.ru/russia/1122600",
+    "https://t.me/whale_alert_io/103958",
+    "https://tass.ru/ekonomika/28217163",
+    "https://tass.ru/proisshestviya/28217169",
+    "https://tass.ru/mezhdunarodnaya-panorama/28217139",
+    "https://tass.ru/obschestvo/28217177",
+    "https://www.kommersant.ru/doc/9027123",
+    "https://www.kommersant.ru/doc/9027050",
+    "https://www.vedomosti.ru/business/news/2026/10/15/1237288-importirovat-benzin",
+    "https://www.interfax.ru/russia/1122599",
+    "https://www.investing.com/news/stock-market-news/major-salmon-farmers-introduce-chicken-feed-despite-consumer-concerns-93CH-4950868",
+    "https://t.me/banksta/103432",
+    "https://tass.ru/kultura/28217157",
+    "https://tass.ru/ekonomika/28217171",
+    "https://tass.ru/ekonomika/28217161",
+    "https://tass.ru/ekonomika/28217155",
+    "https://t.me/if_market_news/86033",
+    "https://t.me/invest_zonaa/38994",
+    "https://tass.ru/ekonomika/28217159",
+    "https://www.interfax.ru/russia/1122597",
+    "https://www.rbc.ru/politics/15/10/2026/6ad048f615d0fa432b23fca5",
+    "https://t.me/alfa_investments/8461",
+    "https://www.marketwatch.com/story/im-64-years-old-with-two-sons-but-only-one-works-in-the-family-firm-should-i-leave-him-70-of-the-business-2fe6c382?mod=mw_rss_topstories",
+    "https://www.interfax.ru/business/1122598",
+    "https://www.kommersant.ru/doc/9027058",
+    "https://cointelegraph.com/news/babylon-native-bitcoin-collateral-aave-v4-proposal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://www.rbc.ru/society/04/04/2025/67efa4629a79472102efd69b",
+    "https://www.investing.com/news/stock-market-news/cohere-moves-to-buy-ai-cybersecuritystartup-aisle-4950863",
+    "https://t.me/markettwits/388990",
+    "https://www.kommersant.ru/doc/9027112",
+    "https://www.kommersant.ru/doc/9027121",
+    "https://t.me/headlines_for_traders/86779",
+    "https://t.me/if_market_news/86032",
+    "https://www.vedomosti.ru/society/news/2026/10/15/1237279-sud-vziskal",
+    "https://www.kommersant.ru/doc/9027117",
+    "https://t.me/FinancialJuice/140633",
+    "https://www.rbc.ru/politics/15/09/2026/6aa8ba119a7947d1c0a5f041",
+    "https://t.me/interfaxonline/80155",
+    "https://www.vedomosti.ru/politics/news/2026/10/15/1237278-armiya-vzyala",
+    "https://www.kommersant.ru/doc/9027060",
+    "https://t.me/thebell_io/39493",
+    "https://www.wsj.com/finance/investing/treasury-eurozone-bond-yields-fall-to-multiweek-lows-as-u-s-inflation-shock-fades-29c7b1c1?mod=rss_markets_main",
+    "https://www.interfax.ru/moscow/1122594",
+    "https://www.rbc.ru/politics/15/10/2026/6ad096ab886a74b5c6239787",
+    "https://t.me/markettwits/388989",
+    "https://t.me/rbc_news/158749",
+    "https://www.investing.com/news/stock-market-news/why-is-saab-stock-climbing-today-93CH-4950845",
+    "https://www.wsj.com/finance/stocks/nikkei-falls-2-9-tracking-wall-streets-losses-c1844121?mod=rss_markets_main",
+    "https://t.me/headlines_for_traders/86778",
+    "https://www.rbc.ru/sport/04/05/2026/69f87d159a794767fd88b36f",
+    "https://www.rbc.ru/rbcfreenews/69fa36319a794755f18bb74e",
+    "https://www.vedomosti.ru/business/news/2026/10/15/1237276-zapreta-sug",
+    "https://t.me/banksta/103431",
+    "https://t.me/investfuture/15405",
+    "https://t.me/markettwits/388988",
+    "https://www.cnbc.com/2026/10/15/china-rare-earth-exports-europe.html",
+    "https://www.cnbc.com/2026/10/15/china-rare-earth-exports-europe.html",
+    "https://www.marketwatch.com/story/new-girl-star-jake-johnson-lists-lush-and-private-pasadena-estate-for-3-3-million-b6788838?mod=mw_rss_topstories",
+    "https://www.interfax.ru/russia/1122595",
+    "https://www.rbc.ru/politics/07/08/2026/6a75ca859a79477a6f40e305",
+    "https://t.me/FinancialJuice/140632",
+    "https://t.me/FinancialJuice/140631",
+    "https://t.me/markettwits/388987",
+    "https://www.rbc.ru/politics/15/10/2026/6ad095609a79470242439434",
+    "https://www.rbc.ru/rbcfreenews/6a801d2f9a79477c7082a6ea",
+    "https://www.vedomosti.ru/investments/news/2026/10/15/1237271-gazprom-neft-obligatsii",
+    "https://t.me/FinancialJuice/140630",
+    "https://t.me/FinancialJuice/140629",
+    "https://www.kommersant.ru/doc/9027067",
+    "https://www.interfax.ru/russia/1122593"
+  ],
+  "ai_dead": {
+    "date": "2026-10-15",
+    "models": []
   }
 }
