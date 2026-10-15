@@ -355,6 +355,14 @@ def quotes_for_ai(q):
 # Минутные 429 — как раньше: пауза и повтор.
 AI_DEAD = {"day": set()}
 GEMINI_MODELS = "gemini-3.5-flash,gemini-3.8-flash,gemini-flash-latest,gemini-flash-lite-latest"
+# Бесплатно «большие» модели дают ~5–10 ответов в сутки каждая — берём их только для выжимок (AI_TIER["big"]),
+# всё остальное (новость сейчас, лента, события, итоги) — на lite: у неё 38–55 ответов в сутки, дневной лимит не кончался.
+GEMINI_LITE = "gemini-flash-lite-latest"
+AI_TIER = {"big": False}
+
+
+def gemini_models():
+    return os.environ.get("GEMINI_MODEL") or (GEMINI_MODELS if AI_TIER["big"] else GEMINI_LITE)
 AI_CALLS = {}
 # Общий лимит времени на ИИ за запуск: 15.10 вечерняя выжимка висела больше часа (тайм-аут 180 с × повторы × 9 вызовов)
 # и держала очередь. Вышло время — дальше ИИ не зовём, запуск завершается, следующий слот работает.
@@ -426,7 +434,7 @@ def _alive(model):
 
 def gemini_all_dead():
     """Все модели Gemini исчерпали дневную квоту — работаем на запасном OpenRouter (50 запросов в сутки)."""
-    models = os.environ.get("GEMINI_MODEL") or GEMINI_MODELS
+    models = gemini_models()
     return all(not _alive(m.strip()) for m in models.split(",") if m.strip())
 
 
@@ -491,7 +499,7 @@ def ask_openrouter(system, user):
 def ask_gemini(system, user):
     """Бесплатные модели бывают перегружены (503) — пробуем по очереди из списка через запятую."""
     key = os.environ["GEMINI_API_KEY"]
-    models = os.environ.get("GEMINI_MODEL") or GEMINI_MODELS
+    models = gemini_models()
     body = json.dumps({
         "system_instruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": user}]}],
@@ -745,6 +753,33 @@ def run_morning(state, now, dry, tzmin):
         push_to_bot(f"morning {tzmin} {local:%Y-%m-%d}", blocks)
 
 
+# Предотбор входа выжимки: 15.10 в ИИ уходило 750–840 новостей → минутные 429 у бесплатной lite.
+# Квоты по рубрикам; внутри рубрики — по очереди от разных источников, свежие вперёд; дубли заголовков убираем.
+DIGEST_QUOTA = {"macro": 30, "crypto": 25, "ru": 25, "telegram": 30, "x": 20, "commodities": 10, "people": 8, "hacks": 5}
+DIGEST_OTHER = 10
+
+
+def preselect(items):
+    seen, by_cat = set(), {}
+    for it in sorted(items, key=lambda x: x["time"], reverse=True):
+        key = re.sub(r"\W+", " ", it["title"].lower()).strip()[:60]
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        by_cat.setdefault(it["cat"], {}).setdefault(it["source"], []).append(it)
+    out = []
+    for cat, srcs in by_cat.items():
+        quota = DIGEST_QUOTA.get(cat, DIGEST_OTHER)
+        queues = sorted(srcs.values(), key=lambda q: (edition.source_rank(q[0]), -q[0]["time"].timestamp()))
+        taken = []
+        while len(taken) < quota and any(queues):
+            for q in queues:
+                if q and len(taken) < quota:
+                    taken.append(q.pop(0))
+        out += taken
+    return sorted(out, key=lambda x: x["time"], reverse=True)
+
+
 def run_digest(state, now, dry, final=True):
     """Возвращает True, если выпуск отправлен. ИИ отказал на блоке и это не последняя попытка (final=False) —
     сохраняем для приложения ленту, котировки и календарь, а выпуск повторяем в следующем запуске."""
@@ -773,6 +808,9 @@ def run_digest(state, now, dry, final=True):
         upcoming = []
     q = fetch_markets()
     local = now.astimezone(MSK)
+    total = len(items)
+    items = preselect(items)
+    print(f"Предотбор для ИИ: {len(items)} из {total}", file=sys.stderr)
 
     lines = [f"Сейчас: {local:%d.%m.%Y %H:%M} МСК", "", "КОТИРОВКИ:"] + quotes_for_ai(q)
     lines += ["", "КАЛЕНДАРЬ США НА СЕГОДНЯ:"] + ([format_event(e) for e in today] or ["важных событий нет"])
@@ -811,7 +849,7 @@ def run_digest(state, now, dry, final=True):
         if table:
             text += "<blockquote>" + "\n".join(table) + "</blockquote>\n\n"
         emit(block["key"], text + body)
-        time.sleep(2)
+        time.sleep(6)  # пауза между блоками — меньше минутных 429 у бесплатной модели
     if not failed:  # итог дня — по всем блокам; если ИИ уже отказал, не тратим время
         try:
             emit("summary", f"<b>🧭 #ИТОГ_ДНЯ | {date}</b>\n\n" + edition.not_advice(ask_ai(prompts.SUMMARY, user)))
@@ -881,6 +919,15 @@ def run_digest(state, now, dry, final=True):
         return False
     state["last_digest_ts"] = now.isoformat()
     return True
+
+
+def run_digest_big(state, now, dry, final=True):
+    """Выжимка — на больших моделях (потом lite и запасной), остальное в запуске — снова на lite."""
+    AI_TIER["big"] = True
+    try:
+        return run_digest(state, now, dry, final)
+    finally:
+        AI_TIER["big"] = False
 
 
 def run_events(state, now, dry):
@@ -983,12 +1030,21 @@ def main():
     now = datetime.now(timezone.utc)
     state = load_state()
     ai_dead_load(state)
+    if mode in ("preview", "ai_check") and "--force" not in args:
+        # тесты тратят ту же квоту ИИ — не в последний час перед выжимкой
+        local = now.astimezone(MSK)
+        for slot in os.environ.get("DIGEST_TIMES", "07:30,19:30").split(","):
+            h, mi = map(int, slot.strip().split(":"))
+            start = local.replace(hour=h, minute=mi, second=0, microsecond=0)
+            if timedelta(0) < start - local <= timedelta(minutes=60):
+                print(f"Тест отменён: через {int((start - local).total_seconds() // 60)} мин выжимка {slot.strip()} — бережём квоту ИИ (--force — запустить всё равно)", file=sys.stderr)
+                return
     if mode == "ai_check":  # проверка запасного ИИ: Gemini «исчерпан» (только в памяти), образец через OpenRouter — в тестовый канал
-        AI_DEAD["day"] |= {m.strip() for m in (os.environ.get("GEMINI_MODEL") or GEMINI_MODELS).split(",")}
+        AI_DEAD["day"] |= {m.strip() for m in (os.environ.get("GEMINI_MODEL") or GEMINI_MODELS).split(",")}  # все, и большие, и lite
         mode = "preview"
 
     if mode == "digest":
-        run_digest(state, now, dry)
+        run_digest_big(state, now, dry)
     elif mode == "events":
         run_events(state, now, dry)
     elif mode == "results":
@@ -1021,7 +1077,7 @@ def main():
         return
     else:
         slot, final = due_digest_slot(state, now)
-        if slot and run_digest(state, now, dry, final):
+        if slot and run_digest_big(state, now, dry, final):
             state["sent_digests"].append(slot)
         run_events(state, now, dry)
         run_results(state, now, dry)
