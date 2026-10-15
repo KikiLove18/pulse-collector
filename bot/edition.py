@@ -57,11 +57,13 @@ urgent=true — ТОЛЬКО исключительное (не чаще раз�
  "sent": "pos|neg|neu", "block": "us|crypto|commodities|ru|x", "tag": "1–2 слова", "theme": "один из: THEMES",
  "metrics": [{"value": "...", "label": "..."}], "photo": ["2–3 англ. слова: предмет или место из новости", "более общий запрос", "1–2 слова: самое общее"],
  "feed": [{"pick": номер, "title": "заголовок до 90 знаков", "text": "2–3 коротких предложения по-русски, 200–300 знаков: что произошло — с цифрами (сколько, на сколько %, по сравнению с чем); главное следствие для рынка — в <u></u>", "block": "us|crypto|commodities|ru|x", "sent": "pos|neg|neu", "icon": "1 эмодзи-флаг или тема",
-           "imp": 1|2|3, "also": [номера других новостей списка о том же событии]}]}
+           "imp": 1|2|3, "also": [номера других новостей списка о том же событии],
+           "metrics": [{"value": "короткое число из новости, напр. +3%, $190 млрд, 16,5%", "label": "2–3 слова: что это"}]}]}
 photo — для поиска фото на Wikimedia Commons, без имён людей. Никаких советов «покупай/продавай». Цифры только из входных данных.
 feed — ВСЕГДА (даже при send=false): до 6 самых заметных новостей из списка для ленты приложения — разные темы, без рутины и рекламы, дубли склеивай.
 Текст в feed — коротко и по делу: цифры и главный факт, без вводных слов, общих фраз и пересказа фона.
 Только факты из входных данных, ничего не додумывай.
+metrics в feed — 1–3 главные цифры новости (как на карточке): только числа из текста новости; нет цифр — пустой список.
 Одно событие — ОДНА запись в feed. pick — самый надёжный источник: официальный (ЦБ, ФРС, Минфин, биржа, сама компания) >
 крупные СМИ (Reuters, Bloomberg, CNBC, Интерфакс, ТАСС, РИА, РБК, Коммерсант, Ведомости) > Telegram-каналы > X. Остальные новости о том же — в also.
 «УЖЕ В ЛЕНТЕ» ниже — то, что уже показано за сутки: такое событие не добавляй снова, кроме случая, когда появились НОВЫЕ факты
@@ -230,6 +232,16 @@ def source_rank(it):
     return 0 if any(m in src.lower() for m in MAJOR_MEDIA) else 1
 
 
+def _words(title):
+    return set(re.findall(r"\d+(?:[.,]\d+)?|[^\W\d]{4,}", title.lower()))  # числа отличают обновление от повтора
+
+
+def seen_before(title, recent):
+    """Тот же сюжет уже в ленте за сутки: совпадает 70%+ значимых слов и чисел заголовка (ИИ это пропускает)."""
+    w = _words(title)
+    return bool(w) and any(len(w & _words(r)) / len(w | _words(r)) >= 0.7 for r in recent)
+
+
 def push_feed(feed, items, now, dry, state=None):
     """Свежие новости — в ленту приложения (сервер склеит с прошлыми и хранит 7 дней)."""
     out = []
@@ -239,6 +251,9 @@ def push_feed(feed, items, now, dry, state=None):
         except Exception:
             continue
         if not f.get("title"):
+            continue
+        if state is not None and seen_before(f["title"], [r[1] for r in state.get("feed_recent", [])] + [o["title"] for o in out]):
+            print(f"Лента: повтор, пропускаю — {f['title'][:70]}", file=sys.stderr)
             continue
         name = lambda it: it["source"].replace("TG @", "").replace("X @", "")
         group = [src]
@@ -258,7 +273,9 @@ def push_feed(feed, items, now, dry, state=None):
             imp = 1
         out.append({"block": f.get("block") or "us", "icon": (f.get("icon") or "")[:8], "title": f["title"][:120], "text": f.get("text", ""),
                     "sent": f.get("sent") if f.get("sent") in ("pos", "neg", "neu") else "neu", "url": src["link"],
-                    "source": name(src), "also": also[:10], "imp": imp, "ts": now.isoformat()})
+                    "source": name(src), "also": also[:10], "imp": imp, "ts": now.isoformat(),
+                    "metrics": [{"value": str(x.get("value", ""))[:16], "label": str(x.get("label", ""))[:24]}
+                                for x in (f.get("metrics") or []) if isinstance(x, dict) and x.get("value")][:3]})
     if not out:
         return
     if state is not None:  # что уже в ленте за сутки — ИИ не повторит это событие в следующих проверках
@@ -267,7 +284,7 @@ def push_feed(feed, items, now, dry, state=None):
     print(f"Лента: +{len(out)} новостей, текст в среднем {sum(len(o['text']) for o in out) // len(out)} знаков", file=sys.stderr)
     if dry:
         for o in out:
-            print(f"Лента (образец): [imp {o['imp']}] {o['title']} — {o['text'][:120]}… | {o['source']} + также {o['also']}", file=sys.stderr)
+            print(f"Лента (образец): [imp {o['imp']}] {o['title']} — {o['text'][:120]}… | {o['source']} + также {o['also']} | цифры {o['metrics']}", file=sys.stderr)
     if not dry:
         try:
             _post("/api/ingest", {"edition": "feed", "blocks": [], "meta": {"news": out}})
