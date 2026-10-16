@@ -973,7 +973,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-16T19:00:55.275072+00:00",
+  "breaking_ts": "2026-10-16T19:30:58.347889+00:00",
   "news_now": {
     "day": "2026-10-16",
     "day_count": 3,
@@ -986,86 +986,65 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/ekonomika/28224133",
+    "https://www.vedomosti.ru/politics/news/2026/10/16/1237858-tramp-zayavil",
+    "https://tass.ru/obschestvo/28224153",
+    "https://t.me/rbc_news/158862",
+    "https://www.kommersant.ru/doc/9040693",
+    "https://tass.ru/obschestvo/28224149",
+    "https://www.investing.com/news/stock-market-news/nearly-12000-california-residents-bought-evs-using-state-rebate-program-4954764",
+    "https://www.rbc.ru/rbcfreenews/6ab6965b94aba5753e59e697",
+    "https://t.me/FinancialJuice/140966",
+    "https://tass.ru/ekonomika/28224145",
+    "https://www.investing.com/news/stock-market-news/tesla-rangebound-at-380-with-weak-trend-live-levels-93CH-4944787",
+    "https://www.investing.com/news/stock-market-news/alphabet-c-squeezed-at-349-between-key-levels-live-levels-93CH-4944780",
+    "https://www.investing.com/news/stock-market-news/nasdaq-100-breaks-cloud-support-at-30935-live-levels-93CH-4944778",
+    "https://www.investing.com/news/stock-market-news/dow-jones-tests-52200-resistance-amid-bull-trap-risk-live-levels-93CH-4944779",
+    "https://www.investing.com/news/stock-market-news/sp-500-stalls-in-chop-zone-below-7897-live-levels-93CH-4944776",
+    "https://www.investing.com/news/stock-market-news/nvidia-teeters-at-225-support-with-fading-momentum-live-levels-93CH-4944777",
+    "https://www.investing.com/news/stock-market-news/intel-oversold-at-10190-with-bearish-trend-intact-live-levels-93CH-4944770",
+    "https://www.investing.com/news/stock-market-news/dollar-index-consolidates-near-double-top-at-102305-live-levels-93CH-4944781",
+    "https://www.investing.com/news/stock-market-news/apple-double-top-threat-near-ath-34524-live-levels-93CH-4944773",
+    "https://www.rbc.ru/rbcfreenews/6ad277c68c6fc667e013e650",
+    "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://t.me/FinancialJuice/140965",
+    "https://t.me/BitcoinMagazineTelegram/10852",
+    "https://tass.ru/ekonomika/28224141",
+    "https://t.me/FinancialJuice/140964",
+    "https://tass.ru/armiya-i-opk/28224127",
+    "https://tass.ru/armiya-i-opk/28224135",
+    "https://www.kommersant.ru/doc/9040690",
+    "https://t.me/banksta/103545",
+    "https://t.me/FinancialJuice/140963",
+    "https://www.rbc.ru/politics/07/08/2026/6a75ed629a794720bda7e362",
+    "https://tass.ru/armiya-i-opk/28224129",
+    "https://tass.ru/armiya-i-opk/28224125",
+    "https://www.rbc.ru/sport/16/10/2026/6ad21cecc69ebebcfba1ea84",
+    "https://tass.ru/armiya-i-opk/28224119",
+    "https://t.me/rbc_news/158861",
+    "https://t.me/headlines_for_traders/86868",
+    "https://tass.ru/proisshestviya/28224115",
+    "https://www.interfax.ru/world/1123101",
+    "https://tass.ru/mezhdunarodnaya-panorama/28224109",
+    "https://tass.ru/sport/28224117",
+    "https://www.vedomosti.ru/politics/news/2026/10/16/1237855-mask-poprosil-trampa",
+    "https://www.rbc.ru/sport/14/10/2026/6acf334d7591bebb73f2b538",
+    "https://tass.ru/proisshestviya/28224111",
+    "https://t.me/markettwits/389259",
+    "https://tass.ru/ekonomika/28224107",
+    "https://www.kommersant.ru/doc/9040692",
+    "https://tass.ru/obschestvo/28223961",
+    "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories",
     "https://oilprice.com/Energy/Crude-Oil/Norways-Untapped-Oil-and-Gas-Frontier-Is-Drawing-Renewed-Interest.html",
     "https://www.rbc.ru/rbcfreenews/6ad24d51373a2c5c000b3d17",
     "https://tass.ru/obschestvo/28224095",
     "https://t.me/WatcherGuru/15541",
     "https://www.rbc.ru/rbcfreenews/6ad0ea88097ea8d575abbc97",
+    "https://www.interfax.ru/world/1123100",
     "https://tass.ru/mezhdunarodnaya-panorama/28224097",
     "https://t.me/headlines_for_traders/86867",
     "https://t.me/FinancialJuice/140962",
-    "https://tass.ru/obschestvo/28224069",
-    "https://decrypt.co/381178/circle-40-emerging-markets-stablecoins-go-mainstream",
-    "https://tass.ru/armiya-i-opk/28224077",
-    "https://tass.ru/proisshestviya/28224081",
-    "https://www.interfax.ru/russia/1123099",
-    "https://tass.ru/sport/28224099",
-    "https://www.rbc.ru/rbcfreenews/6ad2721f7bfe5dbe1b87b9bc",
-    "https://t.me/FinancialJuice/140961",
-    "https://t.me/FinancialJuice/140960",
-    "https://t.me/banksta/103544",
-    "https://www.marketwatch.com/story/ai-investors-have-woken-up-to-the-bond-markets-warning-signs-6f604c61?mod=mw_rss_topstories",
-    "https://www.interfax.ru/world/1123098",
-    "https://t.me/FinancialJuice/140959",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224087",
-    "https://tass.ru/ekonomika/28224089",
-    "https://www.rbc.ru/politics/16/10/2026/6ad271da64fe3a360ae28753",
-    "https://t.me/FinancialJuice/140958",
-    "https://t.me/markettwits/389258",
-    "https://www.interfax.ru/world/1123097",
-    "https://tass.ru/ekonomika/28224079",
-    "https://t.me/FinancialJuice/140957",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224059",
-    "https://t.me/FinancialJuice/140956",
-    "https://t.me/rbc_news/158860",
-    "https://t.me/rbc_news/158859",
-    "https://tass.ru/obschestvo/28223979",
-    "https://www.kommersant.ru/doc/9040689",
-    "https://www.rbc.ru/politics/16/10/2026/6ad26f58aef4cb0458dc4c55",
-    "https://www.vedomosti.ru/politics/news/2026/10/16/1237854-zhurnalisti-politico-pozhalovalis",
-    "https://t.me/markettwits/389257",
-    "https://t.me/cbrstocks/83401",
-    "https://www.investing.com/news/stock-market-news/mexico-limits-tariffs-break-to-established-local-carmakers-4954728",
-    "https://www.investing.com/news/stock-market-news/air-canada-united-airlines-to-expand-canadaus-network-with-new-summer-routes-4954727",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224073",
-    "https://tass.ru/proisshestviya/28224071",
-    "https://cryptoslate.com/openai-research-model-questioned-wallet-permission-then-spent-testnet-eth-anyway-in-june-2026/",
-    "https://tass.ru/ekonomika/28224063",
-    "https://t.me/cbrstocks/83400",
-    "https://www.investing.com/news/stock-market-news/why-is-direxion-daily-semiconductor-bull-3x-shares-tumbling-today-93CH-4954726",
-    "https://t.me/if_market_news/86091",
-    "https://t.me/WatcherGuru/15540",
-    "https://tass.ru/sport/28224065",
-    "https://www.investing.com/news/stock-market-news/why-is-vaneck-semiconductor-etf-sliding-today-93CH-4954725",
-    "https://www.vedomosti.ru/society/news/2026/10/16/1237852-voditel-mikroavtobusa-pogib",
-    "https://www.interfax.ru/world/1123096",
-    "https://tass.ru/ekonomika/28224043",
-    "https://www.marketwatch.com/story/could-an-anthropic-ipo-put-your-401-k-at-risk-the-ai-safety-debate-hits-a-new-dimension-db3f09f7?mod=mw_rss_topstories",
-    "https://tass.ru/obschestvo/28224057",
-    "https://t.me/incrypted/33029",
-    "https://tass.ru/nauka/28224039",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224051",
-    "https://t.me/cbrstocks/83399",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224053",
-    "https://t.me/FinancialJuice/140955",
-    "https://www.investing.com/news/stock-market-news/why-is-ishares-russell-2000-etf-sliding-today-93CH-4954722",
-    "https://t.me/FinancialJuice/140954",
-    "https://thedefiant.io/news/cefi/sei-perpetual-futures-trade-on-cftc-regulated-og-com-markets",
-    "https://tass.ru/obschestvo/28224035",
-    "https://t.me/FinancialJuice/140953",
-    "https://t.me/FinancialJuice/140952",
-    "https://t.me/banksta/103543",
-    "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-before-fed-chairmans-fireside-chat-f4462ae4?mod=rss_markets_main",
-    "https://tass.ru/proisshestviya/28224049",
-    "https://tass.ru/ekonomika/28224033",
-    "https://www.marketwatch.com/story/the-prospectus-looks-impressive-my-financial-adviser-wants-me-to-invest-350-000-in-a-uae-data-center-is-this-risky-d5d3747c?mod=mw_rss_topstories",
-    "https://oilprice.com/Latest-Energy-News/World-News/US-Offers-Another-17-Million-SPR-Barrels-as-Fuel-Crisis-Deepens.html",
-    "https://www.interfax.ru/russia/1123095",
-    "https://www.investing.com/news/stock-market-news/why-is-spdr-sp-500-etf-trust-sliding-today-93CH-4954719",
-    "https://www.rbc.ru/politics/16/10/2026/6ad263537bfe5dbe1b87b9ba",
-    "https://tass.ru/proisshestviya/28224041",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224031",
-    "https://www.investing.com/news/stock-market-news/why-is-invesco-qqq-trust-sliding-today-93CH-4954717"
+    "https://tass.ru/obschestvo/28224069"
   ],
   "ai_dead": {
     "date": "2026-10-16",
@@ -1076,50 +1055,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-15T19:01:04.243909+00:00",
-      "Минфин США ввел масштабные санкции против 26 лиц и структур из Ирана"
-    ],
-    [
-      "2026-10-15T19:01:04.243909+00:00",
-      "Nasdaq отыграл падение благодаря ралли на рынке гособлигаций США"
-    ],
-    [
-      "2026-10-15T19:01:04.243909+00:00",
-      "В Конгрессе США пригрозили мерами из-за сбоев Starlink у ВСУ"
-    ],
-    [
-      "2026-10-15T19:01:04.243909+00:00",
-      "Акции Nebius упали на 60% от пиков на фоне трансформации бизнеса"
-    ],
-    [
-      "2026-10-15T19:01:04.243909+00:00",
-      "Падение акций CoreWeave подчеркнуло долговую нагрузку ИИ-бума"
-    ],
-    [
-      "2026-10-15T19:30:55.955972+00:00",
-      "Украинские дроны атаковали Рязанский нефтеперерабатывающий завод"
-    ],
-    [
-      "2026-10-15T19:30:55.955972+00:00",
-      "Инвесторы спорят об оценке CoreWeave и долговых рисках ИИ"
-    ],
-    [
-      "2026-10-15T19:30:55.955972+00:00",
-      "ЕС ускоряет одобрение спутникового проекта Project Bromo"
-    ],
-    [
-      "2026-10-15T19:30:55.955972+00:00",
-      "Polymarket оценивает шанс биткоина выше $90 000 в 60%"
-    ],
-    [
-      "2026-10-15T19:30:55.955972+00:00",
-      "В Санкт-Петербурге запретили мигрантам работать в ряде сфер"
-    ],
-    [
-      "2026-10-15T19:30:55.955972+00:00",
-      "Регуляторы Южной Кореи выявили нарушения у криптофирм"
-    ],
     [
       "2026-10-15T20:01:00.661083+00:00",
       "UniCredit получил одобрение ЕЦБ на контроль над Commerzbank"
@@ -1699,6 +1634,30 @@
     [
       "2026-10-16T19:00:55.275072+00:00",
       "Криптобиржа Bitget запретила доступ пользователям из РФ, Беларуси и Казахстана"
+    ],
+    [
+      "2026-10-16T19:30:58.347889+00:00",
+      "Стоимость нефти Brent впервые с мая достигла $110 за баррель"
+    ],
+    [
+      "2026-10-16T19:30:58.347889+00:00",
+      "Дефицит бюджета США достиг $1,99 трлн за 2026 финансовый год"
+    ],
+    [
+      "2026-10-16T19:30:58.347889+00:00",
+      "ЦБ РФ получил право запрещать отдельные операции с цифровыми валютами"
+    ],
+    [
+      "2026-10-16T19:30:58.347889+00:00",
+      "ЕС готовит инструмент для закрытия рынка для китайских товаров"
+    ],
+    [
+      "2026-10-16T19:30:58.347889+00:00",
+      "Трамп заявил о желании видеть Путина на саммите G20 в Майами"
+    ],
+    [
+      "2026-10-16T19:30:58.347889+00:00",
+      "В ОМАНЕ предупредили об опасных веществах в контейнерах с затонувшего судна"
     ]
   ]
 }
