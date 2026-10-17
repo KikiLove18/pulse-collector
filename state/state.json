@@ -974,7 +974,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T10:30:55.307192+00:00",
+  "breaking_ts": "2026-10-17T11:00:53.829835+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 3,
@@ -987,61 +987,45 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/proisshestviya/28225233",
+    "https://t.me/headlines_for_traders/86894",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237900-papa-rimskii-gotov-k-vipiske",
+    "https://t.me/banksta/103567",
+    "https://tass.ru/obschestvo/28225221",
+    "https://www.interfax.ru/russia/1123170",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225223",
+    "https://tass.ru/proisshestviya/28225217",
+    "https://tass.ru/armiya-i-opk/28225225",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237899-sistemu-otsenki-sotsialnih-uslug",
+    "https://www.kommersant.ru/doc/9041097",
+    "https://tass.ru/proisshestviya/28225215",
+    "https://www.rbc.ru/rbcfreenews/6aba1f89667ef03ad6dee837",
+    "https://tass.ru/politika/28225203",
+    "https://t.me/proeconomics/20556",
+    "https://www.kommersant.ru/doc/9041099",
+    "https://tass.ru/proisshestviya/28225211",
+    "https://tass.ru/kultura/28224679",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225109",
+    "https://tass.ru/proisshestviya/28225207",
+    "https://t.me/headlines_for_traders/86893",
+    "https://tass.ru/sport/28225205",
+    "https://www.rbc.ru/sport/09/10/2026/6ac89b4c9a79477cae9b3243",
+    "https://t.me/whale_alert_io/103997",
+    "https://t.me/nainspire/5527",
+    "https://www.kommersant.ru/doc/9041090",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225171",
+    "https://t.me/invest_zonaa/39035",
+    "https://t.me/whale_alert_io/103996",
     "https://tass.ru/armiya-i-opk/28225197",
     "https://tass.ru/obschestvo/28225173",
     "https://tass.ru/sport/28225189",
-    "https://tass.ru/armiya-i-opk/28225191",
-    "https://www.rbc.ru/politics/14/10/2026/6acf4e9487faa464799365f2",
-    "https://www.rbc.ru/sport/10/10/2026/6aca76bb9a79476f84dbb6e2",
-    "https://tass.ru/ekonomika/28225187",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225181",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237897-vzyala-pod-kontrol",
-    "https://t.me/interfaxonline/80264",
-    "https://www.rbc.ru/rbcfreenews/69d487bf9a79472858e37bc4",
-    "https://tass.ru/obschestvo/28225169",
-    "https://tass.ru/sport/28225179",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225177",
-    "https://www.kommersant.ru/doc/9041089",
-    "https://tass.ru/politika/28225165",
-    "https://www.rbc.ru/politics/17/10/2026/6ad3060acea7d599fa996f03",
-    "https://t.me/banksta/103566",
-    "https://www.interfax.ru/russia/1123169",
-    "https://tass.ru/obschestvo/28225153",
-    "https://t.me/headlines_for_traders/86892",
-    "https://www.rbc.ru/politics/27/09/2026/6ab88abb3de438f101887d71",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225163",
-    "https://t.me/rbc_news/158876",
-    "https://tass.ru/ekonomika/28225159",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225157",
-    "https://cointelegraph.com/news/circles-allaire-says-stablecoin-issuer-looking-to-enter-40-developing-markets-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://tass.ru/ekonomika/28225161",
-    "https://www.kommersant.ru/doc/9041082"
+    "https://tass.ru/armiya-i-opk/28225191"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-16T10:30:58.966808+00:00",
-      "Выручка X5 Group выросла на 13% в третьем квартале"
-    ],
-    [
-      "2026-10-16T10:30:58.966808+00:00",
-      "Гендиректор группы «Самолет» Анна Акиньшина покидает пост"
-    ],
-    [
-      "2026-10-16T10:30:58.966808+00:00",
-      "ЦБ выявил манипуляции на торгах со стороны главы «Кинетик Капитал»"
-    ],
-    [
-      "2026-10-16T10:30:58.966808+00:00",
-      "Франция стала лидером по закупкам российского газа в ЕС в августе"
-    ],
-    [
-      "2026-10-16T10:30:58.966808+00:00",
-      "Европейские оборонные акции выросли на новостях о сделке Airbus и Leonardo"
-    ],
     [
       "2026-10-16T11:00:56.603599+00:00",
       "Совет директоров ВИ.ру рекомендовал дивиденды в 7 рублей на акцию"
@@ -1629,6 +1613,30 @@
     [
       "2026-10-17T10:30:55.307192+00:00",
       "Покупки через ИИ-агентов в онлайн-торговле растут на 43% в месяц"
+    ],
+    [
+      "2026-10-17T11:00:53.829835+00:00",
+      "Глава Якутии исключил выплату дивидендов «АЛРОСА» по итогам 2026 года"
+    ],
+    [
+      "2026-10-17T11:00:53.829835+00:00",
+      "Зеленский заявил об одном из масштабнейших ударов по энергообъектам Украины"
+    ],
+    [
+      "2026-10-17T11:00:53.829835+00:00",
+      "Крупный перевод 150 млн TRX зафиксирован на рынке"
+    ],
+    [
+      "2026-10-17T11:00:53.829835+00:00",
+      "Эстония выделит Украине €10 млн на вооружения по программе PURL"
+    ],
+    [
+      "2026-10-17T11:00:53.829835+00:00",
+      "В Японии обсудят отказ от запрета на ввоз ядерного оружия"
+    ],
+    [
+      "2026-10-17T11:00:53.829835+00:00",
+      "Очереди из автомобилей на границе Польши и Украины достигли 40 часов"
     ]
   ]
 }
