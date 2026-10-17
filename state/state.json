@@ -975,7 +975,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T17:30:56.817180+00:00",
+  "breaking_ts": "2026-10-17T18:00:58.495756+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 5,
@@ -990,83 +990,41 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/proisshestviya/28225829",
+    "https://tass.ru/proisshestviya/28225827",
+    "https://t.me/whale_alert_io/103999",
+    "https://t.me/whale_alert_io/104000",
+    "https://tass.ru/proisshestviya/28225813",
+    "https://tass.ru/proisshestviya/28225815",
+    "https://www.investing.com/news/stock-market-news/mercedes-unveils-electric-suv-as-it-expands-premium-ev-lineup-4955521",
+    "https://tass.ru/sport/28225817",
+    "https://www.rbc.ru/society/21/05/2026/6a0f3dc39a794761eb6b23ed",
+    "https://t.me/nainspire/5530",
+    "https://www.kommersant.ru/doc/9041175",
+    "https://tass.ru/obschestvo/28225809",
+    "https://tass.ru/proisshestviya/28225807",
+    "https://t.me/banksta/103586",
+    "https://www.rbc.ru/rbcfreenews/6ad3880614d7ccaafcae0afd",
+    "https://www.rbc.ru/sport/13/10/2026/6acdb63d9a7947ce15285b4b",
+    "https://tass.ru/obschestvo/28225803",
+    "https://tass.ru/proisshestviya/28225799",
+    "https://www.kommersant.ru/doc/9041173",
+    "https://www.rbc.ru/politics/16/10/2026/6ad196ab7e0299393214b101",
+    "https://tass.ru/proisshestviya/28225789",
+    "https://tass.ru/proisshestviya/28225793",
+    "https://t.me/interfaxonline/80269",
+    "https://www.interfax.ru/russia/1123194",
+    "https://tass.ru/ekonomika/28225779",
     "https://www.rbc.ru/politics/17/10/2026/6ad32a638c6fc667e013e6c7",
     "https://www.vedomosti.ru/politics/news/2026/10/17/1237930-posol-nazval-usloviya",
     "https://tass.ru/proisshestviya/28225775",
-    "https://tass.ru/proisshestviya/28225783",
-    "https://tass.ru/politika/28225771",
-    "https://t.me/banksta/103585",
-    "https://tass.ru/sport/28225777",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225769",
-    "https://tass.ru/obschestvo/28225773",
-    "https://www.rbc.ru/rbcfreenews/6aa1ce034d6a7fa13907bd35",
-    "https://tass.ru/obschestvo/28225765",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225757",
-    "https://tass.ru/proisshestviya/28225761",
-    "https://t.me/rbc_news/158889",
-    "https://tass.ru/proisshestviya/28225743",
-    "https://www.interfax.ru/russia/1123195",
-    "https://tass.ru/politika/28225753",
-    "https://www.kommersant.ru/doc/9041172",
-    "https://tass.ru/armiya-i-opk/28225733",
-    "https://tass.ru/sport/28225767",
-    "https://tass.ru/armiya-i-opk/28225755",
-    "https://thedefiant.io/news/blockchains/injective-activates-fixed-gas-costs-for-exchange-transactions",
-    "https://www.rbc.ru/sport/16/10/2026/6ad21cecc69ebebcfba1ea84",
-    "https://tass.ru/kultura/28225759",
-    "https://www.rbc.ru/politics/26/09/2026/6ab765a87aa1858b22332b2b",
-    "https://tass.ru/sport/28225763",
-    "https://tass.ru/ekonomika/28225745",
-    "https://tass.ru/sport/28225751",
-    "https://tass.ru/sport/28225747",
-    "https://t.me/WatcherGuru/15546",
-    "https://www.rbc.ru/politics/25/09/2026/6ab6721d9a794762a6e92ddb",
-    "https://tass.ru/proisshestviya/28225741",
-    "https://tass.ru/proisshestviya/28225737",
-    "https://www.kommersant.ru/doc/9041171",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225731",
-    "https://www.interfax.ru/world/1123193",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237929-zavod-kromberg-schubert",
-    "https://t.me/headlines_for_traders/86904",
-    "https://decrypt.co/381238/crypto-super-pac-fairshake-pours-millions-more-into-defeating-sherrod-brown",
-    "https://cryptoslate.com/ethereum-sets-october-26-scaling-test-with-hoodi-node-upgrades-required/",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225729",
-    "https://www.coindesk.com/business/2026/10/17/goldman-wells-fargo-morgan-stanley-see-tokenization-as-a-growth-play-not-a-threat",
-    "https://oilprice.com/Energy/Crude-Oil/Texas-Researchers-Say-Permian-Wastewater-Could-Cool-AI-Data-Centers.html",
-    "https://oilprice.com/Energy/Energy-General/Europe-Braces-for-a-Winter-Energy-Crisis-as-Gas-Reserves-Run-Low.html",
-    "https://www.trumpstruth.org/statuses/42399",
-    "https://www.trumpstruth.org/statuses/42400",
-    "https://tass.ru/sport/28225735"
+    "https://tass.ru/proisshestviya/28225783"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-16T19:00:55.275072+00:00",
-      "Еврокомиссия оценила дефицит финансирования Украины в 2027 году в 70 млрд евро"
-    ],
-    [
-      "2026-10-16T19:00:55.275072+00:00",
-      "Криптобиржа Bitget запретила доступ пользователям из РФ, Беларуси и Казахстана"
-    ],
-    [
-      "2026-10-16T19:30:58.347889+00:00",
-      "Стоимость нефти Brent впервые с мая достигла $110 за баррель"
-    ],
-    [
-      "2026-10-16T19:30:58.347889+00:00",
-      "Дефицит бюджета США достиг $1,99 трлн за 2026 финансовый год"
-    ],
-    [
-      "2026-10-16T19:30:58.347889+00:00",
-      "ЦБ РФ получил право запрещать отдельные операции с цифровыми валютами"
-    ],
-    [
-      "2026-10-16T19:30:58.347889+00:00",
-      "ЕС готовит инструмент для закрытия рынка для китайских товаров"
-    ],
     [
       "2026-10-16T19:30:58.347889+00:00",
       "Трамп заявил о желании видеть Путина на саммите G20 в Майами"
@@ -1666,6 +1624,26 @@
     [
       "2026-10-17T17:30:56.817180+00:00",
       "Ethereum назначил тестирование сети Hoodi на 26 октября"
+    ],
+    [
+      "2026-10-17T18:00:58.495756+00:00",
+      "Во Франции на протесты вышли 800 тыс. человек"
+    ],
+    [
+      "2026-10-17T18:00:58.495756+00:00",
+      "В Румынии сбили два беспилотника над Черным морем"
+    ],
+    [
+      "2026-10-17T18:00:58.495756+00:00",
+      "Mercedes представил новый электрический SUV"
+    ],
+    [
+      "2026-10-17T18:00:58.495756+00:00",
+      "Кабмин РФ продлил соглашения о модернизации НПЗ"
+    ],
+    [
+      "2026-10-17T18:00:58.495756+00:00",
+      "Неактивный биткоин-адрес активировали после 13 лет"
     ]
   ]
 }
