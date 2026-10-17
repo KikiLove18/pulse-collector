@@ -974,68 +974,64 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T13:30:59.988443+00:00",
+  "breaking_ts": "2026-10-17T14:00:54.227701+00:00",
   "news_now": {
     "day": "2026-10-17",
-    "day_count": 3,
+    "day_count": 4,
     "urgent_count": 0,
-    "last": "2026-10-17T07:30:59.157486+00:00",
+    "last": "2026-10-17T14:00:54.227701+00:00",
     "titles": [
       "Трамп приостановил действие антироссийских санкций",
       "Трамп приостановил введение новых жестких санкций против России",
-      "Танкер подорвался на мине в Ормузском проливе"
+      "Танкер подорвался на мине в Ормузском проливе",
+      "Второй за сутки супертанкер подорвался на мине в Ормузском проливе"
     ]
   },
   "news_seen": [
+    "https://www.coindesk.com/business/2026/10/17/polygon-sees-coinme-acquisition-as-entry-to-payments-sector-dominated-by-visa-stripe",
+    "https://tass.ru/obschestvo/28225501",
+    "https://www.rbc.ru/sport/17/10/2026/6ad3768dc7d012aeaa871eab",
+    "https://tass.ru/obschestvo/28225495",
+    "https://t.me/whale_alert_io/103998",
+    "https://www.kommersant.ru/doc/9041143",
+    "https://www.rbc.ru/politics/11/10/2026/6acab7caa00daf4493f1b441",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225489",
+    "https://www.interfax.ru/world/1123183",
+    "https://tass.ru/sport/28225499",
+    "https://tass.ru/sport/28225497",
+    "https://t.me/markettwits/389285",
+    "https://tass.ru/ekonomika/28225493",
+    "https://tass.ru/sport/28225491",
+    "https://t.me/WatcherGuru/15544",
+    "https://www.kommersant.ru/doc/9041142",
+    "https://www.rbc.ru/economics/05/10/2026/6ac3867d2134370ed9c973d4",
+    "https://t.me/rbc_news/158884",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237913-protestuyuschie-pronikli",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225487",
+    "https://t.me/interfaxonline/80266",
+    "https://www.kommersant.ru/doc/9041134",
+    "https://t.me/markettwits/389284",
+    "https://www.sport-interfax.ru/1123182",
+    "https://www.rbc.ru/rbcfreenews/6ac52938fc3262c47af581ca",
+    "https://tass.ru/obschestvo/28225485",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225483",
+    "https://t.me/headlines_for_traders/86897",
+    "https://tass.ru/ekonomika/28225475",
+    "https://tass.ru/kultura/28225481",
+    "https://www.interfax.ru/world/1123181",
+    "https://tass.ru/proisshestviya/28225479",
+    "https://t.me/banksta/103572",
     "https://cryptoslate.com/binance-will-shut-its-mining-pool-on-nov-10-giving-miners-a-deadline-to-move/",
+    "https://tass.ru/politika/28225471",
+    "https://tass.ru/obschestvo/28225469",
+    "https://tass.ru/obschestvo/28225477",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225463",
+    "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "https://t.me/BitcoinMagazineTelegram/10855",
     "https://tass.ru/proisshestviya/28225459",
     "https://tass.ru/sport/28225473",
     "https://t.me/thebell_io/39519",
-    "https://tass.ru/kultura/28225439",
-    "https://tass.ru/obschestvo/28225465",
-    "https://www.interfax.ru/russia/1123180",
-    "https://t.me/markettwits/389283",
-    "https://t.me/interfaxonline/80265",
-    "https://t.me/wublockchainenglish/26458",
-    "https://t.me/markettwits/389282",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225451",
-    "https://tass.ru/sport/28225457",
-    "https://tass.ru/proisshestviya/28225455",
-    "https://www.interfax.ru/world/1123179",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237910-perekrestnie-dni",
-    "https://t.me/invest_zonaa/39039",
-    "https://t.me/minfin/9376",
-    "https://www.rbc.ru/sport/14/10/2026/6acf7c6c9180bc6765bdb3da",
-    "https://www.kommersant.ru/doc/9041131",
-    "https://tass.ru/sport/28225449",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237911-slovakiya-otkazalas-ot-uchastiya",
-    "https://www.rbc.ru/politics/10/10/2026/6aca40c34dae08d47b8fcc64",
-    "https://t.me/cbrstocks/83404",
-    "https://www.interfax.ru/world/1123178",
-    "https://tass.ru/sport/28225447",
-    "https://tass.ru/sport/28225445",
-    "https://www.investing.com/news/stock-market-news/which-company-has-the-worlds-highest-earnings-the-answer-may-surprise-you-4955422",
-    "https://www.rbc.ru/sport/11/10/2026/6acbd3509a7947de2d047f7a",
-    "https://t.me/headlines_for_traders/86896",
-    "https://tass.ru/proisshestviya/28225437",
-    "https://www.rbc.ru/rbcfreenews/6ac0f0006e73643ee4875c66",
-    "https://tass.ru/sport/28225441",
-    "https://t.me/incrypted/33032",
-    "https://tass.ru/proisshestviya/28225407",
-    "https://t.me/markettwits/389281",
-    "https://www.kommersant.ru/doc/9041129",
-    "https://decrypt.co/381213/tokenmaxxing-how-get-most-out-your-ai-models",
-    "https://t.me/coinpost/4270",
-    "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
-    "https://www.marketwatch.com/story/meet-the-home-buyers-totally-unfazed-by-7-mortgage-rates-7a9b1cc7?mod=mw_rss_topstories",
-    "https://tass.ru/proisshestviya/28225403",
-    "https://cointelegraph.com/news/solana-shows-resilience-but-some-areas-need-continued-observation-fidelity-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.rbc.ru/technology_and_media/15/10/2026/6ad107a0c46b74a7f6ec7c3f",
-    "https://tass.ru/sport/28225405",
-    "https://www.rbc.ru/politics/15/10/2026/6acf7a179a79472f1e19dfc5",
-    "https://tass.ru/sport/28225401",
-    "https://tass.ru/proisshestviya/28225399"
+    "https://tass.ru/kultura/28225439"
   ],
   "ai_dead": {
     "date": "2026-10-17",
@@ -1621,6 +1617,26 @@
     [
       "2026-10-17T13:30:59.988443+00:00",
       "Хакеры переводят похищенные средства в Zcash для отмывания"
+    ],
+    [
+      "2026-10-17T14:00:54.227701+00:00",
+      "Второй за сутки супертанкер подорвался на мине в Ормузском проливе"
+    ],
+    [
+      "2026-10-17T14:00:54.227701+00:00",
+      "Криптобиржа Bitget ограничила операции для пользователей из РФ и ряда стран"
+    ],
+    [
+      "2026-10-17T14:00:54.227701+00:00",
+      "Binance Pool объявил о закрытии майнингового пула 10 ноября"
+    ],
+    [
+      "2026-10-17T14:00:54.227701+00:00",
+      "Папа римский Лев XIV выписался из больницы после операции на легком"
+    ],
+    [
+      "2026-10-17T14:00:54.227701+00:00",
+      "Илон Маск пообещал наделить сознанием летающий спорткар Tesla Roadster"
     ]
   ]
 }
