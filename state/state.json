@@ -25,7 +25,7 @@
   ],
   "last_digest_ts": "2026-10-16T17:00:55.421063+00:00",
   "calendar": {
-    "ts": "2026-10-16T16:31:23.653912+00:00",
+    "ts": "2026-10-17T04:00:54.556980+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -870,7 +870,7 @@
       {
         "title": "Federal Budget Balance",
         "country": "USD",
-        "date": "2026-10-16T14:00:00-04:00",
+        "date": "2026-10-16T14:05:00-04:00",
         "impact": "Low",
         "forecast": "-34.7B",
         "previous": "-166.8B"
@@ -973,7 +973,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-16T21:30:55.859140+00:00",
+  "breaking_ts": "2026-10-17T04:00:54.556410+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 0,
@@ -982,51 +982,45 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/ekonomika/28224319",
-    "https://tass.ru/armiya-i-opk/28224315",
-    "https://tass.ru/proisshestviya/28224317",
-    "https://www.rbc.ru/rbcfreenews/6aa140182dfdb9d224b73194",
-    "https://www.investing.com/news/stock-market-news/softbank-weighs-18-billion-acquisition-of-allied-universal-bloomberg-news-reports-4954792",
-    "https://www.investing.com/news/stock-market-news/colombia-stocks-lower-at-close-of-trade-colcap-down-055-4954873",
-    "https://www.investing.com/news/stock-market-news/chinese-online-retailer-temu-agrees-to-data-privacy-restrictions-to-settle-texas-lawsuit-documents-say-4954577",
-    "https://www.investing.com/news/stock-market-news/as-ai-rally-wobbles-stock-markets-spotlight-turns-to-earnings-4953575",
-    "https://tass.ru/sport/28224313",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224311",
-    "https://www.investing.com/news/stock-market-news/proofpoint-taps-jpmorgan-ubs-for-125-billion-debt-deal--bloomberg-93CH-4954872",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224309",
-    "https://www.marketwatch.com/story/new-sec-rules-would-fleece-everyday-investors-to-enrich-wall-street-0a00fe03?mod=mw_rss_topstories",
-    "https://www.investing.com/news/stock-market-news/russia-stocks-higher-at-close-of-trade-moex-russia-index-up-170-4954871",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224307",
-    "https://t.me/BitcoinMagazineTelegram/10853",
-    "https://www.rbc.ru/rbcfreenews/6ad24779bf1fd39591b945d8",
-    "https://t.me/FinancialJuice/140988",
-    "https://t.me/banksta/103554",
-    "https://www.marketwatch.com/story/its-a-wait-and-see-situation-im-63-and-diagnosed-with-lymphoma-should-i-take-my-social-security-next-year-ea88b419?mod=mw_rss_topstories",
-    "https://t.me/FinancialJuice/140987",
-    "https://www.wsj.com/business/auto-transport-roundup-market-talk-a9b213cd?mod=rss_markets_main",
-    "https://t.me/FinancialJuice/140986",
-    "https://t.me/FinancialJuice/140985",
-    "https://www.rbc.ru/economics/10/10/2026/6aca828adcbc89546c0223eb",
-    "https://t.me/FinancialJuice/140984",
-    "https://cryptoslate.com/cardano-has-42-6-million-ada-left-under-its-current-treasury-spending-limit/",
-    "https://t.me/interfaxonline/80252",
-    "https://tass.ru/sport/28224303",
-    "https://www.rbc.ru/sport/14/10/2026/6acfd4179a7947f956f901c8",
-    "https://tass.ru/obschestvo/28224297",
-    "https://tass.ru/kosmos/28224299",
-    "https://www.investing.com/news/stock-market-news/moodys-upgrades-egypt-to-b3-on-fiscal-reforms-keeps-positive-outlook-4954858",
-    "https://www.interfax.ru/world/1123112",
-    "https://tass.ru/armiya-i-opk/28224301",
-    "https://www.wsj.com/business/financial-services-roundup-market-talk-b4026e6d?mod=rss_markets_main",
-    "https://www.investing.com/news/stock-market-news/exclusiveboeing-sales-chief-mcmullen-to-retire-company-memo-says-4954848",
-    "https://www.rbc.ru/business/17/10/2026/6ad25f0064fe3a360ae286fb",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224293",
-    "https://tass.ru/armiya-i-opk/28220493",
-    "https://tass.ru/ekonomika/28224291",
-    "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-aa749b35?mod=rss_markets_main",
-    "https://tass.ru/proisshestviya/28224289",
-    "https://www.marketwatch.com/story/dont-buy-this-dip-several-signs-suggest-theres-more-pain-ahead-for-tech-stocks-83f971d7?mod=mw_rss_topstories",
-    "https://tass.ru/ekonomika/28224287"
+    "https://tass.ru/obschestvo/28224591",
+    "https://tass.ru/ekonomika/28224605",
+    "https://tass.ru/ekonomika/28224603",
+    "https://tass.ru/politika/28224601",
+    "https://tass.ru/ekonomika/28224597",
+    "https://tass.ru/obschestvo/28224599",
+    "https://www.interfax.ru/russia/1123131",
+    "https://www.interfax.ru/russia/1123130",
+    "https://www.kommersant.ru/doc/9040991",
+    "https://www.rbc.ru/politics/13/10/2026/6acdb3ea20ec329f009d8fa9",
+    "https://www.rbc.ru/rbcfreenews/6ab8fac63de438f101887dca",
+    "https://tass.ru/armiya-i-opk/28224589",
+    "https://tass.ru/obschestvo/28224571",
+    "https://t.me/headlines_for_traders/86871",
+    "https://tass.ru/ekonomika/28224573",
+    "https://tass.ru/armiya-i-opk/28224585",
+    "https://tass.ru/armiya-i-opk/28224581",
+    "https://tass.ru/armiya-i-opk/28224575",
+    "https://t.me/whale_alert_io/103992",
+    "https://tass.ru/armiya-i-opk/28224577",
+    "https://tass.ru/armiya-i-opk/28224579",
+    "https://www.rbc.ru/politics/09/10/2026/6ac9153f9a794724ca750f61",
+    "https://www.kommersant.ru/doc/9040990",
+    "https://tass.ru/obschestvo/28224567",
+    "https://tass.ru/ekonomika/28224565",
+    "https://tass.ru/ekonomika/28224559",
+    "https://www.interfax.ru/russia/1123129",
+    "https://tass.ru/obschestvo/28224529",
+    "https://tass.ru/obschestvo/28224557",
+    "https://www.rbc.ru/rbcfreenews/6ac99f4304cef06393a0e1dd",
+    "https://t.me/lookonchainchannel/10665",
+    "https://t.me/headlines_for_traders/86870",
+    "https://tass.ru/obschestvo/28224547",
+    "https://tass.ru/armiya-i-opk/28224537",
+    "https://tass.ru/armiya-i-opk/28224541",
+    "https://tass.ru/armiya-i-opk/28224543",
+    "https://tass.ru/obschestvo/28224549",
+    "https://tass.ru/armiya-i-opk/28224551",
+    "https://www.rbc.ru/business/08/10/2026/6abc985e95ce758f5ce083a6"
   ],
   "ai_dead": {
     "date": "2026-10-16",
@@ -1037,26 +1031,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-15T20:30:59.915793+00:00",
-      "Путин передал российские активы Tarkett во временное управление «Центр Капитал»"
-    ],
-    [
-      "2026-10-15T20:30:59.915793+00:00",
-      "Силы ПВО сбили десять беспилотников на пути к Москве"
-    ],
-    [
-      "2026-10-15T20:30:59.915793+00:00",
-      "Binance.US привлекает финансирование при оценке в $1 млрд"
-    ],
-    [
-      "2026-10-15T20:30:59.915793+00:00",
-      "Сингапурская BitFuFu добавила 15 биткоинов к своим резервам"
-    ],
-    [
-      "2026-10-15T20:30:59.915793+00:00",
-      "Саммит ЕС не смог достичь согласия по семилетнему бюджету Евросоюза"
-    ],
     [
       "2026-10-16T04:00:56.950575+00:00",
       "Глава ФРС Кевин Уорш воздержался от прогнозов по ставке на октябрь"
@@ -1652,6 +1626,30 @@
     [
       "2026-10-16T20:30:57.323427+00:00",
       "В Санкт-Петербурге госпитализировали пять человек с подозрением на оспу обезьян"
+    ],
+    [
+      "2026-10-17T04:00:54.556410+00:00",
+      "КСИР заявил о подрыве супертанкера с нефтью в Ормузском проливе"
+    ],
+    [
+      "2026-10-17T04:00:54.556410+00:00",
+      "Число летевших на Москву беспилотников достигло 144"
+    ],
+    [
+      "2026-10-17T04:00:54.556410+00:00",
+      "Акции ФосАгро выросли на 3,6% на ожидании отчетности"
+    ],
+    [
+      "2026-10-17T04:00:54.556410+00:00",
+      "В России впервые за девять лет выросло число корпоративных банкротств"
+    ],
+    [
+      "2026-10-17T04:00:54.556410+00:00",
+      "Крупный перевод 856 BTC зафиксирован на биржу OKEx"
+    ],
+    [
+      "2026-10-17T04:00:54.556410+00:00",
+      "Корабли России и Индии провели совместные учения в заливе Петра Великого"
     ]
   ]
 }
