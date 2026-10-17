@@ -26,7 +26,7 @@
   ],
   "last_digest_ts": "2026-10-17T04:30:54.507353+00:00",
   "calendar": {
-    "ts": "2026-10-17T04:00:54.556980+00:00",
+    "ts": "2026-10-17T10:00:58.838379+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -974,7 +974,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T09:30:53.820502+00:00",
+  "breaking_ts": "2026-10-17T10:00:58.825590+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 3,
@@ -987,102 +987,56 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/ekonomika/28225161",
+    "https://tass.ru/obschestvo/28225151",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225149",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237896-programmu-vosstanovleniya",
+    "https://tass.ru/armiya-i-opk/28225143",
+    "https://tass.ru/proisshestviya/28225147",
+    "https://www.interfax.ru/russia/1123168",
+    "https://www.rbc.ru/rbcfreenews/6ad2a9be6930dce2d39715bb",
+    "https://www.kommersant.ru/doc/9041084",
+    "https://www.interfax.ru/world/1123167",
+    "https://t.me/WalterBloomberg/37070",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225133",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225139",
+    "https://t.me/WalterBloomberg/37069",
+    "https://www.vedomosti.ru/lifestyle/news/2026/10/17/1237895-denis-boitsov",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225137",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225117",
+    "https://www.interfax.ru/russia/1123166",
+    "https://t.me/headlines_for_traders/86891",
+    "https://tass.ru/obschestvo/28225127",
+    "https://t.me/forklog/50301",
+    "https://t.me/markettwits/389280",
+    "https://www.interfax.ru/russia/1123165",
+    "https://www.kommersant.ru/doc/9041079",
+    "https://tass.ru/obschestvo/28225123",
+    "https://www.vedomosti.ru/finance/news/2026/10/17/1237892-strahovanie-predpriyatii-ot-vozdushnih-atak",
+    "https://www.rbc.ru/rbcfreenews/6ad08ddafe226187ec5540cb",
+    "https://www.interfax.ru/russia/1123164",
+    "https://tass.ru/ekonomika/28225113",
+    "https://t.me/rbc_news/158875",
+    "https://t.me/rbc_news/158874",
     "https://tass.ru/sport/28225111",
     "https://t.me/incrypted/33031",
+    "https://www.wsj.com/business/its-too-late-for-small-fixes-at-pepsi-aaf8563f?mod=rss_markets_main",
     "https://www.rbc.ru/rbcfreenews/69c2c2779a79473c00419094",
     "https://tass.ru/armiya-i-opk/28225115",
+    "https://www.kommersant.ru/doc/9041080",
     "https://tass.ru/armiya-i-opk/28225105",
     "https://tass.ru/armiya-i-opk/28225103",
     "https://tass.ru/armiya-i-opk/28225099",
     "https://tass.ru/armiya-i-opk/28225097",
     "https://tass.ru/armiya-i-opk/28225091",
     "https://tass.ru/obschestvo/28225087",
-    "https://tass.ru/armiya-i-opk/28225101",
-    "https://tass.ru/armiya-i-opk/28225089",
-    "https://tass.ru/obschestvo/28225085",
-    "https://tass.ru/proisshestviya/28225059",
-    "https://t.me/markettwits/389279",
-    "https://www.rbc.ru/rbcfreenews/6ad023754510fcf631e0949c",
-    "https://tass.ru/obschestvo/28225083",
-    "https://tass.ru/sport/28225077",
-    "https://www.rbc.ru/rbcfreenews/6a9edade15df81fbe687fea4",
-    "https://tass.ru/obschestvo/28225075",
-    "https://tass.ru/ekonomika/28225073",
-    "https://tass.ru/proisshestviya/28225069",
-    "https://t.me/interfaxonline/80263",
-    "https://tass.ru/obschestvo/28225067",
-    "https://tass.ru/obschestvo/28225071",
-    "https://www.interfax.ru/russia/1123163",
-    "https://www.kommersant.ru/doc/9041074",
-    "https://tass.ru/politika/28225065",
-    "https://www.rbc.ru/rbcfreenews/6ad04d513ccf4c597e73c0d6",
-    "https://tass.ru/politika/28225049",
-    "https://tass.ru/obschestvo/28225061",
-    "https://tass.ru/proisshestviya/28225063",
-    "https://www.rbc.ru/politics/17/10/2026/6ad33aa892d9064d6f44a42e",
-    "https://tass.ru/politika/28225057",
-    "https://tass.ru/proisshestviya/28225039",
-    "https://t.me/headlines_for_traders/86890",
-    "https://www.kommersant.ru/doc/9041069",
-    "https://www.rbc.ru/rbcfreenews/6ad0d9f26e6d49482b6781d9",
-    "https://t.me/gpb_investments/25120",
-    "https://t.me/banksta/103565",
-    "https://www.vedomosti.ru/business/news/2026/10/17/1237887-na-razvitie-eksporta",
-    "https://t.me/forklog/50300",
-    "https://www.interfax.ru/russia/1123162",
-    "https://www.kommersant.ru/doc/9041070",
-    "https://t.me/investfuture/15414",
-    "https://t.me/SberInvestments/13149",
-    "https://www.kommersant.ru/doc/9041059",
-    "https://t.me/if_market_news/86094",
-    "https://www.kommersant.ru/doc/9041056",
-    "https://t.me/banksta/103564"
+    "https://tass.ru/armiya-i-opk/28225101"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-16T09:30:57.473792+00:00",
-      "Доллар снизился до двухнедельного минимума на фоне перспектив ставки ФРС"
-    ],
-    [
-      "2026-10-16T09:30:57.473792+00:00",
-      "Инфляция в еврозоне в сентябре ускорилась до 3,8% в годовом выражении"
-    ],
-    [
-      "2026-10-16T09:30:57.473792+00:00",
-      "Индия снизила экспортную пошлину на дизель на фоне глобального дефицита"
-    ],
-    [
-      "2026-10-16T09:30:57.473792+00:00",
-      "Приток капитала в американские акции за неделю составил $39,1 млрд"
-    ],
-    [
-      "2026-10-16T09:30:57.473792+00:00",
-      "Азербайджанская SOCAR планирует возобновить закупки газа у «Газпрома»"
-    ],
-    [
-      "2026-10-16T09:30:57.473792+00:00",
-      "Capital B отчиталась о чистом убытке в $78 млн из-за переоценки биткоина"
-    ],
-    [
-      "2026-10-16T10:00:57.802728+00:00",
-      "Рынок акций Индонезии рухнул максимально с 1998 года из-за решения MSCI"
-    ],
-    [
-      "2026-10-16T10:00:57.802728+00:00",
-      "Биткоин закрепился выше $82 000 на фоне оттока средств из ETF"
-    ],
-    [
-      "2026-10-16T10:00:57.802728+00:00",
-      "Акции Tesla выросли после презентации нового спорткара Roadster"
-    ],
-    [
-      "2026-10-16T10:00:57.802728+00:00",
-      "Совет директоров ЦИАН рекомендовал дивиденды 33 рубля на акцию"
-    ],
     [
       "2026-10-16T10:30:58.966808+00:00",
       "Выручка X5 Group выросла на 13% в третьем квартале"
@@ -1646,6 +1600,26 @@
     [
       "2026-10-17T09:30:53.820502+00:00",
       "Spiegel: к поджогу станции Starlink в Польше причастна ОПГ"
+    ],
+    [
+      "2026-10-17T10:00:58.825590+00:00",
+      "Anthropic: ИИ может поднять ВВП США до $44 трлн к 2030 году"
+    ],
+    [
+      "2026-10-17T10:00:58.825590+00:00",
+      "Минобороны РФ заявило о взятии восьми населенных пунктов в зоне СВО"
+    ],
+    [
+      "2026-10-17T10:00:58.825590+00:00",
+      "РСПП попросил правительство четких правил внешнего управления"
+    ],
+    [
+      "2026-10-17T10:00:58.825590+00:00",
+      "Президент Египта призвал защитить Саудовскую Аравию"
+    ],
+    [
+      "2026-10-17T10:00:58.825590+00:00",
+      "«Аэрофлот» занялся стабилизацией расписания в аэропортах Москвы"
     ]
   ]
 }
