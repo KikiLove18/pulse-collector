@@ -1,4 +1,4 @@
-"""Бот-выжимка новостей для трейдеров.
+"""Бот персональных новостей рынков для трейдеров.
 
 Запуск:
   python -m bot.main auto       — то, что делает GitHub по расписанию (выжимка в своё время + анонсы событий)
@@ -834,7 +834,9 @@ def run_digest(state, now, dry, final=True):
         if dry:
             publish(text, dry)
 
-    emit("header", f"<b>☀️ #ВЫЖИМКА | {date}</b>\n<i>Рынок США · Крипта · Нефть, золото, доллар · Что говорят · Итог дня</i>")
+    morning = local.hour < 14  # утро — «что было ночью и что ждём сегодня», вечер — итоги дня
+    emit("header", (f"<b>☀️ #НОВОСТИ_УТРА | {date}</b>\n<i>Рынок США · Крипта · Нефть, золото, доллар · Что говорят · Что было ночью</i>" if morning else
+                    f"<b>🌙 #НОВОСТИ_ДНЯ | {date}</b>\n<i>Рынок США · Крипта · Нефть, золото, доллар · Что говорят · Итоги дня</i>"))
     failed = []
     for block in prompts.BLOCKS:
         head = f"<b>{block['title']} | {date}</b>"
@@ -852,7 +854,9 @@ def run_digest(state, now, dry, final=True):
         time.sleep(6)  # пауза между блоками — меньше минутных 429 у бесплатной модели
     if not failed:  # итог дня — по всем блокам; если ИИ уже отказал, не тратим время
         try:
-            emit("summary", f"<b>🧭 #ИТОГ_ДНЯ | {date}</b>\n\n" + edition.not_advice(ask_ai(prompts.SUMMARY, user)))
+            title = "🧭 #ГЛАВНОЕ_ЗА_НОЧЬ" if morning else "🧭 #ИТОГИ_ДНЯ"
+            prompt = prompts.SUMMARY + (prompts.SUMMARY_MORNING if morning else prompts.SUMMARY_EVENING)
+            emit("summary", f"<b>{title} | {date}</b>\n\n" + edition.not_advice(ask_ai(prompt, user)))
         except Exception as e:
             print(f"Итог дня не собран: {str(e)[:150]}", file=sys.stderr)
             failed.append("summary")
