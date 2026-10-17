@@ -460,9 +460,9 @@ def ask_openrouter(system, user):
     key = os.environ["OPENROUTER_API_KEY"].strip()
     if not key.isascii() or not key.startswith("sk-or-"):  # 15.10 в секрете оказалось слово «ключ» вместо ключа
         raise RuntimeError("секрет OPENROUTER_API_KEY — не ключ OpenRouter (должен начинаться с sk-or-)")
-    # порядок — по ai_probe 17.10: ultra ответила за 21 с, dots — 60 с; gemma — 429, nemotron-super — 86 с
+    # ai_check 17.10 на полном выпуске: ответила только nemotron-super; ultra — ответ без choices, dots — >120 с, gemma — 429
     models = os.environ.get("OPENROUTER_MODEL") or \
-        "nvidia/nemotron-3-ultra-550b-a55b:free,dots-studio/dots-3-note-preview:free,google/gemma-4-31b-it:free,nvidia/nemotron-3-super-120b-a12b:free"
+        "nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-ultra-550b-a55b:free,google/gemma-4-31b-it:free,dots-studio/dots-3-note-preview:free"
     last_err = None
     for model in [m.strip() for m in models.split(",") if m.strip() and _alive(m.strip())]:
         body = {
@@ -478,6 +478,10 @@ def ask_openrouter(system, user):
             timeout = _ai_timeout()  # вне try: «время вышло» прерывает все повторы сразу
             try:
                 data = _fetch_json(req, timeout)
+                if not data.get("choices"):  # ошибка провайдера приходит с кодом 200 — повтор не поможет, дальше по списку
+                    last_err = f"нет ответа: {json.dumps(data.get('error') or data, ensure_ascii=False)[:300]}"
+                    print(f"OpenRouter {model}: {last_err}", file=sys.stderr)
+                    break
                 text = (data["choices"][0]["message"].get("content") or "").strip()  # бывает None у «думающих» моделей
                 if text:
                     print(f"ИИ: {model}", file=sys.stderr)
