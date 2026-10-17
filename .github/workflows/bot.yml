@@ -6,7 +6,7 @@ on:
   workflow_dispatch:          # кнопка «Run workflow» для ручного запуска
     inputs:
       mode:
-        description: "auto / digest / events / results / breaking / preview / morning:<пояс>"
+        description: "auto / digest / events / results / breaking / preview / ai_check / ai_probe / morning:<пояс>"
         default: "auto"
 
 permissions:

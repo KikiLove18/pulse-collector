@@ -496,6 +496,39 @@ def ask_openrouter(system, user):
     raise RuntimeError(f"Все модели OpenRouter недоступны: {last_err or 'дневная квота исчерпана'}")
 
 
+PROBE_MODELS = ("nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-ultra-550b-a55b:free,google/gemma-4-26b-a4b-it:free,"
+                "google/gemma-4-31b-it:free,thinkingmachines/inkling-small:free,thinkingmachines/inkling:free,"
+                "dots-studio/dots-3-note-preview:free,nvidia/nemotron-3-super-120b-a12b:free")
+
+
+def run_ai_probe():
+    """Какие бесплатные модели OpenRouter годятся в запасные: по одному заданию в формате блока выпуска на модель,
+    в журнал — время, длина, русский ли текст. Ничего не публикует. 16.10 gemma-4-31b — 429, nemotron-super — молчал 120 с."""
+    key = os.environ["OPENROUTER_API_KEY"].strip()
+    news = "\n".join(f"[macro] Reuters | 09:{i:02d} | Нефть Brent {'растёт' if i % 2 else 'дешевеет'} на {i / 10:.1f}% — "
+                     f"трейдеры оценивают запасы и решения ОПЕК+ | https://example.com/{i}" for i in range(40))
+    user = "КОТИРОВКИ:\nBrent 82,1 (+1,2%)\nWTI 78,4 (+1,0%)\nЗолото 2410 (−0,3%)\n\nНОВОСТИ:\n" + news
+    system = prompts.COMMON + "\n" + prompts.BLOCKS[2]["focus"]
+    rows = []
+    for model in [m.strip() for m in (os.environ.get("PROBE_MODELS") or PROBE_MODELS).split(",") if m.strip()]:
+        body = {"model": model, "temperature": 0.3,
+                "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
+        req = urllib.request.Request("https://openrouter.ai/api/v1/chat/completions", data=json.dumps(body).encode(),
+                                     headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"})
+        t0 = time.time()
+        try:
+            text = (_fetch_json(req, 90)["choices"][0]["message"].get("content") or "").strip()
+            ru = sum("а" <= c.lower() <= "я" for c in text) / max(1, len(text))
+            res = f"ОК {len(text)} знаков, кириллица {ru:.0%}" if text else "пустой ответ"
+        except urllib.error.HTTPError as e:
+            res = f"ошибка {e.code} {e.read().decode('utf-8', 'replace')[:120]!r}"
+        except Exception as e:
+            res = f"ошибка {str(e)[:120]}"
+        rows.append(f"{model}: {time.time() - t0:.0f} с — {res}")
+        print(rows[-1], file=sys.stderr)
+    print("\nИТОГ ПРОВЕРКИ МОДЕЛЕЙ:\n" + "\n".join(rows))
+
+
 def ask_gemini(system, user):
     """Бесплатные модели бывают перегружены (503) — пробуем по очереди из списка через запятую."""
     key = os.environ["GEMINI_API_KEY"]
@@ -1034,7 +1067,7 @@ def main():
     now = datetime.now(timezone.utc)
     state = load_state()
     ai_dead_load(state)
-    if mode in ("preview", "ai_check") and "--force" not in args:
+    if mode in ("preview", "ai_check", "ai_probe") and "--force" not in args:
         # тесты тратят ту же квоту ИИ — не в последний час перед выжимкой
         local = now.astimezone(MSK)
         for slot in os.environ.get("DIGEST_TIMES", "07:30,19:30").split(","):
@@ -1043,6 +1076,9 @@ def main():
             if timedelta(0) < start - local <= timedelta(minutes=60):
                 print(f"Тест отменён: через {int((start - local).total_seconds() // 60)} мин выжимка {slot.strip()} — бережём квоту ИИ (--force — запустить всё равно)", file=sys.stderr)
                 return
+    if mode == "ai_probe":  # какие бесплатные модели OpenRouter отвечают (только журнал)
+        run_ai_probe()
+        return
     if mode == "ai_check":  # проверка запасного ИИ: Gemini «исчерпан» (только в памяти), образец через OpenRouter — в тестовый канал
         AI_DEAD["day"] |= {m.strip() for m in (os.environ.get("GEMINI_MODEL") or GEMINI_MODELS).split(",")}  # все, и большие, и lite
         mode = "preview"
