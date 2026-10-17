@@ -974,7 +974,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T09:00:56.314081+00:00",
+  "breaking_ts": "2026-10-17T09:30:53.820502+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 3,
@@ -987,70 +987,62 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/sport/28225111",
+    "https://t.me/incrypted/33031",
+    "https://www.rbc.ru/rbcfreenews/69c2c2779a79473c00419094",
+    "https://tass.ru/armiya-i-opk/28225115",
+    "https://tass.ru/armiya-i-opk/28225105",
+    "https://tass.ru/armiya-i-opk/28225103",
+    "https://tass.ru/armiya-i-opk/28225099",
+    "https://tass.ru/armiya-i-opk/28225097",
+    "https://tass.ru/armiya-i-opk/28225091",
+    "https://tass.ru/obschestvo/28225087",
+    "https://tass.ru/armiya-i-opk/28225101",
+    "https://tass.ru/armiya-i-opk/28225089",
+    "https://tass.ru/obschestvo/28225085",
+    "https://tass.ru/proisshestviya/28225059",
+    "https://t.me/markettwits/389279",
+    "https://www.rbc.ru/rbcfreenews/6ad023754510fcf631e0949c",
+    "https://tass.ru/obschestvo/28225083",
+    "https://tass.ru/sport/28225077",
+    "https://www.rbc.ru/rbcfreenews/6a9edade15df81fbe687fea4",
+    "https://tass.ru/obschestvo/28225075",
+    "https://tass.ru/ekonomika/28225073",
+    "https://tass.ru/proisshestviya/28225069",
+    "https://t.me/interfaxonline/80263",
+    "https://tass.ru/obschestvo/28225067",
+    "https://tass.ru/obschestvo/28225071",
+    "https://www.interfax.ru/russia/1123163",
+    "https://www.kommersant.ru/doc/9041074",
+    "https://tass.ru/politika/28225065",
+    "https://www.rbc.ru/rbcfreenews/6ad04d513ccf4c597e73c0d6",
+    "https://tass.ru/politika/28225049",
+    "https://tass.ru/obschestvo/28225061",
+    "https://tass.ru/proisshestviya/28225063",
+    "https://www.rbc.ru/politics/17/10/2026/6ad33aa892d9064d6f44a42e",
+    "https://tass.ru/politika/28225057",
+    "https://tass.ru/proisshestviya/28225039",
+    "https://t.me/headlines_for_traders/86890",
+    "https://www.kommersant.ru/doc/9041069",
+    "https://www.rbc.ru/rbcfreenews/6ad0d9f26e6d49482b6781d9",
+    "https://t.me/gpb_investments/25120",
+    "https://t.me/banksta/103565",
+    "https://www.vedomosti.ru/business/news/2026/10/17/1237887-na-razvitie-eksporta",
+    "https://t.me/forklog/50300",
+    "https://www.interfax.ru/russia/1123162",
+    "https://www.kommersant.ru/doc/9041070",
+    "https://t.me/investfuture/15414",
     "https://t.me/SberInvestments/13149",
-    "https://tass.ru/politika/28225043",
+    "https://www.kommersant.ru/doc/9041059",
     "https://t.me/if_market_news/86094",
     "https://www.kommersant.ru/doc/9041056",
-    "https://t.me/banksta/103564",
-    "https://www.rbc.ru/politics/16/10/2026/6ad1f531bb8a749d539ca47e",
-    "https://tass.ru/obschestvo/28225045",
-    "https://www.rbc.ru/rbcfreenews/6ad2b0589266067dc0d9248c",
-    "https://t.me/thebell_io/39518",
-    "https://tass.ru/obschestvo/28225015",
-    "https://tass.ru/nauka/28224933",
-    "https://t.me/rbc_news/158873",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225031",
-    "https://tass.ru/obschestvo/28225037",
-    "https://tass.ru/ekonomika/28225023",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224957",
-    "https://t.me/markettwits/389278",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237888-2730-bespilotnikov",
-    "https://tass.ru/proisshestviya/28225033",
-    "https://tass.ru/proisshestviya/28225021",
-    "https://tass.ru/proisshestviya/28224937",
-    "https://tass.ru/proisshestviya/28224941",
-    "https://tass.ru/kosmos/28225025",
-    "https://www.rbc.ru/base/28/08/2024/66cdaf8a9a7947f6955fdbbc",
-    "https://tass.ru/obschestvo/28225027",
-    "https://www.investing.com/news/stock-market-news/explainercould-hackers-get-inside-my-fridge-4955339",
-    "https://t.me/headlines_for_traders/86889",
-    "https://t.me/whale_alert_io/103995",
-    "https://tass.ru/sport/28225029",
-    "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237886-dialog-rf-i-ssha",
-    "https://t.me/interfaxonline/80262",
-    "https://tass.ru/ekonomika/28225017",
-    "https://t.me/markettwits/389277"
+    "https://t.me/banksta/103564"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-16T09:00:59.673716+00:00",
-      "Зеленский предложил прекратить удары по НПЗ в обмен на расширение Starlink"
-    ],
-    [
-      "2026-10-16T09:00:59.673716+00:00",
-      "Инфляция в еврозоне в финальной оценке за месяц составила 0,6%"
-    ],
-    [
-      "2026-10-16T09:00:59.673716+00:00",
-      "Разработчик игры «Мир танков» сменил владельца"
-    ],
-    [
-      "2026-10-16T09:00:59.673716+00:00",
-      "Минфин США продлил лицензию на активы Лукойла до апреля 2027 года"
-    ],
-    [
-      "2026-10-16T09:00:59.673716+00:00",
-      "MSCI одобрила правила исключения фондов на биткоин из индексов"
-    ],
-    [
-      "2026-10-16T09:00:59.673716+00:00",
-      "ЦБ РФ выявил факты манипулирования на торгах Мосбиржи"
-    ],
     [
       "2026-10-16T09:30:57.473792+00:00",
       "Доллар снизился до двухнедельного минимума на фоне перспектив ставки ФРС"
@@ -1630,6 +1622,30 @@
     [
       "2026-10-17T09:00:56.314081+00:00",
       "INSA: блок ХДС/ХСС в Германии уступает АдГ 11 процентных пунктов"
+    ],
+    [
+      "2026-10-17T09:30:53.820502+00:00",
+      "Газпромбанк ожидает сохранения ключевой ставки ЦБ на уровне 14%"
+    ],
+    [
+      "2026-10-17T09:30:53.820502+00:00",
+      "Спрос на IT-специалистов в России сократился почти наполовину"
+    ],
+    [
+      "2026-10-17T09:30:53.820502+00:00",
+      "Путин поручил утвердить план восстановления пострадавшей инфраструктуры"
+    ],
+    [
+      "2026-10-17T09:30:53.820502+00:00",
+      "Объем венчурных сделок в Web3 превысил $490 млн за полмесяца"
+    ],
+    [
+      "2026-10-17T09:30:53.820502+00:00",
+      "Правительство выделило регионам 1.7 млрд рублей на развитие экспорта"
+    ],
+    [
+      "2026-10-17T09:30:53.820502+00:00",
+      "Spiegel: к поджогу станции Starlink в Польше причастна ОПГ"
     ]
   ]
 }
