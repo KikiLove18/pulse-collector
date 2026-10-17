@@ -975,7 +975,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T21:00:57.808283+00:00",
+  "breaking_ts": "2026-10-17T21:30:55.475123+00:00",
   "news_now": {
     "day": "2026-10-18",
     "day_count": 0,
@@ -984,24 +984,26 @@
     "titles": []
   },
   "news_seen": [
+    "https://tass.ru/ekonomika/28226021",
+    "https://www.kommersant.ru/doc/9041193",
+    "https://t.me/FinancialJuice/141008",
+    "https://www.rbc.ru/politics/04/10/2026/6ac2462f0b1672c5aa343aab",
+    "https://tass.ru/proisshestviya/28226019",
+    "https://tass.ru/ekonomika/28226015",
+    "https://t.me/FinancialJuice/141007",
+    "https://tass.ru/obschestvo/28226013",
+    "https://t.me/FinancialJuice/141006",
+    "https://t.me/banksta/103607",
+    "https://www.interfax.ru/world/1123209",
+    "https://t.me/BitcoinMagazineTelegram/10856",
+    "https://tass.ru/armiya-i-opk/28226009",
+    "https://www.rbc.ru/sport/12/10/2026/6accacdf9a79472b58e6263c",
+    "https://cryptoslate.com/trons-stablecoin-growth-has-not-made-trx-deflationary/",
+    "https://tass.ru/politika/28226007",
+    "https://www.kommersant.ru/doc/9040975",
+    "https://tass.ru/armiya-i-opk/28225811",
     "https://oilprice.com/Energy/Natural-Gas/Middle-East-Chemicals-Keep-Their-Cost-Edge-Despite-Hormuz-Crisis.html",
-    "https://tass.ru/politika/28226003",
-    "https://www.kommersant.ru/doc/9041192",
-    "https://tass.ru/ekonomika/28226001",
-    "https://tass.ru/sport/28225999",
-    "https://t.me/banksta/103606",
-    "https://tass.ru/proisshestviya/28225997",
-    "https://tass.ru/proisshestviya/28225995",
-    "https://tass.ru/kosmos/28225993",
-    "https://www.interfax.ru/moscow/1123208",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225991",
-    "https://www.kommersant.ru/doc/9041191",
-    "https://t.me/interfaxonline/80275",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225985",
-    "https://www.rbc.ru/rbcfreenews/6aa20d75cf2a890a9f3334a5",
-    "https://tass.ru/politika/28225983",
-    "https://www.marketwatch.com/story/can-a-55-000-plus-robot-load-the-dishwasher-inside-my-afternoon-with-two-humanoid-housekeepers-0a9569ab?mod=mw_rss_topstories",
-    "https://tass.ru/sport/28225981"
+    "https://tass.ru/politika/28226003"
   ],
   "ai_dead": {
     "date": "2026-10-17",
