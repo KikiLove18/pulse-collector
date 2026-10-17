@@ -975,7 +975,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T19:30:55.195714+00:00",
+  "breaking_ts": "2026-10-17T20:00:57.553362+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 5,
@@ -990,64 +990,45 @@
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/rbcfreenews/6ad3d352baafe814541c7582",
+    "https://t.me/rbc_news/158896",
+    "https://www.rbc.ru/rbcfreenews/6ad0efdf4737bce99dc6f2f6",
+    "https://tass.ru/ekonomika/28225963",
+    "https://tass.ru/proisshestviya/28225961",
+    "https://www.theblock.co/news/markets/2026-10-17-coreweave-broadcom-verizon-among-nine-companies-objecting-to-tokenized-trading-of-their-shares-on-okxice-418859",
+    "https://www.vedomosti.ru/society/news/2026/10/17/1237936-vnukovo-domodedovo",
+    "https://www.kommersant.ru/doc/9041188",
+    "https://t.me/markettwits/389294",
+    "https://tass.ru/proisshestviya/28225955",
+    "https://www.rbc.ru/rbcfreenews/6ad023754510fcf631e0949c",
+    "https://t.me/banksta/103600",
+    "https://www.interfax.ru/moscow/1123203",
+    "https://www.vedomosti.ru/business/news/2026/10/17/1237935-vozmozhnost-vozobnovit-postavki",
+    "https://www.rbc.ru/politics/04/10/2026/6ac26c149da7016d7cc6b858",
+    "https://www.rbc.ru/photoreport/17/10/2026/6ad3b7c59a794782095d83a4",
+    "https://thedefiant.io/news/regulation/french-assembly-backs-tax-on-crypto-to-stablecoin-swaps-by-one-vote",
+    "https://t.me/interfaxonline/80271",
+    "https://www.kommersant.ru/doc/9041187",
+    "https://www.interfax.ru/business/1123202",
+    "https://tass.ru/ekonomika/28225951",
+    "https://tass.ru/proisshestviya/28225949",
+    "https://tass.ru/sport/28225947",
+    "https://www.rbc.ru/politics/05/07/2026/6a4a80029a7947aedcd05a1d",
+    "https://t.me/markettwits/389293",
+    "https://t.me/rbc_news/158895",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225939",
+    "https://tass.ru/sport/28225945",
     "https://t.me/rbc_news/158894",
-    "https://t.me/thebell_io/39520",
-    "https://www.kommersant.ru/doc/9041184",
-    "https://t.me/interfaxonline/80270",
-    "https://t.me/banksta/103599",
-    "https://tass.ru/sport/28225935",
-    "https://tass.ru/ekonomika/28225927",
-    "https://t.me/banksta/103590",
-    "https://tass.ru/ekonomika/28225931",
-    "https://tass.ru/ekonomika/28225925",
-    "https://tass.ru/proisshestviya/28225923",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237934-lavrov-pribil",
-    "https://www.interfax.ru/russia/1123201",
-    "https://tass.ru/sport/28225929",
-    "https://tass.ru/obschestvo/28225905",
-    "https://tass.ru/politika/28225915",
-    "https://t.me/markettwits/389292",
-    "https://www.interfax.ru/business/1123200",
-    "https://t.me/cbrstocks/83406",
-    "https://www.rbc.ru/politics/17/10/2026/6ad3c4b607ac93d2f9a87f34",
-    "https://tass.ru/sport/28225921",
-    "https://www.kommersant.ru/doc/9041182",
-    "https://t.me/markettwits/389291",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237933-ne-menee-17-pogibli",
-    "https://www.interfax.ru/world/1123199",
-    "https://cryptoslate.com/who-handled-your-wallet-before-you-did/",
-    "https://t.me/rbc_news/158893",
-    "https://tass.ru/ekonomika/28225685",
-    "https://tass.ru/politika/28225907",
-    "https://www.kommersant.ru/doc/9041181",
-    "https://t.me/markettwits/389290",
-    "https://www.interfax.ru/russia/1123197"
+    "https://tass.ru/proisshestviya/28225943",
+    "https://tass.ru/proisshestviya/28225941",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225937",
+    "https://t.me/thebell_io/39520"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-17T04:00:54.556410+00:00",
-      "Корабли России и Индии провели совместные учения в заливе Петра Великого"
-    ],
-    [
-      "2026-10-17T05:00:55.247319+00:00",
-      "Собянин сообщил об уничтожении 144 беспилотников на подлете к Москве"
-    ],
-    [
-      "2026-10-17T05:00:55.247319+00:00",
-      "Индекс Мосбиржи растет 4 недели подряд: +1,63% до 2425 пунктов"
-    ],
-    [
-      "2026-10-17T05:00:55.247319+00:00",
-      "Спотовые биткоин- и эфириум-ETF зафиксировали чистый отток средств"
-    ],
-    [
-      "2026-10-17T05:00:55.247319+00:00",
-      "Циан рекомендовал дивиденды за 9 месяцев 2026 года с доходностью 4,9%"
-    ],
     [
       "2026-10-17T05:00:55.247319+00:00",
       "Финляндия ввела временные ограничения на полеты и судоходство в Финском заливе"
@@ -1647,6 +1628,26 @@
     [
       "2026-10-17T19:30:55.195714+00:00",
       "Стоимость новогодних корпоративов в РФ выросла на 16% за год"
+    ],
+    [
+      "2026-10-17T20:00:57.553362+00:00",
+      "США предложили Европе возобновить крупные закупки газа из РФ"
+    ],
+    [
+      "2026-10-17T20:00:57.553362+00:00",
+      "Силы ПВО сбили 12 беспилотников на подлете к Москве"
+    ],
+    [
+      "2026-10-17T20:00:57.553362+00:00",
+      "Новак: высвобождение запасов МЭА не покрывает дефицит нефти"
+    ],
+    [
+      "2026-10-17T20:00:57.553362+00:00",
+      "Компании выступают против токенизированной торговли на OKXICE"
+    ],
+    [
+      "2026-10-17T20:00:57.553362+00:00",
+      "Во Франции предложили ввести налог на обмен криптовалюты на стейблкоины"
     ]
   ]
 }
