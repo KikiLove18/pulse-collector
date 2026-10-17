@@ -974,7 +974,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T14:00:54.227701+00:00",
+  "breaking_ts": "2026-10-17T14:30:56.255123+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 4,
@@ -988,50 +988,36 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/sport/28225541",
+    "https://tass.ru/obschestvo/28225539",
+    "https://tass.ru/obschestvo/28225531",
+    "https://tass.ru/sport/28225537",
+    "https://tass.ru/sport/28225533",
+    "https://www.rbc.ru/photoslider/6ad383f09a7947331213315d",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225527",
+    "https://www.kommersant.ru/doc/9041147",
+    "https://t.me/nainspire/5529",
+    "https://t.me/invest_zonaa/39043",
+    "https://www.rbc.ru/society/17/10/2026/6ad38262087ac9dd313f0edb",
+    "https://tass.ru/sport/28225525",
+    "https://tass.ru/sport/28225523",
+    "https://tass.ru/obschestvo/28225515",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237914-v-moldavii-zaveli-delo",
+    "https://www.rbc.ru/society/17/10/2026/6ad357589266067dc0d9248e",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225513",
+    "https://tass.ru/sport/28225519",
+    "https://t.me/interfaxonline/80267",
+    "https://t.me/rbc_news/158885",
+    "https://www.interfax.ru/world/1123184",
+    "https://tass.ru/proisshestviya/28225511",
+    "https://tass.ru/obschestvo/28225507",
+    "https://t.me/headlines_for_traders/86898",
+    "https://t.me/banksta/103573",
+    "https://t.me/markettwits/389286",
+    "https://tass.ru/proisshestviya/28225503",
     "https://www.coindesk.com/business/2026/10/17/polygon-sees-coinme-acquisition-as-entry-to-payments-sector-dominated-by-visa-stripe",
     "https://tass.ru/obschestvo/28225501",
-    "https://www.rbc.ru/sport/17/10/2026/6ad3768dc7d012aeaa871eab",
-    "https://tass.ru/obschestvo/28225495",
-    "https://t.me/whale_alert_io/103998",
-    "https://www.kommersant.ru/doc/9041143",
-    "https://www.rbc.ru/politics/11/10/2026/6acab7caa00daf4493f1b441",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225489",
-    "https://www.interfax.ru/world/1123183",
-    "https://tass.ru/sport/28225499",
-    "https://tass.ru/sport/28225497",
-    "https://t.me/markettwits/389285",
-    "https://tass.ru/ekonomika/28225493",
-    "https://tass.ru/sport/28225491",
-    "https://t.me/WatcherGuru/15544",
-    "https://www.kommersant.ru/doc/9041142",
-    "https://www.rbc.ru/economics/05/10/2026/6ac3867d2134370ed9c973d4",
-    "https://t.me/rbc_news/158884",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237913-protestuyuschie-pronikli",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225487",
-    "https://t.me/interfaxonline/80266",
-    "https://www.kommersant.ru/doc/9041134",
-    "https://t.me/markettwits/389284",
-    "https://www.sport-interfax.ru/1123182",
-    "https://www.rbc.ru/rbcfreenews/6ac52938fc3262c47af581ca",
-    "https://tass.ru/obschestvo/28225485",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225483",
-    "https://t.me/headlines_for_traders/86897",
-    "https://tass.ru/ekonomika/28225475",
-    "https://tass.ru/kultura/28225481",
-    "https://www.interfax.ru/world/1123181",
-    "https://tass.ru/proisshestviya/28225479",
-    "https://t.me/banksta/103572",
-    "https://cryptoslate.com/binance-will-shut-its-mining-pool-on-nov-10-giving-miners-a-deadline-to-move/",
-    "https://tass.ru/politika/28225471",
-    "https://tass.ru/obschestvo/28225469",
-    "https://tass.ru/obschestvo/28225477",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225463",
-    "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://t.me/BitcoinMagazineTelegram/10855",
-    "https://tass.ru/proisshestviya/28225459",
-    "https://tass.ru/sport/28225473",
-    "https://t.me/thebell_io/39519",
-    "https://tass.ru/kultura/28225439"
+    "https://www.rbc.ru/sport/17/10/2026/6ad3768dc7d012aeaa871eab"
   ],
   "ai_dead": {
     "date": "2026-10-17",
@@ -1637,6 +1623,26 @@
     [
       "2026-10-17T14:00:54.227701+00:00",
       "Илон Маск пообещал наделить сознанием летающий спорткар Tesla Roadster"
+    ],
+    [
+      "2026-10-17T14:30:56.255123+00:00",
+      "Венгрия попросит о продлении исключения из санкций США по нефти из РФ"
+    ],
+    [
+      "2026-10-17T14:30:56.255123+00:00",
+      "В аэропортах Москвы задержаны более 100 авиарейсов"
+    ],
+    [
+      "2026-10-17T14:30:56.255123+00:00",
+      "Президент Египта Абдель Фаттах ас-Сиси объявил об уходе в 2030 году"
+    ],
+    [
+      "2026-10-17T14:30:56.255123+00:00",
+      "В Японии остановили энергоблок АЭС «Онагава» из-за утечки"
+    ],
+    [
+      "2026-10-17T14:30:56.255123+00:00",
+      "Polygon приобретает Coinme для выхода на рынок платежей"
     ]
   ]
 }
