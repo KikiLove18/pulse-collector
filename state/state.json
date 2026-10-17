@@ -974,80 +974,68 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T14:30:56.255123+00:00",
+  "breaking_ts": "2026-10-17T15:00:56.550428+00:00",
   "news_now": {
     "day": "2026-10-17",
-    "day_count": 4,
+    "day_count": 5,
     "urgent_count": 0,
-    "last": "2026-10-17T14:00:54.227701+00:00",
+    "last": "2026-10-17T15:00:56.550428+00:00",
     "titles": [
       "Трамп приостановил действие антироссийских санкций",
       "Трамп приостановил введение новых жестких санкций против России",
       "Танкер подорвался на мине в Ормузском проливе",
-      "Второй за сутки супертанкер подорвался на мине в Ормузском проливе"
+      "Второй за сутки супертанкер подорвался на мине в Ормузском проливе",
+      "Иран передал США план открытия Ормузского пролива"
     ]
   },
   "news_seen": [
+    "https://www.coindesk.com/business/2026/10/17/citrini-sees-a-tokenization-boom-the-harder-question-is-who-profits",
+    "https://oilprice.com/Energy/Energy-General/Bolivias-Energy-Crisis-Deepens-as-Natural-Gas-Reserves-Run-Dry.html",
+    "https://tass.ru/proisshestviya/28225587",
+    "https://tass.ru/sport/28225589",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237918-madyar-prizval-prodlit-isklyuchenie",
+    "https://tass.ru/proisshestviya/28225585",
+    "https://www.rbc.ru/politics/27/09/2026/6ab916a1c1708647dd56debf",
+    "https://tass.ru/proisshestviya/28225581",
+    "https://t.me/forklog/50304",
+    "https://tass.ru/proisshestviya/28225583",
+    "https://t.me/rbc_news/158886",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225577",
+    "https://www.vedomosti.ru/society/news/2026/10/17/1237917-v-aeroportah-aviauzla",
+    "https://tass.ru/politika/28225571",
+    "https://www.interfax.ru/world/1123185",
+    "https://www.rbc.ru/sport/09/10/2026/6ac8ec069a794749d6c03694",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225569",
+    "https://www.interfax.ru/russia/1123187",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225565",
+    "https://tass.ru/sport/28225573",
+    "https://www.interfax.ru/russia/1123186",
+    "https://tass.ru/ekonomika/28225561",
+    "https://www.rbc.ru/rbcfreenews/6ac2f00f8bc1093a3dc07599",
+    "https://www.rbc.ru/politics/26/09/2026/6ab81022ab6fe5afbdeb3213",
+    "https://tass.ru/sport/28225563",
+    "https://tass.ru/ekonomika/28225549",
+    "https://tass.ru/obschestvo/28225547",
+    "https://tass.ru/armiya-i-opk/28225553",
+    "https://tass.ru/armiya-i-opk/28225555",
+    "https://tass.ru/armiya-i-opk/28225551",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225543",
+    "https://tass.ru/obschestvo/28225545",
+    "https://www.rbc.ru/politics/06/11/2025/690bba969a79473c1b69a42b",
+    "https://www.investing.com/news/stock-market-news/deepseek-releases-ai-model-update-opens-search-apis-to-all-users-4955445",
+    "https://www.kommersant.ru/doc/9041150",
+    "https://t.me/banksta/103574",
+    "https://www.vedomosti.ru/society/news/2026/10/17/1237916-lev-xiv-pokinul-bolnitsu",
+    "https://t.me/headlines_for_traders/86899",
     "https://tass.ru/sport/28225541",
     "https://tass.ru/obschestvo/28225539",
-    "https://tass.ru/obschestvo/28225531",
-    "https://tass.ru/sport/28225537",
-    "https://tass.ru/sport/28225533",
-    "https://www.rbc.ru/photoslider/6ad383f09a7947331213315d",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225527",
-    "https://www.kommersant.ru/doc/9041147",
-    "https://t.me/nainspire/5529",
-    "https://t.me/invest_zonaa/39043",
-    "https://www.rbc.ru/society/17/10/2026/6ad38262087ac9dd313f0edb",
-    "https://tass.ru/sport/28225525",
-    "https://tass.ru/sport/28225523",
-    "https://tass.ru/obschestvo/28225515",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237914-v-moldavii-zaveli-delo",
-    "https://www.rbc.ru/society/17/10/2026/6ad357589266067dc0d9248e",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225513",
-    "https://tass.ru/sport/28225519",
-    "https://t.me/interfaxonline/80267",
-    "https://t.me/rbc_news/158885",
-    "https://www.interfax.ru/world/1123184",
-    "https://tass.ru/proisshestviya/28225511",
-    "https://tass.ru/obschestvo/28225507",
-    "https://t.me/headlines_for_traders/86898",
-    "https://t.me/banksta/103573",
-    "https://t.me/markettwits/389286",
-    "https://tass.ru/proisshestviya/28225503",
-    "https://www.coindesk.com/business/2026/10/17/polygon-sees-coinme-acquisition-as-entry-to-payments-sector-dominated-by-visa-stripe",
-    "https://tass.ru/obschestvo/28225501",
-    "https://www.rbc.ru/sport/17/10/2026/6ad3768dc7d012aeaa871eab"
+    "https://tass.ru/obschestvo/28225531"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-16T14:31:01.786547+00:00",
-      "Tesla и SpaceX могут объявить о планах по слиянию до конца декабря"
-    ],
-    [
-      "2026-10-16T14:31:01.786547+00:00",
-      "Минфин США попросил РФПИ помочь с реализацией дизельной сделки"
-    ],
-    [
-      "2026-10-16T14:31:01.786547+00:00",
-      "Продажи электрокаров в России в сентябре выросли на 155%"
-    ],
-    [
-      "2026-10-16T14:31:01.786547+00:00",
-      "Фондовый рынок Индонезии пережил сильнейшее падение за 30 лет"
-    ],
-    [
-      "2026-10-16T14:31:01.786547+00:00",
-      "Anthropic столкнулась с призывами отложить IPO из-за рисков безопасности ИИ"
-    ],
-    [
-      "2026-10-16T14:31:01.786547+00:00",
-      "Белый дом отдал приказ ограничить использование Украиной Starshield"
-    ],
     [
       "2026-10-16T17:30:57.685816+00:00",
       "Цена нефти Brent впервые с сентября превысила $109 за баррель"
@@ -1643,6 +1631,22 @@
     [
       "2026-10-17T14:30:56.255123+00:00",
       "Polygon приобретает Coinme для выхода на рынок платежей"
+    ],
+    [
+      "2026-10-17T15:00:56.550428+00:00",
+      "Иран передал США семидневный план открытия Ормузского пролива"
+    ],
+    [
+      "2026-10-17T15:00:56.550428+00:00",
+      "Словакия и Венгрия отказались участвовать в новом кредите ЕС для Украины"
+    ],
+    [
+      "2026-10-17T15:00:56.550428+00:00",
+      "Минобороны РФ заявило о поражении сухогруза с военным грузом в Черном море"
+    ],
+    [
+      "2026-10-17T15:00:56.550428+00:00",
+      "Энергетический кризис в Боливии усугубляется из-за истощения запасов газа"
     ]
   ]
 }
