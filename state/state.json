@@ -974,86 +974,65 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T07:00:56.786781+00:00",
+  "breaking_ts": "2026-10-17T07:30:59.157486+00:00",
   "news_now": {
     "day": "2026-10-17",
-    "day_count": 2,
+    "day_count": 3,
     "urgent_count": 0,
-    "last": "2026-10-17T06:30:55.365873+00:00",
+    "last": "2026-10-17T07:30:59.157486+00:00",
     "titles": [
       "Трамп приостановил действие антироссийских санкций",
-      "Трамп приостановил введение новых жестких санкций против России"
+      "Трамп приостановил введение новых жестких санкций против России",
+      "Танкер подорвался на мине в Ормузском проливе"
     ]
   },
   "news_seen": [
+    "https://tass.ru/sport/28224929",
+    "https://tass.ru/obschestvo/28224927",
+    "https://tass.ru/mezhdunarodnaya-panorama/28224869",
+    "https://t.me/bitkogan_hotline/27891",
+    "https://t.me/WatcherGuru/15542",
+    "https://tass.ru/obschestvo/28224871",
+    "https://t.me/markettwits/389271",
+    "https://www.rbc.ru/rbcfreenews/6ac8a87e47641e26f244655f",
+    "https://tass.ru/mezhdunarodnaya-panorama/28224915",
+    "https://t.me/rbc_news/158871",
+    "https://tass.ru/armiya-i-opk/28224923",
+    "https://t.me/headlines_for_traders/86883",
+    "https://t.me/headlines_for_traders/86884",
+    "https://tass.ru/politika/28224917",
+    "https://www.interfax.ru/russia/1123152",
+    "https://www.kommersant.ru/doc/9041022",
+    "https://t.me/alfa_investments/8471",
+    "https://t.me/markettwits/389270",
+    "https://www.kommersant.ru/doc/9041026",
+    "https://t.me/banksta/103560",
+    "https://www.rbc.ru/business/16/10/2026/6ad1adf4c8cd5096467a3cfb",
+    "https://www.interfax.ru/business/1123151",
+    "https://www.interfax.ru/russia/1123148",
+    "https://tass.ru/proisshestviya/28224909",
+    "https://t.me/headlines_for_traders/86882",
+    "https://t.me/forklog/50298",
+    "https://www.interfax.ru/russia/1123150",
+    "https://tass.ru/politika/28224865",
+    "https://tass.ru/sport/28224907",
+    "https://t.me/markettwits/389269",
+    "https://tass.ru/obschestvo/28224873",
+    "https://www.rbc.ru/rbcfreenews/6ad30b2dbf1fd39591b9465a",
+    "https://cryptoslate.com/bitcoins-inflation-hedge-has-a-hidden-cost-and-leverage-makes-it-worse/",
+    "https://tass.ru/nedvizhimost/28224793",
+    "https://tass.ru/obschestvo/28221681",
     "https://tass.ru/mezhdunarodnaya-panorama/28224791",
     "https://tass.ru/obschestvo/28224803",
     "https://tass.ru/mezhdunarodnaya-panorama/28224781",
     "https://www.vedomosti.ru/politics/news/2026/10/17/1237879-neftyanoi-tanker-podorvalsya",
-    "https://t.me/markettwits/389268",
-    "https://tass.ru/obschestvo/28224817",
-    "https://www.kommersant.ru/doc/9040999",
-    "https://tass.ru/proisshestviya/28224731",
-    "https://tass.ru/ekonomika/28224769",
-    "https://tass.ru/proisshestviya/28224797",
-    "https://tass.ru/proisshestviya/28224863",
-    "https://t.me/markettwits/389267",
-    "https://t.me/markettwits/389266",
-    "https://www.rbc.ru/politics/06/10/2026/6ac53f809a794757e2105882",
-    "https://tass.ru/armiya-i-opk/28224813",
-    "https://tass.ru/obschestvo/28224861",
-    "https://tass.ru/obschestvo/28224827",
-    "https://t.me/rbc_news/158870",
-    "https://www.interfax.ru/russia/1123149",
-    "https://tass.ru/obschestvo/28224859",
-    "https://www.rbc.ru/sport/26/09/2026/6ab784eb9a794767200683d7",
-    "https://www.rbc.ru/politics/05/10/2026/6ac2d6a91a7918fe1466d597",
-    "https://www.coindesk.com/tech/2026/10/17/wow-it-s-a-real-discovery-claude-cracks-a-25-year-nsa-number-mystery",
-    "https://tass.ru/proisshestviya/28224851",
-    "https://www.rbc.ru/rbcfreenews/69f611b09a79473753938809",
-    "https://tass.ru/obschestvo/28224845",
-    "https://tass.ru/ekonomika/28224841",
-    "https://t.me/headlines_for_traders/86880",
-    "https://tass.ru/proisshestviya/28224843",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237878-putin-pozdravil",
-    "https://tass.ru/sport/28224847",
-    "https://tass.ru/proisshestviya/28224849",
-    "https://tass.ru/sport/28224835",
-    "https://tass.ru/proisshestviya/28224833",
-    "https://t.me/thebell_io/39517",
-    "https://www.rbc.ru/politics/13/03/2026/69b3e9029a79473e2e904dbe",
-    "https://tass.ru/proisshestviya/28224831",
-    "https://www.interfax.ru/russia/1123145"
+    "https://t.me/markettwits/389268"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-16T07:30:55.128377+00:00",
-      "Совет директоров Циана рекомендовал дивиденды за 9 месяцев 2026 года в 33 рубля на акцию"
-    ],
-    [
-      "2026-10-16T07:30:55.128377+00:00",
-      "Минпромторг утвердил технологический сбор на ноутбуки и смартфоны с 1 декабря"
-    ],
-    [
-      "2026-10-16T07:30:55.128377+00:00",
-      "Индекс Мосбиржи подрос на 0,28%, бумаги «Полюса» прибавили 2,6%"
-    ],
-    [
-      "2026-10-16T07:30:55.128377+00:00",
-      "Tesla представила летающий спорткар Roadster с ускорителями SpaceX"
-    ],
-    [
-      "2026-10-16T07:30:55.128377+00:00",
-      "Индонезийские акции рухнули на фоне предупреждения MSCI о возможному исключении из индексов"
-    ],
-    [
-      "2026-10-16T07:30:55.128377+00:00",
-      "Выработка электроэнергии ОГК-2 за девять месяцев 2026 года снизилась на 6,9%"
-    ],
     [
       "2026-10-16T08:00:58.366165+00:00",
       "ЕЦБ одобрил увеличение доли UniCredit в Commerzbank выше 30%"
@@ -1613,6 +1592,26 @@
     [
       "2026-10-17T07:00:56.786781+00:00",
       "ИИ Claude расшифровал 25-летнее секретное число АНБ США"
+    ],
+    [
+      "2026-10-17T07:30:59.157486+00:00",
+      "Трамп распорядился временно не применять часть санкций против РФ"
+    ],
+    [
+      "2026-10-17T07:30:59.157486+00:00",
+      "Силы ПВО перехватили 56 беспилотников над Калужской областью"
+    ],
+    [
+      "2026-10-17T07:30:59.157486+00:00",
+      "Кабмин выделил 1,7 млрд рублей на региональные программы экспорта"
+    ],
+    [
+      "2026-10-17T07:30:59.157486+00:00",
+      "Владельцы Xiaomi в РФ показали максимум по запросам микрозаймов"
+    ],
+    [
+      "2026-10-17T07:30:59.157486+00:00",
+      "Илон Маск заявил о создании «разумного» родстера Tesla"
     ]
   ]
 }
