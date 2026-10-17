@@ -974,50 +974,52 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T06:01:00.061008+00:00",
+  "breaking_ts": "2026-10-17T06:30:55.365873+00:00",
   "news_now": {
     "day": "2026-10-17",
-    "day_count": 1,
+    "day_count": 2,
     "urgent_count": 0,
-    "last": "2026-10-17T05:31:01.783560+00:00",
+    "last": "2026-10-17T06:30:55.365873+00:00",
     "titles": [
-      "Трамп приостановил действие антироссийских санкций"
+      "Трамп приостановил действие антироссийских санкций",
+      "Трамп приостановил введение новых жестких санкций против России"
     ]
   },
   "news_seen": [
+    "https://t.me/thebell_io/39517",
+    "https://www.rbc.ru/politics/13/03/2026/69b3e9029a79473e2e904dbe",
+    "https://tass.ru/proisshestviya/28224831",
+    "https://tass.ru/mezhdunarodnaya-panorama/28224825",
+    "https://tass.ru/obschestvo/28224829",
+    "https://www.interfax.ru/russia/1123147",
+    "https://tass.ru/proisshestviya/28224823",
+    "https://t.me/banksta/103559",
+    "https://www.interfax.ru/world/1123146",
+    "https://www.interfax.ru/russia/1123144",
+    "https://tass.ru/obschestvo/28224815",
+    "https://t.me/rbc_news/158869",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237877-sbili-610-bespilotnikov",
+    "https://t.me/headlines_for_traders/86879",
+    "https://tass.ru/proisshestviya/28224811",
+    "https://www.rbc.ru/sport/11/10/2026/6acba8809a79472e1ac185ed",
+    "https://tass.ru/mezhdunarodnaya-panorama/28224713",
+    "https://tass.ru/proisshestviya/28224807",
+    "https://tass.ru/politika/28224787",
+    "https://www.rbc.ru/rbcfreenews/6ad18caffe5156c3455b3a88",
+    "https://tass.ru/obschestvo/28224785",
+    "https://t.me/headlines_for_traders/86878",
+    "https://tass.ru/politika/28224799",
+    "https://t.me/markettwits/389265",
+    "https://www.interfax.ru/world/1123143",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237876-dmitriev-nazval",
+    "https://tass.ru/sport/28224795",
+    "https://www.rbc.ru/quote/17/10/2026/6ad1f6df9a7947d655c646a3",
     "https://t.me/headlines_for_traders/86877",
     "https://t.me/incrypted/33030",
+    "https://tass.ru/obschestvo/28223311",
     "https://thedefiant.io/news/tokens/celestia-s-tia-jumps-23-in-a-day-extending-four-week-rally",
     "https://tass.ru/obschestvo/28224711",
-    "https://tass.ru/armiya-i-opk/28224777",
-    "https://t.me/whale_alert_io/103994",
-    "https://t.me/whale_alert_io/103993",
-    "https://tass.ru/proisshestviya/28224773",
-    "https://www.interfax.ru/russia/1123142",
-    "https://www.rbc.ru/politics/09/10/2026/6ac8ddecef402648397549aa",
-    "https://www.kommersant.ru/doc/9041005",
-    "https://tass.ru/ekonomika/28224767",
-    "https://www.rbc.ru/politics/17/10/2026/6ad3060acea7d599fa996f03",
-    "https://tass.ru/obschestvo/28224749",
-    "https://www.interfax.ru/russia/1123141",
-    "https://tass.ru/obschestvo/28224755",
-    "https://www.vedomosti.ru/society/news/2026/10/17/1237875-aeroporti-moskvi",
-    "https://www.interfax.ru/russia/1123140",
-    "https://www.rbc.ru/politics/17/10/2026/6ad3060acea7d599fa996f03",
-    "https://www.interfax.ru/russia/1123139",
-    "https://tass.ru/kosmos/28224621",
-    "https://t.me/rbc_news/158868",
-    "https://tass.ru/ekonomika/28224763",
-    "https://www.interfax.ru/russia/1123138",
-    "https://t.me/rbc_news/158867",
-    "https://t.me/headlines_for_traders/86876",
-    "https://tass.ru/armiya-i-opk/28224761",
-    "https://tass.ru/nedvizhimost/28224693",
-    "https://t.me/interfaxonline/80258",
-    "https://tass.ru/sport/28224753",
-    "https://www.interfax.ru/world/1123136",
-    "https://tass.ru/proisshestviya/28224743",
-    "https://thedefiant.io/news/cefi/bitget-to-end-services-for-some-users-with-account-specific-deadlines"
+    "https://tass.ru/armiya-i-opk/28224777"
   ],
   "ai_dead": {
     "date": "2026-10-16",
@@ -1619,6 +1621,22 @@
     [
       "2026-10-17T06:01:00.061008+00:00",
       "Крупные переводы токена HYPE зафиксированы на рынке"
+    ],
+    [
+      "2026-10-17T06:30:55.365873+00:00",
+      "Трамп временно отложил введение жестких пошлин и санкций против России"
+    ],
+    [
+      "2026-10-17T06:30:55.365873+00:00",
+      "РБК: Сделка по дизелю между Россией и США поддержала нефтяников"
+    ],
+    [
+      "2026-10-17T06:30:55.365873+00:00",
+      "McKinsey: спрос на медь будет расти на 15% ежегодно до 2030 года"
+    ],
+    [
+      "2026-10-17T06:30:55.365873+00:00",
+      "Акции «Полюса» показали рост на 6,53% по итогам сессий"
     ]
   ]
 }
