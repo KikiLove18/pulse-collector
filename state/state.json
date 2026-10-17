@@ -974,7 +974,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T11:30:54.488691+00:00",
+  "breaking_ts": "2026-10-17T12:00:55.412637+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 3,
@@ -987,43 +987,41 @@
     ]
   },
   "news_seen": [
+    "https://www.coindesk.com/business/2026/10/14/banks-could-slow-stablecoin-growth-by-paying-savers-more-bis-paper-finds",
+    "https://tass.ru/proisshestviya/28225317",
+    "https://tass.ru/ekonomika/28225309",
+    "https://tass.ru/sport/28225299",
+    "https://tass.ru/sport/28225321",
+    "https://www.rbc.ru/politics/02/05/2026/69f5ed6b9a794780091c9c25",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225303",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225307",
+    "https://tass.ru/obschestvo/28225293",
+    "https://t.me/rbc_news/158880",
+    "https://tass.ru/obschestvo/28225301",
+    "https://tass.ru/politika/28225295",
+    "https://tass.ru/armiya-i-opk/28225297",
+    "https://tass.ru/sport/28225291",
+    "https://www.kommersant.ru/doc/9041109",
+    "https://t.me/banksta/103569",
+    "https://tass.ru/proisshestviya/28225287",
+    "https://www.rbc.ru/politics/08/10/2026/6ac7f40baf10ee1648aaebfe",
+    "https://www.interfax.ru/world/1123173",
+    "https://www.rbc.ru/sport/15/10/2026/6ad0f52b9a79472b243c5a92",
+    "https://tass.ru/obschestvo/28225279",
+    "https://www.rbc.ru/sport/27/09/2026/6ab93f619a7947659d4701fc",
+    "https://tass.ru/obschestvo/28225273",
+    "https://tass.ru/obschestvo/28225277",
+    "https://tass.ru/sport/28225275",
+    "https://tass.ru/kultura/28225267",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237902-ob-obuchenii-dolzhnostnih-lits",
+    "https://www.kommersant.ru/doc/9041108",
     "https://t.me/banksta/103568",
+    "https://tass.ru/sport/28225271",
+    "https://www.marketwatch.com/story/it-was-another-great-week-for-the-average-stock-as-market-leadership-shifts-away-from-tech-8e8516da?mod=mw_rss_topstories",
     "https://tass.ru/mezhdunarodnaya-panorama/28225265",
     "https://tass.ru/ekonomika/28225263",
     "https://www.kommersant.ru/doc/9041106",
-    "https://tass.ru/kultura/28225261",
-    "https://www.rbc.ru/society/12/10/2026/6acd41b28b1c649874a326d0",
-    "https://www.rbc.ru/technology_and_media/15/09/2026/6aa967fc3d5ee67cfce46d98",
-    "https://tass.ru/sport/28225259",
-    "https://tass.ru/obschestvo/28225247",
-    "https://www.interfax.ru/russia/1123172",
-    "https://tass.ru/proisshestviya/28225255",
-    "https://tass.ru/obschestvo/28225241",
-    "https://tass.ru/armiya-i-opk/28225249",
-    "https://www.vedomosti.ru/business/news/2026/10/17/1237889-warner-bros-oformila",
-    "https://www.rbc.ru/politics/16/10/2026/6ad1ff09b3b4fe61c9b8f850",
-    "https://tass.ru/proisshestviya/28225231",
-    "https://tass.ru/sport/28225245",
-    "https://tass.ru/obschestvo/28225243",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225239",
-    "https://www.rbc.ru/sport/06/10/2026/6ac4f5419a79470e53fc88b9",
-    "https://tass.ru/proisshestviya/28225209",
-    "https://tass.ru/kultura/28225219",
-    "https://tass.ru/proisshestviya/28225237",
-    "https://t.me/headlines_for_traders/86895",
-    "https://www.kommersant.ru/doc/9041102",
-    "https://t.me/forklog/50302",
-    "https://www.rbc.ru/politics/16/10/2026/6ad264e3c458c0ebab6671c3",
-    "https://www.interfax.ru/world/1123171",
-    "https://tass.ru/politika/28225229",
-    "https://cryptoslate.com/the-hidden-trade-behind-strives-16-7-bitcoin-income-offer/",
-    "https://www.marketwatch.com/story/its-a-wait-and-see-situation-im-63-and-diagnosed-with-lymphoma-should-i-take-my-social-security-next-year-ea88b419?mod=mw_rss_topstories",
-    "https://www.marketwatch.com/story/fed-interest-rate-decision-this-month-is-a-closer-call-than-markets-think-f96ccf95?mod=mw_rss_topstories",
-    "https://tass.ru/armiya-i-opk/28225167",
-    "https://tass.ru/proisshestviya/28225233",
-    "https://t.me/headlines_for_traders/86894",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237900-papa-rimskii-gotov-k-vipiske",
-    "https://t.me/banksta/103567"
+    "https://tass.ru/kultura/28225261"
   ],
   "ai_dead": {
     "date": "2026-10-17",
@@ -1613,6 +1611,30 @@
     [
       "2026-10-17T11:30:54.488691+00:00",
       "На границе Польши и Украины образовались 40-часовые очереди"
+    ],
+    [
+      "2026-10-17T12:00:55.412637+00:00",
+      "BIS: банки могут замедлить рост стейблкоинов повышенными ставками по вкладам"
+    ],
+    [
+      "2026-10-17T12:00:55.412637+00:00",
+      "Венгрия намерена просить о продлении исключения из санкций США по нефти из РФ"
+    ],
+    [
+      "2026-10-17T12:00:55.412637+00:00",
+      "Канцлер Германии Фридрих Мерц заявил о возможном возвращении воинского призыва"
+    ],
+    [
+      "2026-10-17T12:00:55.412637+00:00",
+      "Всемирный банк: около 800 млн молодых людей рискуют остаться без работы"
+    ],
+    [
+      "2026-10-17T12:00:55.412637+00:00",
+      "The National: Британия и Франция испытывают дефицит систем ПВО для Саудовской Аравии"
+    ],
+    [
+      "2026-10-17T12:00:55.412637+00:00",
+      "MarketWatch: лидерство на рынке США смещается из технологического сектора"
     ]
   ]
 }
