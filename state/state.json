@@ -975,7 +975,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T18:00:58.495756+00:00",
+  "breaking_ts": "2026-10-17T18:30:56.661681+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 5,
@@ -990,61 +990,45 @@
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/politics/17/10/2026/6ad3bd9172dea80d50d9c0da",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225855",
+    "https://tass.ru/obschestvo/28225857",
+    "https://tass.ru/sport/28225875",
+    "https://tass.ru/sport/28225871",
+    "https://www.kommersant.ru/doc/9041178",
+    "https://tass.ru/ekonomika/28225865",
+    "https://t.me/banksta/103588",
+    "https://tass.ru/ekonomika/28225863",
+    "https://tass.ru/ekonomika/28225859",
+    "https://tass.ru/ekonomika/28225861",
+    "https://www.rbc.ru/sport/16/10/2026/6ad1eb6c41bed3109cbb54fb",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225849",
+    "https://tass.ru/ekonomika/28225853",
+    "https://tass.ru/ekonomika/28225851",
+    "https://www.rbc.ru/society/17/10/2026/6ad3b630ae0abdefbadf45e0",
+    "https://www.theblock.co/news/regulation/2026-10-17-turkey-confirms-hex-founder-richard-hearts-arrest-says-police-seized-7-15-million-and-six-cold-wallets-418852",
+    "https://tass.ru/ekonomika/28225847",
+    "https://tass.ru/sport/28225781",
+    "https://tass.ru/proisshestviya/28225845",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225841",
+    "https://www.kommersant.ru/doc/9041177",
+    "https://tass.ru/sport/28225843",
+    "https://tass.ru/proisshestviya/28225839",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237931-pyat-klyuchevih-chlenov",
+    "https://tass.ru/proisshestviya/28225837",
+    "https://tass.ru/proisshestviya/28225833",
+    "https://tass.ru/ekonomika/28225835",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225831",
+    "https://t.me/rbc_news/158890",
+    "https://tass.ru/proisshestviya/28225823",
     "https://tass.ru/proisshestviya/28225829",
-    "https://tass.ru/proisshestviya/28225827",
-    "https://t.me/whale_alert_io/103999",
-    "https://t.me/whale_alert_io/104000",
-    "https://tass.ru/proisshestviya/28225813",
-    "https://tass.ru/proisshestviya/28225815",
-    "https://www.investing.com/news/stock-market-news/mercedes-unveils-electric-suv-as-it-expands-premium-ev-lineup-4955521",
-    "https://tass.ru/sport/28225817",
-    "https://www.rbc.ru/society/21/05/2026/6a0f3dc39a794761eb6b23ed",
-    "https://t.me/nainspire/5530",
-    "https://www.kommersant.ru/doc/9041175",
-    "https://tass.ru/obschestvo/28225809",
-    "https://tass.ru/proisshestviya/28225807",
-    "https://t.me/banksta/103586",
-    "https://www.rbc.ru/rbcfreenews/6ad3880614d7ccaafcae0afd",
-    "https://www.rbc.ru/sport/13/10/2026/6acdb63d9a7947ce15285b4b",
-    "https://tass.ru/obschestvo/28225803",
-    "https://tass.ru/proisshestviya/28225799",
-    "https://www.kommersant.ru/doc/9041173",
-    "https://www.rbc.ru/politics/16/10/2026/6ad196ab7e0299393214b101",
-    "https://tass.ru/proisshestviya/28225789",
-    "https://tass.ru/proisshestviya/28225793",
-    "https://t.me/interfaxonline/80269",
-    "https://www.interfax.ru/russia/1123194",
-    "https://tass.ru/ekonomika/28225779",
-    "https://www.rbc.ru/politics/17/10/2026/6ad32a638c6fc667e013e6c7",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237930-posol-nazval-usloviya",
-    "https://tass.ru/proisshestviya/28225775",
-    "https://tass.ru/proisshestviya/28225783"
+    "https://tass.ru/proisshestviya/28225827"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-16T19:30:58.347889+00:00",
-      "Трамп заявил о желании видеть Путина на саммите G20 в Майами"
-    ],
-    [
-      "2026-10-16T19:30:58.347889+00:00",
-      "В ОМАНЕ предупредили об опасных веществах в контейнерах с затонувшего судна"
-    ],
-    [
-      "2026-10-16T20:00:55.573883+00:00",
-      "Новак оценил дефицит бензина на внутреннем рынке России в 5%"
-    ],
-    [
-      "2026-10-16T20:00:55.573883+00:00",
-      "Новак: мировой дисбаланс на рынке нефти оценивается в 4–6 млн б/с"
-    ],
-    [
-      "2026-10-16T20:00:55.573883+00:00",
-      "ИИ-агент OpenAI использовал чужие средства в тестовой сети Ethereum"
-    ],
     [
       "2026-10-16T20:30:57.323427+00:00",
       "Nasdaq показал худшую неделю с июня на фоне распродаж в ИИ-секторе"
@@ -1644,6 +1628,26 @@
     [
       "2026-10-17T18:00:58.495756+00:00",
       "Неактивный биткоин-адрес активировали после 13 лет"
+    ],
+    [
+      "2026-10-17T18:30:56.661681+00:00",
+      "Правительство РФ продлило сроки модернизации НПЗ до июля 2027 года"
+    ],
+    [
+      "2026-10-17T18:30:56.661681+00:00",
+      "Новак: первый танкер с российским дизелем отгружен на мировой рынок"
+    ],
+    [
+      "2026-10-17T18:30:56.661681+00:00",
+      "Лидеры ЕС обсудили новый кредит для Украины на фоне крупных расходов"
+    ],
+    [
+      "2026-10-17T18:30:56.661681+00:00",
+      "Хакеры взломали почту ХДС в Германии и разослали фишинговые письма"
+    ],
+    [
+      "2026-10-17T18:30:56.661681+00:00",
+      "В Турции задержали основателя Hex Ричарда Хайрта"
     ]
   ]
 }
