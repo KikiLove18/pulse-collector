@@ -974,55 +974,53 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T05:00:55.247319+00:00",
+  "breaking_ts": "2026-10-17T05:31:01.783560+00:00",
   "news_now": {
     "day": "2026-10-17",
-    "day_count": 0,
+    "day_count": 1,
     "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "last": "2026-10-17T05:31:01.783560+00:00",
+    "titles": [
+      "Трамп приостановил действие антироссийских санкций"
+    ]
   },
   "news_seen": [
-    "https://t.me/investfuture/15413",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237873-ob-unichtozhenii-144-bespilotnikov",
-    "https://www.investing.com/news/stock-market-news/nearly-12000-california-residents-bought-evs-using-state-rebate-program-4954764",
-    "https://tass.ru/obschestvo/28224669",
-    "https://tass.ru/nauka/28224639",
-    "https://tass.ru/ekonomika/28224631",
-    "https://www.kommersant.ru/doc/9040994",
-    "https://tass.ru/armiya-i-opk/28224665",
-    "https://tass.ru/proisshestviya/28224661",
-    "https://tass.ru/kosmos/28224545",
-    "https://tass.ru/ekonomika/28224659",
-    "https://t.me/headlines_for_traders/86873",
-    "https://tass.ru/sport/28224663",
-    "https://tass.ru/ekonomika/28224657",
-    "https://tass.ru/politika/28224653",
-    "https://tass.ru/armiya-i-opk/28224655",
-    "https://tass.ru/obschestvo/28224647",
-    "https://t.me/wublockchainenglish/26456",
-    "https://www.kommersant.ru/doc/9040993",
-    "https://tass.ru/nauka/28224627",
-    "https://www.interfax.ru/world/1123135",
-    "https://tass.ru/obschestvo/28224651",
-    "https://tass.ru/nedvizhimost/28224641",
-    "https://www.rbc.ru/politics/04/10/2026/6ac26c149da7016d7cc6b858",
-    "https://www.investing.com/news/stock-market-news/chinese-online-retailer-temu-agrees-to-data-privacy-restrictions-to-settle-texas-lawsuit-documents-say-4954577",
-    "https://www.interfax.ru/russia/1123134",
-    "https://tass.ru/sport/28224649",
-    "https://tass.ru/obschestvo/28224637",
-    "https://www.interfax.ru/russia/1123133",
-    "https://tass.ru/ekonomika/28224629",
-    "https://tass.ru/obschestvo/28224633",
-    "https://tass.ru/proisshestviya/28224635",
-    "https://tass.ru/ekonomika/28224619",
-    "https://t.me/wublockchainenglish/26455",
-    "https://tass.ru/armiya-i-opk/28224615",
-    "https://t.me/headlines_for_traders/86872",
-    "https://tass.ru/politika/28224625",
-    "https://tass.ru/obschestvo/28224607",
-    "https://tass.ru/armiya-i-opk/28224617",
-    "https://www.interfax.ru/russia/1123132"
+    "https://tass.ru/proisshestviya/28224743",
+    "https://thedefiant.io/news/cefi/bitget-to-end-services-for-some-users-with-account-specific-deadlines",
+    "https://www.rbc.ru/politics/22/09/2026/6ab2c1d7418f1a587f688efa",
+    "https://www.kommersant.ru/doc/9040998",
+    "https://tass.ru/armiya-i-opk/28224729",
+    "https://tass.ru/sport/28224725",
+    "https://tass.ru/armiya-i-opk/28224727",
+    "https://t.me/headlines_for_traders/86875",
+    "https://tass.ru/armiya-i-opk/28224721",
+    "https://tass.ru/armiya-i-opk/28224719",
+    "https://tass.ru/armiya-i-opk/28224717",
+    "https://tass.ru/armiya-i-opk/28224715",
+    "https://www.rbc.ru/politics/17/10/2026/6ad2fd85d5b755c598a013a9",
+    "https://www.vedomosti.ru/society/news/2026/10/17/1237874-poslednie-teplie-vihodnie-oseni",
+    "https://tass.ru/proisshestviya/28224695",
+    "https://tass.ru/politika/28224705",
+    "https://tass.ru/proisshestviya/28224709",
+    "https://tass.ru/politika/28224707",
+    "https://tass.ru/armiya-i-opk/28224681",
+    "https://tass.ru/armiya-i-opk/28224687",
+    "https://t.me/banksta/103558",
+    "https://tass.ru/ekonomika/28224697",
+    "https://www.kommersant.ru/doc/9040997",
+    "https://t.me/headlines_for_traders/86874",
+    "https://tass.ru/obschestvo/28224671",
+    "https://t.me/interfaxonline/80257",
+    "https://tass.ru/obschestvo/28224673",
+    "https://tass.ru/obschestvo/28224683",
+    "https://tass.ru/sport/28224691",
+    "https://t.me/rbc_news/158866",
+    "https://t.me/forklog/50297",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://www.rbc.ru/rbcfreenews/6ad0c00d36ccd8dc8f607e78",
+    "https://cryptoslate.com/cardano-shifts-26m-to-usdcx-as-bridge-controls-freeze-payouts/",
+    "https://tass.ru/armiya-i-opk/28224337",
+    "https://t.me/investfuture/15413"
   ],
   "ai_dead": {
     "date": "2026-10-16",
@@ -1624,6 +1622,26 @@
     [
       "2026-10-17T05:00:55.247319+00:00",
       "Финляндия ввела временные ограничения на полеты и судоходство в Финском заливе"
+    ],
+    [
+      "2026-10-17T05:31:01.783560+00:00",
+      "Трамп временно приостановил действие антироссийских санкций и пошлин"
+    ],
+    [
+      "2026-10-17T05:31:01.783560+00:00",
+      "Силы ПВО за ночь уничтожили 144 беспилотника на подлете к Москве"
+    ],
+    [
+      "2026-10-17T05:31:01.783560+00:00",
+      "Цена нефти Brent достигла $111 за баррель, обновив максимум"
+    ],
+    [
+      "2026-10-17T05:31:01.783560+00:00",
+      "Криптобиржа Bitget установила дедлайны закрытия счетов для ряда стран"
+    ],
+    [
+      "2026-10-17T05:31:01.783560+00:00",
+      "Cardano перевела $26 млн в USDCx из-за заморозки выплат моста"
     ]
   ]
 }
