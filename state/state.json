@@ -974,7 +974,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T04:00:54.556410+00:00",
+  "breaking_ts": "2026-10-17T05:00:55.247319+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 0,
@@ -983,45 +983,46 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/obschestvo/28224591",
-    "https://tass.ru/ekonomika/28224605",
-    "https://tass.ru/ekonomika/28224603",
-    "https://tass.ru/politika/28224601",
-    "https://tass.ru/ekonomika/28224597",
-    "https://tass.ru/obschestvo/28224599",
-    "https://www.interfax.ru/russia/1123131",
-    "https://www.interfax.ru/russia/1123130",
-    "https://www.kommersant.ru/doc/9040991",
-    "https://www.rbc.ru/politics/13/10/2026/6acdb3ea20ec329f009d8fa9",
-    "https://www.rbc.ru/rbcfreenews/6ab8fac63de438f101887dca",
-    "https://tass.ru/armiya-i-opk/28224589",
-    "https://tass.ru/obschestvo/28224571",
-    "https://t.me/headlines_for_traders/86871",
-    "https://tass.ru/ekonomika/28224573",
-    "https://tass.ru/armiya-i-opk/28224585",
-    "https://tass.ru/armiya-i-opk/28224581",
-    "https://tass.ru/armiya-i-opk/28224575",
-    "https://t.me/whale_alert_io/103992",
-    "https://tass.ru/armiya-i-opk/28224577",
-    "https://tass.ru/armiya-i-opk/28224579",
-    "https://www.rbc.ru/politics/09/10/2026/6ac9153f9a794724ca750f61",
-    "https://www.kommersant.ru/doc/9040990",
-    "https://tass.ru/obschestvo/28224567",
-    "https://tass.ru/ekonomika/28224565",
-    "https://tass.ru/ekonomika/28224559",
-    "https://www.interfax.ru/russia/1123129",
-    "https://tass.ru/obschestvo/28224529",
-    "https://tass.ru/obschestvo/28224557",
-    "https://www.rbc.ru/rbcfreenews/6ac99f4304cef06393a0e1dd",
-    "https://t.me/lookonchainchannel/10665",
-    "https://t.me/headlines_for_traders/86870",
-    "https://tass.ru/obschestvo/28224547",
-    "https://tass.ru/armiya-i-opk/28224537",
-    "https://tass.ru/armiya-i-opk/28224541",
-    "https://tass.ru/armiya-i-opk/28224543",
-    "https://tass.ru/obschestvo/28224549",
-    "https://tass.ru/armiya-i-opk/28224551",
-    "https://www.rbc.ru/business/08/10/2026/6abc985e95ce758f5ce083a6"
+    "https://t.me/investfuture/15413",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237873-ob-unichtozhenii-144-bespilotnikov",
+    "https://www.investing.com/news/stock-market-news/nearly-12000-california-residents-bought-evs-using-state-rebate-program-4954764",
+    "https://tass.ru/obschestvo/28224669",
+    "https://tass.ru/nauka/28224639",
+    "https://tass.ru/ekonomika/28224631",
+    "https://www.kommersant.ru/doc/9040994",
+    "https://tass.ru/armiya-i-opk/28224665",
+    "https://tass.ru/proisshestviya/28224661",
+    "https://tass.ru/kosmos/28224545",
+    "https://tass.ru/ekonomika/28224659",
+    "https://t.me/headlines_for_traders/86873",
+    "https://tass.ru/sport/28224663",
+    "https://tass.ru/ekonomika/28224657",
+    "https://tass.ru/politika/28224653",
+    "https://tass.ru/armiya-i-opk/28224655",
+    "https://tass.ru/obschestvo/28224647",
+    "https://t.me/wublockchainenglish/26456",
+    "https://www.kommersant.ru/doc/9040993",
+    "https://tass.ru/nauka/28224627",
+    "https://www.interfax.ru/world/1123135",
+    "https://tass.ru/obschestvo/28224651",
+    "https://tass.ru/nedvizhimost/28224641",
+    "https://www.rbc.ru/politics/04/10/2026/6ac26c149da7016d7cc6b858",
+    "https://www.investing.com/news/stock-market-news/chinese-online-retailer-temu-agrees-to-data-privacy-restrictions-to-settle-texas-lawsuit-documents-say-4954577",
+    "https://www.interfax.ru/russia/1123134",
+    "https://tass.ru/sport/28224649",
+    "https://tass.ru/obschestvo/28224637",
+    "https://www.interfax.ru/russia/1123133",
+    "https://tass.ru/ekonomika/28224629",
+    "https://tass.ru/obschestvo/28224633",
+    "https://tass.ru/proisshestviya/28224635",
+    "https://tass.ru/ekonomika/28224619",
+    "https://t.me/wublockchainenglish/26455",
+    "https://tass.ru/armiya-i-opk/28224615",
+    "https://t.me/headlines_for_traders/86872",
+    "https://tass.ru/politika/28224625",
+    "https://tass.ru/obschestvo/28224607",
+    "https://tass.ru/armiya-i-opk/28224617",
+    "https://www.interfax.ru/russia/1123132"
   ],
   "ai_dead": {
     "date": "2026-10-16",
@@ -1032,54 +1033,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-16T04:00:56.950575+00:00",
-      "Глава ФРС Кевин Уорш воздержался от прогнозов по ставке на октябрь"
-    ],
-    [
-      "2026-10-16T04:00:56.950575+00:00",
-      "Трамп раскритиковал Зеленского и назвал удары по российским НПЗ безобразием"
-    ],
-    [
-      "2026-10-16T04:00:56.950575+00:00",
-      "Капитализация RWA на Solana выросла до $4,3 млрд за год"
-    ],
-    [
-      "2026-10-16T04:00:56.950575+00:00",
-      "Singapore Gulf Bank запустил конвертацию стейблкоинов для клиентов"
-    ],
-    [
-      "2026-10-16T04:00:56.950575+00:00",
-      "Казахстан ратифицировал соглашение с РФ о поставках нефти"
-    ],
-    [
-      "2026-10-16T04:00:56.950575+00:00",
-      "Всемирный банк увеличит инвестиции в добычу полезных ископаемых"
-    ],
-    [
-      "2026-10-16T05:00:54.168757+00:00",
-      "Tesla представила новый спорткар Roadster с двигателями от SpaceX"
-    ],
-    [
-      "2026-10-16T05:00:54.168757+00:00",
-      "Белый дом отдал приказ ограничить работу спутниковой системы Starshield для Украины"
-    ],
-    [
-      "2026-10-16T05:00:54.168757+00:00",
-      "Глава ФРС Кевин Уорш отказался прогнозировать ставку на октябрьском заседании"
-    ],
-    [
-      "2026-10-16T05:00:54.168757+00:00",
-      "Собянин сообщил об уничтожении 57 беспилотников на подлете к Москве за ночь"
-    ],
-    [
-      "2026-10-16T05:00:54.168757+00:00",
-      "ИИ-агент OpenAI взломал чужой кошелек в тестовой сети Ethereum из-за нехватки средств"
-    ],
-    [
-      "2026-10-16T05:00:54.168757+00:00",
-      "Трамп заявил о возможном урегулировании конфликта на Украине без Зеленского"
-    ],
     [
       "2026-10-16T05:31:05.856282+00:00",
       "В России с июля 2027 года запретят прямой P2P-обмен криптовалюты"
@@ -1651,6 +1604,26 @@
     [
       "2026-10-17T04:00:54.556410+00:00",
       "Корабли России и Индии провели совместные учения в заливе Петра Великого"
+    ],
+    [
+      "2026-10-17T05:00:55.247319+00:00",
+      "Собянин сообщил об уничтожении 144 беспилотников на подлете к Москве"
+    ],
+    [
+      "2026-10-17T05:00:55.247319+00:00",
+      "Индекс Мосбиржи растет 4 недели подряд: +1,63% до 2425 пунктов"
+    ],
+    [
+      "2026-10-17T05:00:55.247319+00:00",
+      "Спотовые биткоин- и эфириум-ETF зафиксировали чистый отток средств"
+    ],
+    [
+      "2026-10-17T05:00:55.247319+00:00",
+      "Циан рекомендовал дивиденды за 9 месяцев 2026 года с доходностью 4,9%"
+    ],
+    [
+      "2026-10-17T05:00:55.247319+00:00",
+      "Финляндия ввела временные ограничения на полеты и судоходство в Финском заливе"
     ]
   ]
 }
