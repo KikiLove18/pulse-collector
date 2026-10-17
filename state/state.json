@@ -974,7 +974,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T12:00:55.412637+00:00",
+  "breaking_ts": "2026-10-17T12:30:57.154731+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 3,
@@ -987,95 +987,53 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/kultura/28225365",
+    "https://tass.ru/proisshestviya/28225367",
+    "https://www.rbc.ru/rbcfreenews/6ac4ad0d18cf271e794167f6",
+    "https://tass.ru/proisshestviya/28225361",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225359",
+    "https://t.me/rbc_news/158881",
+    "https://www.kommersant.ru/doc/9041121",
+    "https://tass.ru/proisshestviya/28225355",
+    "https://www.kommersant.ru/doc/9041114",
+    "https://www.rbc.ru/politics/04/06/2026/6a21cde39a79474b2cfe812e",
+    "https://tass.ru/obschestvo/28225357",
+    "https://www.rbc.ru/finances/07/10/2026/6ac6317678a68cbba9863e8b",
+    "https://tass.ru/proisshestviya/28225353",
+    "https://tass.ru/proisshestviya/28225351",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237904-okolo-100-atakovali",
+    "https://tass.ru/proisshestviya/28225341",
+    "https://tass.ru/ekonomika/28225343",
+    "https://tass.ru/politika/28225337",
+    "https://t.me/banksta/103570",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225329",
+    "https://tass.ru/proisshestviya/28225333",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225325",
+    "https://www.investing.com/news/stock-market-news/chip-index-sox-posts-longest-losing-streak-since-2008-as-ai-worries-deepen-4955401",
+    "https://tass.ru/armiya-i-opk/28225335",
+    "https://www.rbc.ru/politics/17/10/2026/6ad3060acea7d599fa996f03",
+    "https://tass.ru/politika/28225315",
+    "https://www.marketwatch.com/story/microsoft-shopify-and-3-more-ai-stocks-that-are-favorite-wall-street-earnings-plays-0bb61e81?mod=mw_rss_topstories",
+    "https://www.interfax.ru/russia/1123175",
+    "https://tass.ru/politika/28225323",
+    "https://cryptoslate.com/eclair-blocks-browser-requests-that-could-let-a-webpage-control-a-bitcoin-lightning-node/",
+    "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
     "https://www.coindesk.com/business/2026/10/14/banks-could-slow-stablecoin-growth-by-paying-savers-more-bis-paper-finds",
+    "https://www.marketwatch.com/story/im-64-years-old-with-two-sons-but-only-one-works-in-the-family-firm-should-i-leave-him-70-of-the-business-2fe6c382?mod=mw_rss_topstories",
+    "https://tass.ru/interviews/28224921",
     "https://tass.ru/proisshestviya/28225317",
     "https://tass.ru/ekonomika/28225309",
     "https://tass.ru/sport/28225299",
     "https://tass.ru/sport/28225321",
     "https://www.rbc.ru/politics/02/05/2026/69f5ed6b9a794780091c9c25",
     "https://tass.ru/mezhdunarodnaya-panorama/28225303",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225307",
-    "https://tass.ru/obschestvo/28225293",
-    "https://t.me/rbc_news/158880",
-    "https://tass.ru/obschestvo/28225301",
-    "https://tass.ru/politika/28225295",
-    "https://tass.ru/armiya-i-opk/28225297",
-    "https://tass.ru/sport/28225291",
-    "https://www.kommersant.ru/doc/9041109",
-    "https://t.me/banksta/103569",
-    "https://tass.ru/proisshestviya/28225287",
-    "https://www.rbc.ru/politics/08/10/2026/6ac7f40baf10ee1648aaebfe",
-    "https://www.interfax.ru/world/1123173",
-    "https://www.rbc.ru/sport/15/10/2026/6ad0f52b9a79472b243c5a92",
-    "https://tass.ru/obschestvo/28225279",
-    "https://www.rbc.ru/sport/27/09/2026/6ab93f619a7947659d4701fc",
-    "https://tass.ru/obschestvo/28225273",
-    "https://tass.ru/obschestvo/28225277",
-    "https://tass.ru/sport/28225275",
-    "https://tass.ru/kultura/28225267",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237902-ob-obuchenii-dolzhnostnih-lits",
-    "https://www.kommersant.ru/doc/9041108",
-    "https://t.me/banksta/103568",
-    "https://tass.ru/sport/28225271",
-    "https://www.marketwatch.com/story/it-was-another-great-week-for-the-average-stock-as-market-leadership-shifts-away-from-tech-8e8516da?mod=mw_rss_topstories",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225265",
-    "https://tass.ru/ekonomika/28225263",
-    "https://www.kommersant.ru/doc/9041106",
-    "https://tass.ru/kultura/28225261"
+    "https://tass.ru/mezhdunarodnaya-panorama/28225307"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-16T12:00:56.881355+00:00",
-      "«ВсеИнструменты» рекомендовали дивиденды за 9 месяцев в 7 рублей на акцию"
-    ],
-    [
-      "2026-10-16T12:00:56.881355+00:00",
-      "Глава Банка Японии подтвердил планы продолжить повышение ставки"
-    ],
-    [
-      "2026-10-16T12:00:56.881355+00:00",
-      "Henderson может выплатить дивиденды за девять месяцев в 8 рублей"
-    ],
-    [
-      "2026-10-16T12:00:56.881355+00:00",
-      "ЕС в сентябре увеличил импорт российского СПГ на 60% к августу"
-    ],
-    [
-      "2026-10-16T12:00:56.881355+00:00",
-      "В Соцфонде назвали максимальное пособие по уходу за ребенком в 2027 году"
-    ],
-    [
-      "2026-10-16T12:00:56.881355+00:00",
-      "Средняя пенсия неработающих россиян в 2027 году достигнет 30 000 рублей"
-    ],
-    [
-      "2026-10-16T12:30:55.888868+00:00",
-      "Charles Schwab открыл торговлю биткоином и эфиром для 40 млн клиентов"
-    ],
-    [
-      "2026-10-16T12:30:55.888868+00:00",
-      "Вероятность снижения ставки ФРС в октябре рухнула до 13%"
-    ],
-    [
-      "2026-10-16T12:30:55.888868+00:00",
-      "Выручка X5 Group в III квартале выросла на 13% до 1,31 трлн рублей"
-    ],
-    [
-      "2026-10-16T12:30:55.888868+00:00",
-      "Росатом поставит в Индонезию два плавучих энергоблока"
-    ],
-    [
-      "2026-10-16T12:30:55.888868+00:00",
-      "Цены экспорта в США в сентябре выросли на 2,2% против прогноза 0,9%"
-    ],
-    [
-      "2026-10-16T12:30:55.888868+00:00",
-      "BofA предупредил о рисках «исторического пузыря» в сегменте ИИ"
-    ],
     [
       "2026-10-16T13:00:56.981794+00:00",
       "Цены экспорта и импорта в США в сентябре выросли выше прогнозов"
@@ -1635,6 +1593,30 @@
     [
       "2026-10-17T12:00:55.412637+00:00",
       "MarketWatch: лидерство на рынке США смещается из технологического сектора"
+    ],
+    [
+      "2026-10-17T12:30:57.154731+00:00",
+      "На Украине заявили об одном из крупнейших ударов по энергетике"
+    ],
+    [
+      "2026-10-17T12:30:57.154731+00:00",
+      "Индекс чипмейкеров SOX обновил антирекорд с 2008 года"
+    ],
+    [
+      "2026-10-17T12:30:57.154731+00:00",
+      "Венгрия запросит продление исключения из санкций США по нефти из РФ"
+    ],
+    [
+      "2026-10-17T12:30:57.154731+00:00",
+      "Француз заработал более 2 млрд рублей на игре с помощью ИИ"
+    ],
+    [
+      "2026-10-17T12:30:57.154731+00:00",
+      "BIS указал способ замедления роста стейблкоинов банками"
+    ],
+    [
+      "2026-10-17T12:30:57.154731+00:00",
+      "Атакованное в Черном море судно отбуксировали в Бургас"
     ]
   ]
 }
