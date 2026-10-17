@@ -974,7 +974,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T08:30:55.709633+00:00",
+  "breaking_ts": "2026-10-17T09:00:56.314081+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 3,
@@ -987,75 +987,46 @@
     ]
   },
   "news_seen": [
+    "https://t.me/SberInvestments/13149",
+    "https://tass.ru/politika/28225043",
+    "https://t.me/if_market_news/86094",
+    "https://www.kommersant.ru/doc/9041056",
+    "https://t.me/banksta/103564",
+    "https://www.rbc.ru/politics/16/10/2026/6ad1f531bb8a749d539ca47e",
+    "https://tass.ru/obschestvo/28225045",
+    "https://www.rbc.ru/rbcfreenews/6ad2b0589266067dc0d9248c",
+    "https://t.me/thebell_io/39518",
+    "https://tass.ru/obschestvo/28225015",
+    "https://tass.ru/nauka/28224933",
+    "https://t.me/rbc_news/158873",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225031",
+    "https://tass.ru/obschestvo/28225037",
+    "https://tass.ru/ekonomika/28225023",
+    "https://tass.ru/mezhdunarodnaya-panorama/28224957",
+    "https://t.me/markettwits/389278",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237888-2730-bespilotnikov",
+    "https://tass.ru/proisshestviya/28225033",
+    "https://tass.ru/proisshestviya/28225021",
+    "https://tass.ru/proisshestviya/28224937",
+    "https://tass.ru/proisshestviya/28224941",
+    "https://tass.ru/kosmos/28225025",
+    "https://www.rbc.ru/base/28/08/2024/66cdaf8a9a7947f6955fdbbc",
+    "https://tass.ru/obschestvo/28225027",
+    "https://www.investing.com/news/stock-market-news/explainercould-hackers-get-inside-my-fridge-4955339",
+    "https://t.me/headlines_for_traders/86889",
+    "https://t.me/whale_alert_io/103995",
+    "https://tass.ru/sport/28225029",
+    "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "https://www.vedomosti.ru/politics/news/2026/10/17/1237886-dialog-rf-i-ssha",
     "https://t.me/interfaxonline/80262",
     "https://tass.ru/ekonomika/28225017",
-    "https://t.me/markettwits/389277",
-    "https://www.kommersant.ru/doc/9041051",
-    "https://www.rbc.ru/politics/23/06/2026/6a3a9dc49a794715497b1a14",
-    "https://www.kommersant.ru/doc/9041054",
-    "https://tass.ru/sport/28225013",
-    "https://tass.ru/obschestvo/28225007",
-    "https://www.rbc.ru/rbcfreenews/6ab7cb59c7db04ff3a8991f2",
-    "https://tass.ru/ekonomika/28225009",
-    "https://t.me/banksta/103562",
-    "https://t.me/headlines_for_traders/86888",
-    "https://www.interfax.ru/russia/1123161",
-    "https://thedefiant.io/converge/cefi/strive-prices-630-million-sats-preferred-offering-at-90",
-    "https://www.interfax.ru/moscow/1123160",
-    "https://t.me/rbc_news/158872",
-    "https://tass.ru/proisshestviya/28225005",
-    "https://www.kommersant.ru/doc/9041052",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225001",
-    "https://t.me/markettwits/389275",
-    "https://tass.ru/proisshestviya/28224983",
-    "https://www.rbc.ru/politics/13/10/2026/6acdb3ea20ec329f009d8fa9",
-    "https://tass.ru/proisshestviya/28224995",
-    "https://t.me/headlines_for_traders/86887",
-    "https://www.vedomosti.ru/society/news/2026/10/17/1237885-dvizhenie-poezdov-tavriya",
-    "https://t.me/markettwits/389273",
-    "https://tass.ru/proisshestviya/28224993",
-    "https://www.kommersant.ru/doc/9041047",
-    "https://www.interfax.ru/russia/1123159",
-    "https://www.rbc.ru/rbcfreenews/6a1ff12c9a79471f069d9745",
-    "https://tass.ru/kosmos/28224989",
-    "https://tass.ru/obschestvo/28224985",
-    "https://t.me/bitkogan/29451",
-    "https://tass.ru/ekonomika/28224981",
-    "https://t.me/wublockchainenglish/26457",
-    "https://tass.ru/interviews/28214347",
-    "https://www.kommersant.ru/doc/9041044",
-    "https://tass.ru/proisshestviya/28224979",
-    "https://tass.ru/obschestvo/28224977",
-    "https://t.me/cbrstocks/83403",
-    "https://www.rbc.ru/radio/17/10/2026/6ad329e19a79473b46b07f88",
-    "https://tass.ru/kosmos/28224783"
+    "https://t.me/markettwits/389277"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-16T08:31:02.311427+00:00",
-      "Трамп назвал безобразием украинские удары по российским НПЗ"
-    ],
-    [
-      "2026-10-16T08:31:02.311427+00:00",
-      "ВТБ повысил ставку по вкладу на два месяца до 14% годовых"
-    ],
-    [
-      "2026-10-16T08:31:02.311427+00:00",
-      "Chainalysis: криптомошенник потерял $4,8 млн в результате атаки"
-    ],
-    [
-      "2026-10-16T08:31:02.311427+00:00",
-      "Минфин Украины опубликовал график выплат внешнего долга на 2027 год"
-    ],
-    [
-      "2026-10-16T08:31:02.311427+00:00",
-      "Capital B отчиталась о $78 млн убытка из-за переоценки биткоина"
-    ],
     [
       "2026-10-16T09:00:59.673716+00:00",
       "Зеленский предложил прекратить удары по НПЗ в обмен на расширение Starlink"
@@ -1639,6 +1610,26 @@
     [
       "2026-10-17T08:30:55.709633+00:00",
       "АЛРОСА продаст лавандовый бриллиант стоимостью от $1,5 млн"
+    ],
+    [
+      "2026-10-17T09:00:56.314081+00:00",
+      "Спрос на ИТ-специалистов в России рухнул почти вдвое из-за ИИ"
+    ],
+    [
+      "2026-10-17T09:00:56.314081+00:00",
+      "Трамп отказался применять разработанные противники жесткие санкции"
+    ],
+    [
+      "2026-10-17T09:00:56.314081+00:00",
+      "Собянин сообщил о 2730 беспилотниках, летевших на Москву за неделю"
+    ],
+    [
+      "2026-10-17T09:00:56.314081+00:00",
+      "Глава МВФ назвала опасной зависимость мировой экономики от бума ИИ"
+    ],
+    [
+      "2026-10-17T09:00:56.314081+00:00",
+      "INSA: блок ХДС/ХСС в Германии уступает АдГ 11 процентных пунктов"
     ]
   ]
 }
