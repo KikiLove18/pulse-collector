@@ -974,7 +974,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T10:00:58.825590+00:00",
+  "breaking_ts": "2026-10-17T10:30:55.307192+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 3,
@@ -987,50 +987,35 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/armiya-i-opk/28225197",
+    "https://tass.ru/obschestvo/28225173",
+    "https://tass.ru/sport/28225189",
+    "https://tass.ru/armiya-i-opk/28225191",
+    "https://www.rbc.ru/politics/14/10/2026/6acf4e9487faa464799365f2",
+    "https://www.rbc.ru/sport/10/10/2026/6aca76bb9a79476f84dbb6e2",
+    "https://tass.ru/ekonomika/28225187",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225181",
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237897-vzyala-pod-kontrol",
+    "https://t.me/interfaxonline/80264",
+    "https://www.rbc.ru/rbcfreenews/69d487bf9a79472858e37bc4",
+    "https://tass.ru/obschestvo/28225169",
+    "https://tass.ru/sport/28225179",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225177",
+    "https://www.kommersant.ru/doc/9041089",
+    "https://tass.ru/politika/28225165",
+    "https://www.rbc.ru/politics/17/10/2026/6ad3060acea7d599fa996f03",
+    "https://t.me/banksta/103566",
+    "https://www.interfax.ru/russia/1123169",
+    "https://tass.ru/obschestvo/28225153",
+    "https://t.me/headlines_for_traders/86892",
+    "https://www.rbc.ru/politics/27/09/2026/6ab88abb3de438f101887d71",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225163",
+    "https://t.me/rbc_news/158876",
+    "https://tass.ru/ekonomika/28225159",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225157",
+    "https://cointelegraph.com/news/circles-allaire-says-stablecoin-issuer-looking-to-enter-40-developing-markets-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "https://tass.ru/ekonomika/28225161",
-    "https://tass.ru/obschestvo/28225151",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225149",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237896-programmu-vosstanovleniya",
-    "https://tass.ru/armiya-i-opk/28225143",
-    "https://tass.ru/proisshestviya/28225147",
-    "https://www.interfax.ru/russia/1123168",
-    "https://www.rbc.ru/rbcfreenews/6ad2a9be6930dce2d39715bb",
-    "https://www.kommersant.ru/doc/9041084",
-    "https://www.interfax.ru/world/1123167",
-    "https://t.me/WalterBloomberg/37070",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225133",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225139",
-    "https://t.me/WalterBloomberg/37069",
-    "https://www.vedomosti.ru/lifestyle/news/2026/10/17/1237895-denis-boitsov",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225137",
-    "https://tass.ru/mezhdunarodnaya-panorama/28225117",
-    "https://www.interfax.ru/russia/1123166",
-    "https://t.me/headlines_for_traders/86891",
-    "https://tass.ru/obschestvo/28225127",
-    "https://t.me/forklog/50301",
-    "https://t.me/markettwits/389280",
-    "https://www.interfax.ru/russia/1123165",
-    "https://www.kommersant.ru/doc/9041079",
-    "https://tass.ru/obschestvo/28225123",
-    "https://www.vedomosti.ru/finance/news/2026/10/17/1237892-strahovanie-predpriyatii-ot-vozdushnih-atak",
-    "https://www.rbc.ru/rbcfreenews/6ad08ddafe226187ec5540cb",
-    "https://www.interfax.ru/russia/1123164",
-    "https://tass.ru/ekonomika/28225113",
-    "https://t.me/rbc_news/158875",
-    "https://t.me/rbc_news/158874",
-    "https://tass.ru/sport/28225111",
-    "https://t.me/incrypted/33031",
-    "https://www.wsj.com/business/its-too-late-for-small-fixes-at-pepsi-aaf8563f?mod=rss_markets_main",
-    "https://www.rbc.ru/rbcfreenews/69c2c2779a79473c00419094",
-    "https://tass.ru/armiya-i-opk/28225115",
-    "https://www.kommersant.ru/doc/9041080",
-    "https://tass.ru/armiya-i-opk/28225105",
-    "https://tass.ru/armiya-i-opk/28225103",
-    "https://tass.ru/armiya-i-opk/28225099",
-    "https://tass.ru/armiya-i-opk/28225097",
-    "https://tass.ru/armiya-i-opk/28225091",
-    "https://tass.ru/obschestvo/28225087",
-    "https://tass.ru/armiya-i-opk/28225101"
+    "https://www.kommersant.ru/doc/9041082"
   ],
   "ai_dead": {
     "date": "2026-10-17",
@@ -1620,6 +1605,30 @@
     [
       "2026-10-17T10:00:58.825590+00:00",
       "«Аэрофлот» занялся стабилизацией расписания в аэропортах Москвы"
+    ],
+    [
+      "2026-10-17T10:30:55.307192+00:00",
+      "Минобороны РФ сообщило о взятии под контроль восьми населенных пунктов"
+    ],
+    [
+      "2026-10-17T10:30:55.307192+00:00",
+      "Circle планирует выйти на 40 развивающихся рынков"
+    ],
+    [
+      "2026-10-17T10:30:55.307192+00:00",
+      "Путин поручил выделить не менее 100 млрд рублей на поддержку бюджетов регионов"
+    ],
+    [
+      "2026-10-17T10:30:55.307192+00:00",
+      "Турция планирует довести добычу нефти до 1 млн баррелей в сутки"
+    ],
+    [
+      "2026-10-17T10:30:55.307192+00:00",
+      "Российский препарат от рака печени прошел первые клинические испытания"
+    ],
+    [
+      "2026-10-17T10:30:55.307192+00:00",
+      "Покупки через ИИ-агентов в онлайн-торговле растут на 43% в месяц"
     ]
   ]
 }
