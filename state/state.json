@@ -974,7 +974,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T08:00:54.178702+00:00",
+  "breaking_ts": "2026-10-17T08:30:55.709633+00:00",
   "news_now": {
     "day": "2026-10-17",
     "day_count": 3,
@@ -987,82 +987,55 @@
     ]
   },
   "news_seen": [
+    "https://www.vedomosti.ru/politics/news/2026/10/17/1237886-dialog-rf-i-ssha",
+    "https://t.me/interfaxonline/80262",
+    "https://tass.ru/ekonomika/28225017",
+    "https://t.me/markettwits/389277",
+    "https://www.kommersant.ru/doc/9041051",
+    "https://www.rbc.ru/politics/23/06/2026/6a3a9dc49a794715497b1a14",
+    "https://www.kommersant.ru/doc/9041054",
+    "https://tass.ru/sport/28225013",
+    "https://tass.ru/obschestvo/28225007",
+    "https://www.rbc.ru/rbcfreenews/6ab7cb59c7db04ff3a8991f2",
+    "https://tass.ru/ekonomika/28225009",
+    "https://t.me/banksta/103562",
+    "https://t.me/headlines_for_traders/86888",
+    "https://www.interfax.ru/russia/1123161",
+    "https://thedefiant.io/converge/cefi/strive-prices-630-million-sats-preferred-offering-at-90",
+    "https://www.interfax.ru/moscow/1123160",
+    "https://t.me/rbc_news/158872",
+    "https://tass.ru/proisshestviya/28225005",
+    "https://www.kommersant.ru/doc/9041052",
+    "https://tass.ru/mezhdunarodnaya-panorama/28225001",
+    "https://t.me/markettwits/389275",
+    "https://tass.ru/proisshestviya/28224983",
+    "https://www.rbc.ru/politics/13/10/2026/6acdb3ea20ec329f009d8fa9",
+    "https://tass.ru/proisshestviya/28224995",
+    "https://t.me/headlines_for_traders/86887",
+    "https://www.vedomosti.ru/society/news/2026/10/17/1237885-dvizhenie-poezdov-tavriya",
+    "https://t.me/markettwits/389273",
+    "https://tass.ru/proisshestviya/28224993",
+    "https://www.kommersant.ru/doc/9041047",
+    "https://www.interfax.ru/russia/1123159",
+    "https://www.rbc.ru/rbcfreenews/6a1ff12c9a79471f069d9745",
+    "https://tass.ru/kosmos/28224989",
+    "https://tass.ru/obschestvo/28224985",
+    "https://t.me/bitkogan/29451",
+    "https://tass.ru/ekonomika/28224981",
+    "https://t.me/wublockchainenglish/26457",
+    "https://tass.ru/interviews/28214347",
+    "https://www.kommersant.ru/doc/9041044",
     "https://tass.ru/proisshestviya/28224979",
     "https://tass.ru/obschestvo/28224977",
     "https://t.me/cbrstocks/83403",
     "https://www.rbc.ru/radio/17/10/2026/6ad329e19a79473b46b07f88",
-    "https://tass.ru/kosmos/28224783",
-    "https://thedefiant.io/news/markets/ether-etfs-lose-320-million-overtaking-bitcoin-s-weekly-outflows",
-    "https://tass.ru/ekonomika/28224975",
-    "https://www.rbc.ru/politics/02/11/2025/6906bce39a7947c87c66f8e1",
-    "https://t.me/forklog/50299",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224969",
-    "https://t.me/interfaxonline/80261",
-    "https://www.kommersant.ru/doc/9041041",
-    "https://tass.ru/ekonomika/28224973",
-    "https://tass.ru/obschestvo/28224971",
-    "https://www.kommersant.ru/doc/9041042",
-    "https://t.me/bitkogan_hotline/27892",
-    "https://www.vedomosti.ru/investments/news/2026/10/17/1237884-dividendov-ot-alrosi",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224967",
-    "https://www.interfax.ru/russia/1123158",
-    "https://tass.ru/proisshestviya/28224953",
-    "https://tass.ru/obschestvo/28224963",
-    "https://thedefiant.io/converge/markets/strategy-slides-9-6-after-msci-decision-outpacing-bitcoin-s-drop",
-    "https://www.interfax.ru/world/1123157",
-    "https://tass.ru/obschestvo/28224961",
-    "https://t.me/markettwits/389272",
-    "https://tass.ru/obschestvo/28224959",
-    "https://tass.ru/ekonomika/28224857",
-    "https://www.rbc.ru/rbcfreenews/6ad2e13f82d831f782323da1",
-    "https://www.interfax.ru/business/1123156",
-    "https://www.vedomosti.ru/politics/news/2026/10/17/1237883-armiya-rf-porazila",
-    "https://www.kommersant.ru/doc/9041039",
-    "https://t.me/headlines_for_traders/86886",
-    "https://tass.ru/proisshestviya/28224949",
-    "https://tass.ru/ekonomika/28224943",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224935",
-    "https://t.me/headlines_for_traders/86885",
-    "https://www.interfax.ru/russia/1123155",
-    "https://www.rbc.ru/radio/17/10/2026/6ad3232a9a79476754d7397a",
-    "https://t.me/interfaxonline/80260",
-    "https://tass.ru/sport/28224939",
-    "https://thedefiant.io/converge/tradfi-and-fintech/dtcc-outlines-25-security-tokenization-rollout-on-canton-and-besu",
-    "https://www.kommersant.ru/doc/9041030",
-    "https://t.me/interfaxonline/80259",
-    "https://www.kommersant.ru/doc/9041035",
-    "https://www.sport-interfax.ru/1123154",
-    "https://cointelegraph.com/news/bitget-to-discontinue-services-for-some-users-in-one-off-exercise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://tass.ru/sport/28224929",
-    "https://tass.ru/obschestvo/28224927",
-    "https://tass.ru/mezhdunarodnaya-panorama/28224869",
-    "https://www.interfax.ru/world/1123153"
+    "https://tass.ru/kosmos/28224783"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-16T08:00:58.366165+00:00",
-      "ЕЦБ одобрил увеличение доли UniCredit в Commerzbank выше 30%"
-    ],
-    [
-      "2026-10-16T08:00:58.366165+00:00",
-      "Выручка X5 Group выросла на 13% за III квартал"
-    ],
-    [
-      "2026-10-16T08:00:58.366165+00:00",
-      "Убытки угольной отрасли России достигли 170 млрд рублей"
-    ],
-    [
-      "2026-10-16T08:00:58.366165+00:00",
-      "Банк «Санкт-Петербург» снизил чистую прибыль по РСБУ на 28%"
-    ],
-    [
-      "2026-10-16T08:00:58.366165+00:00",
-      "Майнеры CleanSpark снизили добычу биткоина на 11% в сентябре"
-    ],
     [
       "2026-10-16T08:31:02.311427+00:00",
       "Трамп назвал безобразием украинские удары по российским НПЗ"
@@ -1646,6 +1619,26 @@
     [
       "2026-10-17T08:00:54.178702+00:00",
       "РСПП обсуждает страхование заводов от воздушных атак с ЦБ и Минфином"
+    ],
+    [
+      "2026-10-17T08:30:55.709633+00:00",
+      "Bitget запретила операции для пользователей из РФ, Казахстана и Беларуси"
+    ],
+    [
+      "2026-10-17T08:30:55.709633+00:00",
+      "Собянин сообщил о 2730 БПЛА, летевших к Московскому региону за неделю"
+    ],
+    [
+      "2026-10-17T08:30:55.709633+00:00",
+      "Bloomberg: экспорт российского дизеля упал до минимума за 10 лет"
+    ],
+    [
+      "2026-10-17T08:30:55.709633+00:00",
+      "Акции США продолжают слабеть на фоне геополитики и доходностей"
+    ],
+    [
+      "2026-10-17T08:30:55.709633+00:00",
+      "АЛРОСА продаст лавандовый бриллиант стоимостью от $1,5 млн"
     ]
   ]
 }
