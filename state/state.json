@@ -976,7 +976,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T06:00:55.700112+00:00",
+  "breaking_ts": "2026-10-18T06:30:53.868263+00:00",
   "news_now": {
     "day": "2026-10-18",
     "day_count": 1,
@@ -987,46 +987,58 @@
     ]
   },
   "news_seen": [
+    "https://t.me/markettwits/389295",
+    "https://tass.ru/ekonomika/28226609",
+    "https://www.rbc.ru/society/18/10/2026/6ad365cd9a79476498a66716",
+    "https://tass.ru/nedvizhimost/28226603",
+    "https://t.me/FinancialJuice/141023",
+    "https://tass.ru/proisshestviya/28226621",
+    "https://tass.ru/proisshestviya/28226613",
+    "https://tass.ru/proisshestviya/28226599",
+    "https://tass.ru/sport/28226611",
+    "https://www.vedomosti.ru/society/news/2026/10/18/1237955-beglov-pri-atake",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237954-armiya-rossiya-porazila",
+    "https://tass.ru/ekonomika/28226605",
+    "https://tass.ru/ekonomika/28226601",
+    "https://t.me/interfaxonline/80293",
+    "https://www.rbc.ru/politics/18/10/2026/6ad4656314d7ccaafcae0b26",
+    "https://tass.ru/proisshestviya/28226587",
+    "https://www.interfax.ru/russia/1123251",
+    "https://tass.ru/proisshestviya/28226593",
+    "https://www.interfax.ru/russia/1123250",
+    "https://tass.ru/proisshestviya/28226577",
+    "https://tass.ru/kultura/28226573",
+    "https://www.interfax.ru/russia/1123249",
+    "https://tass.ru/proisshestviya/28226589",
+    "https://tass.ru/ekonomika/28226585",
+    "https://tass.ru/proisshestviya/28226579",
+    "https://tass.ru/ekonomika/28226583",
+    "https://www.rbc.ru/rbcfreenews/6ad4622dbaafe814541c75aa",
+    "https://t.me/headlines_for_traders/86907",
+    "https://t.me/interfaxonline/80292",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237953-sili-pvo-za-noch",
+    "https://tass.ru/obschestvo/28226515",
+    "https://www.interfax.ru/russia/1123248",
+    "https://tass.ru/sport/28226569",
+    "https://www.rbc.ru/rbcfreenews/6ad46279c8791ef4fc849338",
+    "https://tass.ru/proisshestviya/28226567",
+    "https://tass.ru/proisshestviya/28226561",
+    "https://t.me/interfaxonline/80291",
+    "https://tass.ru/ekonomika/28226563",
+    "https://tass.ru/proisshestviya/28226555",
+    "https://tass.ru/obschestvo/28226553",
+    "https://www.rbc.ru/rbcfreenews/647150bf9a7947564f6a9120",
+    "https://tass.ru/obschestvo/28226557",
+    "https://tass.ru/obschestvo/28226551",
+    "https://t.me/interfaxonline/80290",
+    "https://t.me/investfuture/15417",
+    "https://www.interfax.ru/russia/1123247",
+    "https://www.interfax.ru/russia/1123246",
+    "https://www.interfax.ru/russia/1123245",
+    "https://www.interfax.ru/russia/1123244",
     "https://www.rbc.ru/quote/18/10/2026/6ad1fc529a794764879477a6",
-    "https://tass.ru/obschestvo/28226531",
-    "https://tass.ru/armiya-i-opk/28226539",
-    "https://tass.ru/proisshestviya/28226525",
     "https://t.me/whale_alert_io/104006",
-    "https://tass.ru/armiya-i-opk/28226537",
-    "https://tass.ru/proisshestviya/28226497",
-    "https://www.interfax.ru/russia/1123242",
-    "https://www.rbc.ru/politics/18/10/2026/6ad45ed8b4433b77f5255c0c",
-    "https://tass.ru/nedvizhimost/28226457",
-    "https://tass.ru/armiya-i-opk/28226529",
-    "https://t.me/rbc_news/158900",
-    "https://t.me/rbc_news/158899",
-    "https://tass.ru/armiya-i-opk/28226527",
-    "https://www.rbc.ru/rbcfreenews/6ad370072facc56795f21fab",
-    "https://tass.ru/proisshestviya/28226523",
-    "https://t.me/interfaxonline/80289",
-    "https://www.kommersant.ru/doc/9041223",
-    "https://www.rbc.ru/rbcfreenews/6ad4127007ac93d2f9a87f3e",
-    "https://tass.ru/proisshestviya/28226511",
-    "https://tass.ru/sport/28226503",
-    "https://www.vedomosti.ru/society/news/2026/10/18/1237951-logisticheskii-tsentr",
-    "https://tass.ru/proisshestviya/28226507",
-    "https://tass.ru/obschestvo/28226501",
-    "https://www.interfax.ru/world/1123241",
-    "https://www.rbc.ru/rbcfreenews/6ad434dc0181bcdfac90206e",
-    "https://tass.ru/proisshestviya/28226495",
-    "https://tass.ru/obschestvo/28226493",
-    "https://tass.ru/ekonomika/28226487",
-    "https://t.me/whale_alert_io/104005",
-    "https://tass.ru/proisshestviya/28226489",
-    "https://tass.ru/mezhdunarodnaya-panorama/28226483",
-    "https://tass.ru/obschestvo/28226481",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1237950-rubio-trampu",
-    "https://tass.ru/sport/28226479",
-    "https://tass.ru/obschestvo/28226461",
-    "https://tass.ru/proisshestviya/28226477",
-    "https://t.me/rbc_news/158898",
-    "https://t.me/banksta/103612",
-    "https://tass.ru/proisshestviya/28226475"
+    "https://www.interfax.ru/russia/1123243"
   ],
   "ai_dead": {
     "date": "2026-10-17",
@@ -1035,30 +1047,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-17T07:00:56.786781+00:00",
-      "ИИ Claude расшифровал 25-летнее секретное число АНБ США"
-    ],
-    [
-      "2026-10-17T07:30:59.157486+00:00",
-      "Трамп распорядился временно не применять часть санкций против РФ"
-    ],
-    [
-      "2026-10-17T07:30:59.157486+00:00",
-      "Силы ПВО перехватили 56 беспилотников над Калужской областью"
-    ],
-    [
-      "2026-10-17T07:30:59.157486+00:00",
-      "Кабмин выделил 1,7 млрд рублей на региональные программы экспорта"
-    ],
-    [
-      "2026-10-17T07:30:59.157486+00:00",
-      "Владельцы Xiaomi в РФ показали максимум по запросам микрозаймов"
-    ],
-    [
-      "2026-10-17T07:30:59.157486+00:00",
-      "Илон Маск заявил о создании «разумного» родстера Tesla"
-    ],
     [
       "2026-10-17T08:00:54.178702+00:00",
       "Рязанский НПЗ приостановил работу установки после атаки дронов"
@@ -1658,6 +1646,22 @@
     [
       "2026-10-18T06:00:55.700112+00:00",
       "Крупный перевод 1 149 BTC зафиксирован с биржи Kraken на неизвестный кошелек"
+    ],
+    [
+      "2026-10-18T06:30:53.868263+00:00",
+      "Минобороны РФ: за ночь средства ПВО перехватили 1015 беспилотников"
+    ],
+    [
+      "2026-10-18T06:30:53.868263+00:00",
+      "ЦБ выпустил FAQ по регулированию операций с криптовалютой"
+    ],
+    [
+      "2026-10-18T06:30:53.868263+00:00",
+      "Минобороны заявило об ударе по сухогрузу в Черном море"
+    ],
+    [
+      "2026-10-18T06:30:53.868263+00:00",
+      "Новак: российский дизель в США будет поставляться на танкерах Aframax"
     ]
   ]
 }
