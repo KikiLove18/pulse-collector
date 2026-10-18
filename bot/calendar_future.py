@@ -291,6 +291,13 @@ def released(now, hours=8):
                 surprise = float((r.get("surprise") or "0").replace("%", "").replace("N/A", "0"))
             except ValueError:
                 surprise = 0.0
+            if not surprise:  # Nasdaq часто не даёт «surprise» (13.10 JPM $5.07 при $5.94 ушёл как «в рамках») — считаем сами
+                try:
+                    num = lambda v: -float(v.strip("()$ ").replace(",", "")) if v.strip().startswith("(") else float(v.strip("$ ").replace(",", ""))
+                    a, f = num(eps), num(fc)
+                    surprise = round((a - f) / abs(f) * 100, 1) if f else 0.0
+                except ValueError:
+                    pass
             out.append({"key": f"{d}|earn|{sym}", "title": f"Отчёт {EARNINGS[sym]} ({sym})", "kind": "earnings",
                         "dt": _et(d, "16:05").astimezone(timezone.utc).isoformat(), "eps": eps, "forecast": fc, "surprise": surprise,
                         "impact": "High" if sym in ("NVDA", "AAPL", "MSFT", "AMZN", "GOOGL", "META", "TSLA", "COIN", "MSTR") else "Medium"})

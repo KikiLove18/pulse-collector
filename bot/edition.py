@@ -317,6 +317,8 @@ def push_feed(feed, items, now, dry, state=None):
         for o in out:
             print(f"Лента (образец): [imp {o['imp']}] {o['title']} — {o['text'][:120]}… | {o['source']} + также {o['also']} | цифры {o['metrics']}", file=sys.stderr)
     if not dry:
+        from bot import weekly  # журнал недели для «Разбора недели» (там же импорт edition)
+        weekly.remember_news(out, now)
         try:
             _post("/api/ingest", {"edition": "feed", "blocks": [], "meta": {"news": out}})
         except Exception as e:

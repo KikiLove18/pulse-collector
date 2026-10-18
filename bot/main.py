@@ -30,7 +30,7 @@ from pathlib import Path
 
 import feedparser
 
-from bot import calendar_future, edition, macro, prompts, sources
+from bot import calendar_future, edition, macro, prompts, sources, weekly
 
 MSK = timezone(timedelta(hours=3))
 ROOT = Path(__file__).resolve().parent.parent
@@ -1047,10 +1047,42 @@ def run_results(state, now, dry):
             publish(html, dry)
         else:
             push_result(payload)
+            weekly.remember_results([payload], now)  # для «Разбора недели»
             if payload["impact"] == "High":
                 publish(html, dry)  # и в тестовый канал
         done.append(key)
     state["results_done"] = done[-200:]
+
+
+WEEKDAY = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
+
+
+def run_weekly(state, now, dry):
+    """«Разбор недели» (воскресенье) — пока только в тестовый канал: в канал PRO — после «да» владельца."""
+    try:
+        evs = calendar_future.build(fetch_calendar(state), horizon_days=8)
+    except Exception as e:
+        print("Неделя: календарь не собран", e, file=sys.stderr)
+        evs = []
+    nxt = []
+    for e in sorted(evs, key=lambda e: (e.get("impact") != "High", e["dt"])):
+        dt = datetime.fromisoformat(e["dt"]).astimezone(MSK)
+        if now < dt <= now + timedelta(days=7) and (e.get("impact") in ("High", "Medium") or e.get("kind") in ("fed", "cb")):
+            extra = ", ".join(x for x in (f"прогноз {e['forecast']}" if e.get("forecast") else "",
+                                          f"прошлое {e['previous']}" if e.get("previous") else "") if x)
+            nxt.append((dt, f"{WEEKDAY[dt.weekday()]} {dt:%d.%m %H:%M} МСК — {e['title']}" + (f" ({extra})" if extra else "")))
+
+    def send(html, card_url):  # Telegram: до 4096 знаков в сообщении; карточка — у первого
+        parts = split_message(tg_html(html))
+        publish_card(parts[0], card_url)
+        for p in parts[1:]:
+            send_telegram(p)
+
+    AI_TIER["big"] = True
+    try:
+        weekly.run_weekly(ask_ai, http_get, [line for _, line in sorted(nxt[:25])], send, now, dry)
+    finally:
+        AI_TIER["big"] = False
 
 
 def due_digest_slot(state, now):
@@ -1072,7 +1104,7 @@ def main():
     now = datetime.now(timezone.utc)
     state = load_state()
     ai_dead_load(state)
-    if mode in ("preview", "ai_check", "ai_probe") and "--force" not in args:
+    if mode in ("preview", "ai_check", "ai_probe", "weekly") and "--force" not in args:
         # тесты тратят ту же квоту ИИ — не в последний час перед выжимкой
         local = now.astimezone(MSK)
         for slot in os.environ.get("DIGEST_TIMES", "07:30,19:30").split(","):
@@ -1081,6 +1113,10 @@ def main():
             if timedelta(0) < start - local <= timedelta(minutes=60):
                 print(f"Тест отменён: через {int((start - local).total_seconds() // 60)} мин выжимка {slot.strip()} — бережём квоту ИИ (--force — запустить всё равно)", file=sys.stderr)
                 return
+    if mode == "weekly":  # «Разбор недели» для канала PRO — пока образец в тестовый канал
+        run_weekly(state, now, dry)
+        save_state(state)
+        return
     if mode == "ai_probe":  # какие бесплатные модели OpenRouter отвечают (только журнал)
         run_ai_probe()
         return
