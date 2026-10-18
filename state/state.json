@@ -777,7 +777,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T18:30:56.996181+00:00",
+  "breaking_ts": "2026-10-18T19:00:56.958941+00:00",
   "news_now": {
     "day": "2026-10-18",
     "day_count": 3,
@@ -790,62 +790,41 @@
     ]
   },
   "news_seen": [
+    "https://oilprice.com/Alternative-Energy/Nuclear-Power/The-Nuclear-Power-Shortcut-That-Could-Add-Gigawatts-to-the-US-Grid.html",
+    "https://t.me/FinancialJuice/141065",
+    "https://t.me/banksta/103653",
+    "https://www.rbc.ru/rbcfreenews/6ad4a826ef5f7593f8b47d91",
+    "https://www.kommersant.ru/doc/9041499",
+    "https://www.interfax.ru/world/1123326",
+    "https://www.kommersant.ru/doc/9041503",
+    "https://tass.ru/proisshestviya/28227657",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227655",
+    "https://www.kommersant.ru/doc/9041480",
+    "https://t.me/markettwits/389357",
+    "https://t.me/rbc_news/158925",
+    "https://t.me/WatcherGuru/15553",
+    "https://t.me/banksta/103652",
+    "https://tass.ru/sport/28227653",
+    "https://www.kommersant.ru/doc/9041502",
+    "https://tass.ru/sport/28227651",
+    "https://www.rbc.ru/politics/18/10/2026/6ad4b6fc9992ed97d5879170",
+    "https://www.interfax.ru/russia/1123325",
+    "https://www.kommersant.ru/doc/9041500",
+    "https://www.rbc.ru/sport/03/09/2026/6a9999a19a79474eb157dbc5",
+    "https://tass.ru/obschestvo/28227649",
+    "https://tass.ru/ekonomika/28227647",
+    "https://t.me/markettwits/389347",
     "https://www.coindesk.com/policy/2026/10/18/the-white-house-s-crypto-chief-departs-state-of-crypto",
-    "https://www.rbc.ru/politics/18/10/2026/6ad50e98ba49aad68c4b32f8",
+    "https://www.investing.com/news/stock-market-news/anthropic-commits-5-of-shares-to-new-public-benefit-fund-4956032",
+    "https://www.rbc.ru/rbcfreenews/6ad4a826ef5f7593f8b47d91",
     "https://t.me/rbc_news/158924",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1238022-tramp-podderzhal-netanyahu",
-    "https://www.rbc.ru/rbcfreenews/687ba6c09a79470bc1a7f570",
-    "https://www.kommersant.ru/doc/9041493",
-    "https://t.me/banksta/103651",
-    "https://tass.ru/ekonomika/28227645",
-    "https://t.me/markettwits/389346",
-    "https://t.me/WatcherGuru/15552",
-    "https://tass.ru/sport/28227641",
-    "https://tass.ru/politika/28227639",
-    "https://www.kommersant.ru/doc/9041492",
-    "https://t.me/markettwits/389345",
-    "https://tass.ru/proisshestviya/28227637",
-    "https://t.me/FinancialJuice/141064",
-    "https://t.me/FinancialJuice/141063",
-    "https://t.me/FinancialJuice/141062",
-    "https://t.me/FinancialJuice/141061",
-    "https://t.me/FinancialJuice/141060",
-    "https://t.me/headlines_for_traders/86940",
-    "https://www.interfax.ru/russia/1123324",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1238020-sbili-41-bespilotnik",
-    "https://www.investing.com/news/stock-market-news/european-earnings-preview-can-q3-results-meet-high-expectations-4956029",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227633",
-    "https://t.me/coinpost/4272",
-    "https://cryptoslate.com/fidelitys-500000-crypto-settlement-leaves-iras-outside-wallet-transfer-terms/",
-    "https://www.kommersant.ru/doc/9041486",
-    "https://tass.ru/proisshestviya/28227631",
-    "https://tass.ru/proisshestviya/28227625"
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1238022-tramp-podderzhal-netanyahu"
   ],
   "ai_dead": {
     "date": "2026-10-18",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-17T19:30:55.195714+00:00",
-      "Правительство РФ перенесло сроки модернизации НПЗ на год"
-    ],
-    [
-      "2026-10-17T19:30:55.195714+00:00",
-      "Россия поставит в Китай 39 млрд кубометров газа по «Силе Сибири»"
-    ],
-    [
-      "2026-10-17T19:30:55.195714+00:00",
-      "В Луцке после атаки остановился завод компании Kromberg & Schubert"
-    ],
-    [
-      "2026-10-17T19:30:55.195714+00:00",
-      "Стоимость новогодних корпоративов в РФ выросла на 16% за год"
-    ],
-    [
-      "2026-10-17T20:00:57.553362+00:00",
-      "США предложили Европе возобновить крупные закупки газа из РФ"
-    ],
     [
       "2026-10-17T20:00:57.553362+00:00",
       "Силы ПВО сбили 12 беспилотников на подлете к Москве"
@@ -1445,6 +1424,26 @@
     [
       "2026-10-18T18:30:56.996181+00:00",
       "Элизабет Абраамян выиграла чемпионат Европы по настольному теннису"
+    ],
+    [
+      "2026-10-18T19:00:56.958941+00:00",
+      "ОАЭ возобновят выплаты силам в Йемене для борьбы с хуситами"
+    ],
+    [
+      "2026-10-18T19:00:56.958941+00:00",
+      "Минфин США заявил об урегулировании конфликта на Украине через переговоры"
+    ],
+    [
+      "2026-10-18T19:00:56.958941+00:00",
+      "Макрон пообещал жесткие меры на фоне массовых протестов во Франции"
+    ],
+    [
+      "2026-10-18T19:00:56.958941+00:00",
+      "Anthropic передаст 5% акций в новый общественный фонд"
+    ],
+    [
+      "2026-10-18T19:00:56.958941+00:00",
+      "«Спартак» разгромил «Рубин» со счетом 4:0 в матче 11-го тура РПЛ"
     ]
   ]
 }
