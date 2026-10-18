@@ -777,7 +777,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T18:00:57.572920+00:00",
+  "breaking_ts": "2026-10-18T18:30:56.996181+00:00",
   "news_now": {
     "day": "2026-10-18",
     "day_count": 3,
@@ -790,60 +790,42 @@
     ]
   },
   "news_seen": [
+    "https://www.coindesk.com/policy/2026/10/18/the-white-house-s-crypto-chief-departs-state-of-crypto",
+    "https://www.rbc.ru/politics/18/10/2026/6ad50e98ba49aad68c4b32f8",
+    "https://t.me/rbc_news/158924",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1238022-tramp-podderzhal-netanyahu",
+    "https://www.rbc.ru/rbcfreenews/687ba6c09a79470bc1a7f570",
+    "https://www.kommersant.ru/doc/9041493",
+    "https://t.me/banksta/103651",
+    "https://tass.ru/ekonomika/28227645",
+    "https://t.me/markettwits/389346",
+    "https://t.me/WatcherGuru/15552",
+    "https://tass.ru/sport/28227641",
+    "https://tass.ru/politika/28227639",
+    "https://www.kommersant.ru/doc/9041492",
+    "https://t.me/markettwits/389345",
+    "https://tass.ru/proisshestviya/28227637",
+    "https://t.me/FinancialJuice/141064",
+    "https://t.me/FinancialJuice/141063",
+    "https://t.me/FinancialJuice/141062",
+    "https://t.me/FinancialJuice/141061",
+    "https://t.me/FinancialJuice/141060",
+    "https://t.me/headlines_for_traders/86940",
+    "https://www.interfax.ru/russia/1123324",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1238020-sbili-41-bespilotnik",
+    "https://www.investing.com/news/stock-market-news/european-earnings-preview-can-q3-results-meet-high-expectations-4956029",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227633",
     "https://t.me/coinpost/4272",
+    "https://cryptoslate.com/fidelitys-500000-crypto-settlement-leaves-iras-outside-wallet-transfer-terms/",
+    "https://www.kommersant.ru/doc/9041486",
     "https://tass.ru/proisshestviya/28227631",
-    "https://tass.ru/proisshestviya/28227625",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227623",
-    "https://www.sport-interfax.ru/1123323",
-    "https://tass.ru/sport/28227629",
-    "https://tass.ru/sport/28227627",
-    "https://www.rbc.ru/sport/17/10/2026/6ad3b4bf6930dce2d397163b",
-    "https://t.me/banksta/103650",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227619",
-    "https://tass.ru/sport/28227621",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227617",
-    "https://t.me/markettwits/389344",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1238019-zelenskii-srivaet-peregovori",
-    "https://t.me/interfaxonline/80312",
-    "https://www.kommersant.ru/doc/9041479",
-    "https://www.interfax.ru/russia/1123321",
-    "https://tass.ru/sport/28227615",
-    "https://www.interfax.ru/world/1123322",
-    "https://tass.ru/sport/28227613",
-    "https://www.rbc.ru/sport/14/10/2026/6acf40847591bebb73f2b576",
-    "https://tass.ru/sport/28227609",
-    "https://tass.ru/sport/28227605",
-    "https://t.me/banksta/103649",
-    "https://www.rbc.ru/politics/17/10/2026/6ad344c78c6fc667e013e6f7",
-    "https://tass.ru/sport/28227607",
-    "https://t.me/markettwits/389342",
-    "https://t.me/rbc_news/158923"
+    "https://tass.ru/proisshestviya/28227625"
   ],
   "ai_dead": {
     "date": "2026-10-18",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-17T19:00:57.351804+00:00",
-      "Во Франции число участников протестов достигло 800 тыс. человек"
-    ],
-    [
-      "2026-10-17T19:00:57.351804+00:00",
-      "MarketWatch оценил новый складной iPhone Duo за $2000"
-    ],
-    [
-      "2026-10-17T19:00:57.351804+00:00",
-      "В Луцке после атаки остановил работу завод Kromberg & Schubert"
-    ],
-    [
-      "2026-10-17T19:00:57.351804+00:00",
-      "Маск пообещал наделить новый Roadster Tesla сознанием"
-    ],
-    [
-      "2026-10-17T19:30:55.195714+00:00",
-      "Во Франции до 800 тыс. человек вышли на протесты против экономической политики"
-    ],
     [
       "2026-10-17T19:30:55.195714+00:00",
       "Правительство РФ перенесло сроки модернизации НПЗ на год"
@@ -1443,6 +1425,26 @@
     [
       "2026-10-18T18:00:57.572920+00:00",
       "Во Франции из-за беспорядков задержали 2 тысячи человек"
+    ],
+    [
+      "2026-10-18T18:30:56.996181+00:00",
+      "Доходы России от экспорта СПГ выросли на 68% до 75 млн евро в день"
+    ],
+    [
+      "2026-10-18T18:30:56.996181+00:00",
+      "Макрон выступил с обращением к народу на фоне протестов во Франции"
+    ],
+    [
+      "2026-10-18T18:30:56.996181+00:00",
+      "Силы ПВО за день сбили 41 украинский беспилотник над регионами РФ"
+    ],
+    [
+      "2026-10-18T18:30:56.996181+00:00",
+      "В Венгрии обвинили бывшего премьера Виктора Орбана в подготовке переворота"
+    ],
+    [
+      "2026-10-18T18:30:56.996181+00:00",
+      "Элизабет Абраамян выиграла чемпионат Европы по настольному теннису"
     ]
   ]
 }
