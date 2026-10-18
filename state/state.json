@@ -776,97 +776,66 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T11:00:57.498988+00:00",
+  "breaking_ts": "2026-10-18T11:30:57.257571+00:00",
   "news_now": {
     "day": "2026-10-18",
-    "day_count": 1,
+    "day_count": 2,
     "urgent_count": 0,
-    "last": "2026-10-18T05:00:54.983386+00:00",
+    "last": "2026-10-18T11:30:57.257571+00:00",
     "titles": [
-      "Атака БПЛА на Ленинградскую область: пожар на терминале и сбой у VK"
+      "Атака БПЛА на Ленинградскую область: пожар на терминале и сбой у VK",
+      "«Деловая Россия» предлагает налог на наследование бизнеса ради 66% ВВП"
     ]
   },
   "news_seen": [
+    "https://t.me/konenkov_official/1641",
+    "https://t.me/markettwits/389319",
+    "https://tass.ru/sport/28227131",
+    "https://www.rbc.ru/rbcfreenews/6847e88c9a794764e1314d86",
+    "https://tass.ru/obschestvo/28227127",
+    "https://www.rbc.ru/economics/05/07/2026/6a4a113b9a79472fea482e72",
+    "https://tass.ru/sport/28227107",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227121",
+    "https://t.me/interfaxonline/80306",
+    "https://t.me/rbc_news/158911",
+    "https://www.rbc.ru/rbcfreenews/6ad11b44e13bd5965d26bff9",
+    "https://www.interfax.ru/world/1123290",
+    "https://www.rbc.ru/politics/18/10/2026/6ad4a9fa9f67ca48c4070312",
+    "https://tass.ru/sport/28227067",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237976-litve-pitalis-podzhech",
+    "https://tass.ru/politika/28227117",
+    "https://t.me/banksta/103632",
+    "https://www.kommersant.ru/doc/9041339",
+    "https://www.rbc.ru/rbcfreenews/6ad4a826ef5f7593f8b47d91",
+    "https://thedefiant.io/news/hacks/cysic-halts-bridge-after-unauthorized-mint-of-10-million-cys",
+    "https://www.rbc.ru/rbcfreenews/6ad3880614d7ccaafcae0afd",
+    "https://tass.ru/politika/28227113",
+    "https://t.me/invest_zonaa/39055",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227097",
+    "https://www.kommersant.ru/doc/9041338",
+    "https://www.rbc.ru/sport/16/10/2026/6ad24b1e4a61116d578c2664",
+    "https://tass.ru/obschestvo/28227111",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227091",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227105",
+    "https://www.kommersant.ru/doc/9041334",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227101",
+    "https://www.interfax.ru/russia/1123289",
+    "https://t.me/headlines_for_traders/86923",
+    "https://t.me/interfaxonline/80305",
+    "https://t.me/cbrstocks/83411",
+    "https://www.kommersant.ru/doc/9041335",
+    "https://tass.ru/armiya-i-opk/28227015",
     "https://t.me/whale_alert_io/104009",
     "https://tass.ru/obschestvo/28227095",
     "https://tass.ru/sport/28227089",
     "https://tass.ru/obschestvo/28227093",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227083",
-    "https://tass.ru/obschestvo/28227087",
-    "https://tass.ru/politika/28227085",
-    "https://www.rbc.ru/sport/18/10/2026/6ad4710d17f5720b26953846",
-    "https://www.sport-interfax.ru/1123288",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227081",
-    "https://www.rbc.ru/sport/13/08/2026/6a7d97659a79473cda59aedb",
-    "https://tass.ru/proisshestviya/28227073",
-    "https://t.me/FinancialJuice/141044",
-    "https://www.rbc.ru/sport/17/10/2026/6ad38cda8e6ccdd52d5aefda",
-    "https://tass.ru/sport/28227069",
-    "https://tass.ru/obschestvo/28227061",
-    "https://www.interfax.ru/world/1123287",
-    "https://t.me/interfaxonline/80304",
-    "https://tass.ru/ekonomika/28227063",
-    "https://www.kommersant.ru/doc/9041333",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227065",
-    "https://tass.ru/sport/28227047",
-    "https://tass.ru/proisshestviya/28227059",
-    "https://tass.ru/obschestvo/28227055",
-    "https://t.me/invest_zonaa/39053",
-    "https://cointelegraph.com/news/cysic-crypto-bridge-halted-after-unauthorized-mint-of-10m-cys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://t.me/rbc_news/158910",
-    "https://t.me/FinancialJuice/141043",
-    "https://t.me/FinancialJuice/141042",
-    "https://t.me/proeconomics/20557",
-    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
-    "https://t.me/FinancialJuice/141041",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1237973-za-sutki-sili",
-    "https://tass.ru/armiya-i-opk/28227051",
-    "https://t.me/FinancialJuice/141040",
-    "https://www.interfax.ru/russia/1123286",
-    "https://www.kommersant.ru/doc/9041332",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227049",
-    "https://www.interfax.ru/world/1123283",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227041",
-    "https://www.interfax.ru/russia/1123285",
-    "https://tass.ru/politika/28227045",
-    "https://t.me/cbrstocks/83410",
-    "https://tass.ru/politika/28227037",
-    "https://tass.ru/proisshestviya/28227039",
-    "https://www.interfax.ru/world/1123284",
-    "https://www.rbc.ru/rbcfreenews/6aa398f32ae59603880cbcab",
-    "https://t.me/headlines_for_traders/86922",
-    "https://tass.ru/obschestvo/28227035",
-    "https://www.rbc.ru/politics/15/10/2026/6ad06e7611249f4893b68bcc"
+    "https://tass.ru/mezhdunarodnaya-panorama/28227083"
   ],
   "ai_dead": {
     "date": "2026-10-18",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-17T12:00:55.412637+00:00",
-      "Канцлер Германии Фридрих Мерц заявил о возможном возвращении воинского призыва"
-    ],
-    [
-      "2026-10-17T12:00:55.412637+00:00",
-      "Всемирный банк: около 800 млн молодых людей рискуют остаться без работы"
-    ],
-    [
-      "2026-10-17T12:00:55.412637+00:00",
-      "The National: Британия и Франция испытывают дефицит систем ПВО для Саудовской Аравии"
-    ],
-    [
-      "2026-10-17T12:00:55.412637+00:00",
-      "MarketWatch: лидерство на рынке США смещается из технологического сектора"
-    ],
-    [
-      "2026-10-17T12:30:57.154731+00:00",
-      "На Украине заявили об одном из крупнейших ударов по энергетике"
-    ],
-    [
-      "2026-10-17T12:30:57.154731+00:00",
-      "Индекс чипмейкеров SOX обновил антирекорд с 2008 года"
-    ],
     [
       "2026-10-17T12:30:57.154731+00:00",
       "Венгрия запросит продление исключения из санкций США по нефти из РФ"
@@ -1466,6 +1435,30 @@
     [
       "2026-10-18T11:00:57.498988+00:00",
       "РСПП предложил профинансировать создание систем ПВО через налоговый вычет"
+    ],
+    [
+      "2026-10-18T11:30:57.257571+00:00",
+      "Макрон выступит к нации на фоне беспорядков во Франции"
+    ],
+    [
+      "2026-10-18T11:30:57.257571+00:00",
+      "Тайвань закупит 292 БПЛА V-BAT у США"
+    ],
+    [
+      "2026-10-18T11:30:57.257571+00:00",
+      "Лавров и МИД Кувейта призвали к деэскалации в Персидском заливе"
+    ],
+    [
+      "2026-10-18T11:30:57.257571+00:00",
+      "Во Италии протесты переросли в столкновения с полицией"
+    ],
+    [
+      "2026-10-18T11:30:57.257571+00:00",
+      "Молдавия готовит закон о обязательных сборах для мужчин"
+    ],
+    [
+      "2026-10-18T11:30:57.257571+00:00",
+      "«Деловая Россия»: налог на наследование бизнеса для роста рынка до 66% ВВП"
     ]
   ]
 }
