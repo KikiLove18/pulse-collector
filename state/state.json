@@ -976,7 +976,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T05:00:54.983386+00:00",
+  "breaking_ts": "2026-10-18T05:30:53.737700+00:00",
   "news_now": {
     "day": "2026-10-18",
     "day_count": 1,
@@ -987,50 +987,53 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/proisshestviya/28226477",
+    "https://t.me/rbc_news/158898",
+    "https://t.me/banksta/103612",
+    "https://tass.ru/proisshestviya/28226475",
+    "https://tass.ru/obschestvo/28226467",
+    "https://tass.ru/sport/28226473",
+    "https://www.rbc.ru/politics/17/10/2026/6ad3020214f7464331e86a94",
+    "https://tass.ru/obschestvo/28226465",
+    "https://tass.ru/mezhdunarodnaya-panorama/28226471",
+    "https://www.rbc.ru/rbcfreenews/6ac12335a267479ad3708997",
+    "https://www.interfax.ru/russia/1123240",
+    "https://tass.ru/proisshestviya/28226463",
+    "https://t.me/FinancialJuice/141022",
+    "https://www.kommersant.ru/doc/9041216",
+    "https://www.rbc.ru/rbcfreenews/6ad4543b59c539bbd92cde65",
+    "https://tass.ru/obschestvo/28226459",
+    "https://www.investing.com/news/stock-market-news/rubio-heads-to-central-asia-while-other-us-officials-hit-foreign-policy-hot-spots-4955781",
+    "https://tass.ru/armiya-i-opk/28226453",
+    "https://www.rbc.ru/rbcfreenews/6ad4544ecea7d599fa996f25",
+    "https://www.interfax.ru/russia/1123239",
+    "https://t.me/FinancialJuice/141021",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://tass.ru/sport/28226449",
+    "https://tass.ru/proisshestviya/28226433",
+    "https://t.me/headlines_for_traders/86905",
+    "https://t.me/headlines_for_traders/86906",
+    "https://t.me/FinancialJuice/141020",
+    "https://t.me/FinancialJuice/141019",
+    "https://www.rbc.ru/politics/18/10/2026/6ad4327c82d831f782323dc2",
+    "https://tass.ru/nauka/28226429",
+    "https://www.rbc.ru/rbcfreenews/6ace71d3236c19446d02f005",
+    "https://tass.ru/obschestvo/28226441",
+    "https://t.me/bitkogan_hotline/27895",
+    "https://tass.ru/proisshestviya/28226439",
+    "https://t.me/rbc_news/158897",
+    "https://tass.ru/obschestvo/28226425",
+    "https://tass.ru/proisshestviya/28226435",
+    "https://t.me/forklog/50306",
+    "https://tass.ru/ekonomika/28226431",
+    "https://www.kommersant.ru/doc/9041215",
+    "https://tass.ru/ekonomika/28226421",
+    "https://tass.ru/proisshestviya/28226423",
     "https://tass.ru/armiya-i-opk/28226419",
     "https://tass.ru/obschestvo/28226417",
+    "https://www.interfax.ru/world/1123238",
     "https://tass.ru/sport/28226415",
-    "https://www.kommersant.ru/doc/9041214",
-    "https://tass.ru/proisshestviya/28226411",
-    "https://www.kommersant.ru/doc/9041213",
-    "https://tass.ru/sport/28226409",
-    "https://tass.ru/proisshestviya/28226403",
-    "https://tass.ru/obschestvo/28226405",
-    "https://www.rbc.ru/rbcfreenews/6ad4127007ac93d2f9a87f3e",
-    "https://t.me/bitkogan_hotline/27894",
-    "https://tass.ru/sport/28226401",
-    "https://www.investing.com/news/stock-market-news/antofagastas-centinela-strike-ends-after-deal-with-unions-4955771",
-    "https://tass.ru/obschestvo/28226399",
-    "https://www.kommersant.ru/doc/9041212",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1237947-rubio-ukraina",
-    "https://tass.ru/ekonomika/28226397",
-    "https://tass.ru/obschestvo/28226393",
-    "https://tass.ru/obschestvo/28226395",
-    "https://t.me/banksta/103611",
-    "https://t.me/bitkogan_hotline/27893",
-    "https://www.rbc.ru/rbcfreenews/6ad0883d805fec338bddc775",
-    "https://tass.ru/obschestvo/28226391",
-    "https://tass.ru/obschestvo/28226385",
-    "https://tass.ru/armiya-i-opk/28226389",
-    "https://tass.ru/armiya-i-opk/28226387",
-    "https://www.rbc.ru/economics/16/10/2026/6ad27d78078693a0b18b70cf",
-    "https://t.me/FinancialJuice/141018",
-    "https://t.me/FinancialJuice/141017",
-    "https://tass.ru/politika/28226379",
-    "https://t.me/FinancialJuice/141016",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1237946-nad-leningradskoi",
-    "https://www.interfax.ru/russia/1123237",
-    "https://tass.ru/sport/28226377",
-    "https://tass.ru/obschestvo/28226375",
-    "https://tass.ru/obschestvo/28226373",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1237945-sistema-pvo",
-    "https://tass.ru/obschestvo/28226369",
-    "https://www.kommersant.ru/doc/9041210",
-    "https://tass.ru/armiya-i-opk/28226363",
-    "https://tass.ru/ekonomika/28226361",
-    "https://www.rbc.ru/finances/13/10/2026/6acdd876483927e3a7d40667",
-    "https://tass.ru/armiya-i-opk/28226355",
-    "https://tass.ru/mezhdunarodnaya-panorama/28226353"
+    "https://www.kommersant.ru/doc/9041214"
   ],
   "ai_dead": {
     "date": "2026-10-17",
@@ -1039,10 +1042,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-17T06:30:55.365873+00:00",
-      "Акции «Полюса» показали рост на 6,53% по итогам сессий"
-    ],
     [
       "2026-10-17T07:00:56.786781+00:00",
       "КСИР: нефтяной танкер подорвался на морской мине в Ормузском проливе"
@@ -1642,6 +1641,26 @@
     [
       "2026-10-18T05:00:54.983386+00:00",
       "На нефтяном терминале в Петербурге произошел пожар после атаки 126 БПЛА"
+    ],
+    [
+      "2026-10-18T05:30:53.737700+00:00",
+      "Над Ленинградской областью за ночь сбили 135 БПЛА"
+    ],
+    [
+      "2026-10-18T05:30:53.737700+00:00",
+      "Силы ПВО за ночь сбили 76 дронов на подлете к Москве"
+    ],
+    [
+      "2026-10-18T05:30:53.737700+00:00",
+      "Рубио: Трамп использует паузу для анализа санкций против РФ"
+    ],
+    [
+      "2026-10-18T05:30:53.737700+00:00",
+      "АЭВТ предупредила о рисках для планшетов пилотов из-за системы «Антифрод»"
+    ],
+    [
+      "2026-10-18T05:30:53.737700+00:00",
+      "РФ предложила создать региональную платформу на базе Всемирного банка"
     ]
   ]
 }
