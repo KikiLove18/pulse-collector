@@ -6,6 +6,7 @@
 Пока владелец не одобрил публикацию в канал PRO — только в тестовый канал (TELEGRAM_CHAT_ID).
 """
 import json
+import re
 import sys
 import urllib.parse
 from datetime import datetime, timedelta, timezone
@@ -55,7 +56,7 @@ WEEKLY = """Ты — главный редактор закрытого кана
 ничего не додумывай. Никаких советов «покупай/продавай», никаких обещаний доходности. Объём — до 3000 знаков.
 
 В конце, ОТДЕЛЬНОЙ последней строкой, JSON для обложки без ```:
-{"cover": {"title": "Разбор недели: главная тема до 45 знаков", "theme": "один из: THEMES", "sent": "pos|neg|neu"}}
+{"cover": {"title": "главная тема недели до 45 знаков, без слов «Разбор недели»", "theme": "один из: THEMES", "sent": "pos|neg|neu"}}
 """.replace("THEMES", ", ".join(cards.THEMES))
 
 
@@ -212,11 +213,13 @@ def run_weekly(ask_ai, http_get, calendar_next, publish_card, now, dry):
                for k, n, _ in WEEK_QUOTES if k in wq][:3]
     card = {"theme": cover.get("theme") if cover.get("theme") in cards.THEMES else "wallst", "tag": "РАЗБОР НЕДЕЛИ",
             "sent": cover.get("sent") if cover.get("sent") in cards.SENT else "neu",
-            "title": (cover.get("title") or "Разбор недели")[:70], "metrics": metrics}
+            "title": (re.sub(r"^\s*Разбор недели\s*[:—-]\s*", "", cover.get("title") or "", flags=re.I) or "Главное за неделю")[:70],
+            "metrics": metrics}
     card_id = f"wk{now.astimezone(MSK):%Y%m%d}"
     if dry:
         print("\n" + html + "\n\nОБЛОЖКА: " + json.dumps(card, ensure_ascii=False))
         return html
+    print("----- разбор недели -----\n" + html, file=sys.stderr)  # текст поста виден в журнале запуска
     url, _ = edition.upload_card(card, card_id, week_label(now))
     publish_card(html, url)
     return html
