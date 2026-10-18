@@ -776,74 +776,77 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T12:30:56.278026+00:00",
+  "breaking_ts": "2026-10-18T13:00:55.366035+00:00",
   "news_now": {
     "day": "2026-10-18",
-    "day_count": 2,
+    "day_count": 3,
     "urgent_count": 0,
-    "last": "2026-10-18T11:30:57.257571+00:00",
+    "last": "2026-10-18T13:00:55.366035+00:00",
     "titles": [
       "Атака БПЛА на Ленинградскую область: пожар на терминале и сбой у VK",
-      "«Деловая Россия» предлагает налог на наследование бизнеса ради 66% ВВП"
+      "«Деловая Россия» предлагает налог на наследование бизнеса ради 66% ВВП",
+      "Трамп отложил жесткие санкции против РФ"
     ]
   },
   "news_seen": [
-    "https://tass.ru/sport/28227181",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227173",
-    "https://www.kommersant.ru/doc/9041362",
-    "https://tass.ru/sport/28227171",
-    "https://tass.ru/sport/28227169",
-    "https://t.me/bitkogan/29454",
-    "https://tass.ru/proisshestviya/28227133",
-    "https://www.kommersant.ru/doc/9041360",
-    "https://www.rbc.ru/rbcfreenews/6a9d519120c3a9df69c71f92",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227165",
-    "https://t.me/banksta/103635",
-    "https://www.rbc.ru/rbcfreenews/6ad07b1c53c2138e342dfc0d",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227161",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227159",
-    "https://tass.ru/proisshestviya/28227163",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1237980-papa-rimskii-poyavilsya",
-    "https://www.rbc.ru/sport/14/10/2026/6acf962f9a7947107d901d95",
-    "https://www.kommersant.ru/doc/9041358",
-    "https://tass.ru/sport/28227157",
-    "https://tass.ru/sport/28227153",
-    "https://t.me/forklog/50309",
-    "https://cryptoslate.com/prediction-markets-have-a-major-problem-as-most-americans-reject-betting-on-elections/",
-    "https://t.me/rbc_news/158912",
-    "https://www.coindesk.com/business/2026/10/14/crypto-exchanges-binance-coinbase-join-west-africa-scam-sweep-that-flagged-usd11-million",
-    "https://www.marketwatch.com/story/there-is-a-silent-market-rotation-inside-the-s-p-500-thats-warning-of-more-weakness-ahead-549e7650?mod=mw_rss_topstories",
-    "https://www.sport-interfax.ru/1123292",
-    "https://t.me/cbrstocks/83412",
-    "https://tass.ru/obschestvo/28227151",
-    "https://www.vedomosti.ru/society/news/2026/10/18/1237979-drozdenko-rasskazal",
-    "https://www.kommersant.ru/doc/9041356",
-    "https://cryptoslate.com/bittorrent-ushers-in-next-gen-web3-infrastructure-with-strategic-rebrand-and-inaugural-btt-burn/",
-    "https://www.kommersant.ru/doc/9041355",
-    "https://t.me/nainspire/5533",
-    "https://tass.ru/sport/28227149"
+    "https://t.me/rbc_news/158915",
+    "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook",
+    "https://www.coindesk.com/tech/2026/10/18/crypto-audits-give-investors-false-sense-of-security-as-q3-hacks-cost-usd1-18-billion-hacken-says",
+    "https://tass.ru/sport/28227213",
+    "https://www.vedomosti.ru/society/news/2026/10/18/1237986-dva-samoleta-perenapravili",
+    "https://t.me/BitcoinMagazineTelegram/10858",
+    "https://tass.ru/sport/28227211",
+    "https://www.kommersant.ru/doc/9041370",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237985-tramp-prizval-frantsiyu",
+    "https://tass.ru/politika/28227209",
+    "https://www.rbc.ru/rbcfreenews/6accadeaaf10ee1648aaecef",
+    "https://www.kommersant.ru/doc/9041373",
+    "https://t.me/FinancialJuice/141045",
+    "https://tass.ru/kultura/28227203",
+    "https://www.rbc.ru/sport/29/09/2026/6abbd8b29a7947c516a23ee4",
+    "https://t.me/incrypted/33033",
+    "https://www.kommersant.ru/doc/9041369",
+    "https://t.me/WatcherGuru/15549",
+    "https://www.interfax.ru/russia/1123296",
+    "https://tass.ru/obschestvo/28227205",
+    "https://tass.ru/sport/28227207",
+    "https://www.interfax.ru/world/1123295",
+    "https://tass.ru/obschestvo/28227201",
+    "https://www.rbc.ru/rbcfreenews/6ad4543b59c539bbd92cde65",
+    "https://t.me/banksta/103636",
+    "https://t.me/headlines_for_traders/86924",
+    "https://www.vedomosti.ru/media/news/2026/10/18/1237984-netflix-zaregistriroval-znak",
+    "https://www.interfax.ru/world/1123294",
+    "https://t.me/BitcoinMagazineTelegram/10857",
+    "https://t.me/WalterBloomberg/37074",
+    "https://www.rbc.ru/politics/18/10/2026/6ad4bd79ae0abdefbadf46b2",
+    "https://tass.ru/politika/28227195",
+    "https://www.kommersant.ru/doc/9041368",
+    "https://www.rbc.ru/business/13/10/2026/6acd15b87b2ea2eff04eaa93",
+    "https://tass.ru/ekonomika/28227199",
+    "https://tass.ru/sport/28227197",
+    "https://t.me/bitkogan/29455",
+    "https://tass.ru/sport/28227193",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237982-v-milane-50",
+    "https://www.interfax.ru/russia/1123293",
+    "https://t.me/rbc_news/158914",
+    "https://www.kommersant.ru/doc/9041363",
+    "https://tass.ru/sport/28227191",
+    "https://tass.ru/obschestvo/28227189",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227179",
+    "https://tass.ru/proisshestviya/28227185",
+    "https://tass.ru/sport/28227187",
+    "https://t.me/rbc_news/158913",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237983-ssha-vozobnovili",
+    "https://cryptoslate.com/cryptoquant-ceo-sees-30000-bitcoin-floor-even-if-etfs-and-treasury-firms-exit/",
+    "https://tass.ru/proisshestviya/28227183",
+    "https://tass.ru/sport/28227181"
   ],
   "ai_dead": {
     "date": "2026-10-18",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-17T13:30:59.988443+00:00",
-      "Индекс Nasdaq завершил неделю падением на 5,5%"
-    ],
-    [
-      "2026-10-17T13:30:59.988443+00:00",
-      "Binance Pool закроет майнинговый пул 10 ноября"
-    ],
-    [
-      "2026-10-17T13:30:59.988443+00:00",
-      "Силуанов заявил о необходимости укрепить надзорные функции МВФ"
-    ],
-    [
-      "2026-10-17T13:30:59.988443+00:00",
-      "Хакеры переводят похищенные средства в Zcash для отмывания"
-    ],
     [
       "2026-10-17T14:00:54.227701+00:00",
       "Второй за сутки супертанкер подорвался на мине в Ормузском проливе"
@@ -1443,6 +1446,30 @@
     [
       "2026-10-18T12:30:56.278026+00:00",
       "В Китае зафиксировали массовые попытки взлома ИИ-агентами Tencent"
+    ],
+    [
+      "2026-10-18T13:00:55.366035+00:00",
+      "Трамп отложил на 60 дней введение жестких санкций против России"
+    ],
+    [
+      "2026-10-18T13:00:55.366035+00:00",
+      "Два самолета турецких авиакомпаний перенаправили из России в Белоруссию"
+    ],
+    [
+      "2026-10-18T13:00:55.366035+00:00",
+      "Ущерб от хакерских атак в криптоиндустрии достиг $1,18 млрд в III квартале"
+    ],
+    [
+      "2026-10-18T13:00:55.366035+00:00",
+      "UKMTO сообщило о новых нападениях на суда у побережья ОАЭ и Йемена"
+    ],
+    [
+      "2026-10-18T13:00:55.366035+00:00",
+      "Трамп призвал власти Франции закрыть границы на фоне масштабных протестов"
+    ],
+    [
+      "2026-10-18T13:00:55.366035+00:00",
+      "Аналитики расходятся в прогнозах по биткоину на уровне $100 000 к концу года"
     ]
   ]
 }
