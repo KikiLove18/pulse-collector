@@ -776,7 +776,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T13:30:57.825066+00:00",
+  "breaking_ts": "2026-10-18T14:01:01.883215+00:00",
   "news_now": {
     "day": "2026-10-18",
     "day_count": 3,
@@ -789,75 +789,55 @@
     ]
   },
   "news_seen": [
+    "https://www.coindesk.com/business/2026/10/18/stablecoin-supply-stalls-but-payments-jump-45-as-visa-mastercard-and-stripe-connect-crypto-to-cash",
+    "https://www.marketwatch.com/story/these-surprising-stocks-could-be-some-of-the-biggest-drivers-of-s-p-500-earnings-growth-ea073a07?mod=mw_rss_topstories",
+    "https://www.rbc.ru/sport/17/07/2026/6a5a133e9a794730f4d1a8f5",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227295",
+    "https://tass.ru/proisshestviya/28227297",
+    "https://tass.ru/sport/28227301",
+    "https://t.me/rbc_news/158917",
+    "https://tass.ru/sport/28227299",
+    "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227289",
+    "https://www.kommersant.ru/doc/9041399",
+    "https://www.rbc.ru/politics/03/10/2026/6abfec0d9a79477cc5df3660",
+    "https://tass.ru/ekonomika/28227283",
+    "https://www.kommersant.ru/doc/9041401",
+    "https://www.kommersant.ru/doc/9041376",
+    "https://www.kommersant.ru/doc/9041398",
+    "https://tass.ru/sport/28227285",
+    "https://t.me/banksta/103640",
+    "https://cointelegraph.com/news/most-americans-polled-oppose-betting-on-elections-reuters?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://www.rbc.ru/rbcfreenews/6abf0dab99896e59174c73c8",
+    "https://www.interfax.ru/world/1123302",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237989-v-irane-naznachili",
+    "https://t.me/forklog/50310",
+    "https://tass.ru/proisshestviya/28227281",
+    "https://t.me/wublockchainenglish/26466",
+    "https://www.kommersant.ru/doc/9041394",
+    "https://www.rbc.ru/sport/09/10/2026/6ac8c0e69a794744e1e4cd7f",
+    "https://t.me/wublockchainenglish/26465",
+    "https://t.me/FinancialJuice/141048",
+    "https://tass.ru/sport/28227279",
+    "https://www.interfax.ru/russia/1123301",
+    "https://tass.ru/politika/28227275",
+    "https://tass.ru/politika/28227273",
+    "https://t.me/rbc_news/158916",
+    "https://www.rbc.ru/rbcfreenews/6ac647501e8904c4ba750ee2",
+    "https://t.me/FinancialJuice/141047",
+    "https://www.rbc.ru/radio/18/10/2026/6ad4c9a29a7947ad901e1c75",
     "https://t.me/headlines_for_traders/86925",
     "https://t.me/markettwits/389322",
+    "https://www.kommersant.ru/doc/9041387",
     "https://www.vedomosti.ru/politics/news/2026/10/18/1237988-makron-vistupit",
     "https://www.rbc.ru/politics/17/10/2026/6ad342dad5b755c598a01414",
-    "https://tass.ru/ekonomika/28227259",
-    "https://www.kommersant.ru/doc/9041386",
-    "https://t.me/markettwits/389321",
-    "https://tass.ru/ekonomika/28227269",
-    "https://t.me/invest_zonaa/39056",
-    "https://tass.ru/proisshestviya/28227271",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227267",
-    "https://tass.ru/ekonomika/28227263",
-    "https://tass.ru/sport/28227265",
-    "https://www.rbc.ru/politics/16/10/2026/6ad217c731a71ba4ae84a391",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227257",
-    "https://tass.ru/proisshestviya/28227251",
-    "https://t.me/FinancialJuice/141046",
-    "https://tass.ru/proisshestviya/28227261",
-    "https://tass.ru/politika/28227249",
-    "https://t.me/banksta/103637",
-    "https://www.vedomosti.ru/society/news/2026/10/18/1237987-sinoptik-sprognoziroval-leto",
-    "https://t.me/interfaxonline/80309",
-    "https://www.rbc.ru/sport/17/10/2026/6ad3681d14d7ccaafcae0ac1",
-    "https://tass.ru/sport/28227253",
-    "https://tass.ru/sport/28227255",
-    "https://www.kommersant.ru/doc/9041379",
-    "https://t.me/markettwits/389320",
-    "https://www.kommersant.ru/doc/9041381",
-    "https://www.kommersant.ru/doc/9041380",
-    "https://tass.ru/ekonomika/28227247",
-    "https://t.me/interfaxonline/80308",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227217",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227245",
-    "https://www.interfax.ru/world/1123299",
-    "https://t.me/gpb_investments/25122",
-    "https://www.interfax.ru/world/1123298",
-    "https://tass.ru/sport/28227215",
-    "https://decrypt.co/381253/banks-hold-a-lever-over-stablecoin-adoption-bis-economists-say",
-    "https://t.me/investfuture/15418",
-    "https://www.interfax.ru/world/1123297",
-    "https://cryptoslate.com/trump-waives-new-russia-tariffs-as-october-18-oil-deadline-arrives/",
-    "https://www.investing.com/news/stock-market-news/as-ai-rally-wobbles-stock-markets-spotlight-turns-to-earnings-4955913",
-    "https://t.me/rbc_news/158915",
-    "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook",
-    "https://www.coindesk.com/tech/2026/10/18/crypto-audits-give-investors-false-sense-of-security-as-q3-hacks-cost-usd1-18-billion-hacken-says",
-    "https://www.marketwatch.com/story/stocks-are-heading-for-a-high-stakes-showdown-as-strong-earnings-collide-with-rising-borrowing-costs-6f8ea5b8?mod=mw_rss_topstories",
-    "https://tass.ru/sport/28227213",
-    "https://www.vedomosti.ru/society/news/2026/10/18/1237986-dva-samoleta-perenapravili",
-    "https://t.me/BitcoinMagazineTelegram/10858",
-    "https://tass.ru/sport/28227211",
-    "https://www.kommersant.ru/doc/9041370"
+    "https://tass.ru/ekonomika/28227259"
   ],
   "ai_dead": {
     "date": "2026-10-18",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-17T14:30:56.255123+00:00",
-      "В аэропортах Москвы задержаны более 100 авиарейсов"
-    ],
-    [
-      "2026-10-17T14:30:56.255123+00:00",
-      "Президент Египта Абдель Фаттах ас-Сиси объявил об уходе в 2030 году"
-    ],
-    [
-      "2026-10-17T14:30:56.255123+00:00",
-      "В Японии остановили энергоблок АЭС «Онагава» из-за утечки"
-    ],
     [
       "2026-10-17T14:30:56.255123+00:00",
       "Polygon приобретает Coinme для выхода на рынок платежей"
@@ -1457,6 +1437,26 @@
     [
       "2026-10-18T13:30:57.825066+00:00",
       "BIS: рост стейблкоинов замедляется при повышении ставок банками США"
+    ],
+    [
+      "2026-10-18T14:01:01.883215+00:00",
+      "Deutsche Bank: CoreWeave столкнется с дефицитом в $35 млрд"
+    ],
+    [
+      "2026-10-18T14:01:01.883215+00:00",
+      "CoinDesk: объем стейблкоинов замер, но платежи выросли на 45%"
+    ],
+    [
+      "2026-10-18T14:01:01.883215+00:00",
+      "Cysic остановил кроссчейн-мост после выпуска 10 млн CYS"
+    ],
+    [
+      "2026-10-18T14:01:01.883215+00:00",
+      "Минэнерго США: Вашингтон не смягчал санкции против нефти из РФ"
+    ],
+    [
+      "2026-10-18T14:01:01.883215+00:00",
+      "Anthropic предложила порог в $1 млрд для вмешательства в ИИ"
     ]
   ]
 }
