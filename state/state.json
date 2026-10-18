@@ -976,7 +976,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T08:31:08.628227+00:00",
+  "breaking_ts": "2026-10-18T09:00:56.071820+00:00",
   "news_now": {
     "day": "2026-10-18",
     "day_count": 1,
@@ -987,83 +987,48 @@
     ]
   },
   "news_seen": [
+    "https://t.me/minfin/9377",
+    "https://t.me/FinancialJuice/141028",
+    "https://tass.ru/ekonomika/28226443",
+    "https://tass.ru/proisshestviya/28226847",
+    "https://www.rbc.ru/rbcfreenews/6ad406fa07ac93d2f9a87f3b",
+    "https://tass.ru/obschestvo/28226843",
+    "https://tass.ru/nauka/28226833",
+    "https://www.kommersant.ru/doc/9041289",
+    "https://tass.ru/obschestvo/28226839",
+    "https://tass.ru/obschestvo/28226837",
+    "https://t.me/rbc_news/158905",
+    "https://tass.ru/proisshestviya/28226831",
+    "https://www.kommersant.ru/doc/9041285",
+    "https://www.rbc.ru/politics/08/08/2026/6a776b7c9a7947538aac8dcf",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237963-do-10-viroslo-chislo",
+    "https://t.me/interfaxonline/80299",
+    "https://t.me/headlines_for_traders/86918",
+    "https://t.me/headlines_for_traders/86919",
+    "https://tass.ru/sport/28226827",
+    "https://www.interfax.ru/world/1123270",
+    "https://t.me/forklog/50307",
+    "https://www.kommersant.ru/doc/9041279",
+    "https://tass.ru/obschestvo/28226823",
+    "https://t.me/wublockchainenglish/26464",
+    "https://t.me/if_market_news/86098",
+    "https://tass.ru/mezhdunarodnaya-panorama/28226817",
+    "https://t.me/thebell_io/39521",
+    "https://www.rbc.ru/rbcfreenews/6ad3e83917f5720b26953808",
+    "https://tass.ru/sport/28226815",
+    "https://tass.ru/obschestvo/28226807",
+    "https://tass.ru/armiya-i-opk/28226813",
     "https://tass.ru/armiya-i-opk/28226809",
+    "https://www.interfax.ru/russia/1123269",
     "https://t.me/markettwits/389318",
     "https://tass.ru/sport/28226805",
-    "https://www.rbc.ru/rbcfreenews/6a738c0e9a79477398228636",
-    "https://www.interfax.ru/russia/1123267",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1237962-vens-zapadnie-liberali",
-    "https://www.sport-interfax.ru/1123268",
-    "https://t.me/banksta/103616",
-    "https://t.me/markettwits/389317",
-    "https://www.rbc.ru/rbcfreenews/6ad3880614d7ccaafcae0afd",
-    "https://t.me/rbc_news/158904",
-    "https://t.me/FinancialJuice/141027",
-    "https://t.me/markettwits/389316",
-    "https://t.me/headlines_for_traders/86917",
-    "https://www.rbc.ru/rbcfreenews/6abf78dba31dad6d4d7ab773",
-    "https://t.me/interfaxonline/80298",
-    "https://tass.ru/armiya-i-opk/28226801",
-    "https://tass.ru/obschestvo/28226799",
-    "https://tass.ru/ekonomika/28226795",
-    "https://tass.ru/obschestvo/28226791",
-    "https://t.me/headlines_for_traders/86916",
-    "https://tass.ru/nauka/28226787",
-    "https://tass.ru/obschestvo/28226793",
-    "https://www.interfax.ru/russia/1123266",
-    "https://tass.ru/sport/28226789",
-    "https://tass.ru/politika/28226781",
-    "https://t.me/markettwits/389315",
-    "https://t.me/if_market_news/86097",
-    "https://www.kommersant.ru/doc/9041274",
-    "https://www.interfax.ru/world/1123265",
-    "https://www.rbc.ru/rbcfreenews/69e0a4fc9a794776fd9f6af3",
-    "https://tass.ru/kultura/28226769",
-    "https://tass.ru/obschestvo/28226783",
-    "https://t.me/wublockchainenglish/26463",
-    "https://t.me/alfa_investments/8472",
-    "https://tass.ru/obschestvo/28226775",
-    "https://tass.ru/proisshestviya/28226777",
-    "https://www.kommersant.ru/doc/9041271",
-    "https://tass.ru/obschestvo/28226767",
-    "https://tass.ru/proisshestviya/28226771",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1237961-tramp-nazval",
-    "https://tass.ru/obschestvo/28226773",
-    "https://www.rbc.ru/politics/16/10/2026/6ad22127eba68880108d15af",
-    "https://tass.ru/obschestvo/28226765",
-    "https://t.me/headlines_for_traders/86915",
-    "https://tass.ru/interviews/28214365",
-    "https://t.me/markettwits/389314",
-    "https://tass.ru/sport/28226759",
-    "https://tass.ru/obschestvo/28226763",
-    "https://tass.ru/nauka/28226757",
-    "https://www.rbc.ru/politics/29/07/2026/6a6988759a7947c50b702977"
+    "https://www.rbc.ru/rbcfreenews/6a738c0e9a79477398228636"
   ],
   "ai_dead": {
     "date": "2026-10-18",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-17T09:30:53.820502+00:00",
-      "Правительство выделило регионам 1.7 млрд рублей на развитие экспорта"
-    ],
-    [
-      "2026-10-17T09:30:53.820502+00:00",
-      "Spiegel: к поджогу станции Starlink в Польше причастна ОПГ"
-    ],
-    [
-      "2026-10-17T10:00:58.825590+00:00",
-      "Anthropic: ИИ может поднять ВВП США до $44 трлн к 2030 году"
-    ],
-    [
-      "2026-10-17T10:00:58.825590+00:00",
-      "Минобороны РФ заявило о взятии восьми населенных пунктов в зоне СВО"
-    ],
-    [
-      "2026-10-17T10:00:58.825590+00:00",
-      "РСПП попросил правительство четких правил внешнего управления"
-    ],
     [
       "2026-10-17T10:00:58.825590+00:00",
       "Президент Египта призвал защитить Саудовскую Аравию"
@@ -1663,6 +1628,26 @@
     [
       "2026-10-18T08:31:08.628227+00:00",
       "На военной базе в Канаде произошел крупный пожар"
+    ],
+    [
+      "2026-10-18T09:00:56.071820+00:00",
+      "Петербург и Ленобласть подверглись крупнейшей атаке 145 беспилотников"
+    ],
+    [
+      "2026-10-18T09:00:56.071820+00:00",
+      "Число задержанных на беспорядках во Франции превысило 1 200 человек"
+    ],
+    [
+      "2026-10-18T09:00:56.071820+00:00",
+      "Джастин Сан заявил о продаже 80–90% позиций по ETH"
+    ],
+    [
+      "2026-10-18T09:00:56.071820+00:00",
+      "РСПП предложил стимулировать инвестиции бизнеса в ПВО налоговым вычетом"
+    ],
+    [
+      "2026-10-18T09:00:56.071820+00:00",
+      "Танкер СПГ отразил нападение вооруженной группы у берегов Йемена"
     ]
   ]
 }
