@@ -11,6 +11,8 @@ import tempfile
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
+from PIL import Image
+
 from bot import cards, photos
 
 MSK = timezone(timedelta(hours=3))
@@ -25,6 +27,9 @@ def not_advice(html):
 DAY_NEWS_PER_DAY = 12    # днём — всего за сутки (сервер присылает человеку его лимит: 4 или 10, по его рынкам)
 DAY_NEWS_GAP_MIN = 40    # не чаще, чем раз в 40 минут
 FEED_PER_RUN = 6         # в ленту приложения — до 6 заметных новостей за каждую проверку (каждые 30 минут)
+FEED_CARDS = 3           # карточки-картинки к Ленте: до 3 за проверку, только imp ≥ 2 (Инженер 16.10: ≤ 5 мин на запуск, ~7 МБ/сутки)
+FEED_TAG = {"us": "Рынок США", "crypto": "Крипта", "commodities": "Сырьё", "ru": "Россия", "x": "Что говорят"}
+FEED_THEME = {"us": "wallst", "crypto": "crypto", "commodities": "oil", "ru": "kremlin", "x": "whitehouse"}
 URGENT_PER_DAY = 1
 MONTHS = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"]
 SENT_ICON = {"pos": "🟢", "neg": "🔴", "neu": "⚪️"}
@@ -57,7 +62,7 @@ urgent=true — ТОЛЬКО исключительное (не чаще раз�
  "sent": "pos|neg|neu", "block": "us|crypto|commodities|ru|x", "tag": "1–2 слова", "theme": "один из: THEMES",
  "metrics": [{"value": "...", "label": "..."}], "photo": ["2–3 англ. слова: предмет или место из новости", "более общий запрос", "1–2 слова: самое общее"],
  "feed": [{"pick": номер, "title": "заголовок до 90 знаков", "text": "2–3 коротких предложения по-русски, 200–300 знаков: что произошло — с цифрами (сколько, на сколько %, по сравнению с чем); главное следствие для рынка — в <u></u>", "block": "us|crypto|commodities|ru|x", "sent": "pos|neg|neu", "icon": "1 эмодзи-флаг или тема",
-           "imp": 1|2|3, "also": [номера других новостей списка о том же событии],
+           "theme": "фон карточки, один из: THEMES", "imp": 1|2|3, "also": [номера других новостей списка о том же событии],
            "metrics": [{"value": "короткое число из новости, напр. +3%, $190 млрд, 16,5%", "label": "2–3 слова: что это"}]}]}
 photo — для поиска фото на Wikimedia Commons, без имён людей. Никаких советов «покупай/продавай». Цифры только из входных данных.
 feed — ВСЕГДА (даже при send=false): до 6 самых заметных новостей из списка для ленты приложения — разные темы, без рутины и рекламы, дубли склеивай.
@@ -95,6 +100,31 @@ def upload_card(card, card_id, date_label):
     b64 = base64.b64encode(open(path, "rb").read()).decode()
     res = _post("/api/card", {"id": card_id, "b64": b64})
     return (res or {}).get("url"), path
+
+
+def feed_cards(out, now, dry):
+    """Картинка к важным новостям Ленты — как в Телеграме (фон темы + заголовок + цифры), но 960×540: в D1 ~100 КБ вместо ~800.
+    Включается переменной FEED_CARDS=on (чистку карточек старше 7 дней делает сервер при каждой новой)."""
+    themes = [o.pop("_theme", None) for o in out]  # служебное поле — на сервер не уходит
+    if os.environ.get("FEED_CARDS") != "on" and not dry:
+        return
+    top = sorted((i for i, o in enumerate(out) if o["imp"] >= 2), key=lambda i: -out[i]["imp"])[:FEED_CARDS]
+    for n, j in enumerate(top):
+        o, theme = out[j], themes[j]
+        card = {"theme": theme if theme in cards.THEMES else FEED_THEME.get(o["block"], "wallst"),
+                "tag": FEED_TAG.get(o["block"], "Рынки"), "sent": o["sent"], "title": o["title"][:90], "metrics": o["metrics"]}
+        card_id = f"f{now:%Y%m%d%H%M}{n}"
+        path = os.path.join(tempfile.gettempdir(), f"{card_id}.jpg")
+        try:
+            cards.render(card, path, date_label(now))
+            Image.open(path).resize((960, 540), Image.LANCZOS).save(path, "JPEG", quality=82, optimize=True)
+            if dry:
+                print(f"Лента: карточка {path} ({os.path.getsize(path) // 1024} КБ)", file=sys.stderr)
+                continue
+            _post("/api/card", {"id": card_id, "b64": base64.b64encode(open(path, "rb").read()).decode()})
+            o["card"] = card_id
+        except Exception as e:
+            print(f"Лента: карточка не сделана — {str(e)[:120]}", file=sys.stderr)
 
 
 def news_html(n):
@@ -273,7 +303,7 @@ def push_feed(feed, items, now, dry, state=None):
             imp = 1
         out.append({"block": f.get("block") or "us", "icon": (f.get("icon") or "")[:8], "title": f["title"][:120], "text": f.get("text", ""),
                     "sent": f.get("sent") if f.get("sent") in ("pos", "neg", "neu") else "neu", "url": src["link"],
-                    "source": name(src), "also": also[:10], "imp": imp, "ts": now.isoformat(),
+                    "source": name(src), "also": also[:10], "imp": imp, "ts": now.isoformat(), "_theme": f.get("theme"),
                     "metrics": [{"value": str(x.get("value", ""))[:16], "label": str(x.get("label", ""))[:24]}
                                 for x in (f.get("metrics") or []) if isinstance(x, dict) and x.get("value")][:3]})
     if not out:
@@ -281,6 +311,7 @@ def push_feed(feed, items, now, dry, state=None):
     if state is not None:  # что уже в ленте за сутки — ИИ не повторит это событие в следующих проверках
         day_ago = (now - timedelta(hours=24)).isoformat()
         state["feed_recent"] = [r for r in state.get("feed_recent", []) if r[0] > day_ago][-150:] + [[o["ts"], o["title"]] for o in out]
+    feed_cards(out, now, dry)
     print(f"Лента: +{len(out)} новостей, текст в среднем {sum(len(o['text']) for o in out) // len(out)} знаков", file=sys.stderr)
     if dry:
         for o in out:
