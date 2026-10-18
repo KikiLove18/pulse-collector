@@ -976,54 +976,61 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T04:00:56.680704+00:00",
+  "breaking_ts": "2026-10-18T05:00:54.983386+00:00",
   "news_now": {
     "day": "2026-10-18",
-    "day_count": 0,
+    "day_count": 1,
     "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "last": "2026-10-18T05:00:54.983386+00:00",
+    "titles": [
+      "Атака БПЛА на Ленинградскую область: пожар на терминале и сбой у VK"
+    ]
   },
   "news_seen": [
-    "https://www.kommersant.ru/doc/9041209",
-    "https://tass.ru/proisshestviya/28226343",
-    "https://tass.ru/obschestvo/28226301",
-    "https://tass.ru/ekonomika/28226341",
-    "https://www.interfax.ru/world/1123236",
-    "https://tass.ru/obschestvo/28226339",
-    "https://t.me/interfaxonline/80288",
-    "https://tass.ru/proisshestviya/28226335",
-    "https://t.me/interfaxonline/80287",
-    "https://www.kommersant.ru/doc/9041208",
-    "https://www.rbc.ru/rbcfreenews/68d659039a79479915d5be0f",
-    "https://tass.ru/obschestvo/28226329",
-    "https://tass.ru/armiya-i-opk/28226331",
-    "https://tass.ru/armiya-i-opk/28226327",
-    "https://tass.ru/kosmos/28226325",
-    "https://tass.ru/ekonomika/28226319",
-    "https://tass.ru/proisshestviya/28226315",
-    "https://tass.ru/ekonomika/28226317",
-    "https://tass.ru/proisshestviya/28226309",
-    "https://tass.ru/obschestvo/28226311",
-    "https://tass.ru/ekonomika/28226313",
-    "https://t.me/wublockchainenglish/26461",
-    "https://tass.ru/obschestvo/28226303",
-    "https://tass.ru/proisshestviya/28226305",
-    "https://t.me/interfaxonline/80286",
-    "https://tass.ru/ekonomika/28226297",
-    "https://t.me/FinancialJuice/141015",
-    "https://tass.ru/proisshestviya/28226295",
-    "https://tass.ru/ekonomika/28226293",
-    "https://www.interfax.ru/russia/1123235",
-    "https://www.rbc.ru/quote/08/10/2026/6ac7c33a9a7947043c254183",
+    "https://tass.ru/armiya-i-opk/28226419",
+    "https://tass.ru/obschestvo/28226417",
+    "https://tass.ru/sport/28226415",
+    "https://www.kommersant.ru/doc/9041214",
+    "https://tass.ru/proisshestviya/28226411",
+    "https://www.kommersant.ru/doc/9041213",
+    "https://tass.ru/sport/28226409",
+    "https://tass.ru/proisshestviya/28226403",
+    "https://tass.ru/obschestvo/28226405",
     "https://www.rbc.ru/rbcfreenews/6ad4127007ac93d2f9a87f3e",
-    "https://tass.ru/politika/28226285",
-    "https://tass.ru/armiya-i-opk/28226283",
-    "https://www.kommersant.ru/doc/9041207",
-    "https://t.me/lookonchainchannel/10671",
-    "https://tass.ru/obschestvo/28226281",
-    "https://tass.ru/armiya-i-opk/28226291",
-    "https://tass.ru/obschestvo/28226287"
+    "https://t.me/bitkogan_hotline/27894",
+    "https://tass.ru/sport/28226401",
+    "https://www.investing.com/news/stock-market-news/antofagastas-centinela-strike-ends-after-deal-with-unions-4955771",
+    "https://tass.ru/obschestvo/28226399",
+    "https://www.kommersant.ru/doc/9041212",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237947-rubio-ukraina",
+    "https://tass.ru/ekonomika/28226397",
+    "https://tass.ru/obschestvo/28226393",
+    "https://tass.ru/obschestvo/28226395",
+    "https://t.me/banksta/103611",
+    "https://t.me/bitkogan_hotline/27893",
+    "https://www.rbc.ru/rbcfreenews/6ad0883d805fec338bddc775",
+    "https://tass.ru/obschestvo/28226391",
+    "https://tass.ru/obschestvo/28226385",
+    "https://tass.ru/armiya-i-opk/28226389",
+    "https://tass.ru/armiya-i-opk/28226387",
+    "https://www.rbc.ru/economics/16/10/2026/6ad27d78078693a0b18b70cf",
+    "https://t.me/FinancialJuice/141018",
+    "https://t.me/FinancialJuice/141017",
+    "https://tass.ru/politika/28226379",
+    "https://t.me/FinancialJuice/141016",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237946-nad-leningradskoi",
+    "https://www.interfax.ru/russia/1123237",
+    "https://tass.ru/sport/28226377",
+    "https://tass.ru/obschestvo/28226375",
+    "https://tass.ru/obschestvo/28226373",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237945-sistema-pvo",
+    "https://tass.ru/obschestvo/28226369",
+    "https://www.kommersant.ru/doc/9041210",
+    "https://tass.ru/armiya-i-opk/28226363",
+    "https://tass.ru/ekonomika/28226361",
+    "https://www.rbc.ru/finances/13/10/2026/6acdd876483927e3a7d40667",
+    "https://tass.ru/armiya-i-opk/28226355",
+    "https://tass.ru/mezhdunarodnaya-panorama/28226353"
   ],
   "ai_dead": {
     "date": "2026-10-17",
@@ -1032,26 +1039,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-17T06:01:00.061008+00:00",
-      "Россия планирует довести экспорт дизеля до 3,5 млн тонн"
-    ],
-    [
-      "2026-10-17T06:01:00.061008+00:00",
-      "Крупные переводы токена HYPE зафиксированы на рынке"
-    ],
-    [
-      "2026-10-17T06:30:55.365873+00:00",
-      "Трамп временно отложил введение жестких пошлин и санкций против России"
-    ],
-    [
-      "2026-10-17T06:30:55.365873+00:00",
-      "РБК: Сделка по дизелю между Россией и США поддержала нефтяников"
-    ],
-    [
-      "2026-10-17T06:30:55.365873+00:00",
-      "McKinsey: спрос на медь будет расти на 15% ежегодно до 2030 года"
-    ],
     [
       "2026-10-17T06:30:55.365873+00:00",
       "Акции «Полюса» показали рост на 6,53% по итогам сессий"
@@ -1651,6 +1638,10 @@
     [
       "2026-10-18T04:00:56.680704+00:00",
       "Yuga Labs запустила коллекцию Mudwater на Solana"
+    ],
+    [
+      "2026-10-18T05:00:54.983386+00:00",
+      "На нефтяном терминале в Петербурге произошел пожар после атаки 126 БПЛА"
     ]
   ]
 }
