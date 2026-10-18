@@ -777,7 +777,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T20:00:57.814871+00:00",
+  "breaking_ts": "2026-10-18T20:30:55.354739+00:00",
   "news_now": {
     "day": "2026-10-18",
     "day_count": 3,
@@ -790,55 +790,35 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/sport/28227709",
+    "https://www.rbc.ru/politics/30/09/2026/6abcb19151430e1dcfe90c3f",
+    "https://t.me/banksta/103656",
+    "https://t.me/thebell_io/39523",
+    "https://tass.ru/kultura/28227707",
+    "https://t.me/rbc_news/158928",
+    "https://www.wsj.com/tech/ai/ai-agents-trading-stocks-while-you-sleep-charles-schwabs-ceo-is-skeptical-3ff1b5c3?mod=rss_markets_main",
+    "https://tass.ru/ekonomika/28227701",
+    "https://tass.ru/obschestvo/28227703",
+    "https://t.me/FinancialJuice/141067",
+    "https://tass.ru/sport/28227705",
+    "https://t.me/markettwits/389363",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1238036-ssha-prigrozili-es",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227697",
+    "https://tass.ru/proisshestviya/28227699",
+    "https://www.rbc.ru/rbcfreenews/69f4bce29a79475f44bacea3",
+    "https://tass.ru/proisshestviya/28227693",
+    "https://tass.ru/sport/28227695",
     "https://t.me/interfaxonline/80313",
+    "https://www.interfax.ru/world/1123329",
     "https://t.me/markettwits/389362",
     "https://t.me/rbc_news/158927",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227691",
-    "https://t.me/markettwits/389361",
-    "https://t.me/konenkov_official/1642",
-    "https://www.kommersant.ru/doc/9041510",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1238035-madyar-obvinil-orbana",
-    "https://www.theblock.co/news/regulation/2026-10-18-crypto-com-novig-sue-missouri-over-sports-event-contracts-kalshi-polymarket-robinhood-hold-off-418866",
-    "https://t.me/banksta/103655",
-    "https://www.rbc.ru/photoreport/15/10/2026/6ad08ac19a7947f906dd900d",
-    "https://t.me/markettwits/389360",
-    "https://tass.ru/ekonomika/28227689",
-    "https://tass.ru/proisshestviya/28227687",
-    "https://t.me/markettwits/389359",
-    "https://www.kommersant.ru/doc/9041508",
-    "https://tass.ru/proisshestviya/28227685",
-    "https://www.rbc.ru/society/10/09/2026/6aa2d2fd2437afab2cf68b4a",
-    "https://t.me/markettwits/389358",
-    "https://www.interfax.ru/world/1123328",
-    "https://www.rbc.ru/politics/10/10/2026/6aca6cdd5053246da65516a1",
-    "https://t.me/banksta/103654",
-    "https://tass.ru/politika/28227679"
+    "https://tass.ru/mezhdunarodnaya-panorama/28227691"
   ],
   "ai_dead": {
     "date": "2026-10-18",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-18T04:00:56.680704+00:00",
-      "Сервис «Купибилет» заявил о снижении цен во Вьетнам на 30%"
-    ],
-    [
-      "2026-10-18T04:00:56.680704+00:00",
-      "Yuga Labs запустила коллекцию Mudwater на Solana"
-    ],
-    [
-      "2026-10-18T05:00:54.983386+00:00",
-      "На нефтяном терминале в Петербурге произошел пожар после атаки 126 БПЛА"
-    ],
-    [
-      "2026-10-18T05:30:53.737700+00:00",
-      "Над Ленинградской областью за ночь сбили 135 БПЛА"
-    ],
-    [
-      "2026-10-18T05:30:53.737700+00:00",
-      "Силы ПВО за ночь сбили 76 дронов на подлете к Москве"
-    ],
     [
       "2026-10-18T05:30:53.737700+00:00",
       "Рубио: Трамп использует паузу для анализа санкций против РФ"
@@ -1438,6 +1418,30 @@
     [
       "2026-10-18T20:00:57.814871+00:00",
       "Стоимость новостроек в городах-миллионниках выросла на 10,5% за год"
+    ],
+    [
+      "2026-10-18T20:30:55.354739+00:00",
+      "США пригрозили ЕС жесткими мерами в случае ограничений Starlink"
+    ],
+    [
+      "2026-10-18T20:30:55.354739+00:00",
+      "Зеленский обвинил Трампа в попытке заставить Украину капитулировать"
+    ],
+    [
+      "2026-10-18T20:30:55.354739+00:00",
+      "Европа и Британия активизировали попытки использовать активы РФ"
+    ],
+    [
+      "2026-10-18T20:30:55.354739+00:00",
+      "Tether инвестировал в платежную сеть AIsa для ИИ-агентов"
+    ],
+    [
+      "2026-10-18T20:30:55.354739+00:00",
+      "Макрон раскритиковал масштабные беспорядки во Франции"
+    ],
+    [
+      "2026-10-18T20:30:55.354739+00:00",
+      "Белоруссия и Россия утвердят правила общего энергорынка"
     ]
   ]
 }
