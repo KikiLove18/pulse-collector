@@ -776,7 +776,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T11:30:57.257571+00:00",
+  "breaking_ts": "2026-10-18T12:00:56.451012+00:00",
   "news_now": {
     "day": "2026-10-18",
     "day_count": 2,
@@ -788,78 +788,42 @@
     ]
   },
   "news_seen": [
+    "https://t.me/rbc_news/158912",
+    "https://www.coindesk.com/business/2026/10/14/crypto-exchanges-binance-coinbase-join-west-africa-scam-sweep-that-flagged-usd11-million",
+    "https://t.me/cbrstocks/83412",
+    "https://tass.ru/obschestvo/28227151",
+    "https://www.vedomosti.ru/society/news/2026/10/18/1237979-drozdenko-rasskazal",
+    "https://cryptoslate.com/bittorrent-ushers-in-next-gen-web3-infrastructure-with-strategic-rebrand-and-inaugural-btt-burn/",
+    "https://www.kommersant.ru/doc/9041355",
+    "https://t.me/nainspire/5533",
+    "https://tass.ru/sport/28227149",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227145",
+    "https://t.me/interfaxonline/80307",
+    "https://www.kommersant.ru/doc/9041352",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237978-vens-dopustil",
+    "https://tass.ru/sport/28227141",
+    "https://www.rbc.ru/rbcfreenews/6ac42727e0733df6b1ca1239",
+    "https://tass.ru/sport/28227139",
+    "https://www.rbc.ru/rbcfreenews/6ab628d316fe32ac20c5c83b",
+    "https://tass.ru/sport/28227137",
+    "https://www.interfax.ru/world/1123291",
+    "https://tass.ru/kultura/28227135",
+    "https://www.rbc.ru/sport/24/09/2026/6ab569929a7947415416ecef",
+    "https://www.rbc.ru/politics/13/10/2026/6ace97a5d2ead36224bc1792",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1237975-glavi-mid",
+    "https://tass.ru/armiya-i-opk/28227129",
     "https://t.me/konenkov_official/1641",
     "https://t.me/markettwits/389319",
     "https://tass.ru/sport/28227131",
     "https://www.rbc.ru/rbcfreenews/6847e88c9a794764e1314d86",
     "https://tass.ru/obschestvo/28227127",
-    "https://www.rbc.ru/economics/05/07/2026/6a4a113b9a79472fea482e72",
-    "https://tass.ru/sport/28227107",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227121",
-    "https://t.me/interfaxonline/80306",
-    "https://t.me/rbc_news/158911",
-    "https://www.rbc.ru/rbcfreenews/6ad11b44e13bd5965d26bff9",
-    "https://www.interfax.ru/world/1123290",
-    "https://www.rbc.ru/politics/18/10/2026/6ad4a9fa9f67ca48c4070312",
-    "https://tass.ru/sport/28227067",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1237976-litve-pitalis-podzhech",
-    "https://tass.ru/politika/28227117",
-    "https://t.me/banksta/103632",
-    "https://www.kommersant.ru/doc/9041339",
-    "https://www.rbc.ru/rbcfreenews/6ad4a826ef5f7593f8b47d91",
-    "https://thedefiant.io/news/hacks/cysic-halts-bridge-after-unauthorized-mint-of-10-million-cys",
-    "https://www.rbc.ru/rbcfreenews/6ad3880614d7ccaafcae0afd",
-    "https://tass.ru/politika/28227113",
-    "https://t.me/invest_zonaa/39055",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227097",
-    "https://www.kommersant.ru/doc/9041338",
-    "https://www.rbc.ru/sport/16/10/2026/6ad24b1e4a61116d578c2664",
-    "https://tass.ru/obschestvo/28227111",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227091",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227105",
-    "https://www.kommersant.ru/doc/9041334",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227101",
-    "https://www.interfax.ru/russia/1123289",
-    "https://t.me/headlines_for_traders/86923",
-    "https://t.me/interfaxonline/80305",
-    "https://t.me/cbrstocks/83411",
-    "https://www.kommersant.ru/doc/9041335",
-    "https://tass.ru/armiya-i-opk/28227015",
-    "https://t.me/whale_alert_io/104009",
-    "https://tass.ru/obschestvo/28227095",
-    "https://tass.ru/sport/28227089",
-    "https://tass.ru/obschestvo/28227093",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227083"
+    "https://www.rbc.ru/economics/05/07/2026/6a4a113b9a79472fea482e72"
   ],
   "ai_dead": {
     "date": "2026-10-18",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-17T12:30:57.154731+00:00",
-      "Венгрия запросит продление исключения из санкций США по нефти из РФ"
-    ],
-    [
-      "2026-10-17T12:30:57.154731+00:00",
-      "Француз заработал более 2 млрд рублей на игре с помощью ИИ"
-    ],
-    [
-      "2026-10-17T12:30:57.154731+00:00",
-      "BIS указал способ замедления роста стейблкоинов банками"
-    ],
-    [
-      "2026-10-17T12:30:57.154731+00:00",
-      "Атакованное в Черном море судно отбуксировали в Бургас"
-    ],
-    [
-      "2026-10-17T13:00:57.779689+00:00",
-      "Nasdaq завершил неделю падением на 5,5% на фоне распродаж в ИИ-секторе"
-    ],
-    [
-      "2026-10-17T13:00:57.779689+00:00",
-      "Глава Nvidia заявил о неизбежных переменах в экономике благодаря ИИ"
-    ],
     [
       "2026-10-17T13:00:57.779689+00:00",
       "Bitget ограничила операции для пользователей из России, Казахстана и Беларуси"
@@ -1459,6 +1423,26 @@
     [
       "2026-10-18T11:30:57.257571+00:00",
       "«Деловая Россия»: налог на наследование бизнеса для роста рынка до 66% ВВП"
+    ],
+    [
+      "2026-10-18T12:00:56.451012+00:00",
+      "Россия и Саудовская Аравия подтвердили планы сотрудничества в ОПЕК+"
+    ],
+    [
+      "2026-10-18T12:00:56.451012+00:00",
+      "Парламент Ирана утвердил Мехрдада Ахлаги в должности министра обороны"
+    ],
+    [
+      "2026-10-18T12:00:56.451012+00:00",
+      "Биржи Binance и Coinbase присоединились к антимошенническому рейду"
+    ],
+    [
+      "2026-10-18T12:00:56.451012+00:00",
+      "Андрей Разин возглавил хоккейный клуб СКА"
+    ],
+    [
+      "2026-10-18T12:00:56.451012+00:00",
+      "В РАН предупредили о рисках роста смертности из-за антибиотиков"
     ]
   ]
 }
