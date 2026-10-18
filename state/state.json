@@ -27,7 +27,7 @@
   ],
   "last_digest_ts": "2026-10-17T16:30:54.376345+00:00",
   "calendar": {
-    "ts": "2026-10-17T16:31:06.290839+00:00",
+    "ts": "2026-10-18T04:00:56.686831+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -975,7 +975,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-17T21:30:55.475123+00:00",
+  "breaking_ts": "2026-10-18T04:00:56.680704+00:00",
   "news_now": {
     "day": "2026-10-18",
     "day_count": 0,
@@ -984,48 +984,51 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/ekonomika/28226021",
-    "https://www.kommersant.ru/doc/9041193",
-    "https://t.me/FinancialJuice/141008",
-    "https://www.rbc.ru/politics/04/10/2026/6ac2462f0b1672c5aa343aab",
-    "https://tass.ru/proisshestviya/28226019",
-    "https://tass.ru/ekonomika/28226015",
-    "https://t.me/FinancialJuice/141007",
-    "https://tass.ru/obschestvo/28226013",
-    "https://t.me/FinancialJuice/141006",
-    "https://t.me/banksta/103607",
-    "https://www.interfax.ru/world/1123209",
-    "https://t.me/BitcoinMagazineTelegram/10856",
-    "https://tass.ru/armiya-i-opk/28226009",
-    "https://www.rbc.ru/sport/12/10/2026/6accacdf9a79472b58e6263c",
-    "https://cryptoslate.com/trons-stablecoin-growth-has-not-made-trx-deflationary/",
-    "https://tass.ru/politika/28226007",
-    "https://www.kommersant.ru/doc/9040975",
-    "https://tass.ru/armiya-i-opk/28225811",
-    "https://oilprice.com/Energy/Natural-Gas/Middle-East-Chemicals-Keep-Their-Cost-Edge-Despite-Hormuz-Crisis.html",
-    "https://tass.ru/politika/28226003"
+    "https://www.kommersant.ru/doc/9041209",
+    "https://tass.ru/proisshestviya/28226343",
+    "https://tass.ru/obschestvo/28226301",
+    "https://tass.ru/ekonomika/28226341",
+    "https://www.interfax.ru/world/1123236",
+    "https://tass.ru/obschestvo/28226339",
+    "https://t.me/interfaxonline/80288",
+    "https://tass.ru/proisshestviya/28226335",
+    "https://t.me/interfaxonline/80287",
+    "https://www.kommersant.ru/doc/9041208",
+    "https://www.rbc.ru/rbcfreenews/68d659039a79479915d5be0f",
+    "https://tass.ru/obschestvo/28226329",
+    "https://tass.ru/armiya-i-opk/28226331",
+    "https://tass.ru/armiya-i-opk/28226327",
+    "https://tass.ru/kosmos/28226325",
+    "https://tass.ru/ekonomika/28226319",
+    "https://tass.ru/proisshestviya/28226315",
+    "https://tass.ru/ekonomika/28226317",
+    "https://tass.ru/proisshestviya/28226309",
+    "https://tass.ru/obschestvo/28226311",
+    "https://tass.ru/ekonomika/28226313",
+    "https://t.me/wublockchainenglish/26461",
+    "https://tass.ru/obschestvo/28226303",
+    "https://tass.ru/proisshestviya/28226305",
+    "https://t.me/interfaxonline/80286",
+    "https://tass.ru/ekonomika/28226297",
+    "https://t.me/FinancialJuice/141015",
+    "https://tass.ru/proisshestviya/28226295",
+    "https://tass.ru/ekonomika/28226293",
+    "https://www.interfax.ru/russia/1123235",
+    "https://www.rbc.ru/quote/08/10/2026/6ac7c33a9a7947043c254183",
+    "https://www.rbc.ru/rbcfreenews/6ad4127007ac93d2f9a87f3e",
+    "https://tass.ru/politika/28226285",
+    "https://tass.ru/armiya-i-opk/28226283",
+    "https://www.kommersant.ru/doc/9041207",
+    "https://t.me/lookonchainchannel/10671",
+    "https://tass.ru/obschestvo/28226281",
+    "https://tass.ru/armiya-i-opk/28226291",
+    "https://tass.ru/obschestvo/28226287"
   ],
   "ai_dead": {
     "date": "2026-10-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-17T05:31:01.783560+00:00",
-      "Cardano перевела $26 млн в USDCx из-за заморозки выплат моста"
-    ],
-    [
-      "2026-10-17T06:01:00.061008+00:00",
-      "Минобороны сообщило об уничтожении 610 беспилотников за ночь"
-    ],
-    [
-      "2026-10-17T06:01:00.061008+00:00",
-      "Celestia (TIA) подорожала на 23% за сутки на фоне роста комиссий"
-    ],
-    [
-      "2026-10-17T06:01:00.061008+00:00",
-      "РФПИ назвал историческим моментом решение Трампа по санкциям"
-    ],
     [
       "2026-10-17T06:01:00.061008+00:00",
       "Россия планирует довести экспорт дизеля до 3,5 млн тонн"
@@ -1625,6 +1628,26 @@
     [
       "2026-10-17T20:30:54.920341+00:00",
       "Девять компаний выступили против токенизированной торговли на OKXICE"
+    ],
+    [
+      "2026-10-18T04:00:56.680704+00:00",
+      "Над Ленинградской областью сбили 126 беспилотников"
+    ],
+    [
+      "2026-10-18T04:00:56.680704+00:00",
+      "В Польше пройдут учения НАТО с участием 1,5 тыс. военных"
+    ],
+    [
+      "2026-10-18T04:00:56.680704+00:00",
+      "Ставка по вкладам в топ-10 банков зафиксирована на 13,06%"
+    ],
+    [
+      "2026-10-18T04:00:56.680704+00:00",
+      "Сервис «Купибилет» заявил о снижении цен во Вьетнам на 30%"
+    ],
+    [
+      "2026-10-18T04:00:56.680704+00:00",
+      "Yuga Labs запустила коллекцию Mudwater на Solana"
     ]
   ]
 }
