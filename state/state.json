@@ -777,7 +777,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T19:00:56.958941+00:00",
+  "breaking_ts": "2026-10-18T19:30:57.779475+00:00",
   "news_now": {
     "day": "2026-10-18",
     "day_count": 3,
@@ -790,61 +790,37 @@
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/politics/10/10/2026/6aca6cdd5053246da65516a1",
+    "https://t.me/banksta/103654",
+    "https://tass.ru/politika/28227679",
+    "https://www.kommersant.ru/doc/9041507",
+    "https://t.me/rbc_news/158926",
+    "https://www.vedomosti.ru/politics/news/2026/10/18/1238034-zaharova-ukazala-na-dvoinie-standarti",
+    "https://tass.ru/mezhdunarodnaya-panorama/28227675",
+    "https://www.interfax.ru/world/1123327",
+    "https://tass.ru/sport/28227677",
+    "https://www.kommersant.ru/doc/9041506",
+    "https://tass.ru/sport/28227673",
+    "https://tass.ru/kultura/28227671",
+    "https://t.me/headlines_for_traders/86941",
+    "https://tass.ru/sport/28227669",
+    "https://tass.ru/proisshestviya/28227665",
+    "https://tass.ru/kultura/28227663",
+    "https://t.me/FinancialJuice/141066",
+    "https://tass.ru/proisshestviya/28227661",
+    "https://www.rbc.ru/sport/11/10/2026/6acb680e9a79475117ee9252",
+    "https://www.kommersant.ru/doc/9041505",
+    "https://www.investing.com/news/stock-market-news/rubio-heads-to-central-asia-while-other-us-officials-hit-foreign-policy-hot-spots-4955781",
+    "https://cryptoslate.com/zcashs-planned-sprout-freeze-would-leave-private-keys-unable-to-move-funds/",
     "https://oilprice.com/Alternative-Energy/Nuclear-Power/The-Nuclear-Power-Shortcut-That-Could-Add-Gigawatts-to-the-US-Grid.html",
     "https://t.me/FinancialJuice/141065",
-    "https://t.me/banksta/103653",
-    "https://www.rbc.ru/rbcfreenews/6ad4a826ef5f7593f8b47d91",
-    "https://www.kommersant.ru/doc/9041499",
-    "https://www.interfax.ru/world/1123326",
-    "https://www.kommersant.ru/doc/9041503",
-    "https://tass.ru/proisshestviya/28227657",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227655",
-    "https://www.kommersant.ru/doc/9041480",
-    "https://t.me/markettwits/389357",
-    "https://t.me/rbc_news/158925",
-    "https://t.me/WatcherGuru/15553",
-    "https://t.me/banksta/103652",
-    "https://tass.ru/sport/28227653",
-    "https://www.kommersant.ru/doc/9041502",
-    "https://tass.ru/sport/28227651",
-    "https://www.rbc.ru/politics/18/10/2026/6ad4b6fc9992ed97d5879170",
-    "https://www.interfax.ru/russia/1123325",
-    "https://www.kommersant.ru/doc/9041500",
-    "https://www.rbc.ru/sport/03/09/2026/6a9999a19a79474eb157dbc5",
-    "https://tass.ru/obschestvo/28227649",
-    "https://tass.ru/ekonomika/28227647",
-    "https://t.me/markettwits/389347",
-    "https://www.coindesk.com/policy/2026/10/18/the-white-house-s-crypto-chief-departs-state-of-crypto",
-    "https://www.investing.com/news/stock-market-news/anthropic-commits-5-of-shares-to-new-public-benefit-fund-4956032",
-    "https://www.rbc.ru/rbcfreenews/6ad4a826ef5f7593f8b47d91",
-    "https://t.me/rbc_news/158924",
-    "https://www.vedomosti.ru/politics/news/2026/10/18/1238022-tramp-podderzhal-netanyahu"
+    "https://t.me/banksta/103653"
   ],
   "ai_dead": {
     "date": "2026-10-18",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-17T20:00:57.553362+00:00",
-      "Силы ПВО сбили 12 беспилотников на подлете к Москве"
-    ],
-    [
-      "2026-10-17T20:00:57.553362+00:00",
-      "Новак: высвобождение запасов МЭА не покрывает дефицит нефти"
-    ],
-    [
-      "2026-10-17T20:00:57.553362+00:00",
-      "Компании выступают против токенизированной торговли на OKXICE"
-    ],
-    [
-      "2026-10-17T20:00:57.553362+00:00",
-      "Во Франции предложили ввести налог на обмен криптовалюты на стейблкоины"
-    ],
-    [
-      "2026-10-17T20:30:54.920341+00:00",
-      "США предложили возобновить закупки российского газа в рамках мирного соглашения"
-    ],
     [
       "2026-10-17T20:30:54.920341+00:00",
       "Новак заявил об отсутствии проблем с продажей российской нефти"
@@ -1444,6 +1420,30 @@
     [
       "2026-10-18T19:00:56.958941+00:00",
       "«Спартак» разгромил «Рубин» со счетом 4:0 в матче 11-го тура РПЛ"
+    ],
+    [
+      "2026-10-18T19:30:57.779475+00:00",
+      "Новостройки в городах-миллионниках России подорожали на 10,8% за год"
+    ],
+    [
+      "2026-10-18T19:30:57.779475+00:00",
+      "Турция рассчитывает получить часть дизтоплива по сделке России и США"
+    ],
+    [
+      "2026-10-18T19:30:57.779475+00:00",
+      "Во Франции задержали почти 2,4 тыс. человек во время беспорядков"
+    ],
+    [
+      "2026-10-18T19:30:57.779475+00:00",
+      "Сергей Лавров 19 октября проведет встречу с президентом Ирана в Тегеране"
+    ],
+    [
+      "2026-10-18T19:30:57.779475+00:00",
+      "Запланированный заморозкообразный апдейт Zcash оставит часть ключей без средств"
+    ],
+    [
+      "2026-10-18T19:30:57.779475+00:00",
+      "ОАЭ возобновят выплаты силам в Йемене для борьбы с хуситами при поддержке Саудовской Аравии"
     ]
   ]
 }
