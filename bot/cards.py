@@ -90,6 +90,9 @@ def _save(img, out_path):
 
 def render(card, out_path, date_label=""):
     """card: {theme, tag, sent, title, metrics: [{value, label}], kicker?}"""
+    from bot.edition import ru_numbers  # 19.10: цифры на карточках — по-русски (ИИ пишет «+3.1%»)
+    card = {**card, "title": ru_numbers(card.get("title", "")),
+            "metrics": [{**m, "value": ru_numbers(str(m.get("value", "")))} for m in card.get("metrics") or []]}
     W2, H2 = W * S, H * S
     k = lambda v: int(round(v * S))      # единицы разметки → пиксели
     fnt = lambda size, weight=700: font(int(size * S), weight)

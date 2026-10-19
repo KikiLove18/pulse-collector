@@ -236,7 +236,20 @@ def _yahoo(symbol):
            + urllib.parse.quote(symbol) + "?range=1d&interval=1d")
     meta = json.loads(http_get(url))["chart"]["result"][0]["meta"]
     price, prev = meta["regularMarketPrice"], meta["chartPreviousClose"]
-    return {"price": price, "chg": (price / prev - 1) * 100 if prev else None}
+    return {"price": price, "chg": (price / prev - 1) * 100 if prev else None, "ts": meta.get("regularMarketTime")}
+
+
+WEEKDAY_ACC = ["понедельник", "вторник", "среду", "четверг", "пятницу", "субботу", "воскресенье"]
+
+
+def stale_day(v):
+    """Биржа закрыта (выходные, ночь до открытия): последнее изменение — за прошлый торговый день. Возвращает его дату или None.
+    18.10 (вс) в «Итогах дня» ИИ подал пятничное падение Nasdaq как сегодняшнее."""
+    if not v.get("ts"):
+        return None
+    ny = ZoneInfo("America/New_York")
+    traded = datetime.fromtimestamp(v["ts"], ny).date()
+    return traded if traded < datetime.now(ny).date() else None
 
 
 def fetch_moex(q):
@@ -328,7 +341,8 @@ def quote_lines(keys, q):
             price = v["price"]
             if k in ("bitcoin", "^GSPC", "^IXIC", "^DJI") or price > 1000:
                 digits = 0
-            lines.append(f"{QUOTE_NAMES[k]}  <b>{_num(price, digits)}</b>  {_chg(v['chg'])}")
+            d = stale_day(v)  # биржа закрыта — показываем, за какой день изменение
+            lines.append(f"{QUOTE_NAMES[k]}  <b>{_num(price, digits)}</b>  {_chg(v['chg'])}" + (f"  <i>{WEEKDAY[d.weekday()]}</i>" if d else ""))
     return lines
 
 
@@ -336,15 +350,19 @@ def quotes_for_ai(q):
     out = []
     for k, v in q.items():
         if k == "crypto_total":
-            out.append(f"Капитализация крипторынка ${v['cap'] / 1e12:.2f} трлн ({v['chg']:+.2f}% за 24ч), доля BTC {v['btc_dom']:.1f}%")
+            out.append(edition.ru_numbers(f"Капитализация крипторынка ${v['cap'] / 1e12:.2f} трлн ({v['chg']:+.2f}% за 24ч), доля BTC {v['btc_dom']:.1f}%"))
         elif k == "fng":
             out.append(f"Индекс страха и жадности крипты {v['value']} (вчера {v['prev']})")
         elif k == "^TNX" and v.get("chg") is not None:
             bp = v["price"] * v["chg"] / (100 + v["chg"]) * 100  # изменение доходности в базисных пунктах
-            out.append(f"Доходность 10-летних облигаций США: {v['price']:.3f}% ({bp:+.1f} б.п. за день)")
+            d = stale_day(v)
+            out.append(edition.ru_numbers(f"Доходность 10-летних облигаций США: {v['price']:.3f}% ({bp:+.1f} б.п. "
+                                          + (f"за {WEEKDAY_ACC[d.weekday()]} {d:%d.%m})" if d else "за день)")))
         else:
-            chg = f" ({v['chg']:+.2f}% за день)" if v.get("chg") is not None else ""
-            out.append(f"{QUOTE_NAMES[k]}: {v['price']}{chg}")
+            d = stale_day(v)
+            when = f"за {WEEKDAY_ACC[d.weekday()]} {d:%d.%m}, сейчас торгов нет" if d else "за день"
+            chg = f" ({v['chg']:+.2f}% {when})" if v.get("chg") is not None else ""
+            out.append(edition.ru_numbers(f"{QUOTE_NAMES[k]}: {round(v['price'], 4)}{chg}"))
     return out
 
 
@@ -610,7 +628,7 @@ def tg_html(text):
         if ALLOWED_TAG.fullmatch(part):
             out.append(part.replace("&", "&amp;") if part.startswith("<a ") else part)
         else:
-            part = re.sub(r"&(?!(?:amp|lt|gt|quot|#\d+);)", "&amp;", part)
+            part = re.sub(r"&(?!(?:amp|lt|gt|quot|#\d+);)", "&amp;", edition.ru_numbers(part))
             out.append(part.replace("<", "&lt;").replace(">", "&gt;"))
     return "".join(out)
 
@@ -655,9 +673,9 @@ def make_outlook(user, events):
             d["impacts"] = [i for i in d.get("impacts", []) if i.get("expect") in ("up", "down", "flat")][:3]
             if d.get("news") and d["impacts"]:
                 drivers.append(d)
-        data["drivers"] = drivers
+        data = edition.ru_numbers_deep({**data, "drivers": drivers})
         data["at"] = datetime.now(timezone.utc).isoformat()
-        return data if drivers else None
+        return data if data["drivers"] else None
     except Exception as e:
         print("Общая картина не получилась:", e, file=sys.stderr)
         return None
@@ -1044,6 +1062,7 @@ def run_results(state, now, dry):
                 res = json.loads(raw[raw.index("{"):raw.rindex("}") + 1])
                 if res.get("verdict") not in VERDICT:
                     raise ValueError("verdict")
+                res = edition.ru_numbers_deep(res)
             except Exception as e:
                 print("Разбор результата не получился:", e, file=sys.stderr)
                 continue

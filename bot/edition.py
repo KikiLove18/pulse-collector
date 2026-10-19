@@ -81,6 +81,32 @@ imp — сила влияния на рынок: 3 — двигает рынок
 PICK, NEWS_NOW = PICK + prompts.RU_ONLY, NEWS_NOW + prompts.RU_ONLY
 
 
+_NUM = re.compile(r"(?<![\w./:#=-])([-−+]?)(\d+)\.(\d+)(?!\.\d|\d|/)(\s?(?:%|п\.\s?п|б\.\s?п|\$|₽|руб|млн|млрд|трлн|тыс|долл|барр|x\b|×))?")
+_MINUS = re.compile(r"(^|[\s(«])-(?=\d)")
+
+
+def ru_numbers(text):
+    """«5.098%» → «5,098%», «-2.14%» → «−2,14%» (19.10: ИИ копировал котировки с точкой, а таблицы цен — с запятой).
+    Даты «19.10» и «19.10.2026», ссылки и время не трогаем."""
+    def num(m):
+        sign, a, b, unit = m.group(1), m.group(2), m.group(3), m.group(4) or ""
+        if not unit and len(b) == 2 and int(a) <= 31 and 1 <= int(b) <= 12 and not sign:
+            return m.group(0)  # похоже на дату «19.10»
+        return ("−" if sign in "-−" and sign else sign) + a + "," + b + unit
+    return _MINUS.sub(lambda m: m.group(1) + "−", _NUM.sub(num, text))
+
+
+def ru_numbers_deep(x, skip=("url", "link", "dt", "at", "ts", "key", "href")):
+    """То же для ответа ИИ в JSON («Влияние», итоги событий) — кроме ссылок, дат и ключей."""
+    if isinstance(x, str):
+        return ru_numbers(x)
+    if isinstance(x, list):
+        return [ru_numbers_deep(i, skip) for i in x]
+    if isinstance(x, dict):
+        return {k: v if k in skip else ru_numbers_deep(v, skip) for k, v in x.items()}
+    return x
+
+
 def _json(raw):
     raw = re.sub(r"^```(?:json)?|```$", "", raw.strip()).strip()
     return json.loads(raw[raw.index("{"):raw.rindex("}") + 1])
@@ -162,6 +188,9 @@ def morning_html(news, pick, qlines, today):
 MORNING = """Ты — выпускающий редактор утреннего обзора рынков. Дан список новостей за ночь (последние ~12 часов) с номерами.
 Выбери по 3 самые важные для рынков новости (разные темы) — для общего обзора ("all") и для читателей российского рынка ("ru": Россия, ЦБ, рубль, Мосбиржа, сырьё для России).
 Заголовок — по-русски, коротко и по сути, до 90 знаков, без кликбейта. icon — флаг страны или 1 эмодзи темы.
+Только то, что двигает цены или экономику: ставки и решения ЦБ, макроданные, санкции и геополитика с влиянием на рынки, нефть и сырьё,
+крупные компании (отчёты, дивиденды, сделки). НЕ брать: PR и статистику компаний без влияния на цены (пример 19.10 — «МегаФон: DDoS-атак
+меньше на 65%»), транспорт и аэропорты, политику без связи с экономикой, культуру, спорт. Если важного мало — бери меньше, а не слабое.
 Верни СТРОГО JSON без ```:
 {"all": [{"pick": номер, "title": "...", "icon": "🇺🇸"}], "ru": [{"pick": номер, "title": "...", "icon": "🇷🇺"}],
  "cover": {"title": "заголовок обложки до 70 знаков по первой новости all", "tag": "1–2 слова", "theme": "один из: THEMES", "sent": "pos|neg|neu",
@@ -305,10 +334,11 @@ def push_feed(feed, items, now, dry, state=None):
             imp = min(3, max(1, int(f.get("imp") or 1)))
         except Exception:
             imp = 1
-        out.append({"block": f.get("block") or "us", "icon": (f.get("icon") or "")[:8], "title": f["title"][:120], "text": f.get("text", ""),
+        out.append({"block": f.get("block") or "us", "icon": (f.get("icon") or "")[:8], "title": ru_numbers(f["title"])[:120],
+                    "text": ru_numbers(f.get("text", "")),
                     "sent": f.get("sent") if f.get("sent") in ("pos", "neg", "neu") else "neu", "url": src["link"],
                     "source": name(src), "also": also[:10], "imp": imp, "ts": now.isoformat(), "_theme": f.get("theme"),
-                    "metrics": [{"value": str(x.get("value", ""))[:16], "label": str(x.get("label", ""))[:24]}
+                    "metrics": [{"value": ru_numbers(str(x.get("value", "")))[:16], "label": str(x.get("label", ""))[:24]}
                                 for x in (f.get("metrics") or []) if isinstance(x, dict) and x.get("value")][:3]})
     if not out:
         return
