@@ -29,7 +29,7 @@
   ],
   "last_digest_ts": "2026-10-18T16:30:57.413188+00:00",
   "calendar": {
-    "ts": "2026-10-18T16:31:10.529712+00:00",
+    "ts": "2026-10-19T04:00:59.189142+00:00",
     "data": [
       {
         "title": "IMF Meetings",
@@ -777,7 +777,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-18T21:30:58.231550+00:00",
+  "breaking_ts": "2026-10-19T04:00:59.188437+00:00",
   "news_now": {
     "day": "2026-10-19",
     "day_count": 0,
@@ -786,64 +786,78 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/ekonomika/28227779",
-    "https://www.rbc.ru/rbcfreenews/6a8b8bc79a7947324777fddd",
-    "https://t.me/WalterBloomberg/37078",
-    "https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-4956082",
-    "https://www.interfax.ru/world/1123332",
-    "https://www.kommersant.ru/doc/9041529",
-    "https://www.rbc.ru/rbcfreenews/6ad5360947744c7f7c21cc71",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227777",
-    "https://tass.ru/proisshestviya/28227775",
-    "https://tass.ru/ekonomika/28227773",
-    "https://www.interfax.ru/world/1123331",
-    "https://tass.ru/politika/28227769",
-    "https://www.rbc.ru/rbcfreenews/6ad532664b9446647dc53d28",
-    "https://t.me/banksta/103657",
-    "https://tass.ru/ekonomika/28227757",
-    "https://tass.ru/obschestvo/28227759",
-    "https://tass.ru/sport/28227765",
-    "https://t.me/interfaxonline/80314",
-    "https://tass.ru/politika/28227755",
-    "https://www.interfax.ru/russia/1123330",
-    "https://tass.ru/armiya-i-opk/28227753",
-    "https://tass.ru/politika/28227749",
-    "https://tass.ru/politika/28227751",
-    "https://tass.ru/armiya-i-opk/28226973",
-    "https://oilprice.com/Geopolitics/Middle-East/Hormuz-Is-Turning-Shippings-Fuel-Bill-Into-a-Supply-Crisis.html",
-    "https://tass.ru/mezhdunarodnaya-panorama/28227745",
-    "https://t.me/if_market_news/86107",
-    "https://t.me/cbrstocks/83415"
+    "https://www.vedomosti.ru/auto/news/2026/10/16/1237784-rossiyane-kupili-avtomobilei",
+    "https://t.me/headlines_for_traders/86958",
+    "https://tass.ru/ekonomika/28228109",
+    "https://tass.ru/sport/28228111",
+    "https://tass.ru/obschestvo/28228107",
+    "https://www.interfax.ru/russia/1123362",
+    "https://tass.ru/sport/28228105",
+    "https://www.kommersant.ru/doc/9041550",
+    "https://www.vedomosti.ru/politics/news/2026/10/19/1238045-dmitriev-tramp-razoblachaet",
+    "https://www.interfax.ru/russia/1123361",
+    "https://www.rbc.ru/society/15/09/2026/6aa937759a7947f752018767",
+    "https://tass.ru/obschestvo/28228089",
+    "https://tass.ru/mezhdunarodnaya-panorama/28228095",
+    "https://www.rbc.ru/politics/17/10/2026/6ad32a638c6fc667e013e6c7",
+    "https://www.interfax.ru/russia/1123360",
+    "https://tass.ru/sport/28228099",
+    "https://tass.ru/obschestvo/28228097",
+    "https://t.me/markettwits/389373",
+    "https://t.me/headlines_for_traders/86957",
+    "https://tass.ru/obschestvo/28228091",
+    "https://tass.ru/proisshestviya/28228093",
+    "https://t.me/markettwits/389372",
+    "https://t.me/markettwits/389371",
+    "https://t.me/wublockchainenglish/26470",
+    "https://t.me/headlines_for_traders/86956",
+    "https://tass.ru/proisshestviya/28228087",
+    "https://www.coindesk.com/markets/2026/10/19/bitcoin-korea-s-kospi-and-nasdaq-futures-rally-as-china-gdp-beats-estimates",
+    "https://www.vedomosti.ru/politics/news/2026/10/19/1238044-peskov-rossiya",
+    "https://t.me/markettwits/389370",
+    "https://tass.ru/obschestvo/28228077",
+    "https://tass.ru/sibir-news/28228073",
+    "https://www.interfax.ru/world/1123359",
+    "https://t.me/markettwits/389369",
+    "https://tass.ru/armiya-i-opk/28228079",
+    "https://tass.ru/armiya-i-opk/28228081",
+    "https://tass.ru/armiya-i-opk/28228083",
+    "https://t.me/markettwits/389367",
+    "https://tass.ru/ekonomika/28228075",
+    "https://www.kommersant.ru/doc/9041547",
+    "https://t.me/banksta/103667",
+    "https://tass.ru/nauka/28228067",
+    "https://tass.ru/ekonomika/28228071",
+    "https://tass.ru/obschestvo/28228069",
+    "https://t.me/headlines_for_traders/86955",
+    "https://www.investing.com/news/stock-market-news/up-10-in-october-an-aipicked-stock-defied-asias-2-trillion-chip-rout-4956262",
+    "https://www.kommersant.ru/doc/9041544",
+    "https://tass.ru/obschestvo/28228061",
+    "https://www.rbc.ru/business/18/10/2026/6ad45b17ae0abdefbadf463f",
+    "https://www.vedomosti.ru/society/news/2026/10/19/1238043-zhitelnitsu-primorya",
+    "https://tass.ru/proisshestviya/28228065",
+    "https://tass.ru/ekonomika/28227997",
+    "https://www.interfax.ru/russia/1123357",
+    "https://tass.ru/obschestvo/28228039",
+    "https://www.wsj.com/economy/chinas-economy-expanded-4-5-in-third-quarter-powered-by-exports-53910a55?mod=rss_socialeconomyfeed",
+    "https://www.kommersant.ru/doc/9041548",
+    "https://tass.ru/obschestvo/28228063",
+    "https://t.me/FinancialJuice/141157",
+    "https://www.investing.com/news/stock-market-news/new-hope-shares-hit-near-onemonth-high-as-it-agrees-13-bln-malabar-deal-4956251",
+    "https://t.me/FinancialJuice/141156",
+    "https://t.me/FinancialJuice/141155",
+    "https://t.me/FinancialJuice/141154",
+    "https://t.me/FinancialJuice/141153",
+    "https://www.interfax.ru/russia/1123355",
+    "https://t.me/lookonchainchannel/10677",
+    "https://www.interfax.ru/world/1123356",
+    "https://t.me/headlines_for_traders/86954"
   ],
   "ai_dead": {
     "date": "2026-10-18",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-18T05:30:53.737700+00:00",
-      "Рубио: Трамп использует паузу для анализа санкций против РФ"
-    ],
-    [
-      "2026-10-18T05:30:53.737700+00:00",
-      "АЭВТ предупредила о рисках для планшетов пилотов из-за системы «Антифрод»"
-    ],
-    [
-      "2026-10-18T05:30:53.737700+00:00",
-      "РФ предложила создать региональную платформу на базе Всемирного банка"
-    ],
-    [
-      "2026-10-18T06:00:55.700112+00:00",
-      "Минобороны РФ: за ночь над регионами России сбили 1 015 беспилотников"
-    ],
-    [
-      "2026-10-18T06:00:55.700112+00:00",
-      "Ozon сообщил о пожаре на логистическом складе в Санкт-Петербурге из-за атаки БПЛА"
-    ],
-    [
-      "2026-10-18T06:00:55.700112+00:00",
-      "В петербургском аэропорту Пулково из-за атаки БПЛА задержали и отменили более 50 рейсов"
-    ],
     [
       "2026-10-18T06:00:55.700112+00:00",
       "Госдеп США: у Украины нет доступа к военной системе спутниковой связи Starshield"
@@ -1443,6 +1457,30 @@
     [
       "2026-10-18T20:30:55.354739+00:00",
       "Белоруссия и Россия утвердят правила общего энергорынка"
+    ],
+    [
+      "2026-10-19T04:00:59.188437+00:00",
+      "Путин предложил Трампу и Си Цзиньпину провести встречу по Украине"
+    ],
+    [
+      "2026-10-19T04:00:59.188437+00:00",
+      "ВВП Китая в третьем квартале вырос лучше прогнозов"
+    ],
+    [
+      "2026-10-19T04:00:59.188437+00:00",
+      "Скорость мобильного интернета в России выросла на 14–20%"
+    ],
+    [
+      "2026-10-19T04:00:59.188437+00:00",
+      "Трамп заявил о возможности ужесточения санкций против России позже"
+    ],
+    [
+      "2026-10-19T04:00:59.188437+00:00",
+      "Россияне купили более 4,5 млн автомобилей с пробегом за девять месяцев"
+    ],
+    [
+      "2026-10-19T04:00:59.188437+00:00",
+      "Аэропорты Ижевска, Перми и Тамбова возобновили работу"
     ]
   ]
 }
