@@ -294,7 +294,7 @@ def render_table(title, rows, out_path, date_label="", note=""):
 
 
 def render_pressure(title, rows, out_path, date_label="", note=""):
-    """«Карта давления» для канала PRO: rows — [(актив, up|down|flat, что давит/поддерживает — до 60 знаков)], до 9 строк."""
+    """«Карта давления» для канала PRO: rows — [(актив, up|down|flat, что давит/поддерживает — до 60 знаков)], до 10 строк."""
     W2, H2 = W * S, H * S
     k = lambda v: int(round(v * S))
     fnt = lambda size, weight=700: font(int(size * S), weight)
@@ -314,7 +314,7 @@ def render_pressure(title, rows, out_path, date_label="", note=""):
         d.text((k(W - pad - d.textlength(date_label, font=f) / S), k(56)), date_label, font=f, fill=(255, 255, 255, 200))
     d.text((k(pad), k(118)), title, font=fnt(50, 800), fill=(255, 255, 255))
     look = {"up": ((46, 190, 130), "▲ поддержка"), "down": ((235, 87, 105), "▼ давление"), "flat": ((150, 165, 185), "● без перевеса")}
-    rows = rows[:9]
+    rows = rows[:10]
     rowh = min(58, (H - 230 - 50) / max(1, len(rows)))
     for i, (name, way, why) in enumerate(rows):
         y = 200 + i * rowh
