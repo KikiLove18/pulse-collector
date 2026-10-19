@@ -1014,9 +1014,16 @@ VERDICT = {"better": ("🟢", "Лучше ожиданий для рынков")
 def run_results(state, now, dry):
     """Вышли данные (CPI, PPI, NFP, решение ФРС…) или отчёт крупной компании — разбираем итог."""
     done = state.setdefault("results_done", [])
+    seen = state.setdefault("results_fp", [])  # отпечатки «событие + факт»
     for r in calendar_future.released(now):
         key = r["key"]
         if key in done:
+            continue
+        # 15–16.10 Nasdaq на запрос за 16-е вернул факты 15-го — одно и то же событие ушло дважды с разными оценками
+        fp = r["title"] + "|" + ("|".join(x["actual"] for x in r["rows"]) if r.get("rows") else str(r.get("eps")))
+        if fp in seen:
+            print("Результат: повтор тех же цифр, пропускаю —", r["title"], file=sys.stderr)
+            done.append(key)
             continue
         if r["kind"] == "earnings":
             v = "better" if r["surprise"] > 0 else "worse" if r["surprise"] < 0 else "inline"
@@ -1051,7 +1058,9 @@ def run_results(state, now, dry):
             if payload["impact"] == "High":
                 publish(html, dry)  # и в тестовый канал
         done.append(key)
+        seen.append(fp)
     state["results_done"] = done[-200:]
+    state["results_fp"] = seen[-200:]
 
 
 WEEKDAY = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]

@@ -12,8 +12,9 @@ bls.gov/schedule/news_release/{cpi,ppi,empsit}.htm, bea.gov/news/schedule.
 """
 import json
 import re
+import sys
 import urllib.request
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
@@ -85,13 +86,25 @@ def translate(name):
     return None, None
 
 
+def _econ_rows(day):
+    """Строки Nasdaq за настоящий день `day` (ГГГГ-ММ-ДД). 19.10 проверено: Nasdaq по запросу date=X отдаёт события дня X−1
+    (по date=22.10, четверг, — заявки MBA и запасы нефти EIA, они всегда в среду; «Мичиган» по пятницам — по date=24.10, субботе).
+    Из-за этого 15–16.10 одни и те же факты ушли дважды, а календарь ставил события на день позже."""
+    nxt = (date.fromisoformat(day) + timedelta(days=1)).isoformat()
+    rows = (_get(f"https://api.nasdaq.com/api/calendar/economicevents?date={nxt}").get("data") or {}).get("rows") or []
+    mba = [r for r in rows if r.get("eventName", "").startswith("MBA Mortgage Applications")]
+    if mba and date.fromisoformat(day).weekday() != 2:  # заявки MBA — по средам: если не среда, Nasdaq исправил сдвиг
+        print(f"Календарь Nasdaq: заявки MBA выпали на {day} (не среда) — проверь сдвиг дат в _econ_rows", file=sys.stderr)
+    return rows
+
+
 def nasdaq_econ(days=7):
     out = []
     today = datetime.now(ET).date()
     for i in range(days):
         day = (today + timedelta(days=i)).isoformat()
         try:
-            rows = (_get(f"https://api.nasdaq.com/api/calendar/economicevents?date={day}").get("data") or {}).get("rows") or []
+            rows = _econ_rows(day)
         except Exception:
             continue
         for r in rows:
@@ -258,7 +271,7 @@ def released(now, hours=8):
     for day in days:
         d = day.isoformat()
         try:
-            rows = (_get(f"https://api.nasdaq.com/api/calendar/economicevents?date={d}").get("data") or {}).get("rows") or []
+            rows = _econ_rows(d)
         except Exception:
             rows = []
         groups = {}
