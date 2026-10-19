@@ -779,7 +779,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-19T18:30:57.533013+00:00",
+  "breaking_ts": "2026-10-19T19:01:00.057924+00:00",
   "news_now": {
     "day": "2026-10-19",
     "day_count": 5,
@@ -794,78 +794,67 @@
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/base/10/09/2025/68c075ee9a79472708d42f86",
+    "https://oilprice.com/Energy/Energy-General/Colombias-Critical-Minerals-Could-Be-a-Game-Changer-for-America.html",
+    "https://tass.ru/obschestvo/28230975",
+    "https://tass.ru/mezhdunarodnaya-panorama/28230993",
+    "https://tass.ru/obschestvo/28230991",
+    "https://tass.ru/kultura/28230987",
+    "https://www.kommersant.ru/doc/9042459",
+    "https://www.rbc.ru/rbcfreenews/6ad667a8caf9d3a5cf06c000",
+    "https://t.me/nainspire/5550",
+    "https://tass.ru/proisshestviya/28230977",
+    "https://t.me/FinancialJuice/141336",
+    "https://tass.ru/sport/28230985",
+    "https://tass.ru/obschestvo/28230981",
+    "https://www.interfax.ru/world/1123561",
+    "https://www.rbc.ru/rbcfreenews/6ad66643a7c7e5048a94a29d",
+    "https://t.me/FinancialJuice/141335",
+    "https://www.kommersant.ru/doc/9042454",
+    "https://tass.ru/proisshestviya/28230911",
+    "https://www.investing.com/news/stock-market-news/us-stock-futures-climb-as-investors-return-to-ai-trade-after-selloff-4956195",
+    "https://www.investing.com/news/stock-market-news/anthropic-commits-5-stake-to-new-public-benefit-fund-musk-argues-for-direct-share-donations-to-kids-4958151",
+    "https://www.interfax.ru/world/1123560",
+    "https://t.me/markettwits/389503",
+    "https://decrypt.co/381349/why-some-america-biggest-companies-objecting-tokenized-shares",
+    "https://t.me/if_market_news/86133",
+    "https://tass.ru/obschestvo/28230971",
+    "https://t.me/banksta/103737",
+    "https://www.investing.com/news/stock-market-news/top-us-building-products-stocks-according-to-jefferies-4958154",
+    "https://t.me/thebell_io/39536",
+    "https://www.vedomosti.ru/politics/news/2026/10/19/1238376-chehiya-ne-podderzhala-predlozhenie",
+    "https://www.kommersant.ru/doc/9042450",
+    "https://tass.ru/ekonomika/28230967",
+    "https://t.me/FinancialJuice/141334",
+    "https://www.rbc.ru/sport/18/10/2026/6ad4e0cf4fec30b0862b1b03",
+    "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html",
+    "https://t.me/cbrstocks/83438",
+    "https://tass.ru/nauka/28230961",
+    "https://www.kommersant.ru/doc/9042447",
+    "https://t.me/FinancialJuice/141333",
+    "https://www.investing.com/news/stock-market-news/welltower-stock-may-move-26-on-oct-26-earnings-release-93CH-4958153",
+    "https://t.me/FinancialJuice/141332",
+    "https://t.me/rbc_news/158998",
+    "https://t.me/FinancialJuice/141331",
+    "https://t.me/FinancialJuice/141330",
+    "https://t.me/FinancialJuice/141329",
+    "https://t.me/FinancialJuice/141328",
+    "https://t.me/FinancialJuice/141327",
+    "https://www.investing.com/news/stock-market-news/alexandria-real-estate-stock-may-move-34-on-earnings-report-93CH-4958150",
     "https://t.me/FinancialJuice/141326",
     "https://oilprice.com/Energy/Energy-General/The-Sulfur-Crisis-Threatening-the-Worlds-Food-Supply.html",
     "https://oilprice.com/Latest-Energy-News/World-News/Qatar-Offers-Lebanon-2-Gas-Plants-and-20-Years-of-LNG-Piped-Through-Syria.html",
     "https://t.me/interfaxonline/80371",
+    "https://www.investing.com/news/stock-market-news/amkor-technology-options-indicate-12-move-on-oct-26-earnings-93CH-4958145",
+    "https://www.interfax.ru/business/1123559",
     "https://t.me/FinancialJuice/141325",
+    "https://www.investing.com/news/stock-market-news/brown--brown-shares-may-move-18-on-earnings-release-93CH-4958144",
+    "https://www.investing.com/news/stock-market-news/rambus-stock-may-move-14-on-earnings-release-next-week-93CH-4958143",
     "https://tass.ru/proisshestviya/28230955",
     "https://tass.ru/proisshestviya/28230959",
+    "https://www.investing.com/news/stock-market-news/noble-corp-stock-may-move-35-on-oct-26-earnings-report-93CH-4958142",
     "https://www.kommersant.ru/doc/9042423",
-    "https://tass.ru/sport/28230957",
-    "https://www.rbc.ru/politics/06/10/2026/6ac4bb9d56e1fd664b00a215",
-    "https://www.kommersant.ru/doc/9042420",
-    "https://t.me/FinancialJuice/141324",
-    "https://tass.ru/sport/28230953",
-    "https://t.me/if_market_news/86132",
-    "https://t.me/proeconomics/20562",
-    "https://tass.ru/kultura/28230947",
-    "https://www.kommersant.ru/doc/9042435",
-    "https://www.investing.com/news/stock-market-news/nvidia-sets-104qubit-quantum-simulation-record-on-jupiter-supercomputer-4958132",
-    "https://t.me/banksta/103734",
-    "https://www.rbc.ru/sport/20/09/2026/6aafdbcb9a79473d6e895beb",
-    "https://t.me/whale_alert_io/104029",
-    "https://tass.ru/proisshestviya/28230949",
-    "https://decrypt.co/381347/us-orders-civilian-agencies-rip-deepseek-out-government-systems",
-    "https://t.me/rbc_news/158997",
-    "https://www.rbc.ru/rbcfreenews/6ad65d2ab73478203d22b6b3",
-    "https://tass.ru/mezhdunarodnaya-panorama/28230945",
-    "https://tass.ru/politika/28230941",
-    "https://tass.ru/ekonomika/28230943",
-    "https://www.investing.com/news/stock-market-news/apple-to-host-pro-and-tell-event-on-oct-28-in-la-4958127",
-    "https://www.investing.com/news/stock-market-news/as-france-reels-from-violence-macron-points-to-security-failings-4956666",
-    "https://www.kommersant.ru/doc/9042437",
-    "https://www.kommersant.ru/doc/9042439",
-    "https://t.me/banksta/103733",
-    "https://t.me/headlines_for_traders/87018",
-    "https://tass.ru/ekonomika/28230927",
-    "https://tass.ru/mezhdunarodnaya-panorama/28230851",
-    "https://thedefiant.io/converge/tradfi-and-fintech/rain-says-western-union-s-stablecard-is-live-in-37-markets",
-    "https://tass.ru/ekonomika/28230913",
-    "https://t.me/markettwits/389502",
-    "https://www.vedomosti.ru/politics/news/2026/10/19/1238372-pezeshkian-nameren-posetit",
-    "https://tass.ru/mezhdunarodnaya-panorama/28230867",
-    "https://www.interfax.ru/world/1123558",
-    "https://www.investing.com/news/stock-market-news/deepseek-teams-up-with-huawei-to-challenge-nvidia-4958123",
-    "https://t.me/interfaxonline/80367",
-    "https://www.rbc.ru/quote/19/10/2026/6ad643f49a7947595435cda6",
-    "https://tass.ru/kultura/28230889",
-    "https://www.investing.com/news/stock-market-news/netflix-film-division-boss-to-exit-in-second-senior-departure-in-a-week-4958122",
-    "https://tass.ru/sport/28230933",
-    "https://tass.ru/kultura/28230929",
-    "https://www.interfax.ru/business/1123556",
-    "https://www.investing.com/news/stock-market-news/tesla-micron-among-market-cap-stock-movers-on-monday-93CH-4958121",
-    "https://t.me/FinancialJuice/141323",
-    "https://t.me/BitcoinMagazineTelegram/10864",
-    "https://www.kommersant.ru/doc/9042432",
-    "https://t.me/FinancialJuice/141322",
-    "https://t.me/markettwits/389501",
-    "https://www.kommersant.ru/doc/9042424",
-    "https://www.sport-interfax.ru/1123557",
-    "https://www.interfax.ru/russia/1123555",
-    "https://tass.ru/obschestvo/28230903",
-    "https://tass.ru/armiya-i-opk/28230925",
-    "https://tass.ru/proisshestviya/28230923",
-    "https://t.me/FinancialJuice/141321",
-    "https://tass.ru/ekonomika/28230899",
-    "https://www.rbc.ru/radio/19/10/2026/6ad6134e9a794725d5c9872c",
-    "https://www.investing.com/news/stock-market-news/building-permits-pending-home-sales-among-economic-data-due-tuesday-93CH-4958118",
-    "https://cryptoslate.com/wall-streets-bitcoin-bears-quietly-retreated-despite-recent-plunge-toward-80000/",
-    "https://www.kommersant.ru/doc/9042433",
-    "https://tass.ru/sport/28230921",
-    "https://t.me/markettwits/389500",
-    "https://thedefiant.io/news/defi/pump-fun-adds-pre-ipo-tokens-to-its-launch-pairings",
-    "https://tass.ru/proisshestviya/28230647"
+    "https://tass.ru/sport/28230957"
   ],
   "ai_dead": {
     "date": "2026-10-19",
@@ -876,26 +865,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-18T19:30:57.779475+00:00",
-      "Турция рассчитывает получить часть дизтоплива по сделке России и США"
-    ],
-    [
-      "2026-10-18T19:30:57.779475+00:00",
-      "Во Франции задержали почти 2,4 тыс. человек во время беспорядков"
-    ],
-    [
-      "2026-10-18T19:30:57.779475+00:00",
-      "Сергей Лавров 19 октября проведет встречу с президентом Ирана в Тегеране"
-    ],
-    [
-      "2026-10-18T19:30:57.779475+00:00",
-      "Запланированный заморозкообразный апдейт Zcash оставит часть ключей без средств"
-    ],
-    [
-      "2026-10-18T19:30:57.779475+00:00",
-      "ОАЭ возобновят выплаты силам в Йемене для борьбы с хуситами при поддержке Саудовской Аравии"
-    ],
     [
       "2026-10-18T20:00:57.814871+00:00",
       "Европа и Британия ускоряют работу с замороженными активами РФ"
@@ -1495,6 +1464,30 @@
     [
       "2026-10-19T18:30:57.533013+00:00",
       "Губернатор Приморья Олег Кожемяко станет вице-премьером и полпредом"
+    ],
+    [
+      "2026-10-19T19:01:00.057924+00:00",
+      "Рынок оценивает вероятность снижения ключевой ставки ЦБ в пятницу в 8%"
+    ],
+    [
+      "2026-10-19T19:01:00.057924+00:00",
+      "Нефть WTI подорожала на 2,22% до $103,66 за баррель"
+    ],
+    [
+      "2026-10-19T19:01:00.057924+00:00",
+      "Крупные компании выступили против токенизированных акций на OKX-ICE"
+    ],
+    [
+      "2026-10-19T19:01:00.057924+00:00",
+      "Минэнерго оценило субсидии на поставку топлива в ДФО и СФО в 20,4 млрд рублей"
+    ],
+    [
+      "2026-10-19T19:01:00.057924+00:00",
+      "Криштиану Роналду отстранен от матчей сборной Португалии на 30 дней"
+    ],
+    [
+      "2026-10-19T19:01:00.057924+00:00",
+      "Аудитория WhatsApp на Android в России возобновила рост"
     ]
   ],
   "results_fp": []
