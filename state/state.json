@@ -779,7 +779,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-19T19:30:57.528923+00:00",
+  "breaking_ts": "2026-10-19T20:00:57.171758+00:00",
   "news_now": {
     "day": "2026-10-19",
     "day_count": 5,
@@ -794,8 +794,80 @@
     ]
   },
   "news_seen": [
+    "https://t.me/FinancialJuice/141359",
+    "https://t.me/FinancialJuice/141358",
+    "https://t.me/rbc_news/159003",
+    "https://oilprice.com/Energy/Energy-General/New-Oil-Fields-Should-Have-to-Build-the-Carbon-Storage-Market.html",
+    "https://tass.ru/mezhdunarodnaya-panorama/28231071",
+    "https://www.rbc.ru/rbcfreenews/69d815f29a794715d7de1cff",
+    "https://t.me/markettwits/389516",
+    "https://tass.ru/proisshestviya/28231069",
+    "https://t.me/markettwits/389515",
+    "https://www.marketwatch.com/story/colleges-raced-to-build-massive-computer-science-departments-now-the-boom-is-turning-to-bust-692cfe37?mod=mw_rss_topstories",
+    "https://www.kommersant.ru/doc/9042466",
+    "https://t.me/markettwits/389514",
+    "https://tass.ru/kultura/28231065",
+    "https://www.investing.com/news/stock-market-news/aeromexico-eyes-new-us-flights-after-washington-lifts-mexico-city-restrictions-4958196",
+    "https://t.me/FinancialJuice/141357",
+    "https://www.investing.com/news/stock-market-news/aeromexico-eyes-us-expansion-after-washington-lifts-flight-curbs-93CH-4958194",
+    "https://tass.ru/mezhdunarodnaya-panorama/28231061",
+    "https://www.vedomosti.ru/politics/news/2026/10/19/1238397-zelenskii-ne-znaet",
+    "https://www.investing.com/news/stock-market-news/fintech-ramp-applies-for-occ-trust-bank-charter-to-expand-asset-services-4958193",
+    "https://tass.ru/mezhdunarodnaya-panorama/28231063",
+    "https://t.me/FinancialJuice/141356",
+    "https://www.kommersant.ru/doc/9042467",
+    "https://t.me/FinancialJuice/141355",
+    "https://www.rbc.ru/politics/19/10/2026/6ad6748216db06912fe7899c",
+    "https://www.kommersant.ru/doc/9042468",
+    "https://www.investing.com/news/stock-market-news/as-france-reels-from-violence-macron-points-to-security-failings-4956666",
+    "https://www.investing.com/news/stock-market-news/nscale-anthropic-in-talks-for-45-billion-cloud-computing-deal-bloomberg-news-reports-4958188",
+    "https://www.rbc.ru/politics/19/10/2026/6ad673b5c623fa0e531e1f3d",
+    "https://tass.ru/sport/28231055",
+    "https://www.investing.com/news/stock-market-news/liveramp-stock-rises-as-ftc-clears-publicis-acquisition-4958192",
+    "https://tass.ru/mezhdunarodnaya-panorama/28231051",
+    "https://www.marketwatch.com/story/spacex-earnings-will-be-all-about-ai-for-better-or-for-worse-89bbc772?mod=mw_rss_topstories",
+    "https://t.me/markettwits/389513",
+    "https://www.rbc.ru/politics/09/09/2026/6aa16afa9a79471503bc7e00",
+    "https://www.rbc.ru/rbcfreenews/6ad671e7b26cfd2e8d511b01",
+    "https://decrypt.co/381351/hackers-running-apple-ios-android-phones",
+    "https://t.me/banksta/103742",
+    "https://www.marketwatch.com/story/why-the-treasurys-financing-plans-are-sparking-anxiety-on-wall-street-b49b5e17?mod=mw_rss_topstories",
+    "https://t.me/markettwits/389512",
+    "https://www.rbc.ru/politics/19/10/2026/6ad67001caf9d3a5cf06c00b",
+    "https://tass.ru/mezhdunarodnaya-panorama/28231047",
+    "https://t.me/FinancialJuice/141354",
+    "https://www.vedomosti.ru/business/news/2026/10/19/1238395-pravitelstvo-instrumenti-podderzhki",
+    "https://tass.ru/kosmos/28231045",
+    "https://t.me/markettwits/389511",
+    "https://tass.ru/mezhdunarodnaya-panorama/28231043",
+    "https://tass.ru/sport/28231039",
+    "https://t.me/WalterBloomberg/37140",
+    "https://t.me/WalterBloomberg/37139",
+    "https://www.kommersant.ru/doc/9042461",
+    "https://www.vedomosti.ru/politics/news/2026/10/19/1238396-tramp-o-gotovnosti",
+    "https://t.me/rbc_news/159002",
+    "https://t.me/WalterBloomberg/37138",
+    "https://t.me/FinancialJuice/141353",
+    "https://www.rbc.ru/sport/18/10/2026/6ad5038f4b9446647dc53d05",
+    "https://www.kommersant.ru/doc/9042464",
+    "https://t.me/FinancialJuice/141352",
+    "https://t.me/markettwits/389510",
+    "https://t.me/rbc_news/159001",
+    "https://www.rbc.ru/sport/19/10/2026/6ad5d67e1e6a318271e63448",
+    "https://t.me/WalterBloomberg/37137",
+    "https://tass.ru/mezhdunarodnaya-panorama/28231035",
+    "https://t.me/FinancialJuice/141351",
+    "https://t.me/WalterBloomberg/37136",
+    "https://t.me/WalterBloomberg/37135",
+    "https://t.me/rbc_news/159000",
+    "https://www.rbc.ru/politics/19/10/2026/6ad66fda121eb827ed5a145c",
+    "https://www.investing.com/news/stock-market-news/nscale-in-talks-for-45-billion-anthropic-ai-deal-as-ipo-looms-4958181",
+    "https://www.investing.com/news/stock-market-news/netflix-earnings-outlook-tone-and-guidance-matter-more-than-the-beat-93CH-4958182",
+    "https://www.investing.com/news/stock-market-news/ge-aerospace-rtx-and-noc-earnings-preview-ahead-of-q3-results-93CH-4958180",
     "https://t.me/markettwits/389509",
+    "https://www.marketwatch.com/story/why-elon-musk-anthropic-and-other-ai-titans-are-giving-away-shares-a6709d24?mod=mw_rss_topstories",
     "https://t.me/FinancialJuice/141350",
+    "https://www.investing.com/news/stock-market-news/us-economic-calendar-preview-key-releases-for-the-week-of-oct-1923-2026-93CH-4958178",
     "https://t.me/markettwits/389508",
     "https://t.me/FinancialJuice/141349",
     "https://tass.ru/mezhdunarodnaya-panorama/28231027",
@@ -806,66 +878,7 @@
     "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-in-asian-trade-e5171539?mod=rss_markets_main",
     "https://t.me/markettwits/389507",
     "https://www.rbc.ru/politics/19/10/2026/6ad66bba0328c8e531287b90",
-    "https://t.me/FinancialJuice/141347",
-    "https://tass.ru/mezhdunarodnaya-panorama/28231019",
-    "https://www.kommersant.ru/doc/9042462",
-    "https://t.me/if_market_news/86135",
-    "https://t.me/FinancialJuice/141346",
-    "https://t.me/banksta/103739",
-    "https://tass.ru/proisshestviya/28231013",
-    "https://t.me/FinancialJuice/141345",
-    "https://www.rbc.ru/business/28/07/2026/6a67fcc39a794710cecf5e10",
-    "https://tass.ru/mezhdunarodnaya-panorama/28231015",
-    "https://www.kommersant.ru/doc/9042448",
-    "https://t.me/FinancialJuice/141344",
-    "https://t.me/FinancialJuice/141343",
-    "https://t.me/FinancialJuice/141342",
-    "https://t.me/FinancialJuice/141341",
-    "https://tass.ru/mezhdunarodnaya-panorama/28231007",
-    "https://t.me/markettwits/389506",
-    "https://t.me/FinancialJuice/141340",
-    "https://tass.ru/politika/28231009",
-    "https://t.me/markettwits/389505",
-    "https://t.me/FinancialJuice/141339",
-    "https://t.me/FinancialJuice/141338",
-    "https://tass.ru/politika/28231003",
-    "https://t.me/if_market_news/86134",
-    "https://t.me/whale_alert_io/104030",
-    "https://www.marketwatch.com/story/coreweaves-selloff-is-a-lesson-in-finance-101-and-wall-street-says-the-stock-can-recover-23ca5377?mod=mw_rss_topstories",
-    "https://tass.ru/proisshestviya/28231005",
-    "https://tass.ru/mezhdunarodnaya-panorama/28230999",
-    "https://tass.ru/mezhdunarodnaya-panorama/28231001",
-    "https://cointelegraph.com/news/visa-mesh-partner-crypto-spending-175m-merchant-locations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.kommersant.ru/doc/9042446",
-    "https://decrypt.co/381365/mastercard-brings-its-fraud-fighting-tools-to-stablecoin-payments",
-    "https://www.kommersant.ru/doc/9042460",
-    "https://www.vedomosti.ru/politics/news/2026/10/19/1238389-pravitelstvo-italii-napravit",
-    "https://www.investing.com/news/stock-market-news/us-cftc-secures-order-for-exnew-york-resident-to-pay-288-million-4958168",
-    "https://thedefiant.io/news/regulation/france-s-stablecoin-swap-tax-faces-oct-20-budget-vote",
-    "https://www.investing.com/news/stock-market-news/clevelandcliffs-earnings-analysis-questions-answered-and-next-catalysts-93CH-4958166",
-    "https://t.me/thebell_io/39537",
-    "https://t.me/markettwits/389504",
-    "https://tass.ru/politika/28230983",
-    "https://www.rbc.ru/sport/18/10/2026/6ad49313ae0abdefbadf4659",
-    "https://t.me/banksta/103738",
-    "https://t.me/FinancialJuice/141337",
-    "https://cointelegraph.com/news/mastercard-stablecoin-risk-screening-banks-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.kommersant.ru/doc/9042457",
-    "https://www.rbc.ru/base/10/09/2025/68c075ee9a79472708d42f86",
-    "https://cryptoslate.com/strategys-discretionary-cash-falls-72-as-buyback-authorization-rises-to-3-billion/",
-    "https://www.kommersant.ru/doc/9042458",
-    "https://oilprice.com/Energy/Energy-General/Colombias-Critical-Minerals-Could-Be-a-Game-Changer-for-America.html",
-    "https://www.investing.com/news/stock-market-news/fifth-third-bancorp-earnings-analysis-questions-answered-and-next-catalysts-93CH-4958158",
-    "https://tass.ru/obschestvo/28230975",
-    "https://tass.ru/mezhdunarodnaya-panorama/28230993",
-    "https://tass.ru/obschestvo/28230991",
-    "https://tass.ru/kultura/28230987",
-    "https://www.interfax.ru/moscow/1123562",
-    "https://www.kommersant.ru/doc/9042459",
-    "https://www.rbc.ru/society/14/10/2026/6acf30e52facc56795f21f53",
-    "https://t.me/nainspire/5550",
-    "https://tass.ru/proisshestviya/28230977",
-    "https://t.me/FinancialJuice/141336"
+    "https://t.me/FinancialJuice/141347"
   ],
   "ai_dead": {
     "date": "2026-10-19",
@@ -876,30 +889,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-18T20:30:55.354739+00:00",
-      "Зеленский обвинил Трампа в попытке заставить Украину капитулировать"
-    ],
-    [
-      "2026-10-18T20:30:55.354739+00:00",
-      "Европа и Британия активизировали попытки использовать активы РФ"
-    ],
-    [
-      "2026-10-18T20:30:55.354739+00:00",
-      "Tether инвестировал в платежную сеть AIsa для ИИ-агентов"
-    ],
-    [
-      "2026-10-18T20:30:55.354739+00:00",
-      "Макрон раскритиковал масштабные беспорядки во Франции"
-    ],
-    [
-      "2026-10-18T20:30:55.354739+00:00",
-      "Белоруссия и Россия утвердят правила общего энергорынка"
-    ],
-    [
-      "2026-10-19T04:00:59.188437+00:00",
-      "Путин предложил Трампу и Си Цзиньпину провести встречу по Украине"
-    ],
     [
       "2026-10-19T04:00:59.188437+00:00",
       "ВВП Китая в третьем квартале вырос лучше прогнозов"
@@ -1499,6 +1488,30 @@
     [
       "2026-10-19T19:30:57.528923+00:00",
       "КСИР напомнил о критической инфраструктуре Ормузского пролива"
+    ],
+    [
+      "2026-10-19T20:00:57.171758+00:00",
+      "Трамп заявил о планах освободить задержанного в РФ американца"
+    ],
+    [
+      "2026-10-19T20:00:57.171758+00:00",
+      "Nscale и Anthropic обсуждают облачную сделку на $45 миллиардов"
+    ],
+    [
+      "2026-10-19T20:00:57.171758+00:00",
+      "Goldman Sachs повысил рейтинг CoreWeave до «покупки» с целью $106"
+    ],
+    [
+      "2026-10-19T20:00:57.171758+00:00",
+      "Apple представит первый MacBook с сенсорным экраном 28 октября"
+    ],
+    [
+      "2026-10-19T20:00:57.171758+00:00",
+      "Биткоин отскочил от 50-дневной скользящей средней"
+    ],
+    [
+      "2026-10-19T20:00:57.171758+00:00",
+      "Во Франции вводят комендантский час из-за беспорядков"
     ]
   ],
   "results_fp": []
