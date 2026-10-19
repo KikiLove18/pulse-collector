@@ -1090,11 +1090,13 @@ def run_weekly(state, now, dry):
                                           f"прошлое {e['previous']}" if e.get("previous") else "") if x)
             nxt.append((dt, f"{WEEKDAY[dt.weekday()]} {dt:%d.%m %H:%M} МСК — {e['title']}" + (f" ({extra})" if extra else "")))
 
+    chat = pro._target("PRO_WEEKLY")  # пусто — тестовый канал; on — канал PRO (после «да» владельца)
+
     def send(html, card_url):  # Telegram: до 4096 знаков в сообщении; карточка — у первого
         parts = split_message(tg_html(html))
-        publish_card(parts[0], card_url)
+        pro._send(chat, parts[0], card_url)
         for p in parts[1:]:
-            send_telegram(p)
+            pro._send(chat, p, None)
 
     AI_TIER["big"] = True
     try:
@@ -1180,6 +1182,12 @@ def main():
             state["sent_digests"].append(slot)
         run_events(state, now, dry)
         run_results(state, now, dry)
+        local = now.astimezone(MSK)  # «Разбор недели» — воскресенье после 18:00 МСК, один раз, только если включён
+        wkey = f"{local:%Y-%m-%d}"
+        if (os.environ.get("PRO_WEEKLY") or "").lower() == "on" and local.weekday() == 6 and 18 <= local.hour < 21 \
+                and state.get("weekly_sent") != wkey and not slot:
+            state["weekly_sent"] = wkey  # заранее: при сбое ИИ не повторяем каждые 30 минут
+            run_weekly(state, now, dry)
         if not slot:
             try:
                 run_breaking(state, now, dry)

@@ -42,8 +42,9 @@ BIG_EVENT = """Ты — главный редактор закрытого ка�
 Никаких советов «покупай/продавай», никаких обещаний доходности. Объём — до 1500 знаков.""" + prompts.RU_ONLY
 
 
-def _target():
-    mode = (os.environ.get("PRO_EVENTS") or "test").lower()
+def _target(var="PRO_EVENTS"):
+    """var: PRO_EVENTS (большие события) или PRO_WEEKLY (разбор недели) — у каждого своё «да» владельца."""
+    mode = (os.environ.get(var) or "test").lower()
     if mode == "off":
         return None
     if mode == "on" and os.environ.get("PRO_CHAT_ID"):
