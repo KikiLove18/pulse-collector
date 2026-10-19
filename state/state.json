@@ -778,7 +778,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-19T04:00:59.188437+00:00",
+  "breaking_ts": "2026-10-19T05:00:57.574338+00:00",
   "news_now": {
     "day": "2026-10-19",
     "day_count": 0,
@@ -787,72 +787,81 @@
     "titles": []
   },
   "news_seen": [
-    "https://www.vedomosti.ru/auto/news/2026/10/16/1237784-rossiyane-kupili-avtomobilei",
-    "https://t.me/headlines_for_traders/86958",
-    "https://tass.ru/ekonomika/28228109",
-    "https://tass.ru/sport/28228111",
-    "https://tass.ru/obschestvo/28228107",
-    "https://www.interfax.ru/russia/1123362",
-    "https://tass.ru/sport/28228105",
-    "https://www.kommersant.ru/doc/9041550",
-    "https://www.vedomosti.ru/politics/news/2026/10/19/1238045-dmitriev-tramp-razoblachaet",
-    "https://www.interfax.ru/russia/1123361",
-    "https://www.rbc.ru/society/15/09/2026/6aa937759a7947f752018767",
-    "https://tass.ru/obschestvo/28228089",
-    "https://tass.ru/mezhdunarodnaya-panorama/28228095",
-    "https://www.rbc.ru/politics/17/10/2026/6ad32a638c6fc667e013e6c7",
-    "https://www.interfax.ru/russia/1123360",
-    "https://tass.ru/sport/28228099",
-    "https://tass.ru/obschestvo/28228097",
-    "https://t.me/markettwits/389373",
-    "https://t.me/headlines_for_traders/86957",
-    "https://tass.ru/obschestvo/28228091",
-    "https://tass.ru/proisshestviya/28228093",
-    "https://t.me/markettwits/389372",
-    "https://t.me/markettwits/389371",
-    "https://t.me/wublockchainenglish/26470",
-    "https://t.me/headlines_for_traders/86956",
-    "https://tass.ru/proisshestviya/28228087",
-    "https://www.coindesk.com/markets/2026/10/19/bitcoin-korea-s-kospi-and-nasdaq-futures-rally-as-china-gdp-beats-estimates",
-    "https://www.vedomosti.ru/politics/news/2026/10/19/1238044-peskov-rossiya",
-    "https://t.me/markettwits/389370",
-    "https://tass.ru/obschestvo/28228077",
-    "https://tass.ru/sibir-news/28228073",
-    "https://www.interfax.ru/world/1123359",
-    "https://t.me/markettwits/389369",
-    "https://tass.ru/armiya-i-opk/28228079",
-    "https://tass.ru/armiya-i-opk/28228081",
-    "https://tass.ru/armiya-i-opk/28228083",
-    "https://t.me/markettwits/389367",
-    "https://tass.ru/ekonomika/28228075",
-    "https://www.kommersant.ru/doc/9041547",
-    "https://t.me/banksta/103667",
-    "https://tass.ru/nauka/28228067",
-    "https://tass.ru/ekonomika/28228071",
-    "https://tass.ru/obschestvo/28228069",
-    "https://t.me/headlines_for_traders/86955",
-    "https://www.investing.com/news/stock-market-news/up-10-in-october-an-aipicked-stock-defied-asias-2-trillion-chip-rout-4956262",
-    "https://www.kommersant.ru/doc/9041544",
-    "https://tass.ru/obschestvo/28228061",
-    "https://www.rbc.ru/business/18/10/2026/6ad45b17ae0abdefbadf463f",
-    "https://www.vedomosti.ru/society/news/2026/10/19/1238043-zhitelnitsu-primorya",
-    "https://tass.ru/proisshestviya/28228065",
-    "https://tass.ru/ekonomika/28227997",
-    "https://www.interfax.ru/russia/1123357",
-    "https://tass.ru/obschestvo/28228039",
+    "https://t.me/incrypted/33034",
+    "https://t.me/bitkogan_hotline/27897",
+    "https://www.vedomosti.ru/politics/news/2026/10/19/1238048-peskov-pryamaya-liniya",
+    "https://t.me/markettwits/389386",
+    "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it",
+    "https://www.kommersant.ru/doc/9041579",
+    "https://tass.ru/ekonomika/28228187",
+    "https://tass.ru/ekonomika/28228193",
+    "https://tass.ru/obschestvo/28228189",
+    "https://t.me/lookonchainchannel/10678",
+    "https://tass.ru/proisshestviya/28228191",
+    "https://t.me/markettwits/389385",
+    "https://www.interfax.ru/russia/1123366",
+    "https://t.me/headlines_for_traders/86963",
+    "https://tass.ru/mezhdunarodnaya-panorama/28228183",
+    "https://t.me/FinancialJuice/141160",
+    "https://t.me/FinancialJuice/141159",
+    "https://t.me/markettwits/389384",
+    "https://tass.ru/proisshestviya/28228185",
+    "https://www.investing.com/news/stock-market-news/these-tech-stocks-held-up-during-the-earlyoct-ai-selloff-93CH-4956327",
+    "https://t.me/markettwits/389383",
+    "https://www.vedomosti.ru/politics/news/2026/10/19/1238047-peskov-nazval-absurdnimi",
+    "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
+    "https://t.me/markettwits/389382",
+    "https://www.rbc.ru/rbcfreenews/6ad59fb99f67ca48c4070380",
+    "https://www.kommersant.ru/doc/9041571",
+    "https://tass.ru/ekonomika/28228181",
+    "https://t.me/rbc_news/158933",
+    "https://t.me/markettwits/389381",
+    "https://tass.ru/politika/28228179",
+    "https://tass.ru/mezhdunarodnaya-panorama/28228175",
+    "https://www.investing.com/news/stock-market-news/asia-stocks-edge-lower-despite-stronger-china-growth-as-ai-jitters-persist-4956316",
+    "https://tass.ru/proisshestviya/28228171",
+    "https://t.me/markettwits/389380",
+    "https://www.rbc.ru/politics/24/09/2026/6ab474c31d99f7aa430d149b",
+    "https://tass.ru/obschestvo/28228165",
+    "https://t.me/FinancialJuice/141158",
+    "https://www.investing.com/news/stock-market-news/why-is-hengtong-optic-electric-stock-surging-today-93CH-4956315",
+    "https://t.me/markettwits/389379",
+    "https://tass.ru/politika/28228169",
+    "https://www.rbc.ru/rbcfreenews/6ad2f5356930dce2d39715c8",
+    "https://tass.ru/sport/28228167",
+    "https://t.me/interfaxonline/80326",
+    "https://t.me/markettwits/389378",
+    "https://t.me/markettwits/389377",
+    "https://tass.ru/armiya-i-opk/28228163",
+    "https://tass.ru/nauka/28228161",
+    "https://www.interfax.ru/world/1123358",
+    "https://t.me/headlines_for_traders/86961",
+    "https://www.kommersant.ru/doc/9041569",
+    "https://tass.ru/obschestvo/28228157",
+    "https://www.investing.com/news/stock-market-news/why-is-nidec-stock-sliding-to-a-decade-low-today-93CH-4956305",
+    "https://www.vedomosti.ru/politics/news/2026/10/19/1238046-tramp-obyasnil-reshenie",
+    "https://tass.ru/obschestvo/28228151",
+    "https://www.kommersant.ru/doc/9041564",
+    "https://tass.ru/obschestvo/28228149",
+    "https://tass.ru/nauka/28228141",
+    "https://t.me/markettwits/389376",
+    "https://t.me/banksta/103668",
+    "https://tass.ru/politika/28228145",
+    "https://t.me/rbc_news/158931",
+    "https://tass.ru/proisshestviya/28228147",
+    "https://www.interfax.ru/russia/1123365",
+    "https://www.investing.com/news/stock-market-news/world-faces-nature-reality-check-at-un-biodiversity-conference-4956303",
+    "https://tass.ru/ekonomika/28228143",
+    "https://t.me/markettwits/389375",
+    "https://t.me/markettwits/389374",
+    "https://tass.ru/ekonomika/28228139",
+    "https://t.me/headlines_for_traders/86960",
+    "https://tass.ru/ekonomika/28228129",
+    "https://tass.ru/sport/28228137",
+    "https://www.rbc.ru/rbcfreenews/688cc0a59a794773276f9cec",
     "https://www.wsj.com/economy/chinas-economy-expanded-4-5-in-third-quarter-powered-by-exports-53910a55?mod=rss_socialeconomyfeed",
-    "https://www.kommersant.ru/doc/9041548",
-    "https://tass.ru/obschestvo/28228063",
-    "https://t.me/FinancialJuice/141157",
-    "https://www.investing.com/news/stock-market-news/new-hope-shares-hit-near-onemonth-high-as-it-agrees-13-bln-malabar-deal-4956251",
-    "https://t.me/FinancialJuice/141156",
-    "https://t.me/FinancialJuice/141155",
-    "https://t.me/FinancialJuice/141154",
-    "https://t.me/FinancialJuice/141153",
-    "https://www.interfax.ru/russia/1123355",
-    "https://t.me/lookonchainchannel/10677",
-    "https://www.interfax.ru/world/1123356",
-    "https://t.me/headlines_for_traders/86954"
+    "https://www.interfax.ru/russia/1123364",
+    "https://www.investing.com/news/stock-market-news/gift-nifty-50-faces-bull-trap-risk-at-23036-vwap-live-levels-93CH-4956292"
   ],
   "ai_dead": {
     "date": "2026-10-18",
@@ -861,30 +870,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-18T06:00:55.700112+00:00",
-      "Госдеп США: у Украины нет доступа к военной системе спутниковой связи Starshield"
-    ],
-    [
-      "2026-10-18T06:00:55.700112+00:00",
-      "ВС РФ в Черном море поразили сухогруз и катер"
-    ],
-    [
-      "2026-10-18T06:00:55.700112+00:00",
-      "Крупный перевод 1 149 BTC зафиксирован с биржи Kraken на неизвестный кошелек"
-    ],
-    [
-      "2026-10-18T06:30:53.868263+00:00",
-      "Минобороны РФ: за ночь средства ПВО перехватили 1015 беспилотников"
-    ],
-    [
-      "2026-10-18T06:30:53.868263+00:00",
-      "ЦБ выпустил FAQ по регулированию операций с криптовалютой"
-    ],
-    [
-      "2026-10-18T06:30:53.868263+00:00",
-      "Минобороны заявило об ударе по сухогрузу в Черном море"
-    ],
     [
       "2026-10-18T06:30:53.868263+00:00",
       "Новак: российский дизель в США будет поставляться на танкерах Aframax"
@@ -1484,6 +1469,26 @@
     [
       "2026-10-19T04:00:59.188437+00:00",
       "Аэропорты Ижевска, Перми и Тамбова возобновили работу"
+    ],
+    [
+      "2026-10-19T05:00:57.574338+00:00",
+      "Индекс Мосбиржи на открытии торгов вырос на 1,19%"
+    ],
+    [
+      "2026-10-19T05:00:57.574338+00:00",
+      "MARA Holdings перевела 1 000 BTC на биржи за 5 дней"
+    ],
+    [
+      "2026-10-19T05:00:57.574338+00:00",
+      "Песков подтвердил обсуждение трехстороннего саммита РФ, США и КНР"
+    ],
+    [
+      "2026-10-19T05:00:57.574338+00:00",
+      "ЦБ и банки начали пресекать арбитражные схемы с покупкой USDT"
+    ],
+    [
+      "2026-10-19T05:00:57.574338+00:00",
+      "Вторичный рынок авто в РФ в сентябре показал рекордный рост"
     ]
   ]
 }
