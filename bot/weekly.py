@@ -12,7 +12,7 @@ import urllib.parse
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from bot import cards, edition
+from bot import cards, edition, prompts
 
 MSK = timezone(timedelta(hours=3))
 WEEK_FILE = Path(__file__).resolve().parent.parent / "state" / "week.json"
@@ -57,7 +57,7 @@ WEEKLY = """Ты — главный редактор закрытого кана
 
 В конце, ОТДЕЛЬНОЙ последней строкой, JSON для обложки без ```:
 {"cover": {"title": "главная тема недели до 45 знаков, без слов «Разбор недели»", "theme": "один из: THEMES", "sent": "pos|neg|neu"}}
-""".replace("THEMES", ", ".join(cards.THEMES))
+""".replace("THEMES", ", ".join(cards.THEMES)) + prompts.RU_ONLY
 
 
 # ---------- журнал недели ----------

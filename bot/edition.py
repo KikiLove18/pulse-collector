@@ -13,7 +13,7 @@ from datetime import datetime, timedelta, timezone
 
 from PIL import Image
 
-from bot import cards, photos
+from bot import cards, photos, prompts
 
 MSK = timezone(timedelta(hours=3))
 THEMES = ", ".join(cards.THEMES)
@@ -76,6 +76,9 @@ metrics в feed — 1–3 главные цифры новости (как на 
 imp — сила влияния на рынок: 3 — двигает рынок целиком (ставки ЦБ/ФРС, макроданные, ОПЕК+, санкции, движение индекса/BTC/нефти 3%+);
 2 — заметно для отрасли, крупной компании или актива; 1 — фон, контекст.
 """.replace("THEMES", THEMES)
+
+
+PICK, NEWS_NOW = PICK + prompts.RU_ONLY, NEWS_NOW + prompts.RU_ONLY
 
 
 def _json(raw):
@@ -165,6 +168,7 @@ MORNING = """Ты — выпускающий редактор утреннего
    "metrics": [{"value": "число из новостей", "label": "2–3 слова"}], "photo": ["2–3 англ. слова", "общий запрос", "1–2 слова"]}}
 Цифры — только из входных данных.
 """.replace("THEMES", THEMES)
+MORNING += prompts.RU_ONLY
 
 
 def build_morning(ask_ai, items, now, tzmin, qlines, qlines_ru, today, today_ru, publish_channel):
