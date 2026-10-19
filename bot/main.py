@@ -1156,6 +1156,9 @@ def main():
         run_weekly(state, now, dry)
         save_state(state)
         return
+    if mode == "pro_check":  # права бота в канале PRO — без публикации
+        print("Можно публиковать:", pro.check(os.environ.get("PRO_CHAT_ID") or "-1004428155051"), file=sys.stderr)
+        return
     if mode == "pro_sample":  # образец «Большого события» в тестовый канал: последнее сильное событие из журнала недели
         os.environ["PRO_EVENTS"] = "test"
         r = next((r for r in reversed(weekly.load_week()["results"]) if r.get("impact") == "High"), None)

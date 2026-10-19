@@ -100,3 +100,19 @@ def big_event(ask_ai, tg_html, state, now, kind, title, facts, quotes_text="", c
     st["count"] += 1
     st["titles"].append(title)
     return html
+
+
+def check(chat):
+    """Может ли бот публиковать в канале PRO — ничего не отправляет (getChat + getChatMember)."""
+    token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    def call(method, **kw):
+        req = urllib.request.Request(f"https://api.telegram.org/bot{token}/{method}", data=json.dumps(kw).encode(),
+                                     headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return json.loads(r.read())["result"]
+    me = call("getMe")
+    ch = call("getChat", chat_id=chat)
+    m = call("getChatMember", chat_id=chat, user_id=me["id"])
+    print(f"Канал PRO: «{ch.get('title')}» ({ch.get('type')}), бот @{me.get('username')}: {m.get('status')}, "
+          f"публиковать: {m.get('can_post_messages')}", file=sys.stderr)
+    return m.get("status") in ("administrator", "creator") and m.get("can_post_messages") is not False
