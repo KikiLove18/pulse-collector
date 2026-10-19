@@ -6,7 +6,7 @@ on:
   workflow_dispatch:          # кнопка «Run workflow» для ручного запуска
     inputs:
       mode:
-        description: "auto / digest / events / results / breaking / preview / ai_check / ai_probe / weekly / morning:<пояс>"
+        description: "auto / digest / events / results / breaking / preview / ai_check / ai_probe / weekly / week_ahead / asset / guide / month / pro_check / morning:<пояс>"
         default: "auto"
 
 permissions:
@@ -37,7 +37,7 @@ jobs:
           DIGEST_TIMES: ${{ vars.DIGEST_TIMES || '07:30,19:30' }}
           FEED_CARDS: ${{ vars.FEED_CARDS }}              # картинки к важным новостям Ленты (on — Хранитель согласен 18.10)
           PRO_CHAT_ID: ${{ vars.PRO_CHAT_ID }}            # канал PRO — только после «да» владельца на публикацию
-          PRO_WEEKLY: ${{ vars.PRO_WEEKLY }}              # «Разбор недели» по воскресеньям в 18:00 МСК: on — в канал PRO
+          PRO_POSTS: ${{ vars.PRO_POSTS }}                # плановые рубрики PRO (пн неделя впереди, ср актив, чт гайд, вс разбор, 1-е итоги месяца): on — в канал PRO
           PRO_EVENTS: ${{ vars.PRO_EVENTS }}              # «Большие события»: пусто — образцы в тестовый канал, on — в канал PRO, off — выкл
       - name: Сохранить состояние
         run: |

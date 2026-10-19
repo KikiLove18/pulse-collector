@@ -20,9 +20,9 @@ KEEP_DAYS = 8
 MONTHS = edition.MONTHS
 
 # что показываем в таблице «Неделя в цифрах»: (ключ, название, источник)
-WEEK_QUOTES = [("^GSPC", "S&P 500", "y"), ("^IXIC", "Nasdaq", "y"), ("IMOEX", "Индекс МосБиржи", "moex"),
+WEEK_QUOTES = [("^GSPC", "S&P 500", "y"), ("^IXIC", "Nasdaq", "y"), ("IMOEX", "Индекс МосБиржи", "moex"), ("SBER", "Сбербанк", "moexs"), ("GAZP", "Газпром", "moexs"),
                ("bitcoin", "Биткоин", "cg"), ("ethereum", "Эфир", "cg"), ("BZ=F", "Нефть Brent", "y"),
-               ("GC=F", "Золото", "y"), ("DX-Y.NYB", "Индекс доллара", "y"), ("RUB=X", "Доллар/рубль", "y")]
+               ("GC=F", "Золото", "y"), ("SI=F", "Серебро", "y"), ("DX-Y.NYB", "Индекс доллара", "y"), ("RUB=X", "Доллар/рубль", "y")]
 
 WEEKLY = """Ты — главный редактор закрытого канала «Пульс рынка PRO» для трейдеров и частных инвесторов (Россия, США, крипта, сырьё).
 Пишешь воскресный «Разбор недели». Читатель уже видел новости по отдельности в боте — здесь он платит за СМЫСЛ:
@@ -111,9 +111,10 @@ def _week_yahoo(sym, http_get):
     return closes[-1], (closes[-1] / closes[-6] - 1) * 100  # 5 торговых дней назад
 
 
-def _week_moex(sec, http_get, now):
+def _week_moex(sec, http_get, now, shares=False):
     frm = (now - timedelta(days=14)).strftime("%Y-%m-%d")
-    d = json.loads(http_get(f"https://iss.moex.com/iss/history/engines/stock/markets/index/securities/{sec}.json"
+    path = "shares/boards/TQBR/securities" if shares else "index/securities"
+    d = json.loads(http_get(f"https://iss.moex.com/iss/history/engines/stock/markets/{path}/{sec}.json"
                             f"?from={frm}&iss.meta=off&history.columns=TRADEDATE,CLOSE"))["history"]["data"]
     rows = [(day, c) for day, c in d if c]
     last_day = datetime.fromisoformat(rows[-1][0])
@@ -135,8 +136,8 @@ def week_quotes(http_get, now):
         try:
             if src == "y":
                 out[key] = _week_yahoo(key, http_get)
-            elif src == "moex":
-                out[key] = _week_moex(key, http_get, now)
+            elif src in ("moex", "moexs"):
+                out[key] = _week_moex(key, http_get, now, shares=src == "moexs")
             elif key in cg and cg[key][1] is not None:
                 out[key] = cg[key]
         except Exception as e:
@@ -158,6 +159,21 @@ def quote_table(wq):
         arrow = "▲" if chg >= 0 else "▼"
         lines.append(f"{name}  <b>{_num(price, digits)}</b>  {arrow} {'+' if chg >= 0 else '−'}{_num(abs(chg), 1)}%")
     return lines
+
+
+def upload_table(title, rows, card_id, note=""):
+    """Таблица-картинка (cards.render_table) → /card/<id>.jpg для превью сообщения."""
+    import base64
+    import os
+    import tempfile
+    path = os.path.join(tempfile.gettempdir(), f"{card_id}.jpg")
+    try:
+        cards.render_table(title, rows, path, "", note)
+        res = edition._post("/api/card", {"id": card_id, "b64": base64.b64encode(open(path, "rb").read()).decode()})
+        return (res or {}).get("url")
+    except Exception as e:
+        print("Таблица недели не сделана:", str(e)[:150], file=sys.stderr)
+        return None
 
 
 # ---------- выпуск ----------
@@ -220,10 +236,207 @@ def run_weekly(ask_ai, http_get, calendar_next, publish_card, now, dry):
             "title": (re.sub(r"^\s*Разбор недели\s*[:—-]\s*", "", cover.get("title") or "", flags=re.I) or "Главное за неделю")[:70],
             "metrics": metrics}
     card_id = f"wk{now.astimezone(MSK):%Y%m%d}"
+    rows = [(n, _num(wq[k][0], 0 if wq[k][0] > 1000 else 2), wq[k][1]) for k, n, _ in WEEK_QUOTES if k in wq]
+    note = ""
+    if rows:
+        best, worst = max(rows, key=lambda r: r[2]), min(rows, key=lambda r: r[2])
+        note = edition.ru_numbers(f"Лучший: {best[0]} {best[2]:+.1f}% · худший: {worst[0]} {worst[2]:+.1f}% · "
+                                  "изменение с прошлой недели по закрытию")
     if dry:
         print("\n" + html + "\n\nОБЛОЖКА: " + json.dumps(card, ensure_ascii=False))
         return html
     print("----- разбор недели -----\n" + html, file=sys.stderr)  # текст поста виден в журнале запуска
-    url, _ = edition.upload_card(card, card_id, week_label(now))
+    url = upload_table(f"Неделя в цифрах · {week_label(now)}", rows, card_id, note) if rows else None
+    if not url:  # таблицы нет — обычная карточка с главной темой
+        url, _ = edition.upload_card(card, card_id, week_label(now))
+    publish_card(html, url)
+    return html
+
+
+# ---------- другие рубрики канала PRO (сетка 19.10) ----------
+
+def _news_lines(week, days, limit=100):
+    since = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
+    news = sorted((n for n in week["news"] if n["ts"] >= since), key=lambda n: (-n["imp"], n["ts"]))[:limit]
+    return [f"[{n['block']}] imp {n['imp']} | {n['ts'][:10]} | {n['title']} — {n['text']}" for n in news]
+
+
+def _quotes_lines(wq):
+    return [f"{name}: {wq[k][0]:.2f} ({wq[k][1]:+.1f}% за неделю)" for k, name, _ in WEEK_QUOTES if k in wq]
+
+
+def _ask_post(ask_ai, system, user, key):
+    """Ответ ИИ: текст поста, а последней строкой — JSON с данными для картинки ({"map": …} или {"asset": …})."""
+    raw = ask_ai(system, user).strip()
+    i = raw.rfind('{"' + key + '"')
+    if i < 0:
+        return raw, {}
+    try:
+        return raw[:i].strip(), json.loads(raw[i:raw.rindex("}") + 1])
+    except Exception:
+        return raw[:i].strip(), {}
+
+
+def _upload_png(render, card_id, *args):
+    import base64
+    import os
+    import tempfile
+    path = os.path.join(tempfile.gettempdir(), f"{card_id}.jpg")
+    try:
+        render(*args[:2], path, *args[2:])
+        res = edition._post("/api/card", {"id": card_id, "b64": base64.b64encode(open(path, "rb").read()).decode()})
+        return (res or {}).get("url")
+    except Exception as e:
+        print("Картинка не сделана:", str(e)[:150], file=sys.stderr)
+        return None
+
+
+ASSETS = ["Индекс МосБиржи", "Рубль", "Сбербанк", "Газпром", "S&P 500", "Nasdaq", "Биткоин", "Нефть Brent", "Золото", "Доллар (DXY)"]
+
+WEEK_AHEAD = """Ты — главный редактор закрытого канала «Пульс рынка PRO». Сегодня понедельник: рубрика «Неделя впереди».
+Тебе дают: календарь этой недели, заметные новости последних дней, изменения цен за прошлую неделю.
+Оцени для каждого актива из списка, куда скорее давят события этой недели: up (поддержка), down (давление), flat (без перевеса).
+Это сценарий, а не прогноз цены. Цифры и события — только из входных данных.
+Формат ответа: сначала текст поста в Telegram HTML (<b>, <i>, <u>, <blockquote>, <blockquote expandable>), без заголовка, до 2200 знаков:
+<b>🗓 Главное на неделе</b> — 3–5 ключевых событий строками «флаг <b>день дата</b> — событие: что от него ждут и на какие активы смотреть»;
+<b>🧭 Расклад сил</b> — 2–3 предложения: что сейчас определяет рынки; главный вывод в <u></u>;
+<b>⚠️ Что может сломать картину</b> — <blockquote expandable>2–3 риска и сигналы, по которым их заметить</blockquote>
+Затем ОТДЕЛЬНОЙ последней строкой JSON без ```:
+{"map": [{"asset": "название из списка", "way": "up|down|flat", "why": "главный фактор, до 55 знаков"}]}
+Список активов (все, в этом порядке): ASSETS. Никаких советов «покупай/продавай».""".replace("ASSETS", ", ".join(ASSETS)) + prompts.RU_ONLY
+
+
+def run_week_ahead(ask_ai, http_get, calendar_next, publish_card, now, dry):
+    week = load_week()
+    wq = week_quotes(http_get, now)
+    user = "\n".join(["КАЛЕНДАРЬ ЭТОЙ НЕДЕЛИ:"] + (calendar_next or ["нет данных"]) + ["", "ЦЕНЫ ЗА ПРОШЛУЮ НЕДЕЛЮ:"]
+                     + _quotes_lines(wq) + ["", "ЗАМЕТНЫЕ НОВОСТИ ПОСЛЕДНИХ ДНЕЙ:"] + _news_lines(week, 4, 80))
+    post, data = _ask_post(ask_ai, WEEK_AHEAD, user, "map")
+    rows = [(m["asset"], m.get("way", "flat"), m.get("why", "")) for m in data.get("map", []) if m.get("asset")]
+    l = now.astimezone(MSK)
+    end = l + timedelta(days=6)
+    label = f"{l.day}–{end.day} {MONTHS[end.month - 1]}" if l.month == end.month else f"{l.day} {MONTHS[l.month - 1]} – {end.day} {MONTHS[end.month - 1]}"
+    html = f"<b>📅 Неделя впереди · {label}</b>\n\n" + post + f"\n\n<i>Сценарий на неделю, а не прогноз цены. {edition.NOT_ADVICE}</i>"
+    print("----- неделя впереди -----\n" + html + "\nКАРТА: " + json.dumps(rows, ensure_ascii=False), file=sys.stderr)
+    if dry:
+        return html
+    url = _upload_png(cards.render_pressure, f"wa{l:%Y%m%d}", "Неделя впереди: что давит на рынки", rows, label,
+                      "Сценарий на неделю, а не прогноз цены · не инвестрекомендация") if rows else None
+    publish_card(html, url)
+    return html
+
+
+ASSET = """Ты — главный редактор закрытого канала «Пульс рынка PRO». Рубрика «Актив недели»: глубокий разбор ОДНОГО актива,
+который сейчас больше всего в фокусе (по новостям и движению цены). Не повторяй активы из списка «УЖЕ РАЗБИРАЛИ».
+Цифры и события — только из входных данных.
+Формат ответа: сначала текст поста в Telegram HTML без заголовка, до 2500 знаков:
+<b>Почему сейчас</b> — 2 предложения: что происходит с активом;
+<b>📉 Что давит</b> — 2–3 фактора, у каждого одна строка: фактор и как он действует;
+<b>📈 Что поддерживает</b> — 2–3 фактора так же;
+<b>🔗 Как это работает</b> — <blockquote expandable>цепочка «событие → … → цена» для главного фактора, простыми словами</blockquote>
+<b>📅 Ближайшие события</b> — 2–3 события из календаря, которые сдвинут актив;
+<b>🎯 Сценарии</b> — <blockquote>Базовый: … / Риск: …</blockquote>
+Затем ОТДЕЛЬНОЙ последней строкой JSON без ```:
+{"asset": "название", "theme": "фон: один из THEMES", "metrics": [{"value": "число из входных данных", "label": "2–3 слова"}]}
+Никаких советов «покупай/продавай», никаких целевых цен.""".replace("THEMES", ", ".join(cards.THEMES)) + prompts.RU_ONLY
+
+
+def run_asset(ask_ai, http_get, calendar_next, publish_card, now, dry):
+    week = load_week()
+    wq = week_quotes(http_get, now)
+    done = week.setdefault("assets_done", [])[-6:]
+    user = "\n".join(["УЖЕ РАЗБИРАЛИ: " + (", ".join(done) or "ничего"), "", "ЦЕНЫ ЗА НЕДЕЛЮ:"] + _quotes_lines(wq)
+                     + ["", "КАЛЕНДАРЬ НЕДЕЛИ:"] + (calendar_next or ["нет данных"]) + ["", "НОВОСТИ:"] + _news_lines(week, 7, 100))
+    post, data = _ask_post(ask_ai, ASSET, user, "asset")
+    name = data.get("asset") or "Актив недели"
+    html = f"<b>🔍 Актив недели: {name}</b>\n\n" + post + f"\n\n<i>{edition.NOT_ADVICE}</i>"
+    print("----- актив недели -----\n" + html, file=sys.stderr)
+    if dry:
+        return html
+    card = {"theme": data.get("theme") if data.get("theme") in cards.THEMES else "wallst", "tag": "АКТИВ НЕДЕЛИ", "sent": "neu",
+            "title": f"{name}: что давит и что поддерживает", "metrics": (data.get("metrics") or [])[:3]}
+    url, _ = edition.upload_card(card, f"as{now.astimezone(MSK):%Y%m%d}", week_label(now))
+    publish_card(html, url)
+    week["assets_done"] = (done + [name])[-6:]
+    save_week(week, now)
+    return html
+
+
+GUIDES_DIR = Path(__file__).resolve().parent.parent / "guides"
+
+
+def run_guide(ask_ai, http_get, calendar_next, publish_card, now, dry):
+    """Гайд — НЕ пишет ИИ на ходу: берём следующий утверждённый владельцем файл guides/NN-*.html (первая строка — заголовок).
+    Опубликованные помним в state/week.json. Нет утверждённых — ничего не публикуем."""
+    week = load_week()
+    done = set(week.setdefault("guides_done", []))
+    files = sorted(p for p in GUIDES_DIR.glob("*.html") if p.name not in done and not p.name.startswith("_"))
+    if not files:
+        print("Гайд: утверждённых новых нет", file=sys.stderr)
+        return None
+    html = files[0].read_text(encoding="utf-8").strip()
+    print("----- гайд -----\n" + html, file=sys.stderr)
+    if dry:
+        return html
+    publish_card(html, None)
+    week["guides_done"] = sorted(done | {files[0].name})
+    save_week(week, now)
+    return html
+
+
+MONTH = """Ты — главный редактор закрытого канала «Пульс рынка PRO». Рубрика «Итоги месяца» — 1-го числа.
+Тебе дают изменения цен за месяц (посчитаны кодом), заметные новости и итоги макроданных. Цифры — только из входных данных.
+Формат — Telegram HTML без заголовка, до 2500 знаков:
+<b>🧭 Месяц в одной фразе</b> — что определило месяц;
+<b>📌 Три главные истории</b> — 1️⃣ 2️⃣ 3️⃣ с <blockquote expandable>3 предложения</blockquote>;
+<b>🏆 Лучшие и худшие</b> — 2–3 строки по таблице цен: кто вырос, кто упал и почему;
+<b>📅 Что важно в новом месяце</b> — 3–4 события из календаря.
+Никаких советов «покупай/продавай».""" + prompts.RU_ONLY
+
+
+def _month_change(key, src, http_get, now):
+    """Изменение за прошлый календарный месяц: закрытие последнего дня месяца к закрытию последнего дня позапрошлого."""
+    if src == "y":
+        r = json.loads(http_get("https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(key)
+                                + "?range=3mo&interval=1d"))["chart"]["result"][0]
+        pts = [(datetime.fromtimestamp(t, timezone.utc).date(), c) for t, c in zip(r["timestamp"], r["indicators"]["quote"][0]["close"]) if c]
+    elif src in ("moex", "moexs"):
+        path = "shares/boards/TQBR/securities" if src == "moexs" else "index/securities"
+        frm = (now - timedelta(days=75)).strftime("%Y-%m-%d")
+        d = json.loads(http_get(f"https://iss.moex.com/iss/history/engines/stock/markets/{path}/{key}.json"
+                                f"?from={frm}&iss.meta=off&history.columns=TRADEDATE,CLOSE"))["history"]["data"]
+        pts = [(datetime.fromisoformat(day).date(), c) for day, c in d if c]
+    else:
+        d = json.loads(http_get(f"https://api.coingecko.com/api/v3/coins/{key}/market_chart?vs_currency=usd&days=70&interval=daily"))
+        pts = [(datetime.fromtimestamp(t / 1000, timezone.utc).date(), c) for t, c in d["prices"]]
+    first = now.astimezone(MSK).date().replace(day=1)
+    prev_end = first - timedelta(days=1)
+    prev_start = prev_end.replace(day=1)
+    a = [c for day, c in pts if day < prev_start]
+    b = [c for day, c in pts if day <= prev_end]
+    return b[-1], (b[-1] / a[-1] - 1) * 100
+
+
+def run_month(ask_ai, http_get, calendar_next, publish_card, now, dry):
+    week = load_week()
+    mq = {}
+    for key, name, src in WEEK_QUOTES:
+        try:
+            mq[key] = _month_change(key, src, http_get, now)
+        except Exception as e:
+            print(f"Месяц, {name}: {e}", file=sys.stderr)
+    prev = (now.astimezone(MSK).date().replace(day=1) - timedelta(days=1))
+    mname = ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"][prev.month - 1]
+    user = "\n".join(["ЦЕНЫ ЗА МЕСЯЦ:"] + [f"{n}: {mq[k][0]:.2f} ({mq[k][1]:+.1f}% за месяц)" for k, n, _ in WEEK_QUOTES if k in mq]
+                     + ["", "ИТОГИ МАКРОДАННЫХ:"] + [f"{r.get('dt', '')[:10]} {r.get('title')}: {r.get('headline')}" for r in week["results"]]
+                     + ["", "КАЛЕНДАРЬ:"] + (calendar_next or ["нет данных"]) + ["", "НОВОСТИ:"] + _news_lines(week, 8, 100))
+    body = ask_ai(MONTH, user).strip()
+    html = f"<b>📈 Итоги месяца · {mname} {prev.year}</b>\n\n{body}\n\n<i>{edition.NOT_ADVICE}</i>"
+    print("----- итоги месяца -----\n" + html, file=sys.stderr)
+    if dry:
+        return html
+    rows = [(n, _num(mq[k][0], 0 if mq[k][0] > 1000 else 2), mq[k][1]) for k, n, _ in WEEK_QUOTES if k in mq]
+    url = _upload_png(cards.render_table, f"mo{prev:%Y%m}", f"{mname.capitalize()} в цифрах", rows, f"{prev.year}",
+                      "Изменение за месяц по закрытию") if rows else None
     publish_card(html, url)
     return html

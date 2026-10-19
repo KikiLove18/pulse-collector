@@ -242,3 +242,89 @@ def render_promo(title, subtitle, out_path, badge="", mascot="heart", chips=()):
     img = Image.alpha_composite(img, ov)
     _save(img.convert("RGB"), out_path)
     return out_path
+
+
+def render_table(title, rows, out_path, date_label="", note=""):
+    """Таблица-картинка для канала PRO («Неделя в цифрах», «Месяц в цифрах»): rows — [(название, цена, изменение %)],
+    до 12 строк в две колонки; полоска — сила движения (зелёная — рост, красная — падение). 1280×720 ×S."""
+    from bot.edition import ru_numbers
+    W2, H2 = W * S, H * S
+    k = lambda v: int(round(v * S))
+    fnt = lambda size, weight=700: font(int(size * S), weight)
+    img = Image.new("RGB", (W2, H2), (12, 22, 38))
+    glow = Image.new("RGBA", (W2, H2))
+    ImageDraw.Draw(glow).ellipse((k(W - 520), k(-260), k(W + 260), k(420)), fill=(60, 110, 200, 90))
+    img.paste(glow.filter(ImageFilter.GaussianBlur(k(120))), (0, 0), glow.filter(ImageFilter.GaussianBlur(k(120))))
+    d = ImageDraw.Draw(img, "RGBA")
+    pad = 64
+    logo_p = ROOT.parent / "miniapp" / "img" / "logo192.png"
+    if logo_p.exists():
+        lg = Image.open(logo_p).convert("RGBA").resize((k(60), k(60)), Image.LANCZOS)
+        img.paste(lg, (k(pad), k(40)), lg)
+    d.text((k(pad + 78), k(52)), "ПУЛЬС РЫНКА PRO", font=fnt(30, 800), fill=(255, 255, 255, 245))
+    if date_label:
+        f = fnt(28, 700)
+        w = d.textlength(date_label, font=f) / S
+        d.text((k(W - pad - w), k(56)), date_label, font=f, fill=(255, 255, 255, 200))
+    d.text((k(pad), k(124)), title, font=fnt(52, 800), fill=(255, 255, 255))
+    rows = rows[:12]
+    top = max((abs(r[2]) for r in rows), default=1) or 1
+    half = (len(rows) + 1) // 2
+    colw, rowh, y0 = (W - 2 * pad - 40) / 2, 72, 214
+    for i, (name, price, chg) in enumerate(rows):
+        cx = pad + (0 if i < half else colw + 40)
+        cy = y0 + (i % half) * rowh
+        d.rounded_rectangle((k(cx), k(cy), k(cx + colw), k(cy + rowh - 10)), radius=k(16), fill=(255, 255, 255, 14))
+        up = chg >= 0
+        c = (46, 190, 130) if up else (235, 87, 105)
+        bw = max(6, (colw - 24) * 0.42 * abs(chg) / top)
+        d.rounded_rectangle((k(cx + 12), k(cy + rowh - 22), k(cx + 12 + bw), k(cy + rowh - 16)), radius=k(3), fill=c + (230,))
+        d.text((k(cx + 18), k(cy + 10)), name, font=fnt(27, 700), fill=(255, 255, 255, 235))
+        pct = ru_numbers(f"{chg:+.1f}%").replace("-", "−")
+        fp = fnt(30, 800)
+        wp = d.textlength(pct, font=fp) / S
+        d.text((k(cx + colw - 18 - wp), k(cy + 8)), pct, font=fp, fill=c + (255,))
+        fpr = fnt(22, 600)
+        wpr = d.textlength(price, font=fpr) / S
+        d.text((k(cx + colw - 36 - wp - wpr - 14), k(cy + 14)), price, font=fpr, fill=(255, 255, 255, 150))
+    if note:
+        d.text((k(pad), k(H - 52)), note, font=fnt(22, 500), fill=(255, 255, 255, 150))
+    _save(img, out_path)
+    return out_path
+
+
+def render_pressure(title, rows, out_path, date_label="", note=""):
+    """«Карта давления» для канала PRO: rows — [(актив, up|down|flat, что давит/поддерживает — до 60 знаков)], до 9 строк."""
+    W2, H2 = W * S, H * S
+    k = lambda v: int(round(v * S))
+    fnt = lambda size, weight=700: font(int(size * S), weight)
+    img = Image.new("RGB", (W2, H2), (12, 22, 38))
+    glow = Image.new("RGBA", (W2, H2))
+    ImageDraw.Draw(glow).ellipse((k(-260), k(-300), k(520), k(380)), fill=(60, 110, 200, 80))
+    img.paste(glow.filter(ImageFilter.GaussianBlur(k(120))), (0, 0), glow.filter(ImageFilter.GaussianBlur(k(120))))
+    d = ImageDraw.Draw(img, "RGBA")
+    pad = 64
+    logo_p = ROOT.parent / "miniapp" / "img" / "logo192.png"
+    if logo_p.exists():
+        lg = Image.open(logo_p).convert("RGBA").resize((k(60), k(60)), Image.LANCZOS)
+        img.paste(lg, (k(pad), k(40)), lg)
+    d.text((k(pad + 78), k(52)), "ПУЛЬС РЫНКА PRO", font=fnt(30, 800), fill=(255, 255, 255, 245))
+    if date_label:
+        f = fnt(28, 700)
+        d.text((k(W - pad - d.textlength(date_label, font=f) / S), k(56)), date_label, font=f, fill=(255, 255, 255, 200))
+    d.text((k(pad), k(118)), title, font=fnt(50, 800), fill=(255, 255, 255))
+    look = {"up": ((46, 190, 130), "▲ поддержка"), "down": ((235, 87, 105), "▼ давление"), "flat": ((150, 165, 185), "● без перевеса")}
+    rows = rows[:9]
+    rowh = min(58, (H - 230 - 50) / max(1, len(rows)))
+    for i, (name, way, why) in enumerate(rows):
+        y = 200 + i * rowh
+        c, lbl = look.get(way, look["flat"])
+        d.rounded_rectangle((k(pad), k(y), k(W - pad), k(y + rowh - 8)), radius=k(14), fill=(255, 255, 255, 14))
+        d.rounded_rectangle((k(pad), k(y), k(pad + 8), k(y + rowh - 8)), radius=k(4), fill=c + (255,))
+        d.text((k(pad + 24), k(y + 10)), name, font=fnt(26, 800), fill=(255, 255, 255))
+        d.text((k(pad + 290), k(y + 12)), lbl, font=fnt(22, 800), fill=c + (255,))
+        d.text((k(pad + 470), k(y + 12)), _wrap(d, why, fnt(22, 500), k(W - 2 * pad - 490), 1)[0], font=fnt(22, 500), fill=(255, 255, 255, 210))
+    if note:
+        d.text((k(pad), k(H - 46)), note, font=fnt(20, 500), fill=(255, 255, 255, 140))
+    _save(img, out_path)
+    return out_path

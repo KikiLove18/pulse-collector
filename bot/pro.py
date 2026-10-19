@@ -43,7 +43,7 @@ BIG_EVENT = """Ты — главный редактор закрытого ка�
 
 
 def _target(var="PRO_EVENTS"):
-    """var: PRO_EVENTS (большие события) или PRO_WEEKLY (разбор недели) — у каждого своё «да» владельца."""
+    """var: PRO_EVENTS (большие события) или PRO_POSTS (плановые рубрики) — у каждого своё «да» владельца."""
     mode = (os.environ.get(var) or "test").lower()
     if mode == "off":
         return None
