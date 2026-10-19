@@ -1124,7 +1124,7 @@ def main():
     now = datetime.now(timezone.utc)
     state = load_state()
     ai_dead_load(state)
-    if mode in ("preview", "ai_check", "ai_probe", "weekly") and "--force" not in args:
+    if mode in ("preview", "ai_check", "ai_probe", "weekly", "pro_sample") and "--force" not in args:
         # тесты тратят ту же квоту ИИ — не в последний час перед выжимкой
         local = now.astimezone(MSK)
         for slot in os.environ.get("DIGEST_TIMES", "07:30,19:30").split(","):
@@ -1136,6 +1136,13 @@ def main():
     if mode == "weekly":  # «Разбор недели» для канала PRO — пока образец в тестовый канал
         run_weekly(state, now, dry)
         save_state(state)
+        return
+    if mode == "pro_sample":  # образец «Большого события» в тестовый канал: последнее сильное событие из журнала недели
+        os.environ["PRO_EVENTS"] = "test"
+        r = next((r for r in reversed(weekly.load_week()["results"]) if r.get("impact") == "High"), None)
+        if r:
+            pro.big_event(ask_ai, tg_html, {}, now, "result", r["title"], f'{r["headline"]}\nОценка: {r["verdict"]}',
+                          "\n".join(quotes_for_ai(fetch_markets())))
         return
     if mode == "ai_probe":  # какие бесплатные модели OpenRouter отвечают (только журнал)
         run_ai_probe()
