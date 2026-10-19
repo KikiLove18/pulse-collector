@@ -39,16 +39,25 @@ def _used():
 NOT_PHOTO = re.compile(r"chart|graph|diagram|map\b|logo|screenshot|over time|plot|infographic|table|scheme|svg|icon|banknote|coin of|stamp|drawing|painting|poster|generation|statistic|Information Administration|percent|share of|by year|forecast", re.I)
 
 
-OLD = re.compile(r"\b(1[0-8]\d\d|19[0-7]\d)\b")
+OLD = re.compile(r"\b(1[0-8]\d\d|19[0-7]\d)s?c?\b|(?<!\d)1[89][0-7]0s|\b(NARA|LC-[A-Z]|Bestanddeel|postcard|guide to|back\.jpe?g$)", re.I)
+# 18.10: к новости про мины в Ормузском проливе подобрался бомбардировщик B-52 — военную технику и людей не берём
+MILITARY = re.compile(r"\b(B-\d+|F-\d+|F/A-\d+|Stratofortress|bomber|fighter|aircraft|carrier|strike group|navy|USS|HMS|army|air force|"
+                      r"marine corps|missile|warship|destroyer|frigate|submarine|military|soldier|troops|firefight\w*|rescue|space shuttle|"
+                      r"Atlantis|astronaut|iss\d{3}e)\b", re.I)
+PEOPLE = re.compile(r"\b(President|Minister|Summit|portrait|meets|meeting with|visit|addressing|speech|press conference|marshals|"
+                    r"Mr\.|Mrs\.|woman|man\b|girl|boy)\b", re.I)
+WEAK = {"economy", "market", "business", "money", "finance", "financial", "global", "world", "city", "building", "new", "old"}
 
 
 def _relevant(title, q):
     """В названии файла должны быть слова запроса: хотя бы 2 (или все, если слово одно) — иначе поиск даёт случайные фото."""
     words = [w for w in q.lower().split() if len(w) >= 3]
     t = title.lower()
-    if NOT_PHOTO.search(t) or OLD.search(t):  # графики, схемы, логотипы и архивные снимки (год до 1980 в названии) — не берём
-        return False
-    return sum(w in t for w in words) >= min(2, len(words))
+    if NOT_PHOTO.search(t) or OLD.search(title) or MILITARY.search(title) or PEOPLE.search(title):
+        return False  # графики, схемы, логотипы, архив (до 1980), военная техника, люди — не берём
+    hit = [w for w in words if re.search(r"\b" + re.escape(w), t)]  # с начала слова: «oil» не ловит «toilet»
+    strong = [w for w in hit if w not in WEAK]  # «economy», «market» — слишком общие: «Old Economy County Park»
+    return bool(strong) and len(hit) >= min(2, len(words))
 
 
 def find(queries):
