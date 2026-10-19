@@ -30,7 +30,7 @@ from pathlib import Path
 
 import feedparser
 
-from bot import calendar_future, edition, macro, prompts, sources, weekly
+from bot import calendar_future, edition, macro, pro, prompts, sources, weekly
 
 MSK = timezone(timedelta(hours=3))
 ROOT = Path(__file__).resolve().parent.parent
@@ -737,8 +737,12 @@ def run_breaking(state, now, dry):
     if allit and all(it["link"] in seen for it in allit):  # ИИ уже видел ровно эти новости — не зовём
         state["breaking_ts"] = now.isoformat()
         return
-    edition.run_news_now(ask_ai, allit, state, now, publish_card if not dry else (lambda h, u: publish(h, True)))
+    out = edition.run_news_now(ask_ai, allit, state, now, publish_card if not dry else (lambda h, u: publish(h, True)))
     state["breaking_ts"] = now.isoformat()
+    if out and out.get("kind") == "urgent" and not dry:  # «⚡ Срочно» → подробный разбор в канал PRO
+        card_url = os.environ.get("INGEST_URL", "").replace("/api/ingest", f"/card/{out['card']}.jpg")
+        pro.big_event(ask_ai, tg_html, state, now, "urgent", out.get("title") or "Срочная новость",
+                      clean(out["html"]), "\n".join(quotes_for_ai(fetch_markets())), card_url)
 
 
 def publish(text, dry):
@@ -1057,6 +1061,11 @@ def run_results(state, now, dry):
             weekly.remember_results([payload], now)  # для «Разбора недели»
             if payload["impact"] == "High":
                 publish(html, dry)  # и в тестовый канал
+                rows = "\n".join(f'{x["name"]}: факт {x["actual"]}, прогноз {x["consensus"] or "—"}, прошлое {x["previous"] or "—"}'
+                                  for x in r.get("rows") or [])
+                pro.big_event(ask_ai, tg_html, state, now, "result", r["title"],
+                              f'{res["headline"]}\n{rows}\nОценка: {label}. {res.get("meaning", "")}',
+                              "\n".join(quotes_for_ai(fetch_markets())))
         done.append(key)
         seen.append(fp)
     state["results_done"] = done[-200:]

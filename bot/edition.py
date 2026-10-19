@@ -377,6 +377,7 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
         return out
     _post("/api/breaking", out)
     publish_channel(html, url)
+    out["title"] = card["title"]  # после отправки на сервер: полю там не место, а каналу PRO нужно
     b["urgent_count" if urgent else "day_count"] += 1
     b["last"] = now.isoformat()
     b["titles"].append(card["title"])
