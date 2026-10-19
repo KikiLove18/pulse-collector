@@ -30,7 +30,7 @@
   ],
   "last_digest_ts": "2026-10-19T04:30:56.745736+00:00",
   "calendar": {
-    "ts": "2026-10-19T04:00:59.189142+00:00",
+    "ts": "2026-10-19T10:01:00.299736+00:00",
     "data": [
       {
         "title": "IMF Meetings",
@@ -135,14 +135,6 @@
         "impact": "Low",
         "forecast": "-0.3%",
         "previous": "0.4%"
-      },
-      {
-        "title": "Foreign Direct Investment ytd/y",
-        "country": "CNY",
-        "date": "2026-10-19T02:02:00-04:00",
-        "impact": "Low",
-        "forecast": "",
-        "previous": "-5.3%"
       },
       {
         "title": "CPI m/m",
@@ -271,6 +263,14 @@
         "impact": "Low",
         "forecast": "23.6",
         "previous": "25.8"
+      },
+      {
+        "title": "Foreign Direct Investment ytd/y",
+        "country": "CNY",
+        "date": "2026-10-20T05:10:00-04:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": "-5.3%"
       },
       {
         "title": "10-y Bond Auction",
@@ -778,7 +778,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-19T09:30:58.768952+00:00",
+  "breaking_ts": "2026-10-19T10:01:00.209542+00:00",
   "news_now": {
     "day": "2026-10-19",
     "day_count": 1,
@@ -789,122 +789,100 @@
     ]
   },
   "news_seen": [
+    "https://t.me/FinancialJuice/141182",
+    "https://tass.ru/politika/28229303",
+    "https://t.me/headlines_for_traders/86987",
+    "https://tass.ru/proisshestviya/28229297",
+    "https://www.marketwatch.com/story/big-tech-is-wobbling-goldman-sachs-says-its-time-to-buy-these-23-unloved-stocks-instead-cff7a9e0?mod=mw_rss_topstories",
+    "https://www.kommersant.ru/doc/9041960",
+    "https://t.me/incrypted/33040",
+    "https://t.me/markettwits/389433",
+    "https://t.me/lookonchainchannel/10681",
+    "https://tass.ru/obschestvo/28229295",
+    "https://tass.ru/sport/28229317",
+    "https://tass.ru/mezhdunarodnaya-panorama/28229311",
+    "https://tass.ru/proisshestviya/28229307",
+    "https://t.me/markettwits/389432",
+    "https://www.kommersant.ru/doc/9041958",
+    "https://www.vedomosti.ru/politics/news/2026/10/19/1238163-gosduma-21-oktyabrya",
+    "https://www.rbc.ru/sport/06/10/2026/6ac5044d9a794735b6cb2b04",
+    "https://t.me/banksta/103687",
+    "https://tass.ru/nedvizhimost/28229083",
+    "https://t.me/investfuture/15420",
+    "https://tass.ru/proisshestviya/28229291",
+    "https://t.me/interfaxonline/80342",
+    "https://t.me/rbc_news/158963",
+    "https://www.kommersant.ru/doc/9041929",
+    "https://tass.ru/proisshestviya/28229275",
+    "https://www.vedomosti.ru/society/news/2026/10/19/1238158-zdravoohranenie-moskve",
+    "https://tass.ru/nedvizhimost/28229289",
+    "https://www.investing.com/news/stock-market-news/uber-wins-bid-to-throw-out-uk-mass-lawsuit-by-black-cab-drivers-4956748",
+    "https://www.investing.com/news/stock-market-news/eu-says-kkr-might-have-misled-it-over-telecom-italia-deal-4956776",
+    "https://tass.ru/proisshestviya/28229247",
+    "https://t.me/markettwits/389431",
+    "https://tass.ru/sport/28229287",
+    "https://tass.ru/obschestvo/28229285",
+    "https://tass.ru/obschestvo/28229271",
+    "https://www.vedomosti.ru/politics/news/2026/10/19/1238157-zelenskii-nazval-sroki",
+    "https://t.me/if_market_news/86116",
+    "https://tass.ru/proisshestviya/28229279",
+    "https://www.kommersant.ru/doc/9041934",
+    "https://tass.ru/proisshestviya/28229213",
+    "https://www.kommersant.ru/doc/9041939",
+    "https://www.vedomosti.ru/investments/news/2026/10/19/1238150-rosseti-baibeka",
+    "https://www.interfax.ru/russia/1123424",
+    "https://www.rbc.ru/politics/19/10/2026/6ad5c5bf176b2adabcc49bdd",
+    "https://tass.ru/kultura/28229273",
+    "https://tass.ru/armiya-i-opk/28229255",
+    "https://www.investing.com/news/stock-market-news/why-is-intel-stock-rallying-today-93CH-4956771",
+    "https://t.me/markettwits/389430",
+    "https://www.kommersant.ru/doc/9041945",
+    "https://tass.ru/ekonomika/28229253",
+    "https://tass.ru/ekonomika/28229259",
+    "https://tass.ru/obschestvo/28229267",
+    "https://www.rbc.ru/rbcfreenews/6ad5e6011aa89f8280228a78",
+    "https://tass.ru/proisshestviya/28229207",
+    "https://t.me/rbc_news/158962",
+    "https://tass.ru/kultura/28229137",
+    "https://www.kommersant.ru/doc/9041943",
+    "https://tass.ru/sport/28229249",
+    "https://tass.ru/mezhdunarodnaya-panorama/28229237",
+    "https://t.me/gpb_investments/25124",
+    "https://t.me/headlines_for_traders/86986",
+    "https://www.rbc.ru/rbcfreenews/682c48219a79475f2094de51",
+    "https://www.vedomosti.ru/economics/news/2026/10/19/1238153-byudzhet-minkulta",
+    "https://t.me/markettwits/389429",
+    "https://www.vedomosti.ru/society/news/2026/10/19/1238147-zablokirovani-v-kanone",
+    "https://t.me/banksta/103686",
+    "https://www.interfax.ru/world/1123423",
+    "https://t.me/rbc_news/158961",
+    "https://www.vedomosti.ru/business/news/2026/10/19/1238152-rubio-obyasnil",
+    "https://www.coindesk.com/markets/2026/10/19/crypto-vault-deposits-top-usd10-billion-as-lending-risks-draw-regulatory-scrutiny",
+    "https://t.me/minfin/9379",
+    "https://www.interfax.ru/russia/1123415",
+    "https://www.rbc.ru/rbcfreenews/6ab4e77c3a4911fb90f2c0ad",
+    "https://www.wsj.com/finance/stocks/nikkei-falls-1-8-tracking-wall-streets-losses-413895f0?mod=rss_markets_main",
+    "https://www.investing.com/news/stock-market-news/asian-stocks-skid-wall-street-and-bonds-aided-by-oil-slip-4956176",
+    "https://www.rbc.ru/society/19/10/2026/6ad5e268c7f1e4cd554827a6",
+    "https://www.investing.com/news/stock-market-news/french-stocks-slide-after-violent-protests-4956498",
+    "https://www.investing.com/news/stock-market-news/european-telecoms-groups-explore-satellite-spectrum-bid-to-expand-mobile-coverage-4956749",
     "https://www.rbc.ru/radio/20/10/2026/6ad4889f9a794776f580cb59",
     "https://www.rbc.ru/radio/19/10/2026/6ad5e1669a7947a0bba46fa9",
     "https://www.vedomosti.ru/investments/news/2026/10/19/1238149-ebitda-severstali",
+    "https://www.wsj.com/finance/investing/the-weak-points-in-ai-bonds-are-becoming-clearer-12f09cc6?mod=rss_markets_main",
+    "https://www.wsj.com/economy/housing/americas-new-housing-market-is-all-about-luxuryand-it-runs-on-cash-8a5fcb8e?mod=rss_socialeconomyfeed",
+    "https://www.wsj.com/economy/chinas-export-boom-masks-deep-economic-problems-at-home-945833ac?mod=rss_socialeconomyfeed",
+    "https://www.marketwatch.com/story/france-and-the-u-s-share-the-same-debt-trap-only-one-has-a-global-lifeline-3ae61b42?mod=mw_rss_topstories",
     "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Coal-Production-Slumps-68-as-Winter-Supply-Fears-Grow.html",
     "https://t.me/markettwits/389428",
-    "https://tass.ru/ekonomika/28229105",
-    "https://tass.ru/obschestvo/28229199",
     "https://www.kommersant.ru/doc/9041927",
-    "https://t.me/forklog/50317",
-    "https://tass.ru/obschestvo/28229185",
-    "https://tass.ru/obschestvo/28229129",
-    "https://tass.ru/obschestvo/28229059",
-    "https://t.me/interfaxonline/80341",
-    "https://www.vedomosti.ru/business/news/2026/10/19/1238139-import-spg",
-    "https://www.kommersant.ru/doc/9041924",
-    "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-in-asian-trade-e5171539?mod=rss_markets_main",
-    "https://www.rbc.ru/rbcfreenews/6ad5e07cda225772066eeed0",
-    "https://t.me/bitkogan_hotline/27903",
-    "https://t.me/headlines_for_traders/86985",
-    "https://tass.ru/nauka/28229153",
-    "https://t.me/banksta/103685",
-    "https://www.rbc.ru/sport/20/09/2026/6aaf84fb9a7947b702e7118f",
-    "https://tass.ru/mezhdunarodnaya-panorama/28229175",
-    "https://www.vedomosti.ru/society/news/2026/10/19/1238144-italiya-sokratila",
-    "https://www.interfax.ru/world/1123421",
-    "https://tass.ru/obschestvo/28229159",
-    "https://t.me/rbc_news/158960",
-    "https://www.rbc.ru/own_business/30/09/2026/6ab3d7f1ae134869a372ab45",
-    "https://tass.ru/armiya-i-opk/28229145",
-    "https://tass.ru/ekonomika/28229169",
-    "https://tass.ru/armiya-i-opk/28229171",
-    "https://tass.ru/mezhdunarodnaya-panorama/28229147",
-    "https://t.me/thebell_io/39526",
-    "https://www.vedomosti.ru/politics/news/2026/10/19/1238140-politico-peregovori-migratsii",
-    "https://tass.ru/mezhdunarodnaya-panorama/28229167",
-    "https://t.me/headlines_for_traders/86984",
-    "https://tass.ru/proisshestviya/28229119",
-    "https://tass.ru/proisshestviya/28229157",
-    "https://www.rbc.ru/base/19/10/2026/6ad5cb1a9a79476fdb4fe4f7",
-    "https://t.me/headlines_for_traders/86983",
-    "https://tass.ru/proisshestviya/28229165",
-    "https://tass.ru/proisshestviya/28228959",
-    "https://www.coindesk.com/markets/2026/10/19/cme-s-bitcoin-cash-uniswap-futures-global-pmis-crypto-week-ahead",
-    "https://tass.ru/mezhdunarodnaya-panorama/28229151",
-    "https://t.me/markettwits/389427",
-    "https://t.me/headlines_for_traders/86982",
-    "https://t.me/interfaxonline/80340",
-    "https://www.rbc.ru/economics/19/10/2026/6ad5b66f9a7947ac614a7991",
-    "https://tass.ru/obschestvo/28229143",
-    "https://tass.ru/ekonomika/28229139",
-    "https://www.interfax.ru/moscow/1123419",
-    "https://www.vedomosti.ru/politics/news/2026/10/19/1238142-rossiiskie-voiska-zanyali",
-    "https://tass.ru/kultura/28229107",
-    "https://www.rbc.ru/rbcfreenews/61d8a9389a7947e84bf7138f",
-    "https://tass.ru/obschestvo/28229141",
-    "https://tass.ru/proisshestviya/28228505",
-    "https://tass.ru/ekonomika/28229099",
-    "https://www.rbc.ru/quote/19/10/2026/6ad5d3839a7947c5c9e637ee",
-    "https://tass.ru/proisshestviya/28229109",
-    "https://t.me/SberInvestments/13151",
-    "https://www.kommersant.ru/doc/9041914",
-    "https://www.interfax.ru/world/1123418",
-    "https://t.me/markettwits/389426",
-    "https://www.rbc.ru/rbcfreenews/6ac59df747592350a9054ce2",
-    "https://www.investing.com/news/stock-market-news/gift-nifty-50-faces-bull-trap-risk-at-23036-vwap-live-levels-93CH-4956292",
-    "https://www.vedomosti.ru/investments/news/2026/10/19/1238143-rinok-aktsii",
-    "https://www.marketwatch.com/story/kelly-clarksons-expensive-purchases-a-multi-million-dollar-real-estate-portfolio-that-spans-the-country-fe1d3bc7?mod=mw_rss_topstories",
-    "https://www.investing.com/news/stock-market-news/why-is-serica-energy-stock-sliding-today-93CH-4956722",
-    "https://t.me/russianmacro/23612",
-    "https://t.me/banksta/103684",
-    "https://www.marketwatch.com/story/the-beach-boys-mike-love-goes-the-extra-mile-to-protect-the-land-around-43-million-lake-tahoe-estate-06c5606e?mod=mw_rss_topstories",
-    "https://t.me/incrypted/33039",
-    "https://t.me/rbc_news/158959",
-    "https://t.me/rbc_news/158958",
-    "https://www.interfax.ru/russia/1123414",
-    "https://t.me/headlines_for_traders/86981",
-    "https://www.vedomosti.ru/politics/news/2026/10/19/1238133-mask-poobeschal-podarit",
-    "https://www.interfax.ru/russia/1123417",
-    "https://t.me/banksta/103683",
-    "https://t.me/markettwits/389425",
-    "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.investing.com/news/stock-market-news/vw-plans-global-pay-freeze-to-2030-for-660000-staff-works-council-vows-resistance-93CH-4956719",
-    "https://www.investing.com/news/stock-market-news/why-is-red-cat-stock-rallying-today-93CH-4956718",
-    "https://www.vedomosti.ru/society/news/2026/10/19/1238130-sud-prigovoril-montyan",
-    "https://www.interfax.ru/russia/1123416",
-    "https://www.interfax.ru/world/1123413"
+    "https://t.me/forklog/50317"
   ],
   "ai_dead": {
     "date": "2026-10-19",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-18T10:30:59.007150+00:00",
-      "Календарь недели: ВВП Китая, инфляция в Великобритании и заседание ЦБ Китая"
-    ],
-    [
-      "2026-10-18T10:30:59.007150+00:00",
-      "Минобороны РФ отчиталось об уничтожении 1 256 дронов и семи ракет"
-    ],
-    [
-      "2026-10-18T11:00:57.498988+00:00",
-      "Cysic приостановил межсетевой мост после выпуска 10 млн токенов CYS"
-    ],
-    [
-      "2026-10-18T11:00:57.498988+00:00",
-      "Главы МИД РФ и Саудовской Аравии подтвердили сотрудничество в ОПЕК+"
-    ],
-    [
-      "2026-10-18T11:00:57.498988+00:00",
-      "Новак: США получат российский дизель через 15–20 дней после контрактов"
-    ],
-    [
-      "2026-10-18T11:00:57.498988+00:00",
-      "Хоккейный клуб СКА уволил Игоря Ларионова после пяти поражений подряд"
-    ],
     [
       "2026-10-18T11:00:57.498988+00:00",
       "Премьер-министр Латвии призвал страны ЕС прекратить выдачу виз россиянам"
@@ -1504,6 +1482,30 @@
     [
       "2026-10-19T09:30:58.768952+00:00",
       "Газпромбанк повысил ставки по коротким вкладам"
+    ],
+    [
+      "2026-10-19T10:01:00.209542+00:00",
+      "Календарь событий недели: отчеты МСФО и дивиденды"
+    ],
+    [
+      "2026-10-19T10:01:00.209542+00:00",
+      "Альткоины потеряли $134 млрд капитализации за 15 дней"
+    ],
+    [
+      "2026-10-19T10:01:00.209542+00:00",
+      "UBS ожидает повышения ставки ЕЦБ в декабре и марте"
+    ],
+    [
+      "2026-10-19T10:01:00.209542+00:00",
+      "Банк Санкт-Петербург нарастил кредитный портфель за 9 месяцев"
+    ],
+    [
+      "2026-10-19T10:01:00.209542+00:00",
+      "Французские акции утянули вниз европейский индекс STOXX 600"
+    ],
+    [
+      "2026-10-19T10:01:00.209542+00:00",
+      "Anthropic направит 5% акций в фонд общественного блага"
     ]
   ],
   "results_fp": []
