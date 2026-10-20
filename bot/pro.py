@@ -72,7 +72,7 @@ def _send(chat, html, card_url, silent=False, thread=None):
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             res = json.loads(r.read())
-            print("Канал PRO:", res.get("ok"), file=sys.stderr)
+            print("Канал PRO:", res.get("ok"), "id", (res.get("result") or {}).get("message_id"), file=sys.stderr)
             return (res.get("result") or {}).get("message_id")
     except Exception as e:
         print("Канал PRO: не отправлено", e, file=sys.stderr)
@@ -112,6 +112,32 @@ def thread(state, chat, kind):
     except Exception as e:
         print("Канал PRO: тема не найдена/не создана —", str(e)[:150], file=sys.stderr)
         return None
+
+
+def edit(chat, spec, tg_html):
+    """Исправить опубликованный пост (state/pro_edit.json): message_id или offset_from_pinned (от закрепа «Как устроен»).
+    expect — с чего должен начинаться новый текст (защита от ошибки в номере)."""
+    mid = spec.get("message_id")
+    if not mid:
+        pinned = _call("getChat", chat_id=chat).get("pinned_message") or {}
+        if not (pinned.get("text") or "").startswith("📌 Как устроен"):
+            print("Канал PRO: закреп не «Как устроен» — номер поста не посчитать, ничего не правлю", file=sys.stderr)
+            return False
+        mid = pinned["message_id"] + int(spec["offset_from_pinned"])
+    html = tg_html(spec["html"])
+    if spec.get("expect") and spec["expect"] not in html[:200]:
+        print("Канал PRO: текст правки не похож на ожидаемый — не правлю", file=sys.stderr)
+        return False
+    payload = {"chat_id": chat, "message_id": mid, "text": html, "parse_mode": "HTML",
+               "link_preview_options": ({"url": spec["card_url"], "show_above_text": True, "prefer_large_media": True}
+                                        if spec.get("card_url") else {"is_disabled": True})}
+    try:
+        _call("editMessageText", **payload)
+        print(f"Канал PRO: пост {mid} исправлен", file=sys.stderr)
+        return True
+    except Exception as e:
+        print(f"Канал PRO: пост {mid} не исправлен —", str(e)[:200], file=sys.stderr)
+        return False
 
 
 def pin(chat, message_id):
