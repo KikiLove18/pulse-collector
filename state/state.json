@@ -32,7 +32,7 @@
   ],
   "last_digest_ts": "2026-10-20T04:31:00.549522+00:00",
   "calendar": {
-    "ts": "2026-10-20T04:00:56.731027+00:00",
+    "ts": "2026-10-20T10:30:57.333096+00:00",
     "data": [
       {
         "title": "IMF Meetings",
@@ -267,17 +267,9 @@
         "previous": "25.8"
       },
       {
-        "title": "Foreign Direct Investment ytd/y",
-        "country": "CNY",
-        "date": "2026-10-20T05:10:00-04:00",
-        "impact": "Low",
-        "forecast": "",
-        "previous": "-5.3%"
-      },
-      {
         "title": "10-y Bond Auction",
         "country": "GBP",
-        "date": "2026-10-20T05:33:00-04:00",
+        "date": "2026-10-20T05:03:00-04:00",
         "impact": "Low",
         "forecast": "",
         "previous": "5.38|3.3"
@@ -311,7 +303,7 @@
         "country": "USD",
         "date": "2026-10-20T10:00:00-04:00",
         "impact": "Low",
-        "forecast": "-0.7%",
+        "forecast": "-0.6%",
         "previous": "0.3%"
       },
       {
@@ -383,7 +375,7 @@
         "country": "GBP",
         "date": "2026-10-21T02:00:00-04:00",
         "impact": "Low",
-        "forecast": "1.3%",
+        "forecast": "1.4%",
         "previous": "0.3%"
       },
       {
@@ -399,7 +391,7 @@
         "country": "GBP",
         "date": "2026-10-21T02:00:00-04:00",
         "impact": "Low",
-        "forecast": "23.9B",
+        "forecast": "23.8B",
         "previous": "18.3B"
       },
       {
@@ -423,8 +415,16 @@
         "country": "GBP",
         "date": "2026-10-21T04:30:00-04:00",
         "impact": "Low",
-        "forecast": "1.7%",
+        "forecast": "1.2%",
         "previous": "1.4%"
+      },
+      {
+        "title": "Foreign Direct Investment ytd/y",
+        "country": "CNY",
+        "date": "2026-10-21T05:10:00-04:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": "-5.3%"
       },
       {
         "title": "German Buba Monthly Report",
@@ -447,7 +447,7 @@
         "country": "USD",
         "date": "2026-10-21T10:30:00-04:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "-0.3M",
         "previous": "-8.6M"
       },
       {
@@ -479,7 +479,7 @@
         "country": "CAD",
         "date": "2026-10-22T08:30:00-04:00",
         "impact": "Low",
-        "forecast": "0.7%",
+        "forecast": "0.9%",
         "previous": "1.3%"
       },
       {
@@ -495,7 +495,7 @@
         "country": "CAD",
         "date": "2026-10-22T08:30:00-04:00",
         "impact": "Low",
-        "forecast": "0.1%",
+        "forecast": "3.0%",
         "previous": "3.1%"
       },
       {
@@ -519,7 +519,7 @@
         "country": "USD",
         "date": "2026-10-22T10:00:00-04:00",
         "impact": "Low",
-        "forecast": "-0.2%",
+        "forecast": "-0.1%",
         "previous": "-0.1%"
       },
       {
@@ -527,7 +527,7 @@
         "country": "USD",
         "date": "2026-10-22T10:30:00-04:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "83B",
         "previous": "67B"
       },
       {
@@ -575,7 +575,7 @@
         "country": "GBP",
         "date": "2026-10-23T02:00:00-04:00",
         "impact": "Medium",
-        "forecast": "-0.2%",
+        "forecast": "-0.1%",
         "previous": "0.5%"
       },
       {
@@ -583,7 +583,7 @@
         "country": "EUR",
         "date": "2026-10-23T03:15:00-04:00",
         "impact": "Medium",
-        "forecast": "50.6",
+        "forecast": "50.5",
         "previous": "50.3"
       },
       {
@@ -591,7 +591,7 @@
         "country": "EUR",
         "date": "2026-10-23T03:15:00-04:00",
         "impact": "Medium",
-        "forecast": "50.8",
+        "forecast": "50.7",
         "previous": "51.4"
       },
       {
@@ -607,7 +607,7 @@
         "country": "EUR",
         "date": "2026-10-23T03:30:00-04:00",
         "impact": "Medium",
-        "forecast": "52.6",
+        "forecast": "52.5",
         "previous": "52.9"
       },
       {
@@ -663,7 +663,7 @@
         "country": "EUR",
         "date": "2026-10-23T09:00:00-04:00",
         "impact": "Low",
-        "forecast": "-11.5",
+        "forecast": "-11.8",
         "previous": "-12.1"
       },
       {
@@ -671,7 +671,7 @@
         "country": "USD",
         "date": "2026-10-23T09:45:00-04:00",
         "impact": "Medium",
-        "forecast": "55.5",
+        "forecast": "55.4",
         "previous": "57.0"
       },
       {
@@ -679,7 +679,7 @@
         "country": "USD",
         "date": "2026-10-23T09:45:00-04:00",
         "impact": "Medium",
-        "forecast": "58.0",
+        "forecast": "57.8",
         "previous": "58.7"
       },
       {
@@ -780,7 +780,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-20T10:00:55.352200+00:00",
+  "breaking_ts": "2026-10-20T10:30:57.328098+00:00",
   "news_now": {
     "day": "2026-10-20",
     "day_count": 3,
@@ -793,147 +793,106 @@
     ]
   },
   "news_seen": [
+    "https://www.vedomosti.ru/society/news/2026/10/20/1238524-rossii-prodolzhaet-rasti",
+    "https://t.me/rbc_news/159040",
+    "https://www.marketwatch.com/story/why-smaller-stocks-face-worse-prospects-than-the-s-p-500-in-the-coming-years-f9f703ae?mod=mw_rss_topstories",
+    "https://oilprice.com/Latest-Energy-News/World-News/China-Moves-to-Rein-In-Its-Booming-Hydrogen-Industry.html",
+    "https://tass.ru/proisshestviya/28233217",
+    "https://www.rbc.ru/politics/20/08/2026/6a86aba89a7947cb36440255",
+    "https://tass.ru/proisshestviya/28233181",
+    "https://tass.ru/ekonomika/28233135",
+    "https://t.me/markettwits/389619",
+    "https://t.me/alfa_investments/8481",
+    "https://tass.ru/ekonomika/28232659",
+    "https://www.rbc.ru/sport/04/03/2026/69a8108b9a7947e1b706b8d6",
+    "https://tass.ru/politika/28233193",
+    "https://tass.ru/ekonomika/28233115",
+    "https://t.me/WalterBloomberg/37147",
+    "https://tass.ru/sport/28233183",
+    "https://tass.ru/politika/28233149",
+    "https://tass.ru/ekonomika/28233171",
+    "https://tass.ru/ekonomika/28233125",
+    "https://t.me/FinancialJuice/141451",
+    "https://tass.ru/ekonomika/28233167",
+    "https://tass.ru/politika/28233169",
+    "https://tass.ru/mezhdunarodnaya-panorama/28233165",
+    "https://www.coindesk.com/markets/2026/10/20/bitcoin-drops-to-usd81-400-as-asian-chip-stocks-tumble-options-traders-seek-downside-protection",
+    "https://t.me/WalterBloomberg/37146",
+    "https://tass.ru/politika/28233163",
+    "https://tass.ru/sport/28233175",
+    "https://tass.ru/sport/28233179",
+    "https://tass.ru/politika/28233161",
+    "https://tass.ru/politika/28233123",
+    "https://tass.ru/ekonomika/28233081",
+    "https://t.me/markettwits/389618",
+    "https://www.kommersant.ru/doc/9042845",
+    "https://tass.ru/proisshestviya/28233157",
+    "https://t.me/FinancialJuice/141450",
+    "https://www.rbc.ru/photoreport/28/07/2026/6a68ba5f9a7947f5ece04bc3",
+    "https://tass.ru/proisshestviya/28233119",
+    "https://t.me/headlines_for_traders/87065",
+    "https://www.interfax.ru/russia/1123677",
+    "https://tass.ru/proisshestviya/28233137",
+    "https://tass.ru/mezhdunarodnaya-panorama/28233109",
+    "https://t.me/invest_zonaa/39076",
+    "https://www.kommersant.ru/doc/9042808",
+    "https://www.interfax.ru/russia/1123676",
+    "https://tass.ru/ekonomika/28233103",
+    "https://tass.ru/sport/28233141",
+    "https://www.kommersant.ru/doc/9042834",
+    "https://www.vedomosti.ru/politics/news/2026/10/20/1238498-merts-pitaetsya",
+    "https://t.me/WalterBloomberg/37145",
+    "https://t.me/WatcherGuru/15572",
+    "https://t.me/banksta/103772",
+    "https://t.me/markettwits/389617",
+    "https://t.me/rbc_news/159039",
+    "https://www.interfax.ru/world/1123675",
+    "https://t.me/thebell_io/39543",
+    "https://www.vedomosti.ru/politics/news/2026/10/20/1238466-svr-ssha-uznali",
+    "https://www.vedomosti.ru/investments/news/2026/10/20/1238514-prodazhi-glorax",
+    "https://www.vedomosti.ru/auto/news/2026/10/20/1238515-dilerov-lada",
+    "https://www.marketwatch.com/story/strategist-tom-lee-says-hes-buying-the-ai-stock-dip-and-cisco-holds-the-key-33233a9d?mod=mw_rss_topstories",
+    "https://www.coindesk.com/markets/2026/10/20/live-updates-market-jitters-persist-as-the-ai-selloff-deepens",
+    "https://www.kommersant.ru/doc/9042835",
+    "https://www.kommersant.ru/doc/9042817",
+    "https://www.interfax.ru/russia/1123674",
+    "https://t.me/markettwits/389616",
+    "https://thedefiant.io/converge/tradfi-and-fintech/finma-approves-first-swiss-retail-bitcoin-etf",
+    "https://www.wsj.com/finance/investing/revolut-hit-by-widespread-outage-affecting-payments-transfers-withdrawals-5971bf0a?mod=rss_markets_main",
+    "https://www.investing.com/news/stock-market-news/early-us-flu-season-current-strain-may-signal-risk-for-younger-people-doctors-urge-shots-4959381",
+    "https://t.me/if_market_news/86148",
+    "https://www.investing.com/news/stock-market-news/britain-seeks-to-break-apples-grip-on-contactless-payments-4959380",
+    "https://www.investing.com/news/stock-market-news/amazon-plans-to-invest-over-16-billion-in-germany-in-2027-93CH-4959379",
+    "https://www.interfax.ru/russia/1123673",
+    "https://t.me/markettwits/389615",
+    "https://t.me/banksta/103771",
+    "https://www.rbc.ru/rbcfreenews/569cc62f9a7947083e84bde6",
+    "https://t.me/headlines_for_traders/87064",
+    "https://www.investing.com/news/stock-market-news/google-cloud-outage-disrupts-revolut-and-other-services-93CH-4959364",
+    "https://www.kommersant.ru/doc/9042821",
+    "https://t.me/FinancialJuice/141449",
+    "https://www.rbc.ru/politics/17/10/2026/6ad342dad5b755c598a01414",
+    "https://www.kommersant.ru/doc/9042816",
     "https://t.me/centralbank_russia/3884",
     "https://t.me/bitkogan/29459",
+    "https://cointelegraph.com/news/bitget-plans-thai-crypto-exchange-acquisition-weeks-after-388m-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://www.marketwatch.com/story/im-naturally-skeptical-i-receive-10-calls-a-day-offering-me-15-000-loans-at-8-interest-is-this-a-scam-825c3431?mod=mw_rss_topstories",
     "https://t.me/thebell_io/39542",
-    "https://tass.ru/proisshestviya/28233017",
-    "https://tass.ru/obschestvo/28232893",
+    "https://www.investing.com/news/stock-market-news/morgan-stanley-turns-bearish-on-vonovia-leg-as-berlin-housing-risks-mount-4959345",
+    "https://www.investing.com/news/stock-market-news/wells-fargo-issues-buy-signal-for-sp-500-after-sentiment-shift-93CH-4959343",
     "https://www.wsj.com/finance/investing/yes-the-fed-can-kill-the-ai-boom-3c25da2e?mod=rss_markets_main",
     "https://www.wsj.com/finance/investing/yes-the-fed-can-kill-the-ai-boom-3c25da2e?mod=rss_socialeconomyfeed",
-    "https://tass.ru/proisshestviya/28233015",
-    "https://tass.ru/obschestvo/28232935",
-    "https://tass.ru/politika/28233023",
-    "https://tass.ru/proisshestviya/28233035",
+    "https://www.investing.com/news/stock-market-news/footwear-and-apparel-earnings-season-begins-this-week-btig-previews-names-93CH-4959341",
     "https://www.kommersant.ru/doc/9042820",
     "https://t.me/rbc_news/159038",
-    "https://www.kommersant.ru/doc/9042807",
-    "https://www.vedomosti.ru/politics/news/2026/10/20/1238503-putin-trampom",
-    "https://www.vedomosti.ru/politics/news/2026/10/20/1238511-vazhno-vesti-peregovori",
-    "https://www.vedomosti.ru/politics/news/2026/10/20/1238507-peskov-rossiya-ponimaet",
-    "https://tass.ru/ekonomika/28232799",
-    "https://t.me/FinancialJuice/141448",
-    "https://t.me/markettwits/389614",
-    "https://tass.ru/mezhdunarodnaya-panorama/28232777",
-    "https://t.me/smartlabnews/17926",
-    "https://www.rbc.ru/photoreport/27/09/2026/6ab17ce49a794768ce3c3f37",
-    "https://tass.ru/politika/28232995",
-    "https://tass.ru/ekonomika/28233013",
-    "https://www.kommersant.ru/doc/9042804",
-    "https://www.vedomosti.ru/politics/news/2026/10/20/1238504-peskov-rossiya-ostanetsya",
-    "https://www.vedomosti.ru/politics/news/2026/10/20/1238506-kreml-otvetil",
-    "https://tass.ru/ekonomika/28232759",
-    "https://t.me/markettwits/389613",
-    "https://tass.ru/proisshestviya/28232793",
-    "https://t.me/rbc_news/159037",
-    "https://t.me/if_market_news/86147",
-    "https://www.rbc.ru/finances/20/10/2026/6ad737a99c6850524c482049",
-    "https://www.rbc.ru/sport/17/06/2026/6a32c9339a79472cb1f012bb",
-    "https://tass.ru/proisshestviya/28232977",
-    "https://cryptoslate.com/bitcoin-etf-comeback-exposes-a-630-million-divide-with-ethereum-as-blackrock-dominates/",
-    "https://tass.ru/ekonomika/28232973",
-    "https://tass.ru/mezhdunarodnaya-panorama/28232751",
-    "https://www.kommersant.ru/doc/9042809",
-    "https://www.kommersant.ru/doc/9042811",
-    "https://tass.ru/proisshestviya/28233001",
-    "https://tass.ru/ekonomika/28232993",
-    "https://t.me/markettwits/389612",
-    "https://tass.ru/ekonomika/28232923",
-    "https://www.rbc.ru/rbcfreenews/67247e709a7947b535d2b702",
-    "https://tass.ru/sport/28232989",
-    "https://www.interfax.ru/russia/1123672",
-    "https://www.interfax.ru/russia/1123671",
-    "https://tass.ru/ekonomika/28232957",
-    "https://www.investing.com/news/stock-market-news/citi-sees-rotation-from-growth-stocks-as-europe-draws-inflows-93CH-4959290",
-    "https://www.kommersant.ru/doc/9042765",
-    "https://t.me/forklog/50334",
-    "https://www.rbc.ru/rbcfreenews/6a966e46884e1199ae9cdabf",
-    "https://tass.ru/obschestvo/28232965",
-    "https://tass.ru/proisshestviya/28232775",
-    "https://www.interfax.ru/russia/1123670",
-    "https://tass.ru/obschestvo/28232955",
-    "https://t.me/FinancialJuice/141447",
-    "https://www.interfax.ru/russia/1123669",
-    "https://www.kommersant.ru/doc/9042780",
-    "https://tass.ru/proisshestviya/28232945",
-    "https://tass.ru/politika/28232949",
-    "https://t.me/banksta/103770",
-    "https://t.me/cbrstocks/83448",
-    "https://t.me/interfaxonline/80397",
-    "https://t.me/headlines_for_traders/87063",
-    "https://www.interfax.ru/russia/1123666",
-    "https://www.sport-interfax.ru/1123668",
-    "https://t.me/markettwits/389611",
-    "https://t.me/thebell_io/39541",
-    "https://www.vedomosti.ru/investments/news/2026/10/20/1238497-severstal-ne-budet",
-    "https://www.vedomosti.ru/politics/news/2026/10/20/1238501-kremle-virazili-nadezhdu",
-    "https://www.vedomosti.ru/politics/news/2026/10/20/1238499-putin-s-degtyarevim",
-    "https://www.kommersant.ru/doc/9042800",
-    "https://www.vedomosti.ru/politics/news/2026/10/20/1238489-kallas-raskrila",
-    "https://www.rbc.ru/politics/20/10/2026/6ad733e56fc72a4ee4d7dd86",
-    "https://www.interfax.ru/russia/1123665",
-    "https://t.me/interfaxonline/80396",
-    "https://t.me/cbrstocks/83447",
-    "https://t.me/bitkogan_hotline/27916",
-    "https://www.interfax.ru/russia/1123662",
-    "https://t.me/if_market_news/86146",
-    "https://www.interfax.ru/world/1123663",
-    "https://www.kommersant.ru/doc/9042741",
-    "https://www.coindesk.com/markets/2026/10/20/south-korean-ipo-plunge-deepens-ai-market-jitters-as-brent-tops-usd111",
-    "https://www.rbc.ru/rbcfreenews/6ad734573be7067f1863bd92",
-    "https://t.me/rbc_news/159036",
-    "https://www.rbc.ru/rbcfreenews/6ad7336c118494cd75aa5813",
-    "https://t.me/headlines_for_traders/87062",
-    "https://www.interfax.ru/russia/1123664",
-    "https://t.me/banksta/103769",
-    "https://t.me/markettwits/389610",
-    "https://www.rbc.ru/politics/20/10/2026/6ad733d16fc72a4ee4d7dd84",
-    "https://www.wsj.com/finance/investing/how-to-play-the-retreat-in-defense-stocks-bd7b1c8d?mod=rss_markets_main",
-    "https://www.wsj.com/personal-finance/four-financial-lessons-from-the-hedge-fund-divorce-captivating-wall-street-e09a441b?mod=rss_markets_main",
-    "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
-    "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories",
-    "https://www.marketwatch.com/story/south-korean-ipo-flop-is-the-latest-in-a-string-of-disappointments-for-the-global-ai-trade-fc97748c?mod=mw_rss_topstories",
-    "https://oilprice.com/Latest-Energy-News/World-News/Oil-Rich-Alberta-Votes-to-Stay-in-Canada-in-Historic-Referendum.html",
-    "https://t.me/invest_zonaa/39075",
-    "https://www.investing.com/news/stock-market-news/goldman-lifts-uk-housebuilder-volume-forecasts-upgrades-taylor-wimpey-4959265",
-    "https://t.me/proeconomics/20564",
-    "https://www.rbc.ru/politics/14/09/2026/6aa8266ade623318f82cb612",
-    "https://t.me/markettwits/389609",
-    "https://www.kommersant.ru/doc/9042783",
-    "https://www.rbc.ru/quote/11/10/2026/6ac8eebf9a79471764bb6ca4",
-    "https://www.vedomosti.ru/politics/news/2026/10/20/1238496-armiya-rossii-zanyala",
-    "https://www.kommersant.ru/doc/9042787",
-    "https://www.rbc.ru/politics/20/10/2026/6ad72d1dc92be6254691e7dd",
-    "https://www.interfax.ru/business/1123661"
+    "https://www.interfax.ru/russia/1123667",
+    "https://www.kommersant.ru/doc/9042807"
   ],
   "ai_dead": {
     "date": "2026-10-20",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-19T11:31:02.113260+00:00",
-      "Илон Маск пообещал подарить по акции SpaceX детям в США"
-    ],
-    [
-      "2026-10-19T11:31:02.113260+00:00",
-      "ЕК ждет от стран-партнеров €25 млрд для финансирования Киева"
-    ],
-    [
-      "2026-10-19T11:31:02.113260+00:00",
-      "Volkswagen заморозит зарплаты 660 тыс. сотрудников до 2030 года"
-    ],
-    [
-      "2026-10-19T11:31:02.113260+00:00",
-      "В Москве и Подмосковье ожидаются первые заморозки"
-    ],
-    [
-      "2026-10-19T11:31:02.113260+00:00",
-      "Китай в сентябре увеличил добычу нефти и газа"
-    ],
-    [
-      "2026-10-19T12:00:57.146882+00:00",
-      "Goldman Sachs повысил рейтинг акций CoreWeave до «покупки»"
-    ],
     [
       "2026-10-19T12:00:57.146882+00:00",
       "Французские активы дешевеют на фоне массовых беспорядков"
@@ -1533,6 +1492,30 @@
     [
       "2026-10-20T10:00:55.352200+00:00",
       "Приток в спотовые биткоин-ETF превысил отток из Ethereum"
+    ],
+    [
+      "2026-10-20T10:30:57.328098+00:00",
+      "Нефть Brent превысила $111 за баррель впервые за пять месяцев"
+    ],
+    [
+      "2026-10-20T10:30:57.328098+00:00",
+      "Биткоин опустился до $81 400 на фоне падения акций чипмейкеров"
+    ],
+    [
+      "2026-10-20T10:30:57.328098+00:00",
+      "Goldman Sachs повысил прогноз по ценам на медь"
+    ],
+    [
+      "2026-10-20T10:30:57.328098+00:00",
+      "Альфа-Банк спрогнозировал сохранение ключевой ставки ЦБ в пятницу"
+    ],
+    [
+      "2026-10-20T10:30:57.328098+00:00",
+      "Клиенты банка Revolut по всему миру сообщили о масштабном сбое"
+    ],
+    [
+      "2026-10-20T10:30:57.328098+00:00",
+      "Экспорт легковых авто из Китая в РФ вырос в 2,1 раза за девять месяцев"
     ]
   ],
   "results_fp": [],
