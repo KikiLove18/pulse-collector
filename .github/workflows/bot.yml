@@ -32,7 +32,7 @@ jobs:
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          INGEST_URL: https://market-pulse-app.pult-bot.workers.dev/api/ingest
+          INGEST_URL: https://app.pulse-rynka.ru/api/ingest
           INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
           DIGEST_TIMES: ${{ vars.DIGEST_TIMES || '07:30,19:30' }}
           FEED_CARDS: ${{ vars.FEED_CARDS }}              # картинки к важным новостям Ленты (on — Хранитель согласен 18.10)
