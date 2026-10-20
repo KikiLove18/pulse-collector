@@ -781,22 +781,75 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-20T18:00:59.295250+00:00",
+  "breaking_ts": "2026-10-20T18:30:56.186403+00:00",
   "news_now": {
     "day": "2026-10-20",
-    "day_count": 6,
+    "day_count": 7,
     "urgent_count": 0,
-    "last": "2026-10-20T15:00:58.692248+00:00",
+    "last": "2026-10-20T18:30:56.186403+00:00",
     "titles": [
       "Нефть Brent превысила $110 за баррель из-за угрозы поставок",
       "ВТБ продал агрохолдинг «Лабинский» за 50 млрд рублей",
       "В Кремле ожидают встречи Путина с представителями США по Украине",
       "Нефть Brent превысила $111 впервые с мая",
       "Нефть дороже $111, падение в технологическом секторе",
-      "Иран атаковал нефтяной танкер в Ормузском проливе"
+      "Иран атаковал нефтяной танкер в Ормузском проливе",
+      "Газ в Европе дороже €90"
     ]
   },
   "news_seen": [
+    "https://t.me/rbc_news/159068",
+    "https://www.vedomosti.ru/politics/news/2026/10/20/1238682-premer-norvegii-podtverdil",
+    "https://www.rbc.ru/politics/20/10/2026/6ad7b0d92f45b323014e4f80",
+    "https://t.me/FinancialJuice/141600",
+    "https://t.me/if_market_news/86167",
+    "https://t.me/FinancialJuice/141599",
+    "https://tass.ru/armiya-i-opk/28234791",
+    "https://www.rbc.ru/rbcfreenews/6ad77447878878f5cdf7d9b8",
+    "https://tass.ru/obschestvo/28234797",
+    "https://t.me/FinancialJuice/141598",
+    "https://www.coindesk.com/business/2026/10/20/okx-ice-s-andrew-cuomo-calls-issuer-objections-a-natural-response-to-tokenized-stock-plans",
+    "https://tass.ru/obschestvo/28234793",
+    "https://tass.ru/mezhdunarodnaya-panorama/28234773",
+    "https://www.rbc.ru/politics/19/10/2026/6ad6748216db06912fe7899c",
+    "https://www.kommersant.ru/doc/9043287",
+    "https://t.me/headlines_for_traders/87092",
+    "https://www.kommersant.ru/doc/9043285",
+    "https://www.rbc.ru/politics/08/10/2026/6ac7d7dbaf10ee1648aaebdf",
+    "https://www.rbc.ru/sport/20/10/2026/6ad5510c9f67ca48c4070370",
+    "https://www.interfax.ru/world/1123796",
+    "https://t.me/banksta/103804",
+    "https://t.me/interfaxonline/80427",
+    "https://t.me/FinancialJuice/141597",
+    "https://t.me/cbrstocks/83477",
+    "https://tass.ru/nauka/28234775",
+    "https://t.me/FinancialJuice/141596",
+    "https://t.me/whale_alert_io/104071",
+    "https://www.kommersant.ru/doc/9043284",
+    "https://www.marketwatch.com/story/heres-what-matters-most-to-tesla-investors-heading-into-earnings-6b9e5d27?mod=mw_rss_topstories",
+    "https://t.me/FinancialJuice/141595",
+    "https://www.theblock.co/news/markets/2026-10-20-jpmorgan-bitcoin-10-year-return-forecast-ltcma-421436",
+    "https://t.me/FinancialJuice/141594",
+    "https://t.me/FinancialJuice/141593",
+    "https://t.me/whale_alert_io/104070",
+    "https://t.me/whale_alert_io/104069",
+    "https://tass.ru/sport/28234785",
+    "https://t.me/FinancialJuice/141592",
+    "https://www.sport-interfax.ru/1123795",
+    "https://tass.ru/mezhdunarodnaya-panorama/28234783",
+    "https://t.me/investfuture/15427",
+    "https://t.me/whale_alert_io/104068",
+    "https://t.me/FinancialJuice/141591",
+    "https://t.me/interfaxonline/80423",
+    "https://t.me/banksta/103803",
+    "https://www.interfax.ru/moscow/1123794",
+    "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
+    "https://tass.ru/mezhdunarodnaya-panorama/28234781",
+    "https://t.me/bitkogan_hotline/27925",
+    "https://www.rbc.ru/sport/19/10/2026/6ad610549e6780aefb6e86dd",
+    "https://t.me/FinancialJuice/141590",
+    "https://cryptoslate.com/elon-musk-and-anthropic-unveil-ai-wealth-sharing-plans-that-could-reach-over-110-billion/",
+    "https://tass.ru/politika/28234767",
     "https://www.rbc.ru/radio/20/10/2026/6ad743bd9a7947a7272fdf1e",
     "https://oilprice.com/Alternative-Energy/Geothermal-Energy/Geothermal-Just-Proved-It-Can-Compete-With-Solar-Plus-Storage-on-Price.html",
     "https://t.me/FinancialJuice/141589",
@@ -808,82 +861,7 @@
     "https://www.kommersant.ru/doc/9043276",
     "https://tass.ru/obschestvo/28234751",
     "https://www.vedomosti.ru/politics/news/2026/10/20/1238680-zelenskii-zayavil",
-    "https://t.me/FinancialJuice/141586",
-    "https://tass.ru/mezhdunarodnaya-panorama/28234753",
-    "https://www.rbc.ru/politics/20/10/2026/6ad7a7d155993dc88323eb59",
-    "https://t.me/interfaxonline/80422",
-    "https://www.rbc.ru/rbcfreenews/6ad7a9725f4bc32bd8fa8441",
-    "https://tass.ru/armiya-i-opk/28234749",
-    "https://www.interfax.ru/russia/1123793",
-    "https://www.kommersant.ru/doc/9043273",
-    "https://www.rbc.ru/rbcfreenews/6acf614e987ba11abf335082",
-    "https://www.kommersant.ru/doc/9043274",
-    "https://tass.ru/kultura/28234725",
-    "https://tass.ru/sport/28234739",
-    "https://tass.ru/politika/28234743",
-    "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
-    "https://www.investing.com/news/stock-market-news/why-is-blackberry-stock-surging-today-93CH-4960827",
-    "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-wall-street-rebounds-on-tech-recovery-4958596",
-    "https://tass.ru/proisshestviya/28234741",
-    "https://www.interfax.ru/world/1123792",
-    "https://www.investing.com/news/stock-market-news/metas-global-affairs-officer-joel-kaplan-to-leave-company-after-15-years-4960807",
-    "https://tass.ru/proisshestviya/28234737",
-    "https://t.me/FinancialJuice/141585",
-    "https://www.rbc.ru/sport/10/10/2026/6aca79799a79476f84dbb6ec",
-    "https://tass.ru/proisshestviya/28234733",
-    "https://tass.ru/proisshestviya/28234727",
-    "https://tass.ru/ekonomika/28234503",
-    "https://www.rbc.ru/rbcfreenews/6ad7a8ae588971636abee77f",
-    "https://t.me/rbc_news/159067",
-    "https://tass.ru/mezhdunarodnaya-panorama/28234729",
-    "https://tass.ru/proisshestviya/28234723",
-    "https://t.me/banksta/103799",
-    "https://thedefiant.io/news/blockchains/ethereum-staking-hits-record-43-8-million-eth-bitwise-says",
-    "https://decrypt.co/381435/bitcoins-next-move-heres-what-to-watch",
-    "https://oilprice.com/Latest-Energy-News/World-News/EU-Stands-Firm-Against-Arctic-Oil-and-Gas-Drilling-Despite-Energy-Crisis.html",
-    "https://www.kommersant.ru/doc/9043266",
-    "https://t.me/rbc_news/159066",
-    "https://tass.ru/ekonomika/28234721",
-    "https://tass.ru/obschestvo/28234713",
-    "https://tass.ru/proisshestviya/28234717",
-    "https://www.investing.com/news/stock-market-news/small-businesses-file-new-lawsuit-to-block-trumps-canada-tariffs-4960660",
-    "https://www.vedomosti.ru/politics/news/2026/10/20/1238674-nazvali-pozitsiyu-kallas",
-    "https://www.rbc.ru/rbcfreenews/6ad7a7310aa10cd39f9e4d74",
-    "https://tass.ru/ekonomika/28234711",
-    "https://www.interfax.ru/world/1123791",
-    "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.investing.com/news/stock-market-news/ice-vs-nasdaq-valuation-edge-goes-to-ice-growth-edge-to-ndaq-93CH-4960814",
-    "https://tass.ru/politika/28234705",
-    "https://tass.ru/proisshestviya/28234707",
-    "https://tass.ru/ekonomika/28234709",
-    "https://www.marketwatch.com/story/investors-search-for-safety-has-made-toothpaste-stocks-more-expensive-than-tech-57a75e56?mod=mw_rss_topstories",
-    "https://tass.ru/obschestvo/28234703",
-    "https://t.me/markettwits/389703",
-    "https://t.me/FinancialJuice/141584",
-    "https://tass.ru/mezhdunarodnaya-panorama/28234701",
-    "https://www.kommersant.ru/doc/9043226",
-    "https://www.investing.com/news/stock-market-news/meta-tells-brazil-court-it-treats-lula-and-bolsonaro-campaigns-equally-4960806",
-    "https://t.me/interfaxonline/80421",
-    "https://tass.ru/proisshestviya/28234673",
-    "https://www.investing.com/news/stock-market-news/cme-vs-cboe-comparing-growth-income-and-valuation-93CH-4960803",
-    "https://www.kommersant.ru/doc/9043260",
-    "https://www.investing.com/news/stock-market-news/meta-tells-brazil-court-it-ensures-equal-treatment-of-campaigns-93CH-4960798",
-    "https://t.me/markettwits/389702",
-    "https://t.me/if_market_news/86166",
-    "https://t.me/rbc_news/159065",
-    "https://t.me/FinancialJuice/141583",
-    "https://www.investing.com/news/stock-market-news/starboards-smith-unveils-stake-in-solstice-presses-for-improvements-4960628",
-    "https://www.interfax.ru/russia/1123780",
-    "https://t.me/FinancialJuice/141582",
-    "https://t.me/whale_alert_io/104067",
-    "https://thedefiant.io/news/tokens/comp-jumps-27-outpacing-bitcoin-and-ether",
-    "https://www.kommersant.ru/doc/9043264",
-    "https://t.me/banksta/103798",
-    "https://www.kommersant.ru/doc/9043257",
-    "https://www.investing.com/news/stock-market-news/ananym-capital-takes-stake-in-cts-eventim-calls-it-undervalued-4960790",
-    "https://t.me/FinancialJuice/141581",
-    "https://t.me/FinancialJuice/141580",
-    "https://www.rbc.ru/rbcfreenews/6ad75b7b9a9efe6a2ccc1d9d"
+    "https://t.me/FinancialJuice/141586"
   ],
   "ai_dead": {
     "date": "2026-10-20",
@@ -894,26 +872,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-19T19:30:57.528923+00:00",
-      "КСИР напомнил о критической инфраструктуре Ормузского пролива"
-    ],
-    [
-      "2026-10-19T20:00:57.171758+00:00",
-      "Трамп заявил о планах освободить задержанного в РФ американца"
-    ],
-    [
-      "2026-10-19T20:00:57.171758+00:00",
-      "Nscale и Anthropic обсуждают облачную сделку на $45 миллиардов"
-    ],
-    [
-      "2026-10-19T20:00:57.171758+00:00",
-      "Goldman Sachs повысил рейтинг CoreWeave до «покупки» с целью $106"
-    ],
-    [
-      "2026-10-19T20:00:57.171758+00:00",
-      "Apple представит первый MacBook с сенсорным экраном 28 октября"
-    ],
     [
       "2026-10-19T20:00:57.171758+00:00",
       "Биткоин отскочил от 50-дневной скользящей средней"
@@ -1513,6 +1471,30 @@
     [
       "2026-10-20T18:00:59.295250+00:00",
       "MarketWatch: акции производителей товаров повседневности обогнали техсектор"
+    ],
+    [
+      "2026-10-20T18:30:56.186403+00:00",
+      "Цены на газ в Европе впервые с 2022 года превысили €90 за МВт·ч"
+    ],
+    [
+      "2026-10-20T18:30:56.186403+00:00",
+      "Запасы золота в Банке России сократились до 72,8 млн унций"
+    ],
+    [
+      "2026-10-20T18:30:56.186403+00:00",
+      "В ЕАЭС спрогнозировали падение ВВП Армении на 15,6% при выходе из союза"
+    ],
+    [
+      "2026-10-20T18:30:56.186403+00:00",
+      "США и Россия близки к сделке по обмену заключенными"
+    ],
+    [
+      "2026-10-20T18:30:56.186403+00:00",
+      "JPMorgan выпустил первый долгосрочный прогноз доходности биткоина"
+    ],
+    [
+      "2026-10-20T18:30:56.186403+00:00",
+      "НАТО усилит свое присутствие в Черноморском регионе"
     ]
   ],
   "results_fp": [],
