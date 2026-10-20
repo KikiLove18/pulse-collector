@@ -94,7 +94,7 @@ def big_event(ask_ai, tg_html, state, now, kind, title, facts, quotes_text="", c
     body = body.strip()
     if len(body) > 3600:  # ИИ разошёлся — режем по абзацу (раздел «Что дальше» в конце, его не жалко)
         body = body[:body.rfind("\n\n", 0, 3600)]
-    html = tg_html(head + "\n\n" + body + "\n\n<i>Не инвестрекомендация.</i>")
+    html = tg_html(head + "\n\n" + body + "\n\n<i>Не инвестрекомендация.</i>\n\n#СОБЫТИЕ")
     print("----- канал PRO -----\n" + html, file=sys.stderr)
     _send(chat, html, card_url)
     st["count"] += 1

@@ -104,40 +104,48 @@ def remember_results(results, now):
 
 # ---------- цены за неделю ----------
 
-def _week_yahoo(sym, http_get):
+def _week_yahoo(sym, http_get, until=None):
     url = "https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(sym) + "?range=1mo&interval=1d"
     r = json.loads(http_get(url))["chart"]["result"][0]
-    closes = [c for c in r["indicators"]["quote"][0]["close"] if c]
+    cut = until.timestamp() if until else float("inf")  # until — цены на прошлую дату (наполнение канала задним числом)
+    closes = [c for c, t in zip(r["indicators"]["quote"][0]["close"], r["timestamp"]) if c and t < cut]
     return closes[-1], (closes[-1] / closes[-6] - 1) * 100  # 5 торговых дней назад
 
 
-def _week_moex(sec, http_get, now, shares=False):
+def _week_moex(sec, http_get, now, shares=False, until=None):
     frm = (now - timedelta(days=14)).strftime("%Y-%m-%d")
     path = "shares/boards/TQBR/securities" if shares else "index/securities"
     d = json.loads(http_get(f"https://iss.moex.com/iss/history/engines/stock/markets/{path}/{sec}.json"
                             f"?from={frm}&iss.meta=off&history.columns=TRADEDATE,CLOSE"))["history"]["data"]
-    rows = [(day, c) for day, c in d if c]
+    rows = [(day, c) for day, c in d if c and (not until or day < f"{until:%Y-%m-%d}")]
     last_day = datetime.fromisoformat(rows[-1][0])
     base = [c for day, c in rows if datetime.fromisoformat(day) <= last_day - timedelta(days=7)]
     return rows[-1][1], (rows[-1][1] / base[-1] - 1) * 100
 
 
-def week_quotes(http_get, now):
+CRYPTO_Y = {"bitcoin": "BTC-USD", "ethereum": "ETH-USD"}  # для цен на прошлую дату (у CoinGecko markets — только сейчас)
+
+
+def week_quotes(http_get, now, until=None):
     out = {}
     cg = {}
     try:
+        if until:
+            raise LookupError("цены на прошлую дату — крипта из Yahoo")
         ids = ",".join(k for k, _, s in WEEK_QUOTES if s == "cg")
         for c in json.loads(http_get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=" + ids
                                      + "&price_change_percentage=7d")):
             cg[c["id"]] = (c["current_price"], c.get("price_change_percentage_7d_in_currency"))
+    except LookupError:
+        pass
     except Exception as e:
         print("Неделя, CoinGecko:", e, file=sys.stderr)
     for key, name, src in WEEK_QUOTES:
         try:
-            if src == "y":
-                out[key] = _week_yahoo(key, http_get)
+            if src == "y" or (until and key in CRYPTO_Y):
+                out[key] = _week_yahoo(CRYPTO_Y.get(key, key), http_get, until)
             elif src in ("moex", "moexs"):
-                out[key] = _week_moex(key, http_get, now, shares=src == "moexs")
+                out[key] = _week_moex(key, http_get, now, shares=src == "moexs", until=until)
             elif key in cg and cg[key][1] is not None:
                 out[key] = cg[key]
         except Exception as e:
@@ -218,9 +226,9 @@ def _split_cover(raw):
     return body, cover
 
 
-def run_weekly(ask_ai, http_get, calendar_next, publish_card, now, dry):
+def run_weekly(ask_ai, http_get, calendar_next, publish_card, now, dry, until=None):
     week = load_week()
-    wq = week_quotes(http_get, now)
+    wq = week_quotes(http_get, now, until)
     user = build_input(wq, week, calendar_next, now)
     print(f"Разбор недели: новостей в журнале {len(week['news'])}, итогов {len(week['results'])}, цен {len(wq)}, "
           f"вход ИИ {len(user)} знаков", file=sys.stderr)
@@ -255,8 +263,8 @@ def run_weekly(ask_ai, http_get, calendar_next, publish_card, now, dry):
 
 # ---------- другие рубрики канала PRO (сетка 19.10) ----------
 
-def _news_lines(week, days, limit=100):
-    since = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
+def _news_lines(week, days, limit=100, now=None):
+    since = ((now or datetime.now(timezone.utc)) - timedelta(days=days)).isoformat()
     news = sorted((n for n in week["news"] if n["ts"] >= since), key=lambda n: (-n["imp"], n["ts"]))[:limit]
     return [f"[{n['block']}] imp {n['imp']} | {n['ts'][:10]} | {n['title']} — {n['text']}" for n in news]
 
@@ -306,11 +314,11 @@ WEEK_AHEAD = """Ты — главный редактор закрытого ка
 Список активов (все, в этом порядке): ASSETS. Никаких советов «покупай/продавай».""".replace("ASSETS", ", ".join(ASSETS)) + prompts.RU_ONLY
 
 
-def run_week_ahead(ask_ai, http_get, calendar_next, publish_card, now, dry):
+def run_week_ahead(ask_ai, http_get, calendar_next, publish_card, now, dry, until=None):
     week = load_week()
-    wq = week_quotes(http_get, now)
+    wq = week_quotes(http_get, now, until)
     user = "\n".join(["КАЛЕНДАРЬ ЭТОЙ НЕДЕЛИ:"] + (calendar_next or ["нет данных"]) + ["", "ЦЕНЫ ЗА ПРОШЛУЮ НЕДЕЛЮ:"]
-                     + _quotes_lines(wq) + ["", "ЗАМЕТНЫЕ НОВОСТИ ПОСЛЕДНИХ ДНЕЙ:"] + _news_lines(week, 4, 80))
+                     + _quotes_lines(wq) + ["", "ЗАМЕТНЫЕ НОВОСТИ ПОСЛЕДНИХ ДНЕЙ:"] + _news_lines(week, 4, 80, now))
     post, data = _ask_post(ask_ai, WEEK_AHEAD, user, "map")
     rows = [(m["asset"], m.get("way", "flat"), m.get("why", "")) for m in data.get("map", []) if m.get("asset")]
     l = now.astimezone(MSK)
@@ -366,7 +374,7 @@ def run_asset(ask_ai, http_get, calendar_next, publish_card, now, dry):
 GUIDES_DIR = Path(__file__).resolve().parent.parent / "guides"
 
 
-def run_guide(ask_ai, http_get, calendar_next, publish_card, now, dry):
+def run_guide(ask_ai, http_get, calendar_next, publish_card, now, dry, until=None):
     """Гайд — НЕ пишет ИИ на ходу: берём следующий утверждённый владельцем файл guides/NN-*.html (первая строка — заголовок).
     Опубликованные помним в state/week.json. Нет утверждённых — ничего не публикуем."""
     week = load_week()

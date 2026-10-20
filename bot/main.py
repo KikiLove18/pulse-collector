@@ -1116,21 +1116,82 @@ PRO_PLAN = {"week_ahead": (0, 9, "run_week_ahead"), "asset": (2, 12, "run_asset"
             "weekly": (6, 18, "run_weekly"), "month": ("1", 12, "run_month")}
 
 
-def run_pro(state, now, dry, kind):
+# Хештеги рубрик — «разделы» канала: нажал хештег → все посты рубрики (у каналов Telegram нет вкладок-тем)
+PRO_TAGS = {"week_ahead": "#НЕДЕЛЯ_ВПЕРЕДИ", "asset": "#АКТИВ_НЕДЕЛИ", "guide": "#ГАЙД", "weekly": "#РАЗБОР_НЕДЕЛИ",
+            "month": "#ИТОГИ_МЕСЯЦА"}
+
+
+def run_pro(state, now, dry, kind, until=None):
     """Рубрика канала PRO. Куда: PRO_POSTS=on — канал PRO, иначе — образец в тестовый канал."""
     chat = pro._target("PRO_POSTS")
 
     def send(html, card_url):  # Telegram: до 4096 знаков в сообщении; картинка — у первого
-        parts = split_message(tg_html(html))
+        parts = split_message(tg_html(html + "\n\n" + PRO_TAGS[kind]))
         pro._send(chat, parts[0], card_url)
         for p in parts[1:]:
             pro._send(chat, p, None)
 
     AI_TIER["big"] = True
     try:
-        return getattr(weekly, PRO_PLAN[kind][2])(ask_ai, http_get, next_week_lines(state, now), send, now, dry)
+        kw = {"until": until} if until else {}
+        return getattr(weekly, PRO_PLAN[kind][2])(ask_ai, http_get, next_week_lines(state, now), send, now, dry, **kw)
     finally:
         AI_TIER["big"] = False
+
+
+PRO_INTRO = """<b>📌 Как устроен канал «Пульс рынка PRO»</b>
+
+Здесь — разборы, которых нет в бесплатных выпусках: не «что случилось», а почему это важно и что дальше.
+
+<b>Рубрики</b> — нажми хештег, чтобы увидеть все посты рубрики:
+📅 #НЕДЕЛЯ_ВПЕРЕДИ — по понедельникам: главные события недели и карта давления на 10 активов
+🔍 #АКТИВ_НЕДЕЛИ — по средам: один актив — что давит, что поддерживает, сценарии
+🧠 #ГАЙД — по четвергам: как устроен рынок, простыми словами
+📊 #РАЗБОР_НЕДЕЛИ — по воскресеньям: что двигало рынками, как события связаны, таблица 12 активов
+📈 #ИТОГИ_МЕСЯЦА — 1-го числа: месяц в цифрах
+⚡ #СОБЫТИЕ — в момент события: решения ЦБ и ФРС, инфляция, сильные данные
+
+Первые посты ниже выложены 20.10 за прошедшую неделю — чтобы было с чего начать.
+
+<i>Не инвестрекомендация. Решения о сделках принимаешь ты.</i>"""
+
+
+def run_pro_fill(state, now, live):
+    """Наполнение канала PRO за прошедшую неделю (решение владельца 20.10): события → разбор недели → неделя впереди →
+    первый гайд → пост «Как устроен канал». live=False — всё в тестовый канал (по умолчанию), True — в канал PRO."""
+    if not live:
+        os.environ["PRO_POSTS"] = os.environ["PRO_EVENTS"] = "test"
+    quotes_none = ""  # котировок на момент прошлых событий нет — ИИ пропустит «Реакцию рынка»
+    week = weekly.load_week()
+    groups = {}  # сильные данные прошлой недели — один пост на день
+    for r in week["results"]:
+        if r.get("impact") == "High" or "Отчёт" in (r.get("title") or ""):
+            groups.setdefault(r["dt"][:10], []).append(r)
+    AI_TIER["big"] = True
+    try:
+        for day in sorted(groups)[-2:]:
+            rs = sorted(groups[day], key=lambda r: ("CPI" not in r["title"], "PPI" not in r["title"], "Базов" in r["title"]))
+            d = datetime.fromisoformat(rs[0]["dt"]).astimezone(MSK)
+            title = f"{d:%d.%m} — " + ", ".join(r["title"] for r in rs[:3])
+            facts = (f"Событие прошлое ({d:%d.%m.%Y}), разбор публикуется задним числом — пиши в прошедшем времени, "
+                     "раздел «Реакция рынка» пропусти.\n" + "\n".join(f'{r["title"]}: {r["headline"]} (итог: {r["verdict"]})' for r in rs))
+            pro.big_event(ask_ai, tg_html, {}, now, "result", title, facts, quotes_none)
+            time.sleep(3)
+    finally:
+        AI_TIER["big"] = False
+    sun = datetime(2026, 10, 18, 18, 0, tzinfo=MSK)
+    run_pro(state, sun, False, "weekly", until=datetime(2026, 10, 18, tzinfo=MSK))
+    time.sleep(3)
+    run_pro(state, datetime(2026, 10, 19, 9, 0, tzinfo=MSK), False, "week_ahead", until=datetime(2026, 10, 18, tzinfo=MSK))
+    time.sleep(3)
+    if live:
+        run_pro(state, now, False, "guide")
+    else:  # образец гайда — без отметки «опубликован»
+        g = sorted(p for p in weekly.GUIDES_DIR.glob("*.html") if not p.name.startswith("_"))
+        if g:
+            pro._send(pro._target("PRO_POSTS"), tg_html(g[0].read_text(encoding="utf-8").strip() + "\n\n#ГАЙД"), None)
+    time.sleep(3)
+    pro._send(pro._target("PRO_POSTS"), tg_html(PRO_INTRO), None)
 
 
 def due_pro(state, now):
@@ -1163,7 +1224,7 @@ def main():
     now = datetime.now(timezone.utc)
     state = load_state()
     ai_dead_load(state)
-    if (mode in ("preview", "ai_check", "ai_probe", "pro_sample") or mode in PRO_PLAN) and "--force" not in args:
+    if (mode in ("preview", "ai_check", "ai_probe", "pro_sample", "pro_fill", "pro_fill_live") or mode in PRO_PLAN) and "--force" not in args:
         # тесты тратят ту же квоту ИИ — не в последний час перед выжимкой
         local = now.astimezone(MSK)
         for slot in os.environ.get("DIGEST_TIMES", "07:30,19:30").split(","):
@@ -1174,6 +1235,10 @@ def main():
                 return
     if mode in PRO_PLAN:  # рубрика PRO вручную: weekly, week_ahead, asset, guide, month (без PRO_POSTS=on — в тестовый канал)
         run_pro(state, now, dry, mode)
+        save_state(state)
+        return
+    if mode in ("pro_fill", "pro_fill_live"):  # наполнение канала PRO за прошлую неделю; _live — в канал PRO (только после «да» владельца)
+        run_pro_fill(state, now, mode == "pro_fill_live")
         save_state(state)
         return
     if mode == "pro_check":  # права бота в канале PRO — без публикации
