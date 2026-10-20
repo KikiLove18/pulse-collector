@@ -17,6 +17,8 @@ from bot import prompts
 
 MSK = timezone(timedelta(hours=3))
 PRO_PER_DAY = 3
+SILENT = {"on": False}  # True — все отправки без звука (наполнение канала задним числом)
+VERDICT_RU = {"better": "лучше ожиданий", "worse": "хуже ожиданий", "neutral": "в рамках ожиданий", "inline": "в рамках ожиданий"}
 
 BIG_EVENT = """Ты — главный редактор закрытого канала «Пульс рынка PRO» для трейдеров и частных инвесторов (Россия, США, крипта, сырьё).
 Только что случилось крупное событие. Подписчики уже получили в боте короткое сообщение — здесь они платят за разбор:
@@ -52,12 +54,13 @@ def _target(var="PRO_EVENTS"):
     return os.environ.get("TELEGRAM_CHAT_ID")
 
 
-def _send(chat, html, card_url):
+def _send(chat, html, card_url, silent=False):
+    """Возвращает message_id (или None). silent — без звука у подписчиков (наполнение канала пачкой)."""
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     if not (token and chat):
         print("----- канал PRO (не отправлено: нет токена) -----\n" + html, file=sys.stderr)
-        return
-    payload = {"chat_id": chat, "text": html, "parse_mode": "HTML"}
+        return None
+    payload = {"chat_id": chat, "text": html, "parse_mode": "HTML", "disable_notification": silent or SILENT["on"]}
     if card_url:
         payload["link_preview_options"] = {"url": card_url, "show_above_text": True, "prefer_large_media": True}
     else:
@@ -66,9 +69,25 @@ def _send(chat, html, card_url):
                                  headers={"Content-Type": "application/json"})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
-            print("Канал PRO:", json.loads(r.read()).get("ok"), file=sys.stderr)
+            res = json.loads(r.read())
+            print("Канал PRO:", res.get("ok"), file=sys.stderr)
+            return (res.get("result") or {}).get("message_id")
     except Exception as e:
         print("Канал PRO: не отправлено", e, file=sys.stderr)
+    return None
+
+
+def pin(chat, message_id):
+    """Закрепить без уведомления (нужно право бота «закреплять сообщения»)."""
+    token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    req = urllib.request.Request(f"https://api.telegram.org/bot{token}/pinChatMessage",
+                                 data=json.dumps({"chat_id": chat, "message_id": message_id, "disable_notification": True}).encode(),
+                                 headers={"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            print("Канал PRO: закреплено", json.loads(r.read()).get("ok"), file=sys.stderr)
+    except Exception as e:
+        print("Канал PRO: не закреплено", e, file=sys.stderr)
 
 
 def big_event(ask_ai, tg_html, state, now, kind, title, facts, quotes_text="", card_url=None):

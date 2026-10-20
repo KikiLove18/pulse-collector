@@ -1161,6 +1161,7 @@ def run_pro_fill(state, now, live):
     первый гайд → пост «Как устроен канал». live=False — всё в тестовый канал (по умолчанию), True — в канал PRO."""
     if not live:
         os.environ["PRO_POSTS"] = os.environ["PRO_EVENTS"] = "test"
+    pro.SILENT["on"] = True  # 7 постов подряд — без звука у подписчиков
     quotes_none = ""  # котировок на момент прошлых событий нет — ИИ пропустит «Реакцию рынка»
     week = weekly.load_week()
     groups = {}  # сильные данные прошлой недели — один пост на день
@@ -1174,7 +1175,7 @@ def run_pro_fill(state, now, live):
             d = datetime.fromisoformat(rs[0]["dt"]).astimezone(MSK)
             title = f"{d:%d.%m} — " + ", ".join(r["title"] for r in rs[:3])
             facts = (f"Событие прошлое ({d:%d.%m.%Y}), разбор публикуется задним числом — пиши в прошедшем времени, "
-                     "раздел «Реакция рынка» пропусти.\n" + "\n".join(f'{r["title"]}: {r["headline"]} (итог: {r["verdict"]})' for r in rs))
+                     "раздел «Реакция рынка» пропусти.\n" + "\n".join(f'{r["title"]}: {r["headline"]} (итог: {pro.VERDICT_RU.get(r["verdict"], r["verdict"])})' for r in rs))
             pro.big_event(ask_ai, tg_html, {}, now, "result", title, facts, quotes_none)
             time.sleep(3)
     finally:
@@ -1191,7 +1192,10 @@ def run_pro_fill(state, now, live):
         if g:
             pro._send(pro._target("PRO_POSTS"), tg_html(g[0].read_text(encoding="utf-8").strip() + "\n\n#ГАЙД"), None)
     time.sleep(3)
-    pro._send(pro._target("PRO_POSTS"), tg_html(PRO_INTRO), None)
+    chat = pro._target("PRO_POSTS")
+    mid = pro._send(chat, tg_html(PRO_INTRO), None)
+    if live and mid:
+        pro.pin(chat, mid)
 
 
 def due_pro(state, now):
