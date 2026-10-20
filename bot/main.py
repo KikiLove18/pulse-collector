@@ -1125,11 +1125,13 @@ def run_pro(state, now, dry, kind, until=None):
     """Рубрика канала PRO. Куда: PRO_POSTS=on — канал PRO, иначе — образец в тестовый канал."""
     chat = pro._target("PRO_POSTS")
 
+    topic = pro.thread(state, chat, kind)  # группа с темами — своя тема рубрики; канал — None
+
     def send(html, card_url):  # Telegram: до 4096 знаков в сообщении; картинка — у первого
         parts = split_message(tg_html(html + "\n\n" + PRO_TAGS[kind]))
-        pro._send(chat, parts[0], card_url)
+        pro._send(chat, parts[0], card_url, thread=topic)
         for p in parts[1:]:
-            pro._send(chat, p, None)
+            pro._send(chat, p, None, thread=topic)
 
     AI_TIER["big"] = True
     try:
@@ -1139,11 +1141,11 @@ def run_pro(state, now, dry, kind, until=None):
         AI_TIER["big"] = False
 
 
-PRO_INTRO = """<b>📌 Как устроен канал «Пульс рынка PRO»</b>
+PRO_INTRO = """<b>📌 Как устроен «Пульс рынка PRO»</b>
 
 Здесь — разборы, которых нет в бесплатных выпусках: не «что случилось», а почему это важно и что дальше.
 
-<b>Рубрики</b> — нажми хештег, чтобы увидеть все посты рубрики:
+<b>Рубрики</b> — WHERE:
 📅 #НЕДЕЛЯ_ВПЕРЕДИ — по понедельникам: главные события недели и карта давления на 10 активов
 🔍 #АКТИВ_НЕДЕЛИ — по средам: один актив — что давит, что поддерживает, сценарии
 🧠 #ГАЙД — по четвергам: как устроен рынок, простыми словами
@@ -1151,7 +1153,7 @@ PRO_INTRO = """<b>📌 Как устроен канал «Пульс рынка 
 📈 #ИТОГИ_МЕСЯЦА — 1-го числа: месяц в цифрах
 ⚡ #СОБЫТИЕ — в момент события: решения ЦБ и ФРС, инфляция, сильные данные
 
-Первые посты ниже выложены 20.10 за прошедшую неделю — чтобы было с чего начать.
+Первые посты выложены DATE за прошедшую неделю — чтобы было с чего начать.
 
 <i>Не инвестрекомендация. Решения о сделках принимаешь ты.</i>"""
 
@@ -1176,7 +1178,7 @@ def run_pro_fill(state, now, live):
             title = f"{d:%d.%m} — " + ", ".join(r["title"] for r in rs[:3])
             facts = (f"Событие прошлое ({d:%d.%m.%Y}), разбор публикуется задним числом — пиши в прошедшем времени, "
                      "раздел «Реакция рынка» пропусти.\n" + "\n".join(f'{r["title"]}: {r["headline"]} (итог: {pro.VERDICT_RU.get(r["verdict"], r["verdict"])})' for r in rs))
-            pro.big_event(ask_ai, tg_html, {}, now, "result", title, facts, quotes_none)
+            pro.big_event(ask_ai, tg_html, {}, now, "result", title, facts, quotes_none, tstate=state)
             time.sleep(3)
     finally:
         AI_TIER["big"] = False
@@ -1190,10 +1192,14 @@ def run_pro_fill(state, now, live):
     else:  # образец гайда — без отметки «опубликован»
         g = sorted(p for p in weekly.GUIDES_DIR.glob("*.html") if not p.name.startswith("_"))
         if g:
-            pro._send(pro._target("PRO_POSTS"), tg_html(g[0].read_text(encoding="utf-8").strip() + "\n\n#ГАЙД"), None)
+            ch = pro._target("PRO_POSTS")
+            pro._send(ch, tg_html(g[0].read_text(encoding="utf-8").strip() + "\n\n#ГАЙД"), None, thread=pro.thread(state, ch, "guide"))
     time.sleep(3)
     chat = pro._target("PRO_POSTS")
-    mid = pro._send(chat, tg_html(PRO_INTRO), None)
+    forum = state.get("pro_topics", {}).get(str(chat), {}).get("forum")
+    intro = PRO_INTRO.replace("WHERE", "у каждой своя тема (вкладки вверху), а хештег покажет все посты рубрики" if forum
+                              else "нажми хештег, чтобы увидеть все посты рубрики").replace("DATE", f"{now.astimezone(MSK):%d.%m}")
+    mid = pro._send(chat, tg_html(intro), None)  # в группе с темами — в «Общее»
     if live and mid:
         pro.pin(chat, mid)
 
