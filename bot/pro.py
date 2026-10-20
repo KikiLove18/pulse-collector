@@ -133,5 +133,5 @@ def check(chat):
     ch = call("getChat", chat_id=chat)
     m = call("getChatMember", chat_id=chat, user_id=me["id"])
     print(f"Канал PRO: «{ch.get('title')}» ({ch.get('type')}), бот @{me.get('username')}: {m.get('status')}, "
-          f"публиковать: {m.get('can_post_messages')}", file=sys.stderr)
+          f"публиковать: {m.get('can_post_messages')}, править/закреплять: {m.get('can_edit_messages')}", file=sys.stderr)
     return m.get("status") in ("administrator", "creator") and m.get("can_post_messages") is not False
