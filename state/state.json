@@ -31,7 +31,7 @@
   ],
   "last_digest_ts": "2026-10-19T16:30:58.909979+00:00",
   "calendar": {
-    "ts": "2026-10-19T16:01:04.102031+00:00",
+    "ts": "2026-10-20T04:00:56.731027+00:00",
     "data": [
       {
         "title": "IMF Meetings",
@@ -310,7 +310,7 @@
         "country": "USD",
         "date": "2026-10-20T10:00:00-04:00",
         "impact": "Low",
-        "forecast": "-0.4%",
+        "forecast": "-0.7%",
         "previous": "0.3%"
       },
       {
@@ -350,7 +350,7 @@
         "country": "JPY",
         "date": "2026-10-20T19:50:00-04:00",
         "impact": "Low",
-        "forecast": "-0.21T",
+        "forecast": "-0.26T",
         "previous": "-0.84T"
       },
       {
@@ -779,7 +779,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-19T21:30:56.808479+00:00",
+  "breaking_ts": "2026-10-20T04:00:56.727129+00:00",
   "news_now": {
     "day": "2026-10-20",
     "day_count": 0,
@@ -788,59 +788,69 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/mezhdunarodnaya-panorama/28231177",
-    "https://tass.ru/proisshestviya/28231175",
-    "https://t.me/FinancialJuice/141367",
-    "https://tass.ru/armiya-i-opk/28231171",
-    "https://tass.ru/armiya-i-opk/28231173",
-    "https://tass.ru/ekonomika/28231169",
-    "https://www.wsj.com/business/deals/tradeweb-to-buy-trumid-for-about-1-97-billion-1fd21bdb?mod=rss_markets_main",
-    "https://cryptoslate.com/hoskinson-reveals-new-code-for-cardano-but-63m-tvl-exposes-a-gap/",
-    "https://tass.ru/mezhdunarodnaya-panorama/28231165",
-    "https://decrypt.co/381371/anthropic-gives-public-musk-answers-spacex-shares",
-    "https://t.me/headlines_for_traders/87020",
-    "https://www.marketwatch.com/story/im-naturally-skeptical-i-receive-10-calls-a-day-offering-me-15-000-loans-at-8-interest-is-this-a-scam-825c3431?mod=mw_rss_topstories",
-    "https://tass.ru/sport/28231157",
-    "https://t.me/banksta/103746",
-    "https://www.investing.com/news/stock-market-news/germanys-merz-urges-ai-investment-ahead-of-nvidia-deal-4958229",
-    "https://www.kommersant.ru/doc/9042490",
-    "https://www.investing.com/news/stock-market-news/why-is-crown-stock-sliding-afterhours-today-93CH-4958380",
-    "https://www.investing.com/news/stock-market-news/why-is-steel-dynamics-stock-sliding-today-93CH-4958379",
-    "https://tass.ru/politika/28231153",
-    "https://tass.ru/proisshestviya/28231151",
-    "https://tass.ru/mezhdunarodnaya-panorama/28231147",
-    "https://tass.ru/sport/28231149",
-    "https://www.investing.com/news/stock-market-news/3m-stock-rises-3-on-6b-amazon-data-center-deal-4958375",
-    "https://tass.ru/ekonomika/28231123",
-    "https://www.marketwatch.com/story/micron-and-other-chip-stocks-spring-back-to-life-after-bruising-selloff-16486541?mod=mw_rss_topstories",
-    "https://tass.ru/obschestvo/28231145",
-    "https://t.me/BitcoinMagazineTelegram/10866",
-    "https://tass.ru/sport/28231103",
-    "https://tass.ru/armiya-i-opk/28231131",
-    "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://tass.ru/politika/28231119",
-    "https://tass.ru/politika/28231121",
-    "https://tass.ru/mezhdunarodnaya-panorama/28231129",
-    "https://tass.ru/proisshestviya/28231133",
-    "https://tass.ru/kultura/28231139",
-    "https://tass.ru/armiya-i-opk/28231141",
-    "https://tass.ru/mezhdunarodnaya-panorama/28231127",
-    "https://www.investing.com/news/stock-market-news/bitdeer-stock-jumps-on-29b-ai-cloud-revenue-backlog-4958363",
-    "https://tass.ru/armiya-i-opk/28231135",
-    "https://tass.ru/kultura/28231137",
-    "https://tass.ru/armiya-i-opk/28231143",
-    "https://www.marketwatch.com/story/spacex-earnings-will-be-all-about-ai-for-better-or-for-worse-89bbc772?mod=mw_rss_topstories",
-    "https://www.rbc.ru/politics/14/10/2026/6acf3fbe7a3d6c5b926369ab",
-    "https://www.rbc.ru/sport/06/10/2026/6ac5044d9a794735b6cb2b04",
-    "https://www.marketwatch.com/story/why-a-former-intel-skeptic-is-giving-up-his-negative-call-on-the-stock-after-four-years-47c2fab6?mod=mw_rss_topstories",
-    "https://www.marketwatch.com/story/why-the-midterm-elections-are-likely-to-become-a-strong-tailwind-for-the-stock-market-3edfca6c?mod=mw_rss_topstories",
-    "https://oilprice.com/Energy/Energy-General/Why-Invading-Iran-Could-Become-Americas-Biggest-Military-Mistake.html",
-    "https://www.kommersant.ru/doc/9042473",
-    "https://www.wsj.com/business/health-care-roundup-market-talk-a4c91f4c?mod=rss_markets_main",
-    "https://www.wsj.com/articles/auto-transport-roundup-market-talk-bff57b5e?mod=rss_markets_main",
-    "https://www.wsj.com/finance/investing/u-s-stocks-mostly-higher-as-ai-credit-worries-abate-600bf008?mod=rss_markets_main",
-    "https://www.investing.com/news/stock-market-news/afterhours-movers-stld-btdr-cck-432SI-4958348",
-    "https://t.me/WalterBloomberg/37141"
+    "https://tass.ru/sport/28231497",
+    "https://t.me/rbc_news/159008",
+    "https://www.interfax.ru/russia/1123602",
+    "https://tass.ru/sport/28231495",
+    "https://www.kommersant.ru/doc/9042505",
+    "https://www.vedomosti.ru/politics/news/2026/10/20/1238416-polsha-priostanovila",
+    "https://t.me/headlines_for_traders/87027",
+    "https://tass.ru/nedvizhimost/28231485",
+    "https://tass.ru/obschestvo/28231489",
+    "https://t.me/markettwits/389534",
+    "https://t.me/FinancialJuice/141396",
+    "https://t.me/FinancialJuice/141395",
+    "https://tass.ru/proisshestviya/28231487",
+    "https://tass.ru/obschestvo/28231473",
+    "https://t.me/markettwits/389533",
+    "https://tass.ru/kultura/28231481",
+    "https://www.investing.com/news/stock-market-news/asia-stocks-slump-as-ai-jitters-hammer-korean-chipmakers-ahead-of-tech-earnings-4958731",
+    "https://t.me/markettwits/389532",
+    "https://www.interfax.ru/world/1123601",
+    "https://t.me/markettwits/389531",
+    "https://tass.ru/armiya-i-opk/28231479",
+    "https://t.me/markettwits/389530",
+    "https://t.me/headlines_for_traders/87026",
+    "https://tass.ru/obschestvo/28231477",
+    "https://tass.ru/armiya-i-opk/28231475",
+    "https://t.me/markettwits/389529",
+    "https://t.me/markettwits/389528",
+    "https://tass.ru/armiya-i-opk/28231483",
+    "https://t.me/markettwits/389526",
+    "https://www.rbc.ru/rbcfreenews/6ad6326a01be9e15b3020d2b",
+    "https://t.me/interfaxonline/80381",
+    "https://t.me/banksta/103753",
+    "https://tass.ru/mezhdunarodnaya-panorama/28231471",
+    "https://tass.ru/kultura/28230373",
+    "https://www.vedomosti.ru/politics/news/2026/10/20/1238415-peskov-sroki-sleduyuschego",
+    "https://www.interfax.ru/russia/1123599",
+    "https://www.rbc.ru/politics/19/10/2026/6ad6748216db06912fe7899c",
+    "https://t.me/lookonchainchannel/10693",
+    "https://tass.ru/proisshestviya/28231469",
+    "https://tass.ru/obschestvo/28231421",
+    "https://tass.ru/nedvizhimost/28231463",
+    "https://t.me/wublockchainenglish/26484",
+    "https://tass.ru/obschestvo/28231461",
+    "https://www.kommersant.ru/doc/9042502",
+    "https://t.me/headlines_for_traders/87025",
+    "https://www.vedomosti.ru/politics/news/2026/10/20/1238414-vens-ukraina",
+    "https://www.kommersant.ru/doc/9042501",
+    "https://t.me/interfaxonline/80380",
+    "https://tass.ru/obschestvo/28231455",
+    "https://www.wsj.com/finance/stocks/nikkei-falls-amid-lingering-worry-over-ai-boom-amid-elevated-bond-yields-6628932c?mod=rss_markets_main",
+    "https://www.interfax.ru/world/1123598",
+    "https://www.rbc.ru/politics/26/09/2026/6ab765a87aa1858b22332b2b",
+    "https://tass.ru/ekonomika/28231453",
+    "https://tass.ru/ekonomika/28231417",
+    "https://tass.ru/armiya-i-opk/28231443",
+    "https://www.interfax.ru/world/1123597",
+    "https://tass.ru/obschestvo/28231447",
+    "https://tass.ru/proisshestviya/28231433",
+    "https://tass.ru/obschestvo/28231437",
+    "https://tass.ru/armiya-i-opk/28231435",
+    "https://www.interfax.ru/world/1123596",
+    "https://t.me/headlines_for_traders/87023",
+    "https://t.me/headlines_for_traders/87024"
   ],
   "ai_dead": {
     "date": "2026-10-19",
@@ -851,30 +861,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-19T05:00:57.574338+00:00",
-      "MARA Holdings перевела 1 000 BTC на биржи за 5 дней"
-    ],
-    [
-      "2026-10-19T05:00:57.574338+00:00",
-      "Песков подтвердил обсуждение трехстороннего саммита РФ, США и КНР"
-    ],
-    [
-      "2026-10-19T05:00:57.574338+00:00",
-      "ЦБ и банки начали пресекать арбитражные схемы с покупкой USDT"
-    ],
-    [
-      "2026-10-19T05:00:57.574338+00:00",
-      "Вторичный рынок авто в РФ в сентябре показал рекордный рост"
-    ],
-    [
-      "2026-10-19T05:30:56.283875+00:00",
-      "ВВП Китая в третьем квартале вырос на 4,5%"
-    ],
-    [
-      "2026-10-19T05:30:56.283875+00:00",
-      "США приостановили новые санкции против России"
-    ],
     [
       "2026-10-19T05:30:56.283875+00:00",
       "Глава МВД Франции подал в отставку из-за протестов"
@@ -1474,6 +1460,30 @@
     [
       "2026-10-19T20:30:56.097502+00:00",
       "В Иране пригрозили интернет-кабелям в Ормузском проливе"
+    ],
+    [
+      "2026-10-20T04:00:56.727129+00:00",
+      "Китай сохранил базовые ставки по кредитам на прежнем уровне"
+    ],
+    [
+      "2026-10-20T04:00:56.727129+00:00",
+      "Дефицит бюджета США в 2026 фингоду вырос на 12,2%"
+    ],
+    [
+      "2026-10-20T04:00:56.727129+00:00",
+      "В Осло пройдут переговоры по Украине с участием США и ЕС"
+    ],
+    [
+      "2026-10-20T04:00:56.727129+00:00",
+      "Tether заявила о сокращении объема связанных с Ираном переводов"
+    ],
+    [
+      "2026-10-20T04:00:56.727129+00:00",
+      "Европейские фондовые рынки завершили понедельник падением"
+    ],
+    [
+      "2026-10-20T04:00:56.727129+00:00",
+      "Азиатские рынки снижаются на фоне опасений по поводу ИИ"
     ]
   ],
   "results_fp": []
