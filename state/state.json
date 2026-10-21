@@ -33,7 +33,7 @@
   ],
   "last_digest_ts": "2026-10-20T17:00:57.009410+00:00",
   "calendar": {
-    "ts": "2026-10-20T16:31:22.773446+00:00",
+    "ts": "2026-10-21T04:00:59.047529+00:00",
     "data": [
       {
         "title": "IMF Meetings",
@@ -781,7 +781,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-20T21:30:56.550732+00:00",
+  "breaking_ts": "2026-10-21T04:00:59.046461+00:00",
   "news_now": {
     "day": "2026-10-21",
     "day_count": 0,
@@ -790,69 +790,64 @@
     "titles": []
   },
   "news_seen": [
-    "https://t.me/FinancialJuice/141668",
-    "https://t.me/FinancialJuice/141667",
-    "https://t.me/whale_alert_io/104076",
-    "https://tass.ru/mezhdunarodnaya-panorama/28235073",
-    "https://tass.ru/obschestvo/28235069",
-    "https://www.vedomosti.ru/politics/news/2026/10/21/1238719-mask-prinyal-reshenie",
-    "https://t.me/rbc_news/159082",
-    "https://www.rbc.ru/politics/21/10/2026/6ad7db6da50e0850a9e5cd43",
-    "https://t.me/interfaxonline/80434",
-    "https://cointelegraph.com/news/utah-lawsuit-kalshi-susquehanna-prediction-markets-illegal-bets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.rbc.ru/sport/19/10/2026/6ad610549e6780aefb6e86dd",
-    "https://tass.ru/sport/28235063",
-    "https://tass.ru/obschestvo/28235011",
-    "https://t.me/interfaxonline/80433",
-    "https://t.me/whale_alert_io/104075",
-    "https://decrypt.co/381464/jpmorgan-bitcoin-forecast-first-time-stocks-gold",
-    "https://t.me/whale_alert_io/104074",
-    "https://tass.ru/sport/28235067",
-    "https://www.kommersant.ru/doc/9043320",
-    "https://www.interfax.ru/russia/1123812",
-    "https://www.investing.com/news/stock-market-news/musk-ordered-starlink-slowdown-that-blindsided-ukraine-wsj-reports-4961200",
-    "https://www.coindesk.com/policy/2026/10/20/u-s-cftc-sets-agenda-for-ai-forum-exploring-trading-and-agentic-finance",
-    "https://www.investing.com/news/stock-market-news/helsing-nears-investment-in-destinus-stock-at-67-billion-valuation--bloomberg-93CH-4961199",
-    "https://www.interfax.ru/russia/1123811",
-    "https://tass.ru/mezhdunarodnaya-panorama/28235059",
-    "https://t.me/markettwits/389727",
-    "https://t.me/BitcoinMagazineTelegram/10875",
-    "https://tass.ru/sport/28235057",
-    "https://tass.ru/ekonomika/28235055",
-    "https://tass.ru/sport/28235053",
-    "https://tass.ru/ekonomika/28235051",
-    "https://t.me/nainspire/5561",
-    "https://t.me/FinancialJuice/141666",
-    "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-as-strong-earnings-offset-ai-credit-fears-d55414c3?mod=rss_markets_main",
-    "https://t.me/FinancialJuice/141665",
-    "https://tass.ru/obschestvo/28235049",
-    "https://www.wsj.com/business/financial-services-roundup-market-talk-c6d7409e?mod=rss_markets_main",
-    "https://t.me/rbc_news/159080",
-    "https://tass.ru/kosmos/28235047",
-    "https://tass.ru/mezhdunarodnaya-panorama/28235029",
-    "https://www.kommersant.ru/doc/9043308",
-    "https://tass.ru/mezhdunarodnaya-panorama/28235037",
-    "https://tass.ru/politika/28235033",
-    "https://tass.ru/politika/28235035",
-    "https://t.me/banksta/103812",
-    "https://tass.ru/armiya-i-opk/28235041",
-    "https://t.me/FinancialJuice/141664",
-    "https://www.rbc.ru/business/27/01/2026/6929e4c39a7947a61961d00e",
-    "https://tass.ru/opinions/28233493",
-    "https://www.sport-interfax.ru/1123810",
-    "https://t.me/FinancialJuice/141663",
-    "https://t.me/interfaxonline/80432",
-    "https://t.me/FinancialJuice/141662",
-    "https://www.rbc.ru/quote/21/10/2026/6ad7467f9a7947b22c908cfd",
-    "https://tass.ru/armiya-i-opk/28231635",
-    "https://oilprice.com/Energy/Energy-General/Energy-Costs-Are-Driving-US-Inflation-and-Wages-Arent-Keeping-Up.html",
-    "https://www.vedomosti.ru/technology/news/2026/10/21/1238619-katyusha-zapustila",
-    "https://tass.ru/mezhdunarodnaya-panorama/28235025",
-    "https://tass.ru/sport/28235027",
-    "https://www.vedomosti.ru/politics/news/2026/10/20/1238718-tsik-rassmotrit-peredachu",
-    "https://www.marketwatch.com/story/its-no-secret-what-the-best-financial-advice-for-retirement-is-but-most-people-ignore-it-anyway-7c9075c8?mod=mw_rss_topstories",
-    "https://t.me/interfaxonline/80431",
-    "https://oilprice.com/Latest-Energy-News/World-News/API-Crude-Products-Continu-eto-Draw.html"
+    "https://tass.ru/mezhdunarodnaya-panorama/28235479",
+    "https://www.kommersant.ru/doc/9043355",
+    "https://t.me/FinancialJuice/141718",
+    "https://tass.ru/obschestvo/28235481",
+    "https://tass.ru/proisshestviya/28235463",
+    "https://tass.ru/sport/28235485",
+    "https://tass.ru/ekonomika/28235477",
+    "https://t.me/FinancialJuice/141717",
+    "https://t.me/rbc_news/159084",
+    "https://t.me/markettwits/389734",
+    "https://t.me/lookonchainchannel/10713",
+    "https://tass.ru/nedvizhimost/28235471",
+    "https://www.rbc.ru/technology_and_media/21/10/2026/6ad835ba4223dc227fa00dd2",
+    "https://tass.ru/ekonomika/28235475",
+    "https://tass.ru/politika/28235469",
+    "https://tass.ru/obschestvo/28235467",
+    "https://t.me/markettwits/389733",
+    "https://tass.ru/armiya-i-opk/28235473",
+    "https://www.vedomosti.ru/politics/news/2026/10/21/1238732-peskov-zhurnalistov",
+    "https://t.me/markettwits/389732",
+    "https://tass.ru/obschestvo/28235449",
+    "https://t.me/FinancialJuice/141716",
+    "https://www.rbc.ru/society/16/09/2026/6aaac3fb9a7947f6c4e3ecdb",
+    "https://tass.ru/obschestvo/28235457",
+    "https://tass.ru/ekonomika/28235461",
+    "https://www.vedomosti.ru/politics/news/2026/10/21/1238731-pravitelstvo-odobrilo",
+    "https://tass.ru/sport/28235459",
+    "https://t.me/wublockchainenglish/26493",
+    "https://t.me/headlines_for_traders/87097",
+    "https://tass.ru/armiya-i-opk/28235447",
+    "https://tass.ru/armiya-i-opk/28235455",
+    "https://www.interfax.ru/world/1123838",
+    "https://t.me/markettwits/389731",
+    "https://tass.ru/politika/28235453",
+    "https://t.me/markettwits/389730",
+    "https://t.me/markettwits/389728",
+    "https://tass.ru/ekonomika/28233831",
+    "https://tass.ru/sport/28235445",
+    "https://tass.ru/obschestvo/28235363",
+    "https://tass.ru/proisshestviya/28235441",
+    "https://tass.ru/mezhdunarodnaya-panorama/28235443",
+    "https://tass.ru/obschestvo/28235439",
+    "https://tass.ru/proisshestviya/28235429",
+    "https://tass.ru/obschestvo/28235435",
+    "https://t.me/banksta/103827",
+    "https://www.interfax.ru/russia/1123837",
+    "https://www.kommersant.ru/doc/9043353",
+    "https://www.rbc.ru/politics/21/10/2026/6ad82f544223dc227fa00dcd",
+    "https://www.vedomosti.ru/politics/news/2026/10/21/1238730-axios-ssha-evropa",
+    "https://t.me/FinancialJuice/141715",
+    "https://www.interfax.ru/moscow/1123836",
+    "https://www.investing.com/news/stock-market-news/woodside-energy-cuts-2026-production-forecast-q3-revenue-rises-93CH-4961517",
+    "https://www.investing.com/news/stock-market-news/why-is-minimax-stock-climbing-today-93CH-4961516",
+    "https://www.investing.com/news/stock-market-news/why-is-samsung-electronics-stock-surging-today-93CH-4961515",
+    "https://t.me/interfaxonline/80445",
+    "https://t.me/FinancialJuice/141714",
+    "https://www.interfax.ru/world/1123834",
+    "https://t.me/headlines_for_traders/87096"
   ],
   "ai_dead": {
     "date": "2026-10-20",
@@ -863,26 +858,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-20T05:30:57.588708+00:00",
-      "Силы ПВО за ночь уничтожили 136 украинских беспилотников над регионами России"
-    ],
-    [
-      "2026-10-20T05:30:57.588708+00:00",
-      "Продавцы на Ozon пожаловались в ФАС на новые правила акций и скидок"
-    ],
-    [
-      "2026-10-20T06:00:56.990027+00:00",
-      "Цены на нефть умеренно растут на фоне атак в Саудовской Аравии"
-    ],
-    [
-      "2026-10-20T06:00:56.990027+00:00",
-      "В Великобритании безработица снизилась до 4,7%"
-    ],
-    [
-      "2026-10-20T06:00:56.990027+00:00",
-      "Силы ПВО за ночь сбили 136 украинских беспилотников"
-    ],
     [
       "2026-10-20T06:00:56.990027+00:00",
       "ВТБ продал агрохолдинг «Лабинский» за 50 млрд рублей"
@@ -1482,6 +1457,30 @@
     [
       "2026-10-20T20:30:58.993313+00:00",
       "Просрочка компаний в строительстве РФ выросла на 43%"
+    ],
+    [
+      "2026-10-21T04:00:59.046461+00:00",
+      "Эксперты допустили сохранение ключевой ставки Банка России на уровне 14%"
+    ],
+    [
+      "2026-10-21T04:00:59.046461+00:00",
+      "Amazon инвестирует в Германию более €16 млрд"
+    ],
+    [
+      "2026-10-21T04:00:59.046461+00:00",
+      "Криптобиржа MEXC уходит из России и Беларуси"
+    ],
+    [
+      "2026-10-21T04:00:59.046461+00:00",
+      "США, Европа и Украина достигли прогресса на переговорах"
+    ],
+    [
+      "2026-10-21T04:00:59.046461+00:00",
+      "Фондовые индексы США завершили торги разнонаправленно"
+    ],
+    [
+      "2026-10-21T04:00:59.046461+00:00",
+      "Woodside Energy сократила прогноз добычи на 2026 год"
     ]
   ],
   "results_fp": [],
