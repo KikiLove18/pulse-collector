@@ -905,7 +905,10 @@
   ],
   "ai_dead": {
     "date": "2026-10-22",
-    "models": []
+    "models": [
+      "gemini-3.8-flash",
+      "gemini-flash-latest"
+    ]
   },
   "feed_recent": [
     [
