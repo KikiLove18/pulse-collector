@@ -790,7 +790,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-22T19:00:58.348017+00:00",
+  "breaking_ts": "2026-10-22T19:31:11.916993+00:00",
   "news_now": {
     "day": "2026-10-22",
     "day_count": 6,
@@ -806,92 +806,59 @@
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/rbcfreenews/6ada63db626bfaa1d9eead23",
+    "https://t.me/BitcoinMagazineTelegram/10892",
+    "https://t.me/markettwits/390100",
+    "https://t.me/FinancialJuice/142211",
+    "https://t.me/FinancialJuice/142210",
+    "https://t.me/FinancialJuice/142209",
+    "https://tass.ru/obschestvo/28244051",
+    "https://www.kommersant.ru/doc/9045253",
+    "https://tass.ru/proisshestviya/28244059",
+    "https://www.marketwatch.com/story/is-getting-a-wedding-band-from-quince-a-bad-idea-its-a-third-of-the-price-fa89c9b2?mod=mw_rss_topstories",
+    "https://www.vedomosti.ru/investments/news/2026/10/22/1239436-tsena-nefti-brent",
+    "https://t.me/banksta/103970",
+    "https://t.me/FinancialJuice/142208",
+    "https://cryptoslate.com/standard-chartered-moves-to-bring-crypto-custody-in-house-as-wall-streets-digital-asset-infrastructure-race-accelerates/",
+    "https://www.kommersant.ru/doc/9045232",
+    "https://www.vedomosti.ru/politics/news/2026/10/22/1239454-vozobnovit-trehstoronnie-peregovori",
+    "https://tass.ru/politika/28244015",
+    "https://t.me/proeconomics/20587",
+    "https://tass.ru/proisshestviya/28244043",
+    "https://tass.ru/obschestvo/28243821",
+    "https://www.theblock.co/news/regulation/2026-10-22-jpmorgan-crypto-regulatory-moves-clarity-act-failure-risks-423473",
+    "https://tass.ru/obschestvo/28243777",
+    "https://www.rbc.ru/sport/19/10/2026/6ad5f2ae123df2c36e8f78ba",
+    "https://www.investing.com/news/stock-market-news/us-farm-secretary-says-usda-reorganization-blocked-by-judge-is-full-bore-ahead-4967220",
+    "https://tass.ru/proisshestviya/28244039",
+    "https://www.investing.com/news/stock-market-news/consumer-staples-rotation-pepsico-cocacola-pg-and-altria-compared-93CH-4967219",
+    "https://tass.ru/obschestvo/28243657",
+    "https://t.me/banksta/103969",
+    "https://www.interfax.ru/russia/1124375",
+    "https://www.kommersant.ru/doc/9045246",
+    "https://tass.ru/obschestvo/28243859",
+    "https://t.me/FinancialJuice/142207",
+    "https://www.investing.com/news/stock-market-news/why-is-celestica-stock-tumbling-today-93CH-4967215",
+    "https://www.rbc.ru/rbcfreenews/6ad6c5d8caf9d3a5cf06c023",
+    "https://decrypt.co/381640/meta-non-voting-stock-fund-ai-buildout-zuckerberg-control",
+    "https://tass.ru/ekonomika/28244021",
+    "https://t.me/FinancialJuice/142206",
+    "https://www.vedomosti.ru/politics/news/2026/10/22/1239449-nazval-istoricheskimi-zemlyami",
+    "https://tass.ru/obschestvo/28243957",
+    "https://t.me/FinancialJuice/142205",
+    "https://www.interfax.ru/russia/1124374",
+    "https://tass.ru/sport/28244007",
     "https://oilprice.com/Energy/Crude-Oil/Strathcona-Pitches-250000-Bpd-Oil-Export-Route-to-Asia.html",
     "https://www.theblock.co/news/regulation/2026-10-22-blockchain-association-pushes-crypto-tax-clarity-broader-bill-stalls-423475",
     "https://t.me/rbc_news/159229",
     "https://t.me/rbc_news/159228",
     "https://tass.ru/obschestvo/28243597",
+    "https://www.interfax.ru/business/1124373",
     "https://www.rbc.ru/rbcfreenews/68add5449a7947395e1e7feb",
     "https://www.rbc.ru/sport/19/10/2026/6ad61430a7144cac830eabb8",
     "https://t.me/thebell_io/39580",
     "https://www.rbc.ru/sport/15/10/2026/6ad0ef079a7947e4459aed5a",
-    "https://t.me/interfaxonline/80556",
-    "https://www.interfax.ru/world/1124372",
-    "https://www.investing.com/news/stock-market-news/best-largecap-dip-buys-att-leads-on-earnings-beat-and-rising-estimates-93CH-4967207",
-    "https://www.interfax.ru/russia/1124370",
-    "https://www.rbc.ru/rbcfreenews/6ada58bdb363e488c71cc7ea",
-    "https://www.investing.com/news/stock-market-news/jefferies-names-top-fashion-stocks-ahead-of-earnings-season-4967203",
-    "https://tass.ru/ekonomika/28243991",
-    "https://t.me/if_market_news/86255",
-    "https://tass.ru/ekonomika/28243985",
-    "https://tass.ru/ekonomika/28243979",
-    "https://www.investing.com/news/stock-market-news/top-lodging-stocks-for-3q26-earnings-according-to-wells-fargo-4967202",
-    "https://tass.ru/ekonomika/28243977",
-    "https://www.rbc.ru/rbcfreenews/6ada59a00c160af676cd0a06",
-    "https://www.kommersant.ru/doc/9045237",
-    "https://t.me/if_market_news/86254",
-    "https://www.rbc.ru/politics/22/10/2026/6ada59f5b62813bdf309edb2",
-    "https://tass.ru/sport/28243969",
-    "https://t.me/interfaxonline/80555",
-    "https://www.investing.com/news/stock-market-news/trump-asks-musk-to-lift-ukraine-starlink-restrictions-wsj-reports-4967200",
-    "https://t.me/FinancialJuice/142204",
-    "https://t.me/banksta/103968",
-    "https://www.investing.com/news/stock-market-news/why-is-roper-technologies-stock-surging-today-93CH-4967199",
-    "https://www.rbc.ru/rbcfreenews/6ada59b46e94f11ec5fd05f8",
-    "https://www.vedomosti.ru/politics/news/2026/10/22/1239438-putin-nazval-shizofreniei",
-    "https://www.interfax.ru/russia/1124369",
-    "https://t.me/rbc_news/159227",
-    "https://www.rbc.ru/rbcfreenews/6ada59b46e94f11ec5fd05f8",
-    "https://t.me/FinancialJuice/142203",
-    "https://www.interfax.ru/russia/1124368",
-    "https://t.me/interfaxonline/80554",
-    "https://www.rbc.ru/politics/22/10/2026/6ada57cbb62813bdf309edb0",
-    "https://www.wsj.com/finance/investing/ai-stocks-slide-after-earnings-disappoint-french-bonds-tumble-and-oil-tops-112-734e47a7?mod=rss_markets_main",
-    "https://www.investing.com/news/stock-market-news/why-is-ge-vernova-stock-tumbling-today-93CH-4967194",
-    "https://tass.ru/politika/28243947",
-    "https://tass.ru/politika/28243941",
-    "https://t.me/interfaxonline/80553",
-    "https://tass.ru/mezhdunarodnaya-panorama/28243851",
-    "https://www.vedomosti.ru/politics/news/2026/10/22/1239435-sbili-49-bespilotnikov",
-    "https://www.interfax.ru/russia/1124367",
-    "https://tass.ru/politika/28243935",
-    "https://www.investing.com/news/stock-market-news/why-is-parkerhannifin-stock-tumbling-today-93CH-4967189",
-    "https://www.investing.com/news/stock-market-news/analysismusks-political-baggage-clouds-prospects-for-spacextesla-deal-4965229",
-    "https://tass.ru/politika/28243931",
-    "https://tass.ru/politika/28243929",
-    "https://tass.ru/politika/28243927",
-    "https://www.investing.com/news/stock-market-news/china-evergrande-liquidators-recover-1-of-debt-claims-after-212-years-4965168",
-    "https://www.investing.com/news/stock-market-news/nasdaq-futures-drop-over-1-as-ai-worries-resurface-oil-climbs-4965180",
-    "https://tass.ru/politika/28243925",
-    "https://t.me/FinancialJuice/142202",
-    "https://tass.ru/politika/28243921",
-    "https://www.kommersant.ru/doc/9045231",
-    "https://decrypt.co/381638/coinbase-fined-again-ireland-3-6m-fund-safeguarding",
-    "https://tass.ru/politika/28243923",
-    "https://tass.ru/politika/28243917",
-    "https://tass.ru/politika/28243915",
-    "https://www.marketwatch.com/story/modernas-stock-tumbles-after-reported-leak-of-data-for-cancer-vaccine-dcc897c1?mod=mw_rss_topstories",
-    "https://tass.ru/politika/28243913",
-    "https://tass.ru/politika/28243911",
-    "https://tass.ru/politika/28243907",
-    "https://tass.ru/politika/28243909",
-    "https://www.rbc.ru/rbcfreenews/64a3fcb89a7947298c3dfdec",
-    "https://tass.ru/politika/28243905",
-    "https://tass.ru/politika/28243903",
-    "https://t.me/FinancialJuice/142201",
-    "https://tass.ru/politika/28243901",
-    "https://t.me/interfaxonline/80552",
-    "https://t.me/FinancialJuice/142200",
-    "https://t.me/FinancialJuice/142199",
-    "https://t.me/FinancialJuice/142198",
-    "https://t.me/banksta/103967",
-    "https://www.kommersant.ru/doc/9045222",
-    "https://www.coindesk.com/business/2026/10/22/a16z-is-the-latest-vc-giant-to-widen-bets-beyond-crypto-and-into-ai-and-emerging-tech",
-    "https://www.rbc.ru/society/15/05/2019/5cdbe6da9a7947fcf71d3fe7",
-    "https://t.me/WalterBloomberg/37280",
-    "https://t.me/WalterBloomberg/37279",
-    "https://www.interfax.ru/world/1124366",
-    "https://t.me/markettwits/390099"
+    "https://t.me/interfaxonline/80556"
   ],
   "ai_dead": {
     "date": "2026-10-22",
@@ -902,26 +869,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-21T20:00:57.658810+00:00",
-      "Двое погибли при атаке у месторождения Шайба"
-    ],
-    [
-      "2026-10-21T20:00:57.658810+00:00",
-      "В 13 странах отключили сайты из-за уязвимости PHP"
-    ],
-    [
-      "2026-10-21T20:00:57.658810+00:00",
-      "Шереметьево ведет переговоры о продаже Библио-Глобуса"
-    ],
-    [
-      "2026-10-21T20:30:56.192904+00:00",
-      "Выручка Meta за III квартал превысила прогнозы и достигла $64,6 млрд"
-    ],
-    [
-      "2026-10-21T20:30:56.192904+00:00",
-      "Tesla отчиталась за III квартал: выручка составила $28,05 млрд"
-    ],
     [
       "2026-10-21T20:30:56.192904+00:00",
       "IBM превысила прогнозы по выручке и прибыли за третий квартал"
@@ -1521,6 +1468,26 @@
     [
       "2026-10-22T19:00:58.348017+00:00",
       "Бывший вице-премьер Григоренко может перейти в Сбербанк"
+    ],
+    [
+      "2026-10-22T19:31:11.916993+00:00",
+      "Путин заявил о готовности возобновить трехсторонние переговоры по Украине"
+    ],
+    [
+      "2026-10-22T19:31:11.916993+00:00",
+      "Meta создала акции без права голоса для финансирования расходов на ИИ"
+    ],
+    [
+      "2026-10-22T19:31:11.916993+00:00",
+      "Stand With Crypto: 67 миллионов американцев владеют криптовалютой"
+    ],
+    [
+      "2026-10-22T19:31:11.916993+00:00",
+      "Strathcona предлагает новый экспортный маршрут нефти из Канады в Азию"
+    ],
+    [
+      "2026-10-22T19:31:11.916993+00:00",
+      "Инвесторы сократили покупки 30-летних гособлигаций США в отчете Минфина"
     ]
   ],
   "results_fp": [
