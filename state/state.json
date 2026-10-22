@@ -746,7 +746,9 @@
     "2026-10-16|розничные продажи|08:30",
     "2026-10-16|запасы нефти eia|12:00",
     "2026-10-20|earn|NFLX",
-    "2026-10-21|запасы нефти eia|10:30"
+    "2026-10-21|запасы нефти eia|10:30",
+    "2026-10-21|earn|META",
+    "2026-10-21|earn|TSLA"
   ],
   "macro": {
     "day": "2026-10-22",
@@ -786,7 +788,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-22T05:30:56.816449+00:00",
+  "breaking_ts": "2026-10-22T06:00:57.986053+00:00",
   "news_now": {
     "day": "2026-10-22",
     "day_count": 0,
@@ -795,67 +797,86 @@
     "titles": []
   },
   "news_seen": [
+    "https://t.me/bitkogan/29464",
+    "https://t.me/headlines_for_traders/87190",
+    "https://t.me/markettwits/389974",
+    "https://tass.ru/obschestvo/28240425",
+    "https://www.rbc.ru/politics/06/10/2026/6ac4fc27fc3262c47af58109",
+    "https://tass.ru/sport/28240489",
+    "https://tass.ru/obschestvo/28240487",
+    "https://www.kommersant.ru/doc/9044487",
+    "https://tass.ru/obschestvo/28240393",
+    "https://tass.ru/proisshestviya/28240485",
+    "https://tass.ru/mezhdunarodnaya-panorama/28240481",
+    "https://t.me/markettwits/389973",
+    "https://t.me/thebell_io/39569",
+    "https://tass.ru/sport/28240483",
+    "https://t.me/alfa_investments/8490",
+    "https://t.me/rbc_news/159171",
+    "https://www.kommersant.ru/doc/9044482",
+    "https://tass.ru/proisshestviya/28240479",
+    "https://www.interfax.ru/russia/1124165",
+    "https://www.rbc.ru/politics/22/10/2026/6ad9a27b982c3151665c38d5",
+    "https://www.rbc.ru/rbcfreenews/6ad1d4fb2239caff4a435c65",
+    "https://www.investing.com/news/stock-market-news/why-is-alibaba-stock-sliding-today-93CH-4964633",
+    "https://www.investing.com/news/stock-market-news/why-is-jdcom-stock-sliding-today-93CH-4964632",
+    "https://t.me/lookonchainchannel/10725",
+    "https://www.vedomosti.ru/management/news/2026/10/22/1239117-raznitsa-mezhdu",
+    "https://t.me/if_market_news/86225",
+    "https://t.me/markettwits/389972",
+    "https://www.kommersant.ru/doc/9044463",
+    "https://www.rbc.ru/rbcfreenews/6ad9a242046637335410b09c",
+    "https://t.me/wublockchainenglish/26510",
+    "https://tass.ru/sport/28240477",
+    "https://t.me/markettwits/389971",
+    "https://tass.ru/obschestvo/28240475",
+    "https://www.kommersant.ru/doc/9044474",
+    "https://tass.ru/proisshestviya/28240467",
+    "https://www.interfax.ru/world/1124163",
+    "https://www.investing.com/news/stock-market-news/chinas-csi-300-slips-into-bearmarket-territory-as-ai-rout-deepens-4964628",
+    "https://www.rbc.ru/sport/16/05/2026/69b6fdd49a7947406094dfad",
+    "https://t.me/headlines_for_traders/87189",
+    "https://t.me/wublockchainenglish/26509",
+    "https://www.interfax.ru/business/1124162",
+    "https://t.me/investfuture/15432",
+    "https://tass.ru/kultura/28240447",
+    "https://t.me/markettwits/389970",
+    "https://tass.ru/proisshestviya/28240471",
+    "https://tass.ru/sport/28240469",
+    "https://www.interfax.ru/russia/1124164",
+    "https://www.investing.com/news/stock-market-news/renk-to-sell-slide-bearings-unit-to-miba-trims-2026-earnings-outlook-4964626",
+    "https://tass.ru/kultura/28240445",
+    "https://www.kommersant.ru/doc/9044470",
+    "https://www.interfax.ru/world/1124161",
+    "https://www.rbc.ru/politics/22/10/2026/6ad99fe6740d27f01a8d69cc",
+    "https://cointelegraph.com/news/move-over-memecoins-crypto-meme-games-coming-bagholders-and-all?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://tass.ru/proisshestviya/28240463",
+    "https://www.kommersant.ru/doc/9044469",
+    "https://t.me/banksta/103907",
+    "https://tass.ru/nedvizhimost/28240459",
+    "https://www.vedomosti.ru/finance/news/2026/10/22/1239115-rossiyane-na-kube",
+    "https://tass.ru/sport/28240461",
+    "https://tass.ru/sport/28240457",
+    "https://tass.ru/obschestvo/28240441",
+    "https://t.me/markettwits/389969",
+    "https://t.me/rbc_news/159170",
+    "https://tass.ru/obschestvo/28240439",
+    "https://www.kommersant.ru/doc/9044457",
+    "https://tass.ru/ekonomika/28240449",
+    "https://tass.ru/sport/28240443",
+    "https://www.investing.com/news/stock-market-news/alibaba-jd-shares-slide-on-more-chinese-regulatory-scrutiny-4964624",
+    "https://www.investing.com/news/stock-market-news/australia-stocks-lower-at-close-of-trade-spasx-200-down-043-4964623",
+    "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-Above-111-as-Houthis-Strike-Saudi-Targets.html",
     "https://www.vedomosti.ru/finance/news/2026/10/23/1238649-sberinvestitsii-investkopilku",
     "https://tass.ru/mezhdunarodnaya-panorama/28240431",
     "https://t.me/if_market_news/86224",
     "https://tass.ru/mezhdunarodnaya-panorama/28240423",
     "https://www.rbc.ru/quote/22/10/2026/6ad993269a794758d5d51aa7",
-    "https://tass.ru/proisshestviya/28240437",
-    "https://tass.ru/ekonomika/28240427",
+    "https://www.investing.com/news/stock-market-news/japanese-cybersecurity-stocks-rally-as-php-flaw-spurs-demand-4964621",
     "https://t.me/rbc_news/159169",
     "https://www.vedomosti.ru/society/news/2026/10/22/1239114-vizhivshaya-posle",
     "https://t.me/markettwits/389968",
-    "https://t.me/FinancialJuice/142091",
-    "https://tass.ru/armiya-i-opk/28240433",
-    "https://www.coindesk.com/tech/2026/10/22/solana-completes-alpenglow-upgrade-here-s-what-it-means-for-users",
-    "https://tass.ru/obschestvo/28240429",
-    "https://t.me/if_market_news/86223",
-    "https://tass.ru/obschestvo/28240421",
-    "https://www.interfax.ru/world/1124159",
-    "https://tass.ru/ekonomika/28240409",
-    "https://t.me/FinancialJuice/142090",
-    "https://t.me/WatcherGuru/15590",
-    "https://www.kommersant.ru/doc/9044451",
-    "https://www.interfax.ru/russia/1124158",
-    "https://tass.ru/nauka/28240325",
-    "https://tass.ru/proisshestviya/28240419",
-    "https://t.me/headlines_for_traders/87188",
-    "https://www.rbc.ru/politics/19/10/2026/6ad26bebcbdde5c8485e7739",
-    "https://tass.ru/proisshestviya/28240417",
-    "https://www.interfax.ru/world/1124157",
-    "https://www.investing.com/news/stock-market-news/review-finds-kpmg-australia-mishandled-whistleblower-claims-pause-on-government-work-extended-4964609",
-    "https://www.rbc.ru/society/14/10/2026/6acf4ebc7591bebb73f2b5ee",
-    "https://tass.ru/sport/28240413",
-    "https://www.kommersant.ru/doc/9044456",
-    "https://www.interfax.ru/world/1124155",
-    "https://t.me/bitkogan_hotline/27941",
-    "https://tass.ru/obschestvo/28240407",
-    "https://tass.ru/ekonomika/28240369",
-    "https://t.me/banksta/103906",
-    "https://tass.ru/nauka/28240351",
-    "https://www.investing.com/news/stock-market-news/australias-santos-trims-2026-output-forecast-on-alaska-oilfield-delays-4964437",
-    "https://www.investing.com/news/stock-market-news/nestle-third-quarter-organic-sales-beat-forecast-deconsolidates-russian-business-4964618",
-    "https://t.me/markettwits/389967",
-    "https://tass.ru/obschestvo/28240381",
-    "https://tass.ru/armiya-i-opk/28240397",
-    "https://t.me/headlines_for_traders/87187",
-    "https://www.investing.com/news/stock-market-news/sk-hynix-crashes-206-below-20period-ma-live-levels-93CH-4956188",
-    "https://www.investing.com/news/stock-market-news/nikkei-225-teeters-above-635725-support-live-levels-93CH-4956186",
-    "https://tass.ru/obschestvo/28240399",
-    "https://www.rbc.ru/rbcfreenews/6ad46d6398dce37ae8c96b7d",
-    "https://t.me/rbc_news/159167",
-    "https://tass.ru/mezhdunarodnaya-panorama/28240367",
-    "https://tass.ru/sport/28240395",
-    "https://t.me/forklog/50359",
-    "https://www.kommersant.ru/doc/9044448",
-    "https://www.kommersant.ru/doc/9044430",
-    "https://t.me/markettwits/389966",
-    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
-    "https://www.kommersant.ru/doc/9044436",
-    "https://t.me/headlines_for_traders/87186",
-    "https://t.me/incrypted/33070",
-    "https://tass.ru/ekonomika/28240363",
-    "https://www.rbc.ru/rbcfreenews/6ad98326046637335410b06d"
+    "https://www.interfax.ru/world/1124160"
   ],
   "ai_dead": {
     "date": "2026-10-21",
@@ -866,30 +887,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-21T06:30:59.150876+00:00",
-      "Рынок акций РФ открылся ростом индексов МосБиржи и РТС на 0,2%"
-    ],
-    [
-      "2026-10-21T06:30:59.150876+00:00",
-      "Цены на полимеры в России выросли на 20–30% из-за логистики"
-    ],
-    [
-      "2026-10-21T07:00:58.934839+00:00",
-      "Путин и спецпосланник США Уиткофф проводят переговоры в Петербурге"
-    ],
-    [
-      "2026-10-21T07:00:58.934839+00:00",
-      "США требуют от нефтепереработчиков нарастить выпуск дизеля"
-    ],
-    [
-      "2026-10-21T07:00:58.934839+00:00",
-      "Инфляция в Великобритании ускорилась на фоне энергозатрат"
-    ],
-    [
-      "2026-10-21T07:00:58.934839+00:00",
-      "НАБУ и САП провели обыски у главы Нацбанка Украины"
-    ],
     [
       "2026-10-21T07:00:58.934839+00:00",
       "ФНС собрала рекордные 6,6 млрд рублей сборов на премиальные авто"
@@ -1489,11 +1486,33 @@
     [
       "2026-10-22T05:30:56.816449+00:00",
       "НАТО разрешит Украине закупать оружие через свое агентство"
+    ],
+    [
+      "2026-10-22T06:00:57.986053+00:00",
+      "Нефть Brent поднялась выше $111 за баррель из-за ближневосточных рисков"
+    ],
+    [
+      "2026-10-22T06:00:57.986053+00:00",
+      "Китайский DeepSeek привлек $15 млрд от Tencent и CATL для развития ИИ"
+    ],
+    [
+      "2026-10-22T06:00:57.986053+00:00",
+      "Акции Alibaba и JD.com упали после проверок китайского регулятора"
+    ],
+    [
+      "2026-10-22T06:00:57.986053+00:00",
+      "Росстат зафиксировал разницу в зарплатах регионов более чем в 200 тысяч рублей"
+    ],
+    [
+      "2026-10-22T06:00:57.986053+00:00",
+      "Глобальный сбой сайтов произошел из-за критических уязвимостей в PHP"
     ]
   ],
   "results_fp": [
     "Отчёт Netflix (NFLX)|$0.59",
-    "Запасы нефти EIA|-3.060M"
+    "Запасы нефти EIA|-3.060M",
+    "Отчёт Meta (META)|$7.25",
+    "Отчёт Tesla (TSLA)|$0.37"
   ],
   "pro_sent": {
     "asset": "2026-10-21"
@@ -1502,5 +1521,13 @@
     "-1004428155051": {
       "forum": false
     }
+  },
+  "pro_events": {
+    "day": "2026-10-22",
+    "count": 2,
+    "titles": [
+      "Отчёт Meta (META)",
+      "Отчёт Tesla (TSLA)"
+    ]
   }
 }
