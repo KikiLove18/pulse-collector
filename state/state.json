@@ -35,7 +35,7 @@
   ],
   "last_digest_ts": "2026-10-21T16:30:58.878870+00:00",
   "calendar": {
-    "ts": "2026-10-21T16:31:26.102379+00:00",
+    "ts": "2026-10-22T04:00:56.151891+00:00",
     "data": [
       {
         "title": "IMF Meetings",
@@ -530,7 +530,7 @@
         "country": "USD",
         "date": "2026-10-22T10:30:00-04:00",
         "impact": "Low",
-        "forecast": "83B",
+        "forecast": "80B",
         "previous": "67B"
       },
       {
@@ -682,7 +682,7 @@
         "country": "USD",
         "date": "2026-10-23T09:45:00-04:00",
         "impact": "Medium",
-        "forecast": "57.8",
+        "forecast": "57.9",
         "previous": "58.7"
       },
       {
@@ -785,7 +785,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-21T21:30:55.342924+00:00",
+  "breaking_ts": "2026-10-22T04:00:56.151131+00:00",
   "news_now": {
     "day": "2026-10-22",
     "day_count": 0,
@@ -794,66 +794,74 @@
     "titles": []
   },
   "news_seen": [
-    "https://www.vedomosti.ru/politics/news/2026/10/22/1239096-tramp-obyasnil",
-    "https://tass.ru/ekonomika/28239717",
-    "https://t.me/FinancialJuice/141997",
-    "https://t.me/FinancialJuice/141996",
-    "https://tass.ru/mezhdunarodnaya-panorama/28239713",
-    "https://tass.ru/sport/28239719",
-    "https://thedefiant.io/news/security/emudhra-s-weak-certificate-keys-prompt-emergency-trust-updates",
-    "https://tass.ru/ekonomika/28239721",
-    "https://www.rbc.ru/quote/16/10/2026/6ad1d8f69a7947fb8f1865fd",
-    "https://t.me/BitcoinMagazineTelegram/10884",
-    "https://tass.ru/armiya-i-opk/28239715",
-    "https://tass.ru/kultura/28239673",
-    "https://tass.ru/ekonomika/28239709",
-    "https://www.wsj.com/business/health-care-roundup-market-talk-4025abb1?mod=rss_markets_main",
-    "https://www.kommersant.ru/doc/9044393",
-    "https://www.investing.com/news/stock-market-news/why-is-rollins-stock-sliding-today-93CH-4964209",
-    "https://t.me/banksta/103894",
-    "https://www.wsj.com/business/basic-materials-roundup-market-talk-6c653c6b?mod=rss_markets_main",
-    "https://t.me/thebell_io/39568",
-    "https://www.marketwatch.com/story/oil-is-now-flowing-out-of-the-persian-gulf-like-before-the-iran-war-why-prices-may-still-not-come-down-anytime-soon-56df2f48?mod=mw_rss_topstories",
-    "https://thedefiant.io/news/infrastructure/matter-labs-prividium-commander-institutions",
-    "https://www.wsj.com/business/financial-services-roundup-market-talk-f3c3c3ff?mod=rss_markets_main",
-    "https://www.wsj.com/business/auto-transport-roundup-market-talk-e0a8366d?mod=rss_markets_main",
-    "https://t.me/rbc_news/159158",
-    "https://t.me/FinancialJuice/141995",
-    "https://t.me/FinancialJuice/141994",
-    "https://t.me/FinancialJuice/141993",
-    "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-d29e54ef?mod=rss_markets_main",
-    "https://tass.ru/proisshestviya/28239701",
-    "https://tass.ru/politika/28239699",
-    "https://www.investing.com/news/stock-market-news/bank-of-america-names-jim-fitterling-and-bill-thomas-to-board-of-directors-4964181",
-    "https://tass.ru/sport/28239697",
-    "https://www.interfax.ru/world/1124102",
-    "https://www.investing.com/news/stock-market-news/mattel-adds-top-shareholder-edgepoint-investments-executive-to-board-4964179",
-    "https://www.investing.com/news/stock-market-news/musks-tesla-revenue-beats-estimates-as-deliveries-rebound-energy-storage-grows-4963934",
-    "https://www.interfax.ru/russia/1124101",
-    "https://tass.ru/politika/28239691",
-    "https://tass.ru/ekonomika/28239663",
-    "https://t.me/whale_alert_io/104099",
-    "https://tass.ru/armiya-i-opk/28239687",
-    "https://tass.ru/ekonomika/28239683",
-    "https://tass.ru/obschestvo/28239675",
-    "https://tass.ru/proisshestviya/28239681",
-    "https://www.investing.com/news/stock-market-news/why-is-international-business-machines-stock-surging-today-93CH-4964164",
-    "https://tass.ru/armiya-i-opk/28239679",
-    "https://tass.ru/obschestvo/28239671",
-    "https://tass.ru/armiya-i-opk/28235629",
-    "https://tass.ru/obschestvo/28239669",
-    "https://cryptoslate.com/tesla-spacex-merger-talks-bitcoin/",
-    "https://www.wsj.com/finance/commodities-futures/one-of-your-fuel-bills-is-poised-to-be-lower-this-year-d127eb15?mod=rss_markets_main",
-    "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
-    "https://oilprice.com/Energy/Energy-General/SP-Global-Warns-Hormuz-Energy-Shock-Could-Become-a-Global-Food-Crisis.html",
-    "https://t.me/FinancialJuice/141992",
-    "https://www.marketwatch.com/story/7-healthcare-stocks-that-stand-out-as-investors-pay-up-for-the-sector-d9b0c173?mod=mw_rss_topstories",
-    "https://t.me/FinancialJuice/141991",
-    "https://tass.ru/sport/28239661",
-    "https://tass.ru/mezhdunarodnaya-panorama/28239657",
-    "https://www.interfax.ru/world/1124100",
-    "https://www.rbc.ru/sport/21/10/2026/6ad8e0a6f0f5fdd075a3ca61",
-    "https://tass.ru/proisshestviya/28239653"
+    "https://t.me/FinancialJuice/142078",
+    "https://t.me/FinancialJuice/142077",
+    "https://tass.ru/sport/28240237",
+    "https://t.me/markettwits/389949",
+    "https://tass.ru/mezhdunarodnaya-panorama/28240215",
+    "https://t.me/markettwits/389948",
+    "https://tass.ru/nauka/28240197",
+    "https://tass.ru/mezhdunarodnaya-panorama/28240185",
+    "https://t.me/rbc_news/159163",
+    "https://t.me/markettwits/389946",
+    "https://tass.ru/sport/28240229",
+    "https://thedefiant.io/converge/tradfi-and-fintech/matter-labs-introduces-prividium-commander-for-existing-blockchains",
+    "https://tass.ru/armiya-i-opk/28240227",
+    "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves",
+    "https://tass.ru/mezhdunarodnaya-panorama/28240225",
+    "https://tass.ru/sport/28240221",
+    "https://tass.ru/ekonomika/28240219",
+    "https://www.rbc.ru/rbcfreenews/6ad965088bcec4cdd5f0e639",
+    "https://tass.ru/obschestvo/28240209",
+    "https://www.rbc.ru/technology_and_media/22/10/2026/6ad98658b8e2c50343b39a0f",
+    "https://tass.ru/armiya-i-opk/28240217",
+    "https://thedefiant.io/news/security/developer-links-370-000-theft-to-railway-secrets-exposure",
+    "https://t.me/banksta/103904",
+    "https://t.me/headlines_for_traders/87178",
+    "https://www.rbc.ru/radio/22/10/2026/6ad90a4b9a794757605959cb",
+    "https://thedefiant.io/news/security/cloudflare-ceo-reports-millions-of-php2shell-exploit-attempts",
+    "https://tass.ru/sport/28240211",
+    "https://tass.ru/obschestvo/28240213",
+    "https://www.vedomosti.ru/politics/news/2026/10/22/1239107-posol-pryamoe",
+    "https://www.investing.com/news/stock-market-news/tesla-asian-supplier-shares-fall-after-mixed-q3-earnings-cautious-outlook-4964597",
+    "https://tass.ru/armiya-i-opk/28240207",
+    "https://tass.ru/obschestvo/28240205",
+    "https://tass.ru/armiya-i-opk/28240203",
+    "https://tass.ru/ekonomika/28240189",
+    "https://tass.ru/ekonomika/28240201",
+    "https://tass.ru/nauka/28240153",
+    "https://www.investing.com/news/stock-market-news/epics-fortnite-back-on-apple-app-store-in-australia-after-antitrust-ruling-4964596",
+    "https://thedefiant.io/news/security/how-elliptic-curve-signatures-work-a-toy-ecdsa-example",
+    "https://www.interfax.ru/russia/1124146",
+    "https://t.me/interfaxonline/80523",
+    "https://tass.ru/proisshestviya/28240199",
+    "https://tass.ru/ekonomika/28240193",
+    "https://tass.ru/obschestvo/28240191",
+    "https://thedefiant.io/converge/tradfi-and-fintech/mastercard-crypto-credential-kyc-travel-rule-and-screening-compared",
+    "https://tass.ru/sport/28240183",
+    "https://tass.ru/proisshestviya/28240187",
+    "https://www.vedomosti.ru/politics/news/2026/10/22/1239106-sobyanin-dva-cheloveka",
+    "https://tass.ru/obschestvo/28240181",
+    "https://t.me/FinancialJuice/142076",
+    "https://t.me/headlines_for_traders/87177",
+    "https://cryptoslate.com/occ-waiver-rule-puts-active-stablecoin-issuers-on-notice/",
+    "https://www.rbc.ru/rbcfreenews/6ad97836982c3151665c38b6",
+    "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
+    "https://www.kommersant.ru/doc/9044416",
+    "https://t.me/wublockchainenglish/26507",
+    "https://t.me/FinancialJuice/142075",
+    "https://t.me/FinancialJuice/142071",
+    "https://t.me/FinancialJuice/142072",
+    "https://t.me/FinancialJuice/142073",
+    "https://t.me/FinancialJuice/142074",
+    "https://t.me/FinancialJuice/142070",
+    "https://t.me/FinancialJuice/142069",
+    "https://www.wsj.com/finance/stocks/oil-rises-as-geopolitics-back-in-focus-after-ai-jitters-ease-f21d9983?mod=rss_markets_main",
+    "https://t.me/headlines_for_traders/87176",
+    "https://t.me/FinancialJuice/142068",
+    "https://t.me/FinancialJuice/142067",
+    "https://www.interfax.ru/world/1124145",
+    "https://www.kommersant.ru/doc/9044415"
   ],
   "ai_dead": {
     "date": "2026-10-21",
@@ -863,30 +871,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-21T04:00:59.046461+00:00",
-      "Фондовые индексы США завершили торги разнонаправленно"
-    ],
-    [
-      "2026-10-21T04:00:59.046461+00:00",
-      "Woodside Energy сократила прогноз добычи на 2026 год"
-    ],
-    [
-      "2026-10-21T05:00:56.306334+00:00",
-      "Аналитики ожидают сохранения ключевой ставки Банка России на уровне 14%"
-    ],
-    [
-      "2026-10-21T05:00:56.306334+00:00",
-      "Сеть Solana запустила обновление Alpenglow в своей истории"
-    ],
-    [
-      "2026-10-21T05:00:56.306334+00:00",
-      "Спецпосланник США Стив Уиткофф направляется в Санкт-Петербург"
-    ],
-    [
-      "2026-10-21T05:00:56.306334+00:00",
-      "Илон Маск приостановил работу военной версии Starlink на Украине"
-    ],
     [
       "2026-10-21T05:00:56.306334+00:00",
       "Ricci: ввод нового жилья в Московском регионе может упасть на 21%"
@@ -1486,6 +1470,26 @@
     [
       "2026-10-21T20:30:56.192904+00:00",
       "В 13 странах отключили госсайты из-за критической уязвимости в PHP"
+    ],
+    [
+      "2026-10-22T04:00:56.151131+00:00",
+      "Собянин сообщил о перехвате 163 беспилотников на подлете к Москве за ночь"
+    ],
+    [
+      "2026-10-22T04:00:56.151131+00:00",
+      "США и Израиль разработали планы ударов по Ирану после выборов в Конгресс"
+    ],
+    [
+      "2026-10-22T04:00:56.151131+00:00",
+      "Ипотечный портфель Уралсиба вырос до 165,9 млрд рублей"
+    ],
+    [
+      "2026-10-22T04:00:56.151131+00:00",
+      "Fortnite вернулся в App Store в Австралии после антимонопольного решения"
+    ],
+    [
+      "2026-10-22T04:00:56.151131+00:00",
+      "Цены на нефть выросли на фоне возвращения геополитического фокуса"
     ]
   ],
   "results_fp": [
