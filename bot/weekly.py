@@ -189,6 +189,17 @@ def upload_table(title, rows, card_id, note=""):
         return None
 
 
+def _live():
+    """Публикация идёт в канал PRO (а не образец в тестовый канал)."""
+    import os
+    return (os.environ.get("PRO_POSTS") or "").lower() == "on" and bool(os.environ.get("PRO_CHAT_ID"))
+
+
+def _cid(card_id):
+    """У образца своя картинка: Telegram запоминает превью по адресу, и 20.10 в канал PRO могла уйти тестовая карта."""
+    return card_id if _live() else card_id + "t"
+
+
 # ---------- выпуск ----------
 
 def week_label(now):
@@ -248,7 +259,7 @@ def run_weekly(ask_ai, http_get, calendar_next, publish_card, now, dry, until=No
             "sent": cover.get("sent") if cover.get("sent") in cards.SENT else "neu",
             "title": (re.sub(r"^\s*Разбор недели\s*[:—-]\s*", "", cover.get("title") or "", flags=re.I) or "Главное за неделю")[:70],
             "metrics": metrics}
-    card_id = f"wk{now.astimezone(MSK):%Y%m%d}"
+    card_id = _cid(f"wk{now.astimezone(MSK):%Y%m%d}")
     rows = [(n, _num(wq[k][0], 0 if wq[k][0] > 1000 else 2), wq[k][1]) for k, n, _ in WEEK_QUOTES if k in wq]
     note = ""
     if rows:
@@ -335,7 +346,7 @@ def run_week_ahead(ask_ai, http_get, calendar_next, publish_card, now, dry, unti
     print("----- неделя впереди -----\n" + html + "\nКАРТА: " + json.dumps(rows, ensure_ascii=False), file=sys.stderr)
     if dry:
         return html
-    url = _upload_png(cards.render_pressure, f"wa{l:%Y%m%d}", "Неделя впереди: что давит на рынки", rows, label,
+    url = _upload_png(cards.render_pressure, _cid(f"wa{l:%Y%m%d}"), "Неделя впереди: что давит на рынки", rows, label,
                       "Сценарий на неделю, а не прогноз цены · не инвестрекомендация") if rows else None
     publish_card(html, url)
     return html
@@ -364,6 +375,9 @@ def run_asset(ask_ai, http_get, calendar_next, publish_card, now, dry):
     user = "\n".join(["УЖЕ РАЗБИРАЛИ: " + (", ".join(done) or "ничего"), "", "ЦЕНЫ ЗА НЕДЕЛЮ:"] + _quotes_lines(wq)
                      + ["", "КАЛЕНДАРЬ НЕДЕЛИ:"] + (calendar_next or ["нет данных"]) + ["", "НОВОСТИ:"] + _news_lines(week, 7, 100))
     post, data = _ask_post(ask_ai, ASSET, user, "asset")
+    if data.get("asset") in done:  # 21.10 ИИ взял Brent при «УЖЕ РАЗБИРАЛИ: Нефть Brent» — просим ещё раз, жёстче
+        print(f"Актив недели: ИИ повторил «{data['asset']}» — прошу другой", file=sys.stderr)
+        post, data = _ask_post(ask_ai, ASSET, f"ЗАПРЕЩЕНО выбирать: {', '.join(done)}. Выбери другой актив.\n\n" + user, "asset")
     name = data.get("asset") or "Актив недели"
     html = f"<b>🔍 Актив недели: {name}</b>\n\n" + post + f"\n\n<i>{edition.NOT_ADVICE}</i>"
     print("----- актив недели -----\n" + html, file=sys.stderr)
@@ -371,10 +385,11 @@ def run_asset(ask_ai, http_get, calendar_next, publish_card, now, dry):
         return html
     card = {"theme": data.get("theme") if data.get("theme") in cards.THEMES else "wallst", "tag": "АКТИВ НЕДЕЛИ", "sent": "neu",
             "title": f"{name}: что давит и что поддерживает", "metrics": (data.get("metrics") or [])[:3]}
-    url, _ = edition.upload_card(card, f"as{now.astimezone(MSK):%Y%m%d}", week_label(now))
+    url, _ = edition.upload_card(card, _cid(f"as{now.astimezone(MSK):%Y%m%d}"), week_label(now))
     publish_card(html, url)
-    week["assets_done"] = (done + [name])[-6:]
-    save_week(week, now)
+    if _live():  # образцы в тестовый канал не считаем «уже разобранными»
+        week["assets_done"] = (done + [name])[-6:]
+        save_week(week, now)
     return html
 
 
@@ -395,8 +410,9 @@ def run_guide(ask_ai, http_get, calendar_next, publish_card, now, dry, until=Non
     if dry:
         return html
     publish_card(html, None)
-    week["guides_done"] = sorted(done | {files[0].name})
-    save_week(week, now)
+    if _live():  # образец в тестовый канал — гайд остаётся в очереди
+        week["guides_done"] = sorted(done | {files[0].name})
+        save_week(week, now)
     return html
 
 
@@ -452,7 +468,7 @@ def run_month(ask_ai, http_get, calendar_next, publish_card, now, dry):
     if dry:
         return html
     rows = [(n, _num(mq[k][0], 0 if mq[k][0] > 1000 else 2), mq[k][1]) for k, n, _ in WEEK_QUOTES if k in mq]
-    url = _upload_png(cards.render_table, f"mo{prev:%Y%m}", f"{mname.capitalize()} в цифрах", rows, f"{prev.year}",
+    url = _upload_png(cards.render_table, _cid(f"mo{prev:%Y%m}"), f"{mname.capitalize()} в цифрах", rows, f"{prev.year}",
                       "Изменение за месяц по закрытию") if rows else None
     publish_card(html, url)
     return html
