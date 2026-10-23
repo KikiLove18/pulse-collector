@@ -519,9 +519,9 @@ def ask_openrouter(system, user):
     raise RuntimeError(f"Все модели OpenRouter недоступны: {last_err or 'дневная квота исчерпана'}")
 
 
-PROBE_MODELS = ("nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-ultra-550b-a55b:free,google/gemma-4-26b-a4b-it:free,"
-                "google/gemma-4-31b-it:free,thinkingmachines/inkling-small:free,thinkingmachines/inkling:free,"
-                "dots-studio/dots-3-note-preview:free,nvidia/nemotron-3-super-120b-a12b:free")
+PROBE_MODELS = ("nvidia/nemotron-3.5-super-vl:free,nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-ultra-550b-a55b:free,"
+                "google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,thinkingmachines/inkling:free,"
+                "thinkingmachines/inkling-small:free,dots-studio/dots-3-note-preview:free,nvidia/nemotron-3-super-120b-a12b:free")
 
 
 def run_ai_probe():
