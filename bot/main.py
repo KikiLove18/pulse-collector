@@ -386,6 +386,9 @@ AI_CALLS = {}
 # и держала очередь. Вышло время — дальше ИИ не зовём, запуск завершается, следующий слот работает.
 AI_RUN_BUDGET = 15 * 60
 AI_TIMEOUT = 120
+# Бесплатные модели OpenRouter: кто не ответил за 60 с — обычно не ответит вовсе. Ultra — единственная рабочая (23.10),
+# ей на полном выпуске нужно больше: 22.10 она 10 раз не уложилась в 120 с
+OR_TIMEOUT = {"nvidia/nemotron-3-ultra-550b-a55b:free": 180}
 _AI_START = time.time()
 
 
@@ -446,8 +449,20 @@ def _day_quota_over(model, err_text):
     return True
 
 
+# Перегрузка (503), «нет ответа» и 404 провайдера — модель «занята» на 10 мин этого запуска: следующие вызовы её пропускают.
+# 23.10 (Инженер): 104 неудачные попытки на 57 ответов — 60 из них 503 Gemini: каждая перегруженная модель пробовалась
+# дважды с паузой 8 с и заново в каждом вызове запуска; nemotron-super 16 раз подряд — 404.
+AI_BUSY = {}
+BUSY_SEC = 600
+
+
+def _busy(model, why):
+    AI_BUSY[model] = time.time() + BUSY_SEC
+    print(f"ИИ: {model} — {why}, пропускаю до конца запуска (10 мин)", file=sys.stderr)
+
+
 def _alive(model):
-    return model not in AI_DEAD["day"]
+    return model not in AI_DEAD["day"] and AI_BUSY.get(model, 0) < time.time()
 
 
 def gemini_all_dead():
@@ -478,9 +493,10 @@ def ask_openrouter(system, user):
     key = os.environ["OPENROUTER_API_KEY"].strip()
     if not key.isascii() or not key.startswith("sk-or-"):  # 15.10 в секрете оказалось слово «ключ» вместо ключа
         raise RuntimeError("секрет OPENROUTER_API_KEY — не ключ OpenRouter (должен начинаться с sk-or-)")
-    # ai_check 17.10 на полном выпуске: ответила только nemotron-super; ultra — ответ без choices, dots — >120 с, gemma — 429
+    # ai_probe 23.10: отвечает только nemotron-ultra (68 с); super — 404 (убрана), gemma — 429 у провайдера, dots — >90 с,
+    # inkling — только для «агентов» (403), nemotron-3.5 — 502 / >90 с
     models = os.environ.get("OPENROUTER_MODEL") or \
-        "nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-ultra-550b-a55b:free,google/gemma-4-31b-it:free,dots-studio/dots-3-note-preview:free"
+        "nvidia/nemotron-3-ultra-550b-a55b:free,google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,dots-studio/dots-3-note-preview:free"
     last_err = None
     for model in [m.strip() for m in models.split(",") if m.strip() and _alive(m.strip())]:
         body = {
@@ -492,31 +508,32 @@ def ask_openrouter(system, user):
             "https://openrouter.ai/api/v1/chat/completions", data=json.dumps(body).encode(),
             headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"},
         )
-        for attempt in range(2):
-            timeout = _ai_timeout()  # вне try: «время вышло» прерывает все повторы сразу
-            try:
-                data = _fetch_json(req, timeout)
-                if not data.get("choices"):  # ошибка провайдера приходит с кодом 200 — повтор не поможет, дальше по списку
-                    last_err = f"нет ответа: {json.dumps(data.get('error') or data, ensure_ascii=False)[:300]}"
-                    print(f"OpenRouter {model}: {last_err}", file=sys.stderr)
-                    break
-                text = (data["choices"][0]["message"].get("content") or "").strip()  # бывает None у «думающих» моделей
-                if text:
-                    print(f"ИИ: {model}", file=sys.stderr)
-                    AI_CALLS[model] = AI_CALLS.get(model, 0) + 1
-                    return text
-            except urllib.error.HTTPError as e:
-                raw = e.read().decode("utf-8", "replace")
-                last_err = f"{e.code} {raw[:300]!r}"
-                print(f"OpenRouter {model}: ошибка {last_err}", file=sys.stderr)
-                if e.code == 429 and _day_quota_over(model, raw):
-                    break
-                time.sleep(10)
-            except Exception as e:
-                last_err = e
-                print(f"OpenRouter {model}: ошибка {e}", file=sys.stderr)
-                time.sleep(10)
-    raise RuntimeError(f"Все модели OpenRouter недоступны: {last_err or 'дневная квота исчерпана'}")
+        timeout = min(_ai_timeout(), OR_TIMEOUT.get(model, 60))  # вне try: «время вышло» прерывает сразу
+        try:
+            data = _fetch_json(req, timeout)
+            if not data.get("choices"):  # ошибка провайдера приходит с кодом 200 — повтор не поможет, дальше по списку
+                last_err = f"нет ответа: {json.dumps(data.get('error') or data, ensure_ascii=False)[:300]}"
+                print(f"OpenRouter {model}: {last_err}", file=sys.stderr)
+                _busy(model, "ошибка провайдера")
+                continue
+            text = (data["choices"][0]["message"].get("content") or "").strip()  # бывает None у «думающих» моделей
+            if text:
+                print(f"ИИ: {model}", file=sys.stderr)
+                AI_CALLS[model] = AI_CALLS.get(model, 0) + 1
+                return text
+            last_err = "пустой ответ"
+            print(f"OpenRouter {model}: ошибка {last_err}", file=sys.stderr)
+        except urllib.error.HTTPError as e:
+            raw = e.read().decode("utf-8", "replace")
+            last_err = f"{e.code} {raw[:300]!r}"
+            print(f"OpenRouter {model}: ошибка {last_err}", file=sys.stderr)
+            if not (e.code == 429 and _day_quota_over(model, raw)):
+                _busy(model, f"ошибка {e.code}")  # 404/400 — модели нет, 429 — лимит у провайдера: повтор не поможет
+        except Exception as e:
+            last_err = e
+            print(f"OpenRouter {model}: ошибка {e}", file=sys.stderr)
+            _busy(model, "нет ответа")
+    raise RuntimeError(f"Все модели OpenRouter недоступны: {last_err or 'все модели исчерпали квоту или заняты'}")
 
 
 PROBE_MODELS = ("nvidia/nemotron-3.5-super-vl:free,nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-ultra-550b-a55b:free,"
@@ -566,7 +583,7 @@ def ask_gemini(system, user):
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         req = urllib.request.Request(
             url, data=body, headers={"Content-Type": "application/json", "x-goog-api-key": key})
-        for attempt in range(2):
+        for attempt in range(3):  # повтор — только после минутного лимита 429
             timeout = _ai_timeout()  # вне try: «время вышло» прерывает все повторы сразу
             try:
                 data = _fetch_json(req, timeout)
@@ -576,22 +593,30 @@ def ask_gemini(system, user):
                     print(f"ИИ: {model}", file=sys.stderr)
                     AI_CALLS[model] = AI_CALLS.get(model, 0) + 1
                     return text
+                last_err = "пустой ответ"
+                print(f"Gemini {model}: ошибка {last_err}", file=sys.stderr)
+                break
             except urllib.error.HTTPError as e:
                 raw = e.read().decode("utf-8", "replace")
                 last_err = f"{e.code} {raw[:300]!r}"
-                if e.code == 429 and _day_quota_over(model, raw):  # повтор через 8 с не поможет
-                    print(f"Gemini {model}: ошибка {last_err}", file=sys.stderr)
+                print(f"Gemini {model}: ошибка {last_err}", file=sys.stderr)
+                if e.code == 429 and _day_quota_over(model, raw):  # повтор не поможет
                     break
-                if e.code == 429:  # минутный лимит — ждём, сколько просит Google
+                if e.code == 429 and attempt < 2:  # минутный лимит — ждём, сколько просит Google
                     wait = _retry_delay(raw)
                     print(f"Gemini {model}: минутный лимит, жду {int(wait)} с", file=sys.stderr)
                     time.sleep(wait)
                     continue
+                if e.code in (500, 502, 503, 504):  # перегрузка: сразу следующая модель, эту — не трогаем 10 мин
+                    _busy(model, f"перегрузка {e.code}")
+                break
             except Exception as e:
                 last_err = e
-            print(f"Gemini {model}: ошибка {last_err}", file=sys.stderr)
-            time.sleep(8)
-    raise RuntimeError(f"Все модели Gemini недоступны: {last_err or 'дневная квота исчерпана'}")
+                print(f"Gemini {model}: ошибка {last_err}", file=sys.stderr)
+                if isinstance(e, TimeoutError):
+                    _busy(model, "нет ответа")
+                break
+    raise RuntimeError(f"Все модели Gemini недоступны: {last_err or 'все модели исчерпали квоту или заняты'}")
 
 
 # ---------- Telegram ----------
