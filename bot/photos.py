@@ -14,7 +14,7 @@ import urllib.request
 from pathlib import Path
 
 API = "https://commons.wikimedia.org/w/api.php"
-UA = "PulseMarketBot/1.0 (https://market-pulse-app.pult-bot.workers.dev; news cards)"
+UA = "PulseMarketBot/1.0 (https://app.pulse-rynka.ru; news cards)"
 USED = Path(__file__).resolve().parent.parent / "state" / "photos.txt"
 KEEP = 300
 
