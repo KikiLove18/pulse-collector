@@ -791,7 +791,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-23T05:54:16.125042+00:00",
+  "breaking_ts": "2026-10-23T06:00:54.544758+00:00",
   "news_now": {
     "day": "2026-10-23",
     "day_count": 0,
@@ -800,8 +800,29 @@
     "titles": []
   },
   "news_seen": [
+    "https://t.me/FinancialJuice/142320",
+    "https://t.me/rbc_news/159244",
+    "https://t.me/bitkogan/29471",
+    "https://t.me/markettwits/390139",
+    "https://www.kommersant.ru/doc/9045363",
+    "https://tass.ru/ekonomika/28245005",
+    "https://tass.ru/mezhdunarodnaya-panorama/28244987",
+    "https://t.me/markettwits/390138",
+    "https://tass.ru/proisshestviya/28244999",
+    "https://tass.ru/proisshestviya/28244995",
+    "https://tass.ru/proisshestviya/28244997",
+    "https://tass.ru/proisshestviya/28244993",
+    "https://t.me/markettwits/390137",
+    "https://tass.ru/ekonomika/28244961",
+    "https://www.vedomosti.ru/politics/news/2026/10/23/1239488-rossiya-pomoch-sudanu",
+    "https://tass.ru/mezhdunarodnaya-panorama/28244983",
+    "https://tass.ru/proisshestviya/28244967",
+    "https://t.me/alfa_investments/8494",
+    "https://www.investing.com/news/stock-market-news/volvo-cars-to-cut-2500-jobs-as-third-quarter-swings-to-loss-4968048",
+    "https://t.me/markettwits/390136",
     "https://tass.ru/mezhdunarodnaya-panorama/28244953",
     "https://t.me/markettwits/390135",
+    "https://www.interfax.ru/russia/1124430",
     "https://tass.ru/sport/28244989",
     "https://t.me/markettwits/390134",
     "https://tass.ru/armiya-i-opk/28244981",
@@ -812,11 +833,13 @@
     "https://www.rbc.ru/rbcfreenews/6a8e988516e0d13f6ad2f727",
     "https://tass.ru/obschestvo/28244977",
     "https://tass.ru/sport/28244973",
+    "https://www.investing.com/news/stock-market-news/gjensidige-forsikring-reports-strong-q3-profit-beat-93CH-4968045",
     "https://t.me/markettwits/390132",
     "https://t.me/rbc_news/159243",
     "https://tass.ru/proisshestviya/28244963",
     "https://tass.ru/obschestvo/28244951",
     "https://www.vedomosti.ru/politics/news/2026/10/23/1239487-usloviya-plana",
+    "https://www.investing.com/news/stock-market-news/nvidia-invests-in-ai-video-startup-higgsfield-bloomberg-4968042",
     "https://www.kommersant.ru/doc/9045354",
     "https://www.rbc.ru/rbcfreenews/6acf4b50cdbc3e1434488ee9",
     "https://tass.ru/ekonomika/28244945",
@@ -840,29 +863,13 @@
     "https://tass.ru/sport/28244929",
     "https://t.me/markettwits/390131",
     "https://t.me/headlines_for_traders/87267",
-    "https://tass.ru/sport/28244927",
-    "https://tass.ru/kultura/28244921",
     "https://www.kommersant.ru/doc/9045344",
     "https://www.rbc.ru/sport/10/02/2026/698b733e9a7947a0ac0a7e81",
     "https://t.me/banksta/103993",
     "https://www.investing.com/news/stock-market-news/australia-stocks-higher-at-close-of-trade-spasx-200-up-002-4968037",
     "https://www.vedomosti.ru/society/news/2026/10/23/1239370-sezonnie-problemi",
-    "https://tass.ru/mezhdunarodnaya-panorama/28244917",
-    "https://tass.ru/mezhdunarodnaya-panorama/28244913",
     "https://www.interfax.ru/business/1124428",
-    "https://www.interfax.ru/business/1124427",
-    "https://tass.ru/proisshestviya/28244919",
-    "https://tass.ru/obschestvo/28244907",
-    "https://tass.ru/proisshestviya/28244909",
-    "https://tass.ru/sport/28244915",
-    "https://www.investing.com/news/stock-market-news/hacking-attempts-surge-as-companies-governments-rush-to-patch-php-flaws-4968036",
-    "https://t.me/markettwits/390130",
-    "https://t.me/markettwits/390129",
-    "https://tass.ru/sport/28244911",
-    "https://t.me/markettwits/390128",
-    "https://www.interfax.ru/russia/1124425",
-    "https://t.me/headlines_for_traders/87266",
-    "https://t.me/markettwits/390127"
+    "https://www.interfax.ru/business/1124427"
   ],
   "ai_dead": {
     "date": "2026-10-22",
@@ -873,22 +880,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-22T06:30:58.367108+00:00",
-      "Просрочка по кредитам крупных инфраструктурных строителей выросла вдвое"
-    ],
-    [
-      "2026-10-22T07:00:54.299293+00:00",
-      "Запасы нефти Ирана в плавучих хранилищах исчерпаны"
-    ],
-    [
-      "2026-10-22T07:00:54.299293+00:00",
-      "Tesla: чистая прибыль в III квартале упала на 43%"
-    ],
-    [
-      "2026-10-22T07:00:54.299293+00:00",
-      "LSEG выкупает Octus за $3,5 млрд"
-    ],
     [
       "2026-10-22T07:00:54.299293+00:00",
       "КСИР атаковал четыре судна в Персидском заливе"
@@ -1488,6 +1479,26 @@
     [
       "2026-10-23T05:54:16.125042+00:00",
       "Разработчики Ethereum отложили активацию обновления Glamsterdam"
+    ],
+    [
+      "2026-10-23T06:00:54.544758+00:00",
+      "ЦБ объявит ключевую ставку в 13:30 мск, консенсус ждет 14%"
+    ],
+    [
+      "2026-10-23T06:00:54.544758+00:00",
+      "Розничные продажи в Великобритании выросли слабее прогнозов"
+    ],
+    [
+      "2026-10-23T06:00:54.544758+00:00",
+      "Volvo Cars сократит 2500 сотрудников из-за убытков в III квартале"
+    ],
+    [
+      "2026-10-23T06:00:54.544758+00:00",
+      "Samsung добавит криптоплатежи на все устройства Galaxy"
+    ],
+    [
+      "2026-10-23T06:00:54.544758+00:00",
+      "РусГидро увеличила выработку электроэнергии на 10,2%"
     ]
   ],
   "results_fp": [
