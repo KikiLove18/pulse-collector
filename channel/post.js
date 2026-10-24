@@ -87,6 +87,7 @@ async function tg(method, form) {
     shots.push(await p.locator("#fc").screenshot({ type: "jpeg", quality: 88 }));
   }
   await b.close();
+  const fs = require("fs"); fs.mkdirSync("out", { recursive: true }); shots.forEach((buf, i) => fs.writeFileSync(`out/${THEME}_${i + 1}.jpg`, buf)); // для проверки (артефакт запуска)
 
   const day = new Date().toLocaleDateString("ru-RU", { day: "numeric", month: "long", timeZone: "Europe/Moscow" });
   const caption = `${HEAD[THEME]}\n${day} · листай карточки →\n\n` + pick.map((n, i) => `${i + 1}. ${esc(n.title)}`).join("\n") +
