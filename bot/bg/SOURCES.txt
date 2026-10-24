@@ -6,3 +6,15 @@ gold3.jpg — File:Gold bullion 1.jpg — https://commons.wikimedia.org/wiki/Fil
 fed2.jpg — File:Eccles Building (26088200676).jpg — https://commons.wikimedia.org/wiki/File%3AEccles_Building_%2826088200676%29.jpg
 fed3.jpg — File:Ec 05 (26114196145) (cropped).jpg — https://commons.wikimedia.org/wiki/File%3AEc_05_%2826114196145%29_%28cropped%29.jpg
 tech2.jpg — File:Data center roof.jpg — https://commons.wikimedia.org/wiki/File%3AData_center_roof.jpg
+crypto1.jpg — File:Bitcoin Cash wallet and whitepaper.jpg — https://commons.wikimedia.org/wiki/File:Bitcoin_Cash_wallet_and_whitepaper.jpg (CC0)
+crypto2.jpg — File:Avalon-An ASIC base bitcoin machine.jpg — https://commons.wikimedia.org/wiki/File:Avalon-An_ASIC_base_bitcoin_machine.jpg (CC0)
+crypto3.jpg — File:Bitcoin ATM Prague.jpg — https://commons.wikimedia.org/wiki/File:Bitcoin_ATM_Prague.jpg (CC0)
+crypto4.jpg — File:Stockmarket.jpg — https://commons.wikimedia.org/wiki/File:Stockmarket.jpg (CC0)
+crypto5.jpg — File:Bitcoin heart on blue background.jpg — https://commons.wikimedia.org/wiki/File:Bitcoin_heart_on_blue_background.jpg (CC0)
+crypto6.jpg — File:Bitcoin Cash wallets on mobile phones.jpg — https://commons.wikimedia.org/wiki/File:Bitcoin_Cash_wallets_on_mobile_phones.jpg (CC0)
+crypto7.jpg — File:Cryptocurrency logos.jpg — https://commons.wikimedia.org/wiki/File:Cryptocurrency_logos.jpg (Public domain)
+crypto8.jpg — File:Computer Motherboard Closeup.jpg — https://commons.wikimedia.org/wiki/File:Computer_Motherboard_Closeup.jpg (CC0)
+crypto9.jpg — File:LED RGB matrix.jpg — https://commons.wikimedia.org/wiki/File:LED_RGB_matrix.jpg (Public domain)
+crypto10.jpg — File:Macro photograph of the RP2350 microcontroller on a Raspberry Pi Pico 2 board.jpg — https://commons.wikimedia.org/wiki/File:Macro_photograph_of_the_RP2350_microcontroller_on_a_Raspberry_Pi_Pico_2_board.jpg (CC0)
+crypto11.jpg — File:Fujikura optic fiber at Science Museum.jpg — https://commons.wikimedia.org/wiki/File:Fujikura_optic_fiber_at_Science_Museum.jpg (CC0)
+crypto12.jpg — File:Bitcoin-heart-on-a-black-background.jpg — https://commons.wikimedia.org/wiki/File:Bitcoin-heart-on-a-black-background.jpg (CC0)

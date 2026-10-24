@@ -64,6 +64,8 @@ async function tg(method, form) {
     }
     return out;
   }, { news, used, theme: THEME });
+  // карточки крипты до 25.10 ~04:00 МСК — с одинаковым рисованным фоном: показываем вместо них фото приложения (img/bg/crypto*)
+  for (const n of pick) if (n.block === "crypto" && n.ts < "2026-10-25T01:00") delete n.card;
   console.log(`${THEME}: ${pick.length} новостей\n` + pick.map(n => "• " + n.title).join("\n"));
   if (pick.length < 3) { console.log("мало новостей — пост не отправлен"); await b.close(); return; }
 

@@ -56,12 +56,22 @@ def _crypto_bg(seed=7):
     return img
 
 
+_BG_QUEUE = {}  # тема → оставшиеся фоны: по кругу без повторов (случайный порядок, не зависит от random.seed)
+
+
 def background(theme, w=W, h=H):
-    """Запасной фон темы, если фото под новость не нашлось: bg/<тема>.jpg, bg/<тема>2.jpg… — случайный из набора."""
+    """Запасной фон темы, если фото под новость не нашлось: bg/<тема>.jpg, bg/<тема>2.jpg… — по очереди в случайном порядке.
+    Крипта (владелец 25.10: «фото всегда одно и то же»): фото bg/crypto1…12.jpg и рисованные свечи — как один из вариантов."""
     paths = sorted((ROOT / "bg").glob(f"{theme}*.jpg"))
-    if theme == "crypto" or not paths:
-        return _crypto_bg(random.randint(1, 999)).resize((w, h), Image.LANCZOS)
-    return _cover(Image.open(random.choice(paths)).convert("RGB"), w, h)
+    opts = paths + (["drawn"] if theme == "crypto" or not paths else [])
+    q = _BG_QUEUE.get(theme)
+    if not q:
+        q = _BG_QUEUE[theme] = opts[:]
+        random.SystemRandom().shuffle(q)
+    pick = q.pop()
+    if pick == "drawn":
+        return _crypto_bg(random.SystemRandom().randint(1, 999)).resize((w, h), Image.LANCZOS)
+    return _cover(Image.open(pick).convert("RGB"), w, h)
 
 
 def _wrap(d, text, f, width, max_lines):
