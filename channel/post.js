@@ -6,11 +6,11 @@ const { chromium } = require("playwright");
 
 const APP = process.env.APP_URL || "https://app.pulse-rynka.ru";
 const BOT = "ime_news_01_bot";
-const THEME = process.env.THEME || "ru", TARGET = process.env.TARGET || "test", PRO = process.env.PRO === "1";
+const THEME = process.env.THEME || "ru", TARGET = process.env.TARGET || "test", PRO = process.env.PRO === "1" || THEME === "pro"; // pro — только пост PRO
 const CHAT = TARGET === "channel" ? process.env.FREECH_CHAT || "@pulse_rynka_news" : process.env.TELEGRAM_CHAT_ID;
 const TITLE = { ru: "🇷🇺 Россия", us: "🇺🇸 США", crypto: "₿ Крипта", commodities: "🛢 Нефть и золото", x: "🗣 Что говорят люди" };
-const HEAD = { ru: "🇷🇺 <b>Россия: главное за день</b>", us: "🇺🇸 <b>США: главное за день</b>", crypto: "₿ <b>Крипта: главное за день</b>",
-  commodities: "🛢 <b>Нефть и золото: главное за день</b>", x: "🗣 <b>Что говорят люди, которые двигают рынки</b>" };
+const HEAD = { ru: "🇷🇺 <b>Россия — главное за день</b>", us: "🇺🇸 <b>США — главное за день</b>", crypto: "₿ <b>Крипта — главное за день</b>",
+  commodities: "🛢 <b>Нефть и золото — главное за день</b>", x: "🗣 <b>Что говорят люди, которые двигают рынки</b>" };
 // текст поста PRO (без обещаний дохода; цены — как в боте, PRICES в worker/index.js)
 const PRO_TEXT = `👑 <b>Пульс рынка PRO</b>
 
@@ -33,7 +33,19 @@ async function tg(method, form) {
   return j;
 }
 
+async function proPost() {
+  const f2 = new FormData();
+  f2.append("chat_id", CHAT);
+  f2.append("photo", `${APP}/img/promo/ch_pro.jpg?v=1`);
+  f2.append("parse_mode", "HTML");
+  f2.append("caption", PRO_TEXT);
+  f2.append("reply_markup", JSON.stringify({ inline_keyboard: [[{ text: "👑 Оформить PRO", url: `https://t.me/${BOT}?startapp=pro` }]] }));
+  await tg("sendPhoto", f2);
+  console.log("пост PRO отправлен");
+}
+
 (async () => {
+  if (THEME === "pro") return proPost();
   const api = await fetch(`${APP}/api/freech`, { headers: { authorization: `Bearer ${process.env.INGEST_SECRET}` } });
   if (!api.ok) throw new Error("api/freech " + api.status);
   const { news, used } = await api.json();
@@ -91,9 +103,8 @@ async function tg(method, form) {
   await b.close();
   const fs = require("fs"); fs.mkdirSync("out", { recursive: true }); shots.forEach((buf, i) => fs.writeFileSync(`out/${THEME}_${i + 1}.jpg`, buf)); // для проверки (артефакт запуска)
 
-  const day = new Date().toLocaleDateString("ru-RU", { day: "numeric", month: "long", timeZone: "Europe/Moscow" });
-  const caption = `${HEAD[THEME]}\n${day} · листай карточки →\n\n` + pick.map((n, i) => `${i + 1}. ${esc(n.title)}`).join("\n") +
-    `\n\nК каждой новости — вывод, как она влияет на рынок.\n📱 Лента под твои активы — <a href="https://t.me/${BOT}?startapp=ch">в приложении «Пульс рынка»</a>`;
+  // подпись короткая — заголовок и ссылка (владелец 25.10: «текст меньше, типа заголовок»)
+  const caption = `${HEAD[THEME]}\n\n📱 <a href="https://t.me/${BOT}?startapp=ch">Все новости — в приложении «Пульс рынка»</a>`;
   const fd = new FormData();
   fd.append("chat_id", CHAT);
   fd.append("media", JSON.stringify(shots.map((_, i) => ({ type: "photo", media: `attach://s${i}`, ...(i ? {} : { caption, parse_mode: "HTML" }) }))));
@@ -101,16 +112,7 @@ async function tg(method, form) {
   await tg("sendMediaGroup", fd);
   console.log("карусель отправлена:", CHAT);
 
-  if (PRO) {
-    const f2 = new FormData();
-    f2.append("chat_id", CHAT);
-    f2.append("photo", `${APP}/img/promo/ch_pro.jpg?v=1`);
-    f2.append("parse_mode", "HTML");
-    f2.append("caption", PRO_TEXT);
-    f2.append("reply_markup", JSON.stringify({ inline_keyboard: [[{ text: "👑 Оформить PRO", url: `https://t.me/${BOT}?startapp=pro` }]] }));
-    await tg("sendPhoto", f2);
-    console.log("пост PRO отправлен");
-  }
+  if (PRO) await proPost();
   if (TARGET === "channel") await fetch(`${APP}/api/freech/done`, { method: "POST", headers: { authorization: `Bearer ${process.env.INGEST_SECRET}`, "content-type": "application/json" },
     body: JSON.stringify({ theme: THEME, titles: pick.map(n => n.title) }) });
 })().catch(e => { console.error(e); process.exit(1); });

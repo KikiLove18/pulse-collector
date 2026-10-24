@@ -740,9 +740,9 @@ def parse_news(block_key, html_text):
     return out
 
 
-def publish_card(html, card_url):
-    """В канал: одно сообщение — карточка сверху (превью) и текст."""
-    token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
+def publish_card(html, card_url, chat=None):
+    """В канал: одно сообщение — карточка сверху (превью) и текст. chat — другой канал (по умолчанию тестовый)."""
+    token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), chat or os.environ.get("TELEGRAM_CHAT_ID")
     if not (token and chat):
         print("----- выпуск -----\n" + html, file=sys.stderr)
         return
@@ -992,6 +992,9 @@ def run_digest(state, now, dry, final=True):
                 card_id, ed_html, card_url = ed
                 out.append({"block": "edition", "html": [card_id, tg_html(ed_html), "#today"]})
                 publish_card(ed_html, card_url)
+                # утренний выпуск — и в бесплатный канал (владелец 25.10: «до 5 новостей каждый день, как в тестовый»); FREECH_CHAT — переменная репозитория
+                if os.environ.get("FREECH_CHAT") and local.hour < 12 and not dry:
+                    publish_card(ed_html, card_url, os.environ["FREECH_CHAT"])
         except Exception as e:
             print("Выпуск не собран:", e, file=sys.stderr)
         try:  # отдельный выпуск для тех, кто выбрал Россию без США

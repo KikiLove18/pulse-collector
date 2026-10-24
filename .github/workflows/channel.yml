@@ -4,7 +4,7 @@ name: channel
 on:
   workflow_dispatch:
     inputs:
-      theme: { description: "ru | us | crypto | commodities | x", default: "ru" }
+      theme: { description: "ru | us | crypto | commodities | x | pro (только пост PRO)", default: "ru" }
       target: { description: "test — тестовый канал, channel — бесплатный канал", default: "test" }
       pro: { description: "1 — после карусели пост про PRO", default: "0" }
 concurrency: channel
