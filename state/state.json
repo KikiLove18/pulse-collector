@@ -797,7 +797,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-24T04:00:56.317158+00:00",
+  "breaking_ts": "2026-10-24T05:00:54.282734+00:00",
   "news_now": {
     "day": "2026-10-24",
     "day_count": 0,
@@ -806,76 +806,54 @@
     "titles": []
   },
   "news_seen": [
-    "https://t.me/interfaxonline/80625",
-    "https://tass.ru/obschestvo/28248919",
-    "https://tass.ru/nauka/28248901",
-    "https://tass.ru/mezhdunarodnaya-panorama/28248915",
-    "https://tass.ru/mezhdunarodnaya-panorama/28248917",
-    "https://tass.ru/obschestvo/28248907",
-    "https://www.rbc.ru/rbcfreenews/69e5cf009a79478a2f91e607",
-    "https://tass.ru/proisshestviya/28248897",
-    "https://tass.ru/obschestvo/28248905",
-    "https://t.me/lookonchainchannel/10754",
-    "https://tass.ru/ekonomika/28248913",
-    "https://tass.ru/armiya-i-opk/28248911",
-    "https://t.me/headlines_for_traders/87341",
-    "https://www.interfax.ru/world/1124679",
-    "https://www.rbc.ru/rbcfreenews/6ab1c2cfba14ff6989bb6571",
-    "https://tass.ru/armiya-i-opk/28248909",
-    "https://tass.ru/ekonomika/28248903",
-    "https://tass.ru/ekonomika/28248895",
-    "https://www.kommersant.ru/doc/9059704",
-    "https://t.me/interfaxonline/80624",
-    "https://tass.ru/obschestvo/28248891",
-    "https://www.rbc.ru/technology_and_media/27/09/2026/6ab90499561554cf7a38203f",
-    "https://tass.ru/proisshestviya/28248889",
-    "https://tass.ru/obschestvo/28248885",
-    "https://tass.ru/mezhdunarodnaya-panorama/28248883",
-    "https://tass.ru/mezhdunarodnaya-panorama/28248881",
-    "https://tass.ru/obschestvo/28248879",
-    "https://www.interfax.ru/russia/1124678",
-    "https://tass.ru/obschestvo/28248877",
-    "https://www.kommersant.ru/doc/9059703",
-    "https://www.rbc.ru/rbcfreenews/6ad8973bf0f5fdd075a3ca24",
-    "https://tass.ru/obschestvo/28248869",
-    "https://t.me/headlines_for_traders/87340",
-    "https://tass.ru/politika/28248873",
-    "https://tass.ru/kosmos/28248863",
-    "https://tass.ru/obschestvo/28248871",
-    "https://tass.ru/obschestvo/28248867",
-    "https://tass.ru/ekonomika/28248861",
-    "https://t.me/banksta/104080",
-    "https://www.interfax.ru/russia/1124677"
+    "https://www.vedomosti.ru/society/news/2026/10/24/1239815-mintrud-predlozhil",
+    "https://t.me/wublockchainenglish/26535",
+    "https://t.me/interfaxonline/80627",
+    "https://www.rbc.ru/politics/11/07/2026/6a51b7459a7947da26f38b32",
+    "https://www.interfax.ru/russia/1124684",
+    "https://www.interfax.ru/russia/1124683",
+    "https://www.kommersant.ru/doc/9059710",
+    "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet",
+    "https://www.rbc.ru/politics/23/10/2026/6ada78d68ae75a2571b9e60c",
+    "https://t.me/lookonchainchannel/10756",
+    "https://tass.ru/proisshestviya/28248985",
+    "https://tass.ru/kultura/28248965",
+    "https://t.me/interfaxonline/80626",
+    "https://www.kommersant.ru/doc/9059709",
+    "https://tass.ru/proisshestviya/28248983",
+    "https://www.rbc.ru/rbcfreenews/6ac9fee6a00daf4493f1b41d",
+    "https://tass.ru/armiya-i-opk/28248975",
+    "https://tass.ru/ekonomika/28248977",
+    "https://t.me/headlines_for_traders/87343",
+    "https://tass.ru/proisshestviya/28248979",
+    "https://tass.ru/armiya-i-opk/28248971",
+    "https://www.interfax.ru/russia/1124682",
+    "https://tass.ru/proisshestviya/28248969",
+    "https://tass.ru/ekonomika/28248963",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239813-stubba-mogut",
+    "https://tass.ru/armiya-i-opk/28248961",
+    "https://www.rbc.ru/rbcfreenews/6acdc0ad20a26e2ce81f7d5d",
+    "https://tass.ru/sport/28248959",
+    "https://tass.ru/ekonomika/28248957",
+    "https://www.interfax.ru/russia/1124681",
+    "https://tass.ru/armiya-i-opk/28248955",
+    "https://tass.ru/kosmos/28248951",
+    "https://tass.ru/ekonomika/28248953",
+    "https://tass.ru/obschestvo/28248941",
+    "https://www.kommersant.ru/doc/9059706",
+    "https://tass.ru/ekonomika/28248939",
+    "https://tass.ru/obschestvo/28248923",
+    "https://t.me/headlines_for_traders/87342",
+    "https://tass.ru/kultura/28248925",
+    "https://tass.ru/politika/28248929",
+    "https://tass.ru/proisshestviya/28248921",
+    "https://tass.ru/sport/28248933"
   ],
   "ai_dead": {
     "date": "2026-10-23",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-23T05:30:56.234495+00:00",
-      "Santiment зафиксировал рост числа новых кошельков XRP"
-    ],
-    [
-      "2026-10-23T05:30:56.234495+00:00",
-      "Индия опубликовала предварительные данные по PMI за октябрь"
-    ],
-    [
-      "2026-10-23T05:54:16.125042+00:00",
-      "Нефть Brent выросла до $114 на фоне угроз инфраструктуре Саудовской Аравии"
-    ],
-    [
-      "2026-10-23T05:54:16.125042+00:00",
-      "Минфин США намерен ослабить инвестиционные ограничения на Венесуэлу"
-    ],
-    [
-      "2026-10-23T05:54:16.125042+00:00",
-      "ЕС готов покрыть большую часть из дополнительных €70 млрд для Украины"
-    ],
-    [
-      "2026-10-23T05:54:16.125042+00:00",
-      "Разработчики Ethereum отложили активацию обновления Glamsterdam"
-    ],
     [
       "2026-10-23T06:00:54.544758+00:00",
       "ЦБ объявит ключевую ставку в 13:30 мск, консенсус ждет 14%"
@@ -1475,6 +1453,30 @@
     [
       "2026-10-24T04:00:56.317158+00:00",
       "Более 10 аэропортов приостановили работу в ночь на субботу"
+    ],
+    [
+      "2026-10-24T05:00:54.282734+00:00",
+      "Первая партия российского дизеля направляется в США"
+    ],
+    [
+      "2026-10-24T05:00:54.282734+00:00",
+      "Цена золота упала ниже $4000 за унцию"
+    ],
+    [
+      "2026-10-24T05:00:54.282734+00:00",
+      "Объем торгов криптоконтрактами на Kalshi и Polymarket достиг рекордных $2,7 млрд"
+    ],
+    [
+      "2026-10-24T05:00:54.282734+00:00",
+      "В Ростовской области после атаки БПЛА обесточено 172 дома"
+    ],
+    [
+      "2026-10-24T05:00:54.282734+00:00",
+      "Franklin Templeton добавила $150 млн в фонд на XRP Ledger"
+    ],
+    [
+      "2026-10-24T05:00:54.282734+00:00",
+      "В ряде российских аэропортов сняли временные ограничения"
     ]
   ],
   "results_fp": [
