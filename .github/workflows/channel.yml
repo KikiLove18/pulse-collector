@@ -1,0 +1,28 @@
+# Пост в бесплатный канал (@pulse_rynka_news): карусель «5 новостей по теме» + пост PRO. Запускает воркер (worker/freech.js), без ИИ.
+# Ручной образец в тестовый канал: gh workflow run channel.yml -R KikiLove18/pulse-collector -f theme=ru -f target=test -f pro=1
+name: channel
+on:
+  workflow_dispatch:
+    inputs:
+      theme: { description: "ru | us | crypto | commodities | x", default: "ru" }
+      target: { description: "test — тестовый канал, channel — бесплатный канал", default: "test" }
+      pro: { description: "1 — после карусели пост про PRO", default: "0" }
+concurrency: channel
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: sudo apt-get install -y -q fonts-noto-color-emoji >/dev/null
+      - run: npm i --no-save --no-audit --no-fund playwright@1.48.2 && npx playwright install --with-deps chromium
+      - run: node channel/post.js
+        env:
+          THEME: ${{ github.event.inputs.theme }}
+          TARGET: ${{ github.event.inputs.target }}
+          PRO: ${{ github.event.inputs.pro }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
