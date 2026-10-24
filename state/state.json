@@ -797,7 +797,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-24T05:00:54.282734+00:00",
+  "breaking_ts": "2026-10-24T05:30:57.404399+00:00",
   "news_now": {
     "day": "2026-10-24",
     "day_count": 0,
@@ -806,78 +806,48 @@
     "titles": []
   },
   "news_seen": [
+    "https://tass.ru/sport/28249035",
+    "https://tass.ru/proisshestviya/28249025",
+    "https://tass.ru/armiya-i-opk/28249033",
+    "https://tass.ru/obschestvo/28249009",
+    "https://tass.ru/obschestvo/28249029",
+    "https://tass.ru/armiya-i-opk/28249031",
+    "https://t.me/wublockchainenglish/26536",
+    "https://www.kommersant.ru/doc/9059718",
+    "https://t.me/rbc_news/159322",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://www.interfax.ru/russia/1124687",
+    "https://tass.ru/proisshestviya/28249027",
+    "https://tass.ru/obschestvo/28248997",
+    "https://www.vedomosti.ru/society/news/2026/10/24/1239817-shkolnie-kanikuli",
+    "https://tass.ru/obschestvo/28249013",
+    "https://tass.ru/obschestvo/28249011",
+    "https://tass.ru/armiya-i-opk/28249005",
+    "https://tass.ru/proisshestviya/28249017",
+    "https://tass.ru/armiya-i-opk/28249001",
+    "https://tass.ru/obschestvo/28249023",
+    "https://tass.ru/proisshestviya/28249003",
+    "https://tass.ru/obschestvo/28249015",
+    "https://tass.ru/proisshestviya/28249019",
+    "https://t.me/rbc_news/159321",
+    "https://tass.ru/armiya-i-opk/28249007",
+    "https://www.rbc.ru/sport/02/10/2026/6abf858d9a794742f0996f26",
+    "https://t.me/banksta/104082",
+    "https://www.kommersant.ru/doc/9059713",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239816-yunosheskaya-sbornaya",
+    "https://t.me/forklog/50392",
+    "https://www.rbc.ru/rbcfreenews/6adb7da5089e8d5c20c60e63",
+    "https://tass.ru/obschestvo/28248993",
+    "https://t.me/headlines_for_traders/87344",
+    "https://www.interfax.ru/russia/1124685",
     "https://www.vedomosti.ru/society/news/2026/10/24/1239815-mintrud-predlozhil",
-    "https://t.me/wublockchainenglish/26535",
-    "https://t.me/interfaxonline/80627",
-    "https://www.rbc.ru/politics/11/07/2026/6a51b7459a7947da26f38b32",
-    "https://www.interfax.ru/russia/1124684",
-    "https://www.interfax.ru/russia/1124683",
-    "https://www.kommersant.ru/doc/9059710",
-    "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet",
-    "https://www.rbc.ru/politics/23/10/2026/6ada78d68ae75a2571b9e60c",
-    "https://t.me/lookonchainchannel/10756",
-    "https://tass.ru/proisshestviya/28248985",
-    "https://tass.ru/kultura/28248965",
-    "https://t.me/interfaxonline/80626",
-    "https://www.kommersant.ru/doc/9059709",
-    "https://tass.ru/proisshestviya/28248983",
-    "https://www.rbc.ru/rbcfreenews/6ac9fee6a00daf4493f1b41d",
-    "https://tass.ru/armiya-i-opk/28248975",
-    "https://tass.ru/ekonomika/28248977",
-    "https://t.me/headlines_for_traders/87343",
-    "https://tass.ru/proisshestviya/28248979",
-    "https://tass.ru/armiya-i-opk/28248971",
-    "https://www.interfax.ru/russia/1124682",
-    "https://tass.ru/proisshestviya/28248969",
-    "https://tass.ru/ekonomika/28248963",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239813-stubba-mogut",
-    "https://tass.ru/armiya-i-opk/28248961",
-    "https://www.rbc.ru/rbcfreenews/6acdc0ad20a26e2ce81f7d5d",
-    "https://tass.ru/sport/28248959",
-    "https://tass.ru/ekonomika/28248957",
-    "https://www.interfax.ru/russia/1124681",
-    "https://tass.ru/armiya-i-opk/28248955",
-    "https://tass.ru/kosmos/28248951",
-    "https://tass.ru/ekonomika/28248953",
-    "https://tass.ru/obschestvo/28248941",
-    "https://www.kommersant.ru/doc/9059706",
-    "https://tass.ru/ekonomika/28248939",
-    "https://tass.ru/obschestvo/28248923",
-    "https://t.me/headlines_for_traders/87342",
-    "https://tass.ru/kultura/28248925",
-    "https://tass.ru/politika/28248929",
-    "https://tass.ru/proisshestviya/28248921",
-    "https://tass.ru/sport/28248933"
+    "https://t.me/wublockchainenglish/26535"
   ],
   "ai_dead": {
     "date": "2026-10-23",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-23T06:00:54.544758+00:00",
-      "ЦБ объявит ключевую ставку в 13:30 мск, консенсус ждет 14%"
-    ],
-    [
-      "2026-10-23T06:00:54.544758+00:00",
-      "Розничные продажи в Великобритании выросли слабее прогнозов"
-    ],
-    [
-      "2026-10-23T06:00:54.544758+00:00",
-      "Volvo Cars сократит 2500 сотрудников из-за убытков в III квартале"
-    ],
-    [
-      "2026-10-23T06:00:54.544758+00:00",
-      "Samsung добавит криптоплатежи на все устройства Galaxy"
-    ],
-    [
-      "2026-10-23T06:00:54.544758+00:00",
-      "РусГидро увеличила выработку электроэнергии на 10,2%"
-    ],
-    [
-      "2026-10-23T06:30:57.511818+00:00",
-      "Заседание Банка России по ключевой ставке пройдет сегодня в 13:30 мск"
-    ],
     [
       "2026-10-23T06:30:57.511818+00:00",
       "Два человека погибли при атаке на аэропорт в Саудовской Аравии"
@@ -1477,6 +1447,26 @@
     [
       "2026-10-24T05:00:54.282734+00:00",
       "В ряде российских аэропортов сняли временные ограничения"
+    ],
+    [
+      "2026-10-24T05:30:57.404399+00:00",
+      "Артур Хейс: «высоковесные» шиткоины больше не могут расти на Binance"
+    ],
+    [
+      "2026-10-24T05:30:57.404399+00:00",
+      "На Кубани нарушено электроснабжение трех поселков из-за падения БПЛА"
+    ],
+    [
+      "2026-10-24T05:30:57.404399+00:00",
+      "Аэропорты Москвы, Калуги и Ярославля возобновили штатную работу"
+    ],
+    [
+      "2026-10-24T05:30:57.404399+00:00",
+      "Аргентина прекратила дело против Милея из-за скандала с мемкоином"
+    ],
+    [
+      "2026-10-24T05:30:57.404399+00:00",
+      "Разведка США заявила об активизации иранских заговоров"
     ]
   ],
   "results_fp": [
