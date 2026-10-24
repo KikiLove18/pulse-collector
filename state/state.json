@@ -798,7 +798,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-24T20:00:54.598773+00:00",
+  "breaking_ts": "2026-10-24T20:30:57.215592+00:00",
   "news_now": {
     "day": "2026-10-24",
     "day_count": 1,
@@ -809,80 +809,52 @@
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/sport/21/10/2026/6ad875d611e36ad11c15294b",
+    "https://www.rbc.ru/rbcfreenews/6ad9cd242da23ed3ca160a46",
+    "https://t.me/WalterBloomberg/37327",
+    "https://t.me/markettwits/390328",
+    "https://tass.ru/obschestvo/28250283",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250289",
+    "https://t.me/interfaxonline/80651",
+    "https://t.me/markettwits/390327",
+    "https://tass.ru/proisshestviya/28250287",
+    "https://t.me/markettwits/390326",
+    "https://t.me/WalterBloomberg/37326",
+    "https://t.me/WalterBloomberg/37325",
+    "https://t.me/banksta/104116",
+    "https://www.interfax.ru/russia/1124809",
+    "https://tass.ru/proisshestviya/28250279",
+    "https://t.me/WalterBloomberg/37324",
+    "https://t.me/markettwits/390325",
+    "https://tass.ru/politika/28250281",
+    "https://tass.ru/proisshestviya/28250277",
+    "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
+    "https://www.rbc.ru/politics/23/10/2026/6adafffdec53e5b0ff5f0c18",
+    "https://tass.ru/obschestvo/28250271",
+    "https://www.rbc.ru/sport/25/08/2026/6a8d50999a794725ac93035b",
+    "https://t.me/wublockchainenglish/26541",
+    "https://tass.ru/sport/28250267",
+    "https://www.rbc.ru/radio/16/01/2026/696a569c9a7947e8493dd06f",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250269",
+    "https://tass.ru/proisshestviya/28250273",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239879-peskov-soobschil",
+    "https://tass.ru/sport/28250263",
+    "https://www.interfax.ru/russia/1124808",
+    "https://cryptoslate.com/circles-new-usdc-auctions-let-institutions-collect-the-fees-others-pay-to-cash-out/",
+    "https://tass.ru/sport/28250255",
+    "https://www.kommersant.ru/doc/9059920",
     "https://www.rbc.ru/rbcfreenews/65e44b5e9a7947849c58e6a8",
+    "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories",
     "https://t.me/rbc_news/159352",
-    "https://t.me/banksta/104115",
-    "https://www.rbc.ru/sport/23/10/2026/6adb1392df745d600c1bef9c",
-    "https://www.rbc.ru/politics/09/10/2026/6ac88491ff1d1491484b8f47",
-    "https://tass.ru/sport/28250251",
-    "https://tass.ru/politika/28250249",
-    "https://www.rbc.ru/sport/24/10/2026/6ad73ce61a524d0e458cebf1",
-    "https://www.kommersant.ru/doc/9059919",
-    "https://tass.ru/politika/28250243",
-    "https://www.marketwatch.com/story/my-husband-wants-to-sell-our-1-5-million-home-and-invest-the-proceeds-but-this-is-where-we-raised-our-kids-and-i-cant-bear-to-leave-4feb46ed?mod=mw_rss_topstories",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250241",
-    "https://tass.ru/proisshestviya/28250235",
-    "https://thedefiant.io/news/hacks/x100-exploit-proceeds-split-into-four-400-eth-wallets",
-    "https://t.me/markettwits/390324",
-    "https://tass.ru/proisshestviya/28250239",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239878-mask-obvinil-vsu",
-    "https://t.me/FinancialJuice/142499",
-    "https://t.me/banksta/104114",
-    "https://www.rbc.ru/rbcfreenews/6ab8cd38e1db01d6b6c9974e",
-    "https://tass.ru/politika/28250229",
-    "https://t.me/markettwits/390323",
-    "https://tass.ru/armiya-i-opk/28250081",
-    "https://t.me/rbc_news/159351",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250233",
-    "https://t.me/FinancialJuice/142498",
-    "https://tass.ru/obschestvo/28250221",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250225"
+    "https://tass.ru/sport/28250257",
+    "https://tass.ru/obschestvo/28250259",
+    "https://www.interfax.ru/russia/1124807"
   ],
   "ai_dead": {
     "date": "2026-10-24",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-23T19:30:57.963891+00:00",
-      "Мосбиржа выявила нарушения корпоративного управления у «Самолета»"
-    ],
-    [
-      "2026-10-23T19:30:57.963891+00:00",
-      "Платные места в вузах перераспределят в пользу технических специальностей"
-    ],
-    [
-      "2026-10-23T19:30:57.963891+00:00",
-      "Росавиация ввела ограничения полетов в столичных аэропортах"
-    ],
-    [
-      "2026-10-23T19:30:57.963891+00:00",
-      "Generali сократит 800 рабочих мест в Германии из-за инвестиций в ИИ"
-    ],
-    [
-      "2026-10-23T20:00:57.012059+00:00",
-      "КСИР сообщил о подрыве двух нефтяных супертанкеров на минах в Ормузе"
-    ],
-    [
-      "2026-10-23T20:00:57.012059+00:00",
-      "Новак: РФ готова поставить на мировые рынки 500 тыс. тонн дизеля в октябре"
-    ],
-    [
-      "2026-10-23T20:00:57.012059+00:00",
-      "Минобороны РФ заявило об ударе по сухогрузу с грузами для ВСУ в Черном море"
-    ],
-    [
-      "2026-10-23T20:00:57.012059+00:00",
-      "Токен IRYS взлетел на 1 200% выше пика майского листинга"
-    ],
-    [
-      "2026-10-23T20:00:57.012059+00:00",
-      "Минобрнауки предложило минимальные баллы ЕГЭ для вузов на 2027/2028 год"
-    ],
-    [
-      "2026-10-23T20:00:57.012059+00:00",
-      "Russ выиграл аукцион на управление сетью рекламных конструкций Москвы"
-    ],
     [
       "2026-10-24T04:00:56.317158+00:00",
       "Энергоинфраструктура Севастополя подверглась атаке, город обесточен"
@@ -1466,6 +1438,30 @@
     [
       "2026-10-24T19:30:56.369777+00:00",
       "Взлом сайта Keystone привел к утечке адресов клиентов"
+    ],
+    [
+      "2026-10-24T20:30:57.215592+00:00",
+      "Трамп заявил о возможной силовой развязке в отношениях с Ираном"
+    ],
+    [
+      "2026-10-24T20:30:57.215592+00:00",
+      "ЕС создаст спутниковую сеть IRIS2 на фоне ограничений Starlink"
+    ],
+    [
+      "2026-10-24T20:30:57.215592+00:00",
+      "Аппаратный кошелек Keystone сообщил об утечке данных клиентов"
+    ],
+    [
+      "2026-10-24T20:30:57.215592+00:00",
+      "В аэропорту Нижнего Новгорода введены временные ограничения"
+    ],
+    [
+      "2026-10-24T20:30:57.215592+00:00",
+      "Один человек погиб при ударах по Белгородской области"
+    ],
+    [
+      "2026-10-24T20:30:57.215592+00:00",
+      "Circle запустила аукционы стейблкоинов USDC для институционалов"
     ]
   ],
   "results_fp": [
