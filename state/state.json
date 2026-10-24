@@ -798,7 +798,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-24T19:01:01.899197+00:00",
+  "breaking_ts": "2026-10-24T19:30:56.369777+00:00",
   "news_now": {
     "day": "2026-10-24",
     "day_count": 1,
@@ -809,57 +809,44 @@
     ]
   },
   "news_seen": [
+    "https://t.me/markettwits/390323",
+    "https://t.me/rbc_news/159351",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250233",
+    "https://t.me/FinancialJuice/142498",
+    "https://tass.ru/obschestvo/28250221",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250225",
+    "https://www.sport-interfax.ru/1124806",
+    "https://tass.ru/sport/28250227",
+    "https://tass.ru/politika/28250223",
+    "https://www.sport-interfax.ru/1124805",
+    "https://t.me/markettwits/390322",
+    "https://www.interfax.ru/world/1124804",
+    "https://www.kommersant.ru/doc/9059918",
+    "https://tass.ru/sport/28250219",
+    "https://tass.ru/sport/28250217",
+    "https://www.rbc.ru/sport/24/10/2026/6915b7e99a7947736a1c51c2",
+    "https://thedefiant.io/news/security/keystone-website-breach-exposes-customer-addresses-and-order-details",
+    "https://www.sport-interfax.ru/1124803",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250215",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250213",
+    "https://t.me/banksta/104113",
+    "https://t.me/FinancialJuice/142497",
+    "https://t.me/FinancialJuice/142496",
+    "https://t.me/FinancialJuice/142495",
+    "https://t.me/FinancialJuice/142494",
+    "https://cryptoslate.com/kraken-drops-monero-spending-questions-but-keeps-a-1500-rolling-30-day-withdrawal-cap-for-individuals/",
     "https://www.rbc.ru/rbcfreenews/6adca78690e461fd121915fd",
     "https://oilprice.com/Energy/Energy-General/Syrias-Energy-Comeback-Could-Reshape-Middle-East-Oil-and-Gas.html",
     "https://t.me/nainspire/5588",
-    "https://www.rbc.ru/politics/24/10/2026/6adcff037b60f23d927efe26",
+    "https://www.rbc.ru/politics/09/03/2025/67cd3c309a7947522465d704",
     "https://tass.ru/mezhdunarodnaya-panorama/28250211",
-    "https://t.me/thebell_io/39603",
-    "https://tass.ru/sport/28250209",
-    "https://t.me/WalterBloomberg/37323",
-    "https://t.me/markettwits/390321",
-    "https://www.interfax.ru/world/1124802",
-    "https://www.rbc.ru/politics/24/10/2026/6adcfe18d51d4f35d3941428",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239873-husiti-ob-atake",
-    "https://tass.ru/proisshestviya/28250203",
-    "https://t.me/rbc_news/159350",
-    "https://www.sport-interfax.ru/1124801",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250193",
-    "https://www.marketwatch.com/story/young-americans-are-giving-up-their-cars-its-a-path-to-financial-freedom-for-some-3cce491c?mod=mw_rss_topstories",
-    "https://www.kommersant.ru/doc/9059915",
-    "https://tass.ru/proisshestviya/28250201",
-    "https://www.rbc.ru/sport/24/10/2026/6ad73ce61a524d0e458cebf1",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250189",
-    "https://www.interfax.ru/russia/1124800",
-    "https://tass.ru/proisshestviya/28250195",
-    "https://tass.ru/sport/28250197",
-    "https://www.rbc.ru/sport/23/10/2026/6ad9eb8902564288a477881b",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250187",
-    "https://tass.ru/kultura/28250175",
-    "https://tass.ru/sport/28250191",
-    "https://t.me/banksta/104112",
-    "https://www.interfax.ru/russia/1124799",
-    "https://tass.ru/proisshestviya/28250181",
-    "https://tass.ru/sport/28250185",
-    "https://tass.ru/ekonomika/28250183",
-    "https://tass.ru/kultura/28250173",
-    "https://www.rbc.ru/sport/24/10/2026/6adc975b3c765fe671670d8a",
-    "https://www.rbc.ru/rbcfreenews/6adbc087ec53e5b0ff5f0ce6",
-    "https://tass.ru/sport/28250179"
+    "https://t.me/thebell_io/39603"
   ],
   "ai_dead": {
     "date": "2026-10-24",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-23T19:30:57.963891+00:00",
-      "Золото впервые с конца июля опустилось ниже $4000 за унцию"
-    ],
-    [
-      "2026-10-23T19:30:57.963891+00:00",
-      "Новак сообщил об отправке первых танкеров с российским дизелем в США"
-    ],
     [
       "2026-10-23T19:30:57.963891+00:00",
       "Мосбиржа выявила нарушения корпоративного управления у «Самолета»"
@@ -1459,6 +1446,30 @@
     [
       "2026-10-24T19:01:01.899197+00:00",
       "Три человека пострадали при падении дрона в Шебекино"
+    ],
+    [
+      "2026-10-24T19:30:56.369777+00:00",
+      "Иран предложил США открыть Ормуз в обмен на снятие блокады портов"
+    ],
+    [
+      "2026-10-24T19:30:56.369777+00:00",
+      "На протестах во Франции задержали около тысячи человек"
+    ],
+    [
+      "2026-10-24T19:30:56.369777+00:00",
+      "Илон Маск заявил о нарушении условий использования Starlink со стороны ВСУ"
+    ],
+    [
+      "2026-10-24T19:30:56.369777+00:00",
+      "Kraken отменила требования к клиентам Monero с сохранением лимита"
+    ],
+    [
+      "2026-10-24T19:30:56.369777+00:00",
+      "АдГ сохраняет лидерство в рейтинге популярности партий ФРГ"
+    ],
+    [
+      "2026-10-24T19:30:56.369777+00:00",
+      "Взлом сайта Keystone привел к утечке адресов клиентов"
     ]
   ],
   "results_fp": [
