@@ -797,7 +797,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-24T13:30:56.482687+00:00",
+  "breaking_ts": "2026-10-24T14:00:55.913547+00:00",
   "news_now": {
     "day": "2026-10-24",
     "day_count": 0,
@@ -806,83 +806,35 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/sport/28249857",
+    "https://t.me/incrypted/33097",
+    "https://www.rbc.ru/sport/21/10/2026/6ad8b4a63752378c2f7d6c86",
+    "https://t.me/headlines_for_traders/87371",
+    "https://t.me/FinancialJuice/142493",
+    "https://www.rbc.ru/rbcfreenews/6ac781f05eb2226fb0c61d62",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239856-lantratova-nazvala",
+    "https://t.me/interfaxonline/80643",
+    "https://t.me/FinancialJuice/142492",
+    "https://t.me/BitcoinMagazineTelegram/10902",
+    "https://www.rbc.ru/sport/24/10/2026/6adc85ef7605bd8275d320ba",
+    "https://www.interfax.ru/russia/1124775",
+    "https://www.kommersant.ru/doc/9059865",
+    "https://t.me/FinancialJuice/142491",
+    "https://www.rbc.ru/finances/23/10/2026/6ad8e8f89a79479675454d64",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239858-vosem-aeroportov",
+    "https://www.marketwatch.com/story/investors-recent-money-moves-show-a-preference-for-quality-over-momentum-within-the-s-p-500-ed6b5149?mod=mw_rss_topstories",
+    "https://www.rbc.ru/politics/13/11/2025/6915b5169a79477efdd47ae1",
+    "https://t.me/rbc_news/159341",
+    "https://cryptoslate.com/ethereum-sees-biggest-exchange-withdrawal-in-four-months-as-october-etf-losses-top-1-billion/",
+    "https://www.kommersant.ru/doc/9059862",
     "https://www.marketwatch.com/story/my-nieces-college-rent-is-covered-by-a-529-plan-what-else-can-i-pay-for-tax-free-d1686b63?mod=mw_rss_topstories",
-    "https://www.rbc.ru/rbcfreenews/6ab1412db2b157d1622ee28d",
-    "https://tass.ru/obschestvo/28249853",
-    "https://t.me/headlines_for_traders/87370",
-    "https://tass.ru/proisshestviya/28249847",
-    "https://tass.ru/sport/28249851",
-    "https://www.rbc.ru/sport/02/10/2026/6abf9f619a7947121d499a23",
-    "https://tass.ru/obschestvo/28249841",
-    "https://t.me/banksta/104098",
-    "https://t.me/banksta/104097",
-    "https://tass.ru/obschestvo/28249843",
-    "https://t.me/forklog/50399",
-    "https://www.kommersant.ru/doc/9059861",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239855-nazval-vazhnim-shagom",
-    "https://thedefiant.io/news/security/api-key-rotation-what-revocation-and-redeployment-actually-change",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249839",
-    "https://tass.ru/obschestvo/28249837",
-    "https://www.rbc.ru/politics/29/07/2026/6a6988759a7947c50b702977",
-    "https://www.kommersant.ru/doc/9059860",
-    "https://tass.ru/politika/28249835",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239854-kim-chen-in-pribil-v-knr",
-    "https://tass.ru/sport/28249833",
-    "https://tass.ru/proisshestviya/28249823",
-    "https://www.rbc.ru/politics/21/10/2026/6ad8f2b9e19fe4fc4cbc6caa",
-    "https://www.rbc.ru/society/23/10/2026/6adb0ee2ec53e5b0ff5f0c51",
-    "https://www.interfax.ru/russia/1124773",
-    "https://t.me/lookonchainchannel/10762",
-    "https://tass.ru/obschestvo/28249777",
-    "https://www.sport-interfax.ru/1124772",
-    "https://tass.ru/ekonomika/28249825",
-    "https://tass.ru/politika/28249819",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249755",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249649",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239853-posolstvo-rossii-oproverglo",
-    "https://t.me/investfuture/15441",
-    "https://decrypt.co/381760/hong-kong-bank-hsbc-stablecoin-3-million-wallets",
-    "https://tass.ru/obschestvo/28249781",
-    "https://www.marketwatch.com/story/my-spouse-was-awarded-90-000-from-my-401-k-in-our-divorce-how-is-that-fair-dc839aa3?mod=mw_rss_topstories",
-    "https://www.interfax.ru/russia/1124771",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249783",
-    "https://tass.ru/obschestvo/28249785",
-    "https://tass.ru/obschestvo/28249771",
-    "https://www.interfax.ru/russia/1124770",
-    "https://tass.ru/obschestvo/28249765",
-    "https://tass.ru/proisshestviya/28249769",
-    "https://www.kommersant.ru/doc/9059855"
+    "https://www.interfax.ru/business/1124774",
+    "https://www.rbc.ru/rbcfreenews/6ab1412db2b157d1622ee28d"
   ],
   "ai_dead": {
     "date": "2026-10-24",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-23T14:30:57.648804+00:00",
-      "Золото тестирует уровень $4000 за унцию на фоне роста цен на нефть"
-    ],
-    [
-      "2026-10-23T14:30:57.648804+00:00",
-      "Vonovia может потерять более 8 млрд евро из-за планов национализации жилья"
-    ],
-    [
-      "2026-10-23T14:30:57.648804+00:00",
-      "Суд в Москве взыскал 40 млн рублей с Олега Дерипаски по иску против иноагентов"
-    ],
-    [
-      "2026-10-23T14:30:57.648804+00:00",
-      "Зеленский заявил о договоренности о трехсторонней встрече на техническом уровне"
-    ],
-    [
-      "2026-10-23T14:30:57.648804+00:00",
-      "American Express сократит около 3500 сотрудников по всему миру"
-    ],
-    [
-      "2026-10-23T14:30:57.648804+00:00",
-      "Цена нефти Brent превысила 117 долларов за баррель"
-    ],
     [
       "2026-10-23T15:01:03.346122+00:00",
       "ЦБ опустил курс доллара ниже 81 рубля впервые с августа"
@@ -1482,6 +1434,30 @@
     [
       "2026-10-24T13:30:56.482687+00:00",
       "Аэропорт Сочи возобновил работу после временных ограничений"
+    ],
+    [
+      "2026-10-24T14:00:55.913547+00:00",
+      "Volkswagen планирует сократить еще 12 тыс. сотрудников к 2030 году"
+    ],
+    [
+      "2026-10-24T14:00:55.913547+00:00",
+      "Отток Ethereum с бирж достиг максимума за четыре месяца на фоне потерь ETF"
+    ],
+    [
+      "2026-10-24T14:00:55.913547+00:00",
+      "Сербская NIS запросила в Минфине США продление лицензии после 30 октября"
+    ],
+    [
+      "2026-10-24T14:00:55.913547+00:00",
+      "CMCC Global планирует запустить два токенизированных фонда на биткоин"
+    ],
+    [
+      "2026-10-24T14:00:55.913547+00:00",
+      "В Севастополе ввели графики отключения электроэнергии"
+    ],
+    [
+      "2026-10-24T14:00:55.913547+00:00",
+      "Канцлер Германии Фридрих Мерц признал серьезные проблемы в экономике ФРГ"
     ]
   ],
   "results_fp": [
