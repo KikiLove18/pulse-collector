@@ -104,6 +104,17 @@ async function deckPost(shots, caption) {
     body: JSON.stringify({ chat: post.chat.id, mid: post.message_id, fids, caption, url: APP_LINK }) });
   console.log("пост-карусель отправлен:", CHAT, "колода у воркера:", r.status);
 }
+// настоящая карусель (Bot API 10.3, sendRichMessage + <tg-slideshow>): листается вправо-влево прямо в ленте — как пример владельца (25.10)
+async function richPost(shots, caption) {
+  const html = `<tg-slideshow>${shots.map((_, i) => `<img src="tg://photo?id=s${i}"/>`).join("")}</tg-slideshow><p>${caption}</p>` +
+    `<tg-button-row align="left"><tg-button type="url" url="${APP_LINK}">📱 Все новости — в приложении</tg-button></tg-button-row>`;
+  const f = new FormData();
+  f.append("chat_id", CHAT);
+  f.append("rich_message", JSON.stringify({ html, media: shots.map((_, i) => ({ id: `s${i}`, media: { type: "photo", media: `attach://f${i}` } })) }));
+  shots.forEach((buf, i) => f.append(`f${i}`, new Blob([buf], { type: "image/jpeg" }), `f${i}.jpg`));
+  await tg("sendRichMessage", f);
+  console.log("карусель (слайдшоу) отправлена:", CHAT);
+}
 const LINK = `📱 <a href="https://t.me/${BOT}?startapp=ch">Календарь и все новости — в приложении «Пульс рынка»</a>`;
 const HEAD_HTML = t => `<div class="hd"><img src="img/logo192.png" alt="">Пульс рынка<span class="th">${t}</span></div>`;
 
@@ -226,7 +237,7 @@ async function inspect() {
 
   // подпись короткая — только заголовок (владелец 25.10); ссылка — кнопкой
   const caption = HEAD[THEME];
-  await deckPost(shots, caption);
+  await richPost(shots, caption).catch(e => { console.log("слайдшоу не ушло:", e.message, "— запасной вариант: кнопки ◀ ▶"); return deckPost(shots, caption); });
   if (PRO) await proPost();
   if (TARGET === "channel") await fetch(`${APP}/api/freech/done`, { method: "POST", headers: { authorization: `Bearer ${process.env.INGEST_SECRET}`, "content-type": "application/json" },
     body: JSON.stringify({ theme: THEME, titles: pick.map(n => n.title) }) });
