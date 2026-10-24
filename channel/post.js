@@ -76,6 +76,34 @@ async function sendPhotos(shots, caption) {
   shots.forEach((buf, i) => fd.append(`s${i}`, new Blob([buf], { type: "image/jpeg" }), `s${i}.jpg`));
   return tg("sendMediaGroup", fd);
 }
+// «карусель» (владелец 25.10: «как в инсте, листать вправо-влево»): один пост с картинкой и кнопками ◀ 1/5 ▶ — картинку меняет воркер.
+// Картинки сначала загружаем в Telegram (тестовый канал, без звука, сразу удаляем) — берём их file_id, затем пост и колода → воркеру.
+const APP_LINK = `https://t.me/${BOT}?startapp=ch`;
+const deckKb = (i, n) => [[{ text: "◀", callback_data: `fc:${(i + n - 1) % n}` }, { text: `${i + 1} / ${n}`, callback_data: `fc:${i}` }, { text: "▶", callback_data: `fc:${(i + 1) % n}` }],
+  [{ text: "📱 Все новости — в приложении", url: APP_LINK }]];
+async function deckPost(shots, caption) {
+  const up = new FormData();
+  up.append("chat_id", process.env.TELEGRAM_CHAT_ID);
+  up.append("disable_notification", "true");
+  up.append("media", JSON.stringify(shots.map((_, i) => ({ type: "photo", media: `attach://s${i}` }))));
+  shots.forEach((buf, i) => up.append(`s${i}`, new Blob([buf], { type: "image/jpeg" }), `s${i}.jpg`));
+  const msgs = (await tg("sendMediaGroup", up)).result;
+  const fids = msgs.map(m => m.photo[m.photo.length - 1].file_id);
+  const del = new FormData();
+  del.append("chat_id", process.env.TELEGRAM_CHAT_ID);
+  del.append("message_ids", JSON.stringify(msgs.map(m => m.message_id)));
+  await tg("deleteMessages", del).catch(e => console.log("загрузка не удалилась:", e.message));
+  const f = new FormData();
+  f.append("chat_id", CHAT);
+  f.append("photo", fids[0]);
+  f.append("caption", caption);
+  f.append("parse_mode", "HTML");
+  f.append("reply_markup", JSON.stringify({ inline_keyboard: deckKb(0, fids.length) }));
+  const post = (await tg("sendPhoto", f)).result;
+  const r = await fetch(`${APP}/api/freech/deck`, { method: "POST", headers: { authorization: `Bearer ${process.env.INGEST_SECRET}`, "content-type": "application/json" },
+    body: JSON.stringify({ chat: post.chat.id, mid: post.message_id, fids, caption, url: APP_LINK }) });
+  console.log("пост-карусель отправлен:", CHAT, "колода у воркера:", r.status);
+}
 const LINK = `📱 <a href="https://t.me/${BOT}?startapp=ch">Календарь и все новости — в приложении «Пульс рынка»</a>`;
 const HEAD_HTML = t => `<div class="hd"><img src="img/logo192.png" alt="">Пульс рынка<span class="th">${t}</span></div>`;
 
@@ -179,15 +207,9 @@ async function resultsPost(p, results) {
   await b.close();
   const fs = require("fs"); fs.mkdirSync("out", { recursive: true }); shots.forEach((buf, i) => fs.writeFileSync(`out/${THEME}_${i + 1}.jpg`, buf)); // для проверки (артефакт запуска)
 
-  // подпись короткая — заголовок и ссылка (владелец 25.10: «текст меньше, типа заголовок»)
-  const caption = `${HEAD[THEME]}\n\n📱 <a href="https://t.me/${BOT}?startapp=ch">Все новости — в приложении «Пульс рынка»</a>`;
-  const fd = new FormData();
-  fd.append("chat_id", CHAT);
-  fd.append("media", JSON.stringify(shots.map((_, i) => ({ type: "photo", media: `attach://s${i}`, ...(i ? {} : { caption, parse_mode: "HTML" }) }))));
-  shots.forEach((buf, i) => fd.append(`s${i}`, new Blob([buf], { type: "image/jpeg" }), `s${i}.jpg`));
-  await tg("sendMediaGroup", fd);
-  console.log("карусель отправлена:", CHAT);
-
+  // подпись короткая — только заголовок (владелец 25.10); ссылка — кнопкой
+  const caption = HEAD[THEME];
+  await deckPost(shots, caption);
   if (PRO) await proPost();
   if (TARGET === "channel") await fetch(`${APP}/api/freech/done`, { method: "POST", headers: { authorization: `Bearer ${process.env.INGEST_SECRET}`, "content-type": "application/json" },
     body: JSON.stringify({ theme: THEME, titles: pick.map(n => n.title) }) });
