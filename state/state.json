@@ -797,7 +797,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-24T13:00:56.194697+00:00",
+  "breaking_ts": "2026-10-24T13:30:56.482687+00:00",
   "news_now": {
     "day": "2026-10-24",
     "day_count": 0,
@@ -806,80 +806,59 @@
     "titles": []
   },
   "news_seen": [
+    "https://tass.ru/sport/28249857",
+    "https://www.marketwatch.com/story/my-nieces-college-rent-is-covered-by-a-529-plan-what-else-can-i-pay-for-tax-free-d1686b63?mod=mw_rss_topstories",
+    "https://www.rbc.ru/rbcfreenews/6ab1412db2b157d1622ee28d",
+    "https://tass.ru/obschestvo/28249853",
+    "https://t.me/headlines_for_traders/87370",
+    "https://tass.ru/proisshestviya/28249847",
+    "https://tass.ru/sport/28249851",
+    "https://www.rbc.ru/sport/02/10/2026/6abf9f619a7947121d499a23",
+    "https://tass.ru/obschestvo/28249841",
+    "https://t.me/banksta/104098",
+    "https://t.me/banksta/104097",
+    "https://tass.ru/obschestvo/28249843",
+    "https://t.me/forklog/50399",
+    "https://www.kommersant.ru/doc/9059861",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239855-nazval-vazhnim-shagom",
+    "https://thedefiant.io/news/security/api-key-rotation-what-revocation-and-redeployment-actually-change",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249839",
+    "https://tass.ru/obschestvo/28249837",
+    "https://www.rbc.ru/politics/29/07/2026/6a6988759a7947c50b702977",
+    "https://www.kommersant.ru/doc/9059860",
+    "https://tass.ru/politika/28249835",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239854-kim-chen-in-pribil-v-knr",
+    "https://tass.ru/sport/28249833",
+    "https://tass.ru/proisshestviya/28249823",
+    "https://www.rbc.ru/politics/21/10/2026/6ad8f2b9e19fe4fc4cbc6caa",
+    "https://www.rbc.ru/society/23/10/2026/6adb0ee2ec53e5b0ff5f0c51",
+    "https://www.interfax.ru/russia/1124773",
+    "https://t.me/lookonchainchannel/10762",
+    "https://tass.ru/obschestvo/28249777",
+    "https://www.sport-interfax.ru/1124772",
+    "https://tass.ru/ekonomika/28249825",
+    "https://tass.ru/politika/28249819",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249755",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249649",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239853-posolstvo-rossii-oproverglo",
+    "https://t.me/investfuture/15441",
+    "https://decrypt.co/381760/hong-kong-bank-hsbc-stablecoin-3-million-wallets",
+    "https://tass.ru/obschestvo/28249781",
+    "https://www.marketwatch.com/story/my-spouse-was-awarded-90-000-from-my-401-k-in-our-divorce-how-is-that-fair-dc839aa3?mod=mw_rss_topstories",
+    "https://www.interfax.ru/russia/1124771",
     "https://tass.ru/mezhdunarodnaya-panorama/28249783",
     "https://tass.ru/obschestvo/28249785",
     "https://tass.ru/obschestvo/28249771",
+    "https://www.interfax.ru/russia/1124770",
     "https://tass.ru/obschestvo/28249765",
     "https://tass.ru/proisshestviya/28249769",
-    "https://www.kommersant.ru/doc/9059855",
-    "https://tass.ru/obschestvo/28249705",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249761",
-    "https://www.kommersant.ru/doc/9059854",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249763",
-    "https://t.me/headlines_for_traders/87369",
-    "https://tass.ru/sport/28249759",
-    "https://tass.ru/obschestvo/28249767",
-    "https://tass.ru/proisshestviya/28249757",
-    "https://t.me/rbc_news/159340",
-    "https://www.interfax.ru/russia/1124769",
-    "https://www.interfax.ru/russia/1124768",
-    "https://www.kommersant.ru/doc/9059852",
-    "https://www.rbc.ru/sport/26/09/2026/6ab80f4c9a7947936290c9d9",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249745",
-    "https://t.me/banksta/104096",
-    "https://t.me/FinancialJuice/142490",
-    "https://t.me/FinancialJuice/142489",
-    "https://tass.ru/proisshestviya/28249753",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239850-obestochena-chast",
-    "https://tass.ru/politika/28249749",
-    "https://tass.ru/sport/28249751",
-    "https://www.interfax.ru/russia/1124767",
-    "https://www.sport-interfax.ru/1124766",
-    "https://www.interfax.ru/russia/1124765",
-    "https://www.interfax.ru/russia/1124764",
-    "https://www.interfax.ru/russia/1124763",
-    "https://tass.ru/politika/28249737",
-    "https://www.rbc.ru/society/04/09/2026/6a9a4e1e8548bf4d78b086bb",
-    "https://tass.ru/sport/28249741",
-    "https://tass.ru/obschestvo/28249731",
-    "https://tass.ru/proisshestviya/28249743",
-    "https://tass.ru/ekonomika/28249739",
-    "https://tass.ru/obschestvo/28249717",
-    "https://www.interfax.ru/russia/1124762",
-    "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories",
-    "https://t.me/headlines_for_traders/87368",
-    "https://www.vedomosti.ru/society/news/2026/10/24/1239851-shest-chelovek-pogibli",
-    "https://t.me/rbc_news/159339",
-    "https://t.me/headlines_for_traders/87367",
-    "https://tass.ru/proisshestviya/28249721",
-    "https://www.interfax.ru/russia/1124761",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249735",
-    "https://t.me/BitcoinMagazineTelegram/10901",
-    "https://t.me/forklog/50398",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249725",
-    "https://tass.ru/obschestvo/28249695"
+    "https://www.kommersant.ru/doc/9059855"
   ],
   "ai_dead": {
     "date": "2026-10-24",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-23T13:31:01.756663+00:00",
-      "Чистая прибыль «Русснефти» по РСБУ выросла в 4,3 раза за девять месяцев"
-    ],
-    [
-      "2026-10-23T13:31:01.756663+00:00",
-      "Интерпол изъял $105 млн и закрыл нелегальные криптофермы в Африке"
-    ],
-    [
-      "2026-10-23T13:31:01.756663+00:00",
-      "Первый танкер с российским дизелем направляется в Нью-Йорк"
-    ],
-    [
-      "2026-10-23T13:31:01.756663+00:00",
-      "Рынок акций РФ выросла более чем на 1% на торгах"
-    ],
     [
       "2026-10-23T14:30:57.648804+00:00",
       "Золото тестирует уровень $4000 за унцию на фоне роста цен на нефть"
@@ -1479,6 +1458,30 @@
     [
       "2026-10-24T13:00:56.194697+00:00",
       "Сборная России разгромила Судан на старте ЧМ по футболу до 15 лет"
+    ],
+    [
+      "2026-10-24T13:30:56.482687+00:00",
+      "Доля доллара в глобальных расчетах через SWIFT снизилась в сентябре"
+    ],
+    [
+      "2026-10-24T13:30:56.482687+00:00",
+      "Суд в Аргентине закрыл дело против Милея из-за мем-коина LIBRA"
+    ],
+    [
+      "2026-10-24T13:30:56.482687+00:00",
+      "HSBC внедрил стейблкоин в гонконгском приложении PayMe"
+    ],
+    [
+      "2026-10-24T13:30:56.482687+00:00",
+      "Силы ПВО отражают атаку беспилотников на Омскую область"
+    ],
+    [
+      "2026-10-24T13:30:56.482687+00:00",
+      "Гуменник захватил лидерство на этапе Гран-при России по фигурному катанию"
+    ],
+    [
+      "2026-10-24T13:30:56.482687+00:00",
+      "Аэропорт Сочи возобновил работу после временных ограничений"
     ]
   ],
   "results_fp": [
