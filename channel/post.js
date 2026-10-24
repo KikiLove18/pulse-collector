@@ -137,7 +137,24 @@ async function resultsPost(p, results) {
   console.log("факт против прогноза отправлено");
 }
 
+// inspect — разбор поста тестового канала (ARG: «582» или «580-586»): пересылаем копию туда же, печатаем устройство, копию удаляем
+async function inspect() {
+  const [a, b2] = String(process.env.ARG || "").split("-").map(Number);
+  for (let id = a; id <= (b2 || a); id++) {
+    const f = new FormData();
+    f.append("chat_id", process.env.TELEGRAM_CHAT_ID); f.append("from_chat_id", process.env.TELEGRAM_CHAT_ID); f.append("message_id", String(id)); f.append("disable_notification", "true");
+    try {
+      const m = (await tg("forwardMessage", f)).result;
+      const keys = Object.keys(m).filter(k => !["chat", "from", "sender_chat", "date", "message_id", "forward_origin", "forward_from_chat", "forward_from_message_id", "forward_date", "forward_signature", "is_automatic_forward"].includes(k));
+      console.log(`#${id}:`, JSON.stringify(Object.fromEntries(keys.map(k => [k, k === "photo" ? m.photo.map(p => `${p.width}x${p.height}`) : m[k]])), null, 1).slice(0, 3000));
+      const d = new FormData(); d.append("chat_id", process.env.TELEGRAM_CHAT_ID); d.append("message_id", String(m.message_id));
+      await tg("deleteMessage", d);
+    } catch (e) { console.log(`#${id}: ${e.message}`); }
+  }
+}
+
 (async () => {
+  if (THEME === "inspect") return inspect();
   if (THEME === "pro") return proPost();
   const api = await fetch(`${APP}/api/freech${TARGET === "test" ? "?sample=1" : ""}`, { headers: { authorization: `Bearer ${process.env.INGEST_SECRET}` } });
   if (!api.ok) throw new Error("api/freech " + api.status);
