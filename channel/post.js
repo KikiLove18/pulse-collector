@@ -44,11 +44,86 @@ async function proPost() {
   console.log("пост PRO отправлен");
 }
 
+// рамка слайда (как у подборок) вокруг готового блока приложения; html строится в странице приложения
+const FRAME_CSS = `#fc{position:fixed;inset:0;z-index:2147483647;background:linear-gradient(160deg,#1b3360,#3a6ea8);display:flex;flex-direction:column;padding:22px 18px 18px;gap:14px}
+  #fc .hd{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;color:#fff}#fc .hd img{width:34px;height:34px;border-radius:9px}
+  #fc .hd .th{margin-left:auto;font-size:14px;font-weight:700;opacity:.8}#fc .card,#fc .past-hero{margin:0!important;box-shadow:0 10px 40px rgba(0,0,0,.35)}#fc .acts,#fc .newpill,#fc .ch,#fc .cd2{display:none}
+  #fc .fw{flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px}#fc .ft{display:flex;justify-content:space-between;font-size:13px;opacity:.75;color:#fff}
+  #fc .big{color:#fff;font-size:26px;font-weight:900;line-height:1.15;margin:4px 2px 6px}#fc .evmini{width:100%;pointer-events:none}`;
+async function shot(p, build, arg) {
+  await p.evaluate(({ css, build, arg }) => {
+    document.getElementById("fc")?.remove();
+    const o = document.createElement("div");
+    o.id = "fc";
+    o.innerHTML = `<style>${css}</style>` + new Function("a", build)(arg);
+    document.body.appendChild(o);
+  }, { css: FRAME_CSS, build, arg });
+  await p.waitForTimeout(800);
+  const buf = await p.locator("#fc").screenshot({ type: "jpeg", quality: 88 });
+  require("fs").mkdirSync("out", { recursive: true }); require("fs").writeFileSync(`out/${THEME}_${Date.now()}.jpg`, buf); // для проверки (артефакт запуска)
+  return buf;
+}
+async function sendPhotos(shots, caption) {
+  const fd = new FormData();
+  fd.append("chat_id", CHAT);
+  if (shots.length === 1) {
+    fd.append("photo", new Blob([shots[0]], { type: "image/jpeg" }), "s0.jpg");
+    fd.append("caption", caption);
+    fd.append("parse_mode", "HTML");
+    return tg("sendPhoto", fd);
+  }
+  fd.append("media", JSON.stringify(shots.map((_, i) => ({ type: "photo", media: `attach://s${i}`, ...(i ? {} : { caption, parse_mode: "HTML" }) }))));
+  shots.forEach((buf, i) => fd.append(`s${i}`, new Blob([buf], { type: "image/jpeg" }), `s${i}.jpg`));
+  return tg("sendMediaGroup", fd);
+}
+const LINK = `📱 <a href="https://t.me/${BOT}?startapp=ch">Календарь и все новости — в приложении «Пульс рынка»</a>`;
+const HEAD_HTML = t => `<div class="hd"><img src="img/logo192.png" alt="">Пульс рынка<span class="th">${t}</span></div>`;
+
+// 📅 «Сегодня на рынке» (07:00 МСК): события календаря на сегодня — блоки evMini приложения; нет событий — поста нет
+async function todayPost(p, events) {
+  const dayOf = e => new Date(new Date(e.dt).getTime() + 3 * 3600e3).toISOString().slice(0, 10);
+  let day = new Date(Date.now() + 3 * 3600e3).toISOString().slice(0, 10);
+  // образец в тестовый канал в день без событий (выходные) — ближайший день с событиями
+  if (TARGET === "test" && !events.some(e => dayOf(e) === day)) day = events.map(dayOf).filter(d => d > day).sort()[0] || day;
+  const list = events.filter(e => dayOf(e) === day)
+    .sort((a, b) => (b.impact === "High") - (a.impact === "High") || (a.dt > b.dt ? 1 : -1)).slice(0, 6).sort((a, b) => a.dt > b.dt ? 1 : -1);
+  console.log(`today: ${list.length} событий\n` + list.map(e => "• " + e.title).join("\n"));
+  if (!list.length) return console.log("сегодня событий нет — пост не отправлен");
+  const label = new Date(day + "T12:00:00+03:00").toLocaleDateString("ru-RU", { day: "numeric", month: "long", weekday: "long", timeZone: "Europe/Moscow" });
+  const img = await shot(p, `EVS = a.list; return \`${HEAD_HTML("📅 Календарь")}<div class="fw"><div class="big">Сегодня на рынке<br><small style="font-size:16px;opacity:.8;font-weight:700">\${a.label}</small></div>\${a.list.map(e => evMini(e, 0, "")).join("")}</div><div class="ft"><span>события дня</span><span>@ime_news_01_bot</span></div>\`;`, { list, label });
+  const hi = list.filter(e => e.impact === "High").length;
+  await sendPhotos([img], `📅 <b>Сегодня на рынке</b> — ${list.length} ${list.length === 1 ? "событие" : list.length < 5 ? "события" : "событий"}${hi ? `, сильно двигают рынок: ${hi}` : ""}\n\n${LINK}`);
+  console.log("сегодня на рынке отправлено");
+}
+
+// ✅ «Факт против прогноза»: итоги, которые воркер поставил в очередь (res_queue) — блок pastCard приложения
+async function resultsPost(p, results) {
+  console.log(`results: ${results.length}\n` + results.map(r => "• " + r.title + " — " + r.headline).join("\n"));
+  if (!results.length) return;
+  const shots = [];
+  for (const r of results) shots.push(await shot(p, `return \`${HEAD_HTML("✅ Факт против прогноза")}<div class="fw">\${pastCard(a, 0)}</div><div class="ft"><span>итог события</span><span>@ime_news_01_bot</span></div>\`;`, r));
+  const V = { better: "🟢 лучше ожиданий", worse: "🔴 хуже ожиданий", inline: "⚪ в рамках ожиданий", neutral: "⚪ в рамках ожиданий" };
+  const cap = results.length === 1 ? `✅ <b>${esc(results[0].title)}</b>\n${esc(results[0].headline)} · ${V[results[0].verdict] || ""}`
+    : `✅ <b>Факт против прогноза</b>\n` + results.map(r => `• ${esc(r.title)}: ${esc(r.headline)}`).join("\n");
+  await sendPhotos(shots, `${cap}\n\n${LINK}`);
+  console.log("факт против прогноза отправлено");
+}
+
 (async () => {
   if (THEME === "pro") return proPost();
-  const api = await fetch(`${APP}/api/freech`, { headers: { authorization: `Bearer ${process.env.INGEST_SECRET}` } });
+  const api = await fetch(`${APP}/api/freech${TARGET === "test" ? "?sample=1" : ""}`, { headers: { authorization: `Bearer ${process.env.INGEST_SECRET}` } });
   if (!api.ok) throw new Error("api/freech " + api.status);
-  const { news, used } = await api.json();
+  const { news, used, events = [], results = [] } = await api.json();
+  if (THEME === "today" || THEME === "results") {
+    const b = await chromium.launch();
+    const p = await b.newPage({ viewport: { width: 540, height: 675 }, deviceScaleFactor: 2, locale: "ru-RU", timezoneId: "Europe/Moscow" });
+    p.on("pageerror", e => console.log("page error:", e.message));
+    await p.goto(APP + "/", { waitUntil: "networkidle" });
+    await p.waitForTimeout(1500);
+    if (THEME === "today") await todayPost(p, events); else await resultsPost(p, results);
+    await b.close();
+    return;
+  }
 
   const b = await chromium.launch();
   const p = await b.newPage({ viewport: { width: 540, height: 675 }, deviceScaleFactor: 2, locale: "ru-RU", timezoneId: "Europe/Moscow" });
