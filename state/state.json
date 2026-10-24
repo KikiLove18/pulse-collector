@@ -797,7 +797,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-24T11:00:57.784315+00:00",
+  "breaking_ts": "2026-10-24T11:30:54.596246+00:00",
   "news_now": {
     "day": "2026-10-24",
     "day_count": 0,
@@ -806,77 +806,61 @@
     "titles": []
   },
   "news_seen": [
+    "https://www.rbc.ru/sport/22/10/2026/6ad8b0d3b8e2c50343b3998d",
+    "https://tass.ru/politika/28249605",
+    "https://t.me/rbc_news/159337",
+    "https://t.me/headlines_for_traders/87365",
+    "https://t.me/forklog/50397",
+    "https://tass.ru/obschestvo/28249617",
+    "https://www.kommersant.ru/doc/9059829",
+    "https://www.rbc.ru/sport/22/10/2026/6ad9e6c8803ebbb8cbcb00fe",
+    "https://tass.ru/sport/28249609",
+    "https://tass.ru/politika/28249607",
+    "https://tass.ru/sport/28249601",
+    "https://t.me/banksta/104091",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249597",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249595",
+    "https://tass.ru/obschestvo/28249575",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249591",
+    "https://tass.ru/obschestvo/28249389",
+    "https://tass.ru/obschestvo/28249507",
+    "https://www.interfax.ru/russia/1124752",
+    "https://www.rbc.ru/sport/21/10/2026/6ad894316ba9cc74625aec4b",
+    "https://tass.ru/politika/28249579",
+    "https://t.me/markettwits/390313",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249573",
+    "https://tass.ru/proisshestviya/28249571",
+    "https://www.interfax.ru/russia/1124751",
+    "https://t.me/headlines_for_traders/87364",
+    "https://www.rbc.ru/politics/22/10/2026/6ad93c23982c3151665c3899",
+    "https://t.me/invest_zonaa/39120",
+    "https://tass.ru/politika/28249569",
+    "https://t.me/markettwits/390312",
+    "https://t.me/FinancialJuice/142487",
+    "https://t.me/FinancialJuice/142486",
+    "https://t.me/FinancialJuice/142485",
+    "https://t.me/FinancialJuice/142484",
+    "https://t.me/headlines_for_traders/87363",
+    "https://tass.ru/obschestvo/28249563",
+    "https://www.kommersant.ru/doc/9059823",
+    "https://t.me/FinancialJuice/142483",
+    "https://t.me/FinancialJuice/142482",
+    "https://tass.ru/sport/28249561",
+    "https://tass.ru/ekonomika/28249519",
+    "https://www.rbc.ru/rbcfreenews/6adc8f1c54a954269492241e",
+    "https://tass.ru/obschestvo/28249551",
+    "https://cryptoslate.com/senator-probes-tethers-reported-6-million-payments-to-ex-white-house-crypto-advisers-firm/",
+    "https://tass.ru/ekonomika/28249557",
+    "https://www.kommersant.ru/doc/9059820",
+    "https://www.marketwatch.com/story/do-machines-have-feelings-ai-has-philosophers-and-tech-leaders-rethinking-consciousness-00e5ad78?mod=mw_rss_topstories",
     "https://tass.ru/obschestvo/28249525",
-    "https://www.rbc.ru/politics/24/10/2026/6adbfbe1e6f53f880224b016",
-    "https://t.me/markettwits/390311",
-    "https://tass.ru/obschestvo/28249509",
-    "https://t.me/banksta/104090",
-    "https://t.me/bitkogan/29476",
-    "https://t.me/rbc_news/159336",
-    "https://tass.ru/obschestvo/28249547",
-    "https://www.rbc.ru/rbcfreenews/6ad708e9c623fa0e531e1f95",
-    "https://www.interfax.ru/moscow/1124750",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249541",
-    "https://t.me/interfaxonline/80640",
-    "https://tass.ru/sport/28249545",
-    "https://www.interfax.ru/russia/1124749",
-    "https://www.rbc.ru/rbcfreenews/6adc8b77174c59ff2a398968",
-    "https://tass.ru/proisshestviya/28249539",
-    "https://www.kommersant.ru/doc/9059817",
-    "https://tass.ru/proisshestviya/28249535",
-    "https://www.interfax.ru/culture/1124748",
-    "https://www.interfax.ru/russia/1124747",
-    "https://www.interfax.ru/world/1124746",
-    "https://t.me/FinancialJuice/142481",
-    "https://www.vedomosti.ru/business/news/2026/10/24/1239842-kompaniya-lego-prodlila",
-    "https://tass.ru/ekonomika/28249533",
-    "https://t.me/markettwits/390310",
-    "https://tass.ru/obschestvo/28249529",
-    "https://t.me/banksta/104089",
-    "https://www.rbc.ru/rbcfreenews/6ad9d165626bfaa1d9eeacd6",
-    "https://tass.ru/obschestvo/28249531",
-    "https://www.interfax.ru/russia/1124745",
-    "https://www.rbc.ru/sport/10/10/2026/6aca43a39a79479e3f133c12",
-    "https://tass.ru/proisshestviya/28249523",
-    "https://www.rbc.ru/economics/21/09/2026/6ab10a7af46152f6a9a4dff0",
-    "https://www.interfax.ru/russia/1124744",
-    "https://tass.ru/ekonomika/28249515",
-    "https://tass.ru/proisshestviya/28249521",
-    "https://www.interfax.ru/russia/1124743",
-    "https://t.me/headlines_for_traders/87362",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249503",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239841-gd-27-oktyabrya",
-    "https://www.interfax.ru/russia/1124742",
-    "https://t.me/forklog/50396",
-    "https://t.me/rbc_news/159335",
-    "https://t.me/markettwits/390309",
-    "https://tass.ru/politika/28249513",
-    "https://tass.ru/ekonomika/28249505",
-    "https://tass.ru/proisshestviya/28249501",
-    "https://www.kommersant.ru/doc/9059810",
-    "https://www.interfax.ru/russia/1124741"
+    "https://www.rbc.ru/politics/24/10/2026/6adbfbe1e6f53f880224b016"
   ],
   "ai_dead": {
     "date": "2026-10-24",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-23T11:30:55.566206+00:00",
-      "ЦБ повысил прогноз цены на нефть Urals до $72 за баррель в 2026 году"
-    ],
-    [
-      "2026-10-23T11:30:55.566206+00:00",
-      "Число сбитых вблизи Москвы беспилотников достигло 13"
-    ],
-    [
-      "2026-10-23T11:30:55.566206+00:00",
-      "UBS допустил ретест золотом уровня $4 000 за унцию при сильном спросе на покупку"
-    ],
-    [
-      "2026-10-23T12:00:56.020045+00:00",
-      "ЦБ сузил прогноз роста кредитования населения в 2026 году до 5–8%"
-    ],
     [
       "2026-10-23T12:00:56.020045+00:00",
       "Цены на нефть Brent достигли максимума за пять месяцев на фоне рисков вокруг Ирана"
@@ -1476,6 +1460,30 @@
     [
       "2026-10-24T11:00:57.784315+00:00",
       "Президент Ирана Масуд Пезешкиан посетит саммит в Москве 27 октября"
+    ],
+    [
+      "2026-10-24T11:30:54.596246+00:00",
+      "США отменяют пошлины на ряд товаров из Канады"
+    ],
+    [
+      "2026-10-24T11:30:54.596246+00:00",
+      "Зеленский ввел новые санкции против компаний из РФ и Китая"
+    ],
+    [
+      "2026-10-24T11:30:54.596246+00:00",
+      "Сенат США проверяет выплаты Tether экс-советнику Белого дома"
+    ],
+    [
+      "2026-10-24T11:30:54.596246+00:00",
+      "Reuters сообщил о планах Ирана атаковать интернет-кабели"
+    ],
+    [
+      "2026-10-24T11:30:54.596246+00:00",
+      "В Look Into Bitcoin оценили потенциал роста биткоина"
+    ],
+    [
+      "2026-10-24T11:30:54.596246+00:00",
+      "ЕС стремится к участию в переговорах России и США по Украине"
     ]
   ],
   "results_fp": [
