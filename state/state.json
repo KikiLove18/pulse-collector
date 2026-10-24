@@ -797,68 +797,67 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-24T14:00:55.913547+00:00",
+  "breaking_ts": "2026-10-24T14:31:00.211573+00:00",
   "news_now": {
     "day": "2026-10-24",
-    "day_count": 0,
+    "day_count": 1,
     "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "last": "2026-10-24T14:31:00.211573+00:00",
+    "titles": [
+      "Биткоин упал ниже $80 000 на фоне массовых ликвидаций"
+    ]
   },
   "news_seen": [
+    "https://tass.ru/sport/28249935",
+    "https://tass.ru/obschestvo/28249929",
+    "https://www.rbc.ru/rbcfreenews/6ad1e69ce62d20cde8f51e6d",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249933",
+    "https://t.me/thebell_io/39602",
+    "https://thedefiant.io/news/security/shaw-publishes-daos-fun-reconstruction-claims-critical-flaw",
+    "https://tass.ru/proisshestviya/28249927",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239860-tramp-oproverg-sluhi",
+    "https://www.marketwatch.com/story/everyones-talking-about-roth-conversions-but-heres-how-few-people-really-do-them-and-why-you-shouldnt-have-fomo-about-it-1b50db07?mod=mw_rss_topstories",
+    "https://t.me/WatcherGuru/15620",
+    "https://tass.ru/ekonomika/28249925",
+    "https://www.interfax.ru/russia/1124781",
+    "https://t.me/headlines_for_traders/87372",
+    "https://www.interfax.ru/world/1124780",
+    "https://tass.ru/obschestvo/28249917",
+    "https://www.kommersant.ru/doc/9059868",
+    "https://thedefiant.io/news/regulation/hyperliquid-s-yan-and-cme-s-duffy-split-over-who-must-bear-us-compliance",
+    "https://tass.ru/ekonomika/28249919",
+    "https://www.sport-interfax.ru/1124779",
+    "https://www.rbc.ru/sport/02/10/2026/6abfca8c9a7947977fa886e3",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239859-es-budet-dobivatsya",
+    "https://www.rbc.ru/rbcfreenews/6accea3df8bf9372dda152c0",
+    "https://t.me/banksta/104099",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249907",
+    "https://www.coindesk.com/business/2026/10/24/wells-fargo-cisco-marvell-among-latest-firms-objecting-to-okxice-s-tokenized-stock-plan",
+    "https://www.marketwatch.com/story/young-americans-are-giving-up-their-cars-its-a-path-to-financial-freedom-for-some-3cce491c?mod=mw_rss_topstories",
+    "https://www.interfax.ru/russia/1124778",
+    "https://tass.ru/obschestvo/28249913",
+    "https://t.me/rbc_news/159342",
+    "https://tass.ru/proisshestviya/28249897",
+    "https://t.me/interfaxonline/80644",
+    "https://tass.ru/sport/28249909",
+    "https://tass.ru/obschestvo/28249899",
+    "https://tass.ru/proisshestviya/28249903",
+    "https://tass.ru/sport/28249901",
+    "https://tass.ru/proisshestviya/28249895",
+    "https://www.rbc.ru/politics/20/10/2026/6ad7718183cf66da7444a826",
+    "https://www.rbc.ru/rbcfreenews/6ad88c5264a71f3750696272",
+    "https://www.coindesk.com/",
+    "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
     "https://t.me/incrypted/33097",
+    "https://tass.ru/armiya-i-opk/28249891",
     "https://www.rbc.ru/sport/21/10/2026/6ad8b4a63752378c2f7d6c86",
-    "https://t.me/headlines_for_traders/87371",
-    "https://t.me/FinancialJuice/142493",
-    "https://www.rbc.ru/rbcfreenews/6ac781f05eb2226fb0c61d62",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239856-lantratova-nazvala",
-    "https://t.me/interfaxonline/80643",
-    "https://t.me/FinancialJuice/142492",
-    "https://t.me/BitcoinMagazineTelegram/10902",
-    "https://www.rbc.ru/sport/24/10/2026/6adc85ef7605bd8275d320ba",
-    "https://www.interfax.ru/russia/1124775",
-    "https://www.kommersant.ru/doc/9059865",
-    "https://t.me/FinancialJuice/142491",
-    "https://www.rbc.ru/finances/23/10/2026/6ad8e8f89a79479675454d64",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239858-vosem-aeroportov",
-    "https://www.marketwatch.com/story/investors-recent-money-moves-show-a-preference-for-quality-over-momentum-within-the-s-p-500-ed6b5149?mod=mw_rss_topstories",
-    "https://www.rbc.ru/politics/13/11/2025/6915b5169a79477efdd47ae1",
-    "https://t.me/rbc_news/159341",
-    "https://cryptoslate.com/ethereum-sees-biggest-exchange-withdrawal-in-four-months-as-october-etf-losses-top-1-billion/",
-    "https://www.kommersant.ru/doc/9059862",
-    "https://www.marketwatch.com/story/my-nieces-college-rent-is-covered-by-a-529-plan-what-else-can-i-pay-for-tax-free-d1686b63?mod=mw_rss_topstories",
-    "https://www.interfax.ru/business/1124774",
-    "https://www.rbc.ru/rbcfreenews/6ab1412db2b157d1622ee28d"
+    "https://www.interfax.ru/russia/1124777"
   ],
   "ai_dead": {
     "date": "2026-10-24",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-23T15:01:03.346122+00:00",
-      "ЦБ опустил курс доллара ниже 81 рубля впервые с августа"
-    ],
-    [
-      "2026-10-23T15:01:03.346122+00:00",
-      "Доля стейблкоина USDT в расходах по ВЭД достигла 27%"
-    ],
-    [
-      "2026-10-23T15:01:03.346122+00:00",
-      "Зеленский заявил о трёхсторонней встрече Украины, РФ и США"
-    ],
-    [
-      "2026-10-23T15:01:03.346122+00:00",
-      "«Яндекс» восстановил доступ к 90% данных в Yandex Cloud"
-    ],
-    [
-      "2026-10-23T15:01:03.346122+00:00",
-      "Hobby World вновь отложил IPO из-за высокой ставки ЦБ"
-    ],
-    [
-      "2026-10-23T15:01:03.346122+00:00",
-      "Индийская Jio привлекла $77 млрд в рамках рекордного IPO"
-    ],
     [
       "2026-10-23T15:31:12.936848+00:00",
       "Трамп заявил об отсутствии планов нападения на Иран до выборов в Конгресс"
@@ -1458,6 +1457,30 @@
     [
       "2026-10-24T14:00:55.913547+00:00",
       "Канцлер Германии Фридрих Мерц признал серьезные проблемы в экономике ФРГ"
+    ],
+    [
+      "2026-10-24T14:31:00.211573+00:00",
+      "Биткоин упал ниже $80 000 на фоне ликвидации лонгов на $200 млн"
+    ],
+    [
+      "2026-10-24T14:31:00.211573+00:00",
+      "Омский прозел подвергся атаке беспилотников"
+    ],
+    [
+      "2026-10-24T14:31:00.211573+00:00",
+      "ЦБ опустил официальный курс доллара ниже ₽81"
+    ],
+    [
+      "2026-10-24T14:31:00.211573+00:00",
+      "Frasers Group получила контроль над Hugo Boss"
+    ],
+    [
+      "2026-10-24T14:31:00.211573+00:00",
+      "Сербская NIS запросила в США продление лицензии"
+    ],
+    [
+      "2026-10-24T14:31:00.211573+00:00",
+      "Число жертв теракта в Иордании возросло до девяти"
     ]
   ],
   "results_fp": [
