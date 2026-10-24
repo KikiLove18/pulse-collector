@@ -61,6 +61,8 @@ def _send(chat, html, card_url, silent=False, thread=None):
         print("----- канал PRO (не отправлено: нет токена) -----\n" + html, file=sys.stderr)
         return None
     payload = {"chat_id": chat, "text": html, "parse_mode": "HTML", "disable_notification": silent or SILENT["on"]}
+    if str(chat) == str(os.environ.get("PRO_CHAT_ID") or ""):
+        payload["protect_content"] = True  # материалы PRO — без пересылки и сохранения (Юрист 25.10, оферта разд. 13); тестовый канал — как раньше
     if thread:
         payload["message_thread_id"] = thread
     if card_url:
