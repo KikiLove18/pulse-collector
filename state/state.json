@@ -40,7 +40,7 @@
   ],
   "last_digest_ts": "2026-10-24T04:31:02.520807+00:00",
   "calendar": {
-    "ts": "2026-10-24T04:00:56.317838+00:00",
+    "ts": "2026-10-24T10:00:56.558956+00:00",
     "data": [
       {
         "title": "IMF Meetings",
@@ -797,7 +797,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-24T09:30:58.873046+00:00",
+  "breaking_ts": "2026-10-24T10:00:56.552809+00:00",
   "news_now": {
     "day": "2026-10-24",
     "day_count": 0,
@@ -806,84 +806,57 @@
     "titles": []
   },
   "news_seen": [
+    "https://t.me/incrypted/33095",
+    "https://tass.ru/obschestvo/28249459",
+    "https://tass.ru/sport/28249467",
+    "https://www.rbc.ru/politics/23/10/2026/6ada9dd1089e8d5c20c60e3f",
+    "https://www.kommersant.ru/doc/9059796",
+    "https://t.me/bitkogan/29475",
+    "https://tass.ru/ekonomika/28249447",
+    "https://www.interfax.ru/world/1124733",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239838-chislo-pogibshih",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249449",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249461",
+    "https://www.kommersant.ru/doc/9059800",
+    "https://t.me/markettwits/390307",
+    "https://www.rbc.ru/rbcfreenews/69a1bd9e9a7947c91559e460",
+    "https://www.interfax.ru/world/1124732",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249455",
+    "https://www.interfax.ru/russia/1124731",
+    "https://www.interfax.ru/russia/1124730",
+    "https://tass.ru/ekonomika/28249453",
+    "https://tass.ru/obschestvo/28249445",
+    "https://t.me/interfaxonline/80637",
+    "https://tass.ru/armiya-i-opk/28249439",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239837-ukraine-starlink",
+    "https://t.me/markettwits/390306",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239836-zaharova-prizvala",
+    "https://tass.ru/proisshestviya/28249427",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249437",
+    "https://tass.ru/obschestvo/28249433",
+    "https://t.me/markettwits/390305",
+    "https://tass.ru/mezhdunarodnaya-panorama/28249435",
+    "https://t.me/headlines_for_traders/87360",
+    "https://www.rbc.ru/technology_and_media/15/09/2026/6aa8e03421f80289f2f2a8ab",
+    "https://www.kommersant.ru/doc/9059795",
+    "https://www.interfax.ru/russia/1124728",
+    "https://tass.ru/proisshestviya/28249431",
+    "https://www.interfax.ru/russia/1124727",
+    "https://www.rbc.ru/rbcfreenews/6ac74f3d5a7f8072174533e1",
+    "https://tass.ru/obschestvo/28249423",
+    "https://www.wsj.com/health/pharma/moderna-investors-should-brace-for-more-whiplash-5c32f32d?mod=rss_markets_main",
     "https://tass.ru/proisshestviya/28249425",
     "https://tass.ru/proisshestviya/28249429",
     "https://t.me/interfaxonline/80636",
     "https://thedefiant.io/news/tokens/uni-slides-29-in-four-weeks-as-uniswap-liquidity-holds-steady",
     "https://www.vedomosti.ru/politics/news/2026/10/24/1239835-za-sutki-sili-pvo",
-    "https://www.kommersant.ru/doc/9059789",
-    "https://t.me/rbc_news/159333",
-    "https://tass.ru/ekonomika/28249417",
-    "https://www.investing.com/news/stock-market-news/frances-luxury-stores-board-up-windows-ahead-of-fresh-protests-4970670",
-    "https://t.me/forklog/50395",
-    "https://www.interfax.ru/russia/1124726",
-    "https://tass.ru/politika/28249419",
-    "https://www.interfax.ru/russia/1124724",
-    "https://tass.ru/sport/28249413",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249411",
-    "https://tass.ru/ekonomika/28249415",
-    "https://tass.ru/ekonomika/28249405",
-    "https://tass.ru/nedvizhimost/28249393",
-    "https://www.rbc.ru/rbcfreenews/6adc70cd275194a1faea6736",
-    "https://tass.ru/proisshestviya/28249403",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249395",
-    "https://tass.ru/ekonomika/28249401",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239834-izhevske-iz-za-ugrozi",
-    "https://tass.ru/proisshestviya/28249399",
-    "https://t.me/banksta/104087",
-    "https://tass.ru/obschestvo/28249383",
-    "https://www.kommersant.ru/doc/9059786",
-    "https://tass.ru/obschestvo/28249381",
-    "https://tass.ru/proisshestviya/28249387",
-    "https://tass.ru/proisshestviya/28249391",
-    "https://t.me/whale_alert_io/104165",
-    "https://www.interfax.ru/russia/1124723",
-    "https://t.me/headlines_for_traders/87359",
-    "https://www.interfax.ru/russia/1124722",
-    "https://tass.ru/proisshestviya/28249377",
-    "https://www.rbc.ru/society/25/09/2026/6ab682bd9a7947040043f3b9",
-    "https://www.kommersant.ru/doc/9059783",
-    "https://www.interfax.ru/russia/1124721",
-    "https://t.me/FinancialJuice/142479",
-    "https://t.me/FinancialJuice/142478",
-    "https://t.me/if_market_news/86301",
-    "https://t.me/minfin/9406",
-    "https://tass.ru/obschestvo/28247633",
-    "https://tass.ru/sport/28247271",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239833-tela-treh-chelovek",
-    "https://www.interfax.ru/russia/1124720",
-    "https://t.me/FinancialJuice/142477",
-    "https://tass.ru/proisshestviya/28249369"
+    "https://www.kommersant.ru/doc/9059789"
   ],
   "ai_dead": {
     "date": "2026-10-24",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-23T10:01:02.475254+00:00",
-      "Трехсторонние переговоры по Украине пройдут в Абу-Даби в начале ноября"
-    ],
-    [
-      "2026-10-23T10:01:02.475254+00:00",
-      "Мосбиржа с 30 ноября ужесточит ограничения на сделки с облигациями"
-    ],
-    [
-      "2026-10-23T10:01:02.475254+00:00",
-      "Южная Корея намерена регулировать стейблкоины как платежные инструменты"
-    ],
-    [
-      "2026-10-23T10:31:04.231735+00:00",
-      "Банк России сохранил ключевую ставку на уровне 14%"
-    ],
-    [
-      "2026-10-23T10:31:04.231735+00:00",
-      "Цены на газ в Европе выросли до максимума с 2022 года"
-    ],
-    [
-      "2026-10-23T10:31:04.231735+00:00",
-      "Судно под флагом Коморских островов затонуло в Черном море"
-    ],
     [
       "2026-10-23T10:31:04.231735+00:00",
       "HSBC запустил первый стейблкоин для пользователей приложения"
@@ -1483,6 +1456,30 @@
     [
       "2026-10-24T09:30:58.873046+00:00",
       "Токен UNI подешевел на 29% за четыре недели при стабильной ликвидности"
+    ],
+    [
+      "2026-10-24T10:00:56.552809+00:00",
+      "В Конгресс США внесен законопроект по запрету импорта энергоносителей РФ"
+    ],
+    [
+      "2026-10-24T10:00:56.552809+00:00",
+      "Reuters: переговоры России, Украины и США могут пройти в ОАЭ или Швейцарии"
+    ],
+    [
+      "2026-10-24T10:00:56.552809+00:00",
+      "Президент Ирана Пезешкиан посетит Москву 27 октября для участия в саммите ФСЭГ"
+    ],
+    [
+      "2026-10-24T10:00:56.552809+00:00",
+      "Reuters сообщил о запросах властей США к Starlink в разных странах"
+    ],
+    [
+      "2026-10-24T10:00:56.552809+00:00",
+      "Землетрясение магнитудой 7,2 зафиксировано на Вануату"
+    ],
+    [
+      "2026-10-24T10:00:56.552809+00:00",
+      "Убыток девелопера «Самолет» по МСФО за первое полугодие составил 22,3 млрд рублей"
     ]
   ],
   "results_fp": [
