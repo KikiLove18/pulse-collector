@@ -39,7 +39,7 @@
   ],
   "last_digest_ts": "2026-10-23T16:30:59.115969+00:00",
   "calendar": {
-    "ts": "2026-10-23T16:31:19.816365+00:00",
+    "ts": "2026-10-24T04:00:56.317838+00:00",
     "data": [
       {
         "title": "IMF Meetings",
@@ -796,7 +796,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-23T21:30:58.394659+00:00",
+  "breaking_ts": "2026-10-24T04:00:56.317158+00:00",
   "news_now": {
     "day": "2026-10-24",
     "day_count": 0,
@@ -805,78 +805,52 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/mezhdunarodnaya-panorama/28248569",
-    "https://www.rbc.ru/politics/24/07/2026/6a63a0e79a79479a6cbdbd99",
-    "https://tass.ru/sport/28248573",
-    "https://www.kommersant.ru/doc/9059691",
-    "https://t.me/whale_alert_io/104160",
-    "https://www.investing.com/news/stock-market-news/russia-stocks-higher-at-close-of-trade-moex-russia-index-up-151-4970421",
-    "https://tass.ru/mezhdunarodnaya-panorama/28248567",
-    "https://decrypt.co/381758/netanyahu-crypto-plan-banking-sanctions-israel",
-    "https://tass.ru/sport/28248565",
-    "https://tass.ru/ekonomika/28248563",
-    "https://www.marketwatch.com/story/this-hot-ai-fueled-stock-has-been-in-a-rut-it-just-beat-earnings-expectations-by-36-4a4188cb?mod=mw_rss_topstories",
-    "https://tass.ru/sport/28248561",
-    "https://t.me/banksta/104076",
-    "https://www.sport-interfax.ru/1124668",
-    "https://tass.ru/mezhdunarodnaya-panorama/28248531",
-    "https://www.marketwatch.com/story/the-mobile-ambitions-of-spacex-see-telecom-stocks-get-hit-again-what-the-latest-developments-mean-9a4159b5?mod=mw_rss_topstories",
-    "https://tass.ru/sport/28248555",
-    "https://www.wsj.com/finance/stocks/stocks-pulled-in-two-directions-fall-to-end-volatile-week-0c2042a8?mod=rss_markets_main",
-    "https://tass.ru/obschestvo/28248549",
-    "https://tass.ru/kultura/28248551",
-    "https://tass.ru/sport/28248547",
-    "https://thedefiant.io/news/regulation/argentine-judge-dismisses-libra-criminal-case-against-milei-and-10-others",
-    "https://www.marketwatch.com/story/the-real-test-for-modernas-cancer-vaccine-isnt-about-beating-keytruda-its-keeping-cancer-from-coming-back-in-the-long-term-da9af99f?mod=mw_rss_topstories",
-    "https://tass.ru/politika/28248545",
-    "https://tass.ru/kultura/28248539",
-    "https://www.investing.com/news/stock-market-news/why-is-cumberland-pharmaceuticals-stock-sliding-today-93CH-4970390",
-    "https://tass.ru/kultura/28248537",
-    "https://tass.ru/mezhdunarodnaya-panorama/28248543",
-    "https://tass.ru/armiya-i-opk/28248535",
-    "https://tass.ru/obschestvo/28248541",
-    "https://t.me/markettwits/390290",
-    "https://tass.ru/politika/28248533",
-    "https://tass.ru/obschestvo/28248527",
-    "https://www.interfax.ru/business/1124667",
-    "https://tass.ru/armiya-i-opk/28244859",
-    "https://t.me/markettwits/390289",
-    "https://www.rbc.ru/politics/22/10/2026/6ad9f464aa3f2eeb15cf3bff",
-    "https://www.kommersant.ru/doc/9059412",
-    "https://tass.ru/mezhdunarodnaya-panorama/28248521",
-    "https://tass.ru/sport/28248525",
-    "https://t.me/interfaxonline/80623",
-    "https://t.me/WatcherGuru/15618"
+    "https://t.me/interfaxonline/80625",
+    "https://tass.ru/obschestvo/28248919",
+    "https://tass.ru/nauka/28248901",
+    "https://tass.ru/mezhdunarodnaya-panorama/28248915",
+    "https://tass.ru/mezhdunarodnaya-panorama/28248917",
+    "https://tass.ru/obschestvo/28248907",
+    "https://www.rbc.ru/rbcfreenews/69e5cf009a79478a2f91e607",
+    "https://tass.ru/proisshestviya/28248897",
+    "https://tass.ru/obschestvo/28248905",
+    "https://t.me/lookonchainchannel/10754",
+    "https://tass.ru/ekonomika/28248913",
+    "https://tass.ru/armiya-i-opk/28248911",
+    "https://t.me/headlines_for_traders/87341",
+    "https://www.interfax.ru/world/1124679",
+    "https://www.rbc.ru/rbcfreenews/6ab1c2cfba14ff6989bb6571",
+    "https://tass.ru/armiya-i-opk/28248909",
+    "https://tass.ru/ekonomika/28248903",
+    "https://tass.ru/ekonomika/28248895",
+    "https://www.kommersant.ru/doc/9059704",
+    "https://t.me/interfaxonline/80624",
+    "https://tass.ru/obschestvo/28248891",
+    "https://www.rbc.ru/technology_and_media/27/09/2026/6ab90499561554cf7a38203f",
+    "https://tass.ru/proisshestviya/28248889",
+    "https://tass.ru/obschestvo/28248885",
+    "https://tass.ru/mezhdunarodnaya-panorama/28248883",
+    "https://tass.ru/mezhdunarodnaya-panorama/28248881",
+    "https://tass.ru/obschestvo/28248879",
+    "https://www.interfax.ru/russia/1124678",
+    "https://tass.ru/obschestvo/28248877",
+    "https://www.kommersant.ru/doc/9059703",
+    "https://www.rbc.ru/rbcfreenews/6ad8973bf0f5fdd075a3ca24",
+    "https://tass.ru/obschestvo/28248869",
+    "https://t.me/headlines_for_traders/87340",
+    "https://tass.ru/politika/28248873",
+    "https://tass.ru/kosmos/28248863",
+    "https://tass.ru/obschestvo/28248871",
+    "https://tass.ru/obschestvo/28248867",
+    "https://tass.ru/ekonomika/28248861",
+    "https://t.me/banksta/104080",
+    "https://www.interfax.ru/russia/1124677"
   ],
   "ai_dead": {
     "date": "2026-10-23",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-23T05:00:59.384018+00:00",
-      "Правительство РФ рассматривает рост цен на топливо на 2,1 рубля"
-    ],
-    [
-      "2026-10-23T05:00:59.384018+00:00",
-      "Илон Маск пожертвовал $445 млн на поддержку республиканцев"
-    ],
-    [
-      "2026-10-23T05:30:56.234495+00:00",
-      "Инфляция в Японии в сентябре ускорилась до 2,1%"
-    ],
-    [
-      "2026-10-23T05:30:56.234495+00:00",
-      "The Economist раскрыл детали мирных инициатив США по Украине"
-    ],
-    [
-      "2026-10-23T05:30:56.234495+00:00",
-      "Собянин сообщил о 155 беспилотниках, летевших к Москве"
-    ],
-    [
-      "2026-10-23T05:30:56.234495+00:00",
-      "Бензин на АЗС может подорожать из-за импорта топлива"
-    ],
     [
       "2026-10-23T05:30:56.234495+00:00",
       "Santiment зафиксировал рост числа новых кошельков XRP"
@@ -1476,6 +1450,30 @@
     [
       "2026-10-23T20:00:57.012059+00:00",
       "Russ выиграл аукцион на управление сетью рекламных конструкций Москвы"
+    ],
+    [
+      "2026-10-24T04:00:56.317158+00:00",
+      "Энергоинфраструктура Севастополя подверглась атаке, город обесточен"
+    ],
+    [
+      "2026-10-24T04:00:56.317158+00:00",
+      "Индекс МосБиржи завершил сессию ростом на фоне нефти"
+    ],
+    [
+      "2026-10-24T04:00:56.317158+00:00",
+      "В Саудовской Аравии перехватили баллистическую ракету хуситов"
+    ],
+    [
+      "2026-10-24T04:00:56.317158+00:00",
+      "В Кузбассе произошло землетрясение магнитудой 4,9"
+    ],
+    [
+      "2026-10-24T04:00:56.317158+00:00",
+      "Криптоинституционал перевел активы на биржи после бездействия"
+    ],
+    [
+      "2026-10-24T04:00:56.317158+00:00",
+      "Более 10 аэропортов приостановили работу в ночь на субботу"
     ]
   ],
   "results_fp": [
