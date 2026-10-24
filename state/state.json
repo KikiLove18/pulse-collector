@@ -798,7 +798,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-24T16:00:56.807823+00:00",
+  "breaking_ts": "2026-10-24T18:00:57.392491+00:00",
   "news_now": {
     "day": "2026-10-24",
     "day_count": 1,
@@ -809,73 +809,74 @@
     ]
   },
   "news_seen": [
-    "https://www.coindesk.com/business/2026/10/24/strategy-strive-face-balancing-act-between-bitcoin-buying-and-preferred-stock-dividends",
-    "https://t.me/markettwits/390316",
-    "https://tass.ru/sport/28250033",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250029",
-    "https://tass.ru/sport/28250027",
-    "https://tass.ru/politika/28250023",
-    "https://tass.ru/obschestvo/28249829",
-    "https://tass.ru/armiya-i-opk/28250021",
-    "https://t.me/headlines_for_traders/87379",
-    "https://t.me/interfaxonline/80647",
-    "https://www.vedomosti.ru/politics/news/2026/10/24/1239867-chislo-pogibshih-viroslo",
-    "https://tass.ru/sport/28250019",
-    "https://www.interfax.ru/russia/1124785",
-    "https://www.rbc.ru/politics/24/10/2026/6adc7fbcd0b772f581137e33",
-    "https://cryptoslate.com/circle-shareholder-sues-trump-over-uae-crypto-deals-citing-up-to-82-million-in-potential-annual-revenue/",
-    "https://tass.ru/sport/28250015",
-    "https://thedefiant.io/news/markets/ether-falls-below-2-300-as-28-day-loss-reaches-14-7",
-    "https://tass.ru/sport/28250011",
-    "https://www.rbc.ru/sport/24/10/2026/6ada153986b5f5f352f6987d",
-    "https://www.rbc.ru/rbcfreenews/6adc8f1c54a954269492241e",
-    "https://t.me/rbc_news/159345",
-    "https://www.rbc.ru/rbcfreenews/6adca59e174c59ff2a39897d",
-    "https://t.me/headlines_for_traders/87378",
-    "https://www.vedomosti.ru/business/news/2026/10/24/1239866-nis-zaprosila-prodlenie-litsenzii",
-    "https://www.rbc.ru/rbcfreenews/6accffb6e5d6af10c731d2a4",
-    "https://tass.ru/proisshestviya/28250007",
-    "https://t.me/lookonchainchannel/10765",
-    "https://t.me/markettwits/390315",
-    "https://tass.ru/politika/28250003",
-    "https://tass.ru/sport/28249999",
-    "https://t.me/banksta/104102",
-    "https://t.me/interfaxonline/80646",
-    "https://www.rbc.ru/rbcfreenews/6adafef6325b0546bc1ab28b",
-    "https://tass.ru/mezhdunarodnaya-panorama/28249995",
-    "https://tass.ru/proisshestviya/28249997",
-    "https://www.interfax.ru/russia/1124784",
-    "https://t.me/lookonchainchannel/10763",
-    "https://t.me/headlines_for_traders/87377",
-    "https://www.marketwatch.com/story/money-saving-hacks-to-cope-with-higher-prices-from-our-readers-a092767e?mod=mw_rss_topstories",
-    "https://t.me/headlines_for_traders/87376",
-    "https://t.me/markettwits/390314"
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239875-novii-razgovor-putina-i-trampa",
+    "https://thedefiant.io/news/security/electrum-patches-wallet-flaw-exploited-through-malicious-servers",
+    "https://t.me/banksta/104111",
+    "https://tass.ru/sport/28250151",
+    "https://t.me/rbc_news/159349",
+    "https://t.me/headlines_for_traders/87385",
+    "https://tass.ru/sport/28250147",
+    "https://tass.ru/proisshestviya/28250149",
+    "https://www.rbc.ru/rbcfreenews/6adcc57f678a187a77afd740",
+    "https://t.me/headlines_for_traders/87384",
+    "https://tass.ru/proisshestviya/28250145",
+    "https://tass.ru/kultura/28250119",
+    "https://www.interfax.ru/russia/1124796",
+    "https://tass.ru/proisshestviya/28250143",
+    "https://tass.ru/proisshestviya/28250135",
+    "https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608",
+    "https://www.kommersant.ru/doc/9059909",
+    "https://www.interfax.ru/world/1124795",
+    "https://www.rbc.ru/politics/24/10/2026/6adbfbe1e6f53f880224b016",
+    "https://tass.ru/politika/28250139",
+    "https://www.marketwatch.com/story/i-want-to-pay-off-4-500-in-credit-card-debt-in-2-months-is-this-possible-059d9a21?mod=mw_rss_topstories",
+    "https://tass.ru/sport/28250129",
+    "https://t.me/interfaxonline/80649",
+    "https://www.rbc.ru/business/21/10/2026/6ad7faf655993dc88323eb96",
+    "https://t.me/headlines_for_traders/87383",
+    "https://tass.ru/obschestvo/28250127",
+    "https://www.kommersant.ru/doc/9059908",
+    "https://tass.ru/proisshestviya/28250125",
+    "https://tass.ru/proisshestviya/28250117",
+    "https://www.interfax.ru/russia/1124794",
+    "https://tass.ru/proisshestviya/28250123",
+    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
+    "https://tass.ru/politika/28250113",
+    "https://tass.ru/armiya-i-opk/28250121",
+    "https://tass.ru/sport/28250115",
+    "https://www.interfax.ru/russia/1124790",
+    "https://tass.ru/proisshestviya/28250111",
+    "https://t.me/banksta/104107",
+    "https://tass.ru/politika/28250109",
+    "https://tass.ru/proisshestviya/28250107",
+    "https://www.marketwatch.com/story/over-40-of-americans-are-heading-toward-retirement-blind-with-no-plan-e49b502f?mod=mw_rss_topstories",
+    "https://t.me/markettwits/390319",
+    "https://tass.ru/obschestvo/28249879",
+    "https://www.rbc.ru/sport/02/10/2026/6abfc8c69a79474a2f8c9730",
+    "https://www.interfax.ru/russia/1124793",
+    "https://www.wsj.com/finance/commodities-futures/how-expensive-is-gasoline-where-you-live-4acc6026?mod=rss_markets_main",
+    "https://www.vedomosti.ru/politics/news/2026/10/24/1239871-otmenili-kontsert-galkina",
+    "https://tass.ru/obschestvo/28250101",
+    "https://t.me/markettwits/390318",
+    "https://t.me/coinpost/4284",
+    "https://t.me/rbc_news/159348",
+    "https://t.me/headlines_for_traders/87382",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250097",
+    "https://www.rbc.ru/sport/24/10/2026/6ad352476930dce2d3971616",
+    "https://tass.ru/sport/28250103",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250099",
+    "https://www.rbc.ru/rbcfreenews/6ad9d165626bfaa1d9eeacd6",
+    "https://www.rbc.ru/rbcfreenews/6a736c679a7947125ef4fc72",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250093",
+    "https://www.rbc.ru/rbcfreenews/6ad7a1ee9b410e7b3894efa5",
+    "https://t.me/forklog/50402",
+    "https://decrypt.co/381775/google-quietly-updates-privacy-policy-gmail-photos-ads"
   ],
   "ai_dead": {
     "date": "2026-10-24",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-23T17:30:59.597111+00:00",
-      "Нефть Brent превысила $117 за баррель"
-    ],
-    [
-      "2026-10-23T17:30:59.597111+00:00",
-      "ЦБ сдвинул горизонт смягчения вправо"
-    ],
-    [
-      "2026-10-23T17:30:59.597111+00:00",
-      "Agora заморозила аккаунт после хака Initia"
-    ],
-    [
-      "2026-10-23T17:30:59.597111+00:00",
-      "Рынок акций РФ закрылся ростом индексов"
-    ],
-    [
-      "2026-10-23T17:30:59.597111+00:00",
-      "Иран грозит атаковать интернет-кабели в Персидском заливе"
-    ],
     [
       "2026-10-23T18:00:58.799760+00:00",
       "В конгресс США внесли законопроект о блокировке импорта российской нефти"
@@ -1471,6 +1472,30 @@
     [
       "2026-10-24T16:00:56.807823+00:00",
       "Генштаб ВС РФ объявил режим тишины в районе Алешек с 27 октября"
+    ],
+    [
+      "2026-10-24T18:00:57.392491+00:00",
+      "Биткоин опускался ниже $80 000 на фоне ликвидации лонгов на $404 млн"
+    ],
+    [
+      "2026-10-24T18:00:57.392491+00:00",
+      "WSJ: США рассматривают варианты возобновления военных действий против Ирана"
+    ],
+    [
+      "2026-10-24T18:00:57.392491+00:00",
+      "Минобороны РФ сообщило о перехвате 125 беспилотников за день"
+    ],
+    [
+      "2026-10-24T18:00:57.392491+00:00",
+      "Долговая нагрузка EA достигла $18 млрд после выкупа новыми владельцами"
+    ],
+    [
+      "2026-10-24T18:00:57.392491+00:00",
+      "Музеи и дворцы Парижа приостановили работу из-за массовых протестов"
+    ],
+    [
+      "2026-10-24T18:00:57.392491+00:00",
+      "Google обновила политику конфиденциальности для интеграции данных с рекламой"
     ]
   ],
   "results_fp": [
