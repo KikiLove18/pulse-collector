@@ -799,7 +799,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T08:00:54.415071+00:00",
+  "breaking_ts": "2026-10-25T08:30:56.653356+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -808,84 +808,49 @@
     "titles": []
   },
   "news_seen": [
+    "https://t.me/markettwits/390347",
+    "https://tass.ru/sport/28251029",
+    "https://www.vedomosti.ru/society/news/2026/10/25/1239901-podgotovili-zakonoproekt",
+    "https://t.me/rbc_news/159368",
+    "https://www.rbc.ru/rbcfreenews/6986cdeb9a7947f71add9ef5",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251027",
+    "https://t.me/headlines_for_traders/87392",
+    "https://t.me/thebell_io/39604",
+    "https://tass.ru/sport/28251025",
+    "https://www.kommersant.ru/doc/9059997",
+    "https://t.me/markettwits/390346",
+    "https://www.rbc.ru/politics/01/10/2026/6abd31539a79479d48a8d497",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251021",
+    "https://tass.ru/obschestvo/28251019",
+    "https://www.interfax.ru/russia/1124846",
+    "https://tass.ru/sport/28251017",
+    "https://t.me/markettwits/390345",
+    "https://tass.ru/obschestvo/28251009",
+    "https://www.rbc.ru/politics/07/07/2026/6a4bc5709a79477436f812ed",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239900-rossiiskaya-armiya",
+    "https://tass.ru/proisshestviya/28251013",
+    "https://tass.ru/obschestvo/28250991",
+    "https://www.kommersant.ru/doc/9059995",
+    "https://t.me/proeconomics/20600",
+    "https://www.rbc.ru/rbcfreenews/6ac5f39e8da5e779cada8d25",
+    "https://t.me/headlines_for_traders/87391",
+    "https://tass.ru/politika/28251007",
+    "https://tass.ru/kultura/28251011",
+    "https://www.interfax.ru/russia/1124845",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239899-ranenih-udare-belgorodu",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251005",
+    "https://cryptoslate.com/kraken-wants-to-be-your-bank-but-who-would-protect-your-money/",
     "https://tass.ru/proisshestviya/28251003",
     "https://t.me/markettwits/390344",
     "https://t.me/interfaxonline/80660",
     "https://tass.ru/kultura/28250995",
-    "https://tass.ru/proisshestviya/28251001",
-    "https://www.kommersant.ru/doc/9059991",
-    "https://t.me/rbc_news/159366",
-    "https://tass.ru/proisshestviya/28250997",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250993",
-    "https://www.interfax.ru/russia/1124843",
-    "https://www.rbc.ru/rbcfreenews/6a9e96874996ace4cb41134f",
-    "https://t.me/interfaxonline/80659",
-    "https://www.rbc.ru/radio/25/10/2026/6addb43a9a794713da655a56",
-    "https://tass.ru/obschestvo/28250981",
-    "https://tass.ru/proisshestviya/28250987",
-    "https://www.kommersant.ru/doc/9059989",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239898-postradali-udara",
-    "https://www.rbc.ru/rbcfreenews/6ad4b958ae0abdefbadf46b0",
-    "https://tass.ru/obschestvo/28250979",
-    "https://www.interfax.ru/world/1124844",
-    "https://t.me/markettwits/390343",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239897-premer-frantsii",
-    "https://www.interfax.ru/russia/1124842",
-    "https://tass.ru/ekonomika/28250975",
-    "https://www.investing.com/news/stock-market-news/5-big-analyst-ai-moves-uniquely-catalystrich-months-ahead-for-spacex-4970923",
-    "https://tass.ru/sport/28250977",
-    "https://t.me/alfa_investments/8501",
-    "https://t.me/markettwits/390342",
-    "https://www.rbc.ru/rbcfreenews/6addb0f923dd62c288898943",
-    "https://www.interfax.ru/russia/1124841",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250973",
-    "https://tass.ru/proisshestviya/28250971",
-    "https://www.kommersant.ru/doc/9059985",
-    "https://www.interfax.ru/russia/1124840",
-    "https://t.me/interfaxonline/80658",
-    "https://t.me/markettwits/390341",
-    "https://www.kommersant.ru/doc/9059984",
-    "https://www.interfax.ru/russia/1124839",
-    "https://t.me/markettwits/390340",
-    "https://tass.ru/obschestvo/28250457",
-    "https://t.me/rbc_news/159365",
-    "https://tass.ru/kultura/28250965",
-    "https://tass.ru/armiya-i-opk/28250963",
-    "https://tass.ru/sport/28250959",
-    "https://t.me/headlines_for_traders/87390",
-    "https://www.rbc.ru/sport/13/04/2026/69dc0d079a7947f3283ea2cd",
-    "https://t.me/markettwits/390339",
-    "https://www.rbc.ru/sport/14/10/2026/6acf150a9a79470ad36c2b47"
+    "https://tass.ru/proisshestviya/28251001"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T08:00:55.067393+00:00",
-      "Starshield возобновил работу на Украине на скорости от 161 км/ч"
-    ],
-    [
-      "2026-10-24T08:00:55.067393+00:00",
-      "Три человека погибли при ракетном ударе по Орлу"
-    ],
-    [
-      "2026-10-24T08:00:55.067393+00:00",
-      "В Крыму вводят ограничения на свет и воду из-за аварии"
-    ],
-    [
-      "2026-10-24T08:00:55.067393+00:00",
-      "Промышленные объекты Тольятти повреждены после атаки БПЛА"
-    ],
-    [
-      "2026-10-24T08:00:55.067393+00:00",
-      "Польша намерена участвовать в ядерных программах США и Франции"
-    ],
-    [
-      "2026-10-24T08:00:55.067393+00:00",
-      "Криптовалюта HYPE упала на 22% от пика"
-    ],
     [
       "2026-10-24T09:30:58.873046+00:00",
       "Биткоин падает к $80 000 на фоне оттока из ETF и ликвидаций"
@@ -1465,6 +1430,26 @@
     [
       "2026-10-25T08:00:54.415071+00:00",
       "Александр Овечкин установил антирекорды в матче НХЛ"
+    ],
+    [
+      "2026-10-25T08:30:56.653356+00:00",
+      "В Бразилии проходит второй тур президентских выборов"
+    ],
+    [
+      "2026-10-25T08:30:56.653356+00:00",
+      "Kraken покупает финскую Saldo Bank для расширения в Европе"
+    ],
+    [
+      "2026-10-25T08:30:56.653356+00:00",
+      "Премьер Испании связал высокую инфляцию с войной в Иране"
+    ],
+    [
+      "2026-10-25T08:30:56.653356+00:00",
+      "Движение по Крымскому мосту временно перекрыто"
+    ],
+    [
+      "2026-10-25T08:30:56.653356+00:00",
+      "В Японии из-за тайфуна эвакуируют более 740 тысяч жителей"
     ]
   ],
   "results_fp": [
