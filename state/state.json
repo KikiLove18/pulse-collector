@@ -879,7 +879,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T10:30:57.773156+00:00",
+  "breaking_ts": "2026-10-25T11:00:56.647215+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -888,72 +888,47 @@
     "titles": []
   },
   "news_seen": [
+    "https://tass.ru/politika/28251285",
+    "https://tass.ru/proisshestviya/28251269",
+    "https://tass.ru/proisshestviya/28251283",
+    "https://tass.ru/politika/28251279",
+    "https://tass.ru/politika/28251277",
+    "https://tass.ru/politika/28251275",
+    "https://www.kommersant.ru/doc/9060068",
+    "https://tass.ru/sport/28251273",
+    "https://tass.ru/proisshestviya/28251261",
+    "https://tass.ru/proisshestviya/28251265",
+    "https://tass.ru/politika/28251259",
+    "https://tass.ru/ekonomika/28251263",
+    "https://t.me/interfaxonline/80666",
+    "https://t.me/whale_alert_io/104171",
+    "https://www.rbc.ru/sport/14/10/2026/6acfb4599a794757b480e32c",
+    "https://www.interfax.ru/russia/1124863",
+    "https://t.me/rbc_news/159376",
+    "https://tass.ru/ekonomika/28251257",
+    "https://tass.ru/politika/28251249",
+    "https://www.vedomosti.ru/society/news/2026/10/25/1239913-filimonov-mavashi",
+    "https://tass.ru/sport/28251251",
+    "https://www.investing.com/news/stock-market-news/ubs-may-cut-12000-swiss-jobs-if-capital-rules-tighten--report-4971117",
+    "https://t.me/headlines_for_traders/87398",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239912-ushakov-uregulirovaniya-krizisa",
+    "https://www.rbc.ru/economics/25/10/2026/6adddb4be6f53f880224b076",
+    "https://www.kommersant.ru/doc/9060058",
+    "https://www.rbc.ru/rbcfreenews/6ad8d8bc7df80739f7131205",
+    "https://tass.ru/sport/28251247",
+    "https://t.me/rbc_news/159375",
+    "https://www.rbc.ru/sport/25/10/2026/6adcee359763119ca5baa20f",
+    "https://www.rbc.ru/rbcfreenews/6add3f98cbe4e6c04eb93e22",
+    "https://tass.ru/obschestvo/28251245",
+    "https://www.rbc.ru/rbcfreenews/6adbf8ca5751e432471071fa",
     "https://tass.ru/sport/28251243",
-    "https://www.kommersant.ru/doc/9060053",
-    "https://t.me/forklog/50405",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251241",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251239",
-    "https://t.me/invest_zonaa/39133",
-    "https://t.me/WalterBloomberg/37328",
-    "https://tass.ru/proisshestviya/28251235",
-    "https://www.kommersant.ru/doc/9060052",
-    "https://www.kommersant.ru/doc/9060048",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239911-sammitom-putina-trampa",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251237",
-    "https://t.me/russianmacro/23641",
-    "https://t.me/russianmacro/23640",
-    "https://t.me/banksta/104134",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251231",
-    "https://tass.ru/sport/28251233",
-    "https://www.kommersant.ru/doc/9060047",
-    "https://tass.ru/ekonomika/28251229",
-    "https://tass.ru/obschestvo/28251199",
-    "https://tass.ru/obschestvo/28251219",
-    "https://www.rbc.ru/politics/24/09/2026/6ab43f6c5447d086ae2d0b6c",
-    "https://t.me/headlines_for_traders/87397",
-    "https://tass.ru/proisshestviya/28251203",
-    "https://www.rbc.ru/politics/24/10/2026/6adc601954a95426949223f8",
-    "https://www.rbc.ru/rbcfreenews/6addd25d6492ff38f8c1c03a",
-    "https://tass.ru/obschestvo/28251131",
-    "https://www.rbc.ru/sport/20/10/2026/6ad72b42c92be6254691e7be",
-    "https://tass.ru/armiya-i-opk/28251223",
-    "https://tass.ru/obschestvo/28251049",
-    "https://tass.ru/sport/28251217",
-    "https://www.rbc.ru/politics/14/06/2026/6a2ea60c9a79473a4f623e38",
-    "https://t.me/markettwits/390362",
-    "https://www.kommersant.ru/doc/9060044",
-    "https://www.investing.com/news/stock-market-news/street-calls-of-the-week-93CH-4970904",
-    "https://tass.ru/proisshestviya/28251221",
-    "https://www.rbc.ru/rbcfreenews/6addd25d6492ff38f8c1c03a",
-    "https://t.me/SberInvestments/13186",
-    "https://t.me/headlines_for_traders/87396",
-    "https://t.me/rbc_news/159374",
-    "https://www.investing.com/news/stock-market-news/recent-labor-market-data-show-some-signs-of-airelated-hiring-headwinds-4971102",
-    "https://t.me/interfaxonline/80665",
-    "https://www.interfax.ru/moscow/1124861",
-    "https://tass.ru/proisshestviya/28251213",
-    "https://t.me/bitkogan/29480",
-    "https://www.interfax.ru/russia/1124860",
-    "https://tass.ru/armiya-i-opk/28251087",
-    "https://www.kommersant.ru/doc/9060028",
-    "https://tass.ru/proisshestviya/28251207",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251211",
-    "https://www.interfax.ru/russia/1124859",
-    "https://tass.ru/obschestvo/28251201"
+    "https://www.kommersant.ru/doc/9060053"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T11:00:57.784315+00:00",
-      "Reuters узнал о плане Ирана атаковать интернет-кабели в Ормузском проливе"
-    ],
-    [
-      "2026-10-24T11:00:57.784315+00:00",
-      "Фонд Maelstrom Артура Хейса закрыл все позиции по криптовалюте"
-    ],
     [
       "2026-10-24T11:00:57.784315+00:00",
       "Bild: Volkswagen планирует сократить еще 12 тысяч рабочих мест"
@@ -1553,6 +1528,26 @@
     [
       "2026-10-25T10:30:57.773156+00:00",
       "Капитализация люксового сектора упала на $250 млрд из-за Китая"
+    ],
+    [
+      "2026-10-25T11:00:56.647215+00:00",
+      "Инвестиции в фонды развивающихся рынков достигли максимума за два года"
+    ],
+    [
+      "2026-10-25T11:00:56.647215+00:00",
+      "Новак: Россия готова поставить США любой объем дизеля"
+    ],
+    [
+      "2026-10-25T11:00:56.647215+00:00",
+      "UBS может сократить 12 000 рабочих мест в Швейцарии"
+    ],
+    [
+      "2026-10-25T11:00:56.647215+00:00",
+      "Во Франции за день задержали более 1300 протестующих"
+    ],
+    [
+      "2026-10-25T11:00:56.647215+00:00",
+      "Иран заявил о перехвате американского дрона LUCAS"
     ]
   ],
   "results_fp": [
