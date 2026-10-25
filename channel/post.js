@@ -101,8 +101,14 @@ async function proSlides(p, data) {
     const range = new Date(day(now) + "T12:00:00Z").toLocaleDateString("ru-RU", { day: "numeric", month: "long", timeZone: "UTC" }) + " — " +
       new Date(day(now + 6 * 864e5) + "T12:00:00Z").toLocaleDateString("ru-RU", { day: "numeric", month: "long", timeZone: "UTC" });
     const head = (b, n) => `<div class="xwb"><img src="img/logo192.png" alt=""><span class="xbn">ПУЛЬС РЫНКА</span><span class="xbday">PRO</span><span class="xbname">${b}</span></div>`;
+    // фото к событию — из img/bg приложения (Wikimedia, свободные лицензии), как у Редактора: здание ФРС, Капитолий…
+    const pic = e => { const t = e.title;
+      if (/ФРС|Уорш/.test(t)) return "fed"; if (/Банк[а]? России|Росстат|ОФЗ|налог|Минфин/i.test(t) || e.region === "ru") return "kremlin";
+      if (/Экспирац|BTC|биткоин|крипт/i.test(t) || e.region === "crypto") return "crypto1"; if (/нефт|ОПЕК|EIA|Brent/i.test(t)) return "oil";
+      if (/золот/i.test(t)) return "gold"; if (e.kind === "earnings") return /Apple|Alphabet|Microsoft|Amazon|Meta|NVIDIA|Tesla/i.test(t) ? "tech" : "wallst";
+      return "capitol"; };
     const ev = top.map((e, i) => `<div class="xe"><div class="xn">${i + 1}</div><div><div class="xt">${when(e)}</div><p>${e2(e.title)}</p>
-      <span>${e2(e.forecast ? `ждут ${num(e.forecast)}${e.previous ? ` · было ${num(e.previous)}` : ""}` : first(evDesc(e)))}</span></div></div>`).join("");
+      <span>${e2(e.forecast ? `ждут ${num(e.forecast)}${e.previous ? ` · было ${num(e.previous)}` : ""}` : first(evDesc(e)))}</span></div><img class="xph" src="img/bg/${pic(e)}.jpg" alt=""></div>`).join("");
     const sc = top.map(e => { const S = evScen(e); return `<div class="xf"><b>${when(e).split(" · ")[0]}</b><div><h3>${e2(e.title)}</h3>${S.length ? S.map(([k, t, d, mv]) =>
       `<div class="xs"><i class="${k}">${k === "up" ? "▲" : "▼"}</i><div><p><b>${e2(t)}</b> — ${e2(d)}</p>${Object.keys(mv).length ? `<div class="xm">${Object.entries(mv).map(([a, v]) => `<span>${AN[a] || a} <em class="${v > 0 ? "u" : "d"}">${v > 0 ? "↑" : "↓"}</em></span>`).join("")}</div>` : ""}</div></div>`).join("")
       : `<p class="xd">${e2(first(evDesc(e)))}</p>`}</div></div>`; }).join("");
@@ -136,9 +142,9 @@ const WEEK_CSS = `#fc{background:#F4EFE6;color:#1B1B1B;padding:14px 12px 10px;ga
   #fc .xbday{margin-left:auto;background:#D9472B;color:#fff;border-radius:99px;padding:3px 9px;font-weight:800}#fc .xbname{color:#1B1B1B;font-weight:800}
   #fc .fw{gap:14px}#fc .xwk{font:600 13px Inter;color:#D9472B;letter-spacing:.04em}
   #fc h1{font:800 34px/1 Unbounded,Inter;letter-spacing:-.03em;margin:6px 0 0}#fc .xsub{font:600 14px Inter;color:#6B655B;margin-top:8px}
-  #fc .xes{display:flex;flex-direction:column;gap:9px}#fc .xe{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:start;background:#fff;border-radius:16px;padding:14px 14px 14px 12px}
+  #fc .xes{display:flex;flex-direction:column;gap:9px}#fc .xe{display:grid;grid-template-columns:40px 1fr 76px;gap:10px;align-items:center;background:#fff;border-radius:16px;padding:14px 14px 14px 12px}
   #fc .xn{font:800 34px/1 Unbounded,Inter;color:#D9472B;text-align:center}#fc .xt{font:800 12px Unbounded,Inter;color:#D9472B;letter-spacing:.02em}
-  #fc .xe p{margin:5px 0 3px;font:800 19px/1.2 Inter}#fc .xe span{font:500 13px/1.35 Inter;color:#6B655B}`;
+  #fc .xe p{margin:5px 0 3px;font:800 19px/1.2 Inter}#fc .xe span{font:500 13px/1.35 Inter;color:#6B655B}#fc .xph{width:76px;height:76px;border-radius:12px;object-fit:cover}`;
 // «Как это повлияет на рынок» — как блок «На это обратите внимание» у Редактора: чёрный фон, красные метки
 const SCEN_CSS = `#fc{background:#1B1B1B;color:#fff}#fc .ft{color:#fff;opacity:.5}
   #fc .xfh{font:800 22px/1.15 Unbounded,Inter;color:#FF6B4A;letter-spacing:-.02em}#fc .xfs{display:flex;flex-direction:column}
@@ -288,7 +294,9 @@ async function inspect() {
     p.on("pageerror", e => console.log("page error:", e.message));
     await p.goto(APP + "/", { waitUntil: "networkidle" });
     await p.waitForTimeout(1500);
-    if (THEME === "pro") await proPost(p, data); else if (THEME === "today") await todayPost(p, events); else await resultsPost(p, results);
+    if (THEME === "pro") { await proPost(p, data);
+      if (TARGET === "channel") await fetch(`${APP}/api/freech/done`, { method: "POST", headers: { authorization: `Bearer ${process.env.INGEST_SECRET}`, "content-type": "application/json" },
+        body: JSON.stringify({ theme: "pro", titles: [] }) }); } else if (THEME === "today") await todayPost(p, events); else await resultsPost(p, results);
     await b.close();
     return;
   }
