@@ -880,7 +880,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T19:00:56.257214+00:00",
+  "breaking_ts": "2026-10-25T19:30:55.530266+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -889,74 +889,37 @@
     "titles": []
   },
   "news_seen": [
+    "https://tass.ru/proisshestviya/28252003",
+    "https://tass.ru/mezhdunarodnaya-panorama/28252005",
+    "https://www.kommersant.ru/doc/9060268",
+    "https://www.rbc.ru/politics/25/10/2026/6ade55e2ef247d59985d1ef6",
+    "https://t.me/banksta/104148",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251997",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239987-iotova-lidiruet",
+    "https://t.me/markettwits/390391",
+    "https://tass.ru/ekonomika/28251989",
+    "https://tass.ru/proisshestviya/28251987",
+    "https://t.me/markettwits/390390",
+    "https://t.me/markettwits/390389",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251983",
+    "https://t.me/markettwits/390388",
+    "https://tass.ru/proisshestviya/28251985",
+    "https://t.me/FinancialJuice/142529",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239984-pentagon-gotovit-bazi",
+    "https://t.me/markettwits/390387",
+    "https://t.me/rbc_news/159390",
+    "https://t.me/FinancialJuice/142528",
     "https://t.me/FinancialJuice/142526",
     "https://t.me/FinancialJuice/142527",
     "https://oilprice.com/Energy/Energy-General/Britains-Renewable-Energy-Boom-Is-Hitting-a-Grid-Bottleneck.html",
     "https://t.me/markettwits/390386",
-    "https://t.me/markettwits/390385",
-    "https://tass.ru/sport/28251981",
-    "https://tass.ru/proisshestviya/28251979",
-    "https://t.me/markettwits/390384",
-    "https://t.me/banksta/104147",
-    "https://www.rbc.ru/politics/22/10/2026/6ad9d32b982c3151665c395a",
-    "https://t.me/markettwits/390383",
-    "https://www.interfax.ru/russia/1124907",
-    "https://t.me/FinancialJuice/142525",
-    "https://www.kommersant.ru/doc/9060262",
-    "https://t.me/markettwits/390382",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251975",
-    "https://t.me/FinancialJuice/142523",
-    "https://t.me/FinancialJuice/142524",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251967",
-    "https://www.rbc.ru/rbcfreenews/6ad5293398dce37ae8c96bc7",
-    "https://www.theblock.co/news/business/2026-10-25-coindcx-confirms-16-million-loss-from-retired-wallets-days-after-ceo-called-breach-reports-a-false-alarm-431617",
-    "https://t.me/FinancialJuice/142522",
-    "https://www.interfax.ru/russia/1124906",
-    "https://tass.ru/obschestvo/28251971",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239956-mkkk-virazil-gotovnost",
-    "https://www.rbc.ru/sport/25/10/2026/6addf0c5338b07ca32bb984a",
-    "https://cryptoslate.com/how-37-million-stolen-from-americans-moved-through-a-bahamas-bank-into-tethers-usdt/",
-    "https://tass.ru/obschestvo/28251965",
-    "https://www.rbc.ru/politics/24/10/2026/6adbd6a10d56109cf3d31c00",
-    "https://t.me/markettwits/390381",
-    "https://www.rbc.ru/rbcfreenews/6ad0a359e62d20cde8f51e36",
-    "https://tass.ru/kultura/28251959",
-    "https://t.me/markettwits/390380",
-    "https://www.rbc.ru/rbcfreenews/6ac68e99855cf9ee78cc98d4",
-    "https://tass.ru/sport/28251955",
-    "https://t.me/markettwits/390379",
-    "https://www.rbc.ru/sport/25/10/2026/6ade0512089e8d5c20c60e71",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251949"
+    "https://t.me/markettwits/390385"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T19:30:56.369777+00:00",
-      "Kraken отменила требования к клиентам Monero с сохранением лимита"
-    ],
-    [
-      "2026-10-24T19:30:56.369777+00:00",
-      "АдГ сохраняет лидерство в рейтинге популярности партий ФРГ"
-    ],
-    [
-      "2026-10-24T19:30:56.369777+00:00",
-      "Взлом сайта Keystone привел к утечке адресов клиентов"
-    ],
-    [
-      "2026-10-24T20:30:57.215592+00:00",
-      "Трамп заявил о возможной силовой развязке в отношениях с Ираном"
-    ],
-    [
-      "2026-10-24T20:30:57.215592+00:00",
-      "ЕС создаст спутниковую сеть IRIS2 на фоне ограничений Starlink"
-    ],
-    [
-      "2026-10-24T20:30:57.215592+00:00",
-      "Аппаратный кошелек Keystone сообщил об утечке данных клиентов"
-    ],
     [
       "2026-10-24T20:30:57.215592+00:00",
       "В аэропорту Нижнего Новгорода введены временные ограничения"
@@ -1556,6 +1519,30 @@
     [
       "2026-10-25T19:00:56.257214+00:00",
       "Экзитполы не выявили явного лидера на президентских выборах в Болгарии"
+    ],
+    [
+      "2026-10-25T19:30:55.530266+00:00",
+      "Пентагон готовит базы США к 90 дням автономной работы"
+    ],
+    [
+      "2026-10-25T19:30:55.530266+00:00",
+      "Зеленский допустил обсуждение территориального вопроса с Путиным"
+    ],
+    [
+      "2026-10-25T19:30:55.530266+00:00",
+      "Трамп призвал не смешивать конфликт на Украине с нефтяным сотрудничеством"
+    ],
+    [
+      "2026-10-25T19:30:55.530266+00:00",
+      "Нефть снижается на 1% на торгах в выходные дни"
+    ],
+    [
+      "2026-10-25T19:30:55.530266+00:00",
+      "Экономисты прогнозируют повышение ставки РБНЗ на 25 б.п."
+    ],
+    [
+      "2026-10-25T19:30:55.530266+00:00",
+      "Маск предупредил о рисках атак с использованием Starlink"
     ]
   ],
   "results_fp": [
