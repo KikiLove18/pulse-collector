@@ -880,7 +880,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T19:30:55.530266+00:00",
+  "breaking_ts": "2026-10-25T20:00:56.651545+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -889,61 +889,42 @@
     "titles": []
   },
   "news_seen": [
+    "https://t.me/FinancialJuice/142531",
+    "https://t.me/rbc_news/159392",
+    "https://tass.ru/mezhdunarodnaya-panorama/28252019",
+    "https://www.kommersant.ru/doc/9060270",
+    "https://tass.ru/ekonomika/28252017",
+    "https://tass.ru/proisshestviya/28252015",
+    "https://t.me/banksta/104149",
+    "https://t.me/FinancialJuice/142530",
+    "https://t.me/rbc_news/159391",
+    "https://t.me/markettwits/390393",
+    "https://t.me/WalterBloomberg/37330",
+    "https://cryptoslate.com/initia-hack-drove-its-usdc-bridge-reserve-down-to-63-as-withdrawals-failed/",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239990-minsk-na-zemle",
+    "https://t.me/markettwits/390392",
+    "https://www.interfax.ru/world/1124908",
+    "https://tass.ru/mezhdunarodnaya-panorama/28252013",
+    "https://www.kommersant.ru/doc/9060269",
+    "https://www.rbc.ru/politics/25/10/2026/6ade2825338b07ca32bb98a4",
+    "https://tass.ru/ekonomika/28252007",
+    "https://www.rbc.ru/rbcfreenews/6ad2e13f82d831f782323da1",
+    "https://tass.ru/sport/28252011",
+    "https://tass.ru/mezhdunarodnaya-panorama/28252001",
+    "https://tass.ru/proisshestviya/28251999",
+    "https://tass.ru/obschestvo/28251993",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251991",
+    "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
     "https://tass.ru/proisshestviya/28252003",
     "https://tass.ru/mezhdunarodnaya-panorama/28252005",
     "https://www.kommersant.ru/doc/9060268",
-    "https://www.rbc.ru/politics/25/10/2026/6ade55e2ef247d59985d1ef6",
-    "https://t.me/banksta/104148",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251997",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239987-iotova-lidiruet",
-    "https://t.me/markettwits/390391",
-    "https://tass.ru/ekonomika/28251989",
-    "https://tass.ru/proisshestviya/28251987",
-    "https://t.me/markettwits/390390",
-    "https://t.me/markettwits/390389",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251983",
-    "https://t.me/markettwits/390388",
-    "https://tass.ru/proisshestviya/28251985",
-    "https://t.me/FinancialJuice/142529",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239984-pentagon-gotovit-bazi",
-    "https://t.me/markettwits/390387",
-    "https://t.me/rbc_news/159390",
-    "https://t.me/FinancialJuice/142528",
-    "https://t.me/FinancialJuice/142526",
-    "https://t.me/FinancialJuice/142527",
-    "https://oilprice.com/Energy/Energy-General/Britains-Renewable-Energy-Boom-Is-Hitting-a-Grid-Bottleneck.html",
-    "https://t.me/markettwits/390386",
-    "https://t.me/markettwits/390385"
+    "https://www.rbc.ru/politics/25/10/2026/6ade55e2ef247d59985d1ef6"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T20:30:57.215592+00:00",
-      "В аэропорту Нижнего Новгорода введены временные ограничения"
-    ],
-    [
-      "2026-10-24T20:30:57.215592+00:00",
-      "Один человек погиб при ударах по Белгородской области"
-    ],
-    [
-      "2026-10-24T20:30:57.215592+00:00",
-      "Circle запустила аукционы стейблкоинов USDC для институционалов"
-    ],
-    [
-      "2026-10-25T04:00:57.266965+00:00",
-      "Audi построит свой первый завод в США за $4 млрд"
-    ],
-    [
-      "2026-10-25T04:00:57.266965+00:00",
-      "Над Ростовской областью перехватили 50 беспилотников"
-    ],
-    [
-      "2026-10-25T04:00:57.266965+00:00",
-      "Аравийская коалиция перехватила баллистическую ракету хуситов над Эр-Риядом"
-    ],
     [
       "2026-10-25T04:00:57.266965+00:00",
       "Трамп сообщил о планах вести дела с Россией и Украиной после конфликта"
@@ -1543,6 +1524,26 @@
     [
       "2026-10-25T19:30:55.530266+00:00",
       "Маск предупредил о рисках атак с использованием Starlink"
+    ],
+    [
+      "2026-10-25T20:00:56.651545+00:00",
+      "Нетаньяху предупредил об угрозе ударов Ирана"
+    ],
+    [
+      "2026-10-25T20:00:56.651545+00:00",
+      "Сезон отчетностей в США: 83% компаний бьют прогнозы по EPS"
+    ],
+    [
+      "2026-10-25T20:00:56.651545+00:00",
+      "SpaceX привлекла $40 млрд долга под закупку GPU"
+    ],
+    [
+      "2026-10-25T20:00:56.651545+00:00",
+      "Опрос FT: 56% американцев заявили об ухудшении финансов"
+    ],
+    [
+      "2026-10-25T20:00:56.651545+00:00",
+      "Капитализация люксовых брендов в Европе упала на €251 млрд"
     ]
   ],
   "results_fp": [
