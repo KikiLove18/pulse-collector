@@ -799,7 +799,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T09:00:57.126103+00:00",
+  "breaking_ts": "2026-10-25T09:30:56.144075+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -808,85 +808,71 @@
     "titles": []
   },
   "news_seen": [
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239908-ushakov-nazval",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251165",
+    "https://tass.ru/politika/28251175",
+    "https://tass.ru/proisshestviya/28251155",
+    "https://www.vedomosti.ru/business/news/2026/10/25/1239907-ikea-prodlila",
+    "https://t.me/forklog/50404",
+    "https://www.rbc.ru/rbcfreenews/6add3f98cbe4e6c04eb93e22",
+    "https://www.rbc.ru/rbcfreenews/6adb79c0327b4539ab2e0ced",
+    "https://t.me/wublockchainenglish/26544",
+    "https://t.me/markettwits/390358",
+    "https://www.rbc.ru/rbcfreenews/6acd5c137ef6df471161e59e",
+    "https://tass.ru/politika/28251161",
+    "https://tass.ru/obschestvo/28251151",
+    "https://t.me/headlines_for_traders/87395",
+    "https://t.me/interfaxonline/80664",
+    "https://t.me/rbc_news/159372",
+    "https://www.rbc.ru/politics/25/10/2026/6addc95bb83d921252922b11",
+    "https://tass.ru/politika/28251149",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239905-boitsa-vernulis",
+    "https://tass.ru/politika/28251143",
+    "https://tass.ru/ekonomika/28251145",
+    "https://t.me/banksta/104133",
+    "https://t.me/markettwits/390357",
+    "https://www.kommersant.ru/doc/9060023",
+    "https://tass.ru/politika/28251139",
+    "https://t.me/markettwits/390356",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251125",
+    "https://tass.ru/politika/28251135",
+    "https://tass.ru/politika/28251137",
+    "https://tass.ru/kultura/28251129",
+    "https://www.kommersant.ru/doc/9060020",
+    "https://tass.ru/sport/28251127",
+    "https://t.me/rbc_news/159371",
+    "https://t.me/markettwits/390355",
+    "https://www.rbc.ru/politics/25/10/2026/6addc5bfd12b2b1156cdb55f",
+    "https://tass.ru/obschestvo/28251121",
+    "https://www.interfax.ru/russia/1124854",
+    "https://t.me/markettwits/390354",
+    "https://tass.ru/sport/28251117",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251119",
+    "https://tass.ru/armiya-i-opk/28251089",
+    "https://www.rbc.ru/politics/25/10/2026/6addc66b1211d48caedd396c",
+    "https://www.interfax.ru/russia/1124853",
+    "https://tass.ru/politika/28251111",
+    "https://www.interfax.ru/russia/1124852",
+    "https://tass.ru/politika/28251109",
+    "https://tass.ru/politika/28251103",
+    "https://tass.ru/obschestvo/28251079",
+    "https://tass.ru/proisshestviya/28251101",
+    "https://t.me/interfaxonline/80663",
+    "https://t.me/headlines_for_traders/87393",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251095",
+    "https://t.me/markettwits/390353",
+    "https://tass.ru/politika/28251099",
     "https://t.me/smartlabnews/17954",
     "https://t.me/markettwits/390352",
     "https://www.rbc.ru/rbcfreenews/6adb042f1d7b7febe17ef1fc",
-    "https://tass.ru/politika/28251091",
-    "https://tass.ru/politika/28251085",
-    "https://tass.ru/armiya-i-opk/28251073",
-    "https://tass.ru/obschestvo/28251065",
-    "https://t.me/rbc_news/159370",
-    "https://tass.ru/politika/28251077",
-    "https://t.me/interfaxonline/80662",
-    "https://www.interfax.ru/russia/1124849",
-    "https://t.me/markettwits/390351",
-    "https://tass.ru/politika/28251069",
-    "https://www.kommersant.ru/doc/9060014",
-    "https://tass.ru/armiya-i-opk/28251067",
-    "https://tass.ru/proisshestviya/28251061",
-    "https://www.rbc.ru/society/25/10/2026/6addc15ccaec548e6fd1548b",
-    "https://tass.ru/obschestvo/28251051",
-    "https://tass.ru/sport/28251053",
-    "https://tass.ru/armiya-i-opk/28251059",
-    "https://tass.ru/armiya-i-opk/28251057",
-    "https://tass.ru/armiya-i-opk/28251055",
-    "https://www.vedomosti.ru/society/news/2026/10/25/1239903-mavashi-soobschili",
-    "https://t.me/markettwits/390350",
-    "https://www.kommersant.ru/doc/9060010",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251047",
-    "https://www.interfax.ru/business/1124848",
-    "https://tass.ru/proisshestviya/28251045",
-    "https://t.me/markettwits/390349",
-    "https://tass.ru/ekonomika/28251041",
-    "https://www.rbc.ru/rbcfreenews/6adb67859a79471647b9fa63",
-    "https://tass.ru/ekonomika/28251043",
-    "https://tass.ru/sport/28251039",
-    "https://www.rbc.ru/rbcfreenews/6a6a55639a7947bb062d8b96",
-    "https://t.me/interfaxonline/80661",
-    "https://t.me/banksta/104132",
-    "https://www.rbc.ru/politics/24/10/2026/6adbdd660d56109cf3d31c02",
-    "https://www.kommersant.ru/doc/9060004",
-    "https://tass.ru/politika/28251033",
-    "https://tass.ru/ekonomika/28251035",
-    "https://t.me/markettwits/390348",
-    "https://tass.ru/kultura/28251031",
-    "https://www.interfax.ru/russia/1124847",
-    "https://www.interfax.ru/world/1124838",
-    "https://t.me/markettwits/390347",
-    "https://tass.ru/sport/28251029",
-    "https://www.vedomosti.ru/society/news/2026/10/25/1239901-podgotovili-zakonoproekt",
-    "https://t.me/rbc_news/159368",
-    "https://www.rbc.ru/rbcfreenews/6986cdeb9a7947f71add9ef5"
+    "https://www.interfax.ru/russia/1124851",
+    "https://www.interfax.ru/russia/1124850"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T09:30:58.873046+00:00",
-      "Биткоин падает к $80 000 на фоне оттока из ETF и ликвидаций"
-    ],
-    [
-      "2026-10-24T09:30:58.873046+00:00",
-      "Во Франции бутики люксовых брендов заколачивают витрины перед протестами"
-    ],
-    [
-      "2026-10-24T09:30:58.873046+00:00",
-      "На западе Саудовской Аравии перехватили две баллистические ракеты"
-    ],
-    [
-      "2026-10-24T09:30:58.873046+00:00",
-      "В Карелии полностью сняли ограничения на продажу топлива на АЗС"
-    ],
-    [
-      "2026-10-24T09:30:58.873046+00:00",
-      "Хабаровск накрыло задымлением из-за природных пожаров в Китае"
-    ],
-    [
-      "2026-10-24T09:30:58.873046+00:00",
-      "Токен UNI подешевел на 29% за четыре недели при стабильной ликвидности"
-    ],
     [
       "2026-10-24T10:00:56.552809+00:00",
       "В Конгресс США внесен законопроект по запрету импорта энергоносителей РФ"
@@ -1486,6 +1472,26 @@
     [
       "2026-10-25T09:00:57.126103+00:00",
       "Число задержанных на беспорядках в Барселоне превысило 120"
+    ],
+    [
+      "2026-10-25T09:30:56.144075+00:00",
+      "Ушаков заявил о готовности возобновить трехсторонние переговоры после 4 ноября"
+    ],
+    [
+      "2026-10-25T09:30:56.144075+00:00",
+      "Хакеры атаковали протокол X100 и вывели средства на $4,7 млн"
+    ],
+    [
+      "2026-10-25T09:30:56.144075+00:00",
+      "Минобороны РФ заявило об уничтожении более 1 тыс. беспилотников за сутки"
+    ],
+    [
+      "2026-10-25T09:30:56.144075+00:00",
+      "Reuters: около 75% инвесторов поколения Z изменили портфели из-за выборов"
+    ],
+    [
+      "2026-10-25T09:30:56.144075+00:00",
+      "Аравийская коалиция перехватила 10 ракет хуситов на юге Саудовской Аравии"
     ]
   ],
   "results_fp": [
