@@ -736,7 +736,7 @@ def parse_news(block_key, html_text):
         text = re.sub(r"^[🟢🔴⚪]\ufe0f?\s*", "", text)
         text = re.sub(r"</?(?!u>|/u>)[^>]+>", "", text)  # оставляем только <u>
         out.append({"block": block_key, "icon": clean(prefix)[:8], "title": clean(title), "text": text.strip(),
-                    "sent": sent, "url": link.group(1) if link else "", "source": link.group(2) if link else ""})
+                    "sent": sent, "url": link.group(1) if link else "", "source": sources.src_name(link.group(2)) if link else ""})
     return out
 
 

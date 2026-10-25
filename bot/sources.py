@@ -1,4 +1,5 @@
 """Источники новостей. Чтобы добавить ленту — допиши строку в FEEDS."""
+import re
 
 # (категория, название, ссылка на RSS)
 FEEDS = [
@@ -49,6 +50,28 @@ TG_CHANNELS = [
     # крипта
     "cryptokogan", "incrypted", "forklog", "coinpost", "konenkov_official", "invest_zonaa", "nainspire",
 ]
+
+# Названия каналов для подписи «— источник» (как в каталоге приложения, CATALOG в miniapp): ИИ пишет служебные имена
+# («markettwits», «X @walterbloomberg») — в сообщениях показываем название
+SRC_NAMES = {"centralbank_russia": "Банк России", "minfin": "Минфин России", "russianmacro": "MMI", "rbc_news": "РБК. Главное",
+             "interfaxonline": "Интерфакс", "smartlabnews": "Смарт-лаб", "if_market_news": "IF News", "cbrstocks": "Сигналы РЦБ",
+             "sberinvestments": "СберИнвестиции", "gpb_investments": "Газпромбанк Инвестиции", "alfa_investments": "Альфа-Инвестиции",
+             "investfuture": "InvestFuture", "banksta": "Банкста", "thebell_io": "The Bell", "markettwits": "MarketTwits",
+             "bitkogan": "bitkogan", "bitkogan_hotline": "bitkogan HOTLINE", "headlines_for_traders": "Headlines for Traders",
+             "proeconomics": "Proeconomics", "cryptokogan": "CryptoKogan", "incrypted": "Incrypted", "forklog": "ForkLog",
+             "coinpost": "Coin Post", "konenkov_official": "Коненков", "invest_zonaa": "INVEST ZONE", "nainspire": "Хедлайнеры",
+             "walterbloomberg": "Walter Bloomberg", "deitaone": "Walter Bloomberg", "watcherguru": "Watcher Guru",
+             "wublockchainenglish": "Wu Blockchain", "wublockchain": "Wu Blockchain", "bitcoinmagazinetelegram": "Bitcoin Magazine",
+             "bitcoinmagazine": "Bitcoin Magazine", "whale_alert_io": "Whale Alert", "whale_alert": "Whale Alert",
+             "lookonchainchannel": "Lookonchain", "lookonchain": "Lookonchain", "financialjuice": "FinancialJuice"}
+
+
+def src_name(raw):
+    """«TG @markettwits», «X @walterbloomberg», «markettwits» → название канала; остальное — как есть."""
+    r = (raw or "").strip()
+    k = re.sub(r"^(?:tg|x)\s*@|^@", "", r, flags=re.I).strip().lower()
+    return SRC_NAMES.get(k, r)
+
 
 # Официальные Telegram-каналы популярных X-аккаунтов — бесплатная замена X API
 X_MIRRORS = [

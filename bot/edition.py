@@ -13,7 +13,7 @@ from datetime import datetime, timedelta, timezone
 
 from PIL import Image
 
-from bot import cards, photos, prompts
+from bot import cards, photos, prompts, sources
 
 MSK = timezone(timedelta(hours=3))
 THEMES = ", ".join(cards.THEMES)
@@ -157,7 +157,7 @@ def feed_cards(out, now, dry):
 
 
 def news_html(n):
-    src = f' — <a href="{n["url"]}">{n["source"]}</a>' if n.get("url") else ""
+    src = f' — <a href="{n["url"]}">{sources.src_name(n["source"])}</a>' if n.get("url") else ""
     return (f'{n.get("icon") or ""} <b>{n["title"]}</b>\n'
             f'<blockquote>{SENT_ICON.get(n.get("sent"), "⚪️")} {n.get("text", "")}{src}</blockquote>')
 
@@ -318,7 +318,7 @@ def push_feed(feed, items, now, dry, state=None):
         if state is not None and seen_before(f["title"], [r[1] for r in state.get("feed_recent", [])] + [o["title"] for o in out]):
             print(f"Лента: повтор, пропускаю — {f['title'][:70]}", file=sys.stderr)
             continue
-        name = lambda it: it["source"].replace("TG @", "").replace("X @", "")
+        name = lambda it: sources.src_name(it["source"])
         group = [src]
         for i in f.get("also") or []:
             try:
@@ -399,7 +399,7 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
             "photo": photos.find(data.get("photo") or [])}
     card_id = f"{'br' if urgent else 'dn'}{local:%Y%m%d%H%M}"
     url, _ = upload_card(card, card_id, date_label(now))
-    n = {"title": card["title"], "text": data.get("text", ""), "sent": card["sent"], "url": src["link"], "source": src["source"].replace("TG @", "").replace("X @", "")}
+    n = {"title": card["title"], "text": data.get("text", ""), "sent": card["sent"], "url": src["link"], "source": sources.src_name(src["source"])}
     head = f"⚡ <b>Срочно · {card['tag']}</b>" if urgent else f"🌤 <b>Главное сейчас · {card['tag']}</b>"
     html = head + "\n\n" + news_html(n) + f"\n\n<i>{NOT_ADVICE}</i>"
     out = {"kind": "urgent" if urgent else "day", "card": card_id, "html": html, "block": data.get("block") or "", "hash": "#feed"}
