@@ -148,12 +148,13 @@ async function resultsPost(p, results) {
   console.log("факт против прогноза отправлено");
 }
 
-// inspect — разбор поста тестового канала (ARG: «582» или «580-586»): пересылаем копию туда же, печатаем устройство, копию удаляем
+// inspect — разбор поста тестового канала (ARG: «582» или «580-586»; из другого канала — «@pulse_rynka_news:4»): пересылаем копию в тестовый канал, печатаем устройство, копию удаляем
 async function inspect() {
-  const [a, b2] = String(process.env.ARG || "").split("-").map(Number);
+  const arg = String(process.env.ARG || ""), from = arg.includes(":") ? arg.split(":")[0] : process.env.TELEGRAM_CHAT_ID;
+  const [a, b2] = arg.split(":").pop().split("-").map(Number);
   for (let id = a; id <= (b2 || a); id++) {
     const f = new FormData();
-    f.append("chat_id", process.env.TELEGRAM_CHAT_ID); f.append("from_chat_id", process.env.TELEGRAM_CHAT_ID); f.append("message_id", String(id)); f.append("disable_notification", "true");
+    f.append("chat_id", process.env.TELEGRAM_CHAT_ID); f.append("from_chat_id", from); f.append("message_id", String(id)); f.append("disable_notification", "true");
     try {
       const m = (await tg("forwardMessage", f)).result;
       const keys = Object.keys(m).filter(k => !["chat", "from", "sender_chat", "date", "message_id", "forward_origin", "forward_from_chat", "forward_from_message_id", "forward_date", "forward_signature", "is_automatic_forward"].includes(k));
