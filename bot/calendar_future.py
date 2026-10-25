@@ -51,6 +51,28 @@ RU = [
     ("Fed Interest Rate Decision", "Решение ФРС по ставке", "High"), ("FOMC Statement", "Заявление ФРС", "High"),
     ("FOMC Press Conference", "Пресс-конференция ФРС", "High"), ("FOMC Meeting Minutes", "Протокол заседания ФРС", "High"),
     ("Fed Chair", "Выступление главы ФРС", "High"),
+    ("Federal Funds Rate", "Решение ФРС по ставке", "High"),
+    ("Advance GDP Price Index", "Дефлятор ВВП США (первая оценка)", "Medium"), ("Advance GDP", "ВВП США (первая оценка)", "High"),
+    ("Prelim GDP Price Index", "Дефлятор ВВП США (вторая оценка)", "Medium"), ("Prelim GDP", "ВВП США (вторая оценка)", "Medium"),
+    ("Final GDP Price Index", "Дефлятор ВВП США (третья оценка)", "Low"), ("Final GDP", "ВВП США (третья оценка)", "Medium"),
+    ("Employment Cost Index", "Индекс стоимости рабочей силы ECI", "Medium"),
+    ("UoM Consumer Sentiment", "Настроения потребителей (Мичиган)", "Medium"),
+    ("UoM Inflation Expectations", "Инфляционные ожидания (Мичиган)", "Medium"),
+    ("Personal Income", "Доходы населения", "Low"), ("Personal Spending", "Расходы населения", "Low"),
+    ("Core Durable Goods", "Базовые заказы товаров длительного пользования", "Medium"),
+    ("Chicago PMI", "Деловая активность Чикаго (PMI)", "Low"), ("Richmond Manufacturing", "Промышленность ФРБ Ричмонда", "Low"),
+    ("Empire State Manufacturing", "Промышленность штата Нью-Йорк", "Medium"),
+    ("Goods Trade Balance", "Торговый баланс товарами", "Low"), ("Trade Balance", "Торговый баланс", "Low"),
+    ("Wholesale Inventories", "Оптовые запасы", "Low"), ("Natural Gas Storage", "Запасы газа", "Low"),
+    ("API Weekly", "Запасы нефти API", "Low"), ("ADP Weekly", "Занятость ADP за неделю", "Low"),
+    ("S&P/CS Composite-20 HPI", "Цены на жильё Case-Shiller", "Low"), ("HPI", "Цены на жильё FHFA", "Low"),
+    ("New Home Sales", "Продажи новостроек", "Low"), ("Pending Home Sales", "Незавершённые сделки с жильём", "Low"),
+    ("Building Permits", "Разрешения на строительство", "Low"), ("Housing Starts", "Закладки новых домов", "Low"),
+    ("Beige Book", "«Бежевая книга» ФРС", "Medium"), ("Treasury Currency Report", "Валютный доклад Минфина США", "Low"),
+    ("Federal Budget Balance", "Бюджет США", "Low"), ("Industrial Production", "Промышленное производство", "Medium"),
+    ("Import Prices", "Импортные цены", "Low"), ("Productivity", "Производительность труда", "Low"),
+    ("Unit Labor Costs", "Удельные затраты на труд", "Low"), ("Consumer Credit", "Потребительский кредит", "Low"),
+    ("Factory Orders", "Заказы промышленности", "Low"), ("Business Inventories", "Запасы компаний", "Low"),
     ("GDP", "ВВП США", "High"), ("Core PCE", "Базовая инфляция PCE", "High"), ("PCE", "Инфляция PCE", "Medium"),
     ("Core Retail Sales", "Базовые розничные продажи", "High"), ("Unemployment Claims", "Первичные заявки на пособие", "Medium"),
     ("Philly Fed Manufacturing Index", "Индекс деловой активности ФРБ Филадельфии", "Medium"),
@@ -84,10 +106,17 @@ def _et(day, hhmm):
     return datetime(y, mo, d, h, m, tzinfo=ET)
 
 
+STAGE = {"Revised ": " (уточн.)", "Prelim ": " (предв.)", "Final ": " (оконч.)", "Flash ": " (предв.)"}
+
+
 def translate(name):
     for en, ru, imp in RU:
         if name.startswith(en):
             return ru, imp
+    for pre, tail in STAGE.items():  # «Revised UoM …», «Prelim …» — та же статистика, уточнённая или предварительная оценка
+        if name.startswith(pre):
+            ru, imp = translate(name[len(pre):])
+            return (ru + tail if ru and tail not in ru else ru), imp
     return None, None
 
 
@@ -121,7 +150,7 @@ def nasdaq_econ(days=7):
             if ru and m:
                 ru = f"{ru} ({m.group(1)})"
             t = (r.get("gmt") or "").strip()  # фактически время ET
-            if not ru or not t[:2].isdigit():
+            if not ru or imp == "Low" or not t[:2].isdigit():  # мелкую статистику (Low) в календарь не берём, как и у ForexFactory
                 continue
             clean = lambda v: "" if not v or "nbsp" in v else v.strip()
             out.append({"dt": _et(day, t[:5]), "title": ru, "impact": imp, "kind": "macro",
