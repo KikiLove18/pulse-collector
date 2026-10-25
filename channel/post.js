@@ -112,8 +112,8 @@ async function richPost(shots, caption) {
   f.append("chat_id", CHAT);
   f.append("rich_message", JSON.stringify({ html, media: shots.map((_, i) => ({ id: `s${i}`, media: { type: "photo", media: `attach://f${i}` } })) }));
   shots.forEach((buf, i) => f.append(`f${i}`, new Blob([buf], { type: "image/jpeg" }), `f${i}.jpg`));
-  await tg("sendRichMessage", f);
-  console.log("карусель (слайдшоу) отправлена:", CHAT);
+  const r = await tg("sendRichMessage", f);
+  console.log("карусель (слайдшоу) отправлена:", CHAT, "#" + r.result.message_id);
 }
 const LINK = `📱 <a href="https://t.me/${BOT}?startapp=ch">Календарь и все новости — в приложении «Пульс рынка»</a>`;
 const HEAD_HTML = t => `<div class="hd"><img src="img/logo192.png" alt="">Пульс рынка<span class="th">${t}</span></div>`;
@@ -152,6 +152,7 @@ async function resultsPost(p, results) {
 async function inspect() {
   const arg = String(process.env.ARG || ""), from = arg.includes(":") ? arg.split(":")[0] : process.env.TELEGRAM_CHAT_ID;
   const [a, b2] = arg.split(":").pop().split("-").map(Number);
+  if (from !== process.env.TELEGRAM_CHAT_ID) { const g = new FormData(); g.append("chat_id", from); const c = (await tg("getChat", g)).result; console.log("канал:", c.id, c.type, "protected:", !!c.has_protected_content); }
   for (let id = a; id <= (b2 || a); id++) {
     const f = new FormData();
     f.append("chat_id", process.env.TELEGRAM_CHAT_ID); f.append("from_chat_id", from); f.append("message_id", String(id)); f.append("disable_notification", "true");
