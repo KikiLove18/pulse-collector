@@ -107,7 +107,7 @@ async function proSlides(p, data) {
     const range = (days[0].slice(5, 7) === days[6].slice(5, 7) ? String(+days[0].slice(8)) : new Date(days[0] + "T12:00:00Z").toLocaleDateString("ru-RU", { day: "numeric", month: "long", timeZone: "UTC" })) + " — " +
       new Date(days[6] + "T12:00:00Z").toLocaleDateString("ru-RU", { day: "numeric", month: "long", timeZone: "UTC" });
     const body = rows.map(({ d, L }) => { const { dn, dd } = f(d);
-      if (!L.length) return `<div class="xdr xthin"><div class="xdd"><b>${dn}</b><span>${dd}</span></div><div class="xde">Без значимых событий</div></div>`;
+      if (!L.length) return ""; // пустые дни не показываем — место под крупный текст
       return `<div class="xdr"><div class="xdd"><b>${dn}</b><span>${dd}</span></div><div class="xevs">${L.map(e => {
         const sub = [REG[e.region] || "", e.forecast ? `ждут ${num(e.forecast)}${e.previous ? ` · было ${num(e.previous)}` : ""}` : e.note || ""].filter(Boolean).join(" · ");
         return `<div class="xev xi${IMP[e.impact] || 0}"><b>${D(e.dt).toISOString().slice(11, 16)}</b><div><p>${e2(e.title)}</p>${sub ? `<span>${e2(sub)}</span>` : ""}</div></div>`; }).join("")}</div></div>`; }).join("");
