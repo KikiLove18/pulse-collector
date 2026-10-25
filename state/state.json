@@ -880,7 +880,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T18:00:58.026379+00:00",
+  "breaking_ts": "2026-10-25T18:30:57.052549+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -889,77 +889,50 @@
     "titles": []
   },
   "news_seen": [
+    "https://tass.ru/kultura/28251959",
+    "https://t.me/markettwits/390380",
+    "https://www.rbc.ru/rbcfreenews/6ac68e99855cf9ee78cc98d4",
+    "https://tass.ru/sport/28251955",
+    "https://t.me/markettwits/390379",
+    "https://www.rbc.ru/sport/25/10/2026/6ade0512089e8d5c20c60e71",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251949",
+    "https://tass.ru/proisshestviya/28251953",
+    "https://www.rbc.ru/politics/25/10/2026/6ade32ea77fbba701fb9e0c5",
+    "https://t.me/markettwits/390378",
+    "https://t.me/rbc_news/159389",
+    "https://t.me/markettwits/390377",
+    "https://www.kommersant.ru/doc/9060260",
+    "https://t.me/banksta/104144",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251943",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239954-evrokomissiya-pitaetsya",
+    "https://tass.ru/sport/28251939",
+    "https://t.me/markettwits/390376",
+    "https://www.rbc.ru/rbcfreenews/6ada9888b363e488c71cc817",
+    "https://tass.ru/proisshestviya/28251933",
+    "https://t.me/FinancialJuice/142521",
+    "https://www.kommersant.ru/doc/9060226",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251925",
+    "https://www.kommersant.ru/doc/9060259",
+    "https://tass.ru/obschestvo/28251923",
+    "https://www.sport-interfax.ru/1124905",
+    "https://tass.ru/obschestvo/28251919",
+    "https://www.rbc.ru/society/25/10/2026/6ade43c7ff42e239f1dabe23",
+    "https://tass.ru/sport/28251917",
+    "https://tass.ru/proisshestviya/28251915",
+    "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
     "https://t.me/headlines_for_traders/87412",
     "https://www.kommersant.ru/doc/9060258",
     "https://tass.ru/proisshestviya/28251911",
     "https://t.me/nainspire/5597",
     "https://tass.ru/proisshestviya/28251905",
     "https://tass.ru/proisshestviya/28251909",
-    "https://t.me/banksta/104143",
-    "https://t.me/nainspire/5596",
-    "https://www.kommersant.ru/doc/9060256",
-    "https://www.rbc.ru/rbcfreenews/6a900a860bc0abe15a79e10b",
-    "https://tass.ru/armiya-i-opk/28251879",
-    "https://www.kommersant.ru/doc/9060257",
-    "https://tass.ru/politika/28251903",
-    "https://www.rbc.ru/politics/20/09/2026/6aaf8709201b0189cffa7e00",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251895",
-    "https://www.investing.com/news/stock-market-news/oppenheimer-sees-web-commerce-software-q3-backdrop-improving-ai-worries-linger-4971234",
-    "https://t.me/markettwits/390375",
-    "https://t.me/if_market_news/86313",
-    "https://tass.ru/armiya-i-opk/28251889",
-    "https://tass.ru/sport/28251899",
-    "https://tass.ru/proisshestviya/28251897",
-    "https://t.me/whale_alert_io/104174",
-    "https://www.interfax.ru/russia/1124904",
-    "https://tass.ru/sport/28251891",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239950-putin-i-tramp-mogut",
-    "https://t.me/rbc_news/159388",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251885",
-    "https://www.rbc.ru/rbcfreenews/6adbc087ec53e5b0ff5f0ce6",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251877",
-    "https://t.me/interfaxonline/80679",
-    "https://tass.ru/sport/28251881",
-    "https://tass.ru/armiya-i-opk/28251883",
-    "https://t.me/markettwits/390374",
-    "https://t.me/headlines_for_traders/87411",
-    "https://www.rbc.ru/sport/25/10/2026/6ade168524639466d2c1eb98",
-    "https://tass.ru/sport/28251815",
-    "https://tass.ru/sport/28251875",
-    "https://tass.ru/armiya-i-opk/28251873",
-    "https://www.interfax.ru/russia/1124898",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251869",
-    "https://t.me/banksta/104142"
+    "https://t.me/banksta/104143"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T18:30:55.233994+00:00",
-      "При атаке ВСУ в Брянской области погибли два мирных жителя"
-    ],
-    [
-      "2026-10-24T18:30:55.233994+00:00",
-      "Electrum выпустил патч после уязвимости серверов на кражу средств"
-    ],
-    [
-      "2026-10-24T19:01:01.899197+00:00",
-      "Илон Маск обвинил Украину в нарушении правил Starlink"
-    ],
-    [
-      "2026-10-24T19:01:01.899197+00:00",
-      "Во Франции на акции протеста вышли 410 тыс. человек"
-    ],
-    [
-      "2026-10-24T19:01:01.899197+00:00",
-      "Хуситы заявили об атаке на объекты Saudi Aramco и аэропорт"
-    ],
-    [
-      "2026-10-24T19:01:01.899197+00:00",
-      "Vonovia SE может потерять более 8 млрд евро из-за планов в Берлине"
-    ],
     [
       "2026-10-24T19:01:01.899197+00:00",
       "ФБР подозревает экс-инженера OpenAI в шпионаже для Эр-Рияда"
@@ -1559,6 +1532,26 @@
     [
       "2026-10-25T18:00:58.026379+00:00",
       "«Зенит» обыграл «Динамо» и возглавил таблицу РПЛ"
+    ],
+    [
+      "2026-10-25T18:30:57.052549+00:00",
+      "Трамп заявил, что сделки по «Лукойлу» и газу на Аляске будут заключены"
+    ],
+    [
+      "2026-10-25T18:30:57.052549+00:00",
+      "Явка на парламентских выборах в Сербии достигла 64,9% к 18:00"
+    ],
+    [
+      "2026-10-25T18:30:57.052549+00:00",
+      "Хуситы заявили об ударах по аэропорту Эр-Рияда и военным базам"
+    ],
+    [
+      "2026-10-25T18:30:57.052549+00:00",
+      "В Афганистане произошло землетрясение магнитудой 5,2"
+    ],
+    [
+      "2026-10-25T18:30:57.052549+00:00",
+      "В Британии из-за шторма «Боэло» задержали более 1,5 тыс. авиарейсов"
     ]
   ],
   "results_fp": [
