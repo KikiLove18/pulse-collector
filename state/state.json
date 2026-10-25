@@ -879,7 +879,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T14:30:56.108613+00:00",
+  "breaking_ts": "2026-10-25T15:00:56.425979+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -888,75 +888,44 @@
     "titles": []
   },
   "news_seen": [
+    "https://www.coindesk.com/business/2026/10/25/latvia-targets-tokenization-rules-in-2027-with-commercial-property-in-focus",
+    "https://oilprice.com/Energy/Energy-General/COP31-Host-Urges-NATO-Nations-to-Spend-More-on-Climate-Than-Defense.html",
+    "https://tass.ru/obschestvo/28251677",
+    "https://t.me/rbc_news/159384",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239935-tramp-nazval-obamu",
+    "https://tass.ru/proisshestviya/28251675",
+    "https://www.rbc.ru/rbcfreenews/6add929a060b7c802dab58ff",
+    "https://t.me/forklog/50407",
+    "https://www.kommersant.ru/doc/9060184",
+    "https://www.kommersant.ru/doc/9060183",
+    "https://t.me/BitcoinMagazineTelegram/10907",
+    "https://www.rbc.ru/politics/25/10/2026/6ade13b3626bfaa1d9eead79",
+    "https://www.interfax.ru/russia/1124884",
+    "https://t.me/interfaxonline/80674",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239934-netanyahu-opublikoval",
+    "https://tass.ru/proisshestviya/28251671",
+    "https://www.kommersant.ru/doc/9060180",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251669",
+    "https://tass.ru/sport/28251665",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251639",
+    "https://www.interfax.ru/world/1124883",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251667",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239933-mask-obyasnil",
+    "https://www.kommersant.ru/doc/9060169",
     "https://t.me/banksta/104139",
+    "https://www.investing.com/news/stock-market-news/trump-set-to-announce-plan-by-audi-to-build-us-factory-in-georgia-source-says-4970975",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251659",
+    "https://cryptoslate.com/evernorth-takes-a-page-from-michael-saylors-bitcoin-playbook-with-new-80-million-xrp-funding-plan/",
+    "https://www.marketwatch.com/story/my-spouse-was-awarded-90-000-from-my-401-k-in-our-divorce-how-is-that-fair-dc839aa3?mod=mw_rss_topstories",
     "https://tass.ru/mezhdunarodnaya-panorama/28251657",
     "https://tass.ru/obschestvo/28251655",
-    "https://www.kommersant.ru/doc/9060134",
-    "https://t.me/invest_zonaa/39134",
-    "https://tass.ru/obschestvo/28251645",
-    "https://tass.ru/armiya-i-opk/28251653",
-    "https://tass.ru/sport/28251651",
-    "https://www.rbc.ru/sport/24/10/2026/6adcf0d69a6736607dca589c",
-    "https://t.me/rbc_news/159383",
-    "https://www.rbc.ru/politics/21/10/2026/6ad8c4c7acd127579b70572a",
-    "https://www.kommersant.ru/doc/9060159",
-    "https://t.me/headlines_for_traders/87408",
-    "https://tass.ru/obschestvo/28251649",
-    "https://tass.ru/obschestvo/28251641",
-    "https://tass.ru/obschestvo/28251643",
-    "https://www.kommersant.ru/doc/9060157",
-    "https://tass.ru/proisshestviya/28251637",
-    "https://www.rbc.ru/sport/23/10/2026/6adb2eee74a6191c597a38e8",
-    "https://www.vedomosti.ru/business/news/2026/10/25/1239932-novak-o-gotovnosti",
-    "https://t.me/BitcoinMagazineTelegram/10906",
-    "https://www.rbc.ru/politics/25/10/2026/6ade0c5be6f53f880224b088",
-    "https://tass.ru/sport/28251633",
-    "https://tass.ru/politika/28251631",
-    "https://www.interfax.ru/business/1124882",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251617",
-    "https://tass.ru/proisshestviya/28251621",
-    "https://t.me/headlines_for_traders/87407",
-    "https://tass.ru/ekonomika/28251613",
-    "https://tass.ru/sport/28251615",
-    "https://decrypt.co/381777/bitcoin-etfs-snap-two-week-losing-streak-despite-late-week-slide",
-    "https://www.kommersant.ru/doc/9060151",
-    "https://tass.ru/politika/28251611",
-    "https://www.rbc.ru/sport/24/10/2026/6adc975b3c765fe671670d8a",
-    "https://www.rbc.ru/rbcfreenews/6adbd364d12b2b1156cdb50d",
-    "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories",
-    "https://www.marketwatch.com/story/more-than-a-third-of-s-p-500-companies-are-about-to-report-earnings-as-market-confidence-cracks-03b7a8f1?mod=mw_rss_topstories",
-    "https://tass.ru/obschestvo/28251609",
-    "https://www.rbc.ru/politics/20/10/2026/6ad7257f803b1059bf2269d5"
+    "https://www.kommersant.ru/doc/9060134"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T14:31:00.211573+00:00",
-      "Биткоин упал ниже $80 000 на фоне ликвидации лонгов на $200 млн"
-    ],
-    [
-      "2026-10-24T14:31:00.211573+00:00",
-      "Омский прозел подвергся атаке беспилотников"
-    ],
-    [
-      "2026-10-24T14:31:00.211573+00:00",
-      "ЦБ опустил официальный курс доллара ниже ₽81"
-    ],
-    [
-      "2026-10-24T14:31:00.211573+00:00",
-      "Frasers Group получила контроль над Hugo Boss"
-    ],
-    [
-      "2026-10-24T14:31:00.211573+00:00",
-      "Сербская NIS запросила в США продление лицензии"
-    ],
-    [
-      "2026-10-24T14:31:00.211573+00:00",
-      "Число жертв теракта в Иордании возросло до девяти"
-    ],
     [
       "2026-10-24T15:00:57.318076+00:00",
       "ЦБ сохранил ключевую ставку на уровне 14%"
@@ -1552,6 +1521,22 @@
     [
       "2026-10-25T14:30:56.108613+00:00",
       "Явка на внеочередных выборах в парламент Сербии превысила 50%"
+    ],
+    [
+      "2026-10-25T15:00:56.425979+00:00",
+      "Трамп заявил о выборе между сделкой с Ираном и силовым сценарием"
+    ],
+    [
+      "2026-10-25T15:00:56.425979+00:00",
+      "Брюссель обсуждает новый кредит для Украины на €70 миллиардов"
+    ],
+    [
+      "2026-10-25T15:00:56.425979+00:00",
+      "Танец 110 роботов в Китае попал в Книгу рекордов Гиннесса"
+    ],
+    [
+      "2026-10-25T15:00:56.425979+00:00",
+      "Во Франции полиция задержала более 1,3 тыс. человек на протестах"
     ]
   ],
   "results_fp": [
