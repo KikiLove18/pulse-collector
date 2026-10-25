@@ -11,18 +11,19 @@ const CHAT = TARGET === "channel" ? process.env.FREECH_CHAT || "@pulse_rynka_new
 const TITLE = { ru: "🇷🇺 Россия", us: "🇺🇸 США", crypto: "₿ Крипта", commodities: "🛢 Нефть и золото", x: "🗣 Что говорят люди" };
 const HEAD = { ru: "🇷🇺 <b>Россия — главное за день</b>", us: "🇺🇸 <b>США — главное за день</b>", crypto: "₿ <b>Крипта — главное за день</b>",
   commodities: "🛢 <b>Нефть и золото — главное за день</b>", x: "🗣 <b>Что говорят люди, которые двигают рынки</b>" };
-// текст поста PRO (без обещаний дохода; цены — как в боте, PRICES в worker/index.js)
-const PRO_TEXT = `👑 <b>Пульс рынка PRO</b>
+// пост PRO (19:00): карусель — 1) что двигает Сбербанк сегодня (живой разбор из приложения), 2) схема «как это работает», 3) события на 2 недели,
+// 4–5) примеры из закрытого канала, 6) всё, что входит (ch_pro.jpg). Владелец 25.10: «сначала дать ценность, потом — что ещё в PRO».
+// Текст — без обещаний дохода; цены — как в боте (PRICES в worker/index.js)
+const PRO_HEAD = "👑 <b>Пульс рынка PRO</b>";
+const PRO_TEXT = `Здесь — новости. В PRO — что они значат для твоих активов. Листай →
 
-Здесь — новости. В PRO — что они значат для твоих активов:
-
-⚡ <b>Влияние</b> — какие новости давят на твои активы, а какие помогают
-🔗 <b>Схема «как это работает»</b> — от решения ЦБ до цены акции, по шагам
-📅 <b>События на 2 недели</b> — что может сдвинуть рынок, с силой влияния
-🔎 <b>Разбор любого актива</b> — 42 актива, 69 человек, поиск по Ленте
-🔒 <b>Закрытый канал</b> — разбор недели, PDF-обучение, анонсы первыми
+1 · Что двигает Сбербанк сегодня — так разобран любой из 42 активов
+2 · Схема «как это работает» — от решения ЦБ до цены
+3 · События на 2 недели с силой влияния
+4–5 · Закрытый канал: неделя впереди и PDF-гайды
 
 PRO — от 240 ₽ в месяц. Базовый — бесплатно.`;
+const PRO_ASSET = "SBER";
 
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
@@ -33,16 +34,65 @@ async function tg(method, form) {
   return j;
 }
 
-async function proPost() {
-  const f2 = new FormData();
-  f2.append("chat_id", CHAT);
-  f2.append("photo", `${APP}/img/promo/ch_pro.jpg?v=1`);
-  f2.append("parse_mode", "HTML");
-  f2.append("caption", PRO_TEXT);
-  f2.append("reply_markup", JSON.stringify({ inline_keyboard: [[{ text: "👑 Оформить PRO", url: `https://t.me/${BOT}?startapp=pro` }]] }));
-  await tg("sendPhoto", f2);
-  console.log("пост PRO отправлен");
+async function proPost(p, data) {
+  const shots = await proSlides(p, data);
+  const html = `<tg-slideshow>${shots.map((_, i) => `<img src="tg://photo?id=s${i}"/>`).join("")}</tg-slideshow><p>${PRO_HEAD}</p>` +
+    PRO_TEXT.split("\n\n").map(t => `<p>${t.replace(/\n/g, "<br/>")}</p>`).join("") +
+    `<tg-button-row align="left"><tg-button type="url" url="https://t.me/${BOT}?startapp=pro">👑 Оформить PRO</tg-button></tg-button-row>`;
+  const f = new FormData();
+  f.append("chat_id", CHAT);
+  f.append("rich_message", JSON.stringify({ html, media: shots.map((_, i) => ({ id: `s${i}`, media: { type: "photo", media: `attach://f${i}` } })) }));
+  shots.forEach((buf, i) => f.append(`f${i}`, new Blob([buf], { type: "image/jpeg" }), `f${i}.jpg`));
+  try { const r = await tg("sendRichMessage", f); console.log("пост PRO (слайдшоу) отправлен:", CHAT, "#" + r.result.message_id); }
+  catch (e) { // запасной: альбом + подпись (кнопки у альбома нет — ссылка в тексте)
+    console.log("слайдшоу PRO не ушло:", e.message, "— отправляю альбомом");
+    await sendPhotos(shots, `${PRO_HEAD}\n\n${PRO_TEXT}\n\n👑 <a href="https://t.me/${BOT}?startapp=pro">Оформить PRO</a>`);
+  }
 }
+// слайды поста PRO: блоки берём из настоящих окон приложения (разбор актива, схема фактора) — с живыми котировками
+async function proSlides(p, data) {
+  await p.evaluate(async d => { Object.assign(DEMO_STATE, d); await load(); window.hasPro = () => true; window.labLocked = () => false; }, // демо → настоящие данные, всё открыто
+    { news: data.news, events: data.events, results: data.results, quotes: data.quotes, outlook: data.outlook, macro: data.macro });
+  await p.waitForTimeout(1200);
+  const parts = await p.evaluate(k => {
+    openAssetLab(k);
+    const ax = document.getElementById("axbody"), q = sel => [...ax.querySelectorAll(sel)];
+    const name = ax.querySelector(".oxh b")?.textContent || "";
+    const head = ax.querySelector(".oxh").outerHTML.replace(/<button class="sheet-x"[\s\S]*?<\/button>/, "");
+    const sum = ax.querySelector(".fxsum")?.outerHTML || "";
+    const fx = ax.querySelector(".oxf2"); [...fx.children].slice(4).forEach(x => x.remove());
+    // события на 2 недели: сильные первыми, одно на день (у ФРС в один день — решение, заявление и пресс-конференция), 4 штуки — по дате
+    const now = Date.now(), seen = new Set();
+    const evs = EVS.filter(e => !e.res && new Date(e.dt) > now && new Date(e.dt) < now + 14 * 864e5)
+      .sort((a, b) => (b.impact === "High") - (a.impact === "High") || /Решение|ставк/i.test(b.title) - /Решение|ставк/i.test(a.title) || new Date(a.dt) - new Date(b.dt))
+      .filter(e => { const d = new Date(new Date(e.dt).getTime() + 3 * 3600e3).toISOString().slice(0, 10); return seen.has(d) ? false : seen.add(d); }).slice(0, 4).sort((a, b) => new Date(a.dt) - new Date(b.dt));
+    const out = { name, head, sum, fx: fx.outerHTML, ev: evs.length ? `<div class="evminis">${evs.map(e => evMini(e, 0, "")).join("")}</div>` : "" };
+    fxOpen(0);
+    out.chainHd = ax.querySelector(".fxhd")?.outerHTML || "";
+    out.chainLbl = [...ax.querySelectorAll(".oxlbl")].find(x => /Как это работает/.test(x.textContent))?.outerHTML || "";
+    out.chain = ax.querySelector(".fxchain")?.outerHTML || "";
+    closeSheet();
+    return out;
+  }, PRO_ASSET);
+  const panel = h => `<div class="prp">${h}</div>`, ft = t => `<div class="ft"><span>${t}</span><span>@ime_news_01_bot</span></div>`;
+  const big = (t, s) => `<div class="big">${t}${s ? `<small>${s}</small>` : ""}</div>`;
+  const shots = [];
+  shots.push(await shot(p, "return a", HEAD_HTML("👑 PRO") + `<div class="fw">${big(`Что двигает ${esc(parts.name)} сегодня`, "так в PRO разобран любой из 42 активов")}${panel(parts.head + parts.sum + parts.fx)}</div>` + ft("1 / 6 · разбор актива"), PRO_CSS));
+  shots.push(await shot(p, "return a", HEAD_HTML("👑 PRO") + `<div class="fw">${big("Как это работает", "от решения ЦБ до цены акции — по шагам")}${panel(parts.chainHd + parts.chainLbl + parts.chain)}</div>` + ft("2 / 6 · схема влияния"), PRO_CSS));
+  if (parts.ev) shots.push(await shot(p, "return a", HEAD_HTML("👑 PRO") + `<div class="fw">${big("Что сдвинет рынок за 2 недели", "события с силой влияния — напомним за час")}${panel(parts.ev)}</div>` + ft("3 / 6 · события"), PRO_CSS));
+  const club = (img, t, s, li) => HEAD_HTML("🔒 Закрытый канал PRO") + `<div class="fw">${big(t, s)}<img class="cimg" src="img/promo/${img}?v=1" alt=""><ul class="cl">${li.map(x => `<li>${x}</li>`).join("")}</ul></div>`;
+  shots.push(await shot(p, "return a", club("club_ex_week.jpg", "Каждый понедельник — неделя впереди", "главные события недели и что они значат",
+    ["решения ЦБ и ФРС, отчёты компаний, данные", "что важно для России — отдельно", "по воскресеньям — разбор прошедшей недели"]) + ft("4 / 6 · закрытый канал"), PRO_CSS));
+  shots.push(await shot(p, "return a", club("club_ex_guide.jpg", "PDF-гайды — учимся читать рынок", "ставка ЦБ, инфляция, нефть и рубль — пошагово",
+    ["главы со схемами, 20 минут чтения", "тест и шпаргалка в конце", "новый гайд — каждую неделю"]) + ft("5 / 6 · закрытый канал"), PRO_CSS));
+  shots.push(await shot(p, "return a", `<img class="full" src="img/promo/ch_pro.jpg?v=1" alt="">`, PRO_CSS + "#fc{padding:0}"));
+  return shots;
+}
+const PRO_CSS = `#fc .big{font-size:27px}#fc .big small{display:block;font-size:15px;font-weight:700;opacity:.8;margin-top:6px}
+  #fc .prp{background:var(--surface,#fff);border-radius:22px;padding:14px 12px;box-shadow:0 10px 40px rgba(0,0,0,.35);color:var(--ink,#111)}#fc .prp .oxlbl:first-child{margin-top:0}#fc .prp .oxf2 b{color:var(--ink,#111)}
+  #fc .prp .oxh{margin-bottom:10px}#fc .prp .fxn{padding:9px 12px}#fc .prp .fxa{height:14px}#fc .prp .evminis{grid-template-columns:minmax(0,1fr);margin:0}#fc .prp .evmini{width:100%!important;max-width:none!important;box-sizing:border-box}#fc .prp .evmini .eb{flex:1;min-width:0}
+  #fc .cimg{width:100%;border-radius:14px;box-shadow:0 10px 40px rgba(0,0,0,.4);margin:8px 0 4px}#fc .cl{color:#fff;font-size:16px;font-weight:600;margin:6px 0 0;padding-left:20px;line-height:1.5}
+  #fc .full{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}`;
 
 // рамка слайда (как у подборок) вокруг готового блока приложения; html строится в странице приложения
 const FRAME_CSS = `#fc{position:fixed;inset:0;z-index:2147483647;background:linear-gradient(160deg,#1b3360,#3a6ea8);display:flex;flex-direction:column;padding:22px 18px 18px;gap:14px}
@@ -50,14 +100,14 @@ const FRAME_CSS = `#fc{position:fixed;inset:0;z-index:2147483647;background:line
   #fc .hd .th{margin-left:auto;font-size:14px;font-weight:700;opacity:.8}#fc .card,#fc .past-hero{margin:0!important;box-shadow:0 10px 40px rgba(0,0,0,.35)}#fc .acts,#fc .newpill,#fc .ch,#fc .cd2{display:none}
   #fc .fw{flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px}#fc .ft{display:flex;justify-content:space-between;font-size:13px;opacity:.75;color:#fff}
   #fc .big{color:#fff;font-size:26px;font-weight:900;line-height:1.15;margin:4px 2px 6px}#fc .evmini{width:100%;pointer-events:none}`;
-async function shot(p, build, arg) {
+async function shot(p, build, arg, extraCss = "") {
   await p.evaluate(({ css, build, arg }) => {
     document.getElementById("fc")?.remove();
     const o = document.createElement("div");
     o.id = "fc";
     o.innerHTML = `<style>${css}</style>` + new Function("a", build)(arg);
     document.body.appendChild(o);
-  }, { css: FRAME_CSS, build, arg });
+  }, { css: FRAME_CSS + extraCss, build, arg });
   await p.waitForTimeout(800);
   const buf = await p.locator("#fc").screenshot({ type: "jpeg", quality: 88 });
   require("fs").mkdirSync("out", { recursive: true }); require("fs").writeFileSync(`out/${THEME}_${Date.now()}.jpg`, buf); // для проверки (артефакт запуска)
@@ -168,17 +218,16 @@ async function inspect() {
 
 (async () => {
   if (THEME === "inspect") return inspect();
-  if (THEME === "pro") return proPost();
   const api = await fetch(`${APP}/api/freech${TARGET === "test" ? "?sample=1" : ""}`, { headers: { authorization: `Bearer ${process.env.INGEST_SECRET}` } });
   if (!api.ok) throw new Error("api/freech " + api.status);
-  const { news, used, events = [], results = [] } = await api.json();
-  if (THEME === "today" || THEME === "results") {
+  const data = await api.json(), { news, used, events = [], results = [] } = data;
+  if (THEME === "pro" || THEME === "today" || THEME === "results") {
     const b = await chromium.launch();
     const p = await b.newPage({ viewport: { width: 540, height: 675 }, deviceScaleFactor: 2, locale: "ru-RU", timezoneId: "Europe/Moscow" });
     p.on("pageerror", e => console.log("page error:", e.message));
     await p.goto(APP + "/", { waitUntil: "networkidle" });
     await p.waitForTimeout(1500);
-    if (THEME === "today") await todayPost(p, events); else await resultsPost(p, results);
+    if (THEME === "pro") await proPost(p, data); else if (THEME === "today") await todayPost(p, events); else await resultsPost(p, results);
     await b.close();
     return;
   }
@@ -234,13 +283,13 @@ async function inspect() {
     await p.waitForTimeout(800); // картинка карточки
     shots.push(await p.locator("#fc").screenshot({ type: "jpeg", quality: 88 }));
   }
-  await b.close();
   const fs = require("fs"); fs.mkdirSync("out", { recursive: true }); shots.forEach((buf, i) => fs.writeFileSync(`out/${THEME}_${i + 1}.jpg`, buf)); // для проверки (артефакт запуска)
 
   // подпись короткая — только заголовок (владелец 25.10); ссылка — кнопкой
   const caption = HEAD[THEME];
   await richPost(shots, caption).catch(e => { console.log("слайдшоу не ушло:", e.message, "— запасной вариант: кнопки ◀ ▶"); return deckPost(shots, caption); });
-  if (PRO) await proPost();
+  if (PRO) await proPost(p, data);
+  await b.close();
   if (TARGET === "channel") await fetch(`${APP}/api/freech/done`, { method: "POST", headers: { authorization: `Bearer ${process.env.INGEST_SECRET}`, "content-type": "application/json" },
     body: JSON.stringify({ theme: THEME, titles: pick.map(n => n.title) }) });
 })().catch(e => { console.error(e); process.exit(1); });
