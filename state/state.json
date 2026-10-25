@@ -879,7 +879,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T11:00:56.647215+00:00",
+  "breaking_ts": "2026-10-25T11:30:57.424872+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -888,79 +888,62 @@
     "titles": []
   },
   "news_seen": [
+    "https://www.rbc.ru/rbcfreenews/6adde6157dd022ca9cac8e95",
+    "https://t.me/konenkov_official/1650",
+    "https://tass.ru/sport/28251357",
+    "https://www.rbc.ru/rbcfreenews/6ab83fe19a79471dc86ad86f",
+    "https://thedefiant.io/news/tokens/dogecoin-foundation-and-house-of-doge-end-exclusive-brand-deal",
+    "https://t.me/interfaxonline/80668",
+    "https://www.interfax.ru/russia/1124869",
+    "https://www.rbc.ru/politics/25/10/2026/6adde52d7dd022ca9cac8e91",
+    "https://t.me/banksta/104135",
+    "https://t.me/rbc_news/159378",
+    "https://t.me/headlines_for_traders/87399",
+    "https://cryptoslate.com/a-20-month-polkadot-wallet-breach-reveals-the-dark-side-of-faster-crypto-withdrawals/",
+    "https://www.rbc.ru/sport/25/10/2026/6adde5e1d12b2b1156cdb567",
+    "https://www.interfax.ru/russia/1124867",
+    "https://tass.ru/obschestvo/28251337",
+    "https://tass.ru/proisshestviya/28251339",
+    "https://tass.ru/ekonomika/28251335",
+    "https://tass.ru/politika/28251331",
+    "https://www.rbc.ru/society/25/10/2026/6addd1dff40ddfcc7f9bcd9e",
+    "https://t.me/rbc_news/159377",
+    "https://www.rbc.ru/sport/15/10/2026/6ad0654b9a7947453808f01f",
+    "https://www.interfax.ru/business/1124866",
+    "https://www.rbc.ru/economics/11/09/2025/68c2e87e9a7947ebe2a64652",
+    "https://www.kommersant.ru/doc/9060071",
+    "https://tass.ru/politika/28251317",
+    "https://tass.ru/sport/28251313",
+    "https://t.me/interfaxonline/80667",
+    "https://tass.ru/ekonomika/28251307",
+    "https://www.interfax.ru/russia/1124865",
+    "https://www.interfax.ru/business/1124864",
+    "https://tass.ru/politika/28251305",
+    "https://tass.ru/sport/28251267",
+    "https://www.vedomosti.ru/society/news/2026/10/25/1239914-predstavitel-mavashi",
+    "https://tass.ru/ekonomika/28251301",
+    "https://tass.ru/ekonomika/28251299",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251293",
+    "https://tass.ru/politika/28251297",
+    "https://tass.ru/politika/28251289",
+    "https://tass.ru/politika/28251295",
+    "https://tass.ru/ekonomika/28251291",
+    "https://tass.ru/politika/28251287",
+    "https://tass.ru/politika/28251281",
     "https://tass.ru/politika/28251285",
     "https://tass.ru/proisshestviya/28251269",
     "https://tass.ru/proisshestviya/28251283",
     "https://tass.ru/politika/28251279",
     "https://tass.ru/politika/28251277",
     "https://tass.ru/politika/28251275",
-    "https://www.kommersant.ru/doc/9060068",
-    "https://tass.ru/sport/28251273",
-    "https://tass.ru/proisshestviya/28251261",
-    "https://tass.ru/proisshestviya/28251265",
-    "https://tass.ru/politika/28251259",
-    "https://tass.ru/ekonomika/28251263",
-    "https://t.me/interfaxonline/80666",
-    "https://t.me/whale_alert_io/104171",
-    "https://www.rbc.ru/sport/14/10/2026/6acfb4599a794757b480e32c",
-    "https://www.interfax.ru/russia/1124863",
-    "https://t.me/rbc_news/159376",
-    "https://tass.ru/ekonomika/28251257",
-    "https://tass.ru/politika/28251249",
-    "https://www.vedomosti.ru/society/news/2026/10/25/1239913-filimonov-mavashi",
-    "https://tass.ru/sport/28251251",
-    "https://www.investing.com/news/stock-market-news/ubs-may-cut-12000-swiss-jobs-if-capital-rules-tighten--report-4971117",
-    "https://t.me/headlines_for_traders/87398",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239912-ushakov-uregulirovaniya-krizisa",
-    "https://www.rbc.ru/economics/25/10/2026/6adddb4be6f53f880224b076",
-    "https://www.kommersant.ru/doc/9060058",
-    "https://www.rbc.ru/rbcfreenews/6ad8d8bc7df80739f7131205",
-    "https://tass.ru/sport/28251247",
-    "https://t.me/rbc_news/159375",
-    "https://www.rbc.ru/sport/25/10/2026/6adcee359763119ca5baa20f",
-    "https://www.rbc.ru/rbcfreenews/6add3f98cbe4e6c04eb93e22",
-    "https://tass.ru/obschestvo/28251245",
-    "https://www.rbc.ru/rbcfreenews/6adbf8ca5751e432471071fa",
-    "https://tass.ru/sport/28251243",
-    "https://www.kommersant.ru/doc/9060053"
+    "https://www.interfax.ru/russia/1124862",
+    "https://www.kommersant.ru/doc/9060068"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T11:00:57.784315+00:00",
-      "Bild: Volkswagen планирует сократить еще 12 тысяч рабочих мест"
-    ],
-    [
-      "2026-10-24T11:00:57.784315+00:00",
-      "Президент Ирана Масуд Пезешкиан посетит саммит в Москве 27 октября"
-    ],
-    [
-      "2026-10-24T11:30:54.596246+00:00",
-      "США отменяют пошлины на ряд товаров из Канады"
-    ],
-    [
-      "2026-10-24T11:30:54.596246+00:00",
-      "Зеленский ввел новые санкции против компаний из РФ и Китая"
-    ],
-    [
-      "2026-10-24T11:30:54.596246+00:00",
-      "Сенат США проверяет выплаты Tether экс-советнику Белого дома"
-    ],
-    [
-      "2026-10-24T11:30:54.596246+00:00",
-      "Reuters сообщил о планах Ирана атаковать интернет-кабели"
-    ],
-    [
-      "2026-10-24T11:30:54.596246+00:00",
-      "В Look Into Bitcoin оценили потенциал роста биткоина"
-    ],
-    [
-      "2026-10-24T11:30:54.596246+00:00",
-      "ЕС стремится к участию в переговорах России и США по Украине"
-    ],
     [
       "2026-10-24T12:00:57.899208+00:00",
       "Трамп заявил о возможном введении пошлин в 200% против России и Украины"
@@ -1548,6 +1531,26 @@
     [
       "2026-10-25T11:00:56.647215+00:00",
       "Иран заявил о перехвате американского дрона LUCAS"
+    ],
+    [
+      "2026-10-25T11:30:57.424872+00:00",
+      "Путин: промпроизводство в РФ с 2021 года выросло на 10%"
+    ],
+    [
+      "2026-10-25T11:30:57.424872+00:00",
+      "Приток в фонды развивающихся стран достиг максимума за два года"
+    ],
+    [
+      "2026-10-25T11:30:57.424872+00:00",
+      "Dogecoin Foundation и House of Doge завершили сделку по бренду"
+    ],
+    [
+      "2026-10-25T11:30:57.424872+00:00",
+      "Взломы кошельков Polkadot выявили риски бывших выводов средств"
+    ],
+    [
+      "2026-10-25T11:30:57.424872+00:00",
+      "Москва примет чемпионат мира по тяжелой атлетике в 2030 году"
     ]
   ],
   "results_fp": [
