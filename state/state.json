@@ -799,7 +799,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T06:00:58.829450+00:00",
+  "breaking_ts": "2026-10-25T06:30:57.749125+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -808,64 +808,44 @@
     "titles": []
   },
   "news_seen": [
+    "https://tass.ru/proisshestviya/28250855",
+    "https://tass.ru/obschestvo/28250859",
+    "https://www.kommersant.ru/doc/9059962",
+    "https://tass.ru/sport/28250853",
+    "https://www.rbc.ru/rbcfreenews/6add9f0d8a69f7c45d6f1c57",
+    "https://tass.ru/proisshestviya/28250847",
+    "https://www.kommersant.ru/doc/9059959",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239892-es-govoryat-peregovorschike",
+    "https://t.me/headlines_for_traders/87387",
+    "https://www.rbc.ru/rbcfreenews/6add9cb8d80b3ec512b46070",
+    "https://t.me/rbc_news/159361",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250843",
+    "https://tass.ru/proisshestviya/28250835",
+    "https://tass.ru/politika/28250837",
+    "https://www.rbc.ru/politics/20/10/2026/6ad71e4b92add46bffd5988f",
+    "https://tass.ru/politika/28250841",
+    "https://www.kommersant.ru/doc/9059955",
+    "https://tass.ru/politika/28250827",
+    "https://www.rbc.ru/politics/18/10/2026/6ad49ae8ef5f7593f8b47d81",
+    "https://t.me/rbc_news/159360",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239891-ranenih-belgorode",
+    "https://tass.ru/armiya-i-opk/28250829",
+    "https://www.rbc.ru/politics/25/10/2026/6add9af93e25f9d388f7ba3c",
+    "https://tass.ru/politika/28250821",
+    "https://tass.ru/obschestvo/28250819",
+    "https://t.me/investfuture/15442",
     "https://www.rbc.ru/quote/25/10/2026/6ad8a6589a7947647f916f48",
-    "https://www.rbc.ru/rbcfreenews/6add99bfcbe4e6c04eb93e31",
+    "https://www.rbc.ru/politics/25/10/2026/6add32c99765ed241acb024d",
     "https://tass.ru/obschestvo/28250813",
     "https://t.me/nainspire/5592",
     "https://www.rbc.ru/rbcfreenews/6adcc2f29a6736607dca5830",
-    "https://tass.ru/proisshestviya/28250815",
-    "https://tass.ru/obschestvo/28250809",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239890-peskov-rechi",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250807",
-    "https://tass.ru/obschestvo/28250789",
-    "https://www.interfax.ru/russia/1124832",
-    "https://tass.ru/politika/28250803",
-    "https://tass.ru/politika/28250801",
-    "https://tass.ru/proisshestviya/28250793",
-    "https://t.me/banksta/104126",
-    "https://t.me/rbc_news/159359",
-    "https://tass.ru/sport/28250797",
-    "https://tass.ru/proisshestviya/28250791",
-    "https://tass.ru/proisshestviya/28250795",
-    "https://www.kommersant.ru/doc/9059949",
-    "https://tass.ru/proisshestviya/28250787",
-    "https://tass.ru/armiya-i-opk/28250785",
-    "https://tass.ru/obschestvo/28250783",
-    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
-    "https://www.rbc.ru/rbcfreenews/6adc6a2f4b08ca717c702104",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239889-rossiiskie-voiska-udari",
-    "https://www.rbc.ru/rbcfreenews/6adc42254b08ca717c7020dd",
-    "https://www.interfax.ru/world/1124830",
-    "https://t.me/interfaxonline/80656",
-    "https://tass.ru/armiya-i-opk/28250779",
-    "https://tass.ru/sport/28250773",
-    "https://www.interfax.ru/russia/1124831"
+    "https://tass.ru/proisshestviya/28250815"
   ],
   "ai_dead": {
     "date": "2026-10-24",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T06:30:54.049295+00:00",
-      "Артур Хейс перевел на биржи токены на $22,28 млн для продажи"
-    ],
-    [
-      "2026-10-24T06:30:54.049295+00:00",
-      "Силы ПВО за ночь уничтожили 616 украинских БПЛА над регионами РФ"
-    ],
-    [
-      "2026-10-24T06:30:54.049295+00:00",
-      "Польша подтвердила планы создать военную базу США за $4,4 млрд"
-    ],
-    [
-      "2026-10-24T06:30:54.049295+00:00",
-      "Арестованный в Индии танкер Unity отбуксировали к берегу из-за шторма"
-    ],
-    [
-      "2026-10-24T06:30:54.049295+00:00",
-      "РБК: где разместить деньги под высокий процент после сохранения ставки ЦБ"
-    ],
     [
       "2026-10-24T07:00:54.766570+00:00",
       "Разведка США сообщила о подготовке Ираном покушений на американцев"
@@ -1453,6 +1433,26 @@
     [
       "2026-10-25T06:00:58.829450+00:00",
       "Династия Ротшильдов получила ключи от банковской системы Украины"
+    ],
+    [
+      "2026-10-25T06:30:57.749125+00:00",
+      "Минобороны: силы ПВО за ночь сбили 532 беспилотника"
+    ],
+    [
+      "2026-10-25T06:30:57.749125+00:00",
+      "ЦБ отметил расширение спредов в корпоративных облигациях"
+    ],
+    [
+      "2026-10-25T06:30:57.749125+00:00",
+      "Трамп прокомментировал удары по Ирану и упомянул изобретение радара"
+    ],
+    [
+      "2026-10-25T06:30:57.749125+00:00",
+      "Песков: Россия поддержит переговорщика от ЕС при стремлении к миру"
+    ],
+    [
+      "2026-10-25T06:30:57.749125+00:00",
+      "В Японии рекомендовали эвакуацию 13 тыс. человек из-за наводнений"
     ]
   ],
   "results_fp": [
