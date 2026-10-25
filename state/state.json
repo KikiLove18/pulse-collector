@@ -799,7 +799,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T05:00:55.424177+00:00",
+  "breaking_ts": "2026-10-25T05:30:59.811588+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -808,65 +808,40 @@
     "titles": []
   },
   "news_seen": [
-    "https://www.rbc.ru/rbcfreenews/6add8a945751e432471071ff",
-    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
-    "https://tass.ru/sport/28250729",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239888-posle-ataki-omsk",
-    "https://tass.ru/proisshestviya/28250727",
-    "https://www.rbc.ru/politics/24/10/2026/6adcecefb4ea335ad8b78653",
-    "https://tass.ru/sport/28250725",
-    "https://www.kommersant.ru/doc/9059942",
-    "https://t.me/whale_alert_io/104170",
-    "https://www.interfax.ru/world/1124829",
-    "https://www.rbc.ru/politics/25/10/2026/6add86bd6492ff38f8c1bff7",
-    "https://tass.ru/armiya-i-opk/28250721",
-    "https://www.rbc.ru/rbcfreenews/6accffb6e5d6af10c731d2a4",
-    "https://tass.ru/ekonomika/28250715",
-    "https://tass.ru/sport/28250717",
-    "https://tass.ru/proisshestviya/28250713",
-    "https://tass.ru/proisshestviya/28250711",
-    "https://tass.ru/sport/28250709",
-    "https://tass.ru/armiya-i-opk/28250705",
-    "https://tass.ru/sport/28250707",
-    "https://tass.ru/obschestvo/28250697",
-    "https://tass.ru/proisshestviya/28250701",
-    "https://tass.ru/ekonomika/28250699",
-    "https://tass.ru/obschestvo/28250693",
-    "https://www.kommersant.ru/doc/9059941",
-    "https://tass.ru/sport/28250691",
-    "https://tass.ru/obschestvo/28250687",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250689",
-    "https://www.kommersant.ru/doc/9059940",
-    "https://t.me/interfaxonline/80655",
-    "https://tass.ru/obschestvo/28250685",
-    "https://www.interfax.ru/russia/1124828",
-    "https://tass.ru/sport/28250683"
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239889-rossiiskie-voiska-udari",
+    "https://www.rbc.ru/rbcfreenews/6add9223be5ace36a8588224",
+    "https://t.me/interfaxonline/80656",
+    "https://tass.ru/armiya-i-opk/28250779",
+    "https://tass.ru/sport/28250773",
+    "https://t.me/rbc_news/159354",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250751",
+    "https://www.rbc.ru/rbcfreenews/6ad9b6e4f5e6af6f723fa1df",
+    "https://www.kommersant.ru/doc/9059948",
+    "https://tass.ru/proisshestviya/28250775",
+    "https://tass.ru/ekonomika/28250745",
+    "https://tass.ru/proisshestviya/28250769",
+    "https://tass.ru/obschestvo/28250761",
+    "https://tass.ru/obschestvo/28250765",
+    "https://tass.ru/sport/28250767",
+    "https://tass.ru/obschestvo/28250755",
+    "https://t.me/rbc_news/159353",
+    "https://www.rbc.ru/photoslider/6add8e1e7dd022ca9cac8e03",
+    "https://tass.ru/armiya-i-opk/28250749",
+    "https://tass.ru/armiya-i-opk/28250747",
+    "https://tass.ru/armiya-i-opk/28250743",
+    "https://tass.ru/sport/28250741",
+    "https://t.me/forklog/50403",
+    "https://t.me/lookonchainchannel/10772",
+    "https://tass.ru/obschestvo/28250735",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250737",
+    "https://www.kommersant.ru/doc/9059945",
+    "https://www.rbc.ru/politics/25/10/2026/6add43f9e062e941d97d44c5"
   ],
   "ai_dead": {
     "date": "2026-10-24",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T05:30:57.404399+00:00",
-      "Артур Хейс: «высоковесные» шиткоины больше не могут расти на Binance"
-    ],
-    [
-      "2026-10-24T05:30:57.404399+00:00",
-      "На Кубани нарушено электроснабжение трех поселков из-за падения БПЛА"
-    ],
-    [
-      "2026-10-24T05:30:57.404399+00:00",
-      "Аэропорты Москвы, Калуги и Ярославля возобновили штатную работу"
-    ],
-    [
-      "2026-10-24T05:30:57.404399+00:00",
-      "Аргентина прекратила дело против Милея из-за скандала с мемкоином"
-    ],
-    [
-      "2026-10-24T05:30:57.404399+00:00",
-      "Разведка США заявила об активизации иранских заговоров"
-    ],
     [
       "2026-10-24T06:00:56.903944+00:00",
       "Минобороны РФ заявило о перехвате 616 беспилотников за ночь"
@@ -1454,6 +1429,26 @@
     [
       "2026-10-25T05:00:55.424177+00:00",
       "\"Бюро 1440\" и \"Билайн\" проведут тесты гибридной связи"
+    ],
+    [
+      "2026-10-25T05:30:59.811588+00:00",
+      "Минобороны РФ сообщило об ударах по логистическим центрам в Харькове"
+    ],
+    [
+      "2026-10-25T05:30:59.811588+00:00",
+      "Нидерланды оценили риски при возможных санкциях США"
+    ],
+    [
+      "2026-10-25T05:30:59.811588+00:00",
+      "При стрельбе у университета во Флориде ранены 12 человек"
+    ],
+    [
+      "2026-10-25T05:30:59.811588+00:00",
+      "Более 60% россиян считают себя финансово грамотными"
+    ],
+    [
+      "2026-10-25T05:30:59.811588+00:00",
+      "В Болгарии началось голосование на выборах президента"
     ]
   ],
   "results_fp": [
