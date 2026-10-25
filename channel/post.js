@@ -17,9 +17,9 @@ const HEAD = { ru: "🇷🇺 <b>Россия — главное за день</b
 // текст — по правилам сильных каналов (владелец 25.10: «лаконично, красиво»): вопрос-крючок → живая польза → одна строка с ценой → одна кнопка
 const proText = (name, up, dn) => [
   `👑 <b>Что сейчас двигает ${name}?</b>`,
-  [up.length ? `🟢 Поддерживают: ${up.join(", ")}` : "", dn.length ? `🔴 Давят: ${dn.join(", ")}` : ""].filter(Boolean).join("\n"),
-  `Так PRO разбирает любой из 42 активов. Листай карточки →`,
-  `<b>PRO — от 240 ₽ в месяц.</b> Базовый — бесплатно.`].filter(Boolean).join("\n\n");
+  [up.length ? `📈 <b>Поддерживают</b> — ${up.join(", ")}` : "", dn.length ? `📉 <b>Давят</b> — ${dn.join(", ")}` : ""].filter(Boolean).join("\n"),
+  `Так PRO разбирает любой из 42 активов →`,
+  `💎 <b>PRO — от 240 ₽ в месяц</b> · Базовый бесплатно`].filter(Boolean).join("\n\n"); // владелец 25.10: без 🟢🔴 — «дёшево смотрится»
 const PRO_ASSET = "SBER";
 
 // содержимое слайда крупно (владелец 25.10: «читать с телефона, не увеличивая»): кадр 400×500 CSS → 1080×1350; не влезает — чуть уменьшаем, но не меньше 75%
@@ -82,8 +82,40 @@ async function proSlides(p, data) {
   shots.push(await shot(p, "return a", HEAD_HTML("👑 PRO") + `<div class="fw">${big("Как это работает", "от решения ЦБ до цены акции — по шагам")}${panel(parts.chainHd + parts.chainLbl + parts.chain)}</div>` + ft("2 / 6 · схема влияния"), PRO_CSS));
   if (parts.ev) shots.push(await shot(p, "return a", HEAD_HTML("👑 PRO") + `<div class="fw">${big("Что сдвинет рынок за 2 недели", "события с силой влияния — напомним за час")}${panel(parts.ev)}</div>` + ft("3 / 6 · события"), PRO_CSS));
   const club = (img, t, s, li) => HEAD_HTML("🔒 Закрытый канал PRO") + `<div class="fw">${big(t, s)}<img class="cimg" src="img/promo/${img}?v=1" alt=""><ul class="cl">${li.map(x => `<li>${x}</li>`).join("")}</ul></div>`;
-  shots.push(await shot(p, "return a", club("club_ex_week.jpg", "Неделя впереди", "каждый понедельник — что ждёт рынок",
-    ["ЦБ, ФРС, отчёты компаний — по дням", "по воскресеньям — разбор недели"]) + ft("4 / 6 · закрытый канал"), PRO_CSS));
+  // 4) «Неделя впереди» — в стиле поста закрытого канала (Редактор, pro_queue/2026-10-wk4 v4_w1/w2), одной картинкой: дни друг под другом,
+  // точки и линии; события — из календаря приложения на 7 дней вперёд (каждый день свежие)
+  await p.evaluate(async () => { const l = document.createElement("link"); l.rel = "stylesheet";
+    l.href = "https://fonts.googleapis.com/css2?family=Unbounded:wght@800&family=Inter:wght@500;600;700;800&display=swap"; document.head.appendChild(l);
+    await new Promise(r => { l.onload = l.onerror = r; setTimeout(r, 5000); });
+    await Promise.race([Promise.all([document.fonts.load("800 20px Unbounded"), document.fonts.load("700 14px Inter")]), new Promise(r => setTimeout(r, 6000))]); });
+  const week = await p.evaluate(() => {
+    const D = t => new Date(new Date(t).getTime() + 3 * 3600e3), day = t => D(t).toISOString().slice(0, 10), now = Date.now();
+    const DN = ["ВС", "ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ"], REG = { ru: "Россия", us: "США", crypto: "крипто", commodities: "сырьё", fx: "валюты" };
+    const IMP = { High: 2, Medium: 1 }, num = x => String(x).replace(/(\d)\.(\d)/g, "$1,$2"), e2 = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+    const days = [...Array(7)].map((_, i) => day(now + i * 864e5));
+    let budget = 9;
+    const rows = days.map(d => {
+      const seen = new Set();
+      const L = EVS.filter(e => day(e.dt) === d && new Date(e.dt) > now - 3600e3)
+        .sort((a, b) => (IMP[b.impact] || 0) - (IMP[a.impact] || 0) || /Решение/.test(b.title) - /Решение/.test(a.title))
+        .filter(e => { const k = e.dt + e.region; return seen.has(k) ? false : seen.add(k); }).slice(0, 3);
+      return { d, L };
+    });
+    rows.forEach(r => { r.cut = budget <= 0 && r.L.length > 0; r.L = r.L.slice(0, Math.max(0, Math.min(r.L.length, budget))); budget -= r.L.length; r.L.sort((a, b) => a.dt < b.dt ? -1 : 1); });
+    const last = rows.findIndex(r => r.cut); if (last >= 0) rows.splice(last); // не влезло — дальше дни не показываем (а не «без событий»)
+    const f = d => { const x = new Date(d + "T12:00:00Z"); return { dn: DN[x.getUTCDay()], dd: d.slice(8, 10) + "." + d.slice(5, 7) }; };
+    const range = (days[0].slice(5, 7) === days[6].slice(5, 7) ? String(+days[0].slice(8)) : new Date(days[0] + "T12:00:00Z").toLocaleDateString("ru-RU", { day: "numeric", month: "long", timeZone: "UTC" })) + " — " +
+      new Date(days[6] + "T12:00:00Z").toLocaleDateString("ru-RU", { day: "numeric", month: "long", timeZone: "UTC" });
+    const body = rows.map(({ d, L }) => { const { dn, dd } = f(d);
+      if (!L.length) return `<div class="xdr xthin"><div class="xdd"><b>${dn}</b><span>${dd}</span></div><div class="xde">Без значимых событий</div></div>`;
+      return `<div class="xdr"><div class="xdd"><b>${dn}</b><span>${dd}</span></div><div class="xevs">${L.map(e => {
+        const sub = [REG[e.region] || "", e.forecast ? `ждут ${num(e.forecast)}${e.previous ? ` · было ${num(e.previous)}` : ""}` : e.note || ""].filter(Boolean).join(" · ");
+        return `<div class="xev xi${IMP[e.impact] || 0}"><b>${D(e.dt).toISOString().slice(11, 16)}</b><div><p>${e2(e.title)}</p>${sub ? `<span>${e2(sub)}</span>` : ""}</div></div>`; }).join("")}</div></div>`; }).join("");
+    return `<div class="xwb"><img src="img/logo192.png" alt=""><span class="xbn">ПУЛЬС РЫНКА</span><span class="xbday">PRO</span><span class="xbname">ЗАКРЫТЫЙ КАНАЛ</span></div>
+      <div class="fw"><div class="xwh"><div class="xwk">${range}</div><h1>Неделя впереди</h1><div class="xleg"><span><i class="xk2"></i>ключевое</span><span><i class="xk1"></i>важное</span><span><i class="xk0"></i>фон</span><span>время МСК</span></div></div>
+      <div class="xdays">${body}</div></div>`;
+  });
+  shots.push(await shot(p, "return a", week + ft("4 / 6 · закрытый канал"), WEEK_CSS));
   shots.push(await shot(p, "return a", club("club_ex_guide.jpg", "PDF-гайды", "учимся читать рынок — пошагово, со схемами",
     ["ставка ЦБ, инфляция, нефть и рубль", "новый гайд — каждую неделю"]) + ft("5 / 6 · закрытый канал"), PRO_CSS));
   // итог — золотой (владелец 25.10: «чтобы сразу было понятно, что это PRO»)
@@ -101,6 +133,23 @@ const PRO_CSS = `#fc{background:linear-gradient(165deg,#241904,#5e430f 60%,#8f6a
   #fc .prp .oxh{margin-bottom:10px}#fc .prp .fxn{padding:9px 12px}#fc .prp .fxa{height:14px}#fc .prp .evminis{grid-template-columns:minmax(0,1fr);margin:0}#fc .prp .evmini{width:100%!important;max-width:none!important;box-sizing:border-box}#fc .prp .evmini .eb{flex:1;min-width:0}
   #fc .cimg{width:100%;border-radius:14px;box-shadow:0 10px 40px rgba(0,0,0,.4);margin:8px 0 4px}#fc .cl{color:#fff;font-size:16px;font-weight:600;margin:6px 0 0;padding-left:20px;line-height:1.5}
   #fc .full{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}`;
+// «Неделя впереди» — как у Редактора (v4.html, .s-week): бежевый фон, красные время и даты, Unbounded + Inter
+const WEEK_CSS = `#fc{background:#F4EFE6;color:#1B1B1B;padding:14px 12px 10px;gap:8px}#fc .ft{color:#1B1B1B;opacity:.55}
+  #fc .xwb{display:flex;align-items:center;gap:7px;font:700 10.5px Inter;letter-spacing:.08em;color:#6B655B}#fc .xwb img{width:20px;height:20px;border-radius:5px}
+  #fc .xbday{margin-left:auto;background:#D9472B;color:#fff;border-radius:99px;padding:3px 9px;font-weight:800}#fc .xbname{color:#1B1B1B;font-weight:800}
+  #fc .fw{justify-content:flex-start;gap:10px}#fc .xwk{font:600 12px Inter;color:#D9472B;letter-spacing:.04em}
+  #fc h1{font:800 31px/1 Unbounded,Inter;letter-spacing:-.03em;margin:4px 0 0}#fc .xleg{display:flex;gap:12px;margin-top:8px;font:600 10.5px Inter;color:#6B655B}
+  #fc .xleg i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+  #fc .xk2,#fc .xev.xi2:before{background:#D9472B}#fc .xk1,#fc .xev.xi1:before{background:#1B1B1B}#fc .xk0,#fc .xev.xi0:before{background:#C9C1B3}
+  #fc .xdays{display:flex;flex-direction:column;gap:6px}#fc .xdr{display:grid;grid-template-columns:44px 1fr;gap:6px;background:#fff;border-radius:12px;padding:9px 10px}
+  #fc .xdr.xthin{background:#EBE4D8;padding:6px 10px;align-items:center}#fc .xdr.xthin .xdd{display:flex;align-items:baseline;gap:6px}#fc .xdr.xthin .xdd b{font-size:13px}
+  #fc .xdr.xthin{grid-template-columns:auto 1fr;gap:14px}#fc .xde{font:600 11.5px Inter;color:#8A8377}
+  #fc .xdd b{display:block;font:800 17px/1 Unbounded,Inter}#fc .xdd span{font:600 10px Inter;color:#8A8377}
+  #fc .xevs{display:flex;flex-direction:column;gap:6px;position:relative}#fc .xevs:before{content:"";position:absolute;left:3px;top:6px;bottom:6px;width:1.5px;background:#E6DED1}
+  #fc .xev{display:grid;grid-template-columns:14px 50px 1fr;align-items:baseline;position:relative}
+  #fc .xev:before{content:"";width:7px;height:7px;border-radius:50%;transform:translateY(-1px)}
+  #fc .xev b{font:800 11.5px Unbounded,Inter;color:#D9472B;white-space:nowrap}#fc .xev p{margin:0;font:700 13.5px/1.2 Inter}#fc .xev.xi2 p{font-size:14.5px}
+  #fc .xev span{display:block;font:500 10.5px/1.3 Inter;color:#6B655B;margin-top:1px}`;
 const GOLD_CSS = `#fc{background:linear-gradient(160deg,#f6dc8e,#e2b24c 50%,#b9832a);color:#2a1c03}#fc .hd,#fc .big,#fc .ft{color:#2a1c03}#fc .ft{opacity:.7}
   #fc .gb{background:#2a1c03;color:#ffd978!important;padding:4px 10px;border-radius:99px;font-size:13px}
   #fc .big{font-size:27px;margin-bottom:10px}#fc .gl{display:grid;gap:7px}#fc .gl div{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.55);border-radius:14px;padding:9px 12px;font-size:16px;font-weight:700}
