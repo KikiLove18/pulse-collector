@@ -12,19 +12,18 @@ const TITLE = { ru: "🇷🇺 Россия", us: "🇺🇸 США", crypto: "₿
 const HEAD = { ru: "🇷🇺 <b>Россия — главное за день</b>", us: "🇺🇸 <b>США — главное за день</b>", crypto: "₿ <b>Крипта — главное за день</b>",
   commodities: "🛢 <b>Нефть и золото — главное за день</b>", x: "🗣 <b>Что говорят люди, которые двигают рынки</b>" };
 // пост PRO (19:00): карусель — 1) что двигает Сбербанк сегодня (живой разбор из приложения), 2) схема «как это работает», 3) события на 2 недели,
-// 4–5) примеры из закрытого канала, 6) всё, что входит (ch_pro.jpg). Владелец 25.10: «сначала дать ценность, потом — что ещё в PRO».
+// 4–5) примеры из закрытого канала, 6) золотой итог «что входит + цена». Рамка PRO — золотая, новости — синие. Владелец 25.10: «сначала дать ценность, потом — что ещё в PRO».
 // Текст — без обещаний дохода; цены — как в боте (PRICES в worker/index.js)
-const PRO_HEAD = "👑 <b>Пульс рынка PRO</b>";
-const PRO_TEXT = `Здесь — новости. В PRO — что они значат для твоих активов. Листай →
-
-1 · Что двигает Сбербанк сегодня — так разобран любой из 42 активов
-2 · Схема «как это работает» — от решения ЦБ до цены
-3 · События на 2 недели с силой влияния
-4–5 · Закрытый канал: неделя впереди и PDF-гайды
-
-PRO — от 240 ₽ в месяц. Базовый — бесплатно.`;
+// текст — по правилам сильных каналов (владелец 25.10: «лаконично, красиво»): вопрос-крючок → живая польза → одна строка с ценой → одна кнопка
+const proText = (name, up, dn) => [
+  `👑 <b>Что сейчас двигает ${name}?</b>`,
+  [up.length ? `🟢 Поддерживают: ${up.join(", ")}` : "", dn.length ? `🔴 Давят: ${dn.join(", ")}` : ""].filter(Boolean).join("\n"),
+  `Так PRO разбирает любой из 42 активов. Листай карточки →`,
+  `<b>PRO — от 240 ₽ в месяц.</b> Базовый — бесплатно.`].filter(Boolean).join("\n\n");
 const PRO_ASSET = "SBER";
 
+// содержимое слайда крупно (владелец 25.10: «читать с телефона, не увеличивая»): кадр 400×500 CSS → 1080×1350; не влезает — чуть уменьшаем, но не меньше 75%
+const FIT = `const fw=o.querySelector('.fw'); if(fw){ fw.style.minHeight='0'; fw.style.overflow='hidden'; let z=1; while(fw.scrollHeight>fw.clientHeight+1&&z>0.76){ z-=0.02; [...fw.children].forEach(c=>c.style.zoom=z); } }`;
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 async function tg(method, form) {
@@ -35,8 +34,8 @@ async function tg(method, form) {
 }
 
 async function proPost(p, data) {
-  const shots = await proSlides(p, data);
-  const html = `<tg-slideshow>${shots.map((_, i) => `<img src="tg://photo?id=s${i}"/>`).join("")}</tg-slideshow><p>${PRO_HEAD}</p>` +
+  const { shots, text: PRO_TEXT } = await proSlides(p, data);
+  const html = `<tg-slideshow>${shots.map((_, i) => `<img src="tg://photo?id=s${i}"/>`).join("")}</tg-slideshow>` +
     PRO_TEXT.split("\n\n").map(t => `<p>${t.replace(/\n/g, "<br/>")}</p>`).join("") +
     `<tg-button-row align="left"><tg-button type="url" url="https://t.me/${BOT}?startapp=pro">👑 Оформить PRO</tg-button></tg-button-row>`;
   const f = new FormData();
@@ -46,7 +45,7 @@ async function proPost(p, data) {
   try { const r = await tg("sendRichMessage", f); console.log("пост PRO (слайдшоу) отправлен:", CHAT, "#" + r.result.message_id); }
   catch (e) { // запасной: альбом + подпись (кнопки у альбома нет — ссылка в тексте)
     console.log("слайдшоу PRO не ушло:", e.message, "— отправляю альбомом");
-    await sendPhotos(shots, `${PRO_HEAD}\n\n${PRO_TEXT}\n\n👑 <a href="https://t.me/${BOT}?startapp=pro">Оформить PRO</a>`);
+    await sendPhotos(shots, `${PRO_TEXT}\n\n👑 <a href="https://t.me/${BOT}?startapp=pro">Оформить PRO</a>`);
   }
 }
 // слайды поста PRO: блоки берём из настоящих окон приложения (разбор актива, схема фактора) — с живыми котировками
@@ -66,7 +65,9 @@ async function proSlides(p, data) {
     const evs = EVS.filter(e => !e.res && new Date(e.dt) > now && new Date(e.dt) < now + 14 * 864e5)
       .sort((a, b) => (b.impact === "High") - (a.impact === "High") || /Решение|ставк/i.test(b.title) - /Решение|ставк/i.test(a.title) || new Date(a.dt) - new Date(b.dt))
       .filter(e => { const d = new Date(new Date(e.dt).getTime() + 3 * 3600e3).toISOString().slice(0, 10); return seen.has(d) ? false : seen.add(d); }).slice(0, 4).sort((a, b) => new Date(a.dt) - new Date(b.dt));
-    const out = { name, head, sum, fx: fx.outerHTML, ev: evs.length ? `<div class="evminis">${evs.map(e => evMini(e, 0, "")).join("")}</div>` : "" };
+    const R = fxRows(AX_CUR.cls), low = t => /^[А-ЯЁ][а-яё]/.test(t) && !/^[А-ЯЁ]{2}/.test(t) ? t[0].toLowerCase() + t.slice(1) : t;
+    const fxUp = R.filter(x => x.L && x.L.e === 1).map(x => low(x.f.t)).slice(0, 3), fxDn = R.filter(x => x.L && x.L.e === -1).map(x => low(x.f.t)).slice(0, 3);
+    const out = { name, head, sum, fxUp, fxDn, fx: fx.outerHTML, ev: evs.length ? `<div class="evminis">${evs.map(e => evMini(e, 0, "")).join("")}</div>` : "" };
     fxOpen(0);
     out.chainHd = ax.querySelector(".fxhd")?.outerHTML || "";
     out.chainLbl = [...ax.querySelectorAll(".oxlbl")].find(x => /Как это работает/.test(x.textContent))?.outerHTML || "";
@@ -81,33 +82,46 @@ async function proSlides(p, data) {
   shots.push(await shot(p, "return a", HEAD_HTML("👑 PRO") + `<div class="fw">${big("Как это работает", "от решения ЦБ до цены акции — по шагам")}${panel(parts.chainHd + parts.chainLbl + parts.chain)}</div>` + ft("2 / 6 · схема влияния"), PRO_CSS));
   if (parts.ev) shots.push(await shot(p, "return a", HEAD_HTML("👑 PRO") + `<div class="fw">${big("Что сдвинет рынок за 2 недели", "события с силой влияния — напомним за час")}${panel(parts.ev)}</div>` + ft("3 / 6 · события"), PRO_CSS));
   const club = (img, t, s, li) => HEAD_HTML("🔒 Закрытый канал PRO") + `<div class="fw">${big(t, s)}<img class="cimg" src="img/promo/${img}?v=1" alt=""><ul class="cl">${li.map(x => `<li>${x}</li>`).join("")}</ul></div>`;
-  shots.push(await shot(p, "return a", club("club_ex_week.jpg", "Каждый понедельник — неделя впереди", "главные события недели и что они значат",
-    ["решения ЦБ и ФРС, отчёты компаний, данные", "что важно для России — отдельно", "по воскресеньям — разбор прошедшей недели"]) + ft("4 / 6 · закрытый канал"), PRO_CSS));
-  shots.push(await shot(p, "return a", club("club_ex_guide.jpg", "PDF-гайды — учимся читать рынок", "ставка ЦБ, инфляция, нефть и рубль — пошагово",
-    ["главы со схемами, 20 минут чтения", "тест и шпаргалка в конце", "новый гайд — каждую неделю"]) + ft("5 / 6 · закрытый канал"), PRO_CSS));
-  shots.push(await shot(p, "return a", `<img class="full" src="img/promo/ch_pro.jpg?v=1" alt="">`, PRO_CSS + "#fc{padding:0}"));
-  return shots;
+  shots.push(await shot(p, "return a", club("club_ex_week.jpg", "Неделя впереди", "каждый понедельник — что ждёт рынок",
+    ["ЦБ, ФРС, отчёты компаний — по дням", "по воскресеньям — разбор недели"]) + ft("4 / 6 · закрытый канал"), PRO_CSS));
+  shots.push(await shot(p, "return a", club("club_ex_guide.jpg", "PDF-гайды", "учимся читать рынок — пошагово, со схемами",
+    ["ставка ЦБ, инфляция, нефть и рубль", "новый гайд — каждую неделю"]) + ft("5 / 6 · закрытый канал"), PRO_CSS));
+  // итог — золотой (владелец 25.10: «чтобы сразу было понятно, что это PRO»)
+  const LIST = [["📊", "Разбор любого из 42 активов"], ["🔗", "Схема «как это работает»"], ["📅", "События на 2 недели + напоминания"], ["👤", "Все 69 человек, которые двигают рынки"],
+    ["🔎", "Поиск по всей Ленте"], ["🔒", "Закрытый канал: неделя впереди, PDF-гайды"]];
+  shots.push(await shot(p, "return a", `<div class="hd"><img src="img/logo192.png" alt="">Пульс рынка<span class="th gb">👑 PRO</span></div>
+    <div class="fw">${big("Не просто новости —<br>что они сделают с ценой", "")}<div class="gl">${LIST.map(([i, t]) => `<div><span>${i}</span>${t}</div>`).join("")}</div>
+    <div class="gp"><b>от 240 ₽</b> в месяц<small>Базовый — бесплатно</small></div></div>` + ft("6 / 6 · жми «Оформить PRO» ↓"), PRO_CSS + GOLD_CSS));
+  return { shots, text: proText(esc(parts.name), parts.fxUp, parts.fxDn) };
 }
-const PRO_CSS = `#fc .big{font-size:27px}#fc .big small{display:block;font-size:15px;font-weight:700;opacity:.8;margin-top:6px}
+// PRO — золотая рамка (бесплатные новости — синие)
+const PRO_CSS = `#fc{background:linear-gradient(165deg,#241904,#5e430f 60%,#8f6a22)}#fc .th{color:#ffd978;opacity:1}
+  #fc .big{font-size:24px}#fc .big small{display:block;font-size:13.5px;font-weight:700;opacity:.8;margin-top:6px}
   #fc .prp{background:var(--surface,#fff);border-radius:22px;padding:14px 12px;box-shadow:0 10px 40px rgba(0,0,0,.35);color:var(--ink,#111)}#fc .prp .oxlbl:first-child{margin-top:0}#fc .prp .oxf2 b{color:var(--ink,#111)}
   #fc .prp .oxh{margin-bottom:10px}#fc .prp .fxn{padding:9px 12px}#fc .prp .fxa{height:14px}#fc .prp .evminis{grid-template-columns:minmax(0,1fr);margin:0}#fc .prp .evmini{width:100%!important;max-width:none!important;box-sizing:border-box}#fc .prp .evmini .eb{flex:1;min-width:0}
   #fc .cimg{width:100%;border-radius:14px;box-shadow:0 10px 40px rgba(0,0,0,.4);margin:8px 0 4px}#fc .cl{color:#fff;font-size:16px;font-weight:600;margin:6px 0 0;padding-left:20px;line-height:1.5}
   #fc .full{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}`;
+const GOLD_CSS = `#fc{background:linear-gradient(160deg,#f6dc8e,#e2b24c 50%,#b9832a);color:#2a1c03}#fc .hd,#fc .big,#fc .ft{color:#2a1c03}#fc .ft{opacity:.7}
+  #fc .gb{background:#2a1c03;color:#ffd978!important;padding:4px 10px;border-radius:99px;font-size:13px}
+  #fc .big{font-size:27px;margin-bottom:10px}#fc .gl{display:grid;gap:7px}#fc .gl div{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.55);border-radius:14px;padding:9px 12px;font-size:16px;font-weight:700}
+  #fc .gl span{font-size:20px}#fc .gp{margin-top:12px;background:#2a1c03;color:#ffd978;border-radius:16px;padding:12px 14px;font-size:16px;font-weight:700;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  #fc .gp b{font-size:26px}#fc .gp small{margin-left:auto;color:#f3e3b5;font-size:13px}`;
 
 // рамка слайда (как у подборок) вокруг готового блока приложения; html строится в странице приложения
-const FRAME_CSS = `#fc{position:fixed;inset:0;z-index:2147483647;background:linear-gradient(160deg,#1b3360,#3a6ea8);display:flex;flex-direction:column;padding:22px 18px 18px;gap:14px}
-  #fc .hd{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;color:#fff}#fc .hd img{width:34px;height:34px;border-radius:9px}
+const FRAME_CSS = `#fc{position:fixed;inset:0;z-index:2147483647;background:linear-gradient(160deg,#1b3360,#3a6ea8);display:flex;flex-direction:column;padding:12px 8px 10px;gap:8px}
+  #fc .hd{display:flex;align-items:center;gap:10px;font-weight:800;font-size:14px;color:#fff;padding:0 4px}#fc .hd img{width:26px;height:26px;border-radius:7px}
   #fc .hd .th{margin-left:auto;font-size:14px;font-weight:700;opacity:.8}#fc .card,#fc .past-hero{margin:0!important;box-shadow:0 10px 40px rgba(0,0,0,.35)}#fc .acts,#fc .newpill,#fc .ch,#fc .cd2{display:none}
   #fc .fw{flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px}#fc .ft{display:flex;justify-content:space-between;font-size:13px;opacity:.75;color:#fff}
   #fc .big{color:#fff;font-size:26px;font-weight:900;line-height:1.15;margin:4px 2px 6px}#fc .evmini{width:100%;pointer-events:none}`;
 async function shot(p, build, arg, extraCss = "") {
-  await p.evaluate(({ css, build, arg }) => {
+  await p.evaluate(({ css, build, arg, fit }) => {
     document.getElementById("fc")?.remove();
     const o = document.createElement("div");
     o.id = "fc";
     o.innerHTML = `<style>${css}</style>` + new Function("a", build)(arg);
     document.body.appendChild(o);
-  }, { css: FRAME_CSS + extraCss, build, arg });
+    new Function("o", fit)(o);
+  }, { css: FRAME_CSS + extraCss, build, arg, fit: FIT });
   await p.waitForTimeout(800);
   const buf = await p.locator("#fc").screenshot({ type: "jpeg", quality: 88 });
   require("fs").mkdirSync("out", { recursive: true }); require("fs").writeFileSync(`out/${THEME}_${Date.now()}.jpg`, buf); // для проверки (артефакт запуска)
@@ -223,7 +237,7 @@ async function inspect() {
   const data = await api.json(), { news, used, events = [], results = [] } = data;
   if (THEME === "pro" || THEME === "today" || THEME === "results") {
     const b = await chromium.launch();
-    const p = await b.newPage({ viewport: { width: 540, height: 675 }, deviceScaleFactor: 2, locale: "ru-RU", timezoneId: "Europe/Moscow" });
+    const p = await b.newPage({ viewport: { width: 400, height: 500 }, deviceScaleFactor: 2.7, locale: "ru-RU", timezoneId: "Europe/Moscow" });
     p.on("pageerror", e => console.log("page error:", e.message));
     await p.goto(APP + "/", { waitUntil: "networkidle" });
     await p.waitForTimeout(1500);
@@ -233,7 +247,7 @@ async function inspect() {
   }
 
   const b = await chromium.launch();
-  const p = await b.newPage({ viewport: { width: 540, height: 675 }, deviceScaleFactor: 2, locale: "ru-RU", timezoneId: "Europe/Moscow" });
+  const p = await b.newPage({ viewport: { width: 400, height: 500 }, deviceScaleFactor: 2.7, locale: "ru-RU", timezoneId: "Europe/Moscow" });
   p.on("pageerror", e => console.log("page error:", e.message));
   await p.goto(APP + "/", { waitUntil: "networkidle" });
   await p.waitForTimeout(1500);
@@ -266,20 +280,21 @@ async function inspect() {
 
   const shots = [];
   for (let i = 0; i < pick.length; i++) {
-    await p.evaluate(({ n, i, total, title }) => {
+    await p.evaluate(({ n, i, total, title, fit }) => {
       NEWS = [n];
       document.getElementById("fc")?.remove();
       const o = document.createElement("div");
       o.id = "fc";
-      o.innerHTML = `<style>#fc{position:fixed;inset:0;z-index:2147483647;background:linear-gradient(160deg,#1b3360,#3a6ea8);display:flex;flex-direction:column;padding:22px 18px 18px;gap:14px}
-        #fc .hd{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;color:#fff}#fc .hd img{width:34px;height:34px;border-radius:9px}
-        #fc .hd .th{margin-left:auto;font-size:14px;font-weight:700;opacity:.8}#fc .card{margin:0!important;box-shadow:0 10px 40px rgba(0,0,0,.35)}#fc .acts,#fc .newpill{display:none}
+      o.innerHTML = `<style>#fc{position:fixed;inset:0;z-index:2147483647;background:linear-gradient(160deg,#1b3360,#3a6ea8);display:flex;flex-direction:column;padding:12px 8px 10px;gap:8px}
+        #fc .hd{display:flex;align-items:center;gap:10px;font-weight:800;font-size:14px;color:#fff;padding:0 4px}#fc .hd img{width:26px;height:26px;border-radius:7px}
+        #fc .hd .th{margin-left:auto;font-size:14px;font-weight:700;opacity:.8}#fc .card{margin:0!important;box-shadow:0 10px 40px rgba(0,0,0,.35)}#fc .acts,#fc .newpill,#fc .has-cover>.t,#fc .ntag,#fc .also{display:none}
         #fc .fw{flex:1;display:flex;flex-direction:column;justify-content:center}#fc .ft{display:flex;justify-content:space-between;font-size:13px;opacity:.75;color:#fff}</style>
         <div class="hd"><img src="img/logo192.png" alt="">Пульс рынка<span class="th">${title}</span></div>
         <div class="fw">${newsCard(n, 0)}</div>
         <div class="ft"><span>${i + 1} / ${total}</span><span>@ime_news_01_bot</span></div>`;
       document.body.appendChild(o);
-    }, { n: pick[i], i, total: pick.length, title: TITLE[THEME] });
+      new Function("o", fit)(o);
+    }, { n: pick[i], i, total: pick.length, title: TITLE[THEME], fit: FIT });
     await p.waitForTimeout(800); // картинка карточки
     shots.push(await p.locator("#fc").screenshot({ type: "jpeg", quality: 88 }));
   }
