@@ -879,7 +879,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T14:00:55.150419+00:00",
+  "breaking_ts": "2026-10-25T14:30:56.108613+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -888,66 +888,51 @@
     "titles": []
   },
   "news_seen": [
+    "https://t.me/banksta/104139",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251657",
+    "https://tass.ru/obschestvo/28251655",
+    "https://www.kommersant.ru/doc/9060134",
+    "https://t.me/invest_zonaa/39134",
+    "https://tass.ru/obschestvo/28251645",
+    "https://tass.ru/armiya-i-opk/28251653",
+    "https://tass.ru/sport/28251651",
+    "https://www.rbc.ru/sport/24/10/2026/6adcf0d69a6736607dca589c",
+    "https://t.me/rbc_news/159383",
+    "https://www.rbc.ru/politics/21/10/2026/6ad8c4c7acd127579b70572a",
+    "https://www.kommersant.ru/doc/9060159",
+    "https://t.me/headlines_for_traders/87408",
+    "https://tass.ru/obschestvo/28251649",
+    "https://tass.ru/obschestvo/28251641",
+    "https://tass.ru/obschestvo/28251643",
+    "https://www.kommersant.ru/doc/9060157",
+    "https://tass.ru/proisshestviya/28251637",
+    "https://www.rbc.ru/sport/23/10/2026/6adb2eee74a6191c597a38e8",
+    "https://www.vedomosti.ru/business/news/2026/10/25/1239932-novak-o-gotovnosti",
+    "https://t.me/BitcoinMagazineTelegram/10906",
+    "https://www.rbc.ru/politics/25/10/2026/6ade0c5be6f53f880224b088",
+    "https://tass.ru/sport/28251633",
+    "https://tass.ru/politika/28251631",
+    "https://www.interfax.ru/business/1124882",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251617",
+    "https://tass.ru/proisshestviya/28251621",
+    "https://t.me/headlines_for_traders/87407",
+    "https://tass.ru/ekonomika/28251613",
+    "https://tass.ru/sport/28251615",
+    "https://decrypt.co/381777/bitcoin-etfs-snap-two-week-losing-streak-despite-late-week-slide",
+    "https://www.kommersant.ru/doc/9060151",
+    "https://tass.ru/politika/28251611",
+    "https://www.rbc.ru/sport/24/10/2026/6adc975b3c765fe671670d8a",
+    "https://www.rbc.ru/rbcfreenews/6adbd364d12b2b1156cdb50d",
+    "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/more-than-a-third-of-s-p-500-companies-are-about-to-report-earnings-as-market-confidence-cracks-03b7a8f1?mod=mw_rss_topstories",
     "https://tass.ru/obschestvo/28251609",
-    "https://www.rbc.ru/politics/20/10/2026/6ad7257f803b1059bf2269d5",
-    "https://tass.ru/proisshestviya/28251605",
-    "https://tass.ru/sport/28251607",
-    "https://www.kommersant.ru/doc/9060144",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239931-odin-chelovek-pogib",
-    "https://www.rbc.ru/society/25/10/2026/6add8251b7b486f319fcc5c2",
-    "https://www.kommersant.ru/doc/9060145",
-    "https://www.rbc.ru/rbcfreenews/6aa3f0a59a794758892497ce",
-    "https://tass.ru/proisshestviya/28251603",
-    "https://www.rbc.ru/sport/05/09/2026/6a9472249a7947f32011511a",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239930-vo-frantsii-politsiya",
-    "https://tass.ru/sport/28251601",
-    "https://www.marketwatch.com/story/my-husband-wants-to-sell-our-1-5-million-home-and-invest-the-proceeds-but-this-is-where-we-raised-our-kids-and-i-cant-bear-to-leave-4feb46ed?mod=mw_rss_topstories",
-    "https://www.kommersant.ru/doc/9060138",
-    "https://t.me/nainspire/5593",
-    "https://www.interfax.ru/russia/1124881",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251599",
-    "https://www.sport-interfax.ru/1124880",
-    "https://t.me/WalterBloomberg/37329",
-    "https://www.rbc.ru/sport/25/10/2026/6add2c09d62b94fdb2f092eb",
-    "https://t.me/banksta/104138",
-    "https://www.kommersant.ru/doc/9060121",
-    "https://tass.ru/sport/28251597",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251591",
-    "https://tass.ru/obschestvo/28251593",
-    "https://www.kommersant.ru/doc/9060128",
-    "https://tass.ru/proisshestviya/28251589",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251581",
-    "https://www.kommersant.ru/doc/9060107"
+    "https://www.rbc.ru/politics/20/10/2026/6ad7257f803b1059bf2269d5"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T14:00:55.913547+00:00",
-      "Volkswagen планирует сократить еще 12 тыс. сотрудников к 2030 году"
-    ],
-    [
-      "2026-10-24T14:00:55.913547+00:00",
-      "Отток Ethereum с бирж достиг максимума за четыре месяца на фоне потерь ETF"
-    ],
-    [
-      "2026-10-24T14:00:55.913547+00:00",
-      "Сербская NIS запросила в Минфине США продление лицензии после 30 октября"
-    ],
-    [
-      "2026-10-24T14:00:55.913547+00:00",
-      "CMCC Global планирует запустить два токенизированных фонда на биткоин"
-    ],
-    [
-      "2026-10-24T14:00:55.913547+00:00",
-      "В Севастополе ввели графики отключения электроэнергии"
-    ],
-    [
-      "2026-10-24T14:00:55.913547+00:00",
-      "Канцлер Германии Фридрих Мерц признал серьезные проблемы в экономике ФРГ"
-    ],
     [
       "2026-10-24T14:31:00.211573+00:00",
       "Биткоин упал ниже $80 000 на фоне ликвидации лонгов на $200 млн"
@@ -1543,6 +1528,30 @@
     [
       "2026-10-25T14:00:55.150419+00:00",
       "IKEA продлила действие товарного знака в России до 2036 года"
+    ],
+    [
+      "2026-10-25T14:30:56.108613+00:00",
+      "Спотовые биткоин-ETF привлекли $301 млн за неделю"
+    ],
+    [
+      "2026-10-25T14:30:56.108613+00:00",
+      "Во Франции задержали более 1300 человек на фоне протестов"
+    ],
+    [
+      "2026-10-25T14:30:56.108613+00:00",
+      "Новак заявил о готовности России обеспечить потребности в дизеле"
+    ],
+    [
+      "2026-10-25T14:30:56.108613+00:00",
+      "В Китае 110 роботов установили рекорд Гиннесса"
+    ],
+    [
+      "2026-10-25T14:30:56.108613+00:00",
+      "СКР возбудил дело о теракте после налета беспилотников на Белгород"
+    ],
+    [
+      "2026-10-25T14:30:56.108613+00:00",
+      "Явка на внеочередных выборах в парламент Сербии превысила 50%"
     ]
   ],
   "results_fp": [
