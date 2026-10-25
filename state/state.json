@@ -880,7 +880,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T17:00:57.831396+00:00",
+  "breaking_ts": "2026-10-25T17:30:55.552084+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -889,91 +889,51 @@
     "titles": []
   },
   "news_seen": [
+    "https://tass.ru/mezhdunarodnaya-panorama/28251869",
+    "https://t.me/banksta/104142",
+    "https://tass.ru/armiya-i-opk/28251865",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251863",
+    "https://tass.ru/proisshestviya/28251859",
+    "https://tass.ru/obschestvo/28251849",
+    "https://tass.ru/sport/28251861",
+    "https://www.kommersant.ru/doc/9060242",
+    "https://thedefiant.io/news/defi/how-a-dao-vote-becomes-a-treasury-transfer",
+    "https://thedefiant.io/news/security/how-to-check-a-software-wallet-and-what-the-checks-cannot-prove",
+    "https://tass.ru/armiya-i-opk/28251857",
+    "https://www.kommersant.ru/doc/9060239",
+    "https://www.rbc.ru/sport/20/10/2026/6ad72e619a7947847d77e68f",
+    "https://tass.ru/sport/28251855",
+    "https://www.rbc.ru/rbcfreenews/6abc83ece0c90d6b80e6e5c3",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251853",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239949-trehstoronnyaya-vstrecha",
+    "https://www.kommersant.ru/doc/9060237",
+    "https://tass.ru/proisshestviya/28251843",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251851",
+    "https://tass.ru/proisshestviya/28251845",
+    "https://t.me/rbc_news/159387",
+    "https://www.kommersant.ru/doc/9060235",
+    "https://tass.ru/obschestvo/28251841",
+    "https://t.me/headlines_for_traders/87410",
+    "https://tass.ru/mezhdunarodnaya-panorama/28251839",
+    "https://www.interfax.ru/russia/1124901",
+    "https://t.me/if_market_news/86312",
+    "https://www.interfax.ru/world/1124900",
+    "https://www.rbc.ru/photoslider/6ade35201211d48caedd39ea",
+    "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/we-have-a-300-000-mortgage-with-a-2-75-interest-rate-i-want-to-pay-it-off-my-husband-says-im-crazy-whos-right-4ed15226?mod=mw_rss_topstories",
+    "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
     "https://oilprice.com/Energy/Energy-General/World-Is-on-Track-for-Up-to-28-Degrees-of-Warming-Despite-Clean-Energy-Boom.html",
     "https://t.me/interfaxonline/80678",
     "https://tass.ru/sport/28251827",
+    "https://www.interfax.ru/moscow/1124899",
     "https://www.rbc.ru/rbcfreenews/68191e339a79471725f82918",
-    "https://tass.ru/sport/28251833",
-    "https://www.rbc.ru/sport/22/10/2026/6ada3a25b363e488c71cc7c5",
-    "https://www.rbc.ru/society/04/01/2026/695a78d99a79474da260f3e8",
-    "https://tass.ru/ekonomika/28251829",
-    "https://www.rbc.ru/politics/25/10/2026/6ade3082bae07110b5b3843d",
-    "https://tass.ru/proisshestviya/28251823",
-    "https://www.rbc.ru/rbcfreenews/6ade2bfe8d20d09be42d576c",
-    "https://tass.ru/sport/28251819",
-    "https://t.me/markettwits/390373",
-    "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
-    "https://tass.ru/obschestvo/28251821",
-    "https://www.rbc.ru/rbcfreenews/6addf0a75ea283fc22720b81",
-    "https://www.kommersant.ru/doc/9060228",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251813",
-    "https://t.me/markettwits/390372",
-    "https://www.kommersant.ru/doc/9060220",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239948-volodin-provel-peregovori",
-    "https://t.me/markettwits/390371",
-    "https://www.kommersant.ru/doc/9060225",
-    "https://tass.ru/proisshestviya/28251809",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251807",
-    "https://t.me/markettwits/390370",
-    "https://t.me/FinancialJuice/142520",
-    "https://tass.ru/sport/28248579",
-    "https://t.me/incrypted/33100",
-    "https://www.interfax.ru/russia/1124897",
-    "https://www.rbc.ru/sport/20/10/2026/6ad7456886a8313df7bfcbb3",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251803",
-    "https://t.me/thebell_io/39606",
-    "https://tass.ru/politika/28251799",
-    "https://www.rbc.ru/politics/24/10/2026/6adcff037b60f23d927efe26",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251805",
-    "https://tass.ru/ekonomika/28251801",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251797",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251757",
-    "https://tass.ru/sport/28251795",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251789",
-    "https://t.me/banksta/104141",
-    "https://tass.ru/sport/28251791",
-    "https://www.rbc.ru/rbcfreenews/6acf1a6f2ae596c4638f9ad3",
-    "https://www.kommersant.ru/doc/9060223",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251785",
-    "https://www.interfax.ru/world/1124896",
-    "https://www.interfax.ru/moscow/1124895",
-    "https://t.me/rbc_news/159386",
-    "https://tass.ru/obschestvo/28251783",
-    "https://tass.ru/ekonomika/28251781",
-    "https://www.kommersant.ru/doc/9060222",
-    "https://tass.ru/obschestvo/28251779",
-    "https://tass.ru/mezhdunarodnaya-panorama/28251777",
-    "https://www.interfax.ru/moscow/1124894",
-    "https://tass.ru/sport/28251775",
-    "https://t.me/markettwits/390369",
-    "https://t.me/markettwits/390368",
-    "https://www.kommersant.ru/doc/9060218",
-    "https://t.me/interfaxonline/80677",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239941-tramp-o-vibore",
-    "https://www.rbc.ru/politics/09/10/2026/6ac926da6513342bd083da1d",
-    "https://www.kommersant.ru/doc/9060217"
+    "https://tass.ru/sport/28251833"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T18:00:57.392491+00:00",
-      "Биткоин опускался ниже $80 000 на фоне ликвидации лонгов на $404 млн"
-    ],
-    [
-      "2026-10-24T18:00:57.392491+00:00",
-      "WSJ: США рассматривают варианты возобновления военных действий против Ирана"
-    ],
-    [
-      "2026-10-24T18:00:57.392491+00:00",
-      "Минобороны РФ сообщило о перехвате 125 беспилотников за день"
-    ],
-    [
-      "2026-10-24T18:00:57.392491+00:00",
-      "Долговая нагрузка EA достигла $18 млрд после выкупа новыми владельцами"
-    ],
     [
       "2026-10-24T18:00:57.392491+00:00",
       "Музеи и дворцы Парижа приостановили работу из-за массовых протестов"
@@ -1573,6 +1533,30 @@
     [
       "2026-10-25T17:00:57.831396+00:00",
       "Явка на внеочередных парламентских выборах в Сербии превысила 56%"
+    ],
+    [
+      "2026-10-25T17:30:55.552084+00:00",
+      "Трамп анонсировал скорую трехстороннюю встречу России, США и Украины"
+    ],
+    [
+      "2026-10-25T17:30:55.552084+00:00",
+      "Явка на досрочных парламентских выборах в Сербии достигла 56%"
+    ],
+    [
+      "2026-10-25T17:30:55.552084+00:00",
+      "В Брянской области при ударе БПЛА по грузовому поезду погиб машинист"
+    ],
+    [
+      "2026-10-25T17:30:55.552084+00:00",
+      "В Греции арестовали владельца сети пекарен за налоговые махинации на €100 млн"
+    ],
+    [
+      "2026-10-25T17:30:55.552084+00:00",
+      "Российский гимнаст Сергей Найдин завоевал бронзу на чемпионате мира"
+    ],
+    [
+      "2026-10-25T17:30:55.552084+00:00",
+      "ООН прогнозирует рост глобальной температуры до 2,8 градуса"
     ]
   ],
   "results_fp": [
