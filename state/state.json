@@ -799,7 +799,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T07:00:58.047882+00:00",
+  "breaking_ts": "2026-10-25T07:30:57.340134+00:00",
   "news_now": {
     "day": "2026-10-25",
     "day_count": 0,
@@ -808,94 +808,70 @@
     "titles": []
   },
   "news_seen": [
+    "https://t.me/rbc_news/159365",
+    "https://tass.ru/kultura/28250965",
+    "https://tass.ru/armiya-i-opk/28250963",
+    "https://tass.ru/sport/28250959",
+    "https://t.me/headlines_for_traders/87390",
+    "https://www.rbc.ru/sport/13/04/2026/69dc0d079a7947f3283ea2cd",
+    "https://t.me/markettwits/390339",
+    "https://www.rbc.ru/sport/14/10/2026/6acf150a9a79470ad36c2b47",
+    "https://tass.ru/proisshestviya/28250953",
+    "https://www.kommersant.ru/doc/9059981",
+    "https://t.me/markettwits/390338",
+    "https://tass.ru/armiya-i-opk/28250951",
+    "https://t.me/headlines_for_traders/87389",
+    "https://www.rbc.ru/rbcfreenews/6addadb5ad9c2791fc14a136",
+    "https://t.me/banksta/104131",
+    "https://www.kommersant.ru/doc/9059982",
+    "https://www.rbc.ru/rbcfreenews/6ad8108c6c4f72346ab450fa",
+    "https://t.me/markettwits/390337",
+    "https://tass.ru/sport/28250943",
+    "https://www.interfax.ru/world/1124837",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239896-obama-nazval",
+    "https://tass.ru/proisshestviya/28250945",
+    "https://tass.ru/ekonomika/28250941",
+    "https://t.me/rbc_news/159364",
+    "https://t.me/markettwits/390336",
+    "https://www.rbc.ru/rbcfreenews/6acfe73d5af0c826362c43ff",
+    "https://www.kommersant.ru/doc/9059973",
+    "https://tass.ru/ekonomika/28250937",
+    "https://t.me/bitkogan_hotline/27985",
+    "https://www.interfax.ru/russia/1124836",
+    "https://t.me/markettwits/390335",
+    "https://www.interfax.ru/russia/1124835",
+    "https://tass.ru/obschestvo/28250929",
+    "https://tass.ru/proisshestviya/28250889",
+    "https://tass.ru/proisshestviya/28250931",
+    "https://t.me/markettwits/390334",
+    "https://www.kommersant.ru/doc/9059972",
+    "https://www.kommersant.ru/doc/9059971",
+    "https://t.me/if_market_news/86306",
+    "https://www.rbc.ru/business/27/09/2026/6ab294190d60672077f35fd9",
+    "https://tass.ru/obschestvo/28250895",
+    "https://www.rbc.ru/business/13/11/2025/69157fe89a7947455ea8824b",
+    "https://t.me/interfaxonline/80657",
+    "https://tass.ru/mezhdunarodnaya-panorama/28250879",
+    "https://www.vedomosti.ru/politics/news/2026/10/25/1239895-tainaya-vstrecha",
+    "https://t.me/minfin/9407",
     "https://t.me/banksta/104128",
     "https://www.rbc.ru/quote/25/10/2026/6ada137d9a79478ab3a70a9b",
     "https://www.rbc.ru/rbcfreenews/6a0aa4479a79473a64560473",
     "https://t.me/incrypted/33098",
     "https://t.me/headlines_for_traders/87388",
+    "https://tass.ru/kultura/28246935",
     "https://t.me/markettwits/390333",
     "https://www.kommersant.ru/doc/9059969",
     "https://tass.ru/proisshestviya/28250883",
     "https://tass.ru/mezhdunarodnaya-panorama/28250763",
     "https://tass.ru/obschestvo/28250873",
-    "https://t.me/markettwits/390332",
-    "https://t.me/rbc_news/159363",
-    "https://www.rbc.ru/rbcfreenews/6ad2b8f84b01699d737a2f58",
-    "https://tass.ru/mezhdunarodnaya-panorama/28250825",
-    "https://tass.ru/sport/28250877",
-    "https://tass.ru/sport/28250875",
-    "https://t.me/bitkogan/29479",
-    "https://www.interfax.ru/russia/1124834",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239894-putin-pozdravil-tokaeva",
-    "https://www.rbc.ru/rbcfreenews/6a9db28821975c2f9b4b2902",
-    "https://www.kommersant.ru/doc/9059967",
-    "https://tass.ru/politika/28250871",
-    "https://tass.ru/proisshestviya/28250867",
-    "https://tass.ru/obschestvo/28250869",
-    "https://t.me/rbc_news/159362",
-    "https://tass.ru/armiya-i-opk/28250831",
-    "https://t.me/banksta/104127",
-    "https://tass.ru/proisshestviya/28250857",
-    "https://www.sport-interfax.ru/1124833",
-    "https://tass.ru/sport/28250865",
-    "https://tass.ru/proisshestviya/28250861",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239893-sili-pvo",
-    "https://tass.ru/proisshestviya/28250855",
-    "https://tass.ru/obschestvo/28250859"
+    "https://t.me/markettwits/390332"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-24T07:00:54.766570+00:00",
-      "Разведка США сообщила о подготовке Ираном покушений на американцев"
-    ],
-    [
-      "2026-10-24T07:00:54.766570+00:00",
-      "Трамп пригрозил России и Украине пошлинами в 200%"
-    ],
-    [
-      "2026-10-24T07:00:54.766570+00:00",
-      "Артур Хейс и фонд Maelstrom продали токены на $22,28 млн"
-    ],
-    [
-      "2026-10-24T07:00:54.766570+00:00",
-      "Один человек погиб и семеро пострадали при атаках на Белгородскую область"
-    ],
-    [
-      "2026-10-24T07:00:54.766570+00:00",
-      "JUST обновила программу Buyback & Burn с резервом $50 млн"
-    ],
-    [
-      "2026-10-24T07:00:54.766570+00:00",
-      "Всемирный банк: сокращение разрыва в занятости поднимет ВВП на 15%"
-    ],
-    [
-      "2026-10-24T07:30:55.280009+00:00",
-      "Минобороны сообщило об ударе по цеху катеров в порту Черноморск"
-    ],
-    [
-      "2026-10-24T07:30:55.280009+00:00",
-      "В конгресс США внесли законопроект об отмене дизельной сделки"
-    ],
-    [
-      "2026-10-24T07:30:55.280009+00:00",
-      "Британия создаст ИИ-лабораторию для киберугроз за 100 млн фунтов"
-    ],
-    [
-      "2026-10-24T07:30:55.280009+00:00",
-      "В «Солид Инвестициях» прогнозируют ключевую ставку 14% до конца года"
-    ],
-    [
-      "2026-10-24T07:30:55.280009+00:00",
-      "Торговая сеть Metro направит 1 млрд рублей фонду «Народный фронт»"
-    ],
-    [
-      "2026-10-24T07:30:55.280009+00:00",
-      "Всемирный банк оценил рост ВВП от равенства занятости в 15–20%"
-    ],
     [
       "2026-10-24T08:00:55.067393+00:00",
       "Starshield возобновил работу на Украине на скорости от 161 км/ч"
@@ -1455,6 +1431,30 @@
     [
       "2026-10-25T06:30:57.749125+00:00",
       "В Японии рекомендовали эвакуацию 13 тыс. человек из-за наводнений"
+    ],
+    [
+      "2026-10-25T07:30:57.340134+00:00",
+      "Премьер Франции попросил операторов подготовиться к блокировке соцсетей"
+    ],
+    [
+      "2026-10-25T07:30:57.340134+00:00",
+      "Криптовалютный рынок торгуется в небольшом минусе"
+    ],
+    [
+      "2026-10-25T07:30:57.340134+00:00",
+      "Около 11 тыс. жителей Курской области остались без света из-за атаки БПЛА"
+    ],
+    [
+      "2026-10-25T07:30:57.340134+00:00",
+      "При атаке БПЛА в Пермском крае поврежден промышленный объект"
+    ],
+    [
+      "2026-10-25T07:30:57.340134+00:00",
+      "Трамп заявил о необходимости избежать убийств иранских лидеров для сделки"
+    ],
+    [
+      "2026-10-25T07:30:57.340134+00:00",
+      "Песков заявил, что визит Трампа в Москву не прорабатывается"
     ]
   ],
   "results_fp": [
