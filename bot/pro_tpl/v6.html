@@ -4,7 +4,7 @@
      PRO v3: у каждой рубрики свой стиль (ТЗ Арт-директора knowledge/дизайн/тз-pro-рубрики.md, расписание Редактора рубрики-pro-v2.md).
      Шаблоны: всё содержимое — в DATA ниже. Рендер: NODE_PATH=~/.local/pw/node_modules node render.js [id] [--data свои.json] → out/<id>.jpg 1620×2025.
      Инструкция — README.md рядом. -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Onest:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,800&family=Prata&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Unbounded:wght@600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="fonts/fonts.css" rel="stylesheet">
 <link rel="stylesheet" href="pro.css">
 <style>
 .abs{position:absolute}.k{font:800 20px Inter;letter-spacing:.16em;text-transform:uppercase}
@@ -590,7 +590,9 @@ const DATA={
   title:'ЦБ сохранил ставку второй раз подряд',lead:'<b>Высокие ставки по вкладам — дольше.</b> Прогноз ЦБ: средняя ставка в 2027 — 12,5–13,5%.',
   src:'Источник: Банк России, 23.10.2026 · Не является инвестиционной рекомендацией'}
 };
-if(window.DATA_IN) for(const k in window.DATA_IN) DATA[k]=Object.assign(DATA[k]||{},window.DATA_IN[k]);
+/* --full (автомат): данные целиком из JSON, образец не подмешивается; null/'' = «не показывать» */
+const NN=o=>{const r={};for(const k in o)if(o[k]!=null)r[k]=o[k];return r};
+if(window.DATA_IN) for(const k in window.DATA_IN) DATA[k]=window.DATA_FULL?NN(window.DATA_IN[k]):Object.assign(DATA[k]||{},window.DATA_IN[k]);
 
 /* ============================ рамка и картинки ============================ */
 const BD=t=>`<div class="bd"><img src="img/logo192.png"><span>ПУЛЬС РЫНКА</span><span class="tag">${t}</span></div><div class="grain"></div>`;
@@ -675,7 +677,7 @@ ${cn(1)}`;
  <div class="abs qs">${d.qs.map((q,i)=>`<div><em>${i+1}</em><div><b>${q[0]}</b><span>${q[1]}</span><small>${q[2]}</small></div></div>`).join('')}</div>
  <div class="abs you" style="top:1060px"><i>ДАЛЬШЕ</i><span>Каждый вечер — карусель «События дня» с итогами. В субботу — итоги недели.</span></div>${cn(n)}`;
  return [cov,...sl,fin]},
-evc:d=>{d.items=(d.items||[]).slice(0,6).map(e=>Object.assign({fl:'',who:'',s:'',hint:'',why:'',fol:'',nx:'',mk:[],nums:[],vd:'',vt:'',img:''},e));d.sum=d.sum||[];const n=d.items.length+2,cn=i=>`<div class="abs cnt">${i} / ${n}${i<n?' →':''}</div>`;
+evc:d=>{d=Object.assign({tag:'СОБЫТИЯ',day:'',k:'',sub:'',cover:[],sum:[],next:null,src:'',ph:''},d);d.items=(d.items||[]).slice(0,6).map(e=>Object.assign({tm:'',fl:'',who:'',t:'',big:'',s:'',hint:'',why:'',fol:'',nx:'',mk:[],nums:[],vd:'',vt:'',img:''},NN(e)));const n=d.items.length+2,cn=i=>`<div class="abs cnt">${i} / ${n}${i<n?' →':''}</div>`;
  const cov=`<div class="duo cov">${d.cover.map(c=>`<div class="im" style="background-image:url(${c})"></div>`).join('')}<div class="d1"></div><div class="d2"></div></div><div class="fade" style="top:300px"></div><div class="tf"></div>
  <div class="abs k ck">${d.k}</div><h1 class="abs ch1">${d.day}</h1><div class="abs csub">${d.sub}</div>
  <div class="abs clist fit">${d.items.map((e,i)=>`<div class="ci"><em>${i+1}</em><div class="tm">${e.tm}</div><div class="tx"><div class="tt">${e.fl} ${e.t}</div><small>${e.s||''}</small></div><div class="vd ${e.vd}">${e.vt}</div></div>`).join('')}</div><div class="abs swipe">Листайте →</div>${cn(1)}`;
@@ -688,13 +690,13 @@ evc:d=>{d.items=(d.items||[]).slice(0,6).map(e=>Object.assign({fl:'',who:'',s:''
  <div class="abs no5">СОБЫТИЕ ${i+1} ИЗ ${d.items.length}</div><div class="abs meta5">${e.tm} МСК · ${e.fl} ${e.who}</div><h1 class="abs t5 fit">${e.t}</h1>
  <div class="abs res"><div class="bn">${e.big}</div><div class="cmp">${e.nums.map((x,j)=>`<div class="${x[0]=='Факт'?'f':''}"><span>${x[0]}</span><i style="width:${Math.round(mx==lo?80:20+60*(vs[j]-lo)/(mx-lo))}%"></i><b>${x[1]}</b></div>`).join('')}</div><div class="side">${dev?`<div class="dev">${dev}</div>`:''}<div class="vd ${e.vd}">${e.vt}</div></div></div>
  ${e.hint?`<div class="abs hint">${e.hint}</div>`:''}
- <div class="abs why fit"><i class="lab2">ПОЧЕМУ ТАК</i>${e.why}</div>
- <div class="abs fol fit"><i class="lab2">ЧТО СЛЕДУЕТ</i>${e.fol}</div>
- <div class="abs mk"><i class="lab">ДЛЯ РЫНКА</i><div class="mrow">${e.mk.slice(0,3).map(m=>`<div class="tl ${m[0]}"><h5>${m[1]}<u>${m[0]=='up'?'▲':m[0]=='dn'?'▼':'●'} ${m[2]}</u></h5><p class="fit">${m[3]}</p></div>`).join('')}</div></div>
- <div class="abs nx5 fit"><i class="lab">ЧТО ДАЛЬШЕ</i>${e.nx}</div>${cn(i+2)}`});
+ ${e.why?`<div class="abs why fit"><i class="lab2">ПОЧЕМУ ТАК</i>${e.why}</div>`:''}
+ ${e.fol?`<div class="abs fol fit"><i class="lab2">ЧТО СЛЕДУЕТ</i>${e.fol}</div>`:''}
+ ${e.mk.length?`<div class="abs mk"><i class="lab">ДЛЯ РЫНКА</i><div class="mrow">${e.mk.slice(0,3).map(m=>`<div class="tl ${m[0]}"><h5>${m[1]}<u>${m[0]=='up'?'▲':m[0]=='dn'?'▼':'●'} ${m[2]}</u></h5><p class="fit">${m[3]}</p></div>`).join('')}</div></div>`:''}
+ ${e.nx?`<div class="abs nx5 fit"><i class="lab">ЧТО ДАЛЬШЕ</i>${e.nx}</div>`:''}${cn(i+2)}`});
  const fin=`<div class="abs k fk">Итог дня · ${d.day.toLowerCase()}</div><h1 class="abs fh1">Что важно</h1>
  <div class="abs fl2">${d.sum.map(x=>`<div><span>${x[0]}</span><div>${x[1]}</div></div>`).join('')}</div>
- <div class="abs nxt"><i>${d.next.k}</i><b>${d.next.t}</b><span>${d.next.s}</span></div>${cn(n)}`;
+ ${d.next?`<div class="abs nxt"><i>${d.next.k||''}</i><b>${d.next.t||''}</b><span>${d.next.s||''}</span></div>`:''}${cn(n)}`;
  return [cov,...sl,fin]},
 tuec:d=>{const n=d.take.length+3,cn=i=>`<div class="abs cnt">${i} / ${n}</div>`,R=['I','II','III'];
  const cov=C.tue(d)+`<div class="abs swipe" style="top:1150px">ЛИСТАЙТЕ →</div>`+cn(1);

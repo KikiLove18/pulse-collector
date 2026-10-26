@@ -14,9 +14,9 @@
 ## Запуск
 ```bash
 npm i --no-save playwright@1.48.2 && npx playwright install --with-deps chromium   # один раз
-node bot/pro_tpl/render.js evc --data свои.json --out out/evc      # → out/evc/evc1.jpg … evcN.jpg
+node bot/pro_tpl/render.js evc --full --data свои.json --out out/evc   # автомат → out/evc/evc1.jpg … evcN.jpg
 ```
-Шрифты (Inter, Onest, Playfair Display, Prata, Cormorant Garamond, Unbounded, JetBrains Mono — все OFL) грузятся с Google Fonts — нужен интернет (в GitHub Actions есть). Эмодзи-флаги — пакет `fonts-noto-color-emoji`.
+Шрифты (Inter, Onest, Playfair Display, Prata, Cormorant Garamond, Unbounded, JetBrains Mono — все OFL, с Google Fonts) лежат файлами в `fonts/` — интернет для рендера не нужен. Эмодзи-флаги — пакет `fonts-noto-color-emoji`.
 Проверка в Actions: `gh workflow run pro_tpl.yml -R KikiLove18/pulse-collector -f rubric=evc` — картинки в артефакте `pro-slides`, в каналы ничего не отправляется.
 
 ## Автоподгон
