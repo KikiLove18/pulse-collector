@@ -199,13 +199,13 @@ def run(state, now, msk, fetch_calendar, tg_html, test=False, horizon=2, ask=Non
                 pics = _render(evc)
         except Exception as e:
             print("События дня: карусель не собрана —", e, file=sys.stderr)
-    if not html:
+    if not html and not pics:
         print("События дня: сегодня событий нет — пост не нужен", file=sys.stderr)
         return None
-    html = tg_html(html)
+    html = tg_html(html) if html else ""  # без текста (образец на прошлую дату) — только альбом
     print("----- #СОБЫТИЯ -----\n" + html, file=sys.stderr)
     if chat:
-        if not (pics and _album(chat, pics, html)):
+        if not (pics and _album(chat, pics, html)) and html:
             pro._send(chat, html, None)
     return html
 
@@ -233,7 +233,7 @@ def _album(chat, pics, html):
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     if not token:
         return False
-    cap = len(re.sub(r"<[^>]+>", "", html)) <= 1000
+    cap = 0 < len(re.sub(r"<[^>]+>", "", html)) <= 1000
     media = [{"type": "photo", "media": f"attach://p{i}", **({"caption": html, "parse_mode": "HTML"} if cap and i == 0 else {})} for i in range(len(pics))]
     fields = {"chat_id": str(chat), "media": json.dumps(media, ensure_ascii=False)}
     if str(chat) == str(os.environ.get("PRO_CHAT_ID") or ""):
@@ -253,6 +253,6 @@ def _album(chat, pics, html):
         print("События дня: альбом не отправлен —", e, file=sys.stderr)
         return False
     print("События дня: альбом", len(pics), "карт., ok", ok, file=sys.stderr)
-    if ok and not cap:
+    if ok and not cap and html:
         pro._send(chat, html, None)
     return bool(ok)
