@@ -30,7 +30,8 @@
     "2026-10-24 19:30",
     "2026-10-25 07:30",
     "2026-10-25 19:30",
-    "2026-10-26 07:30"
+    "2026-10-26 07:30",
+    "2026-10-26 19:30"
   ],
   "sent_events": [
     "2026-10-14T08:30:00-04:00|Core CPI m/m",
@@ -42,9 +43,9 @@
     "2026-10-15T08:30:00-04:00|PPI m/m",
     "2026-10-15T08:30:00-04:00|Retail Sales m/m"
   ],
-  "last_digest_ts": "2026-10-26T04:30:55.103432+00:00",
+  "last_digest_ts": "2026-10-26T16:31:00.221382+00:00",
   "calendar": {
-    "ts": "2026-10-26T10:30:57.070293+00:00",
+    "ts": "2026-10-26T16:31:23.254928+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -107,7 +108,7 @@
         "country": "EUR",
         "date": "2026-10-27T04:00:00-04:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "9.8%",
         "previous": "9.9%"
       },
       {
@@ -171,7 +172,7 @@
         "country": "USD",
         "date": "2026-10-27T10:00:00-04:00",
         "impact": "Medium",
-        "forecast": "80.5",
+        "forecast": "80.7",
         "previous": "81.9"
       },
       {
@@ -495,6 +496,14 @@
         "previous": "0.9%"
       },
       {
+        "title": "Gov Council Member Gravelle Speaks",
+        "country": "CAD",
+        "date": "2026-10-29T08:50:00-04:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": ""
+      },
+      {
         "title": "Main Refinancing Rate",
         "country": "EUR",
         "date": "2026-10-29T09:15:00-04:00",
@@ -529,7 +538,7 @@
       {
         "title": "Gov Council Member Vincent Speaks",
         "country": "CAD",
-        "date": "2026-10-29T10:50:00-04:00",
+        "date": "2026-10-29T11:30:00-04:00",
         "impact": "Low",
         "forecast": "",
         "previous": ""
