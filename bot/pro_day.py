@@ -165,7 +165,9 @@ def evc_data(events, results, now, msk, ask):
                     if isinstance(a.get(k), str) and a[k].strip():
                         it[k] = edition.ru_numbers(a[k].strip())
                 mk = [m for m in a.get("mk") or [] if isinstance(m, list) and len(m) == 4 and m[0] in ("up", "dn", "eq")]
-                it["mk"] = mk[:3]
+                it["mk"] = [[m[0], m[1][:1].upper() + m[1][1:], m[2], m[3]] for m in mk[:3]]
+                if it["who"] and f"({it['who']})" in it["t"]:  # «… (S&P Global)» — источник уже в строке who
+                    it["t"] = it["t"].replace(f"({it['who']})", "").replace(" ,", ",").strip(" ,")
         data["sum"] = [s for s in ai.get("sum") or [] if isinstance(s, list) and len(s) == 2][:3]
         if data["next"] and isinstance(ai.get("next"), str) and ai["next"].strip():
             data["next"]["s"] = ai["next"].strip()
