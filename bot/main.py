@@ -30,7 +30,7 @@ from pathlib import Path
 
 import feedparser
 
-from bot import calendar_future, edition, macro, pro, prompts, sources, weekly
+from bot import calendar_future, edition, macro, pro, prompts, sources, weekly, pro_day
 
 MSK = timezone(timedelta(hours=3))
 ROOT = Path(__file__).resolve().parent.parent
@@ -1283,6 +1283,9 @@ def main():
         spec = json.loads((ROOT / "state" / "pro_edit.json").read_text(encoding="utf-8"))
         pro.edit(pro._target("PRO_POSTS"), spec, tg_html)
         return
+    if mode == "pro_day":  # «События дня» #СОБЫТИЯ — образец в тестовый канал (в авто: PRO_DAILY=test/on, 20:30 МСК)
+        pro_day.run(state, now, MSK, fetch_calendar, tg_html, test=True)
+        return
     if mode == "pro_check":  # права бота в канале PRO — без публикации
         print("Можно публиковать:", pro.check(os.environ.get("PRO_CHAT_ID") or "-1004428155051"), file=sys.stderr)
         return
@@ -1342,6 +1345,9 @@ def main():
         if kind:  # плановая рубрика канала PRO; отметка заранее — при сбое ИИ не повторяем каждые 30 минут
             state["pro_sent"][kind] = f"{now.astimezone(MSK):%Y-%m-%d}"
             run_pro(state, now, dry, kind)
+        if not slot and not dry and pro_day.due(state, now, MSK):  # #СОБЫТИЯ каждый вечер; отметка заранее — без повторов при сбое
+            state["pro_daily"] = f"{now.astimezone(MSK):%Y-%m-%d}"
+            pro_day.run(state, now, MSK, fetch_calendar, tg_html)
         if not slot:
             try:
                 run_breaking(state, now, dry)
