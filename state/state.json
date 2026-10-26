@@ -881,15 +881,81 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-26T05:00:57.114988+00:00",
+  "breaking_ts": "2026-10-26T05:30:56.566489+00:00",
   "news_now": {
     "day": "2026-10-26",
-    "day_count": 0,
+    "day_count": 1,
     "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "last": "2026-10-26T05:30:56.566489+00:00",
+    "titles": [
+      "Brent обвалилась ниже $110 за баррель"
+    ]
   },
   "news_seen": [
+    "https://www.vedomosti.ru/politics/news/2026/10/26/1240020-udarila-skladu",
+    "https://t.me/rbc_news/159397",
+    "https://tass.ru/politika/28252659",
+    "https://t.me/markettwits/390432",
+    "https://tass.ru/proisshestviya/28252707",
+    "https://www.rbc.ru/politics/26/10/2026/6adee31d203e892aec5fe089",
+    "https://t.me/markettwits/390431",
+    "https://tass.ru/nauka/28252641",
+    "https://www.rbc.ru/rbcfreenews/6abfae3e55009ddb88a0eba3",
+    "https://www.kommersant.ru/doc/9060365",
+    "https://t.me/markettwits/390430",
+    "https://tass.ru/obschestvo/28252705",
+    "https://www.interfax.ru/russia/1124949",
+    "https://t.me/wublockchainenglish/26547",
+    "https://tass.ru/proisshestviya/28252699",
+    "https://www.rbc.ru/sport/16/10/2026/6ad242bc7bfe5dbe1b87b9af",
+    "https://www.vedomosti.ru/politics/news/2026/10/26/1240018-husiti-atakovali",
+    "https://www.kommersant.ru/doc/9060357",
+    "https://t.me/markettwits/390429",
+    "https://www.kommersant.ru/doc/9060361",
+    "https://www.interfax.ru/russia/1124948",
+    "https://www.kommersant.ru/doc/9060351",
+    "https://t.me/if_market_news/86317",
+    "https://tass.ru/proisshestviya/28252689",
+    "https://t.me/banksta/104157",
+    "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments",
+    "https://tass.ru/proisshestviya/28252683",
+    "https://t.me/headlines_for_traders/87423",
+    "https://www.investing.com/news/stock-market-news/why-is-infosys-stock-falling-today-93CH-4971394",
+    "https://cointelegraph.com/news/musk-warns-over-200-ai-neoclouds-face-guppy-level-death?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://t.me/rbc_news/159396",
+    "https://t.me/markettwits/390428",
+    "https://tass.ru/armiya-i-opk/28252681",
+    "https://tass.ru/armiya-i-opk/28252679",
+    "https://tass.ru/armiya-i-opk/28252677",
+    "https://t.me/markettwits/390427",
+    "https://tass.ru/armiya-i-opk/28252675",
+    "https://www.rbc.ru/photoslider/6adedf63cc3374a0c071701e",
+    "https://tass.ru/armiya-i-opk/28252671",
+    "https://www.investing.com/news/stock-market-news/zai-minimax-shares-fall-after-chinese-rival-moonshot-releases-upgraded-model-4971393",
+    "https://tass.ru/armiya-i-opk/28252669",
+    "https://t.me/if_market_news/86316",
+    "https://tass.ru/armiya-i-opk/28252665",
+    "https://www.kommersant.ru/doc/9060356",
+    "https://tass.ru/sport/28252667",
+    "https://www.rbc.ru/base/16/10/2026/6ad243d09a794711bba57539",
+    "https://t.me/markettwits/390426",
+    "https://www.investing.com/news/stock-market-news/sk-hynix-neutral-in-notrade-zone-awaiting-breakout-live-93CH-4971337",
+    "https://t.me/FinancialJuice/142562",
+    "https://tass.ru/armiya-i-opk/28252661",
+    "https://tass.ru/obschestvo/28252651",
+    "https://t.me/markettwits/390425",
+    "https://t.me/investfuture/15443",
+    "https://www.vedomosti.ru/business/news/2026/10/26/1240017-rossiei-alzhirom-vosstanovyat",
+    "https://t.me/bitkogan_hotline/27986",
+    "https://www.rbc.ru/politics/25/10/2026/6addb72c886698fec9a29aa5",
+    "https://tass.ru/armiya-i-opk/28252645",
+    "https://tass.ru/sport/28252647",
+    "https://t.me/markettwits/390423",
+    "https://t.me/forklog/50408",
+    "https://www.interfax.ru/russia/1124947",
+    "https://tass.ru/politika/28252627",
+    "https://www.kommersant.ru/doc/9060350",
+    "https://t.me/markettwits/390422",
     "https://t.me/markettwits/390421",
     "https://t.me/headlines_for_traders/87422",
     "https://tass.ru/proisshestviya/28252623",
@@ -897,110 +963,13 @@
     "https://tass.ru/sport/28252619",
     "https://tass.ru/proisshestviya/28252617",
     "https://www.kommersant.ru/doc/9060344",
-    "https://t.me/markettwits/390420",
-    "https://tass.ru/obschestvo/28252603",
-    "https://www.interfax.ru/moscow/1124946",
-    "https://t.me/markettwits/390419",
-    "https://t.me/interfaxonline/80693",
-    "https://tass.ru/obschestvo/28252615",
-    "https://tass.ru/mezhdunarodnaya-panorama/28252609",
-    "https://www.vedomosti.ru/business/news/2026/10/26/1240016-usloviya-gaza",
-    "https://t.me/markettwits/390418",
-    "https://t.me/FinancialJuice/142561",
-    "https://tass.ru/nedvizhimost/28252591",
-    "https://www.rbc.ru/politics/28/06/2026/6a40c0b69a79472555038ed7",
-    "https://t.me/markettwits/390417",
-    "https://tass.ru/ekonomika/28252593",
-    "https://tass.ru/ekonomika/28252597",
-    "https://tass.ru/proisshestviya/28252595",
-    "https://tass.ru/ekonomika/28252589",
-    "https://tass.ru/obschestvo/28252585",
-    "https://t.me/markettwits/390416",
-    "https://www.rbc.ru/sport/08/09/2026/6a9ffa839a794781fe9a0f37",
-    "https://tass.ru/obschestvo/28252587",
-    "https://t.me/FinancialJuice/142560",
-    "https://www.interfax.ru/world/1124945",
-    "https://t.me/headlines_for_traders/87421",
-    "https://www.kommersant.ru/doc/9060328",
-    "https://t.me/interfaxonline/80692",
-    "https://t.me/if_market_news/86315",
-    "https://tass.ru/politika/28252573",
-    "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting",
-    "https://t.me/markettwits/390415",
-    "https://tass.ru/obschestvo/28252575",
-    "https://tass.ru/obschestvo/28252581",
-    "https://tass.ru/sport/28252579",
-    "https://www.investing.com/news/stock-market-news/why-is-minimax-stock-sliding-today-93CH-4971381",
-    "https://t.me/banksta/104156",
-    "https://www.kommersant.ru/doc/9060332",
-    "https://tass.ru/armiya-i-opk/28252571",
-    "https://tass.ru/obschestvo/28252565",
-    "https://t.me/markettwits/390414",
-    "https://cryptoslate.com/canada-proposes-direct-stablecoin-cash-outs-for-small-holders-with-a-1-fee-cap/",
-    "https://tass.ru/obschestvo/28252569",
-    "https://www.interfax.ru/world/1124937",
-    "https://t.me/headlines_for_traders/87420",
-    "https://tass.ru/proisshestviya/28252567",
-    "https://www.interfax.ru/moscow/1124944",
-    "https://t.me/interfaxonline/80691",
-    "https://tass.ru/armiya-i-opk/28252561",
-    "https://tass.ru/ekonomika/28252559",
-    "https://www.investing.com/news/stock-market-news/indonesia-strengthens-measures-against-stock-manipulation-after-market-rout-triggered-by-msci-4971379",
-    "https://tass.ru/ekonomika/28252557",
-    "https://tass.ru/obschestvo/28252555",
-    "https://www.kommersant.ru/doc/9060327",
-    "https://www.rbc.ru/rbcfreenews/6adb8b426e9761aa604e1008",
-    "https://t.me/markettwits/390413",
-    "https://www.investing.com/news/stock-market-news/asia-stocks-slip-as-chipmakers-retreat-earnings-central-bank-meetings-loom-4971378",
-    "https://t.me/headlines_for_traders/87419",
-    "https://t.me/markettwits/390412",
-    "https://www.interfax.ru/russia/1124943",
-    "https://www.vedomosti.ru/politics/news/2026/10/26/1240014-mera-vladivostoka",
-    "https://t.me/markettwits/390411",
-    "https://t.me/markettwits/390410",
-    "https://t.me/markettwits/390409",
-    "https://t.me/FinancialJuice/142559",
-    "https://t.me/FinancialJuice/142558",
-    "https://thedefiant.io/news/security/foundation-links-passport-phishing-emails-to-compromised-cloudflare-api-keys",
-    "https://t.me/interfaxonline/80690",
-    "https://t.me/FinancialJuice/142557",
-    "https://t.me/markettwits/390408",
-    "https://t.me/markettwits/390407",
-    "https://www.investing.com/news/stock-market-news/gift-nifty-50-breaks-618-fib-targets-22205-live-levels-93CH-4971374",
-    "https://www.rbc.ru/sport/20/10/2026/6ad7204c9b3c1e6130b36742",
-    "https://t.me/markettwits/390406",
-    "https://t.me/headlines_for_traders/87418",
-    "https://www.interfax.ru/russia/1124942"
+    "https://t.me/markettwits/390420"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-25T06:00:58.829450+00:00",
-      "Минобороны РФ сообщило об ударах по логистике в Харькове и сухогрузу"
-    ],
-    [
-      "2026-10-25T06:00:58.829450+00:00",
-      "Илон Маск заявил о закрытии лазейки для ВСУ в системе Starlink"
-    ],
-    [
-      "2026-10-25T06:00:58.829450+00:00",
-      "Россиянин Петр Ян победил Мераба Двалишвили на турнире UFC 333"
-    ],
-    [
-      "2026-10-25T06:00:58.829450+00:00",
-      "Династия Ротшильдов получила ключи от банковской системы Украины"
-    ],
-    [
-      "2026-10-25T06:30:57.749125+00:00",
-      "Минобороны: силы ПВО за ночь сбили 532 беспилотника"
-    ],
-    [
-      "2026-10-25T06:30:57.749125+00:00",
-      "ЦБ отметил расширение спредов в корпоративных облигациях"
-    ],
     [
       "2026-10-25T06:30:57.749125+00:00",
       "Трамп прокомментировал удары по Ирану и упомянул изобретение радара"
@@ -1600,6 +1569,30 @@
     [
       "2026-10-26T05:00:57.114988+00:00",
       "Акции техсектора США падают в ожидании отчетов гигантов"
+    ],
+    [
+      "2026-10-26T05:30:56.566489+00:00",
+      "Нефть Brent обвалилась на 6,6% и торгуется ниже $110 за баррель"
+    ],
+    [
+      "2026-10-26T05:30:56.566489+00:00",
+      "SpaceX привлекла $40 млрд на закупку графических процессоров для ИИ"
+    ],
+    [
+      "2026-10-26T05:30:56.566489+00:00",
+      "Партия Александра Вучича проиграла на парламентских выборах в Сербии"
+    ],
+    [
+      "2026-10-26T05:30:56.566489+00:00",
+      "Ранний инвестор Ethereum перевел на биржи 1 500 ETH"
+    ],
+    [
+      "2026-10-26T05:30:56.566489+00:00",
+      "Под Екатеринбургом сошли с рельсов 20 вагонов грузового поезда"
+    ],
+    [
+      "2026-10-26T05:30:56.566489+00:00",
+      "США предложили кандидатуру Виктора Орбана на пост генсека ООН"
     ]
   ],
   "results_fp": [
