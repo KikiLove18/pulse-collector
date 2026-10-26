@@ -291,6 +291,11 @@
 .evc .nx5{left:60px;right:60px;top:1080px;height:110px;border-left:4px solid #6E9BD1;padding:2px 0 0 22px;font:500 25px/1.34 Inter;color:#C9D6E8}
 .evc .duo.cov{height:400px}
 .evc .ck{top:300px}.evc .ch1{top:336px}.evc .csub{top:428px}
+/* 27.10 приёмка АД: подпись обложки не теряется на светлом фото; без фото — ч/б фон темы из bot/bg, флаг только маленький */
+.evc .duo.cov::after{content:'';position:absolute;left:0;right:0;bottom:0;height:45%;background:linear-gradient(rgba(13,21,32,0),rgba(13,21,32,.85));z-index:2}
+.evc .ck{text-shadow:0 2px 12px rgba(13,21,32,.9)}
+.evc .ph5.bgt .im{filter:grayscale(1) contrast(1.05) brightness(.8)}
+.evc .res .bn small{display:block;font:800 18px Onest;letter-spacing:.16em;color:#6E9BD1;margin-top:10px}
 .evc .clist{top:500px;height:620px;z-index:4}
 .evc .ci{padding:18px 22px;align-items:flex-start}
 .evc .ci em{margin-top:2px}
@@ -677,7 +682,10 @@ ${cn(1)}`;
  <div class="abs qs">${d.qs.map((q,i)=>`<div><em>${i+1}</em><div><b>${q[0]}</b><span>${q[1]}</span><small>${q[2]}</small></div></div>`).join('')}</div>
  <div class="abs you" style="top:1060px"><i>ДАЛЬШЕ</i><span>Каждый вечер — карусель «События дня» с итогами. В субботу — итоги недели.</span></div>${cn(n)}`;
  return [cov,...sl,fin]},
-evc:d=>{d=Object.assign({tag:'СОБЫТИЯ',day:'',k:'',sub:'',cover:[],sum:[],next:null,src:'',ph:''},d);d.items=(d.items||[]).slice(0,6).map(e=>Object.assign({tm:'',fl:'',who:'',t:'',big:'',s:'',hint:'',why:'',fol:'',nx:'',mk:[],nums:[],vd:'',vt:'',img:''},NN(e)));const n=d.items.length+2,cn=i=>`<div class="abs cnt">${i} / ${n}${i<n?' →':''}</div>`;
+evc:d=>{d=Object.assign({tag:'СОБЫТИЯ',day:'',k:'',sub:'',cover:[],sum:[],next:null,src:'',ph:''},d);d.items=(d.items||[]).slice(0,6).map(e=>Object.assign({tm:'',fl:'',who:'',t:'',big:'',s:'',hint:'',why:'',fol:'',nx:'',mk:[],nums:[],vd:'',vt:'',img:''},NN(e)));
+ const BGT={'🇺🇸':['fed','capitol','dollar','fed2','fed3'],'🇷🇺':['kremlin','kremlin2','kremlin3','kremlin4','kremlin5'],'🛢':['oil','tanker','oil2','port'],'🥇':['gold','gold2','gold3'],'₿':['crypto1','crypto2','crypto3','crypto4','crypto5']},used={};
+ d.items.forEach(e=>{if(e.img)return;const l=BGT[(e.fl||'').trim()]||BGT['🇺🇸'],k=(e.fl||'us');const j=used[k]=(used[k]||0);used[k]++;e.img='../bg/'+l[j%l.length]+'.jpg';e.bgt=1});
+ if(!d.cover.length)d.cover=[...new Set(d.items.map(e=>e.img))].slice(0,2);const n=d.items.length+2,cn=i=>`<div class="abs cnt">${i} / ${n}${i<n?' →':''}</div>`;
  const cov=`<div class="duo cov">${d.cover.map(c=>`<div class="im" style="background-image:url(${c})"></div>`).join('')}<div class="d1"></div><div class="d2"></div></div><div class="fade" style="top:300px"></div><div class="tf"></div>
  <div class="abs k ck">${d.k}</div><h1 class="abs ch1">${d.day}</h1><div class="abs csub">${d.sub}</div>
  <div class="abs clist fit">${d.items.map((e,i)=>`<div class="ci"><em>${i+1}</em><div class="tm">${e.tm}</div><div class="tx"><div class="tt">${e.fl} ${e.t}</div><small>${e.s||''}</small></div><div class="vd ${e.vd}">${e.vt}</div></div>`).join('')}</div><div class="abs swipe">Листайте →</div>${cn(1)}`;
@@ -686,9 +694,10 @@ evc:d=>{d=Object.assign({tag:'СОБЫТИЯ',day:'',k:'',sub:'',cover:[],sum:[]
  const sl=d.items.map((e,i)=>{const vs=e.nums.map(x=>num(x[1])),mx=Math.max(...vs),mn=Math.min(...vs),lo=mx==mn?0:mn-(mx-mn)*1.2;
   const ok=x=>x&&/\d/.test(x[1]),f=e.nums.find(x=>x[0]=='Факт'),p=e.nums.find(x=>x[0]=='Прогноз'),dv=ok(f)&&ok(p)?num(f[1])-num(p[1]):null;
   const dev=dv==null?'':Math.abs(dv)<0.05?'= прогнозу':`${fmt(dv)} к прогнозу`;
- return `<div class="abs ph5 ${e.img?'':'nop'}">${e.img?`<div class="duo"><div class="im" style="background-image:url(${e.img})"></div><div class="d1"></div><div class="d2"></div></div>`:e.fl}</div>
+  const bigv=ok(f)?f[1]:ok(p)?`${p[1]}<small>прогноз</small>`:e.big;
+ return `<div class="abs ph5 ${e.img?'':'nop'} ${e.bgt?'bgt':''}">${e.img?`<div class="duo"><div class="im" style="background-image:url(${e.img})"></div><div class="d1"></div><div class="d2"></div></div>`:e.fl}</div>
  <div class="abs no5">СОБЫТИЕ ${i+1} ИЗ ${d.items.length}</div><div class="abs meta5">${e.tm} МСК · ${e.fl} ${e.who}</div><h1 class="abs t5 fit">${e.t}</h1>
- <div class="abs res"><div class="bn">${e.big}</div><div class="cmp">${e.nums.map((x,j)=>`<div class="${x[0]=='Факт'?'f':''}"><span>${x[0]}</span><i style="width:${Math.round(mx==lo?80:20+60*(vs[j]-lo)/(mx-lo))}%"></i><b>${x[1]}</b></div>`).join('')}</div><div class="side">${dev?`<div class="dev">${dev}</div>`:''}<div class="vd ${e.vd}">${e.vt}</div></div></div>
+ <div class="abs res"><div class="bn">${bigv}</div><div class="cmp">${e.nums.map((x,j)=>`<div class="${x[0]=='Факт'?'f':''}"><span>${x[0]}</span><i style="width:${Math.round(mx==lo?80:20+60*(vs[j]-lo)/(mx-lo))}%"></i><b>${x[1]}</b></div>`).join('')}</div><div class="side">${dev?`<div class="dev">${dev}</div>`:''}<div class="vd ${e.vd}">${e.vt}</div></div></div>
  ${e.hint?`<div class="abs hint">${e.hint}</div>`:''}
  ${e.why?`<div class="abs why fit"><i class="lab2">ПОЧЕМУ ТАК</i>${e.why}</div>`:''}
  ${e.fol?`<div class="abs fol fit"><i class="lab2">ЧТО СЛЕДУЕТ</i>${e.fol}</div>`:''}
