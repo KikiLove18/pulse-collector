@@ -101,11 +101,11 @@ def build(events, results, now, msk):
     return html
 
 
-def run(state, now, msk, fetch_calendar, tg_html, test=False):
+def run(state, now, msk, fetch_calendar, tg_html, test=False, horizon=2):
     """Собрать и отправить. test=True — всегда тестовый канал. Возвращает html или None."""
     chat = os.environ.get("TELEGRAM_CHAT_ID") if test or _mode() != "on" else os.environ.get("PRO_CHAT_ID")
     try:
-        events = calendar_future.build(fetch_calendar(state), horizon_days=2)
+        events = calendar_future.build(fetch_calendar(state), horizon_days=horizon)
     except Exception as e:
         print("События дня: календарь не собран —", e, file=sys.stderr)
         return None
