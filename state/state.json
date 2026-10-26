@@ -881,7 +881,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-26T04:00:56.834816+00:00",
+  "breaking_ts": "2026-10-26T05:00:57.114988+00:00",
   "news_now": {
     "day": "2026-10-26",
     "day_count": 0,
@@ -890,86 +890,93 @@
     "titles": []
   },
   "news_seen": [
-    "https://t.me/headlines_for_traders/87417",
-    "https://tass.ru/mezhdunarodnaya-panorama/28252517",
-    "https://tass.ru/proisshestviya/28252519",
-    "https://tass.ru/proisshestviya/28252513",
-    "https://tass.ru/mezhdunarodnaya-panorama/28252515",
-    "https://tass.ru/mezhdunarodnaya-panorama/28252511",
-    "https://www.rbc.ru/rbcfreenews/6ade9ad819ccd917a21475c1",
-    "https://www.investing.com/news/stock-market-news/why-is-gmo-internet-stock-plummeting-today-93CH-4971370",
-    "https://tass.ru/proisshestviya/28252475",
-    "https://t.me/FinancialJuice/142556",
-    "https://t.me/FinancialJuice/142555",
-    "https://t.me/headlines_for_traders/87416",
-    "https://www.kommersant.ru/doc/9060315",
-    "https://tass.ru/proisshestviya/28252501",
-    "https://www.interfax.ru/russia/1124940",
-    "https://tass.ru/ekonomika/28252499",
-    "https://www.interfax.ru/world/1124939",
-    "https://t.me/headlines_for_traders/87415",
-    "https://www.investing.com/news/stock-market-news/why-is-eagers-auto-stock-surging-today-93CH-4971367",
-    "https://tass.ru/obschestvo/28252455",
-    "https://www.investing.com/news/stock-market-news/why-is-zip-co-stock-surging-today-93CH-4971366",
-    "https://www.vedomosti.ru/politics/news/2026/10/26/1240012-pobedil-viborah",
-    "https://tass.ru/mezhdunarodnaya-panorama/28252493",
-    "https://tass.ru/obschestvo/28252495",
-    "https://tass.ru/nauka/28252485",
-    "https://tass.ru/proisshestviya/28252477",
-    "https://www.interfax.ru/world/1124938",
-    "https://tass.ru/armiya-i-opk/28252487",
-    "https://tass.ru/armiya-i-opk/28252489",
-    "https://tass.ru/proisshestviya/28252481",
-    "https://tass.ru/proisshestviya/28252451",
-    "https://t.me/headlines_for_traders/87414",
-    "https://tass.ru/mezhdunarodnaya-panorama/28252471",
-    "https://tass.ru/armiya-i-opk/28252483",
-    "https://tass.ru/proisshestviya/28252467",
-    "https://t.me/lookonchainchannel/10779",
-    "https://tass.ru/proisshestviya/28252469",
-    "https://tass.ru/obschestvo/28252465",
-    "https://t.me/headlines_for_traders/87413",
-    "https://tass.ru/obschestvo/28252423",
-    "https://tass.ru/mezhdunarodnaya-panorama/28252461",
-    "https://cointelegraph.com/news/hong-kong-names-nasdaq-listed-solana-company-a-strategic-enterprise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://tass.ru/politika/28252457",
-    "https://www.vedomosti.ru/society/news/2026/10/26/1240011-posle-shoda-vagonov",
-    "https://www.investing.com/news/stock-market-news/australias-ingenia-communities-shares-rise-on-avids-15-bln-bid-4971364",
-    "https://www.rbc.ru/politics/26/10/2026/6ade6bee19ccd917a21475b8",
-    "https://www.kommersant.ru/doc/9060308",
-    "https://www.coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout",
-    "https://www.wsj.com/finance/stocks/asian-stocks-decline-as-appetite-for-risky-assets-ebbs-926087d6?mod=rss_markets_main",
-    "https://www.interfax.ru/world/1124936"
+    "https://t.me/markettwits/390421",
+    "https://t.me/headlines_for_traders/87422",
+    "https://tass.ru/proisshestviya/28252623",
+    "https://t.me/interfaxonline/80694",
+    "https://tass.ru/sport/28252619",
+    "https://tass.ru/proisshestviya/28252617",
+    "https://www.kommersant.ru/doc/9060344",
+    "https://t.me/markettwits/390420",
+    "https://tass.ru/obschestvo/28252603",
+    "https://www.interfax.ru/moscow/1124946",
+    "https://t.me/markettwits/390419",
+    "https://t.me/interfaxonline/80693",
+    "https://tass.ru/obschestvo/28252615",
+    "https://tass.ru/mezhdunarodnaya-panorama/28252609",
+    "https://www.vedomosti.ru/business/news/2026/10/26/1240016-usloviya-gaza",
+    "https://t.me/markettwits/390418",
+    "https://t.me/FinancialJuice/142561",
+    "https://tass.ru/nedvizhimost/28252591",
+    "https://www.rbc.ru/politics/28/06/2026/6a40c0b69a79472555038ed7",
+    "https://t.me/markettwits/390417",
+    "https://tass.ru/ekonomika/28252593",
+    "https://tass.ru/ekonomika/28252597",
+    "https://tass.ru/proisshestviya/28252595",
+    "https://tass.ru/ekonomika/28252589",
+    "https://tass.ru/obschestvo/28252585",
+    "https://t.me/markettwits/390416",
+    "https://www.rbc.ru/sport/08/09/2026/6a9ffa839a794781fe9a0f37",
+    "https://tass.ru/obschestvo/28252587",
+    "https://t.me/FinancialJuice/142560",
+    "https://www.interfax.ru/world/1124945",
+    "https://t.me/headlines_for_traders/87421",
+    "https://www.kommersant.ru/doc/9060328",
+    "https://t.me/interfaxonline/80692",
+    "https://t.me/if_market_news/86315",
+    "https://tass.ru/politika/28252573",
+    "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting",
+    "https://t.me/markettwits/390415",
+    "https://tass.ru/obschestvo/28252575",
+    "https://tass.ru/obschestvo/28252581",
+    "https://tass.ru/sport/28252579",
+    "https://www.investing.com/news/stock-market-news/why-is-minimax-stock-sliding-today-93CH-4971381",
+    "https://t.me/banksta/104156",
+    "https://www.kommersant.ru/doc/9060332",
+    "https://tass.ru/armiya-i-opk/28252571",
+    "https://tass.ru/obschestvo/28252565",
+    "https://t.me/markettwits/390414",
+    "https://cryptoslate.com/canada-proposes-direct-stablecoin-cash-outs-for-small-holders-with-a-1-fee-cap/",
+    "https://tass.ru/obschestvo/28252569",
+    "https://www.interfax.ru/world/1124937",
+    "https://t.me/headlines_for_traders/87420",
+    "https://tass.ru/proisshestviya/28252567",
+    "https://www.interfax.ru/moscow/1124944",
+    "https://t.me/interfaxonline/80691",
+    "https://tass.ru/armiya-i-opk/28252561",
+    "https://tass.ru/ekonomika/28252559",
+    "https://www.investing.com/news/stock-market-news/indonesia-strengthens-measures-against-stock-manipulation-after-market-rout-triggered-by-msci-4971379",
+    "https://tass.ru/ekonomika/28252557",
+    "https://tass.ru/obschestvo/28252555",
+    "https://www.kommersant.ru/doc/9060327",
+    "https://www.rbc.ru/rbcfreenews/6adb8b426e9761aa604e1008",
+    "https://t.me/markettwits/390413",
+    "https://www.investing.com/news/stock-market-news/asia-stocks-slip-as-chipmakers-retreat-earnings-central-bank-meetings-loom-4971378",
+    "https://t.me/headlines_for_traders/87419",
+    "https://t.me/markettwits/390412",
+    "https://www.interfax.ru/russia/1124943",
+    "https://www.vedomosti.ru/politics/news/2026/10/26/1240014-mera-vladivostoka",
+    "https://t.me/markettwits/390411",
+    "https://t.me/markettwits/390410",
+    "https://t.me/markettwits/390409",
+    "https://t.me/FinancialJuice/142559",
+    "https://t.me/FinancialJuice/142558",
+    "https://thedefiant.io/news/security/foundation-links-passport-phishing-emails-to-compromised-cloudflare-api-keys",
+    "https://t.me/interfaxonline/80690",
+    "https://t.me/FinancialJuice/142557",
+    "https://t.me/markettwits/390408",
+    "https://t.me/markettwits/390407",
+    "https://www.investing.com/news/stock-market-news/gift-nifty-50-breaks-618-fib-targets-22205-live-levels-93CH-4971374",
+    "https://www.rbc.ru/sport/20/10/2026/6ad7204c9b3c1e6130b36742",
+    "https://t.me/markettwits/390406",
+    "https://t.me/headlines_for_traders/87418",
+    "https://www.interfax.ru/russia/1124942"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-25T05:30:59.811588+00:00",
-      "Нидерланды оценили риски при возможных санкциях США"
-    ],
-    [
-      "2026-10-25T05:30:59.811588+00:00",
-      "При стрельбе у университета во Флориде ранены 12 человек"
-    ],
-    [
-      "2026-10-25T05:30:59.811588+00:00",
-      "Более 60% россиян считают себя финансово грамотными"
-    ],
-    [
-      "2026-10-25T05:30:59.811588+00:00",
-      "В Болгарии началось голосование на выборах президента"
-    ],
-    [
-      "2026-10-25T06:00:58.829450+00:00",
-      "РБК: откат к ₽73 или рост до ₽86: что будет с курсом доллара в ноябре"
-    ],
-    [
-      "2026-10-25T06:00:58.829450+00:00",
-      "Число пострадавших при ночной атаке БПЛА на Белгород выросло до 14"
-    ],
     [
       "2026-10-25T06:00:58.829450+00:00",
       "Минобороны РФ сообщило об ударах по логистике в Харькове и сухогрузу"
@@ -1569,6 +1576,30 @@
     [
       "2026-10-26T04:00:56.834816+00:00",
       "Грузоперевозки в Таджикистане выросли на 15,6% за девять месяцев"
+    ],
+    [
+      "2026-10-26T05:00:57.114988+00:00",
+      "Трамп заявил о возможной новой военной операции США против Ирана"
+    ],
+    [
+      "2026-10-26T05:00:57.114988+00:00",
+      "Биткоин опустился ниже $80 000 перед заседанием ФРС"
+    ],
+    [
+      "2026-10-26T05:00:57.114988+00:00",
+      "Лула да Силва победил на президентских выборах в Бразилии"
+    ],
+    [
+      "2026-10-26T05:00:57.114988+00:00",
+      "ЦБ Китая укрепил курс юаня до максимума с июня 2022 года"
+    ],
+    [
+      "2026-10-26T05:00:57.114988+00:00",
+      "Цены на золото стабилизировались перед заседанием ФРС"
+    ],
+    [
+      "2026-10-26T05:00:57.114988+00:00",
+      "Акции техсектора США падают в ожидании отчетов гигантов"
     ]
   ],
   "results_fp": [
