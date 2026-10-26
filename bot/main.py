@@ -1286,7 +1286,7 @@ def main():
     if mode.split(":")[0] == "pro_day":  # «События дня» #СОБЫТИЯ — образец в тестовый канал; pro_day:2026-10-28 — на дату (до +3 дней)
         day = mode.split(":")[1] if ":" in mode else None
         at = datetime.fromisoformat(day + "T20:30:00+03:00") if day else now
-        pro_day.run(state, at, MSK, fetch_calendar, tg_html, test=True, horizon=4 if day else 2)
+        pro_day.run(state, at, MSK, fetch_calendar, tg_html, test=True, horizon=4 if day else 2, ask=ask_ai)
         return
     if mode == "pro_check":  # права бота в канале PRO — без публикации
         print("Можно публиковать:", pro.check(os.environ.get("PRO_CHAT_ID") or "-1004428155051"), file=sys.stderr)

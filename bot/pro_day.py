@@ -5,14 +5,17 @@
 
 Куда: переменная PRO_DAILY — "on" → канал PRO (только после «да» владельца), "test" → тестовый канал каждый вечер,
 пусто/"off" → в авто не выходит. Ручной запуск `mode=pro_day` — всегда в тестовый канал.
-Карточка: пока без картинки; шаблон рубрики делает Дизайнер (knowledge/дизайн/рубрики-pro-v2.md) — тогда card_url.
+Карусель v6 (утверждена владельцем 26.10): evc_data() — данные шаблона `evc` Дизайнера (поля items/sum/next, как DATA.evc
+в pro-рубрики/rubrics-v6.html); цифры ставит код, разбор (s, hint, why, fol, mk, nx) пишет ИИ одним запросом.
+Рендер картинок — шаблоном из bot/pro_tpl/ (пакет Дизайнера), пока его нет — данные только в журнал запуска.
 """
+import json
 import os
 import re
 import sys
 from datetime import datetime, timedelta
 
-from bot import calendar_future, edition, pro, weekly
+from bot import calendar_future, edition, pro, prompts, weekly
 
 FLAG = {"ru": "🇷🇺", "us": "🇺🇸", "oil": "🛢", "gold": "🥇", "crypto": "₿"}
 MONTHS = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"]
@@ -101,7 +104,78 @@ def build(events, results, now, msk):
     return html
 
 
-def run(state, now, msk, fetch_calendar, tg_html, test=False, horizon=2):
+DAYS = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
+WEEKDAYS = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
+MAX_SLIDES = 6
+VD = {"better": ("better", "Лучше ожиданий"), "worse": ("worse", "Хуже ожиданий"),
+      "inline": ("", "Как ждали"), "neutral": ("", "Как ждали")}
+
+
+def _nums(headline):
+    """«Первичные заявки: 194K при прогнозе 200K (прошлое 200K)» → [[Факт,194 тыс.],[Прогноз,200 тыс.],[Было,200 тыс.]]."""
+    h = re.sub(r"(\d)М\b", r"\1M", re.sub(r"\s*\(сюрприз[^)]*\)", "", headline or ""))  # кириллическая «М» в итогах EIA
+    m = re.match(r"(?:.*?:\s*)?(?:факт\s+|EPS\s+)?(.+?)\s+при прогнозе\s+(.+?)(?:\s*\(прошлое\s+(.+?)\))?$", h)
+    if not m:
+        return [["Факт", _num(h)]] if h else []
+    out = [["Факт", _num(m[1])], ["Прогноз", _num(m[2])]]
+    return out + [["Было", _num(m[3])]] if m[3] else out
+
+
+def evc_data(events, results, now, msk, ask):
+    """Данные карусели evc на сегодня или None (ничего не вышло). ask(system, user) — ИИ; сбой ИИ → без разбора."""
+    local = now.astimezone(msk)
+    today = local.date()
+    outs = [r for r in results if r.get("dt") and datetime.fromisoformat(r["dt"]).astimezone(msk).date() == today]
+    outs = sorted(outs, key=lambda r: (r.get("impact") != "High", r["dt"]))[:MAX_SLIDES]
+    if not outs:
+        return None
+    outs.sort(key=lambda r: r["dt"])
+    items = []
+    for r in outs:
+        ev = next((e for e in events if _match(e, [r])), {})
+        nums = _nums(r.get("headline"))
+        vd, vt = VD.get(r.get("verdict"), ("", ""))
+        items.append({"tm": f"{datetime.fromisoformat(r['dt']).astimezone(msk):%H:%M}",
+                      "fl": FLAG.get(ev.get("region") or (calendar_future.region(ev) if ev else "us"), "🇺🇸"),
+                      "who": "", "t": r["title"], "big": nums[0][1] if nums else "", "img": "",
+                      "nums": nums, "vd": vd, "vt": vt, "s": _num(r.get("headline")), "hint": "", "why": "", "fol": "",
+                      "mk": [], "nx": ""})
+    later = sorted((e for e in events if datetime.fromisoformat(e["dt"]).astimezone(msk).date() > today
+                    and e.get("impact") == "High" and not any(x in e["title"] for x in SKIP)), key=lambda e: e["dt"])[:6]
+
+    def when(e):
+        t = datetime.fromisoformat(e["dt"]).astimezone(msk)
+        return f"{DAYS[t.weekday()]} {t:%d.%m} · {t:%H:%M}"
+
+    data = {"tag": "СОБЫТИЯ", "day": f"{WEEKDAYS[today.weekday()]}, {today.day} {MONTHS[today.month - 1]}",
+            "k": "События дня · итоги · время МСК", "sub": "Что вышло, почему и что это значит — листайте →",
+            "cover": [], "items": items, "sum": [],
+            "next": {"k": "ГЛАВНОЕ ВПЕРЕДИ", "t": when(later[0]), "s": later[0]["title"]} if later else None,
+            "src": "Источники: календарь Пульса рынка · Не является инвестиционной рекомендацией"}
+    user = "СЕГОДНЯ ВЫШЛО:\n" + "\n".join(
+        f"{i + 1}. {it['tm']} {it['fl']} {it['t']}: " + ", ".join(f"{k} {v}" for k, v in it["nums"]) + f" — {it['vt'] or 'без прогноза'}"
+        for i, it in enumerate(items)) + "\n\nЗАВТРА И ДАЛЕЕ:\n" + ("\n".join(f"{when(e)} {e['title']}" for e in later) or "—")
+    try:
+        ai = edition._json(ask(prompts.PRO_DAY, user))
+        for a in ai.get("items") or []:
+            i = int(a.get("n") or 0) - 1
+            if 0 <= i < len(items):
+                it = items[i]
+                for k in ("who", "s", "hint", "why", "fol", "nx"):
+                    if isinstance(a.get(k), str) and a[k].strip():
+                        it[k] = edition.ru_numbers(a[k].strip())
+                mk = [m for m in a.get("mk") or [] if isinstance(m, list) and len(m) == 4 and m[0] in ("up", "dn", "eq")]
+                it["mk"] = mk[:3]
+        data["sum"] = [s for s in ai.get("sum") or [] if isinstance(s, list) and len(s) == 2][:3]
+        if data["next"] and isinstance(ai.get("next"), str) and ai["next"].strip():
+            data["next"]["s"] = ai["next"].strip()
+    except Exception as e:
+        print("События дня: разбор ИИ не получен —", e, file=sys.stderr)
+    data["ai"] = all(it["why"] and it["mk"] for it in items)
+    return data
+
+
+def run(state, now, msk, fetch_calendar, tg_html, test=False, horizon=2, ask=None):
     """Собрать и отправить. test=True — всегда тестовый канал. Возвращает html или None."""
     chat = os.environ.get("TELEGRAM_CHAT_ID") if test or _mode() != "on" else os.environ.get("PRO_CHAT_ID")
     try:
@@ -110,6 +184,12 @@ def run(state, now, msk, fetch_calendar, tg_html, test=False, horizon=2):
         print("События дня: календарь не собран —", e, file=sys.stderr)
         return None
     html = build(events, weekly.load_week()["results"], now, msk)
+    if ask:  # карусель v6: пока без рендера — данные в журнал (проверка разбора ИИ в тест-канале с 29.10)
+        try:
+            evc = evc_data(events, weekly.load_week()["results"], now, msk, ask)
+            print("----- evc.json -----\n" + json.dumps(evc, ensure_ascii=False, indent=1), file=sys.stderr)
+        except Exception as e:
+            print("События дня: данные карусели не собраны —", e, file=sys.stderr)
     if not html:
         print("События дня: сегодня событий нет — пост не нужен", file=sys.stderr)
         return None
