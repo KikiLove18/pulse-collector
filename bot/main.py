@@ -1349,7 +1349,7 @@ def main():
             run_pro(state, now, dry, kind)
         if not slot and not dry and pro_day.due(state, now, MSK):  # #СОБЫТИЯ каждый вечер; отметка заранее — без повторов при сбое
             state["pro_daily"] = f"{now.astimezone(MSK):%Y-%m-%d}"
-            pro_day.run(state, now, MSK, fetch_calendar, tg_html)
+            pro_day.run(state, now, MSK, fetch_calendar, tg_html, ask=ask_ai)  # карусель evc v6 + разбор ИИ
         if not slot:
             try:
                 run_breaking(state, now, dry)

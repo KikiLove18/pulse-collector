@@ -12,7 +12,11 @@
 import json
 import os
 import re
+import subprocess
 import sys
+import tempfile
+import urllib.request
+import uuid
 from datetime import datetime, timedelta
 
 from bot import calendar_future, edition, pro, prompts, weekly
@@ -186,17 +190,69 @@ def run(state, now, msk, fetch_calendar, tg_html, test=False, horizon=2, ask=Non
         print("События дня: календарь не собран —", e, file=sys.stderr)
         return None
     html = build(events, weekly.load_week()["results"], now, msk)
-    if ask:  # карусель v6: пока без рендера — данные в журнал (проверка разбора ИИ в тест-канале с 29.10)
+    pics = []
+    if ask:  # карусель v6 (шаблон evc из bot/pro_tpl): разбор ИИ → картинки → альбом; сбой — пост текстом, как раньше
         try:
             evc = evc_data(events, weekly.load_week()["results"], now, msk, ask)
             print("----- evc.json -----\n" + json.dumps(evc, ensure_ascii=False, indent=1), file=sys.stderr)
+            if evc and evc.get("items"):
+                pics = _render(evc)
         except Exception as e:
-            print("События дня: данные карусели не собраны —", e, file=sys.stderr)
+            print("События дня: карусель не собрана —", e, file=sys.stderr)
     if not html:
         print("События дня: сегодня событий нет — пост не нужен", file=sys.stderr)
         return None
     html = tg_html(html)
     print("----- #СОБЫТИЯ -----\n" + html, file=sys.stderr)
     if chat:
-        pro._send(chat, html, None)
+        if not (pics and _album(chat, pics, html)):
+            pro._send(chat, html, None)
     return html
+
+
+TPL = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pro_tpl")
+
+
+def _render(evc):
+    """Карусель evc v6 → список путей к jpg. Playwright ставится сам (только вечером, ~1 мин)."""
+    if subprocess.run(["node", "-e", "require('playwright')"], cwd=TPL, capture_output=True).returncode:
+        subprocess.run(["npm", "i", "--no-save", "--no-audit", "--no-fund", "playwright@1"], cwd=TPL, check=True, capture_output=True, timeout=300)
+        subprocess.run(["npx", "playwright", "install", "chromium"], cwd=TPL, check=True, capture_output=True, timeout=300)
+    out = tempfile.mkdtemp(prefix="evc")
+    f = os.path.join(out, "evc.json")
+    with open(f, "w", encoding="utf-8") as fh:
+        json.dump(evc, fh, ensure_ascii=False)
+    r = subprocess.run(["node", "render.js", "evc", "--full", "--data", f, "--out", out], cwd=TPL, capture_output=True, text=True, timeout=300)
+    print("Рендер evc:", r.returncode, (r.stdout + r.stderr)[-600:], file=sys.stderr)
+    pics = sorted((x for x in os.listdir(out) if re.fullmatch(r"evc\d+\.jpg", x)), key=lambda x: int(re.sub(r"\D", "", x)))
+    return [os.path.join(out, x) for x in pics][:10]
+
+
+def _album(chat, pics, html):
+    """Альбом (sendMediaGroup); подпись — текст поста, если влезает в 1024, иначе текст отдельным сообщением. True — ушло."""
+    token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    if not token:
+        return False
+    cap = len(re.sub(r"<[^>]+>", "", html)) <= 1000
+    media = [{"type": "photo", "media": f"attach://p{i}", **({"caption": html, "parse_mode": "HTML"} if cap and i == 0 else {})} for i in range(len(pics))]
+    fields = {"chat_id": str(chat), "media": json.dumps(media, ensure_ascii=False)}
+    if str(chat) == str(os.environ.get("PRO_CHAT_ID") or ""):
+        fields["protect_content"] = "true"
+    b = uuid.uuid4().hex
+    body = b"".join(f'--{b}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode() for k, v in fields.items())
+    for i, p in enumerate(pics):
+        with open(p, "rb") as fh:
+            body += f'--{b}\r\nContent-Disposition: form-data; name="p{i}"; filename="evc{i + 1}.jpg"\r\nContent-Type: image/jpeg\r\n\r\n'.encode() + fh.read() + b"\r\n"
+    body += f"--{b}--\r\n".encode()
+    req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMediaGroup", data=body,
+                                 headers={"Content-Type": f"multipart/form-data; boundary={b}"})
+    try:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            ok = json.loads(r.read()).get("ok")
+    except Exception as e:
+        print("События дня: альбом не отправлен —", e, file=sys.stderr)
+        return False
+    print("События дня: альбом", len(pics), "карт., ok", ok, file=sys.stderr)
+    if ok and not cap:
+        pro._send(chat, html, None)
+    return bool(ok)
