@@ -43,7 +43,7 @@
   ],
   "last_digest_ts": "2026-10-25T16:30:56.968741+00:00",
   "calendar": {
-    "ts": "2026-10-25T16:31:08.689239+00:00",
+    "ts": "2026-10-26T04:00:56.842727+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -880,7 +880,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-25T21:30:56.065246+00:00",
+  "breaking_ts": "2026-10-26T04:00:56.834816+00:00",
   "news_now": {
     "day": "2026-10-26",
     "day_count": 0,
@@ -889,60 +889,62 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/kultura/28252107",
-    "https://www.rbc.ru/rbcfreenews/6a7d5c189a7947b46052ab27",
-    "https://tass.ru/obschestvo/28252101",
-    "https://www.rbc.ru/politics/26/10/2026/6ade6d0f0795599cc8ca30fa",
-    "https://t.me/WalterBloomberg/37331",
-    "https://www.interfax.ru/russia/1124913",
-    "https://www.kommersant.ru/doc/9060274",
-    "https://t.me/FinancialJuice/142535",
-    "https://t.me/FinancialJuice/142534",
-    "https://tass.ru/sport/28252095",
-    "https://t.me/whale_alert_io/104175",
-    "https://www.rbc.ru/politics/25/10/2026/6ade68f73dd8ead0991a45ea",
-    "https://t.me/banksta/104152",
-    "https://tass.ru/obschestvo/28252093",
-    "https://www.rbc.ru/politics/26/10/2026/6ade6c960795599cc8ca30f7",
-    "https://t.me/if_market_news/86314",
-    "https://tass.ru/sport/28252089",
-    "https://t.me/invest_zonaa/39136",
-    "https://tass.ru/armiya-i-opk/28252085",
-    "https://tass.ru/ekonomika/28252087",
-    "https://tass.ru/kosmos/28252081",
-    "https://tass.ru/ekonomika/28252075",
-    "https://tass.ru/opinions/28251271",
-    "https://tass.ru/politika/28252077",
-    "https://www.investing.com/news/stock-market-news/musk-says-spacex-raised-40-billion-in-debt-for-gpus-4971248",
-    "https://tass.ru/armiya-i-opk/28251847",
-    "https://www.vedomosti.ru/politics/news/2026/10/25/1239991-vuchich-zayavil-o-porazhenii",
-    "https://tass.ru/mezhdunarodnaya-panorama/28252073"
+    "https://t.me/headlines_for_traders/87417",
+    "https://tass.ru/mezhdunarodnaya-panorama/28252517",
+    "https://tass.ru/proisshestviya/28252519",
+    "https://tass.ru/proisshestviya/28252513",
+    "https://tass.ru/mezhdunarodnaya-panorama/28252515",
+    "https://tass.ru/mezhdunarodnaya-panorama/28252511",
+    "https://www.rbc.ru/rbcfreenews/6ade9ad819ccd917a21475c1",
+    "https://www.investing.com/news/stock-market-news/why-is-gmo-internet-stock-plummeting-today-93CH-4971370",
+    "https://tass.ru/proisshestviya/28252475",
+    "https://t.me/FinancialJuice/142556",
+    "https://t.me/FinancialJuice/142555",
+    "https://t.me/headlines_for_traders/87416",
+    "https://www.kommersant.ru/doc/9060315",
+    "https://tass.ru/proisshestviya/28252501",
+    "https://www.interfax.ru/russia/1124940",
+    "https://tass.ru/ekonomika/28252499",
+    "https://www.interfax.ru/world/1124939",
+    "https://t.me/headlines_for_traders/87415",
+    "https://www.investing.com/news/stock-market-news/why-is-eagers-auto-stock-surging-today-93CH-4971367",
+    "https://tass.ru/obschestvo/28252455",
+    "https://www.investing.com/news/stock-market-news/why-is-zip-co-stock-surging-today-93CH-4971366",
+    "https://www.vedomosti.ru/politics/news/2026/10/26/1240012-pobedil-viborah",
+    "https://tass.ru/mezhdunarodnaya-panorama/28252493",
+    "https://tass.ru/obschestvo/28252495",
+    "https://tass.ru/nauka/28252485",
+    "https://tass.ru/proisshestviya/28252477",
+    "https://www.interfax.ru/world/1124938",
+    "https://tass.ru/armiya-i-opk/28252487",
+    "https://tass.ru/armiya-i-opk/28252489",
+    "https://tass.ru/proisshestviya/28252481",
+    "https://tass.ru/proisshestviya/28252451",
+    "https://t.me/headlines_for_traders/87414",
+    "https://tass.ru/mezhdunarodnaya-panorama/28252471",
+    "https://tass.ru/armiya-i-opk/28252483",
+    "https://tass.ru/proisshestviya/28252467",
+    "https://t.me/lookonchainchannel/10779",
+    "https://tass.ru/proisshestviya/28252469",
+    "https://tass.ru/obschestvo/28252465",
+    "https://t.me/headlines_for_traders/87413",
+    "https://tass.ru/obschestvo/28252423",
+    "https://tass.ru/mezhdunarodnaya-panorama/28252461",
+    "https://cointelegraph.com/news/hong-kong-names-nasdaq-listed-solana-company-a-strategic-enterprise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://tass.ru/politika/28252457",
+    "https://www.vedomosti.ru/society/news/2026/10/26/1240011-posle-shoda-vagonov",
+    "https://www.investing.com/news/stock-market-news/australias-ingenia-communities-shares-rise-on-avids-15-bln-bid-4971364",
+    "https://www.rbc.ru/politics/26/10/2026/6ade6bee19ccd917a21475b8",
+    "https://www.kommersant.ru/doc/9060308",
+    "https://www.coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout",
+    "https://www.wsj.com/finance/stocks/asian-stocks-decline-as-appetite-for-risky-assets-ebbs-926087d6?mod=rss_markets_main",
+    "https://www.interfax.ru/world/1124936"
   ],
   "ai_dead": {
     "date": "2026-10-25",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-25T05:00:55.424177+00:00",
-      "Над Тульской областью сбили 15 украинских БПЛА"
-    ],
-    [
-      "2026-10-25T05:00:55.424177+00:00",
-      "В России в октябре выросла стоимость посуточной аренды жилья"
-    ],
-    [
-      "2026-10-25T05:00:55.424177+00:00",
-      "Премьер Франции предложил блокировать соцсети из-за протестов"
-    ],
-    [
-      "2026-10-25T05:00:55.424177+00:00",
-      "\"Бюро 1440\" и \"Билайн\" проведут тесты гибридной связи"
-    ],
-    [
-      "2026-10-25T05:30:59.811588+00:00",
-      "Минобороны РФ сообщило об ударах по логистическим центрам в Харькове"
-    ],
     [
       "2026-10-25T05:30:59.811588+00:00",
       "Нидерланды оценили риски при возможных санкциях США"
@@ -1542,6 +1544,30 @@
     [
       "2026-10-25T20:30:57.665702+00:00",
       "NYT сообщила о рисках возобновления конфликта США и Ирана"
+    ],
+    [
+      "2026-10-26T04:00:56.834816+00:00",
+      "Уолл-стрит закрылась в минусе в пятницу, Dow Jones потерял 1,2%"
+    ],
+    [
+      "2026-10-26T04:00:56.834816+00:00",
+      "Оппозиция увеличила отрыв от коалиции Вучича на выборах в Сербии"
+    ],
+    [
+      "2026-10-26T04:00:56.834816+00:00",
+      "Кошелек, связанный с Ethereum Foundation, продал 2 785 ETH"
+    ],
+    [
+      "2026-10-26T04:00:56.834816+00:00",
+      "В Свердловской области после схода 20 вагонов загорелись семь цистерн"
+    ],
+    [
+      "2026-10-26T04:00:56.834816+00:00",
+      "Илон Маск предупредил об угрозах для «AI neoclouds» на фоне долга SpaceX"
+    ],
+    [
+      "2026-10-26T04:00:56.834816+00:00",
+      "Грузоперевозки в Таджикистане выросли на 15,6% за девять месяцев"
     ]
   ],
   "results_fp": [
