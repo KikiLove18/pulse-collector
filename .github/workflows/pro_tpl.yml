@@ -1,0 +1,29 @@
+# Проверка шаблонов PRO v6 (bot/pro_tpl): рендер образцов в артефакт, без отправки в каналы.
+# gh workflow run pro_tpl.yml -R KikiLove18/pulse-collector -f rubric=evc   (evc | monc | tuec | thuc | ad | all)
+name: pro_tpl
+on:
+  workflow_dispatch:
+    inputs:
+      rubric: { description: "evc | monc | tuec | thuc | ad | all", default: "all" }
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: sudo apt-get install -y -q fonts-noto-color-emoji >/dev/null
+      - run: npm i --no-save --no-audit --no-fund playwright@1.48.2 && npx playwright install --with-deps chromium
+      - name: render
+        run: |
+          R="${{ github.event.inputs.rubric }}"; [ "$R" = all ] && R="evc monc tuec thuc ad"; rc=0
+          for k in $R; do
+            if [ "$k" = ad ]; then node bot/pro_tpl/render.js ad --out out/ad || rc=$?;
+            else node bot/pro_tpl/render.js $k --data bot/pro_tpl/data/$k.json --out out/$k || rc=$?; fi
+          done
+          case " $R " in *" evc "*) node bot/pro_tpl/render.js evc --data bot/pro_tpl/data/evc_long.json --out out/evc_long || rc=$?;; esac
+          exit $rc
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: pro-slides, path: out/, retention-days: 7, if-no-files-found: ignore }

@@ -1,0 +1,741 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<!-- Пакет шаблонов PRO v6 для автомата (bot/pro_tpl, Дизайнер 27.10): рендер — node render.js, поля — schema.md. Не менять стиль без «да» владельца.
+     PRO v4 (26.10, решение владельца): вариант «стили переставлены» + Пн↔Вт (ночной синий с золотом — гайду, в формате PDF-гайдов Navy & Gold; газетный стиль — календарю Пн), доделаны Ср и Вс, «События дня» — карусель (обложка + слайд на каждое событие с разбором + итог). Рендер: node render.js --v4 (= rubrics-v4.html + swap-v4.json).
+     PRO v3: у каждой рубрики свой стиль (ТЗ Арт-директора knowledge/дизайн/тз-pro-рубрики.md, расписание Редактора рубрики-pro-v2.md).
+     Шаблоны: всё содержимое — в DATA ниже. Рендер: NODE_PATH=~/.local/pw/node_modules node render.js [id] [--data свои.json] → out/<id>.jpg 1620×2025.
+     Инструкция — README.md рядом. -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Onest:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,800&family=Prata&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Unbounded:wght@600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pro.css">
+<style>
+.abs{position:absolute}.k{font:800 20px Inter;letter-spacing:.16em;text-transform:uppercase}
+.fit{overflow:hidden}
+/* ===== Старт · Приветствие: вишня + золото, Playfair, коллаж 4 фотокарточек рынков ===== */
+.hello{background:#2A0912;color:#fff}
+.hello .bd .tag,.nav .bd .tag{background:#C9A24B;color:#2A0912}
+.pc{position:absolute;width:244px;background:#FBF6EC;padding:14px 14px 0;box-shadow:0 22px 40px rgba(0,0,0,.45)}
+.pc .ph{height:236px;background-size:cover;background-position:center}
+.pc b{display:block;font:800 22px Inter;letter-spacing:.16em;color:#2A0912;padding:14px 4px 16px}
+.hello .pro{left:0;right:0;top:420px;z-index:3;text-align:center;font:900 280px/1 'Playfair Display';color:#C9A24B;letter-spacing:-.02em;text-shadow:0 14px 40px rgba(0,0,0,.6)}
+.hello .k{left:60px;top:790px;color:#C9A24B}
+.hello h1{left:56px;right:60px;top:828px;font:900 82px/1.02 'Playfair Display'}
+.hello h1 b{color:#C9A24B}
+.hello .lead{left:60px;right:60px;top:1012px;font:500 28px/1.4 Inter;color:#F1DCDC}
+.hello .list{left:60px;right:60px;top:1110px;display:grid;grid-template-columns:1fr 1fr;gap:12px 30px}
+.hello .list div{font:600 26px/1.3 Inter;padding-left:22px;position:relative}
+.hello .list div:before{content:"";position:absolute;left:0;top:12px;width:9px;height:9px;border-radius:50%;background:#C9A24B}
+.hello .src,.nav .src{color:rgba(255,255,255,.62)}.hello .ft,.nav .ft{background:#170509;color:rgba(255,255,255,.5)}
+/* ===== Старт · Расписание: вишня, каждая строка — мини-превью своей рубрики ===== */
+.nav{background:#2A0912;color:#fff}
+.nav h1{left:60px;top:126px;font:900 70px/1 'Playfair Display'}
+.nav .lead{left:60px;right:60px;top:212px;font:500 26px/1.35 Inter;color:#F1DCDC}
+.nav .rows{left:60px;right:60px;top:276px;display:flex;flex-direction:column;gap:8px}
+.row{position:relative;height:96px;display:flex;align-items:center;overflow:hidden}
+.row .dd{width:96px;flex:none;text-align:center;font:800 24px Inter;letter-spacing:.04em;line-height:1.05}
+.row .dd small{display:block;font:700 15px Inter;letter-spacing:.06em;opacity:.8;margin-top:2px}
+.row .im{width:132px;height:96px;flex:none;background-size:cover;background-position:center;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.row .tx{padding:0 20px;flex:1}
+.row .tx b{display:block;line-height:1.05;white-space:nowrap}
+.row .tx span{display:block;font:500 20px/1.2 Inter;margin-top:5px;opacity:.85}
+.row .hs{position:absolute;right:16px;top:10px;font:700 15px Inter;letter-spacing:.05em;opacity:.75}
+.r1{background:#F3F1EC;color:#141414}.r1 .tx b{font:900 36px 'Playfair Display'}.r1 .dd{color:#7A1A2E}
+.r1 .im{background:#F3F1EC}.r1 .im i{width:96px;height:70px;background:url(img/fed.jpg) center/cover;border:5px solid #fff;box-shadow:0 4px 10px rgba(0,0,0,.25);transform:rotate(-4deg);filter:grayscale(.2)}
+.r2{background:#0A1931;color:#F3EBDA}.r2 .tx b{font:600 42px 'Cormorant Garamond';color:#C9A45C}.r2 .dd{color:#C9A45C}.r2 .im i{width:62px;height:80px;border-radius:31px 31px 0 0;background:url(img/cbr.jpg) center/cover;outline:1px solid #C9A45C;outline-offset:5px}
+.r3{background:#C9A24B;color:#3A0A16}.r3 .tx b{font:800 30px Unbounded;color:#3A0A16;letter-spacing:-.02em}.r3 .im{font:800 40px Unbounded;color:#5A1426;letter-spacing:-.05em}
+.r4{background:#16203A;color:#F2EBDD}.r4 .tx b{font:400 36px Prata;color:#C8A96A}.r4 .im img{width:96px;height:96px;margin-top:14px}
+.r5{background:#0D1110;color:#E8EDEA}.r5 .tx b{font:800 30px 'JetBrains Mono';color:#C9A24B;letter-spacing:-.03em}
+.r6{background:#F3F1EC;color:#141414}.r6 .tx b{font:900 36px 'Playfair Display'}.r6 .im{background-image:url(img/cbr.jpg);filter:grayscale(1) contrast(1.1)}.r6 .dd{color:#7A1A2E}
+.r7{background:#5A1426;color:#fff}.r7 .tx b{font:800 30px Unbounded;color:#F2C6CE;letter-spacing:-.02em}.r7 .im{font:900 64px Unbounded;color:#F2C6CE}
+.r8{background:#0D1520;color:#E6EEF8}.r8 .tx b{font:700 32px Onest;color:#fff}.r8 .im{font:700 28px Onest;color:#6E9BD1}.r8 .dd{color:#6E9BD1}
+.r9{background:#0D1520;color:#fff}.r9 .tx b{font:800 30px Unbounded;letter-spacing:-.02em}.r9 .im{background:#6E9BD1;color:#0D1520!important;font:900 40px Unbounded;color:#fff;letter-spacing:-.05em}
+/* ===== Пн · Неделя впереди (v4): газетный + чёрный + вишня, Playfair, фото-карточка места + огромное время + лента недели ===== */
+.mon{background:#F3F1EC;color:#141414}
+.mon .bd .tag{background:#7A1A2E;color:#fff}
+.mon .pc{left:430px;top:132px;width:590px;transform:rotate(3deg);background:#fff}
+.mon .pc .ph{height:340px;filter:grayscale(.2) contrast(1.05)}
+.mon .pc b{color:#141414;font:600 20px Inter;letter-spacing:.02em}
+.mon .day{left:60px;top:150px;font:800 30px 'Playfair Display';line-height:1.2}
+.mon .day span{display:inline-block;background:#7A1A2E;color:#fff;padding:8px 16px;margin-top:12px;font:800 22px Inter;letter-spacing:.08em}
+.mon .big{left:44px;top:470px;font:900 250px/1 'Playfair Display';letter-spacing:-.03em}
+.mon .k{left:60px;right:60px;top:752px;color:#7A1A2E;border-top:6px solid #141414;padding-top:14px}
+.mon h1{left:60px;right:60px;top:806px;font:900 60px/1.04 'Playfair Display'}
+.mon .lead{left:60px;right:60px;top:878px;font:500 27px/1.38 Inter;color:#333}
+.mon .rows{left:60px;right:60px;top:968px;font:600 25px/1.3 Inter}
+.mon .rows div{display:flex;gap:22px;padding:11px 0;border-top:1px solid rgba(20,20,20,.25)}
+.mon .rows b{width:200px;flex:none;font:800 21px Inter;color:#7A1A2E;padding-top:3px}
+.mon .wk{left:60px;right:60px;top:1100px;display:flex;gap:0;border-top:4px solid #141414}
+.mon .wk div{flex:1;height:118px;padding:12px 10px;position:relative;border-left:1px solid rgba(20,20,20,.2)}
+.mon .wk div:first-child{border-left:0}
+.mon .wk div.on{background:#141414;color:#F3F1EC}
+.mon .wk b{display:block;font:900 26px 'Playfair Display'}.mon .wk span{display:block;font:600 20px Inter;opacity:.75;margin-top:2px}
+.mon .wk u{position:absolute;left:10px;bottom:12px;display:flex;gap:6px;text-decoration:none}
+.mon .wk u i{width:13px;height:13px;border-radius:50%;background:#E0475F}
+.mon .src{color:rgba(0,0,0,.62)}.mon .ft{background:#141414;color:rgba(255,255,255,.55)}
+/* ===== Вт · Гайд недели (v4): обложка в формате PDF-гайдов «Navy & Gold» — ночной синий + золото, Cormorant Garamond, арка с фото, тонкая рамка ===== */
+.tue{background:radial-gradient(ellipse at 80% 15%,#16305A 0%,#0A1931 55%,#060F21 100%);color:#F3EBDA}
+.tue .frame{position:absolute;inset:22px;border:1px solid rgba(201,164,92,.45);z-index:3;pointer-events:none}
+.tue .bd .tag{background:#C9A45C;color:#0A1931}
+.tue .arch{left:590px;top:150px;width:420px;height:560px;border-radius:210px 210px 0 0;background-size:cover;background-position:center;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.tue .archl{left:574px;top:134px;width:452px;height:592px;border-radius:226px 226px 0 0;border:1px solid rgba(201,164,92,.7);border-bottom:0}
+.tue svg.cv{position:absolute;left:0;top:0;z-index:1}
+.tue .k{left:60px;top:160px;width:500px;color:#C9A45C;font:600 18px Inter;letter-spacing:.26em;line-height:1.5}
+.tue h1{left:56px;top:226px;width:540px;font:600 116px/.96 'Cormorant Garamond';color:#F6F1E6;letter-spacing:-.01em}
+.tue .lead{left:60px;top:500px;width:500px;font:500 32px/1.3 'Cormorant Garamond';color:#E9D9B4}
+.tue .st{left:60px;right:60px;top:760px;display:flex;gap:30px}
+.tue .st div{flex:1;border-top:1px solid rgba(201,164,92,.6);padding-top:14px;font:500 20px/1.3 Inter;color:rgba(243,235,218,.72)}
+.tue .st b{display:block;font:600 64px/1 'Cormorant Garamond';color:#F6F1E6;margin-bottom:8px}
+.tue .lbl{left:60px;right:60px;top:920px;display:flex;align-items:center;gap:16px;font:600 18px Inter;letter-spacing:.26em;color:#C9A45C}
+.tue .lbl i{flex:1;height:1px;background:rgba(201,164,92,.4)}
+.tue .toc{left:60px;right:60px;top:958px}
+.tue .toc div{display:flex;gap:22px;align-items:baseline;padding:6px 0;font:500 25px/1.3 Inter;color:#F3EBDA}
+.tue .toc b{flex:none;width:52px;font:600 32px 'Cormorant Garamond';color:#C9A45C}
+.tue .src{color:rgba(243,235,218,.6)}.tue .ft{background:#060F21;color:rgba(243,235,218,.45)}
+/* ===== Ср · Индикатор (v4): золото + вишня, Unbounded, огромная цифра внахлёст с чеком ===== */
+.wed{background:radial-gradient(900px 700px at 82% 8%,#E4C47E,#C9A24B 58%,#B38A37);color:#3A0A16}
+.wed .bd .tag{background:#5A1426;color:#F2D79A}
+.wed svg.obj{position:absolute;left:660px;top:118px;transform:rotate(5deg);z-index:1;filter:drop-shadow(0 26px 30px rgba(74,15,30,.35))}
+.wed .k{left:60px;top:150px;color:#5A1426;width:540px;line-height:1.4}
+.wed .big{left:34px;top:420px;z-index:4;font:800 300px/1 Unbounded;letter-spacing:-.07em;color:#5A1426;text-shadow:0 14px 34px rgba(74,15,30,.25)}
+.wed h1{left:60px;right:60px;top:744px;font:800 54px/1.1 Unbounded;letter-spacing:-.02em;color:#3A0A16}
+.wed .trio{left:60px;right:60px;top:900px;display:flex;gap:16px}
+.wed .trio div{flex:1;border-top:3px solid rgba(90,20,38,.45);padding-top:14px;font:600 22px Inter;color:rgba(58,10,22,.78)}
+.wed .trio b{display:block;font:800 46px Unbounded;color:#5A1426;margin-top:6px;letter-spacing:-.03em}
+.wed .sc{left:60px;right:60px;top:1050px}
+.wed .sc .t{font:700 22px Inter;color:rgba(58,10,22,.8);margin-bottom:18px}
+.wed .sc .bar{position:relative;height:16px;border-radius:8px;background:rgba(90,20,38,.18)}
+.wed .sc .bar i{position:absolute;left:0;top:0;bottom:0;border-radius:8px;background:#5A1426}
+.wed .sc .bar u{position:absolute;top:-12px;width:4px;height:40px;background:#fff}
+.wed .sc .lb{position:relative;height:60px;font:700 22px Inter;margin-top:16px;color:#3A0A16}
+.wed .sc .lb span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.wed .src{color:rgba(58,10,22,.75)}.wed .ft{background:#3A0A16;color:rgba(255,255,255,.55)}
+/* ===== Чт · Нарратив: ночной синий + золото, Prata, портреты + схема сил ===== */
+.thu{background:#16203A;color:#F2EBDD}
+.thu .bd .tag{background:#C8A96A;color:#16203A}
+.thu .k{left:60px;top:136px;color:#C8A96A}
+.thu h1{left:56px;right:60px;top:172px;font:400 78px/1.04 Prata}
+.thu .ppl{left:60px;right:60px;top:362px;display:flex;gap:30px}
+.thu .ppl>div{flex:1;display:flex;gap:20px;align-items:center}
+.thu .ppl .p{width:170px;height:170px;flex:none;border-radius:50%;background:radial-gradient(#2B3A63,#1B2647);border:3px solid #C8A96A;overflow:hidden}
+.thu .ppl .p img{width:170px;height:170px;filter:sepia(.35) saturate(1.2) brightness(1.05)}
+.thu .ppl b{display:block;font:400 31px/1.1 Prata;color:#fff}
+.thu .ppl span{display:block;font:600 21px/1.3 Inter;color:#C8A96A;margin-top:8px}
+.thu .cols{left:60px;right:60px;top:580px;display:flex;gap:26px}
+.thu .col{flex:1;padding:24px 24px 18px;border:2px solid rgba(200,169,106,.5)}
+.thu .col.up{background:rgba(200,169,106,.12)}
+.thu .col h3{display:flex;align-items:center;gap:14px;font:400 36px Prata;margin-bottom:10px}
+.thu .ar{width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent}
+.thu .up .ar{border-bottom:24px solid #2BD48C}.thu .dn .ar{border-top:24px solid #FF6B6B}
+.thu .col div{font:500 27px/1.3 Inter;padding:13px 0;border-top:1px solid rgba(200,169,106,.25)}
+.thu .out{left:60px;right:60px;top:1090px;font:400 34px/1.3 Prata;color:#C8A96A;border-left:4px solid #C8A96A;padding-left:24px}
+.thu .src{color:rgba(242,235,221,.62)}.thu .ft{background:#0C1224;color:rgba(242,235,221,.5)}
+/* ===== Пт · Актив: графит + золото, JetBrains Mono (цифры), витрина: предмет без фона + график + сценарии ===== */
+.fri{background:radial-gradient(900px 600px at 78% 22%,#2A2416,#0D1110 70%);color:#ECE6D6}
+.fri .bd .tag{background:#C9A24B;color:#0D1110}
+.fri svg.obj{position:absolute;left:680px;top:120px;filter:drop-shadow(0 30px 34px rgba(0,0,0,.6))}
+.fri .k{left:60px;top:150px;color:#C9A24B}
+.fri .nm{left:60px;top:190px;font:800 66px/1.05 Inter;letter-spacing:-.02em}
+.fri .nm small{display:block;font:500 22px Inter;color:rgba(236,230,214,.7);letter-spacing:0;margin-top:10px}
+.fri .big{left:52px;top:330px;font:800 128px/1 'JetBrains Mono';letter-spacing:-.06em;color:#fff}
+.fri .ch{left:60px;top:480px;display:flex;gap:16px}
+.fri .ch div{padding:10px 18px;font:700 25px 'JetBrains Mono';border:2px solid}
+.fri .g{color:#2BD48C}.fri .r{color:#FF6B6B}
+.fri svg.chart{position:absolute;left:60px;top:580px}
+.fri .sc{left:60px;right:60px;top:870px}
+.fri .sc .t{font:700 22px 'JetBrains Mono';letter-spacing:.08em;color:#C9A24B;margin-bottom:12px}
+.fri .sc div{display:flex;gap:18px;align-items:center;font:500 26px/1.3 Inter;padding:13px 18px;margin-bottom:10px;background:rgba(201,162,75,.08);border-left:4px solid #C9A24B}
+.fri .sc div b{flex:none;font:800 22px 'JetBrains Mono';color:#C9A24B;width:120px}
+.fri .src{color:rgba(236,230,214,.62)}.fri .ft{background:#050807;color:rgba(236,230,214,.45)}
+/* ===== Сб · Итоги недели: газетная первая полоса, Playfair, белый газетный + чёрный + вишня ===== */
+.sat{background:#F3F1EC;color:#141414}
+.sat .bd .tag{background:#7A1A2E;color:#fff}
+.sat .mast{left:60px;right:60px;top:122px;border-top:6px solid #141414;border-bottom:2px solid #141414;padding:10px 0 8px;display:flex;align-items:baseline;justify-content:space-between}
+.sat .mast b{font:900 80px/1 'Playfair Display';letter-spacing:-.01em}
+.sat .mast span{font:700 22px Inter;letter-spacing:.08em;color:#7A1A2E}
+.sat .ph{left:60px;right:60px;top:248px;height:330px;background:url(img/cbr.jpg) center 40%/cover;filter:grayscale(1) contrast(1.12)}
+.sat .cap{left:60px;right:60px;top:588px;font:500 20px Inter;color:#555}
+.sat h1{left:60px;right:60px;top:628px;font:800 60px/1.06 'Playfair Display'}
+.sat .tiles{left:60px;right:60px;top:800px;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.sat .tiles div{padding:14px 16px 16px;border-top:4px solid #141414;border-left:1px solid rgba(0,0,0,.18)}
+.sat .tiles div:first-child{border-left:0;padding-left:0}
+.sat .tiles h4{font:800 20px Inter;letter-spacing:.12em;margin-bottom:6px}
+.sat .tiles p{font:600 22px/1.25 Inter;color:#444}
+.sat .tiles b{display:block;font:900 42px/1.1 'Playfair Display';margin:6px 0 2px}
+.sat .u{color:#0E7C4A}.sat .d{color:#C8322B}
+.sat .you{left:60px;right:60px;top:1040px;border-top:2px solid #141414;padding-top:16px;display:flex;gap:24px}
+.sat .you i{flex:none;font:800 20px Inter;letter-spacing:.14em;background:#7A1A2E;color:#fff;padding:8px 12px;font-style:normal;height:fit-content}
+.sat .you span{font:600 27px/1.32 Inter}
+.sat .src{color:rgba(0,0,0,.62)}.sat .ft{background:#141414;color:rgba(255,255,255,.55)}
+/* ===== Вс · Опрос недели (v4): вишня + розовый, Unbounded, «Выбор» — темы плитками с иконками в кругах ===== */
+.sun{background:radial-gradient(1000px 800px at 88% 0%,#7E2440,#5A1426 55%,#3E0C1A);color:#fff}
+.sun .bd .tag{background:#F2C6CE;color:#5A1426}
+.sun .q{right:30px;top:60px;font:900 520px/1 Unbounded;color:rgba(242,198,206,.07);z-index:1}
+.sun .k{left:60px;top:150px;color:#F2C6CE}
+.sun h1{left:56px;right:60px;top:192px;font:800 78px/1.04 Unbounded;letter-spacing:-.03em;color:#fff;z-index:3}
+.sun h1 b{color:#F2C6CE}
+.sun .opts{left:60px;right:60px;top:480px;display:flex;flex-direction:column;gap:22px;z-index:3}
+.sun .opt{display:flex;align-items:center;gap:30px;background:rgba(242,198,206,.07);border:2px solid rgba(242,198,206,.32);border-radius:30px;padding:22px 34px 22px 24px;height:170px}
+.sun .opt .ic{flex:none;width:124px;height:124px;border-radius:50%;background:#F2C6CE;display:flex;align-items:center;justify-content:center}
+.sun .opt .ic svg{width:84px;height:84px}
+.sun .opt b{display:block;font:800 40px/1.1 Unbounded;letter-spacing:-.02em;color:#fff}
+.sun .opt span{display:block;font:500 25px/1.3 Inter;margin-top:8px;color:#F2C6CE}
+.sun .opt em{margin-left:auto;font:900 84px Unbounded;color:transparent;-webkit-text-stroke:2px rgba(242,198,206,.75);font-style:normal}
+.sun .cta{left:60px;top:1094px;z-index:3;display:flex;align-items:center;gap:16px;background:#F2C6CE;color:#5A1426;padding:20px 34px;border-radius:50px;font:800 28px Inter}
+.sun .cta i{font-style:normal;font:900 34px Unbounded}
+.sun .src{color:rgba(255,255,255,.66)}.sun .ft{background:#2E0912;color:rgba(255,255,255,.5)}
+/* ===== Каждый вечер · События дня: #0D1520 + голубой, Onest, как карточка события в приложении (автосборка) ===== */
+.evs{background:#0D1520;color:#E6EEF8}
+.evs .bd .tag{background:#6E9BD1;color:#0D1520}
+.evs .k{left:60px;top:138px;color:#6E9BD1}
+.evs h1{left:60px;right:60px;top:174px;font:800 70px/1.05 Onest;letter-spacing:-.02em;color:#fff}
+.evs .list{left:60px;right:60px;top:290px;height:900px;display:flex;flex-direction:column;gap:16px}
+.ev{display:flex;gap:22px;background:#152132;border:1px solid #22344D;border-radius:22px;padding:22px 26px;flex:none}
+.ev .tm{flex:none;width:118px;font:800 36px/1 Onest;color:#fff}
+.ev .tm small{display:block;font:600 20px Onest;color:#6E9BD1;margin-top:8px}
+.ev .bx{flex:1;min-width:0}
+.ev .tt{font:700 30px/1.2 Onest;color:#fff;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ev .tt .hi{display:inline-block;width:12px;height:12px;border-radius:50%;background:#FF5C5C;margin-left:10px;vertical-align:4px}
+.ev .nums{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.ev .nums span{background:#0D1520;border-radius:12px;padding:8px 14px;font:600 21px Onest;color:#9DB2CC}
+.ev .nums b{color:#fff;font-weight:800;margin-left:6px}
+.ev .vd{margin-top:12px;font:700 22px Onest;color:#6E9BD1}
+.ev .vd.better{color:#2BD48C}.ev .vd.worse{color:#FF6B6B}
+.evs .more{font:600 22px Onest;color:#6E9BD1;padding-left:6px}
+.evs .src{color:rgba(230,238,248,.62)}.evs .ft{background:#070C13;color:rgba(230,238,248,.45)}
+/* ===== Каждый вечер · События дня — КАРУСЕЛЬ (v4, идея владельца 26.10): обложка + слайд на каждое событие (фото-дуотон, цифра, факт/прогноз/было, «что это значит», «что дальше») + итог дня ===== */
+.evc{background:#0D1520;color:#E6EEF8}
+.evc .bd .tag{background:#6E9BD1;color:#0D1520}
+.evc .duo{left:0;right:0;top:0;height:620px}
+.evc .duo .d1{background:#0D1520}.evc .duo .d2{background:#7FA8DA}
+.evc .duo.nop{background:radial-gradient(700px 500px at 75% 30%,#24406A,#0D1520 75%)}
+.evc .duo.nop .fl{position:absolute;right:60px;top:150px;font-size:300px;line-height:1;opacity:.35;filter:saturate(.6)}
+.evc .fade{position:absolute;left:0;right:0;top:400px;height:222px;background:linear-gradient(rgba(13,21,32,0),#0D1520);z-index:1}
+.evc .cnt{right:60px;bottom:140px;z-index:9;font:700 22px Onest;color:#6E9BD1;letter-spacing:.04em}
+.evc .no{left:60px;top:126px;z-index:3;font:700 20px Onest;letter-spacing:.16em;background:rgba(13,21,32,.72);color:#fff;padding:10px 16px;border-radius:10px}
+.evc .big{left:48px;top:372px;z-index:3;font:900 230px/1 Onest;letter-spacing:-.05em;color:#fff;text-shadow:0 14px 40px rgba(0,0,0,.45)}
+.evc .meta{left:60px;right:60px;top:628px;font:700 24px Onest;color:#6E9BD1}
+.evc h1{left:60px;right:60px;top:668px;height:116px;font:800 50px/1.12 Onest;letter-spacing:-.02em;color:#fff}
+.evc .nums{left:60px;right:60px;top:800px;display:flex;gap:12px;align-items:center}
+.evc .nums span{background:#152132;border:1px solid #22344D;border-radius:12px;padding:9px 16px;font:600 22px Onest;color:#9DB2CC}
+.evc .nums b{color:#fff;font-weight:800;margin-left:6px}
+.evc .vd{margin-left:auto;font:800 22px Onest;padding:9px 16px;border-radius:12px;background:rgba(110,155,209,.16);color:#6E9BD1}
+.evc .vd.better{background:rgba(43,212,140,.14);color:#2BD48C}.evc .vd.worse{background:rgba(255,107,107,.14);color:#FF6B6B}
+.evc .an{left:60px;right:60px;top:878px;height:186px;background:#152132;border-radius:22px;padding:22px 28px;font:500 28px/1.35 Inter;color:#E6EEF8}
+.evc .nx{left:60px;right:60px;top:1084px;height:120px;border-left:4px solid #6E9BD1;padding:4px 0 0 24px;font:500 26px/1.35 Inter;color:#C9D6E8}
+.evc .an i,.evc .nx i{display:block;font:800 18px Onest;letter-spacing:.16em;color:#6E9BD1;font-style:normal;margin-bottom:8px}
+.evc .an b{color:#fff}
+/* обложка */
+.evc .duo.cov{height:520px;display:flex}.evc .duo.cov .im{position:relative;flex:1;inset:auto}
+.evc .ck{left:60px;top:420px;z-index:3;color:#6E9BD1}
+.evc .ch1{left:60px;right:60px;top:456px;z-index:3;font:800 76px/1.02 Onest;letter-spacing:-.03em;color:#fff}
+.evc .csub{left:60px;right:60px;top:548px;z-index:3;font:500 28px/1.35 Inter;color:#C9D6E8}
+.evc .clist{left:60px;right:60px;top:626px;height:560px;display:flex;flex-direction:column;gap:12px}
+.evc .ci{display:flex;align-items:center;gap:20px;background:#152132;border:1px solid #22344D;border-radius:20px;padding:24px 22px;flex:none}
+.evc .tf{position:absolute;left:0;right:0;top:0;height:230px;background:linear-gradient(rgba(13,21,32,.8),rgba(13,21,32,0));z-index:2}
+.evc .ci em{flex:none;width:48px;height:48px;border-radius:50%;background:#6E9BD1;color:#0D1520;font:800 24px/48px Onest;text-align:center;font-style:normal}
+.evc .ci .tm{flex:none;width:84px;font:800 28px Onest;color:#fff}
+.evc .ci .tt{flex:1;min-width:0;font:700 26px/1.2 Onest;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.evc .ci .vd{margin-left:0;flex:none;font-size:19px;padding:7px 12px}
+.evc .swipe{left:60px;top:1140px;font:800 26px Onest;color:#fff}
+/* итог */
+.evc .fk{left:60px;top:150px;color:#6E9BD1}
+.evc .fh1{left:56px;right:60px;top:190px;font:800 76px/1.02 Onest;letter-spacing:-.03em;color:#fff}
+.evc .fl2{left:60px;right:60px;top:300px;display:flex;flex-direction:column;gap:18px}
+.evc .fl2 div{display:flex;gap:22px;background:#152132;border-radius:22px;padding:24px 28px;font:500 28px/1.35 Inter}
+.evc .fl2 div span{flex:none;font-size:44px;line-height:1}
+.evc .fl2 b{color:#fff}
+.evc .nxt{left:60px;right:60px;top:640px;background:#6E9BD1;color:#0D1520;border-radius:26px;padding:28px 32px}
+.evc .nxt i{display:block;font:800 18px Onest;letter-spacing:.16em;font-style:normal;opacity:.8}
+.evc .nxt b{display:block;font:900 64px/1.05 Onest;letter-spacing:-.03em;margin:8px 0 6px}
+.evc .nxt span{font:600 26px/1.3 Inter}
+.evc .src{color:rgba(230,238,248,.62)}.evc .ft{background:#070C13;color:rgba(230,238,248,.45)}
+/* ===== В моменте · Большое событие: плакат — дуотон красным + огромная цифра на тёмно-синем ===== */
+.evt{background:#0D1520;color:#fff}
+.evt .bd .tag{background:#6E9BD1;color:#0D1520}
+.evt .duo{left:0;right:0;top:0;height:640px}
+.evt .duo .im{background-position:center 35%}
+.evt .duo .d1{background:#0D1520}.evt .duo .d2{background:#7FA8DA}
+.evt .big{left:36px;top:470px;font:900 300px/1 Unbounded;letter-spacing:-.07em;color:#fff;text-shadow:0 14px 40px rgba(0,0,0,.35)}
+.evt .k{left:60px;top:810px;color:#6E9BD1}
+.evt h1{left:60px;right:60px;top:848px;height:136px;font:800 58px/1.08 Unbounded;letter-spacing:-.02em}
+.evt .lead{left:60px;right:60px;top:1010px;height:120px;font:500 30px/1.38 Inter;color:#D5DCEC}
+.evt .lead b{color:#fff}
+.evt .src{color:rgba(255,255,255,.62)}.evt .ft{background:#070C13;color:rgba(255,255,255,.5)}
+
+/* ===== v5 (26.10, правки владельца): события — фото меньше, сути больше ===== */
+.evc .ph5{right:60px;top:118px;width:400px;height:262px;border-radius:22px;overflow:hidden;z-index:3}
+.evc .ph5.nop{background:radial-gradient(300px 200px at 70% 30%,#24406A,#152132);display:flex;align-items:center;justify-content:center;font-size:150px}
+.evc .ph5 .duo{inset:0}
+.evc .no5{left:60px;top:126px;font:700 20px Onest;letter-spacing:.16em;color:#6E9BD1}
+.evc .meta5{left:60px;width:540px;top:170px;font:700 24px Onest;color:#9DB2CC}
+.evc .t5{left:60px;width:540px;top:212px;height:170px;font:800 46px/1.12 Onest;letter-spacing:-.02em;color:#fff}
+.evc .res{left:60px;right:60px;top:404px;height:218px;background:#152132;border:1px solid #22344D;border-radius:24px;display:flex;align-items:center;gap:34px;padding:0 32px}
+.evc .res .bn{flex:none;font:900 112px/1 Onest;letter-spacing:-.05em;color:#fff}
+.evc .res .cmp{flex:1;display:flex;flex-direction:column;gap:9px}
+.evc .res .cmp div{display:flex;align-items:center;gap:14px;font:600 21px Onest;color:#9DB2CC}
+.evc .res .cmp div span{width:96px;flex:none}
+.evc .res .cmp div i{height:12px;border-radius:6px;background:#2E4566}
+.evc .res .cmp div.f i{background:#6E9BD1}
+.evc .res .cmp div b{color:#fff;font-weight:800}
+.evc .res .vd{margin:6px 0 0;align-self:flex-start}
+.evc .hint{left:60px;right:60px;top:636px;font:500 21px/1.3 Inter;color:#8FA5C2}
+.evc .hint b{color:#C9D6E8}
+.evc .an5{left:60px;right:60px;top:686px;height:128px;font:500 27px/1.36 Inter;color:#E6EEF8}
+.evc .an5 b{color:#fff}
+.evc .lab{display:block;font:800 18px Onest;letter-spacing:.16em;color:#6E9BD1;font-style:normal;margin-bottom:8px}
+.evc .mk{left:60px;right:60px;top:836px;height:220px}
+.evc .mk .mrow{display:flex;gap:12px}.evc .mk .tl p{max-height:118px;overflow:hidden}
+.evc .mk .tl{flex:1;background:#152132;border-radius:18px;padding:16px 18px;min-height:150px}
+.evc .mk .tl h5{margin:0 0 8px;font:800 23px Onest;color:#fff;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.evc .mk .tl h5 u{text-decoration:none;font:800 16px Onest;padding:4px 9px;border-radius:8px}
+.evc .mk .tl.up h5 u{background:rgba(43,212,140,.14);color:#2BD48C}.evc .mk .tl.dn h5 u{background:rgba(255,107,107,.14);color:#FF6B6B}.evc .mk .tl.eq h5 u{background:rgba(110,155,209,.16);color:#6E9BD1}
+.evc .mk .tl p{margin:0;font:500 20px/1.3 Inter;color:#C9D6E8}
+.evc .nx5{left:60px;right:60px;top:1080px;height:110px;border-left:4px solid #6E9BD1;padding:2px 0 0 22px;font:500 25px/1.34 Inter;color:#C9D6E8}
+.evc .duo.cov{height:400px}
+.evc .ck{top:300px}.evc .ch1{top:336px}.evc .csub{top:428px}
+.evc .clist{top:500px;height:620px;z-index:4}
+.evc .ci{padding:18px 22px;align-items:flex-start}
+.evc .ci em{margin-top:2px}
+.evc .ci .tx{flex:1;min-width:0}
+.evc .ci .tx .tt{display:block}
+.evc .ci .tx small{display:block;font:500 21px/1.3 Inter;color:#9DB2CC;margin-top:6px}
+.evc .ci .tm{padding-top:8px}.evc .ci .vd{margin-top:6px}
+.evc .swipe{top:1150px}
+/* Пн · карусель недели (v5): газетный стиль, слайд на каждый день */
+.monc{background:#F3F1EC;color:#141414}
+.monc .bd .tag{background:#7A1A2E;color:#fff}
+.monc .src{color:rgba(0,0,0,.62)}.monc .ft{background:#141414;color:rgba(255,255,255,.55)}
+.monc .mast{left:60px;right:60px;top:118px;border-top:6px solid #141414;border-bottom:2px solid #141414;padding:10px 0 8px;display:flex;align-items:baseline;justify-content:space-between}
+.monc .mast b{font:900 62px/1 'Playfair Display'}.monc .mast span{font:800 22px Inter;letter-spacing:.12em;color:#7A1A2E}
+.monc .pc{right:70px;left:auto;top:236px;width:360px;transform:rotate(3deg);background:#fff}
+.monc .pc .ph{height:220px;filter:grayscale(.2) contrast(1.05)}
+.monc .pc b{color:#141414;font:600 18px Inter;letter-spacing:.02em;padding:10px 4px 12px}
+.monc .k{color:#7A1A2E}
+.monc .ck{left:60px;top:250px}
+.monc .ch1{left:60px;width:560px;top:290px;font:900 58px/1.04 'Playfair Display'}
+.monc .pill{display:inline-block;background:#7A1A2E;color:#fff;padding:8px 16px;font:800 22px Inter;letter-spacing:.08em}
+.monc .cpill{left:60px;top:430px}
+.monc .clead{left:60px;width:560px;top:486px;height:110px;font:500 25px/1.36 Inter;color:#333}
+.monc .wk{left:60px;right:60px;top:620px;display:flex;border-top:4px solid #141414}
+.monc .wk div{flex:1;height:132px;padding:12px 10px;position:relative;border-left:1px solid rgba(20,20,20,.2)}
+.monc .wk div:first-child{border-left:0}
+.monc .wk div.on{background:#141414;color:#F3F1EC}
+.monc .wk b{display:block;font:900 26px 'Playfair Display'}.monc .wk span{display:block;font:600 19px Inter;opacity:.75;margin-top:2px}
+.monc .wk em{display:block;font:700 18px/1.15 Inter;font-style:normal;margin-top:8px}
+.monc .wk u{position:absolute;left:10px;bottom:12px;display:flex;gap:6px;text-decoration:none}
+.monc .wk u i{width:12px;height:12px;border-radius:50%;background:#7A1A2E}.monc .wk .on u i{background:#E9B9C3}
+.monc .crows{left:60px;right:60px;top:774px;height:360px;font:700 24px/1.25 Inter}
+.monc .crows div{display:flex;gap:22px;padding:9px 0;border-top:1px solid rgba(20,20,20,.25)}
+.monc .crows b{width:150px;flex:none;font:800 21px Inter;color:#7A1A2E;padding-top:3px}
+.monc .crows small{display:block;font:500 20px Inter;color:#555;margin-top:2px}
+.monc .swipe{left:60px;top:1150px;font:800 26px Inter;color:#7A1A2E}
+.monc .cnt{right:60px;top:1150px;font:700 22px Inter;color:#7A1A2E;letter-spacing:.04em}
+.monc .dn{left:56px;top:122px;font:900 120px/1 'Playfair Display';letter-spacing:-.02em}
+.monc .dd{right:60px;top:146px;text-align:right}
+.monc .dd .pill{font-size:26px}
+.monc .dd small{display:block;margin-top:12px;font:700 19px Inter;color:#555}
+.monc .dd small i{display:inline-block;width:12px;height:12px;border-radius:50%;background:#7A1A2E;margin-left:5px}
+.monc .hd{left:60px;right:60px;top:290px;border-top:6px solid #141414;padding-top:14px}
+.monc .hm{left:60px;top:330px;font:900 96px/1 'Playfair Display';letter-spacing:-.02em}
+.monc .ht{left:60px;width:580px;top:438px;height:110px;font:900 44px/1.08 'Playfair Display'}
+.monc .hw{left:60px;width:580px;top:556px;height:130px;font:500 24px/1.36 Inter;color:#333}
+.monc.wide .ht,.monc.wide .hw{width:auto;right:60px}
+.monc .dpc{top:320px;width:320px}.monc .dpc .ph{height:190px}
+.monc .er{left:60px;right:60px;top:700px;height:384px}
+.monc .er>div{display:flex;gap:20px;padding:10px 0;border-top:1px solid rgba(20,20,20,.25)}
+.monc .er b{width:110px;flex:none;font:800 22px Inter;color:#7A1A2E;padding-top:3px}
+.monc .er p{margin:0;font:700 24px/1.22 Inter}
+.monc .er p small{display:block;font:500 20px/1.3 Inter;color:#555;margin-top:4px}
+.monc .er p small u{text-decoration:none;font-weight:700;color:#141414}
+.monc .you{left:60px;right:60px;top:1094px;border-top:2px solid #141414;padding-top:14px;display:flex;gap:22px;height:96px}
+.monc .you i{flex:none;font:800 19px Inter;letter-spacing:.14em;background:#7A1A2E;color:#fff;padding:8px 12px;font-style:normal;height:fit-content}
+.monc .you span{font:600 24px/1.32 Inter}
+.monc .qs{left:60px;right:60px;top:236px;display:flex;flex-direction:column;gap:0}
+.monc .qs>div{display:flex;gap:26px;padding:34px 0;border-top:1px solid rgba(20,20,20,.25)}
+.monc .qs em{flex:none;font:900 76px/0.9 'Playfair Display';color:#7A1A2E;font-style:normal;width:60px}
+.monc .qs b{display:block;font:900 38px/1.12 'Playfair Display'}
+.monc .qs span{display:block;font:500 23px/1.34 Inter;color:#333;margin-top:8px}
+.monc .qs small{display:block;font:800 19px Inter;letter-spacing:.08em;color:#7A1A2E;margin-top:8px}
+/* ===== v6 (26.10): все рынки с метками, фото главного события, анализ Факт→Почему→Следует→Для рынка→Дальше ===== */
+.btc{display:inline-block;width:1.05em;height:1.05em;border-radius:50%;background:#F2A900;color:#fff;font:900 .78em/1.05em Inter;text-align:center;font-style:normal;vertical-align:.04em}
+.monc .mkts{left:60px;top:236px;display:flex;gap:8px;z-index:3}
+.monc .mkts span{font:800 18px Inter;letter-spacing:.06em;padding:7px 11px;border:2px solid #141414;background:#F3F1EC}
+.monc .mkts span.off{opacity:.28;border-style:dashed}
+.monc .mkts span.on{background:#141414;color:#F3F1EC}
+.monc .dpc{top:296px;width:340px;right:66px}.monc .dpc .ph{height:200px}
+.monc .hd{top:290px;width:560px;right:auto}
+.monc .hm{top:326px;font-size:88px}
+.monc .ht{top:424px;width:560px;height:104px;font-size:40px}
+.monc .hw{top:536px;width:560px;height:150px;font-size:23px}
+.monc .er{top:704px;height:300px}
+.monc .er>div{padding:8px 0}
+.monc .er b{width:140px;font-size:20px}
+.monc .er p{font-size:22px}.monc .er p small{font-size:19px}
+.monc .sc6{left:60px;right:60px;top:1010px;height:126px;display:flex;gap:12px}
+.monc .sc6>div{flex:1;border:2px solid #141414;padding:12px 16px;background:#fff}
+.monc .sc6 i{display:block;font:800 17px Inter;letter-spacing:.12em;font-style:normal;margin-bottom:6px}
+.monc .sc6 .n i{color:#7A1A2E}.monc .sc6 .u i{color:#1F7A4D}.monc .sc6 .d i{color:#B3261E}
+.monc .sc6 span{display:block;font:600 21px/1.3 Inter}
+.monc .lgd{left:60px;right:200px;top:1152px;font:600 19px Inter;color:#555}
+.monc .crows{top:762px;height:384px}.monc .crows div{padding:6px 0}.monc .crows small{font-size:19px}
+.monc .crows span{font-size:22px}
+.monc .wk em{font-size:16px}
+/* события дня v6 */
+.evc .res{top:398px;height:178px}
+.evc .res .bn{font-size:104px}
+.evc .res .cmp div{font-size:20px}
+.evc .res .side{flex:none;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.evc .res .side .vd{margin:0}
+.evc .dev{font:800 21px Onest;padding:8px 14px;border-radius:12px;background:#fff;color:#0D1520;white-space:nowrap}
+.evc .hint{top:588px}
+.evc .why{left:60px;right:60px;top:640px;height:96px;font:500 25px/1.32 Inter;color:#E6EEF8}
+.evc .fol{left:60px;right:60px;top:744px;height:96px;font:500 25px/1.32 Inter;color:#E6EEF8}
+.evc .why b,.evc .fol b{color:#fff}
+.evc .lab2{display:inline-block;font:800 17px Onest;letter-spacing:.14em;color:#6E9BD1;font-style:normal;margin-right:12px}
+.evc .mk{top:852px;height:204px}.evc .mk .tl{min-height:136px;padding:14px 16px}
+.evc .mk .tl p{font-size:19px}
+.evc .nx5{top:1074px;height:100px}
+/* Вт · гайд-карусель (Navy & Gold) */
+.tuec .sk{left:60px;top:150px;font:600 18px Inter;letter-spacing:.26em;color:#C9A45C}
+.tuec .rn{left:60px;top:200px;font:600 220px/0.9 'Cormorant Garamond';color:#C9A45C}
+.tuec .gh{left:60px;right:60px;top:440px;font:600 74px/1.02 'Cormorant Garamond';color:#F6F1E6}
+.tuec .gt{left:60px;right:60px;top:640px;height:230px;font:500 30px/1.4 Inter;color:#F3EBDA}
+.tuec .gt b{color:#E9D9B4}
+.tuec .ex{left:60px;right:60px;top:900px;border:1px solid rgba(201,164,92,.6);padding:24px 28px;font:500 25px/1.38 Inter;color:rgba(243,235,218,.85)}
+.tuec .ex i{display:block;font:600 17px Inter;letter-spacing:.26em;color:#C9A45C;font-style:normal;margin-bottom:8px}
+.tuec .qz{left:60px;right:60px;top:250px;display:flex;flex-direction:column;gap:22px}
+.tuec .qz>div{border-top:1px solid rgba(201,164,92,.5);padding-top:16px}
+.tuec .qz b{display:block;font:600 40px/1.1 'Cormorant Garamond';color:#F6F1E6;margin-bottom:12px}
+.tuec .qz span{display:inline-block;margin:0 10px 10px 0;padding:9px 16px;border:1px solid rgba(201,164,92,.55);font:500 22px Inter;color:#F3EBDA}
+.tuec .qz span em{font-style:normal;color:#C9A45C;font-weight:800;margin-right:8px}
+.tuec .gh2{left:60px;right:60px;top:196px;font:600 96px/1 'Cormorant Garamond';color:#F6F1E6}
+.tuec .ans{left:60px;right:60px;top:330px;display:flex;flex-direction:column;gap:14px}
+.tuec .ans div{display:flex;gap:22px;align-items:baseline;border-top:1px solid rgba(201,164,92,.4);padding-top:14px;font:500 26px/1.35 Inter;color:#F3EBDA}
+.tuec .qz.one b{font-size:58px;line-height:1.12;margin-bottom:40px}.tuec .qz.one span{display:block;font-size:34px;padding:24px 28px;margin:0 0 18px}
+.tuec .ans.one div{font-size:36px;line-height:1.35}.tuec .ans.one b{font-size:72px}
+.tuec .ans b{flex:none;width:90px;font:600 40px 'Cormorant Garamond';color:#C9A45C}
+.tuec .nxg{left:60px;right:60px;top:900px;background:#C9A45C;color:#0A1931;padding:28px 32px}
+.tuec .nxg i{display:block;font:700 17px Inter;letter-spacing:.26em;font-style:normal}
+.tuec .nxg b{display:block;font:600 60px/1.05 'Cormorant Garamond';margin:8px 0 4px}
+.tuec .nxg span{font:500 24px/1.3 Inter}
+.tuec .cnt,.thuc .cnt,.monc .cnt{z-index:9}
+.tuec .cnt{right:60px;top:1150px;font:600 22px Inter;color:#C9A45C;letter-spacing:.06em}
+.tuec .swipe{left:60px;top:1150px;font:600 24px Inter;color:#C9A45C;letter-spacing:.06em}
+/* Чт · нарратив-карусель (цвета — как .thu, перекраска swap-v6) */
+.thuc{background:#F1ECE2;color:#16203A}.thuc .swipe,.thuc .cnt{color:#16203A !important}
+.thuc .bd .tag{background:#16203A;color:#F1ECE2}.thuc .bd span{color:#16203A}
+.thuc .src{color:rgba(22,32,58,.7)}.thuc .ft{background:#16203A;color:rgba(241,236,226,.7)}
+.thuc .k{left:60px;top:136px;color:#16203A}
+.thuc h1{left:56px;right:60px;top:180px;font:800 76px/1.06 Unbounded;letter-spacing:-.03em;color:#16203A}
+.thuc .ppl{left:60px;right:60px;top:520px;display:flex;gap:30px}
+.thuc .ppl>div{flex:1;display:flex;gap:20px;align-items:center}
+.thuc .ppl .p{width:180px;height:180px;flex:none;border-radius:50%;background:radial-gradient(#2B3A63,#1B2647);border:3px solid #16203A;overflow:hidden}
+.thuc .ppl .p img{width:180px;height:180px;filter:grayscale(1) contrast(1.05)}
+.thuc .ppl b{display:block;font:800 30px/1.1 Unbounded;color:#16203A}
+.thuc .ppl span{display:block;font:600 22px/1.3 Inter;color:#3A4566;margin-top:8px}
+.thuc .lead{left:60px;right:60px;top:780px;font:500 32px/1.4 Inter;color:#16203A}
+.thuc .sh{left:60px;right:60px;top:186px;display:flex;align-items:center;gap:18px;font:800 60px Unbounded;letter-spacing:-.03em}
+.thuc .up .ar,.thuc .sh.up .ar{border-bottom:30px solid #1F7A4D}.thuc .sh.dn .ar{border-top:30px solid #B3261E}
+.thuc .ar{width:0;height:0;border-left:20px solid transparent;border-right:20px solid transparent}
+.thuc .its{left:60px;right:60px;top:320px;display:flex;flex-direction:column;gap:18px}
+.thuc .its>div{border:2px solid #16203A;background:#FBF8F2;padding:26px 28px}
+.thuc .its b{display:block;font:700 32px/1.22 Inter;color:#16203A}
+.thuc .its span{display:block;font:500 27px/1.36 Inter;color:#2A3352;margin-top:10px}
+.thuc .its small{display:block;font:700 20px Inter;letter-spacing:.08em;color:#5A6585;margin-top:12px}
+.thuc .tl4{left:60px;right:60px;top:320px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.thuc .tl4>div{border:2px solid #16203A;background:#FBF8F2;padding:24px 26px;min-height:330px}
+.thuc .tl4 h4{margin:0 0 12px;font:800 32px Unbounded;color:#16203A}
+.thuc .tl4 u{display:inline-block;text-decoration:none;font:800 18px Inter;padding:5px 10px;margin-bottom:12px}
+.thuc .tl4 u{font-size:20px}.thuc .tl4 u.up{background:rgba(31,122,77,.12);color:#1F7A4D}.thuc .tl4 u.dn{background:rgba(179,38,30,.1);color:#B3261E}.thuc .tl4 u.eq{background:rgba(22,32,58,.1);color:#16203A}
+.thuc .tl4 p{margin:0;font:500 26px/1.38 Inter;color:#2A3352}
+.thuc .out{left:60px;right:60px;top:220px;font:800 50px/1.22 Unbounded;letter-spacing:-.02em;color:#16203A;border-left:8px solid #16203A;padding-left:30px}
+.thuc .wt{left:60px;right:60px;top:720px;display:flex;flex-direction:column;gap:14px}
+.thuc .wt div{display:flex;gap:24px;border-top:2px solid #16203A;padding:18px 0 4px;font:500 28px/1.35 Inter;color:#16203A}
+.thuc .wt b{flex:none;width:240px;font:800 24px Inter;color:#16203A;padding-top:3px}
+.thuc .cnt{right:60px;top:1150px;font:700 22px Inter;color:#C8A96A}
+.thuc .swipe{left:60px;top:1150px;font:700 24px Inter;color:#C8A96A}
+</style></head><body>
+<script>
+/* ============================ DATA — меняется только здесь ============================
+   Цифры — только из источников с датой (иначе «XX»). Фото — img/, автор и лицензия — в © (поле ph). */
+const B='<i class="btc">₿</i>';
+const DATA={
+ hello:{tag:'ЗАКРЫТЫЙ КАНАЛ',ph:'Фото: G. Grachev CC BY 2.0 · B. G. Ward CC0 · Bits86 CC0 · Szaaman PD',
+  cards:[['РОССИЯ','img/mcity.jpg'],['США','img/nysesign.jpg'],['КРИПТА','img/btc_cut.png'],['СЫРЬЁ','img/gold.jpg']],
+  k:'Россия · США · крипта · сырьё',title:'Добро пожаловать в&nbsp;<b>закрытый канал</b>',
+  lead:'Каждый день — своя рубрика и свой стиль: по картинке сразу видно, гайд это, цифра или событие.',
+  list:['пн — неделя впереди','вт — гайд в PDF и тест','сб — итоги недели','ЦБ и ФРС — разбор сразу'],src:'Расписание — в закрепе · Не является инвестиционной рекомендацией'},
+ nav:{tag:'РАСПИСАНИЕ',ph:'Фото: Federal Reserve PD · Kuba CC BY 3.0',title:'Расписание PRO',lead:'У каждого дня свой стиль. Хэштег — все выпуски рубрики.',
+  days:[
+   {c:'r1',dd:'ПН',t:'Неделя впереди',s:'Главные даты недели и на что смотреть',h:'#НЕДЕЛЯ_ВПЕРЕДИ',im:'<i></i>'},
+   {c:'r2',dd:'ВТ',t:'Гайд недели',s:'PDF на 20 минут + тест',h:'#ГАЙД',im:'<i></i>'},
+   {c:'r3',dd:'СР',t:'Индикатор недели',s:'Одна цифра: лучше или хуже ожиданий',h:'#ИНДИКАТОР',im:'3,7%'},
+   {c:'r4',dd:'ЧТ',t:'Нарратив недели',s:'Что тянет рынок вверх и что держит',h:'#НАРРАТИВ',im:'<img src="img/warsh.png">'},
+   {c:'r5',dd:'ПТ',t:'Актив недели',s:'Цена, что её двигает, сценарии',h:'#АКТИВ_НЕДЕЛИ',im:'GOLD'},
+   {c:'r6',dd:'СБ',t:'Итоги недели',s:'Россия, США, крипта, сырьё — и что для вас',h:'#ИТОГИ_НЕДЕЛИ',im:''},
+   {c:'r7',dd:'ВС',t:'Опрос недели',s:'Выбираете тему следующего гайда',h:'#ОПРОС',im:'?'},
+   {c:'r8',dd:'ВЕЧЕР<small>КАЖДЫЙ</small>',t:'События дня',s:'Карусель: каждое событие — итог и что это значит',h:'#СОБЫТИЯ',im:'20:30'},
+   {c:'r9',dd:'⚡',t:'Большое событие',s:'Решение ЦБ или ФРС, обвал 5%+ — разбор сразу',h:'#СОБЫТИЕ',im:'14%'}],
+  src:'Время — московское · Не является инвестиционной рекомендацией'},
+ mon:{tag:'НЕДЕЛЯ ВПЕРЕДИ',ph:'Фото: Federal Reserve, PD',img:'img/fed.jpg',cap:'Здание ФРС, Вашингтон',
+  day:'Главное недели',dayDate:'СР · 28.10',time:'21:00',k:'26 октября — 1 ноября',title:'Решение ФРС по ставке',
+  lead:'Прогноз календаря — ставку оставят 3,75–4%. Важнее, что Уорш скажет о следующих шагах.',
+  rows:[['ЧТ 29.10 15:30','ВВП и базовая инфляция PCE США'],['СР–ЧТ 23:05','Отчёты Microsoft, Alphabet, Amazon']],
+  week:[['ПН','26.10',0],['ВТ','27.10',0],['СР','28.10',3],['ЧТ','29.10',5],['ПТ','30.10',0],['СБ','31.10',0],['ВС','01.11',0]],
+  src:'Календарь Пульса рынка · точки — сильные события · время МСК · Не инвестрекомендация'},
+ tue:{tag:'ГАЙД НЕДЕЛИ',ph:'Фото: Kuba, CC BY 3.0',img:'img/cbr.jpg',k:'Гайд №1 · вторник<br>Банк России · PDF + тест',title:'Ключевая ставка',
+  lead:'Цена денег в стране: почему от одного решения ЦБ зависят ваш вклад, ипотека, рубль и акции',
+  st:[['14%','ставка ЦБ, сохранена 23.10'],['20 мин','чтения — от новичка до профи'],['5 глав','+ тест и шпаргалка']],lbl:'МАРШРУТ · 5 ГЛАВ',
+  toc:['Объяснить ключевую ставку одной фразой','Прочитать пресс-релиз ЦБ за минуту','Понять реакцию рубля, ОФЗ, акций и вкладов','Что делать с деньгами при росте, паузе и снижении','День решения ЦБ — по чек-листу'],
+  src:'Образовательный материал · Не является инвестиционной рекомендацией'},
+ wed:{tag:'ИНДИКАТОР',ph:'Иллюстрация — Пульс рынка',k:'🇺🇸 Инфляция США · сентябрь, г/г',big:'3,7%',
+  title:'Хуже ожиданий: ждали 3,6%',trio:[['Прогноз','3,6%'],['Было','3,4%'],['Базовая','2,6%']],
+  scale:{t:'Шкала: цель ФРС — и где цены сейчас',max:4,target:2,now:3.7,tLabel:'цель 2%',nLabel:'сейчас 3,7%'},
+  src:'Источник: Бюро статистики труда США (BLS), 15.10.2026; прогноз — календарь Пульса рынка · Не является инвестиционной рекомендацией'},
+ thu:{tag:'НАРРАТИВ',ph:'Портреты: Federal Reserve PD · Е. Штукина / Kremlin.ru CC BY 4.0',k:'Нарратив недели · о чём думает рынок',title:'Дорогие деньги — надолго?',
+  people:[['img/warsh.png','Кевин Уорш','глава ФРС'],['img/nabiullina.png','Эльвира Набиуллина','глава Банка России']],
+  up:['Прогноз ЦБ: средняя ставка в 2027 — 12,5–13,5%','Прибыль Meta и Tesla выше прогнозов (21.10)','Индекс МосБиржи за неделю +1,6%'],
+  down:['ЦБ второй раз подряд держит 14%','Инфляция в США 3,7% — выше прогноза','ФРС в сентябре подняла ставку до 3,75–4%'],
+  out:'Пока ставки высокие с обеих сторон, следующий сигнал — решение ФРС 28.10.',
+  src:'Источники: Банк России 23.10 · BLS 15.10 · Мосбиржа · отчёты компаний 21.10 · Не является инвестиционной рекомендацией'},
+ fri:{tag:'АКТИВ НЕДЕЛИ',ph:'Иллюстрация — Пульс рынка',k:'Актив недели · сырьё',name:'Золото',sub:'фьючерс COMEX, $ за тройскую унцию',price:'4 007,9 $',
+  ch:[['r','▼ −4,1% за неделю'],['r','▼ −3,9% за месяц']],
+  series:[4168.4,4179.7,4186.7,4202.3,4162.3,4156.8,4187.1,4140.7,4157,4216.3,4190.6,4177.3,4107.9,4170.1,4181.1,4160.1,4142.6,4150,4060.4,4007.9],
+  from:'28.09',to:'23.10',
+  sc:[['ФРС 28.10','мягкий сигнал о ставке — давление на цену вверх'],['доллар','доллар и доходности растут — давление вниз'],['риски','напряжение в мире растёт — спрос на защиту']],
+  src:'Источник: COMEX (Yahoo Finance), закрытие 23.10.2026 · Сценарии — условия, а не прогноз · Не является инвестиционной рекомендацией'},
+ sat:{tag:'ИТОГИ НЕДЕЛИ',ph:'Фото: Kuba, CC BY 3.0',dates:'19–25 ОКТЯБРЯ',cap:'Банк России, Москва. 23.10 ставка сохранена на 14%',
+  title:'ЦБ второй раз подряд оставил ставку 14%',
+  tiles:[['🇷🇺 РОССИЯ','u','▲ 1,6%','Индекс МосБиржи 2 469'],['🇺🇸 США','d','▼ 0,5%','S&P 500 7 624'],['🪙 КРИПТА','d','▼ 0,5%','Биткоин 81 074 $'],['🥇 СЫРЬЁ','d','▼ 4,1%','Золото 4 008 $']],
+  you:'Высокие ставки по вкладам — дольше: ЦБ не снизил ставку и ждёт средние 12,5–13,5% в 2027.',
+  src:'Источники: Банк России · Мосбиржа · S&P · CoinGecko/Yahoo · COMEX · изменения 16.10 → 23.10 · Не является инвестиционной рекомендацией'},
+ sun:{tag:'ОПРОС',ph:'Иконки — Пульс рынка',k:'Опрос недели · выбираете вы',title:'Что разобрать в <b>следующем гайде?</b>',
+  opts:[['bond','ОФЗ','Как работают гособлигации и купоны'],['cart','Инфляция','Как считают рост цен и что он меняет'],['btc','Биткоин','Что двигает цену и откуда риски']],
+  cta:'Голосуйте в опросе под этим постом',src:'Гайды — образовательный материал · Не является инвестиционной рекомендацией'},
+ evs:{tag:'СОБЫТИЯ',ph:'',k:'События дня · время МСК',title:'Пятница, 23 октября',
+  items:[
+   {tm:'13:30',fl:'🇷🇺',t:'Решение Банка России по ключевой ставке',hi:1,nums:[['Факт','14%'],['Было','14%']],vd:'',vt:'Ставка без изменений'},
+   {tm:'16:45',fl:'🇺🇸',t:'Деловая активность в промышленности (S&P Global)',nums:[['Факт','56,0'],['Прогноз','55,4'],['Было','55,9']],vd:'better',vt:'Лучше ожиданий'},
+   {tm:'16:45',fl:'🇺🇸',t:'Деловая активность в услугах (S&P Global)',nums:[['Факт','57,9'],['Прогноз','57,9'],['Было','58,8']],vd:'',vt:'Как ждали'},
+   {tm:'17:00',fl:'🇺🇸',t:'Настроения потребителей (Мичиган)',nums:[['Факт','48,0'],['Прогноз','46,3'],['Было','48,1']],vd:'better',vt:'Лучше ожиданий'}],
+  src:'Источник: календарь Пульса рынка · Банк России · Не является инвестиционной рекомендацией'},
+ monc:{tag:'НЕДЕЛЯ ВПЕРЕДИ',ph:'Фото: Architect of the Capitol PD · Gary Todd CC0 · B. G. Ward CC0 · N. Huenerfuerst CC0 · M. Hillary CC BY 2.0 (Wikimedia Commons)',dates:'2 — 8 ноября',
+  pics:[['img/d6-capitol.jpg','Выборы · вт 03.11'],['img/nysesign.jpg','NFP · пт 06.11'],['img/d6-opec.jpg','ОПЕК+ · вс 01.11']],
+  k:'Главное недели',title:'Выборы в США и рынок труда',when:'ВТ 03.11 — ВЫБОРЫ · ПТ 06.11 — NFP',lead:'В нефти — новое решение ОПЕК+ (вс 01.11). В России — праздник 4 ноября, но Мосбиржа работает. В Англии — решение по ставке.',
+  week:[['ПН','02.11',1,'🇺🇸 Apple · ISM'],['ВТ','03.11',1,'🇺🇸 выборы · '+B],['СР','04.11',0,'🇷🇺 праздник'],['ЧТ','05.11',0,'🌍 Банк Англии'],['ПТ','06.11',1,'🇺🇸 NFP · '+B],['СБ','07.11',0,''],['ВС','08.11',0,'']],
+  days:[
+   {sub:'вс 01.11 🛢 ОПЕК+ · 18:00 🇺🇸 ISM промышленность',sd:'ПН',dn:'Понедельник',dd:'02.11',hi:1,big:'00:30',fl:'🇺🇸',t:'Отчёт Apple — первый у CEO Джона Тернуса',mk:['us','oil'],img:'img/d6-apple.jpg',cap:'Apple Park, Купертино',
+    w:'Выйдет в ночь на вторник (00:30 МСК 03.11). Утром рынок отыграет и решение ОПЕК+ по добыче на декабрь — его примут в воскресенье.',
+    ev:[['вс 01.11','🛢 ОПЕК+ (7 стран): добыча на декабрь','в октябре квоты не меняли — <u>31,01 млн</u> баррелей в сутки'],['18:00','🇺🇸 Деловая активность в промышленности ISM','выше 50 — рост, ниже 50 — спад'],['00:30','🇺🇸 Отчёт Apple','первый отчёт нового CEO; звонок с CFO Кеваном Парекхом']],
+    sc:[['▲ ЕСЛИ ЛУЧШЕ ОЖИДАНИЙ','Опора для Nasdaq: Apple — одна из крупнейших компаний индекса'],['▼ ЕСЛИ ХУЖЕ','Давление на технологии перед выборами и NFP']]},
+   {sub:'18:00 🇺🇸 вакансии JOLTS · '+B+' ждёт итогов',sd:'ВТ',dn:'Вторник',dd:'03.11',hi:1,big:'Весь день',fl:'🇺🇸',t:'Выборы в Конгресс США',mk:['us','c'],img:'img/d6-capitol.jpg',cap:'Капитолий, Вашингтон',
+    w:'Промежуточные выборы: кто получит Конгресс. От этого зависят бюджет и пошлины. Итоги — в ночь на 04.11 по Москве.',
+    ev:[['весь&nbsp;день','🇺🇸 Выборы в Конгресс (промежуточные)','итоги — в ночь на 04.11'],['18:00','🇺🇸 Вакансии JOLTS за сентябрь','сколько вакансий у работодателей — разминка перед NFP'],['весь&nbsp;день',B+' Крипта','своих крупных событий нет — ждёт итогов выборов']],
+    sc:[['● ЧТО СМОТРЕТЬ','Расклад сил в Палате представителей и Сенате — он решает судьбу бюджета'],['● ДЛЯ РЫНКА','Пошлины и госрасходы двигают доллар, акции США и крипту']]},
+   {sub:'до 19:00 · ОФЗ — дата уточняется · 18:00 🇺🇸 ISM услуги',sd:'СР',dn:'Среда',dd:'04.11',hi:0,big:'09:50',fl:'🇷🇺',t:'Мосбиржа работает в праздник',mk:['ru','us'],img:'img/mcity.jpg',cap:'Москва-Сити',
+    w:'День народного единства. Мосбиржа торгует в сессии выходного дня с 09:50 до 19:00. Вечером — данные по услугам США.',
+    ev:[['09:50–19:00','🇷🇺 Сессия выходного дня на Мосбирже','торги идут, хотя в России выходной'],['уточняется','🇷🇺 Аукционы ОФЗ и недельная инфляция','обычно по средам — перенос из-за праздника уточняем'],['18:00','🇺🇸 Деловая активность в услугах ISM','услуги — большая часть экономики США']],
+    sc:[['● ДЛЯ ВАС','Сделки можно совершать 09:50–19:00 — проверьте, работает ли ваш брокер'],['▲ ЕСЛИ ISM ВЫШЕ 50','Экономика США крепкая — у ФРС меньше поводов снижать ставку']]},
+   {sub:'сейчас 3,75% · 🇺🇸 рынок отыгрывает выборы',sd:'ЧТ',dn:'Четверг',dd:'05.11',hi:0,big:'15:00',fl:'🌍',t:'Банк Англии — решение по ставке',mk:['w','us'],img:'img/d6-boe.jpg',cap:'Банк Англии, Лондон',
+    w:'Ставка сейчас 3,75%. Решение двигает фунт, а через него — доллар и мировые рынки. В России и крипте сильных событий нет.',
+    ev:[['15:00','🌍 Банк Англии: ставка','сейчас <u>3,75%</u>'],['весь&nbsp;день','🇺🇸 Рынок отыгрывает итоги выборов','первый полный день после подсчёта голосов']],
+    sc:[['▲ ЕСЛИ ЖЁСТЧЕ','Фунт сильнее, доллар слабее'],['▼ ЕСЛИ МЯГЧЕ','Фунт слабее — поддержка доллара']]},
+   {sub:'безработица (было 4,2%) · '+B+' 🛢 реагируют на доллар',sd:'ПТ',dn:'Пятница',dd:'06.11',hi:1,big:'16:30',fl:'🇺🇸',t:'Рынок труда США: NFP и безработица',mk:['us','c','oil'],img:'img/nysesign.jpg',cap:'Нью-Йоркская биржа',
+    w:'Рабочие места за октябрь и безработица (было 4,2%). Первые данные о работе после решения ФРС 28.10.',
+    ev:[['16:30','🇺🇸 Рабочие места NFP за октябрь','сколько рабочих мест создали вне сельского хозяйства'],['16:30','🇺🇸 Безработица за октябрь','было <u>4,2%</u>']],
+    sc:[['▲ ЕСЛИ СИЛЬНЕЕ','Ставка ФРС дольше высокая: доллар сильнее, давление на золото и крипту'],['▼ ЕСЛИ СЛАБЕЕ','Довод за снижение ставки — поддержка акциям, золоту и крипте']]}],
+  qs:[['Кто получит Конгресс?','От этого зависят бюджет и пошлины США.','ВТ 03.11 · итоги в ночь на 04.11'],['Остывает ли рынок труда США?','NFP — первые данные о работе после решения ФРС 28.10. Безработица была 4,2%.','ПТ 06.11 · 16:30'],['Удержится ли нефть выше $100?','Brent выше $100 из-за перебоев в Ормузском проливе; ОПЕК+ решает добычу на декабрь.','ВС 01.11 · ОПЕК+']],
+  src:'Календарь Пульса рынка · BLS · ISM · Банк Англии · Мосбиржа · ОПЕК · время МСК · Не является инвестиционной рекомендацией'},
+ evc:{tag:'СОБЫТИЯ',ph:'Фото: Kuba CC BY 3.0 · B. G. Ward CC0 · Architect of the Capitol PD · Andy Li CC0 (Wikimedia Commons)',day:'Пятница, 23 октября',k:'События дня · итоги · время МСК',
+  sub:'Что вышло, почему и что это значит — листайте →',cover:['img/cbr.jpg','img/nysesign.jpg'],
+  items:[
+   {tm:'13:30',fl:'🇷🇺',who:'Банк России',t:'Решение по ключевой ставке',big:'14%',img:'img/cbr.jpg',nums:[['Факт','14%'],['Было','14%']],vd:'',vt:'Без изменений',s:'14% второй раз подряд',hint:'<b>Ключевая ставка</b> — цена денег в стране: от неё зависят вклады, кредиты и ОФЗ.',
+    why:'цены растут быстрее цели ЦБ 4% — дешевить деньги рано.',fol:'деньги дорогие дольше: высокие ставки по вкладам и кредитам сохраняются.',
+    mk:[['up','Вклады','держатся','Ставки по вкладам остаются высокими дольше'],['up','Рубль','поддержка','Высокая ставка держит спрос на рублёвые активы'],['dn','Акции РФ','давление','Дорогие кредиты сдерживают прибыль компаний']],
+    nx:'Прогноз ЦБ: средняя ставка в 2027 — 12,5–13,5%. Следующее решение — в декабре.'},
+   {tm:'16:45',fl:'🇺🇸',who:'S&P Global',t:'Деловая активность в промышленности США',big:'56,0',img:'img/nysesign.jpg',nums:[['Факт','56,0'],['Прогноз','55,4'],['Было','55,9']],vd:'better',vt:'Лучше ожиданий',s:'56,0 при прогнозе 55,4 — заводы ускоряются',hint:'<b>Индекс PMI</b> — опрос закупщиков компаний: выше 50 — рост, ниже 50 — спад.',
+    why:'закупщики заводов оценили дела лучше, чем ждали аналитики.',fol:'экономика США крепкая — у ФРС меньше поводов снижать ставку 28.10.',
+    mk:[['up','Доллар','поддержка','ФРС меньше поводов снижать ставку'],['eq','Акции','смешанно','Экономика сильна, но ставка дольше высокая'],['dn','Золото','давление','Высокая ставка делает его менее выгодным']],
+    nx:'Решение ФРС — ср 28.10, 21:00.'},
+   {tm:'16:45',fl:'🇺🇸',who:'S&P Global',t:'Деловая активность в услугах США',big:'57,9',img:'img/d6-capitol.jpg',nums:[['Факт','57,9'],['Прогноз','57,9'],['Было','58,8']],vd:'',vt:'Как ждали',s:'57,9 — ровно как ждали',hint:'<b>PMI услуг</b> — то же для сферы услуг: это большая часть экономики США.',
+    why:'услуги растут, но чуть медленнее прошлого месяца (было 58,8).',fol:'сюрприза нет — рынок ждёт ФРС и отчёты компаний.',
+    mk:[['eq','Доллар','ждёт','Сюрприза нет — курс ждёт ФРС'],['eq','Акции','без реакции','Рынок смотрит на отчёты компаний'],['eq','Облигации','ждут','Доходности ждут решения 28.10']],
+    nx:'Следом — ВВП и инфляция PCE, чт 29.10, 15:30.'},
+   {tm:'17:00',fl:'🇺🇸',who:'Мичиганский университет',t:'Настроения потребителей',big:'48,0',img:'img/amzn.jpg',nums:[['Факт','48,0'],['Прогноз','46,3'],['Было','48,1']],vd:'better',vt:'Лучше ожиданий',s:'48,0 — слабо, но лучше прогноза',hint:'<b>Индекс Мичигана</b> — опрос семей США о деньгах и планах покупок.',
+    why:'семьи оценивают свои финансы осторожно, но не так плохо, как ждали.',fol:'расходы людей — около 2/3 экономики США: осторожность тормозит рост.',
+    mk:[['dn','Ритейл США','давление','Люди осторожнее тратят — меньше продаж'],['eq','Доллар','ровно','Данные почти совпали с прошлым месяцем'],['up','Облигации','рост','Слабый спрос — довод за снижение ставки']],
+    nx:'Смотрим, подтвердят ли это продажи в ноябре.'}],
+  sum:[['🇷🇺','<b>Россия:</b> ставка 14% — высокие ставки по вкладам надолго.'],['🇺🇸','<b>США:</b> данные не хуже прогнозов — аргумент против быстрого снижения ставки ФРС.']],
+  next:{k:'ГЛАВНОЕ ВПЕРЕДИ',t:'Ср 28.10 · 21:00',s:'Решение ФРС по ставке и слова Уорша о следующих шагах'},
+  src:'Источники: календарь Пульса рынка · Банк России · S&P Global · Мичиганский университет · Не является инвестиционной рекомендацией'},
+ tuec:{tag:'ГАЙД НЕДЕЛИ',ph:'Фото: Kuba, CC BY 3.0',img:'img/cbr.jpg',k:'Гайд №1 · вторник<br>Банк России · PDF + тест',title:'Ключевая ставка',
+  lead:'Как решение ЦБ доходит до вклада, ипотеки, рубля и ОФЗ',
+  st:[['14%','ставка ЦБ, сохранена 23.10'],['20 мин','20 страниц PDF'],['18.12','следующее решение ЦБ']],lbl:'ТРИ ГЛАВНЫХ ВЫВОДА — ЛИСТАЙТЕ',
+  toc:['Ставка — это цена денег','Рынок двигает не решение, а сюрприз','Ставка доходит до вклада, ипотеки, рубля и ОФЗ'],
+  take:[['Ставка — это цена денег','Под ключевую ставку ЦБ даёт деньги банкам. <b>Выше ставка — дороже кредиты и выше проценты по вкладам.</b>','23.10 ЦБ второй раз подряд оставил ставку 14%.'],
+   ['Двигает сюрприз','Ожидания рынка уже в ценах. <b>Цены двигает разница между ожиданием и решением</b> — и слова ЦБ о будущем.','Набиуллина 23.10: места для снижения ставки в 2027 году стало меньше.'],
+   ['Ставка доходит до ваших денег','Высокая ставка <b>поддерживает рубль и вклады, но давит на ОФЗ и акции</b>: компаниям дороже занимать, вклады конкурируют с акциями.','Что делать с деньгами при росте, паузе и снижении ставки — в PDF.']],
+  quiz:[['Ждали снижения ставки с 14% до 13%, а ЦБ сохранил 14%. Что вероятнее сделают длинные ОФЗ?',['подешевеют','подорожают','не заметят']]],
+  ans:[['А','<b>Подешевеют.</b> Решение жёстче ожиданий — доходности растут, цены облигаций падают.']],
+  nxg:['В PDF','20 страниц и тест','Файл — под этим постом, тест — сразу после. Следующее решение ЦБ — 18 декабря'],
+  src:'Банк России 23.10.2026 · Образовательный материал · Не является инвестиционной рекомендацией'},
+ thuc:{tag:'НАРРАТИВ',ph:'Портреты: Federal Reserve PD · Е. Штукина / Kremlin.ru CC BY 4.0',k:'Нарратив недели · о чём думает рынок',title:'Дорогие деньги — надолго?',
+  people:[['img/warsh.png','Кевин Уорш','глава ФРС'],['img/nabiullina.png','Эльвира Набиуллина','глава Банка России']],
+  lead:'ФРС и Банк России держат ставки высокими. Разбираем, что тянет рынок вверх, что держит — и что это значит для вас.',
+  up:[['Прогноз ЦБ: средняя ставка в 2027 — 12,5–13,5%','Рынок видит путь к снижению ставки — это опора для акций и ОФЗ.','Банк России, 23.10'],['Прибыль Meta и Tesla выше прогнозов','Сильные отчёты техногигантов держат индексы США.','Отчёты компаний, 21.10'],['Индекс МосБиржи за неделю +1,6%','Рынок спокойно принял решение ЦБ по ставке.','Мосбиржа, 16 → 23.10']],
+  down:[['ЦБ второй раз подряд держит 14%','Кредиты дорогие — компании дольше ждут роста прибыли.','Банк России, 23.10'],['Инфляция в США 3,7% — выше прогноза','Аргумент против быстрого снижения ставки ФРС.','BLS, 15.10'],['ФРС в сентябре подняла ставку до 3,75–4%','Дорогой доллар давит на золото и крипту.','ФРС, сентябрь']],
+  you:[['Вклады','up','▲ дольше высокие','Пока ЦБ держит 14%, банки не спешат снижать ставки по вкладам.'],['Рубль','up','▲ поддержка','Высокая ставка держит спрос на рублёвые активы.'],['Акции','eq','● ждут сигнала','Рынок ждёт, когда ЦБ и ФРС начнут снижать ставки.'],['Золото и крипта','dn','▼ давление','Высокие ставки в США — сильнее доллар, меньше спрос на них.']],
+  out:'Пока ставки высокие с обеих сторон, следующий сигнал — решение ФРС 28.10.',
+  wt:[['СР 28.10 · 21:00','Решение ФРС и слова Уорша о декабре'],['ЧТ 29.10 · 15:30','ВВП и инфляция PCE США'],['Декабрь','Следующее решение Банка России']],
+  src:'Источники: Банк России 23.10 · BLS 15.10 · Мосбиржа · отчёты компаний 21.10 · Не является инвестиционной рекомендацией'},
+ evt:{tag:'⚡ СОБЫТИЕ',ph:'Фото: Kuba, CC BY 3.0',img:'img/cbr.jpg',big:'14%',k:'23 октября · Банк России',
+  title:'ЦБ сохранил ставку второй раз подряд',lead:'<b>Высокие ставки по вкладам — дольше.</b> Прогноз ЦБ: средняя ставка в 2027 — 12,5–13,5%.',
+  src:'Источник: Банк России, 23.10.2026 · Не является инвестиционной рекомендацией'}
+};
+if(window.DATA_IN) for(const k in window.DATA_IN) DATA[k]=Object.assign(DATA[k]||{},window.DATA_IN[k]);
+
+/* ============================ рамка и картинки ============================ */
+const BD=t=>`<div class="bd"><img src="img/logo192.png"><span>ПУЛЬС РЫНКА</span><span class="tag">${t}</span></div><div class="grain"></div>`;
+const FT=ph=>`<div class="ft" style="flex-direction:column;line-height:1.4"><span>© Пульс рынка, 2026. Только для личного использования подписчика. Распространение запрещено</span>${ph?'<span>'+ph+'</span>':''}</div>`;
+const SRC=s=>`<div class="src">${s}</div>`;
+const GOLDBARS=(w)=>`<svg width="${w}" viewBox="0 0 420 300"><defs><linearGradient id="gt${w}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBE7A6"/><stop offset=".5" stop-color="#D9AE4E"/><stop offset="1" stop-color="#9A6F1E"/></linearGradient><linearGradient id="gs${w}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8A5F15"/><stop offset="1" stop-color="#C8973A"/></linearGradient></defs>
+ ${[[20,170],[210,170],[115,62]].map(([x,y])=>`<g transform="translate(${x},${y})"><polygon points="0,110 190,110 165,40 25,40" fill="url(#gs${w})"/><polygon points="25,40 165,40 150,0 40,0" fill="url(#gt${w})"/><polygon points="25,40 165,40 190,110 0,110" fill="url(#gt${w})" opacity=".85"/><text x="95" y="84" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="20" fill="#7A5512">999,9</text></g>`).join('')}</svg>`;
+const MINIBAR=`<svg width="92" viewBox="0 0 420 300"><g transform="translate(115,90)"><polygon points="0,110 190,110 165,40 25,40" fill="#B98A2E"/><polygon points="25,40 165,40 150,0 40,0" fill="#F5D98A"/></g><g transform="translate(20,190)"><polygon points="0,110 190,110 165,40 25,40" fill="#C9A24B"/><polygon points="25,40 165,40 150,0 40,0" fill="#F5D98A"/></g><g transform="translate(210,190)"><polygon points="0,110 190,110 165,40 25,40" fill="#C9A24B"/><polygon points="25,40 165,40 150,0 40,0" fill="#F5D98A"/></g></svg>`;
+const MINISCH=`<svg width="110" height="70" viewBox="0 0 110 70"><g fill="none" stroke="#C9A24B" stroke-width="3"><circle cx="14" cy="35" r="11" fill="#4A0F1E" stroke="none"/><path d="M28 35h14m0 0l-6-5m6 5l-6 5"/><circle cx="56" cy="35" r="11"/><path d="M70 35h14m0 0l-6-5m6 5l-6 5"/><circle cx="97" cy="35" r="11"/></g><text x="14" y="41" text-anchor="middle" font-family="Playfair Display" font-weight="800" font-size="16" fill="#E9D3A0">%</text></svg>`;
+// Чек из магазина (Ср · инфляция): свой вектор
+const RECEIPT=`<svg width="380" viewBox="0 0 380 480"><defs><linearGradient id="rp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1E9E3"/></linearGradient></defs>
+ <path d="M0 0H380V440l-19 20-19-20-19 20-19-20-19 20-19-20-19 20-19-20-19 20-19-20-19 20-19-20-19 20-19-20-19 20-19-20-19 20-19-20-19 20-19-20Z" fill="url(#rp)"/>
+ <g font-family="JetBrains Mono" fill="#5A1426"><text x="190" y="64" text-anchor="middle" font-weight="800" font-size="28">КАССОВЫЙ ЧЕК</text><text x="190" y="98" text-anchor="middle" font-size="18" opacity=".6">год назад → сейчас</text>
+ ${[['Продукты','▲'],['Бензин','▲▲'],['Аренда','▲'],['Услуги','▲'],['Одежда','▲']].map((r,i)=>`<text x="32" y="${150+i*44}" font-size="24" font-weight="500">${r[0]}</text><text x="348" y="${132+i*44}" text-anchor="end" font-size="24" font-weight="800" fill="#C8322B">${r[1]}</text><line x1="32" x2="348" y1="${165+i*44}" y2="${165+i*44}" stroke="#5A1426" stroke-opacity=".15" stroke-dasharray="4 6"/>`).join('')}
+ <text x="32" y="400" font-size="30" font-weight="800">ИТОГО</text><text x="348" y="400" text-anchor="end" font-size="30" font-weight="800">+3,7%</text></g></svg>`;
+// Схема гайда (Вт): цепочка узлов со стрелками
+const SCHEME=items=>{const y0=40,dy=150;return `<svg width="510" height="${y0*2+dy*(items.length-1)+40}" viewBox="0 0 510 ${y0*2+dy*(items.length-1)+40}">
+ ${items.map((t,i)=>{const y=y0+i*dy;return `${i?`<path d="M70 ${y-dy+66}V${y-8}" stroke="#C9A24B" stroke-width="5"/><path d="M58 ${y-22}l12 14 12-14" fill="none" stroke="#C9A24B" stroke-width="5"/>`:''}
+ <circle cx="70" cy="${y+30}" r="${i?34:42}" fill="${i?'#F4EEE4':'#4A0F1E'}" stroke="#4A0F1E" stroke-width="4"/>
+ <text x="70" y="${y+42}" text-anchor="middle" font-family="Playfair Display" font-weight="900" font-size="${i?30:36}" fill="${i?'#4A0F1E':'#E9D3A0'}">${['%','₽','↔','▲'][i]||''}</text>
+ <text x="128" y="${y+40}" font-family="Playfair Display" font-weight="800" font-size="${i?32:36}" fill="#4A0F1E">${t}</text>`}).join('')}</svg>`};
+const ICONS={
+ bond:`<svg width="112" height="112" viewBox="0 0 112 112"><rect x="16" y="10" width="80" height="92" rx="6" fill="none" stroke="#C9A24B" stroke-width="5"/><path d="M30 34h52M30 50h52M30 66h30" stroke="#C9A24B" stroke-width="5"/><circle cx="76" cy="80" r="14" fill="#C9A24B"/><text x="76" y="87" text-anchor="middle" font-family="Unbounded" font-weight="800" font-size="16" fill="#5A1426">%</text></svg>`,
+ cart:`<svg width="112" height="112" viewBox="0 0 112 112"><path d="M8 22h16l12 52h52l10-38H30" fill="none" stroke="#C9A24B" stroke-width="6" stroke-linejoin="round"/><circle cx="44" cy="90" r="8" fill="#C9A24B"/><circle cx="82" cy="90" r="8" fill="#C9A24B"/><path d="M52 58l12-14 10 8 14-16" fill="none" stroke="#F7E6C0" stroke-width="5"/></svg>`,
+ btc:`<svg width="112" height="112" viewBox="0 0 112 112"><circle cx="56" cy="56" r="46" fill="none" stroke="#C9A24B" stroke-width="6"/><text x="56" y="76" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="54" fill="#C9A24B">₿</text></svg>`};
+// График за месяц (Пт)
+const CHART=(s,from,to,w=960,h=250)=>{const mn=Math.min(...s),mx=Math.max(...s),px=i=>20+i*(w-110)/(s.length-1),py=v=>20+(mx-v)/(mx-mn)*(h-70);
+ const pts=s.map((v,i)=>px(i).toFixed(1)+','+py(v).toFixed(1)).join(' ');const f=v=>v.toLocaleString('ru-RU',{maximumFractionDigits:0});
+ return `<svg class="chart" width="${w}" height="${h}"><defs><linearGradient id="cf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9A24B" stop-opacity=".35"/><stop offset="1" stop-color="#C9A24B" stop-opacity="0"/></linearGradient></defs>
+ <line x1="20" x2="${w-90}" y1="${py(mx)}" y2="${py(mx)}" stroke="#ECE6D6" stroke-opacity=".18" stroke-dasharray="6 8"/><line x1="20" x2="${w-90}" y1="${py(mn)}" y2="${py(mn)}" stroke="#ECE6D6" stroke-opacity=".18" stroke-dasharray="6 8"/>
+ <polygon points="20,${h-50} ${pts} ${px(s.length-1)},${h-50}" fill="url(#cf)"/><polyline points="${pts}" fill="none" stroke="#C9A24B" stroke-width="5" stroke-linejoin="round"/>
+ <circle cx="${px(s.length-1)}" cy="${py(s[s.length-1])}" r="10" fill="#FF6B6B"/>
+ <g font-family="JetBrains Mono" font-size="20" font-weight="700" fill="#ECE6D6" fill-opacity=".72"><text x="${w-72}" y="${py(mx)+7}">${f(mx)}</text><text x="${w-72}" y="${py(mn)+7}">${f(mn)}</text><text x="20" y="${h-14}">${from}</text><text x="${w-90}" y="${h-14}" text-anchor="end">${to}</text><text x="${w/2-60}" y="${h-14}" text-anchor="middle">цена за месяц</text></g></svg>`};
+
+/* ============================ карточки ============================ */
+const C={
+hello:d=>{const pos=[[50,170,-8],[296,140,-3],[542,150,4],[788,176,8]];
+ return `<div class="abs pro">PRO</div>${d.cards.map((c,i)=>`<div class="pc" style="left:${pos[i][0]}px;top:${pos[i][1]}px;transform:rotate(${pos[i][2]}deg)"><div class="ph" style="background-image:url(${c[1]})${c[0]=='КРИПТА'?';background-color:#1d1d1d;background-size:85%;background-repeat:no-repeat':''}"></div><b>${c[0]}</b></div>`).join('')}
+ <div class="abs k">${d.k}</div><h1 class="abs">${d.title}</h1><div class="abs lead">${d.lead}</div><div class="abs list">${d.list.map(x=>`<div>${x}</div>`).join('')}</div>`},
+nav:d=>`<h1 class="abs">${d.title}</h1><div class="abs lead">${d.lead}</div><div class="abs rows">${d.days.map(r=>`<div class="row ${r.c}"><div class="dd">${r.dd}</div><div class="im">${r.im=='SCHEME'?MINISCH:r.im=='GOLD'?MINIBAR:r.im}</div><div class="tx"><b>${r.t}</b><span>${r.s}</span></div><div class="hs">${r.h}</div></div>`).join('')}</div>`,
+mon:d=>`<div class="pc"><div class="ph" style="background-image:url(${d.img})"></div><b>${d.cap}</b></div>
+ <div class="abs day">${d.day}<br><span>${d.dayDate}</span></div><div class="abs big">${d.time}</div>
+ <div class="abs k">${d.k}</div><h1 class="abs">${d.title}</h1><div class="abs lead">${d.lead}</div>
+ <div class="abs rows">${d.rows.map(r=>`<div><b>${r[0]}</b>${r[1]}</div>`).join('')}</div>
+ <div class="abs wk">${d.week.map(w=>`<div class="${w[2]?'on':''}"><b>${w[0]}</b><span>${w[1]}</span><u>${'<i></i>'.repeat(w[2])}</u></div>`).join('')}</div>`,
+tue:d=>`<div class="frame"></div><div class="abs archl"></div><div class="abs arch" style="background-image:url(${d.img})"></div>
+ <div class="abs k">${d.k}</div><h1 class="abs">${d.title}</h1><div class="abs lead">${d.lead}</div>
+ <div class="abs st">${d.st.map(x=>`<div><b>${x[0]}</b>${x[1]}</div>`).join('')}</div>
+ <div class="abs lbl">${d.lbl}<i></i></div><div class="abs toc">${d.toc.map((x,i)=>`<div><b>${['I','II','III','IV','V','VI'][i]}</b>${x}</div>`).join('')}</div>`,
+wed:d=>{const s=d.scale,p=v=>(v/s.max*100)+'%';return `${RECEIPT.replace('<svg width="380"','<svg class="obj" width="330"')}<div class="abs k">${d.k}</div><div class="abs big">${d.big}</div><h1 class="abs">${d.title}</h1>
+ <div class="abs trio">${d.trio.map(t=>`<div>${t[0]}<b>${t[1]}</b></div>`).join('')}</div>
+ <div class="abs sc"><div class="t">${s.t}</div><div class="bar"><i style="width:${p(s.now)}"></i><u style="left:${p(s.target)}"></u></div><div class="lb"><span style="left:${p(s.target)}">${s.tLabel}</span><span style="left:${p(s.now)};transform:translateX(-80%)">${s.nLabel}</span></div></div>`},
+thu:d=>`<div class="abs k">${d.k}</div><h1 class="abs">${d.title}</h1>
+ <div class="abs ppl">${d.people.map(p=>`<div><div class="p"><img src="${p[0]}"></div><div><b>${p[1]}</b><span>${p[2]}</span></div></div>`).join('')}</div>
+ <div class="abs cols"><div class="col up"><h3><span class="ar"></span>Тянет вверх</h3>${d.up.map(x=>`<div>${x}</div>`).join('')}</div><div class="col dn"><h3><span class="ar"></span>Держит</h3>${d.down.map(x=>`<div>${x}</div>`).join('')}</div></div>
+ <div class="abs out">${d.out}</div>`,
+fri:d=>`${GOLDBARS(340).replace('<svg','<svg class="obj"')}<div class="abs k">${d.k}</div><div class="abs nm">${d.name}<small>${d.sub}</small></div><div class="abs big">${d.price}</div>
+ <div class="abs ch">${d.ch.map(c=>`<div class="${c[0]=='g'?'g':'r'}">${c[1]}</div>`).join('')}</div>${CHART(d.series,d.from,d.to)}
+ <div class="abs sc"><div class="t">ЕСЛИ… → ДАВЛЕНИЕ НА ЦЕНУ</div>${d.sc.map(x=>`<div><b>${x[0]}</b>${x[1]}</div>`).join('')}</div>`,
+sat:d=>`<div class="abs mast"><b>Итоги недели</b><span>${d.dates}</span></div><div class="abs ph"></div><div class="abs cap">${d.cap}</div><h1 class="abs">${d.title}</h1>
+ <div class="abs tiles">${d.tiles.map(t=>`<div><h4>${t[0]}</h4><b class="${t[1]}">${t[2]}</b><p>${t[3]}</p></div>`).join('')}</div>
+ <div class="abs you"><i>ДЛЯ ВАС</i><span>${d.you}</span></div>`,
+sun:d=>`<div class="abs q">?</div><div class="abs k">${d.k}</div><h1 class="abs">${d.title}</h1><div class="abs opts">${d.opts.map((o,i)=>`<div class="opt"><div class="ic">${(ICONS[o[0]]||'').replace(/#C9A24B/g,'#5A1426').replace(/#F7E6C0/g,'#C0425E')}</div><div><b>${o[1]}</b><span>${o[2]}</span></div><em>${i+1}</em></div>`).join('')}</div>
+ <div class="abs cta"><i>↓</i>${d.cta}</div>`,
+evs:d=>`<div class="abs k">${d.k}</div><h1 class="abs">${d.title}</h1><div class="abs list fit">${d.items.map(e=>`<div class="ev"><div class="tm">${e.tm}<small>МСК</small></div><div class="bx"><div class="tt">${e.fl} ${e.t}${e.hi?'<span class="hi"></span>':''}</div><div class="nums">${e.nums.map(n=>`<span>${n[0]}<b>${n[1]}</b></span>`).join('')}</div>${e.vt?`<div class="vd ${e.vd}">${e.vt}</div>`:''}</div></div>`).join('')}</div>`,
+monc:d=>{const n=d.days.length+2,cn=i=>`<div class="abs cnt">${i} / ${n}${i<n?' →':''}</div>`;
+ const MK=[['ru','🇷🇺 РОССИЯ'],['w','🌍 МИР'],['us','🇺🇸 США'],['c',B+' КРИПТА'],['oil','🛢 СЫРЬЁ']];
+ const cov=`<div class="abs mast"><b>Неделя впереди</b><span>${d.dates}</span></div>
+ ${d.pics.map((p,i)=>`<div class="pc" style="right:${70+[0,24,6][i]}px;top:${232+i*104}px;width:${290}px;transform:rotate(${[4,-3,3][i]}deg);z-index:${3+i}"><div class="ph" style="height:112px;background-image:url(${p[0]})"></div><b>${p[1]}</b></div>`).join('')}
+ <div class="abs k ck">${d.k}</div><h1 class="abs ch1">${d.title}</h1><div class="abs cpill pill">${d.when}</div><div class="abs clead fit">${d.lead}</div>
+ <div class="abs wk">${d.week.map(w=>`<div class="${w[2]?'on':''}"><b>${w[0]}</b><span>${w[1]}</span><em>${w[3]}</em><u>${'<i></i>'.repeat(w[2])}</u></div>`).join('')}</div>
+ <div class="abs crows fit">${d.days.map(x=>`<div><b>${x.sd} ${x.dd}</b><span>${x.fl} ${x.t} · ${x.big}<small>${x.sub||x.ev.slice(1,3).map(e=>e[1]).join(' · ')}</small></span></div>`).join('')}</div>
+ <div class="abs lgd">🇷🇺 Россия · 🌍 мир · 🇺🇸 США · ${B} крипта · 🛢 сырьё · листайте по дням →</div>
+${cn(1)}`;
+ const sl=d.days.map((x,i)=>`<div class="abs dn" style="${x.dn.length>9?'font-size:74px;top:140px':'font-size:92px;top:116px'}">${x.dn}</div><div class="abs dd"><span class="pill">${x.dd}</span>${x.hi?`<small>сильных событий: ${x.hi}${'<i></i>'.repeat(x.hi)}</small>`:''}</div>
+ <div class="abs mkts">${MK.map(m=>`<span class="${x.mk.includes(m[0])?'on':'off'}">${m[1]}</span>`).join('')}</div>
+ <div class="abs k hd">Главное дня</div>${x.img?`<div class="pc dpc"><div class="ph" style="background-image:url(${x.img})"></div><b>${x.cap}</b></div>`:''}
+ <div class="abs hm">${x.big}</div><h1 class="abs ht fit">${x.fl} ${x.t}</h1><div class="abs hw fit">${x.w}</div>
+ <div class="abs er fit">${x.ev.map(e=>`<div><b>${e[0]}</b><p>${e[1]}<small>${e[2]}</small></p></div>`).join('')}</div>
+ <div class="abs sc6">${x.sc.map((c,j)=>{const a=Array.isArray(c)?c:[j?'▼ ЕСЛИ НИЖЕ / МЯГЧЕ':'▲ ЕСЛИ ВЫШЕ / ЖЁСТЧЕ',c];return `<div class="${a[0][0]=='▲'?'u':a[0][0]=='▼'?'d':'n'}"><i>${a[0]}</i><span>${a[1]}</span></div>`}).join('')}</div>${cn(i+2)}`);
+ const fin=`<div class="abs mast"><b>Три вопроса недели</b><span>${d.dates}</span></div>
+ <div class="abs qs">${d.qs.map((q,i)=>`<div><em>${i+1}</em><div><b>${q[0]}</b><span>${q[1]}</span><small>${q[2]}</small></div></div>`).join('')}</div>
+ <div class="abs you" style="top:1060px"><i>ДАЛЬШЕ</i><span>Каждый вечер — карусель «События дня» с итогами. В субботу — итоги недели.</span></div>${cn(n)}`;
+ return [cov,...sl,fin]},
+evc:d=>{d.items=(d.items||[]).slice(0,6).map(e=>Object.assign({fl:'',who:'',s:'',hint:'',why:'',fol:'',nx:'',mk:[],nums:[],vd:'',vt:'',img:''},e));d.sum=d.sum||[];const n=d.items.length+2,cn=i=>`<div class="abs cnt">${i} / ${n}${i<n?' →':''}</div>`;
+ const cov=`<div class="duo cov">${d.cover.map(c=>`<div class="im" style="background-image:url(${c})"></div>`).join('')}<div class="d1"></div><div class="d2"></div></div><div class="fade" style="top:300px"></div><div class="tf"></div>
+ <div class="abs k ck">${d.k}</div><h1 class="abs ch1">${d.day}</h1><div class="abs csub">${d.sub}</div>
+ <div class="abs clist fit">${d.items.map((e,i)=>`<div class="ci"><em>${i+1}</em><div class="tm">${e.tm}</div><div class="tx"><div class="tt">${e.fl} ${e.t}</div><small>${e.s||''}</small></div><div class="vd ${e.vd}">${e.vt}</div></div>`).join('')}</div><div class="abs swipe">Листайте →</div>${cn(1)}`;
+ const num=v=>{const x=parseFloat(String(v).replace(/\s/g,'').replace('−','-').replace(',','.'));return isNaN(x)?0:x};
+ const fmt=v=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(1).replace('.',',');
+ const sl=d.items.map((e,i)=>{const vs=e.nums.map(x=>num(x[1])),mx=Math.max(...vs),mn=Math.min(...vs),lo=mx==mn?0:mn-(mx-mn)*1.2;
+  const ok=x=>x&&/\d/.test(x[1]),f=e.nums.find(x=>x[0]=='Факт'),p=e.nums.find(x=>x[0]=='Прогноз'),dv=ok(f)&&ok(p)?num(f[1])-num(p[1]):null;
+  const dev=dv==null?'':Math.abs(dv)<0.05?'= прогнозу':`${fmt(dv)} к прогнозу`;
+ return `<div class="abs ph5 ${e.img?'':'nop'}">${e.img?`<div class="duo"><div class="im" style="background-image:url(${e.img})"></div><div class="d1"></div><div class="d2"></div></div>`:e.fl}</div>
+ <div class="abs no5">СОБЫТИЕ ${i+1} ИЗ ${d.items.length}</div><div class="abs meta5">${e.tm} МСК · ${e.fl} ${e.who}</div><h1 class="abs t5 fit">${e.t}</h1>
+ <div class="abs res"><div class="bn">${e.big}</div><div class="cmp">${e.nums.map((x,j)=>`<div class="${x[0]=='Факт'?'f':''}"><span>${x[0]}</span><i style="width:${Math.round(mx==lo?80:20+60*(vs[j]-lo)/(mx-lo))}%"></i><b>${x[1]}</b></div>`).join('')}</div><div class="side">${dev?`<div class="dev">${dev}</div>`:''}<div class="vd ${e.vd}">${e.vt}</div></div></div>
+ ${e.hint?`<div class="abs hint">${e.hint}</div>`:''}
+ <div class="abs why fit"><i class="lab2">ПОЧЕМУ ТАК</i>${e.why}</div>
+ <div class="abs fol fit"><i class="lab2">ЧТО СЛЕДУЕТ</i>${e.fol}</div>
+ <div class="abs mk"><i class="lab">ДЛЯ РЫНКА</i><div class="mrow">${e.mk.slice(0,3).map(m=>`<div class="tl ${m[0]}"><h5>${m[1]}<u>${m[0]=='up'?'▲':m[0]=='dn'?'▼':'●'} ${m[2]}</u></h5><p class="fit">${m[3]}</p></div>`).join('')}</div></div>
+ <div class="abs nx5 fit"><i class="lab">ЧТО ДАЛЬШЕ</i>${e.nx}</div>${cn(i+2)}`});
+ const fin=`<div class="abs k fk">Итог дня · ${d.day.toLowerCase()}</div><h1 class="abs fh1">Что важно</h1>
+ <div class="abs fl2">${d.sum.map(x=>`<div><span>${x[0]}</span><div>${x[1]}</div></div>`).join('')}</div>
+ <div class="abs nxt"><i>${d.next.k}</i><b>${d.next.t}</b><span>${d.next.s}</span></div>${cn(n)}`;
+ return [cov,...sl,fin]},
+tuec:d=>{const n=d.take.length+3,cn=i=>`<div class="abs cnt">${i} / ${n}</div>`,R=['I','II','III'];
+ const cov=C.tue(d)+`<div class="abs swipe" style="top:1150px">ЛИСТАЙТЕ →</div>`+cn(1);
+ const tk=d.take.map((t,i)=>`<div class="frame"></div><div class="abs sk">ВЫВОД ${i+1} ИЗ 3 · КЛЮЧЕВАЯ СТАВКА</div><div class="abs rn">${R[i]}</div><h1 class="abs gh">${t[0]}</h1><div class="abs gt fit">${t[1]}</div><div class="abs ex"><i>ПРИМЕР</i>${t[2]}</div>${cn(i+2)}`);
+ const qz=`<div class="frame"></div><div class="abs sk">ТЕСТ · ПРОВЕРЬТЕ СЕБЯ</div><h1 class="abs gh" style="top:180px;font-size:64px">${d.quiz.length>1?d.quiz.length+' вопроса':'Вопрос из гайда'}</h1><div class="abs qz ${d.quiz.length==1?'one':''}" style="top:290px">${d.quiz.map((q,i)=>`<div><b>${d.quiz.length>1?(i+1)+'. ':''}${q[0]}</b>${q[1].map((o,j)=>`<span><em>${'АБВ'[j]}</em>${o}</span>`).join('')}</div>`).join('')}</div><div class="abs ex" style="top:1000px"><i>ОТВЕТЫ</i>на следующем слайде — сначала ответьте сами</div>${cn(n-1)}`;
+ const fin=`<div class="frame"></div><div class="abs sk">ОТВЕТЫ И ЧТО ВАЖНО</div><h1 class="abs gh2">${d.ans.length>1?"Ответы":"Ответ"}</h1><div class="abs ans ${d.ans.length==1?'one':''}">${d.ans.map(a=>`<div><b>${a[0]}</b><span>${a[1]}</span></div>`).join('')}</div>
+ <div class="abs nxg"><i>${d.nxg[0]}</i><b>${d.nxg[1]}</b><span>${d.nxg[2]}</span></div>${cn(n)}`;
+ return [cov,...tk,qz,fin]},
+thuc:d=>{const n=5,cn=i=>`<div class="abs cnt">${i} / ${n}${i<n?' →':''}</div>`;
+ const cov=`<div class="abs k">${d.k}</div><h1 class="abs">${d.title}</h1>
+ <div class="abs ppl">${d.people.map(p=>`<div><div class="p"><img src="${p[0]}"></div><div><b>${p[1]}</b><span>${p[2]}</span></div></div>`).join('')}</div>
+ <div class="abs lead">${d.lead}</div><div class="abs swipe">Листайте →</div>${cn(1)}`;
+ const col=(c,t,a,i)=>`<div class="abs k">Нарратив недели · ${i} из 2</div><div class="abs sh ${c}"><span class="ar"></span>${t}</div><div class="abs its">${a.map(x=>`<div><b>${x[0]}</b><span>${x[1]}</span><small>${x[2]}</small></div>`).join('')}</div>`;
+ const you=`<div class="abs k">Что это значит для вас</div><div class="abs sh" style="font-size:56px">Для ваших денег</div><div class="abs tl4">${d.you.map(y=>`<div><h4>${y[0]}</h4><u class="${y[1]}">${y[2]}</u><p>${y[3]}</p></div>`).join('')}</div>${cn(4)}`;
+ const fin=`<div class="abs k">Что важно</div><div class="abs out">${d.out}</div><div class="abs wt">${d.wt.map(w=>`<div><b>${w[0]}</b><span>${w[1]}</span></div>`).join('')}</div>${cn(5)}`;
+ return [cov,col('up','Тянет вверх',d.up,1)+cn(2),col('dn','Держит',d.down,2)+cn(3),you,fin]},
+evt:d=>`<div class="duo"><div class="im" style="background-image:url(${d.img})"></div><div class="d1"></div><div class="d2"></div></div>
+ <div class="abs big">${d.big}</div><div class="abs k">${d.k}</div><h1 class="abs fit">${d.title}</h1><div class="abs lead fit">${d.lead}</div>`
+};
+const ORDER=['monc','evc','tuec','thuc'],CLS={tuec:'tue tuec'};
+document.write(ORDER.filter(id=>!window.ONLY||window.ONLY==id).map(id=>{const d=DATA[id],r=C[id](d);return (Array.isArray(r)?r:[r]).map((h,i)=>`<div class="cd ${CLS[id]||id}" id="${id}${Array.isArray(r)?i+1:''}">${BD(d.tag)}${h}${SRC(d.src)}${FT(d.ph)}</div>`).join('')}).join(''));
+
+/* автоподгонка: текст любой длины влезает (уменьшаем кегль, лишние события — «ещё N в приложении») */
+function fitAll(){
+ document.querySelectorAll('.fit').forEach(el=>{
+  if(el.classList.contains('list')){let hidden=0;const evs=[...el.querySelectorAll('.ev')];
+   while(el.scrollHeight>el.clientHeight&&evs.length>1){evs.pop().remove();hidden++;}
+   if(hidden){const m=document.createElement('div');m.className='more';m.textContent=`+ ещё ${hidden} — в календаре приложения`;el.appendChild(m);while(el.scrollHeight>el.clientHeight&&evs.length>1){evs.pop().remove();hidden++;m.textContent=`+ ещё ${hidden} — в календаре приложения`;}}
+  } else if(el.classList.contains('clist')){ /* обложка «События дня»: убираем подстроки, потом последние события → «+ ещё N — листайте» */
+   const ov=()=>el.scrollHeight>el.clientHeight+2;if(ov())el.querySelectorAll('.tx small').forEach(x=>x.remove());
+   const its=[...el.querySelectorAll('.ci')];let h=0;while(ov()&&its.length>2){its.pop().remove();h++}
+   if(h){const m=document.createElement('div');m.className='more';m.style.cssText='font:700 24px Onest;color:#8FA3BF;padding:6px 4px';m.textContent=`+ ещё ${h} — листайте →`;el.appendChild(m);while(ov()&&its.length>2){its.pop().remove();h++;m.textContent=`+ ещё ${h} — листайте →`}}
+  } else {let fs=parseFloat(getComputedStyle(el).fontSize);while(el.scrollHeight>el.clientHeight+2&&fs>20){fs-=2;el.style.fontSize=fs+'px';}
+   /* не влезло и на 20 px — обрезаем по словам с «…» (последний текстовый узел), чтобы ничего не вылезло */
+   const tn=()=>{const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.nodeValue.trim()&&!n.parentElement.closest('.lab,.lab2')?1:2});let l=null;while(w.nextNode())l=w.currentNode;return l};
+   let guard=400;while(el.scrollHeight>el.clientHeight+2&&guard--){const n=tn();if(!n)break;const t=n.nodeValue.replace(/…$/,'').trim(),i=t.lastIndexOf(' ');if(i<=0){n.remove();continue}n.nodeValue=t.slice(0,i).replace(/[,.;:—–-]+$/,'')+'…';el.dataset.cut=1}}
+ });
+}
+/* проверка: элемент вылезает за слайд — пишем в window.OVERFLOW (рендер покажет и вернёт ошибку) */
+function checkOverflow(){const bad=[];document.querySelectorAll('.cd').forEach(c=>{const r=c.getBoundingClientRect();c.querySelectorAll('*').forEach(e=>{const q=e.getBoundingClientRect();if(q.width&&(q.right>r.right+1||q.bottom>r.bottom+1||q.left<r.left-1))bad.push(c.id+' .'+String(e.className).split(' ')[0])})});
+ const cut=[...document.querySelectorAll('[data-cut]')].map(e=>e.closest('.cd').id+' '+(String(e.className).replace(/\b(abs|fit)\b/g,'').trim()||e.tagName.toLowerCase()));window.CUT=cut;return [...new Set(bad)]}
+document.fonts.ready.then(()=>{fitAll();window.OVERFLOW=checkOverflow();window.FIT_DONE=1});
+</script>
+</body></html>

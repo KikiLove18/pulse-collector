@@ -1,0 +1,15 @@
+/* Общая рамка карточек PRO (все направления). Холст 1080×1350, рендер ×1.5 → 1620×2025 */
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#888;font-family:Inter,sans-serif}
+.cd{position:relative;width:1080px;height:1350px;overflow:hidden;margin:0 0 20px}
+.bd{position:absolute;left:60px;right:60px;top:48px;display:flex;align-items:center;gap:14px;z-index:9;font:700 18px Inter;letter-spacing:.16em}
+.bd img{width:42px;height:42px;border-radius:10px}
+.bd .tag{margin-left:auto;padding:10px 18px;border-radius:30px;letter-spacing:.12em;font-size:20px}
+.ft{position:absolute;left:0;right:0;bottom:0;height:62px;z-index:9;display:flex;align-items:center;justify-content:center;font:500 15px Inter;letter-spacing:.01em}
+.src{position:absolute;left:60px;right:60px;bottom:80px;z-index:9;font:600 20px/1.35 Inter}
+.grain{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.2;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E")}
+/* дуотон (В): .duo > .im + .d1 (тёмный, lighten) + .d2 (цвет, multiply) */
+.duo{position:absolute;overflow:hidden}
+.duo .im{position:absolute;inset:0;background-size:cover;background-position:center;filter:grayscale(1) contrast(1.25) brightness(1.05)}
+.duo .d1,.duo .d2{position:absolute;inset:0}
+.duo .d1{mix-blend-mode:lighten}.duo .d2{mix-blend-mode:multiply}
