@@ -31,6 +31,20 @@ FEED_CARDS = 3           # карточки-картинки к Ленте: до
 FEED_TAG = {"us": "Рынок США", "crypto": "Крипта", "commodities": "Сырьё", "ru": "Россия", "x": "Что говорят"}
 FEED_THEME = {"us": "wallst", "crypto": "crypto", "commodities": "oil", "ru": "kremlin", "x": "whitehouse"}
 URGENT_PER_DAY = 1
+# 24.10: к «ЦБ сохранил ставку 14%» ИИ дал фон fed (здание ФРС) — новостям про Россию американские фоны и фото не ставим
+US_THEMES = {"fed", "capitol", "whitehouse", "wallst"}
+RU_RE = re.compile(r"\bЦБ\b|Банк[аеу]? России|Мосбирж|рубл|Минфин|Росси|\bРФ\b|ОФЗ|Набиуллин", re.I)
+US_RE = re.compile(r"ФРС|США|Уорш|Трамп|S&P|Nasdaq|Dow", re.I)
+
+
+def is_ru(block, title):
+    return block == "ru" or (bool(RU_RE.search(title or "")) and not US_RE.search(title or ""))
+
+
+def pick_theme(theme, block="", title="", default="wallst"):
+    """Тема фона от ИИ с проверкой: неизвестная → default; Россия с фоном США → kremlin."""
+    t = theme if theme in cards.THEMES else default
+    return "kremlin" if t in US_THEMES and is_ru(block, title) else t
 MONTHS = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"]
 SENT_ICON = {"pos": "🟢", "neg": "🔴", "neu": "⚪️"}
 
@@ -64,7 +78,7 @@ urgent=true — ТОЛЬКО исключительное (не чаще раз�
  "feed": [{"pick": номер, "title": "заголовок до 90 знаков", "text": "2–3 коротких предложения по-русски, 200–300 знаков: что произошло — с цифрами (сколько, на сколько %, по сравнению с чем); главное следствие для рынка — в <u></u>", "block": "us|crypto|commodities|ru|x", "sent": "pos|neg|neu", "icon": "1 эмодзи-флаг или тема",
            "theme": "фон карточки, один из: THEMES", "imp": 1|2|3, "also": [номера других новостей списка о том же событии],
            "metrics": [{"value": "короткое число из новости, напр. +3%, $190 млрд, 16,5%", "label": "2–3 слова: что это"}]}]}
-photo — для поиска фото на Wikimedia Commons, без имён людей. Никаких советов «покупай/продавай». Цифры только из входных данных.
+photo — для поиска фото на Wikimedia Commons, без имён людей. theme для новостей о России (ЦБ РФ, рубль, Мосбиржа) — только kremlin, fed — только ФРС США. Никаких советов «покупай/продавай». Цифры только из входных данных.
 feed — ВСЕГДА (даже при send=false): до 6 самых заметных новостей из списка для ленты приложения — разные темы, без рутины и рекламы, дубли склеивай.
 Текст в feed — коротко и по делу: цифры и главный факт, без вводных слов, общих фраз и пересказа фона.
 Только факты из входных данных, ничего не додумывай.
@@ -140,7 +154,7 @@ def feed_cards(out, now, dry):
     top = sorted((i for i, o in enumerate(out) if o["imp"] >= 2), key=lambda i: -out[i]["imp"])[:FEED_CARDS]
     for n, j in enumerate(top):
         o, theme = out[j], themes[j]
-        card = {"theme": theme if theme in cards.THEMES else FEED_THEME.get(o["block"], "wallst"),
+        card = {"theme": pick_theme(theme, o["block"], o["title"], FEED_THEME.get(o["block"], "wallst")),
                 "tag": FEED_TAG.get(o["block"], "Рынки"), "sent": o["sent"], "title": o["title"][:90], "metrics": o["metrics"]}
         card_id = f"f{now:%Y%m%d%H%M}{n}"
         path = os.path.join(tempfile.gettempdir(), f"{card_id}.jpg")
@@ -213,7 +227,8 @@ def build_morning(ask_ai, items, now, tzmin, qlines, qlines_ru, today, today_ru,
     local = now.astimezone(timezone(timedelta(minutes=tzmin)))
     c = data.get("cover") or {}
     cover = {"title": c.get("title") or ((data.get("all") or [{}])[0].get("title", "")), "tag": c.get("tag", ""), "sent": c.get("sent", "neu"),
-             "theme": c.get("theme") if c.get("theme") in cards.THEMES else "wallst", "metrics": (c.get("metrics") or [])[:3], "photo": photos.find(c.get("photo") or [])}
+             "theme": pick_theme(c.get("theme"), "", c.get("title", "")), "metrics": (c.get("metrics") or [])[:3],
+             "photo": photos.find(c.get("photo") or [], ru=is_ru("", c.get("title", "")))}
     if not cover["title"]:
         return []
     card_id = f"mo{local:%Y%m%d}{tzmin}"
@@ -257,8 +272,9 @@ def build_edition(ask_ai, news, quotes_text, now, total_news, focus="", qlines=N
         return None
     first = news[pick[0]]
     cover = {"title": cover.get("title") or first["title"], "tag": cover.get("tag", ""), "sent": cover.get("sent") or first.get("sent", "neu"),
-             "theme": cover.get("theme") if cover.get("theme") in cards.THEMES else "wallst", "metrics": (cover.get("metrics") or [])[:3],
-             "photo": photos.find(cover.get("photo") or [])}
+             "theme": pick_theme(cover.get("theme"), "ru" if focus == "ru" else "", cover.get("title") or first["title"]),
+             "metrics": (cover.get("metrics") or [])[:3],
+             "photo": photos.find(cover.get("photo") or [], ru=is_ru("ru" if focus == "ru" else "", cover.get("title") or first["title"]))}
     local = now.astimezone(MSK)
     morning = local.hour < 14
     card_id = f"ed{local:%Y%m%d%H%M}" + ("ru" if focus == "ru" else "")
@@ -395,8 +411,8 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
     except Exception:
         src = items[0]
     card = {"title": data.get("title", src["title"]), "tag": data.get("tag", ""), "sent": data.get("sent", "neu"),
-            "theme": data.get("theme") if data.get("theme") in cards.THEMES else "wallst", "metrics": (data.get("metrics") or [])[:3],
-            "photo": photos.find(data.get("photo") or [])}
+            "theme": pick_theme(data.get("theme"), data.get("block", ""), data.get("title", src["title"])), "metrics": (data.get("metrics") or [])[:3],
+            "photo": photos.find(data.get("photo") or [], ru=is_ru(data.get("block", ""), data.get("title", src["title"])))}
     card_id = f"{'br' if urgent else 'dn'}{local:%Y%m%d%H%M}"
     url, _ = upload_card(card, card_id, date_label(now))
     n = {"title": card["title"], "text": data.get("text", ""), "sent": card["sent"], "url": src["link"], "source": sources.src_name(src["source"])}

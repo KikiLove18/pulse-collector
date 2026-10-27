@@ -46,6 +46,8 @@ MILITARY = re.compile(r"\b(B-\d+|F-\d+|F/A-\d+|Stratofortress|bomber|fighter|air
                       r"Atlantis|astronaut|iss\d{3}e)\b", re.I)
 PEOPLE = re.compile(r"\b(President|Minister|Summit|portrait|meets|meeting with|visit|addressing|speech|press conference|marshals|"
                     r"Mr\.|Mrs\.|woman|man\b|girl|boy)\b", re.I)
+# 24.10: для новости о ЦБ РФ запрос «central bank building» находит здания ФРС — к российским новостям американское не берём
+US_PLACE = re.compile(r"Federal Reserve|Eccles|Washington|United States|\bU\.?S\.?A?\b|Capitol|White House|Wall Street|New York", re.I)
 WEAK = {"economy", "market", "business", "money", "finance", "financial", "global", "world", "city", "building", "new", "old"}
 
 
@@ -60,8 +62,8 @@ def _relevant(title, q):
     return bool(strong) and len(hit) >= min(2, len(words))
 
 
-def find(queries):
-    """queries — 1–3 английских запроса, от точного к общему. Возвращает путь к скачанному jpg или None."""
+def find(queries, ru=False):
+    """queries — 1–3 английских запроса, от точного к общему; ru=True — новость о России, без мест США. Путь к jpg или None."""
     used = _used()
     for q in [q for q in queries if q][:3]:
         params = {"action": "query", "format": "json", "generator": "search", "gsrsearch": f"{q} filetype:bitmap",
@@ -73,7 +75,7 @@ def find(queries):
             continue
         for p in sorted(pages.values(), key=lambda x: x.get("index", 99)):
             ii = (p.get("imageinfo") or [{}])[0]
-            if p["title"] in used or ii.get("mime") != "image/jpeg" or not _relevant(p["title"], q):
+            if p["title"] in used or ii.get("mime") != "image/jpeg" or not _relevant(p["title"], q) or (ru and US_PLACE.search(p["title"])):
                 continue
             if ii.get("width", 0) < 1600 or ii.get("width", 0) < ii.get("height", 1) * 1.25 or not _free(ii.get("extmetadata", {})):
                 continue
