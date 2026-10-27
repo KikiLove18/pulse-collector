@@ -1,0 +1,111 @@
+/* КВАДРАТ 1:1 — общие правила (стиль v6 тот же, только высота 1080 и плотнее по вертикали) */
+.s{height:1080px}
+.k{top:136px}
+.src{bottom:100px}.cnt{bottom:106px}
+.wed .src,.wed .cnt{bottom:96px}
+/* СР · Индикатор */
+.wed h1{font-size:54px}
+#wed1 .pc{top:120px!important;width:210px!important;height:210px!important;left:810px!important}
+#wed1 .pl{top:205px!important}
+#wed1 .big{top:270px!important;font-size:150px!important}
+#wed1 h1{top:450px!important}
+#wed1 .vd{top:600px!important}
+#wed1 .trio{top:676px!important}#wed1 .trio div{padding:12px 16px;font-size:21px}#wed1 .trio b{font-size:36px;margin-top:4px}
+#wed1>.sec{top:812px!important;padding:10px 16px;font-size:18px}
+#wed2 h1{top:190px!important}
+#wed2 .pc{top:130px!important;width:210px!important;height:210px!important;left:810px!important}
+#wed2 .note{top:380px!important;font-size:24px;padding:20px 26px}
+#wed2 .tline{top:572px!important;padding:12px 24px 4px}#wed2 .tline .sec{margin-bottom:4px}
+#wed2 .tline .tr{padding:10px 0}#wed2 .tline .tr.now{padding:10px 20px;margin:2px -20px}
+#wed2 .tr b{font-size:28px;width:150px}#wed2 .tr span{font-size:24px}
+#wed3 h1{top:190px!important}
+#wed3 .pl{top:330px!important;font-size:25px!important}
+#wed3 .tiles{top:440px!important;gap:12px}#wed3 .tl{padding:16px 24px}#wed3 .tl .tx{font-size:24px}#wed3 .tl .nm{font-size:28px}
+#wed3>.sec{top:832px!important;padding:10px 16px;font-size:18px}
+#wed4 h1{top:190px!important}
+#wed4>div[style*="top:380px"]{top:330px!important}#wed4 .pt{padding:16px 22px;margin-bottom:12px}#wed4 .pt div{font-size:25px}#wed4 .pt em{font-size:42px;width:54px}
+#wed4>.sec{top:838px!important;padding:10px 16px;font-size:18px}
+#wed5 h1{top:190px!important}
+#wed5 .tiles{top:330px!important;gap:10px}#wed5 .tl{padding:14px 24px}#wed5 .tl .tx{font-size:23px}#wed5 .tl .nm{font-size:27px}#wed5 .tl .nm small{font-size:19px;margin-top:4px}
+#wed5>.sec{top:836px!important;padding:10px 16px}
+#wed6 h1{top:190px!important}
+#wed6 .pc{top:130px!important;width:290px!important;height:200px!important;left:730px!important}
+#wed6 .nx{top:400px!important;padding:16px 30px}#wed6 .nx .r{padding:14px 0}#wed6 .nx .r b{font-size:28px;width:210px}#wed6 .nx .r span{font-size:25px}
+#wed6>.sec{top:812px!important;padding:10px 16px;font-size:18px}
+#wed1 .trio b{font-size:31px;white-space:nowrap}#wed1>.sec{top:822px!important}
+#wed2 .pc{width:250px!important;height:230px!important;left:770px!important}#wed2 .pc p{font-size:16px}
+#wed4>div[style*="top:380px"]{top:345px!important}#wed4 .pt{padding:22px 26px;margin-bottom:16px}#wed4 .pt div{font-size:27px}
+#wed5 .tl{padding:16px 24px}#wed5 .tl .tx{font-size:24px}
+#wed6 .nx{padding:22px 32px}#wed6 .nx .r{padding:18px 0}#wed6 .nx .r span{font-size:27px}
+/* ВС · Опрос */
+.sun h1{font-size:56px}
+.sun .vn{font-size:170px}
+#sun1 h1{top:186px!important}
+#sun1>div[style*="top:420px"]{top:340px!important}
+#sun1 .row{padding:12px 0}#sun1 .row .gc{width:270px;height:152px}#sun1 .row b{font-size:30px}#sun1 .row em{font-size:56px}
+#sun1>.sec{top:878px!important}
+#sun2 h1,#sun3 h1,#sun4 h1{top:186px!important}
+#sun2 .vn,#sun3 .vn,#sun4 .vn{top:110px!important}
+#sun2 .gc,#sun3 .gc,#sun4 .gc{top:340px!important;width:430px!important;height:242px!important}
+#sun2 .lst,#sun3 .lst,#sun4 .lst{top:340px!important;left:530px!important}
+#sun2 .li,#sun3 .li,#sun4 .li{font-size:24px;padding:12px 0;gap:16px}
+#sun2 .li em,#sun3 .li em,#sun4 .li em{font-size:22px;width:40px}
+#sun2 .why,#sun3 .why,#sun4 .why{top:800px!important;font-size:24px!important}
+#sun5 h1{top:186px!important}
+#sun5 .lst{top:350px!important}#sun5 .li{padding:14px 0;font-size:26px}
+#sun5>div[style*="top:740px"]{top:600px!important}#sun5 .gc{height:150px!important}
+#sun5 .btn{top:820px!important;padding:16px 30px;font-size:27px}
+#sun2 .gc,#sun3 .gc,#sun4 .gc{top:350px!important;width:450px!important;height:254px!important}
+#sun2 .lst,#sun3 .lst,#sun4 .lst{left:550px!important}
+#sun2 .li,#sun3 .li,#sun4 .li{font-size:26px;padding:14px 0}
+#sun2 .why,#sun3 .why,#sun4 .why{top:740px!important;font-size:26px!important;padding:22px 28px!important}
+/* ПТ · Актив недели */
+.fri h1{font-size:54px}
+#fri1 .ph{height:400px!important}
+#fri1 .k{top:418px!important}
+#fri1 h1{top:456px!important;font-size:70px!important}
+#fri1>div[style*="top:735px"]{top:546px!important}
+#fri1 .price{top:592px!important;font-size:128px}
+#fri1 .chips{top:740px!important}#fri1 .chips span{font-size:23px;padding:8px 16px}
+#fri1>.sec{top:822px!important}
+#fri2 h1,#fri3 h1,#fri4 h1,#fri5 h1{top:180px!important}
+#fri2 .band{top:316px!important;height:230px!important}
+#fri2 .bcap{top:554px!important}
+#fri2>div[style*="top:730px"]{top:596px!important}#fri2 .dv{padding:16px 24px;margin-bottom:12px}#fri2 .dv .t{font-size:29px}#fri2 .dv .x{font-size:25px}
+#fri3 .band{top:262px!important;height:210px!important}
+#fri3 .bcap{top:480px!important}
+#fri3 .tbl{top:522px!important}#fri3 .tbl .r{padding:13px 0;font-size:26px}#fri3 .tbl .r b{font-size:34px}
+#fri3 .fy{top:752px!important;padding:16px 24px;font-size:25px}
+#fri4 svg{top:300px!important;height:240px}
+#fri4 .tiles{top:556px!important;gap:10px}#fri4 .tl{padding:14px 24px}#fri4 .tl .tx{font-size:24px}#fri4 .tl .nm{font-size:27px}
+#fri4>.sec{top:850px!important;font-size:18px}
+#fri5 .tiles{top:300px!important;gap:10px}#fri5 .tl{padding:16px 24px}#fri5 .tl .tx{font-size:24px}#fri5 .tl .nm{font-size:27px}#fri5 .tl .nm small{font-size:19px}
+#fri5 .fy{top:740px!important;padding:16px 24px;font-size:25px}
+/* СБ · Итоги недели */
+.sat h1{font-size:50px}
+#sat1 .mast{top:118px!important}#sat1 .mast b{font-size:70px}
+#sat1 .phb{top:220px!important;height:250px!important}
+#sat1 .cap{top:476px!important;font-size:18px}
+#sat1 h1{top:510px!important}
+#sat1 .grid4{top:636px!important}#sat1 .g{padding:10px 20px 10px 0}#sat1 .g .n{font-size:19px}#sat1 .g .c{font-size:40px;margin:2px 0}#sat1 .g .c .tbd{font-size:32px}#sat1 .g .d{font-size:19px}
+.sat .mk .ch{font-size:76px}.sat .mk .ch .tbd{font-size:56px}.sat .mk .lv{font-size:23px}.sat .mk .lv b{font-size:28px}
+.sat .mk{top:204px!important}
+.sat .blk.v2{top:318px!important}
+.sat .blk.v2 .bk,.sat .blk.lg2 .bk{padding:11px 0}
+.sat .blk.v2 .sec,.sat .blk.lg2 .sec{font-size:18px}
+.sat .blk.v2 .bk p,.sat .blk.lg2 .bk p{font:500 24px/1.32 Inter}
+.sat .blk.v2 .bk p.ln{font-size:20px;margin-top:4px}
+.sat .blk.v2 .bk p.chg,.sat .blk.lg2 .bk p.chg{font-size:20px;margin-top:5px}
+.sat .blk.v2 .fy,.sat .blk.lg2 .fy{margin-top:4px;padding:14px 22px}.sat .blk.v2 .fy p,.sat .blk.lg2 .fy p{font-size:23px}
+#sat4 .phb{top:200px!important;left:auto!important;width:330px;height:130px!important}
+#sat4 .cap{display:none}
+#sat4 .mk{right:410px!important}
+#sat4 .blk.v2{top:350px!important}
+#sat7 h1{top:200px!important}
+#sat7 .blk{top:280px!important}#sat7 .bk{padding:12px 0}#sat7 .wide{padding:12px 18px;font-size:24px}
+#sat7 .dts{top:600px!important}#sat7 .dts div{padding:8px 0;font-size:23px}
+.sat .blk.lg2 .bk{padding:15px 0}.sat .blk.lg2 .bk p{font-size:27px}.sat .blk.lg2 .bk p.chg{font-size:22px;margin-top:8px}
+.sat .blk.lg2 .fy{margin-top:10px;padding:18px 24px}.sat .blk.lg2 .fy p{font-size:25px}
+#sat7 h1{top:190px!important}#sat7 .blk{top:262px!important}#sat7 .bk{padding:9px 0}#sat7 .wide{padding:9px 18px}
+#sat7 .dts{top:628px!important}#sat7 .dts div{padding:7px 0}
+#fri5 .tiles{gap:14px}#fri5 .tl{padding:24px 26px}#fri5 .tl .tx{font-size:25px}
