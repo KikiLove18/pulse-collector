@@ -30,7 +30,7 @@ from pathlib import Path
 
 import feedparser
 
-from bot import calendar_future, edition, macro, pro, prompts, sources, weekly, pro_day
+from bot import calendar_future, edition, macro, pro, prompts, sources, weekly, pro_day, freech
 
 MSK = timezone(timedelta(hours=3))
 ROOT = Path(__file__).resolve().parent.parent
@@ -1264,7 +1264,7 @@ def main():
     now = datetime.now(timezone.utc)
     state = load_state()
     ai_dead_load(state)
-    if (mode in ("preview", "ai_check", "ai_probe", "pro_sample", "pro_fill", "pro_fill_live") or mode in PRO_PLAN) and "--force" not in args:
+    if (mode in ("preview", "ai_check", "ai_probe", "pro_sample", "pro_fill", "pro_fill_live", "freech") or mode in PRO_PLAN) and "--force" not in args:
         # тесты тратят ту же квоту ИИ — не в последний час перед выжимкой
         local = now.astimezone(MSK)
         for slot in os.environ.get("DIGEST_TIMES", "07:30,19:30").split(","):
@@ -1299,6 +1299,11 @@ def main():
         if r:
             pro.big_event(ask_ai, tg_html, {}, now, "result", r["title"], f'{r["headline"]}\nОценка: {r["verdict"]}',
                           "\n".join(quotes_for_ai(fetch_markets())))
+        return
+    if mode == "freech":  # тексты рубрик бесплатного канала сейчас → meta.freech_posts + образец в тестовый канал
+        if freech.run(state, now, MSK, ask_ai, send_test=send_telegram, dry=dry) and not dry:
+            state["freech_day"] = f"{now.astimezone(MSK):%Y-%m-%d}"
+            save_state(state)
         return
     if mode == "ai_probe":  # какие бесплатные модели OpenRouter отвечают (только журнал)
         run_ai_probe()
@@ -1352,6 +1357,12 @@ def main():
         if not slot and not dry and pro_day.due(state, now, MSK):  # #СОБЫТИЯ каждый вечер; отметка заранее — без повторов при сбое
             state["pro_daily"] = f"{now.astimezone(MSK):%Y-%m-%d}"
             pro_day.run(state, now, MSK, fetch_calendar, tg_html, ask=ask_ai)  # карусель evc v6 + разбор ИИ
+        if not slot and not dry and freech.due(state, now, MSK):  # рубрики бесплатного канала к 11:30 МСК; отметка заранее — без повторов при сбое
+            state["freech_day"] = f"{now.astimezone(MSK):%Y-%m-%d}"
+            try:
+                freech.run(state, now, MSK, ask_ai)
+            except Exception as e:
+                print("Бесплатный канал: ошибка", e, file=sys.stderr)
         if not slot:
             try:
                 run_breaking(state, now, dry)
