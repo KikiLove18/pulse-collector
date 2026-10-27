@@ -396,7 +396,8 @@ function rubricData(rub, data) {
   const REG = { ru: "ru", us: "us", oil: "commodities", gold: "gold", crypto: "crypto" };
   const evs = (data.events || []).filter(e => e && e.dt && e.title);
   if (rub === "today") {
-    const list = evs.filter(e => dayOf(e) === MSK_DAY()).sort((a, b) => (b.impact === "High") - (a.impact === "High") || (a.dt > b.dt ? 1 : -1)).slice(0, 4).sort((a, b) => a.dt > b.dt ? 1 : -1);
+    const same = (a, b) => hm(a) === hm(b) && (a.title.toLowerCase().includes(b.title.toLowerCase()) || b.title.toLowerCase().includes(a.title.toLowerCase())); // «Базовые заказы…» и «Заказы…» в одно время — одно событие
+    const list = evs.filter(e => dayOf(e) === MSK_DAY()).filter((e, i, A) => !A.some((o, j) => j !== i && same(o, e) && (o.title.length < e.title.length || (o.title.length === e.title.length && j < i)))).sort((a, b) => (b.impact === "High") - (a.impact === "High") || (a.dt > b.dt ? 1 : -1)).slice(0, 4).sort((a, b) => a.dt > b.dt ? 1 : -1);
     return list.length ? { rubric: rub, date, title: posts.today?.title || "Что важно сегодня", items: list.map(e => ({ time: hm(e), region: REG[e.region], t: e.title })) } : null;
   }
   if (rub === "week_ahead") {

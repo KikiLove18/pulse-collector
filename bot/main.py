@@ -994,7 +994,8 @@ def run_digest(state, now, dry, final=True):
                 publish_card(ed_html, card_url)
                 # вечерний выпуск «итоги дня» — последний пост дня в бесплатном канале (владелец 27.10: что ждёт → календарь → карусели → итоги вечера);
                 # в заголовке — день недели и число («Вторник, 27 октября»). FREECH_CHAT — переменная репозитория
-                if os.environ.get("FREECH_CHAT") and local.hour >= 14 and not dry:
+                # с 27.10 (сетка Маркетолога v2) итоги 19:30 в канал рисует channel/post.js (рубрика itogi, шаблон со львом) — выпуск туда больше не идёт
+                if os.environ.get("FREECH_CHAT") and os.environ.get("FREECH_EDITION") == "on" and local.hour >= 14 and not dry:
                     wd = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"][local.weekday()]
                     publish_card(re.sub(r" · (\d{1,2} \S+)</b>", lambda m: f" · {wd}, {m.group(1)}</b>", ed_html, count=1), card_url, os.environ["FREECH_CHAT"])
         except Exception as e:
