@@ -45,7 +45,7 @@
   ],
   "last_digest_ts": "2026-10-26T16:31:00.221382+00:00",
   "calendar": {
-    "ts": "2026-10-26T16:31:23.254928+00:00",
+    "ts": "2026-10-27T04:00:56.072904+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -108,7 +108,7 @@
         "country": "EUR",
         "date": "2026-10-27T04:00:00-04:00",
         "impact": "Low",
-        "forecast": "9.8%",
+        "forecast": "9.9%",
         "previous": "9.9%"
       },
       {
@@ -116,7 +116,7 @@
         "country": "EUR",
         "date": "2026-10-27T05:00:00-04:00",
         "impact": "Low",
-        "forecast": "3.6%",
+        "forecast": "3.5%",
         "previous": "3.5%"
       },
       {
@@ -148,7 +148,7 @@
         "country": "USD",
         "date": "2026-10-27T08:30:00-04:00",
         "impact": "Low",
-        "forecast": "1.8%",
+        "forecast": "2.0%",
         "previous": "0.0%"
       },
       {
@@ -156,7 +156,7 @@
         "country": "USD",
         "date": "2026-10-27T09:00:00-04:00",
         "impact": "Low",
-        "forecast": "0.1%",
+        "forecast": "0.2%",
         "previous": "0.3%"
       },
       {
@@ -164,7 +164,7 @@
         "country": "USD",
         "date": "2026-10-27T09:00:00-04:00",
         "impact": "Low",
-        "forecast": "2.7%",
+        "forecast": "2.6%",
         "previous": "2.5%"
       },
       {
@@ -172,7 +172,7 @@
         "country": "USD",
         "date": "2026-10-27T10:00:00-04:00",
         "impact": "Medium",
-        "forecast": "80.7",
+        "forecast": "81.2",
         "previous": "81.9"
       },
       {
@@ -180,7 +180,7 @@
         "country": "USD",
         "date": "2026-10-27T10:00:00-04:00",
         "impact": "Low",
-        "forecast": "649K",
+        "forecast": "651K",
         "previous": "684K"
       },
       {
@@ -188,7 +188,7 @@
         "country": "USD",
         "date": "2026-10-27T10:00:00-04:00",
         "impact": "Low",
-        "forecast": "1",
+        "forecast": "0",
         "previous": "-2"
       },
       {
@@ -260,7 +260,7 @@
         "country": "EUR",
         "date": "2026-10-28T03:00:00-04:00",
         "impact": "Low",
-        "forecast": "-30.0",
+        "forecast": "-30.1",
         "previous": "-30.6"
       },
       {
@@ -300,7 +300,7 @@
         "country": "USD",
         "date": "2026-10-28T08:30:00-04:00",
         "impact": "Low",
-        "forecast": "-130.8B",
+        "forecast": "-130.4B",
         "previous": "-132.6B"
       },
       {
@@ -308,7 +308,7 @@
         "country": "USD",
         "date": "2026-10-28T08:30:00-04:00",
         "impact": "Low",
-        "forecast": "0.4%",
+        "forecast": "0.5%",
         "previous": "0.7%"
       },
       {
@@ -396,7 +396,7 @@
         "country": "AUD",
         "date": "2026-10-28T20:30:00-04:00",
         "impact": "Low",
-        "forecast": "1.8%",
+        "forecast": "1.3%",
         "previous": "5.7%"
       },
       {
@@ -445,7 +445,7 @@
         "date": "2026-10-29T05:33:00-04:00",
         "impact": "Low",
         "forecast": "",
-        "previous": ""
+        "previous": "4.58|1.6"
       },
       {
         "title": "Advance GDP q/q",
@@ -468,7 +468,7 @@
         "country": "USD",
         "date": "2026-10-29T08:30:00-04:00",
         "impact": "Medium",
-        "forecast": "3.5%",
+        "forecast": "3.3%",
         "previous": "6.2%"
       },
       {
@@ -572,7 +572,7 @@
         "country": "JPY",
         "date": "2026-10-29T19:50:00-04:00",
         "impact": "Low",
-        "forecast": "1.3%",
+        "forecast": "1.2%",
         "previous": "-1.7%"
       },
       {
@@ -580,7 +580,7 @@
         "country": "JPY",
         "date": "2026-10-29T19:50:00-04:00",
         "impact": "Low",
-        "forecast": "3.4%",
+        "forecast": "3.3%",
         "previous": "2.7%"
       },
       {
@@ -628,7 +628,7 @@
         "country": "JPY",
         "date": "2026-10-30T01:00:00-04:00",
         "impact": "Low",
-        "forecast": "2.5%",
+        "forecast": "2.7%",
         "previous": "6.1%"
       },
       {
@@ -640,19 +640,11 @@
         "previous": ""
       },
       {
-        "title": "German Prelim CPI m/m",
-        "country": "EUR",
-        "date": "2026-10-30T02:29:00-04:00",
-        "impact": "Medium",
-        "forecast": "0.1%",
-        "previous": "0.6%"
-      },
-      {
         "title": "French Consumer Spending m/m",
         "country": "EUR",
         "date": "2026-10-30T02:30:00-04:00",
         "impact": "Low",
-        "forecast": "0.2%",
+        "forecast": "0.1%",
         "previous": "-0.5%"
       },
       {
@@ -676,8 +668,16 @@
         "country": "GBP",
         "date": "2026-10-30T03:00:00-04:00",
         "impact": "Low",
-        "forecast": "-0.2%",
+        "forecast": "-0.1%",
         "previous": "-0.2%"
+      },
+      {
+        "title": "German Prelim CPI m/m",
+        "country": "EUR",
+        "date": "2026-10-30T03:29:00-04:00",
+        "impact": "Medium",
+        "forecast": "0.1%",
+        "previous": "0.6%"
       },
       {
         "title": "French Prelim CPI m/m",
@@ -700,7 +700,7 @@
         "country": "CHF",
         "date": "2026-10-30T04:00:00-04:00",
         "impact": "Low",
-        "forecast": "108.0",
+        "forecast": "108.1",
         "previous": "109.1"
       },
       {
@@ -748,7 +748,7 @@
         "country": "EUR",
         "date": "2026-10-30T06:00:00-04:00",
         "impact": "Low",
-        "forecast": "0.0%",
+        "forecast": "0.1%",
         "previous": "0.7%"
       },
       {
@@ -788,7 +788,7 @@
         "country": "USD",
         "date": "2026-10-30T09:45:00-04:00",
         "impact": "Low",
-        "forecast": "54.8",
+        "forecast": "55.8",
         "previous": "58.8"
       },
       {
@@ -812,7 +812,7 @@
         "country": "CNY",
         "date": "2026-10-30T21:30:00-04:00",
         "impact": "Low",
-        "forecast": "50.1",
+        "forecast": "49.9",
         "previous": "50.1"
       },
       {
@@ -820,7 +820,7 @@
         "country": "CNY",
         "date": "2026-10-30T21:30:00-04:00",
         "impact": "Low",
-        "forecast": "50.5",
+        "forecast": "50.0",
         "previous": "50.2"
       }
     ]
@@ -890,7 +890,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-26T21:30:58.290272+00:00",
+  "breaking_ts": "2026-10-27T04:00:56.072088+00:00",
   "news_now": {
     "day": "2026-10-27",
     "day_count": 0,
@@ -899,102 +899,70 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/mezhdunarodnaya-panorama/28255903",
-    "https://www.wsj.com/business/doordash-circles-deal-to-buy-instacart-41ac407d?mod=rss_markets_main",
-    "https://tass.ru/ekonomika/28255899",
-    "https://t.me/WalterBloomberg/37419",
-    "https://www.vedomosti.ru/politics/news/2026/10/27/1240340-pribil-premer-ministr-alzhira",
-    "https://www.investing.com/news/stock-market-news/colombia-stocks-lower-at-close-of-trade-colcap-down-138-4973799",
-    "https://www.investing.com/news/stock-market-news/northpointe-bancshares-stock-jumps-on-30m-buyback-program-4973798",
-    "https://www.investing.com/news/stock-market-news/exfbi-director-comey-charged-again-by-us-justice-department-nbc-news-reports-4973795",
-    "https://tass.ru/sport/28255895",
-    "https://tass.ru/politika/28255897",
-    "https://cointelegraph.com/news/injective-launches-onchain-futures-market-tracking-nvidia-gpu-rental-costs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://tass.ru/mezhdunarodnaya-panorama/28255891",
-    "https://t.me/rbc_news/159483",
-    "https://t.me/FinancialJuice/142715",
-    "https://tass.ru/sport/28255893",
-    "https://t.me/FinancialJuice/142714",
-    "https://t.me/FinancialJuice/142713",
-    "https://www.investing.com/news/stock-market-news/russia-stocks-higher-at-close-of-trade-moex-russia-index-up-109-4973790",
-    "https://www.investing.com/news/stock-market-news/wall-street-banks-blackstone-line-up-63-billion-to-finance-broadcom-chips-for-anthropic-4973662",
-    "https://t.me/BitcoinMagazineTelegram/10915",
-    "https://t.me/if_market_news/86358",
-    "https://tass.ru/sport/28255881",
-    "https://tass.ru/mezhdunarodnaya-panorama/28255795",
-    "https://decrypt.co/381871/unitree-stock-jumps-investors-bet-chatbot-ai-robots-brain",
-    "https://www.marketwatch.com/story/a-possible-doordash-instacart-deal-is-all-about-keeping-up-with-walmart-and-amazon-analysts-say-17049bb1?mod=mw_rss_topstories",
-    "https://www.wsj.com/finance/brazils-surprise-election-outcome-set-to-batter-stocks-real-35253aa8?mod=rss_markets_main",
-    "https://tass.ru/proisshestviya/28255857",
-    "https://t.me/FinancialJuice/142712",
-    "https://www.wsj.com/articles/energy-utilities-roundup-market-talk-8c5eb035?mod=rss_markets_main",
-    "https://www.investing.com/news/stock-market-news/universal-music-group-discussed-going-private-with-buyout-firms-bloomberg-news-reports-4973775",
-    "https://tass.ru/mezhdunarodnaya-panorama/28255847",
-    "https://t.me/FinancialJuice/142711",
-    "https://tass.ru/politika/28255883",
-    "https://cryptoslate.com/august-updates-block-critical-private-key-leak-in-crypto-wallet-vultisig/",
-    "https://thedefiant.io/news/defi/bitso-brings-morpho-lending-to-its-app-with-b-vedas",
-    "https://www.investing.com/news/stock-market-news/boost-run-stock-surges-on-ai-infrastructure-deployment-4973762",
-    "https://tass.ru/obschestvo/28255805",
-    "https://t.me/WalterBloomberg/37418",
-    "https://t.me/banksta/104214",
-    "https://tass.ru/sport/28255877",
-    "https://t.me/rbc_news/159482",
-    "https://www.wsj.com/business/health-care-roundup-market-talk-780b3b87?mod=rss_markets_main",
-    "https://www.investing.com/news/stock-market-news/applied-materials-to-raise-besi-stake-to-about-20-4973756",
-    "https://www.wsj.com/business/auto-transport-roundup-market-talk-404d9dd6?mod=rss_markets_main",
-    "https://www.vedomosti.ru/politics/news/2026/10/26/1240339-gotovi-otrazit-lyubuyu-ugrozu",
-    "https://www.investing.com/news/stock-market-news/exclusive-hypromag-usa-maps-three-new-magnet-plants-to-quadruple-us-capacity-4973754",
-    "https://www.rbc.ru/economics/16/10/2026/6ad2611564fe3a360ae28700",
-    "https://www.marketwatch.com/story/why-lumentums-stock-led-the-s-p-500-higher-on-monday-0dff125b?mod=mw_rss_topstories",
-    "https://www.investing.com/news/stock-market-news/why-is-jetblue-airways-stock-surging-today-93CH-4973745",
-    "https://tass.ru/armiya-i-opk/28255875",
-    "https://www.kommersant.ru/doc/9061203",
-    "https://www.rbc.ru/rbcfreenews/6aba7b948788480e67fe30a4",
-    "https://www.rbc.ru/finances/21/10/2026/6ad75a759a7947630c409263",
-    "https://tass.ru/armiya-i-opk/28255871",
-    "https://tass.ru/nauka/28255865",
-    "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-7433e957?mod=rss_markets_main",
-    "https://tass.ru/obschestvo/28255869",
-    "https://tass.ru/politika/28255867",
-    "https://tass.ru/mezhdunarodnaya-panorama/28255873",
-    "https://tass.ru/sport/28255859",
-    "https://tass.ru/mezhdunarodnaya-panorama/28255853",
-    "https://tass.ru/armiya-i-opk/28252663",
-    "https://www.wsj.com/tech/ai/banks-blackstone-form-63-billion-financing-vehicle-for-broadcom-ai-tech-0438f6d2?mod=rss_markets_main",
-    "https://www.wsj.com/finance/stocks/u-s-stocks-rise-ahead-of-tech-earnings-d53bc5e5?mod=rss_markets_main",
-    "https://oilprice.com/Energy/Energy-General/Asia-Needs-1-Trillion-a-Year-to-Avoid-the-Next-Energy-Shock.html",
-    "https://t.me/markettwits/390600",
-    "https://tass.ru/mezhdunarodnaya-panorama/28255841",
-    "https://t.me/WalterBloomberg/37417",
-    "https://t.me/WalterBloomberg/37416",
-    "https://www.interfax.ru/moscow/1125119"
+    "https://t.me/markettwits/390603",
+    "https://www.vedomosti.ru/business/news/2026/10/27/1240300-eksport-viros",
+    "https://www.vedomosti.ru/society/news/2026/10/27/1240352-vziskivayut-20-mlrd",
+    "https://www.theblock.co/news/business/2026-10-26-stonex-lifts-strive-price-target-431818",
+    "https://tass.ru/obschestvo/28256337",
+    "https://t.me/markettwits/390601",
+    "https://tass.ru/mezhdunarodnaya-panorama/28256335",
+    "https://www.kommersant.ru/doc/9061250",
+    "https://tass.ru/mezhdunarodnaya-panorama/28256329",
+    "https://www.rbc.ru/politics/27/10/2026/6ae01f09ca79599324c73d84",
+    "https://tass.ru/proisshestviya/28256333",
+    "https://tass.ru/ekonomika/28256327",
+    "https://tass.ru/armiya-i-opk/28256325",
+    "https://tass.ru/armiya-i-opk/28256321",
+    "https://tass.ru/nauka/28256301",
+    "https://tass.ru/sport/28256323",
+    "https://tass.ru/ekonomika/28256319",
+    "https://t.me/headlines_for_traders/87482",
+    "https://tass.ru/nedvizhimost/28256311",
+    "https://www.kommersant.ru/doc/9061238",
+    "https://t.me/FinancialJuice/142750",
+    "https://www.vedomosti.ru/society/news/2026/10/27/1240351-ege-2027",
+    "https://www.investing.com/news/stock-market-news/asia-chipmaking-ai-stocks-surge-on-anthropic-ipo-cheer-4974130",
+    "https://tass.ru/obschestvo/28256313",
+    "https://tass.ru/obschestvo/28256303",
+    "https://t.me/FinancialJuice/142749",
+    "https://tass.ru/proisshestviya/28256315",
+    "https://t.me/interfaxonline/80733",
+    "https://t.me/FinancialJuice/142748",
+    "https://t.me/headlines_for_traders/87480",
+    "https://t.me/headlines_for_traders/87481",
+    "https://tass.ru/proisshestviya/28256299",
+    "https://www.interfax.ru/world/1125140",
+    "https://www.investing.com/news/stock-market-news/fire-sale--investingpro-for-less-than-8month-all-features-included-in-the-app-4974128",
+    "https://tass.ru/mezhdunarodnaya-panorama/28256305",
+    "https://www.investing.com/news/stock-market-news/japans-gmo-internet-warns-users-of-impending-ransomware-attack-4974126",
+    "https://tass.ru/armiya-i-opk/28256309",
+    "https://www.interfax.ru/world/1125143",
+    "https://tass.ru/armiya-i-opk/28256307",
+    "https://tass.ru/obschestvo/28247259",
+    "https://tass.ru/nedvizhimost/28256289",
+    "https://tass.ru/ekonomika/28256295",
+    "https://tass.ru/obschestvo/28256297",
+    "https://www.rbc.ru/rbcfreenews/6914189f9a7947b93f375ab9",
+    "https://www.interfax.ru/russia/1125141",
+    "https://t.me/wublockchainenglish/26565",
+    "https://tass.ru/proisshestviya/28256291",
+    "https://tass.ru/mezhdunarodnaya-panorama/28256281",
+    "https://tass.ru/proisshestviya/28256287",
+    "https://t.me/headlines_for_traders/87479",
+    "https://www.vedomosti.ru/politics/news/2026/10/27/1240350-aleshkah-rezhim-tishini",
+    "https://www.interfax.ru/russia/1125139",
+    "https://www.wsj.com/economy/chinas-industrial-profit-growth-surged-in-september-fc3b5d58?mod=rss_socialeconomyfeed",
+    "https://www.kommersant.ru/doc/9061237",
+    "https://t.me/headlines_for_traders/87477",
+    "https://t.me/lookonchainchannel/10801",
+    "https://t.me/FinancialJuice/142747",
+    "https://www.interfax.ru/world/1125138"
   ],
   "ai_dead": {
     "date": "2026-10-26",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-25T20:30:57.665702+00:00",
-      "NYT сообщила о рисках возобновления конфликта США и Ирана"
-    ],
-    [
-      "2026-10-26T04:00:56.834816+00:00",
-      "Уолл-стрит закрылась в минусе в пятницу, Dow Jones потерял 1,2%"
-    ],
-    [
-      "2026-10-26T04:00:56.834816+00:00",
-      "Оппозиция увеличила отрыв от коалиции Вучича на выборах в Сербии"
-    ],
-    [
-      "2026-10-26T04:00:56.834816+00:00",
-      "Кошелек, связанный с Ethereum Foundation, продал 2 785 ETH"
-    ],
-    [
-      "2026-10-26T04:00:56.834816+00:00",
-      "В Свердловской области после схода 20 вагонов загорелись семь цистерн"
-    ],
     [
       "2026-10-26T04:00:56.834816+00:00",
       "Илон Маск предупредил об угрозах для «AI neoclouds» на фоне долга SpaceX"
@@ -1594,6 +1562,30 @@
     [
       "2026-10-26T20:30:56.360629+00:00",
       "Россия увеличила суточное производство дизельного топлива до 180 тыс. тонн"
+    ],
+    [
+      "2026-10-27T04:00:56.072088+00:00",
+      "Газ на хабе TTF в Европе подорожал на пике до $1133 за 1 тыс. куб. м"
+    ],
+    [
+      "2026-10-27T04:00:56.072088+00:00",
+      "В Конгрессе США пригрозили нефтяным компаниям за импорт дизеля из РФ"
+    ],
+    [
+      "2026-10-27T04:00:56.072088+00:00",
+      "Рост промприбыли Китая ускорился до 14,4% в сентябре"
+    ],
+    [
+      "2026-10-27T04:00:56.072088+00:00",
+      "StoneX повысила цель по акциям Strive до $43 на фоне биткоин-стратегии"
+    ],
+    [
+      "2026-10-27T04:00:56.072088+00:00",
+      "Фондовые индексы США выросли вслед за акциями ИИ-компаний"
+    ],
+    [
+      "2026-10-27T04:00:56.072088+00:00",
+      "«Руспродсоюз» сообщил о снижении стоимости продуктовой корзины на 1,5%"
     ]
   ],
   "results_fp": [
