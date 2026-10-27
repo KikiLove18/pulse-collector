@@ -42,7 +42,7 @@ async function proPost(p, data) {
   const { shots, text: PRO_TEXT } = await proSlides(p, data);
   const html = `<tg-slideshow>${shots.map((_, i) => `<img src="tg://photo?id=s${i}"/>`).join("")}</tg-slideshow>` +
     PRO_TEXT.split("\n\n").map(t => `<p>${t.replace(/\n/g, "<br/>")}</p>`).join("") +
-    `<tg-button-row align="left"><tg-button type="url" url="https://t.me/${BOT}?startapp=pro">👑 Оформить PRO</tg-button></tg-button-row>`;
+    `<tg-button-row align="left"><tg-button type="url" url="https://t.me/${BOT}?startapp=ch_pro">👑 Оформить PRO</tg-button></tg-button-row>`;
   const f = new FormData();
   f.append("chat_id", CHAT);
   f.append("rich_message", JSON.stringify({ html, media: shots.map((_, i) => ({ id: `s${i}`, media: { type: "photo", media: `attach://f${i}` } })) }));
@@ -50,7 +50,7 @@ async function proPost(p, data) {
   try { const r = await tg("sendRichMessage", f); console.log("пост PRO (слайдшоу) отправлен:", CHAT, "#" + r.result.message_id); }
   catch (e) { // запасной: альбом + подпись (кнопки у альбома нет — ссылка в тексте)
     console.log("слайдшоу PRO не ушло:", e.message, "— отправляю альбомом");
-    await sendPhotos(shots, `${PRO_TEXT}\n\n👑 <a href="https://t.me/${BOT}?startapp=pro">Оформить PRO</a>`);
+    await sendPhotos(shots, `${PRO_TEXT}\n\n👑 <a href="https://t.me/${BOT}?startapp=ch_pro">Оформить PRO</a>`);
   }
 }
 // слайды поста PRO: блоки берём из настоящих окон приложения (разбор актива, схема фактора) — с живыми котировками
@@ -200,7 +200,7 @@ async function sendPhotos(shots, caption) {
 }
 // «карусель» (владелец 25.10: «как в инсте, листать вправо-влево»): один пост с картинкой и кнопками ◀ 1/5 ▶ — картинку меняет воркер.
 // Картинки сначала загружаем в Telegram (тестовый канал, без звука, сразу удаляем) — берём их file_id, затем пост и колода → воркеру.
-const APP_LINK = `https://t.me/${BOT}?startapp=ch`;
+const APP_LINK = `https://t.me/${BOT}?startapp=ch_${THEME}`; // метка ch_<рубрика>: откуда пришёл человек (статистика «Откуда пришли»)
 const deckKb = (i, n) => [[{ text: "◀", callback_data: `fc:${(i + n - 1) % n}` }, { text: `${i + 1} / ${n}`, callback_data: `fc:${i}` }, { text: "▶", callback_data: `fc:${(i + 1) % n}` }],
   [{ text: "📱 Все новости — в приложении", url: APP_LINK }]];
 async function deckPost(shots, caption) {
@@ -237,7 +237,7 @@ async function richPost(shots, caption) {
   const r = await tg("sendRichMessage", f);
   console.log("карусель (слайдшоу) отправлена:", CHAT, "#" + r.result.message_id);
 }
-const LINK = `📱 <a href="https://t.me/${BOT}?startapp=ch">Календарь и все новости — в приложении «Пульс рынка»</a>`;
+const LINK = `📱 <a href="https://t.me/${BOT}?startapp=ch_${THEME}">Календарь и все новости — в приложении «Пульс рынка»</a>`;
 const HEAD_HTML = t => `<div class="hd"><img src="img/logo192.png" alt="">Пульс рынка<span class="th">${t}</span></div>`;
 
 // 📅 «Сегодня на рынке» (07:00 МСК): события календаря на сегодня — блоки evMini приложения; нет событий — поста нет
