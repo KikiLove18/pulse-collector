@@ -16,11 +16,15 @@ const HEAD = { ru: "🇷🇺 <b>Россия — главное за день</b
 // Текст — без обещаний дохода; цены — как в боте (PRICES в worker/index.js)
 // текст — по правилам сильных каналов (владелец 25.10: «лаконично, красиво»): вопрос-крючок → живая польза → одна строка с ценой → одна кнопка
 const proText = (name, up, dn) => [
+  DAY,
   `👑 <b>Что сейчас двигает ${name}?</b>`,
   [up.length ? `📈 <b>Поддерживают</b> — ${up.join(", ")}` : "", dn.length ? `📉 <b>Давят</b> — ${dn.join(", ")}` : ""].filter(Boolean).join("\n"),
   `Так PRO разбирает любой из 42 активов →`,
   `💎 <b>PRO — от 240 ₽ в месяц</b> · Базовый бесплатно`].filter(Boolean).join("\n\n"); // владелец 25.10: без 🟢🔴 — «дёшево смотрится»
 const PRO_ASSET = "SBER";
+// день недели и число в каждой подписи (владелец 27.10: «Вторник, 27 октября»)
+const dayLabel = (d = new Date()) => { const s = d.toLocaleDateString("ru-RU", { weekday: "long", day: "numeric", month: "long", timeZone: "Europe/Moscow" }); return s[0].toUpperCase() + s.slice(1); };
+const DAY = `🗓 <i>${dayLabel()}</i>`;
 
 // содержимое слайда крупно (владелец 25.10: «читать с телефона, не увеличивая»): кадр 400×500 CSS → 1080×1350; не влезает — чуть уменьшаем, но не меньше 75%
 const FIT = `const fw=o.querySelector('.fw'); if(fw){ fw.style.minHeight='0'; fw.style.overflow='hidden'; let z=1; while(fw.scrollHeight>fw.clientHeight+1&&z>0.76){ z-=0.02; [...fw.children].forEach(c=>c.style.zoom=z); } }`;
@@ -223,7 +227,7 @@ async function deckPost(shots, caption) {
 }
 // настоящая карусель (Bot API 10.3, sendRichMessage + <tg-slideshow>): листается вправо-влево прямо в ленте — как пример владельца (25.10)
 async function richPost(shots, caption) {
-  const html = `<tg-slideshow>${shots.map((_, i) => `<img src="tg://photo?id=s${i}"/>`).join("")}</tg-slideshow><p>${caption}</p>` +
+  const html = `<tg-slideshow>${shots.map((_, i) => `<img src="tg://photo?id=s${i}"/>`).join("")}</tg-slideshow><p>${caption.replace(/\n/g, "<br/>")}</p>` +
     `<tg-button-row align="left"><tg-button type="url" url="${APP_LINK}">📱 Все новости — в приложении</tg-button></tg-button-row>`;
   const f = new FormData();
   f.append("chat_id", CHAT);
@@ -245,10 +249,19 @@ async function todayPost(p, events) {
     .sort((a, b) => (b.impact === "High") - (a.impact === "High") || (a.dt > b.dt ? 1 : -1)).slice(0, 6).sort((a, b) => a.dt > b.dt ? 1 : -1);
   console.log(`today: ${list.length} событий\n` + list.map(e => "• " + e.title).join("\n"));
   if (!list.length) return console.log("сегодня событий нет — пост не отправлен");
-  const label = new Date(day + "T12:00:00+03:00").toLocaleDateString("ru-RU", { day: "numeric", month: "long", weekday: "long", timeZone: "Europe/Moscow" });
+  const label = dayLabel(new Date(day + "T12:00:00+03:00"));
+  // 1-й пост дня (владелец 27.10): текст «что ждёт сегодня», за ним — картинка-календарь
+  const hm = e => new Date(e.dt).toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Moscow" });
+  const FL = { ru: "🇷🇺", us: "🇺🇸", oil: "🛢", gold: "🥇", crypto: "₿" };
+  const lines = list.map(e => `${e.impact === "High" ? "🔴" : "▫️"} <b>${hm(e)}</b> ${FL[e.region] || ""} ${esc(e.title)}${e.forecast ? ` · прогноз ${esc(e.forecast)}` : ""}`.replace(/  +/g, " "));
+  const tf = new FormData();
+  tf.append("chat_id", CHAT); tf.append("parse_mode", "HTML");
+  tf.append("text", `🗓 <b>${label}</b>\n☀️ <b>Что ждёт рынок сегодня</b>\n\n${lines.join("\n")}\n\nВремя — московское. 🔴 — сильно двигает рынок. Днём — главное по России, США, крипте и сырью, вечером — итоги дня.`);
+  tf.append("link_preview_options", JSON.stringify({ is_disabled: true }));
+  await tg("sendMessage", tf);
   const img = await shot(p, `EVS = a.list; return \`${HEAD_HTML("📅 Календарь")}<div class="fw"><div class="big">Сегодня на рынке<br><small style="font-size:16px;opacity:.8;font-weight:700">\${a.label}</small></div>\${a.list.map(e => evMini(e, 0, "")).join("")}</div><div class="ft"><span>события дня</span><span>@ime_news_01_bot</span></div>\`;`, { list, label });
   const hi = list.filter(e => e.impact === "High").length;
-  await sendPhotos([img], `📅 <b>Сегодня на рынке</b> — ${list.length} ${list.length === 1 ? "событие" : list.length < 5 ? "события" : "событий"}${hi ? `, сильно двигают рынок: ${hi}` : ""}\n\n${LINK}`);
+  await sendPhotos([img], `🗓 <i>${label}</i>\n📅 <b>Сегодня на рынке</b> — ${list.length} ${list.length === 1 ? "событие" : list.length < 5 ? "события" : "событий"}${hi ? `, сильно двигают рынок: ${hi}` : ""}\n\n${LINK}`);
   console.log("сегодня на рынке отправлено");
 }
 
@@ -261,7 +274,7 @@ async function resultsPost(p, results) {
   const V = { better: "🟢 лучше ожиданий", worse: "🔴 хуже ожиданий", inline: "⚪ в рамках ожиданий", neutral: "⚪ в рамках ожиданий" };
   const cap = results.length === 1 ? `✅ <b>${esc(results[0].title)}</b>\n${esc(results[0].headline)} · ${V[results[0].verdict] || ""}`
     : `✅ <b>Факт против прогноза</b>\n` + results.map(r => `• ${esc(r.title)}: ${esc(r.headline)}`).join("\n");
-  await sendPhotos(shots, `${cap}\n\n${LINK}`);
+  await sendPhotos(shots, `${DAY}\n${cap}\n\n${LINK}`);
   console.log("факт против прогноза отправлено");
 }
 
@@ -356,7 +369,7 @@ async function inspect() {
   const fs = require("fs"); fs.mkdirSync("out", { recursive: true }); shots.forEach((buf, i) => fs.writeFileSync(`out/${THEME}_${i + 1}.jpg`, buf)); // для проверки (артефакт запуска)
 
   // подпись короткая — только заголовок (владелец 25.10); ссылка — кнопкой
-  const caption = HEAD[THEME];
+  const caption = `${DAY}\n${HEAD[THEME]}`;
   await richPost(shots, caption).catch(e => { console.log("слайдшоу не ушло:", e.message, "— запасной вариант: кнопки ◀ ▶"); return deckPost(shots, caption); });
   if (PRO) await proPost(p, data);
   await b.close();
