@@ -992,9 +992,11 @@ def run_digest(state, now, dry, final=True):
                 card_id, ed_html, card_url = ed
                 out.append({"block": "edition", "html": [card_id, tg_html(ed_html), "#today"]})
                 publish_card(ed_html, card_url)
-                # утренний выпуск — и в бесплатный канал (владелец 25.10: «до 5 новостей каждый день, как в тестовый»); FREECH_CHAT — переменная репозитория
-                if os.environ.get("FREECH_CHAT") and local.hour < 12 and not dry:
-                    publish_card(ed_html, card_url, os.environ["FREECH_CHAT"])
+                # вечерний выпуск «итоги дня» — последний пост дня в бесплатном канале (владелец 27.10: что ждёт → календарь → карусели → итоги вечера);
+                # в заголовке — день недели и число («Вторник, 27 октября»). FREECH_CHAT — переменная репозитория
+                if os.environ.get("FREECH_CHAT") and local.hour >= 14 and not dry:
+                    wd = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"][local.weekday()]
+                    publish_card(re.sub(r" · (\d{1,2} \S+)</b>", lambda m: f" · {wd}, {m.group(1)}</b>", ed_html, count=1), card_url, os.environ["FREECH_CHAT"])
         except Exception as e:
             print("Выпуск не собран:", e, file=sys.stderr)
         try:  # отдельный выпуск для тех, кто выбрал Россию без США
