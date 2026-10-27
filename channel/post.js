@@ -30,9 +30,10 @@ const DAY = `🗓 <i>${dayLabel()}</i>`;
 const FIT = `const fw=o.querySelector('.fw'); if(fw){ fw.style.minHeight='0'; fw.style.overflow='hidden'; let z=1; while(fw.scrollHeight>fw.clientHeight+1&&z>0.76){ z-=0.02; [...fw.children].forEach(c=>c.style.zoom=z); } }`;
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-async function tg(method, form) {
+async function tg(method, form, tries = 3) {
   const r = await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/${method}`, { method: "POST", body: form });
   const j = await r.json();
+  if (j.error_code === 429 && tries > 1) { const s = ((j.parameters && j.parameters.retry_after) || 30) + 1; console.log(`${method}: Telegram просит подождать ${s} с`); await new Promise(z => setTimeout(z, s * 1000)); return tg(method, form, tries - 1); } // лимит канала ~20 сообщений в минуту
   if (!j.ok) throw new Error(`${method}: ${j.description}`);
   return j;
 }
