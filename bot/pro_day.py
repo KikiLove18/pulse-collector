@@ -155,7 +155,7 @@ def evc_data(events, results, now, msk, ask):
             "k": "События дня · итоги · время МСК", "sub": "Что вышло, почему и что это значит — листайте →",
             "cover": [], "items": items, "sum": [],
             "next": {"k": "ГЛАВНОЕ ВПЕРЕДИ", "t": when(later[0]), "s": later[0]["title"]} if later else None,
-            "src": "Источники: календарь Пульса рынка · Не является инвестиционной рекомендацией"}
+            "src": "Источники: календарь Пульса рынка"}
     user = "СЕГОДНЯ ВЫШЛО:\n" + "\n".join(
         f"{i + 1}. {it['tm']} {it['fl']} {it['t']}: " + ", ".join(f"{k} {v}" for k, v in it["nums"]) + f" — {it['vt'] or 'без прогноза'}"
         for i, it in enumerate(items)) + "\n\nЗАВТРА И ДАЛЕЕ:\n" + ("\n".join(f"{when(e)} {e['title']}" for e in later) or "—")

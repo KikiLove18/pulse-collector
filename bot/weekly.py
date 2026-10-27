@@ -18,6 +18,8 @@ MSK = timezone(timedelta(hours=3))
 WEEK_FILE = Path(__file__).resolve().parent.parent / "state" / "week.json"
 KEEP_DAYS = 8
 MONTHS = edition.MONTHS
+# короткая подпись — только под разборами со сценариями по активам (правило Юриста 28.10); итоги без «что дальше» — без неё
+PRO_NOTE = "Разбор для всех, не индивидуальная инвестрекомендация."
 
 # что показываем в таблице «Неделя в цифрах»: (ключ, название, источник)
 WEEK_QUOTES = [("^GSPC", "S&P 500", "y"), ("^IXIC", "Nasdaq", "y"), ("IMOEX", "Индекс МосБиржи", "moex"), ("SBER", "Сбербанк", "moexs"), ("GAZP", "Газпром", "moexs"),
@@ -253,7 +255,7 @@ def run_weekly(ask_ai, http_get, calendar_next, publish_card, now, dry, until=No
     table = quote_table(wq)
     head = f"<b>📊 Разбор недели · {week_label(now)}</b>"
     html = head + "\n\n" + ("<b>Неделя в цифрах</b>\n<blockquote>" + "\n".join(table) + "</blockquote>\n\n" if table else "") \
-        + body + f"\n\n<i>{edition.NOT_ADVICE}</i>"
+        + body + f"\n\n<i>{PRO_NOTE}</i>"
     metrics = [{"value": f"{'+' if wq[k][1] >= 0 else '−'}{_num(abs(wq[k][1]), 1)}%", "label": n}
                for k, n, _ in WEEK_QUOTES if k in wq][:3]
     card = {"theme": cover.get("theme") if cover.get("theme") in cards.THEMES else "wallst", "tag": "РАЗБОР НЕДЕЛИ",
@@ -343,12 +345,12 @@ def run_week_ahead(ask_ai, http_get, calendar_next, publish_card, now, dry, unti
     l = now.astimezone(MSK)
     end = l + timedelta(days=6)
     label = f"{l.day}–{end.day} {MONTHS[end.month - 1]}" if l.month == end.month else f"{l.day} {MONTHS[l.month - 1]} – {end.day} {MONTHS[end.month - 1]}"
-    html = f"<b>📅 Неделя впереди · {label}</b>\n\n" + post + f"\n\n<i>Сценарий на неделю, а не прогноз цены. {edition.NOT_ADVICE}</i>"
+    html = f"<b>📅 Неделя впереди · {label}</b>\n\n" + post + f"\n\n<i>Сценарий на неделю, а не прогноз цены. {PRO_NOTE}</i>"
     print("----- неделя впереди -----\n" + html + "\nКАРТА: " + json.dumps(rows, ensure_ascii=False), file=sys.stderr)
     if dry:
         return html
     url = _upload_png(cards.render_pressure, _cid(f"wa{l:%Y%m%d}"), "Неделя впереди: что давит на рынки", rows, label,
-                      "Сценарий на неделю, а не прогноз цены · не инвестрекомендация") if rows else None
+                      "Сценарий на неделю, а не прогноз цены") if rows else None
     publish_card(html, url)
     return html
 
@@ -380,7 +382,7 @@ def run_asset(ask_ai, http_get, calendar_next, publish_card, now, dry):
         print(f"Актив недели: ИИ повторил «{data['asset']}» — прошу другой", file=sys.stderr)
         post, data = _ask_post(ask_ai, ASSET, f"ЗАПРЕЩЕНО выбирать: {', '.join(done)}. Выбери другой актив.\n\n" + user, "asset")
     name = data.get("asset") or "Актив недели"
-    html = f"<b>🔍 Актив недели: {name}</b>\n\n" + post + f"\n\n<i>{edition.NOT_ADVICE}</i>"
+    html = f"<b>🔍 Актив недели: {name}</b>\n\n" + post + f"\n\n<i>{PRO_NOTE}</i>"
     print("----- актив недели -----\n" + html, file=sys.stderr)
     if dry:
         return html
@@ -464,7 +466,7 @@ def run_month(ask_ai, http_get, calendar_next, publish_card, now, dry):
                      + ["", "ИТОГИ МАКРОДАННЫХ:"] + [f"{r.get('dt', '')[:10]} {r.get('title')}: {r.get('headline')}" for r in week["results"]]
                      + ["", "КАЛЕНДАРЬ:"] + (calendar_next or ["нет данных"]) + ["", "НОВОСТИ:"] + _news_lines(week, 8, 100))
     body = ask_ai(MONTH, user).strip()
-    html = f"<b>📈 Итоги месяца · {mname} {prev.year}</b>\n\n{body}\n\n<i>{edition.NOT_ADVICE}</i>"
+    html = f"<b>📈 Итоги месяца · {mname} {prev.year}</b>\n\n{body}"
     print("----- итоги месяца -----\n" + html, file=sys.stderr)
     if dry:
         return html

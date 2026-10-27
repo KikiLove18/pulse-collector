@@ -150,7 +150,6 @@ def preview(day, posts):
         p.append(f"\n<b>📊 Опрос:</b> {posts['poll']['question']}\n" + "\n".join(f"▫️ {o}" for o in posts["poll"]["options"]))
     if "answer" in posts:
         p.append(f"\n<b>🦁 Лев отвечает: {posts['answer']['q']}</b>\n{posts['answer']['text']}")
-    p.append("\n<i>Не является инвестиционной рекомендацией.</i>")
     return "\n".join(p)
 
 

@@ -386,7 +386,7 @@ async function botDecks(p, b, news) {
 const RUBRICS = ["today", "week_ahead", "lion", "num", "word", "week", "answer", "poll", "itogi"];
 const MSK_DAY = () => new Date(Date.now() + 3 * 3600e3).toISOString().slice(0, 10);
 const BAD_SRC = /^(США|Россия|Крипта|Сырьё|Нефть и золото|ru|us|crypto|commodities|x)$/i; // это рынок, а не источник
-const srcLine = (src, ord = true) => [src && !BAD_SRC.test(String(src).trim()) ? `Источник: ${esc(src)}` : "", ord ? "не инвестрекомендация" : ""].filter(Boolean).join(" · ");
+const srcLine = src => src && !BAD_SRC.test(String(src).trim()) ? `Источник: ${esc(src)}` : "";  // подпись «не ИИР» — только в закрепе и описании (Юрист 28.10)
 const POLL_SPARE = [{ question: "Куда пойдёт рубль на этой неделе?", options: ["Укрепится", "Ослабнет", "Останется на месте", "Не слежу"] },
   { question: "Что разобрать в следующее воскресенье?", options: ["Вклады и ставки", "Акции РФ", "Валюта", "Крипта"] }];
 function rubricData(rub, data) {
@@ -419,11 +419,11 @@ function rubricData(rub, data) {
 const CAPTION = {
   today: x => `☀️ <b>${esc(x.title)}</b>\nВремя — московское.`,
   week_ahead: x => `☀️ <b>${esc(x.title)}</b>\nВремя — московское.`,
-  lion: x => `🦁 <b>${esc(x.title)}</b>\n\nЛев разложил по шагам — листайте картинку.\n\n<i>${srcLine(x.src)}</i>`,
-  num: x => `🔢 <b>Цифра дня: ${esc(x.value)}</b>${x.title ? "\n" + esc(x.title) : ""}${srcLine(x.src, false) ? `\n\n<i>${srcLine(x.src, false)}</i>` : ""}`,
-  word: x => `📖 <b>Слово дня — ${esc(x.term)}</b>\nСохраните, чтобы не забыть.${srcLine(x.src, false) ? `\n\n<i>${srcLine(x.src, false)}</i>` : ""}`,
+  lion: x => `🦁 <b>${esc(x.title)}</b>\n\nЛев разложил по шагам — листайте картинку.${srcLine(x.src) ? `\n\n<i>${srcLine(x.src)}</i>` : ""}`,
+  num: x => `🔢 <b>Цифра дня: ${esc(x.value)}</b>${x.title ? "\n" + esc(x.title) : ""}${srcLine(x.src) ? `\n\n<i>${srcLine(x.src)}</i>` : ""}`,
+  word: x => `📖 <b>Слово дня — ${esc(x.term)}</b>\nСохраните, чтобы не забыть.${srcLine(x.src) ? `\n\n<i>${srcLine(x.src)}</i>` : ""}`,
   week: () => `🦁 <b>Неделя за 1 минуту</b>\nДля тех, кто пропустил — перешлите другу.`,
-  answer: () => `🦁 <b>Лев отвечает</b>\nВопросы — в комментариях или в боте, лучший разберём в воскресенье.\n\n<i>Не инвестрекомендация</i>`,
+  answer: () => `🦁 <b>Лев отвечает</b>\nВопросы — в комментариях или в боте, лучший разберём в воскресенье.\n\n<i>Разбор для всех, не индивидуальная инвестрекомендация.</i>`,
   itogi: () => `🌙 <b>Итоги дня</b>\nГлавное по России, США, сырью и крипте — подробно в приложении.`,
 };
 async function rubricPost(b, rub, data) {
