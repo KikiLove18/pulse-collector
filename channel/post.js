@@ -296,6 +296,90 @@ async function inspect() {
   }
 }
 
+// 5 главных новостей темы → слайды (снимки карточек приложения)
+async function deckShots(p, theme, news, used) {
+  // подбор в странице — там же списки людей приложения (PERSON_RE)
+  const pick = await p.evaluate(({ news, used, theme }) => {
+    // без войны и происшествий (канал — про рынки), без повторов, сильные первыми; «люди» — новости с нашими персонами, по одной на человека
+    // \b в JS не работает с русскими буквами — границы слова через [^а-яё]
+    const BAD = /беспилот|БПЛА|ПВО|дрон|теракт|жертв|погиб|ранен|землетряс|протест|митинг|ракет|обстрел|удар|Минобороны|атак|военн|войн|армия|ВСУ|фронт|взрыв|эвакуир|хуситы|заложник|убит|арест|(^|[^а-яё])суд([^а-яён]|$)|приговор|покушени|подрыв|на минах|эскалац|КСИР|внешн\S* воздейств|ДНР|ЛНР|Херсон|Запорож|Крым|Севастопол|Белгород|Курск|электроснабжен|обесточ|Донбас|спецоперац|СВО(?![а-яё])|мобилизац|санитарн\S* зон|диверс/i;
+    const pers = n => Object.keys(PERSON_RE).find(k => PERSON_RE[k].test(n.title || ""));
+    const old = new Set(used);
+    let L = news.filter(n => n.title && !old.has(n.title) && !BAD.test(n.title + " " + (n.text || "")));
+    L = theme === "x" ? L.filter(n => pers(n)) : L.filter(n => n.block === theme);
+    L.sort((a, b) => (b.imp || 0) - (a.imp || 0) || (b.card ? 1 : 0) - (a.card ? 1 : 0) || (b.ts > a.ts ? 1 : -1));
+    const words = t => new Set(t.toLowerCase().replace(/[^a-zа-яё0-9 ]/gi, " ").split(/\s+/).filter(w => w.length > 3));
+    const out = [], seen = new Set();
+    for (const n of L) {
+      const w = words(n.title);
+      if (out.some(o => [...words(o.title)].filter(x => w.has(x)).length >= 2)) continue;
+      if (theme === "x") { const k = pers(n); if (seen.has(k)) continue; seen.add(k); }
+      out.push(n);
+      if (out.length === 5) break;
+    }
+    return out;
+  }, { news, used, theme });
+  // карточки крипты до 25.10 ~04:00 МСК — с одинаковым рисованным фоном: показываем вместо них фото приложения (img/bg/crypto*)
+  for (const n of pick) if (n.block === "crypto" && n.ts < "2026-10-25T01:00") delete n.card;
+  console.log(`${theme}: ${pick.length} новостей\n` + pick.map(n => "• " + n.title).join("\n"));
+  if (pick.length < 3) return { pick, shots: [] };
+
+  const shots = [];
+  for (let i = 0; i < pick.length; i++) {
+    await p.evaluate(({ n, i, total, title, fit }) => {
+      NEWS = [n];
+      document.getElementById("fc")?.remove();
+      const o = document.createElement("div");
+      o.id = "fc";
+      o.innerHTML = `<style>#fc{position:fixed;inset:0;z-index:2147483647;background:linear-gradient(160deg,#1b3360,#3a6ea8);display:flex;flex-direction:column;padding:12px 8px 10px;gap:8px}
+        #fc .hd{display:flex;align-items:center;gap:10px;font-weight:800;font-size:14px;color:#fff;padding:0 4px}#fc .hd img{width:26px;height:26px;border-radius:7px}
+        #fc .hd .th{margin-left:auto;font-size:14px;font-weight:700;opacity:.8}#fc .card{margin:0!important;box-shadow:0 10px 40px rgba(0,0,0,.35)}#fc .acts,#fc .newpill,#fc .has-cover>.t,#fc .ntag,#fc .also{display:none}
+        #fc .fw{flex:1;display:flex;flex-direction:column;justify-content:center}#fc .ft{display:flex;justify-content:space-between;font-size:13px;opacity:.75;color:#fff}</style>
+        <div class="hd"><img src="img/logo192.png" alt="">Пульс рынка<span class="th">${title}</span></div>
+        <div class="fw">${newsCard(n, 0)}</div>
+        <div class="ft"><span>${i + 1} / ${total}</span><span>@ime_news_01_bot</span></div>`;
+      document.body.appendChild(o);
+      new Function("o", fit)(o);
+    }, { n: pick[i], i, total: pick.length, title: TITLE[theme], fit: FIT });
+    await p.waitForTimeout(800); // картинка карточки
+    shots.push(await p.locator("#fc").screenshot({ type: "jpeg", quality: 88 }));
+  }
+  const fs = require("fs"); fs.mkdirSync("out", { recursive: true }); shots.forEach((buf, i) => fs.writeFileSync(`out/${theme}_${i + 1}.jpg`, buf)); // для проверки (артефакт запуска)
+
+  return { pick, shots };
+}
+
+// 🎠 карусель дня в боте (владелец 27.10): 4 колоды (Россия, США, крипта, сырьё) → картинки в Telegram (тестовый канал, без звука, сразу удаляем) →
+// file_id воркеру (/api/freech/botdeck); людям карусель шлёт воркер в 13:00 по их времени. TARGET=test — воркер ещё присылает образец в тестовый канал.
+async function botDecks(p, b, news) {
+  const decks = {};
+  for (const th of ["ru", "us", "crypto", "commodities"]) {
+    const { shots } = await deckShots(p, th, news, []);
+    if (shots.length < 3) { console.log(th, "— мало новостей, колоды нет"); continue; }
+    const up = new FormData();
+    up.append("chat_id", process.env.TELEGRAM_CHAT_ID); up.append("disable_notification", "true");
+    up.append("media", JSON.stringify(shots.map((_, i) => ({ type: "photo", media: `attach://s${i}` }))));
+    shots.forEach((buf, i) => up.append(`s${i}`, new Blob([buf], { type: "image/jpeg" }), `s${i}.jpg`));
+    const msgs = (await tg("sendMediaGroup", up)).result;
+    decks[th] = msgs.map(m => m.photo[m.photo.length - 1].file_id);
+    const del = new FormData();
+    del.append("chat_id", process.env.TELEGRAM_CHAT_ID); del.append("message_ids", JSON.stringify(msgs.map(m => m.message_id)));
+    await tg("deleteMessages", del).catch(e => console.log("загрузка не удалилась:", e.message));
+  }
+  await b.close();
+  if (TARGET === "test" && decks.ru) { // образец — как увидит человек (по file_id, без повторной загрузки); в канале вместо web_app — ссылка
+    const html = `<tg-slideshow>${decks.ru.map((_, i) => `<img src="tg://photo?id=s${i}"/>`).join("")}</tg-slideshow><p>${DAY}<br/>${HEAD.ru}</p>` +
+      `<tg-button-row align="left"><tg-button type="url" url="https://t.me/${BOT}?startapp=deck">📱 Все новости — в приложении</tg-button></tg-button-row>`;
+    const f = new FormData(); f.append("chat_id", CHAT);
+    f.append("rich_message", JSON.stringify({ html, media: decks.ru.map((fid, i) => ({ id: `s${i}`, media: { type: "photo", media: fid } })) }));
+    console.log("образец карусели дня:", CHAT, "#" + (await tg("sendRichMessage", f)).result.message_id);
+  }
+  const r = await fetch(`${APP}/api/freech/botdeck`, { method: "POST", headers: { authorization: `Bearer ${process.env.INGEST_SECRET}`, "content-type": "application/json" },
+    body: JSON.stringify({ decks }) });
+  console.log("колоды у воркера:", Object.keys(decks).join(","), r.status, (await r.text()).slice(0, 200));
+  if (!r.ok && TARGET !== "test") process.exit(1);
+}
+
 (async () => {
   if (THEME === "inspect") return inspect();
   const api = await fetch(`${APP}/api/freech${TARGET === "test" ? "?sample=1" : ""}`, { headers: { authorization: `Bearer ${process.env.INGEST_SECRET}` } });
@@ -320,53 +404,9 @@ async function inspect() {
   await p.goto(APP + "/", { waitUntil: "networkidle" });
   await p.waitForTimeout(1500);
 
-  // подбор в странице — там же списки людей приложения (PERSON_RE)
-  const pick = await p.evaluate(({ news, used, theme }) => {
-    // без войны и происшествий (канал — про рынки), без повторов, сильные первыми; «люди» — новости с нашими персонами, по одной на человека
-    // \b в JS не работает с русскими буквами — границы слова через [^а-яё]
-    const BAD = /беспилот|БПЛА|ПВО|дрон|теракт|жертв|погиб|ранен|землетряс|протест|митинг|ракет|обстрел|удар|Минобороны|атак|военн|войн|армия|ВСУ|фронт|взрыв|эвакуир|хуситы|заложник|убит|арест|(^|[^а-яё])суд([^а-яён]|$)|приговор|покушени|подрыв|на минах|эскалац|КСИР|внешн\S* воздейств|ДНР|ЛНР|Херсон|Запорож|Крым|Севастопол|Белгород|Курск|электроснабжен|обесточ|Донбас|спецоперац|СВО(?![а-яё])|мобилизац|санитарн\S* зон|диверс/i;
-    const pers = n => Object.keys(PERSON_RE).find(k => PERSON_RE[k].test(n.title || ""));
-    const old = new Set(used);
-    let L = news.filter(n => n.title && !old.has(n.title) && !BAD.test(n.title + " " + (n.text || "")));
-    L = theme === "x" ? L.filter(n => pers(n)) : L.filter(n => n.block === theme);
-    L.sort((a, b) => (b.imp || 0) - (a.imp || 0) || (b.card ? 1 : 0) - (a.card ? 1 : 0) || (b.ts > a.ts ? 1 : -1));
-    const words = t => new Set(t.toLowerCase().replace(/[^a-zа-яё0-9 ]/gi, " ").split(/\s+/).filter(w => w.length > 3));
-    const out = [], seen = new Set();
-    for (const n of L) {
-      const w = words(n.title);
-      if (out.some(o => [...words(o.title)].filter(x => w.has(x)).length >= 2)) continue;
-      if (theme === "x") { const k = pers(n); if (seen.has(k)) continue; seen.add(k); }
-      out.push(n);
-      if (out.length === 5) break;
-    }
-    return out;
-  }, { news, used, theme: THEME });
-  // карточки крипты до 25.10 ~04:00 МСК — с одинаковым рисованным фоном: показываем вместо них фото приложения (img/bg/crypto*)
-  for (const n of pick) if (n.block === "crypto" && n.ts < "2026-10-25T01:00") delete n.card;
-  console.log(`${THEME}: ${pick.length} новостей\n` + pick.map(n => "• " + n.title).join("\n"));
+  if (THEME === "bot") return botDecks(p, b, news);
+  const { pick, shots } = await deckShots(p, THEME, news, used);
   if (pick.length < 3) { console.log("мало новостей — пост не отправлен"); await b.close(); return; }
-
-  const shots = [];
-  for (let i = 0; i < pick.length; i++) {
-    await p.evaluate(({ n, i, total, title, fit }) => {
-      NEWS = [n];
-      document.getElementById("fc")?.remove();
-      const o = document.createElement("div");
-      o.id = "fc";
-      o.innerHTML = `<style>#fc{position:fixed;inset:0;z-index:2147483647;background:linear-gradient(160deg,#1b3360,#3a6ea8);display:flex;flex-direction:column;padding:12px 8px 10px;gap:8px}
-        #fc .hd{display:flex;align-items:center;gap:10px;font-weight:800;font-size:14px;color:#fff;padding:0 4px}#fc .hd img{width:26px;height:26px;border-radius:7px}
-        #fc .hd .th{margin-left:auto;font-size:14px;font-weight:700;opacity:.8}#fc .card{margin:0!important;box-shadow:0 10px 40px rgba(0,0,0,.35)}#fc .acts,#fc .newpill,#fc .has-cover>.t,#fc .ntag,#fc .also{display:none}
-        #fc .fw{flex:1;display:flex;flex-direction:column;justify-content:center}#fc .ft{display:flex;justify-content:space-between;font-size:13px;opacity:.75;color:#fff}</style>
-        <div class="hd"><img src="img/logo192.png" alt="">Пульс рынка<span class="th">${title}</span></div>
-        <div class="fw">${newsCard(n, 0)}</div>
-        <div class="ft"><span>${i + 1} / ${total}</span><span>@ime_news_01_bot</span></div>`;
-      document.body.appendChild(o);
-      new Function("o", fit)(o);
-    }, { n: pick[i], i, total: pick.length, title: TITLE[THEME], fit: FIT });
-    await p.waitForTimeout(800); // картинка карточки
-    shots.push(await p.locator("#fc").screenshot({ type: "jpeg", quality: 88 }));
-  }
-  const fs = require("fs"); fs.mkdirSync("out", { recursive: true }); shots.forEach((buf, i) => fs.writeFileSync(`out/${THEME}_${i + 1}.jpg`, buf)); // для проверки (артефакт запуска)
 
   // подпись короткая — только заголовок (владелец 25.10); ссылка — кнопкой
   const caption = `${DAY}\n${HEAD[THEME]}`;
