@@ -1,0 +1,97 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- Шаблон картинок бесплатного канала v2 (утверждён владельцем 27.10, r-1793088029796).
+     Вызов: открыть страницу, затем window.render({rubric, date, ...данные}) → готово, когда document.body.dataset.ready==="1";
+     снимок элемента #p (1080×1350). Поля — README.md рядом. -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}body{background:#111}
+#p{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:Inter,"Apple Color Emoji";color:#fff}
+.top{position:absolute;top:52px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;font-weight:800;letter-spacing:2px;font-size:24px;z-index:2}
+.top img{width:48px;height:48px;border-radius:12px;vertical-align:middle;margin-right:14px}
+.tag{font-size:22px;padding:10px 20px;border-radius:30px;letter-spacing:1px;background:#E8B84A;color:#1c2a44}
+/* колонка текста: сверху вниз, без ручных top — длинный текст ужимается fit() */
+#col{position:absolute;left:60px;top:140px;bottom:70px;width:640px;z-index:2;display:flex;flex-direction:column;gap:34px}
+#col.narrow{width:600px}
+.date{font-size:24px;font-weight:600;color:rgba(255,255,255,.65);margin-bottom:-18px}
+h1{font-family:'Playfair Display';font-weight:800;font-size:72px;line-height:1.05}
+h1.sm{font-size:56px}
+b{color:#E8B84A}
+.lion{position:absolute;z-index:1}
+.chain .st{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:20px 26px;font-size:28px;line-height:1.3;margin-bottom:46px;position:relative}
+.chain .st:last-child{margin-bottom:0}
+.chain .st:not(:last-child):after{content:"↓";position:absolute;left:40px;bottom:-46px;font-size:36px;color:#E8B84A}
+.st.you{background:#E8B84A;color:#1c2a44;border:0}.st.you b{color:#1c2a44}
+.big{font-family:'Playfair Display';font-size:250px;font-weight:800;color:#E8B84A;letter-spacing:-4px;line-height:1;margin-left:-8px;max-width:940px;position:relative;z-index:3}
+.sub{font-size:34px;line-height:1.3;font-weight:600;width:520px}
+.box{font-size:27px;line-height:1.38;background:rgba(255,255,255,.08);border-radius:22px;padding:24px 28px;width:560px}
+.row{display:flex;gap:20px;align-items:baseline;font-size:28px;line-height:1.3;padding:20px 24px;border-radius:20px;margin-bottom:14px;background:rgba(255,255,255,.08)}
+.row .d{font-weight:800;color:#E8B84A;min-width:104px;flex:none}
+.row .d.e{min-width:40px;font-size:32px}
+.q{font-family:'Playfair Display';font-size:54px;line-height:1.15;font-weight:700;width:620px}
+/* фоны рубрик */
+.morning{background:radial-gradient(circle at 85% 25%,#5a4d7a 0,#2d2a4a 55%,#1b1a30 100%)}
+.explain{background:radial-gradient(circle at 85% 30%,#3a5a8a 0,#1c2a44 55%,#121c2f 100%)}
+.number{background:radial-gradient(circle at 80% 35%,#2f4d3f 0,#23392f 55%,#16241d 100%)}.number .tag{background:#efe6d6;color:#23392f}
+.word{background:radial-gradient(circle at 80% 30%,#6a3b4a 0,#3d2230 55%,#24141c 100%)}.word .tag{background:#efe6d6;color:#3d2230}
+.evening{background:radial-gradient(circle at 80% 30%,#22406a 0,#13213a 55%,#0b1424 100%)}
+.week{background:radial-gradient(circle at 85% 25%,#7a5a2a 0,#4a3518 50%,#241a0e 100%)}.week .tag{background:#fff3d6;color:#4a3518}
+.answer{background:radial-gradient(circle at 80% 30%,#2e5f66 0,#1b3a40 55%,#102428 100%)}.answer .tag{background:#efe6d6;color:#1b3a40}
+</style></head><body>
+<div id="p"><div class="top"><span><img src="lion/logo.png">ПУЛЬС РЫНКА</span><span class="tag" id="tag"></span></div><div id="col"></div><img class="lion" id="lion"></div>
+<script>
+// рубрика → фон, плашка, поза льва (позы — из v2, у каждой рубрики своя)
+const R={
+ today:      {bg:'morning',tag:'ЧТО ЖДЁТ СЕГОДНЯ',  lion:'c-sup-wave',          ls:'height:640px;right:-200px;bottom:-10px'},
+ week_ahead: {bg:'morning',tag:'ЧТО ЖДЁТ НА НЕДЕЛЕ',lion:'c-sup-wave',          ls:'height:640px;right:-200px;bottom:-10px'},
+ lion:       {bg:'explain',tag:'ЛЕВ ОБЪЯСНЯЕТ',     lion:'k-buy-interest',      ls:'height:660px;right:-170px;bottom:0'},
+ num:        {bg:'number', tag:'ЦИФРА ДНЯ',         lion:'k-st-idea-tweed',     ls:'height:640px;right:-230px;bottom:0'},
+ word:       {bg:'word',   tag:'СЛОВО ДНЯ',         lion:'c-sup-cardigan-glasses',ls:'height:640px;right:-210px;bottom:-10px'},
+ itogi:      {bg:'evening',tag:'ИТОГИ ДНЯ',         lion:'c-st-heart',          ls:'height:600px;right:-230px;bottom:-10px'},
+ week:       {bg:'week',   tag:'НЕДЕЛЯ ЗА 1 МИНУТУ',lion:'c-camel-calm',        ls:'height:600px;right:-230px;bottom:-10px'},
+ answer:     {bg:'answer', tag:'ЛЕВ ОТВЕЧАЕТ',      lion:'c-sup-chin',          ls:'height:600px;right:-230px;bottom:-10px'},
+};
+const FLAG={ru:'🇷🇺',us:'🇺🇸',crypto:'₿',commodities:'🛢',gold:'🥇',x:'𝕏'};
+// текст: экранируем, **жирное** → золотом
+const t=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+const rows=(a,d)=>(a||[]).map((x,i)=>{const k=d(x,i);return `<div class="row"><span class="d${k.e?' e':''}">${t(k.d)}</span><span class="t">${t(k.t)}</span></div>`}).join('');
+const box=(a,b)=>`<div class="box">${a?`<b>${t(a[0])}</b><br>${t(a[1])}`:''}${a&&b?'<br><br>':''}${b?`<b>Почему сегодня:</b> ${t(b)}`:''}</div>`;
+function body(r,x){
+ const date=x.date?`<div class="date">${t(x.date)}</div>`:'';
+ switch(r){
+  case 'today': return date+`<h1>${t(x.title||'Что важно сегодня')}</h1><div>${rows(x.items,i=>({d:i.time||i.d,t:(FLAG[i.region]?FLAG[i.region]+' ':'')+(i.t||i.title)}))}</div>`;
+  case 'week_ahead': return `<h1>${t(x.title||'Главное на неделе')}</h1><div>${rows(x.items,i=>({d:i.d,t:i.t}))}</div>`;
+  case 'itogi': return date+`<h1>${t(x.title||'Что было важно сегодня')}</h1><div>${rows(x.items,i=>({d:FLAG[i.region]||i.d||'•',e:1,t:i.t||i.title}))}</div>`;
+  case 'week': return `<h1>${t(x.title||'5 событий, которые стоит знать')}</h1><div>${rows((x.items||[]).slice(0,5),(i,n)=>({d:n+1,t:i.t||i}))}</div>`;
+  case 'lion': {
+   // steps[] + you; либо text строками, строка «Для вас: …» — последняя
+   let st=x.steps,you=x.you;
+   if(!st){st=String(x.text||'').split('\n').map(s=>s.trim()).filter(Boolean);const k=st.findIndex(s=>/^\**для вас/i.test(s));if(k>=0)you=st.splice(k,1)[0];}
+   you=you&&String(you).replace(/^\**для вас:?\**\s*/i,'');
+   return `<h1>${t(x.title)}</h1><div class="chain">${st.slice(0,4).map(s=>`<div class="st">${t(s)}</div>`).join('')}${you?`<div class="st you"><b>Для вас:</b> ${t(you)}</div>`:''}</div>`;}
+  case 'num': return (x.title?`<h1 class="sm">${t(x.title)}</h1>`:'')+`<div class="big">${t(x.value)}</div>`+(x.unit?`<div class="sub">${t(x.unit)}</div>`:'')+box(x.text?['Что это за число?',x.text]:null,x.why);
+  case 'word': return `<div class="big" style="font-size:230px">${t(x.term)}</div>`+(x.sub?`<div class="sub">${t(x.sub)}</div>`:'')+box(x.text?['Простыми словами:',x.text]:null,x.why);
+  case 'answer': return `<div class="date">вопрос подписчика</div><div class="q">«${t(String(x.q||'').replace(/^[«"]|[»"]$/g,''))}»</div><div class="box" style="width:600px">${t(x.text).replace(/\n\n?/g,'<br><br>')}</div>`;
+ }
+ throw new Error('нет рубрики '+r);
+}
+// ужать шрифты, пока колонка не влезет (до 70% исходного)
+function fit(){
+ const c=document.getElementById('col');
+ // крупное число/слово: сначала по ширине (слово не рвём, строк не больше двух)
+ c.querySelectorAll('.big').forEach(e=>{let f=parseFloat(getComputedStyle(e).fontSize);
+  while(f>90&&(e.scrollWidth>e.clientWidth+2||e.offsetHeight>f*2.1)){f-=6;e.style.fontSize=f+'px'}});
+ for(let k=1;k>=0.7&&c.scrollHeight>c.clientHeight;k-=0.04)
+  c.querySelectorAll('h1,.q,.sub,.box,.row,.st').forEach(e=>{e.style.fontSize='';const f=parseFloat(getComputedStyle(e).fontSize);e.style.fontSize=f*k+'px'});
+ return c.scrollHeight<=c.clientHeight;
+}
+window.render=async x=>{
+ const r=R[x.rubric]; if(!r) throw new Error('нет рубрики '+x.rubric);
+ const p=document.getElementById('p'); p.className=r.bg;
+ document.getElementById('tag').textContent=r.tag;
+ const l=document.getElementById('lion'); l.src='lion/'+r.lion+'.png'; l.style.cssText=r.ls;
+ const c=document.getElementById('col'); c.className=x.rubric==='lion'?'':'narrow';
+ c.innerHTML=body(x.rubric,x);
+ await document.fonts.ready; await Promise.all([...document.images].map(i=>i.complete?0:new Promise(z=>i.onload=i.onerror=z)));
+ const ok=fit(); document.body.dataset.ready='1'; document.body.dataset.fit=ok?'1':'0'; return ok;
+};
+</script></body></html>

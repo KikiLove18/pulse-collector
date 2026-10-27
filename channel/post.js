@@ -381,12 +381,89 @@ async function botDecks(p, b, news) {
   if (!r.ok && TARGET !== "test") process.exit(1);
 }
 
+// ---------- v2: рубрики по сетке Маркетолога (владелец 27.10, r-1793088029796) — картинка по шаблону channel/freech.html + подпись ----------
+// тексты lion/num/word/week/answer/poll — Редактор (meta.freech_posts[дата МСК]); today/week_ahead — календарь; itogi — новости дня. Нет текста — пост пропускаем, сигнал в тестовый канал.
+const RUBRICS = ["today", "week_ahead", "lion", "num", "word", "week", "answer", "poll", "itogi"];
+const MSK_DAY = () => new Date(Date.now() + 3 * 3600e3).toISOString().slice(0, 10);
+const BAD_SRC = /^(США|Россия|Крипта|Сырьё|Нефть и золото|ru|us|crypto|commodities|x)$/i; // это рынок, а не источник
+const srcLine = (src, ord = true) => [src && !BAD_SRC.test(String(src).trim()) ? `Источник: ${esc(src)}` : "", ord ? "не инвестрекомендация" : ""].filter(Boolean).join(" · ");
+const POLL_SPARE = [{ question: "Куда пойдёт рубль на этой неделе?", options: ["Укрепится", "Ослабнет", "Останется на месте", "Не слежу"] },
+  { question: "Что разобрать в следующее воскресенье?", options: ["Вклады и ставки", "Акции РФ", "Валюта", "Крипта"] }];
+function rubricData(rub, data) {
+  const posts = (data.posts || {})[MSK_DAY()] || {}, date = dayLabel().toLowerCase();
+  const hm = e => new Date(e.dt).toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Moscow" });
+  const dayOf = e => new Date(new Date(e.dt).getTime() + 3 * 3600e3).toISOString().slice(0, 10);
+  const REG = { ru: "ru", us: "us", oil: "commodities", gold: "gold", crypto: "crypto" };
+  const evs = (data.events || []).filter(e => e && e.dt && e.title);
+  if (rub === "today") {
+    const list = evs.filter(e => dayOf(e) === MSK_DAY()).sort((a, b) => (b.impact === "High") - (a.impact === "High") || (a.dt > b.dt ? 1 : -1)).slice(0, 4).sort((a, b) => a.dt > b.dt ? 1 : -1);
+    return list.length ? { rubric: rub, date, title: posts.today?.title || "Что важно сегодня", items: list.map(e => ({ time: hm(e), region: REG[e.region], t: e.title })) } : null;
+  }
+  if (rub === "week_ahead") {
+    const end = new Date(Date.now() + 7 * 864e5).toISOString().slice(0, 10), WD = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
+    const list = evs.filter(e => e.impact === "High" && dayOf(e) >= MSK_DAY() && dayOf(e) < end).sort((a, b) => a.dt > b.dt ? 1 : -1).slice(0, 5);
+    return list.length ? { rubric: rub, title: posts.week_ahead?.title || "Главное на неделе", items: list.map(e => ({ d: WD[new Date(dayOf(e) + "T12:00:00Z").getUTCDay()], t: `${REG[e.region] === "ru" ? "🇷🇺" : REG[e.region] === "us" ? "🇺🇸" : ""} ${e.title} — **${hm(e)}**`.trim() })) } : null;
+  }
+  if (rub === "itogi") {
+    const BAD = /беспилот|БПЛА|ПВО|дрон|теракт|жертв|погиб|ранен|ракет|обстрел|удар|атак|военн|войн|ВСУ|фронт|взрыв|арест|приговор|СВО(?![а-яё])/i;
+    const L = (data.news || []).filter(n => n.title && n.ts && dayOf({ dt: n.ts }) === MSK_DAY() && ["ru", "us", "crypto", "commodities"].includes(n.block) && !BAD.test(n.title + " " + (n.text || "")))
+      .sort((a, b) => (b.imp || 0) - (a.imp || 0) || (b.ts > a.ts ? 1 : -1));
+    const out = [];
+    for (const m of ["ru", "us", "commodities", "crypto"]) { const n = L.find(x => x.block === m); if (n) out.push(n); }
+    return out.length >= 3 ? { rubric: rub, date, items: out.map(n => ({ region: n.block, t: n.title })) } : null;
+  }
+  if (rub === "poll") return posts.poll?.question && (posts.poll.options || []).length >= 2 ? posts.poll : POLL_SPARE[Math.floor(Date.now() / 6048e5) % 2];
+  return posts[rub] ? { ...posts[rub], rubric: rub } : null;
+}
+const CAPTION = {
+  today: x => `☀️ <b>${esc(x.title)}</b>\nВремя — московское.`,
+  week_ahead: x => `☀️ <b>${esc(x.title)}</b>\nВремя — московское.`,
+  lion: x => `🦁 <b>${esc(x.title)}</b>\n\nЛев разложил по шагам — листайте картинку.\n\n<i>${srcLine(x.src)}</i>`,
+  num: x => `🔢 <b>Цифра дня: ${esc(x.value)}</b>${x.title ? "\n" + esc(x.title) : ""}${srcLine(x.src, false) ? `\n\n<i>${srcLine(x.src, false)}</i>` : ""}`,
+  word: x => `📖 <b>Слово дня — ${esc(x.term)}</b>\nСохраните, чтобы не забыть.${srcLine(x.src, false) ? `\n\n<i>${srcLine(x.src, false)}</i>` : ""}`,
+  week: () => `🦁 <b>Неделя за 1 минуту</b>\nДля тех, кто пропустил — перешлите другу.`,
+  answer: () => `🦁 <b>Лев отвечает</b>\nВопросы — в комментариях или в боте, лучший разберём в воскресенье.\n\n<i>Не инвестрекомендация</i>`,
+  itogi: () => `🌙 <b>Итоги дня</b>\nГлавное по России, США, сырью и крипте — подробно в приложении.`,
+};
+async function rubricPost(b, rub, data) {
+  const x = rubricData(rub, data);
+  if (!x) {
+    console.log(`${rub}: нет данных на ${MSK_DAY()} — пост пропущен`);
+    if (TARGET === "channel" && !["today", "week_ahead"].includes(rub)) { const f = new FormData(); f.append("chat_id", process.env.TELEGRAM_CHAT_ID);
+      f.append("text", `⚠️ Бесплатный канал: нет текста рубрики «${rub}» на ${MSK_DAY()} (meta.freech_posts) — пост пропущен. Редактору.`); await tg("sendMessage", f).catch(() => 0); }
+    return;
+  }
+  if (rub === "poll") { // родной опрос Telegram, без картинки
+    const f = new FormData(); f.append("chat_id", CHAT); f.append("question", x.question); f.append("is_anonymous", "true");
+    f.append("options", JSON.stringify(x.options.slice(0, 4).map(o => ({ text: String(o).slice(0, 100) }))));
+    await tg("sendPoll", f); console.log("опрос отправлен:", x.question); return;
+  }
+  const p = await b.newPage({ viewport: { width: 1080, height: 1350 } });
+  p.on("pageerror", e => console.log("page error:", e.message));
+  await p.goto("file://" + require("path").join(__dirname, "freech.html"));
+  const fits = await p.evaluate(x => window.render(x), x);
+  const buf = await p.locator("#p").screenshot({ type: "jpeg", quality: 88 });
+  require("fs").mkdirSync("out", { recursive: true }); require("fs").writeFileSync(`out/${rub}_${Date.now()}.jpg`, buf);
+  console.log(rub, fits ? "влезло" : "НЕ ВЛЕЗЛО (ужато до 70%)", JSON.stringify(x).slice(0, 300));
+  const f = new FormData();
+  f.append("chat_id", CHAT);
+  f.append("photo", new Blob([buf], { type: "image/jpeg" }), `${rub}.jpg`);
+  f.append("caption", `${DAY}\n${CAPTION[rub](x)}`);
+  f.append("parse_mode", "HTML");
+  f.append("reply_markup", JSON.stringify({ inline_keyboard: [[{ text: "📱 Все новости — в приложении", url: `https://t.me/${BOT}?start=ch_${rub}` }]] }));
+  const r = await tg("sendPhoto", f);
+  console.log(`${rub} отправлено:`, CHAT, "#" + r.result.message_id);
+}
+
 (async () => {
   if (THEME === "inspect") return inspect();
   const api = await fetch(`${APP}/api/freech${TARGET === "test" ? "?sample=1" : ""}`, { headers: { authorization: `Bearer ${process.env.INGEST_SECRET}` } });
   if (!api.ok) throw new Error("api/freech " + api.status);
   const data = await api.json(), { news, used, events = [], results = [] } = data;
-  if (THEME === "pro" || THEME === "today" || THEME === "results") {
+  if (RUBRICS.includes(THEME)) { const b = await chromium.launch(); await rubricPost(b, THEME, data); await b.close();
+    if (TARGET === "channel") await fetch(`${APP}/api/freech/done`, { method: "POST", headers: { authorization: `Bearer ${process.env.INGEST_SECRET}`, "content-type": "application/json" }, body: JSON.stringify({ theme: THEME, titles: [] }) });
+    return; }
+  if (THEME === "pro" || THEME === "today_old" || THEME === "results") {
     const b = await chromium.launch();
     const p = await b.newPage({ viewport: { width: 400, height: 500 }, deviceScaleFactor: 2.7, locale: "ru-RU", timezoneId: "Europe/Moscow" });
     p.on("pageerror", e => console.log("page error:", e.message));
@@ -394,7 +471,7 @@ async function botDecks(p, b, news) {
     await p.waitForTimeout(1500);
     if (THEME === "pro") { await proPost(p, data);
       if (TARGET === "channel") await fetch(`${APP}/api/freech/done`, { method: "POST", headers: { authorization: `Bearer ${process.env.INGEST_SECRET}`, "content-type": "application/json" },
-        body: JSON.stringify({ theme: "pro", titles: [] }) }); } else if (THEME === "today") await todayPost(p, events); else await resultsPost(p, results);
+        body: JSON.stringify({ theme: "pro", titles: [] }) }); } else if (THEME === "today_old") await todayPost(p, events); else await resultsPost(p, results);
     await b.close();
     return;
   }
