@@ -83,7 +83,8 @@ def save_week(week, now):
 
 def remember_news(out, now):
     """Из Ленты — заметные новости (imp ≥ 2) в журнал недели."""
-    keep = [{"ts": o["ts"], "imp": o["imp"], "block": o["block"], "title": o["title"], "text": o.get("text", "")[:300]}
+    keep = [{"ts": o["ts"], "imp": o["imp"], "block": o["block"], "title": o["title"], "text": o.get("text", "")[:300],
+             "src": o.get("source", "")}
             for o in out if o.get("imp", 1) >= 2]
     if not keep:
         return
