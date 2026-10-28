@@ -902,7 +902,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-28T18:29:19.873824+00:00",
+  "breaking_ts": "2026-10-28T18:30:57.265438+00:00",
   "news_now": {
     "day": "2026-10-28",
     "day_count": 8,
@@ -920,7 +920,14 @@
     ]
   },
   "news_seen": [
+    "https://t.me/incrypted/33139",
+    "https://t.me/headlines_for_traders/87632",
+    "https://tass.ru/ekonomika/28264013",
+    "https://tass.ru/sport/28264041",
     "https://t.me/forklog/50452",
+    "https://tass.ru/obschestvo/28264029",
+    "https://tass.ru/ekonomika/28264039",
+    "https://tass.ru/politika/28264027",
     "https://tass.ru/politika/28264037",
     "https://tass.ru/politika/28264033",
     "https://t.me/FinancialJuice/143345",
@@ -989,10 +996,8 @@
     "https://t.me/FinancialJuice/143341",
     "https://t.me/banksta/104343",
     "https://t.me/FinancialJuice/143340",
-    "https://tass.ru/ekonomika/28263981",
     "https://t.me/WalterBloomberg/37515",
     "https://t.me/markettwits/390987",
-    "https://tass.ru/ekonomika/28263793",
     "https://t.me/bitkogan_hotline/28035",
     "https://www.wsj.com/business/weil-gotshal-leaders-discussing-plan-to-wind-down-law-firm-09d60c10?mod=rss_markets_main",
     "https://t.me/FinancialJuice/143339",
@@ -1027,14 +1032,9 @@
     "https://t.me/markettwits/390986",
     "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
     "https://oilprice.com/Energy/Natural-Gas/China-Secures-Massive-Discount-on-Russian-Gas-as-Moscows-Leverage-Weakens.html",
-    "https://tass.ru/mezhdunarodnaya-panorama/28263963",
     "https://www.kommersant.ru/doc/9063100",
-    "https://tass.ru/proisshestviya/28263947",
-    "https://tass.ru/proisshestviya/28263961",
     "https://www.interfax.ru/business/1125613",
-    "https://t.me/rbc_news/159614",
-    "https://www.kommersant.ru/doc/9063186",
-    "https://www.investing.com/news/stock-market-news/apple-expected-to-show-first-touchscreen-laptops-amid-product-blitz-4978532"
+    "https://t.me/rbc_news/159614"
   ],
   "ai_dead": {
     "date": "2026-10-28",
