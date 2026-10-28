@@ -6,7 +6,7 @@ on:
   workflow_dispatch:          # кнопка «Run workflow» для ручного запуска
     inputs:
       mode:
-        description: "auto / digest / events / results / breaking / preview / ai_check / ai_probe / weekly / week_ahead / asset / guide / month / pro_check, pro_auto (черновик поста PRO → meta.pro_draft + тест), pro_day (#СОБЫТИЯ → тест), pro_fill (наполнение PRO за прошлую неделю → тест), pro_fill_live (→ канал PRO) / morning:<пояс>"
+        description: "auto / digest / events / results / breaking / preview / ai_check / ai_probe / roles_check (должности → тест, :test — с подменой) / weekly / week_ahead / asset / guide / month / pro_check, pro_auto (черновик поста PRO → meta.pro_draft + тест), pro_day (#СОБЫТИЯ → тест), pro_fill (наполнение PRO за прошлую неделю → тест), pro_fill_live (→ канал PRO) / morning:<пояс>"
         default: "auto"
 
 permissions:
