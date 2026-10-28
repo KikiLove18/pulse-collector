@@ -14,7 +14,7 @@
 #col{position:absolute;left:60px;right:60px;top:150px;bottom:350px;z-index:2;display:flex;flex-direction:column;gap:36px}
 #bgp{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 #ov{position:absolute;inset:0;z-index:0}
-#col.lionr{bottom:290px;gap:30px}#col.lionr .st{margin-bottom:42px}#col.lionr .st:not(:last-child):after{bottom:-46px}
+#col.lionr{top:136px;bottom:290px;gap:24px}#col.lionr .st{margin-bottom:26px;padding:16px 26px;line-height:1.2}#col.lionr .st:not(:last-child):after{bottom:-33px;font-size:30px}
 .date{font-size:32px;font-weight:600;color:rgba(255,255,255,.65);margin-bottom:-18px}
 h1{font-family:'Playfair Display';font-weight:800;font-size:92px;line-height:1.04;text-shadow:0 2px 18px rgba(0,0,0,.35)}
 h1.sm{font-size:70px}
@@ -83,6 +83,12 @@ function fit(){
  // крупное число/слово: сначала по ширине (слово не рвём, строк не больше двух)
  c.querySelectorAll('.big').forEach(e=>{let f=parseFloat(getComputedStyle(e).fontSize);
   while(f>90&&(e.scrollWidth>e.clientWidth+2||e.offsetHeight>f*2.1)){f-=6;e.style.fontSize=f+'px'}});
+ // «Лев объясняет»: сначала заголовок (до 64), шаги держим не меньше 40 px
+ if(c.className==='lionr'){const h=c.querySelector('h1'),ss=[...c.querySelectorAll('.st')];
+  for(let f=92;f>=64&&c.scrollHeight>c.clientHeight;f-=4)h.style.fontSize=f+'px';
+  for(let f=42;f>=40&&c.scrollHeight>c.clientHeight;f--)ss.forEach(e=>e.style.fontSize=f+'px');
+  if(c.scrollHeight<=c.clientHeight)return true;
+  h.style.fontSize='';ss.forEach(e=>e.style.fontSize='');}
  for(let k=1;k>=0.7&&c.scrollHeight>c.clientHeight;k-=0.04)
   c.querySelectorAll('h1,.q,.sub,.box,.row,.st').forEach(e=>{e.style.fontSize='';const f=parseFloat(getComputedStyle(e).fontSize);e.style.fontSize=f*k+'px'});
  return c.scrollHeight<=c.clientHeight;
