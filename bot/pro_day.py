@@ -7,7 +7,7 @@
 пусто/"off" → в авто не выходит. Ручной запуск `mode=pro_day` — всегда в тестовый канал.
 Карусель v6 (утверждена владельцем 26.10): evc_data() — данные шаблона `evc` Дизайнера (поля items/sum/next, как DATA.evc
 в pro-рубрики/rubrics-v6.html); цифры ставит код, разбор (s, hint, why, fol, mk, nx) пишет ИИ одним запросом.
-Рендер картинок — шаблоном из bot/pro_tpl/ (пакет Дизайнера), пока его нет — данные только в журнал запуска.
+Рендер картинок — шаблоном из bot/pro_tpl/ (пакет Дизайнера): квадрат 1:1 1620×1620 (render-1019-sq.js + v6-sq.css, решение владельца 27.10).
 """
 import json
 import os
@@ -214,7 +214,7 @@ TPL = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pro_tpl")
 
 
 def _render(evc):
-    """Карусель evc v6 → список путей к jpg. Playwright ставится сам (только вечером, ~1 мин)."""
+    """Карусель evc v6, квадрат 1620×1620 → список путей к jpg. Playwright ставится сам (только вечером, ~1 мин)."""
     if subprocess.run(["node", "-e", "require('playwright')"], cwd=TPL, capture_output=True).returncode:
         subprocess.run(["npm", "i", "--no-save", "--no-audit", "--no-fund", "playwright@1"], cwd=TPL, check=True, capture_output=True, timeout=300)
         subprocess.run(["npx", "playwright", "install", "chromium"], cwd=TPL, check=True, capture_output=True, timeout=300)
@@ -222,7 +222,7 @@ def _render(evc):
     f = os.path.join(out, "evc.json")
     with open(f, "w", encoding="utf-8") as fh:
         json.dump(evc, fh, ensure_ascii=False)
-    r = subprocess.run(["node", "render.js", "evc", "--full", "--data", f, "--out", out], cwd=TPL, capture_output=True, text=True, timeout=300)
+    r = subprocess.run(["node", "render-1019-sq.js", "evc", "--full", "--data", f, "--out", out], cwd=TPL, capture_output=True, text=True, timeout=300)
     print("Рендер evc:", r.returncode, (r.stdout + r.stderr)[-600:], file=sys.stderr)
     pics = sorted((x for x in os.listdir(out) if re.fullmatch(r"evc\d+\.jpg", x)), key=lambda x: int(re.sub(r"\D", "", x)))
     return [os.path.join(out, x) for x in pics][:10]

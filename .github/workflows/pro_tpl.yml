@@ -20,10 +20,10 @@ jobs:
           R="${{ github.event.inputs.rubric }}"; [ "$R" = all ] && R="evc monc tuec thuc ad"; rc=0
           for k in $R; do
             if [ "$k" = ad ]; then node bot/pro_tpl/render.js ad --out out/ad || rc=$?;
-            else node bot/pro_tpl/render.js $k --data bot/pro_tpl/data/$k.json --out out/$k || rc=$?; fi
-            [ "$k" = evc ] && { node bot/pro_tpl/render.js evc --full --data bot/pro_tpl/data/evc_nulls.json --out out/evc_nulls || rc=$?; }
+            else J=render.js; [ "$k" = evc ] && J=render-1019-sq.js; node bot/pro_tpl/$J $k --data bot/pro_tpl/data/$k.json --out out/$k || rc=$?; fi
+            [ "$k" = evc ] && { node bot/pro_tpl/render-1019-sq.js evc --full --data bot/pro_tpl/data/evc_nulls.json --out out/evc_nulls || rc=$?; }
           done
-          case " $R " in *" evc "*) node bot/pro_tpl/render.js evc --data bot/pro_tpl/data/evc_long.json --out out/evc_long || rc=$?;; esac
+          case " $R " in *" evc "*) node bot/pro_tpl/render-1019-sq.js evc --data bot/pro_tpl/data/evc_long.json --out out/evc_long || rc=$?;; esac
           exit $rc
       - uses: actions/upload-artifact@v4
         if: always()

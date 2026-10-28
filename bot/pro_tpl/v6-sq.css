@@ -1,0 +1,19 @@
+/* КВАДРАТ 1:1 для v6-1019-sq.html (Чт · нарратив-карусель thuc; #СОБЫТИЯ evc — автомат pro_day, влезает без поправок, 29.10): высота 1080, стиль v6 тот же. !important — потому что <style> шаблона идёт позже */
+.cd{height:1080px!important}
+.thuc .cnt,.thuc .swipe{top:880px!important}
+.thuc h1{top:170px!important;font-size:66px!important}
+.thuc .ppl{top:440px!important}
+.thuc .lead{top:660px!important;font-size:29px!important}
+.thuc .sh{top:176px!important;font-size:54px!important}
+.thuc .its{top:280px!important;gap:12px!important}.thuc .its>div{padding:16px 24px!important}.thuc .its b{font-size:27px!important}.thuc .its span{font-size:23px!important;margin-top:6px!important}.thuc .its small{font-size:17px!important;margin-top:6px!important}
+.thuc .tl4{top:280px!important;gap:14px!important}.thuc .tl4>div{min-height:0!important;padding:18px 22px!important}.thuc .tl4 h4{font-size:28px!important;margin-bottom:8px!important}.thuc .tl4 u{margin-bottom:8px!important}.thuc .tl4 p{font-size:23px!important}
+.thuc .out{top:180px!important;font-size:44px!important}
+.thuc .wt{top:520px!important;gap:4px!important}.thuc .wt div{padding:12px 0 2px!important;font-size:25px!important}.thuc .wt b{font-size:22px!important}
+.thuc h1{font-size:72px!important}.thuc .ppl{top:430px!important}.thuc .lead{top:660px!important;font-size:31px!important}
+.thuc .sh{font-size:58px!important}
+.thuc .its{top:290px!important;gap:16px!important}.thuc .its>div{padding:22px 26px!important}.thuc .its b{font-size:30px!important}.thuc .its span{font-size:25px!important;margin-top:8px!important}.thuc .its small{font-size:18px!important;margin-top:10px!important}
+.thuc .tl4{top:290px!important;gap:16px!important}.thuc .tl4>div{padding:24px 26px!important;min-height:262px!important}.thuc .tl4 p{font-size:25px!important}
+.thuc .out{font-size:48px!important}
+.thuc .wt{top:560px!important;gap:8px!important}.thuc .wt div{padding:16px 0 4px!important;font-size:28px!important}.thuc .wt b{font-size:24px!important}
+.thuc .ppl{top:470px!important}.thuc .lead{top:690px!important}
+#thuc3 .its{gap:12px!important}#thuc3 .its>div{padding:16px 26px!important}
