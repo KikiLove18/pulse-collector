@@ -39,3 +39,6 @@
 Остальные в v6: nysesign (Пн 1, Пн 6, События), mcity (Пн 4), cbr (Вт, События), fed, warsh, nabiullina (Чт) — см. таблицу выше.
 **Не использовать без проверки:** img/ecb.jpg, boj.jpg, opec.jpg, oil.jpg, msft.jpg, coinbase.jpg, btclap.jpg, capitol.jpg — источник и лицензия не найдены (поиск по Commons не дал совпадения), в v6 Дизайнера убраны.
 - bot/bg/*.jpg — фоны тем для evc без фото (Wikimedia, только PD/CC0, список — bot/bg/SOURCES.txt).
+| img/ev-ifo-duisburg.jpg | #СОБЫТИЯ Ifo | Rob Dammers | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Duisburg_ThyssenKrupp_Loc_867_werkverkeer_(28112634170).jpg |
+| img/ev-verizon.jpg | #СОБЫТИЯ Verizon | Harrison Keely | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:A_modern_Verizon_retail_store_in_Burlington,_Vermont.jpg |
+| img/ev-texas-refinery.jpg | #СОБЫТИЯ ФРБ Далласа | Larry D. Moore | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Valero_Three_Rivers_Refinery_Texas_2020.jpg |
