@@ -47,7 +47,7 @@
   ],
   "last_digest_ts": "2026-10-27T16:31:52.599208+00:00",
   "calendar": {
-    "ts": "2026-10-27T16:02:08.444498+00:00",
+    "ts": "2026-10-28T04:00:57.697715+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -358,7 +358,7 @@
         "country": "USD",
         "date": "2026-10-28T10:30:00-04:00",
         "impact": "Low",
-        "forecast": "-0.1M",
+        "forecast": "0.1M",
         "previous": "-3.1M"
       },
       {
@@ -470,7 +470,7 @@
         "country": "USD",
         "date": "2026-10-29T08:30:00-04:00",
         "impact": "Medium",
-        "forecast": "3.3%",
+        "forecast": "3.2%",
         "previous": "6.2%"
       },
       {
@@ -534,7 +534,7 @@
         "country": "USD",
         "date": "2026-10-29T10:30:00-04:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "75B",
         "previous": "77B"
       },
       {
@@ -670,7 +670,7 @@
         "country": "GBP",
         "date": "2026-10-30T03:00:00-04:00",
         "impact": "Low",
-        "forecast": "-0.1%",
+        "forecast": "-0.2%",
         "previous": "-0.2%"
       },
       {
@@ -895,7 +895,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-27T21:30:58.590527+00:00",
+  "breaking_ts": "2026-10-28T04:00:57.693134+00:00",
   "news_now": {
     "day": "2026-10-28",
     "day_count": 0,
@@ -905,102 +905,63 @@
   },
   "news_seen": [
     "https://www.kommersant.ru/doc/9062273",
-    "https://tass.ru/politika/28259955",
-    "https://tass.ru/mezhdunarodnaya-panorama/28259967",
-    "https://tass.ru/obschestvo/28259965",
-    "https://tass.ru/mezhdunarodnaya-panorama/28259957",
-    "https://t.me/WatcherGuru/15642",
-    "https://tass.ru/mezhdunarodnaya-panorama/28259963",
-    "https://tass.ru/mezhdunarodnaya-panorama/28259961",
-    "https://www.wsj.com/tech/personal-tech/apple-knows-some-iphone-duos-have-a-major-issue-990f1dca?mod=rss_markets_main",
-    "https://www.kommersant.ru/doc/9062322",
-    "https://tass.ru/kultura/28259959",
-    "https://www.marketwatch.com/story/retail-traders-buy-the-dip-on-chip-stocks-but-robinhood-gets-burned-by-the-crypto-market-33cea913?mod=mw_rss_topstories",
-    "https://t.me/interfaxonline/80787",
-    "https://tass.ru/proisshestviya/28259949",
-    "https://decrypt.co/381992/china-stock-market-lost-2-4-trillion-investors-doubt-ai-boom",
-    "https://t.me/banksta/104284",
-    "https://tass.ru/ekonomika/28259919",
-    "https://tass.ru/politika/28259953",
-    "https://tass.ru/obschestvo/28259905",
-    "https://tass.ru/politika/28259951",
-    "https://tass.ru/mezhdunarodnaya-panorama/28259947",
-    "https://www.interfax.ru/russia/1125354",
-    "https://tass.ru/obschestvo/28259945",
-    "https://tass.ru/ekonomika/28259931",
-    "https://www.interfax.ru/world/1125353",
-    "https://www.interfax.ru/russia/1125352",
-    "https://www.rbc.ru/politics/28/10/2026/6ae0f5c6e8250e0763fb3bfb",
-    "https://www.investing.com/news/stock-market-news/tensor-auto-and-munich-taxi-operator-plan-autonomous-fleet-93CH-4977020",
-    "https://tass.ru/ekonomika/28259935",
-    "https://www.investing.com/news/stock-market-news/why-is-nabors-industries-stock-sliding-today-93CH-4977017",
-    "https://t.me/BitcoinMagazineTelegram/10925",
-    "https://tass.ru/nauka/28259937",
-    "https://tass.ru/mezhdunarodnaya-panorama/28259907",
-    "https://tass.ru/ekonomika/28259921",
-    "https://tass.ru/ekonomika/28259923",
-    "https://tass.ru/ekonomika/28259925",
-    "https://t.me/rbc_news/159551",
-    "https://www.rbc.ru/politics/26/10/2026/6adf02fe203e892aec5fe0f0",
-    "https://tass.ru/armiya-i-opk/28259933",
-    "https://tass.ru/mezhdunarodnaya-panorama/28259893",
-    "https://t.me/FinancialJuice/142961",
-    "https://www.rbc.ru/rbcfreenews/6ad9d5669511c23d514cbe9c",
-    "https://www.investing.com/news/stock-market-news/why-is-enphase-energy-stock-plunging-today-93CH-4977002",
-    "https://t.me/FinancialJuice/142960",
-    "https://tass.ru/kultura/28259915",
-    "https://tass.ru/ekonomika/28259913",
-    "https://www.investing.com/news/stock-market-news/why-is-caesars-entertainment-stock-edging-higher-today-93CH-4977000",
-    "https://t.me/FinancialJuice/142959",
-    "https://t.me/FinancialJuice/142958",
-    "https://www.vedomosti.ru/technology/news/2026/10/27/1240647-spros-na-resheniya",
-    "https://www.vedomosti.ru/politics/news/2026/10/27/1240645-tsifrovie-valyuti-mogut",
-    "https://www.vedomosti.ru/politics/news/2026/10/27/1240646-v-afrike-spros",
-    "https://www.vedomosti.ru/politics/news/2026/10/27/1240649-putin-provel-vstrechi",
-    "https://cryptoslate.com/openai-claims-a-math-breakthrough-does-that-threaten-bitcoin/",
-    "https://www.wsj.com/business/basic-materials-roundup-market-talk-839fe107?mod=rss_markets_main",
-    "https://www.marketwatch.com/story/my-husband-wants-to-sell-our-1-5-million-home-and-invest-the-proceeds-but-this-is-where-we-raised-our-kids-and-i-cant-bear-to-leave-4feb46ed?mod=mw_rss_topstories",
-    "https://oilprice.com/Energy/Energy-General/Turkeys-Libya-Deal-Puts-Oil-Majors-in-a-Bind.html",
-    "https://www.vedomosti.ru/society/news/2026/10/28/1240479-schitayut-semei",
-    "https://www.investing.com/news/stock-market-news/seagate-technology-shares-fall-8-despite-q1-earnings-beat-and-raised-guidance-4976742",
-    "https://www.investing.com/news/stock-market-news/why-is-f5-stock-gaining-in-afterhours-trading-today-93CH-4976974",
-    "https://www.rbc.ru/rbcfreenews/6a921a8270ff3f1f333a04c8",
-    "https://www.wsj.com/business/energy-utilities-roundup-market-talk-36d62767?mod=rss_markets_main",
-    "https://www.investing.com/news/stock-market-news/why-is-arch-capital-stock-climbing-today-93CH-4976972",
-    "https://www.interfax.ru/world/1125351",
-    "https://www.investing.com/news/stock-market-news/why-is-eqt-stock-sliding-today-93CH-4976970",
-    "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-Buck-Analyst-Expectations.html",
-    "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-c4aa51dc?mod=rss_markets_main"
+    "https://tass.ru/proisshestviya/28260345",
+    "https://tass.ru/sport/28260347",
+    "https://tass.ru/mezhdunarodnaya-panorama/28260343",
+    "https://cointelegraph.com/news/robinhoods-tenev-warns-us-tokenization-uncertainty-deters-serious-assets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://tass.ru/politika/28260341",
+    "https://tass.ru/mezhdunarodnaya-panorama/28260339",
+    "https://www.kommersant.ru/doc/9062358",
+    "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Climb-as-Houthi-Attacks-Reignite-Saudi-Supply-Fears.html",
+    "https://www.vedomosti.ru/politics/news/2026/10/28/1240660-ssha-uvedomili",
+    "https://tass.ru/obschestvo/28260333",
+    "https://tass.ru/sport/28260337",
+    "https://tass.ru/nedvizhimost/28260321",
+    "https://tass.ru/proisshestviya/28260329",
+    "https://tass.ru/armiya-i-opk/28260327",
+    "https://t.me/banksta/104294",
+    "https://www.rbc.ru/politics/27/10/2026/6ae094cd3c0647b172c1034c",
+    "https://tass.ru/armiya-i-opk/28260325",
+    "https://tass.ru/proisshestviya/28260319",
+    "https://cryptoslate.com/bny-offers-xrp-custody-but-only-1-rollout-type-exists/",
+    "https://tass.ru/armiya-i-opk/28260323",
+    "https://www.interfax.ru/world/1125374",
+    "https://tass.ru/politika/28260317",
+    "https://tass.ru/kosmos/28260303",
+    "https://t.me/lookonchainchannel/10811",
+    "https://tass.ru/obschestvo/28260309",
+    "https://tass.ru/armiya-i-opk/28260313",
+    "https://www.rbc.ru/rbcfreenews/6ade22d177e4c3b35f98c04a",
+    "https://tass.ru/mezhdunarodnaya-panorama/28260307",
+    "https://tass.ru/obschestvo/28260297",
+    "https://tass.ru/ekonomika/28260315",
+    "https://www.kommersant.ru/doc/9062354",
+    "https://tass.ru/armiya-i-opk/28260311",
+    "https://tass.ru/obschestvo/28260305",
+    "https://tass.ru/obschestvo/28259045",
+    "https://t.me/headlines_for_traders/87558",
+    "https://tass.ru/mezhdunarodnaya-panorama/28260301",
+    "https://tass.ru/ekonomika/28260299",
+    "https://t.me/markettwits/390798",
+    "https://www.vedomosti.ru/politics/news/2026/10/28/1240659-dmitriev-otvetil",
+    "https://www.investing.com/news/stock-market-news/asia-stocks-rally-as-sk-hynix-earnings-boost-ai-trade-fed-decision-ahead-4977421",
+    "https://www.kommersant.ru/doc/9062353",
+    "https://thedefiant.io/news/cefi/coinbase-denies-systems-breach-cites-amplitude-contact-data-incident",
+    "https://www.investing.com/news/stock-market-news/six-ai-picks-are-up-1366-since-entry-and-a-genericdrug-maker-leads-them-all-4977418",
+    "https://www.rbc.ru/politics/26/08/2026/6a8e90299a794712417e2d69",
+    "https://www.coindesk.com/tech/2026/10/28/coinbase-says-customer-funds-are-safe-after-third-party-vendor-exposes-customer-contact-info",
+    "https://www.interfax.ru/world/1125373",
+    "https://www.kommersant.ru/doc/9062350",
+    "https://www.investing.com/news/stock-market-news/why-is-kioxia-stock-surging-today-93CH-4977415",
+    "https://www.investing.com/news/stock-market-news/why-is-samsung-electronics-stock-surging-today-93CH-4977414",
+    "https://www.interfax.ru/world/1125372",
+    "https://www.investing.com/news/stock-market-news/onsemi-in-talks-to-acquire-chip-startup-ferric-for-1-billion-the-information-93CH-4977413"
   ],
   "ai_dead": {
     "date": "2026-10-27",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-27T05:00:59.318499+00:00",
-      "Судебные приставы начали взыскание около 20 млрд рублей с Анатолия Чубайса"
-    ],
-    [
-      "2026-10-27T05:00:59.318499+00:00",
-      "Whoosh переводит сотрудников на четырехдневку с сокращением зарплат"
-    ],
-    [
-      "2026-10-27T05:30:58.369721+00:00",
-      "Аналитики ждут сохранения ставки Банка Японии 30 октября"
-    ],
-    [
-      "2026-10-27T05:30:58.369721+00:00",
-      "Meta провела SPO на $12,5 млрд по $50 за акцию"
-    ],
-    [
-      "2026-10-27T05:30:58.369721+00:00",
-      "Прибыль промпредприятий Китая выросла на 15,5% за 9 месяцев"
-    ],
-    [
-      "2026-10-27T05:30:58.369721+00:00",
-      "Индекс Мосбиржи превысил 2500 пунктов"
-    ],
     [
       "2026-10-27T05:30:58.369721+00:00",
       "В Конгрессе США пригрозили санкциями за импорт дизеля из РФ"
@@ -1600,6 +1561,30 @@
     [
       "2026-10-27T20:31:03.290802+00:00",
       "Американские рынки выросли в ожидании отчетов техногигантов и ФРС"
+    ],
+    [
+      "2026-10-28T04:00:57.693134+00:00",
+      "Нефть выросла на фоне возобновления атак хуситов на Саудовскую Аравию"
+    ],
+    [
+      "2026-10-28T04:00:57.693134+00:00",
+      "Россия и США обсуждают возвращение американских нефтяников на проекты в РФ"
+    ],
+    [
+      "2026-10-28T04:00:57.693134+00:00",
+      "Рынки акций США выросли во вторник на фоне снижения цен на нефть"
+    ],
+    [
+      "2026-10-28T04:00:57.693134+00:00",
+      "Скелет динозавра «Джоди» продан на аукционе в Нью-Йорке за $47,3 млн"
+    ],
+    [
+      "2026-10-28T04:00:57.693134+00:00",
+      "Криптокит перевел 4000 ETH на Aave и заимствовал 6 млн USDT"
+    ],
+    [
+      "2026-10-28T04:00:57.693134+00:00",
+      "«Соллерс» локализует производство 8-ступенчатых АКПП в России"
     ]
   ],
   "results_fp": [
