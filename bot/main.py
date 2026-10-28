@@ -1313,7 +1313,7 @@ def main():
         return
     if mode.split(":")[0] == "roles_check":  # раз в неделю (cron воркера, Пн 06:00 МСК): должности из prompts.py против поиска Google → тестовый канал
         from . import roles_check
-        roles_check.run(now, roles_check.MODELS + "," + (os.environ.get("GEMINI_MODEL") or GEMINI_MODELS), send_telegram, test=mode.endswith(":test"))
+        roles_check.run(now, os.environ.get("GEMINI_MODEL") or GEMINI_MODELS, send_telegram, test=mode.endswith(":test"), ask=ask_ai)
         return
     if mode == "ai_probe":  # какие бесплатные модели OpenRouter отвечают (только журнал)
         run_ai_probe()
