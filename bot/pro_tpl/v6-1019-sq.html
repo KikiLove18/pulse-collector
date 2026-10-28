@@ -685,13 +685,13 @@ evc:d=>{d=Object.assign({tag:'СОБЫТИЯ',day:'',k:'',sub:'',cover:[],sum:[]
  <div class="abs k ck">${d.k}</div><h1 class="abs ch1">${d.day}</h1><div class="abs csub">${d.sub}</div>
  <div class="abs clist fit">${d.items.map((e,i)=>`<div class="ci"><em>${i+1}</em><div class="tm">${e.tm}</div><div class="tx"><div class="tt">${e.fl} ${e.t}</div><small>${e.s||''}</small></div><div class="vd ${e.vd}">${e.vt}</div></div>`).join('')}</div><div class="abs swipe">Листайте →</div>${cn(1)}`;
  const num=v=>{const x=parseFloat(String(v).replace(/\s/g,'').replace('−','-').replace(',','.'));return isNaN(x)?0:x};
- const fmt=v=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(1).replace('.',',');
+ const dec=v=>{const m=String(v).match(/[.,](\d+)/);return m?m[1].length:0};const fmt=(v,n=1)=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(n).replace('.',',');
  /* квадрат v3 (владелец 27.10): заголовок → основной текст крупно с акцентами → цифры компактно справа вверху → «для рынка» списком */
  const HL=s=>String(s||'').replace(/(<[^>]+>)|([+−\-]?\d[\d\s]*(?:[,.]\d+)?(?:\s?(?:%|п\.\s?п\.|\$|₽|трлн|млрд|млн))?)/g,(m,tg,nm)=>tg?tg:`<mark>${nm.trim()}</mark>`+(/\s$/.test(nm)?' ':''));
  const CAP=s=>String(s||'').replace(/^(\s*(?:<[^>]+>)*\s*)([a-zа-яё])/,(m,a,b)=>a+b.toUpperCase());
  const sl=d.items.map((e,i)=>{const vs=e.nums.map(x=>num(x[1])),mx=Math.max(...vs),mn=Math.min(...vs),lo=mx==mn?0:mn-(mx-mn)*1.2;
   const ok=x=>x&&/\d/.test(x[1]),f=e.nums.find(x=>x[0]=='Факт'),p=e.nums.find(x=>x[0]=='Прогноз'),dv=ok(f)&&ok(p)?num(f[1])-num(p[1]):null;
-  const dev=dv==null?'':Math.abs(dv)<0.05?'= прогнозу':`${fmt(dv)} к прогнозу`;
+  const dn=ok(f)&&ok(p)?Math.max(1,dec(f[1]),dec(p[1])):1,dev=dv==null?'':Math.abs(dv)<0.5*10**-dn?'= прогнозу':`${fmt(dv,dn)} к прогнозу`;
   const ic=m=>m=='up'?'▲':m=='dn'?'▼':'=';
  return `${e.img?`<div class="evbg" style="background-image:url(${e.img})"></div>`:''}<div class="abs evhd"><div class="evk">${e.tm}${/\d/.test(e.tm)?' МСК':''} · ${e.fl} ${e.who}</div><div class="evt5 fit">${e.t}</div>${e.hint?`<div class="evh fit">${e.hint}</div>`:''}</div>
  <div class="abs evn"><div class="top nop"><b>${e.big}</b></div>
