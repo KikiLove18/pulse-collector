@@ -7,7 +7,7 @@ on:
       theme: { description: "ru | us | crypto | commodities | x | pro (только пост PRO) | today | results", default: "ru" }
       target: { description: "test — тестовый канал, channel — бесплатный канал", default: "test" }
       pro: { description: "1 — после карусели пост про PRO", default: "0" }
-      tpl: { description: "v3 — образец нового вида (только в тестовый канал), пусто — боевой v2", default: "" }
+      tpl: { description: "пусто — вид v3 (утверждён 28.10), v2 — старый вид", default: "" }
       arg: { description: "для inspect: номер поста тестового канала (582 или 580-586)", default: "" }
 concurrency: channel
 jobs:
@@ -26,7 +26,7 @@ jobs:
           TARGET: ${{ github.event.inputs.target }}
           PRO: ${{ github.event.inputs.pro }}
           ARG: ${{ github.event.inputs.arg }}
-          TPL: ${{ github.event.inputs.target == 'test' && github.event.inputs.tpl || '' }}
+          TPL: ${{ github.event.inputs.tpl }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
