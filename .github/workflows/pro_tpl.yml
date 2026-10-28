@@ -1,10 +1,11 @@
-# Проверка шаблонов PRO v6 (bot/pro_tpl): рендер образцов в артефакт, без отправки в каналы.
+# Проверка шаблонов PRO v6 (bot/pro_tpl): рендер образцов в артефакт. -f test=1 — карусель evc альбомом в ТЕСТОВЫЙ канал (не в PRO).
 # gh workflow run pro_tpl.yml -R KikiLove18/pulse-collector -f rubric=evc   (evc | monc | tuec | thuc | ad | all)
 name: pro_tpl
 on:
   workflow_dispatch:
     inputs:
       rubric: { description: "evc | monc | tuec | thuc | ad | all", default: "all" }
+      test: { description: "1 — образец evc альбомом в тестовый канал", default: "0" }
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -25,6 +26,15 @@ jobs:
           done
           case " $R " in *" evc "*) node bot/pro_tpl/render-1019-sq.js evc --data bot/pro_tpl/data/evc_long.json --out out/evc_long || rc=$?;; esac
           exit $rc
+      - name: test channel
+        if: github.event.inputs.test == '1'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          cd out/evc && n=$(ls evc*.jpg | wc -l) && a=() && m="["
+          for i in $(seq 1 $n); do a+=(-F "p$i=@evc$i.jpg"); m="$m{\"type\":\"photo\",\"media\":\"attach://p$i\"$([ $i = 1 ] && echo ",\"caption\":\"Образец #СОБЫТИЯ · квадрат 1620×1620 (pro_tpl)\"")}"; [ $i -lt $n ] && m="$m,"; done
+          curl -sS -o /dev/null -w "альбом: HTTP %{http_code}\n" "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMediaGroup" -F chat_id="$TELEGRAM_CHAT_ID" -F media="$m]" "${a[@]}"
       - uses: actions/upload-artifact@v4
         if: always()
         with: { name: pro-slides, path: out/, retention-days: 7, if-no-files-found: ignore }
