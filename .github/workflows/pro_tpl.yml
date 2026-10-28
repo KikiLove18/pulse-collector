@@ -33,7 +33,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           cd out/evc && n=$(ls evc*.jpg | wc -l) && a=() && m="["
-          for i in $(seq 1 $n); do a+=(-F "p$i=@evc$i.jpg"); m="$m{\"type\":\"photo\",\"media\":\"attach://p$i\"$([ $i = 1 ] && echo ",\"caption\":\"Образец #СОБЫТИЯ · квадрат 1620×1620 (pro_tpl)\"")}"; [ $i -lt $n ] && m="$m,"; done
+          for i in $(seq 1 $n); do a+=(-F "p$i=@evc$i.jpg"); m="$m{\"type\":\"photo\",\"media\":\"attach://p$i\"$([ $i = 1 ] && echo ",\"caption\":\"Образец #СОБЫТИЯ · квадрат 1620×1620 (pro_tpl)\"" || :)}"; m="$m,"; done; m="${m%,}"
           curl -sS -o /dev/null -w "альбом: HTTP %{http_code}\n" "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMediaGroup" -F chat_id="$TELEGRAM_CHAT_ID" -F media="$m]" "${a[@]}"
       - uses: actions/upload-artifact@v4
         if: always()
