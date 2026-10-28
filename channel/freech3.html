@@ -1,0 +1,101 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- Шаблон картинок бесплатного канала v3 — ОБРАЗЕЦ на проверку владельцу (28.10, t-1793172000001): текст ×1,5 и во всю ширину,
+     фон — фото по теме (bot/bg, PD/CC0) под цветом рубрики, лев меньше и в углу. Боевой — freech.html (v2), пока владелец не скажет «да».
+     Вызов: открыть страницу, затем window.render({rubric, date, ...данные}) → готово, когда document.body.dataset.ready==="1";
+     снимок элемента #p (1080×1350). Поля — README.md рядом. -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}body{background:#111}
+#p{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:Inter,"Apple Color Emoji";color:#fff}
+.top{position:absolute;top:52px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;font-weight:800;letter-spacing:2px;font-size:24px;z-index:2}
+.top img{width:48px;height:48px;border-radius:12px;vertical-align:middle;margin-right:14px}
+.tag{font-size:22px;padding:10px 20px;border-radius:30px;letter-spacing:1px;background:#E8B84A;color:#1c2a44}
+/* колонка текста: сверху вниз, без ручных top — длинный текст ужимается fit() */
+#col{position:absolute;left:60px;right:60px;top:150px;bottom:350px;z-index:2;display:flex;flex-direction:column;gap:36px}
+#bgp{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+#ov{position:absolute;inset:0;z-index:0}
+#col.tall{bottom:70px;right:60px}
+.date{font-size:32px;font-weight:600;color:rgba(255,255,255,.65);margin-bottom:-18px}
+h1{font-family:'Playfair Display';font-weight:800;font-size:92px;line-height:1.04;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+h1.sm{font-size:70px}
+b{color:#E8B84A}
+.lion{position:absolute;z-index:1}
+.chain .st{background:rgba(10,14,28,.55);border:1px solid rgba(255,255,255,.18);border-radius:22px;padding:22px 30px;font-size:42px;line-height:1.25;margin-bottom:50px;position:relative}
+.chain .st:last-child{margin-bottom:0}
+.chain .st:not(:last-child):after{content:"↓";position:absolute;left:40px;bottom:-52px;font-size:42px;color:#E8B84A}
+.st.you{background:#E8B84A;color:#1c2a44;border:0}.st.you b{color:#1c2a44}
+.big{font-family:'Playfair Display';font-size:300px;text-shadow:0 4px 30px rgba(0,0,0,.4);font-weight:800;color:#E8B84A;letter-spacing:-4px;line-height:1;margin-left:-8px;max-width:940px;position:relative;z-index:3}
+.sub{font-size:48px;line-height:1.25;font-weight:600}
+.box{font-size:42px;line-height:1.3;background:rgba(10,14,28,.55);border-radius:22px;padding:28px 34px}
+.row{display:flex;gap:24px;align-items:baseline;font-size:42px;line-height:1.25;padding:22px 28px;border-radius:20px;margin-bottom:16px;background:rgba(10,14,28,.55)}
+.row .d{font-weight:800;color:#E8B84A;min-width:150px;flex:none}
+.row .d.e{min-width:56px;font-size:46px}
+.q{font-family:'Playfair Display';font-size:74px;line-height:1.12;font-weight:700}
+/* фоны рубрик */
+.morning #ov{background:linear-gradient(180deg,#2d2a4acc 0,#2d2a4a8c 38%,#1b1a30b3 70%,#1b1a30f2 100%)}.morning{background:#1b1a30}
+.explain #ov{background:linear-gradient(180deg,#1c2a44cc 0,#1c2a448c 38%,#121c2fb3 70%,#121c2ff2 100%)}.explain{background:#121c2f}
+.number #ov{background:linear-gradient(180deg,#23392fcc 0,#23392f8c 38%,#16241db3 70%,#16241df2 100%)}.number{background:#16241d}.number .tag{background:#efe6d6;color:#23392f}
+.word #ov{background:linear-gradient(180deg,#3d2230cc 0,#3d22308c 38%,#24141cb3 70%,#24141cf2 100%)}.word{background:#24141c}.word .tag{background:#efe6d6;color:#3d2230}
+.evening #ov{background:linear-gradient(180deg,#13213acc 0,#13213a8c 38%,#0b1424b3 70%,#0b1424f2 100%)}.evening{background:#0b1424}
+.week #ov{background:linear-gradient(180deg,#4a3518cc 0,#4a35188c 38%,#241a0eb3 70%,#241a0ef2 100%)}.week{background:#241a0e}.week .tag{background:#fff3d6;color:#4a3518}
+.answer #ov{background:linear-gradient(180deg,#1b3a40cc 0,#1b3a408c 38%,#102428b3 70%,#102428f2 100%)}.answer{background:#102428}.answer .tag{background:#efe6d6;color:#1b3a40}
+</style></head><body>
+<div id="p"><img id="bgp"><div id="ov"></div><div class="top"><span><img src="lion/logo.png">ПУЛЬС РЫНКА</span><span class="tag" id="tag"></span></div><div id="col"></div><img class="lion" id="lion"></div>
+<script>
+// рубрика → фон, плашка, поза льва (позы — из v2, у каждой рубрики своя)
+const R={
+ today:      {bg:'morning',tag:'ЧТО ЖДЁТ СЕГОДНЯ',  lion:'c-sup-wave',          ls:'height:396px;right:-40px;bottom:-6px'},
+ week_ahead: {bg:'morning',tag:'ЧТО ЖДЁТ НА НЕДЕЛЕ',lion:'c-sup-wave',          ls:'height:396px;right:-40px;bottom:-6px'},
+ lion:       {bg:'explain',tag:'ЛЕВ ОБЪЯСНЯЕТ',     lion:'k-buy-interest',      ls:'height:350px;right:-30px;bottom:-6px'},
+ num:        {bg:'number', tag:'ЦИФРА ДНЯ',         lion:'k-st-idea-tweed',     ls:'height:396px;right:-40px;bottom:-6px'},
+ word:       {bg:'word',   tag:'СЛОВО ДНЯ',         lion:'c-sup-cardigan-glasses',ls:'height:396px;right:-40px;bottom:-6px'},
+ itogi:      {bg:'evening',tag:'ИТОГИ ДНЯ',         lion:'c-st-heart',          ls:'height:372px;right:-40px;bottom:-6px'},
+ week:       {bg:'week',   tag:'НЕДЕЛЯ ЗА 1 МИНУТУ',lion:'c-camel-calm',        ls:'height:372px;right:-40px;bottom:-6px'},
+ answer:     {bg:'answer', tag:'ЛЕВ ОТВЕЧАЕТ',      lion:'c-sup-chin',          ls:'height:372px;right:-40px;bottom:-6px'},
+};
+const FLAG={ru:'🇷🇺',us:'🇺🇸',crypto:'₿',commodities:'🛢',gold:'🥇',x:'𝕏'};
+// текст: экранируем, **жирное** → золотом
+const t=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+const rows=(a,d)=>(a||[]).map((x,i)=>{const k=d(x,i);return `<div class="row"><span class="d${k.e?' e':''}">${t(k.d)}</span><span class="t">${t(k.t)}</span></div>`}).join('');
+const box=(a,b)=>`<div class="box">${a?`<b>${t(a[0])}</b><br>${t(a[1])}`:''}${a&&b?'<br><br>':''}${b?`<b>Почему сегодня:</b> ${t(b)}`:''}</div>`;
+function body(r,x){
+ const date=x.date?`<div class="date">${t(x.date)}</div>`:'';
+ switch(r){
+  case 'today': return date+`<h1>${t(x.title||'Что важно сегодня')}</h1><div>${rows(x.items,i=>({d:i.time||i.d,t:(FLAG[i.region]?FLAG[i.region]+' ':'')+(i.t||i.title)}))}</div>`;
+  case 'week_ahead': return `<h1>${t(x.title||'Главное на неделе')}</h1><div>${rows(x.items,i=>({d:i.d,t:i.t}))}</div>`;
+  case 'itogi': return date+`<h1>${t(x.title||'Что было важно сегодня')}</h1><div>${rows(x.items,i=>({d:FLAG[i.region]||i.d||'•',e:1,t:i.t||i.title}))}</div>`;
+  case 'week': return `<h1>${t(x.title||'5 событий, которые стоит знать')}</h1><div>${rows((x.items||[]).slice(0,5),(i,n)=>({d:n+1,t:i.t||i}))}</div>`;
+  case 'lion': {
+   // steps[] + you; либо text строками, строка «Для вас: …» — последняя
+   let st=x.steps,you=x.you;
+   if(!st){st=String(x.text||'').split('\n').map(s=>s.trim()).filter(Boolean);const k=st.findIndex(s=>/^\**для вас/i.test(s));if(k>=0)you=st.splice(k,1)[0];}
+   you=you&&String(you).replace(/^\**для вас:?\**\s*/i,'');
+   return `<h1>${t(x.title)}</h1><div class="chain">${st.slice(0,4).map(s=>`<div class="st">${t(s)}</div>`).join('')}${you?`<div class="st you"><b>Для вас:</b> ${t(you)}</div>`:''}</div>`;}
+  case 'num': return (x.title?`<h1 class="sm">${t(x.title)}</h1>`:'')+`<div class="big">${t(x.value)}</div>`+(x.unit?`<div class="sub">${t(x.unit)}</div>`:'')+box(x.text?['Что это за число?',x.text]:null,x.why);
+  case 'word': return `<div class="big" style="font-size:230px">${t(x.term)}</div>`+(x.sub?`<div class="sub">${t(x.sub)}</div>`:'')+box(x.text?['Простыми словами:',x.text]:null,x.why);
+  case 'answer': return `<div class="date">вопрос подписчика</div><div class="q">«${t(String(x.q||'').replace(/^[«"]|[»"]$/g,''))}»</div><div class="box" style="width:600px">${t(x.text).replace(/\n\n?/g,'<br><br>')}</div>`;
+ }
+ throw new Error('нет рубрики '+r);
+}
+// ужать шрифты, пока колонка не влезет (до 70% исходного)
+function fit(){
+ const c=document.getElementById('col');
+ // крупное число/слово: сначала по ширине (слово не рвём, строк не больше двух)
+ c.querySelectorAll('.big').forEach(e=>{let f=parseFloat(getComputedStyle(e).fontSize);
+  while(f>90&&(e.scrollWidth>e.clientWidth+2||e.offsetHeight>f*2.1)){f-=6;e.style.fontSize=f+'px'}});
+ for(let k=1;k>=0.7&&c.scrollHeight>c.clientHeight;k-=0.04)
+  c.querySelectorAll('h1,.q,.sub,.box,.row,.st').forEach(e=>{e.style.fontSize='';const f=parseFloat(getComputedStyle(e).fontSize);e.style.fontSize=f*k+'px'});
+ return c.scrollHeight<=c.clientHeight;
+}
+window.render=async x=>{
+ const r=R[x.rubric]; if(!r) throw new Error('нет рубрики '+x.rubric);
+ const p=document.getElementById('p'); p.className=r.bg;
+ document.getElementById('tag').textContent=r.tag;
+ const l=document.getElementById('lion'); l.src='lion/'+r.lion+'.png'; l.style.cssText=r.ls;
+ const c=document.getElementById('col'); c.className='';
+ const bg=document.getElementById('bgp'); if(x.bg){bg.src=x.bg;bg.style.display=''}else bg.style.display='none';
+ c.innerHTML=body(x.rubric,x);
+ await document.fonts.ready; await Promise.all([...document.images].map(i=>i.complete?0:new Promise(z=>i.onload=i.onerror=z)));
+ const ok=fit(); document.body.dataset.ready='1'; document.body.dataset.fit=ok?'1':'0'; return ok;
+};
+</script></body></html>

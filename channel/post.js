@@ -389,8 +389,23 @@ const BAD_SRC = /^(США|Россия|Крипта|Сырьё|Нефть и з�
 const srcLine = src => src && !BAD_SRC.test(String(src).trim()) ? `Источник: ${esc(src)}` : "";  // подпись «не ИИР» — только в закрепе и описании (Юрист 28.10)
 const POLL_SPARE = [{ question: "Куда пойдёт рубль на этой неделе?", options: ["Укрепится", "Ослабнет", "Останется на месте", "Не слежу"] },
   { question: "Что разобрать в следующее воскресенье?", options: ["Вклады и ставки", "Акции РФ", "Валюта", "Крипта"] }];
+// v3 (образец 28.10, t-1793172000001): TPL=v3 — шаблон freech3.html (крупнее, фото-фон), сменяющиеся подписи. Боевой — v2, пока владелец не сказал «да».
+const V3 = process.env.TPL === "v3";
+// фон v3 — фото из bot/bg (Wikimedia PD/CC0) по словам в тексте; нет совпадения — по рубрике
+const BG = [[/нефт|brent|wti|опек|баррел/i, ["oil", "oil2", "tanker"]], [/золот|серебр/i, ["gold", "gold2", "gold3"]], [/биткоин|крипт|bitcoin|eth|токен|блокчейн/i, ["crypto4", "crypto5", "crypto12"]],
+  [/фрс|пауэлл|уорш|федрезерв/i, ["fed", "fed2", "fed3"]], [/(^|[^а-яё])ии([^а-яё]|$)|nvidia|\bai\b|чип|технолог|anthropic|openai|apple|microsoft/i, ["tech", "tech2"]],
+  [/китай|экспорт|импорт|пошлин|торгов|порт/i, ["port", "tanker"]], [/доллар|курс|валют/i, ["dollar"]], [/ipo|акци|nasdaq|s&p|уолл|бирж/i, ["wallst", "wallst2", "wallst3"]],
+  [/росси|цб|рубл|мосбирж|минфин|офз|набиуллин/i, ["kremlin", "kremlin2", "kremlin3", "kremlin4", "kremlin5"]]];
+const BG_RUB = { today: "wallst", week_ahead: "capitol", lion: "wallst2", num: "port", word: "wallst3", itogi: "kremlin3", week: "whitehouse", answer: "tech" };
+const doy = () => Math.floor((Date.now() + 3 * 3600e3) / 864e5);
+function bgFor(rub, x) {
+  const txt = JSON.stringify(x), hit = BG.find(([re]) => re.test(txt));
+  const name = hit ? hit[1][doy() % hit[1].length] : BG_RUB[rub] || "wallst";
+  return "../bot/bg/" + name + ".jpg";
+}
 function rubricData(rub, data) {
-  const posts = (data.posts || {})[MSK_DAY()] || {}, date = dayLabel().toLowerCase();
+  const all = data.posts || {}, last = Object.keys(all).sort().pop(); // образец в тестовый канал: нет текстов на сегодня — берём последние
+  const posts = all[MSK_DAY()] || (TARGET === "test" && last ? all[last] : {}), date = dayLabel().toLowerCase();
   const hm = e => new Date(e.dt).toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Moscow" });
   const dayOf = e => new Date(new Date(e.dt).getTime() + 3 * 3600e3).toISOString().slice(0, 10);
   const REG = { ru: "ru", us: "us", oil: "commodities", gold: "gold", crypto: "crypto" };
@@ -426,8 +441,25 @@ const CAPTION = {
   answer: () => `🦁 <b>Лев отвечает</b>\nВопросы — в комментариях или в боте, лучший разберём в воскресенье.`,
   itogi: () => `🌙 <b>Итоги дня</b>\nГлавное по России, США, сырью и крипте — подробно в приложении.`,
 };
+// v3: 4 стиля подписи по очереди (день + рубрика) — чтобы не надоедало. Без советов и обещаний дохода.
+const CAP3 = {
+  short: (rub, x) => CAPTION[rub](x), // как сейчас: эмодзи + заголовок
+  ask: (rub, x) => ({ num: `🤔 <b>Как думаете, что это за ${esc(x.value)}?</b>\n\n${esc(x.title || "")}${x.text ? " — " + esc(x.text) : ""}`,
+    word: `🤔 <b>Слышали слово «${esc(x.term)}»?</b>\n\nОбъясняем за 30 секунд — на картинке.`,
+    lion: `🤔 <b>${esc(x.title)} — и что?</b>\n\nЛев разложил по шагам: от новости до вашего кошелька.` })[rub] || CAPTION[rub](x),
+  vote: (rub, x) => `${CAPTION[rub](x)}\n\nПонятно объяснили?\n👍 — да, всё ясно\n🤔 — разберите подробнее`,
+  lion: (rub, x) => ({ num: `🦁 <b>Лев:</b> «${esc(x.value)} — эту цифру я бы запомнил.${x.title ? " " + esc(x.title) + "." : ""}»`,
+    word: `🦁 <b>Лев:</b> «Сегодня в новостях часто звучит «${esc(x.term)}». Рассказываю, что это, без сложных слов».`,
+    lion: `🦁 <b>Лев:</b> «${esc(x.title)}. Коротко — почему это важно и кого касается».`,
+    itogi: `🦁 <b>Лев:</b> «Вот что было важно сегодня — по одной новости с каждого рынка».`,
+    today: `🦁 <b>Лев:</b> «Вот за чем я слежу сегодня. Время — московское».` })[rub] || CAPTION[rub](x),
+};
+const CAP_ORDER = ["short", "ask", "vote", "lion"];
+const capFor = (rub, x) => { const st = CAP_ORDER[(doy() + RUBRICS.indexOf(rub)) % 4]; const c = CAP3[st](rub, x);
+  return c + (/^(lion|num|word)$/.test(rub) && st !== "short" && srcLine(x.src) ? `\n\n<i>${srcLine(x.src)}</i>` : ""); };
 async function rubricPost(b, rub, data) {
   const x = rubricData(rub, data);
+  if (x && V3) x.bg = bgFor(rub, x);
   if (!x) {
     console.log(`${rub}: нет данных на ${MSK_DAY()} — пост пропущен`);
     if (TARGET === "channel" && !["today", "week_ahead"].includes(rub)) { const f = new FormData(); f.append("chat_id", process.env.TELEGRAM_CHAT_ID);
@@ -441,7 +473,7 @@ async function rubricPost(b, rub, data) {
   }
   const p = await b.newPage({ viewport: { width: 1080, height: 1350 } });
   p.on("pageerror", e => console.log("page error:", e.message));
-  await p.goto("file://" + require("path").join(__dirname, "freech.html"));
+  await p.goto("file://" + require("path").join(__dirname, V3 ? "freech3.html" : "freech.html"));
   const fits = await p.evaluate(x => window.render(x), x);
   const buf = await p.locator("#p").screenshot({ type: "jpeg", quality: 88 });
   require("fs").mkdirSync("out", { recursive: true }); require("fs").writeFileSync(`out/${rub}_${Date.now()}.jpg`, buf);
@@ -449,7 +481,7 @@ async function rubricPost(b, rub, data) {
   const f = new FormData();
   f.append("chat_id", CHAT);
   f.append("photo", new Blob([buf], { type: "image/jpeg" }), `${rub}.jpg`);
-  f.append("caption", `${DAY}\n${CAPTION[rub](x)}`);
+  f.append("caption", `${DAY}\n${V3 ? capFor(rub, x) : CAPTION[rub](x)}`);
   f.append("parse_mode", "HTML");
   f.append("reply_markup", JSON.stringify({ inline_keyboard: [[{ text: "📱 Все новости — в приложении", url: `https://t.me/${BOT}?start=ch_${rub}` }]] }));
   const r = await tg("sendPhoto", f);
