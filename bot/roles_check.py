@@ -54,7 +54,7 @@ def ask_grounded(system, user, models):
             last = "пустой ответ"
         except urllib.error.HTTPError as e:
             raw = e.read().decode("utf-8", "replace")
-            last = f"{e.code} " + (", ".join(sorted(set(re.findall(r'"quotaId": "([^"]+)"', raw)))) or raw[:200])
+            last = f"{e.code} " + " ".join(raw.split())[:1500]
         except Exception as e:
             last = str(e)[:200]
         print(f"roles_check {model}: {last}", file=sys.stderr)
