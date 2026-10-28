@@ -42,3 +42,5 @@
 | img/ev-ifo-duisburg.jpg | #СОБЫТИЯ Ifo | Rob Dammers | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Duisburg_ThyssenKrupp_Loc_867_werkverkeer_(28112634170).jpg |
 | img/ev-verizon.jpg | #СОБЫТИЯ Verizon | Harrison Keely | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:A_modern_Verizon_retail_store_in_Burlington,_Vermont.jpg |
 | img/ev-texas-refinery.jpg | #СОБЫТИЯ ФРБ Далласа | Larry D. Moore | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Valero_Three_Rivers_Refinery_Texas_2020.jpg |
+| img/ev-msft-b92.jpg | #СОБЫТИЯ 28.10 | Jiaqian AirplaneFan | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg |
+| img/ev-googleplex.jpg | #СОБЫТИЯ 28.10 | Erik Möller | Public domain | https://commons.wikimedia.org/wiki/File:Googleplex-SignIn.jpg |
