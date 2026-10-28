@@ -14,7 +14,7 @@
 #col{position:absolute;left:60px;right:60px;top:150px;bottom:350px;z-index:2;display:flex;flex-direction:column;gap:36px}
 #bgp{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 #ov{position:absolute;inset:0;z-index:0}
-#col.tall{bottom:70px;right:60px}
+#col.lionr{bottom:290px;gap:30px}#col.lionr .st{margin-bottom:42px}#col.lionr .st:not(:last-child):after{bottom:-46px}
 .date{font-size:32px;font-weight:600;color:rgba(255,255,255,.65);margin-bottom:-18px}
 h1{font-family:'Playfair Display';font-weight:800;font-size:92px;line-height:1.04;text-shadow:0 2px 18px rgba(0,0,0,.35)}
 h1.sm{font-size:70px}
@@ -46,7 +46,7 @@ b{color:#E8B84A}
 const R={
  today:      {bg:'morning',tag:'ЧТО ЖДЁТ СЕГОДНЯ',  lion:'c-sup-wave',          ls:'height:396px;right:-40px;bottom:-6px'},
  week_ahead: {bg:'morning',tag:'ЧТО ЖДЁТ НА НЕДЕЛЕ',lion:'c-sup-wave',          ls:'height:396px;right:-40px;bottom:-6px'},
- lion:       {bg:'explain',tag:'ЛЕВ ОБЪЯСНЯЕТ',     lion:'k-buy-interest',      ls:'height:350px;right:-30px;bottom:-6px'},
+ lion:       {bg:'explain',tag:'ЛЕВ ОБЪЯСНЯЕТ',     lion:'k-buy-interest',      ls:'height:290px;right:-24px;bottom:-6px'},
  num:        {bg:'number', tag:'ЦИФРА ДНЯ',         lion:'k-st-idea-tweed',     ls:'height:396px;right:-40px;bottom:-6px'},
  word:       {bg:'word',   tag:'СЛОВО ДНЯ',         lion:'c-sup-cardigan-glasses',ls:'height:396px;right:-40px;bottom:-6px'},
  itogi:      {bg:'evening',tag:'ИТОГИ ДНЯ',         lion:'c-st-heart',          ls:'height:372px;right:-40px;bottom:-6px'},
@@ -70,7 +70,7 @@ function body(r,x){
    let st=x.steps,you=x.you;
    if(!st){st=String(x.text||'').split('\n').map(s=>s.trim()).filter(Boolean);const k=st.findIndex(s=>/^\**для вас/i.test(s));if(k>=0)you=st.splice(k,1)[0];}
    you=you&&String(you).replace(/^\**для вас:?\**\s*/i,'');
-   return `<h1>${t(x.title)}</h1><div class="chain">${st.slice(0,4).map(s=>`<div class="st">${t(s)}</div>`).join('')}${you?`<div class="st you"><b>Для вас:</b> ${t(you)}</div>`:''}</div>`;}
+   return `<h1>${t(x.title)}</h1><div class="chain">${st.slice(0,3).map(s=>`<div class="st">${t(s)}</div>`).join('')}${you?`<div class="st you"><b>Для вас:</b> ${t(you)}</div>`:''}</div>`;}
   case 'num': return (x.title?`<h1 class="sm">${t(x.title)}</h1>`:'')+`<div class="big">${t(x.value)}</div>`+(x.unit?`<div class="sub">${t(x.unit)}</div>`:'')+box(x.text?['Что это за число?',x.text]:null,x.why);
   case 'word': return `<div class="big" style="font-size:230px">${t(x.term)}</div>`+(x.sub?`<div class="sub">${t(x.sub)}</div>`:'')+box(x.text?['Простыми словами:',x.text]:null,x.why);
   case 'answer': return `<div class="date">вопрос подписчика</div><div class="q">«${t(String(x.q||'').replace(/^[«"]|[»"]$/g,''))}»</div><div class="box" style="width:600px">${t(x.text).replace(/\n\n?/g,'<br><br>')}</div>`;
@@ -92,7 +92,7 @@ window.render=async x=>{
  const p=document.getElementById('p'); p.className=r.bg;
  document.getElementById('tag').textContent=r.tag;
  const l=document.getElementById('lion'); l.src='lion/'+r.lion+'.png'; l.style.cssText=r.ls;
- const c=document.getElementById('col'); c.className='';
+ const c=document.getElementById('col'); c.className=x.rubric==='lion'?'lionr':'';
  const bg=document.getElementById('bgp'); if(x.bg){bg.src=x.bg;bg.style.display=''}else bg.style.display='none';
  c.innerHTML=body(x.rubric,x);
  await document.fonts.ready; await Promise.all([...document.images].map(i=>i.complete?0:new Promise(z=>i.onload=i.onerror=z)));
