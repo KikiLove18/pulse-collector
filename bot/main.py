@@ -30,7 +30,7 @@ from pathlib import Path
 
 import feedparser
 
-from bot import calendar_future, edition, macro, pro, prompts, sources, weekly, pro_day, freech
+from bot import calendar_future, edition, macro, pro, prompts, sources, weekly, pro_day, freech, pro_auto
 
 MSK = timezone(timedelta(hours=3))
 ROOT = Path(__file__).resolve().parent.parent
@@ -1291,6 +1291,11 @@ def main():
         at = datetime.fromisoformat(day + "T20:30:00+03:00") if day else now
         pro_day.run(state, at, MSK, fetch_calendar, tg_html, test=True, horizon=4 if day else 2, ask=ask_ai)
         return
+    if mode == "pro_auto":  # «мощный пост» PRO: бриф → черновик ИИ → meta.pro_draft + образец в тестовый канал (в канал PRO — ничего)
+        if pro_auto.run(state, now, ask_ai, send_test=None if dry else send_telegram, dry=dry) and not dry:
+            state["pro_auto"] = f"{now.astimezone(MSK):%Y-%m-%d}"
+            save_state(state)
+        return
     if mode == "pro_check":  # права бота в канале PRO — без публикации
         print("Можно публиковать:", pro.check(os.environ.get("PRO_CHAT_ID") or "-1004428155051"), file=sys.stderr)
         return
@@ -1358,6 +1363,12 @@ def main():
         if not slot and not dry and pro_day.due(state, now, MSK):  # #СОБЫТИЯ каждый вечер; отметка заранее — без повторов при сбое
             state["pro_daily"] = f"{now.astimezone(MSK):%Y-%m-%d}"
             pro_day.run(state, now, MSK, fetch_calendar, tg_html, ask=ask_ai)  # карусель evc v6 + разбор ИИ
+        if not slot and not dry and pro_auto.due(state, now, (os.environ.get("PRO_AUTO") or "on").lower()):  # черновик поста PRO к 10:00 МСК; отметка заранее
+            state["pro_auto"] = f"{now.astimezone(MSK):%Y-%m-%d}"
+            try:
+                pro_auto.run(state, now, ask_ai, send_test=send_telegram)
+            except Exception as e:
+                print("PRO авто: ошибка", e, file=sys.stderr)
         if not slot and not dry and freech.due(state, now, MSK):  # рубрики бесплатного канала к 11:30 МСК; отметка заранее — без повторов при сбое
             state["freech_day"] = f"{now.astimezone(MSK):%Y-%m-%d}"
             try:

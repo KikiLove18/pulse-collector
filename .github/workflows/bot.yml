@@ -6,7 +6,7 @@ on:
   workflow_dispatch:          # кнопка «Run workflow» для ручного запуска
     inputs:
       mode:
-        description: "auto / digest / events / results / breaking / preview / ai_check / ai_probe / weekly / week_ahead / asset / guide / month / pro_check, pro_day (#СОБЫТИЯ → тест), pro_fill (наполнение PRO за прошлую неделю → тест), pro_fill_live (→ канал PRO) / morning:<пояс>"
+        description: "auto / digest / events / results / breaking / preview / ai_check / ai_probe / weekly / week_ahead / asset / guide / month / pro_check, pro_auto (черновик поста PRO → meta.pro_draft + тест), pro_day (#СОБЫТИЯ → тест), pro_fill (наполнение PRO за прошлую неделю → тест), pro_fill_live (→ канал PRO) / morning:<пояс>"
         default: "auto"
 
 permissions:
@@ -41,6 +41,7 @@ jobs:
           PRO_POSTS: ${{ vars.PRO_POSTS }}                # плановые рубрики PRO (пн неделя впереди, ср актив, чт гайд, вс разбор, 1-е итоги месяца): on — в канал PRO
           PRO_EVENTS: ${{ vars.PRO_EVENTS }}              # «Большие события»: пусто — образцы в тестовый канал, on — в канал PRO, off — выкл
           PRO_DAILY: ${{ vars.PRO_DAILY }}                # «События дня» #СОБЫТИЯ 20:30 МСК: on — в канал PRO, test — в тестовый канал, пусто — выкл
+          PRO_AUTO: ${{ vars.PRO_AUTO }}                  # черновик «мощного поста» PRO каждое утро (07:30–10:00 МСК) → meta.pro_draft + тестовый канал; off — выкл
       - name: Сохранить состояние
         run: |
           git config user.name "news-bot"
