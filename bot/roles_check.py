@@ -15,6 +15,8 @@ from datetime import datetime, timezone
 
 from . import prompts
 
+# поиск Google на бесплатном ключе: у моделей 3.x — 429 без лимита (29.10), пробуем сначала 2.5
+MODELS = "gemini-2.5-flash,gemini-2.5-flash-lite,gemini-2.0-flash"
 FAKE = ("глава ЕЦБ — Кристин Лагард", "глава ЕЦБ — Марио Драги")  # для roles_check:test
 
 SYSTEM = """Ты — фактчекер. Сегодня {today}. Тебе дают список «должность — человек».
