@@ -9,6 +9,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -72,9 +73,22 @@ WIKI_SYSTEM = """Ты — фактчекер. Сегодня {today}. Тебе �
 
 
 def _wiki(params):
-    q = urllib.parse.urlencode({**params, "format": "json", "formatversion": 2})
-    with urllib.request.urlopen(urllib.request.Request(f"{WIKI}?{q}", headers=UA), timeout=30) as r:
-        return json.load(r)
+    """Википедия режет частые запросы с общих адресов GitHub (429) — пауза между запросами и повтор с ожиданием."""
+    q = urllib.parse.urlencode({**params, "format": "json", "formatversion": 2, "maxlag": 5})
+    for wait in (2, 5, 15, 30, 0):
+        time.sleep(1.5)
+        try:
+            with urllib.request.urlopen(urllib.request.Request(f"{WIKI}?{q}", headers=UA), timeout=30) as r:
+                data = json.load(r)
+            if "query" in data:
+                return data
+            err = data.get("error", {}).get("code", "нет query")
+        except urllib.error.HTTPError as e:
+            err = e.code
+            wait = max(wait, int(e.headers.get("Retry-After") or 0))
+        if not wait:
+            raise RuntimeError(f"Википедия: {err}")
+        time.sleep(wait)
 
 
 def wiki_extracts(claims):
@@ -82,7 +96,7 @@ def wiki_extracts(claims):
     titles = {}
     for c in claims:
         try:
-            hits = _wiki({"action": "query", "list": "search", "srsearch": re.sub(r"\(.*?\)", "", c), "srlimit": 1})["query"]["search"]
+            hits = _wiki({"action": "query", "list": "search", "srsearch": re.sub(r"\(.*?\)|^[А-Яа-я ]+:\s*", "", c), "srlimit": 1})["query"]["search"]
             titles[c] = hits[0]["title"] if hits else None
         except Exception as e:
             print(f"wiki search {c[:40]}: {e}", file=sys.stderr)
