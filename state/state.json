@@ -856,7 +856,8 @@
     "2026-10-23|настроения потребителей|10:00",
     "2026-10-27|базовые заказы товаров длительного пользования|08:30",
     "2026-10-27|заказы товаров длительного пользования|08:30",
-    "2026-10-27|доверие потребителей|10:00"
+    "2026-10-27|доверие потребителей|10:00",
+    "2026-10-27|earn|HOOD"
   ],
   "macro": {
     "day": "2026-10-28",
@@ -896,7 +897,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-28T05:30:59.092308+00:00",
+  "breaking_ts": "2026-10-28T06:00:55.741789+00:00",
   "news_now": {
     "day": "2026-10-28",
     "day_count": 1,
@@ -907,115 +908,88 @@
     ]
   },
   "news_seen": [
+    "https://t.me/thebell_io/39650",
+    "https://t.me/incrypted/33128",
+    "https://tass.ru/armiya-i-opk/28260601",
+    "https://tass.ru/proisshestviya/28260565",
+    "https://t.me/markettwits/390825",
+    "https://tass.ru/mezhdunarodnaya-panorama/28260559",
+    "https://tass.ru/sport/28260599",
+    "https://www.rbc.ru/rbcfreenews/6adc386754a95426949223e1",
+    "https://t.me/if_market_news/86407",
+    "https://t.me/forklog/50439",
+    "https://www.kommersant.ru/doc/9062444",
+    "https://tass.ru/mezhdunarodnaya-panorama/28260587",
+    "https://t.me/rbc_news/159558",
+    "https://www.vedomosti.ru/politics/news/2026/10/28/1240673-yuzhnoi-korei",
+    "https://www.investing.com/news/stock-market-news/ambanis-jio-surges-21-in-mumbai-debut-after-record-32-billion-india-ipo-4977466",
+    "https://t.me/lookonchainchannel/10813",
+    "https://www.interfax.ru/russia/1125390",
+    "https://www.investing.com/news/stock-market-news/gail-india-to-invest-631-million-in-ratnagiri-lng-heating-unit-93CH-4977501",
+    "https://t.me/alfa_investments/8520",
+    "https://www.rbc.ru/society/23/07/2026/6a61c0889a7947832f4eb19f",
+    "https://www.investing.com/news/stock-market-news/ubs-meets-expectations-with-27-billion-q3-profit-4977500",
+    "https://www.investing.com/news/stock-market-news/bnp-paribas-beats-q3-profit-forecast-unveils-13-billion-share-buyback-4977499",
+    "https://www.kommersant.ru/doc/9062445",
+    "https://www.vedomosti.ru/politics/news/2026/10/28/1240674-tramp-vstrechi",
+    "https://www.rbc.ru/rbcfreenews/6ac3a4f241ac138bad70d386",
+    "https://www.interfax.ru/world/1125388",
+    "https://www.rbc.ru/politics/28/10/2026/6ae18b942661614f30af9b9c",
+    "https://t.me/banksta/104297",
+    "https://tass.ru/proisshestviya/28260577",
+    "https://www.investing.com/news/stock-market-news/chinas-cxmt-plans-advanced-ai-memory-production-despite-low-yields--reuters-4977497",
+    "https://t.me/markettwits/390824",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://www.interfax.ru/moscow/1125387",
+    "https://tass.ru/ekonomika/28260497",
+    "https://tass.ru/ekonomika/28260569",
+    "https://www.interfax.ru/russia/1125386",
+    "https://tass.ru/ekonomika/28260567",
+    "https://t.me/markettwits/390823",
+    "https://www.investing.com/news/stock-market-news/jio-shares-surge-over-20-in-blockbuster-market-debut-4977495",
+    "https://tass.ru/proisshestviya/28260563",
+    "https://tass.ru/ekonomika/28260561",
+    "https://tass.ru/obschestvo/28260537",
+    "https://www.investing.com/news/stock-market-news/dormakaba-q1-organic-sales-up-4-on-price-increases-outlook-confirmed-93CH-4977494",
+    "https://t.me/rbc_news/159557",
+    "https://tass.ru/proisshestviya/28260529",
+    "https://www.rbc.ru/politics/01/10/2026/6abdf38a81115a7096be1115",
+    "https://tass.ru/proisshestviya/28260541",
+    "https://www.vedomosti.ru/society/news/2026/10/28/1240672-mozhet-otkazat",
+    "https://t.me/markettwits/390822",
+    "https://www.kommersant.ru/doc/9062431",
+    "https://tass.ru/armiya-i-opk/28260557",
+    "https://tass.ru/proisshestviya/28260549",
+    "https://t.me/markettwits/390821",
+    "https://t.me/rbc_news/159556",
+    "https://www.rbc.ru/society/28/10/2026/6ae1875ffe8cbef4c519342e",
+    "https://tass.ru/mezhdunarodnaya-panorama/28260545",
+    "https://tass.ru/politika/28260531",
+    "https://www.rbc.ru/quote/28/10/2026/6ae179389a794730853725be",
+    "https://www.kommersant.ru/doc/9062425",
+    "https://tass.ru/sport/28260539",
+    "https://www.kommersant.ru/doc/9062299",
+    "https://www.investing.com/news/stock-market-news/food-and-household-brands-warn-of-more-price-hikes-as-iran-war-costs-bite-4976615",
+    "https://t.me/markettwits/390820",
     "https://t.me/rbc_news/159555",
+    "https://www.investing.com/news/stock-market-news/australia-stocks-lower-at-close-of-trade-spasx-200-down-003-4977489",
+    "https://tass.ru/ekonomika/28260523",
+    "https://cryptoslate.com/bitcoin-apps-risk-massive-fee-drain-and-2-library-bugs-are-blamed/",
+    "https://www.interfax.ru/business/1125385",
     "https://www.coindesk.com/markets/2026/10/28/bitcoin-treasury-datavault-ai-plunges-50-after-firm-says-it-can-t-access-its-btc",
     "https://www.kommersant.ru/doc/9062417",
     "https://tass.ru/ekonomika/28260521",
     "https://tass.ru/proisshestviya/28260535",
     "https://www.rbc.ru/rbcfreenews/6adf184b197cc1a652c88a5a",
-    "https://www.rbc.ru/politics/28/10/2026/6ae1868f8ee58c812461d1b4",
+    "https://www.rbc.ru/politics/24/10/2026/6adc601954a95426949223f8",
     "https://tass.ru/proisshestviya/28260525",
-    "https://t.me/markettwits/390819",
-    "https://www.kommersant.ru/doc/9062418",
-    "https://www.vedomosti.ru/politics/news/2026/10/28/1240670-ssha-vidadut-vizi",
-    "https://www.rbc.ru/rbcfreenews/6ac37f020e49882626de4368",
-    "https://t.me/markettwits/390818",
-    "https://tass.ru/proisshestviya/28260509",
-    "https://t.me/bitkogan_hotline/28019",
-    "https://www.vedomosti.ru/society/news/2026/10/28/1240669-viyavila-126",
-    "https://t.me/if_market_news/86406",
-    "https://t.me/interfaxonline/80804",
-    "https://t.me/headlines_for_traders/87567",
-    "https://tass.ru/politika/28260519",
-    "https://t.me/banksta/104296",
-    "https://www.interfax.ru/world/1125384",
-    "https://t.me/headlines_for_traders/87566",
-    "https://www.kommersant.ru/doc/9062410",
-    "https://www.rbc.ru/politics/24/10/2026/6adcdbebd27dbe3b35d99924",
-    "https://www.interfax.ru/world/1125383",
-    "https://t.me/rbc_news/159554",
-    "https://t.me/headlines_for_traders/87564",
-    "https://t.me/headlines_for_traders/87565",
-    "https://www.rbc.ru/politics/28/10/2026/6ae1832592880e9ec3380ae5",
-    "https://tass.ru/ekonomika/28260495",
-    "https://thedefiant.io/converge/tradfi-and-fintech/moody-s-assigns-ripple-s-rlusd-a2-and-p-1-deposit-ratings",
-    "https://tass.ru/politika/28260513",
-    "https://t.me/markettwits/390817",
-    "https://tass.ru/ekonomika/28260507",
-    "https://t.me/investfuture/15450",
-    "https://tass.ru/proisshestviya/28260505",
-    "https://tass.ru/ekonomika/28260489",
-    "https://tass.ru/proisshestviya/28260503",
-    "https://tass.ru/armiya-i-opk/28260499",
-    "https://www.coindesk.com/tech/2026/10/28/bithumb-hacked-through-employee-system-as-south-korean-financial-firms-face-cyberattacks",
-    "https://t.me/whale_alert_io/104263",
-    "https://tass.ru/obschestvo/28260465",
-    "https://www.investing.com/news/stock-market-news/sk-hynix-neutral-in-notrade-zone-awaiting-breakout-live-93CH-4971337",
-    "https://tass.ru/kosmos/28260467",
-    "https://t.me/whale_alert_io/104262",
-    "https://t.me/markettwits/390816",
-    "https://www.investing.com/news/stock-market-news/nikkei-225-in-strong-downtrend-tests-key-support-live-levels-93CH-4971336",
-    "https://www.investing.com/news/stock-market-news/ambanis-jio-surges-21-in-mumbai-debut-after-record-32-billion-india-ipo-4977466",
-    "https://tass.ru/sport/28260493",
-    "https://www.investing.com/news/stock-market-news/exclusiverio-tinto-proposes-56-pay-jump-for-ceo-as-mining-sector-fights-for-talent-4977483",
-    "https://tass.ru/proisshestviya/28260473",
-    "https://www.investing.com/news/stock-market-news/food-and-household-brands-warn-of-more-price-hikes-as-iran-war-costs-bite-4976615",
-    "https://tass.ru/armiya-i-opk/28260491",
-    "https://t.me/whale_alert_io/104261",
-    "https://tass.ru/nauka/28260463",
-    "https://t.me/rbc_news/159553",
-    "https://t.me/whale_alert_io/104260",
-    "https://www.investing.com/news/stock-market-news/why-is-standard-chartered-hk-stock-rising-today-93CH-4977481",
-    "https://t.me/bitkogan_hotline/28018",
-    "https://www.rbc.ru/sport/23/12/2024/67693b069a794710953e26a1",
-    "https://tass.ru/obschestvo/28260459",
-    "https://tass.ru/nauka/28260457",
-    "https://t.me/markettwits/390815",
-    "https://t.me/headlines_for_traders/87563",
-    "https://tass.ru/armiya-i-opk/28260455",
-    "https://t.me/interfaxonline/80803",
-    "https://t.me/forklog/50438",
-    "https://www.kommersant.ru/doc/9062382",
-    "https://www.rbc.ru/society/28/10/2026/6adf6864f27091d103d5b807",
-    "https://www.rbc.ru/rbcfreenews/6ae03a412099205aa6482377",
-    "https://www.vedomosti.ru/business/news/2026/10/28/1240624-spot-rinok-myasa",
-    "https://www.vedomosti.ru/business/news/2026/10/28/1240633-ntb-gotovit-tarifi",
-    "https://tass.ru/ekonomika/28260451",
-    "https://t.me/if_market_news/86405",
-    "https://www.investing.com/news/stock-market-news/why-is-pop-mart-stock-falling-today-93CH-4977475",
-    "https://www.investing.com/news/stock-market-news/why-is-jiangsu-hengrui-pharmaceuticals-stock-surging-today-93CH-4977474",
-    "https://www.investing.com/news/stock-market-news/why-is-ingenic-semiconductor-stock-surging-today-93CH-4977473",
-    "https://tass.ru/kultura/28260443",
-    "https://www.kommersant.ru/doc/9062401",
-    "https://www.kommersant.ru/doc/9062378",
-    "https://tass.ru/armiya-i-opk/28260449",
-    "https://www.interfax.ru/russia/1125382"
+    "https://t.me/markettwits/390819"
   ],
   "ai_dead": {
     "date": "2026-10-27",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-27T07:00:55.838085+00:00",
-      "Транзит по Севморпути в 2026 году превысит 7 млн тонн"
-    ],
-    [
-      "2026-10-27T07:00:55.838085+00:00",
-      "Минобороны РФ сообщило об ударе по объектам в Киеве"
-    ],
-    [
-      "2026-10-27T07:30:58.845534+00:00",
-      "Акции МГКЛ обвалились на 10% и получили планку вниз"
-    ],
-    [
-      "2026-10-27T07:30:58.845534+00:00",
-      "Платина подешевела ниже $1,5 тыс. впервые за год"
-    ],
-    [
-      "2026-10-27T07:30:58.845534+00:00",
-      "ФАС проверяет девять переработчиков подсолнечника"
-    ],
     [
       "2026-10-27T07:30:58.845534+00:00",
       "Whoosh переведет сотрудников на четырехдневку зимой"
@@ -1615,6 +1589,30 @@
     [
       "2026-10-28T05:30:59.092308+00:00",
       "Биткоин продолжает сбор стопов ниже отметки $80 000"
+    ],
+    [
+      "2026-10-28T06:00:55.741789+00:00",
+      "Brent подорожала до $115,46 за баррель на фоне новых ударов хуситов"
+    ],
+    [
+      "2026-10-28T06:00:55.741789+00:00",
+      "Трамп анонсировал скорую встречу с Путиным и Зеленским"
+    ],
+    [
+      "2026-10-28T06:00:55.741789+00:00",
+      "SK Hynix отчиталась о росте операционной прибыли в третьем квартале на 632%"
+    ],
+    [
+      "2026-10-28T06:00:55.741789+00:00",
+      "BNP Paribas отчитался лучше прогнозов и объявил байбэк на €1,3 млрд"
+    ],
+    [
+      "2026-10-28T06:00:55.741789+00:00",
+      "Минцифры может ввести лимит на потребление зарубежного трафика"
+    ],
+    [
+      "2026-10-28T06:00:55.741789+00:00",
+      "Биткоин удерживается около $80 800 на утренних торгах"
     ]
   ],
   "results_fp": [
@@ -1629,7 +1627,8 @@
     "Настроения потребителей (Мичиган)|48.0",
     "Базовые заказы товаров длительного пользования|0.5%",
     "Заказы товаров длительного пользования|1.8%",
-    "Доверие потребителей (CB)|91.7"
+    "Доверие потребителей (CB)|91.7",
+    "Отчёт Robinhood (HOOD)|$0.61"
   ],
   "pro_sent": {
     "asset": "2026-10-21",
