@@ -171,7 +171,7 @@ body{background:#222;font-family:Inter}
 <script>
 const LOGO='img/logo192.png';
 const COPY='© Пульс рынка, 2026. Только для личного использования подписчика. Распространение запрещено';
-const NR=' · Не является инвестиционной рекомендацией';
+const NR='';  // 28.10 владелец: строку «не ИИР» на карточках PRO не ставим
 function S(cls,id,tag,inner,src,n,N,ph){return `<div class="s ${cls}" id="${id}"><div class="hd"><div class="lg"><img src="${LOGO}">ПУЛЬС РЫНКА</div><div class="tag">${tag}</div></div>${inner}
 <div class="src">${src}</div><div class="cnt">${n} / ${N}${n<N?' →':''}</div><div class="ft"><div>${COPY}</div><div>${ph}</div></div></div>`}
 const T_=(s)=>`<span class="tbd">${s}</span>`;           // поле «в день»

@@ -1,0 +1,229 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- satc-sq.html (Дизайнер 28.10): Сб «Итоги недели» в квадрате v3 — данные из JSON (render-sq.js satc-sq.html sat <папка> -sq --data data/satc_2710.json). Стили — копия fric-sq.html; разметка v3 — свой поток .col (не зависит от #sat-правил ad-sq.css).
+     Карусели PRO v6 (Арт-директор, 26.10, ред. 2): Ср «Индикатор», Пт «Актив», Сб «Итоги недели», Вс «Опрос» — неделя 02–08.11.
+     Тексты и цифры — только Редактор: editor/knowledge/дизайн/неделя-pro-02-08.11.md и рубрики-pro-v2.md (+ данные со страниц готовых гайдов для Вс).
+     Пунктирная рамка .tbd / .tbdl = цифра или текст «[в день]» — Редактор подставит в день выхода. Стили дней — как у Дизайнера в v5 (swap-v4).
+     КВАДРАТ 1:1 (27.10, заметка владельца «слишком узкий»): 1080×1080 → 1620×1620, рендер render-sq.js; перекомпоновка — блок SQ ниже -->
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#222;font-family:Inter}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;margin:0 0 20px}
+.s>*{position:absolute}
+.hd{z-index:5;left:60px;right:60px;top:52px;display:flex;align-items:center;justify-content:space-between}
+.hd .lg{display:flex;align-items:center;gap:14px;font:800 22px Inter;letter-spacing:.14em}
+.hd .lg img{width:44px;height:44px;border-radius:11px}
+.hd .tag{font:800 22px Inter;letter-spacing:.08em;padding:9px 20px;border-radius:99px}
+.k{left:60px;right:60px;top:150px;font:800 22px Inter;letter-spacing:.14em;text-transform:uppercase}
+.cnt{right:60px;bottom:118px;font:800 22px Inter;letter-spacing:.06em}
+.src{left:60px;right:240px;bottom:112px;font:500 20px/1.35 Inter}
+.ft{left:0;right:0;bottom:0;height:68px;display:flex;flex-direction:column;align-items:center;justify-content:center;font:500 14px/1.5 Inter}
+.pc{background:#fff;padding:14px 14px 50px;box-shadow:0 24px 50px rgba(0,0,0,.35);z-index:3}
+.pc img{display:block;width:100%;height:100%;object-fit:cover}
+.pc p{position:absolute;left:16px;right:16px;bottom:13px;font:600 18px Inter;color:#333}
+.sec{font:800 20px Inter;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+/* поле «в день» — пунктир, цифру ставит Редактор в день выхода */
+.tbd{display:inline-block;border:3px dashed currentColor;border-radius:.18em;padding:0 .16em;opacity:.6;line-height:1.1}
+.tbdl{display:inline-block;font:800 18px Inter;letter-spacing:.1em;text-transform:uppercase;border:2px dashed currentColor;border-radius:8px;padding:4px 10px;opacity:.75;vertical-align:middle}
+.up{color:#1E8E5A}.dn{color:#C0392B}
+
+/* ===== СР · Индикатор: золото + вишня, Unbounded ===== */
+.wed{background:radial-gradient(900px 700px at 82% 8%,#E4C47E,#C9A24B 58%,#B38A37);color:#3A0A16}
+.wed .lg{color:#3A0A16}.wed .tag{background:#5A1426;color:#F2D79A}
+.wed .k,.wed .cnt,.wed .sec{color:#5A1426}.wed .src{color:rgba(58,10,22,.78)}.wed .ft{background:#3A0A16;color:rgba(255,255,255,.55)}
+.wed h1{left:60px;right:60px;font:800 62px/1.08 Unbounded;letter-spacing:-.03em;color:#3A0A16}
+.wed .big{font:800 220px/1 Unbounded;letter-spacing:-.06em;color:#5A1426}
+.wed .trio{left:60px;right:60px;display:flex;gap:18px}
+.wed .trio div{flex:1;border-top:3px solid rgba(90,20,38,.45);padding-top:14px;font:600 23px Inter;color:rgba(58,10,22,.85)}
+.wed .trio b{display:block;font:800 44px Unbounded;color:#5A1426;margin-top:8px;letter-spacing:-.03em}
+.wed .vd{left:60px;right:60px;display:flex;gap:14px;align-items:center;font:700 24px Inter}
+.wed .vd span{padding:10px 20px;border-radius:99px;font:800 24px Inter}
+.wed .note{left:60px;right:60px;background:rgba(58,10,22,.92);color:#F7E7C2;border-radius:24px;padding:28px 32px;font:500 29px/1.4 Inter}
+.wed .note b{color:#fff}
+.wed .pt{display:flex;gap:26px;padding:24px 0;border-top:2px solid rgba(90,20,38,.3)}
+.wed .pt em{flex:none;font:800 50px/1 Unbounded;color:#5A1426;font-style:normal;width:64px}
+.wed .pt div{font:500 29px/1.38 Inter}.wed .pt b{font-weight:800}
+.wed .tl{background:rgba(255,248,230,.6);border:2px solid rgba(90,20,38,.18)}
+.wed .tline{left:60px;right:60px}
+.wed .tr{display:flex;gap:26px;align-items:baseline;padding:20px 0;border-top:2px solid rgba(90,20,38,.3)}
+.wed .tr b{flex:none;width:200px;font:800 34px Unbounded;letter-spacing:-.02em;color:#5A1426}
+.wed .tr span{font:500 28px/1.36 Inter}
+.wed .tr.now{background:#5A1426;color:#F7E7C2;border-radius:18px;padding:20px 22px;margin:4px -22px;border:0}
+.wed .tr.now b{color:#F2D79A}
+
+/* v2 (27.10, правка владельца): на золоте текст — на плашках */
+.wed .k,.wed .pl,.wed .vd,.wed .src,.wed .cnt{background:rgba(255,248,230,.72);border-radius:12px;box-shadow:0 2px 0 rgba(90,20,38,.08)}
+.wed .k{right:auto;padding:10px 16px;font-size:20px}
+.wed .pl{padding:12px 18px;right:auto}
+.wed .vd{right:auto;padding:12px 20px}
+.wed .src{right:auto;max-width:760px;padding:10px 14px;bottom:104px;color:#3A0A16}
+.wed .cnt{padding:8px 14px;bottom:104px}
+.wed>.sec{background:#5A1426;color:#F2D79A;padding:14px 20px;border-radius:12px}
+.wed .trio div{background:rgba(255,248,230,.62);border:2px solid rgba(90,20,38,.18);border-top:2px solid rgba(90,20,38,.18);border-radius:18px;padding:16px 18px}
+.wed .pt{background:rgba(255,248,230,.66);border:2px solid rgba(90,20,38,.18);border-radius:22px;padding:24px 26px;margin-bottom:16px}
+.wed .tline{background:rgba(255,248,230,.62);border:2px solid rgba(90,20,38,.18);border-radius:24px;padding:18px 26px 6px}
+.wed .tline .tr:first-of-type{border-top:0}
+.wed .tline .tr{padding:16px 0}.wed .tline .tr.now{padding:16px 22px}
+.wed .nx{left:60px;right:60px;background:#5A1426;color:#F7E7C2;border-radius:28px;padding:30px 34px}
+.wed .nx .r{display:flex;gap:28px;align-items:baseline;padding:18px 0;border-top:1px solid rgba(247,231,194,.25)}
+.wed .nx .r b{flex:none;width:250px;font:800 32px Unbounded;color:#fff;letter-spacing:-.02em}
+.wed .nx .r span{font:500 28px/1.35 Inter}
+.tiles{left:60px;right:60px;display:flex;flex-direction:column;gap:16px}
+.tl{border-radius:24px;padding:24px 28px;display:flex;gap:24px;align-items:flex-start}
+.tl .nm{flex:none;width:200px;font:800 32px Inter}
+.tl .nm small{display:block;font:800 21px Inter;margin-top:8px;letter-spacing:.02em}
+.tl .tx{font:500 27px/1.38 Inter}
+
+/* ===== ПТ · Актив: графит + золото, моноширинный ===== */
+.fri{background:radial-gradient(900px 600px at 78% 22%,#2A2416,#0D1110 70%);color:#ECE6D6}
+.fri .lg{color:#ECE6D6}.fri .tag{background:#C9A24B;color:#0D1110}
+.fri .k,.fri .cnt,.fri .sec{color:#C9A24B}.fri .src{color:rgba(236,230,214,.62)}.fri .ft{background:#060807;color:rgba(255,255,255,.45)}
+.fri h1{left:60px;right:60px;font:800 60px/1.08 Inter;letter-spacing:-.025em;color:#fff}
+.fri .price{left:60px;font:800 150px/1 'JetBrains Mono';letter-spacing:-.04em;color:#fff}
+.fri .chips{left:60px;right:60px;display:flex;gap:14px;flex-wrap:wrap}
+.fri .chips span{font:700 25px 'JetBrains Mono';padding:10px 18px;border:2px solid #E0574B;color:#FF8A7E;border-radius:10px}
+.fri .chips span.tb{border:2px dashed rgba(236,230,214,.5);color:rgba(236,230,214,.75)}
+.fri .ph{left:0;right:0;top:0;height:560px}
+.fri .ph img{width:100%;height:100%;object-fit:cover;filter:saturate(.8) contrast(1.05)}
+.fri .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(13,17,16,.45),rgba(13,17,16,0) 30%,rgba(13,17,16,.25) 60%,#0D1110)}
+.fri .band{left:60px;right:60px;height:330px;border-radius:22px;overflow:hidden}
+.fri .band img{width:100%;height:100%;object-fit:cover;filter:saturate(.75)}
+.fri .bcap{left:60px;right:60px;font:500 20px 'JetBrains Mono';color:#C9BFA8}
+.fri .dv{background:#151A18;border:1px solid #2A2F2B;border-radius:22px;padding:22px 28px;margin-bottom:16px}
+.fri .dv .t{font:800 32px Inter;color:#fff;margin-bottom:6px}
+.fri .dv .t i{font:800 26px 'JetBrains Mono';color:#C9A24B;font-style:normal;margin-right:16px}
+.fri .dv .x{font:500 27px/1.38 Inter;color:#D8D0BC}
+.fri .tbl{left:60px;right:60px;border-top:2px solid #C9A24B}
+.fri .tbl .r{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:22px 0;border-bottom:1px solid rgba(201,162,75,.3);font:600 28px Inter;color:#C9BFA8}
+.fri .tbl .r b{font:800 40px 'JetBrains Mono';color:#fff;letter-spacing:-.03em;white-space:nowrap}
+.fri .tl{background:#151A18;border:1px solid #2A2F2B}
+.fri .tl .nm{color:#fff;font-family:'JetBrains Mono';font-size:30px}
+.fri .tl .tx{color:#D8D0BC}
+.fri .up{color:#3DDC97}.fri .dn{color:#FF8A7E}
+.fri .fy{left:60px;right:60px;border:2px solid #C9A24B;border-radius:24px;padding:24px 30px;font:500 28px/1.38 Inter;color:#ECE6D6}
+.fri .fy b{color:#C9A24B}
+
+/* ===== СБ · Итоги недели: газета, Playfair + вишня ===== */
+.sat{background:#F3F1EC;color:#141414}
+.sat .lg{color:#141414}.sat .tag{background:#5A1426;color:#F3F1EC}
+.sat .k,.sat .cnt,.sat .sec{color:#5A1426}.sat .src{color:#555}.sat .ft{background:#5A1426;color:rgba(255,255,255,.6)}
+.sat .rule{left:60px;right:60px;height:4px;background:#141414}
+.sat h1{left:60px;right:60px;font:900 60px/1.08 'Playfair Display';letter-spacing:-.01em}
+.sat .mast{left:60px;right:60px;top:130px;display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid #141414;padding-bottom:12px}
+.sat .mast b{font:900 82px/1 'Playfair Display'}
+.sat .mast span{font:800 22px Inter;letter-spacing:.1em;color:#5A1426}
+.sat .phb{left:60px;right:60px;overflow:hidden}
+.sat .phb img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1)}
+.sat .cap{left:60px;right:60px;font:500 20px Inter;color:#555}
+.sat .mk{left:60px;right:60px;display:flex;align-items:center;gap:28px}
+.sat .mk .ch{font:900 92px/1 'Playfair Display';letter-spacing:-.02em;color:#141414}
+.sat .mk .lv{font:600 26px/1.35 Inter;color:#333}
+.sat .mk .lv b{display:block;font:800 32px Inter;color:#141414}
+.sat .blk{left:60px;right:60px}
+.sat .bk{padding:20px 0;border-top:2px solid #141414}
+.sat .bk p{font:500 28px/1.4 Inter}
+.sat .bk p b{font-weight:800}
+.sat .fy{left:60px;right:60px;display:flex;gap:22px;align-items:flex-start;background:#fff;border-left:8px solid #5A1426;padding:22px 28px}
+.sat .fy i{flex:none;font:800 20px Inter;letter-spacing:.12em;background:#5A1426;color:#fff;padding:7px 12px;font-style:normal;margin-top:4px}
+.sat .fy p{font:600 28px/1.38 Inter}
+.sat .grid4{left:60px;right:60px;display:grid;grid-template-columns:1fr 1fr;border-top:2px solid #141414}
+.sat .g{padding:16px 20px 16px 0;border-bottom:1px solid #999}
+.sat .g:nth-child(odd){border-right:1px solid #999}.sat .g:nth-child(even){padding-left:24px}
+.sat .g .n{font:800 22px Inter;letter-spacing:.1em;color:#5A1426}
+.sat .g .c{font:900 50px/1.15 'Playfair Display';margin:4px 0}
+.sat .tbd{font-family:Inter;font-weight:800;letter-spacing:0;white-space:nowrap}
+.sat .mk .ch .tbd{font-size:72px}
+.sat .g .c .tbd{font-size:40px}
+.sat .wide{display:block;width:100%;padding:18px 20px;font:600 28px Inter;opacity:.5}
+.sat .g .d{font:500 22px Inter;color:#444}
+.sat .blk.v2 .bk{padding:14px 0}
+.sat .blk.v2 .sec{font-size:20px}
+.sat .blk.v2 .bk p{font:500 25px/1.36 Inter}
+.sat .blk.v2 .bk p.ln{font:600 22px/1.35 Inter;color:#444;margin-top:6px}
+.sat .blk.v2 .bk p.chg{font:500 21px/1.35 Inter;color:#555;margin-top:8px}.sat .blk.v2 .bk p.chg b{color:#5A1426}
+.sat .blk.v2 .fy{position:static;margin-top:6px;padding:18px 24px}.sat .blk.v2 .fy p{font:600 24px/1.36 Inter}
+.sat .blk.lg2 .bk{padding:24px 0}.sat .blk.lg2 .sec{font-size:22px}.sat .blk.lg2 .bk p{font-size:30px}.sat .blk.lg2 .bk p.chg{font-size:24px;margin-top:12px}
+.sat .blk.lg2 .fy{margin-top:18px;padding:24px 28px}.sat .blk.lg2 .fy p{font-size:28px}
+.sat .dts{left:60px;right:60px;border-top:2px solid #141414;padding-top:14px}
+.sat .dts div{display:flex;gap:22px;padding:10px 0;border-bottom:1px solid #bbb;font:500 25px/1.3 Inter}.sat .dts b{flex:none;width:130px;font-weight:800;color:#5A1426}
+
+/* ===== ВС · Опрос: вишня + розовый, Unbounded ===== */
+.sun{background:radial-gradient(900px 800px at 85% 15%,#7A1C34,#4A0F1E 60%,#300812);color:#FBE7EC}
+.sun .lg{color:#FBE7EC}.sun .tag{background:#F2C6CE;color:#4A0F1E}
+.sun .k,.sun .cnt,.sun .sec{color:#F2C6CE}.sun .src{color:rgba(251,231,236,.62)}.sun .ft{background:#22050C;color:rgba(255,255,255,.45)}
+.sun h1{left:60px;right:60px;font:800 64px/1.06 Unbounded;letter-spacing:-.03em;color:#fff}
+.sun .vn{font:800 220px/1 Unbounded;color:transparent;-webkit-text-stroke:3px rgba(242,198,206,.45)}
+.sun .gc{border-radius:14px;overflow:hidden;box-shadow:0 20px 44px rgba(0,0,0,.45);border:2px solid rgba(242,198,206,.35)}
+.sun .gc img{display:block;width:100%;height:100%;object-fit:cover}
+.sun .row{display:flex;gap:26px;align-items:center;padding:18px 0;border-top:1px solid rgba(242,198,206,.3)}
+.sun .row .gc{flex:none;width:330px;height:186px}
+.sun .row b{display:block;font:800 34px/1.15 Unbounded;color:#fff;margin-bottom:8px}
+.sun .row span{font:500 24px/1.35 Inter;color:#F2C6CE}
+.sun .row em{margin-left:auto;font:800 64px Unbounded;color:transparent;-webkit-text-stroke:2px rgba(242,198,206,.6);font-style:normal}
+.sun .lst{left:60px;right:60px}
+.sun .li{display:flex;gap:24px;padding:18px 0;border-top:1px solid rgba(242,198,206,.3);font:500 28px/1.36 Inter;color:#FBE7EC}
+.sun .li em{flex:none;font:800 28px Unbounded;color:#F2C6CE;font-style:normal;width:56px}
+.sun .why{left:60px;right:60px;background:rgba(242,198,206,.12);border:1px solid rgba(242,198,206,.35);border-radius:24px;padding:24px 30px;font:500 27px/1.4 Inter}
+.sun .why b{color:#fff}
+.sun .btn{left:60px;display:inline-flex;gap:14px;align-items:center;background:#F2C6CE;color:#4A0F1E;font:800 30px Inter;padding:22px 34px;border-radius:99px}
+</style>
+<link href="ad-sq.css" rel="stylesheet"></head><body>
+<script>
+const LOGO='img/logo192.png';
+const COPY='© Пульс рынка, 2026. Только для личного использования подписчика. Распространение запрещено';
+const NR='';  // 28.10 владелец: «Не является инвестиционной рекомендацией» на карточках PRO не ставим (поле "nr" в JSON — если вдруг нужно)
+function S(cls,id,tag,inner,src,n,N,ph){return `<div class="s ${cls}" id="${id}"><div class="hd"><div class="lg"><img src="${LOGO}">ПУЛЬС РЫНКА</div><div class="tag">${tag}</div></div>${inner}
+<div class="src">${src}</div><div class="cnt">${n} / ${N}${n<N?' →':''}</div><div class="ft"><div>${COPY}</div><div>${ph}</div></div></div>`}
+const out=[];
+/* ---------- СУББОТА · Итоги недели — из данных (window.DATA_IN.satc), v3: списки с линиями, текст ≥31 px, <u> — подчёркивание вишней, ▲/▼ ----------
+   [в день] в тексте → пунктирная рамка (поле, которое Редактор ставит в день выхода) */
+const D=(window.DATA_IN&&(window.DATA_IN.satc||window.DATA_IN))||{};
+const X=s=>String(s==null?'':s).replace(/\[([^\]]+)\]/g,'<span class="tbd">$1</span>');
+if(D.cover){const T=D.tag||'ИТОГИ НЕДЕЛИ',NRx=D.nr==null?NR:D.nr,M=D.markets||[],N=M.length+2,c=D.cover,w=D.next;
+ out.push(S('sat','sat1',T,`<div class="col">
+  <div class="mast3"><b>${c.title}</b><span>${c.dates}</span></div>
+  <div class="ph3"><img src="${c.img}" style="object-position:${c.pos||'50% 50%'}"></div><div class="cap3">${c.cap}</div>
+  <h1 class="h3">${X(c.h1)}</h1>
+  <div class="ls4 qt">${c.rows.map(r=>`<div><span>${r[0]}</span><b>${X(r[1])}</b></div>`).join('')}</div></div>`,c.src+NRx,1,N,c.ph));
+ M.forEach((m,i)=>out.push(S('sat','sat'+(i+2),T,`<div class="col">
+  <div class="kk">${m.k}</div>
+  <div class="top3">${m.img?`<div class="th"><img src="${m.img}"></div>`:''}<div class="ch3">${X(m.big)}</div><div class="lv3"><b>${m.name}</b>${X(m.lv)}</div></div>
+  <div class="ls4">${m.its.map(x=>`<div><i>${x[0]}</i><p>${X(x[1])}</p></div>`).join('')}</div>
+  ${m.fy?`<div class="fy3"><i>ДЛЯ ВАС</i><p>${X(m.fy)}</p></div>`:''}</div>`,m.src+NRx,i+2,N,m.ph||'Иллюстрация — Пульс рынка')));
+ out.push(S('sat','sat'+N,T,`<div class="col">
+  <div class="kk">${w.k}</div><h1 class="h3">${w.title}</h1>
+  <div class="ls4">${w.its.map(x=>`<div><i>${x[0]}</i><p class="${/^\[[^\]]*\]$/.test(x[1])?'w':''}">${X(x[1])}</p></div>`).join('')}</div>
+  <div class="ls4 dt"><div class="hdr">Главные даты</div>${w.dates.map(x=>`<div><b>${x[0]}</b><p>${X(x[1])}</p></div>`).join('')}</div></div>`,w.src+NRx,N,N,w.ph||'Иллюстрация — Пульс рынка'));
+}
+document.write(out.join(''));
+</script>
+<style>/* СБ v3 (28.10): правила владельца 27.10 — списки с линиями, текст ≥31 px (1080), ключевое — <u> подчёркивание вишней, ▲/▼ */
+.sat .col{left:60px;right:60px;top:126px;display:flex;flex-direction:column}
+.sat u{text-decoration:none;background:linear-gradient(transparent 68%,rgba(90,20,38,.28) 68%,rgba(90,20,38,.28) 94%,transparent 94%);padding:0 2px;font-weight:800}
+.sat .up{color:#1E8E5A}.sat .dn{color:#B0283A}
+.sat .tbd{font-family:Inter;font-weight:800;letter-spacing:0;white-space:nowrap;font-size:.8em}
+.sat .mast3{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid #141414;padding-bottom:10px}
+.sat .mast3 b{font:900 66px/1 'Playfair Display'}.sat .mast3 span{font:800 22px Inter;letter-spacing:.1em;color:#5A1426}
+.sat .ph3{height:230px;margin-top:16px;overflow:hidden}.sat .ph3 img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1)}
+.sat .cap3{font:500 18px Inter;color:#555;margin-top:6px}
+.sat .h3{font:900 46px/1.1 'Playfair Display';margin:14px 0 14px;letter-spacing:-.01em}
+.sat .kk{font:800 22px Inter;letter-spacing:.14em;text-transform:uppercase;color:#5A1426;padding-bottom:12px;border-bottom:4px solid #141414}
+.sat .ls4{border-top:2px solid #141414}
+.sat .ls4>div{padding:12px 0;border-bottom:1px solid #A9A49A}
+.sat .ls4 i{display:block;font:800 19px Inter;letter-spacing:.14em;text-transform:uppercase;color:#5A1426;font-style:normal;margin-bottom:4px}
+.sat .ls4 p{font:500 31px/1.34 Inter;color:#141414}.sat .ls4 p b{font-weight:800}
+.sat .ls4.qt>div{display:flex;justify-content:space-between;align-items:baseline;padding:11px 0}
+.sat .ls4.qt span{font:600 31px Inter}.sat .ls4.qt b{font:900 42px 'Playfair Display';white-space:nowrap}
+.sat .top3{display:flex;align-items:center;gap:26px;padding:16px 0}
+.sat .top3 .th{flex:none;width:200px;height:120px;overflow:hidden}.sat .top3 .th img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1)}
+.sat .ch3{flex:none;font:900 76px/1 'Playfair Display';letter-spacing:-.02em}
+.sat .lv3{font:500 26px/1.3 Inter;color:#333}.sat .lv3 b{display:block;font:800 31px Inter;color:#141414}
+.sat .fy3{display:flex;gap:20px;align-items:flex-start;background:#fff;border-left:8px solid #5A1426;padding:16px 24px;margin-top:16px}
+.sat .fy3 i{flex:none;font:800 18px Inter;letter-spacing:.12em;background:#5A1426;color:#fff;padding:6px 10px;font-style:normal;margin-top:6px}
+.sat .fy3 p{font:600 31px/1.32 Inter}
+.sat .ls4.dt{margin-top:20px}.sat .ls4.dt .hdr{font:800 19px Inter;letter-spacing:.14em;text-transform:uppercase;color:#5A1426;padding:12px 0 6px;border:0}
+.sat .ls4.dt>div:not(.hdr){display:grid;grid-template-columns:150px 1fr;column-gap:20px;align-items:baseline;padding:9px 0}
+.sat .ls4.dt b{font:800 26px Inter;color:#5A1426}.sat .ls4.dt p{font-size:31px}
+.sat .ls4>div{padding:18px 0}.sat .ls4.qt>div{padding:10px 0}.sat .top3{padding:26px 0}.sat .fy3{margin-top:26px;padding:20px 26px}
+.sat .ls4 p.w>.tbd{display:block;width:100%;padding:10px 16px;font-size:26px;opacity:.5}
+</style></body></html>
