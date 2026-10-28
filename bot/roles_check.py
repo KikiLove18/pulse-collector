@@ -75,7 +75,7 @@ WIKI_SYSTEM = """Ты — фактчекер. Сегодня {today}. Тебе �
 def _wiki(params):
     """Википедия режет частые запросы с общих адресов GitHub (429) — пауза между запросами и повтор с ожиданием."""
     q = urllib.parse.urlencode({**params, "format": "json", "formatversion": 2, "maxlag": 5})
-    for wait in (2, 5, 15, 30, 0):
+    for wait in (3, 10, 0):
         time.sleep(1.5)
         try:
             with urllib.request.urlopen(urllib.request.Request(f"{WIKI}?{q}", headers=UA), timeout=30) as r:
@@ -85,7 +85,7 @@ def _wiki(params):
             err = data.get("error", {}).get("code", "нет query")
         except urllib.error.HTTPError as e:
             err = e.code
-            wait = max(wait, int(e.headers.get("Retry-After") or 0))
+            wait = wait and min(20, max(wait, int(e.headers.get("Retry-After") or 0)))
         if not wait:
             raise RuntimeError(f"Википедия: {err}")
         time.sleep(wait)
@@ -93,14 +93,19 @@ def _wiki(params):
 
 def wiki_extracts(claims):
     """По каждому утверждению — первая статья поиска Википедии и её начало (без ключей, бесплатно)."""
-    titles = {}
-    for c in claims:
+    titles, t0 = {}, time.time()
+    for i, c in enumerate(claims):
+        if time.time() - t0 > 300:  # не дольше 5 минут: остальное — «не найдено», ИИ это не считает ошибкой
+            titles[c] = None
+            continue
         try:
             hits = _wiki({"action": "query", "list": "search", "srsearch": re.sub(r"\(.*?\)|^[А-Яа-я ]+:\s*", "", c), "srlimit": 1})["query"]["search"]
             titles[c] = hits[0]["title"] if hits else None
         except Exception as e:
             print(f"wiki search {c[:40]}: {e}", file=sys.stderr)
             titles[c] = None
+        if i % 10 == 9:
+            print(f"wiki: {i + 1}/{len(claims)}, {time.time() - t0:.0f} с, найдено {sum(1 for t in titles.values() if t)}", file=sys.stderr)
     uniq = sorted({t for t in titles.values() if t})
     text = {}
     for i in range(0, len(uniq), 20):
