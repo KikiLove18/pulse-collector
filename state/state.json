@@ -864,7 +864,9 @@
     "2026-10-27|доверие потребителей|10:00",
     "2026-10-27|earn|HOOD",
     "2026-10-28|запасы нефти eia|10:30",
-    "2026-10-28|фрс по ставке|14:00"
+    "2026-10-28|фрс по ставке|14:00",
+    "2026-10-28|earn|MSFT",
+    "2026-10-28|earn|GOOGL"
   ],
   "macro": {
     "day": "2026-10-29",
@@ -904,7 +906,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-29T05:31:01.091137+00:00",
+  "breaking_ts": "2026-10-29T06:01:01.842956+00:00",
   "news_now": {
     "day": "2026-10-29",
     "day_count": 0,
@@ -913,83 +915,86 @@
     "titles": []
   },
   "news_seen": [
+    "https://www.vedomosti.ru/investments/news/2026/10/29/1241003-viruchka-yandeksa",
+    "https://t.me/rbc_news/159630",
+    "https://t.me/headlines_for_traders/87650",
+    "https://t.me/headlines_for_traders/87649",
+    "https://www.vedomosti.ru/politics/news/2026/10/29/1241004-prezident-izrailya",
+    "https://t.me/banksta/104369",
+    "https://www.rbc.ru/rbcfreenews/69fb6efe9a79477d5c63a086",
+    "https://t.me/FinancialJuice/143547",
+    "https://tass.ru/ekonomika/28265097",
+    "https://tass.ru/ekonomika/28265009",
+    "https://t.me/FinancialJuice/143546",
+    "https://www.interfax.ru/world/1125697",
+    "https://t.me/markettwits/391049",
+    "https://t.me/headlines_for_traders/87648",
+    "https://t.me/alfa_investments/8524",
+    "https://tass.ru/proisshestviya/28265109",
+    "https://www.coindesk.com/tech/2026/10/29/ai-found-a-way-to-crash-bitcoin-nodes-on-windows-and-macs-it-s-now-public",
+    "https://tass.ru/obschestvo/28265115",
+    "https://t.me/markettwits/391048",
+    "https://t.me/lookonchainchannel/10825",
+    "https://tass.ru/proisshestviya/28265107",
+    "https://www.rbc.ru/quote/29/10/2026/6ae2cb449a794742ac5848d1",
+    "https://www.rbc.ru/rbcfreenews/6adb3a65e012f19d8107d172",
+    "https://tass.ru/proisshestviya/28265095",
+    "https://tass.ru/mezhdunarodnaya-panorama/28265103",
+    "https://tass.ru/proisshestviya/28265061",
+    "https://tass.ru/obschestvo/28265099",
+    "https://www.investing.com/news/stock-market-news/why-is-hitachi-stock-plunging-today-93CH-4981531",
+    "https://t.me/markettwits/391047",
+    "https://www.rbc.ru/rbcfreenews/6ae2d72b28328a4e8e88cc59",
+    "https://tass.ru/mezhdunarodnaya-panorama/28265053",
+    "https://www.investing.com/news/stock-market-news/hitachi-shares-slide-as-q2-profit-drop-overshadows-strong-topline-earnings-4981528",
+    "https://t.me/bitkogan_hotline/28037",
+    "https://www.interfax.ru/business/1125696",
+    "https://t.me/markettwits/391046",
+    "https://tass.ru/obschestvo/28265081",
+    "https://www.vedomosti.ru/society/news/2026/10/29/1241002-lantratova-viletela",
+    "https://www.kommersant.ru/doc/9063324",
+    "https://tass.ru/proisshestviya/28265089",
+    "https://t.me/rbc_news/159629",
+    "https://t.me/forklog/50454",
+    "https://t.me/FinancialJuice/143545",
+    "https://tass.ru/ekonomika/28265079",
+    "https://t.me/headlines_for_traders/87647",
+    "https://www.kommersant.ru/doc/9063334",
+    "https://www.rbc.ru/politics/29/07/2026/6a69aa809a79479845ce357b",
+    "https://tass.ru/politika/28265051",
+    "https://tass.ru/obschestvo/28265083",
+    "https://tass.ru/ekonomika/28265073",
+    "https://tass.ru/obschestvo/28264997",
+    "https://tass.ru/proisshestviya/28265077",
+    "https://t.me/markettwits/391045",
+    "https://www.rbc.ru/sport/28/07/2025/688739489a794761d954d3c8",
+    "https://www.investing.com/news/stock-market-news/advantest-shares-jump-as-ai-chip-demand-drives-earnings-outlook-upgrade-4981509",
+    "https://tass.ru/proisshestviya/28265067",
+    "https://t.me/wublockchainenglish/26596",
+    "https://tass.ru/sport/28265057",
+    "https://t.me/FinancialJuice/143544",
+    "https://tass.ru/proisshestviya/28265059",
+    "https://tass.ru/sport/28265069",
+    "https://www.vedomosti.ru/politics/news/2026/10/29/1241000-norvegiya-poprosila",
+    "https://tass.ru/obschestvo/28265045",
+    "https://www.investing.com/news/stock-market-news/bok-board-member-flags-won-volatility-despite-ai-chip-export-boom--rtrs-93CH-4981506",
+    "https://www.interfax.ru/business/1125695",
+    "https://t.me/markettwits/391044",
+    "https://t.me/FinancialJuice/143543",
+    "https://www.investing.com/news/stock-market-news/samsung-posts-record-profit-in-q3-on-ai-chip-boom-4981289",
     "https://www.coindesk.com/tech/2026/10/29/ethereum-clients-patch-flaw-that-could-let-attackers-redirect-eth-rewards",
+    "https://tass.ru/kultura/28264883",
+    "https://cryptoslate.com/ripples-rlusd-stablecoin-gains-coinbase-access-as-moodys-awards-investment-grade-rating/",
+    "https://www.investing.com/news/stock-market-news/australia-stocks-higher-at-close-of-trade-spasx-200-up-050-4981503",
+    "https://www.kommersant.ru/doc/9063326",
     "https://t.me/markettwits/391043",
+    "https://www.investing.com/news/stock-market-news/hong-kong-keeps-base-rate-at-425-after-fed-holds-steady-93CH-4981500",
+    "https://www.investing.com/news/stock-market-news/why-is-renesas-electronics-stock-sliding-today-93CH-4981499",
     "https://www.kommersant.ru/doc/9063296",
+    "https://www.interfax.ru/russia/1125694",
     "https://t.me/banksta/104368",
     "https://www.investing.com/news/stock-market-news/why-is-the-star-entertainment-stock-rallying-today-93CH-4981497",
-    "https://tass.ru/kosmos/28265043",
-    "https://tass.ru/ekonomika/28265041",
-    "https://www.rbc.ru/technology_and_media/08/10/2026/6ac753835a7f8072174533f8",
-    "https://t.me/markettwits/391042",
-    "https://www.vedomosti.ru/politics/news/2026/10/29/1240999-rossiiskie-voennie",
-    "https://www.rbc.ru/politics/29/10/2026/6ae2d782a88001aafeb6b4cf",
-    "https://www.kommersant.ru/doc/9063318",
-    "https://t.me/markettwits/391041",
-    "https://www.investing.com/news/stock-market-news/reserve-bank-of-india-steps-in-to-support-rupee-reuters-93CH-4981494",
-    "https://www.investing.com/news/stock-market-news/google-to-deploy-ai-tools-across-singapore-health-system-93CH-4981493",
-    "https://tass.ru/proisshestviya/28265035",
-    "https://tass.ru/obschestvo/28265037",
-    "https://tass.ru/obschestvo/28265039",
-    "https://tass.ru/obschestvo/28265033",
-    "https://t.me/headlines_for_traders/87646",
-    "https://www.rbc.ru/rbcfreenews/6ae2d7706e4399aa2659bf96",
-    "https://t.me/markettwits/391040",
-    "https://www.rbc.ru/rbcfreenews/6adb527a740d27f01a8d6a10",
-    "https://t.me/bitkogan_hotline/28036",
-    "https://tass.ru/proisshestviya/28265017",
-    "https://tass.ru/obschestvo/28265027",
-    "https://tass.ru/mezhdunarodnaya-panorama/28264973",
-    "https://www.investing.com/news/stock-market-news/why-is-hyundai-motor-stock-rallying-today-93CH-4981486",
-    "https://tass.ru/proisshestviya/28265023",
-    "https://www.interfax.ru/russia/1125693",
-    "https://www.investing.com/news/stock-market-news/why-is-jiangxi-copper-stock-plunging-today-93CH-4981485",
-    "https://www.investing.com/news/stock-market-news/why-did-tsingtao-brewery-stock-hit-a-6yr-low-today-93CH-4981484",
-    "https://tass.ru/ekonomika/28264869",
-    "https://tass.ru/mezhdunarodnaya-panorama/28265011",
-    "https://tass.ru/proisshestviya/28265021",
-    "https://www.kommersant.ru/doc/9063315",
-    "https://tass.ru/kosmos/28264955",
-    "https://www.rbc.ru/rbcfreenews/6adf962092195721db3efe2a",
-    "https://t.me/markettwits/391039",
-    "https://tass.ru/armiya-i-opk/28265001",
-    "https://t.me/FinancialJuice/143542",
-    "https://tass.ru/sport/28265005",
-    "https://t.me/FinancialJuice/143541",
-    "https://tass.ru/obschestvo/28264945",
-    "https://t.me/FinancialJuice/143540",
-    "https://t.me/FinancialJuice/143539",
-    "https://www.investing.com/news/stock-market-news/sk-hynix-neutral-in-notrade-zone-awaiting-breakout-live-93CH-4971337",
-    "https://tass.ru/obschestvo/28264949",
-    "https://www.investing.com/news/stock-market-news/samsung-posts-record-profit-in-q3-on-ai-chip-boom-4981289",
-    "https://www.wsj.com/economy/central-banking/reserve-bank-of-australias-blunt-messaging-raises-questions-about-peak-in-rates-eb1b378a?mod=rss_socialeconomyfeed",
-    "https://t.me/investfuture/15454",
-    "https://www.interfax.ru/world/1125692",
-    "https://tass.ru/armiya-i-opk/28264965",
-    "https://tass.ru/ekonomika/28264953",
-    "https://tass.ru/politika/28264995",
-    "https://t.me/headlines_for_traders/87645",
-    "https://t.me/markettwits/391038",
-    "https://t.me/rbc_news/159625",
-    "https://www.coindesk.com/policy/2026/10/29/utah-charges-predictions-platform-kalshi-with-illegal-gambling",
-    "https://www.vedomosti.ru/society/news/2026/10/29/1240997-pravnuchku-hruscheva",
-    "https://tass.ru/armiya-i-opk/28264961",
-    "https://t.me/if_market_news/86445",
-    "https://www.investing.com/news/stock-market-news/why-is-petrochina-stock-rallying-today-93CH-4981481",
-    "https://t.me/forklog/50453",
-    "https://www.rbc.ru/economics/29/10/2026/6ae0cc379a79479f048930e0",
-    "https://www.rbc.ru/economics/26/01/2019/5c4bac639a7947f4e86dd72b",
-    "https://t.me/FinancialJuice/143538",
-    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
-    "https://www.vedomosti.ru/investments/news/2026/10/29/1240872-investitsiyam-viros",
-    "https://www.interfax.ru/russia/1125568",
-    "https://t.me/markettwits/391037",
-    "https://tass.ru/obschestvo/28264933",
-    "https://www.interfax.ru/world/1125691",
-    "https://www.kommersant.ru/doc/9063308",
-    "https://www.interfax.ru/russia/1125689",
-    "https://www.investing.com/news/stock-market-news/petrochina-shares-rise-as-q3-profit-surges-on-strong-oil-prices-4981479",
-    "https://www.kommersant.ru/doc/9063189"
+    "https://tass.ru/kosmos/28265043"
   ],
   "ai_dead": {
     "date": "2026-10-28",
@@ -999,30 +1004,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-28T06:00:55.741789+00:00",
-      "Трамп анонсировал скорую встречу с Путиным и Зеленским"
-    ],
-    [
-      "2026-10-28T06:00:55.741789+00:00",
-      "SK Hynix отчиталась о росте операционной прибыли в третьем квартале на 632%"
-    ],
-    [
-      "2026-10-28T06:00:55.741789+00:00",
-      "BNP Paribas отчитался лучше прогнозов и объявил байбэк на €1,3 млрд"
-    ],
-    [
-      "2026-10-28T06:00:55.741789+00:00",
-      "Минцифры может ввести лимит на потребление зарубежного трафика"
-    ],
-    [
-      "2026-10-28T06:00:55.741789+00:00",
-      "Биткоин удерживается около $80 800 на утренних торгах"
-    ],
-    [
-      "2026-10-28T06:31:07.232237+00:00",
-      "«Займер» рекомендовал дивиденды за III квартал с доходностью 5,4%"
-    ],
     [
       "2026-10-28T06:31:07.232237+00:00",
       "Индекс потребительской уверенности в США вырос в октябре до 91,7 пункта"
@@ -1622,6 +1603,30 @@
     [
       "2026-10-29T05:31:01.091137+00:00",
       "Пентагон призвал страны АСЕАН создать оборонный союз против Китая"
+    ],
+    [
+      "2026-10-29T06:01:01.842956+00:00",
+      "Alphabet снизила чистую прибыль на 25% в III квартале"
+    ],
+    [
+      "2026-10-29T06:01:01.842956+00:00",
+      "КНДР запустила около 10 баллистических ракет"
+    ],
+    [
+      "2026-10-29T06:01:01.842956+00:00",
+      "Транзит судов через Босфор приостановили из-за аварии танкера"
+    ],
+    [
+      "2026-10-29T06:01:01.842956+00:00",
+      "В Сингапуре изъяли аппаратные кошельки с вредоносным ПО"
+    ],
+    [
+      "2026-10-29T06:01:01.842956+00:00",
+      "Hyperliquid сожгла почти 5% эмиссии токенов HYPE"
+    ],
+    [
+      "2026-10-29T06:01:01.842956+00:00",
+      "Нефть Brent подешевела до $114,02 за баррель"
     ]
   ],
   "results_fp": [
@@ -1639,7 +1644,9 @@
     "Доверие потребителей (CB)|91.7",
     "Отчёт Robinhood (HOOD)|$0.61",
     "Запасы нефти EIA|-1.892M",
-    "Решение ФРС по ставке|4.00%"
+    "Решение ФРС по ставке|4.00%",
+    "Отчёт Microsoft (MSFT)|$4.13",
+    "Отчёт Alphabet (GOOGL)|$2.87"
   ],
   "pro_sent": {
     "asset": "2026-10-21",
@@ -1652,9 +1659,11 @@
   },
   "pro_events": {
     "day": "2026-10-29",
-    "count": 1,
+    "count": 3,
     "titles": [
-      "Решение ФРС по ставке"
+      "Решение ФРС по ставке",
+      "Отчёт Microsoft (MSFT)",
+      "Отчёт Alphabet (GOOGL)"
     ]
   },
   "pro_daily": "2026-10-28",
