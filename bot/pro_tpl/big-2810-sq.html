@@ -1,0 +1,121 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- #СОБЫТИЕ Чт 29.10: ФРС сохранила 3,75–4% (по образцу big-2310 ЦБ 23.10) — 4 слайда 1:1 (1080 → 1620 через render-sq.js). Основа — pro_queue/2026-10-wk4 v4_e1–e4 (тексты те же).
+     Правила владельца 27.10: текст ≥31 px, ключевое — <u>, ▲/▼ вместо цветных кружков, списки с линиями вместо плашек. q-1793119516000 -->
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#222;font-family:Inter}
+.s{width:1080px;height:1080px;position:relative;overflow:hidden;margin:0 0 20px;background:#1A0F14;color:#F4ECEE}
+.s>*{position:absolute}
+.hd{z-index:5;left:60px;right:60px;top:50px;display:flex;align-items:center;justify-content:space-between}
+.hd .lg{display:flex;align-items:center;gap:14px;font:800 22px Inter;letter-spacing:.14em;color:rgba(255,255,255,.72)}
+.hd .lg img{width:44px;height:44px;border-radius:11px}
+.hd .tg{display:flex;align-items:center;gap:16px;font:800 22px Inter;letter-spacing:.1em}
+.hd .day{background:#B3241F;color:#fff;padding:9px 20px;border-radius:99px}
+.hd .n{color:rgba(255,255,255,.55);letter-spacing:.04em}
+.k{left:60px;right:60px;font:800 22px Inter;letter-spacing:.16em;text-transform:uppercase;color:#F08A78}
+h1{left:60px;right:60px;font:900 58px/1.06 'Playfair Display';letter-spacing:-.01em;color:#fff}
+u{text-decoration:none;background:linear-gradient(transparent 64%,rgba(214,58,46,.62) 64%,rgba(214,58,46,.62) 92%,transparent 92%);padding:0 3px}
+.t{font:500 31px/1.36 Inter;color:#EDE3E6}.t b{color:#fff;font-weight:700}
+.up{color:#3DD68C}.dn{color:#FF6B5B}.eq{color:#A99BA1}
+.src{left:60px;right:150px;white-space:nowrap;bottom:96px;font:500 20px/1.35 Inter;color:rgba(255,255,255,.5)}
+.src a{color:inherit}
+.cnt{right:60px;bottom:96px;font:800 22px Inter;color:rgba(255,255,255,.55)}
+.ft{left:0;right:0;bottom:0;height:68px;display:flex;flex-direction:column;align-items:center;justify-content:center;font:500 14px/1.5 Inter;background:#0D0709;color:rgba(255,255,255,.45)}
+/* 1 */
+#big1 .ph{left:0;right:0;top:0;height:560px;background:url(img/fed1937.jpg) center 40%/cover;filter:grayscale(1) contrast(1.08)}
+#big1 .ph::after{content:'';position:absolute;inset:0;background:linear-gradient(rgba(26,15,20,.55),rgba(26,15,20,.25) 30%,rgba(26,15,20,.85) 75%,#1A0F14)}
+#big1 .bar{left:0;top:128px;background:#B3241F;color:#fff;font:800 24px Inter;letter-spacing:.08em;padding:16px 40px 16px 60px}
+#big1 h1{font-size:104px;line-height:1}
+.trio{left:60px;right:60px;display:flex;gap:22px}
+.trio div{flex:1;border-top:4px solid #B3241F;padding-top:14px;font:500 31px/1.25 Inter;color:#D9CCD0}
+.trio b{display:block;font:900 52px/1.1 'Playfair Display';color:#fff;margin-bottom:6px;white-space:nowrap}
+/* 2 */
+.q{left:60px;right:60px;border-left:5px solid #B3241F;padding-left:26px}
+.q p{font:italic 700 33px/1.22 'Playfair Display';color:#fff}
+.q small{display:block;margin-top:8px;font:500 24px Inter;color:rgba(255,255,255,.6)}
+.tb{left:60px;right:60px}
+.tb .h,.tb .r{display:flex;align-items:baseline}
+.tb .h{justify-content:flex-end;gap:0;font:700 24px Inter;color:rgba(255,255,255,.6);padding-bottom:6px}
+.tb .h span,.tb .r .v{width:190px;text-align:right}
+.tb .r{border-top:2px solid rgba(255,255,255,.14);padding:7px 0}
+.tb .r .l{flex:1;font:600 31px Inter}
+.tb .r .v{font:900 44px/1.1 'Playfair Display';color:rgba(255,255,255,.62)}
+.tb .r .v.hi{color:#FF6B5B}.tb .r .v .a{font:700 30px Inter;margin-right:8px}
+.pl{left:60px;right:60px;border-top:4px solid #B3241F;padding-top:16px}
+.pl .lb{font:800 22px Inter;letter-spacing:.16em;color:#F08A78;margin-bottom:8px}
+/* 3 */
+.cap{left:60px;right:60px;font:600 26px Inter;color:rgba(255,255,255,.75)}
+.ch{left:60px;right:60px;height:170px;display:flex;align-items:flex-end;gap:10px}
+.ch div{flex:1;position:relative;background:linear-gradient(#4A3A40,#8E8287);border-radius:3px 3px 0 0}
+.ch div:last-child{background:#E0463B}
+.ch div i{position:absolute;left:-10px;right:-10px;top:-30px;text-align:center;font:700 22px Inter;font-style:normal;color:#fff}
+.ch div em{position:absolute;left:-10px;right:-10px;bottom:-32px;text-align:center;font:500 19px Inter;font-style:normal;color:rgba(255,255,255,.6)}
+.ls{left:60px;right:60px}
+.ls .r{display:flex;align-items:baseline;gap:16px;border-top:2px solid rgba(255,255,255,.14);padding:9px 0}
+.ls .r .m{flex:none;width:28px;font:700 28px Inter;text-align:center}
+.ls .r .n{flex:none;width:150px;font:800 31px/1.36 Inter;color:#fff}
+.ls .r .t{flex:1}
+/* 4 */
+.tl{left:60px;right:60px}
+.tl .r{display:flex;gap:20px;border-top:2px solid rgba(255,255,255,.14);padding:9px 0}
+.tl .r .w{flex:none;width:190px}
+.tl .r .w b{display:block;font:900 32px/1.15 'Playfair Display';color:#fff}
+.tl .r .w span{font:700 26px Inter;color:#F08A78}
+.sc{left:60px;right:60px}
+.sc .r{display:flex;gap:16px;border-top:2px solid rgba(255,255,255,.14);padding:9px 0}
+.sc .r .m{flex:none;width:30px;font:700 28px/1.5 Inter;text-align:center}
+.sc .if{font:500 27px/1.3 Inter;color:rgba(255,255,255,.7)}.sc .if b{color:#fff}
+</style></head><body>
+<script>
+const LOGO='img/logo192.png';
+const COPY='© Пульс рынка, 2026. Только для личного использования подписчика. Распространение запрещено';
+function S(id,n,inner,src,ph){return `<div class="s" id="${id}">${inner}<div class="hd"><div class="lg"><img src="${LOGO}">ПУЛЬС РЫНКА</div><div class="tg"><span class="day">ФРС</span>СОБЫТИЕ <span class="n">${n}/4</span></div></div>
+<div class="src">${src}</div><div class="cnt">${n<4?n+' / 4 →':'4 / 4'}</div><div class="ft"><div>${COPY}</div>${ph?'<div>'+ph+'</div>':''}</div></div>`}
+const SRC='Источник: <a>federalreserve.gov</a>, заявление ФРС 28.10.2026';
+const out=[];
+out.push(S('big1',1,`
+ <div class="ph"></div>
+ <div class="bar">ЧТО ПРОИЗОШЛО · 28 ОКТЯБРЯ · 21:00 МСК</div>
+ <div class="k" style="top:300px">ФРС США</div>
+ <h1 style="top:336px;font-size:96px">Ставка<br>осталась <u>3,75–4%</u></h1>
+ <div class="t" style="left:60px;right:60px;top:572px">Как и ждали. Но двое из 12 голосовали <u>за повышение</u> — и рынок теперь ждёт подъёма ставки в декабре.</div>
+ <div class="trio" style="top:722px"><div><b>3,75–4%</b>ставка ФРС</div><div><b>10 — 2</b>двое за&nbsp;повышение</div><div><b>≈85%</b>шанс повышения 9&nbsp;декабря</div></div>`,
+ 'Источники: <a>federalreserve.gov</a>, 28.10.2026 · шанс — фьючерсы на ставку (Bloomberg)','Фото: Federal Reserve, 1937 · Public domain · Wikimedia Commons'));
+out.push(S('big2',2,`
+ <div class="k" style="top:140px">Что это значит</div>
+ <h1 style="top:178px">Экономика сильная —<br>инфляция упрямая</h1>
+ <div class="q" style="top:316px"><p>«Наша обязанность — снизить инфляцию»</p><small>— Кевин Уорш, глава ФРС, пресс-конференция 28.10.2026</small></div>
+ <div class="ls" style="top:440px">
+  <div class="r"><span class="m up">▲</span><span class="n" style="width:200px">Экономика</span><span class="t">«растёт сильными темпами»</span></div>
+  <div class="r"><span class="m eq">=</span><span class="n" style="width:200px">Работа</span><span class="t">безработица почти не меняется</span></div>
+  <div class="r"><span class="m dn">▼</span><span class="n" style="width:200px">Инфляция</span><span class="t">«остаётся повышенной»</span></div></div>
+ <div class="pl" style="top:690px"><div class="lb">ПЕРЕВОД НА ПРОСТОЙ ЯЗЫК</div><div class="t">Цены в США растут быстрее цели, а экономика не тормозит. Поэтому ставку не снижают. Двое уже хотят поднять — <u>следующий шаг скорее вверх, чем вниз</u>.</div></div>`,
+ 'Источник: <a>federalreserve.gov</a>, 28.10.2026 · пресс-конференция'));
+const path=[['3,75','янв'],['3,75','мар'],['3,75','апр'],['3,75','июн'],['3,75','июл'],['4','сен'],['4','окт'],['?','дек']];
+const bars=path.map(([v,d])=>v=='?'?`<div style="height:140px;background:repeating-linear-gradient(45deg,#E0463B 0 10px,transparent 10px 20px);border:2px dashed #E0463B"><i>?</i><em>${d}</em></div>`:`<div style="height:${Math.round(110*(parseFloat(v.replace(',','.'))-3)/1)}px"><i>${v}</i><em>${d}</em></div>`).join('');
+out.push(S('big3',3,`
+ <div class="k" style="top:140px">Что для рынка</div>
+ <h1 style="top:168px;font-size:46px">Акции спокойны, облигации — нет</h1>
+ <div class="cap" style="top:232px">Ставка ФРС в 2026 году, верхняя граница, %</div>
+ <div class="ch" style="top:300px;height:140px">${bars}</div>
+ <div class="ls" style="top:490px">
+  <div class="r"><span class="m up">▲</span><span class="n" style="width:200px">Акции США</span><span class="t"><u>S&amp;P 500 +0,3%</u> в день решения — сюрприза не было</span></div>
+  <div class="r"><span class="m dn">▼</span><span class="n" style="width:200px">Облигации</span><span class="t">доходность 10-летних <u>≈5,04%</u> — цена облигаций снизилась</span></div>
+  <div class="r"><span class="m dn">▼</span><span class="n" style="width:200px">Крипта</span><span class="t">дорогие деньги — меньше спроса на риск</span></div>
+  <div class="r"><span class="m eq">=</span><span class="n" style="width:200px">Россия</span><span class="t">рубль держит нефть: <u>Brent ≈110,7 $</u></span></div></div>`,
+ 'Источники: ФРС · торги 28.10 (CNBC, Reuters) · Мосбиржа'));
+out.push(S('big4',4,`
+ <div class="k" style="top:140px">Что дальше</div>
+ <h1 style="top:168px;font-size:46px">Три цифры до декабря</h1>
+ <div class="tl" style="top:236px">
+  <div class="r"><div class="w"><b>PCE</b><span>29.10 · 15:30</span></div><div class="t">инфляция, по которой <u>ФРС сверяет цены</u></div></div>
+  <div class="r"><div class="w"><b>Работа</b><span>06.11 · 16:30</span></div><div class="t">рабочие места и безработица (NFP)</div></div>
+  <div class="r"><div class="w"><b>CPI</b><span>10.11 · 16:30</span></div><div class="t">цены за октябрь</div></div>
+  <div class="r"><div class="w"><b>ФРС</b><span>09.12 · 22:00</span></div><div class="t"><u>следующее решение</u> по ставке</div></div></div>
+ <div class="sc" style="top:640px">
+  <div class="r"><span class="m dn">▲</span><div><div class="if"><b>Если</b> инфляция не остынет → <b>вероятно</b></div><div class="t"><u>повышение до 4–4,25%</u>: доллар крепче, технологиям тяжелее</div></div></div>
+  <div class="r"><span class="m up">▼</span><div><div class="if"><b>Если</b> цены замедлятся → <b>вероятно</b></div><div class="t"><u>пауза</u>: давление на акции и крипту ослабнет</div></div></div></div>`,
+ 'Источники: ФРС · BEA · BLS · время МСК · сценарии'));
+document.body.innerHTML=out.join('\n');
+</script></body></html>

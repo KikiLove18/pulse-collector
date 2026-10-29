@@ -44,3 +44,4 @@
 | img/ev-texas-refinery.jpg | #СОБЫТИЯ ФРБ Далласа | Larry D. Moore | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Valero_Three_Rivers_Refinery_Texas_2020.jpg |
 | img/ev-msft-b92.jpg | #СОБЫТИЯ 28.10 | Jiaqian AirplaneFan | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg |
 | img/ev-googleplex.jpg | #СОБЫТИЯ 28.10 | Erik Möller | Public domain | https://commons.wikimedia.org/wiki/File:Googleplex-SignIn.jpg |
+| img/fed1937.jpg | #СОБЫТИЕ ФРС 29.10 (big1) | Federal Reserve, 1937 | Public domain | https://commons.wikimedia.org/wiki/File:US_Federal_Reserve_Eccles_Building_1937.jpg |
