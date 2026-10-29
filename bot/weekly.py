@@ -127,6 +127,15 @@ def _week_moex(sec, http_get, now, shares=False, until=None):
 CRYPTO_Y = {"bitcoin": "BTC-USD", "ethereum": "ETH-USD"}  # для цен на прошлую дату (у CoinGecko markets — только сейчас)
 
 
+def brent_contract(day):
+    """Один и тот же фьючерс Brent на всю неделю: BZ=F у Yahoo перескакивает на следующий месяц (29.10 — с декабрьского на январский, ложные −4%).
+    Контракт месяца M истекает в последний рабочий день M−2 — берём тот, что торгуется ещё ≥8 дней."""
+    d = day + timedelta(days=8)
+    m = d.month + 2
+    y, m = d.year + (m - 1) // 12, (m - 1) % 12 + 1
+    return f"BZ{'FGHJKMNQUVXZ'[m - 1]}{y % 100:02d}.NYM"
+
+
 def week_quotes(http_get, now, until=None):
     out = {}
     cg = {}
@@ -143,7 +152,13 @@ def week_quotes(http_get, now, until=None):
         print("Неделя, CoinGecko:", e, file=sys.stderr)
     for key, name, src in WEEK_QUOTES:
         try:
-            if src == "y" or (until and key in CRYPTO_Y):
+            if key == "BZ=F":
+                try:
+                    out[key] = _week_yahoo(brent_contract(until or now), http_get, until)
+                except Exception as e:
+                    print("Неделя, Brent контракт:", e, "— беру BZ=F", file=sys.stderr)
+                    out[key] = _week_yahoo(key, http_get, until)
+            elif src == "y" or (until and key in CRYPTO_Y):
                 out[key] = _week_yahoo(CRYPTO_Y.get(key, key), http_get, until)
             elif src in ("moex", "moexs"):
                 out[key] = _week_moex(key, http_get, now, shares=src == "moexs", until=until)
