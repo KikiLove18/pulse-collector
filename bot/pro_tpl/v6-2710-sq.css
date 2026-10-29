@@ -1,0 +1,42 @@
+/* КВАДРАТ 1:1 для v6-2710-sq.html (Пн · неделя monc 26.10–01.11, #СОБЫТИЯ evc v7): высота 1080, содержимое выше src (973). Владелец 29.10: в канале только квадрат, без полос по бокам */
+.cd{height:1080px!important}
+.monc .cnt{top:930px!important}
+.monc .lgd{top:932px!important;font-size:18px!important}
+/* обложка недели */
+#monc1 .k{top:222px!important}
+#monc1 .ch1{top:250px!important;width:660px!important;font-size:48px!important}
+#monc1 .cpill{top:312px!important;font-size:18px!important}
+#monc1 .clead{top:384px!important;width:660px!important;height:118px!important;font-size:21px!important;line-height:1.36!important}
+#monc1 .pc{transform:rotate(3deg) translateY(-14px) scale(.62)!important;transform-origin:top right}
+#monc1 .wk{top:514px!important}#monc1 .wk div{height:110px!important;padding:7px 8px!important}
+#monc1 .wk b{font-size:23px!important}#monc1 .wk span{font-size:17px!important}#monc1 .wk em{font-size:16px!important;margin-top:4px!important}
+#monc1 .crows{top:634px!important;height:288px!important;font-size:20px!important;line-height:1.2!important}
+#monc1 .crows div{padding:6px 0!important}#monc1 .crows b{font-size:19px!important;padding-top:1px!important}
+/* дни */
+.monc .dn{top:110px!important;font-size:96px!important}
+.monc .mkts{top:212px!important}
+.monc .hd{top:262px!important}
+.monc .k{top:274px!important}
+.monc .hm{top:300px!important;font-size:76px!important}
+.monc .ht{top:382px!important;height:92px!important;font-size:38px!important}
+.monc .hw{top:478px!important;height:122px!important;font-size:21px!important}
+.monc .dpc{top:262px!important;width:300px!important}.monc .dpc .ph{height:168px!important}
+.monc .er{top:604px!important;height:212px!important}
+.monc .er>div{padding:6px 0!important}.monc .er b{font-size:19px!important}
+.monc .er p{font-size:21px!important}.monc .er p small{font-size:18px!important;margin-top:2px!important}
+.monc .sc6{top:818px!important;height:96px!important}
+.monc .sc6>div{padding:8px 14px!important}.monc .sc6 i{font-size:15px!important;margin-bottom:4px!important}.monc .sc6 span{font-size:18px!important;line-height:1.25!important}
+.monc .you{top:810px!important}
+/* #СОБЫТИЯ: обложка */
+.evc .clist{height:400px!important}
+.evc .swipe{top:912px!important}
+/* #СОБЫТИЯ v7: слайд события */
+.evc .bg7{height:640px!important}.evc .ov7{height:642px!important}
+.evc .why7{top:432px!important;max-height:98px!important}.evc .fol7{top:536px!important;max-height:100px!important}
+.evc .why7 p,.evc .fol7 p{font-size:26px!important}
+.evc .mk7{top:644px!important;padding-top:10px!important}
+.evc .mr7{padding:7px 0!important;gap:14px!important}.evc .mr7 em{width:36px!important;height:36px!important;line-height:36px!important;font-size:16px!important}
+.evc .mr7 .nm b{font-size:22px!important}.evc .mr7 .nm small{font-size:15px!important}.evc .mr7 p{font-size:20px!important}
+.evc .nx7{top:888px!important;max-height:62px!important;font-size:20px!important}
+.monc:not(:has(.dpc)) .hw{width:auto!important;right:60px!important}
+#monc1 .k{top:222px!important}

@@ -5,7 +5,7 @@
      Шаблоны: всё содержимое — в DATA ниже. Рендер: NODE_PATH=~/.local/pw/node_modules node render.js [id] [--data свои.json] → out/<id>.jpg 1620×2025.
      Инструкция — README.md рядом. -->
 <link href="fonts/fonts.css" rel="stylesheet">
-<link rel="stylesheet" href="pro.css"><link rel="stylesheet" href="v6-sq.css">
+<link rel="stylesheet" href="pro.css"><link rel="stylesheet" href="v6-sq.css"><link rel="stylesheet" href="v6-2710-sq.css">
 <style>
 .abs{position:absolute}.k{font:800 20px Inter;letter-spacing:.16em;text-transform:uppercase}
 .fit{overflow:hidden}
@@ -455,6 +455,44 @@
 .thuc .its b .tbd{display:inline-block;margin-top:0;font:700 30px/1.2 Inter;color:rgba(22,32,58,.55)}
 .thuc .cnt{right:60px;top:1150px;font:700 22px Inter;color:#C8A96A}
 .thuc .swipe{left:60px;top:1150px;font:700 24px Inter;color:#C8A96A}
+/* ===== v7 (29.10, образец владельца «Китай 5,5%» / «Северсталь»): фото по теме фоном, цифры справа сверху сжато, «для рынка» — строки на всю ширину ===== */
+.evc .bg7{position:absolute;left:0;right:0;top:0;height:900px;background-size:cover;background-position:center 40%;filter:saturate(.55) brightness(.78) contrast(1.05)}
+.evc .bg7.nop{background:radial-gradient(700px 500px at 75% 30%,#24406A,#0D1520 75%)}
+.evc .ov7{position:absolute;left:0;right:0;top:0;height:902px;background:linear-gradient(90deg,rgba(13,21,32,.72),rgba(13,21,32,.28) 70%),linear-gradient(rgba(13,21,32,.25),rgba(13,21,32,.35) 45%,#0D1520 98%)}
+.evc .meta7{left:60px;width:560px;top:150px;font:700 24px Onest;color:#8FB3E0;z-index:3;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.evc .t7{left:60px;width:560px;top:188px;max-height:112px;font:800 46px/1.14 Onest;letter-spacing:-.02em;color:#fff;z-index:3;text-shadow:0 3px 18px rgba(0,0,0,.6)}
+.evc .hint7{left:60px;width:560px;top:312px;max-height:92px;font:600 22px/1.36 Inter;color:#D5DFEC;z-index:3;text-shadow:0 2px 10px rgba(0,0,0,.7)}
+.evc .hint7 b{color:#fff}
+.evc .card7{right:60px;top:126px;width:356px;z-index:4;background:rgba(18,30,48,.9);border:1px solid rgba(110,155,209,.28);border-radius:22px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.45);padding:0 22px 18px}
+.evc .bn7{margin:0 -22px 14px;padding:16px 22px 12px;background:linear-gradient(#1E3456,#172A45);font:900 66px/1 Onest;letter-spacing:-.04em;color:#fff;white-space:nowrap}
+.evc .cmp7 div{display:flex;align-items:center;gap:12px;font:600 18px Inter;color:#9DB2CC;margin-bottom:7px}
+.evc .cmp7 span{width:96px;flex:none}
+.evc .cmp7 i{flex:1;height:8px}.evc .cmp7 s{display:block;height:8px;border-radius:4px;background:#3A557C}
+.evc .cmp7 div.f s{background:#6E9BD1}
+.evc .cmp7 b{flex:none;min-width:58px;text-align:right;color:#fff;font:800 18px Onest}
+.evc .vd7{display:inline-block;margin-top:8px;font:800 18px Onest;padding:7px 12px;border-radius:9px;background:rgba(110,155,209,.16);color:#8FB3E0}
+.evc .vd7.better{background:rgba(43,212,140,.16);color:#2BD48C}.evc .vd7.worse{background:rgba(255,107,107,.16);color:#FF6B6B}
+.evc .dev7{margin-top:10px;font:700 17px Inter;color:#C9D6E8}
+.evc .why7,.evc .fol7{left:60px;right:60px;z-index:3}
+.evc .why7{top:520px;max-height:116px}.evc .fol7{top:652px;max-height:120px}
+.evc .why7 i,.evc .fol7 i{display:block;font:800 17px Onest;letter-spacing:.16em;color:#8FB3E0;font-style:normal;margin-bottom:6px;padding-left:28px;position:relative}
+.evc .why7 i:before,.evc .fol7 i:before{content:'';position:absolute;left:0;top:2px;width:15px;height:15px;border-radius:50%;background:#8FB3E0;box-shadow:0 0 0 4px rgba(143,179,224,.2)}
+.evc .why7 p,.evc .fol7 p{margin:0;padding-left:28px;font:500 30px/1.3 Inter;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.evc .why7 u,.evc .fol7 u{text-decoration:none;font-weight:700;background:linear-gradient(transparent 86%,#6E9BD1 86%)}
+.evc .mk7{left:60px;right:60px;top:806px;padding-top:18px;border-top:1px solid #22344D;z-index:3}
+.evc .mk7 .lab{margin-bottom:6px}
+.evc .mr7{display:flex;align-items:center;gap:18px;padding:14px 0;border-bottom:1px solid #1B2A40}
+.evc .mr7:last-child{border-bottom:0}
+.evc .mr7 em{flex:none;width:44px;height:44px;border-radius:50%;font:800 18px/44px Onest;text-align:center;font-style:normal;background:#1B2A40;color:#8FB3E0}
+.evc .mr7.up em{background:rgba(43,212,140,.14);color:#2BD48C}.evc .mr7.dn em{background:rgba(255,107,107,.14);color:#FF6B6B}
+.evc .mr7 .nm{flex:none;width:250px}
+.evc .mr7 .nm b{display:block;font:800 26px/1.15 Onest;color:#fff}
+.evc .mr7 .nm small{display:block;font:800 17px Onest;color:#8FB3E0;margin-top:2px}
+.evc .mr7.up .nm small{color:#2BD48C}.evc .mr7.dn .nm small{color:#FF6B6B}
+.evc .mr7 p{flex:1;margin:0;font:500 23px/1.3 Inter;color:#E6EEF8}
+.evc .nx7{left:60px;right:200px;top:1140px;max-height:70px;border-left:4px solid #6E9BD1;padding:0 0 0 18px;font:600 22px/1.35 Inter;color:#C9D6E8;z-index:3}
+.evc .nx7 i{font:800 16px Onest;letter-spacing:.16em;color:#8FB3E0;font-style:normal;margin-right:10px}
+.evc .cnt7{bottom:84px;right:60px;font-size:26px}
 </style></head><body>
 <script>
 /* ============================ DATA — меняется только здесь ============================
@@ -689,14 +727,15 @@ evc:d=>{d=Object.assign({tag:'СОБЫТИЯ',day:'',k:'',sub:'',cover:[],sum:[]
  const sl=d.items.map((e,i)=>{const vs=e.nums.map(x=>num(x[1])),mx=Math.max(...vs),mn=Math.min(...vs),lo=mx==mn?0:mn-(mx-mn)*1.2;
   const ok=x=>x&&/\d/.test(x[1]),f=e.nums.find(x=>x[0]=='Факт'),p=e.nums.find(x=>x[0]=='Прогноз'),dv=ok(f)&&ok(p)?num(f[1])-num(p[1]):null;
   const dn=ok(f)&&ok(p)?Math.max(1,dec(f[1]),dec(p[1])):1,dev=dv==null?'':Math.abs(dv)<0.5*10**-dn?'= прогнозу':`${fmt(dv,dn)} к прогнозу`;
- return `<div class="abs ph5 ${e.img?'':'nop'}">${e.img?`<div class="duo"><div class="im" style="background-image:url(${e.img})"></div><div class="d1"></div><div class="d2"></div></div>`:e.fl}</div>
- <div class="abs no5">СОБЫТИЕ ${i+1} ИЗ ${d.items.length}</div><div class="abs meta5">${e.tm} МСК · ${e.fl} ${e.who}</div><h1 class="abs t5 fit">${e.t}</h1>
- <div class="abs res"><div class="bn">${e.big}</div><div class="cmp">${e.nums.map((x,j)=>`<div class="${x[0]=='Факт'?'f':''}"><span>${x[0]}</span><i style="width:${Math.round(mx==lo?80:20+60*(vs[j]-lo)/(mx-lo))}%"></i><b>${x[1]}</b></div>`).join('')}</div><div class="side">${dev?`<div class="dev">${dev}</div>`:''}<div class="vd ${e.vd}">${e.vt}</div></div></div>
- ${e.hint?`<div class="abs hint">${e.hint}</div>`:''}
- ${e.why?`<div class="abs why fit"><i class="lab2">ПОЧЕМУ ТАК</i>${e.why}</div>`:''}
- ${e.fol?`<div class="abs fol fit"><i class="lab2">ЧТО СЛЕДУЕТ</i>${e.fol}</div>`:''}
- ${e.mk.length?`<div class="abs mk"><i class="lab">ДЛЯ РЫНКА</i><div class="mrow">${e.mk.slice(0,3).map(m=>`<div class="tl ${m[0]}"><h5>${m[1]}<u>${m[0]=='up'?'▲':m[0]=='dn'?'▼':'●'} ${m[2]}</u></h5><p class="fit">${m[3]}</p></div>`).join('')}</div></div>`:''}
- ${e.nx?`<div class="abs nx5 fit"><i class="lab">ЧТО ДАЛЬШЕ</i>${e.nx}</div>`:''}${cn(i+2)}`});
+ const ic=m=>m[0]=='up'?'▲':m[0]=='dn'?'▼':'=';
+ return `<div class="bg7 ${e.img?'':'nop'}" ${e.img?`style="background-image:url(${e.img})"`:''}></div><div class="ov7"></div>
+ <div class="abs meta7">${e.tm}${/\d/.test(e.tm)?' МСК':''} · ${e.fl} ${e.who}</div><h1 class="abs t7 fit">${e.t}</h1>
+ ${e.hint?`<div class="abs hint7 fit">${e.hint}</div>`:''}
+ <div class="abs card7"><div class="bn7">${e.big}</div><div class="cmp7">${e.nums.map((x,j)=>`<div class="${x[0]=='Факт'?'f':''}"><span>${x[0]}</span><i><s style="width:${Math.round(mx==lo?80:30+70*(vs[j]-lo)/(mx-lo))}%"></s></i><b>${x[1]}</b></div>`).join('')}</div><div class="vd7 ${e.vd}">${e.vt}</div>${dev?`<div class="dev7">${dev}</div>`:''}</div>
+ ${e.why?`<div class="abs why7 fit"><i>ПОЧЕМУ ТАК</i><p>${e.why}</p></div>`:''}
+ ${e.fol?`<div class="abs fol7 fit"><i>ЧТО СЛЕДУЕТ</i><p>${e.fol}</p></div>`:''}
+ ${e.mk.length?`<div class="abs mk7"><i class="lab">ДЛЯ РЫНКА</i>${e.mk.slice(0,3).map(m=>`<div class="mr7 ${m[0]}"><em>${ic(m)}</em><div class="nm"><b>${m[1]}</b><small>${m[2]}</small></div><p>${m[3]}</p></div>`).join('')}</div>`:''}
+ ${e.nx?`<div class="abs nx7 fit"><i>ЧТО ДАЛЬШЕ</i>${e.nx}</div>`:''}<div class="abs cnt cnt7">${i+2} / ${n} →</div>`});
  const fin=`<div class="abs k fk">Итог дня · ${d.day.toLowerCase()}</div><h1 class="abs fh1">Что важно</h1>
  <div class="abs fl2">${d.sum.map(x=>`<div><span>${x[0]}</span><div>${x[1]}</div></div>`).join('')}</div>
  ${d.next?`<div class="abs nxt"><i>${d.next.k||''}</i><b>${d.next.t||''}</b><span>${d.next.s||''}</span></div>`:''}${cn(n)}`;
