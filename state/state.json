@@ -52,7 +52,7 @@
   ],
   "last_digest_ts": "2026-10-28T17:31:11.751976+00:00",
   "calendar": {
-    "ts": "2026-10-28T16:01:08.258313+00:00",
+    "ts": "2026-10-29T04:01:03.402255+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -903,7 +903,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-28T21:30:57.028837+00:00",
+  "breaking_ts": "2026-10-29T04:01:03.397279+00:00",
   "news_now": {
     "day": "2026-10-29",
     "day_count": 0,
@@ -913,79 +913,75 @@
   },
   "news_seen": [
     "https://www.kommersant.ru/doc/9063175",
-    "https://www.rbc.ru/politics/29/10/2026/6ae268796496c8e48808db6d",
-    "https://t.me/FinancialJuice/143477",
-    "https://tass.ru/mezhdunarodnaya-panorama/28264365",
-    "https://tass.ru/ekonomika/28264369",
-    "https://tass.ru/proisshestviya/28264363",
-    "https://www.wsj.com/world/middle-east/vance-engaged-iran-to-revive-peace-talks-f19eaaf8?mod=rss_markets_main",
-    "https://www.vedomosti.ru/politics/news/2026/10/29/1240977-podpisali-soglashenie",
-    "https://www.marketwatch.com/story/why-did-the-fed-hold-off-on-raising-interest-rates-warsh-says-its-because-an-information-rich-period-is-coming-098ced8d?mod=mw_rss_topstories",
-    "https://t.me/FinancialJuice/143476",
-    "https://t.me/FinancialJuice/143475",
-    "https://t.me/headlines_for_traders/87637",
-    "https://t.me/headlines_for_traders/87636",
-    "https://www.investing.com/news/stock-market-news/colombia-stocks-lower-at-close-of-trade-colcap-down-003-4980964",
-    "https://www.interfax.ru/russia/1125643",
-    "https://tass.ru/ekonomika/28264351",
-    "https://www.investing.com/news/stock-market-news/us-bans-imports-from-three-chinese-genomics-companies-citing-forced-labor-4979357",
-    "https://www.wsj.com/business/weil-gotshal-leaders-discussing-plan-to-wind-down-law-firm-09d60c10?mod=rss_markets_main",
-    "https://tass.ru/politika/28264361",
-    "https://www.investing.com/news/stock-market-news/russia-stocks-higher-at-close-of-trade-moex-russia-index-up-066-4980947",
-    "https://www.investing.com/news/stock-market-news/weil-gotshal-law-firm-plans-to-dissolve-capping-dizzying-fall-4980858",
-    "https://t.me/markettwits/391021",
-    "https://t.me/banksta/104357",
-    "https://www.kommersant.ru/doc/9063234",
-    "https://tass.ru/mezhdunarodnaya-panorama/28264353",
-    "https://tass.ru/obschestvo/28264355",
-    "https://decrypt.co/382114/sk-hynix-record-quarter-ai-memory-demand",
-    "https://t.me/WalterBloomberg/37549",
-    "https://www.coindesk.com/markets/2026/10/28/bitcoin-backed-mortgages-are-coming-to-canada-but-borrowers-are-still-unaware-of-the-cost",
-    "https://www.investing.com/news/stock-market-news/alphabets-heavy-cloud-spending-drives-biggerthanexpected-cash-burn-4980612",
-    "https://tass.ru/ekonomika/28264327",
-    "https://tass.ru/mezhdunarodnaya-panorama/28264349",
-    "https://www.wsj.com/finance/investing/the-fed-held-steady-on-rates-leaving-investors-to-sit-tight-too-9c77723b?mod=rss_markets_main",
-    "https://www.interfax.ru/russia/1125644",
-    "https://www.wsj.com/business/how-weil-gotshal-one-of-wall-streets-most-storied-law-firms-ended-up-in-chaos-d98ad13d?mod=rss_markets_main",
-    "https://www.interfax.ru/russia/1125651",
-    "https://www.investing.com/news/stock-market-news/why-is-fortinet-stock-plunging-today-93CH-4980914",
-    "https://tass.ru/sport/28264347",
-    "https://tass.ru/obschestvo/28264323",
-    "https://tass.ru/ekonomika/28264295",
-    "https://t.me/markettwits/391020",
-    "https://www.marketwatch.com/story/servicenows-stock-slides-as-earnings-miss-clouds-a-raised-ai-outlook-96e48385?mod=mw_rss_topstories",
-    "https://www.vedomosti.ru/politics/news/2026/10/29/1240979-vstrechu-s-premer-ministrom-efiopii",
-    "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html",
-    "https://tass.ru/obschestvo/28264341",
-    "https://tass.ru/politika/28264339",
-    "https://tass.ru/proisshestviya/28264343",
-    "https://www.investing.com/news/stock-market-news/alphabet-shares-tumble-65-as-earnings-miss-overshadows-cloud-boom-4980569",
-    "https://www.interfax.ru/russia/1125642",
-    "https://tass.ru/nauka/28264335",
-    "https://tass.ru/obschestvo/28264307",
-    "https://tass.ru/sport/28264329",
-    "https://t.me/BitcoinMagazineTelegram/10936",
-    "https://tass.ru/obschestvo/28264285",
-    "https://tass.ru/obschestvo/28264305",
-    "https://tass.ru/mezhdunarodnaya-panorama/28264293",
-    "https://tass.ru/ekonomika/28264289",
-    "https://tass.ru/ekonomika/28264287",
-    "https://www.investing.com/news/stock-market-news/canadian-bond-yields-climb-as-bank-of-canada-raises-rates-4980888",
-    "https://www.investing.com/news/stock-market-news/bank-of-canada-raises-rates-for-first-time-in-three-years-on-inflation-fears-4980892",
-    "https://www.investing.com/news/stock-market-news/aritzias-fiveyear-growth-plan-prompts-scotiabank-to-raise-price-target-4980889",
-    "https://tass.ru/armiya-i-opk/28264321",
-    "https://tass.ru/obschestvo/28264303",
-    "https://oilprice.com/Alternative-Energy/Solar-Energy/Solar-Has-Overtaken-Nuclear-in-the-Global-Power-Mix.html",
-    "https://t.me/FinancialJuice/143474",
-    "https://www.interfax.ru/russia/1125639",
-    "https://t.me/FinancialJuice/143473",
-    "https://t.me/FinancialJuice/143472",
-    "https://t.me/rbc_news/159623",
-    "https://www.marketwatch.com/story/chipotle-expects-modestly-higher-sales-this-year-as-drive-thru-chipotlanes-come-to-more-stores-4f255bbc?mod=mw_rss_topstories",
-    "https://t.me/FinancialJuice/143471",
-    "https://www.interfax.ru/russia/1125641",
-    "https://t.me/thebell_io/39666",
-    "https://www.interfax.ru/russia/1125640"
+    "https://t.me/FinancialJuice/143531",
+    "https://t.me/interfaxonline/80861",
+    "https://tass.ru/armiya-i-opk/28264793",
+    "https://tass.ru/mezhdunarodnaya-panorama/28264795",
+    "https://t.me/markettwits/391025",
+    "https://tass.ru/politika/28264791",
+    "https://t.me/markettwits/391024",
+    "https://tass.ru/ekonomika/28264789",
+    "https://t.me/markettwits/391022",
+    "https://tass.ru/mezhdunarodnaya-panorama/28264783",
+    "https://tass.ru/proisshestviya/28264779",
+    "https://t.me/interfaxonline/80860",
+    "https://www.interfax.ru/world/1125679",
+    "https://t.me/wublockchainenglish/26595",
+    "https://tass.ru/obschestvo/28264753",
+    "https://www.kommersant.ru/doc/9063274",
+    "https://tass.ru/ekonomika/28264775",
+    "https://tass.ru/ekonomika/28264773",
+    "https://www.rbc.ru/technology_and_media/23/11/2025/691df21d9a7947d548d12659",
+    "https://t.me/FinancialJuice/143530",
+    "https://www.interfax.ru/world/1125678",
+    "https://tass.ru/proisshestviya/28264771",
+    "https://thedefiant.io/news/markets/tokenized-googl-drops-nearly-12-alongside-after-hours-stock-selloff",
+    "https://www.kommersant.ru/doc/9063259",
+    "https://www.interfax.ru/world/1125677",
+    "https://www.vedomosti.ru/society/news/2026/10/29/1240992-gugl-viplatil",
+    "https://tass.ru/mezhdunarodnaya-panorama/28264769",
+    "https://t.me/FinancialJuice/143529",
+    "https://tass.ru/obschestvo/28264747",
+    "https://t.me/FinancialJuice/143528",
+    "https://t.me/headlines_for_traders/87641",
+    "https://thedefiant.io/news/hacks/singapore-police-report-2-7-million-in-tampered-ledger-wallet-losses",
+    "https://tass.ru/obschestvo/28264751",
+    "https://tass.ru/obschestvo/28264743",
+    "https://www.investing.com/news/stock-market-news/vietnam-sets-65-state-ownership-floor-for-major-banks-to-retain-control-of-strategic-groups-4981418",
+    "https://tass.ru/politika/28264763",
+    "https://www.rbc.ru/rbcfreenews/6a7cbe629a7947a89065ea0a",
+    "https://tass.ru/ekonomika/28264759",
+    "https://tass.ru/ekonomika/28264761",
+    "https://tass.ru/ekonomika/28264749",
+    "https://www.interfax.ru/world/1125676",
+    "https://tass.ru/armiya-i-opk/28264755",
+    "https://tass.ru/armiya-i-opk/28264757",
+    "https://www.coindesk.com/markets/2026/10/29/bitcoin-dips-below-usd80-000-as-samsung-led-risk-aversion-in-tech-and-a-hawkish-fed-weigh-on-crypto",
+    "https://t.me/interfaxonline/80859",
+    "https://www.investing.com/news/stock-market-news/samsung-posts-record-profit-in-q3-on-ai-chip-boom-4981289",
+    "https://www.investing.com/news/stock-market-news/chinese-ai-model-carries-out-complex-cyberattacks-in-controlled-tests-researchers-say-4981414",
+    "https://tass.ru/ekonomika/28262789",
+    "https://www.interfax.ru/russia/1125674",
+    "https://t.me/whale_alert_io/104289",
+    "https://tass.ru/obschestvo/28264739",
+    "https://tass.ru/mezhdunarodnaya-panorama/28264737",
+    "https://tass.ru/obschestvo/28264731",
+    "https://t.me/lookonchainchannel/10823",
+    "https://tass.ru/obschestvo/28264735",
+    "https://www.vedomosti.ru/politics/news/2026/10/29/1240991-podlete-moskve",
+    "https://www.rbc.ru/politics/26/10/2026/6adf09afec77d3fd33028170",
+    "https://www.coindesk.com/policy/2026/10/28/mystery-wall-street-journal-ad-sparks-new-fight-over-tokenized-stocks",
+    "https://t.me/headlines_for_traders/87640",
+    "https://t.me/banksta/104366",
+    "https://www.kommersant.ru/doc/9063261",
+    "https://cointelegraph.com/news/tampered-ledger-wallets-cost-singapore-users-27m-police?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://www.rbc.ru/politics/21/10/2026/6ad9120cd261cf3d716167ce",
+    "https://www.interfax.ru/russia/1125673",
+    "https://www.investing.com/news/stock-market-news/why-is-nomura-stock-climbing-today-93CH-4981396",
+    "https://www.investing.com/news/stock-market-news/why-is-alphabet-stock-plunging-afterhours-today-93CH-4981395",
+    "https://www.interfax.ru/world/1125672",
+    "https://t.me/headlines_for_traders/87639",
+    "https://www.rbc.ru/sport/03/10/2026/6ac0c8d99a7947f04ebe3bf1"
   ],
   "ai_dead": {
     "date": "2026-10-28",
@@ -995,30 +991,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-28T04:00:57.693134+00:00",
-      "Нефть выросла на фоне возобновления атак хуситов на Саудовскую Аравию"
-    ],
-    [
-      "2026-10-28T04:00:57.693134+00:00",
-      "Россия и США обсуждают возвращение американских нефтяников на проекты в РФ"
-    ],
-    [
-      "2026-10-28T04:00:57.693134+00:00",
-      "Рынки акций США выросли во вторник на фоне снижения цен на нефть"
-    ],
-    [
-      "2026-10-28T04:00:57.693134+00:00",
-      "Скелет динозавра «Джоди» продан на аукционе в Нью-Йорке за $47,3 млн"
-    ],
-    [
-      "2026-10-28T04:00:57.693134+00:00",
-      "Криптокит перевел 4000 ETH на Aave и заимствовал 6 млн USDT"
-    ],
-    [
-      "2026-10-28T04:00:57.693134+00:00",
-      "«Соллерс» локализует производство 8-ступенчатых АКПП в России"
-    ],
     [
       "2026-10-28T05:00:55.508700+00:00",
       "Россия и США обсуждают возвращение компаний на Сахалин и транзит"
@@ -1618,6 +1590,30 @@
     [
       "2026-10-28T20:31:15.695457+00:00",
       "ФРС изменит календарь заседаний осенью 2027 года"
+    ],
+    [
+      "2026-10-29T04:01:03.397279+00:00",
+      "Биткоин опустился ниже $80 000 на фоне жесткой риторики ФРС"
+    ],
+    [
+      "2026-10-29T04:01:03.397279+00:00",
+      "Уолл-стрит закрылась в плюсе после решения ФРС США"
+    ],
+    [
+      "2026-10-29T04:01:03.397279+00:00",
+      "В РФ в 2027 году могут ввести авиасбор для поддержки авиапрома"
+    ],
+    [
+      "2026-10-29T04:01:03.397279+00:00",
+      "Токены HYPE сети Hyperliquid сожгли почти на $3,89 млрд"
+    ],
+    [
+      "2026-10-29T04:01:03.397279+00:00",
+      "Reuters сообщил о платном доступе Bloomberg к постам Трампа"
+    ],
+    [
+      "2026-10-29T04:01:03.397279+00:00",
+      "Коммерсантъ: цены на цветные металлы до 2030 года останутся ниже рекордов"
     ]
   ],
   "results_fp": [
