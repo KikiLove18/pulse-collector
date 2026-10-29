@@ -912,7 +912,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-29T19:30:58.021565+00:00",
+  "breaking_ts": "2026-10-29T20:00:56.876479+00:00",
   "news_now": {
     "day": "2026-10-29",
     "day_count": 5,
@@ -927,91 +927,79 @@
     ]
   },
   "news_seen": [
-    "https://tass.ru/kultura/28266671",
-    "https://t.me/if_market_news/86475",
-    "https://tass.ru/sport/28268925",
-    "https://www.investing.com/news/stock-market-news/sp-cuts-navient-outlook-to-negative-on-corporate-restructuring-plan-4984917",
-    "https://www.wsj.com/business/polymarket-pauses-trading-after-some-users-report-funds-drained-b014527d?mod=rss_markets_main",
-    "https://t.me/markettwits/391196",
-    "https://www.investing.com/news/stock-market-news/dow-jones-pulls-back-to-ma-cluster-near-52400-live-levels-93CH-4973066",
-    "https://www.investing.com/news/stock-market-news/tesla-breaks-out-above-388-range-overextended-live-levels-93CH-4973068",
-    "https://www.investing.com/news/stock-market-news/nasdaq-100-tests-descending-triangle-support-at-29000-live-levels-93CH-4973069",
-    "https://www.investing.com/news/stock-market-news/alphabet-c-deeply-oversold-after-bear-flag-breakdown-live-levels-93CH-4973070",
-    "https://www.investing.com/news/stock-market-news/sp-500-tests-382-fib-after-double-top-rejection-live-levels-93CH-4973067",
-    "https://www.investing.com/news/stock-market-news/apple-pulls-back-in-ascending-channel-near-ath-live-levels-93CH-4973060",
-    "https://tass.ru/politika/28268841",
-    "https://www.investing.com/news/stock-market-news/nvidia-tests-sma-200-after-double-top-breakdown-live-levels-93CH-4973061",
-    "https://tass.ru/sport/28268917",
-    "https://www.investing.com/news/stock-market-news/micron-tests-618-fib-support-in-bear-flag-live-levels-93CH-4973063",
-    "https://www.investing.com/news/stock-market-news/dollar-index-trapped-in-ichimoku-cloud-at-10186-live-levels-93CH-4973064",
-    "https://www.interfax.ru/russia/1125923",
-    "https://www.kommersant.ru/doc/9064188",
-    "https://tass.ru/politika/28268899",
-    "https://t.me/banksta/104438",
-    "https://t.me/markettwits/391195",
-    "https://tass.ru/politika/28268889",
-    "https://t.me/FinancialJuice/143739",
-    "https://t.me/FinancialJuice/143738",
-    "https://tass.ru/politika/28268887",
-    "https://tass.ru/politika/28268759",
-    "https://www.marketwatch.com/story/the-100-level-is-ours-for-awhile-oil-wont-be-getting-cheap-anytime-soon-no-matter-what-happens-in-the-gulf-99d628bf?mod=mw_rss_topstories",
-    "https://t.me/minfin/9433",
-    "https://www.marketwatch.com/story/alphabets-stock-just-triggered-a-death-cross-could-the-worst-of-the-selloff-be-over-9f70d765?mod=mw_rss_topstories",
-    "https://www.interfax.ru/world/1125922",
-    "https://tass.ru/mezhdunarodnaya-panorama/28268893",
-    "https://tass.ru/obschestvo/28268851",
-    "https://www.sport-interfax.ru/1125921",
-    "https://www.trumpstruth.org/statuses/42857",
-    "https://www.interfax.ru/russia/1125920",
-    "https://t.me/incrypted/33155",
-    "https://t.me/interfaxonline/80905",
-    "https://tass.ru/obschestvo/28268711",
-    "https://tass.ru/obschestvo/28268643",
-    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
-    "https://t.me/coinpost/4289",
-    "https://www.rbc.ru/sport/26/10/2026/6adf1aab197cc1a652c88a65",
-    "https://cryptoslate.com/aaves-midnight-usdc-withdrawals-briefly-left-lenders-with-little-spare-cash/",
-    "https://www.rbc.ru/rbcfreenews/6ae38840c8461490c3283e0a",
-    "https://www.theblock.co/news/defi/2026-10-29-polymarket-exploit-2-5-million-cancel-only-mode-432158",
-    "https://oilprice.com/Energy/Energy-General/BYD-Earnings-Miss-Estimates-as-Chinas-EV-Price-War-Takes-Its-Toll.html",
-    "https://t.me/cbrstocks/83773",
-    "https://tass.ru/mezhdunarodnaya-panorama/28268555",
-    "https://tass.ru/proisshestviya/28268863",
-    "https://t.me/interfaxonline/80904",
-    "https://www.vedomosti.ru/politics/news/2026/10/29/1241337-vstrechu-s-prezidentom-namibii",
-    "https://www.rbc.ru/politics/29/10/2026/6ae395777673df5f962b5ca9",
-    "https://tass.ru/politika/28268865",
-    "https://tass.ru/politika/28268709",
-    "https://tass.ru/politika/28268855",
-    "https://www.trumpstruth.org/statuses/42856",
-    "https://tass.ru/politika/28268853",
-    "https://tass.ru/sport/28268849"
+    "https://oilprice.com/Energy/Energy-General/Worlds-First-Permanent-Nuclear-Waste-Site-Wins-License-in-Finland.html",
+    "https://tass.ru/politika/28268879",
+    "https://t.me/FinancialJuice/143745",
+    "https://www.kommersant.ru/doc/9064217",
+    "https://tass.ru/sport/28269007",
+    "https://tass.ru/ekonomika/28268867",
+    "https://t.me/FinancialJuice/143744",
+    "https://www.vedomosti.ru/economics/news/2026/10/29/1241319-o-naloge-na-sverhdohodi",
+    "https://www.rbc.ru/society/29/10/2026/6ae3a40a5ebab5d79cbec0b8",
+    "https://tass.ru/nauka/28268857",
+    "https://tass.ru/ekonomika/28268843",
+    "https://www.marketwatch.com/story/whats-the-first-thing-most-people-do-with-their-401-k-after-they-retire-nothing-8a606518?mod=mw_rss_topstories",
+    "https://tass.ru/obschestvo/28268999",
+    "https://tass.ru/ekonomika/28268883",
+    "https://t.me/FinancialJuice/143743",
+    "https://tass.ru/politika/28268881",
+    "https://t.me/markettwits/391198",
+    "https://cointelegraph.com/news/public-companies-double-share-of-blockchain-revenue-since-2022-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://tass.ru/ekonomika/28268995",
+    "https://t.me/rbc_news/159694",
+    "https://tass.ru/kultura/28268993",
+    "https://t.me/FinancialJuice/143742",
+    "https://tass.ru/obschestvo/28268981",
+    "https://www.vedomosti.ru/investments/news/2026/10/29/1241315-akra-prisvoilo-status",
+    "https://tass.ru/politika/28268753",
+    "https://t.me/markettwits/391197",
+    "https://tass.ru/politika/28268987",
+    "https://tass.ru/proisshestviya/28268985",
+    "https://t.me/FinancialJuice/143741",
+    "https://www.rbc.ru/politics/29/10/2026/6ae39e95f1d11a85f97f24a4",
+    "https://t.me/FinancialJuice/143740",
+    "https://www.kommersant.ru/doc/9064215",
+    "https://tass.ru/obschestvo/28268975",
+    "https://t.me/headlines_for_traders/87718",
+    "https://www.wsj.com/finance/jgb-yields-rise-amid-caution-ahead-of-boj-decision-0a68d866?mod=rss_markets_main",
+    "https://www.marketwatch.com/story/doordash-and-instacart-want-to-join-forces-will-the-u-s-government-get-in-their-way-0c065bee?mod=mw_rss_topstories",
+    "https://www.interfax.ru/world/1125925",
+    "https://tass.ru/mezhdunarodnaya-panorama/28268457",
+    "https://t.me/if_market_news/86476",
+    "https://tass.ru/ekonomika/28268941",
+    "https://decrypt.co/382183/chrome-pull-details-from-your-gmail-web-forms",
+    "https://t.me/nainspire/5604",
+    "https://www.rbc.ru/politics/29/10/2026/6ae3a02d9a72039697a5a3e4",
+    "https://www.rbc.ru/rbcfreenews/6ae2a2c9f4e2bb236f6b8b39",
+    "https://tass.ru/proisshestviya/28268931",
+    "https://tass.ru/proisshestviya/28268963",
+    "https://tass.ru/proisshestviya/28268911",
+    "https://www.vedomosti.ru/politics/news/2026/10/29/1241369-vstrechu-s-prezidentom-kongo",
+    "https://thedefiant.io/news/hacks/bubblemaps-traces-2-7-million-outflow-from-polymarket-breach",
+    "https://tass.ru/proisshestviya/28268903",
+    "https://t.me/banksta/104439",
+    "https://www.kommersant.ru/doc/9064213",
+    "https://tass.ru/sport/28268961",
+    "https://www.investing.com/news/stock-market-news/amazon-earnings-watch-aws-growth-capex-and-margins-in-focus-93CH-4984933",
+    "https://t.me/interfaxonline/80906",
+    "https://www.investing.com/news/stock-market-news/ebay-earnings-analysis-questions-answered-and-next-catalysts-93CH-4984931",
+    "https://www.kommersant.ru/doc/9064210",
+    "https://www.kommersant.ru/doc/9064209",
+    "https://www.interfax.ru/russia/1125924",
+    "https://tass.ru/ekonomika/28268955",
+    "https://t.me/BitcoinMagazineTelegram/10944",
+    "https://tass.ru/politika/28268951",
+    "https://www.investing.com/news/stock-market-news/explainerwhats-next-for-law-firm-weil-gotshal-as-it-plans-dissolution-4984886",
+    "https://tass.ru/sport/28268947",
+    "https://www.rbc.ru/rbcfreenews/6ae1dbc49ab2bafa1d6ff1ab",
+    "https://www.kommersant.ru/doc/9064153",
+    "https://t.me/rbc_news/159692"
   ],
   "ai_dead": {
     "date": "2026-10-29",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-28T19:31:04.884639+00:00",
-      "В аэропорту Внуково введены временные ограничения"
-    ],
-    [
-      "2026-10-28T19:31:04.884639+00:00",
-      "Центком США отчитался о разминировании Ормузского пролива"
-    ],
-    [
-      "2026-10-28T20:01:07.235672+00:00",
-      "Банк России ограничит сроки автокредитов и займов под залог машин"
-    ],
-    [
-      "2026-10-28T20:01:07.235672+00:00",
-      "Силы ПВО отразили атаку беспилотников на Москву"
-    ],
-    [
-      "2026-10-28T20:01:07.235672+00:00",
-      "США и Иран обсудили «семидневный план» для предотвращения ударов"
-    ],
     [
       "2026-10-28T20:01:07.235672+00:00",
       "В США допустили рост стратегического резерва биткоинов"
@@ -1611,6 +1599,26 @@
     [
       "2026-10-29T19:30:58.021565+00:00",
       "Трамп повторил обещание выплатить по $5 тыс. перед выборами в конгресс"
+    ],
+    [
+      "2026-10-29T20:00:56.876479+00:00",
+      "Amazon, Intel и Strategy опубликуют квартальные отчеты"
+    ],
+    [
+      "2026-10-29T20:00:56.876479+00:00",
+      "Компании берут нефтяные займы из Стратегического резерва США"
+    ],
+    [
+      "2026-10-29T20:00:56.876479+00:00",
+      "Военное руководство США представило Трампу варианты ударов по Ирану"
+    ],
+    [
+      "2026-10-29T20:00:56.876479+00:00",
+      "Госдума приняла в первом чтении проект о налоге на сверхдоходы"
+    ],
+    [
+      "2026-10-29T20:00:56.876479+00:00",
+      "Bubblemaps зафиксировала отток $2,7 млн после взлома Polymarket"
     ]
   ],
   "results_fp": [
