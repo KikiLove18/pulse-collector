@@ -724,6 +724,40 @@ def push_to_bot(edition, blocks, meta=None):
 SENT_MAP = {"🟢": "pos", "🔴": "neg", "⚪": "neu"}
 
 
+_N = r"[+\-−]?~?(?:\d{1,3}(?:[ \u00a0]\d{3})+|\d+)(?:[.,]\d+)?"
+_MULT = r"(?:\s?(?:млн|млрд|трлн|тыс\.?|триллион[а-я]*|миллиард[а-я]*|миллион[а-я]*))?"
+TITLE_NUM = re.compile(
+    rf"[+\-−]?\$~?\d[\d \u00a0]*(?:[.,]\d+)?{_MULT}"                         # $485 млн, −$64 млн
+    rf"|{_N}(?:[–\-]{_N})?\s?%"                                                # 14%, −1,31%, 3,75–4,00%
+    rf"|{_N}{_MULT}\s?(?:руб\.?|₽|BTC|ETH)(?![а-яa-z])"                         # 974 млрд руб., 1 684 BTC
+    rf"|{_N}\s?б\.п\.|в\s{_N}\sраз(?:а)?(?![а-я])")                              # +73 б.п., в 216 раз
+# подпись — только однозначное слово рядом (решение Директора 29.10); глаголы — только «на N» (изменение), не «до N» (уровень)
+NUM_NOUN = [("отток", "отток"), ("отдал", "отток"), ("приток", "приток"), ("привлек", "привлечение"), ("ставк", "ставка"),
+            ("доходност", "доходность"), ("инфляц", "инфляция"), ("ввп", "ВВП"), ("дивиденд", "дивиденд"),
+            ("прибыл", "прибыль"), ("выручк", "выручка"), ("прогноз", "прогноз"), ("таргет", "прогноз"), ("капитализац", "капитализация")]
+NUM_VERB = [("рост", "рост"), ("вырос", "рост"), ("взлет", "рост"), ("взлёт", "рост"), ("подскоч", "рост"), ("подорож", "рост"),
+            ("паден", "падение"), ("упал", "падение"), ("обруш", "падение"), ("снизил", "падение"), ("просел", "падение"), ("подешев", "падение")]
+
+
+def title_metrics(title):
+    """Цифры для фото карточки из заголовка новости выжимки — буквально как в тексте, до 2 шт., без запросов к ИИ (29.10).
+    Годы, даты, кварталы, время, номера сюда не попадают: берём только числа с единицей ($, %, руб., BTC, б.п., «в N раз»)."""
+    out = []
+    for m in TITLE_NUM.finditer(title):
+        v = re.sub(r"\s+", " ", m.group(0)).strip()
+        if not re.search(r"\d", v) or any(v == o["value"] for o in out):
+            continue
+        v = re.sub(r"^-(?=[\d$~])", "−", v)
+        before = title[max(0, m.start() - 28):m.start()].lower()
+        label = next((l for k, l in NUM_NOUN if k in before), "")
+        if not label and re.search(r"\bна\s*$", before):
+            label = next((l for k, l in NUM_VERB if k in before), "")
+        out.append({"value": v[:16], "label": label})
+        if len(out) == 2:
+            break
+    return out
+
+
 def parse_news(block_key, html_text):
     """Достаём новости из блока: «1️⃣ флаг <b>заголовок</b>» + <blockquote>🟢 текст — <a href>источник</a></blockquote>."""
     out = []
@@ -736,7 +770,8 @@ def parse_news(block_key, html_text):
         text = re.sub(r"^[🟢🔴⚪]\ufe0f?\s*", "", text)
         text = re.sub(r"</?(?!u>|/u>)[^>]+>", "", text)  # оставляем только <u>
         out.append({"block": block_key, "icon": clean(prefix)[:8], "title": clean(title), "text": text.strip(),
-                    "sent": sent, "url": link.group(1) if link else "", "source": sources.src_name(link.group(2)) if link else ""})
+                    "sent": sent, "url": link.group(1) if link else "", "source": sources.src_name(link.group(2)) if link else "",
+                    "metrics": title_metrics(clean(title))})
     return out
 
 
