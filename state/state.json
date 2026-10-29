@@ -904,7 +904,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-29T04:01:03.397279+00:00",
+  "breaking_ts": "2026-10-29T05:00:59.524336+00:00",
   "news_now": {
     "day": "2026-10-29",
     "day_count": 0,
@@ -913,76 +913,94 @@
     "titles": []
   },
   "news_seen": [
-    "https://www.kommersant.ru/doc/9063175",
-    "https://t.me/FinancialJuice/143531",
-    "https://t.me/interfaxonline/80861",
-    "https://tass.ru/armiya-i-opk/28264793",
-    "https://tass.ru/mezhdunarodnaya-panorama/28264795",
-    "https://t.me/markettwits/391025",
-    "https://tass.ru/politika/28264791",
-    "https://t.me/markettwits/391024",
-    "https://tass.ru/ekonomika/28264789",
-    "https://t.me/markettwits/391022",
-    "https://tass.ru/mezhdunarodnaya-panorama/28264783",
-    "https://tass.ru/proisshestviya/28264779",
-    "https://t.me/interfaxonline/80860",
-    "https://www.interfax.ru/world/1125679",
-    "https://t.me/wublockchainenglish/26595",
-    "https://tass.ru/obschestvo/28264753",
-    "https://www.kommersant.ru/doc/9063274",
-    "https://tass.ru/ekonomika/28264775",
-    "https://tass.ru/ekonomika/28264773",
-    "https://www.rbc.ru/technology_and_media/23/11/2025/691df21d9a7947d548d12659",
-    "https://t.me/FinancialJuice/143530",
-    "https://www.interfax.ru/world/1125678",
-    "https://tass.ru/proisshestviya/28264771",
-    "https://thedefiant.io/news/markets/tokenized-googl-drops-nearly-12-alongside-after-hours-stock-selloff",
-    "https://www.kommersant.ru/doc/9063259",
-    "https://www.interfax.ru/world/1125677",
-    "https://www.vedomosti.ru/society/news/2026/10/29/1240992-gugl-viplatil",
-    "https://tass.ru/mezhdunarodnaya-panorama/28264769",
-    "https://t.me/FinancialJuice/143529",
-    "https://tass.ru/obschestvo/28264747",
-    "https://t.me/FinancialJuice/143528",
-    "https://t.me/headlines_for_traders/87641",
-    "https://thedefiant.io/news/hacks/singapore-police-report-2-7-million-in-tampered-ledger-wallet-losses",
-    "https://tass.ru/obschestvo/28264751",
-    "https://tass.ru/obschestvo/28264743",
-    "https://www.investing.com/news/stock-market-news/vietnam-sets-65-state-ownership-floor-for-major-banks-to-retain-control-of-strategic-groups-4981418",
-    "https://tass.ru/politika/28264763",
-    "https://www.rbc.ru/rbcfreenews/6a7cbe629a7947a89065ea0a",
-    "https://tass.ru/ekonomika/28264759",
-    "https://tass.ru/ekonomika/28264761",
-    "https://tass.ru/ekonomika/28264749",
-    "https://www.interfax.ru/world/1125676",
-    "https://tass.ru/armiya-i-opk/28264755",
-    "https://tass.ru/armiya-i-opk/28264757",
-    "https://www.coindesk.com/markets/2026/10/29/bitcoin-dips-below-usd80-000-as-samsung-led-risk-aversion-in-tech-and-a-hawkish-fed-weigh-on-crypto",
-    "https://t.me/interfaxonline/80859",
-    "https://www.investing.com/news/stock-market-news/samsung-posts-record-profit-in-q3-on-ai-chip-boom-4981289",
-    "https://www.investing.com/news/stock-market-news/chinese-ai-model-carries-out-complex-cyberattacks-in-controlled-tests-researchers-say-4981414",
-    "https://tass.ru/ekonomika/28262789",
-    "https://www.interfax.ru/russia/1125674",
-    "https://t.me/whale_alert_io/104289",
-    "https://tass.ru/obschestvo/28264739",
-    "https://tass.ru/mezhdunarodnaya-panorama/28264737",
-    "https://tass.ru/obschestvo/28264731",
-    "https://t.me/lookonchainchannel/10823",
-    "https://tass.ru/obschestvo/28264735",
-    "https://www.vedomosti.ru/politics/news/2026/10/29/1240991-podlete-moskve",
-    "https://www.rbc.ru/politics/26/10/2026/6adf09afec77d3fd33028170",
-    "https://www.coindesk.com/policy/2026/10/28/mystery-wall-street-journal-ad-sparks-new-fight-over-tokenized-stocks",
-    "https://t.me/headlines_for_traders/87640",
-    "https://t.me/banksta/104366",
-    "https://www.kommersant.ru/doc/9063261",
-    "https://cointelegraph.com/news/tampered-ledger-wallets-cost-singapore-users-27m-police?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.rbc.ru/politics/21/10/2026/6ad9120cd261cf3d716167ce",
-    "https://www.interfax.ru/russia/1125673",
-    "https://www.investing.com/news/stock-market-news/why-is-nomura-stock-climbing-today-93CH-4981396",
-    "https://www.investing.com/news/stock-market-news/why-is-alphabet-stock-plunging-afterhours-today-93CH-4981395",
-    "https://www.interfax.ru/world/1125672",
-    "https://t.me/headlines_for_traders/87639",
-    "https://www.rbc.ru/sport/03/10/2026/6ac0c8d99a7947f04ebe3bf1"
+    "https://t.me/FinancialJuice/143538",
+    "https://www.vedomosti.ru/investments/news/2026/10/29/1240872-investitsiyam-viros",
+    "https://t.me/markettwits/391037",
+    "https://tass.ru/obschestvo/28264933",
+    "https://www.kommersant.ru/doc/9063308",
+    "https://www.kommersant.ru/doc/9063189",
+    "https://www.interfax.ru/russia/1125688",
+    "https://www.rbc.ru/rbcfreenews/6ad32f48700702a2a890f244",
+    "https://www.rbc.ru/rbcfreenews/6ae2d0afc8461490c3283dff",
+    "https://tass.ru/obschestvo/28264511",
+    "https://tass.ru/ekonomika/28264939",
+    "https://t.me/markettwits/391036",
+    "https://tass.ru/proisshestviya/28264935",
+    "https://www.kommersant.ru/doc/9063297",
+    "https://tass.ru/proisshestviya/28264915",
+    "https://t.me/markettwits/391035",
+    "https://www.rbc.ru/politics/18/06/2026/6a33e6a79a794731d9bb479f",
+    "https://tass.ru/obschestvo/28264917",
+    "https://tass.ru/proisshestviya/28264913",
+    "https://t.me/rbc_news/159624",
+    "https://t.me/markettwits/391034",
+    "https://t.me/banksta/104367",
+    "https://www.interfax.ru/russia/1125687",
+    "https://www.kommersant.ru/doc/9063289",
+    "https://tass.ru/obschestvo/28264905",
+    "https://tass.ru/obschestvo/28264895",
+    "https://t.me/headlines_for_traders/87644",
+    "https://tass.ru/proisshestviya/28264907",
+    "https://cointelegraph.com/news/a-fridge-that-launches-memecoins-cftc-floats-ai-crypto-future?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://t.me/markettwits/391033",
+    "https://tass.ru/proisshestviya/28264853",
+    "https://tass.ru/mezhdunarodnaya-panorama/28264889",
+    "https://tass.ru/mezhdunarodnaya-panorama/28264893",
+    "https://www.interfax.ru/russia/1125686",
+    "https://t.me/interfaxonline/80863",
+    "https://t.me/markettwits/391032",
+    "https://tass.ru/ekonomika/28264887",
+    "https://tass.ru/ekonomika/28264885",
+    "https://www.investing.com/news/stock-market-news/a-tale-of-two-earnings-calls--and-our-ai-was-on-the-right-side-of-it-4981467",
+    "https://www.kommersant.ru/doc/9063298",
+    "https://t.me/if_market_news/86444",
+    "https://tass.ru/politika/28264881",
+    "https://tass.ru/obschestvo/28264875",
+    "https://tass.ru/obschestvo/28264871",
+    "https://www.rbc.ru/rbcfreenews/6ae2cbfb9a72039697a5a372",
+    "https://tass.ru/mezhdunarodnaya-panorama/28264867",
+    "https://t.me/markettwits/391031",
+    "https://tass.ru/armiya-i-opk/28264877",
+    "https://tass.ru/armiya-i-opk/28264873",
+    "https://www.kommersant.ru/doc/9063276",
+    "https://www.rbc.ru/sport/03/10/2026/6ab9007f9a79475a25de6ea5",
+    "https://t.me/FinancialJuice/143537",
+    "https://t.me/FinancialJuice/143536",
+    "https://t.me/FinancialJuice/143535",
+    "https://t.me/FinancialJuice/143534",
+    "https://www.vedomosti.ru/politics/news/2026/10/29/1240995-600-bespilotnikov",
+    "https://www.interfax.ru/world/1125675",
+    "https://tass.ru/ekonomika/28264863",
+    "https://www.rbc.ru/rbcfreenews/6ae2cae168ea732fcf9d32fe",
+    "https://tass.ru/obschestvo/28264861",
+    "https://www.vedomosti.ru/politics/news/2026/10/29/1240994-rodriges-potrebovala",
+    "https://www.kommersant.ru/doc/9063290",
+    "https://www.interfax.ru/russia/1125685",
+    "https://tass.ru/ekonomika/28264847",
+    "https://tass.ru/mezhdunarodnaya-panorama/28264855",
+    "https://www.rbc.ru/rbcfreenews/6ae25170f4e2bb236f6b8b22",
+    "https://www.interfax.ru/world/1125684",
+    "https://t.me/markettwits/391030",
+    "https://www.kommersant.ru/doc/9063291",
+    "https://t.me/russianmacro/23659",
+    "https://t.me/headlines_for_traders/87643",
+    "https://www.kommersant.ru/doc/9063278",
+    "https://t.me/FinancialJuice/143533",
+    "https://t.me/markettwits/391029",
+    "https://www.interfax.ru/moscow/1125683",
+    "https://www.kommersant.ru/doc/9063287",
+    "https://t.me/markettwits/391028",
+    "https://www.rbc.ru/rbcfreenews/6ae04e6d306ef12ef3ce04ae",
+    "https://www.rbc.ru/politics/26/05/2025/6833f01e9a7947663d851400",
+    "https://t.me/markettwits/391027",
+    "https://t.me/FinancialJuice/143532",
+    "https://t.me/markettwits/391026",
+    "https://www.rbc.ru/society/12/02/2020/5e4439339a7947e372deba24",
+    "https://t.me/interfaxonline/80862",
+    "https://www.kommersant.ru/doc/9063283",
+    "https://www.vedomosti.ru/politics/news/2026/10/29/1240993-ssha-otpravyat",
+    "https://www.interfax.ru/russia/1125681",
+    "https://www.investing.com/news/stock-market-news/gift-nifty-50-breaks-618-fib-targets-22205-live-levels-93CH-4971374"
   ],
   "ai_dead": {
     "date": "2026-10-28",
@@ -992,30 +1010,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-10-28T05:00:55.508700+00:00",
-      "Россия и США обсуждают возвращение компаний на Сахалин и транзит"
-    ],
-    [
-      "2026-10-28T05:00:55.508700+00:00",
-      "Jio подорожала на 21% в дебютный день в Мумбаи после IPO на $3,2 млрд"
-    ],
-    [
-      "2026-10-28T05:00:55.508700+00:00",
-      "Подводный крейсер «Генералиссимус Суворов» запустил ракету «Булава»"
-    ],
-    [
-      "2026-10-28T05:00:55.508700+00:00",
-      "Standard Chartered отчитался о росте квартальной прибыли и поднял прогноз"
-    ],
-    [
-      "2026-10-28T05:00:55.508700+00:00",
-      "Двум британцам предъявили обвинения по делу о заговоре против авиабазы США"
-    ],
-    [
-      "2026-10-28T05:00:55.508700+00:00",
-      "«Соллерс» планирует начать выпуск АКПП в Елабуге в 2027 году"
-    ],
     [
       "2026-10-28T05:30:59.092308+00:00",
       "В Израиле правый блок Нетаньяху лидирует после подсчета 42% голосов"
@@ -1615,6 +1609,30 @@
     [
       "2026-10-29T04:01:03.397279+00:00",
       "Коммерсантъ: цены на цветные металлы до 2030 года останутся ниже рекордов"
+    ],
+    [
+      "2026-10-29T05:00:59.524336+00:00",
+      "Alphabet упала на 10% после выхода квартального отчета"
+    ],
+    [
+      "2026-10-29T05:00:59.524336+00:00",
+      "Силы ПВО за ночь уничтожили 231 беспилотник на подлете к Москве"
+    ],
+    [
+      "2026-10-29T05:00:59.524336+00:00",
+      "КНДР запустила около 10 баллистических ракет в сторону Японского моря"
+    ],
+    [
+      "2026-10-29T05:00:59.524336+00:00",
+      "Samsung отчитался о росте операционной прибыли на 783%"
+    ],
+    [
+      "2026-10-29T05:00:59.524336+00:00",
+      "США предупредили союзников о возможном возобновлении войны с Ираном"
+    ],
+    [
+      "2026-10-29T05:00:59.524336+00:00",
+      "Российский «Гугл» выплатил 16,8 млрд рублей штрафов за Google"
     ]
   ],
   "results_fp": [
@@ -1652,5 +1670,5 @@
   },
   "pro_daily": "2026-10-28",
   "freech_day": "2026-10-28",
-  "pro_auto": "2026-10-28"
+  "pro_auto": "2026-10-29"
 }
