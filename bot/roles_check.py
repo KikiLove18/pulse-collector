@@ -66,10 +66,11 @@ def ask_grounded(system, user, models):
 
 WIKI = "https://ru.wikipedia.org/w/api.php"
 UA = {"User-Agent": "pulse-collector roles_check (github.com/KikiLove18/pulse-collector)"}
-WIKI_SYSTEM = """Ты — фактчекер. Сегодня {today}. Тебе дают утверждения «должность — человек» и к каждому — начало статьи Википедии,
-найденной по этому утверждению (статья может быть о другом человеке или устаревшей). Отметь ошибку, только если выдержка ЯВНО говорит,
-что человек больше не занимает эту должность (указан срок, который закончился, или назван преемник), или что должность занимает другой.
-Нет данных или выдержка не о том — НЕ ошибка. Ответь ТОЛЬКО JSON: {{"checked": <число>, "wrong": [{{"claim": "<как в списке>", "fact": "<что в Википедии, коротко>", "source": "<ссылка на статью>"}}]}}."""
+WIKI_SYSTEM = """Ты — фактчекер. Сегодня {today}. Тебе дают утверждения «должность — человек» и к каждому — начало статьи Википедии
+об этом человеке (статья может отставать на несколько месяцев). Для КАЖДОГО утверждения сравни должность с выдержкой:
+ошибка — если выдержка говорит, что человек занимал эту должность в прошлом (срок «2011—2019», «бывший», «экс-», назван преемник),
+или никогда её не занимал, а занимает другую. Новое назначение, которого нет в выдержке (статья отстаёт), — НЕ ошибка.
+Нет данных или выдержка не о том человеке — НЕ ошибка. Ответь ТОЛЬКО JSON: {{"checked": <число>, "wrong": [{{"claim": "<как в списке>", "fact": "<что в Википедии, коротко>", "source": "<ссылка на статью>"}}]}}."""
 
 
 def _wiki(params):
@@ -91,31 +92,57 @@ def _wiki(params):
         time.sleep(wait)
 
 
-def wiki_extracts(claims):
-    """По каждому утверждению — первая статья поиска Википедии и её начало (без ключей, бесплатно)."""
-    titles, t0 = {}, time.time()
-    for i, c in enumerate(claims):
-        if time.time() - t0 > 300:  # не дольше 5 минут: остальное — «не найдено», ИИ это не считает ошибкой
-            titles[c] = None
-            continue
+POS = re.compile(r"^(глава|президент|министр|председатель|пресс|вице|торговый|зампред|первый|наследный|канцлер|член|исполнительный|основатель|со-CEO)", re.I)
+
+
+def name_of(claim):
+    """Человек из строки: «глава ЕЦБ — Кристин Лагард» → «Кристин Лагард», «Миллер — Газпром» → «Миллер»."""
+    c = re.sub(r"^[А-Яа-я ]+:\s*", "", re.sub(r"\(.*?\)", "", claim)).strip()
+    left, _, right = c.partition(" — ")
+    side = right if POS.match(left) or re.fullmatch(r"[A-Za-z .&-]+", left.strip()) else left
+    return re.sub(r"^(глава|со-CEO)\s+", "", re.split(r",| и ", side)[0].strip()).strip()
+
+
+def _pages(titles):
+    """Начала статей пачками по 20: {запрошенное: (название, текст)}; страницы-неоднозначности и отсутствующие — пропуск."""
+    out = {}
+    for i in range(0, len(titles), 20):
+        part = titles[i:i + 20]
         try:
-            hits = _wiki({"action": "query", "list": "search", "srsearch": re.sub(r"\(.*?\)|^[А-Яа-я ]+:\s*", "", c), "srlimit": 1})["query"]["search"]
-            titles[c] = hits[0]["title"] if hits else None
-        except Exception as e:
-            print(f"wiki search {c[:40]}: {e}", file=sys.stderr)
-            titles[c] = None
-        if i % 10 == 9:
-            print(f"wiki: {i + 1}/{len(claims)}, {time.time() - t0:.0f} с, найдено {sum(1 for t in titles.values() if t)}", file=sys.stderr)
-    uniq = sorted({t for t in titles.values() if t})
-    text = {}
-    for i in range(0, len(uniq), 20):
-        try:
-            pages = _wiki({"action": "query", "prop": "extracts", "exintro": 1, "explaintext": 1, "exchars": 900,
-                           "redirects": 1, "titles": "|".join(uniq[i:i + 20])})["query"]["pages"]
-            text.update({p["title"]: p.get("extract", "") for p in pages})
+            q = _wiki({"action": "query", "prop": "extracts|pageprops", "ppprop": "disambiguation", "exintro": 1,
+                       "explaintext": 1, "exchars": 900, "redirects": 1, "titles": "|".join(part)})["query"]
         except Exception as e:
             print(f"wiki extracts: {e}", file=sys.stderr)
-    return [(c, t, text.get(t, "")) for c, t in titles.items()]
+            continue
+        alias = {x["from"]: x["to"] for x in q.get("normalized", []) + q.get("redirects", [])}
+        pages = {p["title"]: p for p in q["pages"]}
+        for t in part:
+            p = pages.get(alias.get(alias.get(t, t), alias.get(t, t)))
+            if p and not p.get("missing") and "pageprops" not in p and p.get("extract"):
+                out[t] = (p["title"], p["extract"])
+    return out
+
+
+def wiki_extracts(claims):
+    """По каждому утверждению — статья Википедии о ЧЕЛОВЕКЕ (по имени; иначе поиск «имя + должность») и её начало.
+    Статья о человеке говорит, кем он был и до какого года, — так видна подмена («глава ЕЦБ — Марио Драги»)."""
+    names = {c: name_of(c) for c in claims}
+    found = _pages(sorted(set(names.values())))
+    miss, t0 = [c for c in claims if names[c] not in found], time.time()
+    hits = {}
+    for c in miss:
+        if time.time() - t0 > 240:  # не дольше 4 минут: остальное — «не найдено», ИИ это не считает ошибкой
+            break
+        try:
+            q = f"{names[c]} {re.sub(r'[(].*?[)]|^[А-Яа-я ]+:', '', c).replace(names[c], '').replace('—', ' ')}"
+            res = _wiki({"action": "query", "list": "search", "srsearch": q, "srlimit": 1})["query"]["search"]
+            if res:
+                hits[c] = res[0]["title"]
+        except Exception as e:
+            print(f"wiki search {c[:40]}: {e}", file=sys.stderr)
+    more = _pages(sorted(set(hits.values())))
+    print(f"wiki: по имени {len(claims) - len(miss)}, поиском {sum(1 for c in hits if hits[c] in more)} из {len(miss)}, {time.time() - t0:.0f} с", file=sys.stderr)
+    return [(c, *(found.get(names[c]) or more.get(hits.get(c)) or (None, ""))) for c in claims]
 
 
 def parse(text):
