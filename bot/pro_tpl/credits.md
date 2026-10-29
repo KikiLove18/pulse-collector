@@ -45,3 +45,6 @@
 | img/ev-msft-b92.jpg | #СОБЫТИЯ 28.10 | Jiaqian AirplaneFan | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg |
 | img/ev-googleplex.jpg | #СОБЫТИЯ 28.10 | Erik Möller | Public domain | https://commons.wikimedia.org/wiki/File:Googleplex-SignIn.jpg |
 | img/fed1937.jpg | #СОБЫТИЕ ФРС 29.10 (big1) | Federal Reserve, 1937 | Public domain | https://commons.wikimedia.org/wiki/File:US_Federal_Reserve_Eccles_Building_1937.jpg |
+| img/ev-ecb-ffm.jpg | #СОБЫТИЯ 29.10 ЕЦБ | acediscovery | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:European_Central_Bank_building,_Frankfurt.jpg |
+| img/ev-lbport.jpg | #СОБЫТИЯ 29.10 ВВП США | Charles Csavossy | PD | https://commons.wikimedia.org/wiki/File:Port_of_Long_Beach,_California_-4.jpg |
+| img/ev-shop.jpg | #СОБЫТИЯ 29.10 PCE | Shixart1985 | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Woman_shopping_in_a_store_aisle_with_a_shopping_cart.jpg |
