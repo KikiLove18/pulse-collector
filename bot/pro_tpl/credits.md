@@ -48,3 +48,4 @@
 | img/ev-ecb-ffm.jpg | #СОБЫТИЯ 29.10 ЕЦБ | acediscovery | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:European_Central_Bank_building,_Frankfurt.jpg |
 | img/ev-lbport.jpg | #СОБЫТИЯ 29.10 ВВП США | Charles Csavossy | PD | https://commons.wikimedia.org/wiki/File:Port_of_Long_Beach,_California_-4.jpg |
 | img/ev-shop.jpg | #СОБЫТИЯ 29.10 PCE | Shixart1985 | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Woman_shopping_in_a_store_aisle_with_a_shopping_cart.jpg |
+| img/gold.jpg, fed.jpg, fed1937.jpg | Пт 30.10 #АКТИВ золото (frg1–3) | см. строки выше | PD | — |
