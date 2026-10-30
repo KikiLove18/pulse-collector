@@ -823,7 +823,9 @@ def title_metrics(title):
         label = next((l for k, l in NUM_NOUN if k in before), "")
         if not label and re.search(r"\bна\s*$", before):
             label = next((l for k, l in NUM_VERB if k in before), "")
-        out.append({"value": v[:16], "label": label})
+        if len(v) > 16:  # не обрезаем: лучше без цифры, чем обрубок
+            continue
+        out.append({"value": v, "label": label})
         if len(out) == 2:
             break
     return out
