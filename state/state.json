@@ -919,7 +919,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-30T19:00:58.615160+00:00",
+  "breaking_ts": "2026-10-30T19:31:02.153617+00:00",
   "news_now": {
     "day": "2026-10-30",
     "day_count": 9,
@@ -938,89 +938,61 @@
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/rbcfreenews/6ae2b9b568ea732fcf9d32ee",
+    "https://tass.ru/mezhdunarodnaya-panorama/28273251",
+    "https://tass.ru/ekonomika/28273249",
+    "https://t.me/FinancialJuice/144113",
+    "https://www.wsj.com/finance/stocks/ai-selloff-deepens-oil-jumps-and-crypto-falls-4703d21b?mod=rss_markets_main",
+    "https://www.investing.com/news/stock-market-news/us-approves-21-billion-patriot-missile-sale-to-ukraine-4988538",
+    "https://t.me/banksta/104523",
+    "https://t.me/interfaxonline/80972",
+    "https://tass.ru/ekonomika/28273247",
+    "https://www.investing.com/news/stock-market-news/us-approves-21-billion-patriot-missile-sale-to-ukraine-93CH-4988537",
+    "https://t.me/whale_alert_io/104388",
+    "https://www.interfax.ru/world/1126213",
+    "https://tass.ru/obschestvo/28273245",
+    "https://tass.ru/obschestvo/28273243",
+    "https://www.rbc.ru/rbcfreenews/6ad8aab316b2463ef5f98d18",
+    "https://www.investing.com/news/stock-market-news/nasdaq-100-tests-descending-triangle-support-at-29000-live-levels-93CH-4973069",
+    "https://www.investing.com/news/stock-market-news/alphabet-c-deeply-oversold-after-bear-flag-breakdown-live-levels-93CH-4973070",
+    "https://www.investing.com/news/stock-market-news/tesla-breaks-out-above-388-range-overextended-live-levels-93CH-4973068",
+    "https://www.investing.com/news/stock-market-news/dow-jones-pulls-back-to-ma-cluster-near-52400-live-levels-93CH-4973066",
+    "https://www.investing.com/news/stock-market-news/sp-500-tests-382-fib-after-double-top-rejection-live-levels-93CH-4973067",
+    "https://www.investing.com/news/stock-market-news/dollar-index-trapped-in-ichimoku-cloud-at-10186-live-levels-93CH-4973064",
+    "https://www.investing.com/news/stock-market-news/bayer-wins-roundup-weedkiller-cancer-trial-while-awaiting-settlement-ruling-4985676",
+    "https://www.investing.com/news/stock-market-news/sandisk-in-steep-downtrend-doji-signals-indecision-live-levels-93CH-4973059",
+    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
+    "https://www.vedomosti.ru/politics/news/2026/10/30/1241700-na-zavode-vzriv",
+    "https://www.rbc.ru/politics/23/10/2026/6adb8945ede3e202eabc0c7a",
+    "https://tass.ru/sport/28273233",
+    "https://t.me/rbc_news/159763",
+    "https://t.me/proeconomics/20632",
+    "https://t.me/markettwits/391387",
+    "https://tass.ru/ekonomika/28273223",
+    "https://t.me/minfin/9437",
+    "https://www.rbc.ru/politics/30/10/2026/6ae4e96fcfb16244b1bbce5c",
+    "https://tass.ru/sport/28273227",
+    "https://t.me/FinancialJuice/144112",
+    "https://www.interfax.ru/world/1126212",
+    "https://tass.ru/mezhdunarodnaya-panorama/28273225",
+    "https://t.me/banksta/104522",
+    "https://www.rbc.ru/rbcfreenews/6ae4e91f2455cc4b83c18bbd",
+    "https://t.me/whale_alert_io/104387",
+    "https://t.me/BitcoinMagazineTelegram/10957",
+    "https://cointelegraph.com/news/tethers-excess-reserves-nearly-double-to-8b-as-q3-profit-hits-15b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://www.kommersant.ru/doc/9077813",
+    "https://www.kommersant.ru/doc/9077819",
+    "https://t.me/gpb_investments/25181",
+    "https://www.interfax.ru/world/1126211",
     "https://tass.ru/mezhdunarodnaya-panorama/28273197",
     "https://tass.ru/mezhdunarodnaya-panorama/28273213",
-    "https://tass.ru/sport/28273207",
-    "https://www.rbc.ru/rbcfreenews/6ae395450cd0f4f5e566b502",
-    "https://tass.ru/ekonomika/28273195",
-    "https://www.rbc.ru/politics/30/10/2026/6ae4d169eacfde87a22e9100",
-    "https://t.me/FinancialJuice/144111",
-    "https://t.me/invest_zonaa/39213",
-    "https://tass.ru/politika/28273193",
-    "https://www.interfax.ru/world/1126209",
-    "https://tass.ru/ekonomika/28273171",
-    "https://tass.ru/obschestvo/28273187",
-    "https://www.marketwatch.com/story/heres-when-binance-plans-to-reopen-after-whats-believed-to-be-the-largest-ever-6-3-billion-hack-d3cb8154?mod=mw_rss_topstories",
-    "https://t.me/invest_zonaa/39212",
-    "https://tass.ru/politika/28273189",
-    "https://tass.ru/kultura/28273179",
-    "https://t.me/FinancialJuice/144110",
-    "https://www.vedomosti.ru/politics/news/2026/10/30/1241698-putin-peregovori-togo",
-    "https://tass.ru/politika/28273183",
-    "https://t.me/WatcherGuru/15727",
-    "https://t.me/FinancialJuice/144109",
-    "https://tass.ru/ekonomika/28273181",
-    "https://www.kommersant.ru/doc/9077816",
-    "https://www.rbc.ru/rbcfreenews/6aaa2bccbe178a10c9138fbf",
-    "https://tass.ru/politika/28273173",
-    "https://decrypt.co/382257/binance-hack-why-bitcoin-didnt-crash",
-    "https://www.rbc.ru/sport/25/10/2026/6ade168524639466d2c1eb98",
-    "https://tass.ru/politika/28273177",
-    "https://t.me/FinancialJuice/144108",
-    "https://t.me/if_market_news/86513",
-    "https://tass.ru/sport/28273175",
-    "https://tass.ru/obschestvo/28273027",
-    "https://tass.ru/obschestvo/28273165",
-    "https://cryptoslate.com/coinbases-719-million-profit-reveals-a-company-caught-between-two-crypto-economies/",
-    "https://t.me/invest_zonaa/39211",
-    "https://tass.ru/obschestvo/28273157",
-    "https://t.me/markettwits/391386",
-    "https://t.me/invest_zonaa/39210",
-    "https://tass.ru/mezhdunarodnaya-panorama/28273155",
-    "https://tass.ru/sport/28273163",
-    "https://www.investing.com/news/stock-market-news/bank-of-america-sued-over-mandatory-arbitration-for-employee-disputes-4988505",
-    "https://tass.ru/ekonomika/28273161",
-    "https://www.kommersant.ru/doc/9077812",
-    "https://tass.ru/obschestvo/28273147",
-    "https://www.interfax.ru/world/1126208",
-    "https://t.me/FinancialJuice/144107",
-    "https://tass.ru/ekonomika/28273153",
-    "https://t.me/FinancialJuice/144106",
-    "https://tass.ru/obschestvo/28273143",
-    "https://t.me/banksta/104521",
-    "https://t.me/FinancialJuice/144105",
-    "https://t.me/whale_alert_io/104386",
-    "https://t.me/FinancialJuice/144104",
-    "https://t.me/FinancialJuice/144103",
-    "https://www.investing.com/news/stock-market-news/cdr-pursues-buyout-of-40-billion-payments-processor-global-payments-ft-reports-4988379",
-    "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163",
-    "https://www.marketwatch.com/story/theres-a-lot-of-hurt-between-us-my-fathers-caregiver-is-using-his-debit-card-for-doordash-orders-what-can-i-do-714de7a5?mod=mw_rss_topstories",
-    "https://oilprice.com/Latest-Energy-News/World-News/Chevron-Profits-Nearly-Triple-to-99-Billion.html",
-    "https://t.me/rbc_news/159761",
-    "https://tass.ru/obschestvo/28273149",
-    "https://tass.ru/ekonomika/28273141"
+    "https://tass.ru/sport/28273207"
   ],
   "ai_dead": {
     "date": "2026-10-30",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T04:00:58.930562+00:00",
-      "Intel увеличила квартальную выручку на 21%"
-    ],
-    [
-      "2026-10-30T04:00:58.930562+00:00",
-      "В Ормузском проливе у берегов Омана загорелось судно"
-    ],
-    [
-      "2026-10-30T04:00:58.930562+00:00",
-      "Лавров прибыл в США для участия в совещании глав МИД G20"
-    ],
-    [
-      "2026-10-30T05:00:57.698172+00:00",
-      "Binance оценила ущерб от крупнейшего в истории взлома в $6,3 млрд"
-    ],
     [
       "2026-10-30T05:00:57.698172+00:00",
       "Собянин сообщил о 862 летевших к Московскому региону беспилотниках"
@@ -1620,6 +1592,26 @@
     [
       "2026-10-30T19:00:58.615160+00:00",
       "Крупный перевод 1301 биткоина зафиксирован с баланса Coinbase"
+    ],
+    [
+      "2026-10-30T19:31:02.153617+00:00",
+      "Распродажа в техсекторе США толкает Nasdaq к худшему месяцу за год"
+    ],
+    [
+      "2026-10-30T19:31:02.153617+00:00",
+      "Госдеп США одобрил продажу Украине ракет Patriot на $2,1 млрд"
+    ],
+    [
+      "2026-10-30T19:31:02.153617+00:00",
+      "Franklin Templeton запустила два новых биткоин-ETF"
+    ],
+    [
+      "2026-10-30T19:31:02.153617+00:00",
+      "США призвали госслужащих покинуть Саудовскую Аравию из-за угроз"
+    ],
+    [
+      "2026-10-30T19:31:02.153617+00:00",
+      "Белоруссия создает новое десантное соединение у границы с Украиной"
     ]
   ],
   "results_fp": [
