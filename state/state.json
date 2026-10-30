@@ -873,7 +873,11 @@
     "2026-10-28|earn|GOOGL",
     "2026-10-29|pce|08:30",
     "2026-10-29|ввп|08:30",
-    "2026-10-29|первичные заявки на пособие|08:30"
+    "2026-10-29|первичные заявки на пособие|08:30",
+    "2026-10-29|earn|AMZN",
+    "2026-10-29|earn|INTC",
+    "2026-10-29|earn|MSTR",
+    "2026-10-29|earn|COIN"
   ],
   "macro": {
     "day": "2026-10-30",
@@ -913,121 +917,105 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-30T05:30:57.338680+00:00",
+  "breaking_ts": "2026-10-30T06:00:58.380364+00:00",
   "news_now": {
     "day": "2026-10-30",
-    "day_count": 1,
+    "day_count": 2,
     "urgent_count": 0,
-    "last": "2026-10-30T05:00:57.698172+00:00",
+    "last": "2026-10-30T06:00:58.380364+00:00",
     "titles": [
-      "Взлом Binance на $6,3 млрд обрушил курсы криптовалют"
+      "Взлом Binance на $6,3 млрд обрушил курсы криптовалют",
+      "Ущерб от взлома Binance оценили в $6,3 млрд"
     ]
   },
   "news_seen": [
+    "https://t.me/rbc_news/159707",
+    "https://tass.ru/mezhdunarodnaya-panorama/28269901",
+    "https://www.rbc.ru/rbcfreenews/58669d309a794754046b80c0",
+    "https://t.me/bitkogan/29496",
+    "https://tass.ru/obschestvo/28269839",
+    "https://www.vedomosti.ru/technology/news/2026/10/30/1241401-binance-obnovlenie",
+    "https://t.me/FinancialJuice/143893",
+    "https://t.me/cbrstocks/83775",
+    "https://tass.ru/proisshestviya/28269867",
+    "https://tass.ru/ekonomika/28269899",
+    "https://t.me/markettwits/391255",
+    "https://tass.ru/ekonomika/28269833",
+    "https://tass.ru/sport/28269887",
+    "https://t.me/russianmacro/23669",
+    "https://tass.ru/sport/28269883",
+    "https://www.interfax.ru/russia/1125995",
+    "https://tass.ru/proisshestviya/28269893",
+    "https://tass.ru/mezhdunarodnaya-panorama/28269881",
+    "https://tass.ru/obschestvo/28269885",
+    "https://t.me/alfa_investments/8527",
+    "https://tass.ru/proisshestviya/28269813",
+    "https://t.me/markettwits/391254",
+    "https://tass.ru/ekonomika/28269877",
+    "https://tass.ru/politika/28269875",
+    "https://t.me/FinancialJuice/143892",
+    "https://t.me/FinancialJuice/143891",
+    "https://t.me/thebell_io/39684",
+    "https://www.interfax.ru/russia/1125994",
+    "https://t.me/markettwits/391253",
+    "https://tass.ru/mezhdunarodnaya-panorama/28269865",
+    "https://tass.ru/mezhdunarodnaya-panorama/28269855",
+    "https://tass.ru/obschestvo/28269871",
+    "https://www.rbc.ru/rbcfreenews/6ae0ac3a58edf85d9663a792",
+    "https://www.vedomosti.ru/politics/news/2026/10/30/1241399-popali-bazu",
+    "https://t.me/if_market_news/86482",
+    "https://www.interfax.ru/russia/1125993",
+    "https://tass.ru/proisshestviya/28269863",
+    "https://www.coindesk.com/tech/2026/10/30/xrp-ledger-developers-tighten-the-rules-for-who-can-hold-restricted-tokens",
+    "https://tass.ru/proisshestviya/28269811",
+    "https://www.rbc.ru/finances/30/10/2026/6ae42b3062500eb984f987cb",
+    "https://tass.ru/armiya-i-opk/28269853",
+    "https://thedefiant.io/news/defi/hyperliquid-fees-hit-30-day-high-as-perpetuals-volume-doubles",
+    "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity",
+    "https://tass.ru/obschestvo/28269837",
+    "https://tass.ru/proisshestviya/28269847",
+    "https://www.vedomosti.ru/politics/news/2026/10/30/1241398-general-priznalsya",
+    "https://t.me/markettwits/391252",
+    "https://cryptoslate.com/binance-hack-began-with-a-296-million-xrp-drain-after-36-hour-preparation/",
+    "https://t.me/interfaxonline/80929",
+    "https://t.me/rbc_news/159706",
+    "https://tass.ru/obschestvo/28269781",
+    "https://www.kommersant.ru/doc/9064346",
+    "https://www.investing.com/news/stock-market-news/why-is-apple-supplier-luxshare-precision-industry-stock-sliding-today-93CH-4985823",
+    "https://www.investing.com/news/stock-market-news/why-is-aia-group-stock-rising-today-93CH-4985821",
+    "https://www.investing.com/news/stock-market-news/why-is-aia-group-stock-rising-today-93CH-4985822",
+    "https://www.investing.com/news/stock-market-news/why-is-byd-stock-slipping-today-93CH-4985820",
+    "https://www.kommersant.ru/doc/9064334",
+    "https://t.me/headlines_for_traders/87737",
+    "https://www.interfax.ru/business/1125992",
+    "https://tass.ru/proisshestviya/28269803",
+    "https://tass.ru/ekonomika/28269823",
+    "https://tass.ru/mezhdunarodnaya-panorama/28269815",
+    "https://www.vedomosti.ru/politics/news/2026/10/30/1241397-rossiiskie-voennie-udarili",
+    "https://t.me/markettwits/391251",
+    "https://t.me/FinancialJuice/143890",
+    "https://www.rbc.ru/quote/20/10/2026/6ad718269a79478c6633bea0",
+    "https://www.rbc.ru/business/20/10/2026/6ad7cc69b9033afd3da36f1f",
+    "https://www.interfax.ru/russia/1125991",
+    "https://t.me/whale_alert_io/104355",
+    "https://www.rbc.ru/quote/30/10/2026/6ae3922f9a79472c949172bc",
+    "https://t.me/forklog/50473",
+    "https://www.kommersant.ru/doc/9064317",
+    "https://t.me/smartlabnews/17998",
+    "https://t.me/headlines_for_traders/87736",
+    "https://www.investing.com/news/stock-market-news/australia-stocks-higher-at-close-of-trade-spasx-200-up-018-4985813",
+    "https://www.interfax.ru/russia/1125990",
     "https://t.me/banksta/104469",
-    "https://tass.ru/proisshestviya/28269771",
-    "https://tass.ru/ekonomika/28269787",
-    "https://tass.ru/sport/28269817",
+    "https://www.interfax.ru/business/1125989",
     "https://t.me/markettwits/391250",
-    "https://tass.ru/proisshestviya/28269773",
     "https://t.me/wublockchainenglish/26619",
-    "https://tass.ru/ekonomika/28269783",
-    "https://tass.ru/ekonomika/28269785",
-    "https://tass.ru/obschestvo/28269789",
-    "https://www.rbc.ru/politics/30/10/2026/6ae4270dba3ca498b3e75338",
-    "https://tass.ru/ekonomika/28269779",
-    "https://www.rbc.ru/rbcfreenews/6ae428f5ba3ca498b3e7533e",
-    "https://tass.ru/ekonomika/28269775",
-    "https://tass.ru/proisshestviya/28269793",
-    "https://t.me/markettwits/391249",
-    "https://tass.ru/sport/28269795",
-    "https://tass.ru/nedvizhimost/28269735",
-    "https://www.vedomosti.ru/politics/news/2026/10/30/1241396-moskovskogo-regiona",
-    "https://thedefiant.io/news/defi/uniswap-volume-tops-5-97-billion-as-ethereum-trading-surges",
-    "https://t.me/markettwits/391248",
-    "https://tass.ru/ekonomika/28269777",
-    "https://tass.ru/obschestvo/28269739",
-    "https://www.kommersant.ru/doc/9064330",
-    "https://www.interfax.ru/russia/1125986",
-    "https://thedefiant.io/news/infrastructure/circle-to-cut-legacy-usdc-crosschain-limits-from-oct-31",
-    "https://tass.ru/ekonomika/28269765",
-    "https://t.me/bitkogan_hotline/28055",
-    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
-    "https://tass.ru/ekonomika/28269743",
-    "https://tass.ru/proisshestviya/28269763",
-    "https://t.me/markettwits/391247",
-    "https://tass.ru/armiya-i-opk/28269767",
-    "https://www.investing.com/news/stock-market-news/byd-shares-dip-as-q3-earnings-disappoint-4985808",
-    "https://www.interfax.ru/russia/1125987",
-    "https://thedefiant.io/news/defi/curve-volume-jumps-to-847-million-as-3pool-tilts-further-toward-usdt",
-    "https://t.me/markettwits/391246",
-    "https://t.me/WatcherGuru/15706",
-    "https://t.me/headlines_for_traders/87735",
-    "https://tass.ru/sport/28269733",
-    "https://www.interfax.ru/russia/1125985",
-    "https://tass.ru/obschestvo/28269699",
-    "https://tass.ru/ekonomika/28269747",
-    "https://t.me/markettwits/391245",
-    "https://t.me/rbc_news/159704",
-    "https://tass.ru/proisshestviya/28269737",
-    "https://tass.ru/ekonomika/28269745",
-    "https://www.interfax.ru/russia/1125984",
-    "https://www.kommersant.ru/doc/9064325",
-    "https://t.me/investfuture/15457",
-    "https://www.investing.com/news/stock-market-news/sk-hynix-neutral-in-notrade-zone-awaiting-breakout-live-93CH-4971337",
-    "https://www.interfax.ru/russia/1125983",
-    "https://t.me/whale_alert_io/104354",
-    "https://t.me/markettwits/391244",
-    "https://tass.ru/nauka/28269717",
-    "https://www.rbc.ru/rbcfreenews/6ae35326e8a83604a8226aac",
-    "https://tass.ru/proisshestviya/28269729",
-    "https://www.rbc.ru/rbcfreenews/6adf72864f25d2264d28f787",
-    "https://t.me/forklog/50472",
-    "https://www.interfax.ru/russia/1125982",
-    "https://t.me/FinancialJuice/143889",
-    "https://www.kommersant.ru/doc/9064312",
-    "https://thedefiant.io/news/hacks/binance-exploit-linked-wallet-moves-14-040-eth-to-another-holding-address",
-    "https://t.me/FinancialJuice/143888",
-    "https://cryptoslate.com/circle-starts-cutting-legacy-usdc-app-transfer-limits-on-october-31/",
-    "https://t.me/FinancialJuice/143887",
-    "https://t.me/FinancialJuice/143886",
-    "https://thedefiant.io/news/hacks/binance-hack-s-bitcoin-sits-unspent-across-19-addresses",
-    "https://www.interfax.ru/interview/1125870",
-    "https://www.rbc.ru/rbcfreenews/6ae423a80cd0f4f5e566b51a",
-    "https://t.me/markettwits/391243",
-    "https://t.me/banksta/104468",
-    "https://www.kommersant.ru/doc/9064323",
-    "https://www.vedomosti.ru/society/news/2026/10/30/1241392-sotrudnik-zaes"
+    "https://www.interfax.ru/business/1125988"
   ],
   "ai_dead": {
     "date": "2026-10-29",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-29T05:31:01.091137+00:00",
-      "WSJ: рынок закладывает пятое повышение ставки в Австралии"
-    ],
-    [
-      "2026-10-29T05:31:01.091137+00:00",
-      "КНДР запустила более десятка баллистических ракет в сторону Японского моря"
-    ],
-    [
-      "2026-10-29T05:31:01.091137+00:00",
-      "Минфин: дивидендные поступления в бюджет РФ достигли 722 млрд рублей"
-    ],
-    [
-      "2026-10-29T05:31:01.091137+00:00",
-      "Пентагон призвал страны АСЕАН создать оборонный союз против Китая"
-    ],
-    [
-      "2026-10-29T06:01:01.842956+00:00",
-      "Alphabet снизила чистую прибыль на 25% в III квартале"
-    ],
-    [
-      "2026-10-29T06:01:01.842956+00:00",
-      "КНДР запустила около 10 баллистических ракет"
-    ],
     [
       "2026-10-29T06:01:01.842956+00:00",
       "Транзит судов через Босфор приостановили из-за аварии танкера"
@@ -1627,6 +1615,26 @@
     [
       "2026-10-30T05:30:57.338680+00:00",
       "Суточный объем торгов на Uniswap превысил $5,97 млрд"
+    ],
+    [
+      "2026-10-30T06:00:58.380364+00:00",
+      "Ущерб от взлома Binance предварительно оценили в $6,3 млрд"
+    ],
+    [
+      "2026-10-30T06:00:58.380364+00:00",
+      "Нефть Brent подорожала до $116 за баррель на фоне эскалации на Ближнем Востоке"
+    ],
+    [
+      "2026-10-30T06:00:58.380364+00:00",
+      "Банк Японии сохранил краткосрочную ставку на уровне 1,25%"
+    ],
+    [
+      "2026-10-30T06:00:58.380364+00:00",
+      "ВТБ с 1 ноября повысит ставку по накопительному счету до 14,7%"
+    ],
+    [
+      "2026-10-30T06:00:58.380364+00:00",
+      "Хакеры вывели более $2,7 млн со счетов пользователей Polymarket"
     ]
   ],
   "results_fp": [
@@ -1648,7 +1656,11 @@
     "Отчёт Microsoft (MSFT)|$4.13",
     "Отчёт Alphabet (GOOGL)|$2.87",
     "Базовая инфляция PCE|0.3%|3.1%|2.50%|0.5%|3.6%|2.1%",
-    "ВВП США|3.4%|2.2%|1.7%"
+    "ВВП США|3.4%|2.2%|1.7%",
+    "Отчёт Amazon (AMZN)|$1.95",
+    "Отчёт Intel (INTC)|$0.11",
+    "Отчёт Strategy (MSTR)|$8.42",
+    "Отчёт Coinbase (COIN)|$1.44"
   ],
   "pro_sent": {
     "asset": "2026-10-21",
@@ -1657,15 +1669,18 @@
   "pro_topics": {
     "-1004428155051": {
       "forum": false
+    },
+    "-1004362280478": {
+      "forum": false
     }
   },
   "pro_events": {
-    "day": "2026-10-29",
+    "day": "2026-10-30",
     "count": 3,
     "titles": [
-      "Решение ФРС по ставке",
-      "Отчёт Microsoft (MSFT)",
-      "Отчёт Alphabet (GOOGL)"
+      "Отчёт Amazon (AMZN)",
+      "Отчёт Strategy (MSTR)",
+      "Отчёт Coinbase (COIN)"
     ]
   },
   "pro_daily": "2026-10-29",
