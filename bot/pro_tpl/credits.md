@@ -49,3 +49,6 @@
 | img/ev-lbport.jpg | #СОБЫТИЯ 29.10 ВВП США | Charles Csavossy | PD | https://commons.wikimedia.org/wiki/File:Port_of_Long_Beach,_California_-4.jpg |
 | img/ev-shop.jpg | #СОБЫТИЯ 29.10 PCE | Shixart1985 | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Woman_shopping_in_a_store_aisle_with_a_shopping_cart.jpg |
 | img/gold.jpg, fed.jpg, fed1937.jpg | Пт 30.10 #АКТИВ золото (frg1–3) | см. строки выше | PD | — |
+| img/ev-boj-tokyo.jpg | #СОБЫТИЯ 30.10 Банк Японии | Syced | CC0 | https://commons.wikimedia.org/wiki/File:Bank_of_Japan_building_(14490).jpg |
+| img/ev-btc-coin.jpg | #СОБЫТИЯ 30.10 экспирация BTC | Satheesh Sankaran | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Holding_Bitcoin_cryptocurrency_coin.jpg |
+| img/ev-workers-cc.jpg | #СОБЫТИЯ 30.10 ECI | Carol M. Highsmith | CC0 | https://commons.wikimedia.org/wiki/File:Construction_workers_are_a_familiar_site_in_Crystal_City,_Virginia,_in_2019,_by_Carol_M._Highsmith,_2019,_from_the_Library_of_Congress_-_master-pnp-highsm-61600-61698a.tif |
