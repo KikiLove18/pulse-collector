@@ -209,6 +209,8 @@ def run(state, now, msk, fetch_calendar, tg_html, test=False, horizon=2, ask=Non
     if chat:
         if not (pics and _album(chat, pics, html)) and html:
             pro._send(chat, html, None)
+        if not test and _mode() == "on":  # отметка для сторожа воркера (worker/prowatch.js): бот не читает канал
+            edition._post("/api/ingest", {"edition": "pro_day", "blocks": [], "meta": {"pro_events_day": f"{now.astimezone(msk):%Y-%m-%d}"}})
     return html
 
 
