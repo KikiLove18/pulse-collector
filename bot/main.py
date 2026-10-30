@@ -1399,7 +1399,7 @@ def main():
         if kind:  # плановая рубрика канала PRO; отметка заранее — при сбое ИИ не повторяем каждые 30 минут
             state["pro_sent"][kind] = f"{now.astimezone(MSK):%Y-%m-%d}"
             run_pro(state, now, dry, kind)
-        if not slot and not dry and pro_day.due(state, now, MSK):  # #СОБЫТИЯ каждый вечер; отметка заранее — без повторов при сбое
+        if not slot and not dry and pro_day.due(state, now, MSK):  # #СОБЫТИЯ каждый день ~16:00 МСК; отметка заранее — без повторов при сбое
             state["pro_daily"] = f"{now.astimezone(MSK):%Y-%m-%d}"
             pro_day.run(state, now, MSK, fetch_calendar, tg_html, ask=ask_ai)  # карусель evc v6 + разбор ИИ
         if not slot and not dry and pro_auto.due(state, now, (os.environ.get("PRO_AUTO") or "on").lower()):  # черновик поста PRO к 10:00 МСК; отметка заранее
