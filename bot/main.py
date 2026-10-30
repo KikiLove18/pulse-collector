@@ -577,15 +577,19 @@ def run_ai_probe():
 def run_gemini_probe():
     """Какие модели Gemini отвечают на нашем ключе (только журнал; ключ — в заголовке, в журнал не попадает)."""
     key = os.environ["GEMINI_API_KEY"]
-    body = json.dumps({"contents": [{"role": "user", "parts": [{"text": 'Ответь JSON: {"ok": true}'}]}]}).encode()
+    news = "\n".join(f"{i}. Reuters | Нефть Brent {'растёт' if i % 2 else 'дешевеет'} на {i / 10:.1f}% на фоне запасов — трейдеры оценивают решения ОПЕК+ | https://example.com/{i}" for i in range(12))
+    # gemma не принимает system_instruction — задание и новости одним сообщением
+    body = json.dumps({"contents": [{"role": "user", "parts": [{"text": edition.NEWS_NOW + "\n\n" + news}]}], "generationConfig": {"temperature": 0.3}}).encode()
     names = _fetch_json(urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200", headers={"x-goog-api-key": key}), 60)
     print("Доступны:", " ".join(sorted(m["name"].split("/")[-1] for m in names.get("models", []) if "generateContent" in m.get("supportedGenerationMethods", []))))
-    for model in (os.environ.get("PROBE_MODELS") or GEMINI_LITE + ",gemini-2.5-flash-lite").split(","):
+    for model in (os.environ.get("PROBE_MODELS") or "gemini-flash-lite-latest,gemini-3.1-flash-lite,gemini-3.6-flash,gemini-3.7-flash,gemma-4-31b-it,gemma-4-26b-a4b-it").split(","):
         req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent", data=body,
                                      headers={"Content-Type": "application/json", "x-goog-api-key": key})
         t0 = time.time()
         try:
-            res = "ОК, ответила " + str(_fetch_json(req, 60).get("modelVersion"))
+            data = _fetch_json(req, 120)
+            text = "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"] if not p.get("thought"))
+            res = f"ОК, ответила {data.get('modelVersion')}, новостей в JSON: {len(edition._json(text).get('feed') or [])}"
         except urllib.error.HTTPError as e:
             res = f"ошибка {e.code}"
         except Exception as e:
