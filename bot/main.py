@@ -712,9 +712,18 @@ def split_message(text, limit=4000):
 ALLOWED_TAG = re.compile(r'(</?(?:b|i|u)>|<blockquote(?: expandable)?>|</blockquote>|<a href="[^"<>]*">|</a>)')
 
 
+# ИИ иногда теряет конец открывающего тега: <a href="https://…</a> (29.10 — 3 раза за выпуск). Адрес кончается перед <, > или пробелом, кавычки нет
+BROKEN_LINK = re.compile(r'<a href="(https?://[^"<>\s]+)(?=[<>\s]|$)(?:>([^<]*))?(?:</a>)?')
+
+
+def fix_links(text):
+    """Чинит ссылку с потерянным концом тега, иначе она уйдёт людям сырым текстом «<a href=…»."""
+    return BROKEN_LINK.sub(lambda m: f'<a href="{m.group(1)}">{(m.group(2) or "").strip() or sources.host_name(m.group(1))}</a>', text)
+
+
 def tg_html(text):
     """Приводит ответ ИИ к HTML, который принимает Telegram: только <b>, <i>, <u>, <blockquote>, <a>, остальное экранируем."""
-    text = re.sub(r"^```[a-zA-Z]*\s*|\s*```$", "", text.strip())
+    text = fix_links(re.sub(r"^```[a-zA-Z]*\s*|\s*```$", "", text.strip()))
     text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
     text = re.sub(r"<br\s*/?>", "\n", text)
     text = text.replace("<strong>", "<b>").replace("</strong>", "</b>")

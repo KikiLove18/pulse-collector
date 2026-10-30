@@ -73,6 +73,19 @@ def src_name(raw):
     return SRC_NAMES.get(k, r)
 
 
+# Подпись ссылки, если ИИ потерял название источника (<a href="https://…</a>): сайт → название
+HOST_NAMES = {"wsj.com": "WSJ", "cnbc.com": "CNBC", "marketwatch.com": "MarketWatch", "investing.com": "Investing.com", "oilprice.com": "OilPrice",
+              "coindesk.com": "CoinDesk", "cointelegraph.com": "Cointelegraph", "theblock.co": "The Block", "decrypt.co": "Decrypt", "rekt.news": "Rekt",
+              "cryptoslate.com": "CryptoSlate", "thedefiant.io": "The Defiant", "federalreserve.gov": "ФРС", "rbc.ru": "РБК", "vedomosti.ru": "Ведомости",
+              "interfax.ru": "Интерфакс", "kommersant.ru": "Коммерсантъ", "tass.ru": "ТАСС", "banki.ru": "Банки.ру", "cbr.ru": "Банк России",
+              "trumpstruth.org": "Truth Social", "x.com": "X", "twitter.com": "X", "t.me": "Telegram"}
+
+
+def host_name(url):
+    host = re.sub(r"^https?://(?:www\.)?", "", url or "").split("/")[0].split("?")[0].lower()
+    return next((v for k, v in HOST_NAMES.items() if host == k or host.endswith("." + k)), host or "источник")
+
+
 # Официальные Telegram-каналы популярных X-аккаунтов — бесплатная замена X API
 X_MIRRORS = [
     "walterbloomberg",       # @DeItaone: заголовки, заявления Трампа, Маска, ФРС

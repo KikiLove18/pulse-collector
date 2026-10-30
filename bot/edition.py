@@ -231,6 +231,20 @@ def feed_cards(out, now, dry):
             print(f"Лента: карточка не сделана — {str(e)[:120]}", file=sys.stderr)
 
 
+def safe_cut(html, n=4000):
+    """Обрезка без поломки разметки: без половины тега или &amp;, открытые теги закрываем."""
+    if len(html) <= n:
+        return html
+    cut = re.sub(r"&[a-zA-Z#0-9]*$", "", re.sub(r"<[^<>]*$", "", html[:n]))
+    opened = []
+    for close, tag in re.findall(r"<(/?)([a-z-]+)[^<>]*>", cut):
+        if not close:
+            opened.append(tag)
+        elif tag in opened:
+            opened.reverse(); opened.remove(tag); opened.reverse()
+    return cut + "".join(f"</{t}>" for t in reversed(opened))
+
+
 def news_html(n):
     src = f' — <a href="{n["url"]}">{sources.src_name(n["source"])}</a>' if n.get("url") else ""
     return (f'{n.get("icon") or ""} <b>{n["title"]}</b>\n'
@@ -301,7 +315,7 @@ def build_morning(ask_ai, items, now, tzmin, qlines, qlines_ru, today, today_ru,
             continue
         head = f"<b>☀️ Доброе утро! Что было ночью и что ждём днём{tag} · {local.day} {MONTHS[local.month - 1]}</b>"
         html = head + "\n\n" + morning_html(heads, [0, 1, 2][:len(heads)], ql, td) + f"\n\n<i>Подробности, влияние на цены и календарь — в приложении 👇 {NOT_ADVICE}</i>"
-        out.append({"block": f"morning_{tzmin}" + ("_ru" if key == "ru" else ""), "html": [card_id, html[:4000], "#today"]})
+        out.append({"block": f"morning_{tzmin}" + ("_ru" if key == "ru" else ""), "html": [card_id, safe_cut(html), "#today"]})
         if key == "all":
             publish_channel(html, url)
     print(f"Утро UTC{tzmin / 60:+g}: собрано {len(out)} вариантов", file=sys.stderr)
@@ -346,7 +360,7 @@ def build_edition(ask_ai, news, quotes_text, now, total_news, focus="", qlines=N
             else f"<b>🌙 Добрый вечер! Итоги дня{tag} · {local.day} {MONTHS[local.month - 1]}</b>")
     if morning:
         html = head + "\n\n" + morning_html(news, pick, qlines or [], today or []) + f"\n\n<i>Подробности, влияние на цены и календарь — в приложении 👇 {NOT_ADVICE}</i>"
-        return card_id, html[:4000], url
+        return card_id, safe_cut(html), url
     body = "\n\n".join(news_html(news[i]) for i in pick)
     rest = max(0, total_news - len(pick))
     tail = (f"\n\n<i>Ещё {rest} новостей, влияние на цены и календарь — в приложении 👇 {NOT_ADVICE}</i>" if rest
