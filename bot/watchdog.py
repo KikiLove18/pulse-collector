@@ -48,7 +48,7 @@ if sys.argv[1] == "check":
     r = check()
     with open(os.environ["GITHUB_OUTPUT"], "a") as o:
         if r:
-            o.write(f"key=watchdog-{r[0]}{'-' + os.environ['GITHUB_RUN_ID'] if FAKE else ''}\ntext={r[1]}\n")
+            o.write(f"key=watchdog-{'fake-' if FAKE else ''}{r[0]}\ntext={r[1]}\n")
 else:
     data = urllib.parse.urlencode({"chat_id": TEST if FAKE else os.environ["OWNER_CHAT_ID"], "text": ("Проверка сторожа. " if FAKE else "") + os.environ["WATCH_TEXT"], "parse_mode": "HTML"}).encode()
     print(urllib.request.urlopen(f"https://api.telegram.org/bot{TOKEN}/sendMessage", data, timeout=20).status)
