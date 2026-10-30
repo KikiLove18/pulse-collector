@@ -1,0 +1,43 @@
+name: watchdog
+
+# Встал cron воркера или вебхук бота: сигнал напрямую в Telegram, в обход Cloudflare. Один сигнал на сбой — отметка в кэше GitHub.
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+    inputs:
+      fake:
+        description: "подмена для проверки: cron, down или webhook. Сигнал — в тестовый канал"
+        default: ""
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      WATCH_FAKE: ${{ github.event.inputs.fake }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: bot/watchdog.py
+      - id: c
+        run: python bot/watchdog.py check
+      - id: seen
+        if: steps.c.outputs.key != ''
+        uses: actions/cache/restore@v4
+        with:
+          path: .watchdog-seen
+          key: ${{ steps.c.outputs.key }}
+      - if: steps.c.outputs.key != '' && steps.seen.outputs.cache-hit != 'true'
+        run: python bot/watchdog.py send
+        env:
+          OWNER_CHAT_ID: ${{ secrets.OWNER_CHAT_ID }}
+          WATCH_TEXT: ${{ steps.c.outputs.text }}
+      - if: steps.c.outputs.key != '' && steps.seen.outputs.cache-hit != 'true'
+        run: mkdir -p .watchdog-seen && touch .watchdog-seen/x
+      - if: steps.c.outputs.key != '' && steps.seen.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .watchdog-seen
+          key: ${{ steps.c.outputs.key }}
