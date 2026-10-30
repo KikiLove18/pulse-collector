@@ -437,28 +437,57 @@ def push_feed(feed, items, now, dry, state=None):
     return out
 
 
-# Весь ИИ лёг (29.10 Лента стояла 119 мин): заголовок и первая фраза русских СМИ как есть — только про рынки и экономику,
+# Весь ИИ лёг (29.10 Лента стояла 119 мин): заголовок и первая фраза крупных русских СМИ как есть — только про рынки и экономику,
 # важность 1 (в чат не идёт), Telegram и X не берём: их без проверки ИИ в Ленту не пускаем.
+# Правила — Публикатор 30.10 (a-1793344640), проверены на RSS за сутки: без Банки.ру и прочих мелких, без повторов компании за проверку.
 FALLBACK_PER_RUN = 4
-FALLBACK_RE = re.compile(r"\b(?:brent|urals|индекс|рын(?:ок|к)|торг[иао]|ставк|рубл|доллар|евро\b|юан|нефт|газ\b|газа\b|бирж|мосбирж|акци[йияею]|облигац|офз|инфляц|ц[её]н[ыаеу]\b|"
-                         r"цб\b|банк|ввп|бюджет|налог|пошлин|санкц|золот|биткоин|криптовал|экспорт|импорт|дивиденд|прибыл[ьиею]|выручк|"
+FALLBACK_PER_SOURCE = 2
+FALLBACK_RE = re.compile(r"\b(?:brent|urals|индекс|рын(?:ок|к)|торг(?:и|ах|ов)\b|ставк|(?<!млн )(?<!млрд )(?<!трлн )(?<!тысяч )(?<!тыс\. )рубл|доллар|евро\b|юан|нефт|газ\b|газа\b|бирж|мосбирж|акци[йияею]|облигац|офз|инфляц|ц[её]н[ыаеу]\b|"
+                         r"цб\b|фрс\b|s&p|nasdaq|банк|ввп|бюджет|налог|пошлин|санкц|золот(?:о|а|ом|е)\b|биткоин|криптовал|криптобирж|экспорт|импорт|дивиденд|прибыл[ьею]|прибыли\b(?!\s+(?:в|на)\b)|выручк|"
                          r"минфин|экономик|сбер|газпром|лукойл|роснефт|новатэк|яндекс|опек)", re.I)
+FALLBACK_NO = re.compile(r"лжеброкер|мошенн|задержа|арест|приговор|уголовн|обвин|\bсуд[аеуы]?\b|хищени|взятк|\bдтп\b|пожар|убий|протест|\bв ставке\b|главные новости|обзор\b|дайджест|премии|лауреат", re.I)
+FALLBACK_GAZA = re.compile(r"\bГаз[аеу]\b")  # сектор Газа; газ-топливо в заголовке — со строчной
+FALLBACK_ABBR = re.compile(r"(?:\b(?:руб|млн|млрд|трлн|тыс|долл|г|гг|п\.п|т\.е|им|ул|проц)|\b[А-ЯЁA-Z])\.$")
+FALLBACK_NAME = re.compile(r"\b(?:[А-ЯЁA-Z]{2,}|(?<=[а-яё,] )[А-ЯЁ][а-яё]{3,})")  # компании и фамилии: заглавные слова не в начале фразы
+FALLBACK_COMMON = {"ЦБ", "РФ", "США", "ЕС", "МСФО"}
+FALLBACK_COMM = re.compile(r"brent|urals|нефт|газ\b|газа\b|золот|опек", re.I)
+FALLBACK_CRYPTO = re.compile(r"биткоин|крипт|binance|coinbase", re.I)
+FALLBACK_US = re.compile(r"фрс\b|s&p|nasdaq|уолл-стрит", re.I)
+
+
+def _fallback_lead(desc):
+    """Первая фраза: не обрывается на сокращении; точка перед кавычкой или заглавной без пробела — тоже конец (так у Интерфакса)."""
+    for m in re.finditer(r'[.!?…](?=\s|$|["«А-ЯЁ])', desc):
+        lead = desc[:m.end()]
+        if len(lead) >= 40 and not FALLBACK_ABBR.search(lead):
+            return lead if len(lead) <= 300 else None
+    return None
+
+
+def _fallback_block(title):
+    return "commodities" if FALLBACK_COMM.search(title) else "crypto" if FALLBACK_CRYPTO.search(title) else "us" if FALLBACK_US.search(title) else "ru"
 
 
 def fallback_feed(items, now, state, dry):
     recent = [r[1] for r in state.get("feed_recent", [])]
-    feed = []
-    order = sorted(range(len(items)), key=lambda i: (source_rank(items[i]), -items[i]["time"].timestamp()))
-    for i in order:
+    feed, names, per = [], set(), {}
+    for i in sorted(range(len(items)), key=lambda i: -items[i]["time"].timestamp()):
         it = items[i]
         title, desc = it["title"].strip(), re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", it.get("desc") or "")).strip()
-        if source_rank(it) > 1 or not re.search("[а-яё]", title, re.I) or not FALLBACK_RE.search(title) or seen_before(title, recent):
+        if (source_rank(it) != 0 or not re.search("[а-яё]", title, re.I) or not FALLBACK_RE.search(title) or FALLBACK_NO.search(title)
+                or FALLBACK_GAZA.search(title) or seen_before(title, recent) or per.get(it["source"], 0) >= FALLBACK_PER_SOURCE):
             continue
-        first = re.match(r".{40,300}?[.!?…](?=\s|$)", desc)
-        if not first:
+        lead = _fallback_lead(desc)
+        if not lead:
             continue
+        found = set(FALLBACK_NAME.findall(title + " " + lead)) - FALLBACK_COMMON
+        if found & names:
+            continue
+        names |= found
+        per[it["source"]] = per.get(it["source"], 0) + 1
         recent.append(title)
-        feed.append({"pick": i, "title": title[:120], "text": first.group(0), "block": "ru", "imp": 1, "sent": "neu", "theme": "kremlin"})
+        block = _fallback_block(title)
+        feed.append({"pick": i, "title": title[:120], "text": lead, "block": block, "imp": 1, "sent": "neu", "theme": FEED_THEME[block]})
         if len(feed) >= FALLBACK_PER_RUN:
             break
     print(f"Лента: запасной режим без ИИ — подходит {len(feed)} новостей", file=sys.stderr)

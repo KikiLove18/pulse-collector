@@ -499,10 +499,11 @@ def ask_openrouter(system, user):
     key = os.environ["OPENROUTER_API_KEY"].strip()
     if not key.isascii() or not key.startswith("sk-or-"):  # 15.10 в секрете оказалось слово «ключ» вместо ключа
         raise RuntimeError("секрет OPENROUTER_API_KEY — не ключ OpenRouter (должен начинаться с sk-or-)")
+    # deepseek-v4-flash — платный запасной, первым: только при сбое всего Gemini (да владельца 30.10, a-1793343910256). Нет денег на счёте — 402, дальше бесплатные.
     # ai_probe 23.10: отвечает только nemotron-ultra (68 с); super — 404 (убрана), gemma — 429 у провайдера, dots — >90 с,
     # inkling — только для «агентов» (403), nemotron-3.5 — 502 / >90 с
     models = os.environ.get("OPENROUTER_MODEL") or \
-        "nvidia/nemotron-3-ultra-550b-a55b:free,google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,dots-studio/dots-3-note-preview:free"
+        "deepseek/deepseek-v4-flash,nvidia/nemotron-3-ultra-550b-a55b:free,google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,dots-studio/dots-3-note-preview:free"
     last_err = None
     for model in [m.strip() for m in models.split(",") if m.strip() and _alive(m.strip())]:
         body = {
@@ -542,7 +543,7 @@ def ask_openrouter(system, user):
     raise RuntimeError(f"Все модели OpenRouter недоступны: {last_err or 'все модели исчерпали квоту или заняты'}")
 
 
-PROBE_MODELS = ("nvidia/nemotron-3.5-super-vl:free,nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-ultra-550b-a55b:free,"
+PROBE_MODELS = ("deepseek/deepseek-v4-flash,nvidia/nemotron-3.5-super-vl:free,nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-ultra-550b-a55b:free,"
                 "google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,thinkingmachines/inkling:free,"
                 "thinkingmachines/inkling-small:free,dots-studio/dots-3-note-preview:free,nvidia/nemotron-3-super-120b-a12b:free")
 
@@ -556,6 +557,11 @@ def run_ai_probe():
     user = "КОТИРОВКИ:\nBrent 82,1 (+1,2%)\nWTI 78,4 (+1,0%)\nЗолото 2410 (−0,3%)\n\nНОВОСТИ:\n" + news
     system = prompts.COMMON + "\n" + prompts.BLOCKS[2]["focus"]
     rows = []
+    try:  # счёт: только признак бесплатного тарифа, расход и остаток лимита ключа — журнал виден всем, ключ и его метку не выводить
+        k = _fetch_json(urllib.request.Request("https://openrouter.ai/api/v1/key", headers={"Authorization": f"Bearer {key}"}), 30)["data"]
+        print("OpenRouter счёт:", {f: k.get(f) for f in ("is_free_tier", "usage", "limit", "limit_remaining")}, file=sys.stderr)
+    except Exception as e:
+        print("OpenRouter счёт: не узнать —", str(e)[:120], file=sys.stderr)
     for model in [m.strip() for m in (os.environ.get("PROBE_MODELS") or PROBE_MODELS).split(",") if m.strip()]:
         body = {"model": model, "temperature": 0.3,
                 "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
@@ -598,9 +604,9 @@ def run_gemini_probe():
         print(f"{model}: {time.time() - t0:.0f} с — {res}")
 
 
-def run_ai_chaos(state, now, live):
+def run_ai_chaos(state, now, keep):
     """Проверка устойчивости. Шаг 1: недоступная модель + обрезанный ответ ИИ. Шаг 2: мусор вместо ответа дважды. Шаг 3: весь ИИ
-    недоступен. Шаги 1–2 — без публикации; шаг 3 при live — настоящий запасной режим: в Ленту и сигнал владельцу, в чат ничего."""
+    недоступен. Ничего не публикует; keep — результат шага 3 в служебный ключ meta.ai_chaos_feed, чтобы посмотреть показ в приложении."""
     items = fresh_items(now, 180)
     print(f"ПРОВЕРКА: свежих новостей {len(items)}", file=sys.stderr)
     trial = lambda: {"feed_recent": list(state.get("feed_recent", []))}
@@ -618,7 +624,11 @@ def run_ai_chaos(state, now, live):
     edition.run_news_now(lambda s, u: "сервер занят { попробуйте позже", items, trial(), now, None, force=True)
     print("ПРОВЕРКА 3: весь ИИ недоступен", file=sys.stderr)
     os.environ["GEMINI_MODEL"], os.environ["OPENROUTER_MODEL"] = "gemini-no-such-model", "no-such/model:free"
-    edition.run_news_now(ask_ai, items, state if live else trial(), now, None, force=not live)
+    edition.run_news_now(ask_ai, items, trial(), now, None, force=True)
+    if keep:  # только в служебный meta.ai_chaos_feed (не в APP_META): настоящую Ленту и выпуски проверка не трогает (Директор 30.10)
+        out = edition.fallback_feed(items, now, trial(), True)
+        print(f"ПРОВЕРКА 3: в meta.ai_chaos_feed — {len(out)} новостей", file=sys.stderr)
+        edition._post("/api/ingest", {"edition": "feed", "blocks": [], "meta": {"ai_chaos_feed": out}})
 
 
 def ask_gemini(system, user):
@@ -1365,7 +1375,7 @@ def main():
     now = datetime.now(timezone.utc)
     state = load_state()
     ai_dead_load(state)
-    if (mode in ("preview", "ai_check", "ai_probe", "gemini_probe", "ai_chaos", "ai_chaos_live", "pro_sample", "pro_fill", "pro_fill_live", "freech") or mode in PRO_PLAN) and "--force" not in args:
+    if (mode in ("preview", "ai_check", "ai_probe", "gemini_probe", "ai_chaos", "ai_chaos_keep", "pro_sample", "pro_fill", "pro_fill_live", "freech") or mode in PRO_PLAN) and "--force" not in args:
         # тесты тратят ту же квоту ИИ — не в последний час перед выжимкой
         local = now.astimezone(MSK)
         for slot in os.environ.get("DIGEST_TIMES", "07:30,19:30").split(","):
@@ -1418,10 +1428,8 @@ def main():
     if mode == "gemini_probe":
         run_gemini_probe()
         return
-    if mode in ("ai_chaos", "ai_chaos_live"):
-        run_ai_chaos(state, now, mode == "ai_chaos_live")
-        if mode == "ai_chaos_live":
-            save_state(state)
+    if mode in ("ai_chaos", "ai_chaos_keep"):
+        run_ai_chaos(state, now, mode == "ai_chaos_keep")
         return
     if mode == "ai_probe":  # какие бесплатные модели OpenRouter отвечают (только журнал)
         run_ai_probe()
