@@ -375,7 +375,9 @@ AI_DEAD = {"day": set()}
 GEMINI_MODELS = "gemini-3.5-flash,gemini-3.8-flash,gemini-flash-latest,gemini-flash-lite-latest"
 # Бесплатно «большие» модели дают ~5–10 ответов в сутки каждая — берём их только для выжимок (AI_TIER["big"]),
 # всё остальное (новость сейчас, лента, события, итоги) — на lite: у неё 38–55 ответов в сутки, дневной лимит не кончался.
-GEMINI_LITE = "gemini-flash-lite-latest"
+# 30.10: одна lite-модель — 503 Gemini сразу уводил на бесплатный OpenRouter, а тот молчал (Лента стояла 119 мин). Запасные — не из очереди
+# выжимок, их квоту не тратят; проверка на нашем ключе — mode=gemini_probe.
+GEMINI_LITE = "gemini-flash-lite-latest,gemini-3.5-flash-lite,gemini-3.1-flash-lite"
 AI_TIER = {"big": False}
 
 
@@ -454,6 +456,9 @@ def _day_quota_over(model, err_text):
 # дважды с паузой 8 с и заново в каждом вызове запуска; nemotron-super 16 раз подряд — 404.
 AI_BUSY = {}
 BUSY_SEC = 600
+# Вся очередь Gemini ответила 5xx: пауза и ещё один проход. Не больше двух пауз за запуск — вызовов может быть много.
+OVERLOAD_PAUSE = 45
+AI_PAUSES = {"left": 2}
 
 
 def _busy(model, why):
@@ -569,6 +574,46 @@ def run_ai_probe():
     print("\nИТОГ ПРОВЕРКИ МОДЕЛЕЙ:\n" + "\n".join(rows))
 
 
+def run_gemini_probe():
+    """Какие модели Gemini отвечают на нашем ключе (только журнал; ключ — в заголовке, в журнал не попадает)."""
+    key = os.environ["GEMINI_API_KEY"]
+    body = json.dumps({"contents": [{"role": "user", "parts": [{"text": 'Ответь JSON: {"ok": true}'}]}]}).encode()
+    for model in (os.environ.get("PROBE_MODELS") or GEMINI_LITE + ",gemini-2.5-flash-lite").split(","):
+        req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent", data=body,
+                                     headers={"Content-Type": "application/json", "x-goog-api-key": key})
+        t0 = time.time()
+        try:
+            res = "ОК, ответила " + str(_fetch_json(req, 60).get("modelVersion"))
+        except urllib.error.HTTPError as e:
+            res = f"ошибка {e.code}"
+        except Exception as e:
+            res = f"ошибка {str(e)[:100]}"
+        print(f"{model}: {time.time() - t0:.0f} с — {res}")
+
+
+def run_ai_chaos(state, now, live):
+    """Проверка устойчивости. Шаг 1: недоступная модель + обрезанный ответ ИИ. Шаг 2: мусор вместо ответа дважды. Шаг 3: весь ИИ
+    недоступен. Шаги 1–2 — без публикации; шаг 3 при live — настоящий запасной режим: в Ленту и сигнал владельцу, в чат ничего."""
+    items = fresh_items(now, 180)
+    print(f"ПРОВЕРКА: свежих новостей {len(items)}", file=sys.stderr)
+    trial = lambda: {"feed_recent": list(state.get("feed_recent", []))}
+    os.environ["GEMINI_MODEL"] = "gemini-no-such-model," + GEMINI_LITE
+    calls = []
+
+    def cut(s, u):
+        raw = ask_ai(s, u)
+        calls.append(1)
+        return raw[:int(len(raw) * 0.7)] if len(calls) == 1 else raw
+    print("ПРОВЕРКА 1: нет модели + обрезанный JSON", file=sys.stderr)
+    edition.run_news_now(cut, items, trial(), now, None, force=True)
+    print(f"ПРОВЕРКА 1: вызовов ИИ {len(calls)}", file=sys.stderr)
+    print("ПРОВЕРКА 2: мусор вместо JSON два раза", file=sys.stderr)
+    edition.run_news_now(lambda s, u: "сервер занят { попробуйте позже", items, trial(), now, None, force=True)
+    print("ПРОВЕРКА 3: весь ИИ недоступен", file=sys.stderr)
+    os.environ["GEMINI_MODEL"], os.environ["OPENROUTER_MODEL"] = "gemini-no-such-model", "no-such/model:free"
+    edition.run_news_now(ask_ai, items, state if live else trial(), now, None, force=not live)
+
+
 def ask_gemini(system, user):
     """Бесплатные модели бывают перегружены (503) — пробуем по очереди из списка через запятую."""
     key = os.environ["GEMINI_API_KEY"]
@@ -579,6 +624,7 @@ def ask_gemini(system, user):
         "generationConfig": {"temperature": 0.3},
     }).encode()
     last_err = None
+    overloaded = []
     for model in [m.strip() for m in models.split(",") if m.strip() and _alive(m.strip())]:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         req = urllib.request.Request(
@@ -609,6 +655,7 @@ def ask_gemini(system, user):
                     continue
                 if e.code in (500, 502, 503, 504):  # перегрузка: сразу следующая модель, эту — не трогаем 10 мин
                     _busy(model, f"перегрузка {e.code}")
+                    overloaded.append(model)
                 break
             except Exception as e:
                 last_err = e
@@ -616,6 +663,13 @@ def ask_gemini(system, user):
                 if isinstance(e, TimeoutError):
                     _busy(model, "нет ответа")
                 break
+    if overloaded and AI_PAUSES["left"] > 0:
+        AI_PAUSES["left"] -= 1
+        print(f"Gemini: все перегружены, жду {OVERLOAD_PAUSE} с и пробую ещё раз", file=sys.stderr)
+        time.sleep(OVERLOAD_PAUSE)
+        for m in overloaded:
+            AI_BUSY.pop(m, None)
+        return ask_gemini(system, user)
     raise RuntimeError(f"Все модели Gemini недоступны: {last_err or 'все модели исчерпали квоту или заняты'}")
 
 
@@ -809,13 +863,17 @@ def run_breaking(state, now, dry):
         print("Новости дня: Gemini исчерпан — экономлю запасной ИИ, проверю в :30", file=sys.stderr)
         return
     allit = fresh_items(now, minutes)
-    seen = set(state.get("news_seen", []))
+    prev_seen = state.get("news_seen", [])
+    seen = set(prev_seen)
     print(f"Новости дня: свежих {len(allit)}, новых с прошлой проверки {sum(it['link'] not in seen for it in allit)}", file=sys.stderr)
     state["news_seen"] = [it["link"] for it in allit][:300]
     if allit and all(it["link"] in seen for it in allit):  # ИИ уже видел ровно эти новости — не зовём
         state["breaking_ts"] = now.isoformat()
         return
     out = edition.run_news_now(ask_ai, allit, state, now, publish_card if not dry else (lambda h, u: publish(h, True)))
+    if state.get("ai_fail"):  # ИИ эти новости не разобрал: следующая проверка возьмёт их снова
+        state["news_seen"] = prev_seen
+        return
     state["breaking_ts"] = now.isoformat()
     if out and out.get("kind") == "urgent" and not dry:  # «⚡ Срочно» → подробный разбор в канал PRO
         card_url = os.environ.get("INGEST_URL", "").replace("/api/ingest", f"/card/{out['card']}.jpg")
@@ -1300,7 +1358,7 @@ def main():
     now = datetime.now(timezone.utc)
     state = load_state()
     ai_dead_load(state)
-    if (mode in ("preview", "ai_check", "ai_probe", "pro_sample", "pro_fill", "pro_fill_live", "freech") or mode in PRO_PLAN) and "--force" not in args:
+    if (mode in ("preview", "ai_check", "ai_probe", "gemini_probe", "ai_chaos", "ai_chaos_live", "pro_sample", "pro_fill", "pro_fill_live", "freech") or mode in PRO_PLAN) and "--force" not in args:
         # тесты тратят ту же квоту ИИ — не в последний час перед выжимкой
         local = now.astimezone(MSK)
         for slot in os.environ.get("DIGEST_TIMES", "07:30,19:30").split(","):
@@ -1349,6 +1407,14 @@ def main():
     if mode.split(":")[0] == "roles_check":  # раз в неделю (cron воркера, Пн 06:00 МСК): должности из prompts.py против поиска Google → тестовый канал
         from . import roles_check
         roles_check.run(now, os.environ.get("GEMINI_MODEL") or GEMINI_MODELS, send_telegram, test=mode.endswith(":test"), ask=ask_ai)
+        return
+    if mode == "gemini_probe":
+        run_gemini_probe()
+        return
+    if mode in ("ai_chaos", "ai_chaos_live"):
+        run_ai_chaos(state, now, mode == "ai_chaos_live")
+        if mode == "ai_chaos_live":
+            save_state(state)
         return
     if mode == "ai_probe":  # какие бесплатные модели OpenRouter отвечают (только журнал)
         run_ai_probe()

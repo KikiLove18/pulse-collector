@@ -121,9 +121,70 @@ def ru_numbers_deep(x, skip=("url", "link", "dt", "at", "ts", "key", "href")):
     return x
 
 
+def _fix_json(s):
+    """Битый ответ ИИ (29.10 запуск 40887278689 — лишняя запятая, новости за полчаса пропали): убираем висячие запятые,
+    экранируем кавычки и переносы внутри текста; что не спасти — отрезаем до последнего целого элемента верхних уровней
+    (недописанную новость не публикуем) и закрываем скобки. Не вышло — ValueError."""
+    out, stack, cuts, in_str, i = [], [], [], False, 0
+    while i < len(s):
+        c = s[i]
+        if in_str:
+            if c == "\\":
+                out.append(s[i:i + 2])
+                i += 2
+                continue
+            if c == '"':
+                rest = s[i + 1:i + 40].lstrip()
+                if rest and rest[0] not in ",:}]":  # кавычка внутри текста, а не конец строки
+                    c = '\\"'
+                else:
+                    in_str = False
+            elif c in "\n\r\t":
+                c = "\\n"
+            out.append(c)
+        else:
+            if c == '"':
+                in_str = True
+            elif c in "{[":
+                stack.append(c)
+            elif c in "}]":
+                while out and (out[-1].isspace() or out[-1] == ","):
+                    out.pop()
+                if not stack:
+                    break
+                stack.pop()
+            out.append(c)
+            if c in ",}]" and len(stack) <= 2:
+                cuts.append((len(out), list(stack)))
+        i += 1
+    close = {"{": "}", "[": "]"}
+    tries = [(len(out), stack)] if not in_str else []
+    for n, st in tries + cuts[::-1][:60]:
+        try:
+            return json.loads("".join(out[:n]).rstrip().rstrip(",") + "".join(close[x] for x in st[::-1]), strict=False)
+        except ValueError:
+            continue
+    raise ValueError("ответ ИИ не удалось починить")
+
+
 def _json(raw):
     raw = re.sub(r"^```(?:json)?|```$", "", raw.strip()).strip()
-    return json.loads(raw[raw.index("{"):raw.rindex("}") + 1])
+    start = raw.index("{")
+    try:
+        return json.loads(raw[start:raw.rindex("}") + 1])
+    except ValueError as e:
+        data = _fix_json(raw[start:])
+        print(f"ИИ: битый JSON починен ({str(e)[:80]})", file=sys.stderr)
+        return data
+
+
+def _ask_json(ask_ai, system, user):
+    """Ответ ИИ как JSON: не разобрался даже после починки — один повтор запроса."""
+    try:
+        return _json(ask_ai(system, user))
+    except ValueError as e:
+        print(f"ИИ: ответ не разобрать ({str(e)[:80]}) — повторяю запрос", file=sys.stderr)
+        return _json(ask_ai(system, user))
 
 
 def _post(path, payload):
@@ -220,7 +281,7 @@ def build_morning(ask_ai, items, now, tzmin, qlines, qlines_ru, today, today_ru,
         return []
     lst = "\n".join(f'{i}. {it["source"]} | {it["title"]} — {it["desc"][:200]}' for i, it in enumerate(items[:120]))
     try:
-        data = _json(ask_ai(MORNING, lst))
+        data = _ask_json(ask_ai, MORNING, lst)
     except Exception as e:
         print("Утро: разбор не удался:", e, file=sys.stderr)
         return []
@@ -262,7 +323,7 @@ def build_edition(ask_ai, news, quotes_text, now, total_news, focus="", qlines=N
                     for i, n in enumerate(news))
     try:
         n_pick = 3 if now.astimezone(MSK).hour < 14 else 4
-        data = _json(ask_ai(PICK.replace("Выбери 4", f"Выбери {n_pick}") + (FOCUS_RU if focus == "ru" else ""), "КОТИРОВКИ:\n" + quotes_text + "\n\nНОВОСТИ:\n" + lst))
+        data = _ask_json(ask_ai, PICK.replace("Выбери 4", f"Выбери {n_pick}") + (FOCUS_RU if focus == "ru" else ""), "КОТИРОВКИ:\n" + quotes_text + "\n\nНОВОСТИ:\n" + lst)
         pick = [int(i) for i in data.get("pick", []) if 0 <= int(i) < len(news)][:n_pick]
         cover = data.get("cover") or {}
     except Exception as e:
@@ -373,6 +434,52 @@ def push_feed(feed, items, now, dry, state=None):
             _post("/api/ingest", {"edition": "feed", "blocks": [], "meta": {"news": out}})
         except Exception as e:
             print("Лента: сервер недоступен", e, file=sys.stderr)
+    return out
+
+
+# Весь ИИ лёг (29.10 Лента стояла 119 мин): заголовок и первая фраза русских СМИ как есть — только про рынки и экономику,
+# важность 1 (в чат не идёт), Telegram и X не берём: их без проверки ИИ в Ленту не пускаем.
+FALLBACK_PER_RUN = 4
+FALLBACK_RE = re.compile(r"\b(?:ставк|рубл|доллар|евро\b|юан|нефт|газ\b|газа\b|бирж|мосбирж|акци[йияею]|облигац|офз|инфляц|ц[её]н[ыаеу]\b|"
+                         r"цб\b|банк|ввп|бюджет|налог|пошлин|санкц|золот|биткоин|криптовал|экспорт|импорт|дивиденд|прибыл|выручк|"
+                         r"минфин|экономик|сбер|газпром|лукойл|роснефт|новатэк|яндекс|опек)", re.I)
+
+
+def fallback_feed(items, now, state, dry):
+    recent = [r[1] for r in state.get("feed_recent", [])]
+    feed = []
+    order = sorted(range(len(items)), key=lambda i: (source_rank(items[i]), -items[i]["time"].timestamp()))
+    for i in order:
+        it = items[i]
+        title, desc = it["title"].strip(), re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", it.get("desc") or "")).strip()
+        if source_rank(it) > 1 or not re.search("[а-яё]", title, re.I) or not FALLBACK_RE.search(title + " " + desc) or seen_before(title, recent):
+            continue
+        first = re.match(r".{40,300}?[.!?…](?=\s|$)", desc)
+        if not first:
+            continue
+        recent.append(title)
+        feed.append({"pick": i, "title": title[:120], "text": first.group(0), "block": "ru", "imp": 1, "sent": "neu", "theme": "kremlin"})
+        if len(feed) >= FALLBACK_PER_RUN:
+            break
+    print(f"Лента: запасной режим без ИИ — подходит {len(feed)} новостей", file=sys.stderr)
+    return push_feed(feed, items, now, dry, state) or []
+
+
+def ai_status(state, now, dry, err=None, added=()):
+    """Служебный meta.ai_status (не в APP_META) — воркер скажет владельцу причину. err=None — ИИ снова работает."""
+    st = {"at": now.isoformat(), "fail": False}
+    if err is not None:
+        e = str(err)
+        why = ("битый ответ" if isinstance(err, ValueError) else "перегрузка" if re.search(r"\b50[0234]\b", e) else
+               "лимит" if "429" in e else "время вышло" if "время" in e else "нет ответа")
+        st.update(fail=True, why=why, added=len(added))
+        state["ai_fail"] = now.isoformat()
+    print(f"ИИ: состояние для владельца — {st}", file=sys.stderr)
+    if not dry:
+        try:
+            _post("/api/ingest", {"edition": "feed", "blocks": [], "meta": {"ai_status": st}})
+        except Exception as e:
+            print("Состояние ИИ: сервер недоступен", e, file=sys.stderr)
 
 
 def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
@@ -390,12 +497,15 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
     can_send = force or (8 <= local.hour < 22 and (b["urgent_count"] < URGENT_PER_DAY or (b["day_count"] < DAY_NEWS_PER_DAY and gap_ok)))
     lst = "\n".join(f'{i}. {it["source"]} | {it["title"]} — {it["desc"][:600]} | {it["link"]}' for i, it in enumerate(items[:80]))
     try:
-        data = _json(ask_ai(NEWS_NOW + ("\nДЛЯ ОБРАЗЦА: обязательно выбери самую важную новость, send=true." if force else ""),
-                            lst + "\n\nУже отправленные сегодня (не повторять): " + "; ".join(b["titles"])
-                            + "\n\nУЖЕ В ЛЕНТЕ за сутки: " + "; ".join(r[1] for r in state.get("feed_recent", []))))
+        data = _ask_json(ask_ai, NEWS_NOW + ("\nДЛЯ ОБРАЗЦА: обязательно выбери самую важную новость, send=true." if force else ""),
+                         lst + "\n\nУже отправленные сегодня (не повторять): " + "; ".join(b["titles"])
+                         + "\n\nУЖЕ В ЛЕНТЕ за сутки: " + "; ".join(r[1] for r in state.get("feed_recent", [])))
     except Exception as e:
         print("Новости дня: разбор не удался:", e, file=sys.stderr)
+        ai_status(state, now, force, e, fallback_feed(items, now, state, force))
         return None
+    if state.pop("ai_fail", None):
+        ai_status(state, now, force)
     push_feed(data.get("feed") or [], items, now, force, state)
     if not can_send:
         return None

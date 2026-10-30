@@ -160,7 +160,7 @@ def evc_data(events, results, now, msk, ask):
         f"{i + 1}. {it['tm']} {it['fl']} {it['t']}: " + ", ".join(f"{k} {v}" for k, v in it["nums"]) + f" — {it['vt'] or 'без прогноза'}"
         for i, it in enumerate(items)) + "\n\nЗАВТРА И ДАЛЕЕ:\n" + ("\n".join(f"{when(e)} {e['title']}" for e in later) or "—")
     try:
-        ai = edition._json(ask(prompts.PRO_DAY, user))
+        ai = edition._ask_json(ask, prompts.PRO_DAY, user)
         for a in ai.get("items") or []:
             i = int(a.get("n") or 0) - 1
             if 0 <= i < len(items):
