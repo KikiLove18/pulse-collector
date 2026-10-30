@@ -145,6 +145,9 @@ def wiki_extracts(claims):
     return [(c, *(found.get(names[c]) or more.get(hits.get(c)) or (None, ""))) for c in claims]
 
 
+NOT_THEM = re.compile(r"друго(го|й) человек|не о том|не про того|однофамил|тёзк", re.I)
+
+
 def parse(text):
     m = re.search(r"\{.*\}", text, re.S)
     return json.loads(m.group(0)) if m else None
@@ -176,7 +179,8 @@ def run(now, models, send, test=False, ask=None):
     except Exception as e:
         send(f"⚠️ <b>Сверка должностей{tag}</b> не прошла: {html.escape(str(e))[:300]}\nПовторить: mode=roles_check")
         return None
-    wrong = res.get("wrong") or []
+    # статья нашлась про тёзку («Говард Маркс» → Деннис Ховард Маркс) — это не ошибка должности, хоть ИИ и записал её в расхождения
+    wrong = [w for w in res.get("wrong") or [] if not NOT_THEM.search(str(w.get("fact", "")))]
     print(json.dumps(res, ensure_ascii=False, indent=1), file=sys.stderr)
     if not wrong:
         send(f"✅ <b>Сверка должностей{tag}</b> {today}: {len(claims)} строк, расхождений нет ({how}).")
