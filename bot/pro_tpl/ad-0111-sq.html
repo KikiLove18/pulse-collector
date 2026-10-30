@@ -397,5 +397,25 @@ function opt(id,n,mark,name,items){return S('sun',id,V,`
 out.push(opt('sunp3',3,'▲','Рост<br>больше 1%',['Итоги выборов совпали с ожиданиями — неопределённость ушла','Рынок труда без сюрпризов: ни перегрева, ни резкого спада']));
 out.push(opt('sunp4',4,'●','В пределах<br>±1%',['Исход выборов давно в ценах: на Палату рынки ставят ≈91%','Инвесторы ждут декабрьского решения ФРС']));
 out.push(opt('sunp5',5,'▼','Падение<br>больше 1%',['Сюрприз на выборах или спор об итогах','Слабый или слишком сильный рынок труда — новые вопросы к ставке ФРС']));
+
+/* ---------- ВС 01.11 · заметка владельца 30.10: одна карточка-вопрос о событии + одна карточка выбора гайда ---------- */
+out.push(S('sun','sunq1',V,`
+ <div class="k">Опрос недели · голосуйте под постом</div>
+ <h1 style="top:186px">Как S&amp;P 500 закончит<br>неделю выборов?</h1>
+ <div class="gc" style="position:absolute;left:60px;top:330px;width:960px;height:400px"><img src="img/ad-capitol.jpg" style="width:100%;height:100%;object-fit:cover;object-position:0 60%"></div>
+ <div class="lst" style="top:750px">
+  <div class="li" style="font-size:31px"><em style="width:120px">03.11</em><div><b>Выборы в Конгресс США</b></div></div>
+  <div class="li" style="font-size:31px"><em style="width:120px">06.11</em><div><b>Рынок труда США (NFP)</b> — 16:30 МСК</div></div>
+ </div>`,VS,1,1,'Фото: Architect of the Capitol (PD)'));
+const GR=(c,t,d_)=>`<div class="row" style="padding:14px 0"><div class="gc" style="width:290px;height:163px;flex:none"><img src="img/guide-${c}.jpg" style="width:100%;height:100%;object-fit:cover"></div><div><b style="font-size:33px">${t}</b><span style="font-size:25px;line-height:1.3;display:block;margin-top:8px">${d_}</span></div></div>`;
+out.push(S('sun','sung1',V,`
+ <div class="k">Гайд недели · голосуйте под постом</div>
+ <h1 style="top:186px">Какой гайд выпустить<br>во вторник, 3 ноября?</h1>
+ <div style="position:absolute;left:60px;right:60px;top:330px">
+  ${GR('nfp','Рынок труда США (NFP)','Рабочие места и безработица: как читать отчёт. Следующий — 6 ноября')}
+  ${GR('cpi','Инфляция США (CPI)','Как разобрать цифру за 30 секунд. Следующий отчёт — 10 ноября')}
+  ${GR('btc','Биткоин и крипторынок','Как устроен рынок, почему слушает ФРС, что разрешено в России')}
+ </div>`,'Голосование — под постом · решает большинство',1,1,'Гайды — Пульс рынка'));
+out.push('<style>#sunq1 .cnt,#sung1 .cnt{display:none}</style>');
 document.write(out.join(''));
 </script></body></html>
