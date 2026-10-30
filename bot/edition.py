@@ -488,7 +488,7 @@ def fallback_feed(items, now, state, dry):
     feed, names, per = [], set(), {}
     for i in sorted(range(len(items)), key=lambda i: -items[i]["time"].timestamp()):
         it = items[i]
-        title, desc = it["title"].strip(), re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", it.get("desc") or "")).strip()
+        title, desc = it["title"].strip(), re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", it.get("desc") or "").replace("<", " ").replace(">", " ")).strip()
         if (source_rank(it) != 0 or not re.search("[а-яё]", title, re.I) or not FALLBACK_RE.search(title) or FALLBACK_NO.search(title)
                 or FALLBACK_GAZA.search(title) or seen_before(title, recent) or per.get(it["source"], 0) >= FALLBACK_PER_SOURCE):
             continue
