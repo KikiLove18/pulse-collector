@@ -529,7 +529,7 @@ def ask_openrouter(system, user):
             last_err = "пустой ответ"
             print(f"OpenRouter {model}: ошибка {last_err}", file=sys.stderr)
         except urllib.error.HTTPError as e:
-            raw = e.read().decode("utf-8", "replace")
+            raw = re.sub(r'"user_id":"[^"]*"', '"user_id":"…"', e.read().decode("utf-8", "replace"))  # журнал этого репозитория виден всем
             last_err = f"{e.code} {raw[:300]!r}"
             print(f"OpenRouter {model}: ошибка {last_err}", file=sys.stderr)
             if not (e.code == 429 and _day_quota_over(model, raw)):
@@ -578,6 +578,8 @@ def run_gemini_probe():
     """Какие модели Gemini отвечают на нашем ключе (только журнал; ключ — в заголовке, в журнал не попадает)."""
     key = os.environ["GEMINI_API_KEY"]
     body = json.dumps({"contents": [{"role": "user", "parts": [{"text": 'Ответь JSON: {"ok": true}'}]}]}).encode()
+    names = _fetch_json(urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200", headers={"x-goog-api-key": key}), 60)
+    print("Доступны:", " ".join(sorted(m["name"].split("/")[-1] for m in names.get("models", []) if "generateContent" in m.get("supportedGenerationMethods", []))))
     for model in (os.environ.get("PROBE_MODELS") or GEMINI_LITE + ",gemini-2.5-flash-lite").split(","):
         req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent", data=body,
                                      headers={"Content-Type": "application/json", "x-goog-api-key": key})

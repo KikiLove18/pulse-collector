@@ -440,7 +440,7 @@ def push_feed(feed, items, now, dry, state=None):
 # Весь ИИ лёг (29.10 Лента стояла 119 мин): заголовок и первая фраза русских СМИ как есть — только про рынки и экономику,
 # важность 1 (в чат не идёт), Telegram и X не берём: их без проверки ИИ в Ленту не пускаем.
 FALLBACK_PER_RUN = 4
-FALLBACK_RE = re.compile(r"\b(?:ставк|рубл|доллар|евро\b|юан|нефт|газ\b|газа\b|бирж|мосбирж|акци[йияею]|облигац|офз|инфляц|ц[её]н[ыаеу]\b|"
+FALLBACK_RE = re.compile(r"\b(?:brent|urals|индекс|рын(?:ок|к)|торг[иао]|ставк|рубл|доллар|евро\b|юан|нефт|газ\b|газа\b|бирж|мосбирж|акци[йияею]|облигац|офз|инфляц|ц[её]н[ыаеу]\b|"
                          r"цб\b|банк|ввп|бюджет|налог|пошлин|санкц|золот|биткоин|криптовал|экспорт|импорт|дивиденд|прибыл|выручк|"
                          r"минфин|экономик|сбер|газпром|лукойл|роснефт|новатэк|яндекс|опек)", re.I)
 
@@ -452,7 +452,7 @@ def fallback_feed(items, now, state, dry):
     for i in order:
         it = items[i]
         title, desc = it["title"].strip(), re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", it.get("desc") or "")).strip()
-        if source_rank(it) > 1 or not re.search("[а-яё]", title, re.I) or not FALLBACK_RE.search(title + " " + desc) or seen_before(title, recent):
+        if source_rank(it) > 1 or not re.search("[а-яё]", title, re.I) or not FALLBACK_RE.search(title) or seen_before(title, recent):
             continue
         first = re.match(r".{40,300}?[.!?…](?=\s|$)", desc)
         if not first:
