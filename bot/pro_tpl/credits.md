@@ -2,13 +2,13 @@
 | Файл | Где | Автор | Лицензия | Страница |
 |---|---|---|---|---|
 | img/fed.jpg | Пн | Federal Reserve | Public domain | https://commons.wikimedia.org/wiki/File:Eccles_Building_(26088200676).jpg |
-| img/cbr.jpg | Сб, Событие, Расписание | Kuba | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Банк_России_2009.JPG |
-| img/mcity.jpg | Приветствие | Gennady Grachev | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Moscow-City_at_night,_2016_(31439192671).jpg |
+| img/cbr.jpg | Сб, Событие, Расписание | Kuba | CC BY 3.0, обр. | https://commons.wikimedia.org/wiki/File:Банк_России_2009.JPG |
+| img/mcity.jpg | Приветствие | Gennady Grachev | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Moscow-City_at_night,_2016_(31439192671).jpg |
 | img/nysesign.jpg | Приветствие | Billie Grace Ward | CC0 | https://commons.wikimedia.org/wiki/File:Sign_of_the_New_York_Stock_Exchange,_Broad_Street.jpg |
 | img/btc_cut.png | Приветствие | Bits86 | CC0 | https://commons.wikimedia.org/wiki/File:2014_Pure_Gold_Physical_Bitcoin_China_Mint.jpg |
 | img/gold.jpg | Приветствие | Szaaman | Public domain | https://commons.wikimedia.org/wiki/File:Gold_bullion_1.jpg |
 | img/warsh.png | Чт, Расписание | Federal Reserve | Public domain | из приложения (`PEOPLE_CREDITS`) |
-| img/nabiullina.png | Чт | Ekaterina Shtukina / Kremlin.ru | CC BY 4.0 | из приложения (`PEOPLE_CREDITS`) |
+| img/nabiullina.png | Чт | Ekaterina Shtukina / Kremlin.ru | CC BY 4.0, обр. | из приложения (`PEOPLE_CREDITS`) |
 Свои векторы (без лицензий): чек (Ср), слитки (Пт), схема (Вт), иконки (Вс). Шрифты: Inter, Onest, Playfair Display, Prata, Unbounded, JetBrains Mono — OFL.
 
 ## Откуда цифры образцов (на 23.10.2026)
@@ -17,11 +17,11 @@
 ## Карусели v6 Арт-директора (ad-карусели.html, out-v6-ad/, доска-v6-ad.jpg), 26.10 — неделя 02–08.11
 | Файл | Где | Автор | Лицензия | Страница |
 |---|---|---|---|---|
-| img/ad-pump.jpg | Пт 1 | Quintin Soloviev | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Oil_pumpjack_in_the_Permian_Basin.jpg |
+| img/ad-pump.jpg | Пт 1 | Quintin Soloviev | CC BY 4.0, обр. | https://commons.wikimedia.org/wiki/File:Oil_pumpjack_in_the_Permian_Basin.jpg |
 | img/ad-hormuz.jpg | Пт 2 | MODIS Land Rapid Response Team, NASA GSFC | Public domain | https://commons.wikimedia.org/wiki/File:Strait_of_Hormuz_and_Musandam_Peninsula_(MODIS_2018-12-10).jpg |
 | img/ad-opec.jpg | Пт 3 | Gary Todd | CC0 | https://commons.wikimedia.org/wiki/File:Vienna_OPEC_Headquarters_(9812748993).jpg |
 | img/ad-capitol.jpg | Сб 1 | USCapitol | Public domain | https://commons.wikimedia.org/wiki/File:Flickr_-_USCapitol_-_Capitol_Dome_(1).jpg |
-| img/ad-birzha.jpg | Сб 2 | Sergey Norin | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Moscow,_Birzhevaya_Square_and_Ilyinka_Street.jpg |
+| img/ad-birzha.jpg | Сб 2 | Sergey Norin | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Moscow,_Birzhevaya_Square_and_Ilyinka_Street.jpg |
 | img/ad-boe.jpg | Ср 6 | Michael | Public domain | https://commons.wikimedia.org/wiki/File:Bank_of_England_Facade.jpg |
 | img/ad-g-ofz.png, ad-g-cpi.png, ad-g-btc.png | Вс | Пульс рынка | свои | первые страницы готовых гайдов (`мой-продукт/PRO канал в тг/*.pdf`) |
 Из общих: fed.jpg (Ср 1), warsh.png (Ср 2), nysesign.jpg (Сб 3) — строки выше.
@@ -34,18 +34,18 @@
 | img/d6-capitol.jpg | Пн 1, Пн 3 (выборы), События 4 | Architect of the Capitol | Public domain | https://commons.wikimedia.org/wiki/File:United_States_Capitol_west_front_edit2.jpg |
 | img/d6-opec.jpg | Пн 1 (ОПЕК+) | Gary Todd | CC0 | https://commons.wikimedia.org/wiki/File:Vienna_OPEC_Headquarters_(9812748993).jpg |
 | img/d6-apple.jpg | Пн 2 (отчёт Apple) | Nils Huenerfuerst | CC0 | https://commons.wikimedia.org/wiki/File:Apple_Park_aerial_view,_June_2024.jpg |
-| img/d6-boe.jpg | Пн 5 (Банк Англии) | Mark Hillary | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Bank_of_England_building_at_night_2009-01-29.jpg |
+| img/d6-boe.jpg | Пн 5 (Банк Англии) | Mark Hillary | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Bank_of_England_building_at_night_2009-01-29.jpg |
 | img/amzn.jpg | События 5 (потребители) | Andy Li | CC0 | https://commons.wikimedia.org/wiki/File:Amazon_Spheres_2018.jpg (совпадение проверено по картинке) |
 Остальные в v6: nysesign (Пн 1, Пн 6, События), mcity (Пн 4), cbr (Вт, События), fed, warsh, nabiullina (Чт) — см. таблицу выше.
 **Не использовать без проверки:** img/ecb.jpg, boj.jpg, opec.jpg, oil.jpg, msft.jpg, coinbase.jpg, btclap.jpg, capitol.jpg — источник и лицензия не найдены (поиск по Commons не дал совпадения), в v6 Дизайнера убраны.
 - bot/bg/*.jpg — фоны тем для evc без фото (Wikimedia, только PD/CC0, список — bot/bg/SOURCES.txt).
-| img/ev-ifo-duisburg.jpg | #СОБЫТИЯ Ifo | Rob Dammers | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Duisburg_ThyssenKrupp_Loc_867_werkverkeer_(28112634170).jpg |
-| img/ev-verizon.jpg | #СОБЫТИЯ Verizon | Harrison Keely | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:A_modern_Verizon_retail_store_in_Burlington,_Vermont.jpg |
-| img/ev-texas-refinery.jpg | #СОБЫТИЯ ФРБ Далласа | Larry D. Moore | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Valero_Three_Rivers_Refinery_Texas_2020.jpg |
-| img/ev-msft-b92.jpg | #СОБЫТИЯ 28.10 | Jiaqian AirplaneFan | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg |
+| img/ev-ifo-duisburg.jpg | #СОБЫТИЯ Ifo | Rob Dammers | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Duisburg_ThyssenKrupp_Loc_867_werkverkeer_(28112634170).jpg |
+| img/ev-verizon.jpg | #СОБЫТИЯ Verizon | Harrison Keely | CC BY 4.0, обр. | https://commons.wikimedia.org/wiki/File:A_modern_Verizon_retail_store_in_Burlington,_Vermont.jpg |
+| img/ev-texas-refinery.jpg | #СОБЫТИЯ ФРБ Далласа | Larry D. Moore | CC BY 4.0, обр. | https://commons.wikimedia.org/wiki/File:Valero_Three_Rivers_Refinery_Texas_2020.jpg |
+| img/ev-msft-b92.jpg | #СОБЫТИЯ 28.10 | Jiaqian AirplaneFan | CC BY 3.0, обр. | https://commons.wikimedia.org/wiki/File:Building_92_of_Microsoft_Redmond_Campus_-_panoramio.jpg |
 | img/ev-googleplex.jpg | #СОБЫТИЯ 28.10 | Erik Möller | Public domain | https://commons.wikimedia.org/wiki/File:Googleplex-SignIn.jpg |
 | img/fed1937.jpg | #СОБЫТИЕ ФРС 29.10 (big1) | Federal Reserve, 1937 | Public domain | https://commons.wikimedia.org/wiki/File:US_Federal_Reserve_Eccles_Building_1937.jpg |
-| img/ev-ecb-ffm.jpg | #СОБЫТИЯ 29.10 ЕЦБ | acediscovery | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:European_Central_Bank_building,_Frankfurt.jpg |
+| img/ev-ecb-ffm.jpg | #СОБЫТИЯ 29.10 ЕЦБ | acediscovery | CC BY 4.0, обр. | https://commons.wikimedia.org/wiki/File:European_Central_Bank_building,_Frankfurt.jpg |
 | img/ev-lbport.jpg | #СОБЫТИЯ 29.10 ВВП США | Charles Csavossy | PD | https://commons.wikimedia.org/wiki/File:Port_of_Long_Beach,_California_-4.jpg |
-| img/ev-shop.jpg | #СОБЫТИЯ 29.10 PCE | Shixart1985 | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Woman_shopping_in_a_store_aisle_with_a_shopping_cart.jpg |
+| img/ev-shop.jpg | #СОБЫТИЯ 29.10 PCE | Shixart1985 | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Woman_shopping_in_a_store_aisle_with_a_shopping_cart.jpg |
 | img/gold.jpg, fed.jpg, fed1937.jpg | Пт 30.10 #АКТИВ золото (frg1–3) | см. строки выше | PD | — |

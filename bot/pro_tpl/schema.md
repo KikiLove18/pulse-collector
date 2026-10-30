@@ -35,14 +35,14 @@
 | Тема | `img` | © для `ph` |
 |---|---|---|
 | ФРС, ставка США, Уорш | `img/fed.jpg` | Federal Reserve, PD |
-| Банк России, ставка, Минфин/ОФЗ | `img/cbr.jpg` | Kuba, CC BY 3.0 |
+| Банк России, ставка, Минфин/ОФЗ | `img/cbr.jpg` | Kuba, CC BY 3.0, обр. |
 | PMI/ISM, деловая активность, ВВП, NFP, занятость США, биржа | `img/nysesign.jpg` | Billie Grace Ward, CC0 |
 | Услуги США, бюджет, Конгресс, выборы | `img/d6-capitol.jpg` | Architect of the Capitol, PD |
 | Потребители, розница, настроения | `img/amzn.jpg` | Andy Li, CC0 |
 | Нефть, ОПЕК+, запасы | `img/d6-opec.jpg` | Gary Todd, CC0 |
-| Банк Англии | `img/d6-boe.jpg` | Mark Hillary, CC BY 2.0 |
+| Банк Англии | `img/d6-boe.jpg` | Mark Hillary, CC BY 2.0, обр. |
 | Отчёты бигтеха (Apple и др.) | `img/d6-apple.jpg` | Nils Huenerfuerst, CC0 |
-| Россия: Мосбиржа, Росстат, инфляция РФ | `img/mcity.jpg` | Gennady Grachev, CC BY 2.0 |
+| Россия: Мосбиржа, Росстат, инфляция РФ | `img/mcity.jpg` | Gennady Grachev, CC BY 2.0, обр. |
 | Золото, металлы | `img/gold.jpg` | Szaaman, PD |
 | Крипта | `img/btc_cut.png` | Bits86, CC0 |
 В `ph` — авторы всех фото карусели через « · » (+ «(Wikimedia Commons)»). Одно фото — не больше 2 раз за карусель.
