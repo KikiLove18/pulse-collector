@@ -376,8 +376,9 @@ GEMINI_MODELS = "gemini-3.5-flash,gemini-3.8-flash,gemini-flash-latest,gemini-fl
 # Бесплатно «большие» модели дают ~5–10 ответов в сутки каждая — берём их только для выжимок (AI_TIER["big"]),
 # всё остальное (новость сейчас, лента, события, итоги) — на lite: у неё 38–55 ответов в сутки, дневной лимит не кончался.
 # 30.10: одна lite-модель — 503 Gemini сразу уводил на бесплатный OpenRouter, а тот молчал (Лента стояла 119 мин). Запасные — не из очереди
-# выжимок, их квоту не тратят; проверка на нашем ключе — mode=gemini_probe.
-GEMINI_LITE = "gemini-flash-lite-latest,gemini-3.5-flash-lite,gemini-3.1-flash-lite"
+# выжимок, их квоту не тратят. Проверено на нашем ключе 30.10 (mode=gemini_probe): latest — это 3.5-flash-lite (1 с), 3.1-flash-lite 7 с,
+# 3.6-flash 9 с; 3.7-flash на деле отвечает 3.8 (квота выжимок), gemma-4 — 500 и молчание, 2.5-flash-lite — 404.
+GEMINI_LITE = "gemini-flash-lite-latest,gemini-3.1-flash-lite,gemini-3.6-flash"
 AI_TIER = {"big": False}
 
 
