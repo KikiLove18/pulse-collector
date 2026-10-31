@@ -59,7 +59,7 @@
   ],
   "last_digest_ts": "2026-10-31T04:30:57.710108+00:00",
   "calendar": {
-    "ts": "2026-10-31T10:00:56.170162+00:00",
+    "ts": "2026-10-31T16:00:57.017319+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -928,7 +928,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T15:30:56.830778+00:00",
+  "breaking_ts": "2026-10-31T16:00:57.011465+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 5,
@@ -943,88 +943,55 @@
     ]
   },
   "news_seen": [
+    "https://www.coindesk.com/business/2026/10/31/traders-are-already-placing-leveraged-bets-on-anthropic-s-ipo-using-crypto-contracts",
+    "https://t.me/thebell_io/39708",
+    "https://www.rbc.ru/rbcfreenews/69a254129a794734fb379efc",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274927",
+    "https://www.rbc.ru/sport/27/10/2026/6ae0c8aa9a7947564c55b575",
+    "https://tass.ru/sport/28274925",
+    "https://tass.ru/obschestvo/28274923",
+    "https://t.me/lookonchainchannel/10860",
+    "https://t.me/invest_zonaa/39227",
+    "https://tass.ru/sport/28274921",
+    "https://www.vedomosti.ru/investments/news/2026/10/31/1241771-v-binance-o-vozmeschenii",
+    "https://tass.ru/proisshestviya/28274917",
+    "https://tass.ru/sport/28274919",
+    "https://tass.ru/ekonomika/28274915",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274913",
+    "https://tass.ru/proisshestviya/28274909",
+    "https://www.kommersant.ru/doc/9078326",
+    "https://tass.ru/sport/28274911",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274907",
+    "https://tass.ru/sport/28274905",
+    "https://tass.ru/obschestvo/28274897",
+    "https://t.me/banksta/104559",
+    "https://tass.ru/sport/28274903",
+    "https://thedefiant.io/news/security/origami-says-dns-is-restored-but-vaults-remain-paused",
+    "https://www.rbc.ru/sport/23/10/2026/6adb9cd54b08ca717c702087",
+    "https://tass.ru/obschestvo/28274901",
+    "https://www.kommersant.ru/doc/9078319",
+    "https://cointelegraph.com/news/binance-hack-90-percent-replenished?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241769-armiya-unichtozhila-sudno",
+    "https://t.me/rbc_news/159798",
+    "https://t.me/banksta/104556",
+    "https://tass.ru/sport/28274895",
+    "https://t.me/markettwits/391432",
+    "https://www.kommersant.ru/doc/9078324",
+    "https://tass.ru/sport/28274893",
+    "https://tass.ru/sport/28274891",
+    "https://cryptoslate.com/saylor-calls-new-bitcoin-bull-market-but-strategys-own-numbers-reveal-a-costly-problem/",
+    "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
     "https://www.rbc.ru/politics/31/10/2026/6ae607a387a8dbd418dd5029",
     "https://t.me/WatcherGuru/15738",
     "https://cointelegraph.com/markets/bitcoin-binance-hack-strive-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "https://www.theblock.co/news/defi/2026-10-31-hackers-hijack-a-dozen-defi-websites-all-registered-with-name-com-and-steal-about-138000-432251",
-    "https://www.kommersant.ru/doc/9078317",
-    "https://tass.ru/obschestvo/28274865",
-    "https://www.kommersant.ru/doc/9078322",
-    "https://t.me/thebell_io/39707",
-    "https://www.vedomosti.ru/society/news/2026/10/31/1241770-fsb-poluchila-dannie",
-    "https://www.marketwatch.com/story/what-gave-this-city-its-best-place-to-retire-crown-you-can-actually-afford-to-live-there-a06f8f4d?mod=mw_rss_topstories",
-    "https://www.rbc.ru/society/21/10/2026/6ad7c9630bc765ab064d26eb",
-    "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241768-est-shans-izbezhat",
-    "https://t.me/FinancialJuice/144190",
-    "https://www.rbc.ru/technology_and_media/26/10/2026/6adf605e0a3fcb2de56077be",
-    "https://www.kommersant.ru/doc/9078315",
-    "https://t.me/bitkogan_hotline/28072",
-    "https://tass.ru/proisshestviya/28274879",
-    "https://tass.ru/ekonomika/28274877",
-    "https://t.me/headlines_for_traders/87820",
-    "https://t.me/rbc_news/159797",
-    "https://www.kommersant.ru/doc/9078320",
-    "https://www.rbc.ru/rbcfreenews/6ad633281fc25c86d6c6a7fb",
-    "https://www.interfax.ru/russia/1126318",
-    "https://www.rbc.ru/politics/31/10/2026/6ae60517c06d23f7a6885f16",
-    "https://tass.ru/obschestvo/28274873",
-    "https://www.interfax.ru/russia/1126319",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241767-protesti-germanii",
-    "https://www.rbc.ru/finances/30/10/2026/6ae4879118a3b9290e38441d",
-    "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://t.me/interfaxonline/80995",
-    "https://www.rbc.ru/technology_and_media/20/10/2026/6ad77fba8598b41cf2d77f6e",
-    "https://www.interfax.ru/russia/1126317",
-    "https://www.kommersant.ru/doc/9078318",
-    "https://tass.ru/obschestvo/28274871",
-    "https://t.me/wublockchainenglish/26634",
-    "https://t.me/WalterBloomberg/37704",
-    "https://t.me/markettwits/391431",
-    "https://tass.ru/proisshestviya/28274869",
-    "https://t.me/interfaxonline/80994",
-    "https://www.rbc.ru/sport/13/10/2026/6acdfc3147a2db756903a5d0",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274867",
-    "https://t.me/banksta/104555",
-    "https://tass.ru/ekonomika/28274861",
-    "https://decrypt.co/382306/binance-hack-everything-you-need-to-know",
-    "https://www.interfax.ru/world/1126316",
-    "https://www.investing.com/news/stock-market-news/binance-says-90-of-stolen-assets-replenished-4989287",
-    "https://t.me/interfaxonline/80993",
-    "https://tass.ru/sport/28274863",
-    "https://www.coindesk.com/business/2026/10/26/institutions-embrace-crypto-staking-despite-shrinking-yields",
-    "https://www.marketwatch.com/story/theres-a-lot-of-hurt-between-us-my-fathers-caregiver-is-using-his-debit-card-for-doordash-orders-what-can-i-do-714de7a5?mod=mw_rss_topstories",
-    "https://oilprice.com/Energy/Energy-General/Senegals-Ambitious-Plan-to-Slash-Electricity-Costs-and-Boost-Energy-Security.html",
-    "https://t.me/whale_alert_io/104413",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274859",
-    "https://t.me/FinancialJuice/144189",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241766-tramp-otsenil-vozmozhnost"
+    "https://www.kommersant.ru/doc/9078317"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T17:30:58.175296+00:00",
-      "Ford планирует увеличить продажи на 20% до 5 млн машин к 2032 году"
-    ],
-    [
-      "2026-10-30T17:30:58.175296+00:00",
-      "Операторы и банки отложили введение маркировки звонков до 13 ноября"
-    ],
-    [
-      "2026-10-30T18:00:59.528125+00:00",
-      "Цены на золото впервые за год упали ниже $3900 за унцию"
-    ],
-    [
-      "2026-10-30T18:00:59.528125+00:00",
-      "Чистая прибыль ВТБ за девять месяцев составила более 407 млрд рублей"
-    ],
-    [
-      "2026-10-30T18:00:59.528125+00:00",
-      "Мосбиржа запретит шортить акции МГКЛ с 3 ноября"
-    ],
     [
       "2026-10-30T18:00:59.528125+00:00",
       "Hyperliquid зафиксировала $105 млн выручки в сентябре"
@@ -1624,6 +1591,26 @@
     [
       "2026-10-31T15:30:56.830778+00:00",
       "В Германии начались протесты молодежи с требованием отставки Мерца"
+    ],
+    [
+      "2026-10-31T16:00:57.011465+00:00",
+      "Binance заявила о возмещении 90% убытков после хакерской атаки"
+    ],
+    [
+      "2026-10-31T16:00:57.011465+00:00",
+      "Досрочное голосование на выборах в Конгресс США превысило 2022 год"
+    ],
+    [
+      "2026-10-31T16:00:57.011465+00:00",
+      "Мерц заявил о росте расходов Европы на 100 млрд евро из-за иранского конфликта"
+    ],
+    [
+      "2026-10-31T16:00:57.011465+00:00",
+      "Хакеры взломали дюжину сайтов DeFi через регистратора Name.com"
+    ],
+    [
+      "2026-10-31T16:00:57.011465+00:00",
+      "Strategy отчиталась о рекордной операционной прибыли в $20,9 млрд"
     ]
   ],
   "results_fp": [
