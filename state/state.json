@@ -928,7 +928,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T12:00:55.142733+00:00",
+  "breaking_ts": "2026-10-31T12:30:56.097360+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 3,
@@ -941,64 +941,52 @@
     ]
   },
   "news_seen": [
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241756-15-ukrainskih-bpla",
+    "https://tass.ru/sport/28274587",
+    "https://t.me/markettwits/391427",
+    "https://www.rbc.ru/sport/16/07/2024/669696a99a794723f1bd8791",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274589",
+    "https://t.me/FinancialJuice/144173",
+    "https://t.me/cryptokogan/6912",
+    "https://t.me/FinancialJuice/144172",
+    "https://t.me/rbc_news/159789",
+    "https://www.rbc.ru/politics/28/10/2026/6ae24d3adc2871f6a40c96b2",
+    "https://tass.ru/proisshestviya/28274585",
+    "https://www.rbc.ru/rbcfreenews/6adb144e7d2ec2ecc42e5855",
+    "https://www.kommersant.ru/doc/9078268",
+    "https://tass.ru/ekonomika/28274581",
+    "https://t.me/headlines_for_traders/87812",
+    "https://tass.ru/proisshestviya/28274579",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241754-lider-irana-prizval",
+    "https://www.vedomosti.ru/society/news/2026/10/31/1241755-v-moskve-zamorozki",
+    "https://tass.ru/sport/28274577",
+    "https://tass.ru/obschestvo/28274575",
+    "https://tass.ru/kosmos/28274559",
+    "https://t.me/bitkogan/29503",
+    "https://www.kommersant.ru/doc/9078264",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274553",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241751-zapretili-vezd-v-latviyu",
+    "https://t.me/headlines_for_traders/87811",
+    "https://t.me/BitcoinMagazineTelegram/10960",
+    "https://t.me/banksta/104546",
+    "https://www.rbc.ru/politics/31/10/2026/6ae598236a157d88ed19aa9a",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274565",
+    "https://tass.ru/sport/28274547",
+    "https://tass.ru/politika/28274561",
+    "https://tass.ru/obschestvo/28274551",
+    "https://tass.ru/obschestvo/28274557",
+    "https://tass.ru/obschestvo/28271755",
     "https://www.coindesk.com/business/2026/10/31/the-usd6-3-billion-binance-hack-paradox-centralization-made-the-hack-possible-but-also-saved-usd3-billion",
     "https://www.marketwatch.com/story/these-10-megadonors-have-spent-a-total-of-1-billion-on-the-midterm-elections-0dc279cf?mod=mw_rss_topstories",
     "https://tass.ru/obschestvo/28274535",
     "https://tass.ru/mezhdunarodnaya-panorama/28274545",
-    "https://www.rbc.ru/sport/14/10/2026/6acfadfb9a7947db2c8eea5d",
-    "https://www.vedomosti.ru/society/news/2026/10/31/1241753-pristavi-vziskali",
-    "https://www.kommersant.ru/doc/9078267",
-    "https://tass.ru/sammit-rossiya-afrika/28274527",
-    "https://www.rbc.ru/politics/10/06/2026/6a2900489a794757300981e6",
-    "https://tass.ru/ekonomika/28274539",
-    "https://tass.ru/obschestvo/28274525",
-    "https://tass.ru/politika/28274533",
-    "https://www.interfax.ru/moscow/1126302",
-    "https://t.me/rbc_news/159788",
-    "https://www.kommersant.ru/doc/9078262",
-    "https://tass.ru/proisshestviya/28274531",
-    "https://www.kommersant.ru/doc/9078266",
-    "https://tass.ru/sport/28274529",
-    "https://thedefiant.io/news/hacks/chainalysis-flags-defi-receipt-token-route-in-binance-hack",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274523",
-    "https://www.kommersant.ru/doc/9078263",
-    "https://tass.ru/obschestvo/28274519",
-    "https://tass.ru/sport/28274517",
-    "https://t.me/smartlabnews/18008",
-    "https://www.interfax.ru/world/1126301",
-    "https://tass.ru/obschestvo/28274513",
-    "https://t.me/rbc_news/159787",
-    "https://tass.ru/politika/28274259",
-    "https://tass.ru/obschestvo/28274515",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274511",
-    "https://www.kommersant.ru/doc/9078261",
-    "https://www.rbc.ru/rbcfreenews/6ae4e2ea266146f5b7326c5a"
+    "https://www.rbc.ru/sport/14/10/2026/6acfadfb9a7947db2c8eea5d"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T14:01:00.728780+00:00",
-      "Акции Intel рухнули почти на 30% из-за слабого прогноза"
-    ],
-    [
-      "2026-10-30T14:01:00.728780+00:00",
-      "Спотовое золото упало ниже $4000 на фоне бегства из рисковых активов"
-    ],
-    [
-      "2026-10-30T14:01:00.728780+00:00",
-      "Песков: удары по НПЗ не ставят под сомнение подготовку переговоров"
-    ],
-    [
-      "2026-10-30T14:01:00.728780+00:00",
-      "Экономика еврозоны замедлилась на фоне бюджетных проблем Франции"
-    ],
-    [
-      "2026-10-30T14:31:03.675232+00:00",
-      "Европейский газ превысил €100 за МВт·ч впервые с 2022 года"
-    ],
     [
       "2026-10-30T14:31:03.675232+00:00",
       "Акции техкомпаний США обвалились на фоне отчетов Intel и Amazon"
@@ -1598,6 +1586,30 @@
     [
       "2026-10-31T12:00:55.142733+00:00",
       "Axios: Трамп может начать операцию против Ирана при поражении в конгрессе"
+    ],
+    [
+      "2026-10-31T12:30:56.097360+00:00",
+      "Франция одобрила налог на интернет-трафик для крупных бигтехов"
+    ],
+    [
+      "2026-10-31T12:30:56.097360+00:00",
+      "Досрочная явка на выборах в Конгресс США превысила показатели 2022 года"
+    ],
+    [
+      "2026-10-31T12:30:56.097360+00:00",
+      "Силы ПВО уничтожили 15 беспилотников на подлете к Москве"
+    ],
+    [
+      "2026-10-31T12:30:56.097360+00:00",
+      "NASDAQ 100 скорректировался на 10,4% от исторического максимума"
+    ],
+    [
+      "2026-10-31T12:30:56.097360+00:00",
+      "Владимир Зеленский прибыл в Стамбул на переговоры с Реджепом Эрдоганом"
+    ],
+    [
+      "2026-10-31T12:30:56.097360+00:00",
+      "Минэкономразвития РФ отметило рост поставок в Таиланд на 37%"
     ]
   ],
   "results_fp": [
