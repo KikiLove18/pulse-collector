@@ -928,7 +928,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T06:00:55.593459+00:00",
+  "breaking_ts": "2026-10-31T06:30:56.755244+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 1,
@@ -939,68 +939,56 @@
     ]
   },
   "news_seen": [
+    "https://t.me/banksta/104532",
+    "https://tass.ru/proisshestviya/28274107",
+    "https://tass.ru/sport/28274099",
+    "https://tass.ru/politika/28274105",
+    "https://t.me/interfaxonline/80983",
+    "https://tass.ru/sport/28274109",
+    "https://tass.ru/proisshestviya/28274075",
+    "https://www.interfax.ru/world/1126269",
+    "https://tass.ru/nedvizhimost/28274103",
+    "https://tass.ru/obschestvo/28274073",
+    "https://tass.ru/armiya-i-opk/28274101",
+    "https://t.me/headlines_for_traders/87805",
+    "https://www.rbc.ru/politics/31/10/2026/6ae530a792b809aef4d94c95",
+    "https://t.me/rbc_news/159773",
+    "https://tass.ru/ekonomika/28273333",
+    "https://www.rbc.ru/rbcfreenews/6ae1bd99180efc817562b9fc",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241729-unichtozhili-433-bespilotnika",
+    "https://tass.ru/obschestvo/28274089",
+    "https://t.me/headlines_for_traders/87804",
+    "https://t.me/headlines_for_traders/87803",
+    "https://tass.ru/armiya-i-opk/28274083",
+    "https://tass.ru/obschestvo/28273279",
+    "https://t.me/WalterBloomberg/37685",
+    "https://tass.ru/obschestvo/28274049",
+    "https://tass.ru/armiya-i-opk/28274079",
+    "https://tass.ru/obschestvo/28273669",
+    "https://www.interfax.ru/russia/1126268",
+    "https://tass.ru/sport/28274071",
+    "https://www.rbc.ru/politics/22/12/2025/69487c5a9a794709d19c4010",
+    "https://tass.ru/proisshestviya/28274065",
+    "https://t.me/investfuture/15463",
+    "https://www.kommersant.ru/doc/9078133",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274063",
+    "https://tass.ru/obschestvo/28274055",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://www.vedomosti.ru/society/news/2026/10/31/1241728-v-moskve-na-vihodnih",
+    "https://tass.ru/obschestvo/28274059",
+    "https://www.interfax.ru/russia/1126267",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274057",
     "https://www.rbc.ru/rbcfreenews/6ae45ef8ba3ca498b3e753bb",
     "https://t.me/headlines_for_traders/87802",
     "https://tass.ru/sport/28274045",
-    "https://www.rbc.ru/rbcfreenews/6ae507ae41496c5f9c55321b",
-    "https://t.me/rbc_news/159772",
-    "https://www.rbc.ru/rbcfreenews/6ae45d635171f3bd6bffcd48",
-    "https://tass.ru/obschestvo/28274039",
-    "https://tass.ru/armiya-i-opk/28274041",
-    "https://tass.ru/obschestvo/28274035",
-    "https://www.kommersant.ru/doc/9078129",
-    "https://tass.ru/ekonomika/28274037",
-    "https://tass.ru/proisshestviya/28274031",
-    "https://t.me/headlines_for_traders/87800",
-    "https://t.me/headlines_for_traders/87801",
-    "https://tass.ru/ekonomika/28274029",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241727-minoboroni-soobschilo-ob-udarah",
-    "https://tass.ru/nauka/28274023",
-    "https://tass.ru/sport/28274027",
-    "https://t.me/wublockchainenglish/26629",
-    "https://t.me/FinancialJuice/144154",
-    "https://t.me/rbc_news/159771",
-    "https://www.rbc.ru/politics/30/10/2026/6ae454764e86453db550570f",
-    "https://tass.ru/obschestvo/28274009",
-    "https://t.me/banksta/104531",
-    "https://t.me/interfaxonline/80982",
-    "https://tass.ru/ekonomika/28274019",
-    "https://tass.ru/obschestvo/28274011",
-    "https://tass.ru/obschestvo/28274017",
-    "https://www.rbc.ru/sport/25/10/2026/6ade168524639466d2c1eb98",
-    "https://www.interfax.ru/world/1126258",
-    "https://tass.ru/proisshestviya/28274005",
-    "https://tass.ru/obschestvo/28273999",
-    "https://tass.ru/sport/28274007",
-    "https://thedefiant.io/news/defi/curve-volume-halves-to-425-million-as-3pool-s-usdt-tilt-eases",
-    "https://www.rbc.ru/photoslider/6ae57b7b18a3b9290e3844ae",
-    "https://tass.ru/proisshestviya/28273995"
+    "https://www.interfax.ru/russia/1126266",
+    "https://www.rbc.ru/rbcfreenews/6ae507ae41496c5f9c55321b"
   ],
   "ai_dead": {
     "date": "2026-10-30",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T08:00:58.667035+00:00",
-      "Миллер допустил рост цен на газ в Европе до $2,5 тыс."
-    ],
-    [
-      "2026-10-30T08:00:58.667035+00:00",
-      "МГКЛ допустил технический дефолт по купону облигаций"
-    ],
-    [
-      "2026-10-30T08:00:58.667035+00:00",
-      "«Лента» отчиталась за III квартал: чистая прибыль снизилась на 30%"
-    ],
-    [
-      "2026-10-30T08:00:58.667035+00:00",
-      "ВТБ подтвердил прогноз по прибыли на 2026 год в 600 млрд рублей"
-    ],
-    [
-      "2026-10-30T08:00:58.667035+00:00",
-      "Криптотрейдер закрыл лонги по BTC и ETH с прибылью более $20 млн"
-    ],
     [
       "2026-10-30T08:00:58.667035+00:00",
       "Инфляция во Франции в октябре ускорилсь до 3,8%"
@@ -1600,6 +1588,22 @@
     [
       "2026-10-31T06:00:55.593459+00:00",
       "В Польше прошли ночные протесты на фоне кризиса у трибунала"
+    ],
+    [
+      "2026-10-31T06:30:56.755244+00:00",
+      "OpenAI сократила цель по привлечению средств и оценку стоимости"
+    ],
+    [
+      "2026-10-31T06:30:56.755244+00:00",
+      "Силы ПВО за ночь уничтожили 433 украинских беспилотника"
+    ],
+    [
+      "2026-10-31T06:30:56.755244+00:00",
+      "Банк Galicia в Аргентине закрыл счета россиян и белорусов"
+    ],
+    [
+      "2026-10-31T06:30:56.755244+00:00",
+      "Минобороны РФ сообщило об отправке жителей Алешек в Белоруссию"
     ]
   ],
   "results_fp": [
