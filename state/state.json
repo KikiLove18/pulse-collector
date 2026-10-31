@@ -928,7 +928,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T14:00:54.754504+00:00",
+  "breaking_ts": "2026-10-31T14:30:55.156935+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 4,
@@ -942,71 +942,63 @@
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/rbcfreenews/6ac79b856f4d55a9448bf4b3",
+    "https://www.rbc.ru/rbcfreenews/6adcee27678a187a77afd76c",
+    "https://tass.ru/armiya-i-opk/28274817",
+    "https://t.me/banksta/104552",
+    "https://t.me/markettwits/391429",
+    "https://www.marketwatch.com/story/he-was-heartbroken-my-husbands-kids-never-helped-when-he-was-gravely-ill-was-he-right-to-leave-everything-to-me-1ad0616b?mod=mw_rss_topstories",
+    "https://tass.ru/obschestvo/28274811",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241764-galicia-nachal-zakrivat",
+    "https://www.rbc.ru/sport/30/10/2026/6ae4a947032a389c1e561484",
+    "https://tass.ru/sport/28274809",
+    "https://t.me/rbc_news/159795",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274807",
+    "https://www.rbc.ru/rbcfreenews/6ade42014e4501f7b9f61ea9",
+    "https://www.rbc.ru/society/16/04/2026/69e0d3cb9a79476d7e9de80e",
+    "https://tass.ru/obschestvo/28274801",
+    "https://tass.ru/sport/28274803",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274799",
+    "https://www.rbc.ru/sport/24/10/2026/6adcf9a97b60f23d927efe1d",
+    "https://tass.ru/kultura/28274793",
+    "https://t.me/forklog/50495",
+    "https://tass.ru/obschestvo/28274797",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274789",
+    "https://www.rbc.ru/politics/31/10/2026/6ae5f3fd92b809aef4d94d10",
+    "https://www.kommersant.ru/doc/9078296",
+    "https://tass.ru/sport/28274795",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274787",
+    "https://tass.ru/obschestvo/28274791",
+    "https://tass.ru/obschestvo/28274785",
+    "https://www.kommersant.ru/doc/9078299",
+    "https://tass.ru/politika/28274783",
+    "https://tass.ru/obschestvo/28274779",
+    "https://t.me/headlines_for_traders/87816",
+    "https://t.me/SberInvestments/13230",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241763-stubb-obyasnil",
+    "https://www.marketwatch.com/story/your-stock-portfolio-increasingly-hinges-on-the-bond-market-and-the-midterm-elections-dc1abadb?mod=mw_rss_topstories",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274775",
+    "https://www.kommersant.ru/doc/9078293",
+    "https://tass.ru/sport/28274771",
+    "https://tass.ru/obschestvo/28274773",
+    "https://cryptoslate.com/bitcoin-etfs-643-million-outflows-weekly-reversal/",
+    "https://www.rbc.ru/politics/23/10/2026/6adb7c569763119ca5baa190",
     "https://www.coindesk.com/tech/2026/10/31/as-big-bitcoin-miners-chase-ai-profits-individuals-get-another-shot-at-the-rewards",
+    "https://www.wsj.com/politics/elections/prediction-markets-keep-whiffing-on-elections-will-they-miss-on-the-midterms-9809c8c9?mod=rss_markets_main",
     "https://tass.ru/mezhdunarodnaya-panorama/28274769",
+    "https://www.interfax.ru/moscow/1126310",
     "https://tass.ru/obschestvo/28274763",
     "https://t.me/thebell_io/39706",
     "https://tass.ru/sport/28274767",
     "https://tass.ru/mezhdunarodnaya-panorama/28274765",
     "https://tass.ru/mezhdunarodnaya-panorama/28274755",
-    "https://t.me/rbc_news/159794",
-    "https://tass.ru/obschestvo/28274751",
-    "https://tass.ru/obschestvo/28274757",
-    "https://tass.ru/proisshestviya/28274747",
-    "https://t.me/nainspire/5632",
-    "https://www.rbc.ru/sport/31/10/2026/6adf97fc3a2b75d3479b278a",
-    "https://tass.ru/sport/28274753",
-    "https://tass.ru/sport/28274749",
-    "https://t.me/banksta/104550",
-    "https://tass.ru/sport/28274743",
-    "https://tass.ru/sport/28274745",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274741",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274739",
-    "https://tass.ru/obschestvo/28274721",
-    "https://www.kommersant.ru/doc/9078292",
-    "https://www.investing.com/news/stock-market-news/russia-extends-diesel-export-ban-through-january-allows-limited-shipments-4989277",
-    "https://tass.ru/ekonomika/28274733",
-    "https://tass.ru/obschestvo/28274725",
-    "https://tass.ru/ekonomika/28274731",
-    "https://t.me/whale_alert_io/104411",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241762-evrokomissar-zayavil",
-    "https://t.me/markettwits/391428",
-    "https://tass.ru/sport/28274729",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274727",
-    "https://t.me/FinancialJuice/144187",
-    "https://cointelegraph.com/news/texas-brothers-sentenced-to-15-years-in-prison-for-armed-crypto-robbery-kidnapping?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://t.me/FinancialJuice/144186",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274723",
-    "https://www.kommersant.ru/doc/9078290",
-    "https://tass.ru/sport/28274717",
-    "https://t.me/rbc_news/159793",
-    "https://tass.ru/proisshestviya/28274713",
-    "https://tass.ru/obschestvo/28274701",
-    "https://www.kommersant.ru/doc/9078289",
-    "https://www.rbc.ru/sport/30/10/2026/6ae4a02ed9973ce16e4234f0",
-    "https://t.me/banksta/104549",
-    "https://tass.ru/sport/28274705",
-    "https://www.interfax.ru/world/1126309",
-    "https://t.me/incrypted/33189",
-    "https://www.theblock.co/news/business/2026-10-31-chainalysis-says-hacker-using-offensive-agentic-techniques-accessed-its-customers-names-and-emails-432244"
+    "https://t.me/rbc_news/159794"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T16:00:57.035786+00:00",
-      "Нефть Brent поднялась до $117,6 за баррель"
-    ],
-    [
-      "2026-10-30T16:00:57.035786+00:00",
-      "ЕК утвердила выплаты Киеву на 2027 год на уровне €45 млрд"
-    ],
-    [
-      "2026-10-30T16:00:57.035786+00:00",
-      "Правительство обсуждает исключения по экспорту дизеля в ноябрь"
-    ],
     [
       "2026-10-30T16:00:57.035786+00:00",
       "Чистая прибыль «Русала» по РСБУ за 9 месяцев сократилась в 300 раз"
@@ -1606,6 +1598,30 @@
     [
       "2026-10-31T14:00:54.754504+00:00",
       "Финляндия вновь стала лидером в ЕС по уровню безработицы"
+    ],
+    [
+      "2026-10-31T14:30:55.156935+00:00",
+      "Трамп заявил о близости мирной сделки по Украине"
+    ],
+    [
+      "2026-10-31T14:30:55.156935+00:00",
+      "Иран готов открыть Ормузский пролив за два дня"
+    ],
+    [
+      "2026-10-31T14:30:55.156935+00:00",
+      "Спотовые биткоин-ETF зафиксировали отток $643 млн"
+    ],
+    [
+      "2026-10-31T14:30:55.156935+00:00",
+      "Еврокомиссия заявила о завершении отказа от энергоресурсов РФ"
+    ],
+    [
+      "2026-10-31T14:30:55.156935+00:00",
+      "Минторг США разрешил Boeing сотрудничать с «Белавиа»"
+    ],
+    [
+      "2026-10-31T14:30:55.156935+00:00",
+      "Ущерб от взломов в криптоиндустрии достиг $9,2 млрд"
     ]
   ],
   "results_fp": [
