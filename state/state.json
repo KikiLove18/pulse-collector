@@ -928,81 +928,59 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T05:30:54.752146+00:00",
+  "breaking_ts": "2026-10-31T06:00:55.593459+00:00",
   "news_now": {
     "day": "2026-10-31",
-    "day_count": 0,
+    "day_count": 1,
     "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "last": "2026-10-31T06:00:55.593459+00:00",
+    "titles": [
+      "Спотовые биткоин-ETF зафиксировали отток $643 млн"
+    ]
   },
   "news_seen": [
+    "https://www.rbc.ru/rbcfreenews/6ae45ef8ba3ca498b3e753bb",
+    "https://t.me/headlines_for_traders/87802",
+    "https://tass.ru/sport/28274045",
+    "https://www.rbc.ru/rbcfreenews/6ae507ae41496c5f9c55321b",
+    "https://t.me/rbc_news/159772",
+    "https://www.rbc.ru/rbcfreenews/6ae45d635171f3bd6bffcd48",
+    "https://tass.ru/obschestvo/28274039",
+    "https://tass.ru/armiya-i-opk/28274041",
+    "https://tass.ru/obschestvo/28274035",
+    "https://www.kommersant.ru/doc/9078129",
+    "https://tass.ru/ekonomika/28274037",
+    "https://tass.ru/proisshestviya/28274031",
+    "https://t.me/headlines_for_traders/87800",
+    "https://t.me/headlines_for_traders/87801",
+    "https://tass.ru/ekonomika/28274029",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241727-minoboroni-soobschilo-ob-udarah",
+    "https://tass.ru/nauka/28274023",
+    "https://tass.ru/sport/28274027",
+    "https://t.me/wublockchainenglish/26629",
+    "https://t.me/FinancialJuice/144154",
+    "https://t.me/rbc_news/159771",
+    "https://www.rbc.ru/politics/30/10/2026/6ae454764e86453db550570f",
+    "https://tass.ru/obschestvo/28274009",
+    "https://t.me/banksta/104531",
+    "https://t.me/interfaxonline/80982",
+    "https://tass.ru/ekonomika/28274019",
+    "https://tass.ru/obschestvo/28274011",
+    "https://tass.ru/obschestvo/28274017",
     "https://www.rbc.ru/sport/25/10/2026/6ade168524639466d2c1eb98",
+    "https://www.interfax.ru/world/1126258",
     "https://tass.ru/proisshestviya/28274005",
     "https://tass.ru/obschestvo/28273999",
     "https://tass.ru/sport/28274007",
     "https://thedefiant.io/news/defi/curve-volume-halves-to-425-million-as-3pool-s-usdt-tilt-eases",
     "https://www.rbc.ru/photoslider/6ae57b7b18a3b9290e3844ae",
-    "https://tass.ru/proisshestviya/28273995",
-    "https://tass.ru/obschestvo/28274003",
-    "https://tass.ru/mezhdunarodnaya-panorama/28273961",
-    "https://www.kommersant.ru/doc/9078125",
-    "https://www.rbc.ru/politics/31/10/2026/6ae550643d8c4ded5ced4dab",
-    "https://www.interfax.ru/russia/1126265",
-    "https://www.kommersant.ru/doc/9078123",
-    "https://tass.ru/obschestvo/28273997",
-    "https://t.me/whale_alert_io/104403",
-    "https://tass.ru/ekonomika/28273979",
-    "https://tass.ru/obschestvo/28273977",
-    "https://tass.ru/obschestvo/28273991",
-    "https://www.interfax.ru/russia/1126264",
-    "https://t.me/headlines_for_traders/87798",
-    "https://t.me/headlines_for_traders/87799",
-    "https://www.rbc.ru/politics/30/10/2026/6ae43c959532a8518b5155cc",
-    "https://www.interfax.ru/russia/1126263",
-    "https://tass.ru/proisshestviya/28273993",
-    "https://www.interfax.ru/russia/1126262",
-    "https://www.rbc.ru/technology_and_media/13/10/2026/6acdfe479a79471bedd678bb",
-    "https://tass.ru/sport/28273973",
-    "https://tass.ru/sport/28273951",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241726-navrotskii-sozval-srochnoe-soveschanie",
-    "https://tass.ru/armiya-i-opk/28273971",
-    "https://tass.ru/nedvizhimost/28273965",
-    "https://tass.ru/armiya-i-opk/28273967",
-    "https://t.me/forklog/50490",
-    "https://www.coindesk.com/markets/2026/10/31/bitcoin-stolen-from-binance-tops-tesla-s-holdings-and-is-over-twice-el-salvador-s-reserve",
-    "https://tass.ru/armiya-i-opk/28273963",
-    "https://tass.ru/armiya-i-opk/28273957",
-    "https://tass.ru/obschestvo/28273959",
-    "https://www.rbc.ru/politics/31/10/2026/6ae573412ef494675c5cdf48",
-    "https://www.investing.com/news/stock-market-news/agentic-ai-excitement-runs-ahead-of-results-4989096",
-    "https://tass.ru/proisshestviya/28273955"
+    "https://tass.ru/proisshestviya/28273995"
   ],
   "ai_dead": {
     "date": "2026-10-30",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T07:33:38.221111+00:00",
-      "Чистая прибыль «Интер РАО» по РСБУ за 9 месяцев выросла до 16,6 млрд рублей"
-    ],
-    [
-      "2026-10-30T07:33:38.221111+00:00",
-      "Миллер допустил рост цен на газ в Европе до $2500 зимой"
-    ],
-    [
-      "2026-10-30T07:33:38.221111+00:00",
-      "МГКЛ допустил первый технический дефолт по купону на 24,66 млн рублей"
-    ],
-    [
-      "2026-10-30T07:33:38.221111+00:00",
-      "BP увеличила скорректированную чистую прибыль в третьем квартале до $8,46 млрд"
-    ],
-    [
-      "2026-10-30T07:33:38.221111+00:00",
-      "ЕС потребовал от стран Карибского бассейна свернуть продажу паспортов"
-    ],
     [
       "2026-10-30T08:00:58.667035+00:00",
       "Миллер допустил рост цен на газ в Европе до $2,5 тыс."
@@ -1602,6 +1580,26 @@
     [
       "2026-10-31T05:30:54.752146+00:00",
       "ФССП в 2026 году взыскала более 1,1 трлн рублей"
+    ],
+    [
+      "2026-10-31T06:00:55.593459+00:00",
+      "Спотовые биткоин- и эфириум-ETF зафиксировали крупный отток средств"
+    ],
+    [
+      "2026-10-31T06:00:55.593459+00:00",
+      "Минобороны РФ сообщило об ударе по ТЭЦ-6 в Киеве"
+    ],
+    [
+      "2026-10-31T06:00:55.593459+00:00",
+      "Цена газа в Европе в октябре выросла почти втрое"
+    ],
+    [
+      "2026-10-31T06:00:55.593459+00:00",
+      "Суточный объем торгов Curve снизился вдвое до $425 млн"
+    ],
+    [
+      "2026-10-31T06:00:55.593459+00:00",
+      "В Польше прошли ночные протесты на фоне кризиса у трибунала"
     ]
   ],
   "results_fp": [
