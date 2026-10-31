@@ -27,6 +27,8 @@ TIMEOUT_S = 10         # на одну операцию с сетью
 MAX_BYTES = 1_500_000  # предел размера ответа
 MAX_REDIRECTS = 3
 MAX_POSTS = 10
+MAX_TEXT = 300         # фрагмент вместе с заголовком, дальше — ссылка на оригинал (условие Юриста)
+READ_HOURS = range(8, 22)  # с 08:00 до 22:00 МСК, ночью не читаем
 PUT_CHUNK = 20
 UA = "Mozilla/5.0 (market-digest-bot)"
 TG_RE = re.compile(r"^[A-Za-z0-9_]{4,32}$")
@@ -137,14 +139,14 @@ def _read_tg(handle, deadline):
         body = re.search(r'tgme_widget_message_text[^>]*>(.*?)</div>', block, re.S)
         if not (post and when and body):
             continue
-        text = _text(re.sub(r"<br\s*/?>", " ", body.group(1)), 700)
+        text = _text(re.sub(r"<br\s*/?>", " ", body.group(1)), MAX_TEXT)
         if not text:
             continue
         try:
             ts = int(datetime.fromisoformat(when.group(1)).timestamp()) * 1000
         except ValueError:
             ts = 0
-        posts.append({"t": text[:200], "x": text[200:700], "u": f"https://t.me/{post.group(1)}", "ts": ts})
+        posts.append({"t": text[:200], "x": text[200:], "u": f"https://t.me/{post.group(1)}", "ts": ts})
     posts.sort(key=lambda p: p["ts"], reverse=True)
     return "ok", posts[:MAX_POSTS]
 
@@ -156,7 +158,7 @@ def _feed_posts(feed):
         if not (title and link.startswith(("http://", "https://"))):
             continue
         when = e.get("published_parsed") or e.get("updated_parsed")
-        posts.append({"t": title, "x": _text(e.get("summary"), 500), "u": link[:500],
+        posts.append({"t": title, "x": _text(e.get("summary"), MAX_TEXT - len(title)), "u": link[:500],
                       "ts": calendar.timegm(when) * 1000 if when else 0})
     posts.sort(key=lambda p: p["ts"], reverse=True)
     return posts[:MAX_POSTS]
@@ -220,4 +222,5 @@ def run(budget_s=BUDGET_S):
 
 
 def due(state, now, msk):
-    return state.get("own_hour") != f"{now.astimezone(msk):%Y-%m-%d %H}"
+    local = now.astimezone(msk)
+    return local.hour in READ_HOURS and state.get("own_hour") != f"{local:%Y-%m-%d %H}"
