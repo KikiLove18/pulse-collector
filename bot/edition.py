@@ -572,7 +572,7 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
     n = {"title": card["title"], "text": data.get("text", ""), "sent": card["sent"], "url": src["link"], "source": sources.src_name(src["source"])}
     head = f"⚡ <b>Срочно · {card['tag']}</b>" if urgent else f"🌤 <b>Главное сейчас · {card['tag']}</b>"
     html = head + "\n\n" + news_html(n) + f"\n\n<i>{NOT_ADVICE}</i>"
-    out = {"kind": "urgent" if urgent else "day", "card": card_id, "html": html, "block": data.get("block") or "", "hash": "#feed"}
+    out = {"kind": "urgent" if urgent else "day", "card": card_id, "html": html, "block": data.get("block") or "", "hash": "#feed", "names": [n["source"]]}
     if force:
         return out
     _post("/api/breaking", out)
