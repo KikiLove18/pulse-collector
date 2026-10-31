@@ -928,7 +928,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T06:30:56.755244+00:00",
+  "breaking_ts": "2026-10-31T07:00:58.208831+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 1,
@@ -939,72 +939,47 @@
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/quote/31/10/2026/6ae48ac09a79471c5b67c900",
+    "https://t.me/incrypted/33187",
+    "https://www.rbc.ru/economics/16/10/2026/6ad2611564fe3a360ae28700",
+    "https://tass.ru/kultura/28274077",
+    "https://t.me/FinancialJuice/144155",
+    "https://tass.ru/proisshestviya/28274135",
+    "https://tass.ru/obschestvo/28274131",
+    "https://t.me/markettwits/391401",
+    "https://www.rbc.ru/rbcfreenews/6ae57058848fd36c464c70e7",
+    "https://t.me/cbrstocks/83816",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274133",
+    "https://t.me/markettwits/391400",
+    "https://tass.ru/proisshestviya/28274129",
+    "https://www.rbc.ru/rbcfreenews/6ae380331bbabc2d90db9f89",
+    "https://tass.ru/obschestvo/28274127",
+    "https://t.me/wublockchainenglish/26630",
+    "https://t.me/rbc_news/159774",
+    "https://tass.ru/obschestvo/28274091",
+    "https://t.me/markettwits/391399",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241730-vileteli-v-gomel",
+    "https://t.me/headlines_for_traders/87806",
+    "https://tass.ru/proisshestviya/28274117",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274119",
+    "https://tass.ru/obschestvo/28274081",
+    "https://www.interfax.ru/world/1126271",
+    "https://tass.ru/obschestvo/28274111",
+    "https://www.interfax.ru/russia/1126270",
+    "https://tass.ru/proisshestviya/28274087",
+    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
+    "https://tass.ru/obschestvo/28274113",
+    "https://www.kommersant.ru/doc/9078124",
+    "https://tass.ru/ekonomika/28274115",
+    "https://tass.ru/interviews/28270333",
     "https://t.me/banksta/104532",
-    "https://tass.ru/proisshestviya/28274107",
-    "https://tass.ru/sport/28274099",
-    "https://tass.ru/politika/28274105",
-    "https://t.me/interfaxonline/80983",
-    "https://tass.ru/sport/28274109",
-    "https://tass.ru/proisshestviya/28274075",
-    "https://www.interfax.ru/world/1126269",
-    "https://tass.ru/nedvizhimost/28274103",
-    "https://tass.ru/obschestvo/28274073",
-    "https://tass.ru/armiya-i-opk/28274101",
-    "https://t.me/headlines_for_traders/87805",
-    "https://www.rbc.ru/politics/31/10/2026/6ae530a792b809aef4d94c95",
-    "https://t.me/rbc_news/159773",
-    "https://tass.ru/ekonomika/28273333",
-    "https://www.rbc.ru/rbcfreenews/6ae1bd99180efc817562b9fc",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241729-unichtozhili-433-bespilotnika",
-    "https://tass.ru/obschestvo/28274089",
-    "https://t.me/headlines_for_traders/87804",
-    "https://t.me/headlines_for_traders/87803",
-    "https://tass.ru/armiya-i-opk/28274083",
-    "https://tass.ru/obschestvo/28273279",
-    "https://t.me/WalterBloomberg/37685",
-    "https://tass.ru/obschestvo/28274049",
-    "https://tass.ru/armiya-i-opk/28274079",
-    "https://tass.ru/obschestvo/28273669",
-    "https://www.interfax.ru/russia/1126268",
-    "https://tass.ru/sport/28274071",
-    "https://www.rbc.ru/politics/22/12/2025/69487c5a9a794709d19c4010",
-    "https://tass.ru/proisshestviya/28274065",
-    "https://t.me/investfuture/15463",
-    "https://www.kommersant.ru/doc/9078133",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274063",
-    "https://tass.ru/obschestvo/28274055",
-    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
-    "https://www.vedomosti.ru/society/news/2026/10/31/1241728-v-moskve-na-vihodnih",
-    "https://tass.ru/obschestvo/28274059",
-    "https://www.interfax.ru/russia/1126267",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274057",
-    "https://www.rbc.ru/rbcfreenews/6ae45ef8ba3ca498b3e753bb",
-    "https://t.me/headlines_for_traders/87802",
-    "https://tass.ru/sport/28274045",
-    "https://www.interfax.ru/russia/1126266",
-    "https://www.rbc.ru/rbcfreenews/6ae507ae41496c5f9c55321b"
+    "https://tass.ru/proisshestviya/28274107"
   ],
   "ai_dead": {
-    "date": "2026-10-30",
+    "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T08:00:58.667035+00:00",
-      "Инфляция во Франции в октябре ускорилсь до 3,8%"
-    ],
-    [
-      "2026-10-30T08:30:57.794683+00:00",
-      "Чистая прибыль ВТБ за III квартал выросла на 82% год к году"
-    ],
-    [
-      "2026-10-30T08:30:57.794683+00:00",
-      "ВТБ повысил ставку по накопительному счету до 14,7% годовых"
-    ],
-    [
-      "2026-10-30T08:30:57.794683+00:00",
-      "В Ормузском проливе атакован танкер со взрывчаткой"
-    ],
     [
       "2026-10-30T08:30:57.794683+00:00",
       "Инфляция в Испании в октябре составила 4,9%"
@@ -1604,6 +1579,26 @@
     [
       "2026-10-31T06:30:56.755244+00:00",
       "Минобороны РФ сообщило об отправке жителей Алешек в Белоруссию"
+    ],
+    [
+      "2026-10-31T07:00:58.208831+00:00",
+      "Деловая активность в Китае в октябре вернулась к снижению"
+    ],
+    [
+      "2026-10-31T07:00:58.208831+00:00",
+      "Fitch понизило прогноз по рейтингу Франции до «негативного»"
+    ],
+    [
+      "2026-10-31T07:00:58.208831+00:00",
+      "Акции VK подскочили на 12,5% и обновили максимум с августа"
+    ],
+    [
+      "2026-10-31T07:00:58.208831+00:00",
+      "Аргентинский банк Galicia закрыл счета клиентов из России"
+    ],
+    [
+      "2026-10-31T07:00:58.208831+00:00",
+      "Titan Builder краткосрочно возглавил рейтинг доходов Ethereum"
     ]
   ],
   "results_fp": [
