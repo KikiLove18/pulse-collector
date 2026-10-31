@@ -929,7 +929,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T19:00:56.697889+00:00",
+  "breaking_ts": "2026-10-31T19:30:57.015782+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 5,
@@ -944,68 +944,41 @@
     ]
   },
   "news_seen": [
+    "https://t.me/banksta/104576",
+    "https://thedefiant.io/news/defi/jupiter-lend-usdc-withdrawal-liquidity-rebounds-to-27-9-million",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275227",
+    "https://tass.ru/proisshestviya/28275225",
+    "https://tass.ru/proisshestviya/28275209",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275219",
+    "https://www.rbc.ru/rbcfreenews/6ae1864bfe8cbef4c519342a",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275221",
+    "https://t.me/WatcherGuru/15741",
+    "https://tass.ru/obschestvo/28275215",
+    "https://www.kommersant.ru/doc/9078344",
+    "https://tass.ru/sport/28275213",
+    "https://cryptoslate.com/jupiter-lend-usdc-withdrawal-liquidity-rebounds/",
+    "https://www.rbc.ru/politics/31/10/2026/6ae5dec2391af178364d5458",
+    "https://tass.ru/obschestvo/28275207",
+    "https://tass.ru/ekonomika/28275205",
+    "https://www.interfax.ru/russia/1126341",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275195",
+    "https://www.marketwatch.com/story/the-house-the-kids-college-and-the-raise-where-people-in-their-30s-and-40s-go-wrong-69ec6c90?mod=mw_rss_topstories",
+    "https://t.me/FinancialJuice/144217",
+    "https://t.me/banksta/104575",
+    "https://t.me/coinpost/4290",
     "https://www.rbc.ru/politics/30/10/2026/6ae4f9dfc06d23f7a6885ea8",
+    "https://www.marketwatch.com/story/we-are-in-our-70s-should-we-pay-off-our-2-5-mortgage-or-build-up-our-savings-5a35e9c1?mod=mw_rss_topstories",
     "https://oilprice.com/Energy/Energy-General/Jackdaw-Approval-Sparks-Fierce-Debate-Over-Britains-Energy-Future.html",
     "https://t.me/FinancialJuice/144216",
     "https://tass.ru/mezhdunarodnaya-panorama/28275193",
     "https://www.rbc.ru/sport/25/10/2026/6ade0512089e8d5c20c60e71",
-    "https://www.kommersant.ru/doc/9078343",
-    "https://t.me/FinancialJuice/144215",
-    "https://t.me/WalterBloomberg/37707",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275189",
-    "https://t.me/FinancialJuice/144214",
-    "https://www.rbc.ru/rbcfreenews/6ae438ac18ec3d299e9f56ac",
-    "https://www.vedomosti.ru/finance/news/2026/10/31/1241780-v-afrike-zapustili",
-    "https://www.marketwatch.com/story/he-was-heartbroken-my-husbands-kids-never-helped-when-he-was-gravely-ill-was-he-right-to-leave-everything-to-me-1ad0616b?mod=mw_rss_topstories",
-    "https://www.rbc.ru/politics/31/10/2026/6ae5dec2391af178364d5458",
-    "https://www.rbc.ru/sport/31/10/2026/6ae447a3b2fc2401d098093a",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275191",
-    "https://tass.ru/sport/28275197",
-    "https://t.me/whale_alert_io/104416",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275183",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275181",
-    "https://tass.ru/obschestvo/28275187",
-    "https://tass.ru/obschestvo/28275185",
-    "https://t.me/markettwits/391443",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275179",
-    "https://t.me/rbc_news/159804",
-    "https://www.kommersant.ru/doc/9078339",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275177",
-    "https://www.marketwatch.com/story/is-it-curtains-for-cola-saving-social-security-could-mean-changing-the-cost-of-living-adjustment-867c6bd8?mod=mw_rss_topstories",
-    "https://www.trumpstruth.org/statuses/43007",
-    "https://www.trumpstruth.org/statuses/43008",
-    "https://tass.ru/obschestvo/28275173",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241779-orban-i-vuchich-o-planah",
-    "https://www.trumpstruth.org/statuses/43009",
-    "https://www.trumpstruth.org/statuses/43010",
-    "https://www.trumpstruth.org/statuses/43011",
-    "https://www.trumpstruth.org/statuses/43012",
-    "https://www.trumpstruth.org/statuses/43013",
-    "https://www.trumpstruth.org/statuses/43003",
-    "https://www.trumpstruth.org/statuses/43004",
-    "https://www.trumpstruth.org/statuses/43005",
-    "https://thedefiant.io/news/defi/morpho-borrow-rates-hit-roughly-40-as-pt-market-liquidity-dries-up",
-    "https://www.trumpstruth.org/statuses/43006",
-    "https://t.me/banksta/104574",
-    "https://www.trumpstruth.org/statuses/43014"
+    "https://www.sport-interfax.ru/1126340"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T20:31:01.786786+00:00",
-      "В Польше разгорелся политический кризис и протесты у трибунала"
-    ],
-    [
-      "2026-10-30T20:31:01.786786+00:00",
-      "Индия успешно вывела на орбиту навигационный спутник"
-    ],
-    [
-      "2026-10-30T20:31:01.786786+00:00",
-      "В Ормузском проливе атакован сырьевой танкер"
-    ],
     [
       "2026-10-30T20:31:01.786786+00:00",
       "Банковские депозиты в США сократились за неделю"
@@ -1605,6 +1578,30 @@
     [
       "2026-10-31T19:00:56.697889+00:00",
       "В Африке запустили энергетический банк с капиталом $5 млрд"
+    ],
+    [
+      "2026-10-31T19:30:57.015782+00:00",
+      "Reuters: ОПЕК+ договорилась не менять квоты на добычу в декабре"
+    ],
+    [
+      "2026-10-31T19:30:57.015782+00:00",
+      "Anthropic отчиталась о росте выручки за первое полугодие в 14 раз"
+    ],
+    [
+      "2026-10-31T19:30:57.015782+00:00",
+      "Мосбиржа запустит торги криптовалютой с 1 декабря"
+    ],
+    [
+      "2026-10-31T19:30:57.015782+00:00",
+      "Ликвидность вывода USDC на Jupiter Lend восстановилась до $27,9 млн"
+    ],
+    [
+      "2026-10-31T19:30:57.015782+00:00",
+      "ИИ Claude самостоятельно провел операцию на мозге мыши"
+    ],
+    [
+      "2026-10-31T19:30:57.015782+00:00",
+      "Виктор Орбан и Александр Вучич объявили о возвращении в политику"
     ]
   ],
   "results_fp": [
