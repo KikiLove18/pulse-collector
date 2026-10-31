@@ -929,7 +929,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T19:30:57.015782+00:00",
+  "breaking_ts": "2026-10-31T20:00:57.412145+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 5,
@@ -944,65 +944,37 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/mezhdunarodnaya-panorama/28275259",
+    "https://tass.ru/sport/28275257",
+    "https://tass.ru/ekonomika/28275255",
+    "https://www.kommersant.ru/doc/9078349",
+    "https://www.rbc.ru/politics/01/10/2026/6abeafb2892d7940c9878e9c",
+    "https://www.interfax.ru/russia/1126343",
+    "https://tass.ru/sport/28275251",
+    "https://www.vedomosti.ru/society/news/2026/10/31/1241783-lantratova-obyavila",
+    "https://tass.ru/kosmos/28275243",
+    "https://www.rbc.ru/politics/05/12/2025/69325d069a794785bf5ccd4b",
+    "https://tass.ru/obschestvo/28275247",
+    "https://tass.ru/sport/28275249",
+    "https://t.me/whale_alert_io/104417",
+    "https://www.investing.com/news/stock-market-news/us-judge-dismisses-trumps-lawsuit-against-wall-street-journal-with-prejudice-4989324",
+    "https://tass.ru/proisshestviya/28275217",
+    "https://tass.ru/kosmos/28275235",
+    "https://t.me/markettwits/391444",
+    "https://tass.ru/sport/28275199",
+    "https://tass.ru/sport/28275239",
+    "https://t.me/rbc_news/159806",
+    "https://www.kommersant.ru/doc/9078346",
+    "https://tass.ru/sport/28275237",
     "https://t.me/banksta/104576",
-    "https://thedefiant.io/news/defi/jupiter-lend-usdc-withdrawal-liquidity-rebounds-to-27-9-million",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275227",
-    "https://tass.ru/proisshestviya/28275225",
-    "https://tass.ru/proisshestviya/28275209",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275219",
-    "https://www.rbc.ru/rbcfreenews/6ae1864bfe8cbef4c519342a",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275221",
-    "https://t.me/WatcherGuru/15741",
-    "https://tass.ru/obschestvo/28275215",
-    "https://www.kommersant.ru/doc/9078344",
-    "https://tass.ru/sport/28275213",
-    "https://cryptoslate.com/jupiter-lend-usdc-withdrawal-liquidity-rebounds/",
-    "https://www.rbc.ru/politics/31/10/2026/6ae5dec2391af178364d5458",
-    "https://tass.ru/obschestvo/28275207",
-    "https://tass.ru/ekonomika/28275205",
-    "https://www.interfax.ru/russia/1126341",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275195",
-    "https://www.marketwatch.com/story/the-house-the-kids-college-and-the-raise-where-people-in-their-30s-and-40s-go-wrong-69ec6c90?mod=mw_rss_topstories",
-    "https://t.me/FinancialJuice/144217",
-    "https://t.me/banksta/104575",
-    "https://t.me/coinpost/4290",
-    "https://www.rbc.ru/politics/30/10/2026/6ae4f9dfc06d23f7a6885ea8",
-    "https://www.marketwatch.com/story/we-are-in-our-70s-should-we-pay-off-our-2-5-mortgage-or-build-up-our-savings-5a35e9c1?mod=mw_rss_topstories",
-    "https://oilprice.com/Energy/Energy-General/Jackdaw-Approval-Sparks-Fierce-Debate-Over-Britains-Energy-Future.html",
-    "https://t.me/FinancialJuice/144216",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275193",
-    "https://www.rbc.ru/sport/25/10/2026/6ade0512089e8d5c20c60e71",
-    "https://www.sport-interfax.ru/1126340"
+    "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
+    "https://thedefiant.io/news/defi/jupiter-lend-usdc-withdrawal-liquidity-rebounds-to-27-9-million"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T20:31:01.786786+00:00",
-      "Банковские депозиты в США сократились за неделю"
-    ],
-    [
-      "2026-10-31T04:00:55.522594+00:00",
-      "OpenAI привлекла $11 млрд при плановых $30 млрд перед IPO"
-    ],
-    [
-      "2026-10-31T04:00:55.522594+00:00",
-      "Росавиация сняла ограничения в аэропортах Саратова и Саранска"
-    ],
-    [
-      "2026-10-31T04:00:55.522594+00:00",
-      "Aave возобновила работу замороженных рынков"
-    ],
-    [
-      "2026-10-31T04:00:55.522594+00:00",
-      "Цена на дизель в Финляндии достигла максимума с 2022 года"
-    ],
-    [
-      "2026-10-31T04:00:55.522594+00:00",
-      "РФ и США планируют трехсторонние переговоры в Абу-Даби"
-    ],
     [
       "2026-10-31T04:00:55.522594+00:00",
       "Крупные инвесторы зафиксировали масштабную прибыль по токену HYPE"
@@ -1602,6 +1574,22 @@
     [
       "2026-10-31T19:30:57.015782+00:00",
       "Виктор Орбан и Александр Вучич объявили о возвращении в политику"
+    ],
+    [
+      "2026-10-31T20:00:57.412145+00:00",
+      "Совбез Ирана допускает возможность выхода из ДНЯО в случае новой войны"
+    ],
+    [
+      "2026-10-31T20:00:57.412145+00:00",
+      "Binance выделит 50% средств из фонда безопасности для покрытия убытков"
+    ],
+    [
+      "2026-10-31T20:00:57.412145+00:00",
+      "Bloomberg: чешский миллиардер предложил €30 млрд за владельца Ray-Ban"
+    ],
+    [
+      "2026-10-31T20:00:57.412145+00:00",
+      "Демократы США потребовали расследовать роль ИИ в политике Трампа"
     ]
   ],
   "results_fp": [
