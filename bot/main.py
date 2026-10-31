@@ -1201,7 +1201,9 @@ def run_results(state, now, dry):
             continue
         if r["kind"] == "earnings":
             v = "better" if r["surprise"] > 0 else "worse" if r["surprise"] < 0 else "inline"
-            res = {"verdict": v, "headline": f'EPS {r["eps"]} при прогнозе {r["forecast"]} (сюрприз {r["surprise"]:+.1f}%)',
+            # при прогнозе-убытке процент ничего не значит: $1.44 против −$0.16 дало «+1000%»
+            pct = "" if r["forecast"].startswith("−") else f' (сюрприз {r["surprise"]:+.1f}%)'
+            res = {"verdict": v, "headline": f'EPS {r["eps"]} при прогнозе {r["forecast"]}{pct}',
                    "meaning": "Компания заработала больше, чем ждали аналитики." if v == "better" else
                               "Компания заработала меньше, чем ждали аналитики." if v == "worse" else "Прибыль совпала с ожиданиями."}
         else:

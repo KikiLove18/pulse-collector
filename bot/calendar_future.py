@@ -158,6 +158,12 @@ def nasdaq_econ(days=7):
     return out
 
 
+def eps_fmt(v):
+    """Nasdaq пишет убыток в скобках: «($0.16)» → «−$0.16» (скобки читались как плюс, Coinbase 29.10)."""
+    v = (v or "").strip()
+    return "−" + v[1:-1].strip() if v.startswith("(") and v.endswith(")") else v
+
+
 def earnings(days=45):
     out = []
     today = datetime.now(ET).date()
@@ -175,7 +181,7 @@ def earnings(days=45):
                 when = {"time-pre-market": ("08:00", "до открытия"), "time-after-hours": ("16:05", "после закрытия")}.get(r.get("time"), ("09:30", ""))
                 out.append({"dt": _et(day.isoformat(), when[0]), "title": f"Отчёт {EARNINGS[sym]} ({sym})",
                             "impact": "High" if sym in ("NVDA", "AAPL", "MSFT", "AMZN", "GOOGL", "META", "TSLA", "COIN", "MSTR") else "Medium",
-                            "kind": "earnings", "forecast": (r.get("epsForecast") or "").strip(), "previous": "",
+                            "kind": "earnings", "forecast": eps_fmt(r.get("epsForecast")), "previous": "",
                             "note": when[1]})
     return out
 
@@ -346,6 +352,6 @@ def released(now, hours=8):
                 except ValueError:
                     pass
             out.append({"key": f"{d}|earn|{sym}", "title": f"Отчёт {EARNINGS[sym]} ({sym})", "kind": "earnings",
-                        "dt": _et(d, "16:05").astimezone(timezone.utc).isoformat(), "eps": eps, "forecast": fc, "surprise": surprise,
+                        "dt": _et(d, "16:05").astimezone(timezone.utc).isoformat(), "eps": eps_fmt(eps), "forecast": eps_fmt(fc), "surprise": surprise,
                         "impact": "High" if sym in ("NVDA", "AAPL", "MSFT", "AMZN", "GOOGL", "META", "TSLA", "COIN", "MSTR") else "Medium"})
     return out
