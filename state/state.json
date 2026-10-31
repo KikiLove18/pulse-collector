@@ -58,7 +58,7 @@
   ],
   "last_digest_ts": "2026-10-30T16:30:59.688521+00:00",
   "calendar": {
-    "ts": "2026-10-30T16:31:24.727030+00:00",
+    "ts": "2026-10-31T04:00:55.527562+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -821,6 +821,14 @@
         "previous": ""
       },
       {
+        "title": "FOMC Member Logan Speaks",
+        "country": "USD",
+        "date": "2026-10-30T13:30:00-04:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": ""
+      },
+      {
         "title": "Manufacturing PMI",
         "country": "CNY",
         "date": "2026-10-30T21:30:00-04:00",
@@ -919,7 +927,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-30T21:31:01.623312+00:00",
+  "breaking_ts": "2026-10-31T04:00:55.522594+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 0,
@@ -928,91 +936,50 @@
     "titles": []
   },
   "news_seen": [
-    "https://t.me/whale_alert_io/104394",
-    "https://tass.ru/obschestvo/28273541",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241708-lavrov-prizval-ne-pitat",
-    "https://t.me/smartlabnews/18002",
-    "https://t.me/WatcherGuru/15736",
-    "https://www.marketwatch.com/story/the-fed-held-interest-rates-steady-but-these-officials-see-more-hikes-coming-soon-2098bbd8?mod=mw_rss_topstories",
-    "https://tass.ru/sport/28273539",
-    "https://tass.ru/proisshestviya/28273535",
-    "https://t.me/FinancialJuice/144140",
-    "https://t.me/FinancialJuice/144138",
-    "https://t.me/FinancialJuice/144139",
-    "https://www.theblock.co/news/business/2026-10-30-binance-hack-largest-crypto-hack-north-korea-432225",
-    "https://www.investing.com/news/stock-market-news/sp-global-revises-outlook-on-meta-to-negative-on-cashflow-concerns-4988756",
-    "https://t.me/whale_alert_io/104393",
-    "https://t.me/FinancialJuice/144137",
-    "https://www.investing.com/news/stock-market-news/apple-overtakes-nvidia-to-become-worlds-most-valuable-company-amid-tech-selloff-4988752",
-    "https://t.me/markettwits/391398",
-    "https://tass.ru/politika/28273521",
-    "https://t.me/whale_alert_io/104392",
-    "https://tass.ru/obschestvo/28273529",
-    "https://tass.ru/ekonomika/28273527",
-    "https://decrypt.co/382285/binance-hack-why-offshore-exchanges-need-us-oversight-cftc-chair",
-    "https://tass.ru/ekonomika/28273525",
-    "https://t.me/whale_alert_io/104391",
-    "https://t.me/FinancialJuice/144136",
-    "https://tass.ru/mezhdunarodnaya-panorama/28273519",
-    "https://tass.ru/mezhdunarodnaya-panorama/28273523",
-    "https://www.interfax.ru/russia/1126230",
-    "https://t.me/markettwits/391397",
-    "https://www.kommersant.ru/doc/9077831",
-    "https://www.interfax.ru/russia/1126229",
-    "https://www.investing.com/news/stock-market-news/sp-global-cuts-meta-outlook-to-negative-amid-capex-concerns-4988733",
-    "https://tass.ru/obschestvo/28273491",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241707-lavrov-nazval-zayavleniya",
-    "https://t.me/FinancialJuice/144135",
-    "https://t.me/FinancialJuice/144134",
-    "https://www.rbc.ru/politics/30/10/2026/6ae4f9dfc06d23f7a6885ea8",
-    "https://www.rbc.ru/politics/30/10/2026/6ae4f9dfc06d23f7a6885ea8",
-    "https://tass.ru/sport/28273513",
-    "https://www.theblock.co/news/regulation/2026-10-30-trump-looking-into-binance-hack-calls-grow-for-crypto-rules-432236",
-    "https://t.me/WatcherGuru/15735",
-    "https://t.me/FinancialJuice/144133",
-    "https://tass.ru/mezhdunarodnaya-panorama/28273497",
-    "https://www.interfax.ru/russia/1126228",
-    "https://www.interfax.ru/russia/1126227",
-    "https://tass.ru/mezhdunarodnaya-panorama/28273505",
-    "https://tass.ru/kultura/28273509",
-    "https://tass.ru/armiya-i-opk/28273511",
-    "https://tass.ru/politika/28273437",
-    "https://tass.ru/obschestvo/28273493",
-    "https://tass.ru/armiya-i-opk/28269757",
-    "https://tass.ru/politika/28273467",
-    "https://tass.ru/proisshestviya/28273483",
-    "https://t.me/rbc_news/159768",
-    "https://t.me/interfaxonline/80975"
+    "https://tass.ru/ekonomika/28273867",
+    "https://www.kommersant.ru/doc/9078117",
+    "https://tass.ru/obschestvo/28273859",
+    "https://tass.ru/obschestvo/28273865",
+    "https://tass.ru/ekonomika/28273861",
+    "https://tass.ru/mezhdunarodnaya-panorama/28273857",
+    "https://cryptoslate.com/aave-reopens-frozen-markets-but-blocks-new-collateral-loans/",
+    "https://tass.ru/proisshestviya/28273855",
+    "https://t.me/headlines_for_traders/87796",
+    "https://tass.ru/ekonomika/28273847",
+    "https://tass.ru/ekonomika/28273851",
+    "https://tass.ru/armiya-i-opk/28273845",
+    "https://tass.ru/ekonomika/28273849",
+    "https://tass.ru/obschestvo/28273837",
+    "https://www.interfax.ru/russia/1126255",
+    "https://tass.ru/armiya-i-opk/28273841",
+    "https://www.interfax.ru/russia/1126254",
+    "https://t.me/lookonchainchannel/10858",
+    "https://tass.ru/armiya-i-opk/28273843",
+    "https://t.me/wublockchainenglish/26627",
+    "https://tass.ru/armiya-i-opk/28273835",
+    "https://tass.ru/proisshestviya/28273833",
+    "https://tass.ru/obschestvo/28273823",
+    "https://tass.ru/mezhdunarodnaya-panorama/28273831",
+    "https://tass.ru/ekonomika/28273829",
+    "https://www.kommersant.ru/doc/9078115",
+    "https://tass.ru/obschestvo/28273819",
+    "https://tass.ru/obschestvo/28273811",
+    "https://tass.ru/obschestvo/28273817",
+    "https://t.me/lookonchainchannel/10856",
+    "https://www.rbc.ru/rbcfreenews/6aadd4f01e08299cd10fd50d",
+    "https://tass.ru/ekonomika/28273809",
+    "https://tass.ru/proisshestviya/28273815",
+    "https://tass.ru/ekonomika/28273813",
+    "https://tass.ru/nedvizhimost/28273805",
+    "https://www.interfax.ru/russia/1126253",
+    "https://t.me/headlines_for_traders/87795",
+    "https://t.me/headlines_for_traders/87794"
   ],
   "ai_dead": {
     "date": "2026-10-30",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T05:30:57.338680+00:00",
-      "Суточный объем торгов на Uniswap превысил $5,97 млрд"
-    ],
-    [
-      "2026-10-30T06:00:58.380364+00:00",
-      "Ущерб от взлома Binance предварительно оценили в $6,3 млрд"
-    ],
-    [
-      "2026-10-30T06:00:58.380364+00:00",
-      "Нефть Brent подорожала до $116 за баррель на фоне эскалации на Ближнем Востоке"
-    ],
-    [
-      "2026-10-30T06:00:58.380364+00:00",
-      "Банк Японии сохранил краткосрочную ставку на уровне 1,25%"
-    ],
-    [
-      "2026-10-30T06:00:58.380364+00:00",
-      "ВТБ с 1 ноября повысит ставку по накопительному счету до 14,7%"
-    ],
-    [
-      "2026-10-30T06:00:58.380364+00:00",
-      "Хакеры вывели более $2,7 млн со счетов пользователей Polymarket"
-    ],
     [
       "2026-10-30T06:30:56.881564+00:00",
       "Рынок акций РФ открылся ростом на фонедорожающей нефти"
@@ -1612,6 +1579,30 @@
     [
       "2026-10-30T20:31:01.786786+00:00",
       "Банковские депозиты в США сократились за неделю"
+    ],
+    [
+      "2026-10-31T04:00:55.522594+00:00",
+      "OpenAI привлекла $11 млрд при плановых $30 млрд перед IPO"
+    ],
+    [
+      "2026-10-31T04:00:55.522594+00:00",
+      "Росавиация сняла ограничения в аэропортах Саратова и Саранска"
+    ],
+    [
+      "2026-10-31T04:00:55.522594+00:00",
+      "Aave возобновила работу замороженных рынков"
+    ],
+    [
+      "2026-10-31T04:00:55.522594+00:00",
+      "Цена на дизель в Финляндии достигла максимума с 2022 года"
+    ],
+    [
+      "2026-10-31T04:00:55.522594+00:00",
+      "РФ и США планируют трехсторонние переговоры в Абу-Даби"
+    ],
+    [
+      "2026-10-31T04:00:55.522594+00:00",
+      "Крупные инвесторы зафиксировали масштабную прибыль по токену HYPE"
     ]
   ],
   "results_fp": [
