@@ -928,7 +928,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T09:00:56.332745+00:00",
+  "breaking_ts": "2026-10-31T09:31:02.223613+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 2,
@@ -940,69 +940,54 @@
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/rbcfreenews/6ae18328b7cfe4a5fb8a4463",
+    "https://www.kommersant.ru/doc/9078225",
+    "https://t.me/markettwits/391415",
+    "https://t.me/FinancialJuice/144163",
+    "https://t.me/FinancialJuice/144162",
+    "https://t.me/interfaxonline/80988",
+    "https://tass.ru/ekonomika/28274361",
+    "https://www.rbc.ru/sport/25/10/2026/6ade168524639466d2c1eb98",
+    "https://tass.ru/ekonomika/28274359",
+    "https://t.me/rbc_news/159781",
+    "https://t.me/banksta/104538",
+    "https://tass.ru/obschestvo/28274263",
+    "https://www.rbc.ru/rbcfreenews/6aa430de25928a9b5c5bd12e",
+    "https://www.kommersant.ru/doc/9078205",
+    "https://t.me/markettwits/391414",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241740-predupredili-o-vozmozhnom-vozobnovlenii-udarov",
+    "https://www.kommersant.ru/doc/9078218",
+    "https://t.me/markettwits/391413",
+    "https://tass.ru/ekonomika/28274355",
+    "https://tass.ru/kultura/28274339",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274351",
+    "https://t.me/FinancialJuice/144161",
+    "https://www.rbc.ru/rbcfreenews/6addb9f4caec548e6fd15480",
+    "https://www.rbc.ru/sport/30/10/2026/6ae45ff65171f3bd6bffcd4b",
+    "https://t.me/FinancialJuice/144160",
+    "https://tass.ru/obschestvo/28274347",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274349",
+    "https://tass.ru/ekonomika/28274341",
+    "https://www.kommersant.ru/doc/9078211",
+    "https://tass.ru/ekonomika/28274317",
+    "https://tass.ru/ekonomika/28274345",
+    "https://tass.ru/obschestvo/28274329",
+    "https://www.kommersant.ru/doc/9078212",
+    "https://t.me/wublockchainenglish/26632",
+    "https://www.interfax.ru/russia/1126286",
+    "https://t.me/investfuture/15464",
+    "https://www.interfax.ru/russia/1126289",
+    "https://tass.ru/obschestvo/28274331",
     "https://t.me/forklog/50492",
+    "https://www.interfax.ru/russia/1126288",
     "https://tass.ru/mezhdunarodnaya-panorama/28274327",
-    "https://www.kommersant.ru/doc/9078210",
-    "https://t.me/banksta/104537",
-    "https://tass.ru/obschestvo/28274303",
-    "https://tass.ru/sport/28274321",
-    "https://www.interfax.ru/world/1126285",
-    "https://www.interfax.ru/moscow/1126284",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274309",
-    "https://t.me/rbc_news/159779",
-    "https://tass.ru/armiya-i-opk/28274313",
-    "https://www.kommersant.ru/doc/9078207",
-    "https://tass.ru/armiya-i-opk/28274307",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274299",
-    "https://tass.ru/armiya-i-opk/28274305",
-    "https://tass.ru/obschestvo/28274295",
-    "https://tass.ru/sport/28274297",
-    "https://t.me/if_market_news/86515",
-    "https://tass.ru/obschestvo/28274293",
-    "https://www.kommersant.ru/doc/9078203",
-    "https://www.rbc.ru/politics/31/10/2026/6ae573412ef494675c5cdf48",
-    "https://tass.ru/obschestvo/28274285",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241739-sbili-dva-bespilotnika",
-    "https://t.me/whale_alert_io/104405",
-    "https://t.me/banksta/104536",
-    "https://t.me/rbc_news/159778",
-    "https://www.rbc.ru/sport/24/10/2026/6adcf9a97b60f23d927efe1d",
-    "https://t.me/interfaxonline/80987",
-    "https://www.rbc.ru/rbcfreenews/6ae51f5646f3e239ee8a1209",
-    "https://tass.ru/obschestvo/28274281",
-    "https://www.rbc.ru/rbcfreenews/6adf63fbf98ac3abf29cbdfd",
-    "https://tass.ru/ekonomika/28274291",
-    "https://www.interfax.ru/moscow/1126282",
-    "https://www.kommersant.ru/doc/9078197",
-    "https://tass.ru/ekonomika/28274283",
-    "https://t.me/rbc_news/159777",
-    "https://www.kommersant.ru/doc/9078199"
+    "https://www.kommersant.ru/doc/9078210"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T11:00:56.279117+00:00",
-      "Акции Intel рухнули на 25% из-за слабого квартального отчета"
-    ],
-    [
-      "2026-10-30T11:00:56.279117+00:00",
-      "Экономика еврозоны выросла на 0,4% в третьем квартале"
-    ],
-    [
-      "2026-10-30T11:00:56.279117+00:00",
-      "Цена нефти Brent поднялась почти на 2,5% до $113,51"
-    ],
-    [
-      "2026-10-30T11:00:56.279117+00:00",
-      "Чистая прибыль ВТБ за девять месяцев выросла на 7%"
-    ],
-    [
-      "2026-10-30T11:00:56.279117+00:00",
-      "Euroclear получил €3,6 млрд от замороженных активов РФ"
-    ],
     [
       "2026-10-30T11:30:57.779020+00:00",
       "Binance выделила $6,34 млрд на возврат средств после взлома"
@@ -1602,6 +1587,26 @@
     [
       "2026-10-31T09:00:56.332745+00:00",
       "Россия и Мозамбик обсуждают запуск прямого авиасообщения"
+    ],
+    [
+      "2026-10-31T09:31:02.223613+00:00",
+      "«Аэрофлот» скорректировал расписание из-за ограничений в Шереметьево"
+    ],
+    [
+      "2026-10-31T09:31:02.223613+00:00",
+      "Chainalysis подверглась кибератаке с утечкой данных пользователей"
+    ],
+    [
+      "2026-10-31T09:31:02.223613+00:00",
+      "Центробанк Сербии отозвал лицензию у банка ALTA"
+    ],
+    [
+      "2026-10-31T09:31:02.223613+00:00",
+      "ФССП назвала средний размер долга россиян в базе ведомства"
+    ],
+    [
+      "2026-10-31T09:31:02.223613+00:00",
+      "Axios сообщил о риске ударов США по Ирану после 3 ноября"
     ]
   ],
   "results_fp": [
