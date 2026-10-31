@@ -928,118 +928,83 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T15:00:54.464464+00:00",
+  "breaking_ts": "2026-10-31T15:30:56.830778+00:00",
   "news_now": {
     "day": "2026-10-31",
-    "day_count": 4,
+    "day_count": 5,
     "urgent_count": 0,
-    "last": "2026-10-31T14:00:54.754504+00:00",
+    "last": "2026-10-31T15:30:56.830778+00:00",
     "titles": [
       "Спотовые биткоин-ETF зафиксировали отток $643 млн",
       "Apple вернула статус самой дорогой компании мира",
       "Обвал акций Intel и распродажа на рынках",
-      "Россия продлила запрет на экспорт дизеля до конца января"
+      "Россия продлила запрет на экспорт дизеля до конца января",
+      "ФСБ получила от США данные о подготовке теракта в Москве"
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/politics/31/10/2026/6ae607a387a8dbd418dd5029",
+    "https://t.me/WatcherGuru/15738",
+    "https://cointelegraph.com/markets/bitcoin-binance-hack-strive-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://www.theblock.co/news/defi/2026-10-31-hackers-hijack-a-dozen-defi-websites-all-registered-with-name-com-and-steal-about-138000-432251",
+    "https://www.kommersant.ru/doc/9078317",
+    "https://tass.ru/obschestvo/28274865",
+    "https://www.kommersant.ru/doc/9078322",
+    "https://t.me/thebell_io/39707",
+    "https://www.vedomosti.ru/society/news/2026/10/31/1241770-fsb-poluchila-dannie",
+    "https://www.marketwatch.com/story/what-gave-this-city-its-best-place-to-retire-crown-you-can-actually-afford-to-live-there-a06f8f4d?mod=mw_rss_topstories",
+    "https://www.rbc.ru/society/21/10/2026/6ad7c9630bc765ab064d26eb",
+    "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241768-est-shans-izbezhat",
+    "https://t.me/FinancialJuice/144190",
+    "https://www.rbc.ru/technology_and_media/26/10/2026/6adf605e0a3fcb2de56077be",
+    "https://www.kommersant.ru/doc/9078315",
+    "https://t.me/bitkogan_hotline/28072",
+    "https://tass.ru/proisshestviya/28274879",
+    "https://tass.ru/ekonomika/28274877",
+    "https://t.me/headlines_for_traders/87820",
+    "https://t.me/rbc_news/159797",
+    "https://www.kommersant.ru/doc/9078320",
+    "https://www.rbc.ru/rbcfreenews/6ad633281fc25c86d6c6a7fb",
+    "https://www.interfax.ru/russia/1126318",
+    "https://www.rbc.ru/politics/31/10/2026/6ae60517c06d23f7a6885f16",
+    "https://tass.ru/obschestvo/28274873",
+    "https://www.interfax.ru/russia/1126319",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241767-protesti-germanii",
+    "https://www.rbc.ru/finances/30/10/2026/6ae4879118a3b9290e38441d",
+    "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://t.me/interfaxonline/80995",
+    "https://www.rbc.ru/technology_and_media/20/10/2026/6ad77fba8598b41cf2d77f6e",
+    "https://www.interfax.ru/russia/1126317",
+    "https://www.kommersant.ru/doc/9078318",
+    "https://tass.ru/obschestvo/28274871",
+    "https://t.me/wublockchainenglish/26634",
+    "https://t.me/WalterBloomberg/37704",
+    "https://t.me/markettwits/391431",
+    "https://tass.ru/proisshestviya/28274869",
+    "https://t.me/interfaxonline/80994",
+    "https://www.rbc.ru/sport/13/10/2026/6acdfc3147a2db756903a5d0",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274867",
+    "https://t.me/banksta/104555",
+    "https://tass.ru/ekonomika/28274861",
+    "https://decrypt.co/382306/binance-hack-everything-you-need-to-know",
+    "https://www.interfax.ru/world/1126316",
+    "https://www.investing.com/news/stock-market-news/binance-says-90-of-stolen-assets-replenished-4989287",
     "https://t.me/interfaxonline/80993",
+    "https://tass.ru/sport/28274863",
     "https://www.coindesk.com/business/2026/10/26/institutions-embrace-crypto-staking-despite-shrinking-yields",
+    "https://www.marketwatch.com/story/theres-a-lot-of-hurt-between-us-my-fathers-caregiver-is-using-his-debit-card-for-doordash-orders-what-can-i-do-714de7a5?mod=mw_rss_topstories",
     "https://oilprice.com/Energy/Energy-General/Senegals-Ambitious-Plan-to-Slash-Electricity-Costs-and-Boost-Energy-Security.html",
     "https://t.me/whale_alert_io/104413",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274859",
     "https://t.me/FinancialJuice/144189",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241766-tramp-otsenil-vozmozhnost",
-    "https://t.me/FinancialJuice/144188",
-    "https://www.kommersant.ru/doc/9078308",
-    "https://www.rbc.ru/rbcfreenews/6ad98f0f8873422b19f8cb08",
-    "https://www.marketwatch.com/story/you-cant-rely-on-the-s-p-500-as-much-as-you-may-think-a3ac0cb7?mod=mw_rss_topstories",
-    "https://www.investing.com/news/stock-market-news/citi-explains-what-hawk-and-dove-really-mean-as-ecb-faces-leadership-change-4989285",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274805",
-    "https://www.interfax.ru/moscow/1126315",
-    "https://t.me/whale_alert_io/104412",
-    "https://www.kommersant.ru/doc/9078311",
-    "https://t.me/markettwits/391430",
-    "https://t.me/rbc_news/159796",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274851",
-    "https://tass.ru/ekonomika/28274855",
-    "https://tass.ru/obschestvo/28274849",
-    "https://tass.ru/sport/28274845",
-    "https://tass.ru/obschestvo/28274843",
-    "https://t.me/cbrstocks/83821",
-    "https://www.kommersant.ru/doc/9078310",
-    "https://t.me/headlines_for_traders/87819",
-    "https://t.me/invest_zonaa/39226",
-    "https://tass.ru/obschestvo/28274841",
-    "https://t.me/banksta/104554",
-    "https://thedefiant.io/news/hacks/binance-says-90-of-stolen-assets-replenished-targets-nov-1-restart",
-    "https://www.rbc.ru/radio/31/10/2026/6ae59a6c9a794736037a5ce4",
-    "https://www.rbc.ru/sport/21/10/2026/6ad8fbf9b30687ecb30cda7f",
-    "https://t.me/WalterBloomberg/37703",
-    "https://www.coindesk.com/business/2026/10/31/uber-tests-how-tokenization-can-put-idle-cash-to-work-with-hsbc-franklin-templeton",
-    "https://www.interfax.ru/world/1126314",
-    "https://tass.ru/proisshestviya/28274839",
-    "https://t.me/WalterBloomberg/37702",
-    "https://t.me/WalterBloomberg/37701",
-    "https://www.rbc.ru/rbcfreenews/6ac2310c4302f1f59fd8fb67",
-    "https://t.me/WalterBloomberg/37700",
-    "https://t.me/WalterBloomberg/37699",
-    "https://tass.ru/proisshestviya/28274835",
-    "https://www.rbc.ru/rbcfreenews/6ae49ebcacf5a5b4b205c258",
-    "https://tass.ru/ekonomika/28274831",
-    "https://www.rbc.ru/rbcfreenews/6addb9f4caec548e6fd15480",
-    "https://www.kommersant.ru/doc/9078306",
-    "https://tass.ru/ekonomika/28274827",
-    "https://www.interfax.ru/russia/1126313",
-    "https://www.rbc.ru/rbcfreenews/68de9ddb9a7947b9df6042a2",
-    "https://tass.ru/sport/28274829",
-    "https://www.marketwatch.com/story/the-midterms-are-crucial-to-the-future-of-social-security-no-matter-how-old-you-are-0f080a9c?mod=mw_rss_topstories",
-    "https://www.interfax.ru/moscow/1126312",
-    "https://www.trumpstruth.org/statuses/42983",
-    "https://www.trumpstruth.org/statuses/42984",
-    "https://t.me/headlines_for_traders/87818",
-    "https://tass.ru/proisshestviya/28274823",
-    "https://t.me/banksta/104553",
-    "https://tass.ru/sport/28274819",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274813",
-    "https://t.me/headlines_for_traders/87817",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241765-v-yaponii-s-medvedem",
-    "https://www.rbc.ru/rbcfreenews/6ac79b856f4d55a9448bf4b3",
-    "https://www.rbc.ru/rbcfreenews/6adcee27678a187a77afd76c",
-    "https://tass.ru/armiya-i-opk/28274817",
-    "https://cointelegraph.com/magazine/bitcoin-turns-18-has-the-original-rebel-grown-up?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.interfax.ru/world/1126311",
-    "https://t.me/banksta/104552",
-    "https://t.me/markettwits/391429",
-    "https://www.marketwatch.com/story/he-was-heartbroken-my-husbands-kids-never-helped-when-he-was-gravely-ill-was-he-right-to-leave-everything-to-me-1ad0616b?mod=mw_rss_topstories"
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241766-tramp-otsenil-vozmozhnost"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T17:00:57.921262+00:00",
-      "Global Payments может быть куплена за $40 млрд"
-    ],
-    [
-      "2026-10-30T17:00:57.921262+00:00",
-      "Акции Reddit упали на 28% из-за влияния ИИ-поиска"
-    ],
-    [
-      "2026-10-30T17:30:58.175296+00:00",
-      "Стоимость золота опустилась ниже $3 900 впервые с октября 2025 года"
-    ],
-    [
-      "2026-10-30T17:30:58.175296+00:00",
-      "Чистая прибыль ExxonMobil выросла более чем вдвое до $15,4 млрд"
-    ],
-    [
-      "2026-10-30T17:30:58.175296+00:00",
-      "Tether отчиталась о $1,5 млрд операционной прибыли за третий квартал"
-    ],
-    [
-      "2026-10-30T17:30:58.175296+00:00",
-      "Дмитрий Григоренко покинул пост председателя наблюдательного совета ВТБ"
-    ],
     [
       "2026-10-30T17:30:58.175296+00:00",
       "Ford планирует увеличить продажи на 20% до 5 млн машин к 2032 году"
@@ -1639,6 +1604,26 @@
     [
       "2026-10-31T15:00:54.464464+00:00",
       "«Манчестер Юнайтед» проиграл «Челси» со счетом 0:2"
+    ],
+    [
+      "2026-10-31T15:30:56.830778+00:00",
+      "ФСБ получила от США информацию о подготовке теракта в Москве"
+    ],
+    [
+      "2026-10-31T15:30:56.830778+00:00",
+      "Binance восстановила 90% средств после крупного взлома"
+    ],
+    [
+      "2026-10-31T15:30:56.830778+00:00",
+      "Венгрия сократит расходы на строительство АЭС «Пакш-2» на €87 млн"
+    ],
+    [
+      "2026-10-31T15:30:56.830778+00:00",
+      "В польской оппозиции предложили вынести вотум недоверия Туску"
+    ],
+    [
+      "2026-10-31T15:30:56.830778+00:00",
+      "В Германии начались протесты молодежи с требованием отставки Мерца"
     ]
   ],
   "results_fp": [
