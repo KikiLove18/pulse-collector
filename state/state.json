@@ -928,93 +928,69 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T07:30:55.711193+00:00",
+  "breaking_ts": "2026-10-31T08:00:56.357326+00:00",
   "news_now": {
     "day": "2026-10-31",
-    "day_count": 1,
+    "day_count": 2,
     "urgent_count": 0,
-    "last": "2026-10-31T06:00:55.593459+00:00",
+    "last": "2026-10-31T08:00:56.357326+00:00",
     "titles": [
-      "Спотовые биткоин-ETF зафиксировали отток $643 млн"
+      "Спотовые биткоин-ETF зафиксировали отток $643 млн",
+      "Apple вернула статус самой дорогой компании мира"
     ]
   },
   "news_seen": [
+    "https://t.me/markettwits/391411",
+    "https://t.me/if_market_news/86514",
+    "https://t.me/FinancialJuice/144159",
+    "https://t.me/interfaxonline/80986",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274237",
+    "https://t.me/whale_alert_io/104404",
+    "https://www.rbc.ru/sport/17/10/2026/6ad384d3087ac9dd313f0ede",
+    "https://t.me/interfaxonline/80985",
+    "https://tass.ru/proisshestviya/28274227",
+    "https://www.kommersant.ru/doc/9078173",
+    "https://tass.ru/ekonomika/28274225",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274223",
+    "https://www.kommersant.ru/doc/9078180",
+    "https://t.me/wublockchainenglish/26631",
+    "https://www.rbc.ru/radio/31/10/2026/6ae59d609a794736037a5ce6",
+    "https://t.me/markettwits/391410",
+    "https://cryptoslate.com/westpac-limits-crypto-exchange-deposits-driven-by-fraud-rules/",
+    "https://tass.ru/politika/28274221",
+    "https://tass.ru/politika/28274219",
+    "https://t.me/markettwits/391409",
+    "https://tass.ru/obschestvo/28274215",
+    "https://tass.ru/proisshestviya/28274217",
+    "https://t.me/markettwits/391408",
+    "https://t.me/rbc_news/159776",
+    "https://www.rbc.ru/sport/27/10/2026/6adfa2629a794752e6c40257",
+    "https://t.me/markettwits/391407",
+    "https://t.me/FinancialJuice/144158",
+    "https://t.me/alfa_investments/8531",
+    "https://www.kommersant.ru/doc/9078177",
+    "https://www.interfax.ru/world/1126277",
+    "https://t.me/markettwits/391406",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274207",
+    "https://www.rbc.ru/rbcfreenews/6ae4b8b896dbb31945ada1ad",
+    "https://t.me/interfaxonline/80984",
+    "https://tass.ru/ekonomika/28274195",
+    "https://t.me/bitkogan/29501",
+    "https://t.me/markettwits/391405",
+    "https://t.me/headlines_for_traders/87808",
+    "https://www.rbc.ru/rbcfreenews/6ad02ca84510fcf631e094a2",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274197",
+    "https://tass.ru/kosmos/28272041",
     "https://tass.ru/mezhdunarodnaya-panorama/28274191",
     "https://tass.ru/mezhdunarodnaya-panorama/28274193",
     "https://www.rbc.ru/rbcfreenews/6ae1786f3c0647b172c103da",
-    "https://www.rbc.ru/sport/30/10/2026/6ae48d1aa4e04510d49d112d",
-    "https://tass.ru/proisshestviya/28274189",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241735-naznachit-niki-minazh-press-sekretarem",
-    "https://tass.ru/obschestvo/28274125",
-    "https://tass.ru/obschestvo/28274187",
-    "https://tass.ru/obschestvo/28274177",
-    "https://t.me/bitkogan_hotline/28066",
-    "https://www.kommersant.ru/doc/9078136",
-    "https://tass.ru/obschestvo/28274097",
-    "https://tass.ru/obschestvo/28274183",
-    "https://tass.ru/politika/28274185",
-    "https://t.me/markettwits/391404",
-    "https://t.me/banksta/104534",
-    "https://tass.ru/politika/28274175",
-    "https://www.interfax.ru/world/1126275",
-    "https://tass.ru/politika/28274179",
-    "https://tass.ru/sport/28274171",
-    "https://t.me/forklog/50491",
-    "https://www.rbc.ru/sport/09/10/2026/6ac895ec9a7947194fa94d8a",
-    "https://www.interfax.ru/world/1126274",
-    "https://tass.ru/ekonomika/28274173",
-    "https://t.me/FinancialJuice/144157",
-    "https://t.me/rbc_news/159775",
-    "https://tass.ru/sport/28274169",
-    "https://www.kommersant.ru/doc/9078160",
-    "https://t.me/thebell_io/39702",
-    "https://t.me/FinancialJuice/144156",
-    "https://www.interfax.ru/russia/1126273",
-    "https://tass.ru/proisshestviya/28274165",
-    "https://t.me/markettwits/391403",
-    "https://tass.ru/ekonomika/28274145",
-    "https://tass.ru/obschestvo/28274141",
-    "https://tass.ru/obschestvo/28274093",
-    "https://t.me/markettwits/391402",
-    "https://tass.ru/obschestvo/28274139",
-    "https://www.rbc.ru/quote/31/10/2026/6a85c59d9a79478ad87a96df",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274137",
-    "https://www.rbc.ru/quote/31/10/2026/6ae48ac09a79471c5b67c900",
-    "https://t.me/incrypted/33187",
-    "https://www.interfax.ru/world/1126226",
-    "https://tass.ru/obschestvo/28273051",
-    "https://tass.ru/opinions/28271355",
-    "https://www.rbc.ru/economics/16/10/2026/6ad2611564fe3a360ae28700",
-    "https://www.kommersant.ru/doc/9078159",
-    "https://tass.ru/kultura/28274077",
-    "https://t.me/FinancialJuice/144155",
-    "https://www.interfax.ru/russia/1126272",
-    "https://tass.ru/proisshestviya/28274135",
-    "https://tass.ru/obschestvo/28274131",
-    "https://t.me/markettwits/391401",
-    "https://www.rbc.ru/rbcfreenews/6ae57058848fd36c464c70e7"
+    "https://www.interfax.ru/russia/1126276"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T09:30:58.842437+00:00",
-      "CAS обязал IIHF допустить сборные России до турниров"
-    ],
-    [
-      "2026-10-30T09:30:58.842437+00:00",
-      "В ОАЭ закрыли пляжи из-за разлива нефти в Ормузском проливе"
-    ],
-    [
-      "2026-10-30T09:30:58.842437+00:00",
-      "МГКЛ допустила технический дефолт по купону на 24,66 млн рублей"
-    ],
-    [
-      "2026-10-30T09:30:58.842437+00:00",
-      "Чистая прибыль «Ленты» в III квартале сократилась на 29,8%"
-    ],
     [
       "2026-10-30T09:30:58.842437+00:00",
       "Вэнс призвал Иран определить полномочных переговорщиков по ядерной программе"
@@ -1614,6 +1590,30 @@
     [
       "2026-10-31T07:30:55.711193+00:00",
       "Криптовалютный рынок снижается на фоне общего страха"
+    ],
+    [
+      "2026-10-31T08:00:56.357326+00:00",
+      "Apple обошла Nvidia по капитализации"
+    ],
+    [
+      "2026-10-31T08:00:56.357326+00:00",
+      "Франция ввела налог на интернет-трафик для бигтехов"
+    ],
+    [
+      "2026-10-31T08:00:56.357326+00:00",
+      "Перевод $39 млн в TRX после взлома Binance"
+    ],
+    [
+      "2026-10-31T08:00:56.357326+00:00",
+      "Зеленский: поставки ракет Patriot затянутся на годы"
+    ],
+    [
+      "2026-10-31T08:00:56.357326+00:00",
+      "ВОЗ предупредила о новом штамме COVID-19"
+    ],
+    [
+      "2026-10-31T08:00:56.357326+00:00",
+      "ФССП взыскала с россиян 1,1 трлн рублей"
     ]
   ],
   "results_fp": [
@@ -1664,6 +1664,6 @@
     ]
   },
   "pro_daily": "2026-10-30",
-  "freech_day": "2026-10-30",
+  "freech_day": "2026-10-31",
   "pro_auto": "2026-10-31"
 }
