@@ -929,7 +929,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T17:30:59.051007+00:00",
+  "breaking_ts": "2026-10-31T18:00:55.114822+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 5,
@@ -944,81 +944,52 @@
     ]
   },
   "news_seen": [
+    "https://thedefiant.io/news/security/threshold-says-tbtc-is-fully-backed-as-bridge-pause-continues",
+    "https://www.coindesk.com/opinion/2026/10/31/bitcoin-s-white-paper-turns-18-and-small-businesses-are-still-paying-for-the-bailouts-it-answered",
+    "https://t.me/wublockchainenglish/26635",
+    "https://tass.ru/obschestvo/28274999",
+    "https://t.me/WalterBloomberg/37706",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275099",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275155",
+    "https://t.me/headlines_for_traders/87824",
+    "https://t.me/banksta/104563",
+    "https://tass.ru/sport/28275153",
+    "https://t.me/rbc_news/159803",
+    "https://tass.ru/ekonomika/28275149",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275131",
+    "https://t.me/markettwits/391440",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275125",
+    "https://www.interfax.ru/world/1126338",
+    "https://tass.ru/proisshestviya/28275147",
+    "https://thedefiant.io/news/defi/thorchain-swaps-remain-paused-on-12-chains-after-reported-refund-error",
+    "https://www.kommersant.ru/doc/9078338",
+    "https://t.me/markettwits/391439",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241777-rubio-lavrov-obsudili",
+    "https://www.rbc.ru/politics/31/10/2026/6ae626cfb0df3e58a4593826",
+    "https://t.me/rbc_news/159802",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275127",
+    "https://t.me/invest_zonaa/39229",
+    "https://t.me/FinancialJuice/144213",
+    "https://t.me/markettwits/391438",
+    "https://tass.ru/sport/28275139",
+    "https://t.me/banksta/104562",
+    "https://tass.ru/kultura/28275123",
+    "https://thedefiant.io/news/security/intersect-urges-cardano-operators-to-patch-critical-linux-flaw",
+    "https://tass.ru/politika/28275115",
+    "https://www.kommersant.ru/doc/9078336",
     "https://www.rbc.ru/politics/26/10/2026/6adf23fe9a79472f254d7f47",
     "https://t.me/interfaxonline/80999",
+    "https://www.interfax.ru/russia/1126322",
     "https://tass.ru/mezhdunarodnaya-panorama/28275109",
+    "https://www.investing.com/news/stock-market-news/meta-builds-humanoid-robot-with-chinas-fourier-as-home-robot-push-expands-report-4989306",
     "https://t.me/markettwits/391437",
-    "https://www.marketwatch.com/story/medicare-used-ai-to-pre-approve-patient-care-and-it-immediately-led-to-a-large-drop-in-medical-services-dc38a210?mod=mw_rss_topstories",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275097",
-    "https://www.interfax.ru/world/1126337",
-    "https://www.rbc.ru/politics/02/10/2026/6abf469f9a794763acf9cc20",
-    "https://tass.ru/obschestvo/28275103",
-    "https://t.me/interfaxonline/80998",
-    "https://tass.ru/obschestvo/28275055",
-    "https://tass.ru/obschestvo/28275093",
-    "https://www.interfax.ru/russia/1126336",
-    "https://tass.ru/proisshestviya/28275057",
-    "https://t.me/whale_alert_io/104415",
-    "https://www.rbc.ru/rbcfreenews/6ae6223376ddd207a528d811",
-    "https://www.interfax.ru/moscow/1126335",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275053",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241775-tusk-vistupit-s-rechyu",
-    "https://t.me/rbc_news/159801",
-    "https://t.me/markettwits/391436",
-    "https://tass.ru/armiya-i-opk/28275085",
-    "https://t.me/headlines_for_traders/87823",
-    "https://www.rbc.ru/politics/30/10/2026/6ae4b750d98bf27748dfa0e6",
-    "https://www.rbc.ru/sport/15/10/2026/6acfdcdc9a79479d4a85fa7f",
-    "https://www.kommersant.ru/doc/9078334",
-    "https://tass.ru/sport/28275081",
-    "https://t.me/markettwits/391435",
-    "https://tass.ru/obschestvo/28274857",
-    "https://www.rbc.ru/society/28/10/2026/6ae1bd8ed51d4f35d394144d",
-    "https://tass.ru/sport/28275077",
-    "https://www.interfax.ru/world/1126334",
-    "https://t.me/markettwits/391434",
-    "https://tass.ru/politika/28275075",
-    "https://www.interfax.ru/world/1126333",
-    "https://t.me/WalterBloomberg/37705",
-    "https://tass.ru/sport/28275073",
-    "https://tass.ru/politika/28275071",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241774-tramp-opublikoval-izobrazhenie",
-    "https://t.me/invest_zonaa/39228",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275069",
-    "https://www.interfax.ru/russia/1126332",
-    "https://tass.ru/politika/28275067",
-    "https://www.interfax.ru/world/1126331",
-    "https://t.me/nainspire/5633",
-    "https://www.interfax.ru/world/1126330",
-    "https://www.rbc.ru/sport/30/10/2026/6ae447b699cf668dcbaef399",
-    "https://t.me/investfuture/15466",
-    "https://tass.ru/kultura/28275061",
-    "https://t.me/markettwits/391433",
-    "https://oilprice.com/Energy/Energy-General/DARPA-Backs-Project-to-Measure-AI-Energy-Use-at-Every-Stage-of-the-Workflow.html",
-    "https://tass.ru/sport/28275059",
-    "https://www.rbc.ru/society/31/10/2026/6ae5a3547ce4f5a580a38acd",
-    "https://tass.ru/obschestvo/28275049",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275019",
-    "https://t.me/FinancialJuice/144212",
-    "https://t.me/FinancialJuice/144211"
+    "https://www.marketwatch.com/story/medicare-used-ai-to-pre-approve-patient-care-and-it-immediately-led-to-a-large-drop-in-medical-services-dc38a210?mod=mw_rss_topstories"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T19:00:58.615160+00:00",
-      "Нефть Brent подорожала до $117,64 за баррель на торгах в пятницу"
-    ],
-    [
-      "2026-10-30T19:00:58.615160+00:00",
-      "Акции американских технологических компаний резко упали на фоне опасений по поводу ИИ"
-    ],
-    [
-      "2026-10-30T19:00:58.615160+00:00",
-      "Расходы американцев на жильё и еду выросли до 46,9% от бюджета"
-    ],
     [
       "2026-10-30T19:00:58.615160+00:00",
       "Крупный перевод 1301 биткоина зафиксирован с баланса Coinbase"
@@ -1618,6 +1589,30 @@
     [
       "2026-10-31T17:30:59.051007+00:00",
       "Эмиссия 250 млн USDC зафиксирована в сети"
+    ],
+    [
+      "2026-10-31T18:00:55.114822+00:00",
+      "Мосбиржа планирует запустить торги криптовалютами во всех сессиях"
+    ],
+    [
+      "2026-10-31T18:00:55.114822+00:00",
+      "«Яндекс» обновит прогноз показателей в феврале"
+    ],
+    [
+      "2026-10-31T18:00:55.114822+00:00",
+      "Россия на СМИДе G20 назвала санкции подрывом торговли"
+    ],
+    [
+      "2026-10-31T18:00:55.114822+00:00",
+      "Сбой в THORChain отложил отмывание украденных средств"
+    ],
+    [
+      "2026-10-31T18:00:55.114822+00:00",
+      "Meta создаст гуманоидного робота с китайской Fourier"
+    ],
+    [
+      "2026-10-31T18:00:55.114822+00:00",
+      "Medicare зафиксировала спад медуслуг после внедрения ИИ"
     ]
   ],
   "results_fp": [
