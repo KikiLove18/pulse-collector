@@ -59,7 +59,7 @@
   ],
   "last_digest_ts": "2026-10-31T04:30:57.710108+00:00",
   "calendar": {
-    "ts": "2026-10-31T04:00:55.527562+00:00",
+    "ts": "2026-10-31T10:00:56.170162+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -928,7 +928,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T09:31:02.223613+00:00",
+  "breaking_ts": "2026-10-31T10:00:56.163484+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 2,
@@ -940,74 +940,56 @@
     ]
   },
   "news_seen": [
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241741-o-nezhelanii-evropeitsev",
+    "https://t.me/proeconomics/20633",
+    "https://www.rbc.ru/rbcfreenews/6ae59bdb87a8dbd418dd4f4d",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274399",
+    "https://t.me/interfaxonline/80989",
+    "https://www.kommersant.ru/doc/9078234",
+    "https://tass.ru/ekonomika/28274387",
+    "https://t.me/markettwits/391419",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274379",
+    "https://t.me/markettwits/391418",
+    "https://tass.ru/proisshestviya/28274385",
+    "https://tass.ru/politika/28274373",
+    "https://tass.ru/sport/28274381",
+    "https://tass.ru/obschestvo/28274375",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241742-sbili-604-ukrainskih-bpla",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274377",
+    "https://t.me/rbc_news/159782",
+    "https://t.me/whale_alert_io/104406",
+    "https://www.kommersant.ru/doc/9078229",
+    "https://t.me/if_market_news/86517",
+    "https://www.kommersant.ru/doc/9078230",
+    "https://t.me/markettwits/391417",
+    "https://www.rbc.ru/quote/23/09/2026/6ab3ac999a794710c5e74ba3",
+    "https://t.me/markettwits/391416",
+    "https://t.me/banksta/104543",
+    "https://t.me/thebell_io/39703",
+    "https://t.me/if_market_news/86516",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274369",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241743-tri-samoleta-prizemlilis",
     "https://www.rbc.ru/rbcfreenews/6ae18328b7cfe4a5fb8a4463",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274367",
+    "https://www.rbc.ru/sport/25/10/2026/6addf3a66b40c53418ac07b2",
+    "https://www.rbc.ru/politics/28/10/2026/6ae1868f8ee58c812461d1b4",
+    "https://t.me/cbrstocks/83818",
+    "https://tass.ru/proisshestviya/28274365",
+    "https://tass.ru/sport/28274363",
+    "https://www.kommersant.ru/doc/9078222",
     "https://www.kommersant.ru/doc/9078225",
     "https://t.me/markettwits/391415",
     "https://t.me/FinancialJuice/144163",
     "https://t.me/FinancialJuice/144162",
     "https://t.me/interfaxonline/80988",
     "https://tass.ru/ekonomika/28274361",
-    "https://www.rbc.ru/sport/25/10/2026/6ade168524639466d2c1eb98",
-    "https://tass.ru/ekonomika/28274359",
-    "https://t.me/rbc_news/159781",
-    "https://t.me/banksta/104538",
-    "https://tass.ru/obschestvo/28274263",
-    "https://www.rbc.ru/rbcfreenews/6aa430de25928a9b5c5bd12e",
-    "https://www.kommersant.ru/doc/9078205",
-    "https://t.me/markettwits/391414",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241740-predupredili-o-vozmozhnom-vozobnovlenii-udarov",
-    "https://www.kommersant.ru/doc/9078218",
-    "https://t.me/markettwits/391413",
-    "https://tass.ru/ekonomika/28274355",
-    "https://tass.ru/kultura/28274339",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274351",
-    "https://t.me/FinancialJuice/144161",
-    "https://www.rbc.ru/rbcfreenews/6addb9f4caec548e6fd15480",
-    "https://www.rbc.ru/sport/30/10/2026/6ae45ff65171f3bd6bffcd4b",
-    "https://t.me/FinancialJuice/144160",
-    "https://tass.ru/obschestvo/28274347",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274349",
-    "https://tass.ru/ekonomika/28274341",
-    "https://www.kommersant.ru/doc/9078211",
-    "https://tass.ru/ekonomika/28274317",
-    "https://tass.ru/ekonomika/28274345",
-    "https://tass.ru/obschestvo/28274329",
-    "https://www.kommersant.ru/doc/9078212",
-    "https://t.me/wublockchainenglish/26632",
-    "https://www.interfax.ru/russia/1126286",
-    "https://t.me/investfuture/15464",
-    "https://www.interfax.ru/russia/1126289",
-    "https://tass.ru/obschestvo/28274331",
-    "https://t.me/forklog/50492",
-    "https://www.interfax.ru/russia/1126288",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274327",
-    "https://www.kommersant.ru/doc/9078210"
+    "https://www.rbc.ru/sport/25/10/2026/6ade168524639466d2c1eb98"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T11:30:57.779020+00:00",
-      "Binance выделила $6,34 млрд на возврат средств после взлома"
-    ],
-    [
-      "2026-10-30T11:30:57.779020+00:00",
-      "BP увеличила квартальную прибыль в четыре раза"
-    ],
-    [
-      "2026-10-30T11:30:57.779020+00:00",
-      "CAS обязал IIHF отстранить запрет для сборной России по хоккею"
-    ],
-    [
-      "2026-10-30T11:30:57.779020+00:00",
-      "KuCoin запретила операции для клиентов из России и Беларуси"
-    ],
-    [
-      "2026-10-30T11:30:57.779020+00:00",
-      "Безработица в еврозоне выросла до максимума за три года"
-    ],
     [
       "2026-10-30T12:00:58.803306+00:00",
       "Чистая прибыль ВТБ за девять месяцев стала рекордной"
@@ -1607,6 +1589,30 @@
     [
       "2026-10-31T09:31:02.223613+00:00",
       "Axios сообщил о риске ударов США по Ирану после 3 ноября"
+    ],
+    [
+      "2026-10-31T10:00:56.163484+00:00",
+      "СМИ: США могут возобновить удары по Ирану после выборов 3 ноября"
+    ],
+    [
+      "2026-10-31T10:00:56.163484+00:00",
+      "Fitch присвоило Франции негативный прогноз по рейтингу из-за дефицита"
+    ],
+    [
+      "2026-10-31T10:00:56.163484+00:00",
+      "Хедж-фонды нарастили шорты в американском газе до рекорда"
+    ],
+    [
+      "2026-10-31T10:00:56.163484+00:00",
+      "Мосбиржа назвала доступные монеты и время торгов криптой с 1 декабря"
+    ],
+    [
+      "2026-10-31T10:00:56.163484+00:00",
+      "В Германии ожидаются масштабные протесты поколения Z против дороговизны"
+    ],
+    [
+      "2026-10-31T10:00:56.163484+00:00",
+      "ЦБ Сербии отозвал лицензию у популярного у россиян Altabanka"
     ]
   ],
   "results_fp": [
