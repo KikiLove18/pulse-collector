@@ -929,7 +929,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T18:00:55.114822+00:00",
+  "breaking_ts": "2026-10-31T18:30:55.037015+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 5,
@@ -944,76 +944,41 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/obschestvo/28275173",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241779-orban-i-vuchich-o-planah",
+    "https://thedefiant.io/news/defi/morpho-borrow-rates-hit-roughly-40-as-pt-market-liquidity-dries-up",
+    "https://t.me/banksta/104574",
+    "https://www.rbc.ru/sport/17/10/2025/68f1ec959a79472c9a7e6897",
+    "https://tass.ru/proisshestviya/28275171",
+    "https://t.me/markettwits/391442",
+    "https://www.rbc.ru/politics/31/10/2026/6ae6307ab81721b52af75f29",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275167",
+    "https://tass.ru/sport/28275169",
+    "https://www.kommersant.ru/doc/9078341",
+    "https://tass.ru/proisshestviya/28275165",
+    "https://www.rbc.ru/rbcfreenews/6993fe4b9a79473b50cf446c",
+    "https://cryptoslate.com/banks-are-owed-349b-by-private-credit-funds-that-may-not-be-collecting-cash-from-borrowers/",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275163",
+    "https://www.marketwatch.com/story/were-spending-more-than-11-000-a-year-of-our-own-money-caring-for-our-aging-parents-and-loved-ones-8fc5b2dc?mod=mw_rss_topstories",
+    "https://t.me/markettwits/391441",
+    "https://tass.ru/obschestvo/28275161",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241778-rubio-utochnil-pozitsiyu",
+    "https://t.me/banksta/104573",
+    "https://t.me/cbrstocks/83822",
+    "https://www.interfax.ru/world/1126339",
     "https://thedefiant.io/news/security/threshold-says-tbtc-is-fully-backed-as-bridge-pause-continues",
     "https://www.coindesk.com/opinion/2026/10/31/bitcoin-s-white-paper-turns-18-and-small-businesses-are-still-paying-for-the-bailouts-it-answered",
     "https://t.me/wublockchainenglish/26635",
     "https://tass.ru/obschestvo/28274999",
     "https://t.me/WalterBloomberg/37706",
     "https://tass.ru/mezhdunarodnaya-panorama/28275099",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275155",
-    "https://t.me/headlines_for_traders/87824",
-    "https://t.me/banksta/104563",
-    "https://tass.ru/sport/28275153",
-    "https://t.me/rbc_news/159803",
-    "https://tass.ru/ekonomika/28275149",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275131",
-    "https://t.me/markettwits/391440",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275125",
-    "https://www.interfax.ru/world/1126338",
-    "https://tass.ru/proisshestviya/28275147",
-    "https://thedefiant.io/news/defi/thorchain-swaps-remain-paused-on-12-chains-after-reported-refund-error",
-    "https://www.kommersant.ru/doc/9078338",
-    "https://t.me/markettwits/391439",
-    "https://www.vedomosti.ru/politics/news/2026/10/31/1241777-rubio-lavrov-obsudili",
-    "https://www.rbc.ru/politics/31/10/2026/6ae626cfb0df3e58a4593826",
-    "https://t.me/rbc_news/159802",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275127",
-    "https://t.me/invest_zonaa/39229",
-    "https://t.me/FinancialJuice/144213",
-    "https://t.me/markettwits/391438",
-    "https://tass.ru/sport/28275139",
-    "https://t.me/banksta/104562",
-    "https://tass.ru/kultura/28275123",
-    "https://thedefiant.io/news/security/intersect-urges-cardano-operators-to-patch-critical-linux-flaw",
-    "https://tass.ru/politika/28275115",
-    "https://www.kommersant.ru/doc/9078336",
-    "https://www.rbc.ru/politics/26/10/2026/6adf23fe9a79472f254d7f47",
-    "https://t.me/interfaxonline/80999",
-    "https://www.interfax.ru/russia/1126322",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275109",
-    "https://www.investing.com/news/stock-market-news/meta-builds-humanoid-robot-with-chinas-fourier-as-home-robot-push-expands-report-4989306",
-    "https://t.me/markettwits/391437",
-    "https://www.marketwatch.com/story/medicare-used-ai-to-pre-approve-patient-care-and-it-immediately-led-to-a-large-drop-in-medical-services-dc38a210?mod=mw_rss_topstories"
+    "https://tass.ru/mezhdunarodnaya-panorama/28275155"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T19:00:58.615160+00:00",
-      "Крупный перевод 1301 биткоина зафиксирован с баланса Coinbase"
-    ],
-    [
-      "2026-10-30T19:31:02.153617+00:00",
-      "Распродажа в техсекторе США толкает Nasdaq к худшему месяцу за год"
-    ],
-    [
-      "2026-10-30T19:31:02.153617+00:00",
-      "Госдеп США одобрил продажу Украине ракет Patriot на $2,1 млрд"
-    ],
-    [
-      "2026-10-30T19:31:02.153617+00:00",
-      "Franklin Templeton запустила два новых биткоин-ETF"
-    ],
-    [
-      "2026-10-30T19:31:02.153617+00:00",
-      "США призвали госслужащих покинуть Саудовскую Аравию из-за угроз"
-    ],
-    [
-      "2026-10-30T19:31:02.153617+00:00",
-      "Белоруссия создает новое десантное соединение у границы с Украиной"
-    ],
     [
       "2026-10-30T20:00:58.148539+00:00",
       "Акции Reddit рухнули на 30% из-за конкуренции с ИИ-поиском Google"
@@ -1613,6 +1578,30 @@
     [
       "2026-10-31T18:00:55.114822+00:00",
       "Medicare зафиксировала спад медуслуг после внедрения ИИ"
+    ],
+    [
+      "2026-10-31T18:30:55.037015+00:00",
+      "ОПЕК+ предварительно согласилась сохранить квоты на добычу в декабре"
+    ],
+    [
+      "2026-10-31T18:30:55.037015+00:00",
+      "Во Франции прошли масштабные протесты с участием 320 тысяч человек"
+    ],
+    [
+      "2026-10-31T18:30:55.037015+00:00",
+      "Сбой в сети THORChain отложил отмывание средств после взлома Binance"
+    ],
+    [
+      "2026-10-31T18:30:55.037015+00:00",
+      "Италия предложила ввести 26% налог для покидающих страну инвесторов"
+    ],
+    [
+      "2026-10-31T18:30:55.037015+00:00",
+      "Ставки по заимствованиям на Morpho подскочили до 40% из-за ликвидности"
+    ],
+    [
+      "2026-10-31T18:30:55.037015+00:00",
+      "Расходы американских опекунов выросли на 60% за пять лет"
     ]
   ],
   "results_fp": [
