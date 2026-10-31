@@ -928,7 +928,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T05:01:05.291232+00:00",
+  "breaking_ts": "2026-10-31T05:30:54.752146+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 0,
@@ -937,78 +937,52 @@
     "titles": []
   },
   "news_seen": [
+    "https://www.rbc.ru/sport/25/10/2026/6ade168524639466d2c1eb98",
+    "https://tass.ru/proisshestviya/28274005",
+    "https://tass.ru/obschestvo/28273999",
+    "https://tass.ru/sport/28274007",
+    "https://thedefiant.io/news/defi/curve-volume-halves-to-425-million-as-3pool-s-usdt-tilt-eases",
+    "https://www.rbc.ru/photoslider/6ae57b7b18a3b9290e3844ae",
+    "https://tass.ru/proisshestviya/28273995",
+    "https://tass.ru/obschestvo/28274003",
+    "https://tass.ru/mezhdunarodnaya-panorama/28273961",
+    "https://www.kommersant.ru/doc/9078125",
+    "https://www.rbc.ru/politics/31/10/2026/6ae550643d8c4ded5ced4dab",
+    "https://www.interfax.ru/russia/1126265",
+    "https://www.kommersant.ru/doc/9078123",
+    "https://tass.ru/obschestvo/28273997",
+    "https://t.me/whale_alert_io/104403",
+    "https://tass.ru/ekonomika/28273979",
+    "https://tass.ru/obschestvo/28273977",
+    "https://tass.ru/obschestvo/28273991",
+    "https://www.interfax.ru/russia/1126264",
+    "https://t.me/headlines_for_traders/87798",
+    "https://t.me/headlines_for_traders/87799",
+    "https://www.rbc.ru/politics/30/10/2026/6ae43c959532a8518b5155cc",
+    "https://www.interfax.ru/russia/1126263",
+    "https://tass.ru/proisshestviya/28273993",
+    "https://www.interfax.ru/russia/1126262",
+    "https://www.rbc.ru/technology_and_media/13/10/2026/6acdfe479a79471bedd678bb",
+    "https://tass.ru/sport/28273973",
+    "https://tass.ru/sport/28273951",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241726-navrotskii-sozval-srochnoe-soveschanie",
+    "https://tass.ru/armiya-i-opk/28273971",
+    "https://tass.ru/nedvizhimost/28273965",
+    "https://tass.ru/armiya-i-opk/28273967",
+    "https://t.me/forklog/50490",
+    "https://www.coindesk.com/markets/2026/10/31/bitcoin-stolen-from-binance-tops-tesla-s-holdings-and-is-over-twice-el-salvador-s-reserve",
+    "https://tass.ru/armiya-i-opk/28273963",
+    "https://tass.ru/armiya-i-opk/28273957",
+    "https://tass.ru/obschestvo/28273959",
     "https://www.rbc.ru/politics/31/10/2026/6ae573412ef494675c5cdf48",
-    "https://tass.ru/proisshestviya/28273955",
-    "https://www.interfax.ru/russia/1126261",
-    "https://tass.ru/obschestvo/28273945",
-    "https://tass.ru/obschestvo/28273949",
-    "https://tass.ru/kultura/28273941",
-    "https://tass.ru/sport/28273947",
-    "https://www.interfax.ru/russia/1126260",
-    "https://t.me/lookonchainchannel/10859",
-    "https://tass.ru/politika/28273943",
-    "https://tass.ru/mezhdunarodnaya-panorama/28273939",
-    "https://www.kommersant.ru/doc/9078121",
-    "https://tass.ru/ekonomika/28273915",
-    "https://tass.ru/mezhdunarodnaya-panorama/28273933",
-    "https://tass.ru/ekonomika/28273937",
-    "https://tass.ru/armiya-i-opk/28273923",
-    "https://tass.ru/sport/28273913",
-    "https://tass.ru/sport/28273929",
-    "https://tass.ru/armiya-i-opk/28273927",
-    "https://tass.ru/obschestvo/28273921",
-    "https://tass.ru/armiya-i-opk/28273925",
-    "https://tass.ru/politika/28273917",
-    "https://tass.ru/ekonomika/28273919",
-    "https://www.vedomosti.ru/technology/news/2026/10/31/1241725-apple-stala-samoi-dorogoi",
-    "https://www.marketwatch.com/story/grand-theft-callout-gta-6-fans-are-missing-work-on-the-games-release-day-because-they-dont-want-to-wait-anymore-5f2fa2e3?mod=mw_rss_topstories",
-    "https://t.me/interfaxonline/80981",
-    "https://www.rbc.ru/politics/31/10/2026/6ae4f9ed92b809aef4d94c8b",
-    "https://t.me/headlines_for_traders/87797",
-    "https://www.interfax.ru/russia/1126259",
-    "https://tass.ru/obschestvo/28273903",
-    "https://tass.ru/sport/28273907",
-    "https://tass.ru/ekonomika/28273905",
-    "https://tass.ru/mezhdunarodnaya-panorama/28273901",
-    "https://t.me/wublockchainenglish/26628",
-    "https://t.me/whale_alert_io/104402",
-    "https://tass.ru/obschestvo/28273897",
-    "https://tass.ru/obschestvo/28273893",
-    "https://tass.ru/obschestvo/28273889",
-    "https://www.rbc.ru/rbcfreenews/6ae45f3418ec3d299e9f5765",
-    "https://www.vedomosti.ru/society/news/2026/10/31/1241724-vveli-ogranicheniya",
-    "https://www.kommersant.ru/doc/9078119",
-    "https://www.interfax.ru/russia/1126257"
+    "https://www.investing.com/news/stock-market-news/agentic-ai-excitement-runs-ahead-of-results-4989096",
+    "https://tass.ru/proisshestviya/28273955"
   ],
   "ai_dead": {
     "date": "2026-10-30",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T07:00:55.788744+00:00",
-      "ВТБ увеличил чистую прибыль по МСФО в III квартале до 182 млрд рублей"
-    ],
-    [
-      "2026-10-30T07:00:55.788744+00:00",
-      "Aave заморозила рынки V3 и V4 после депозита средств эксплойтера Binance"
-    ],
-    [
-      "2026-10-30T07:00:55.788744+00:00",
-      "В России стартовали государственные закупочные интервенции зерна"
-    ],
-    [
-      "2026-10-30T07:00:55.788744+00:00",
-      "12 стран ЕС договорились высвободить 42,6 млн баррелей нефти из резервов"
-    ],
-    [
-      "2026-10-30T07:00:55.788744+00:00",
-      "Минобороны сообщило о пресечении массированной атаки беспилотников"
-    ],
-    [
-      "2026-10-30T07:33:38.221111+00:00",
-      "ВТБ: Долг «Самолета» может стать первым кейсом санации по новому закону"
-    ],
     [
       "2026-10-30T07:33:38.221111+00:00",
       "Чистая прибыль «Интер РАО» по РСБУ за 9 месяцев выросла до 16,6 млрд рублей"
@@ -1608,6 +1582,26 @@
     [
       "2026-10-31T05:01:05.291232+00:00",
       "Росавиация сняла временные ограничения в аэропортах Екатеринбурга"
+    ],
+    [
+      "2026-10-31T05:30:54.752146+00:00",
+      "Ростовская область отразила атаку более 90 беспилотников за ночь"
+    ],
+    [
+      "2026-10-31T05:30:54.752146+00:00",
+      "ВС РФ нанесли удар по ТЭЦ-6 в Киеве"
+    ],
+    [
+      "2026-10-31T05:30:54.752146+00:00",
+      "Крупный перевод 609 699 SOL зафиксирован на кошелек Coinbase"
+    ],
+    [
+      "2026-10-31T05:30:54.752146+00:00",
+      "Россия в сентябре резко увеличила импорт цитрусовых из Турции"
+    ],
+    [
+      "2026-10-31T05:30:54.752146+00:00",
+      "ФССП в 2026 году взыскала более 1,1 трлн рублей"
     ]
   ],
   "results_fp": [
