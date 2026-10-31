@@ -928,7 +928,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T04:00:55.522594+00:00",
+  "breaking_ts": "2026-10-31T05:01:05.291232+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 0,
@@ -937,74 +937,54 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/ekonomika/28273867",
-    "https://www.kommersant.ru/doc/9078117",
-    "https://tass.ru/obschestvo/28273859",
-    "https://tass.ru/obschestvo/28273865",
-    "https://tass.ru/ekonomika/28273861",
-    "https://tass.ru/mezhdunarodnaya-panorama/28273857",
-    "https://cryptoslate.com/aave-reopens-frozen-markets-but-blocks-new-collateral-loans/",
-    "https://tass.ru/proisshestviya/28273855",
-    "https://t.me/headlines_for_traders/87796",
-    "https://tass.ru/ekonomika/28273847",
-    "https://tass.ru/ekonomika/28273851",
-    "https://tass.ru/armiya-i-opk/28273845",
-    "https://tass.ru/ekonomika/28273849",
-    "https://tass.ru/obschestvo/28273837",
-    "https://www.interfax.ru/russia/1126255",
-    "https://tass.ru/armiya-i-opk/28273841",
-    "https://www.interfax.ru/russia/1126254",
-    "https://t.me/lookonchainchannel/10858",
-    "https://tass.ru/armiya-i-opk/28273843",
-    "https://t.me/wublockchainenglish/26627",
-    "https://tass.ru/armiya-i-opk/28273835",
-    "https://tass.ru/proisshestviya/28273833",
-    "https://tass.ru/obschestvo/28273823",
-    "https://tass.ru/mezhdunarodnaya-panorama/28273831",
-    "https://tass.ru/ekonomika/28273829",
-    "https://www.kommersant.ru/doc/9078115",
-    "https://tass.ru/obschestvo/28273819",
-    "https://tass.ru/obschestvo/28273811",
-    "https://tass.ru/obschestvo/28273817",
-    "https://t.me/lookonchainchannel/10856",
-    "https://www.rbc.ru/rbcfreenews/6aadd4f01e08299cd10fd50d",
-    "https://tass.ru/ekonomika/28273809",
-    "https://tass.ru/proisshestviya/28273815",
-    "https://tass.ru/ekonomika/28273813",
-    "https://tass.ru/nedvizhimost/28273805",
-    "https://www.interfax.ru/russia/1126253",
-    "https://t.me/headlines_for_traders/87795",
-    "https://t.me/headlines_for_traders/87794"
+    "https://www.rbc.ru/politics/31/10/2026/6ae573412ef494675c5cdf48",
+    "https://tass.ru/proisshestviya/28273955",
+    "https://www.interfax.ru/russia/1126261",
+    "https://tass.ru/obschestvo/28273945",
+    "https://tass.ru/obschestvo/28273949",
+    "https://tass.ru/kultura/28273941",
+    "https://tass.ru/sport/28273947",
+    "https://www.interfax.ru/russia/1126260",
+    "https://t.me/lookonchainchannel/10859",
+    "https://tass.ru/politika/28273943",
+    "https://tass.ru/mezhdunarodnaya-panorama/28273939",
+    "https://www.kommersant.ru/doc/9078121",
+    "https://tass.ru/ekonomika/28273915",
+    "https://tass.ru/mezhdunarodnaya-panorama/28273933",
+    "https://tass.ru/ekonomika/28273937",
+    "https://tass.ru/armiya-i-opk/28273923",
+    "https://tass.ru/sport/28273913",
+    "https://tass.ru/sport/28273929",
+    "https://tass.ru/armiya-i-opk/28273927",
+    "https://tass.ru/obschestvo/28273921",
+    "https://tass.ru/armiya-i-opk/28273925",
+    "https://tass.ru/politika/28273917",
+    "https://tass.ru/ekonomika/28273919",
+    "https://www.vedomosti.ru/technology/news/2026/10/31/1241725-apple-stala-samoi-dorogoi",
+    "https://www.marketwatch.com/story/grand-theft-callout-gta-6-fans-are-missing-work-on-the-games-release-day-because-they-dont-want-to-wait-anymore-5f2fa2e3?mod=mw_rss_topstories",
+    "https://t.me/interfaxonline/80981",
+    "https://www.rbc.ru/politics/31/10/2026/6ae4f9ed92b809aef4d94c8b",
+    "https://t.me/headlines_for_traders/87797",
+    "https://www.interfax.ru/russia/1126259",
+    "https://tass.ru/obschestvo/28273903",
+    "https://tass.ru/sport/28273907",
+    "https://tass.ru/ekonomika/28273905",
+    "https://tass.ru/mezhdunarodnaya-panorama/28273901",
+    "https://t.me/wublockchainenglish/26628",
+    "https://t.me/whale_alert_io/104402",
+    "https://tass.ru/obschestvo/28273897",
+    "https://tass.ru/obschestvo/28273893",
+    "https://tass.ru/obschestvo/28273889",
+    "https://www.rbc.ru/rbcfreenews/6ae45f3418ec3d299e9f5765",
+    "https://www.vedomosti.ru/society/news/2026/10/31/1241724-vveli-ogranicheniya",
+    "https://www.kommersant.ru/doc/9078119",
+    "https://www.interfax.ru/russia/1126257"
   ],
   "ai_dead": {
     "date": "2026-10-30",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T06:30:56.881564+00:00",
-      "Рынок акций РФ открылся ростом на фонедорожающей нефти"
-    ],
-    [
-      "2026-10-30T06:30:56.881564+00:00",
-      "Обвал крипторынка ликвидировал плечи на $1,5 млрд"
-    ],
-    [
-      "2026-10-30T06:30:56.881564+00:00",
-      "Украина взяла паузу в ударах по НПЗ РФ после давления Трампа"
-    ],
-    [
-      "2026-10-30T06:30:56.881564+00:00",
-      "«Новая газета» объявила о прекращении работы"
-    ],
-    [
-      "2026-10-30T06:30:56.881564+00:00",
-      "Цены на нефть идут к четвёртому месячному росту"
-    ],
-    [
-      "2026-10-30T06:30:56.881564+00:00",
-      " Polymarket подвергся взлому на сумму более $2,5 млн"
-    ],
     [
       "2026-10-30T07:00:55.788744+00:00",
       "ВТБ увеличил чистую прибыль по МСФО в III квартале до 182 млрд рублей"
@@ -1604,6 +1584,30 @@
     [
       "2026-10-31T04:00:55.522594+00:00",
       "Крупные инвесторы зафиксировали масштабную прибыль по токену HYPE"
+    ],
+    [
+      "2026-10-31T05:01:05.291232+00:00",
+      "Bloomberg: Apple вновь стала самой дорогой компанией мира"
+    ],
+    [
+      "2026-10-31T05:01:05.291232+00:00",
+      "Президент Польши созвал парламентские силы из-за кризиса у трибунала"
+    ],
+    [
+      "2026-10-31T05:01:05.291232+00:00",
+      "США, Япония и Южная Корея создали Арктико-Тихоокеанское партнерство"
+    ],
+    [
+      "2026-10-31T05:01:05.291232+00:00",
+      "Пятая часть фанатов GTA 6 планирует прогулять работу в день релиза"
+    ],
+    [
+      "2026-10-31T05:01:05.291232+00:00",
+      "Крупный перевод 1199 биткоинов зафиксирован с биржи OKX"
+    ],
+    [
+      "2026-10-31T05:01:05.291232+00:00",
+      "Росавиация сняла временные ограничения в аэропортах Екатеринбурга"
     ]
   ],
   "results_fp": [
@@ -1655,5 +1659,5 @@
   },
   "pro_daily": "2026-10-30",
   "freech_day": "2026-10-30",
-  "pro_auto": "2026-10-30"
+  "pro_auto": "2026-10-31"
 }
