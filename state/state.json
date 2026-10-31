@@ -929,7 +929,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T20:00:57.412145+00:00",
+  "breaking_ts": "2026-10-31T20:30:54.684115+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 5,
@@ -944,53 +944,40 @@
     ]
   },
   "news_seen": [
-    "https://tass.ru/mezhdunarodnaya-panorama/28275259",
-    "https://tass.ru/sport/28275257",
-    "https://tass.ru/ekonomika/28275255",
-    "https://www.kommersant.ru/doc/9078349",
-    "https://www.rbc.ru/politics/01/10/2026/6abeafb2892d7940c9878e9c",
-    "https://www.interfax.ru/russia/1126343",
-    "https://tass.ru/sport/28275251",
-    "https://www.vedomosti.ru/society/news/2026/10/31/1241783-lantratova-obyavila",
-    "https://tass.ru/kosmos/28275243",
-    "https://www.rbc.ru/politics/05/12/2025/69325d069a794785bf5ccd4b",
-    "https://tass.ru/obschestvo/28275247",
-    "https://tass.ru/sport/28275249",
-    "https://t.me/whale_alert_io/104417",
-    "https://www.investing.com/news/stock-market-news/us-judge-dismisses-trumps-lawsuit-against-wall-street-journal-with-prejudice-4989324",
-    "https://tass.ru/proisshestviya/28275217",
-    "https://tass.ru/kosmos/28275235",
-    "https://t.me/markettwits/391444",
-    "https://tass.ru/sport/28275199",
-    "https://tass.ru/sport/28275239",
-    "https://t.me/rbc_news/159806",
-    "https://www.kommersant.ru/doc/9078346",
-    "https://tass.ru/sport/28275237",
-    "https://t.me/banksta/104576",
-    "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
-    "https://thedefiant.io/news/defi/jupiter-lend-usdc-withdrawal-liquidity-rebounds-to-27-9-million"
+    "https://tass.ru/obschestvo/28275283",
+    "https://tass.ru/proisshestviya/28275289",
+    "https://tass.ru/obschestvo/28275293",
+    "https://tass.ru/proisshestviya/28275281",
+    "https://tass.ru/ekonomika/28275287",
+    "https://tass.ru/sport/28275291",
+    "https://t.me/markettwits/391448",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275275",
+    "https://tass.ru/sport/28275285",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275279",
+    "https://tass.ru/sport/28275277",
+    "https://t.me/markettwits/391447",
+    "https://tass.ru/sport/28275273",
+    "https://www.marketwatch.com/story/my-abusive-ex-husband-promised-20-000-for-our-kids-education-now-he-refuses-to-pay-is-he-legally-obligated-325ef50f?mod=mw_rss_topstories",
+    "https://t.me/markettwits/391446",
+    "https://tass.ru/kosmos/28275253",
+    "https://tass.ru/proisshestviya/28275271",
+    "https://tass.ru/proisshestviya/28275269",
+    "https://t.me/markettwits/391445",
+    "https://www.rbc.ru/rbcfreenews/6ae4b6442535738c51e10d28",
+    "https://tass.ru/proisshestviya/28275267",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275263",
+    "https://www.vedomosti.ru/economics/news/2026/10/31/1241784-v-italii-predlozhili-nalog",
+    "https://t.me/rbc_news/159807",
+    "https://t.me/banksta/104577",
+    "https://www.rbc.ru/rbcfreenews/6adc27f7e6f53f880224b018",
+    "https://tass.ru/kultura/28275261",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275259"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T04:00:55.522594+00:00",
-      "Крупные инвесторы зафиксировали масштабную прибыль по токену HYPE"
-    ],
-    [
-      "2026-10-31T05:01:05.291232+00:00",
-      "Bloomberg: Apple вновь стала самой дорогой компанией мира"
-    ],
-    [
-      "2026-10-31T05:01:05.291232+00:00",
-      "Президент Польши созвал парламентские силы из-за кризиса у трибунала"
-    ],
-    [
-      "2026-10-31T05:01:05.291232+00:00",
-      "США, Япония и Южная Корея создали Арктико-Тихоокеанское партнерство"
-    ],
     [
       "2026-10-31T05:01:05.291232+00:00",
       "Пятая часть фанатов GTA 6 планирует прогулять работу в день релиза"
@@ -1590,6 +1577,30 @@
     [
       "2026-10-31T20:00:57.412145+00:00",
       "Демократы США потребовали расследовать роль ИИ в политике Трампа"
+    ],
+    [
+      "2026-10-31T20:30:54.684115+00:00",
+      "Хедж-фонд Arini Capital распродал облигации на $800 млн"
+    ],
+    [
+      "2026-10-31T20:30:54.684115+00:00",
+      "В Италии предложили ввести 26%-й налог для богатых при смене резидентства"
+    ],
+    [
+      "2026-10-31T20:30:54.684115+00:00",
+      "Планетарная магнитная буря усилилась до уровня G2"
+    ],
+    [
+      "2026-10-31T20:30:54.684115+00:00",
+      "Гендиректора Стамбульской биржи задержали по подозрению в мошенничестве"
+    ],
+    [
+      "2026-10-31T20:30:54.684115+00:00",
+      "Глава МИД Украины заявил о готовности немедленно прекратить огонь"
+    ],
+    [
+      "2026-10-31T20:30:54.684115+00:00",
+      "Совбез Ирана допустил выход из ДНЯО в случае новой войны"
     ]
   ],
   "results_fp": [
