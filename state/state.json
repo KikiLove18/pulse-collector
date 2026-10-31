@@ -928,7 +928,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T08:00:56.357326+00:00",
+  "breaking_ts": "2026-10-31T08:30:58.552005+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 2,
@@ -940,81 +940,66 @@
     ]
   },
   "news_seen": [
+    "https://www.kommersant.ru/doc/9078197",
+    "https://tass.ru/ekonomika/28274283",
+    "https://t.me/rbc_news/159777",
+    "https://www.kommersant.ru/doc/9078199",
+    "https://tass.ru/ekonomika/28274279",
+    "https://tass.ru/kosmos/28274273",
+    "https://www.rbc.ru/sport/26/06/2026/6a3ea6719a79477f7efc2cdc",
+    "https://tass.ru/ekonomika/28274269",
+    "https://www.interfax.ru/moscow/1126281",
+    "https://tass.ru/proisshestviya/28274271",
+    "https://tass.ru/ekonomika/28274267",
+    "https://www.rbc.ru/rbcfreenews/6aaaa0d8481b9d92003cd502",
+    "https://tass.ru/ekonomika/28274265",
+    "https://www.vedomosti.ru/economics/news/2026/10/31/1241737-725-mln-na-krediti-agrariyam",
+    "https://www.rbc.ru/rbcfreenews/6ae38c841bbabc2d90db9f9a",
+    "https://www.kommersant.ru/doc/9078196",
+    "https://www.rbc.ru/radio/31/10/2026/6ae5a2d79a7947778e8cf7ad",
+    "https://www.rbc.ru/rbcfreenews/6ae59a265c53e7610efed4b4",
+    "https://tass.ru/obschestvo/28274257",
+    "https://t.me/banksta/104535",
+    "https://www.rbc.ru/politics/08/06/2026/6a2711cb9a7947788c38ae00",
+    "https://t.me/russianmacro/23676",
+    "https://www.rbc.ru/politics/31/10/2026/6ae598236a157d88ed19aa9a",
+    "https://tass.ru/sport/28274255",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274251",
+    "https://t.me/markettwits/391412",
+    "https://t.me/smartlabnews/18004",
+    "https://t.me/headlines_for_traders/87809",
+    "https://tass.ru/obschestvo/28274235",
+    "https://www.kommersant.ru/doc/9078187",
+    "https://t.me/gpb_investments/25182",
+    "https://tass.ru/obschestvo/28274231",
+    "https://tass.ru/politika/28274249",
+    "https://t.me/cbrstocks/83817",
+    "https://tass.ru/sport/28274247",
+    "https://tass.ru/ekonomika/28274245",
+    "https://www.kommersant.ru/doc/9078190",
+    "https://www.rbc.ru/business/12/11/2022/636f7b719a794756f5701dd1",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274243",
+    "https://www.rbc.ru/rbcfreenews/6ad067c611249f4893b68bbc",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274241",
     "https://t.me/markettwits/391411",
     "https://t.me/if_market_news/86514",
+    "https://www.interfax.ru/moscow/1126280",
+    "https://tass.ru/kultura/28272125",
     "https://t.me/FinancialJuice/144159",
     "https://t.me/interfaxonline/80986",
     "https://tass.ru/mezhdunarodnaya-panorama/28274237",
     "https://t.me/whale_alert_io/104404",
+    "https://www.interfax.ru/moscow/1126279",
+    "https://www.interfax.ru/world/1126278",
     "https://www.rbc.ru/sport/17/10/2026/6ad384d3087ac9dd313f0ede",
     "https://t.me/interfaxonline/80985",
-    "https://tass.ru/proisshestviya/28274227",
-    "https://www.kommersant.ru/doc/9078173",
-    "https://tass.ru/ekonomika/28274225",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274223",
-    "https://www.kommersant.ru/doc/9078180",
-    "https://t.me/wublockchainenglish/26631",
-    "https://www.rbc.ru/radio/31/10/2026/6ae59d609a794736037a5ce6",
-    "https://t.me/markettwits/391410",
-    "https://cryptoslate.com/westpac-limits-crypto-exchange-deposits-driven-by-fraud-rules/",
-    "https://tass.ru/politika/28274221",
-    "https://tass.ru/politika/28274219",
-    "https://t.me/markettwits/391409",
-    "https://tass.ru/obschestvo/28274215",
-    "https://tass.ru/proisshestviya/28274217",
-    "https://t.me/markettwits/391408",
-    "https://t.me/rbc_news/159776",
-    "https://www.rbc.ru/sport/27/10/2026/6adfa2629a794752e6c40257",
-    "https://t.me/markettwits/391407",
-    "https://t.me/FinancialJuice/144158",
-    "https://t.me/alfa_investments/8531",
-    "https://www.kommersant.ru/doc/9078177",
-    "https://www.interfax.ru/world/1126277",
-    "https://t.me/markettwits/391406",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274207",
-    "https://www.rbc.ru/rbcfreenews/6ae4b8b896dbb31945ada1ad",
-    "https://t.me/interfaxonline/80984",
-    "https://tass.ru/ekonomika/28274195",
-    "https://t.me/bitkogan/29501",
-    "https://t.me/markettwits/391405",
-    "https://t.me/headlines_for_traders/87808",
-    "https://www.rbc.ru/rbcfreenews/6ad02ca84510fcf631e094a2",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274197",
-    "https://tass.ru/kosmos/28272041",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274191",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274193",
-    "https://www.rbc.ru/rbcfreenews/6ae1786f3c0647b172c103da",
-    "https://www.interfax.ru/russia/1126276"
+    "https://tass.ru/proisshestviya/28274227"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T09:30:58.842437+00:00",
-      "Вэнс призвал Иран определить полномочных переговорщиков по ядерной программе"
-    ],
-    [
-      "2026-10-30T10:01:00.309594+00:00",
-      "ANZ повысил прогноз по нефти Brent до $105 за баррель к концу года"
-    ],
-    [
-      "2026-10-30T10:01:00.309594+00:00",
-      "Акции Intel падают на 30% на фоне проблем в сегменте ПК"
-    ],
-    [
-      "2026-10-30T10:01:00.309594+00:00",
-      "ВВП еврозоны в третьем квартале вырос на 0,4% кв/кв"
-    ],
-    [
-      "2026-10-30T10:01:00.309594+00:00",
-      "Бывший Мосгорломбард допустил первый технический дефолт"
-    ],
-    [
-      "2026-10-30T10:01:00.309594+00:00",
-      "Токен RUNE подскочил на 13% после новостей о хаке Binance"
-    ],
     [
       "2026-10-30T10:30:57.836331+00:00",
       "Спотовая цена газа в Европе впервые с 2022 года превысила $1200"
@@ -1614,6 +1599,30 @@
     [
       "2026-10-31T08:00:56.357326+00:00",
       "ФССП взыскала с россиян 1,1 трлн рублей"
+    ],
+    [
+      "2026-10-31T08:30:58.552005+00:00",
+      "США предупредили союзников о возможном возобновлении ударов по Ирану 4 ноября"
+    ],
+    [
+      "2026-10-31T08:30:58.552005+00:00",
+      "Парламент Франции одобрил налог на интернет-трафик для крупных бигтехов"
+    ],
+    [
+      "2026-10-31T08:30:58.552005+00:00",
+      "Делегация США присоединится к переговорам по Ирану в Дохе"
+    ],
+    [
+      "2026-10-31T08:30:58.552005+00:00",
+      "Агентство Fitch пересмотрело прогноз рейтинга Франции на негативный из-за спада ВВП"
+    ],
+    [
+      "2026-10-31T08:30:58.552005+00:00",
+      "НКР присвоило Альфа-Банку наивысший кредитный рейтинг AAA"
+    ],
+    [
+      "2026-10-31T08:30:58.552005+00:00",
+      "При атаке беспилотника в Киржачском округе повреждены жилые дома"
     ]
   ],
   "results_fp": [
