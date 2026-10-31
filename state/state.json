@@ -928,7 +928,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T08:30:58.552005+00:00",
+  "breaking_ts": "2026-10-31T09:00:56.332745+00:00",
   "news_now": {
     "day": "2026-10-31",
     "day_count": 2,
@@ -940,90 +940,49 @@
     ]
   },
   "news_seen": [
+    "https://t.me/forklog/50492",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274327",
+    "https://www.kommersant.ru/doc/9078210",
+    "https://t.me/banksta/104537",
+    "https://tass.ru/obschestvo/28274303",
+    "https://tass.ru/sport/28274321",
+    "https://www.interfax.ru/world/1126285",
+    "https://www.interfax.ru/moscow/1126284",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274309",
+    "https://t.me/rbc_news/159779",
+    "https://tass.ru/armiya-i-opk/28274313",
+    "https://www.kommersant.ru/doc/9078207",
+    "https://tass.ru/armiya-i-opk/28274307",
+    "https://tass.ru/mezhdunarodnaya-panorama/28274299",
+    "https://tass.ru/armiya-i-opk/28274305",
+    "https://tass.ru/obschestvo/28274295",
+    "https://tass.ru/sport/28274297",
+    "https://t.me/if_market_news/86515",
+    "https://tass.ru/obschestvo/28274293",
+    "https://www.kommersant.ru/doc/9078203",
+    "https://www.rbc.ru/politics/31/10/2026/6ae573412ef494675c5cdf48",
+    "https://tass.ru/obschestvo/28274285",
+    "https://www.vedomosti.ru/politics/news/2026/10/31/1241739-sbili-dva-bespilotnika",
+    "https://t.me/whale_alert_io/104405",
+    "https://t.me/banksta/104536",
+    "https://t.me/rbc_news/159778",
+    "https://www.rbc.ru/sport/24/10/2026/6adcf9a97b60f23d927efe1d",
+    "https://t.me/interfaxonline/80987",
+    "https://www.rbc.ru/rbcfreenews/6ae51f5646f3e239ee8a1209",
+    "https://tass.ru/obschestvo/28274281",
+    "https://www.rbc.ru/rbcfreenews/6adf63fbf98ac3abf29cbdfd",
+    "https://tass.ru/ekonomika/28274291",
+    "https://www.interfax.ru/moscow/1126282",
     "https://www.kommersant.ru/doc/9078197",
     "https://tass.ru/ekonomika/28274283",
     "https://t.me/rbc_news/159777",
-    "https://www.kommersant.ru/doc/9078199",
-    "https://tass.ru/ekonomika/28274279",
-    "https://tass.ru/kosmos/28274273",
-    "https://www.rbc.ru/sport/26/06/2026/6a3ea6719a79477f7efc2cdc",
-    "https://tass.ru/ekonomika/28274269",
-    "https://www.interfax.ru/moscow/1126281",
-    "https://tass.ru/proisshestviya/28274271",
-    "https://tass.ru/ekonomika/28274267",
-    "https://www.rbc.ru/rbcfreenews/6aaaa0d8481b9d92003cd502",
-    "https://tass.ru/ekonomika/28274265",
-    "https://www.vedomosti.ru/economics/news/2026/10/31/1241737-725-mln-na-krediti-agrariyam",
-    "https://www.rbc.ru/rbcfreenews/6ae38c841bbabc2d90db9f9a",
-    "https://www.kommersant.ru/doc/9078196",
-    "https://www.rbc.ru/radio/31/10/2026/6ae5a2d79a7947778e8cf7ad",
-    "https://www.rbc.ru/rbcfreenews/6ae59a265c53e7610efed4b4",
-    "https://tass.ru/obschestvo/28274257",
-    "https://t.me/banksta/104535",
-    "https://www.rbc.ru/politics/08/06/2026/6a2711cb9a7947788c38ae00",
-    "https://t.me/russianmacro/23676",
-    "https://www.rbc.ru/politics/31/10/2026/6ae598236a157d88ed19aa9a",
-    "https://tass.ru/sport/28274255",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274251",
-    "https://t.me/markettwits/391412",
-    "https://t.me/smartlabnews/18004",
-    "https://t.me/headlines_for_traders/87809",
-    "https://tass.ru/obschestvo/28274235",
-    "https://www.kommersant.ru/doc/9078187",
-    "https://t.me/gpb_investments/25182",
-    "https://tass.ru/obschestvo/28274231",
-    "https://tass.ru/politika/28274249",
-    "https://t.me/cbrstocks/83817",
-    "https://tass.ru/sport/28274247",
-    "https://tass.ru/ekonomika/28274245",
-    "https://www.kommersant.ru/doc/9078190",
-    "https://www.rbc.ru/business/12/11/2022/636f7b719a794756f5701dd1",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274243",
-    "https://www.rbc.ru/rbcfreenews/6ad067c611249f4893b68bbc",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274241",
-    "https://t.me/markettwits/391411",
-    "https://t.me/if_market_news/86514",
-    "https://www.interfax.ru/moscow/1126280",
-    "https://tass.ru/kultura/28272125",
-    "https://t.me/FinancialJuice/144159",
-    "https://t.me/interfaxonline/80986",
-    "https://tass.ru/mezhdunarodnaya-panorama/28274237",
-    "https://t.me/whale_alert_io/104404",
-    "https://www.interfax.ru/moscow/1126279",
-    "https://www.interfax.ru/world/1126278",
-    "https://www.rbc.ru/sport/17/10/2026/6ad384d3087ac9dd313f0ede",
-    "https://t.me/interfaxonline/80985",
-    "https://tass.ru/proisshestviya/28274227"
+    "https://www.kommersant.ru/doc/9078199"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-30T10:30:57.836331+00:00",
-      "Спотовая цена газа в Европе впервые с 2022 года превысила $1200"
-    ],
-    [
-      "2026-10-30T10:30:57.836331+00:00",
-      "Chevron отчиталась за III квартал лучше прогнозов рынка по прибыли и выручке"
-    ],
-    [
-      "2026-10-30T10:30:57.836331+00:00",
-      "ВВП еврозоны в третьем квартале вырос на 0,4%, Франция показала спад"
-    ],
-    [
-      "2026-10-30T10:30:57.836331+00:00",
-      "Годовая инфляция в Италии в октябре ускорилась до 5,6% по HICP"
-    ],
-    [
-      "2026-10-30T10:30:57.836331+00:00",
-      "ОАК за девять месяцев 2026 года увеличила убыток по РСБУ до 1,57 млрд рублей"
-    ],
-    [
-      "2026-10-30T11:00:56.279117+00:00",
-      "Газ в Европе подорожал выше $1200 впервые с декабря 2022 года"
-    ],
     [
       "2026-10-30T11:00:56.279117+00:00",
       "Акции Intel рухнули на 25% из-за слабого квартального отчета"
@@ -1623,6 +1582,26 @@
     [
       "2026-10-31T08:30:58.552005+00:00",
       "При атаке беспилотника в Киржачском округе повреждены жилые дома"
+    ],
+    [
+      "2026-10-31T09:00:56.332745+00:00",
+      "В Польше разгорелся кризис после отстранения главы Конституционного суда"
+    ],
+    [
+      "2026-10-31T09:00:56.332745+00:00",
+      "Binance подтвердила заморозку $3 млрд после взлома"
+    ],
+    [
+      "2026-10-31T09:00:56.332745+00:00",
+      "В РАПУ допустили рост выпуска калийных удобрений на 1 млн тонн"
+    ],
+    [
+      "2026-10-31T09:00:56.332745+00:00",
+      "Британия помогает Саудовской Аравии с ПВО против атак хуситов"
+    ],
+    [
+      "2026-10-31T09:00:56.332745+00:00",
+      "Россия и Мозамбик обсуждают запуск прямого авиасообщения"
     ]
   ],
   "results_fp": [
