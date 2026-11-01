@@ -1189,7 +1189,8 @@ def run_results(state, now, dry):
     """Вышли данные (CPI, PPI, NFP, решение ФРС…) или отчёт крупной компании — разбираем итог."""
     done = state.setdefault("results_done", [])
     seen = state.setdefault("results_fp", [])  # отпечатки «событие + факт»
-    for r in calendar_future.released(now):
+    memo = state.setdefault("earn_memo", {})
+    for r in calendar_future.released(now, memo=memo):
         key = r["key"]
         if key in done:
             continue
@@ -1201,8 +1202,8 @@ def run_results(state, now, dry):
             continue
         if r["kind"] == "earnings":
             v = "better" if r["surprise"] > 0 else "worse" if r["surprise"] < 0 else "inline"
-            # при прогнозе-убытке процент ничего не значит: $1.44 против −$0.16 дало «+1000%»
-            pct = "" if r["forecast"].startswith("−") else f' (сюрприз {r["surprise"]:+.1f}%)'
+            # при прогнозе-убытке процент ничего не значит: $1.44 против −$0.16 дало «+1000%»; сверх 300% тоже не показываем, даже после повторного чтения
+            pct = "" if r["forecast"].startswith("−") or abs(r["surprise"]) > calendar_future.EARN_HUGE else f' (сюрприз {r["surprise"]:+.1f}%)'
             res = {"verdict": v, "headline": f'EPS {r["eps"]} при прогнозе {r["forecast"]}{pct}',
                    "meaning": "Компания заработала больше, чем ждали аналитики." if v == "better" else
                               "Компания заработала меньше, чем ждали аналитики." if v == "worse" else "Прибыль совпала с ожиданиями."}
@@ -1243,6 +1244,13 @@ def run_results(state, now, dry):
         seen.append(fp)
     state["results_done"] = done[-200:]
     state["results_fp"] = seen[-200:]
+    for k, m in memo.items():  # цифра не готова двое суток — пусть посмотрит человек; в Календарь ничего не пишем
+        if m.get("wait_at") and not m.get("signal") and k.split("|")[-1] + "|earn|" + k.split("|")[0] not in done and now - datetime.fromisoformat(m["wait_at"]) > timedelta(hours=48):
+            m["signal"] = True
+            try:
+                publish(f"⚠️ Отчёт {k}: итог не записан 48 ч — {m.get('why')}", dry)
+            except Exception as e:
+                print("Сигнал об отчёте не отправлен:", str(e)[:150], file=sys.stderr)
 
 
 WEEKDAY = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
