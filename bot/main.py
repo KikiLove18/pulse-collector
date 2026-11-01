@@ -1254,7 +1254,10 @@ def run_results(state, now, dry):
     for k, m in memo.items():  # цифра не готова двое суток — пусть посмотрит человек; в Календарь ничего не пишем
         if m.get("wait_at") and not m.get("signal") and k.split("|")[-1] + "|earn|" + k.split("|")[0] not in done and now - datetime.fromisoformat(m["wait_at"]) > timedelta(hours=48):
             m["signal"] = True
-            publish(f"⚠️ Отчёт {k}: итог не записан 48 ч — {m.get('why')}", dry)
+            try:
+                publish(f"⚠️ Отчёт {k}: итог не записан 48 ч — {m.get('why')}", dry)
+            except Exception as e:
+                print("Сигнал об отчёте не отправлен:", str(e)[:150], file=sys.stderr)
 
 
 WEEKDAY = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]

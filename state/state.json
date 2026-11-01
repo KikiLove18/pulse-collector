@@ -930,7 +930,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T06:30:55.200141+00:00",
+  "breaking_ts": "2026-11-01T07:00:54.148292+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 1,
@@ -941,76 +941,50 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/proisshestviya/28275811",
+    "https://t.me/headlines_for_traders/87839",
+    "https://tass.ru/sport/28275845",
+    "https://t.me/markettwits/391457",
+    "https://www.rbc.ru/rbcfreenews/6ad6e2b5f8dcb967c7f34ca0",
+    "https://www.interfax.ru/business/1126377",
+    "https://t.me/whale_alert_io/104426",
+    "https://www.interfax.ru/russia/1126375",
+    "https://t.me/FinancialJuice/144222",
+    "https://www.sport-interfax.ru/1126376",
+    "https://tass.ru/politika/28275839",
+    "https://tass.ru/proisshestviya/28275835",
+    "https://tass.ru/kultura/28275837",
+    "https://tass.ru/ekonomika/28275833",
+    "https://tass.ru/obschestvo/28275805",
+    "https://www.vedomosti.ru/society/news/2026/11/01/1241799-umer-bek-vokalist-gruppi-lyube",
+    "https://tass.ru/proisshestviya/28275831",
+    "https://www.sport-interfax.ru/1126374",
+    "https://t.me/rbc_news/159814",
+    "https://tass.ru/obschestvo/28275773",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275827",
+    "https://tass.ru/ekonomika/28275819",
+    "https://tass.ru/proisshestviya/28275825",
+    "https://tass.ru/sport/28275821",
+    "https://t.me/bitkogan/29504",
+    "https://www.kommersant.ru/doc/9078380",
+    "https://t.me/rbc_news/159813",
+    "https://tass.ru/proisshestviya/28275823",
+    "https://t.me/headlines_for_traders/87838",
+    "https://t.me/banksta/104593",
+    "https://t.me/whale_alert_io/104425",
+    "https://www.interfax.ru/russia/1126373",
     "https://www.vedomosti.ru/society/news/2026/11/01/1241796-noch-stala-samoi-holodnoi",
     "https://www.rbc.ru/rbcfreenews/6ae24ade6e4399aa2659bf76",
     "https://t.me/markettwits/391456",
     "https://t.me/rbc_news/159812",
     "https://www.rbc.ru/rbcfreenews/685b30549a794719ed3386f4",
-    "https://t.me/markettwits/391455",
-    "https://thedefiant.io/news/hacks/binance-begins-reopening-withdrawals-with-bitcoin-after-6-3-billion-hack",
-    "https://t.me/markettwits/391454",
-    "https://t.me/whale_alert_io/104424",
-    "https://t.me/whale_alert_io/104423",
-    "https://www.rbc.ru/sport/29/10/2026/6ae31667032ed0eebdec5cdc",
-    "https://tass.ru/proisshestviya/28275813",
-    "https://tass.ru/obschestvo/28275547",
-    "https://t.me/headlines_for_traders/87837",
-    "https://www.rbc.ru/rbcfreenews/6a8425e19a79473cf1491c7f",
-    "https://t.me/headlines_for_traders/87836",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241797-sbili-235-ukrainskih-bespilotnikov",
-    "https://t.me/headlines_for_traders/87835",
-    "https://www.rbc.ru/rbcfreenews/6ae6223376ddd207a528d811",
-    "https://tass.ru/obschestvo/28275799",
-    "https://t.me/headlines_for_traders/87834",
-    "https://www.interfax.ru/russia/1126372",
-    "https://tass.ru/ekonomika/28275801",
-    "https://tass.ru/ekonomika/28275797",
-    "https://t.me/headlines_for_traders/87833",
-    "https://t.me/interfaxonline/81002",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275793",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275785",
-    "https://t.me/investfuture/15467",
-    "https://t.me/headlines_for_traders/87832",
-    "https://tass.ru/politika/28275787",
-    "https://www.interfax.ru/russia/1126371",
-    "https://tass.ru/obschestvo/28275781",
-    "https://www.investing.com/news/stock-market-news/binance-to-resume-withdrawals-after-recovering-bulk-of-6-billion-in-stolen-funds-4989388",
-    "https://www.rbc.ru/quote/01/11/2026/6ae21a829a794742ac584877",
-    "https://t.me/headlines_for_traders/87831",
-    "https://www.kommersant.ru/doc/9078376",
-    "https://tass.ru/obschestvo/28275779",
-    "https://tass.ru/ekonomika/28275777",
-    "https://www.interfax.ru/world/1126370"
+    "https://t.me/markettwits/391455"
   ],
   "ai_dead": {
-    "date": "2026-10-31",
+    "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T07:00:58.208831+00:00",
-      "Titan Builder краткосрочно возглавил рейтинг доходов Ethereum"
-    ],
-    [
-      "2026-10-31T07:30:55.711193+00:00",
-      "Два человека погибли при атаке БПЛА в Брянской области"
-    ],
-    [
-      "2026-10-31T07:30:55.711193+00:00",
-      "Президент Польши заявил о силовом захвате Конституционного суда"
-    ],
-    [
-      "2026-10-31T07:30:55.711193+00:00",
-      "Китай и Индия отказались от безвизового соглашения"
-    ],
-    [
-      "2026-10-31T07:30:55.711193+00:00",
-      "Криптовалютный рынок снижается на фоне общего страха"
-    ],
-    [
-      "2026-10-31T08:00:56.357326+00:00",
-      "Apple обошла Nvidia по капитализации"
-    ],
     [
       "2026-10-31T08:00:56.357326+00:00",
       "Франция ввела налог на интернет-трафик для бигтехов"
@@ -1610,6 +1584,30 @@
     [
       "2026-11-01T06:30:55.200141+00:00",
       "Иран объявил британские ВМС и ВВС террористическими"
+    ],
+    [
+      "2026-11-01T07:00:54.148292+00:00",
+      "Прокачка газа по «Турецкому потоку» в Европу в октябре снизилась на 4%"
+    ],
+    [
+      "2026-11-01T07:00:54.148292+00:00",
+      "Трамп заявил о планах США разобраться еще с объектами в Иране"
+    ],
+    [
+      "2026-11-01T07:00:54.148292+00:00",
+      "Суд Москвы запретил структурам Apple судиться с VK в США"
+    ],
+    [
+      "2026-11-01T07:00:54.148292+00:00",
+      "Индекс МосБиржи завершил неделю и месяц выше 2510 пунктов"
+    ],
+    [
+      "2026-11-01T07:00:54.148292+00:00",
+      "Компании начали возвращать уволенных из-за ИИ сотрудников"
+    ],
+    [
+      "2026-11-01T07:00:54.148292+00:00",
+      "В Курской области за сутки ликвидировано более 70 беспилотников"
     ]
   ],
   "results_fp": [
