@@ -65,8 +65,9 @@ def numbers(text):
 
 
 def _same(vals, unit, other):
-    """Цифра ИИ совпала с цифрой источника с учётом округления: «1,52 млрд» → «1,5 млрд», но 12,4% → 13% уже нет."""
-    return any(abs(a - b) <= 0.5 * unit * 1.02 or (b and abs(a - b) / abs(b) <= 0.002) for a in vals for b in other)
+    """Цифра ИИ совпала с цифрой источника с учётом округления: «1,52 млрд» → «1,5 млрд», но 12,4% → 13% уже нет.
+    Большие суммы ИИ часто обрезает вниз: 155 753 664 → «$155 млн» — это не ошибка (находка QA 01.11). Проценты и цены так не прощаем."""
+    return any(abs(a - b) <= 0.5 * unit * 1.02 or (b and abs(a - b) / abs(b) <= 0.002) or (unit >= 1000 and 0 <= b - a < unit) for a in vals for b in other)
 
 
 @functools.lru_cache(maxsize=64)
@@ -114,6 +115,11 @@ def source_text(it):
     return it["title"] + ("" if it["source"].startswith(("TG @", "X @")) else " ") + it.get("desc", "")
 
 
+def _phrase(s):
+    """Снятая фраза для журнала: без тегов, чтобы снятие можно было проверить глазами (находка QA 01.11)."""
+    return "«" + re.sub(r"<[^>]+>", "", str(s)).strip()[:300] + "»"
+
+
 def _active():
     return (os.environ.get("FACTCHECK") or "on").lower() != "off"
 
@@ -146,7 +152,7 @@ def check_news(title, text, metrics, source, who="", everything=""):
         if everything and _missing(title + " " + str(text or ""), source):
             print(f"Проверка цифр{' ' + who if who else ''}: цифра не из источника новости, но есть во входных данных — {str(title)[:70]}", file=sys.stderr)
         if bad_t or removed or len(good) != len(metrics or []):
-            print(f"Проверка цифр{' ' + who if who else ''}: заголовок {'СНЯТ' if bad_t else 'ок'}, фраз снято {removed}, плашек снято {len(metrics or []) - len(good)} — {str(title)[:70]} | нет: {bad_t} {[_missing(s, wide) for s in parts if s not in keep]}", file=sys.stderr)
+            print(f"Проверка цифр{' ' + who if who else ''}: заголовок {'СНЯТ' if bad_t else 'ок'}, фраз снято {removed}, плашек снято {len(metrics or []) - len(good)} — {str(title)[:70]} | нет: {bad_t} {[_missing(s, wide) for s in parts if s not in keep]} | снято: {' '.join(_phrase(s) for s in parts if s not in keep)}", file=sys.stderr)
         if not _active():
             return True, text, metrics
         return not bad_t and (bool(new) or not text), new, good
@@ -155,7 +161,7 @@ def check_news(title, text, metrics, source, who="", everything=""):
         return True, text, metrics
 
 
-NEWS_RE = re.compile(r"((?:^|\n)(?:❗️\s*)?)(\d️?⃣)(\s*.*?<b>)(.*?)(</b>[^\n]*\n\s*<blockquote>)(.*?)(</blockquote>)", re.S)
+NEWS_RE = re.compile(r"((?:^|\n)(?:❗\ufe0f?\s*)?)(\d️?⃣)(\s*.*?<b>)(.*?)(</b>[^\n]*\n\s*<blockquote>)(.*?)(</blockquote>)", re.S)
 KEYCAP = "1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣".split()
 
 
@@ -194,7 +200,7 @@ def check_plain(html, source):
         for line in html.split("\n"):
             keep = [s for s in SENT.split(line) if not (_missing(s, source) or bad_price(s))]
             if len(keep) != len(SENT.split(line)):
-                print("Проверка цифр итога: снято —", line[:120], file=sys.stderr)
+                print("Проверка цифр итога: снято —", " ".join(_phrase(s) for s in SENT.split(line) if s not in keep), file=sys.stderr)
                 if not _active():
                     keep = SENT.split(line)
             new = " ".join(keep)

@@ -843,9 +843,9 @@ def title_metrics(title):
 def parse_news(block_key, html_text):
     """Достаём новости из блока: «1️⃣ флаг <b>заголовок</b>» + <blockquote>🟢 текст — <a href>источник</a></blockquote>."""
     out = []
-    pat = re.compile(r"(?:^|\n)(?:❗️\s*)?\d\ufe0f?\u20e3\s*(.*?)<b>(.*?)</b>[^\n]*\n\s*<blockquote>(.*?)</blockquote>", re.S)
+    pat = re.compile(r"(?:^|\n)(❗\ufe0f?\s*)?\d\ufe0f?\u20e3\s*(.*?)<b>(.*?)</b>[^\n]*\n\s*<blockquote>(.*?)</blockquote>", re.S)
     for m in pat.finditer(html_text):
-        prefix, title, body = m.group(1).strip(), m.group(2).strip(), m.group(3).strip()
+        prefix, title, body = m.group(2).strip(), m.group(3).strip(), m.group(4).strip()
         sent = next((v for k, v in SENT_MAP.items() if body.startswith(k)), "neu")
         link = re.search(r'<a href="([^"]+)">([^<]*)</a>', body)
         text = re.sub(r'\s*—\s*<a href="[^"]+">[^<]*</a>\s*$', "", body)
@@ -854,6 +854,8 @@ def parse_news(block_key, html_text):
         out.append({"block": block_key, "icon": clean(prefix)[:8], "title": clean(title), "text": text.strip(),
                     "sent": sent, "url": link.group(1) if link else "", "source": sources.src_name(link.group(2)) if link else "",
                     "metrics": title_metrics(clean(title))})
+        if m.group(1):  # ❗️ бывает раз на блок: «Заметное влияние» и фильтр «Важные»; 3 — только то, что двигает рынок целиком (Техник 01.11)
+            out[-1]["imp"] = 2
     return out
 
 
