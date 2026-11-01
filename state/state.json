@@ -930,7 +930,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T05:00:56.644359+00:00",
+  "breaking_ts": "2026-11-01T05:30:55.393287+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 1,
@@ -941,63 +941,44 @@
     ]
   },
   "news_seen": [
-    "https://www.rbc.ru/technology_and_media/01/11/2026/6ae6c58a4402c3b449e27845",
-    "https://www.kommersant.ru/doc/9078371",
+    "https://t.me/wublockchainenglish/26641",
+    "https://tass.ru/sport/28275745",
+    "https://www.rbc.ru/rbcfreenews/6ab887869a7947ac7b5a79dd",
+    "https://tass.ru/armiya-i-opk/28275741",
+    "https://www.kommersant.ru/doc/9078373",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275727",
+    "https://tass.ru/obschestvo/28275713",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275725",
+    "https://www.interfax.ru/russia/1126364",
+    "https://t.me/rbc_news/159809",
+    "https://t.me/banksta/104592",
+    "https://tass.ru/armiya-i-opk/28275723",
+    "https://tass.ru/armiya-i-opk/28275721",
+    "https://www.interfax.ru/russia/1126365",
+    "https://cryptoslate.com/solanas-reward-records-leave-stakers-with-a-gap-in-validator-fee-data/",
+    "https://tass.ru/armiya-i-opk/28275715",
+    "https://tass.ru/obschestvo/28275709",
+    "https://www.rbc.ru/politics/01/11/2026/6ae6c7e205248f5986c38eb4",
+    "https://tass.ru/sport/28275711",
+    "https://t.me/rbc_news/159808",
+    "https://tass.ru/obschestvo/28275705",
+    "https://t.me/headlines_for_traders/87828",
+    "https://www.kommersant.ru/doc/9078372",
+    "https://tass.ru/proisshestviya/28275703",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275701",
+    "https://t.me/forklog/50496",
+    "https://www.rbc.ru/rbcfreenews/6a86fb679a79471148fd2cfc",
+    "https://www.investing.com/news/stock-market-news/binance-to-resume-withdrawals-after-recovering-bulk-of-6-billion-in-stolen-funds-4989388",
+    "https://tass.ru/interviews/28270823",
     "https://www.interfax.ru/russia/1126362",
-    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
-    "https://tass.ru/obschestvo/28275697",
-    "https://www.rbc.ru/rbcfreenews/6ae4b6442535738c51e10d28",
-    "https://tass.ru/nauka/28275649",
-    "https://tass.ru/obschestvo/28275695",
-    "https://tass.ru/sport/28275693",
-    "https://www.kommersant.ru/doc/9078370",
-    "https://tass.ru/ekonomika/28275691",
-    "https://www.interfax.ru/world/1126360",
-    "https://www.vedomosti.ru/society/news/2026/11/01/1241792-chislo-vidvorennih-inostrantsev",
-    "https://tass.ru/ekonomika/28275689",
-    "https://tass.ru/nauka/28275679",
-    "https://www.rbc.ru/rbcfreenews/6adc344ed5fa204911b7bad3",
-    "https://tass.ru/armiya-i-opk/28275687",
-    "https://t.me/headlines_for_traders/87827",
-    "https://tass.ru/armiya-i-opk/28275683",
-    "https://tass.ru/obschestvo/28275681",
-    "https://t.me/whale_alert_io/104422",
-    "https://t.me/wublockchainenglish/26640",
-    "https://tass.ru/ekonomika/28275677",
-    "https://tass.ru/sport/28275675",
-    "https://thedefiant.io/news/hacks/attacker-drains-about-437-000-in-collateral-from-premia-vaults",
-    "https://t.me/WatcherGuru/15744",
-    "https://www.rbc.ru/society/11/04/2026/69da17f19a7947668aa8725f",
-    "https://tass.ru/obschestvo/28275671",
-    "https://tass.ru/obschestvo/28275669",
-    "https://tass.ru/obschestvo/28275659",
-    "https://tass.ru/politika/28275673",
-    "https://t.me/lookonchainchannel/10861",
-    "https://www.rbc.ru/quote/29/10/2026/6ae3565b9a79476bd7dfe1c9",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241791-vizovii-rezhim-v-chernogoriyu",
-    "https://tass.ru/obschestvo/28275667",
-    "https://tass.ru/obschestvo/28275657",
-    "https://www.interfax.ru/world/1126359",
-    "https://tass.ru/obschestvo/28275665",
-    "https://tass.ru/proisshestviya/28275655",
-    "https://tass.ru/obschestvo/28275661",
-    "https://www.kommersant.ru/doc/9078368",
-    "https://tass.ru/proisshestviya/28275653",
-    "https://tass.ru/armiya-i-opk/28275643",
-    "https://t.me/headlines_for_traders/87826",
-    "https://tass.ru/obschestvo/28275645",
-    "https://tass.ru/obschestvo/28275641",
-    "https://www.kommersant.ru/doc/9078366"
+    "https://www.rbc.ru/technology_and_media/01/11/2026/6ae6c58a4402c3b449e27845",
+    "https://www.kommersant.ru/doc/9078371"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T06:00:55.593459+00:00",
-      "Суточный объем торгов Curve снизился вдвое до $425 млн"
-    ],
     [
       "2026-10-31T06:00:55.593459+00:00",
       "В Польше прошли ночные протесты на фоне кризиса у трибунала"
@@ -1597,6 +1578,26 @@
     [
       "2026-11-01T05:00:56.644359+00:00",
       "Binance начала поэтапное возобновление вывода средств"
+    ],
+    [
+      "2026-11-01T05:30:55.393287+00:00",
+      "Страховые пенсии в России в 2027 году проиндексируют дважды"
+    ],
+    [
+      "2026-11-01T05:30:55.393287+00:00",
+      "Силы ПВО за ночь сбили 235 украинских БПЛА над регионами РФ"
+    ],
+    [
+      "2026-11-01T05:30:55.393287+00:00",
+      "Binance планирует возобновить вывод средств 1 ноября"
+    ],
+    [
+      "2026-11-01T05:30:55.393287+00:00",
+      "Эксперты предупредили об уязвимостях старых моделей iPhone"
+    ],
+    [
+      "2026-11-01T05:30:55.393287+00:00",
+      "Российская теннисистка Диана Шнайдер выиграла турнир в Токио"
     ]
   ],
   "results_fp": [
