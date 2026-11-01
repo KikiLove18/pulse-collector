@@ -1,12 +1,14 @@
 """Свои Telegram-каналы и сайты подписчиков PRO: читаем публичные посты и отдаём воркеру.
 
 Репозиторий и журналы запусков публичные: адреса не печатаем и в state/ не пишем — только количества
-и имя класса ошибки. Текст постов не идёт в ИИ и не попадает в общую Ленту, выжимки и рассылки.
+и имя класса ошибки. Текст постов идёт в ИИ только для проверки темы: без адреса и без связи с человеком.
+В общую Ленту, выжимки и рассылки он не попадает.
 """
 import calendar
 import html
 import http.client
 import ipaddress
+import json
 import re
 import socket
 import sys
@@ -20,6 +22,7 @@ from datetime import datetime
 import feedparser
 
 from .edition import _post
+from .prompts import OWN_TOPIC
 
 BUDGET_S = 90          # на весь проход
 PER_SOURCE_S = 20      # на один источник
@@ -27,6 +30,11 @@ TIMEOUT_S = 10         # на одну операцию с сетью
 MAX_BYTES = 1_500_000  # предел размера ответа
 MAX_REDIRECTS = 3
 MAX_POSTS = 10
+READ_POSTS = 20        # читаем с запасом: после проверки темы останется до MAX_POSTS
+NEW_PER_RUN = 5        # новых адресов на ИИ за проход, остальные — в следующий
+NEW_MIN_SHARE = 0.3    # меньше этой доли постов про рынки — адрес не берём
+AI_POSTS = 60          # постов в общем запросе за час
+AI_PER_DAY = 14        # общих запросов в день, по числу часов чтения
 MAX_TEXT = 300         # фрагмент вместе с заголовком, дальше — ссылка на оригинал (условие Юриста)
 READ_HOURS = range(8, 22)  # с 08:00 до 22:00 МСК, ночью не читаем
 PUT_CHUNK = 20
@@ -148,7 +156,7 @@ def _read_tg(handle, deadline):
             ts = 0
         posts.append({"t": text[:200], "x": text[200:], "u": f"https://t.me/{post.group(1)}", "ts": ts})
     posts.sort(key=lambda p: p["ts"], reverse=True)
-    return "ok", posts[:MAX_POSTS]
+    return "ok", posts[:READ_POSTS]
 
 
 def _feed_posts(feed):
@@ -161,7 +169,7 @@ def _feed_posts(feed):
         posts.append({"t": title, "x": _text(e.get("summary"), MAX_TEXT - len(title)), "u": link[:500],
                       "ts": calendar.timegm(when) * 1000 if when else 0})
     posts.sort(key=lambda p: p["ts"], reverse=True)
-    return posts[:MAX_POSTS]
+    return posts[:READ_POSTS]
 
 
 def _feed_link(page, base):
@@ -199,16 +207,81 @@ def _read_one(item, stop_at):
     return {"key": item["key"], "status": status, "posts": posts}
 
 
-def run(budget_s=BUDGET_S):
+def _about_markets(ask, posts):
+    """Какие посты про рынки и экономику. В ИИ только пронумерованные тексты; сбой или непонятный ответ — исключение."""
+    numbered = "\n".join(f"{n}. {p['t']} {p['x']}".strip() for n, p in enumerate(posts, 1))
+    answer = ask(OWN_TOPIC, numbered)
+    found = re.search(r"\{.*\}", answer or "", re.S)
+    yes = json.loads(found.group(0))["yes"]
+    return [p for n, p in enumerate(posts, 1) if n in yes]
+
+
+def _check_new(ask, res, by_key):
+    """Новый адрес проверяем один раз целиком. Не успели или ИИ не ответил — «проверяем», постов не показываем."""
+    asked = 0
+    for r in res:
+        if r["status"] != "ok" or by_key[r["key"]].get("topic") or not r["posts"]:
+            continue
+        posts, r["posts"] = r["posts"], []
+        r["status"] = "checking"
+        if not ask or asked >= NEW_PER_RUN:
+            continue
+        asked += 1
+        try:
+            good = _about_markets(ask, posts)
+        except Exception as e:
+            print(f"Свои источники: проверка адреса не прошла ({type(e).__name__})", file=sys.stderr)
+            continue
+        urls = [p["u"] for p in posts]
+        if len(good) < NEW_MIN_SHARE * len(posts):
+            r.update(status="off_topic", topic="off", seen=urls)
+        else:
+            r.update(status="ok", topic="ok", posts=good, seen=urls)
+
+
+def _check_known(ask, res, by_key, state, today):
+    """Проверенные адреса: новые посты всех — одним запросом в час. Сбой — показываем только уже принятые."""
+    known = [r for r in res if r["status"] == "ok" and by_key[r["key"]].get("topic") == "ok" and "topic" not in r]
+    fresh = []
+    for r in known:
+        seen = set(by_key[r["key"]].get("seen") or [])
+        fresh += [p for p in r["posts"] if p["u"] not in seen]
+    fresh = fresh[:AI_POSTS]
+    good, done = set(), False
+    day = state.get("own_ai") or {}
+    used = day.get("n", 0) if day.get("d") == today else 0
+    if fresh and ask and used < AI_PER_DAY:
+        state["own_ai"] = {"d": today, "n": used + 1}
+        try:
+            good, done = {p["u"] for p in _about_markets(ask, fresh)}, True
+        except Exception as e:
+            print(f"Свои источники: проверка постов не прошла ({type(e).__name__})", file=sys.stderr)
+    asked = {p["u"] for p in fresh}
+    for r in known:
+        item = by_key[r["key"]]
+        allow = set(item.get("allow") or []) | good
+        if done:
+            r["seen"] = (item.get("seen") or []) + [p["u"] for p in r["posts"] if p["u"] in asked]
+        r["posts"] = [p for p in r["posts"] if p["u"] in allow]
+
+
+def run(ask=None, state=None, today="", budget_s=BUDGET_S):
     """Один проход. Любой сбой здесь не должен мешать остальному запуску."""
+    state = {} if state is None else state
     try:
         items = (_post("/api/own/list", {}) or {}).get("items") or []
     except Exception as e:
         print(f"Свои источники: список не получен ({type(e).__name__})", file=sys.stderr)
         return
+    by_key = {i["key"]: i for i in items}
+    active = [i for i in items if i.get("topic") != "off"]  # адрес не про рынки больше не читаем
     stop_at = time.monotonic() + budget_s
     with ThreadPoolExecutor(max_workers=8) as ex:
-        res = [r for r in ex.map(lambda i: _read_one(i, stop_at), items) if r]
+        res = [r for r in ex.map(lambda i: _read_one(i, stop_at), active) if r]
+    _check_new(ask, res, by_key)
+    _check_known(ask, res, by_key, state, today)
+    for r in res:
+        r["posts"] = r["posts"][:MAX_POSTS]
     sent = 0
     for i in range(0, len(res), PUT_CHUNK):
         try:
@@ -218,7 +291,8 @@ def run(budget_s=BUDGET_S):
             print(f"Свои источники: запись не прошла ({type(e).__name__})", file=sys.stderr)
     count = lambda s: sum(r["status"] == s for r in res)
     print(f"Свои источники: всего {len(items)}, читается {count('ok')}, сбой {count('fail')}, без RSS {count('no_feed')}, "
-          f"не успели {len(items) - len(res)}, записано {sent}", file=sys.stderr)
+          f"проверяем {count('checking')}, не про рынки {count('off_topic')}, "
+          f"не успели {len(active) - len(res)}, записано {sent}", file=sys.stderr)
 
 
 def due(state, now, msk):

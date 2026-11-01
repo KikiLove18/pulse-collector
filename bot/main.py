@@ -1460,7 +1460,7 @@ def main():
     elif mode == "breaking":
         run_breaking(state, now, dry)
     elif mode == "own":
-        own.run()
+        own.run(ask_ai, state, f"{now.astimezone(MSK):%Y-%m-%d}")
     elif mode.startswith("morning:"):  # утро для пояса: python -m bot.main morning:420  (--test — только в тестовый канал)
         run_morning(state, now, dry, int(mode.split(":")[1]))
         return
@@ -1517,7 +1517,7 @@ def main():
                 print("Срочные: ошибка", e, file=sys.stderr)
         if not slot and not dry and own.due(state, now, MSK):  # свои каналы и сайты PRO раз в час; отметка заранее — только час, без адресов
             state["own_hour"] = f"{now.astimezone(MSK):%Y-%m-%d %H}"
-            own.run()
+            own.run(ask_ai, state, f"{now.astimezone(MSK):%Y-%m-%d}")
 
     if AI_CALLS:
         print(f"ИИ за запуск: {sum(AI_CALLS.values())} {AI_CALLS}", file=sys.stderr)
