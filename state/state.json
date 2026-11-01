@@ -1075,75 +1075,55 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T17:30:55.292797+00:00",
+  "breaking_ts": "2026-11-01T18:00:55.510540+00:00",
   "news_now": {
     "day": "2026-11-01",
-    "day_count": 2,
+    "day_count": 3,
     "urgent_count": 0,
-    "last": "2026-11-01T13:00:54.795122+00:00",
+    "last": "2026-11-01T18:00:55.510540+00:00",
     "titles": [
       "Binance возобновляет вывод средств после взлома",
-      "ОПЕК+ сохранила квоты на добычу нефти на декабрь"
+      "ОПЕК+ сохранила квоты на добычу нефти на декабрь",
+      "Клиенты вывели $3,64 млрд с Binance после возобновления выводов"
     ]
   },
   "news_seen": [
+    "https://oilprice.com/Energy/Energy-General/US-Labs-Look-to-New-Materials-to-Close-Chinas-Nuclear-Lead.html",
+    "https://www.rbc.ru/rbcfreenews/6ae77db4b6f380484a231124",
+    "https://t.me/banksta/104614",
+    "https://www.interfax.ru/russia/1126419",
+    "https://www.rbc.ru/sport/01/11/2026/6ae6f03a6b8ef7b63d5e167f",
+    "https://www.rbc.ru/politics/31/10/2026/6ae4b6ab9a7947c47b98dbf6",
+    "https://www.kommersant.ru/doc/9078619",
+    "https://www.rbc.ru/politics/18/07/2026/6a5b603d9a79477992139f0f",
+    "https://www.rbc.ru/rbcfreenews/6ac4c9aa68b7071241c628f7",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241857-v-lenoblasti-ispitali",
+    "https://www.interfax.ru/russia/1126418",
+    "https://www.interfax.ru/russia/1126417",
+    "https://t.me/nainspire/5637",
+    "https://t.me/whale_alert_io/104465",
+    "https://t.me/rbc_news/159839",
+    "https://t.me/FinancialJuice/144241",
+    "https://t.me/whale_alert_io/104464",
+    "https://cryptoslate.com/bitcoin-redemption-freeze-puts-136-million-aave-market-under-scrutiny/",
+    "https://t.me/whale_alert_io/104463",
+    "https://t.me/FinancialJuice/144240",
+    "https://t.me/headlines_for_traders/87865",
+    "https://www.kommersant.ru/doc/9078617",
+    "https://t.me/FinancialJuice/144239",
+    "https://www.rbc.ru/economics/26/10/2026/6adf4f8d4e8e85f125c987b3",
     "https://t.me/interfaxonline/81013",
+    "https://www.marketwatch.com/story/theres-a-lot-of-hurt-between-us-my-fathers-caregiver-is-using-his-debit-card-for-doordash-orders-what-can-i-do-714de7a5?mod=mw_rss_topstories",
+    "https://www.interfax.ru/russia/1126416",
     "https://www.rbc.ru/politics/29/10/2026/6ae2cd285317b954bbe060a7",
     "https://t.me/markettwits/391480",
-    "https://t.me/invest_zonaa/39234",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276517",
-    "https://www.rbc.ru/rbcfreenews/6a4294149a7947780262d773",
-    "https://t.me/banksta/104613",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276513",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241855-tramp-priznal-otsutstvie",
-    "https://t.me/markettwits/391479",
-    "https://tass.ru/sport/28276515",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276511",
-    "https://www.kommersant.ru/doc/9078611",
-    "https://tass.ru/proisshestviya/28276509",
-    "https://www.rbc.ru/politics/31/10/2026/6ae607a387a8dbd418dd5029",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276507",
-    "https://thedefiant.io/news/hacks/binance-hack-launderers-reach-solana-after-draining-500-million-on-tron-chainalysis-says",
-    "https://tass.ru/kultura/28276499",
-    "https://www.interfax.ru/russia/1126415",
-    "https://www.kommersant.ru/doc/9078601",
-    "https://www.marketwatch.com/story/he-was-heartbroken-my-husbands-kids-never-helped-when-he-was-gravely-ill-was-he-right-to-leave-everything-to-me-1ad0616b?mod=mw_rss_topstories",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276493",
-    "https://t.me/markettwits/391478",
-    "https://tass.ru/proisshestviya/28276503",
-    "https://www.rbc.ru/sport/24/08/2026/6a8ca6c89a79470ae5977622",
-    "https://t.me/rbc_news/159838",
-    "https://tass.ru/sport/28276505",
-    "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
-    "https://t.me/rbc_news/159837",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276501",
-    "https://www.rbc.ru/sport/23/10/2026/6adb6b78c1083dfd88d88091"
+    "https://t.me/invest_zonaa/39234"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T18:00:55.114822+00:00",
-      "Сбой в THORChain отложил отмывание украденных средств"
-    ],
-    [
-      "2026-10-31T18:00:55.114822+00:00",
-      "Meta создаст гуманоидного робота с китайской Fourier"
-    ],
-    [
-      "2026-10-31T18:00:55.114822+00:00",
-      "Medicare зафиксировала спад медуслуг после внедрения ИИ"
-    ],
-    [
-      "2026-10-31T18:30:55.037015+00:00",
-      "ОПЕК+ предварительно согласилась сохранить квоты на добычу в декабре"
-    ],
-    [
-      "2026-10-31T18:30:55.037015+00:00",
-      "Во Франции прошли масштабные протесты с участием 320 тысяч человек"
-    ],
     [
       "2026-10-31T18:30:55.037015+00:00",
       "Сбой в сети THORChain отложил отмывание средств после взлома Binance"
@@ -1743,6 +1723,22 @@
     [
       "2026-11-01T17:30:55.292797+00:00",
       "В Уфе шесть человек пострадали в столкновении двух автобусов"
+    ],
+    [
+      "2026-11-01T18:00:55.510540+00:00",
+      "Клиенты Binance вывели $3,64 млрд за девять с половиной часов"
+    ],
+    [
+      "2026-11-01T18:00:55.510540+00:00",
+      "Минобороны РФ заявило об уничтожении 47 беспилотников за день"
+    ],
+    [
+      "2026-11-01T18:00:55.510540+00:00",
+      "Новак заявил о поставках российского дизеля в Европу под другими марками"
+    ],
+    [
+      "2026-11-01T18:00:55.510540+00:00",
+      "CryptoSlate: заморозка биткоина поставила под удар рынок Aave на $136 млн"
     ]
   ],
   "results_fp": [
