@@ -12,13 +12,10 @@ FEEDS = [
     ("crypto", "CryptoSlate", "https://cryptoslate.com/feed/"),
     ("crypto", "The Defiant", "https://thedefiant.io/api/feed"),
     # Рынок и макро США
-    ("macro", "WSJ Markets", "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"),
-    ("macro", "WSJ Economy", "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"),
     ("macro", "CNBC Markets", "https://www.cnbc.com/id/10000664/device/rss/rss.html"),
     ("macro", "CNBC Economy", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
     ("macro", "ФРС (пресс-релизы)", "https://www.federalreserve.gov/feeds/press_all.xml"),
     ("macro", "Investing.com", "https://www.investing.com/rss/news_25.rss"),
-    ("macro", "MarketWatch", "https://feeds.content.dowjones.io/public/rss/mw_topstories"),
     # Сырьё
     ("commodities", "OilPrice", "https://oilprice.com/rss/main"),
     # Россия: рынок, ЦБ, экономика
