@@ -1,0 +1,4 @@
+# Посты PRO с датой — в приватном market-news-bot (knowledge/pro-src), сюда копируются только для рендера
+bot/pro_tpl/ad-[0-9]*
+bot/pro_tpl/big-[0-9]*
+bot/pro_tpl/data/*_[0-9][0-9][0-9]*.json
