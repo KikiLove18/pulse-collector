@@ -930,7 +930,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T06:00:55.867720+00:00",
+  "breaking_ts": "2026-11-01T06:30:55.200141+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 1,
@@ -941,63 +941,52 @@
     ]
   },
   "news_seen": [
+    "https://www.vedomosti.ru/society/news/2026/11/01/1241796-noch-stala-samoi-holodnoi",
+    "https://www.rbc.ru/rbcfreenews/6ae24ade6e4399aa2659bf76",
+    "https://t.me/markettwits/391456",
+    "https://t.me/rbc_news/159812",
+    "https://www.rbc.ru/rbcfreenews/685b30549a794719ed3386f4",
+    "https://t.me/markettwits/391455",
+    "https://thedefiant.io/news/hacks/binance-begins-reopening-withdrawals-with-bitcoin-after-6-3-billion-hack",
+    "https://t.me/markettwits/391454",
+    "https://t.me/whale_alert_io/104424",
+    "https://t.me/whale_alert_io/104423",
+    "https://www.rbc.ru/sport/29/10/2026/6ae31667032ed0eebdec5cdc",
+    "https://tass.ru/proisshestviya/28275813",
+    "https://tass.ru/obschestvo/28275547",
+    "https://t.me/headlines_for_traders/87837",
+    "https://www.rbc.ru/rbcfreenews/6a8425e19a79473cf1491c7f",
+    "https://t.me/headlines_for_traders/87836",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241797-sbili-235-ukrainskih-bespilotnikov",
+    "https://t.me/headlines_for_traders/87835",
+    "https://www.rbc.ru/rbcfreenews/6ae6223376ddd207a528d811",
+    "https://tass.ru/obschestvo/28275799",
+    "https://t.me/headlines_for_traders/87834",
+    "https://www.interfax.ru/russia/1126372",
+    "https://tass.ru/ekonomika/28275801",
+    "https://tass.ru/ekonomika/28275797",
+    "https://t.me/headlines_for_traders/87833",
+    "https://t.me/interfaxonline/81002",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275793",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275785",
+    "https://t.me/investfuture/15467",
+    "https://t.me/headlines_for_traders/87832",
+    "https://tass.ru/politika/28275787",
+    "https://www.interfax.ru/russia/1126371",
+    "https://tass.ru/obschestvo/28275781",
+    "https://www.investing.com/news/stock-market-news/binance-to-resume-withdrawals-after-recovering-bulk-of-6-billion-in-stolen-funds-4989388",
+    "https://www.rbc.ru/quote/01/11/2026/6ae21a829a794742ac584877",
     "https://t.me/headlines_for_traders/87831",
     "https://www.kommersant.ru/doc/9078376",
     "https://tass.ru/obschestvo/28275779",
     "https://tass.ru/ekonomika/28275777",
-    "https://tass.ru/proisshestviya/28275747",
-    "https://t.me/rbc_news/159811",
-    "https://www.interfax.ru/russia/1126369",
-    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
-    "https://www.rbc.ru/rbcfreenews/6a89f5d99a7947dd5179daf9",
-    "https://tass.ru/proisshestviya/28275771",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241795-armiya-rossii-porazila-zhd-obekti",
-    "https://tass.ru/obschestvo/28275775",
-    "https://tass.ru/proisshestviya/28275763",
-    "https://www.interfax.ru/russia/1126368",
-    "https://www.rbc.ru/politics/07/08/2026/6a75ca859a79477a6f40e305",
-    "https://tass.ru/proisshestviya/28275769",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275765",
-    "https://tass.ru/obschestvo/28275761",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241794-ostanovit-stroitelstvo-arki-trampa",
-    "https://www.kommersant.ru/doc/9078374",
-    "https://t.me/interfaxonline/81001",
-    "https://t.me/headlines_for_traders/87830",
-    "https://t.me/rbc_news/159810",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275755",
-    "https://www.interfax.ru/world/1126367",
-    "https://tass.ru/ekonomika/28275751",
-    "https://t.me/headlines_for_traders/87829",
-    "https://tass.ru/politika/28275749",
-    "https://tass.ru/politika/28275753",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275739",
-    "https://tass.ru/obschestvo/28275737",
-    "https://t.me/wublockchainenglish/26641",
-    "https://tass.ru/sport/28275745",
-    "https://www.rbc.ru/rbcfreenews/6ab887869a7947ac7b5a79dd",
-    "https://www.interfax.ru/russia/1126366"
+    "https://www.interfax.ru/world/1126370"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T07:00:58.208831+00:00",
-      "Деловая активность в Китае в октябре вернулась к снижению"
-    ],
-    [
-      "2026-10-31T07:00:58.208831+00:00",
-      "Fitch понизило прогноз по рейтингу Франции до «негативного»"
-    ],
-    [
-      "2026-10-31T07:00:58.208831+00:00",
-      "Акции VK подскочили на 12,5% и обновили максимум с августа"
-    ],
-    [
-      "2026-10-31T07:00:58.208831+00:00",
-      "Аргентинский банк Galicia закрыл счета клиентов из России"
-    ],
     [
       "2026-10-31T07:00:58.208831+00:00",
       "Titan Builder краткосрочно возглавил рейтинг доходов Ethereum"
@@ -1597,6 +1586,30 @@
     [
       "2026-11-01T06:00:55.867720+00:00",
       "Округ Колумбия и штат Вирджиния подали иск против арки Трампа"
+    ],
+    [
+      "2026-11-01T06:30:55.200141+00:00",
+      "ФБР: за взломом Binance на $6 млрд стоит КНДР"
+    ],
+    [
+      "2026-11-01T06:30:55.200141+00:00",
+      "Силы ПВО за ночь сбили 235 беспилотников над Россией"
+    ],
+    [
+      "2026-11-01T06:30:55.200141+00:00",
+      "Акции российских компаний с долгами упали на 31,5%"
+    ],
+    [
+      "2026-11-01T06:30:55.200141+00:00",
+      "ОПЕК+ проводит встречу по квотам на добычу нефти"
+    ],
+    [
+      "2026-11-01T06:30:55.200141+00:00",
+      "Затраты на строительство дата-центров в США выросли на 56%"
+    ],
+    [
+      "2026-11-01T06:30:55.200141+00:00",
+      "Иран объявил британские ВМС и ВВС террористическими"
     ]
   ],
   "results_fp": [
