@@ -1075,7 +1075,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T20:00:55.301331+00:00",
+  "breaking_ts": "2026-11-01T20:30:55.107528+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 3,
@@ -1088,58 +1088,41 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/obschestvo/28276655",
+    "https://www.rbc.ru/rbcfreenews/6a1cb7579a7947598bedb9fe",
+    "https://tass.ru/obschestvo/28276641",
+    "https://t.me/rbc_news/159845",
+    "https://t.me/banksta/104619",
+    "https://www.interfax.ru/russia/1126425",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276625",
+    "https://tass.ru/sport/28276653",
+    "https://tass.ru/obschestvo/28276637",
+    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
+    "https://t.me/nainspire/5639",
+    "https://tass.ru/ekonomika/28276651",
+    "https://tass.ru/sport/28276649",
+    "https://tass.ru/obschestvo/28276635",
+    "https://tass.ru/proisshestviya/28276645",
+    "https://tass.ru/sport/28276647",
+    "https://t.me/WalterBloomberg/37710",
+    "https://tass.ru/sport/28276631",
+    "https://t.me/invest_zonaa/39235",
+    "https://tass.ru/proisshestviya/28276639",
+    "https://t.me/rbc_news/159844",
+    "https://cryptoslate.com/crypto-scammers-used-secs-website-to-lure-investors-into-alleged-130-million-fraud/",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276633",
+    "https://www.marketwatch.com/story/my-wife-has-only-80-000-saved-for-retirement-i-have-2-2-million-am-i-wrong-to-be-shocked-3e27b490?mod=mw_rss_topstories",
     "https://oilprice.com/Energy/Energy-General/Massive-AI-Data-Center-Sparks-Backlash-Despite-Clean-Energy-Promises.html",
     "https://t.me/WatcherGuru/15748",
     "https://www.vedomosti.ru/politics/news/2026/11/01/1241863-netanyahu-prizval-trampa",
     "https://www.rbc.ru/politics/28/10/2026/6ae118cdecc4a5e3283d6415",
-    "https://t.me/banksta/104618",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276629",
-    "https://tass.ru/sport/28276627",
-    "https://www.kommersant.ru/doc/9078642",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276621",
-    "https://tass.ru/sport/28276623",
-    "https://www.rbc.ru/sport/01/11/2026/6ae5c87c87a8dbd418dd4fd3",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241862-tramp-poobeschal",
-    "https://www.interfax.ru/russia/1126424",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276613",
-    "https://tass.ru/obschestvo/28276615",
-    "https://t.me/markettwits/391487",
-    "https://tass.ru/sport/28276617",
-    "https://www.rbc.ru/sport/31/10/2026/6ae632be05248f5986c38e57",
-    "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
-    "https://www.rbc.ru/business/30/10/2026/6ae4a7b3508a2286f62815fc",
-    "https://www.kommersant.ru/doc/9078636",
-    "https://tass.ru/sport/28276609"
+    "https://t.me/banksta/104618"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T20:30:54.684115+00:00",
-      "В Италии предложили ввести 26%-й налог для богатых при смене резидентства"
-    ],
-    [
-      "2026-10-31T20:30:54.684115+00:00",
-      "Планетарная магнитная буря усилилась до уровня G2"
-    ],
-    [
-      "2026-10-31T20:30:54.684115+00:00",
-      "Гендиректора Стамбульской биржи задержали по подозрению в мошенничестве"
-    ],
-    [
-      "2026-10-31T20:30:54.684115+00:00",
-      "Глава МИД Украины заявил о готовности немедленно прекратить огонь"
-    ],
-    [
-      "2026-10-31T20:30:54.684115+00:00",
-      "Совбез Ирана допустил выход из ДНЯО в случае новой войны"
-    ],
-    [
-      "2026-11-01T04:00:55.866838+00:00",
-      "Взломаны кошельки Binance: украдено $296 млн в XRP"
-    ],
     [
       "2026-11-01T04:00:55.866838+00:00",
       "Reuters: страны ОПЕК+ сохранят добычу нефти в декабре"
@@ -1739,6 +1722,26 @@
     [
       "2026-11-01T20:00:55.301331+00:00",
       "Германия допустила отказ от проведения чемпионата мира по хоккею 2027 года"
+    ],
+    [
+      "2026-11-01T20:30:55.107528+00:00",
+      "Два нефтяных танкера подорвались на минах в Ормузском проливе"
+    ],
+    [
+      "2026-11-01T20:30:55.107528+00:00",
+      "S&P понизило прогноз по Meta до негативного из-за затрат на ИИ"
+    ],
+    [
+      "2026-11-01T20:30:55.107528+00:00",
+      "Секретная служба США расследует взлом Binance на $6,3 млрд"
+    ],
+    [
+      "2026-11-01T20:30:55.107528+00:00",
+      "SEC пресекла криптовалютное мошенничество на $130 млн через свой сайт"
+    ],
+    [
+      "2026-11-01T20:30:55.107528+00:00",
+      "SCMP: Китай расширяет поставки современного оружия в Африку"
     ]
   ],
   "results_fp": [
