@@ -930,69 +930,70 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T04:00:55.866838+00:00",
+  "breaking_ts": "2026-11-01T05:00:56.644359+00:00",
   "news_now": {
     "day": "2026-11-01",
-    "day_count": 0,
+    "day_count": 1,
     "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "last": "2026-11-01T05:00:56.644359+00:00",
+    "titles": [
+      "Binance возобновляет вывод средств после взлома"
+    ]
   },
   "news_seen": [
-    "https://tass.ru/politika/28275639",
-    "https://www.interfax.ru/russia/1126361",
-    "https://tass.ru/politika/28275635",
-    "https://www.kommersant.ru/doc/9078365",
-    "https://www.rbc.ru/politics/29/09/2026/6abc1eb851430e1dcfe90b89",
-    "https://tass.ru/ekonomika/28275625",
-    "https://tass.ru/obschestvo/28275629",
-    "https://tass.ru/obschestvo/28275623",
-    "https://tass.ru/armiya-i-opk/28275621",
-    "https://t.me/headlines_for_traders/87825",
-    "https://tass.ru/armiya-i-opk/28275619",
-    "https://tass.ru/nedvizhimost/28275617",
-    "https://t.me/whale_alert_io/104421",
-    "https://tass.ru/obschestvo/28275615",
-    "https://www.kommersant.ru/doc/9078364",
-    "https://tass.ru/nedvizhimost/28275611",
-    "https://www.interfax.ru/world/1126356",
-    "https://tass.ru/obschestvo/28275603",
-    "https://tass.ru/proisshestviya/28275613",
-    "https://tass.ru/armiya-i-opk/28275599",
-    "https://tass.ru/proisshestviya/28275609",
-    "https://tass.ru/ekonomika/28275607",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275601",
-    "https://tass.ru/proisshestviya/28275587",
-    "https://tass.ru/armiya-i-opk/28275595",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275605",
-    "https://tass.ru/armiya-i-opk/28275593",
-    "https://tass.ru/obschestvo/28275591"
+    "https://www.rbc.ru/technology_and_media/01/11/2026/6ae6c58a4402c3b449e27845",
+    "https://www.kommersant.ru/doc/9078371",
+    "https://www.interfax.ru/russia/1126362",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://tass.ru/obschestvo/28275697",
+    "https://www.rbc.ru/rbcfreenews/6ae4b6442535738c51e10d28",
+    "https://tass.ru/nauka/28275649",
+    "https://tass.ru/obschestvo/28275695",
+    "https://tass.ru/sport/28275693",
+    "https://www.kommersant.ru/doc/9078370",
+    "https://tass.ru/ekonomika/28275691",
+    "https://www.interfax.ru/world/1126360",
+    "https://www.vedomosti.ru/society/news/2026/11/01/1241792-chislo-vidvorennih-inostrantsev",
+    "https://tass.ru/ekonomika/28275689",
+    "https://tass.ru/nauka/28275679",
+    "https://www.rbc.ru/rbcfreenews/6adc344ed5fa204911b7bad3",
+    "https://tass.ru/armiya-i-opk/28275687",
+    "https://t.me/headlines_for_traders/87827",
+    "https://tass.ru/armiya-i-opk/28275683",
+    "https://tass.ru/obschestvo/28275681",
+    "https://t.me/whale_alert_io/104422",
+    "https://t.me/wublockchainenglish/26640",
+    "https://tass.ru/ekonomika/28275677",
+    "https://tass.ru/sport/28275675",
+    "https://thedefiant.io/news/hacks/attacker-drains-about-437-000-in-collateral-from-premia-vaults",
+    "https://t.me/WatcherGuru/15744",
+    "https://www.rbc.ru/society/11/04/2026/69da17f19a7947668aa8725f",
+    "https://tass.ru/obschestvo/28275671",
+    "https://tass.ru/obschestvo/28275669",
+    "https://tass.ru/obschestvo/28275659",
+    "https://tass.ru/politika/28275673",
+    "https://t.me/lookonchainchannel/10861",
+    "https://www.rbc.ru/quote/29/10/2026/6ae3565b9a79476bd7dfe1c9",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241791-vizovii-rezhim-v-chernogoriyu",
+    "https://tass.ru/obschestvo/28275667",
+    "https://tass.ru/obschestvo/28275657",
+    "https://www.interfax.ru/world/1126359",
+    "https://tass.ru/obschestvo/28275665",
+    "https://tass.ru/proisshestviya/28275655",
+    "https://tass.ru/obschestvo/28275661",
+    "https://www.kommersant.ru/doc/9078368",
+    "https://tass.ru/proisshestviya/28275653",
+    "https://tass.ru/armiya-i-opk/28275643",
+    "https://t.me/headlines_for_traders/87826",
+    "https://tass.ru/obschestvo/28275645",
+    "https://tass.ru/obschestvo/28275641",
+    "https://www.kommersant.ru/doc/9078366"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T05:30:54.752146+00:00",
-      "Россия в сентябре резко увеличила импорт цитрусовых из Турции"
-    ],
-    [
-      "2026-10-31T05:30:54.752146+00:00",
-      "ФССП в 2026 году взыскала более 1,1 трлн рублей"
-    ],
-    [
-      "2026-10-31T06:00:55.593459+00:00",
-      "Спотовые биткоин- и эфириум-ETF зафиксировали крупный отток средств"
-    ],
-    [
-      "2026-10-31T06:00:55.593459+00:00",
-      "Минобороны РФ сообщило об ударе по ТЭЦ-6 в Киеве"
-    ],
-    [
-      "2026-10-31T06:00:55.593459+00:00",
-      "Цена газа в Европе в октябре выросла почти втрое"
-    ],
     [
       "2026-10-31T06:00:55.593459+00:00",
       "Суточный объем торгов Curve снизился вдвое до $425 млн"
@@ -1592,6 +1593,10 @@
     [
       "2026-11-01T04:00:55.866838+00:00",
       "Иран ожидает поставки российских Су-35 после войны"
+    ],
+    [
+      "2026-11-01T05:00:56.644359+00:00",
+      "Binance начала поэтапное возобновление вывода средств"
     ]
   ],
   "results_fp": [
@@ -1643,5 +1648,5 @@
   },
   "pro_daily": "2026-10-31",
   "freech_day": "2026-10-31",
-  "pro_auto": "2026-10-31"
+  "pro_auto": "2026-11-01"
 }
