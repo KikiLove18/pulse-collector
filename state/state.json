@@ -1075,7 +1075,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T18:31:10.825875+00:00",
+  "breaking_ts": "2026-11-01T19:00:55.473445+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 3,
@@ -1088,74 +1088,45 @@
     ]
   },
   "news_seen": [
+    "https://thedefiant.io/news/security/threshold-says-tbtc-operators-patched-or-went-offline-over-linux-flaw",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241860-iotova-pobezhdaet",
+    "https://www.wsj.com/finance/currencies/binance-resumes-withdrawals-after-suffering-biggest-ever-crypto-hack-11d1900f?mod=rss_markets_main",
+    "https://tass.ru/obschestvo/28276593",
+    "https://www.interfax.ru/world/1126423",
+    "https://www.rbc.ru/sport/01/11/2026/6ae7270ab9b5dea64884cce2",
+    "https://thedefiant.io/news/hacks/solana-mobile-says-fake-skr-claim-app-reached-store-spotlight",
+    "https://www.trumpstruth.org/statuses/43113",
+    "https://www.interfax.ru/world/1126422",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276591",
+    "https://thedefiant.io/news/hacks/analyst-traces-140-million-in-binance-loot-through-four-tron-exit-routes",
+    "https://www.kommersant.ru/doc/9078629",
+    "https://www.sport-interfax.ru/1126421",
+    "https://tass.ru/obschestvo/28276587",
+    "https://t.me/banksta/104616",
+    "https://tass.ru/sport/28276589",
+    "https://t.me/rbc_news/159841",
+    "https://tass.ru/proisshestviya/28276583",
+    "https://cryptoslate.com/cursor-urges-credential-resets-after-malicious-claude-code-marketplace-update/",
+    "https://www.trumpstruth.org/statuses/43111",
+    "https://www.trumpstruth.org/statuses/43112",
+    "https://tass.ru/sport/28276577",
     "https://t.me/coinpost/4291",
+    "https://www.rbc.ru/rbcfreenews/6ab22e19f878d2309db84c77",
     "https://www.vedomosti.ru/politics/news/2026/11/01/1241859-arabskie-strani-boyatsya",
+    "https://www.kommersant.ru/doc/9078627",
     "https://www.rbc.ru/sport/02/10/2026/6abf9f619a7947121d499a23",
     "https://t.me/banksta/104615",
     "https://tass.ru/obschestvo/28276573",
     "https://tass.ru/sport/28276575",
     "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
     "https://tass.ru/obschestvo/28276571",
-    "https://t.me/markettwits/391485",
-    "https://www.theblock.co/news/defi/2026-11-01-north-korean-hackers-launder-242-million-of-binance-loot-via-tron-as-fbi-presses-thorchain-analyst-432257",
-    "https://www.kommersant.ru/doc/9078620",
-    "https://t.me/cbrstocks/83826",
-    "https://www.kommersant.ru/doc/9078610",
-    "https://tass.ru/politika/28276569",
-    "https://www.kommersant.ru/doc/9078624",
-    "https://t.me/cbrstocks/83825",
-    "https://t.me/cbrstocks/83824",
-    "https://t.me/markettwits/391484",
-    "https://tass.ru/sport/28276567",
-    "https://www.interfax.ru/world/1126420",
-    "https://t.me/whale_alert_io/104466",
-    "https://t.me/cbrstocks/83823",
-    "https://t.me/markettwits/391483",
-    "https://thedefiant.io/news/cefi/election-market-odds-vs-polls-what-a-70-chance-means",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276565",
-    "https://t.me/rbc_news/159840",
-    "https://t.me/FinancialJuice/144243",
-    "https://t.me/FinancialJuice/144242",
-    "https://tass.ru/proisshestviya/28276561",
-    "https://www.rbc.ru/economics/09/06/2026/6a27e3db9a7947173795b065",
-    "https://t.me/markettwits/391482",
-    "https://www.kommersant.ru/doc/9078621",
-    "https://www.rbc.ru/politics/26/10/2026/6adefc84119ddf6c1d53debd",
-    "https://t.me/headlines_for_traders/87866",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276559",
-    "https://tass.ru/kultura/28276553",
-    "https://t.me/markettwits/391481",
-    "https://oilprice.com/Energy/Energy-General/US-Labs-Look-to-New-Materials-to-Close-Chinas-Nuclear-Lead.html",
-    "https://tass.ru/proisshestviya/28276557",
-    "https://tass.ru/sport/28276555",
-    "https://www.rbc.ru/rbcfreenews/6ae77db4b6f380484a231124",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276551"
+    "https://t.me/markettwits/391485"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T19:00:56.697889+00:00",
-      "Яндекс представит новые финансовые прогнозы в феврале 2027 года"
-    ],
-    [
-      "2026-10-31T19:00:56.697889+00:00",
-      "Частные инвесторы предлагают ввести форс-мажор из-за сбоев ИИ"
-    ],
-    [
-      "2026-10-31T19:00:56.697889+00:00",
-      "В Африке запустили энергетический банк с капиталом $5 млрд"
-    ],
-    [
-      "2026-10-31T19:30:57.015782+00:00",
-      "Reuters: ОПЕК+ договорилась не менять квоты на добычу в декабре"
-    ],
-    [
-      "2026-10-31T19:30:57.015782+00:00",
-      "Anthropic отчиталась о росте выручки за первое полугодие в 14 раз"
-    ],
     [
       "2026-10-31T19:30:57.015782+00:00",
       "Мосбиржа запустит торги криптовалютой с 1 декабря"
@@ -1755,6 +1726,30 @@
     [
       "2026-11-01T18:31:10.825875+00:00",
       "Силы ПВО за день сбили 47 беспилотников над регионами России"
+    ],
+    [
+      "2026-11-01T19:00:55.473445+00:00",
+      "Взлом Binance и вывод средств обрушили курс биткойна до $76 000"
+    ],
+    [
+      "2026-11-01T19:00:55.473445+00:00",
+      "В Иране заявили о возможном затягивании нового конфликта с США"
+    ],
+    [
+      "2026-11-01T19:00:55.473445+00:00",
+      "Временный президент Болгарии Илияна Йотова лидирует на выборах"
+    ],
+    [
+      "2026-11-01T19:00:55.473445+00:00",
+      "«Спартак» разгромил «Локомотив» в московском дерби со счетом 4:0"
+    ],
+    [
+      "2026-11-01T19:00:55.473445+00:00",
+      "«Арсенал» обыграл «Ливерпуль» и возглавил таблицу чемпионата Англии"
+    ],
+    [
+      "2026-11-01T19:00:55.473445+00:00",
+      "На платформах прогнозов растут ставки на победу демократов в США"
     ]
   ],
   "results_fp": [
