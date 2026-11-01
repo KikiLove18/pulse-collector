@@ -74,7 +74,7 @@ def _values(source):
     return list({tuple(sorted(v)) for v, _, _ in numbers(source)})
 
 
-def missing(text, source):
+def _missing(text, source):
     """Цифры из text, которых нет в source. Малые целые («3 дня», «2 компании») не проверяем: слишком много совпадений и ложных тревог."""
     src = _values(source)
     return [sorted(v)[0] for v, unit, small in numbers(text) if not small and not any(_same(v, unit, s) for s in src)]
@@ -118,12 +118,23 @@ def _active():
     return (os.environ.get("FACTCHECK") or "on").lower() != "off"
 
 
+def missing(text, source):
+    """То же для прямых вызовов из выпусков: FACTCHECK=off — ничего не снимаем, заголовок-объект от ИИ или сбой — выпуск не падает."""
+    if not _active():
+        return []
+    try:
+        return _missing(str(text or ""), str(source or ""))
+    except Exception as e:
+        print("Проверка цифр пропущена:", e, file=sys.stderr)
+        return []
+
+
 def check_news(title, text, metrics, source, who="", everything=""):
     """→ (можно ли выпускать, текст без непроверенных фраз, плашки с цифрами). Цифры сверяем с источником новости, затем со всем, что читал ИИ
     (котировки, соседние записи о том же событии). Нет нигде — фраза снимается; в заголовке — новость не выходит."""
     try:
         wide = source + " " + everything
-        bad = lambda t: missing(t, wide) or bad_price(t)
+        bad = lambda t: _missing(t, wide) or bad_price(t)
         bad_t = bad(title)
         parts = SENT.split(str(text or ""))
         keep = [s for s in parts if not bad(s)]
@@ -132,10 +143,10 @@ def check_news(title, text, metrics, source, who="", everything=""):
         if new.count("<u>") != new.count("</u>"):
             new = re.sub(r"</?u>", "", new)
         good = [m for m in metrics or [] if isinstance(m, dict) and not bad(str(m.get("value", "")))]
-        if everything and missing(title + " " + str(text or ""), source):
+        if everything and _missing(title + " " + str(text or ""), source):
             print(f"Проверка цифр{' ' + who if who else ''}: цифра не из источника новости, но есть во входных данных — {str(title)[:70]}", file=sys.stderr)
         if bad_t or removed or len(good) != len(metrics or []):
-            print(f"Проверка цифр{' ' + who if who else ''}: заголовок {'СНЯТ' if bad_t else 'ок'}, фраз снято {removed}, плашек снято {len(metrics or []) - len(good)} — {str(title)[:70]} | нет: {bad_t} {[missing(s, wide) for s in parts if s not in keep]}", file=sys.stderr)
+            print(f"Проверка цифр{' ' + who if who else ''}: заголовок {'СНЯТ' if bad_t else 'ок'}, фраз снято {removed}, плашек снято {len(metrics or []) - len(good)} — {str(title)[:70]} | нет: {bad_t} {[_missing(s, wide) for s in parts if s not in keep]}", file=sys.stderr)
         if not _active():
             return True, text, metrics
         return not bad_t and (bool(new) or not text), new, good
@@ -181,7 +192,7 @@ def check_plain(html, source):
     try:
         lines = []
         for line in html.split("\n"):
-            keep = [s for s in SENT.split(line) if not (missing(s, source) or bad_price(s))]
+            keep = [s for s in SENT.split(line) if not (_missing(s, source) or bad_price(s))]
             if len(keep) != len(SENT.split(line)):
                 print("Проверка цифр итога: снято —", line[:120], file=sys.stderr)
                 if not _active():
