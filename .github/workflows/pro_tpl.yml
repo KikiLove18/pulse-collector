@@ -17,8 +17,10 @@ jobs:
       - run: sudo apt-get install -y -q fonts-noto-color-emoji >/dev/null
       - run: npm i --no-save --no-audit --no-fund playwright@1.48.2 && npx playwright install --with-deps chromium
       - name: render
+        env:
+          RUBRIC: ${{ github.event.inputs.rubric }}
         run: |
-          R="${{ github.event.inputs.rubric }}"; [ "$R" = all ] && R="evc monc tuec thuc ad"; rc=0
+          R="$RUBRIC"; [ "$R" = all ] && R="evc monc tuec thuc ad"; rc=0
           for k in $R; do
             if [ "$k" = ad ]; then node bot/pro_tpl/render.js ad --out out/ad || rc=$?;
             else J=render.js; [ "$k" = evc ] && J=render-1019-sq.js; node bot/pro_tpl/$J $k --data bot/pro_tpl/data/$k.json --out out/$k || rc=$?; fi
