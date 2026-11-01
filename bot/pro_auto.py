@@ -36,7 +36,7 @@ THEMES = {
     "jobs": ("Рынок труда США", r"Nonfarm|NFP|безработиц|занятост|заявк\w+ на пособ", ["^TNX"], "us"),
     "oil": ("Нефть", r"нефт|Brent|WTI|ОПЕК|Иран|хусит", ["BZ=F", "CL=F"], "commodities"),
     "gold": ("Золото", r"золот|gold", ["GC=F"], "commodities"),
-    "btc": ("Биткоин и крипта", r"биткоин|bitcoin|крипт|ETF на BTC", ["bitcoin", "ethereum", "COIN", "MSTR"], "crypto"),
+    "btc": ("Биткоин и криптовалюта", r"биткоин|bitcoin|крипт|ETF на BTC", ["bitcoin", "ethereum", "COIN", "MSTR"], "crypto"),
     "bigtech": ("Отчёты бигтеха и ИИ", r"Microsoft|Alphabet|Google|Apple|Amazon|Meta\b|Nvidia|Tesla|гиперскейлер|ИИ-", ["^IXIC", "NVDA", "MSFT", "AAPL", "TSLA"], "us"),
     "ru": ("Рынок России и рубль", r"МосБирж|IMOEX|рубл|санкц|Сбер|Газпром|ОФЗ", ["IMOEX", "USDRUB_CBR", "RUB=X"], "ru"),
 }

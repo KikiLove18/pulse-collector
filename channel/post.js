@@ -8,8 +8,8 @@ const APP = process.env.APP_URL || "https://app.pulse-rynka.ru";
 const BOT = "ime_news_01_bot";
 const THEME = process.env.THEME || "ru", TARGET = process.env.TARGET || "test", PRO = process.env.PRO === "1" || THEME === "pro"; // pro — только пост PRO
 const CHAT = TARGET === "channel" ? process.env.FREECH_CHAT || "@pulse_rynka_news" : process.env.TELEGRAM_CHAT_ID;
-const TITLE = { ru: "🇷🇺 Россия", us: "🇺🇸 США", crypto: "₿ Крипта", commodities: "🛢 Нефть и золото", x: "🗣 Что говорят люди" };
-const HEAD = { ru: "🇷🇺 <b>Россия — главное за день</b>", us: "🇺🇸 <b>США — главное за день</b>", crypto: "₿ <b>Крипта — главное за день</b>",
+const TITLE = { ru: "🇷🇺 Россия", us: "🇺🇸 США", crypto: "₿ Криптовалюта", commodities: "🛢 Нефть и золото", x: "🗣 Что говорят люди" };
+const HEAD = { ru: "🇷🇺 <b>Россия — главное за день</b>", us: "🇺🇸 <b>США — главное за день</b>", crypto: "₿ <b>Криптовалюта — главное за день</b>",
   commodities: "🛢 <b>Нефть и золото — главное за день</b>", x: "🗣 <b>Что говорят люди, которые двигают рынки</b>" };
 // пост PRO (19:00): карусель — 1) что двигает Сбербанк сегодня (живой разбор из приложения), 2) схема «как это работает», 3) события на 2 недели,
 // 4–5) примеры из закрытого канала, 6) золотой итог «что входит + цена». Рамка PRO — золотая, новости — синие. Владелец 25.10: «сначала дать ценность, потом — что ещё в PRO».
@@ -257,7 +257,7 @@ async function todayPost(p, events) {
   const lines = list.map(e => `${e.impact === "High" ? "🔴" : "▫️"} <b>${hm(e)}</b> ${FL[e.region] || ""} ${esc(e.title)}${e.forecast ? ` · прогноз ${esc(e.forecast)}` : ""}`.replace(/  +/g, " "));
   const tf = new FormData();
   tf.append("chat_id", CHAT); tf.append("parse_mode", "HTML");
-  tf.append("text", `🗓 <b>${label}</b>\n☀️ <b>Что ждёт рынок сегодня</b>\n\n${lines.join("\n")}\n\nВремя — московское. 🔴 — сильно двигает рынок. Днём — главное по России, США, крипте и сырью, вечером — итоги дня.`);
+  tf.append("text", `🗓 <b>${label}</b>\n☀️ <b>Что ждёт рынок сегодня</b>\n\n${lines.join("\n")}\n\nВремя — московское. 🔴 — сильно двигает рынок. Днём — главное по России, США, криптовалюте и сырью, вечером — итоги дня.`);
   tf.append("link_preview_options", JSON.stringify({ is_disabled: true }));
   await tg("sendMessage", tf);
   const img = await shot(p, `EVS = a.list; return \`${HEAD_HTML("📅 Календарь")}<div class="fw"><div class="big">Сегодня на рынке<br><small style="font-size:16px;opacity:.8;font-weight:700">\${a.label}</small></div>\${a.list.map(e => evMini(e, 0, "")).join("")}</div><div class="ft"><span>события дня</span><span>@ime_news_01_bot</span></div>\`;`, { list, label });
@@ -385,10 +385,10 @@ async function botDecks(p, b, news) {
 // тексты lion/num/word/week/answer/poll — Редактор (meta.freech_posts[дата МСК]); today/week_ahead — календарь; itogi — новости дня. Нет текста — пост пропускаем, сигнал в тестовый канал.
 const RUBRICS = ["today", "week_ahead", "lion", "num", "word", "week", "answer", "poll", "itogi"];
 const MSK_DAY = () => new Date(Date.now() + 3 * 3600e3).toISOString().slice(0, 10);
-const BAD_SRC = /^(США|Россия|Крипта|Сырьё|Нефть и золото|ru|us|crypto|commodities|x)$/i; // это рынок, а не источник
+const BAD_SRC = /^(США|Россия|Крипта|Криптовалюта|Сырьё|Нефть и золото|ru|us|crypto|commodities|x)$/i; // это рынок, а не источник
 const srcLine = src => src && !BAD_SRC.test(String(src).trim()) ? `Источник: ${esc(src)}` : "";  // подпись «не ИИР» — только в закрепе и описании (Юрист 28.10)
 const POLL_SPARE = [{ question: "Куда пойдёт рубль на этой неделе?", options: ["Укрепится", "Ослабнет", "Останется на месте", "Не слежу"] },
-  { question: "Что разобрать в следующее воскресенье?", options: ["Вклады и ставки", "Акции РФ", "Валюта", "Крипта"] }];
+  { question: "Что разобрать в следующее воскресенье?", options: ["Вклады и ставки", "Акции РФ", "Валюта", "Криптовалюта"] }];
 // v3 — шаблон freech3.html (крупнее, фото-фон) и сменяющиеся подписи; утверждён владельцем 28.10 (r-1793163321357). TPL=v2 — старый вид, запасной.
 const V3 = process.env.TPL !== "v2";
 // фон v3 — фото из bot/bg (Wikimedia PD/CC0) по словам в тексте; нет совпадения — по рубрике
@@ -439,7 +439,7 @@ const CAPTION = {
   word: x => `📖 <b>Слово дня — ${esc(x.term)}</b>\nСохраните, чтобы не забыть.${srcLine(x.src) ? `\n\n<i>${srcLine(x.src)}</i>` : ""}`,
   week: () => `🦁 <b>Неделя за 1 минуту</b>\nДля тех, кто пропустил — перешлите другу.`,
   answer: () => `🦁 <b>Лев отвечает</b>\nВопросы — в комментариях или в боте, лучший разберём в воскресенье.`,
-  itogi: () => `🌙 <b>Итоги дня</b>\nГлавное по России, США, сырью и крипте — подробно в приложении.`,
+  itogi: () => `🌙 <b>Итоги дня</b>\nГлавное по России, США, сырью и криптовалюте — подробно в приложении.`,
 };
 // v3: 4 стиля подписи по очереди (день + рубрика) — чтобы не надоедало. Без советов и обещаний дохода.
 const CAP3 = {

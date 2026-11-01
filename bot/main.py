@@ -352,7 +352,7 @@ def quotes_for_ai(q):
         if k == "crypto_total":
             out.append(edition.ru_numbers(f"Капитализация крипторынка ${v['cap'] / 1e12:.2f} трлн ({v['chg']:+.2f}% за 24ч), доля BTC {v['btc_dom']:.1f}%"))
         elif k == "fng":
-            out.append(f"Индекс страха и жадности крипты {v['value']} (вчера {v['prev']})")
+            out.append(f"Индекс страха и жадности криптовалют {v['value']} (вчера {v['prev']})")
         elif k == "^TNX" and v.get("chg") is not None:
             bp = v["price"] * v["chg"] / (100 + v["chg"]) * 100  # изменение доходности в базисных пунктах
             d = stale_day(v)
@@ -1041,8 +1041,8 @@ def run_digest(state, now, dry, final=True):
             publish(text, dry)
 
     morning = local.hour < 14  # утро — «что было ночью и что ждём сегодня», вечер — итоги дня
-    emit("header", (f"<b>☀️ #НОВОСТИ_УТРА | {date}</b>\n<i>Рынок США · Крипта · Нефть, золото, доллар · Что говорят · Что было ночью</i>" if morning else
-                    f"<b>🌙 #НОВОСТИ_ДНЯ | {date}</b>\n<i>Рынок США · Крипта · Нефть, золото, доллар · Что говорят · Итоги дня</i>"))
+    emit("header", (f"<b>☀️ #НОВОСТИ_УТРА | {date}</b>\n<i>Рынок США · Криптовалюта · Нефть, золото, доллар · Что говорят · Что было ночью</i>" if morning else
+                    f"<b>🌙 #НОВОСТИ_ДНЯ | {date}</b>\n<i>Рынок США · Криптовалюта · Нефть, золото, доллар · Что говорят · Итоги дня</i>"))
     failed = []
     for block in prompts.BLOCKS:
         head = f"<b>{block['title']} | {date}</b>"
