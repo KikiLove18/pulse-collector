@@ -1075,7 +1075,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T19:00:55.473445+00:00",
+  "breaking_ts": "2026-11-01T19:30:57.119959+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 3,
@@ -1088,69 +1088,35 @@
     ]
   },
   "news_seen": [
-    "https://thedefiant.io/news/security/threshold-says-tbtc-operators-patched-or-went-offline-over-linux-flaw",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241860-iotova-pobezhdaet",
-    "https://www.wsj.com/finance/currencies/binance-resumes-withdrawals-after-suffering-biggest-ever-crypto-hack-11d1900f?mod=rss_markets_main",
-    "https://tass.ru/obschestvo/28276593",
-    "https://www.interfax.ru/world/1126423",
-    "https://www.rbc.ru/sport/01/11/2026/6ae7270ab9b5dea64884cce2",
-    "https://thedefiant.io/news/hacks/solana-mobile-says-fake-skr-claim-app-reached-store-spotlight",
-    "https://www.trumpstruth.org/statuses/43113",
-    "https://www.interfax.ru/world/1126422",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276591",
-    "https://thedefiant.io/news/hacks/analyst-traces-140-million-in-binance-loot-through-four-tron-exit-routes",
-    "https://www.kommersant.ru/doc/9078629",
-    "https://www.sport-interfax.ru/1126421",
-    "https://tass.ru/obschestvo/28276587",
-    "https://t.me/banksta/104616",
-    "https://tass.ru/sport/28276589",
-    "https://t.me/rbc_news/159841",
-    "https://tass.ru/proisshestviya/28276583",
-    "https://cryptoslate.com/cursor-urges-credential-resets-after-malicious-claude-code-marketplace-update/",
-    "https://www.trumpstruth.org/statuses/43111",
-    "https://www.trumpstruth.org/statuses/43112",
-    "https://tass.ru/sport/28276577",
-    "https://t.me/coinpost/4291",
-    "https://www.rbc.ru/rbcfreenews/6ab22e19f878d2309db84c77",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241859-arabskie-strani-boyatsya",
-    "https://www.kommersant.ru/doc/9078627",
-    "https://www.rbc.ru/sport/02/10/2026/6abf9f619a7947121d499a23",
-    "https://t.me/banksta/104615",
-    "https://tass.ru/obschestvo/28276573",
-    "https://tass.ru/sport/28276575",
-    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
-    "https://tass.ru/obschestvo/28276571",
-    "https://t.me/markettwits/391485"
+    "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
+    "https://www.rbc.ru/business/30/10/2026/6ae4a7b3508a2286f62815fc",
+    "https://tass.ru/sport/28276609",
+    "https://t.me/markettwits/391486",
+    "https://www.rbc.ru/rbcfreenews/6a9fc5a088a445c893577833",
+    "https://t.me/rbc_news/159843",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241861-zaharova-sravnila-sobitiya",
+    "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
+    "https://thedefiant.io/news/defi/pump-fun-cuts-referral-share-to-37-5-as-4x-boost-ends",
+    "https://t.me/interfaxonline/81014",
+    "https://www.rbc.ru/sport/05/08/2026/6a73461d9a794756bc04eaed",
+    "https://tass.ru/sport/28276605",
+    "https://tass.ru/ekonomika/28276601",
+    "https://tass.ru/sport/28276603",
+    "https://t.me/banksta/104617",
+    "https://t.me/rbc_news/159842",
+    "https://www.kommersant.ru/doc/9078613",
+    "https://tass.ru/obschestvo/28276597",
+    "https://www.rbc.ru/rbcfreenews/6ae080b3bf0ad6cfa0ea4fc0",
+    "https://www.kommersant.ru/doc/9078630",
+    "https://www.rbc.ru/politics/01/11/2026/6ae77214b2d30c2d3dd1d60e",
+    "https://tass.ru/sport/28276599",
+    "https://t.me/nainspire/5638"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T19:30:57.015782+00:00",
-      "Мосбиржа запустит торги криптовалютой с 1 декабря"
-    ],
-    [
-      "2026-10-31T19:30:57.015782+00:00",
-      "Ликвидность вывода USDC на Jupiter Lend восстановилась до $27,9 млн"
-    ],
-    [
-      "2026-10-31T19:30:57.015782+00:00",
-      "ИИ Claude самостоятельно провел операцию на мозге мыши"
-    ],
-    [
-      "2026-10-31T19:30:57.015782+00:00",
-      "Виктор Орбан и Александр Вучич объявили о возвращении в политику"
-    ],
-    [
-      "2026-10-31T20:00:57.412145+00:00",
-      "Совбез Ирана допускает возможность выхода из ДНЯО в случае новой войны"
-    ],
-    [
-      "2026-10-31T20:00:57.412145+00:00",
-      "Binance выделит 50% средств из фонда безопасности для покрытия убытков"
-    ],
     [
       "2026-10-31T20:00:57.412145+00:00",
       "Bloomberg: чешский миллиардер предложил €30 млрд за владельца Ray-Ban"
@@ -1750,6 +1716,18 @@
     [
       "2026-11-01T19:00:55.473445+00:00",
       "На платформах прогнозов растут ставки на победу демократов в США"
+    ],
+    [
+      "2026-11-01T19:30:57.119959+00:00",
+      "Судно в Ормузском проливе поражено неизвестным снарядом"
+    ],
+    [
+      "2026-11-01T19:30:57.119959+00:00",
+      "Зеленский заявил о готовности встретиться с Путиным в Турции"
+    ],
+    [
+      "2026-11-01T19:30:57.119959+00:00",
+      "Pump.fun снизила реферальную долю до 37,5%"
     ]
   ],
   "results_fp": [
