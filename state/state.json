@@ -930,7 +930,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T09:00:56.143926+00:00",
+  "breaking_ts": "2026-11-01T09:30:57.994152+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 1,
@@ -941,55 +941,62 @@
     ]
   },
   "news_seen": [
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241813-putin-ne-otkazivalsya-ot-razgovora",
+    "https://tass.ru/politika/28276019",
+    "https://tass.ru/politika/28276015",
+    "https://www.rbc.ru/sport/16/10/2026/6ad242dc45f669b92aae3ccf",
+    "https://t.me/markettwits/391462",
+    "https://tass.ru/sport/28276011",
+    "https://tass.ru/politika/28276013",
+    "https://www.rbc.ru/politics/28/10/2026/6ae25c630aec7c2ab63c8eb5",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241811-politsiya-zaderzhala-565-chelovek",
+    "https://tass.ru/proisshestviya/28276003",
+    "https://tass.ru/sport/28276005",
+    "https://www.interfax.ru/russia/1126388",
+    "https://t.me/rbc_news/159822",
+    "https://tass.ru/politika/28275999",
+    "https://thedefiant.io/news/cefi/how-to-read-kraken-s-proof-of-reserves-and-its-limits",
+    "https://tass.ru/kosmos/28275995",
+    "https://t.me/interfaxonline/81007",
+    "https://tass.ru/sport/28275997",
+    "https://t.me/proeconomics/20634",
+    "https://www.rbc.ru/sport/24/10/2026/6adca12a678a187a77afd6ff",
+    "https://www.rbc.ru/politics/01/11/2026/6ae702994402c3b449e2785e",
+    "https://t.me/banksta/104596",
+    "https://tass.ru/sport/28275991",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241810-armiya-rossii-porazila",
+    "https://www.investing.com/news/stock-market-news/binance-to-resume-withdrawals-after-recovering-bulk-of-6-billion-in-stolen-funds-4989388",
+    "https://www.rbc.ru/sport/30/10/2026/6ae493ff309c9b59359b6cc4",
+    "https://www.interfax.ru/russia/1126387",
+    "https://tass.ru/politika/28275989",
+    "https://t.me/whale_alert_io/104439",
+    "https://thedefiant.io/news/cefi/how-circle-makes-money-from-usdc-and-why-reserve-income-is-not-profit",
+    "https://tass.ru/politika/28275985",
+    "https://tass.ru/sport/28275983",
+    "https://www.rbc.ru/politics/01/11/2026/6ae374d76d596e6575ba0758",
+    "https://tass.ru/obschestvo/28275977",
+    "https://www.interfax.ru/russia/1126386",
+    "https://www.kommersant.ru/doc/9078414",
+    "https://t.me/whale_alert_io/104438",
+    "https://www.interfax.ru/russia/1126385",
+    "https://t.me/rbc_news/159821",
+    "https://tass.ru/sport/28275973",
+    "https://thedefiant.io/news/defi/what-zero-ltv-means-for-an-existing-aave-loan",
+    "https://www.interfax.ru/russia/1126384",
+    "https://t.me/headlines_for_traders/87845",
+    "https://t.me/minfin/9442",
     "https://www.rbc.ru/rbcfreenews/6ab6af7b29c1b77919835038",
     "https://tass.ru/armiya-i-opk/28275969",
     "https://t.me/invest_zonaa/39231",
     "https://tass.ru/armiya-i-opk/28275967",
     "https://tass.ru/armiya-i-opk/28275963",
-    "https://thedefiant.io/news/defi/uphold-rlusd-earn-vs-ethena-pay-earn-lending-and-leverage-compared",
-    "https://www.vedomosti.ru/technology/news/2026/11/01/1241809-rosstat-stolknulsya-s-kiberatakoi",
-    "https://thedefiant.io/news/tokens/usdt-vs-usdc-what-backs-them-and-how-dollar-redemptions-work",
-    "https://www.rbc.ru/politics/01/11/2026/6ae6c7e205248f5986c38eb4",
-    "https://www.rbc.ru/sport/01/11/2026/6ae5c87c87a8dbd418dd4fd3",
-    "https://www.rbc.ru/rbcfreenews/6ae380331bbabc2d90db9f89",
-    "https://tass.ru/sport/28275961",
-    "https://tass.ru/obschestvo/28275959",
-    "https://tass.ru/proisshestviya/28275955",
-    "https://t.me/thebell_io/39709",
-    "https://tass.ru/proisshestviya/28275957",
-    "https://tass.ru/obschestvo/28275953",
-    "https://www.kommersant.ru/doc/9078411",
-    "https://tass.ru/obschestvo/28275915",
-    "https://t.me/rbc_news/159820",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241808-iran-obyavil-terroristicheskimi-organizatsiyami",
-    "https://t.me/whale_alert_io/104437",
-    "https://tass.ru/obschestvo/28275951",
-    "https://t.me/whale_alert_io/104436",
-    "https://t.me/headlines_for_traders/87844",
-    "https://t.me/whale_alert_io/104435",
-    "https://tass.ru/politika/28275949",
-    "https://t.me/whale_alert_io/104434",
-    "https://t.me/whale_alert_io/104433",
-    "https://www.kommersant.ru/doc/9078405",
-    "https://t.me/markettwits/391461"
+    "https://thedefiant.io/news/defi/uphold-rlusd-earn-vs-ethena-pay-earn-lending-and-leverage-compared"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T10:00:56.163484+00:00",
-      "СМИ: США могут возобновить удары по Ирану после выборов 3 ноября"
-    ],
-    [
-      "2026-10-31T10:00:56.163484+00:00",
-      "Fitch присвоило Франции негативный прогноз по рейтингу из-за дефицита"
-    ],
-    [
-      "2026-10-31T10:00:56.163484+00:00",
-      "Хедж-фонды нарастили шорты в американском газе до рекорда"
-    ],
     [
       "2026-10-31T10:00:56.163484+00:00",
       "Мосбиржа назвала доступные монеты и время торгов криптой с 1 декабря"
@@ -1589,6 +1596,22 @@
     [
       "2026-11-01T09:00:56.143926+00:00",
       "Крупный перевод биткоинов зафиксирован с Binance на неизвестный кошелек"
+    ],
+    [
+      "2026-11-01T09:30:57.994152+00:00",
+      "Ушаков заявил, что Путин не отказывался от разговора с Зеленским"
+    ],
+    [
+      "2026-11-01T09:30:57.994152+00:00",
+      "Binance возобновила вывод средств после покрытия ущерба от взлома"
+    ],
+    [
+      "2026-11-01T09:30:57.994152+00:00",
+      "Минобороны РФ сообщило об ударах по объектам энергетики Украины"
+    ],
+    [
+      "2026-11-01T09:30:57.994152+00:00",
+      "Иран подтвердил закупку российских Су-35"
     ]
   ],
   "results_fp": [
