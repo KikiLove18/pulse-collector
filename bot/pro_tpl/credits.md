@@ -52,3 +52,5 @@
 | img/ev-boj-tokyo.jpg | #СОБЫТИЯ 30.10 Банк Японии | Syced | CC0 | https://commons.wikimedia.org/wiki/File:Bank_of_Japan_building_(14490).jpg |
 | img/ev-btc-coin.jpg | #СОБЫТИЯ 30.10 экспирация BTC | Satheesh Sankaran | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Holding_Bitcoin_cryptocurrency_coin.jpg |
 | img/ev-workers-cc.jpg | #СОБЫТИЯ 30.10 ECI | Carol M. Highsmith | CC0 | https://commons.wikimedia.org/wiki/File:Construction_workers_are_a_familiar_site_in_Crystal_City,_Virginia,_in_2019,_by_Carol_M._Highsmith,_2019,_from_the_Library_of_Congress_-_master-pnp-highsm-61600-61698a.tif |
+| img/sber-sign.jpg | #АКТИВ_НЕДЕЛИ 06.11 Сбербанк | Gennady Grachev | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Moscow,_Andronyevskaya_Square,_Sberbank_building_(31521061391).jpg |
+| img/sber-koz.jpg | #АКТИВ_НЕДЕЛИ 06.11 Сбербанк | Retired electrician | CC0 | https://commons.wikimedia.org/wiki/File:Moscow,_Kozhukhovsky_Bridge_-_Sberbank_building,_May_2025_01.jpg |
