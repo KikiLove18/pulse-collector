@@ -1491,6 +1491,23 @@ def main():
         sample = edition.run_news_now(ask_ai, fresh_items(now, 180), {}, now, None, force=True) if has_ai_key() else None
         print("Сервер бота:", edition._post("/api/preview", {"day": sample}), file=sys.stderr)
         return
+    elif mode == "engine_test":  # проверка движка: выпуск на настоящем ИИ без записи в приложение; журнал проверок + образец — только в тестовый канал
+        memo = {}
+        calendar_future.released(now, memo=memo)
+        real = sys.stderr
+        sys.stderr = log = __import__("io").StringIO()
+        try:
+            run_digest(state, now, True, False)
+        finally:
+            sys.stderr = real
+        lines = [x for x in log.getvalue().splitlines() if x.startswith(("Проверка цифр", "Доля"))]
+        print(log.getvalue(), file=sys.stderr)
+        waits = {k: m["why"] for k, m in memo.items() if m.get("why")}
+        send_telegram("🧪 Проверка движка (ветка engine-checks)\n\nСнято проверкой: " + str(sum(1 for x in lines if "СНЯТ" in x or re.search(r"фраз снято [1-9]|плашек снято [1-9]", x)))
+                      + f"\nОтчёты ждут настоящей цифры: {len(waits)}\n" + "\n".join(f"{k}: {v}" for k, v in list(waits.items())[:8]) + "\n\n" + "\n".join(lines[:12])[:2500])
+        sample = edition.run_news_now(ask_ai, fresh_items(now, 180), {}, now, None, force=True) if has_ai_key() else None
+        print("Сервер бота:", edition._post("/api/preview", {"day": sample}), file=sys.stderr)
+        return
     elif mode in ("report", "report_test"):
         from bot import report
         report.run(dry, test=(mode == "report_test"))

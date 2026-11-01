@@ -1,6 +1,7 @@
 """Проверка цифр до выхода (t-1793514944): всё, что написал ИИ, сверяем с текстом, который он прочитал.
 Нет совпадения — фраза снимается; цифра в заголовке — новость не выходит. Сбой самой проверки выпуск не останавливает.
 Выключатель: FACTCHECK=off (журнал остаётся) — на случай, если проверка начнёт снимать лишнее."""
+import functools
 import html as _html
 import json
 import os
@@ -37,6 +38,7 @@ def _mult(word):
     return next((m for r, m in MULT if r.search(word or "")), 1)
 
 
+@functools.lru_cache(maxsize=256)
 def numbers(text):
     """[(набор возможных значений, единица округления, простое ли малое число)]: «1,500» в английском — полторы тысячи, в русском — 1,5."""
     out = []
@@ -67,9 +69,14 @@ def _same(vals, unit, other):
     return any(abs(a - b) <= 0.5 * unit * 1.02 or (b and abs(a - b) / abs(b) <= 0.002) for a in vals for b in other)
 
 
+@functools.lru_cache(maxsize=64)
+def _values(source):
+    return list({tuple(sorted(v)) for v, _, _ in numbers(source)})
+
+
 def missing(text, source):
     """Цифры из text, которых нет в source. Малые целые («3 дня», «2 компании») не проверяем: слишком много совпадений и ложных тревог."""
-    src = [v for v, _, _ in numbers(source)]
+    src = _values(source)
     return [sorted(v)[0] for v, unit, small in numbers(text) if not small and not any(_same(v, unit, s) for s in src)]
 
 
