@@ -1075,7 +1075,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T16:00:56.378713+00:00",
+  "breaking_ts": "2026-11-01T17:00:56.786864+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 2,
@@ -1087,69 +1087,78 @@
     ]
   },
   "news_seen": [
-    "https://oilprice.com/Energy/Energy-General/Azerbaijans-Renewable-Energy-Boom-Is-Transforming-Its-Power-Sector.html",
-    "https://tass.ru/sport/28276425",
-    "https://www.kommersant.ru/doc/9078576",
-    "https://t.me/rbc_news/159834",
-    "https://t.me/markettwits/391476",
-    "https://tass.ru/proisshestviya/28276423",
-    "https://tass.ru/sport/28276419",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276421",
-    "https://www.rbc.ru/rbcfreenews/6add7961e6f53f880224b049",
-    "https://tass.ru/proisshestviya/28276417",
-    "https://t.me/FinancialJuice/144237",
-    "https://www.kommersant.ru/doc/9078571",
-    "https://t.me/FinancialJuice/144236",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276415",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276413",
-    "https://t.me/headlines_for_traders/87861",
-    "https://t.me/banksta/104610",
-    "https://www.rbc.ru/rbcfreenews/6ae58159946e608bae6705e2",
-    "https://t.me/thebell_io/39710",
-    "https://tass.ru/sport/28276409",
-    "https://www.rbc.ru/rbcfreenews/6ae6ee41dfbf8227cec4a709",
-    "https://www.vedomosti.ru/society/news/2026/11/01/1241850-sud-rassmotrit-delo",
-    "https://www.rbc.ru/sport/24/10/2026/6adcf9a97b60f23d927efe1d",
-    "https://www.kommersant.ru/doc/9078557",
-    "https://tass.ru/proisshestviya/28276407",
-    "https://t.me/markettwits/391475",
-    "https://www.rbc.ru/rbcfreenews/647427379a7947e4180dc6d4",
-    "https://t.me/WatcherGuru/15747",
-    "https://tass.ru/proisshestviya/28276403",
-    "https://cryptoslate.com/japans-central-bank-will-sell-etfs-2-6-times-faster-and-could-still-take-43-years-to-exit/",
-    "https://tass.ru/sport/28276405",
-    "https://t.me/FinancialJuice/144235",
-    "https://t.me/markettwits/391474"
+    "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
+    "https://t.me/rbc_news/159837",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276501",
+    "https://www.rbc.ru/sport/23/10/2026/6adb6b78c1083dfd88d88091",
+    "https://tass.ru/sport/28276497",
+    "https://www.rbc.ru/sport/31/10/2026/6ae60b8276ddd207a528d80d",
+    "https://t.me/markettwits/391477",
+    "https://www.kommersant.ru/doc/9078604",
+    "https://www.kommersant.ru/doc/9078578",
+    "https://t.me/banksta/104612",
+    "https://www.kommersant.ru/doc/9078603",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276491",
+    "https://tass.ru/sport/28276495",
+    "https://t.me/FinancialJuice/144238",
+    "https://www.kommersant.ru/doc/9078583",
+    "https://www.rbc.ru/society/19/10/2026/6ad61d0b511276762cd41087",
+    "https://tass.ru/sport/28276489",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276479",
+    "https://tass.ru/proisshestviya/28276481",
+    "https://t.me/headlines_for_traders/87864",
+    "https://www.interfax.ru/russia/1126413",
+    "https://www.kommersant.ru/doc/9078595",
+    "https://tass.ru/sport/28276483",
+    "https://t.me/interfaxonline/81012",
+    "https://tass.ru/proisshestviya/28276473",
+    "https://www.marketwatch.com/story/grand-theft-callout-gta-6-fans-are-missing-work-on-the-games-release-day-because-they-dont-want-to-wait-anymore-5f2fa2e3?mod=mw_rss_topstories",
+    "https://www.interfax.ru/moscow/1126414",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241852-tramp-gotovitsya-upravlyat",
+    "https://tass.ru/proisshestviya/28276467",
+    "https://t.me/forklog/50502",
+    "https://www.theblock.co/news/business/2026-11-01-binance-sees-3-64-billion-in-net-outflows-after-reopening-withdrawals-following-record-hack-432259",
+    "https://www.rbc.ru/rbcfreenews/6ae13286ff0888d511d5c812",
+    "https://tass.ru/sport/28276477",
+    "https://tass.ru/sport/28276475",
+    "https://cryptoslate.com/onekey-founder-warns-blackrocks-bitcoin-etf-could-be-a-north-korean-target/",
+    "https://www.kommersant.ru/doc/9078593",
+    "https://tass.ru/sport/28276471",
+    "https://t.me/rbc_news/159836",
+    "https://www.rbc.ru/politics/01/11/2025/6904da9e9a79476d075b287e",
+    "https://tass.ru/sport/28276469",
+    "https://tass.ru/obschestvo/28276457",
+    "https://tass.ru/obschestvo/28276459",
+    "https://tass.ru/sport/28276465",
+    "https://tass.ru/kultura/28276437",
+    "https://t.me/banksta/104611",
+    "https://tass.ru/sport/28276463",
+    "https://tass.ru/proisshestviya/28276455",
+    "https://tass.ru/proisshestviya/28276441",
+    "https://tass.ru/sport/28276461",
+    "https://www.rbc.ru/rbcfreenews/6a4f595b9a7947554befc8ec",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276447",
+    "https://tass.ru/sport/28276451",
+    "https://www.rbc.ru/rbcfreenews/6ae450b034975c50e504c6df",
+    "https://tass.ru/sport/28276445",
+    "https://t.me/WalterBloomberg/37709",
+    "https://t.me/headlines_for_traders/87863",
+    "https://t.me/headlines_for_traders/87862",
+    "https://www.vedomosti.ru/economics/news/2026/11/01/1241851-ssha-nazvali-ekonomiku",
+    "https://www.rbc.ru/sport/01/11/2026/6ae7336c92daf5f8eba4fb61",
+    "https://www.rbc.ru/politics/31/10/2026/6ae60517c06d23f7a6885f16",
+    "https://t.me/SberInvestments/13231",
+    "https://www.interfax.ru/russia/1126412",
+    "https://www.kommersant.ru/doc/9078581",
+    "https://t.me/rbc_news/159835",
+    "https://www.interfax.ru/russia/1126411",
+    "https://decrypt.co/382309/bitcoin-etf-investors-exits-record-binance-hack"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T16:00:57.011465+00:00",
-      "Хакеры взломали дюжину сайтов DeFi через регистратора Name.com"
-    ],
-    [
-      "2026-10-31T16:00:57.011465+00:00",
-      "Strategy отчиталась о рекордной операционной прибыли в $20,9 млрд"
-    ],
-    [
-      "2026-10-31T17:00:55.703028+00:00",
-      "OpenAI сократила раунд финансирования и оценку стоимости"
-    ],
-    [
-      "2026-10-31T17:00:55.703028+00:00",
-      "Binance восстановила 90% средств после хакерской атаки"
-    ],
-    [
-      "2026-10-31T17:00:55.703028+00:00",
-      "ОПЕК+ предварительно договорилась сохранить квоты в декабре"
-    ],
-    [
-      "2026-10-31T17:00:55.703028+00:00",
-      "Протокол b14g сообщил о хищении 97 млн CORE"
-    ],
     [
       "2026-10-31T17:30:59.051007+00:00",
       "Лавров и Рубио обсудили возможную встречу Путина и Трампа"
@@ -1749,6 +1758,30 @@
     [
       "2026-11-01T16:00:56.378713+00:00",
       "Объем ликвидаций на крипторынке в октябре достиг $12,5 млрд"
+    ],
+    [
+      "2026-11-01T17:00:56.786864+00:00",
+      "Чистый отток с Binance после возобновления выводов составил $3,64 млрд"
+    ],
+    [
+      "2026-11-01T17:00:56.786864+00:00",
+      "Почта России выставила на торги Главпочтамт на Мясницкой за 7,7 млрд рублей"
+    ],
+    [
+      "2026-11-01T17:00:56.786864+00:00",
+      "Танкер с СПГ для Пакистана подвергся атаке вблизи Ормузского пролива"
+    ],
+    [
+      "2026-11-01T17:00:56.786864+00:00",
+      "ФСБ задержала подростка по подозрению в подготовке теракта в «Царицыно»"
+    ],
+    [
+      "2026-11-01T17:00:56.786864+00:00",
+      "Reuters: Трамп готовится управлять США в обход конгресса при победе демократов"
+    ],
+    [
+      "2026-11-01T17:00:56.786864+00:00",
+      "В РФ продлили временный запрет на экспорт дизеля и газойлей до января 2027 года"
     ]
   ],
   "results_fp": [
