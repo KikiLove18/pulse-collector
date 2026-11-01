@@ -1074,7 +1074,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T11:00:59.052208+00:00",
+  "breaking_ts": "2026-11-01T11:30:57.174628+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 1,
@@ -1085,68 +1085,54 @@
     ]
   },
   "news_seen": [
+    "https://www.vedomosti.ru/society/news/2026/11/01/1241826-smenit-shini-na-zimnie",
+    "https://tass.ru/sport/28276151",
+    "https://t.me/rbc_news/159827",
+    "https://www.kommersant.ru/doc/9078452",
+    "https://thedefiant.io/news/hacks/swell-lifts-sweth-and-rsweth-withdrawal-pauses-after-rate-reset",
+    "https://www.kommersant.ru/doc/9078446",
+    "https://cryptoslate.com/ai-wants-bitcoin-miners-power-but-the-contracts-reveal-who-really-gets-paid/",
+    "https://www.rbc.ru/politics/06/11/2025/690ccefd9a794731ab6c15c9",
+    "https://t.me/incrypted/33192",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276145",
+    "https://www.rbc.ru/sport/29/10/2026/6ae355b6bf4805506d174660",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276141",
+    "https://www.rbc.ru/rbcfreenews/6ae1cce04e4501f7b9f62017",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276137",
+    "https://tass.ru/proisshestviya/28276139",
+    "https://www.investing.com/news/stock-market-news/explainerhow-us-news-organizations-will-make-midterm-race-calls-4989664",
+    "https://www.rbc.ru/society/01/11/2026/6ae71d36dbc956125771c1b9",
+    "https://tass.ru/kultura/28276123",
+    "https://t.me/FinancialJuice/144225",
+    "https://t.me/whale_alert_io/104449",
+    "https://t.me/whale_alert_io/104447",
+    "https://t.me/whale_alert_io/104448",
+    "https://t.me/headlines_for_traders/87852",
+    "https://www.vedomosti.ru/society/news/2026/11/01/1241823-pogibli-chetire-cheloveka",
+    "https://t.me/whale_alert_io/104446",
+    "https://tass.ru/ekonomika/28276105",
+    "https://tass.ru/proisshestviya/28276129",
+    "https://tass.ru/obschestvo/28276109",
+    "https://tass.ru/obschestvo/28276135",
+    "https://www.interfax.ru/russia/1126393",
+    "https://t.me/if_market_news/86521",
+    "https://tass.ru/obschestvo/28276131",
+    "https://t.me/rbc_news/159826",
+    "https://www.kommersant.ru/doc/9078442",
+    "https://tass.ru/obschestvo/28276089",
+    "https://tass.ru/armiya-i-opk/28276047",
     "https://tass.ru/proisshestviya/28276093",
     "https://tass.ru/mezhdunarodnaya-panorama/28276125",
-    "https://www.rbc.ru/rbcfreenews/6ae71a55b0df3e58a4593878",
+    "https://www.rbc.ru/rbcfreenews/6933ebf09a79471d4ac93d67",
     "https://t.me/whale_alert_io/104445",
     "https://tass.ru/politika/28276119",
-    "https://www.rbc.ru/technology_and_media/01/11/2026/6ae7197092daf5f8eba4fb5a",
-    "https://t.me/banksta/104598",
-    "https://tass.ru/sport/28276127",
-    "https://t.me/lookonchainchannel/10866",
-    "https://www.vedomosti.ru/society/news/2026/11/01/1241821-prizvali-ne-sozdavat-azhiotazh",
-    "https://www.kommersant.ru/doc/9078440",
-    "https://tass.ru/proisshestviya/28276107",
-    "https://t.me/headlines_for_traders/87851",
-    "https://tass.ru/obschestvo/28276017",
-    "https://t.me/rbc_news/159825",
-    "https://www.rbc.ru/rbcfreenews/68d35c819a7947592282c1ad",
-    "https://tass.ru/proisshestviya/28276103",
-    "https://tass.ru/obschestvo/28275929",
-    "https://www.interfax.ru/business/1126392",
-    "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack",
-    "https://t.me/lookonchainchannel/10864",
-    "https://www.vedomosti.ru/business/news/2026/11/01/1241819-rossiiskii-dizel",
-    "https://www.rbc.ru/rbcfreenews/6ae1e761028e4f9d335ce78a",
-    "https://tass.ru/ekonomika/28276087",
-    "https://tass.ru/proisshestviya/28276031",
-    "https://www.kommersant.ru/doc/9078438",
-    "https://tass.ru/sport/28276097",
-    "https://t.me/interfaxonline/81008",
-    "https://tass.ru/kosmos/28276085",
-    "https://www.wsj.com/health/healthcare/investors-are-betting-a-blue-wave-will-help-hospitals-dont-count-on-it-411ab127?mod=rss_markets_main",
-    "https://www.wsj.com/tech/the-tangled-web-of-ai-bets-is-reason-to-fear-tech-stocks-905bde86?mod=rss_markets_main",
-    "https://www.interfax.ru/russia/1126391",
-    "https://www.rbc.ru/sport/30/10/2026/6ae47f712535738c51e10c65",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276083",
-    "https://www.kommersant.ru/doc/9078436",
-    "https://www.rbc.ru/rbcfreenews/6adb771f9fbfbe8f3aef1d02"
+    "https://www.rbc.ru/technology_and_media/01/11/2026/6ae7197092daf5f8eba4fb5a"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T11:30:58.362644+00:00",
-      "Правительство РФ продлило запрет на экспорт дизеля производителями до конца января 2027 года"
-    ],
-    [
-      "2026-10-31T11:30:58.362644+00:00",
-      "Хаменеи приказал военным Ирана готовиться к действиям при угрозах"
-    ],
-    [
-      "2026-10-31T11:30:58.362644+00:00",
-      "Нацбанк Сербии отозвал лицензию у Alta banka"
-    ],
-    [
-      "2026-10-31T11:30:58.362644+00:00",
-      "В Париже закрыли более 40 станций метро из-за протестов"
-    ],
-    [
-      "2026-10-31T11:30:58.362644+00:00",
-      "ФССП взыскала с должников по алиментам более 500 млрд рублей за 10 лет"
-    ],
     [
       "2026-10-31T12:00:55.142733+00:00",
       "Мосбиржа запустит торги биткоином, эфиром и USDT с 1 декабря"
@@ -1746,6 +1732,26 @@
     [
       "2026-11-01T11:00:59.052208+00:00",
       "Четыре человека погибли в ЛНР в результате украинских ударов"
+    ],
+    [
+      "2026-11-01T11:30:57.174628+00:00",
+      "Bloomberg: ОПЕК+ сохранит квоты на добычу нефти в декабре"
+    ],
+    [
+      "2026-11-01T11:30:57.174628+00:00",
+      "Россия введет визовый режим для граждан Черногории с 30 декабря"
+    ],
+    [
+      "2026-11-01T11:30:57.174628+00:00",
+      "Россия поможет Азербайджану с ремонтом бронетехники"
+    ],
+    [
+      "2026-11-01T11:30:57.174628+00:00",
+      "Пособнику похитителей средств Темпбанка запросили 5 лет колонии"
+    ],
+    [
+      "2026-11-01T11:30:57.174628+00:00",
+      "В Нидерландах ищут способы ускорить поставки ракет Patriot Украине"
     ]
   ],
   "results_fp": [
