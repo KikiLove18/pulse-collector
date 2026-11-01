@@ -30,7 +30,7 @@ from pathlib import Path
 
 import feedparser
 
-from bot import calendar_future, edition, macro, pro, prompts, sources, weekly, pro_day, freech, pro_auto
+from bot import calendar_future, edition, factcheck, macro, pro, prompts, sources, weekly, pro_day, freech, pro_auto
 
 MSK = timezone(timedelta(hours=3))
 ROOT = Path(__file__).resolve().parent.parent
@@ -1026,6 +1026,7 @@ def run_digest(state, now, dry, final=True):
         lines.append(f'[{it["cat"]}] {it["source"]} | {it["time"].astimezone(MSK):%H:%M} | '
                      f'{it["title"]} — {it["desc"]} | {it["link"]}')
     user = "\n".join(lines)
+    by_link = {it["link"]: factcheck.source_text(it) for it in items}
     print(f"Собрано новостей: {len(items)}, событий сегодня: {len(today)}, котировок: {len(q)}", file=sys.stderr)
 
     if dry and not has_ai_key():
@@ -1048,7 +1049,7 @@ def run_digest(state, now, dry, final=True):
         head = f"<b>{block['title']} | {date}</b>"
         table = quote_lines(block["quotes"], q)
         try:
-            body = ask_ai(prompts.COMMON + "\n" + block["focus"], user)
+            body = factcheck.check_block(ask_ai(prompts.COMMON + "\n" + block["focus"], user), by_link, user)
         except Exception as e:
             print(f"Блок {block['key']} не собран: {str(e)[:150]}", file=sys.stderr)
             failed.append(block["key"])
@@ -1062,7 +1063,7 @@ def run_digest(state, now, dry, final=True):
         try:
             title = "🧭 #ГЛАВНОЕ_ЗА_НОЧЬ" if morning else "🧭 #ИТОГИ_ДНЯ"
             prompt = prompts.SUMMARY + (prompts.SUMMARY_MORNING if morning else prompts.SUMMARY_EVENING)
-            emit("summary", f"<b>{title} | {date}</b>\n\n" + edition.not_advice(ask_ai(prompt, user)))
+            emit("summary", f"<b>{title} | {date}</b>\n\n" + edition.not_advice(factcheck.check_plain(ask_ai(prompt, user), user)))
         except Exception as e:
             print(f"Итог дня не собран: {str(e)[:150]}", file=sys.stderr)
             failed.append("summary")
@@ -1074,6 +1075,7 @@ def run_digest(state, now, dry, final=True):
         news += parse_news(b["block"], "\n".join(b["html"]))
     for n in news:
         n["ts"] = now.isoformat()  # приложение хранит ленту 7 дней и показывает дату
+    edition.note_sources(state, [sources.src_name(n.get("source", "")) for n in news], now)
     try:
         week = fetch_calendar(state)
     except Exception:
@@ -1189,7 +1191,8 @@ def run_results(state, now, dry):
     """Вышли данные (CPI, PPI, NFP, решение ФРС…) или отчёт крупной компании — разбираем итог."""
     done = state.setdefault("results_done", [])
     seen = state.setdefault("results_fp", [])  # отпечатки «событие + факт»
-    for r in calendar_future.released(now):
+    memo = state.setdefault("earn_memo", {})
+    for r in calendar_future.released(now, memo=memo):
         key = r["key"]
         if key in done:
             continue
@@ -1201,8 +1204,8 @@ def run_results(state, now, dry):
             continue
         if r["kind"] == "earnings":
             v = "better" if r["surprise"] > 0 else "worse" if r["surprise"] < 0 else "inline"
-            # при прогнозе-убытке процент ничего не значит: $1.44 против −$0.16 дало «+1000%»
-            pct = "" if r["forecast"].startswith("−") else f' (сюрприз {r["surprise"]:+.1f}%)'
+            # при прогнозе-убытке процент ничего не значит: $1.44 против −$0.16 дало «+1000%»; сверх 300% тоже не показываем, даже после повторного чтения
+            pct = "" if r["forecast"].startswith("−") or abs(r["surprise"]) > calendar_future.EARN_HUGE else f' (сюрприз {r["surprise"]:+.1f}%)'
             res = {"verdict": v, "headline": f'EPS {r["eps"]} при прогнозе {r["forecast"]}{pct}',
                    "meaning": "Компания заработала больше, чем ждали аналитики." if v == "better" else
                               "Компания заработала меньше, чем ждали аналитики." if v == "worse" else "Прибыль совпала с ожиданиями."}
@@ -1220,6 +1223,11 @@ def run_results(state, now, dry):
             except Exception as e:
                 print("Разбор результата не получился:", e, file=sys.stderr)
                 continue
+            if factcheck.missing(res.get("headline", ""), rows):  # у итога данных цифры только из строки Nasdaq
+                print("Проверка цифр итога: заголовок заменён —", res.get("headline"), file=sys.stderr)
+                x = r["rows"][0]
+                res["headline"] = edition.ru_numbers(f'факт {x["actual"]}' + (f', прогноз {x["consensus"]}' if x["consensus"] else "") + (f', было {x["previous"]}' if x["previous"] else ""))
+            res["meaning"] = factcheck.check_plain(res.get("meaning", ""), rows)
         icon, label = VERDICT[res["verdict"]]
         html = (f'{icon} <b>Вышло: {r["title"]}</b>\n'
                 f'<blockquote>📊 {res["headline"]}\n{icon} <b>{label}</b></blockquote>\n'
@@ -1243,6 +1251,10 @@ def run_results(state, now, dry):
         seen.append(fp)
     state["results_done"] = done[-200:]
     state["results_fp"] = seen[-200:]
+    for k, m in memo.items():  # цифра не готова двое суток — пусть посмотрит человек; в Календарь ничего не пишем
+        if m.get("wait_at") and not m.get("signal") and k.split("|")[-1] + "|earn|" + k.split("|")[0] not in done and now - datetime.fromisoformat(m["wait_at"]) > timedelta(hours=48):
+            m["signal"] = True
+            publish(f"⚠️ Отчёт {k}: итог не записан 48 ч — {m.get('why')}", dry)
 
 
 WEEKDAY = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]

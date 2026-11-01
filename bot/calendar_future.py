@@ -303,9 +303,110 @@ def build(ff_events, horizon_days=60, with_earnings=True):
     return merged
 
 
-def released(now, hours=8):
-    """События, которые вышли за последние `hours` часов и уже имеют факт (Nasdaq)."""
+def _eps_num(v):
+    v = (v or "").strip()
+    return -float(v.strip("()$ ").replace(",", "")) if v.startswith("(") else float(v.strip("$ ").replace(",", ""))
+
+
+def _quarter_end(s):
+    """«Sep/2026» → 30.09.2026; не разобрали — None."""
+    try:
+        return (datetime.strptime("01/" + s, "%d/%b/%Y").date() + timedelta(days=32)).replace(day=1) - timedelta(days=1)
+    except (TypeError, ValueError):
+        return None
+
+
+EARN_HUGE = 300  # сюрприз больше — стоп и повторное чтение
+EARN_RECHECK_H = 6
+EARN_SAME_H = 24  # цифра равна прошлогодней: так бывает и честно, но проверяем ещё раз через сутки
+
+
+def earn_gate(r, day, asof, now, memo):
+    """Можно ли записать итог отчёта. None — можно; строка — почему ждём следующего чтения.
+    01.11 (t-1793456056): все 12 отчётностей ушли с цифрой того же квартала 2025. Nasdaq в первые часы отдаёт в eps прошлогоднее значение
+    при пустом surprise (Coinbase 1,44 — это Sep/2025; настоящая 0,28, surprise 275). Сами считать сюрприз нельзя: так неготовые данные и прошли."""
+    m = memo.setdefault(f'{r["symbol"]}|{day}', {})
+    eps, fc, sp = (r.get("eps") or "").strip(), (r.get("epsForecast") or "").strip(), (r.get("surprise") or "").replace("%", "").strip()
+    if not eps:
+        return "отчёта ещё нет"
+    try:
+        if asof and datetime.strptime(asof.strip(), "%a, %b %d, %Y").date().isoformat() != day:
+            return f"Nasdaq отдал другой день: {asof}"
+    except ValueError:
+        return f"непонятная дата ответа: {asof}"
+    et = now.astimezone(ET)
+    if et.date().isoformat() == day and ((r.get("time") == "time-after-hours" and et.hour < 16) or (r.get("time") == "time-pre-market" and et.hour < 6)):
+        return "время отчёта ещё не наступило"
+    if not fc or fc.upper() == "N/A":
+        return "нет прогноза"
+    if not sp or sp.upper() == "N/A":
+        return "пустой surprise: цифра ещё не настоящая"
+    end, d = _quarter_end(r.get("fiscalQuarterEnding")), date.fromisoformat(day)
+    if not end or not -3 <= (d - end).days <= 130 or (m.get("fiscal") and m["fiscal"] != r.get("fiscalQuarterEnding")):
+        return f'квартал не тот: {r.get("fiscalQuarterEnding")}'
+    try:
+        a, f, s = _eps_num(eps), _eps_num(fc), float(sp)
+    except ValueError:
+        return f"цифры не читаются: {eps} / {fc} / {sp}"
+    if f and abs((a - f) / abs(f) * 100 - s) > max(1.5, abs(s) * 0.03):
+        return f"surprise {s} не сходится с EPS {eps} и прогнозом {fc}"
+    if m.get("last") == eps:
+        since = m.setdefault("same_at", now.isoformat())
+        if now - datetime.fromisoformat(since) < timedelta(hours=EARN_SAME_H):
+            return f"EPS равен прошлогоднему ({eps})"
+    if abs(s) > EARN_HUGE:
+        big = m.get("big") or {}
+        if big.get("eps") != eps:
+            m["big"] = {"eps": eps, "at": now.isoformat()}
+            return f"сюрприз {s}%: читаю ещё раз через {EARN_RECHECK_H} ч"
+        if now - datetime.fromisoformat(big["at"]) < timedelta(hours=EARN_RECHECK_H):
+            return f"сюрприз {s}%: жду повторного чтения"
+    return None
+
+
+def released_earnings(now, memo):
+    """Отчёты с настоящей цифрой. Смотрим 3 прошлых дня: пока цифра не готова, ждём (раньше окно в 8 ч закрывало день, и второго чтения не было)."""
     out = []
+    et = now.astimezone(ET).date()
+    for day in [et - timedelta(days=i) for i in range(3, -1, -1)]:
+        if day.weekday() >= 5:
+            continue
+        d = day.isoformat()
+        try:
+            data = _get(f"https://api.nasdaq.com/api/calendar/earnings?date={d}").get("data") or {}
+        except Exception as e:
+            print("Отчёты Nasdaq: нет ответа за", d, str(e)[:100], file=sys.stderr)
+            continue
+        for r in data.get("rows") or []:
+            sym = r.get("symbol")
+            if sym not in EARNINGS:
+                continue
+            m = memo.setdefault(f"{sym}|{d}", {})
+            if r.get("lastYearEPS"):  # до отчёта Nasdaq сам называет прошлогоднюю цифру и квартал: запоминаем для сверки
+                m.update(last=r["lastYearEPS"].strip(), fiscal=r.get("fiscalQuarterEnding"))
+            why = earn_gate(r, d, data.get("asOf"), now, memo)
+            if why == "отчёта ещё нет":
+                continue
+            raw = f'{r.get("eps")}|{r.get("surprise")}|{r.get("epsForecast")}|{r.get("fiscalQuarterEnding")}|{data.get("asOf")}'
+            if m.get("raw") != raw:  # журнал ответа Nasdaq: что именно он отдал при первом и следующих чтениях
+                print(f"Nasdaq {sym} {d}: eps|surprise|прогноз|квартал|asOf = {raw}; прошлогодняя {m.get('last')}; {why or 'принято'}", file=sys.stderr)
+                m["raw"] = raw
+            if why:
+                m.setdefault("wait_at", now.isoformat())
+                m["why"] = why
+                continue
+            s, fc = float(r["surprise"].replace("%", "")), r["epsForecast"].strip()
+            out.append({"key": f"{d}|earn|{sym}", "title": f"Отчёт {EARNINGS[sym]} ({sym})", "kind": "earnings",
+                        "dt": _et(d, "16:05").astimezone(timezone.utc).isoformat(), "eps": eps_fmt(r["eps"]), "forecast": eps_fmt(fc), "surprise": s,
+                        "impact": "High" if sym in ("NVDA", "AAPL", "MSFT", "AMZN", "GOOGL", "META", "TSLA", "COIN", "MSTR") else "Medium"})
+    for k in [k for k in memo if k.split("|")[-1] < (et - timedelta(days=7)).isoformat()]:
+        del memo[k]
+    return out
+
+
+def released(now, hours=8, memo=None):
+    """События, которые вышли за последние `hours` часов и уже имеют факт (Nasdaq); отчёты компаний — только прошедшие проверку earn_gate."""
+    out = released_earnings(now, memo if memo is not None else {})
     start = now - timedelta(hours=hours)
     days = sorted({start.astimezone(ET).date(), now.astimezone(ET).date()})
     for day in days:
@@ -331,27 +432,4 @@ def released(now, hours=8):
             g["rows"].append({"name": r["eventName"], "actual": act, "consensus": clean(r.get("consensus")), "previous": clean(r.get("previous"))})
         for (n, t), g in groups.items():
             out.append({**g, "key": f"{d}|{n}|{t}"})
-        # отчёты компаний
-        try:
-            erows = (_get(f"https://api.nasdaq.com/api/calendar/earnings?date={d}").get("data") or {}).get("rows") or []
-        except Exception:
-            erows = []
-        for r in erows:
-            sym, eps, fc = r.get("symbol"), (r.get("eps") or "").strip(), (r.get("epsForecast") or "").strip()
-            if sym not in EARNINGS or not eps or not fc:
-                continue
-            try:
-                surprise = float((r.get("surprise") or "0").replace("%", "").replace("N/A", "0"))
-            except ValueError:
-                surprise = 0.0
-            if not surprise:  # Nasdaq часто не даёт «surprise» (13.10 JPM $5.07 при $5.94 ушёл как «в рамках») — считаем сами
-                try:
-                    num = lambda v: -float(v.strip("()$ ").replace(",", "")) if v.strip().startswith("(") else float(v.strip("$ ").replace(",", ""))
-                    a, f = num(eps), num(fc)
-                    surprise = round((a - f) / abs(f) * 100, 1) if f else 0.0
-                except ValueError:
-                    pass
-            out.append({"key": f"{d}|earn|{sym}", "title": f"Отчёт {EARNINGS[sym]} ({sym})", "kind": "earnings",
-                        "dt": _et(d, "16:05").astimezone(timezone.utc).isoformat(), "eps": eps_fmt(eps), "forecast": eps_fmt(fc), "surprise": surprise,
-                        "impact": "High" if sym in ("NVDA", "AAPL", "MSFT", "AMZN", "GOOGL", "META", "TSLA", "COIN", "MSTR") else "Medium"})
     return out
