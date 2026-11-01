@@ -509,7 +509,7 @@ def fallback_feed(items, now, state, dry):
     return push_feed(feed, items, now, dry, state) or []
 
 
-FOREIGN_OWN_MARK = re.compile(r"НАСТОЯЩИЙ МАТЕРИАЛ.*?ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА[^.]*\.?(?:\s*18\+)?")  # своя плашка канала заглавными: пометка ставится при показе
+FOREIGN_OWN_MARK = re.compile(r"НАСТОЯЩИЙ МАТЕРИАЛ.*?ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА[^.]*\.?(?:\s*18\+)?")  # своя плашка канала заглавными (только где назван сам канал, чужую оставляем): пометка ставится при показе
 
 
 def push_foreign_feed(items, now, dry, state):
@@ -522,7 +522,7 @@ def push_foreign_feed(items, now, dry, state):
             continue
         seen.append(it["link"])
         full = re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", it["title"] + it.get("desc", "")).replace("<", " ").replace(">", " "))
-        full = FOREIGN_OWN_MARK.sub(" ", re.sub(r" ?\[пост в X: [^\]]*\]", "", full))
+        full = FOREIGN_OWN_MARK.sub(lambda m: " " if "THE BELL" in m.group(0).upper() else m.group(0), re.sub(r" ?\[пост в X: [^\]]*\]", "", full))
         full = re.sub(r"\s+", " ", full).strip()
         lead = _fallback_lead(full)
         if not lead or len(lead) > 120 or "The Bell" in lead or not FALLBACK_RE.search(lead) or FALLBACK_NO.search(lead) or FALLBACK_GAZA.search(lead):
