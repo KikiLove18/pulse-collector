@@ -47,7 +47,8 @@ SCHEDULE = [  # (дата, время ET, событие, важность)
 RU = [
     ("Core CPI", "Инфляция CPI", "High"), ("CPI", "Инфляция CPI", "High"),
     ("Core PPI", "Цены производителей PPI", "High"), ("PPI", "Цены производителей PPI", "High"),
-    ("Nonfarm Payrolls", "Рынок труда NFP", "High"), ("Unemployment Rate", "Уровень безработицы", "High"),
+    ("Nonfarm Payrolls", "Рынок труда NFP", "High"), ("Non-Farm Employment Change", "Рынок труда NFP", "High"),
+    ("Average Hourly Earnings m/m", "Средняя зарплата в час", "High"), ("Congressional Elections", "Выборы в Конгресс США", "High"), ("Unemployment Rate", "Уровень безработицы", "High"),
     ("Fed Interest Rate Decision", "Решение ФРС по ставке", "High"), ("FOMC Statement", "Заявление ФРС", "High"),
     ("FOMC Press Conference", "Пресс-конференция ФРС", "High"), ("FOMC Meeting Minutes", "Протокол заседания ФРС", "High"),
     ("Fed Chair", "Выступление главы ФРС", "High"),
@@ -89,6 +90,7 @@ RU = [
     ("Crude Oil Inventories", "Запасы нефти EIA", "Medium"), ("FOMC Member", "Выступление члена ФРС", "Medium"),
     ("Durable Goods", "Заказы товаров длительного пользования", "Medium"), ("Existing Home Sales", "Продажи вторичного жилья", "Medium"),
 ]
+ALL_DAY = ("Congressional Elections",)  # настоящего времени нет: ForexFactory ставит условное 10:16 ET
 EARNINGS = {"NVDA": "Nvidia", "AAPL": "Apple", "MSFT": "Microsoft", "AMZN": "Amazon", "GOOGL": "Alphabet", "META": "Meta",
             "TSLA": "Tesla", "AVGO": "Broadcom", "NFLX": "Netflix", "AMD": "AMD", "ORCL": "Oracle", "PLTR": "Palantir",
             "JPM": "JPMorgan", "GS": "Goldman Sachs", "COIN": "Coinbase", "MSTR": "Strategy", "HOOD": "Robinhood", "INTC": "Intel"}
@@ -106,13 +108,13 @@ def _et(day, hhmm):
     return datetime(y, mo, d, h, m, tzinfo=ET)
 
 
-NASDAQ_TZ = timezone(timedelta(hours=-4))  # поле gmt у Nasdaq весь год на UTC−4, без зимнего времени. 01.11 проверено: NFP 09.01 и 06.03, 8:30 ET, отдаёт 09:30, Мичиган зимой 11:00, летом 10:00
-
-
 def _nasdaq(day, hhmm):
+    """Поле gmt у Nasdaq — настоящий момент события на часах Нью-Йорка в день чтения, поэтому смещение берём сегодняшнее, а не на дату события.
+    01.11 проверено: при чтении зимой NFP 06.03 и 06.11 — 08:30, EIA 29.10 — 09:30 (10:30 летнего), ФРС 28.10 — 13:00 (14:00 летнего);
+    при чтении летом NFP 09.01 — 09:30. Сразу после перевода часов Nasdaq ещё несколько часов отдаёт старое, это ловит сверка в build."""
     h, m = map(int, hhmm.split(":"))
     y, mo, d = map(int, day.split("-"))
-    return datetime(y, mo, d, h, m, tzinfo=NASDAQ_TZ)
+    return datetime(y, mo, d, h, m, tzinfo=timezone(datetime.now(ET).utcoffset()))
 
 
 STAGE = {"Revised ": " (уточн.)", "Prelim ": " (предв.)", "Final ": " (оконч.)", "Flash ": " (предв.)"}
@@ -158,7 +160,7 @@ def nasdaq_econ(days=7):
             m = re.match(r"(?:FOMC Member|Fed Chair|Fed Governor)\s+(\w+)", name)
             if ru and m:
                 ru = f"{ru} ({m.group(1)})"
-            t = (r.get("gmt") or "").strip()  # не GMT, а UTC−4, см. NASDAQ_TZ
+            t = (r.get("gmt") or "").strip()  # не GMT, см. _nasdaq
             if not ru or imp == "Low" or not t[:2].isdigit():  # мелкую статистику (Low) в календарь не берём, как и у ForexFactory
                 continue
             clean = lambda v: "" if not v or "nbsp" in v else v.strip()
@@ -276,8 +278,22 @@ def _norm(title):
     return t
 
 
+DRIFT = []  # расхождения времени Nasdaq и ForexFactory в последней сборке
+
+
+def nasdaq_drift(ff, nq):
+    """Одно событие у двух источников в разное время: Nasdaq опять сдвинул поле gmt (01.11 так разошлись NFP 15:30 и 16:30)."""
+    out, times = [], {(_norm(e["title"]), e["dt"].astimezone(ET).date()): e["dt"] for e in ff}
+    for e in nq:
+        t = times.get((_norm(e["title"]), e["dt"].astimezone(ET).date()))
+        if t and "Выступление" not in e["title"] and abs((t - e["dt"]).total_seconds()) >= 1800:
+            out.append(f'{e["title"]} {e["dt"].astimezone(ET):%d.%m}: Nasdaq {e["dt"].astimezone(ET):%H:%M} ET, ForexFactory {t.astimezone(ET):%H:%M} ET')
+    return out
+
+
 def build(ff_events, horizon_days=60, with_earnings=True):
     """ff_events — события ForexFactory этой недели (dt, title, impact, forecast, previous)."""
+    global DRIFT
     now = datetime.now(timezone.utc)
     end = now + timedelta(days=horizon_days)
     merged, seen = [], set()
@@ -295,11 +311,21 @@ def build(ff_events, horizon_days=60, with_earnings=True):
         seen.add(key)
         merged.append({**e, "dt": dt.isoformat(), "src": src})
 
+    ff = []
     for e in ff_events:
         ru, imp = translate(e["title"])
-        add({"dt": e["dt"], "title": ru or e["title"], "impact": e.get("impact") or imp, "kind": "fed" if "ФРС" in (ru or "") else "macro",
-             "forecast": e.get("forecast", ""), "previous": e.get("previous", "")}, "ff")
-    for e in nasdaq_econ():
+        ev = {"dt": e["dt"], "title": ru or e["title"], "impact": e.get("impact") or imp, "kind": "fed" if "ФРС" in (ru or "") else "macro",
+              "forecast": e.get("forecast", ""), "previous": e.get("previous", "")}
+        if e["title"] in ALL_DAY:
+            ev.update(dt=e["dt"].astimezone(MSKZ).replace(hour=9, minute=0), note="весь день")
+        else:
+            ff.append(ev)
+        add(ev, "ff")
+    nq = nasdaq_econ()
+    DRIFT = nasdaq_drift(ff, nq)
+    for line in DRIFT:
+        print("Календарь Nasdaq расходится:", line, file=sys.stderr)
+    for e in nq:
         add(e, "nasdaq")
     if with_earnings:
         for e in earnings():
