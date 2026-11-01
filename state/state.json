@@ -1074,7 +1074,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T10:31:00.489548+00:00",
+  "breaking_ts": "2026-11-01T11:00:59.052208+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 1,
@@ -1085,72 +1085,48 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/proisshestviya/28276093",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276125",
+    "https://www.rbc.ru/rbcfreenews/6ae71a55b0df3e58a4593878",
+    "https://t.me/whale_alert_io/104445",
+    "https://tass.ru/politika/28276119",
+    "https://www.rbc.ru/technology_and_media/01/11/2026/6ae7197092daf5f8eba4fb5a",
+    "https://t.me/banksta/104598",
+    "https://tass.ru/sport/28276127",
+    "https://t.me/lookonchainchannel/10866",
+    "https://www.vedomosti.ru/society/news/2026/11/01/1241821-prizvali-ne-sozdavat-azhiotazh",
+    "https://www.kommersant.ru/doc/9078440",
+    "https://tass.ru/proisshestviya/28276107",
+    "https://t.me/headlines_for_traders/87851",
+    "https://tass.ru/obschestvo/28276017",
+    "https://t.me/rbc_news/159825",
+    "https://www.rbc.ru/rbcfreenews/68d35c819a7947592282c1ad",
+    "https://tass.ru/proisshestviya/28276103",
+    "https://tass.ru/obschestvo/28275929",
+    "https://www.interfax.ru/business/1126392",
+    "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack",
+    "https://t.me/lookonchainchannel/10864",
+    "https://www.vedomosti.ru/business/news/2026/11/01/1241819-rossiiskii-dizel",
+    "https://www.rbc.ru/rbcfreenews/6ae1e761028e4f9d335ce78a",
+    "https://tass.ru/ekonomika/28276087",
+    "https://tass.ru/proisshestviya/28276031",
+    "https://www.kommersant.ru/doc/9078438",
+    "https://tass.ru/sport/28276097",
+    "https://t.me/interfaxonline/81008",
+    "https://tass.ru/kosmos/28276085",
+    "https://www.wsj.com/health/healthcare/investors-are-betting-a-blue-wave-will-help-hospitals-dont-count-on-it-411ab127?mod=rss_markets_main",
+    "https://www.wsj.com/tech/the-tangled-web-of-ai-bets-is-reason-to-fear-tech-stocks-905bde86?mod=rss_markets_main",
+    "https://www.interfax.ru/russia/1126391",
     "https://www.rbc.ru/sport/30/10/2026/6ae47f712535738c51e10c65",
     "https://tass.ru/mezhdunarodnaya-panorama/28276083",
     "https://www.kommersant.ru/doc/9078436",
-    "https://www.rbc.ru/rbcfreenews/6adb771f9fbfbe8f3aef1d02",
-    "https://tass.ru/proisshestviya/28276079",
-    "https://www.kommersant.ru/doc/9078437",
-    "https://tass.ru/obschestvo/28276077",
-    "https://tass.ru/obschestvo/28276071",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241818-peregovori-nachnutsya",
-    "https://t.me/rbc_news/159824",
-    "https://tass.ru/proisshestviya/28276069",
-    "https://tass.ru/spb-news/28276051",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276067",
-    "https://t.me/headlines_for_traders/87850",
-    "https://www.rbc.ru/rbcfreenews/6abc8f20ac9237d51e7f26cb",
-    "https://www.rbc.ru/rbcfreenews/6ad20b7658c8e142ba8db900",
-    "https://t.me/whale_alert_io/104444",
-    "https://t.me/whale_alert_io/104443",
-    "https://t.me/banksta/104597",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241816-putin-provedet-zasedanie-soveta",
-    "https://thedefiant.io/news/defi/defi-fees-revenue-and-holder-payouts-how-the-money-flows",
-    "https://t.me/incrypted/33191",
-    "https://thedefiant.io/news/defi/how-pendle-principal-tokens-turn-a-discount-into-a-maturity-return",
-    "https://www.kommersant.ru/doc/9078430",
-    "https://tass.ru/proisshestviya/28276063",
-    "https://tass.ru/politika/28276059",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276061",
-    "https://t.me/headlines_for_traders/87849",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276053",
-    "https://t.me/headlines_for_traders/87848",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276057",
-    "https://www.investing.com/news/stock-market-news/street-calls-of-the-week-93CH-4989309",
-    "https://thedefiant.io/news/defi/how-staking-rewards-change-token-holdings-and-supply-share",
-    "https://tass.ru/sport/28276055",
-    "https://t.me/if_market_news/86520",
-    "https://thedefiant.io/news/defi/what-happens-when-a-uniswap-v3-position-goes-out-of-range"
+    "https://www.rbc.ru/rbcfreenews/6adb771f9fbfbe8f3aef1d02"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T11:00:58.463443+00:00",
-      "Акции Intel обвалились на 28,6% из-за слабого прогноза по прибыли"
-    ],
-    [
-      "2026-10-31T11:00:58.463443+00:00",
-      "Спотовые биткоин-ETF зафиксировали отток $643,2 млн"
-    ],
-    [
-      "2026-10-31T11:00:58.463443+00:00",
-      "Верховный лидер Ирана приказал расширить список целей для ударов"
-    ],
-    [
-      "2026-10-31T11:00:58.463443+00:00",
-      "Россия продлила запрет на экспорт дизеля до конца января"
-    ],
-    [
-      "2026-10-31T11:00:58.463443+00:00",
-      "Силы ПВО за сутки сбили четыре ракеты «Фламинго» и более 600 дронов"
-    ],
-    [
-      "2026-10-31T11:00:58.463443+00:00",
-      "Aave заморозила резерв tBTC после остановки минтинга"
-    ],
     [
       "2026-10-31T11:30:58.362644+00:00",
       "Правительство РФ продлило запрет на экспорт дизеля производителями до конца января 2027 года"
@@ -1746,6 +1722,30 @@
     [
       "2026-11-01T10:31:00.489548+00:00",
       "ФБР обвинило хакеров из КНДР в краже $6,3 млрд у Binance"
+    ],
+    [
+      "2026-11-01T11:00:59.052208+00:00",
+      "Семь стран ОПЕК+ намерены сохранить квоты на добычу нефти в декабре"
+    ],
+    [
+      "2026-11-01T11:00:59.052208+00:00",
+      "Binance частично возобновила вывод средств после масштабного взлома"
+    ],
+    [
+      "2026-11-01T11:00:59.052208+00:00",
+      "В Москве и Нижегородской области призвали водителей сменить резину на зимнюю"
+    ],
+    [
+      "2026-11-01T11:00:59.052208+00:00",
+      "Число работающих пенсионеров в России выросло до 8,41 млн человек"
+    ],
+    [
+      "2026-11-01T11:00:59.052208+00:00",
+      "Новак: российский дизель попадает на рынки ЕС под другими марками"
+    ],
+    [
+      "2026-11-01T11:00:59.052208+00:00",
+      "Четыре человека погибли в ЛНР в результате украинских ударов"
     ]
   ],
   "results_fp": [
