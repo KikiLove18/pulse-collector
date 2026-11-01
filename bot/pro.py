@@ -54,11 +54,19 @@ def _target(var="PRO_EVENTS"):
     return os.environ.get("TELEGRAM_CHAT_ID")
 
 
+def log_post(name, html):
+    """Текст поста PRO — в журнал только вне GitHub: журналы этого репозитория открыты всем (С9, 01.11)."""
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"----- {name}: {len(html or '')} знаков, текст в открытый журнал не пишем -----", file=sys.stderr)
+    else:
+        print(f"----- {name} -----\n{html}", file=sys.stderr)
+
+
 def _send(chat, html, card_url, silent=False, thread=None):
     """Возвращает message_id (или None). silent — без звука у подписчиков (наполнение канала пачкой)."""
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     if not (token and chat):
-        print("----- канал PRO (не отправлено: нет токена) -----\n" + html, file=sys.stderr)
+        log_post("канал PRO (не отправлено: нет токена)", html)
         return None
     payload = {"chat_id": chat, "text": html, "parse_mode": "HTML", "disable_notification": silent or SILENT["on"]}
     if str(chat) == str(os.environ.get("PRO_CHAT_ID") or ""):
@@ -116,32 +124,6 @@ def thread(state, chat, kind):
         return None
 
 
-def edit(chat, spec, tg_html):
-    """Исправить опубликованный пост (state/pro_edit.json): message_id или offset_from_pinned (от закрепа «Как устроен»).
-    expect — с чего должен начинаться новый текст (защита от ошибки в номере)."""
-    mid = spec.get("message_id")
-    if not mid:
-        pinned = _call("getChat", chat_id=chat).get("pinned_message") or {}
-        if not (pinned.get("text") or "").startswith("📌 Как устроен"):
-            print("Канал PRO: закреп не «Как устроен» — номер поста не посчитать, ничего не правлю", file=sys.stderr)
-            return False
-        mid = pinned["message_id"] + int(spec["offset_from_pinned"])
-    html = tg_html(spec["html"])
-    if spec.get("expect") and spec["expect"] not in html[:200]:
-        print("Канал PRO: текст правки не похож на ожидаемый — не правлю", file=sys.stderr)
-        return False
-    payload = {"chat_id": chat, "message_id": mid, "text": html, "parse_mode": "HTML",
-               "link_preview_options": ({"url": spec["card_url"], "show_above_text": True, "prefer_large_media": True}
-                                        if spec.get("card_url") else {"is_disabled": True})}
-    try:
-        _call("editMessageText", **payload)
-        print(f"Канал PRO: пост {mid} исправлен", file=sys.stderr)
-        return True
-    except Exception as e:
-        print(f"Канал PRO: пост {mid} не исправлен —", str(e)[:200], file=sys.stderr)
-        return False
-
-
 def pin(chat, message_id):
     """Закрепить без уведомления (нужно право бота «закреплять сообщения»)."""
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -179,7 +161,7 @@ def big_event(ask_ai, tg_html, state, now, kind, title, facts, quotes_text="", c
     if len(body) > 3600:  # ИИ разошёлся — режем по абзацу (раздел «Что дальше» в конце, его не жалко)
         body = body[:body.rfind("\n\n", 0, 3600)]
     html = tg_html(head + "\n\n" + body + "\n\n#СОБЫТИЕ")
-    print("----- канал PRO -----\n" + html, file=sys.stderr)
+    log_post("канал PRO", html)
     _send(chat, html, card_url, thread=thread(tstate if tstate is not None else state, chat, "event"))
     st["count"] += 1
     st["titles"].append(title)

@@ -14,7 +14,7 @@ import re
 import sys
 from datetime import datetime, timedelta, timezone
 
-from bot import edition, prompts
+from bot import edition, pro, prompts
 
 MSK = timezone(timedelta(hours=3))
 HOUR, LAST = (7, 30), 10  # окно выхода МСК: с 07:30 до 10:00
@@ -157,7 +157,7 @@ def run(state, now, ask, send_test=None, dry=False):
             break
         print("PRO авто: проверка —", "; ".join(problems), file=sys.stderr)
     draft = {"at": b["at"], "brief": b, "caption": caption, "ok": not problems, "problems": problems}
-    print("PRO авто: черновик\n" + caption, file=sys.stderr)
+    pro.log_post("PRO авто: черновик", caption)
     if dry:
         return draft
     edition._post("/api/ingest", {"edition": "pro_draft", "blocks": [], "meta": {"pro_draft": draft}})

@@ -196,7 +196,7 @@ def run(state, now, msk, fetch_calendar, tg_html, test=False, horizon=2, ask=Non
     if ask:  # карусель v6 (шаблон evc из bot/pro_tpl): разбор ИИ → картинки → альбом; сбой — пост текстом, как раньше
         try:
             evc = evc_data(events, weekly.load_week()["results"], now, msk, ask)
-            print("----- evc.json -----\n" + json.dumps(evc, ensure_ascii=False, indent=1), file=sys.stderr)
+            pro.log_post("evc.json", json.dumps(evc, ensure_ascii=False, indent=1))
             if evc and evc.get("items"):
                 pics = _render(evc)
         except Exception as e:
@@ -205,7 +205,7 @@ def run(state, now, msk, fetch_calendar, tg_html, test=False, horizon=2, ask=Non
         print("События дня: сегодня событий нет — пост не нужен", file=sys.stderr)
         return None
     html = tg_html(html) if html else ""  # без текста (образец на прошлую дату) — только альбом
-    print("----- #СОБЫТИЯ -----\n" + html, file=sys.stderr)
+    pro.log_post("#СОБЫТИЯ", html)
     if chat:
         if not (pics and _album(chat, pics, html)) and html:
             pro._send(chat, html, None)

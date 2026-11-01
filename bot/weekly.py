@@ -12,7 +12,7 @@ import urllib.parse
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from bot import cards, edition, prompts
+from bot import cards, edition, pro, prompts
 
 MSK = timezone(timedelta(hours=3))
 WEEK_FILE = Path(__file__).resolve().parent.parent / "state" / "week.json"
@@ -283,9 +283,9 @@ def run_weekly(ask_ai, http_get, calendar_next, publish_card, now, dry, until=No
         note = edition.ru_numbers(f"Лучший: {best[0]} {best[2]:+.1f}% · худший: {worst[0]} {worst[2]:+.1f}% · "
                                   "изменение с прошлой недели по закрытию")
     if dry:
-        print("\n" + html + "\n\nОБЛОЖКА: " + json.dumps(card, ensure_ascii=False))
+        pro.log_post("разбор недели, образец", html + "\n\nОБЛОЖКА: " + json.dumps(card, ensure_ascii=False))
         return html
-    print("----- разбор недели -----\n" + html, file=sys.stderr)  # текст поста виден в журнале запуска
+    pro.log_post("разбор недели", html)
     url = upload_table(f"Неделя в цифрах · {week_label(now)}", rows, card_id, note) if rows else None
     if not url:  # таблицы нет — обычная карточка с главной темой
         url, _ = edition.upload_card(card, card_id, week_label(now))
@@ -359,7 +359,7 @@ def run_week_ahead(ask_ai, http_get, calendar_next, publish_card, now, dry, unti
     end = l + timedelta(days=6)
     label = f"{l.day}–{end.day} {MONTHS[end.month - 1]}" if l.month == end.month else f"{l.day} {MONTHS[l.month - 1]} – {end.day} {MONTHS[end.month - 1]}"
     html = f"<b>📅 Неделя впереди · {label}</b>\n\n" + post
-    print("----- неделя впереди -----\n" + html + "\nКАРТА: " + json.dumps(rows, ensure_ascii=False), file=sys.stderr)
+    pro.log_post("неделя впереди", html + "\nКАРТА: " + json.dumps(rows, ensure_ascii=False))
     if dry:
         return html
     url = _upload_png(cards.render_pressure, _cid(f"wa{l:%Y%m%d}"), "Неделя впереди: что давит на рынки", rows, label,
@@ -396,7 +396,7 @@ def run_asset(ask_ai, http_get, calendar_next, publish_card, now, dry):
         post, data = _ask_post(ask_ai, ASSET, f"ЗАПРЕЩЕНО выбирать: {', '.join(done)}. Выбери другой актив.\n\n" + user, "asset")
     name = data.get("asset") or "Актив недели"
     html = f"<b>🔍 Актив недели: {name}</b>\n\n" + post
-    print("----- актив недели -----\n" + html, file=sys.stderr)
+    pro.log_post("актив недели", html)
     if dry:
         return html
     card = {"theme": data.get("theme") if data.get("theme") in cards.THEMES else "wallst", "tag": "АКТИВ НЕДЕЛИ", "sent": "neu",
@@ -422,7 +422,7 @@ def run_guide(ask_ai, http_get, calendar_next, publish_card, now, dry, until=Non
         print("Гайд: утверждённых новых нет", file=sys.stderr)
         return None
     html = files[0].read_text(encoding="utf-8").strip()
-    print("----- гайд -----\n" + html, file=sys.stderr)
+    pro.log_post("гайд", html)
     if dry:
         return html
     publish_card(html, None)
@@ -480,7 +480,7 @@ def run_month(ask_ai, http_get, calendar_next, publish_card, now, dry):
                      + ["", "КАЛЕНДАРЬ:"] + (calendar_next or ["нет данных"]) + ["", "НОВОСТИ:"] + _news_lines(week, 8, 100))
     body = ask_ai(MONTH, user).strip()
     html = f"<b>📈 Итоги месяца · {mname} {prev.year}</b>\n\n{body}"
-    print("----- итоги месяца -----\n" + html, file=sys.stderr)
+    pro.log_post("итоги месяца", html)
     if dry:
         return html
     rows = [(n, _num(mq[k][0], 0 if mq[k][0] > 1000 else 2), mq[k][1]) for k, n, _ in WEEK_QUOTES if k in mq]

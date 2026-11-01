@@ -1413,10 +1413,6 @@ def main():
         run_pro_fill(state, now, mode == "pro_fill_live")
         save_state(state)
         return
-    if mode == "pro_edit":  # исправить опубликованный пост канала PRO по state/pro_edit.json (после «да» владельца на публикацию)
-        spec = json.loads((ROOT / "state" / "pro_edit.json").read_text(encoding="utf-8"))
-        pro.edit(pro._target("PRO_POSTS"), spec, tg_html)
-        return
     if mode.split(":")[0] == "pro_day":  # «События дня» #СОБЫТИЯ — образец в тестовый канал; pro_day:2026-10-28 — на дату (до +3 дней)
         day = mode.split(":")[1] if ":" in mode else None
         at = datetime.fromisoformat(day + "T20:30:00+03:00") if day else now

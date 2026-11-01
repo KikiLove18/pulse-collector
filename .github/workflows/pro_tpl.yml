@@ -37,4 +37,4 @@ jobs:
           curl -sS -o /dev/null -w "альбом: HTTP %{http_code}\n" "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMediaGroup" -F chat_id="$TELEGRAM_CHAT_ID" -F media="$m]" "${a[@]}"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always()
-        with: { name: pro-slides, path: out/, retention-days: 7, if-no-files-found: ignore }
+        with: { name: pro-slides, path: out/, retention-days: 1, if-no-files-found: ignore }
