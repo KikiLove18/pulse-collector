@@ -930,7 +930,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T08:00:55.109481+00:00",
+  "breaking_ts": "2026-11-01T08:30:59.682468+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 1,
@@ -941,64 +941,51 @@
     ]
   },
   "news_seen": [
+    "https://t.me/whale_alert_io/104434",
+    "https://t.me/whale_alert_io/104433",
+    "https://www.kommersant.ru/doc/9078405",
+    "https://t.me/markettwits/391461",
+    "https://www.rbc.ru/society/22/10/2026/6ad9cbc9d261cf3d71616859",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241807-putin-pozdravil-sotrudnikov-rosfinmonitoringa",
+    "https://t.me/markettwits/391460",
+    "https://www.rbc.ru/society/06/09/2026/6a9834519fd969e0199396ea",
+    "https://tass.ru/sport/28275947",
+    "https://t.me/rbc_news/159819",
+    "https://tass.ru/ekonomika/28275941",
+    "https://tass.ru/sibir-news/28275927",
+    "https://t.me/whale_alert_io/104432",
+    "https://t.me/forklog/50497",
+    "https://t.me/banksta/104595",
+    "https://www.interfax.ru/russia/1126383",
+    "https://tass.ru/armiya-i-opk/28275937",
+    "https://t.me/interfaxonline/81006",
+    "https://t.me/whale_alert_io/104431",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241806-delo-o-terakte",
+    "https://tass.ru/proisshestviya/28275935",
+    "https://tass.ru/proisshestviya/28275925",
+    "https://www.interfax.ru/russia/1126382",
+    "https://t.me/whale_alert_io/104430",
+    "https://tass.ru/ekonomika/28275933",
+    "https://www.rbc.ru/politics/29/07/2026/6a6988759a7947c50b702977",
+    "https://t.me/markettwits/391459",
+    "https://t.me/rbc_news/159818",
+    "https://t.me/bitkogan/29505",
+    "https://t.me/headlines_for_traders/87843",
+    "https://www.kommersant.ru/doc/9078400",
+    "https://www.vedomosti.ru/society/news/2026/11/01/1241805-o-krazhe-akkauntov",
+    "https://www.rbc.ru/technology_and_media/25/11/2020/5fbe247e9a794708cc054981",
+    "https://t.me/gpb_investments/25184",
+    "https://tass.ru/ekonomika/28275919",
+    "https://www.rbc.ru/rbcfreenews/6ae4b6442535738c51e10d28",
+    "https://tass.ru/proisshestviya/28275917",
     "https://tass.ru/proisshestviya/28275911",
-    "https://tass.ru/ekonomika/28275809",
-    "https://www.rbc.ru/politics/01/11/2026/6ae6c7e205248f5986c38eb4",
-    "https://tass.ru/nauka/28275803",
-    "https://tass.ru/obschestvo/28275905",
-    "https://t.me/markettwits/391458",
-    "https://tass.ru/ekonomika/28275903",
-    "https://t.me/interfaxonline/81005",
-    "https://www.rbc.ru/politics/01/11/2026/6ae6ec41ec784633484f47ec",
-    "https://tass.ru/obschestvo/28275901",
-    "https://www.interfax.ru/russia/1126381",
-    "https://www.kommersant.ru/doc/9078392",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241804-gazovoz-atakovali-v-persidskom-zalive",
-    "https://www.interfax.ru/russia/1126380",
-    "https://t.me/whale_alert_io/104429",
-    "https://cointelegraph.com/news/fbi-blames-north-korea-for-record-63b-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://t.me/rbc_news/159817",
-    "https://www.investing.com/news/stock-market-news/xiaomis-october-ev-deliveries-top-50000-hit-2026-monthly-high-4989416",
-    "https://www.rbc.ru/radio/01/11/2026/6ae5f02c9a79478f20fd200a",
-    "https://t.me/russianmacro/23678",
-    "https://t.me/FinancialJuice/144223",
-    "https://www.rbc.ru/politics/31/10/2026/6ae5f3fd92b809aef4d94d10",
-    "https://tass.ru/proisshestviya/28275893",
-    "https://t.me/alfa_investments/8532",
-    "https://www.rbc.ru/rbcfreenews/6aa043619a7947af1eb1019e",
-    "https://t.me/headlines_for_traders/87841",
-    "https://tass.ru/ekonomika/28275891",
-    "https://www.vedomosti.ru/investments/news/2026/11/01/1241803-fbr-zayavilo",
-    "https://tass.ru/interviews/28271289",
-    "https://www.interfax.ru/russia/1126379",
-    "https://t.me/whale_alert_io/104428",
-    "https://t.me/banksta/104594"
+    "https://tass.ru/ekonomika/28275809"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T09:00:56.332745+00:00",
-      "Binance подтвердила заморозку $3 млрд после взлома"
-    ],
-    [
-      "2026-10-31T09:00:56.332745+00:00",
-      "В РАПУ допустили рост выпуска калийных удобрений на 1 млн тонн"
-    ],
-    [
-      "2026-10-31T09:00:56.332745+00:00",
-      "Британия помогает Саудовской Аравии с ПВО против атак хуситов"
-    ],
-    [
-      "2026-10-31T09:00:56.332745+00:00",
-      "Россия и Мозамбик обсуждают запуск прямого авиасообщения"
-    ],
-    [
-      "2026-10-31T09:31:02.223613+00:00",
-      "«Аэрофлот» скорректировал расписание из-за ограничений в Шереметьево"
-    ],
     [
       "2026-10-31T09:31:02.223613+00:00",
       "Chainalysis подверглась кибератаке с утечкой данных пользователей"
@@ -1598,6 +1585,22 @@
     [
       "2026-11-01T08:00:55.109481+00:00",
       "«Аэрофлот» увеличил перевозки между РФ и Бангкоком на 14%"
+    ],
+    [
+      "2026-11-01T08:30:59.682468+00:00",
+      "ФБР официально назвало КНДР организатором взлома Binance"
+    ],
+    [
+      "2026-11-01T08:30:59.682468+00:00",
+      "Иран признал британские ВМС и ВВС террористическими организациями"
+    ],
+    [
+      "2026-11-01T08:30:59.682468+00:00",
+      "OpenAI привлекла менее половины от запланированных $30 млрд"
+    ],
+    [
+      "2026-11-01T08:30:59.682468+00:00",
+      "Банки РФ за девять месяцев заработали более 3,6 трлн рублей прибыли"
     ]
   ],
   "results_fp": [
