@@ -26,6 +26,9 @@ FOMC = ["2026-10-28", "2026-12-09*", "2027-01-27", "2027-03-17*", "2027-04-28", 
 # Заседания Банка России по ключевой ставке (решение 13:30 МСК, пресс-конференция 15:00 МСК); проверено 10.10.2026 на cbr.ru/dkp/cal_mp
 CBR = ["2026-10-23", "2026-12-18", "2027-02-12", "2027-03-19", "2027-04-30", "2027-06-11", "2027-07-30", "2027-09-10", "2027-10-22", "2027-12-17"]
 MSKZ = ZoneInfo("Europe/Moscow")
+# Встречи семи стран ОПЕК+ (Саудовская Аравия, Россия, Ирак, Кувейт, Казахстан, Алжир, Оман): каждое заявление называет только следующую дату
+# 01.11 → следующая 29.11, заявление ОПЕК по ТАСС 01.11.2026 (tass.com/economy/2211539); часа нет, поэтому «весь день»
+OPEC = ["2026-11-01", "2026-11-29"]
 SCHEDULE = [  # (дата, время ET, событие, важность)
     ("2026-10-14", "08:30", "Инфляция CPI", "High"),
     ("2026-11-10", "08:30", "Инфляция CPI", "High"),
@@ -210,7 +213,15 @@ def scheduled():
         out.append({"dt": datetime(y, mo, dd, 15, 0, tzinfo=MSKZ), "title": "Пресс-конференция главы Банка России", "impact": "High", "kind": "cbr", "note": "по графику"})
     for d, t, title, imp in SCHEDULE:
         out.append({"dt": _et(d, t), "title": title, "impact": imp, "kind": "macro", "note": "по графику"})
+    for d in OPEC:
+        y, mo, dd = map(int, d.split("-"))
+        out.append({"dt": datetime(y, mo, dd, 9, 0, tzinfo=MSKZ), "title": "Встреча ОПЕК+", "impact": "High", "kind": "macro", "note": "весь день"})
     return out + ru_recurring() + crypto_recurring()
+
+
+def opec_stale(today):
+    """После последней встречи в OPEC следующей даты нет: её называет заявление ОПЕК, вписать вручную."""
+    return OPEC[-1] < f"{today:%Y-%m-%d}"
 
 
 def ru_recurring(days=60):
@@ -314,7 +325,7 @@ def build(ff_events, horizon_days=60, with_earnings=True):
     ff = []
     for e in ff_events:
         ru, imp = translate(e["title"])
-        ev = {"dt": e["dt"], "title": ru or e["title"], "impact": e.get("impact") or imp, "kind": "fed" if "ФРС" in (ru or "") else "macro",
+        ev = {"dt": e["dt"], "title": ru or e["title"], "impact": "High" if imp == "High" else e.get("impact") or imp, "kind": "fed" if "ФРС" in (ru or "") else "macro",
               "forecast": e.get("forecast", ""), "previous": e.get("previous", "")}
         if e["title"] in ALL_DAY:
             ev.update(dt=e["dt"].astimezone(MSKZ).replace(hour=9, minute=0), note="весь день")

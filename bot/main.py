@@ -1085,6 +1085,8 @@ def run_digest(state, now, dry, final=True):
                 publish("⚠️ Календарь: время Nasdaq и ForexFactory разошлось, проверь _nasdaq\n" + "\n".join(calendar_future.DRIFT[:5]), dry)
             except Exception as e:
                 print("Сигнал о календаре не отправлен:", str(e)[:150], file=sys.stderr)
+        if calendar_future.opec_stale(local):
+            publish("⚠️ Календарь: нет следующей встречи ОПЕК+, впиши дату из заявления ОПЕК в calendar_future.OPEC", dry)
     except Exception as e:
         print("Календарь на 60 дней не собран:", e, file=sys.stderr)
         events = [{"dt": e["dt"].isoformat(), "title": e["title"], "forecast": e.get("forecast", ""),
