@@ -106,6 +106,15 @@ def _et(day, hhmm):
     return datetime(y, mo, d, h, m, tzinfo=ET)
 
 
+NASDAQ_TZ = timezone(timedelta(hours=-4))  # поле gmt у Nasdaq весь год на UTC−4, без зимнего времени. 01.11 проверено: NFP 09.01 и 06.03, 8:30 ET, отдаёт 09:30, Мичиган зимой 11:00, летом 10:00
+
+
+def _nasdaq(day, hhmm):
+    h, m = map(int, hhmm.split(":"))
+    y, mo, d = map(int, day.split("-"))
+    return datetime(y, mo, d, h, m, tzinfo=NASDAQ_TZ)
+
+
 STAGE = {"Revised ": " (уточн.)", "Prelim ": " (предв.)", "Final ": " (оконч.)", "Flash ": " (предв.)"}
 
 
@@ -149,11 +158,11 @@ def nasdaq_econ(days=7):
             m = re.match(r"(?:FOMC Member|Fed Chair|Fed Governor)\s+(\w+)", name)
             if ru and m:
                 ru = f"{ru} ({m.group(1)})"
-            t = (r.get("gmt") or "").strip()  # фактически время ET
+            t = (r.get("gmt") or "").strip()  # не GMT, а UTC−4, см. NASDAQ_TZ
             if not ru or imp == "Low" or not t[:2].isdigit():  # мелкую статистику (Low) в календарь не берём, как и у ForexFactory
                 continue
             clean = lambda v: "" if not v or "nbsp" in v else v.strip()
-            out.append({"dt": _et(day, t[:5]), "title": ru, "impact": imp, "kind": "macro",
+            out.append({"dt": _nasdaq(day, t[:5]), "title": ru, "impact": imp, "kind": "macro",
                         "forecast": clean(r.get("consensus")), "previous": clean(r.get("previous"))})
     return out
 
@@ -323,7 +332,7 @@ def released(now, hours=8):
             act = (r.get("actual") or "").replace("&nbsp;", "").strip()
             if imp not in ("High", "Medium") or not act or not t[:2].isdigit() or "Выступление" in (ru or ""):
                 continue
-            dt = _et(d, t[:5])
+            dt = _nasdaq(d, t[:5])
             if not (start <= dt.astimezone(timezone.utc) <= now):
                 continue
             clean = lambda v: "" if not v or "nbsp" in v else v.strip()
