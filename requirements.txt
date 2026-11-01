@@ -1,2 +1,2 @@
 feedparser==6.0.12
-pillow
+pillow==13.0.0
