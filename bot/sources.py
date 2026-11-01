@@ -39,6 +39,36 @@ FEEDS = [
     ("ru", "Банки.ру", "https://www.banki.ru/xml/news.rss"),
     ("ru", "Банк России", "https://www.cbr.ru/rss/eventrss"),
     ("ru", "Московская биржа", "https://www.moex.com/export/news.aspx?cat=101"),
+    # вторая партия: сверка Юриста m-1793519135d, только на пробу до «да» владельца
+    ("ru", "BFM", "https://www.bfm.ru/news.rss"),
+    ("ru", "Lenta.ru: Экономика", "https://lenta.ru/rss/news/economics"),
+    ("ru", "Финам: новости компаний", "https://www.finam.ru/analysis/conews/rsspoint/"),
+    ("commodities", "CNBC Energy", "https://www.cnbc.com/id/19836768/device/rss/rss.html"),
+    ("commodities", "LNG Prime", "https://lngprime.com/feed/"),
+    ("commodities", "Offshore Technology", "https://www.offshore-technology.com/feed/"),
+    ("commodities", "Oil & Gas Journal", "https://www.ogj.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22general-interest%22%7D"),
+    ("commodities", "Mining Technology", "https://www.mining-technology.com/feed/"),
+    ("commodities", "Hellenic Shipping News", "https://www.hellenicshippingnews.com/feed/"),
+    ("commodities", "Splash247", "https://splash247.com/feed/"),
+    ("commodities", "Farm Progress", "https://www.farmprogress.com/rss.xml"),
+    ("commodities", "ФАО ООН", "https://www.fao.org/feeds/fao-newsroom-rss"),
+    ("commodities", "ПРАЙМ: энергетика", "https://1prime.ru/export/rss2/energy/index.xml"),
+    ("commodities", "Ведомости: энергетика", "https://www.vedomosti.ru/rss/rubric/business/energy.xml"),
+    ("commodities", "EIA: сообщения", "https://www.eia.gov/rss/press_rss.xml"),
+    ("macro", "CNBC Earnings", "https://www.cnbc.com/id/15839135/device/rss/rss.html"),
+    ("macro", "Business Insider: рынки", "https://markets.businessinsider.com/rss/news"),
+    ("macro", "investingLive", "https://investinglive.com/feed"),
+    ("macro", "Calculated Risk", "https://calculatedrisk.substack.com/feed"),
+    ("macro", "BLS: инфляция", "https://www.bls.gov/feed/cpi.rss"),
+    ("macro", "BLS: занятость", "https://www.bls.gov/feed/empsit.rss"),
+    ("macro", "BLS: цены производителей", "https://www.bls.gov/feed/ppi.rss"),
+    ("macro", "SEC: выступления", "https://www.sec.gov/news/speeches-statements.rss"),
+    ("macro", "CFTC", "https://www.cftc.gov/RSS/RSSGP/rssgp.xml"),
+    ("macro", "Бюро переписи США", "https://www.census.gov/economic-indicators/indicator.xml"),
+    ("macro", "ФРС: выступления", "https://www.federalreserve.gov/feeds/speeches.xml"),
+    ("macro", "ФРБ Нью-Йорка: Liberty Street", "https://libertystreeteconomics.newyorkfed.org/feed/"),
+    ("macro", "Банк Англии", "https://www.bankofengland.co.uk/rss/news"),
+    ("macro", "Банк Японии", "https://www.boj.or.jp/en/rss/whatsnew.xml"),
     # Люди
     ("people", "Трамп (Truth Social)", "https://www.trumpstruth.org/feed"),
 ]
@@ -57,8 +87,10 @@ TG_CHANNELS = [
     "cbrstocks", "sberinvestments", "gpb_investments", "alfa_investments", "investfuture", "banksta",
     "forbesrussia", "prime1", "frank_media", "expert_mag", "cbonds", "bcs_express", "tb_invest_official", "finam_invest", "spydell_finance",
     "government_rus", "minec_russia", "rosstat_official",
+    "tass_agency", "rian_ru", "kommersant", "vedomosti", "minenergo_official", "mcx_ru", "mcxae", "news_kremlin",
     # сырьё
     "oil_capital", "energytodaygroup", "metals_mining", "agroinvestor", "gazprom", "nornickel_official",
+    "nefte_baza", "neftegazterritory",
     # мировые рынки и США
     "markettwits", "bitkogan", "bitkogan_hotline", "headlines_for_traders", "proeconomics", "usamarke1",
     # крипта
@@ -84,7 +116,8 @@ SRC_NAMES = {"centralbank_russia": "Банк России", "minfin": "Минф�
              "rbccrypto": "РБК Крипто", "bitsmedia": "Bits.media", "oil_capital": "Нефть и Капитал", "energytodaygroup": "Energy Today",
              "metals_mining": "Металл и Минерал", "agroinvestor": "Агроинвестор", "gazprom": "Газпром", "nornickel_official": "Норникель",
              "tankertrackers": "TankerTrackers", "coindeskglobal": "CoinDesk", "cointelegraph": "Cointelegraph",
-             "coinmarketcapannouncements": "CoinMarketCap", "bwenews": "BWEnews", "glassnode": "glassnode", "cryptoquant_official": "CryptoQuant"}
+             "coinmarketcapannouncements": "CoinMarketCap", "bwenews": "BWEnews", "glassnode": "glassnode", "cryptoquant_official": "CryptoQuant",
+             "tass_agency": "ТАСС", "rian_ru": "РИА Новости", "kommersant": "Коммерсантъ", "vedomosti": "Ведомости", "minenergo_official": "Минэнерго России", "mcx_ru": "Минсельхоз России", "mcxae": "Агроэкспорт", "news_kremlin": "Кремль. Новости", "nefte_baza": "Нефтебаза", "neftegazterritory": "Neftegaz Territory"}
 
 
 def src_name(raw):
