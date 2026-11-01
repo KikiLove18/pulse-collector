@@ -1075,7 +1075,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T19:30:57.119959+00:00",
+  "breaking_ts": "2026-11-01T20:00:55.301331+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 3,
@@ -1088,47 +1088,34 @@
     ]
   },
   "news_seen": [
+    "https://oilprice.com/Energy/Energy-General/Massive-AI-Data-Center-Sparks-Backlash-Despite-Clean-Energy-Promises.html",
+    "https://t.me/WatcherGuru/15748",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241863-netanyahu-prizval-trampa",
+    "https://www.rbc.ru/politics/28/10/2026/6ae118cdecc4a5e3283d6415",
+    "https://t.me/banksta/104618",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276629",
+    "https://tass.ru/sport/28276627",
+    "https://www.kommersant.ru/doc/9078642",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276621",
+    "https://tass.ru/sport/28276623",
+    "https://www.rbc.ru/sport/01/11/2026/6ae5c87c87a8dbd418dd4fd3",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241862-tramp-poobeschal",
+    "https://www.interfax.ru/russia/1126424",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276613",
+    "https://tass.ru/obschestvo/28276615",
+    "https://t.me/markettwits/391487",
+    "https://tass.ru/sport/28276617",
+    "https://www.rbc.ru/sport/31/10/2026/6ae632be05248f5986c38e57",
     "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
     "https://www.rbc.ru/business/30/10/2026/6ae4a7b3508a2286f62815fc",
-    "https://tass.ru/sport/28276609",
-    "https://t.me/markettwits/391486",
-    "https://www.rbc.ru/rbcfreenews/6a9fc5a088a445c893577833",
-    "https://t.me/rbc_news/159843",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241861-zaharova-sravnila-sobitiya",
-    "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
-    "https://thedefiant.io/news/defi/pump-fun-cuts-referral-share-to-37-5-as-4x-boost-ends",
-    "https://t.me/interfaxonline/81014",
-    "https://www.rbc.ru/sport/05/08/2026/6a73461d9a794756bc04eaed",
-    "https://tass.ru/sport/28276605",
-    "https://tass.ru/ekonomika/28276601",
-    "https://tass.ru/sport/28276603",
-    "https://t.me/banksta/104617",
-    "https://t.me/rbc_news/159842",
-    "https://www.kommersant.ru/doc/9078613",
-    "https://tass.ru/obschestvo/28276597",
-    "https://www.rbc.ru/rbcfreenews/6ae080b3bf0ad6cfa0ea4fc0",
-    "https://www.kommersant.ru/doc/9078630",
-    "https://www.rbc.ru/politics/01/11/2026/6ae77214b2d30c2d3dd1d60e",
-    "https://tass.ru/sport/28276599",
-    "https://t.me/nainspire/5638"
+    "https://www.kommersant.ru/doc/9078636",
+    "https://tass.ru/sport/28276609"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T20:00:57.412145+00:00",
-      "Bloomberg: чешский миллиардер предложил €30 млрд за владельца Ray-Ban"
-    ],
-    [
-      "2026-10-31T20:00:57.412145+00:00",
-      "Демократы США потребовали расследовать роль ИИ в политике Трампа"
-    ],
-    [
-      "2026-10-31T20:30:54.684115+00:00",
-      "Хедж-фонд Arini Capital распродал облигации на $800 млн"
-    ],
     [
       "2026-10-31T20:30:54.684115+00:00",
       "В Италии предложили ввести 26%-й налог для богатых при смене резидентства"
@@ -1728,6 +1715,30 @@
     [
       "2026-11-01T19:30:57.119959+00:00",
       "Pump.fun снизила реферальную долю до 37,5%"
+    ],
+    [
+      "2026-11-01T20:00:55.301331+00:00",
+      "Секретная служба США продолжила расследование взлома Binance на $6,3 млрд"
+    ],
+    [
+      "2026-11-01T20:00:55.301331+00:00",
+      "Ведомости: Нетаньяху призвал Трампа возобновить войну против Ирана"
+    ],
+    [
+      "2026-11-01T20:00:55.301331+00:00",
+      "НХЛ назвала Макдэвида, Капризова и Кочеткова звездами октября"
+    ],
+    [
+      "2026-11-01T20:00:55.301331+00:00",
+      "Болгария запросила у ЕС €2 млрд для укрепления безопасности в Черном море"
+    ],
+    [
+      "2026-11-01T20:00:55.301331+00:00",
+      "SCMP: Китай активно наращивает поставки сложного вооружения в Африку"
+    ],
+    [
+      "2026-11-01T20:00:55.301331+00:00",
+      "Германия допустила отказ от проведения чемпионата мира по хоккею 2027 года"
     ]
   ],
   "results_fp": [
