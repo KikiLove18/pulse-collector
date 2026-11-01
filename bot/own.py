@@ -5,8 +5,10 @@
 В общую Ленту, выжимки и рассылки он не попадает.
 """
 import calendar
+import contextlib
 import html
 import http.client
+import io
 import ipaddress
 import json
 import re
@@ -207,10 +209,22 @@ def _read_one(item, stop_at):
     return {"key": item["key"], "status": status, "posts": posts}
 
 
+def _quiet(ask, text):
+    """Журнал публичный, а ask_ai печатает тела ошибок провайдера: в них бывает кусок запроса. Здесь в журнал — только число таких строк."""
+    buf = io.StringIO()
+    try:
+        with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
+            return ask(OWN_TOPIC, text)
+    finally:
+        lines = buf.getvalue().count("\n")
+        if lines:
+            print(f"Свои источники: сообщений ИИ скрыто {lines}", file=sys.stderr)
+
+
 def _about_markets(ask, posts):
     """Какие посты про рынки и экономику. В ИИ только пронумерованные тексты; сбой или непонятный ответ — исключение."""
     numbered = "\n".join(f"{n}. {p['t']} {p['x']}".strip() for n, p in enumerate(posts, 1))
-    answer = ask(OWN_TOPIC, numbered)
+    answer = _quiet(ask, numbered)
     found = re.search(r"\{.*\}", answer or "", re.S)
     yes = json.loads(found.group(0))["yes"]
     return [p for n, p in enumerate(posts, 1) if n in yes]
