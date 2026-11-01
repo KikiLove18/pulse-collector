@@ -60,7 +60,7 @@
   ],
   "last_digest_ts": "2026-10-31T16:31:02.399315+00:00",
   "calendar": {
-    "ts": "2026-10-31T16:00:57.017319+00:00",
+    "ts": "2026-11-01T04:00:55.872275+00:00",
     "data": [
       {
         "title": "Bank Holiday",
@@ -929,7 +929,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-10-31T21:30:54.601907+00:00",
+  "breaking_ts": "2026-11-01T04:00:55.866838+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 0,
@@ -938,73 +938,40 @@
     "titles": []
   },
   "news_seen": [
-    "https://t.me/FinancialJuice/144218",
-    "https://tass.ru/ekonomika/28275381",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275377",
-    "https://tass.ru/sport/28275379",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275375",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275365",
-    "https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-4989336",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275371",
-    "https://tass.ru/politika/28275361",
-    "https://www.rbc.ru/politics/19/07/2025/687ae5ae9a79470b38e7cd21",
-    "https://tass.ru/obschestvo/28275363",
-    "https://tass.ru/obschestvo/28275357",
-    "https://tass.ru/sport/28275359",
-    "https://tass.ru/ekonomika/28275353",
-    "https://tass.ru/proisshestviya/28275355",
-    "https://t.me/banksta/104579",
-    "https://tass.ru/sport/28275349",
-    "https://www.kommersant.ru/doc/9078353",
-    "https://tass.ru/ekonomika/28275337",
-    "https://www.rbc.ru/politics/31/10/2026/6ae5f3fd92b809aef4d94d10",
-    "https://tass.ru/proisshestviya/28275317",
-    "https://tass.ru/ekonomika/28275347",
-    "https://tass.ru/obschestvo/28275335",
-    "https://tass.ru/ekonomika/28275321",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275345",
-    "https://tass.ru/mezhdunarodnaya-panorama/28275323",
-    "https://www.rbc.ru/sport/30/10/2026/6ae45ff65171f3bd6bffcd4b",
-    "https://tass.ru/armiya-i-opk/28275339",
-    "https://www.rbc.ru/rbcfreenews/6ad9a4f0046637335410b0a6",
-    "https://tass.ru/ekonomika/28275341",
-    "https://tass.ru/obschestvo/28275333",
-    "https://tass.ru/obschestvo/28275343",
-    "https://tass.ru/ekonomika/28275331",
-    "https://www.rbc.ru/quote/20/09/2026/6ad70f219a79479ab7b80bf4",
-    "https://www.rbc.ru/politics/26/10/2026/6adfadfa3a2b75d3479b27a7",
-    "https://www.rbc.ru/rbcfreenews/69ca4f269a794743385929bf",
-    "https://oilprice.com/Geopolitics/International/US-Intelligence-China-Could-Put-Laser-Weapons-in-Space-by-2030.html"
+    "https://tass.ru/politika/28275639",
+    "https://www.interfax.ru/russia/1126361",
+    "https://tass.ru/politika/28275635",
+    "https://www.kommersant.ru/doc/9078365",
+    "https://www.rbc.ru/politics/29/09/2026/6abc1eb851430e1dcfe90b89",
+    "https://tass.ru/ekonomika/28275625",
+    "https://tass.ru/obschestvo/28275629",
+    "https://tass.ru/obschestvo/28275623",
+    "https://tass.ru/armiya-i-opk/28275621",
+    "https://t.me/headlines_for_traders/87825",
+    "https://tass.ru/armiya-i-opk/28275619",
+    "https://tass.ru/nedvizhimost/28275617",
+    "https://t.me/whale_alert_io/104421",
+    "https://tass.ru/obschestvo/28275615",
+    "https://www.kommersant.ru/doc/9078364",
+    "https://tass.ru/nedvizhimost/28275611",
+    "https://www.interfax.ru/world/1126356",
+    "https://tass.ru/obschestvo/28275603",
+    "https://tass.ru/proisshestviya/28275613",
+    "https://tass.ru/armiya-i-opk/28275599",
+    "https://tass.ru/proisshestviya/28275609",
+    "https://tass.ru/ekonomika/28275607",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275601",
+    "https://tass.ru/proisshestviya/28275587",
+    "https://tass.ru/armiya-i-opk/28275595",
+    "https://tass.ru/mezhdunarodnaya-panorama/28275605",
+    "https://tass.ru/armiya-i-opk/28275593",
+    "https://tass.ru/obschestvo/28275591"
   ],
   "ai_dead": {
     "date": "2026-10-31",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T05:01:05.291232+00:00",
-      "Пятая часть фанатов GTA 6 планирует прогулять работу в день релиза"
-    ],
-    [
-      "2026-10-31T05:01:05.291232+00:00",
-      "Крупный перевод 1199 биткоинов зафиксирован с биржи OKX"
-    ],
-    [
-      "2026-10-31T05:01:05.291232+00:00",
-      "Росавиация сняла временные ограничения в аэропортах Екатеринбурга"
-    ],
-    [
-      "2026-10-31T05:30:54.752146+00:00",
-      "Ростовская область отразила атаку более 90 беспилотников за ночь"
-    ],
-    [
-      "2026-10-31T05:30:54.752146+00:00",
-      "ВС РФ нанесли удар по ТЭЦ-6 в Киеве"
-    ],
-    [
-      "2026-10-31T05:30:54.752146+00:00",
-      "Крупный перевод 609 699 SOL зафиксирован на кошелек Coinbase"
-    ],
     [
       "2026-10-31T05:30:54.752146+00:00",
       "Россия в сентябре резко увеличила импорт цитрусовых из Турции"
@@ -1604,6 +1571,26 @@
     [
       "2026-10-31T20:30:54.684115+00:00",
       "Совбез Ирана допустил выход из ДНЯО в случае новой войны"
+    ],
+    [
+      "2026-11-01T04:00:55.866838+00:00",
+      "Взломаны кошельки Binance: украдено $296 млн в XRP"
+    ],
+    [
+      "2026-11-01T04:00:55.866838+00:00",
+      "Reuters: страны ОПЕК+ сохранят добычу нефти в декабре"
+    ],
+    [
+      "2026-11-01T04:00:55.866838+00:00",
+      "ФССП: число депортированных из России выросло в 1,5 раза"
+    ],
+    [
+      "2026-11-01T04:00:55.866838+00:00",
+      "Трамп заявил об оставшихся одна-две цели в Иране"
+    ],
+    [
+      "2026-11-01T04:00:55.866838+00:00",
+      "Иран ожидает поставки российских Су-35 после войны"
     ]
   ],
   "results_fp": [
