@@ -4830,9 +4830,9 @@
 "key": "2026-10-27|earn|HOOD",
 "title": "Отчёт Robinhood (HOOD)",
 "dt": "2026-10-27T20:05:00+00:00",
-"verdict": "better",
+"verdict": "worse",
 "impact": "Medium",
-"headline": "EPS $0.60 при прогнозе $0.56"
+"headline": "EPS $0.51 при прогнозе $0.56"
 },
 {
 "key": "2026-10-28|запасы нефти eia|10:30",
