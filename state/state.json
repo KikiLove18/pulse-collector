@@ -930,7 +930,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T07:30:57.141654+00:00",
+  "breaking_ts": "2026-11-01T08:00:55.109481+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 1,
@@ -941,68 +941,44 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/proisshestviya/28275911",
+    "https://tass.ru/ekonomika/28275809",
+    "https://www.rbc.ru/politics/01/11/2026/6ae6c7e205248f5986c38eb4",
+    "https://tass.ru/nauka/28275803",
+    "https://tass.ru/obschestvo/28275905",
+    "https://t.me/markettwits/391458",
+    "https://tass.ru/ekonomika/28275903",
+    "https://t.me/interfaxonline/81005",
+    "https://www.rbc.ru/politics/01/11/2026/6ae6ec41ec784633484f47ec",
+    "https://tass.ru/obschestvo/28275901",
+    "https://www.interfax.ru/russia/1126381",
+    "https://www.kommersant.ru/doc/9078392",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241804-gazovoz-atakovali-v-persidskom-zalive",
+    "https://www.interfax.ru/russia/1126380",
+    "https://t.me/whale_alert_io/104429",
+    "https://cointelegraph.com/news/fbi-blames-north-korea-for-record-63b-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://t.me/rbc_news/159817",
+    "https://www.investing.com/news/stock-market-news/xiaomis-october-ev-deliveries-top-50000-hit-2026-monthly-high-4989416",
+    "https://www.rbc.ru/radio/01/11/2026/6ae5f02c9a79478f20fd200a",
+    "https://t.me/russianmacro/23678",
+    "https://t.me/FinancialJuice/144223",
+    "https://www.rbc.ru/politics/31/10/2026/6ae5f3fd92b809aef4d94d10",
+    "https://tass.ru/proisshestviya/28275893",
+    "https://t.me/alfa_investments/8532",
+    "https://www.rbc.ru/rbcfreenews/6aa043619a7947af1eb1019e",
+    "https://t.me/headlines_for_traders/87841",
+    "https://tass.ru/ekonomika/28275891",
     "https://www.vedomosti.ru/investments/news/2026/11/01/1241803-fbr-zayavilo",
+    "https://tass.ru/interviews/28271289",
+    "https://www.interfax.ru/russia/1126379",
     "https://t.me/whale_alert_io/104428",
-    "https://t.me/banksta/104594",
-    "https://tass.ru/politika/28275889",
-    "https://t.me/interfaxonline/81004",
-    "https://tass.ru/ekonomika/28275887",
-    "https://www.rbc.ru/politics/31/10/2026/6ae599cfacc9a2663a9678e1",
-    "https://t.me/rbc_news/159816",
-    "https://t.me/lookonchainchannel/10863",
-    "https://t.me/whale_alert_io/104427",
-    "https://www.kommersant.ru/doc/9078386",
-    "https://www.interfax.ru/russia/1126378",
-    "https://www.rbc.ru/politics/27/09/2026/6ab93e85e9ee7c52ef89afe3",
-    "https://t.me/interfaxonline/81003",
-    "https://tass.ru/nedvizhimost/28275875",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241802-mozambik-obsuzhdaet",
-    "https://tass.ru/proisshestviya/28275815",
-    "https://www.rbc.ru/technology_and_media/01/11/2026/6ae6e34652bac455561e4633",
-    "https://t.me/lookonchainchannel/10862",
-    "https://tass.ru/ekonomika/28275877",
-    "https://tass.ru/armiya-i-opk/28275851",
-    "https://tass.ru/proisshestviya/28275879",
-    "https://t.me/rbc_news/159815",
-    "https://tass.ru/ekonomika/28275795",
-    "https://tass.ru/obschestvo/28275857",
-    "https://www.rbc.ru/rbcfreenews/6aa25eeb85309aa97c2554d2",
-    "https://tass.ru/ekonomika/28275735",
-    "https://www.kommersant.ru/doc/9078383",
-    "https://tass.ru/proisshestviya/28275849",
-    "https://tass.ru/proisshestviya/28275811",
-    "https://t.me/headlines_for_traders/87839",
-    "https://tass.ru/sport/28275845"
+    "https://t.me/banksta/104594"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T08:30:58.552005+00:00",
-      "Парламент Франции одобрил налог на интернет-трафик для крупных бигтехов"
-    ],
-    [
-      "2026-10-31T08:30:58.552005+00:00",
-      "Делегация США присоединится к переговорам по Ирану в Дохе"
-    ],
-    [
-      "2026-10-31T08:30:58.552005+00:00",
-      "Агентство Fitch пересмотрело прогноз рейтинга Франции на негативный из-за спада ВВП"
-    ],
-    [
-      "2026-10-31T08:30:58.552005+00:00",
-      "НКР присвоило Альфа-Банку наивысший кредитный рейтинг AAA"
-    ],
-    [
-      "2026-10-31T08:30:58.552005+00:00",
-      "При атаке беспилотника в Киржачском округе повреждены жилые дома"
-    ],
-    [
-      "2026-10-31T09:00:56.332745+00:00",
-      "В Польше разгорелся кризис после отстранения главы Конституционного суда"
-    ],
     [
       "2026-10-31T09:00:56.332745+00:00",
       "Binance подтвердила заморозку $3 млрд после взлома"
@@ -1602,6 +1578,26 @@
     [
       "2026-11-01T07:30:57.141654+00:00",
       "Граждане Германии чаще других просили убежища в России за 9 месяцев"
+    ],
+    [
+      "2026-11-01T08:00:55.109481+00:00",
+      "СКР возбудил дело о теракте после атаки БПЛА в Нижегородской области"
+    ],
+    [
+      "2026-11-01T08:00:55.109481+00:00",
+      "Катарский газовоз Nakilat атаковали в Персидском заливе"
+    ],
+    [
+      "2026-11-01T08:00:55.109481+00:00",
+      "ФБР заявило о причастности КНДР к взлому Binance на $6 млрд"
+    ],
+    [
+      "2026-11-01T08:00:55.109481+00:00",
+      "Поставки электромобилей Xiaomi в октябре превысили 50 тысяч"
+    ],
+    [
+      "2026-11-01T08:00:55.109481+00:00",
+      "«Аэрофлот» увеличил перевозки между РФ и Бангкоком на 14%"
     ]
   ],
   "results_fp": [
@@ -1652,6 +1648,6 @@
     ]
   },
   "pro_daily": "2026-10-31",
-  "freech_day": "2026-10-31",
+  "freech_day": "2026-11-01",
   "pro_auto": "2026-11-01"
 }
