@@ -1074,7 +1074,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T15:00:56.924094+00:00",
+  "breaking_ts": "2026-11-01T15:30:55.452635+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 2,
@@ -1086,52 +1086,50 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/sport/28276405",
+    "https://t.me/FinancialJuice/144235",
+    "https://t.me/markettwits/391474",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276399",
+    "https://tass.ru/sport/28276401",
+    "https://www.wsj.com/finance/stocks/ai-investors-are-racing-to-get-insurance-on-the-biggest-market-bet-in-history-a60e296f?mod=rss_markets_main",
+    "https://t.me/whale_alert_io/104462",
+    "https://www.rbc.ru/society/08/10/2026/6ac73a6ed9c23c5daf7ae415",
+    "https://t.me/whale_alert_io/104461",
+    "https://t.me/FinancialJuice/144234",
+    "https://www.kommersant.ru/doc/9078562",
+    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
+    "https://www.rbc.ru/politics/25/10/2026/6addc0a39c13fbd95873f37b",
+    "https://www.interfax.ru/world/1126410",
+    "https://t.me/WatcherGuru/15746",
+    "https://www.wsj.com/economy/us-economic-data-growth-9a4f7690?mod=rss_socialeconomyfeed",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241848-mid-oproverg-soobschenie",
+    "https://tass.ru/obschestvo/28276353",
+    "https://tass.ru/proisshestviya/28276389",
+    "https://t.me/banksta/104609",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241847-sravnila-kallas-s-pugalom",
+    "https://www.interfax.ru/world/1126409",
+    "https://tass.ru/sport/28276391",
+    "https://tass.ru/proisshestviya/28276385",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276383",
+    "https://t.me/headlines_for_traders/87860",
+    "https://www.rbc.ru/rbcfreenews/69dcc6c59a79474ff960d21d",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241846-rossiya-vvedet-vizi",
+    "https://t.me/markettwits/391473",
+    "https://t.me/whale_alert_io/104460",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276381",
     "https://www.coindesk.com/policy/2026/11/01/the-key-races-to-watch-for-the-2026-election",
     "https://www.coindesk.com/business/2026/11/01/crypto-card-startups-are-racking-up-losses-just-to-buy-your-loyalty-with-big-rewards",
+    "https://www.marketwatch.com/story/apples-new-earnings-era-begins-at-a-critical-time-for-big-tech-2236a44e?mod=mw_rss_topstories",
     "https://tass.ru/proisshestviya/28276377",
     "https://tass.ru/politika/28276375",
     "https://tass.ru/sport/28276373",
-    "https://t.me/rbc_news/159833",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276367",
-    "https://tass.ru/armiya-i-opk/28276369",
-    "https://tass.ru/proisshestviya/28276365",
-    "https://tass.ru/proisshestviya/28276363",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241845-sudno-gruzami",
-    "https://www.rbc.ru/sport/31/10/2026/6adf9fa73a2b75d3479b2790",
-    "https://t.me/forklog/50501",
-    "https://www.kommersant.ru/doc/9078543",
-    "https://t.me/markettwits/391472",
-    "https://tass.ru/sport/28276361",
-    "https://t.me/nainspire/5636",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241844-fsb-zaderzhala-podrostka",
-    "https://t.me/banksta/104607",
-    "https://www.rbc.ru/sport/31/10/2026/6ae61503391af178364d5493",
-    "https://www.rbc.ru/rbcfreenews/67bde1e29a794751928c2ff3",
-    "https://t.me/headlines_for_traders/87859",
-    "https://tass.ru/proisshestviya/28276355",
-    "https://tass.ru/politika/28276359",
-    "https://tass.ru/proisshestviya/28276349",
-    "https://www.interfax.ru/world/1126408",
-    "https://t.me/markettwits/391471",
-    "https://tass.ru/proisshestviya/28276345",
-    "https://t.me/markettwits/391470",
-    "https://www.kommersant.ru/doc/9078534",
-    "https://t.me/banksta/104606",
-    "https://tass.ru/obschestvo/28276351"
+    "https://t.me/rbc_news/159833"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T15:30:56.830778+00:00",
-      "ФСБ получила от США информацию о подготовке теракта в Москве"
-    ],
-    [
-      "2026-10-31T15:30:56.830778+00:00",
-      "Binance восстановила 90% средств после крупного взлома"
-    ],
     [
       "2026-10-31T15:30:56.830778+00:00",
       "Венгрия сократит расходы на строительство АЭС «Пакш-2» на €87 млн"
@@ -1731,6 +1729,30 @@
     [
       "2026-11-01T15:00:56.924094+00:00",
       "ИИ-капекс бигтехов США растет рекордными темпами"
+    ],
+    [
+      "2026-11-01T15:30:55.452635+00:00",
+      "50 компаний США выступили против токенизации акций на криптобиржах"
+    ],
+    [
+      "2026-11-01T15:30:55.452635+00:00",
+      "ВТБ завершает санацию БМ-банка с сохранением долга"
+    ],
+    [
+      "2026-11-01T15:30:55.452635+00:00",
+      "Почта России выставила на торги Главпочтамт в Москве"
+    ],
+    [
+      "2026-11-01T15:30:55.452635+00:00",
+      "Apple отчитается за квартал на фоне давления на Big Tech"
+    ],
+    [
+      "2026-11-01T15:30:55.452635+00:00",
+      "Свыше $3,75 млрд выведено с Binance после возобновления операций"
+    ],
+    [
+      "2026-11-01T15:30:55.452635+00:00",
+      "Британские компании случайно нанимают северокорейцев через посредников"
     ]
   ],
   "results_fp": [
