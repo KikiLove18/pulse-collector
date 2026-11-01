@@ -4832,7 +4832,7 @@
 "dt": "2026-10-27T20:05:00+00:00",
 "verdict": "better",
 "impact": "Medium",
-"headline": "EPS $0.61 при прогнозе $0.56 (сюрприз +8.9%)"
+"headline": "EPS $0.60 при прогнозе $0.56"
 },
 {
 "key": "2026-10-28|запасы нефти eia|10:30",
@@ -4854,9 +4854,9 @@
 "key": "2026-10-28|earn|MSFT",
 "title": "Отчёт Microsoft (MSFT)",
 "dt": "2026-10-28T20:05:00+00:00",
-"verdict": "worse",
+"verdict": "better",
 "impact": "High",
-"headline": "EPS $4.13 при прогнозе $4.71 (сюрприз -12.3%)"
+"headline": "EPS $4.89 при прогнозе $4.71"
 },
 {
 "key": "2026-10-28|earn|GOOGL",
@@ -4864,7 +4864,7 @@
 "dt": "2026-10-28T20:05:00+00:00",
 "verdict": "worse",
 "impact": "High",
-"headline": "EPS $2.87 при прогнозе $2.94 (сюрприз -2.4%)"
+"headline": "EPS $2.67 при прогнозе $3.02"
 },
 {
 "key": "2026-10-29|pce|08:30",
@@ -4888,23 +4888,23 @@
 "dt": "2026-10-29T20:05:00+00:00",
 "verdict": "worse",
 "impact": "High",
-"headline": "EPS $1.95 при прогнозе $2.01 (сюрприз -3.0%)"
+"headline": "EPS $1.89 при прогнозе $2.01"
 },
 {
 "key": "2026-10-29|earn|INTC",
 "title": "Отчёт Intel (INTC)",
 "dt": "2026-10-29T20:05:00+00:00",
-"verdict": "worse",
+"verdict": "better",
 "impact": "Medium",
-"headline": "EPS $0.11 при прогнозе $0.28 (сюрприз -60.7%)"
+"headline": "EPS $0.52 при прогнозе $0.37"
 },
 {
 "key": "2026-10-29|earn|MSTR",
 "title": "Отчёт Strategy (MSTR)",
 "dt": "2026-10-29T20:05:00+00:00",
-"verdict": "worse",
+"verdict": "better",
 "impact": "High",
-"headline": "EPS $8.42 при прогнозе $21.50 (сюрприз -60.8%)"
+"headline": "EPS $44.75 при прогнозе $21.50"
 },
 {
 "key": "2026-10-29|earn|COIN",
