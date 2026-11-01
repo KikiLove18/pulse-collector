@@ -11,6 +11,8 @@ FEEDS = [
     ("hacks", "Rekt", "https://rekt.news/rss/feed.xml"),
     ("crypto", "CryptoSlate", "https://cryptoslate.com/feed/"),
     ("crypto", "The Defiant", "https://thedefiant.io/api/feed"),
+    ("crypto", "Bitcoin Magazine", "https://bitcoinmagazine.com/feed"),
+    ("crypto", "Protos", "https://protos.com/feed/"),
     # Рынок и макро США
     ("macro", "WSJ Markets", "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"),
     ("macro", "WSJ Economy", "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"),
@@ -19,8 +21,16 @@ FEEDS = [
     ("macro", "ФРС (пресс-релизы)", "https://www.federalreserve.gov/feeds/press_all.xml"),
     ("macro", "Investing.com", "https://www.investing.com/rss/news_25.rss"),
     ("macro", "MarketWatch", "https://feeds.content.dowjones.io/public/rss/mw_topstories"),
+    ("macro", "SEC", "https://www.sec.gov/news/pressreleases.rss"),
+    ("macro", "BEA", "https://apps.bea.gov/rss/rss.xml"),
+    ("macro", "ЕЦБ", "https://www.ecb.europa.eu/rss/press.html"),
     # Сырьё
     ("commodities", "OilPrice", "https://oilprice.com/rss/main"),
+    ("commodities", "Rigzone", "https://www.rigzone.com/news/rss/rigzone_latest.aspx"),
+    ("commodities", "Natural Gas Intelligence", "https://www.naturalgasintel.com/feed/"),
+    ("commodities", "gCaptain", "https://gcaptain.com/feed/"),
+    ("commodities", "World Grain", "https://www.world-grain.com/rss/articles"),
+    ("commodities", "EIA Today in Energy", "https://www.eia.gov/rss/todayinenergy.xml"),
     # Россия: рынок, ЦБ, экономика
     ("ru", "РБК", "https://rssexport.rbc.ru/rbcnews/news/30/full.rss"),
     ("ru", "Ведомости", "https://www.vedomosti.ru/rss/news.xml"),
@@ -29,6 +39,7 @@ FEEDS = [
     ("ru", "ТАСС", "https://tass.ru/rss/v2.xml"),
     ("ru", "Банки.ру", "https://www.banki.ru/xml/news.rss"),
     ("ru", "Банк России", "https://www.cbr.ru/rss/eventrss"),
+    ("ru", "Московская биржа", "https://www.moex.com/export/news.aspx?cat=101"),
     # Люди
     ("people", "Трамп (Truth Social)", "https://www.trumpstruth.org/feed"),
 ]
@@ -45,10 +56,14 @@ TG_CHANNELS = [
     # Россия
     "centralbank_russia", "minfin", "russianmacro", "rbc_news", "interfaxonline", "smartlabnews", "if_market_news",
     "cbrstocks", "sberinvestments", "gpb_investments", "alfa_investments", "investfuture", "banksta", "thebell_io",
+    "forbesrussia", "prime1", "frank_media", "expert_mag", "cbonds", "bcs_express", "tb_invest_official", "finam_invest", "spydell_finance",
+    "government_rus", "minec_russia", "rosstat_official",
+    # сырьё
+    "oil_capital", "energytodaygroup", "metals_mining", "agroinvestor", "gazprom", "nornickel_official",
     # мировые рынки и США
-    "markettwits", "bitkogan", "bitkogan_hotline", "headlines_for_traders", "proeconomics",
+    "markettwits", "bitkogan", "bitkogan_hotline", "headlines_for_traders", "proeconomics", "usamarke1",
     # крипта
-    "cryptokogan", "incrypted", "forklog", "coinpost", "konenkov_official", "invest_zonaa", "nainspire",
+    "RBCCrypto", "bitsmedia", "cryptokogan", "incrypted", "forklog", "coinpost", "konenkov_official", "invest_zonaa", "nainspire",
 ]
 
 # Названия каналов для подписи «— источник» (как в каталоге приложения, CATALOG в miniapp): ИИ пишет служебные имена
@@ -63,7 +78,14 @@ SRC_NAMES = {"centralbank_russia": "Банк России", "minfin": "Минф�
              "walterbloomberg": "Walter Bloomberg", "deitaone": "Walter Bloomberg", "watcherguru": "Watcher Guru",
              "wublockchainenglish": "Wu Blockchain", "wublockchain": "Wu Blockchain", "bitcoinmagazinetelegram": "Bitcoin Magazine",
              "bitcoinmagazine": "Bitcoin Magazine", "whale_alert_io": "Whale Alert", "whale_alert": "Whale Alert",
-             "lookonchainchannel": "Lookonchain", "lookonchain": "Lookonchain", "financialjuice": "FinancialJuice"}
+             "lookonchainchannel": "Lookonchain", "lookonchain": "Lookonchain", "financialjuice": "FinancialJuice",
+             "forbesrussia": "Forbes Russia", "prime1": "ПРАЙМ", "frank_media": "Frank Media", "expert_mag": "Эксперт", "cbonds": "Cbonds",
+             "bcs_express": "БКС Экспресс", "tb_invest_official": "Т-Инвестиции", "finam_invest": "Финам Инвестиции", "spydell_finance": "Spydell Finance",
+             "government_rus": "Правительство России", "minec_russia": "Минэкономразвития", "rosstat_official": "Росстат", "usamarke1": "Invest Era",
+             "rbccrypto": "РБК Крипто", "bitsmedia": "Bits.media", "oil_capital": "Нефть и Капитал", "energytodaygroup": "Energy Today",
+             "metals_mining": "Металл и Минерал", "agroinvestor": "Агроинвестор", "gazprom": "Газпром", "nornickel_official": "Норникель",
+             "tankertrackers": "TankerTrackers", "coindeskglobal": "CoinDesk", "cointelegraph": "Cointelegraph",
+             "coinmarketcapannouncements": "CoinMarketCap", "bwenews": "BWEnews", "glassnode": "glassnode", "cryptoquant_official": "CryptoQuant"}
 
 
 def src_name(raw):
@@ -94,5 +116,12 @@ X_MIRRORS = [
     "BitcoinMagazineTelegram",  # @BitcoinMagazine
     "whale_alert_io",        # @whale_alert
     "lookonchainchannel",    # @lookonchain
+    "TankerTrackers",        # @TankerTrackers: экспорт нефти
+    "CoinDeskGlobal",        # @CoinDesk
+    "cointelegraph",         # @Cointelegraph
+    "CoinMarketCapAnnouncements",  # @CoinMarketCap
+    "BWEnews",               # @BWEnews
+    "glassnode",             # @glassnode
+    "cryptoquant_official",  # @cryptoquant_com
     "financialjuice",        # @financialjuice
 ]

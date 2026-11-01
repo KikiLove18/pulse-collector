@@ -107,6 +107,8 @@ def fetch_news(since):
                 title = ""
             if not (title or desc):
                 continue  # например, пост Трампа только с видео
+            if AD_RE.search(title + " " + desc):
+                continue
             items.append({
                 "cat": cat, "source": name, "time": ts,
                 "title": title, "desc": desc[:MAX_DESC], "link": e.get("link", ""),
@@ -118,6 +120,7 @@ def fetch_news(since):
 CALENDAR_TTL_H = 6  # ForexFactory отвечает 429 на частые запросы — держим копию
 
 
+AD_RE = re.compile(r"\berid\b|#реклама|\bна правах рекламы\b", re.I)  # условие Юриста 01.11: посты с меткой рекламы не берём
 TG_MAX_PAGES = 8  # по ~20 постов на страницу; для частых каналов (MarketTwits) листаем назад
 TG_MAX_ITEMS = 40  # не больше постов с канала — чтобы уложиться в бесплатный лимит ИИ
 
@@ -155,7 +158,7 @@ def _fetch_channel(ch, since, cat, prefix):
             if not body or ts < since:
                 continue
             text = clean(re.sub(r"<br\s*/?>", " ", body.group(1)))
-            if not text or "Реклама" in text[-200:]:
+            if not text or "Реклама" in text[-200:] or AD_RE.search(text):
                 continue
             x_links = re.findall(r'href="(https://(?:x|twitter)\.com/[^"]+)"', body.group(1))
             desc = text[120:600] + (f" [пост в X: {x_links[0]}]" if x_links else "")
