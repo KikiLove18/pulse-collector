@@ -55,7 +55,7 @@ CALENDAR_IMPACT = {"High", "Medium"}
 TG_CHANNELS = [
     # Россия
     "centralbank_russia", "minfin", "russianmacro", "rbc_news", "interfaxonline", "smartlabnews", "if_market_news",
-    "cbrstocks", "sberinvestments", "gpb_investments", "alfa_investments", "investfuture", "banksta", "thebell_io",
+    "cbrstocks", "sberinvestments", "gpb_investments", "alfa_investments", "investfuture", "banksta",
     "forbesrussia", "prime1", "frank_media", "expert_mag", "cbonds", "bcs_express", "tb_invest_official", "finam_invest", "spydell_finance",
     "government_rus", "minec_russia", "rosstat_official",
     # сырьё
@@ -71,7 +71,7 @@ TG_CHANNELS = [
 SRC_NAMES = {"centralbank_russia": "Банк России", "minfin": "Минфин России", "russianmacro": "MMI", "rbc_news": "РБК. Главное",
              "interfaxonline": "Интерфакс", "smartlabnews": "Смарт-лаб", "if_market_news": "IF News", "cbrstocks": "Сигналы РЦБ",
              "sberinvestments": "СберИнвестиции", "gpb_investments": "Газпромбанк Инвестиции", "alfa_investments": "Альфа-Инвестиции",
-             "investfuture": "InvestFuture", "banksta": "Банкста", "thebell_io": "The Bell", "markettwits": "MarketTwits",
+             "investfuture": "InvestFuture", "banksta": "Банкста", "markettwits": "MarketTwits",
              "bitkogan": "bitkogan", "bitkogan_hotline": "bitkogan HOTLINE", "headlines_for_traders": "Headlines for Traders",
              "proeconomics": "Proeconomics", "cryptokogan": "CryptoKogan", "incrypted": "Incrypted", "forklog": "ForkLog",
              "coinpost": "Coin Post", "konenkov_official": "Коненков", "invest_zonaa": "INVEST ZONE", "nainspire": "Хедлайнеры",
