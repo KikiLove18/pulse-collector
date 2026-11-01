@@ -509,6 +509,37 @@ def fallback_feed(items, now, state, dry):
     return push_feed(feed, items, now, dry, state) or []
 
 
+FOREIGN_OWN_MARK = re.compile(r"НАСТОЯЩИЙ МАТЕРИАЛ.*?ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА[^.]*\.?(?:\s*18\+)?")  # своя плашка канала заглавными: пометка ставится при показе
+
+
+def push_foreign_feed(items, now, dry, state):
+    """Посты каналов-иноагентов (условия Юриста, в приватном knowledge/иноагенты-пометка.md): одна новость из одного поста, без ИИ.
+    feed_recent, журнал недели и карточку не трогаем: первые два идут на вход ИИ и в посты, на обложке заголовок стоит раньше пометки."""
+    seen = state.setdefault("foreign_seen", [])
+    out = []
+    for it in sorted(items, key=lambda x: x["time"]):
+        if it["link"] in seen or len(out) >= FALLBACK_PER_RUN:
+            continue
+        seen.append(it["link"])
+        full = re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", it["title"] + it.get("desc", "")).replace("<", " ").replace(">", " "))
+        full = FOREIGN_OWN_MARK.sub(" ", re.sub(r" ?\[пост в X: [^\]]*\]", "", full))
+        full = re.sub(r"\s+", " ", full).strip()
+        lead = _fallback_lead(full)
+        if not lead or len(lead) > 120 or "The Bell" in lead or not FALLBACK_RE.search(lead) or FALLBACK_NO.search(lead) or FALLBACK_GAZA.search(lead):
+            continue
+        rest = full[len(lead):].strip()
+        text = _fallback_lead(rest) or (rest if 40 <= len(rest) <= 300 else None)
+        if not text:
+            continue
+        out.append({"block": _fallback_block(lead), "icon": "", "title": ru_numbers(lead), "text": ru_numbers(text), "sent": "neu", "url": it["link"],
+                    "source": sources.src_name(it["source"]), "also": [], "imp": 1, "ts": now.isoformat(), "metrics": []})
+    del seen[:-100]
+    if out and not dry:
+        _post("/api/ingest", {"edition": "feed", "blocks": [], "meta": {"news": out}})
+    print(f"Лента, иноагенты: постов {len(items)}, в Ленту {len(out)}", file=sys.stderr)
+    return out
+
+
 def ai_status(state, now, dry, err=None, added=()):
     """Служебный meta.ai_status (не в APP_META) — воркер скажет владельцу причину. err=None — ИИ снова работает."""
     st = {"at": now.isoformat(), "fail": False}

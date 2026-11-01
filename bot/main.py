@@ -874,13 +874,25 @@ def publish_card(html, card_url, chat=None):
 
 def fresh_items(now, minutes=60):
     items, _ = fetch_news(now - timedelta(minutes=minutes))
-    tg_items, _ = fetch_telegram(now - timedelta(minutes=minutes), sources.TG_CHANNELS)
+    tg_items, _ = fetch_telegram(now - timedelta(minutes=minutes), sources.TG_FOR_AI)
     x_items, _ = fetch_telegram(now - timedelta(minutes=minutes), sources.X_MIRRORS, cat="x", prefix="X")
     return sorted(items + tg_items + x_items, key=lambda x: x["time"], reverse=True)
 
 
+def run_foreign_feed(state, now, dry):
+    """Посты каналов-иноагентов в Ленту: отдельный путь, без ИИ. Сбой не мешает остальной проверке."""
+    try:
+        items, errors = fetch_telegram(now - timedelta(hours=3), sources.FOREIGN_AGENT_TG)
+        for err in errors:
+            print("Лента недоступна:", err, file=sys.stderr)
+        edition.push_foreign_feed(items, now, dry, state)
+    except Exception as e:
+        print("Лента, иноагенты: не вышло", e, file=sys.stderr)
+
+
 def run_breaking(state, now, dry):
     """Днём каждые 30 минут: важная новость — отдельным сообщением («🌤 Главное сейчас» или «⚡ Срочно»)."""
+    run_foreign_feed(state, now, dry)
     if not has_ai_key():
         return
     last = state.get("breaking_ts")
@@ -994,7 +1006,7 @@ def run_digest(state, now, dry, final=True):
     since = max(since, now - timedelta(hours=DIGEST_WINDOW_MAX_H))
 
     items, errors = fetch_news(since)
-    tg_items, tg_errors = fetch_telegram(since, sources.TG_CHANNELS)
+    tg_items, tg_errors = fetch_telegram(since, sources.TG_FOR_AI)
     x_items, x_errors = fetch_telegram(since, sources.X_MIRRORS, cat="x", prefix="X")
     tg_items += x_items
     tg_errors += x_errors

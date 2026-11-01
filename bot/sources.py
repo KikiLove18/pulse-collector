@@ -51,6 +51,10 @@ TG_CHANNELS = [
     "cryptokogan", "incrypted", "forklog", "coinpost", "konenkov_official", "invest_zonaa", "nainspire",
 ]
 
+# Каналы из реестра иноагентов: на вход ИИ и в сводки не идут, только Лента с пометкой при показе (edition.push_foreign_feed)
+FOREIGN_AGENT_TG = ["thebell_io"]
+TG_FOR_AI = [c for c in TG_CHANNELS if c not in FOREIGN_AGENT_TG]
+
 # Названия каналов для подписи «— источник» (как в каталоге приложения, CATALOG в miniapp): ИИ пишет служебные имена
 # («markettwits», «X @walterbloomberg») — в сообщениях показываем название
 SRC_NAMES = {"centralbank_russia": "Банк России", "minfin": "Минфин России", "russianmacro": "MMI", "rbc_news": "РБК. Главное",

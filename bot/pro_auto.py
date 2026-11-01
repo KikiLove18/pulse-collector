@@ -86,7 +86,7 @@ def brief(meta, now):
             impacts=[f"{i['asset']}: {i['now']}, ждём {i['expect']} — {i['why']}" for i in d.get("impacts") or []])
     cnt = {k: [] for k in THEMES}
     for n in meta.get("news") or []:  # 5) новости за сутки: сколько раз тема в ленте
-        if n.get("ts") and datetime.fromisoformat(n["ts"]) >= now - timedelta(hours=24):
+        if n.get("source") != "The Bell" and n.get("ts") and datetime.fromisoformat(n["ts"]) >= now - timedelta(hours=24):
             for k in theme_of(n["title"] + " " + n.get("text", "")):
                 cnt[k].append(n["title"])
     for k, titles in cnt.items():
