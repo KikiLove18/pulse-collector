@@ -94,7 +94,7 @@ imp — сила влияния на рынок: 3 — двигает рынок
 """.replace("THEMES", THEMES)
 
 
-PICK, NEWS_NOW = PICK + prompts.RU_ONLY, NEWS_NOW + prompts.RU_ONLY
+PICK, NEWS_NOW = PICK + prompts.RU_ONLY + prompts.SAME_FACTS, NEWS_NOW + prompts.RU_ONLY + prompts.SAME_FACTS
 SHARE_RULE = """
 Пункты с меткой [ДОЛЯ] — источник сутки не попадал в ленту. Добавь их в feed СВЕРХ лимита в 6, отдельной записью со своим pick, важность imp — по правде (обычно 1), если это новость о рынках, экономике, компаниях или крипте. Реклама, поздравления, опросы, обучающие и личные посты, повтор уже показанного — пропусти. Метку в текст не пиши."""
 
