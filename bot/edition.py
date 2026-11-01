@@ -307,8 +307,8 @@ def build_morning(ask_ai, items, now, tzmin, qlines, qlines_ru, today, today_ru,
     c = data.get("cover") or {}
     c["metrics"] = factcheck.check_news("", "", c.get("metrics"), lst, "утро")[2]
     for key in ("all", "ru"):  # заголовок с цифрой, которой нет во входных данных, не выходит
-        data[key] = [h for h in (data.get(key) or []) if not factcheck.missing(h.get("title", ""), lst)]
-    if factcheck.missing(c.get("title", ""), lst):
+        data[key] = [h for h in (data.get(key) or []) if not factcheck.missing(h.get("title", ""), lst, "утро")]
+    if factcheck.missing(c.get("title", ""), lst, "утро, обложка"):
         c["title"] = ""
     cover = {"title": c.get("title") or ((data.get("all") or [{}])[0].get("title", "")), "tag": c.get("tag", ""), "sent": c.get("sent", "neu"),
              "theme": pick_theme(c.get("theme"), "", c.get("title", "")), "metrics": (c.get("metrics") or [])[:3],
@@ -356,7 +356,7 @@ def build_edition(ask_ai, news, quotes_text, now, total_news, focus="", qlines=N
         return None
     first = news[pick[0]]
     cover["metrics"] = factcheck.check_news("", "", cover.get("metrics"), lst + " " + quotes_text, "выпуск")[2]
-    if factcheck.missing(cover.get("title", ""), lst + " " + quotes_text):
+    if factcheck.missing(cover.get("title", ""), lst + " " + quotes_text, "выпуск, обложка"):
         cover["title"] = ""
     cover = {"title": cover.get("title") or first["title"], "tag": cover.get("tag", ""), "sent": cover.get("sent") or first.get("sent", "neu"),
              "theme": pick_theme(cover.get("theme"), "ru" if focus == "ru" else "", cover.get("title") or first["title"]),

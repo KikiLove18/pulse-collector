@@ -8,7 +8,6 @@ FEEDS = [
     ("crypto", "Cointelegraph", "https://cointelegraph.com/rss"),
     ("crypto", "The Block", "https://www.theblock.co/rss.xml"),
     ("crypto", "Decrypt", "https://decrypt.co/feed"),
-    ("hacks", "Rekt", "https://rekt.news/rss/feed.xml"),
     ("crypto", "CryptoSlate", "https://cryptoslate.com/feed/"),
     ("crypto", "The Defiant", "https://thedefiant.io/api/feed"),
     # Рынок и макро США
@@ -75,7 +74,7 @@ def src_name(raw):
 
 # Подпись ссылки, если ИИ потерял название источника (<a href="https://…</a>): сайт → название
 HOST_NAMES = {"wsj.com": "WSJ", "cnbc.com": "CNBC", "marketwatch.com": "MarketWatch", "investing.com": "Investing.com", "oilprice.com": "OilPrice",
-              "coindesk.com": "CoinDesk", "cointelegraph.com": "Cointelegraph", "theblock.co": "The Block", "decrypt.co": "Decrypt", "rekt.news": "Rekt",
+              "coindesk.com": "CoinDesk", "cointelegraph.com": "Cointelegraph", "theblock.co": "The Block", "decrypt.co": "Decrypt",
               "cryptoslate.com": "CryptoSlate", "thedefiant.io": "The Defiant", "federalreserve.gov": "ФРС", "rbc.ru": "РБК", "vedomosti.ru": "Ведомости",
               "interfax.ru": "Интерфакс", "kommersant.ru": "Коммерсантъ", "tass.ru": "ТАСС", "banki.ru": "Банки.ру", "cbr.ru": "Банк России",
               "trumpstruth.org": "Truth Social", "x.com": "X", "twitter.com": "X", "t.me": "Telegram"}

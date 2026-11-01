@@ -66,7 +66,7 @@ def numbers(text):
 
 def _same(vals, unit, other):
     """Цифра ИИ совпала с цифрой источника с учётом округления: «1,52 млрд» → «1,5 млрд», но 12,4% → 13% уже нет.
-    Большие суммы ИИ часто обрезает вниз: 155 753 664 → «$155 млн» — это не ошибка (находка QA 01.11). Прощаем только до 1%: обрезка трёхзначной суммы до целой единицы меньше 1%, а «$1 млрд» при $1,9 млрд — уже неверная цифра. Проценты и цены так не прощаем."""
+    Большие суммы ИИ часто обрезает вниз: 155 753 664 → «$155 млн» — это не ошибка (находка QA 01.11). Прощаем только до 1%: обрезка трёхзначной суммы до целой единицы меньше 1%, а «$1 млрд» при $1,9 млрд — уже неверная цифра. Проценты и суммы без тыс./млн так не прощаем; «$77 тыс» при $77 600 проходит (0,78%), это обычная запись. Валюту не сравниваем: «155 млн рублей» при 155 753 664 USD пройдёт."""
     return any(abs(a - b) <= 0.5 * unit * 1.02 or (b and abs(a - b) / abs(b) <= 0.002) or (unit >= 1000 and 0 <= b - a < unit and b and (b - a) / b <= 0.01) for a in vals for b in other)
 
 
@@ -124,12 +124,19 @@ def _active():
     return (os.environ.get("FACTCHECK") or "on").lower() != "off"
 
 
-def missing(text, source):
-    """То же для прямых вызовов из выпусков: FACTCHECK=off — ничего не снимаем, заголовок-объект от ИИ или сбой — выпуск не падает."""
-    if not _active():
-        return []
+def _only_log():
+    """Пометка журнала: при FACTCHECK=off новость выходит как есть, «снято» в журнале значит только «сняли бы» (находка QA 01.11)."""
+    return "" if _active() else " [только журнал, FACTCHECK=off]"
+
+
+def missing(text, source, who=""):
+    """То же для прямых вызовов из выпусков: FACTCHECK=off — ничего не снимаем, заголовок-объект от ИИ или сбой — выпуск не падает.
+    who — откуда вызов: снятый заголовок попадает в журнал (находка QA 01.11)."""
     try:
-        return _missing(str(text or ""), str(source or ""))
+        out = _missing(str(text or ""), str(source or ""))
+        if out and who:
+            print(f"Проверка цифр {who}{_only_log()}: снят заголовок {_phrase(text)} | нет: {out}", file=sys.stderr)
+        return out if _active() else []
     except Exception as e:
         print("Проверка цифр пропущена:", e, file=sys.stderr)
         return []
@@ -152,7 +159,8 @@ def check_news(title, text, metrics, source, who="", everything=""):
         if everything and _missing(title + " " + str(text or ""), source):
             print(f"Проверка цифр{' ' + who if who else ''}: цифра не из источника новости, но есть во входных данных — {str(title)[:70]}", file=sys.stderr)
         if bad_t or removed or len(good) != len(metrics or []):
-            print(f"Проверка цифр{' ' + who if who else ''}: заголовок {'СНЯТ' if bad_t else 'ок'}, фраз снято {removed}, плашек снято {len(metrics or []) - len(good)} — {str(title)[:70]} | нет: {bad_t} {[_missing(s, wide) for s in parts if s not in keep]} | снято: {' '.join(_phrase(s) for s in parts if s not in keep)}", file=sys.stderr)
+            gone = [m.get("value") if isinstance(m, dict) else m for m in metrics or [] if not (isinstance(m, dict) and not bad(str(m.get("value", ""))))]
+            print(f"Проверка цифр{' ' + who if who else ''}{_only_log()}: заголовок {'СНЯТ' if bad_t else 'ок'}, фраз снято {removed}, плашек снято {len(metrics or []) - len(good)} {gone if gone else ''} — {str(title)[:70]} | нет: {bad_t} {[_missing(s, wide) for s in parts if s not in keep]} | снято: {' '.join(_phrase(s) for s in parts if s not in keep)}", file=sys.stderr)
         if not _active():
             return True, text, metrics
         return not bad_t and (bool(new) or not text), new, good
@@ -200,7 +208,7 @@ def check_plain(html, source):
         for line in html.split("\n"):
             keep = [s for s in SENT.split(line) if not (_missing(s, source) or bad_price(s))]
             if len(keep) != len(SENT.split(line)):
-                print("Проверка цифр итога: снято —", " ".join(_phrase(s) for s in SENT.split(line) if s not in keep), file=sys.stderr)
+                print(f"Проверка цифр итога{_only_log()}: снято —", " ".join(_phrase(s) for s in SENT.split(line) if s not in keep), file=sys.stderr)
                 if not _active():
                     keep = SENT.split(line)
             new = " ".join(keep)

@@ -963,7 +963,7 @@ def run_morning(state, now, dry, tzmin):
 
 # Предотбор входа выжимки: 15.10 в ИИ уходило 750–840 новостей → минутные 429 у бесплатной lite.
 # Квоты по рубрикам; внутри рубрики — по очереди от разных источников, свежие вперёд; дубли заголовков убираем.
-DIGEST_QUOTA = {"macro": 30, "crypto": 25, "ru": 25, "telegram": 30, "x": 20, "commodities": 10, "people": 8, "hacks": 5}
+DIGEST_QUOTA = {"macro": 30, "crypto": 25, "ru": 25, "telegram": 30, "x": 20, "commodities": 10, "people": 8}
 DIGEST_OTHER = 10
 
 
