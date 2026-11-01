@@ -1075,7 +1075,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T18:00:55.510540+00:00",
+  "breaking_ts": "2026-11-01T18:31:10.825875+00:00",
   "news_now": {
     "day": "2026-11-01",
     "day_count": 3,
@@ -1088,58 +1088,54 @@
     ]
   },
   "news_seen": [
+    "https://t.me/coinpost/4291",
+    "https://www.vedomosti.ru/politics/news/2026/11/01/1241859-arabskie-strani-boyatsya",
+    "https://www.rbc.ru/sport/02/10/2026/6abf9f619a7947121d499a23",
+    "https://t.me/banksta/104615",
+    "https://tass.ru/obschestvo/28276573",
+    "https://tass.ru/sport/28276575",
+    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
+    "https://tass.ru/obschestvo/28276571",
+    "https://t.me/markettwits/391485",
+    "https://www.theblock.co/news/defi/2026-11-01-north-korean-hackers-launder-242-million-of-binance-loot-via-tron-as-fbi-presses-thorchain-analyst-432257",
+    "https://www.kommersant.ru/doc/9078620",
+    "https://t.me/cbrstocks/83826",
+    "https://www.kommersant.ru/doc/9078610",
+    "https://tass.ru/politika/28276569",
+    "https://www.kommersant.ru/doc/9078624",
+    "https://t.me/cbrstocks/83825",
+    "https://t.me/cbrstocks/83824",
+    "https://t.me/markettwits/391484",
+    "https://tass.ru/sport/28276567",
+    "https://www.interfax.ru/world/1126420",
+    "https://t.me/whale_alert_io/104466",
+    "https://t.me/cbrstocks/83823",
+    "https://t.me/markettwits/391483",
+    "https://thedefiant.io/news/cefi/election-market-odds-vs-polls-what-a-70-chance-means",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276565",
+    "https://t.me/rbc_news/159840",
+    "https://t.me/FinancialJuice/144243",
+    "https://t.me/FinancialJuice/144242",
+    "https://tass.ru/proisshestviya/28276561",
+    "https://www.rbc.ru/economics/09/06/2026/6a27e3db9a7947173795b065",
+    "https://t.me/markettwits/391482",
+    "https://www.kommersant.ru/doc/9078621",
+    "https://www.rbc.ru/politics/26/10/2026/6adefc84119ddf6c1d53debd",
+    "https://t.me/headlines_for_traders/87866",
+    "https://tass.ru/mezhdunarodnaya-panorama/28276559",
+    "https://tass.ru/kultura/28276553",
+    "https://t.me/markettwits/391481",
     "https://oilprice.com/Energy/Energy-General/US-Labs-Look-to-New-Materials-to-Close-Chinas-Nuclear-Lead.html",
+    "https://tass.ru/proisshestviya/28276557",
+    "https://tass.ru/sport/28276555",
     "https://www.rbc.ru/rbcfreenews/6ae77db4b6f380484a231124",
-    "https://t.me/banksta/104614",
-    "https://www.interfax.ru/russia/1126419",
-    "https://www.rbc.ru/sport/01/11/2026/6ae6f03a6b8ef7b63d5e167f",
-    "https://www.rbc.ru/politics/31/10/2026/6ae4b6ab9a7947c47b98dbf6",
-    "https://www.kommersant.ru/doc/9078619",
-    "https://www.rbc.ru/politics/18/07/2026/6a5b603d9a79477992139f0f",
-    "https://www.rbc.ru/rbcfreenews/6ac4c9aa68b7071241c628f7",
-    "https://www.vedomosti.ru/politics/news/2026/11/01/1241857-v-lenoblasti-ispitali",
-    "https://www.interfax.ru/russia/1126418",
-    "https://www.interfax.ru/russia/1126417",
-    "https://t.me/nainspire/5637",
-    "https://t.me/whale_alert_io/104465",
-    "https://t.me/rbc_news/159839",
-    "https://t.me/FinancialJuice/144241",
-    "https://t.me/whale_alert_io/104464",
-    "https://cryptoslate.com/bitcoin-redemption-freeze-puts-136-million-aave-market-under-scrutiny/",
-    "https://t.me/whale_alert_io/104463",
-    "https://t.me/FinancialJuice/144240",
-    "https://t.me/headlines_for_traders/87865",
-    "https://www.kommersant.ru/doc/9078617",
-    "https://t.me/FinancialJuice/144239",
-    "https://www.rbc.ru/economics/26/10/2026/6adf4f8d4e8e85f125c987b3",
-    "https://t.me/interfaxonline/81013",
-    "https://www.marketwatch.com/story/theres-a-lot-of-hurt-between-us-my-fathers-caregiver-is-using-his-debit-card-for-doordash-orders-what-can-i-do-714de7a5?mod=mw_rss_topstories",
-    "https://www.interfax.ru/russia/1126416",
-    "https://www.rbc.ru/politics/29/10/2026/6ae2cd285317b954bbe060a7",
-    "https://t.me/markettwits/391480",
-    "https://t.me/invest_zonaa/39234"
+    "https://tass.ru/mezhdunarodnaya-panorama/28276551"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-10-31T18:30:55.037015+00:00",
-      "Сбой в сети THORChain отложил отмывание средств после взлома Binance"
-    ],
-    [
-      "2026-10-31T18:30:55.037015+00:00",
-      "Италия предложила ввести 26% налог для покидающих страну инвесторов"
-    ],
-    [
-      "2026-10-31T18:30:55.037015+00:00",
-      "Ставки по заимствованиям на Morpho подскочили до 40% из-за ликвидности"
-    ],
-    [
-      "2026-10-31T18:30:55.037015+00:00",
-      "Расходы американских опекунов выросли на 60% за пять лет"
-    ],
     [
       "2026-10-31T19:00:56.697889+00:00",
       "Яндекс представит новые финансовые прогнозы в феврале 2027 года"
@@ -1739,6 +1735,26 @@
     [
       "2026-11-01T18:00:55.510540+00:00",
       "CryptoSlate: заморозка биткоина поставила под удар рынок Aave на $136 млн"
+    ],
+    [
+      "2026-11-01T18:31:10.825875+00:00",
+      "Германия не заполнила газохранилища до целевого уровня к зиме"
+    ],
+    [
+      "2026-11-01T18:31:10.825875+00:00",
+      "Хакеры из КНДР отмыли $242 млн средств Binance через сеть Tron"
+    ],
+    [
+      "2026-11-01T18:31:10.825875+00:00",
+      "Трамп пообещал стать «мистером Вето» при победе демократов"
+    ],
+    [
+      "2026-11-01T18:31:10.825875+00:00",
+      "Препарат для похудения от Eli Lilly оказался эффективнее Оземпика"
+    ],
+    [
+      "2026-11-01T18:31:10.825875+00:00",
+      "Силы ПВО за день сбили 47 беспилотников над регионами России"
     ]
   ],
   "results_fp": [
