@@ -30,7 +30,7 @@ from pathlib import Path
 
 import feedparser
 
-from bot import calendar_future, edition, macro, pro, prompts, sources, weekly, pro_day, freech, pro_auto
+from bot import calendar_future, edition, factcheck, macro, pro, prompts, sources, weekly, pro_day, freech, pro_auto
 
 MSK = timezone(timedelta(hours=3))
 ROOT = Path(__file__).resolve().parent.parent
@@ -843,9 +843,9 @@ def title_metrics(title):
 def parse_news(block_key, html_text):
     """Достаём новости из блока: «1️⃣ флаг <b>заголовок</b>» + <blockquote>🟢 текст — <a href>источник</a></blockquote>."""
     out = []
-    pat = re.compile(r"(?:^|\n)(?:❗️\s*)?\d\ufe0f?\u20e3\s*(.*?)<b>(.*?)</b>[^\n]*\n\s*<blockquote>(.*?)</blockquote>", re.S)
+    pat = re.compile(r"(?:^|\n)(❗\ufe0f?\s*)?\d\ufe0f?\u20e3\s*(.*?)<b>(.*?)</b>[^\n]*\n\s*<blockquote>(.*?)</blockquote>", re.S)
     for m in pat.finditer(html_text):
-        prefix, title, body = m.group(1).strip(), m.group(2).strip(), m.group(3).strip()
+        prefix, title, body = m.group(2).strip(), m.group(3).strip(), m.group(4).strip()
         sent = next((v for k, v in SENT_MAP.items() if body.startswith(k)), "neu")
         link = re.search(r'<a href="([^"]+)">([^<]*)</a>', body)
         text = re.sub(r'\s*—\s*<a href="[^"]+">[^<]*</a>\s*$', "", body)
@@ -854,6 +854,8 @@ def parse_news(block_key, html_text):
         out.append({"block": block_key, "icon": clean(prefix)[:8], "title": clean(title), "text": text.strip(),
                     "sent": sent, "url": link.group(1) if link else "", "source": sources.src_name(link.group(2)) if link else "",
                     "metrics": title_metrics(clean(title))})
+        if m.group(1):  # ❗️ бывает раз на блок: «Заметное влияние» и фильтр «Важные»; 3 — только то, что двигает рынок целиком (Техник 01.11)
+            out[-1]["imp"] = 2
     return out
 
 
@@ -961,7 +963,7 @@ def run_morning(state, now, dry, tzmin):
 
 # Предотбор входа выжимки: 15.10 в ИИ уходило 750–840 новостей → минутные 429 у бесплатной lite.
 # Квоты по рубрикам; внутри рубрики — по очереди от разных источников, свежие вперёд; дубли заголовков убираем.
-DIGEST_QUOTA = {"macro": 30, "crypto": 25, "ru": 25, "telegram": 30, "x": 20, "commodities": 10, "people": 8, "hacks": 5}
+DIGEST_QUOTA = {"macro": 30, "crypto": 25, "ru": 25, "telegram": 30, "x": 20, "commodities": 10, "people": 8}
 DIGEST_OTHER = 10
 
 
@@ -1026,6 +1028,7 @@ def run_digest(state, now, dry, final=True):
         lines.append(f'[{it["cat"]}] {it["source"]} | {it["time"].astimezone(MSK):%H:%M} | '
                      f'{it["title"]} — {it["desc"]} | {it["link"]}')
     user = "\n".join(lines)
+    by_link = {it["link"]: factcheck.source_text(it) for it in items}
     print(f"Собрано новостей: {len(items)}, событий сегодня: {len(today)}, котировок: {len(q)}", file=sys.stderr)
 
     if dry and not has_ai_key():
@@ -1048,7 +1051,7 @@ def run_digest(state, now, dry, final=True):
         head = f"<b>{block['title']} | {date}</b>"
         table = quote_lines(block["quotes"], q)
         try:
-            body = ask_ai(prompts.COMMON + "\n" + block["focus"], user)
+            body = factcheck.check_block(ask_ai(prompts.COMMON + "\n" + block["focus"], user), by_link, user)
         except Exception as e:
             print(f"Блок {block['key']} не собран: {str(e)[:150]}", file=sys.stderr)
             failed.append(block["key"])
@@ -1062,7 +1065,7 @@ def run_digest(state, now, dry, final=True):
         try:
             title = "🧭 #ГЛАВНОЕ_ЗА_НОЧЬ" if morning else "🧭 #ИТОГИ_ДНЯ"
             prompt = prompts.SUMMARY + (prompts.SUMMARY_MORNING if morning else prompts.SUMMARY_EVENING)
-            emit("summary", f"<b>{title} | {date}</b>\n\n" + edition.not_advice(ask_ai(prompt, user)))
+            emit("summary", f"<b>{title} | {date}</b>\n\n" + edition.not_advice(factcheck.check_plain(ask_ai(prompt, user), user)))
         except Exception as e:
             print(f"Итог дня не собран: {str(e)[:150]}", file=sys.stderr)
             failed.append("summary")
@@ -1074,6 +1077,7 @@ def run_digest(state, now, dry, final=True):
         news += parse_news(b["block"], "\n".join(b["html"]))
     for n in news:
         n["ts"] = now.isoformat()  # приложение хранит ленту 7 дней и показывает дату
+    edition.note_sources(state, [sources.src_name(n.get("source", "")) for n in news], now)
     try:
         week = fetch_calendar(state)
     except Exception:
@@ -1228,6 +1232,11 @@ def run_results(state, now, dry):
             except Exception as e:
                 print("Разбор результата не получился:", e, file=sys.stderr)
                 continue
+            if factcheck.missing(res.get("headline", ""), rows):  # у итога данных цифры только из строки Nasdaq
+                print("Проверка цифр итога: заголовок заменён —", res.get("headline"), file=sys.stderr)
+                x = r["rows"][0]
+                res["headline"] = edition.ru_numbers(f'факт {x["actual"]}' + (f', прогноз {x["consensus"]}' if x["consensus"] else "") + (f', было {x["previous"]}' if x["previous"] else ""))
+            res["meaning"] = factcheck.check_plain(res.get("meaning", ""), rows)
         icon, label = VERDICT[res["verdict"]]
         html = (f'{icon} <b>Вышло: {r["title"]}</b>\n'
                 f'<blockquote>📊 {res["headline"]}\n{icon} <b>{label}</b></blockquote>\n'
@@ -1487,6 +1496,23 @@ def main():
                 time.sleep(1)
         return
     elif mode == "preview":  # образцы новостных сообщений в тестовый канал — сервер шлёт их так, как видят подписчики
+        sample = edition.run_news_now(ask_ai, fresh_items(now, 180), {}, now, None, force=True) if has_ai_key() else None
+        print("Сервер бота:", edition._post("/api/preview", {"day": sample}), file=sys.stderr)
+        return
+    elif mode == "engine_test":  # проверка движка: выпуск на настоящем ИИ без записи в приложение; журнал проверок + образец — только в тестовый канал
+        memo = {}
+        calendar_future.released(now, memo=memo)
+        real = sys.stderr
+        sys.stderr = log = __import__("io").StringIO()
+        try:
+            run_digest(state, now, True, False)
+        finally:
+            sys.stderr = real
+        lines = [x for x in log.getvalue().splitlines() if x.startswith(("Проверка цифр", "Доля"))]
+        print(log.getvalue(), file=sys.stderr)
+        waits = {k: m["why"] for k, m in memo.items() if m.get("why")}
+        send_telegram("🧪 Проверка движка (ветка engine-checks)\n\nСнято проверкой: " + str(sum(1 for x in lines if "СНЯТ" in x or re.search(r"фраз снято [1-9]|плашек снято [1-9]", x)))
+                      + f"\nОтчёты ждут настоящей цифры: {len(waits)}\n" + "\n".join(f"{k}: {v}" for k, v in list(waits.items())[:8]) + "\n\n" + "\n".join(lines[:12])[:2500])
         sample = edition.run_news_now(ask_ai, fresh_items(now, 180), {}, now, None, force=True) if has_ai_key() else None
         print("Сервер бота:", edition._post("/api/preview", {"day": sample}), file=sys.stderr)
         return

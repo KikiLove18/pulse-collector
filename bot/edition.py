@@ -13,7 +13,7 @@ from datetime import datetime, timedelta, timezone
 
 from PIL import Image
 
-from bot import cards, photos, prompts, sources
+from bot import cards, factcheck, photos, prompts, sources
 
 MSK = timezone(timedelta(hours=3))
 THEMES = ", ".join(cards.THEMES)
@@ -27,6 +27,8 @@ def not_advice(html):
 DAY_NEWS_PER_DAY = 12    # днём — всего за сутки (сервер присылает человеку его лимит: 4 или 10, по его рынкам)
 DAY_NEWS_GAP_MIN = 40    # не чаще, чем раз в 40 минут
 FEED_PER_RUN = 6         # в ленту приложения — до 6 заметных новостей за каждую проверку (каждые 30 минут)
+FEED_SHARE = 2           # доля источника: сверх лимита до 2 записей за проверку от источников, которых сутки не было в Ленте
+SHARE_AFTER_H = 24
 FEED_CARDS = 3           # карточки-картинки к Ленте: до 3 за проверку, только imp ≥ 2 (Инженер 16.10: ≤ 5 мин на запуск, ~7 МБ/сутки)
 FEED_TAG = {"us": "Рынок США", "crypto": "Криптовалюта", "commodities": "Сырьё", "ru": "Россия", "x": "Что говорят"}
 FEED_THEME = {"us": "wallst", "crypto": "crypto", "commodities": "oil", "ru": "kremlin", "x": "whitehouse"}
@@ -94,7 +96,9 @@ imp — сила влияния на рынок: 3 — двигает рынок
 """.replace("THEMES", THEMES)
 
 
-PICK, NEWS_NOW = PICK + prompts.RU_ONLY, NEWS_NOW + prompts.RU_ONLY
+PICK, NEWS_NOW = PICK + prompts.RU_ONLY + prompts.SAME_FACTS, NEWS_NOW + prompts.RU_ONLY + prompts.SAME_FACTS
+SHARE_RULE = """
+Пункты с меткой [ДОЛЯ] — источник сутки не попадал в ленту. Добавь их в feed СВЕРХ лимита в 6, отдельной записью со своим pick, важность imp — по правде (обычно 1), если это новость о рынках, экономике, компаниях или крипте. Реклама, поздравления, опросы, обучающие и личные посты, повтор уже показанного — пропусти. Метку в текст не пиши."""
 
 
 _NUM = re.compile(r"(?<![\w./:#=-])([-−+]?)(\d+)\.(\d+)(?!\.\d|\d|/)(\s?(?:%|п\.\s?п|б\.\s?п|\$|₽|руб|млн|млрд|трлн|тыс|долл|барр|x\b|×))?")
@@ -304,6 +308,11 @@ def build_morning(ask_ai, items, now, tzmin, qlines, qlines_ru, today, today_ru,
         return []
     local = now.astimezone(timezone(timedelta(minutes=tzmin)))
     c = data.get("cover") or {}
+    c["metrics"] = factcheck.check_news("", "", c.get("metrics"), lst, "утро")[2]
+    for key in ("all", "ru"):  # заголовок с цифрой, которой нет во входных данных, не выходит
+        data[key] = [h for h in (data.get(key) or []) if not factcheck.missing(h.get("title", ""), lst, "утро")]
+    if factcheck.missing(c.get("title", ""), lst, "утро, обложка"):
+        c["title"] = ""
     cover = {"title": c.get("title") or ((data.get("all") or [{}])[0].get("title", "")), "tag": c.get("tag", ""), "sent": c.get("sent", "neu"),
              "theme": pick_theme(c.get("theme"), "", c.get("title", "")), "metrics": (c.get("metrics") or [])[:3],
              "photo": photos.find(c.get("photo") or [], ru=is_ru("", c.get("title", "")))}
@@ -349,6 +358,9 @@ def build_edition(ask_ai, news, quotes_text, now, total_news, focus="", qlines=N
     if not pick:
         return None
     first = news[pick[0]]
+    cover["metrics"] = factcheck.check_news("", "", cover.get("metrics"), lst + " " + quotes_text, "выпуск")[2]
+    if factcheck.missing(cover.get("title", ""), lst + " " + quotes_text, "выпуск, обложка"):
+        cover["title"] = ""
     cover = {"title": cover.get("title") or first["title"], "tag": cover.get("tag", ""), "sent": cover.get("sent") or first.get("sent", "neu"),
              "theme": pick_theme(cover.get("theme"), "ru" if focus == "ru" else "", cover.get("title") or first["title"]),
              "metrics": (cover.get("metrics") or [])[:3],
@@ -399,15 +411,39 @@ def seen_before(title, recent):
     return bool(w) and any(len(w & _words(r)) / len(w | _words(r)) >= 0.7 for r in recent)
 
 
-def push_feed(feed, items, now, dry, state=None):
+def note_sources(state, names, now):
+    """Когда источник последний раз попал в Ленту — для его доли."""
+    last = state.setdefault("feed_src", {})
+    for n in names:
+        if n:
+            last[n] = now.isoformat()
+
+
+def quiet_items(items, state, now):
+    """Доля источника (t-1793514944): у него есть свежая запись, а в Ленте его не было сутки. Не больше FEED_SHARE за проверку, давно молчавшие первыми.
+    Идут в тот же запрос ИИ: лишних вызовов нет, ИИ всё равно отбрасывает рекламу и не про рынки."""
+    last, day_ago, found = state.get("feed_src", {}), (now - timedelta(hours=SHARE_AFTER_H)).isoformat(), {}
+    for it in items:  # от свежих к старым: берём самую свежую запись источника
+        n = sources.src_name(it["source"])
+        if n not in found and last.get(n, "") < day_ago and it["title"].strip():
+            found[n] = it
+    return sorted(found.values(), key=lambda it: last.get(sources.src_name(it["source"]), ""))[:FEED_SHARE]
+
+
+def push_feed(feed, items, now, dry, state=None, cap=None):
     """Свежие новости — в ленту приложения (сервер склеит с прошлыми и хранит 7 дней)."""
     out = []
-    for f in feed[:FEED_PER_RUN]:
+    for f in feed[:cap or FEED_PER_RUN]:
         try:
             src = items[int(f.get("pick", -1))]
         except Exception:
             continue
         if not f.get("title"):
+            continue
+        group_text = [src] + [items[int(i)] for i in f.get("also") or [] if str(i).lstrip("-").isdigit() and -len(items) <= int(i) < len(items)]
+        ok, f["text"], f["metrics"] = factcheck.check_news(f["title"], f.get("text", ""), f.get("metrics"), " ".join(factcheck.source_text(x) for x in group_text), "Лента",
+                                                           " ".join(factcheck.source_text(x) for x in items[:80]))
+        if not ok:
             continue
         if state is not None and seen_before(f["title"], [r[1] for r in state.get("feed_recent", [])] + [o["title"] for o in out]):
             print(f"Лента: повтор, пропускаю — {f['title'][:70]}", file=sys.stderr)
@@ -440,6 +476,7 @@ def push_feed(feed, items, now, dry, state=None):
     if state is not None:  # что уже в ленте за сутки — ИИ не повторит это событие в следующих проверках
         day_ago = (now - timedelta(hours=24)).isoformat()
         state["feed_recent"] = [r for r in state.get("feed_recent", []) if r[0] > day_ago][-150:] + [[o["ts"], o["title"]] for o in out]
+        note_sources(state, [n for o in out for n in [o["source"]] + o["also"]], now)
     feed_cards(out, now, dry)
     print(f"Лента: +{len(out)} новостей, текст в среднем {sum(len(o['text']) for o in out) // len(out)} знаков", file=sys.stderr)
     if dry:
@@ -542,9 +579,14 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
         return None
     gap_ok = not b["last"] or now - datetime.fromisoformat(b["last"]) >= timedelta(minutes=DAY_NEWS_GAP_MIN)
     can_send = force or (8 <= local.hour < 22 and (b["urgent_count"] < URGENT_PER_DAY or (b["day_count"] < DAY_NEWS_PER_DAY and gap_ok)))
-    lst = "\n".join(f'{i}. {it["source"]} | {it["title"]} — {it["desc"][:600]} | {it["link"]}' for i, it in enumerate(items[:80]))
+    share = quiet_items(items, state, now) if (os.environ.get("FEED_SHARE") or "on").lower() != "off" else []
+    if share:  # в начало: за пределами 80 пунктов ИИ их не увидит
+        items = share + [it for it in items if not any(it is s for s in share)]
+        print("Доля источников:", [sources.src_name(it["source"]) for it in share], file=sys.stderr)
+    tag = lambda it: "[ДОЛЯ] " if any(it is s for s in share) else ""
+    lst = "\n".join(f'{i}. {tag(it)}{it["source"]} | {it["title"]} — {it["desc"][:600]} | {it["link"]}' for i, it in enumerate(items[:80]))
     try:
-        data = _ask_json(ask_ai, NEWS_NOW + ("\nДЛЯ ОБРАЗЦА: обязательно выбери самую важную новость, send=true." if force else ""),
+        data = _ask_json(ask_ai, NEWS_NOW + SHARE_RULE + ("\nДЛЯ ОБРАЗЦА: обязательно выбери самую важную новость, send=true." if force else ""),
                          lst + "\n\nУже отправленные сегодня (не повторять): " + "; ".join(b["titles"])
                          + "\n\nУЖЕ В ЛЕНТЕ за сутки: " + "; ".join(r[1] for r in state.get("feed_recent", [])))
     except Exception as e:
@@ -553,7 +595,8 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
         return None
     if state.pop("ai_fail", None):
         ai_status(state, now, force)
-    push_feed(data.get("feed") or [], items, now, force, state)
+    feed = data.get("feed") or []
+    push_feed(feed, items, now, force, state, FEED_PER_RUN + len(share))
     if not can_send:
         return None
     urgent = bool(data.get("urgent")) and b["urgent_count"] < URGENT_PER_DAY
@@ -567,6 +610,11 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
         src = items[int(data.get("pick", 0))]
     except Exception:
         src = items[0]
+    ok, data["text"], data["metrics"] = factcheck.check_news(data.get("title", src["title"]), data.get("text", ""), data.get("metrics"), factcheck.source_text(src), "чат",
+                                                             " ".join(factcheck.source_text(x) for x in items[:80]))
+    if not ok and not force:  # в чат людям — только то, что сошлось
+        print("Новость дня снята проверкой цифр:", data.get("title"), file=sys.stderr)
+        return None
     card = {"title": data.get("title", src["title"]), "tag": data.get("tag", ""), "sent": data.get("sent", "neu"),
             "theme": pick_theme(data.get("theme"), data.get("block", ""), data.get("title", src["title"])), "metrics": (data.get("metrics") or [])[:3],
             "photo": photos.find(data.get("photo") or [], ru=is_ru(data.get("block", ""), data.get("title", src["title"])))}
