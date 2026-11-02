@@ -15,7 +15,7 @@ FEEDS = [
     # Рынок и макро США
     ("macro", "WSJ Markets", "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"),
     ("macro", "WSJ Economy", "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"),
-    ("macro", "CNBC Markets", "https://www.cnbc.com/id/10000664/device/rss/rss.html"),
+    ("macro", "CNBC Markets", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),  # 10000664 (Finance) встала 21.10, замена 03.11
     ("macro", "CNBC Economy", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
     ("macro", "ФРС (пресс-релизы)", "https://www.federalreserve.gov/feeds/press_all.xml"),
     ("macro", "MarketWatch", "https://feeds.content.dowjones.io/public/rss/mw_topstories"),
