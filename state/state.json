@@ -1068,7 +1068,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-02T08:30:58.702177+00:00",
+  "breaking_ts": "2026-11-02T09:00:56.984886+00:00",
   "news_now": {
     "day": "2026-11-02",
     "day_count": 1,
@@ -1079,120 +1079,98 @@
     ]
   },
   "news_seen": [
-    "https://t.me/thebell_io/39712",
+    "https://t.me/markettwits/391565",
+    "https://t.me/markettwits/391564",
+    "https://t.me/forklog/50507",
+    "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Raises-Brent-Oil-Price-Forecast-to-105.html",
+    "https://tass.ru/ekonomika/28278025",
+    "https://tass.ru/ekonomika/28278035",
+    "https://www.vedomosti.ru/politics/news/2026/11/02/1241967-iotova-pobedila",
+    "https://tass.ru/ekonomika/28278029",
+    "https://www.rbc.ru/rbcfreenews/6ae8502c6ceccb58de039b63",
+    "https://tass.ru/ekonomika/28278011",
+    "https://tass.ru/obschestvo/28277993",
+    "https://tass.ru/proisshestviya/28277987",
+    "https://t.me/rbc_news/159870",
+    "https://www.rbc.ru/rbcfreenews/6ae7a54e37ffc7b8f1abc5d3",
+    "https://www.marketwatch.com/story/your-stock-portfolio-increasingly-hinges-on-the-bond-market-and-the-midterm-elections-dc1abadb?mod=mw_rss_topstories",
+    "https://tass.ru/ekonomika/28278007",
+    "https://cryptoslate.com/bitcoin-lightnings-year-old-security-fixes-still-missing-from-71-of-flagged-nodes/",
+    "https://t.me/markettwits/391563",
+    "https://www.kommersant.ru/doc/9078883",
+    "https://tass.ru/armiya-i-opk/28278017",
+    "https://tass.ru/obschestvo/28277961",
+    "https://tass.ru/armiya-i-opk/28278015",
+    "https://tass.ru/politika/28278013",
+    "https://tass.ru/proisshestviya/28278005",
+    "https://tass.ru/proisshestviya/28277991",
+    "https://www.vedomosti.ru/politics/news/2026/11/02/1241966-zapad-sanktsii",
+    "https://tass.ru/armiya-i-opk/28278009",
+    "https://www.interfax.ru/russia/1126524",
+    "https://tass.ru/politika/28277997",
+    "https://tass.ru/proisshestviya/28277983",
+    "https://tass.ru/nauka/28277973",
+    "https://www.rbc.ru/rbcfreenews/67fb5e6f9a7947039169a32e",
+    "https://t.me/rbc_news/159869",
+    "https://www.interfax.ru/world/1126523",
+    "https://t.me/markettwits/391562",
+    "https://www.kommersant.ru/doc/9078829",
+    "https://tass.ru/obschestvo/28277975",
+    "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings",
+    "https://tass.ru/mezhdunarodnaya-panorama/28277979",
+    "https://www.sport-interfax.ru/1126525",
+    "https://tass.ru/politika/28277985",
+    "https://tass.ru/proisshestviya/28277855",
+    "https://tass.ru/obschestvo/28277981",
+    "https://www.interfax.ru/russia/1126522",
+    "https://www.kommersant.ru/doc/9078882",
+    "https://tass.ru/mezhdunarodnaya-panorama/28277965",
+    "https://tass.ru/mezhdunarodnaya-panorama/28277959",
+    "https://tass.ru/sport/28277977",
+    "https://t.me/banksta/104639",
+    "https://www.kommersant.ru/doc/9078878",
+    "https://t.me/cbrstocks/83834",
+    "https://t.me/markettwits/391561",
+    "https://www.kommersant.ru/doc/9078880",
+    "https://www.vedomosti.ru/business/news/2026/11/02/1241960-sokraschenii-dizelya",
+    "https://www.vedomosti.ru/politics/news/2026/11/02/1241962-edini-nepobedimi",
+    "https://t.me/cbrstocks/83833",
+    "https://t.me/lookonchainchannel/10876",
+    "https://www.interfax.ru/world/1126518",
+    "https://www.investing.com/news/stock-market-news/why-is-mutares-stock-rallying-today-93CH-4990239",
+    "https://www.vedomosti.ru/business/news/2026/11/02/1241958-pogruzka-rzhd",
+    "https://www.investing.com/news/stock-market-news/why-is-caixabank-stock-rallying-today-93CH-4990232",
+    "https://www.coindesk.com/markets/2026/11/02/china-s-communist-party-calls-for-a-crackdown-on-corruption-that-uses-crypto-and-blockchain",
+    "https://www.interfax.ru/business/1126521",
+    "https://t.me/headlines_for_traders/87894",
+    "https://www.vedomosti.ru/society/news/2026/11/02/1241954-pogibli-1600-zhurnalistov",
+    "https://www.investing.com/news/stock-market-news/why-is-fresenius-stock-rallying-today-93CH-4990230",
+    "https://www.kommersant.ru/doc/9078862",
+    "https://www.vedomosti.ru/technology/news/2026/11/02/1241957-kontrol-nad-ii",
+    "https://www.rbc.ru/quote/02/11/2026/6ae8441d9a7947b7dd01240c",
+    "https://www.investing.com/news/stock-market-news/indonesia-stocks-higher-at-close-of-trade-idx-composite-index-up-099-4990225",
+    "https://www.investing.com/news/stock-market-news/why-is-bakkafrost-stock-dropping-today-93CH-4990224",
+    "https://www.investing.com/news/stock-market-news/why-is-firstgroup-stock-rallying-today-93CH-4990223",
+    "https://www.interfax.ru/business/1126520",
+    "https://t.me/markettwits/391560",
+    "https://t.me/centralbank_russia/3912",
+    "https://www.coindesk.com/business/2026/11/02/why-crypto-exchange-hacks-can-be-harder-to-contain-versus-global-banks",
+    "https://t.me/rbc_news/159868",
+    "https://www.investing.com/news/stock-market-news/why-is-immunovia-stock-surging-today-93CH-4990206",
+    "https://t.me/incrypted/33196",
     "https://t.me/markettwits/391559",
-    "https://tass.ru/proisshestviya/28277901",
-    "https://tass.ru/ekonomika/28277905",
-    "https://tass.ru/mezhdunarodnaya-panorama/28277899",
-    "https://tass.ru/proisshestviya/28277879",
+    "https://www.interfax.ru/world/1126519",
+    "https://www.interfax.ru/world/1126517",
     "https://www.rbc.ru/sport/25/10/2026/6addc9491211d48caedd3971",
-    "https://tass.ru/proisshestviya/28277781",
     "https://www.rbc.ru/politics/02/11/2026/6ae8456ecd60143befd98f0e",
     "https://t.me/if_market_news/86528",
-    "https://www.rbc.ru/rbcfreenews/6ae17f1975cce257a80e2c35",
-    "https://tass.ru/mezhdunarodnaya-panorama/28277895",
-    "https://tass.ru/obschestvo/28277897",
-    "https://t.me/headlines_for_traders/87893",
-    "https://www.wsj.com/finance/stocks/nikkei-falls-0-9-dragged-by-bank-tech-stocks-a63f180d?mod=rss_markets_main",
-    "https://tass.ru/proisshestviya/28277885",
-    "https://t.me/markettwits/391558",
-    "https://tass.ru/mezhdunarodnaya-panorama/28277891",
-    "https://tass.ru/ekonomika/28277893",
-    "https://t.me/interfaxonline/81043",
-    "https://t.me/headlines_for_traders/87892",
-    "https://t.me/markettwits/391557",
-    "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-fall-as-crude-slide-drags-oil-majors-lower-4990172",
-    "https://tass.ru/sport/28277815",
-    "https://tass.ru/proisshestviya/28277865",
-    "https://t.me/markettwits/391556",
-    "https://www.rbc.ru/rbcfreenews/6ae3349b063f45a4a78da9f4",
-    "https://tass.ru/kultura/28277883",
-    "https://tass.ru/proisshestviya/28277873",
-    "https://t.me/markettwits/391555",
-    "https://www.kommersant.ru/doc/9078846",
-    "https://tass.ru/info/28277845",
-    "https://www.investing.com/news/stock-market-news/why-is-alstom-stock-down-27-today-93CH-4990161",
-    "https://www.kommersant.ru/doc/9078849",
-    "https://www.rbc.ru/rbcfreenews/6a8ef9c3e36cc5b05af63c07",
-    "https://t.me/banksta/104638",
-    "https://t.me/markettwits/391554",
-    "https://www.vedomosti.ru/politics/news/2026/11/02/1241948-ssha-protiv-irana",
-    "https://tass.ru/proisshestviya/28277797",
-    "https://t.me/rbc_news/159867",
-    "https://www.interfax.ru/business/1126516",
-    "https://tass.ru/obschestvo/28277875",
-    "https://www.vedomosti.ru/business/news/2026/11/02/1241949-pvz-na-zapravkah",
-    "https://t.me/markettwits/391553",
-    "https://t.me/whale_alert_io/104474",
-    "https://tass.ru/ekonomika/28277833",
-    "https://www.interfax.ru/russia/1126515",
-    "https://tass.ru/obschestvo/28277869",
-    "https://tass.ru/mezhdunarodnaya-panorama/28277851",
-    "https://tass.ru/mezhdunarodnaya-panorama/28277859",
-    "https://www.investing.com/news/stock-market-news/deutsche-bank-upgrades-us-techsays-selloff-has-gone-too-far-4990112",
-    "https://tass.ru/obschestvo/28277861",
-    "https://www.interfax.ru/russia/1126514",
-    "https://tass.ru/obschestvo/28277827",
-    "https://tass.ru/mezhdunarodnaya-panorama/28277847",
-    "https://thedefiant.io/news/cefi/binance-restores-usd-withdrawals-as-post-hack-reopening-expands",
-    "https://tass.ru/proisshestviya/28277807",
-    "https://www.kommersant.ru/doc/9078818",
-    "https://t.me/forklog/50506",
-    "https://t.me/wublockchainenglish/26647",
-    "https://t.me/markettwits/391552",
-    "https://www.investing.com/news/stock-market-news/european-shares-inch-lower-as-fitch-cuts-frances-outlook-4989985",
-    "https://t.me/headlines_for_traders/87891",
-    "https://www.rbc.ru/rbcfreenews/62db1eb19a79471de3db754b",
-    "https://www.investing.com/news/stock-market-news/dax-trapped-between-sma20-and-supertrend-support-live-levels-93CH-4990105",
-    "https://www.interfax.ru/russia/1126512",
-    "https://www.investing.com/news/stock-market-news/binance-sees-outflows-stabilising-as-exchange-returns-online-after-63-billionheist-4989802",
-    "https://t.me/whale_alert_io/104473",
-    "https://www.rbc.ru/economics/02/11/2026/6ae1cb849a7947a1a4d79162",
-    "https://www.rbc.ru/economics/29/10/2026/6ae31dea9a794746db637058",
-    "https://t.me/bitkogan_hotline/28077",
-    "https://www.rbc.ru/politics/04/09/2026/6a99a1959a79471627036866",
-    "https://www.kommersant.ru/doc/9078827",
-    "https://www.interfax.ru/business/1126513",
-    "https://www.vedomosti.ru/economics/news/2026/11/02/1241946-pravitelstvo-predusmotrelo",
-    "https://www.rbc.ru/quote/02/11/2026/6ae8406e9a794734c6da6948",
-    "https://www.rbc.ru/rbcfreenews/6abacbf74c37519648e85a1a",
-    "https://t.me/incrypted/33195",
-    "https://t.me/rbc_news/159866",
-    "https://t.me/headlines_for_traders/87890",
-    "https://www.vedomosti.ru/society/news/2026/11/02/1241945-politsiya-zaderzhala",
-    "https://t.me/interfaxonline/81042",
-    "https://t.me/markettwits/391551",
-    "https://www.interfax.ru/russia/1126510"
+    "https://www.rbc.ru/rbcfreenews/6ae17f1975cce257a80e2c35"
   ],
   "ai_dead": {
     "date": "2026-11-02",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-01T10:00:58.436925+00:00",
-      "ОПЕК+ проводит встречу для обсуждения квот на добычу нефти"
-    ],
-    [
-      "2026-11-01T10:00:58.436925+00:00",
-      "Ушаков заявил, что Путин никогда не отказывался от контактов с Зеленским"
-    ],
-    [
-      "2026-11-01T10:00:58.436925+00:00",
-      "IBM запустила комплекс Quantum Safe для защиты систем от взлома"
-    ],
-    [
-      "2026-11-01T10:00:58.436925+00:00",
-      "РБК: российский дизель фиксируется на европейском рынке в обход запрета"
-    ],
-    [
-      "2026-11-01T10:31:00.489548+00:00",
-      "Катарский газовоз Al Mayeda подвергся атаке в Персидском заливе"
-    ],
-    [
-      "2026-11-01T10:31:00.489548+00:00",
-      "В Британии хотят пересмотреть соглашение по Brexit"
-    ],
     [
       "2026-11-01T10:31:00.489548+00:00",
       "Черногория отменила безвизовый режим для граждан России"
@@ -1792,6 +1770,34 @@
     [
       "2026-11-02T08:30:58.702177+00:00",
       "Минцифры введет обязательную сертификацию кода ПО"
+    ],
+    [
+      "2026-11-02T09:00:56.984886+00:00",
+      "Goldman Sachs повысил прогноз цены нефти Brent на декабрь до $105 за баррель"
+    ],
+    [
+      "2026-11-02T09:00:56.984886+00:00",
+      "ADNOC заявила об изъятии 1 млрд баррелей нефти из мировых хранилищ"
+    ],
+    [
+      "2026-11-02T09:00:56.984886+00:00",
+      "ЦБ РФ: прирост наличных в обращении в октябре упал до минимума с февраля"
+    ],
+    [
+      "2026-11-02T09:00:56.984886+00:00",
+      "Перевозки пассажиров на сети РЖД в октябре выросли на 7,5%"
+    ],
+    [
+      "2026-11-02T09:00:56.984886+00:00",
+      "Xpeng и Xiaomi нарастили поставки электромобилей в октябре до рекордных уровней"
+    ],
+    [
+      "2026-11-02T09:00:56.984886+00:00",
+      "Binance зафиксировала $6 млрд оттока средств после начала выводов"
+    ],
+    [
+      "2026-11-02T09:00:56.984886+00:00",
+      "Аэрофлот увеличил выручку по РСБУ за III квартал на 13,5%, а прибыль — на 61%"
     ]
   ],
   "results_fp": [
@@ -1865,5 +1871,15 @@
       "last": "$0.18",
       "fiscal": "Sep/2026"
     }
+  },
+  "feed_src": {
+    "OilPrice": "2026-11-02T09:00:56.984886+00:00",
+    "Коммерсантъ": "2026-11-02T09:00:56.984886+00:00",
+    "Ведомости": "2026-11-02T09:00:56.984886+00:00",
+    "Интерфакс": "2026-11-02T09:00:56.984886+00:00",
+    "ТАСС": "2026-11-02T09:00:56.984886+00:00",
+    "CoinDesk": "2026-11-02T09:00:56.984886+00:00",
+    "Headlines for Traders": "2026-11-02T09:00:56.984886+00:00",
+    "MarketTwits": "2026-11-02T09:00:56.984886+00:00"
   }
 }
