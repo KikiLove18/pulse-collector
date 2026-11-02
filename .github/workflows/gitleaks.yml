@@ -1,0 +1,33 @@
+name: gitleaks
+# Поиск ключей в текущем состоянии и всей истории (SEC-01). Только ручной запуск.
+# Значения не печатаются: --redact, отчёт не выгружается, в журнал только правило и место.
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Поставить gitleaks 8.30.1 со сверкой SHA-256
+        run: |
+          curl -sSfL -o /tmp/gl.tgz https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz
+          echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  /tmp/gl.tgz" | sha256sum -c -
+          tar -xzf /tmp/gl.tgz -C /tmp gitleaks
+      - name: История и текущие файлы
+        run: |
+          /tmp/gitleaks git . --redact --no-banner --log-level error --exit-code 0 --report-format json --report-path /tmp/hist.json
+          /tmp/gitleaks dir . --redact --no-banner --log-level error --exit-code 0 --report-format json --report-path /tmp/tree.json
+          git rev-list --count HEAD | sed 's/^/commits: /'
+          python3 - <<'PY'
+          import json, collections
+          for name in ("hist", "tree"):
+              r = json.load(open(f"/tmp/{name}.json"))
+              print(name, "findings:", len(r), dict(collections.Counter(x["RuleID"] for x in r)))
+              for x in r[:200]:
+                  print(" ", x["RuleID"], x["File"], x["StartLine"], (x.get("Commit") or "")[:7])
+          PY
