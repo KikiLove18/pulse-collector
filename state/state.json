@@ -1068,102 +1068,81 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-02T05:30:56.235685+00:00",
+  "breaking_ts": "2026-11-02T06:00:55.891902+00:00",
   "news_now": {
     "day": "2026-11-02",
-    "day_count": 0,
+    "day_count": 1,
     "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "last": "2026-11-02T06:00:55.891902+00:00",
+    "titles": [
+      "Нефть Brent упала ниже $110 за баррель"
+    ]
   },
   "news_seen": [
-    "https://www.rbc.ru/rbcfreenews/6ae81f2a8cdf37cb9f0d8888",
-    "https://t.me/markettwits/391520",
-    "https://tass.ru/ekonomika/28277277",
-    "https://tass.ru/kosmos/28277279",
-    "https://www.kommersant.ru/doc/9078717",
-    "https://t.me/markettwits/391519",
-    "https://www.rbc.ru/rbcfreenews/6abc6e7a51430e1dcfe90ba6",
-    "https://www.vedomosti.ru/politics/news/2026/11/02/1241906-voennie-udarili",
-    "https://www.investing.com/news/stock-market-news/xiaomi-shares-climb-as-october-ev-deliveries-top-50000-4989880",
-    "https://www.investing.com/news/stock-market-news/glencore-proposes-ceo-pay-changes-to-speed-takeover-payouts-ft-93CH-4989879",
-    "https://www.investing.com/news/stock-market-news/why-is-sungrow-power-supply-stock-surging-today-93CH-4989878",
-    "https://t.me/headlines_for_traders/87879",
-    "https://tass.ru/proisshestviya/28277269",
-    "https://www.interfax.ru/world/1126474",
-    "https://www.kommersant.ru/doc/9078712",
-    "https://www.coindesk.com/tech/2026/11/02/strangers-are-begging-the-binance-hacker-for-bitcoin-one-help-me-bro-at-a-time",
-    "https://tass.ru/nauka/28277231",
-    "https://t.me/markettwits/391518",
-    "https://www.kommersant.ru/doc/9078713",
-    "https://www.investing.com/news/stock-market-news/why-is-xiaomi-stock-surging-today-93CH-4989876",
-    "https://tass.ru/proisshestviya/28277265",
-    "https://www.investing.com/news/stock-market-news/australian-lithium-stocks-slide-as-citi-cuts-forecasts-on-weaker-battery-demand-4989875",
-    "https://tass.ru/sport/28277251",
-    "https://www.investing.com/news/stock-market-news/why-is-byd-stock-rising-today-93CH-4989867",
-    "https://www.vedomosti.ru/politics/news/2026/11/02/1241905-tramp-otsenila",
-    "https://tass.ru/obschestvo/28277257",
-    "https://tass.ru/sport/28277267",
-    "https://www.rbc.ru/rbcfreenews/6a7c6b9f9a7947e9e0fbe1d8",
-    "https://t.me/banksta/104629",
-    "https://tass.ru/proisshestviya/28277261",
-    "https://www.interfax.ru/business/1126473",
-    "https://tass.ru/nauka/28277233",
-    "https://tass.ru/obschestvo/28276607",
-    "https://tass.ru/nauka/28277227",
-    "https://tass.ru/proisshestviya/28277255",
-    "https://t.me/markettwits/391517",
-    "https://tass.ru/armiya-i-opk/28277247",
-    "https://www.investing.com/news/stock-market-news/apples-new-ceo-ternus-to-face-first-earnings-test-as-memory-costs-surge-4989863",
-    "https://tass.ru/nauka/28277229",
-    "https://www.investing.com/news/stock-market-news/nikkei-225-bear-flag-forms-under-cloud-resistance-live-levels-93CH-4989795",
-    "https://www.investing.com/news/stock-market-news/sk-hynix-trapped-in-cloud-resistance-bear-flag-live-levels-93CH-4989796",
-    "https://t.me/bitkogan_hotline/28074",
-    "https://t.me/markettwits/391516",
-    "https://t.me/investfuture/15468",
-    "https://tass.ru/armiya-i-opk/28277235",
-    "https://t.me/markettwits/391515",
-    "https://www.investing.com/news/stock-market-news/why-is-contemporary-amperex-technology-stock-surging-today-93CH-4989859",
-    "https://t.me/rbc_news/159853",
-    "https://t.me/forklog/50503",
-    "https://tass.ru/armiya-i-opk/28277225",
-    "https://www.kommersant.ru/doc/9078685",
-    "https://t.me/interfaxonline/81034",
-    "https://t.me/markettwits/391514",
-    "https://www.vedomosti.ru/society/news/2026/11/02/1241206-chast-uehavshih-vozvraschayutsya",
-    "https://tass.ru/obschestvo/28270603",
-    "https://t.me/headlines_for_traders/87878",
-    "https://t.me/markettwits/391513",
-    "https://www.interfax.ru/russia/1126471",
-    "https://tass.ru/sport/28277219",
-    "https://www.interfax.ru/world/1126472",
-    "https://www.interfax.ru/russia/1126463"
+    "https://t.me/markettwits/391523",
+    "https://t.me/bitkogan/29510",
+    "https://t.me/headlines_for_traders/87881",
+    "https://tass.ru/ekonomika/28277325",
+    "https://t.me/cbrstocks/83827",
+    "https://www.wsj.com/economy/china-private-manufacturing-gauge-shows-steady-expansion-in-october-9e3be2ca?mod=rss_socialeconomyfeed",
+    "https://t.me/forklog/50504",
+    "https://t.me/alfa_investments/8533",
+    "https://www.vedomosti.ru/technology/news/2026/11/02/1241911-mchs-kiberatake",
+    "https://www.kommersant.ru/doc/9078733",
+    "https://tass.ru/mezhdunarodnaya-panorama/28277323",
+    "https://t.me/if_market_news/86524",
+    "https://www.vedomosti.ru/politics/news/2026/11/02/1241910-sili-pvo",
+    "https://tass.ru/proisshestviya/28277321",
+    "https://t.me/banksta/104632",
+    "https://t.me/markettwits/391522",
+    "https://t.me/rbc_news/159856",
+    "https://tass.ru/proisshestviya/28277301",
+    "https://t.me/if_market_news/86523",
+    "https://tass.ru/proisshestviya/28277319",
+    "https://tass.ru/politika/28277317",
+    "https://www.interfax.ru/russia/1126477",
+    "https://www.kommersant.ru/doc/9078730",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://www.investing.com/news/stock-market-news/why-is-lg-cns-stock-surging-today-93CH-4989910",
+    "https://tass.ru/proisshestviya/28277309",
+    "https://tass.ru/proisshestviya/28277305",
+    "https://www.investing.com/news/stock-market-news/why-is-hanwha-ocean-stock-surging-today-93CH-4989909",
+    "https://www.vedomosti.ru/business/news/2026/11/02/1241907-litve-prizvali",
+    "https://tass.ru/obschestvo/28277311",
+    "https://tass.ru/proisshestviya/28277307",
+    "https://t.me/headlines_for_traders/87880",
+    "https://www.investing.com/news/stock-market-news/mediatek-shares-rise-as-ceo-flags-strong-aifueled-chip-demand-4989903",
+    "https://t.me/markettwits/391521",
+    "https://t.me/interfaxonline/81035",
+    "https://www.rbc.ru/rbcfreenews/6a97c6866d7fc001736941cf",
+    "https://www.kommersant.ru/doc/9078722",
+    "https://t.me/lookonchainchannel/10873",
+    "https://www.vedomosti.ru/politics/news/2026/11/02/1241908-ssha-mogut-udar",
+    "https://tass.ru/proisshestviya/28277299",
+    "https://www.kommersant.ru/doc/9078725",
+    "https://www.interfax.ru/russia/1126476",
+    "https://www.rbc.ru/rbcfreenews/6ae4976c0f0b07c11a5c31b8",
+    "https://www.rbc.ru/quote/02/11/2026/6ae812e69a79479d0d724c4c",
+    "https://tass.ru/obschestvo/28277295",
+    "https://cointelegraph.com/news/btcpay-server-hot-wallet-thefts-older-versions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://tass.ru/ekonomika/28277285",
+    "https://www.interfax.ru/business/1126475",
+    "https://tass.ru/sport/28277289",
+    "https://tass.ru/politika/28277291",
+    "https://t.me/rbc_news/159855",
+    "https://t.me/if_market_news/86522",
+    "https://www.rbc.ru/rbcfreenews/6ac5facfd2243cc7788eecb7",
+    "https://tass.ru/armiya-i-opk/28277287",
+    "https://tass.ru/ekonomika/28277283",
+    "https://www.investing.com/news/stock-market-news/australia-stocks-lower-at-close-of-trade-spasx-200-down-058-4989884",
+    "https://www.rbc.ru/rbcfreenews/6ac118964ee4c8824c4ad87a",
+    "https://t.me/markettwits/391520"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-01T06:30:55.200141+00:00",
-      "ОПЕК+ проводит встречу по квотам на добычу нефти"
-    ],
-    [
-      "2026-11-01T06:30:55.200141+00:00",
-      "Затраты на строительство дата-центров в США выросли на 56%"
-    ],
-    [
-      "2026-11-01T06:30:55.200141+00:00",
-      "Иран объявил британские ВМС и ВВС террористическими"
-    ],
-    [
-      "2026-11-01T07:00:54.148292+00:00",
-      "Прокачка газа по «Турецкому потоку» в Европу в октябре снизилась на 4%"
-    ],
-    [
-      "2026-11-01T07:00:54.148292+00:00",
-      "Трамп заявил о планах США разобраться еще с объектами в Иране"
-    ],
     [
       "2026-11-01T07:00:54.148292+00:00",
       "Суд Москвы запретил структурам Apple судиться с VK в США"
@@ -1763,6 +1742,26 @@
     [
       "2026-11-02T05:30:56.235685+00:00",
       "Сенатор Билл Хагерти заявил о гонке США за стратегический резерв BTC"
+    ],
+    [
+      "2026-11-02T06:00:55.891902+00:00",
+      "Цена нефти Brent упала ниже $110 за баррель"
+    ],
+    [
+      "2026-11-02T06:00:55.891902+00:00",
+      "BTCPay Server просит отключить серверы из-за взлома"
+    ],
+    [
+      "2026-11-02T06:00:55.891902+00:00",
+      "Силы ПВО за ночь уничтожили 212 украинских дронов"
+    ],
+    [
+      "2026-11-02T06:00:55.891902+00:00",
+      "Саксо Банк предупредил о рисках для золота"
+    ],
+    [
+      "2026-11-02T06:00:55.891902+00:00",
+      "Матвиенко анонсировала встречу Путина и Си Цзиньпина"
     ]
   ],
   "results_fp": [
