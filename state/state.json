@@ -62,7 +62,7 @@
   ],
   "last_digest_ts": "2026-11-01T16:30:58.092650+00:00",
   "calendar": {
-    "ts": "2026-11-01T16:31:24.305652+00:00",
+    "ts": "2026-11-02T04:01:00.953478+00:00",
     "data": [
       {
         "title": "Daylight Saving Time Shift",
@@ -103,14 +103,6 @@
         "impact": "Low",
         "forecast": "53.3",
         "previous": "53.3"
-      },
-      {
-        "title": "ANZ Job Advertisements m/m",
-        "country": "AUD",
-        "date": "2026-11-01T19:45:00-05:00",
-        "impact": "Low",
-        "forecast": "",
-        "previous": "2.2%"
       },
       {
         "title": "RatingDog Manufacturing PMI",
@@ -229,7 +221,7 @@
         "country": "USD",
         "date": "2026-11-02T10:00:00-05:00",
         "impact": "Medium",
-        "forecast": "54.7",
+        "forecast": "54.5",
         "previous": "54.5"
       },
       {
@@ -237,7 +229,7 @@
         "country": "USD",
         "date": "2026-11-02T10:00:00-05:00",
         "impact": "Low",
-        "forecast": "0.3%",
+        "forecast": "0.4%",
         "previous": "0.9%"
       },
       {
@@ -1075,7 +1067,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-01T21:30:55.260128+00:00",
+  "breaking_ts": "2026-11-02T04:01:00.946442+00:00",
   "news_now": {
     "day": "2026-11-02",
     "day_count": 0,
@@ -1084,68 +1076,74 @@
     "titles": []
   },
   "news_seen": [
-    "https://thedefiant.io/news/hacks/binance-posts-4-54-billion-net-outflow-as-tracked-rivals-gain-564-million",
-    "https://www.rbc.ru/finances/30/10/2026/6ae48486d9973ce16e4234c6",
-    "https://www.interfax.ru/russia/1126430",
-    "https://tass.ru/ekonomika/28276723",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276721",
-    "https://www.rbc.ru/politics/26/10/2026/6adf10fba45a7da03e263294",
-    "https://tass.ru/ekonomika/28276719",
-    "https://tass.ru/ekonomika/28276717",
-    "https://t.me/rbc_news/159847",
-    "https://www.kommersant.ru/doc/9078647",
-    "https://www.rbc.ru/rbcfreenews/6ae7aad9af69ea42d44a1d59",
-    "https://tass.ru/ekonomika/28276711",
-    "https://www.rbc.ru/rbcfreenews/6ae5dfc2953c6c91ec61458d",
-    "https://tass.ru/proisshestviya/28276691",
-    "https://t.me/banksta/104621",
-    "https://www.rbc.ru/rbcfreenews/6aacd35f88eae288a2cbe77c",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276701",
-    "https://www.investing.com/news/stock-market-news/exclusiveaustralian-outback-data-centre-pulls-timeline-after-regulator-stalls-4989777",
-    "https://www.investing.com/news/stock-market-news/explainerhow-us-news-organizations-will-make-midterm-race-calls-4989664",
-    "https://tass.ru/obschestvo/28276707",
-    "https://tass.ru/politika/28276705",
-    "https://www.rbc.ru/rbcfreenews/6ae4c7547146045629907966",
-    "https://www.kommersant.ru/doc/9078645",
-    "https://tass.ru/proisshestviya/28276703",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276685",
-    "https://tass.ru/armiya-i-opk/28276699",
-    "https://tass.ru/obschestvo/28276697",
-    "https://tass.ru/mezhdunarodnaya-panorama/28276689",
-    "https://tass.ru/obschestvo/28276695",
-    "https://t.me/rbc_news/159846",
-    "https://cryptoslate.com/tracked-binance-wallets-record-2-5-billion-in-outflows-as-withdrawals-reopen-after-hack/",
-    "https://www.investing.com/news/stock-market-news/australian-lender-westpacs-fullyear-profit-ticks-higher-4989776",
-    "https://tass.ru/armiya-i-opk/28276229",
-    "https://www.rbc.ru/sport/07/10/2026/6ac5ef4e9a79470187eac4cd",
-    "https://t.me/markettwits/391489",
-    "https://www.interfax.ru/moscow/1126428"
+    "https://t.me/headlines_for_traders/87874",
+    "https://tass.ru/mezhdunarodnaya-panorama/28277105",
+    "https://t.me/rbc_news/159849",
+    "https://t.me/markettwits/391495",
+    "https://t.me/markettwits/391496",
+    "https://t.me/markettwits/391494",
+    "https://t.me/whale_alert_io/104469",
+    "https://tass.ru/obschestvo/28277103",
+    "https://t.me/whale_alert_io/104468",
+    "https://www.kommersant.ru/doc/9078679",
+    "https://t.me/markettwits/391493",
+    "https://tass.ru/proisshestviya/28277101",
+    "https://t.me/wublockchainenglish/26646",
+    "https://t.me/markettwits/391492",
+    "https://tass.ru/obschestvo/28277095",
+    "https://www.vedomosti.ru/society/news/2026/11/02/1241901-devyat-chelovek-pogibli",
+    "https://t.me/markettwits/391490",
+    "https://tass.ru/armiya-i-opk/28277099",
+    "https://t.me/headlines_for_traders/87873",
+    "https://t.me/interfaxonline/81031",
+    "https://tass.ru/politika/28277093",
+    "https://t.me/headlines_for_traders/87872",
+    "https://www.kommersant.ru/doc/9078684",
+    "https://www.interfax.ru/russia/1126466",
+    "https://www.interfax.ru/world/1126465",
+    "https://tass.ru/obschestvo/28277079",
+    "https://www.investing.com/news/stock-market-news/hsbc-to-open-hong-kong-ai-institute-following-singapore-launch-4989828",
+    "https://t.me/interfaxonline/81030",
+    "https://t.me/banksta/104627",
+    "https://cryptoslate.com/rlusd-supply-fell-29-on-xrpl-one-xrp-trading-pool-barely-changed/",
+    "https://www.investing.com/news/stock-market-news/china-big-bank-shares-jumpafter-robust-thirdquarter-earnings-4989827",
+    "https://tass.ru/proisshestviya/28277091",
+    "https://tass.ru/obschestvo/28277081",
+    "https://tass.ru/ekonomika/28277059",
+    "https://tass.ru/proisshestviya/28277083",
+    "https://www.interfax.ru/business/1126464",
+    "https://tass.ru/armiya-i-opk/28277089",
+    "https://tass.ru/armiya-i-opk/28277087",
+    "https://www.rbc.ru/rbcfreenews/6ae2f261851df3abcceffe67",
+    "https://www.vedomosti.ru/society/news/2026/11/02/1241899-chelovek-raneni",
+    "https://t.me/lookonchainchannel/10870",
+    "https://tass.ru/obschestvo/28277085",
+    "https://t.me/headlines_for_traders/87871",
+    "https://www.marketwatch.com/story/if-you-really-want-to-help-your-adult-kids-and-grandkids-give-them-money-while-youre-still-alive-bef6b056?mod=mw_rss_topstories",
+    "https://www.investing.com/news/stock-market-news/why-is-china-construction-bank-stock-climbing-today-93CH-4989820",
+    "https://www.interfax.ru/russia/1126461",
+    "https://tass.ru/mezhdunarodnaya-panorama/28277077",
+    "https://www.investing.com/news/stock-market-news/binance-sees-outflows-stabilising-as-exchange-returns-online-after-63-billionheist-4989802",
+    "https://tass.ru/ekonomika/28277075",
+    "https://tass.ru/obschestvo/28277071",
+    "https://tass.ru/mezhdunarodnaya-panorama/28277073",
+    "https://tass.ru/obschestvo/28276927",
+    "https://www.kommersant.ru/doc/9078674",
+    "https://t.me/wublockchainenglish/26645",
+    "https://tass.ru/obschestvo/28277041",
+    "https://tass.ru/obschestvo/28277069",
+    "https://tass.ru/nedvizhimost/28277061",
+    "https://tass.ru/kultura/28277067",
+    "https://www.interfax.ru/russia/1126460",
+    "https://tass.ru/ekonomika/28277063",
+    "https://tass.ru/proisshestviya/28277065",
+    "https://www.interfax.ru/business/1126459"
   ],
   "ai_dead": {
     "date": "2026-11-01",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-01T04:00:55.866838+00:00",
-      "Reuters: страны ОПЕК+ сохранят добычу нефти в декабре"
-    ],
-    [
-      "2026-11-01T04:00:55.866838+00:00",
-      "ФССП: число депортированных из России выросло в 1,5 раза"
-    ],
-    [
-      "2026-11-01T04:00:55.866838+00:00",
-      "Трамп заявил об оставшихся одна-две цели в Иране"
-    ],
-    [
-      "2026-11-01T04:00:55.866838+00:00",
-      "Иран ожидает поставки российских Су-35 после войны"
-    ],
-    [
-      "2026-11-01T05:00:56.644359+00:00",
-      "Binance начала поэтапное возобновление вывода средств"
-    ],
     [
       "2026-11-01T05:30:55.393287+00:00",
       "Страховые пенсии в России в 2027 году проиндексируют дважды"
@@ -1745,6 +1743,30 @@
     [
       "2026-11-01T20:30:55.107528+00:00",
       "SCMP: Китай расширяет поставки современного оружия в Африку"
+    ],
+    [
+      "2026-11-02T04:01:00.946442+00:00",
+      "Трамп намерен дать время дипломатии с Ираном на фоне призывов Израиля"
+    ],
+    [
+      "2026-11-02T04:01:00.946442+00:00",
+      "США предложили возобновить транзит российского газа через Украину"
+    ],
+    [
+      "2026-11-02T04:01:00.946442+00:00",
+      "Индексы S&P 500 и Nasdaq снизились третью неделю подряд"
+    ],
+    [
+      "2026-11-02T04:01:00.946442+00:00",
+      "США и Канада согласовали концепцию нового торгового соглашения"
+    ],
+    [
+      "2026-11-02T04:01:00.946442+00:00",
+      "Пользователи Binance вывели более $3 млрд после хакерской атаки"
+    ],
+    [
+      "2026-11-02T04:01:00.946442+00:00",
+      "Власти Мадагаскара и США изъяли криптовалюту на $52 млн"
     ]
   ],
   "results_fp": [
