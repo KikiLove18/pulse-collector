@@ -1071,7 +1071,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-02T20:00:58.458275+00:00",
+  "breaking_ts": "2026-11-02T20:30:56.780836+00:00",
   "news_now": {
     "day": "2026-11-02",
     "day_count": 7,
@@ -1088,119 +1088,77 @@
     ]
   },
   "news_seen": [
-    "https://t.me/prime1/191852",
+    "https://www.cnbc.com/2026/11/02/trump-midterm-election-speech-reflecting-pool.html",
+    "https://tass.ru/proisshestviya/28280079",
+    "https://tass.ru/obschestvo/28280073",
+    "https://t.me/FinancialJuice/144322",
+    "https://t.me/markettwits/391673",
+    "https://t.me/FinancialJuice/144321",
+    "https://t.me/markettwits/391672",
+    "https://t.me/banksta/104685",
+    "https://t.me/FinancialJuice/144320",
+    "https://t.me/FinancialJuice/144319",
+    "https://t.me/FinancialJuice/144318",
+    "https://tass.ru/mezhdunarodnaya-panorama/28280077",
+    "https://www.kommersant.ru/doc/9079433",
+    "https://t.me/FinancialJuice/144317",
+    "https://cointelegraph.com/news/morgan-stanley-cuts-coinbase-target-to-120-as-earnings-recovery-outlook-weakens?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://www.interfax.ru/world/1126646",
+    "https://www.cnbc.com/2026/11/02/intel-foundry-faces-critical-test-after-stocks-45percent-plunge-in-october.html",
+    "https://www.theblock.co/news/defi/2026-11-02-mercado-bitcoin-hack-46-million-brazil-exchange-432333",
     "https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html",
+    "https://www.vedomosti.ru/politics/news/2026/11/02/1242240-na-podlete-k-moskve",
+    "https://tass.ru/proisshestviya/28280071",
+    "https://tass.ru/mezhdunarodnaya-panorama/28280075",
+    "https://www.interfax.ru/world/1126645",
+    "https://tass.ru/kultura/28280065",
+    "https://tass.ru/mezhdunarodnaya-panorama/28280069",
+    "https://www.vedomosti.ru/society/news/2026/11/02/1242239-ukrainskie-voennie",
+    "https://tass.ru/kultura/28280055",
+    "https://www.interfax.ru/russia/1126648",
+    "https://t.me/whale_alert_io/104515",
+    "https://tass.ru/mezhdunarodnaya-panorama/28280067",
+    "https://tass.ru/mezhdunarodnaya-panorama/28280063",
+    "https://t.me/cbrstocks/83861",
+    "https://www.rbc.ru/politics/31/10/2026/6ae4f9ed92b809aef4d94c8b",
+    "https://thedefiant.io/news/blockchains/bnb-chain-brings-payment-lane-to-testnet-in-jenner-upgrade",
+    "https://t.me/cbrstocks/83860",
+    "https://tass.ru/obschestvo/28280061",
+    "https://t.me/BitcoinMagazineTelegram/10973",
+    "https://www.interfax.ru/russia/1126644",
+    "https://t.me/cbrstocks/83859",
+    "https://thedefiant.io/news/blockchains/akash-stakers-approve-move-from-cosmos-to-solana",
+    "https://t.me/banksta/104684",
+    "https://t.me/markettwits/391671",
+    "https://t.me/FinancialJuice/144316",
+    "https://t.me/FinancialJuice/144315",
+    "https://tass.ru/obschestvo/28280051",
+    "https://tass.ru/obschestvo/28280053",
+    "https://tass.ru/proisshestviya/28280049",
+    "https://t.me/FinancialJuice/144314",
+    "https://t.me/FinancialJuice/144313",
+    "https://www.rbc.ru/rbcfreenews/6ae8cad6714fe8b386e13258",
+    "https://t.me/FinancialJuice/144312",
+    "https://t.me/rbc_news/159913",
+    "https://tass.ru/nauka/28280047",
+    "https://t.me/FinancialJuice/144311",
+    "https://tass.ru/kultura/28280041",
+    "https://www.rbc.ru/politics/02/11/2026/6ae8c151714fe8b386e1323d",
+    "https://t.me/prime1/191852",
     "https://oilprice.com/Energy/Energy-General/Sanctioned-Iranian-Tanker-Slips-Past-US-Blockade-Delivers-Cargo-to-China.html",
-    "https://naturalgasintel.com/news/natural-gas-futures-market-holds-its-breath-as-weak-weather-and-war-risk-collide/",
+    "https://www.interfax.ru/russia/1126643",
     "https://www.vedomosti.ru/politics/news/2026/11/02/1242238-putin-4-noyabrya",
+    "https://naturalgasintel.com/news/natural-gas-futures-market-holds-its-breath-as-weak-weather-and-war-risk-collide/",
     "https://tass.ru/mezhdunarodnaya-panorama/28280039",
     "https://www.kommersant.ru/doc/9079427",
     "https://tass.ru/obschestvo/28280043",
-    "https://tass.ru/obschestvo/28280031",
-    "https://t.me/FinancialJuice/144310",
-    "https://t.me/markettwits/391670",
-    "https://tass.ru/proisshestviya/28280033",
-    "https://www.kommersant.ru/doc/9079425",
-    "https://t.me/FinancialJuice/144309",
-    "https://t.me/markettwits/391669",
-    "https://t.me/FinancialJuice/144308",
-    "https://t.me/FinancialJuice/144307",
-    "https://tass.ru/obschestvo/28280027",
-    "https://www.rbc.ru/rbcfreenews/6ae8e935522d471f841eba1d",
-    "https://t.me/cointelegraph/73007",
-    "https://tass.ru/proisshestviya/28280025",
-    "https://www.kommersant.ru/doc/9079424",
-    "https://www.cnbc.com/2026/11/02/trump-accounts-spacex-shares-shotwell.html",
-    "https://t.me/banksta/104683",
-    "https://decrypt.co/382357/tom-lee-calls-bottom-ai-stock-selloff-crypto",
-    "https://tass.ru/obschestvo/28280019",
-    "https://tass.ru/obschestvo/28280015",
-    "https://t.me/government_rus/33931",
-    "https://www.vedomosti.ru/politics/news/2026/11/02/1242235-merts-sleduyuschim",
-    "https://tass.ru/mezhdunarodnaya-panorama/28280021",
-    "https://www.rbc.ru/quote/02/11/2026/6ae8bf9a9a7947b99d209aa8",
-    "https://tass.ru/proisshestviya/28280023",
-    "https://t.me/banksta/104682",
-    "https://naturalgasintel.com/news/natural-gas-discounts-offer-ammonia-producers-fall-savings-but-winter-costs-loom/",
-    "https://t.me/nainspire/5643",
-    "https://tass.ru/mezhdunarodnaya-panorama/28280017",
-    "https://cryptoslate.com/treasury-holds-1-trillion-as-bitcoin-faces-a-key-liquidity-test-this-week/",
-    "https://tass.ru/mezhdunarodnaya-panorama/28280011",
-    "https://www.cnbc.com/2026/11/02/supreme-court-california-mail-ballots-election.html",
-    "https://thedefiant.io/news/tokens/near-governance-approves-plan-to-lower-issuance-cap-to-1-6",
-    "https://t.me/markettwits/391668",
-    "https://t.me/FinancialJuice/144306",
-    "https://t.me/FinancialJuice/144305",
-    "https://thedefiant.io/news/hacks/mercado-bitcoin-breach-wallet-sends-2-800-eth-onward",
-    "https://tass.ru/politika/28280009",
-    "https://t.me/prime1/191851",
-    "https://t.me/if_market_news/86547",
-    "https://t.me/FinancialJuice/144304",
-    "https://t.me/forbesrussia/102583",
-    "https://www.kommersant.ru/doc/9079422",
-    "https://www.rbc.ru/politics/30/10/2026/6ae4fdd2acc9a2663a967881",
-    "https://t.me/rbc_news/159912",
-    "https://www.cnbc.com/2026/11/02/marvell-lumentum-ai-deal.html",
-    "https://t.me/FinancialJuice/144303",
-    "https://t.me/FinancialJuice/144302",
-    "https://t.me/FinancialJuice/144301",
-    "https://t.me/FinancialJuice/144300",
-    "https://tass.ru/kultura/28279975",
-    "https://tass.ru/proisshestviya/28280005",
-    "https://t.me/markettwits/391667",
-    "https://t.me/markettwits/391666",
-    "https://t.me/FinancialJuice/144299",
-    "https://t.me/FinancialJuice/144298",
-    "https://t.me/FinancialJuice/144297",
-    "https://t.me/markettwits/391665",
-    "https://www.vedomosti.ru/lifestyle/news/2026/11/02/1242230-sponsor-chm",
-    "https://cointelegraph.com/markets/bitcoin-risks-sub-76k-drop-as-7-fall-in-oil-fails-to-spark-btc-price-rally?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://t.me/FinancialJuice/144296",
-    "https://tass.ru/proisshestviya/28280003",
-    "https://t.me/whale_alert_io/104514",
-    "https://naturalgasintel.com/news/falling-spot-prices-rising-production-set-stage-for-hefty-natural-gas-storage-build/",
-    "https://www.marketwatch.com/story/how-soon-gas-prices-could-go-down-now-that-oil-is-tumbling-a1140dc2?mod=mw_rss_topstories",
-    "https://t.me/headlines_for_traders/87925",
-    "https://t.me/banksta/104681",
-    "https://t.me/BitcoinMagazineTelegram/10972"
+    "https://tass.ru/obschestvo/28280031"
   ],
   "ai_dead": {
     "date": "2026-11-02",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-02T06:00:55.891902+00:00",
-      "Цена нефти Brent упала ниже $110 за баррель"
-    ],
-    [
-      "2026-11-02T06:00:55.891902+00:00",
-      "BTCPay Server просит отключить серверы из-за взлома"
-    ],
-    [
-      "2026-11-02T06:00:55.891902+00:00",
-      "Силы ПВО за ночь уничтожили 212 украинских дронов"
-    ],
-    [
-      "2026-11-02T06:00:55.891902+00:00",
-      "Саксо Банк предупредил о рисках для золота"
-    ],
-    [
-      "2026-11-02T06:00:55.891902+00:00",
-      "Матвиенко анонсировала встречу Путина и Си Цзиньпина"
-    ],
-    [
-      "2026-11-02T06:30:57.711647+00:00",
-      "Нефть Brent подешевела на 3% на надеждах на сделку США и Ирана"
-    ],
-    [
-      "2026-11-02T06:30:57.711647+00:00",
-      "Кабмин ввел временный запрет на вывоз нефтехимии из России"
-    ],
-    [
-      "2026-11-02T06:30:57.711647+00:00",
-      "Путин и Си Цзиньпин проведут встречу 18–19 ноября на саммите АТЭС"
-    ],
     [
       "2026-11-02T06:30:57.711647+00:00",
       "Крупный перевод 3 000 биткоинов зафиксирован с Binance"
@@ -1800,6 +1758,18 @@
     [
       "2026-11-02T20:00:58.458275+00:00",
       "Россия и Киргизия обсудили создание производственных цепочек в ЕАЭС"
+    ],
+    [
+      "2026-11-02T20:30:56.780836+00:00",
+      "Цены на нефть рухнули более чем на 7% на надеждах на сделку США и Ирана"
+    ],
+    [
+      "2026-11-02T20:30:56.780836+00:00",
+      "Mercado Bitcoin остановила вывод средств после кибератаки на $46 млн"
+    ],
+    [
+      "2026-11-02T20:30:56.780836+00:00",
+      "Минфин США оценил чистые заимствования в июле–сентябре в $739 млрд"
     ]
   ],
   "results_fp": [
@@ -1907,10 +1877,10 @@
     "Bitcoin Magazine": "2026-11-02T19:30:58.877890+00:00",
     "Watcher Guru": "2026-11-02T19:30:58.877890+00:00",
     "РБК. Главное": "2026-11-02T15:31:20.083188+00:00",
-    "The Block": "2026-11-02T16:30:57.156819+00:00",
+    "The Block": "2026-11-02T20:30:56.780836+00:00",
     "Нефть и Капитал": "2026-11-02T17:31:01.662038+00:00",
     "MMI": "2026-11-02T16:30:57.156819+00:00",
-    "FinancialJuice": "2026-11-02T19:30:58.877890+00:00",
+    "FinancialJuice": "2026-11-02T20:30:56.780836+00:00",
     "Cbonds": "2026-11-02T16:30:57.156819+00:00",
     "WSJ Markets": "2026-11-02T16:30:57.156819+00:00",
     "WSJ Economy": "2026-11-02T16:30:57.156819+00:00",
@@ -1925,7 +1895,7 @@
     "Агроинвестор": "2026-11-02T17:01:18.909096+00:00",
     "Газпромбанк Инвестиции": "2026-11-02T18:01:00.525828+00:00",
     "CryptoSlate": "2026-11-02T20:00:58.458275+00:00",
-    "CNBC Markets": "2026-11-02T19:30:58.877890+00:00",
+    "CNBC Markets": "2026-11-02T20:30:56.780836+00:00",
     "Natural Gas Intelligence": "2026-11-02T20:00:58.458275+00:00",
     "Правительство России": "2026-11-02T20:00:58.458275+00:00"
   }
