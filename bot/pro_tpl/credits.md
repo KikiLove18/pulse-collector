@@ -57,3 +57,5 @@
 | img/ev-tesla-line.jpg | #СОБЫТИЯ 02.11 PMI | Steve Jurvetson | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Tesla_Motors_Assembly_Line_(6858583426).jpg |
 | img/ev-boeing-everett.jpg | #СОБЫТИЯ 02.11 ISM | Maurice King | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Boeing_Everett_Plant.jpg |
 | img/yandex-hq.jpg | PRO Чт 05.11 | WikiFido | CC BY-SA 4.0, обр. | https://commons.wikimedia.org/wiki/File:Yandex_main_office.jpg |
+| img/sber-logo.svg | #АКТИВ_НЕДЕЛИ 06.11 Сбербанк | ПАО Сбербанк (товарный знак) | Public domain (Commons) | https://commons.wikimedia.org/wiki/File:Sberbank_Logo_2020.svg |
+| img/jpm-logo.svg | #АКТИВ_НЕДЕЛИ 06.11 Сбербанк | JPMorgan Chase & Co. (товарный знак) | Public domain (Commons) | https://commons.wikimedia.org/wiki/File:JPMorgan_Chase.svg |
