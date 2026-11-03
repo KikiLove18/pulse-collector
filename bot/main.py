@@ -757,13 +757,26 @@ def tg_html(text):
     text = re.sub(r"<br\s*/?>", "\n", text)
     text = text.replace("<strong>", "<b>").replace("</strong>", "</b>")
     text = text.replace("<em>", "<i>").replace("</em>", "</i>")
-    out = []
+    out, stack = [], []  # FE-05: только http(s)-ссылки и сбалансированные теги, иначе Telegram 400 и выпуск не доставлен
     for part in ALLOWED_TAG.split(text):
         if ALLOWED_TAG.fullmatch(part):
-            out.append(part.replace("&", "&amp;") if part.startswith("<a ") else part)
+            name = re.match(r"</?([a-z]+)", part).group(1)
+            if not part.startswith("</"):
+                if name == "a" and not re.match(r'<a href="https?://[^"\s]+">$', part, re.I) or name in ("a", "blockquote") and name in stack:
+                    out.append(part.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+                    continue
+                stack.append(name)
+                out.append(re.sub(r"&(?!(?:amp|lt|gt|quot|#\d+);)", "&amp;", part) if name == "a" else part)
+            elif name in stack:
+                while stack[-1] != name:
+                    out.append(f"</{stack.pop()}>")
+                out.append(f"</{stack.pop()}>")
+            else:
+                out.append(part.replace("<", "&lt;").replace(">", "&gt;"))
         else:
             part = re.sub(r"&(?!(?:amp|lt|gt|quot|#\d+);)", "&amp;", edition.ru_numbers(part))
             out.append(part.replace("<", "&lt;").replace(">", "&gt;"))
+    out.extend(f"</{t}>" for t in reversed(stack))
     return "".join(out)
 
 

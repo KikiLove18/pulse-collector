@@ -252,7 +252,8 @@ def safe_cut(html, n=4000):
 
 
 def news_html(n):
-    src = f' — <a href="{n["url"]}">{sources.src_name(n["source"])}</a>' if n.get("url") else ""
+    url = str(n.get("url") or "").strip().replace('"', "%22").replace("<", "%3C").replace(">", "%3E").replace(" ", "%20")
+    src = f' — <a href="{url}">{sources.src_name(n["source"])}</a>' if re.match(r"https?://", url, re.I) else ""  # FE-05
     return (f'{n.get("icon") or ""} <b>{n["title"]}</b>\n'
             f'<blockquote>{SENT_ICON.get(n.get("sent"), "⚪️")} {n.get("text", "")}{src}</blockquote>')
 
