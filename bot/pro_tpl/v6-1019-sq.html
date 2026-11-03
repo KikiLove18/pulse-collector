@@ -546,7 +546,7 @@ const DATA={
     ev:[['16:30','🇺🇸 Рабочие места NFP за октябрь','сколько рабочих мест создали вне сельского хозяйства'],['16:30','🇺🇸 Безработица за октябрь','было <u>4,2%</u>']],
     sc:[['▲ ЕСЛИ СИЛЬНЕЕ','Ставка ФРС дольше высокая: доллар сильнее, давление на золото и крипту'],['▼ ЕСЛИ СЛАБЕЕ','Довод за снижение ставки — поддержка акциям, золоту и крипте']]}],
   qs:[['Кто получит Конгресс?','От этого зависят бюджет и пошлины США.','ВТ 03.11 · итоги в ночь на 04.11'],['Остывает ли рынок труда США?','NFP — первые данные о работе после решения ФРС 28.10. Безработица была 4,2%.','ПТ 06.11 · 16:30'],['Удержится ли нефть выше $100?','Brent выше $100 из-за перебоев в Ормузском проливе; ОПЕК+ решает добычу на декабрь.','ВС 01.11 · ОПЕК+']],
-  src:'Календарь Пульса рынка · BLS · ISM · Банк Англии · Мосбиржа · ОПЕК · время МСК · Не является инвестиционной рекомендацией'},
+  src:'Календарь Пульса рынка · BLS · ISM · Банк Англии · Мосбиржа · ОПЕК · время МСК'},
  evc:{tag:'СОБЫТИЯ',ph:'Фото: Kuba CC BY 3.0, обр. · B. G. Ward CC0 · Architect of the Capitol PD · Andy Li CC0 (Wikimedia Commons)',day:'Пятница, 23 октября',k:'События дня · итоги · время МСК',
   sub:'Что вышло, почему и что это значит — листайте →',cover:['img/cbr.jpg','img/nysesign.jpg'],
   items:[
@@ -883,7 +883,25 @@ body .cd[id^=thuc] .its>div{position:relative;border:0!important;border-top:2px 
 .thuc .wt div{font:500 32px/1.35 Inter!important}
 .thuc .wt b{font:800 26px Inter!important;width:250px!important;padding-top:6px!important;background:none!important}
 body #thuc3 .its{gap:0!important;top:286px!important}body #thuc3 .its>div{padding:14px 0 14px 46px!important}#thuc3 .its>div::before{top:28px}body #thuc3 .its>div:first-child{border-top:0!important}
+/* evc крупнее (заметка владельца 03.11 «дизайн так себе»): пояснения и «для рынка» ≥25 px, итог дня заполняет карточку */
+.evc .evh{max-height:72px!important;font-size:25px!important;line-height:1.36!important}
+.evc .evk{font-size:24px!important}
+.evc .evn .rows div{font-size:21px!important}.evc .evn .rows span{min-width:92px!important}
+.evc .evn .vv u{font-size:20px!important}.evc .evn .vv em{font-size:19px!important}
+.evc .evm .lab,.evc .evr .p i{font-size:20px!important}
+.evc .evm .nm small{font-size:20px!important}
+.evc .evm p{font-size:28px!important;max-height:72px!important;line-height:1.26!important}
+.evc .ci .tx small{font-size:23px!important}
+.evc .fl3{gap:18px!important}
+.evc .fl3 .r{padding:28px 32px!important}
+.evc .fl3 .r span{font-size:46px!important}
+.evc .fl3 .r .fit{max-height:180px!important;font-size:34px!important;line-height:1.3!important}
+.evc .fl3 .r .fit>b:first-child{font-size:36px!important}
+.evc .nxt3{margin-top:22px!important;padding:28px 32px!important}
+.evc .nxt3 i{font-size:19px!important}.evc .nxt3 b{font-size:64px!important}.evc .nxt3 span{font-size:29px!important}
 </style>
 <script>/* обложка evc: длинное название события — на 2 строки вместо «…», если список от этого не переполнится (03.11, «дизайн так себе») */
 (window.PREFIT=window.PREFIT||[]).push(()=>document.querySelectorAll('.evc .clist').forEach(L=>L.querySelectorAll('.ci .tt').forEach(el=>{if(el.scrollWidth<=el.clientWidth+1)return;const old=el.style.cssText;el.style.cssText='white-space:normal!important;line-height:1.15!important;display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden';if(L.scrollHeight>L.clientHeight+2)el.style.cssText=old})));</script>
+<script>/* итог дня evc: не наезжать на строку источников — уменьшать шрифт, пока список не влезет до 1120 px (04.11) */
+(window.PREFIT=window.PREFIT||[]).push(()=>document.querySelectorAll('.evc .fl3').forEach(L=>{let k=0;const fs=[...L.querySelectorAll('.r .fit, .nxt3 b, .nxt3 span')];while(L.offsetTop+L.offsetHeight>1120&&k++<12)fs.forEach(el=>{el.style.setProperty('font-size',(parseFloat(getComputedStyle(el).fontSize)*0.95)+'px','important')})}));</script>
 </body></html>
