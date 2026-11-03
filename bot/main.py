@@ -1443,11 +1443,11 @@ def due_digest_slot(state, now):
 
 
 def run_catalog(state, now, dry, force=False):
-    """Каталог поиска приложения → meta.catalog без ИИ и рассылок. В auto — не чаще раза в 25 мин (запуск каждые 30), отметка state.catalog_at."""
+    """Каталог поиска приложения → meta.catalog без ИИ и рассылок. В auto — не чаще раза в 20 мин (запуск каждые 30), отметка state.catalog_at."""
     last = state.get("catalog_at")
     if not force and last:
         try:
-            if (now - datetime.fromisoformat(last)).total_seconds() < 25 * 60:
+            if (now - datetime.fromisoformat(last)).total_seconds() < 20 * 60:
                 return
         except ValueError:
             pass
