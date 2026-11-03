@@ -30,7 +30,7 @@ from pathlib import Path
 
 import feedparser
 
-from bot import calendar_future, edition, factcheck, macro, pro, prompts, sources, weekly, pro_day, freech, pro_auto
+from bot import calendar_future, catalog, edition, factcheck, macro, pro, prompts, sources, weekly, pro_day, freech, pro_auto
 
 MSK = timezone(timedelta(hours=3))
 ROOT = Path(__file__).resolve().parent.parent
@@ -1104,6 +1104,11 @@ def run_digest(state, now, dry, final=True):
     print(f"Для приложения: новостей {len(news)}, событий {len(events)}, картина: {'да' if outlook else 'нет'}", file=sys.stderr)
     if not dry:
         meta = {"news": news, "events": events, "quotes": quotes}
+        try:  # каталог для поиска в приложении (топ-100 в группе), воркер отдаёт его отдельно от state
+            meta["catalog"] = {"v": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                               "items": catalog.build_catalog(http_get, q, QUOTE_NAMES, QUOTE_GROUPS["ru"])}
+        except Exception as e:
+            print("Каталог не собран:", e, file=sys.stderr)
         try:
             mac = macro.build(state)
             nxt = next((d.rstrip("*") for d in calendar_future.FOMC if d.rstrip("*") >= f"{local:%Y-%m-%d}"), None)
