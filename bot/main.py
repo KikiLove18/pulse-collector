@@ -44,6 +44,9 @@ SLOT_GRACE_MIN = 180      # окно утреннего слота: опозда
 LAST_CHANCE_MIN = 150     # после стольких минут от слота — отправляем то, что готово, даже без части блоков
 EVENING_GRACE_MIN = 90    # вечером окно короче: поздние рассылки владелец не хочет — не успели, ждём утро
 EVENING_LAST_CHANCE_MIN = 60
+# 03.11 владелец: без ИИ (голые заголовки) ничего не публикуем — ни Ленту, ни выжимку частями. Новости копятся и выходят
+# обработанными, когда ИИ вернётся; старше HOLD_MAX_H часов не выпускаем — устарели.
+HOLD_MAX_H = 6
 EVENT_LEAD_MIN = 75       # за сколько минут до события присылать анонс
 
 
@@ -525,11 +528,11 @@ def ask_openrouter(system, user):
     key = os.environ["OPENROUTER_API_KEY"].strip()
     if not key.isascii() or not key.startswith("sk-or-"):  # 15.10 в секрете оказалось слово «ключ» вместо ключа
         raise RuntimeError("секрет OPENROUTER_API_KEY — не ключ OpenRouter (должен начинаться с sk-or-)")
-    # deepseek-v4-flash — платный запасной, первым: только при сбое всего Gemini (да владельца 30.10, a-1793343910256). Нет денег на счёте — 402, дальше бесплатные.
+    # 03.11 владелец: OpenRouter не пополняем — платный deepseek-v4-flash убран из очереди (без денег только 402 и шум в журнале).
     # ai_probe 23.10: отвечает только nemotron-ultra (68 с); super — 404 (убрана), gemma — 429 у провайдера, dots — >90 с,
     # inkling — только для «агентов» (403), nemotron-3.5 — 502 / >90 с
     models = os.environ.get("OPENROUTER_MODEL") or \
-        "deepseek/deepseek-v4-flash,nvidia/nemotron-3-ultra-550b-a55b:free,google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,dots-studio/dots-3-note-preview:free"
+        "nvidia/nemotron-3-ultra-550b-a55b:free,google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,dots-studio/dots-3-note-preview:free"
     last_err = None
     for model in [m.strip() for m in models.split(",") if m.strip() and _alive(m.strip())]:
         body = {
@@ -569,7 +572,7 @@ def ask_openrouter(system, user):
     raise RuntimeError(f"Все модели OpenRouter недоступны: {last_err or 'все модели исчерпали квоту или заняты'}")
 
 
-PROBE_MODELS = ("deepseek/deepseek-v4-flash,nvidia/nemotron-3.5-super-vl:free,nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-ultra-550b-a55b:free,"
+PROBE_MODELS = ("nvidia/nemotron-3.5-super-vl:free,nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-ultra-550b-a55b:free,"
                 "google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,thinkingmachines/inkling:free,"
                 "thinkingmachines/inkling-small:free,dots-studio/dots-3-note-preview:free,nvidia/nemotron-3-super-120b-a12b:free")
 
@@ -913,7 +916,8 @@ def run_breaking(state, now, dry):
         return
     last = state.get("breaking_ts")
     since = datetime.fromisoformat(last) if last else now - timedelta(minutes=35)
-    minutes = min(60, max(35, int((now - since).total_seconds() // 60)))
+    # ИИ не ответил (ai_fail) — новости придержаны, breaking_ts стоит: окно растёт до HOLD_MAX_H, и после возврата ИИ разберёт всё накопленное
+    minutes = min(HOLD_MAX_H * 60 if state.get("ai_fail") else 60, max(35, int((now - since).total_seconds() // 60)))
     if os.environ.get("GEMINI_API_KEY") and gemini_all_dead() and now.minute < 30:
         # на запасном ИИ проверяем раз в час, а не в 30 мин: 50 запросов в сутки (окно ниже само вырастет до 60 мин)
         print("Новости дня: Gemini исчерпан — экономлю запасной ИИ, проверю в :30", file=sys.stderr)
@@ -1095,9 +1099,9 @@ def run_digest(state, now, dry, final=True):
         except Exception as e:
             print(f"Итог дня не собран: {str(e)[:150]}", file=sys.stderr)
             failed.append("summary")
-    hold = bool(failed) and not final
+    hold = bool(failed)  # 03.11: выжимку частями не шлём — ждём ИИ до конца окна слота, не вернулся — сигнал владельцу (main)
     if failed:
-        print(f"ИИ отказал: {', '.join(failed)} — " + ("выпуск повторю в следующем запуске" if hold else "отправляю то, что готово"), file=sys.stderr)
+        print(f"ИИ отказал: {', '.join(failed)} — " + ("выпуск повторю в следующем запуске" if not final else "окно выпуска кончилось, не отправляю"), file=sys.stderr)
     news = []
     for b in out:
         news += parse_news(b["block"], "\n".join(b["html"]))
@@ -1561,6 +1565,13 @@ def main():
         slot, final = due_digest_slot(state, now)
         if slot and run_digest_big(state, now, dry, final):
             state["sent_digests"].append(slot)
+        elif slot and final and state.get("digest_alert") != slot:  # ИИ не вернулся до конца окна — сказать владельцу один раз за слот
+            state["digest_alert"] = slot
+            try:
+                publish(f"⚠️ Выпуск {slot.split()[-1]} задержан: ИИ не отвечает — новости придержаны, выйдут обработанными после восстановления. "
+                        "Выпуск без обработки не отправляю. Сборщик пробует ИИ каждые 30 минут.", dry)
+            except Exception as e:
+                print("Сигнал о выпуске не отправлен:", str(e)[:150], file=sys.stderr)
         run_events(state, now, dry)
         run_results(state, now, dry)
         kind = due_pro(state, now) if (os.environ.get("PRO_POSTS") or "").lower() == "on" and not slot else None
