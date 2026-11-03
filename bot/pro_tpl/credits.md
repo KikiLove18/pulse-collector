@@ -56,3 +56,4 @@
 | img/sber-koz.jpg | #АКТИВ_НЕДЕЛИ 06.11 Сбербанк | Retired electrician | CC0 | https://commons.wikimedia.org/wiki/File:Moscow,_Kozhukhovsky_Bridge_-_Sberbank_building,_May_2025_01.jpg |
 | img/ev-tesla-line.jpg | #СОБЫТИЯ 02.11 PMI | Steve Jurvetson | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Tesla_Motors_Assembly_Line_(6858583426).jpg |
 | img/ev-boeing-everett.jpg | #СОБЫТИЯ 02.11 ISM | Maurice King | CC BY 2.0, обр. | https://commons.wikimedia.org/wiki/File:Boeing_Everett_Plant.jpg |
+| img/yandex-hq.jpg | PRO Чт 05.11 | WikiFido | CC BY-SA 4.0, обр. | https://commons.wikimedia.org/wiki/File:Yandex_main_office.jpg |
