@@ -1,0 +1,31 @@
+<b>FE-05 проверка (тест, маркеры атак из источника)</b>
+
+🇷🇺 <b>Заголовок "'&gt;&lt;img src=x onerror=window.__x=1&gt;</b>
+<blockquote>🔴 Текст "'&gt;&lt;img src=x onerror=window.__x=1&gt; — <a href="https://example.com/?q='">example.com</a>&lt;img src=x onerror=window.__x=1&gt;"&gt;РБК</a></blockquote>
+
+🇷🇺 <b>Заголовок &lt;script&gt;window.__x=2&lt;/script&gt;</b>
+<blockquote>🔴 Текст &lt;script&gt;window.__x=2&lt;/script&gt; — <a href="https://example.com/?q=">example.com</a>&lt;script&gt;window.__x=2&lt;/script&gt;"&gt;РБК</a></blockquote>
+
+🇷🇺 <b>Заголовок &lt;svg onload=alert(3)&gt;</b>
+<blockquote>🔴 Текст &lt;svg onload=alert(3)&gt; — <a href="https://example.com/?q=">example.com</a>&lt;svg onload=alert(3)&gt;"&gt;РБК</a></blockquote>
+
+🇷🇺 <b>Заголовок &lt;img src=x onerror=alert(4)&gt;</b>
+<blockquote>🔴 Текст &lt;img src=x onerror=alert(4)&gt; — <a href="https://example.com/?q=&amp;lt;img">example.com</a> src=x onerror=alert(4)&gt;"&gt;РБК</a></blockquote>
+
+🇷🇺 <b>Заголовок <a href="javascript:alert(5)">клик</a></b>
+<blockquote>🔴 Текст <a href="javascript:alert(5)">клик</a> — <a href="https://example.com/?q=">example.com</a>&lt;a href=javascript:alert(5)&gt;клик</a>"&gt;РБК</a></blockquote>
+
+🇷🇺 <b>Заголовок &lt;b onclick=alert(6)&gt;жирный</b></b>
+<blockquote>🔴 Текст &lt;b onclick=alert(6)&gt;жирный</b> — <a href="https://example.com/?q=">example.com</a>&lt;b onclick=alert(6)&gt;жирный</b>"&gt;РБК</a></blockquote>
+
+🇷🇺 <b>Заголовок &lt;blockquote onmouseover=alert(7)&gt;</b>
+<blockquote>🔴 Текст &lt;blockquote onmouseover=alert(7)&gt; — <a href="https://example.com/?q=">example.com</a>&lt;blockquote onmouseover=alert(7)&gt;"&gt;РБК</a></blockquote>
+
+🇷🇺 <b>Заголовок </blockquote><i></b>
+<blockquote>🔴 Текст </blockquote><i> — <a href="https://example.com/?q=">example.com</a></blockquote><i>"&gt;РБК</a></blockquote>
+
+🇷🇺 <b>Заголовок &#60;script&#62;</b>
+<blockquote>🔴 Текст &#60;script&#62; — <a href="https://example.com/?q=&amp;#60;script&amp;#62;">РБК</a></blockquote>
+
+🇷🇺 <b>Заголовок &lt;a href="https://e.com" onclick="x"&gt;s</a></b>
+<blockquote>🔴 Текст &lt;a href="https://e.com" onclick="x"&gt;s</a> — <a href="https://example.com/?q=">example.com</a>&lt;a href=https://e.com onclick=x&gt;s</a>"&gt;РБК</a></blockquote>
