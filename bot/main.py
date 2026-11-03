@@ -1479,6 +1479,12 @@ def main():
         AI_DEAD["day"] |= {m.strip() for m in (os.environ.get("GEMINI_MODEL") or GEMINI_MODELS).split(",")}  # все, и большие, и lite
         mode = "preview"
 
+    if mode == "catalog":  # только каталог поиска приложения → meta.catalog (без ИИ и рассылок): после выкладки, не дожидаясь выжимки 19:30
+        items = catalog.build_catalog(http_get, fetch_markets(), QUOTE_NAMES, QUOTE_GROUPS["ru"])
+        print(f"Каталог: {len(items)} активов", file=sys.stderr)
+        if not dry and items:
+            push_to_bot(None, [], {"catalog": {"v": datetime.now(timezone.utc).isoformat(timespec="seconds"), "items": items}})
+        return
     if mode == "digest":
         run_digest_big(state, now, dry)
     elif mode == "events":
