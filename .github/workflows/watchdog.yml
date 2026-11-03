@@ -15,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     env:
-      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       WATCH_FAKE: ${{ github.event.inputs.fake }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
@@ -23,6 +22,8 @@ jobs:
           sparse-checkout: bot/watchdog.py
       - id: c
         run: python bot/watchdog.py check
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # CI-05: ключ только шагам, которым он нужен, не actions/cache
       - id: seen
         if: steps.c.outputs.key != ''
         uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
@@ -32,6 +33,7 @@ jobs:
       - if: steps.c.outputs.key != '' && steps.seen.outputs.cache-hit != 'true'
         run: python bot/watchdog.py send
         env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           OWNER_CHAT_ID: ${{ secrets.OWNER_CHAT_ID }}
           WATCH_TEXT: ${{ steps.c.outputs.text }}
       - if: steps.c.outputs.key != '' && steps.seen.outputs.cache-hit != 'true'
