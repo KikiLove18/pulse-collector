@@ -499,6 +499,14 @@ def _same_story(a, b):
     return len(common) >= 4 and len(common) / max(len(ta), len(tb)) >= 0.6
 
 
+BARE_UNITS = {"тыс", "млн", "млрд", "трлн", "руб", "долл", "п", "б", "пп"}
+
+
+def bare_title(title):
+    """Заголовок из одного имени или числа («Дональд Трамп», «$4,4 млрд», «Whale Alert») — не новость: ни одного слова со строчной, кроме единиц."""
+    return not [w for w in re.findall(r"[^\W\d_][\w-]*", title) if w[0].islower() and w not in BARE_UNITS]
+
+
 def same_story(title, recent):
     """Тот же сюжет в перефразе уже в Ленте за сутки (дополняет seen_before)."""
     return any(_same_story(title, r) for r in recent)
@@ -531,7 +539,7 @@ def push_feed(feed, items, now, dry, state=None, cap=None):
             src = items[int(f.get("pick", -1))]
         except Exception:
             continue
-        if not f.get("title"):
+        if not f.get("title") or bare_title(f["title"]):
             continue
         group_text = [src] + [items[int(i)] for i in f.get("also") or [] if str(i).lstrip("-").isdigit() and -len(items) <= int(i) < len(items)]
         ok, f["text"], f["metrics"] = factcheck.check_news(f["title"], f.get("text", ""), f.get("metrics"), " ".join(factcheck.source_text(x) for x in group_text), "Лента",
@@ -623,7 +631,7 @@ def fallback_feed(items, now, state, dry):
     for i in sorted(range(len(items)), key=lambda i: -items[i]["time"].timestamp()):
         it = items[i]
         title, desc = it["title"].strip(), re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", it.get("desc") or "").replace("<", " ").replace(">", " ")).strip()
-        if (source_rank(it) != 0 or not re.search("[а-яё]", title, re.I) or not FALLBACK_RE.search(title) or FALLBACK_NO.search(title)
+        if (source_rank(it) != 0 or not re.search("[а-яё]", title, re.I) or bare_title(title) or not FALLBACK_RE.search(title) or FALLBACK_NO.search(title)
                 or FALLBACK_GAZA.search(title) or seen_before(title, recent) or same_story(title, recent) or per.get(it["source"], 0) >= FALLBACK_PER_SOURCE):
             continue
         lead = _fallback_lead(desc)
