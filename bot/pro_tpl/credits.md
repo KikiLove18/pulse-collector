@@ -59,3 +59,4 @@
 | img/yandex-hq.jpg | PRO Чт 05.11 | WikiFido | CC BY-SA 4.0, обр. | https://commons.wikimedia.org/wiki/File:Yandex_main_office.jpg |
 | img/sber-logo.svg | #АКТИВ_НЕДЕЛИ 06.11 Сбербанк | ПАО Сбербанк (товарный знак) | Public domain (Commons) | https://commons.wikimedia.org/wiki/File:Sberbank_Logo_2020.svg |
 | img/jpm-logo.svg | #АКТИВ_НЕДЕЛИ 06.11 Сбербанк | JPMorgan Chase & Co. (товарный знак) | Public domain (Commons) | https://commons.wikimedia.org/wiki/File:JPMorgan_Chase.svg |
+| img/ev-amd-su.jpg | #СОБЫТИЯ 03.11 отчёт AMD | Genevieve Martin (ORNL) | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:AMD_CEO_Lisa_Su_speaking_at_ORNL_2019-05-07.jpg |
