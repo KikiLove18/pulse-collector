@@ -44,6 +44,24 @@ def due(state, now, msk):
     return state.get("pro_daily") != f"{local:%Y-%m-%d}"
 
 
+WAIT_UNTIL = (18, 45)  # МСК: позже не ждём (сторож воркера — 19:00)
+
+
+def ready(events, results, now, msk):
+    """Вышли ли сильные цифры дня. Ждём каждое сильное событие сегодня до 18:30 МСК: есть итог или прошло 45 мин.
+    03.11: автомат вышел в 17:03, данные США 18:00 не попали — в посте был один ночной отчёт (заметка владельца)."""
+    local = now.astimezone(msk)
+    if (local.hour, local.minute) >= WAIT_UNTIL:
+        return True
+    for e in events:
+        t = datetime.fromisoformat(e["dt"]).astimezone(msk)
+        if t.date() != local.date() or e.get("impact") != "High" or any(x in e["title"] for x in SKIP):
+            continue
+        if (t.hour, t.minute) <= (18, 30) and not _match(e, results) and local < t + timedelta(minutes=45):
+            return False
+    return True
+
+
 def _num(v):
     """«$2.01» → «$2,01» (ru_numbers принял бы за дату), «198K» → «198 тыс.», «−0.3M» → «−0,3 млн»."""
     if not v:
@@ -170,6 +188,8 @@ def evc_data(events, results, now, msk, ask):
                 for k in ("who", "s", "hint", "why", "fol", "nx"):
                     if isinstance(a.get(k), str) and a[k].strip():
                         it[k] = edition.ru_numbers(a[k].strip())
+                if len(it["hint"]) > 95:  # .evh — 2 строки на карточке (03.11 evc2 обрезан «…»)
+                    it["hint"] = it["hint"][:95].rsplit(" ", 1)[0].rstrip(" ,;—–-") + "."
                 mk = [m for m in a.get("mk") or [] if isinstance(m, list) and len(m) == 4 and m[0] in ("up", "dn", "eq")]
                 it["mk"] = [[m[0], m[1][:1].upper() + m[1][1:], m[2], m[3]] for m in mk[:3]]
                 if it["who"] and f"({it['who']})" in it["t"]:  # «… (S&P Global)» — источник уже в строке who
@@ -183,14 +203,18 @@ def evc_data(events, results, now, msk, ask):
     return data
 
 
-def run(state, now, msk, fetch_calendar, tg_html, test=False, horizon=2, ask=None):
-    """Собрать и отправить. test=True — всегда тестовый канал. Возвращает html или None."""
+def run(state, now, msk, fetch_calendar, tg_html, test=False, horizon=2, ask=None, wait=False):
+    """Собрать и отправить. test=True — всегда тестовый канал. wait=True — «wait», если сильные цифры дня ещё не вышли.
+    Возвращает html, None или «wait»."""
     chat = os.environ.get("TELEGRAM_CHAT_ID") if test or _mode() != "on" else os.environ.get("PRO_CHAT_ID")
     try:
         events = calendar_future.build(fetch_calendar(state), horizon_days=horizon)
     except Exception as e:
         print("События дня: календарь не собран —", e, file=sys.stderr)
         return None
+    if wait and not ready(events, weekly.load_week()["results"], now, msk):
+        print("События дня: ждём сильные цифры дня", file=sys.stderr)
+        return "wait"
     html = build(events, weekly.load_week()["results"], now, msk)
     pics = []
     if ask:  # карусель v6 (шаблон evc из bot/pro_tpl): разбор ИИ → картинки → альбом; сбой — пост текстом, как раньше
