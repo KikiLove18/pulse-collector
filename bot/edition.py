@@ -411,6 +411,73 @@ def seen_before(title, recent):
     return bool(w) and any(len(w & _words(r)) / len(w | _words(r)) >= 0.7 for r in recent)
 
 
+# Склейка перефраз одного сюжета за сутки (t-1793662296): seen_before (70% слов) пропускает «Urals превысила $100» ×2, «вклады 13,09%» ×2.
+# Консервативно — лучше пропустить повтор, чем потерять новость: не склеиваем, если у заголовков разные числа, разные имена
+# (компании, страны, люди) или противоположное действие (приостановила/возобновила, обвинила/отвергла, выросла/упала).
+# Склеиваем: общее ключевое число (дробь, %, $) + 3 общих слова, или 4+ общих слова и это 60%+ слов длинного заголовка.
+# Прогон на meta.news 01–03.11 (460 новостей): 59 пар, все — один сюжет (pulse-collector, ветка coll-crypto-dedup).
+STORY_STOP = set("года году годом после может могут будет будут более менее также этом этой такой которые который которая всех свой своих "
+                 "против через между перед около почти рамках время сегодня вчера завтра неделе неделю месяц месяце месяцев фоне заявил "
+                 "заявила заявили сообщил сообщила россия россии рублей рубля млрд млн трлн тыс долларов доллара процента процентов "
+                 "миллиардов миллионов".split())
+STORY_SHORT = {"пдс", "ндс", "цб", "фрс", "опек", "офз", "кндр", "сша"}
+STORY_NAME_SKIP = {"рсбу", "мсфо"}
+STORY_OPP = [({"приос", "остан", "запре", "закры"}, {"возоб", "разре", "откры", "сняла", "снял", "отмен"}),
+             ({"обвин"}, {"отвер", "опров"}),
+             ({"повыс", "подня", "вырос", "рост", "увели", "подор"}, {"пониз", "сниз", "упала", "упал", "сокра", "подеш", "рухну", "паден"}),
+             ({"одобр", "подде"}, {"откло", "отказ"})]
+
+
+def _story_nums(title):
+    """Ключевые числа (дробь, %, $) и прочие; годы не считаем — «прогноз на 2027 год» и «до $105» это один сюжет."""
+    t = re.sub(r"(?<=\d)[ \u00a0](?=\d{3}\b)", "", title)
+    strong, weak = set(), set()
+    for m in re.finditer(r"(\$\s?)?(\d+(?:[.,]\d+)?)\s*(%|процент)?", t):
+        n = m.group(2).replace(".", ",")
+        if m.group(1) or m.group(3) or "," in n:
+            strong.add(n)
+        elif not re.fullmatch(r"(?:19|20)\d\d", n):
+            weak.add(n)
+    return strong, weak
+
+
+def _story_stems(title):
+    return {w[:5] for w in re.findall(r"[^\W\d_]{3,}", title.lower().replace("ё", "е"))
+            if (len(w) >= 4 or w in STORY_SHORT) and w not in STORY_STOP}
+
+
+def _story_names(title):
+    """Имена: слова с заглавной не в начале фразы; первое — только если латиница или аббревиатура (ОПЕК, США, Binance)."""
+    out = set()
+    for i, w in enumerate(re.findall(r"[\w-]+", title)):
+        if w[:1].isupper() and (i > 0 or w.isupper() or re.match("[A-Za-z]", w)) and w[:5].lower() not in STORY_NAME_SKIP:
+            out.add(w[:5].lower())
+    return out
+
+
+def _same_story(a, b):
+    sa, wa = _story_nums(a)
+    sb, wb = _story_nums(b)
+    if (sa | wa) and (sb | wb) and not (sa | wa) & (sb | wb):
+        return False  # разные числа — обновление или другое событие
+    na, nb = _story_names(a), _story_names(b)
+    if na and nb and not na & nb:
+        return False  # разные компании, страны, люди
+    ta, tb = _story_stems(a), _story_stems(b)
+    for x, y in STORY_OPP:
+        if (ta & x and tb & y and not ta & y) or (ta & y and tb & x and not tb & y):
+            return False  # противоположное действие
+    common = ta & tb
+    if sa & sb and len(common) >= 3:
+        return True
+    return len(common) >= 4 and len(common) / max(len(ta), len(tb)) >= 0.6
+
+
+def same_story(title, recent):
+    """Тот же сюжет в перефразе уже в Ленте за сутки (дополняет seen_before)."""
+    return any(_same_story(title, r) for r in recent)
+
+
 def note_sources(state, names, now):
     """Когда источник последний раз попал в Ленту — для его доли."""
     last = state.setdefault("feed_src", {})
@@ -445,7 +512,8 @@ def push_feed(feed, items, now, dry, state=None, cap=None):
                                                            " ".join(factcheck.source_text(x) for x in items[:80]))
         if not ok:
             continue
-        if state is not None and seen_before(f["title"], [r[1] for r in state.get("feed_recent", [])] + [o["title"] for o in out]):
+        recent = [r[1] for r in state.get("feed_recent", [])] + [o["title"] for o in out] if state is not None else []
+        if state is not None and (seen_before(f["title"], recent) or same_story(f["title"], recent)):
             print(f"Лента: повтор, пропускаю — {f['title'][:70]}", file=sys.stderr)
             continue
         name = lambda it: sources.src_name(it["source"])
@@ -530,7 +598,7 @@ def fallback_feed(items, now, state, dry):
         it = items[i]
         title, desc = it["title"].strip(), re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", it.get("desc") or "").replace("<", " ").replace(">", " ")).strip()
         if (source_rank(it) != 0 or not re.search("[а-яё]", title, re.I) or not FALLBACK_RE.search(title) or FALLBACK_NO.search(title)
-                or FALLBACK_GAZA.search(title) or seen_before(title, recent) or per.get(it["source"], 0) >= FALLBACK_PER_SOURCE):
+                or FALLBACK_GAZA.search(title) or seen_before(title, recent) or same_story(title, recent) or per.get(it["source"], 0) >= FALLBACK_PER_SOURCE):
             continue
         lead = _fallback_lead(desc)
         if not lead:

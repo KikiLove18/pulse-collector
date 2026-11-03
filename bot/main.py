@@ -107,7 +107,7 @@ def fetch_news(since):
                 title = ""
             if not (title or desc):
                 continue  # например, пост Трампа только с видео
-            if AD_RE.search(title + " " + desc):
+            if AD_RE.search(title + " " + desc) or crypto_pay(title + " " + desc):
                 continue
             items.append({
                 "cat": cat, "source": name, "time": ts,
@@ -121,6 +121,27 @@ CALENDAR_TTL_H = 6  # ForexFactory отвечает 429 на частые зап
 
 
 AD_RE = re.compile(r"\berid\b|#реклама|\bна правах рекламы\b", re.I)  # условие Юриста 01.11: посты с меткой рекламы не берём
+# ч. 9 ст. 1 282-ФЗ (Юрист 02.11, knowledge/право/цифровые-валюты-282-фз.md): новости об ОПЛАТЕ товаров и услуг криптовалютой
+# («принимает биткоин в оплату», «можно оплатить криптовалютой») не берём ни в Ленту, ни в выпуски. Совпадение — слово об оплате
+# и слово о криптовалюте рядом (до 60 знаков). Курс, ETF, покупка биткоина компанией на баланс — не задеты (там нет оплаты).
+# Исключение ч. 7 / ч. 10 — расчёты во внешней торговле: CRYPTO_PAY_OK.
+_CRYPTO = r"(?:биткоин|биткойн|bitcoin|\bbtc\b|крипт|цифров\w* валют|стейблкоин|stablecoin|usdt|tether|эфириум|ethereum)"
+_PAY = (r"(?:\bоплат|\bоплачив|расплат|расплач|\bплат[её]ж|платёжн|платежн|средств\w* платеж|в счёт оплаты|в счет оплаты"
+        r"|\bpay(?:s|ing|ment|ments)?\b|\bcheckout\b)")
+_ACCEPT = r"(?:\bприним\w*|\bначал\w* принимать|\baccept(?:s|ing|ed)?)\s+(?:к оплате\s+|в оплату\s+)?"  # «принимает биткоин» — вплотную
+CRYPTO_PAY_RE = re.compile(rf"{_PAY}[^.!?;\n]{{0,60}}?{_CRYPTO}|{_CRYPTO}[^.!?;\n]{{0,60}}?{_PAY}|{_ACCEPT}{_CRYPTO}", re.I)
+# Не задеты: внешняя торговля (ч. 7, ч. 10) и новости о регулировании (запрет, закон, штраф) — «можно: регулирование» по правилу Юриста
+CRYPTO_PAY_OK = re.compile(r"внешн\w* торг|внешнеторг|\bвэд\b|экспорт|импорт|запрет|запрещ|нельзя|не допуска|штраф|законопроект|госдум|\bзакон\b|\bban\b|\billegal", re.I)
+
+
+def crypto_pay(text):
+    """Новость об оплате криптовалютой (ч. 9 ст. 1 282-ФЗ) — не берём. Внешняя торговля — исключение закона."""
+    return bool(CRYPTO_PAY_RE.search(text or "")) and not CRYPTO_PAY_OK.search(text or "")
+
+
+# Служебные сообщения канала в t.me/s/: у блока класс service_message (закреп, смена названия/фото); текст — «X pinned «…»».
+SERVICE_RE = re.compile(r'class="[^"]*\bservice_message\b')
+PINNED_RE = re.compile(r"^.{0,80}?\b(?:pinned|закрепил[аи]?)\s+(?:«|\"|a message|a photo|a video|сообщение|фото|видео|запись)", re.I)
 TG_MAX_PAGES = 8  # по ~20 постов на страницу; для частых каналов (MarketTwits) листаем назад
 TG_MAX_ITEMS = 40  # не больше постов с канала — чтобы уложиться в бесплатный лимит ИИ
 
@@ -155,10 +176,12 @@ def _fetch_channel(ch, since, cat, prefix):
             oldest = ts if oldest is None else min(oldest, ts)
             min_id = pid if min_id is None else min(min_id, pid)
             body = re.search(r'tgme_widget_message_text[^>]*>(.*?)</div>', block, re.S)
+            if SERVICE_RE.search(block[:400]):  # «Минфин России pinned «…»», «закрепил сообщение» — служебное, не пост
+                continue
             if not body or ts < since:
                 continue
             text = clean(re.sub(r"<br\s*/?>", " ", body.group(1)))
-            if not text or "Реклама" in text[-200:] or AD_RE.search(text):
+            if not text or "Реклама" in text[-200:] or AD_RE.search(text) or crypto_pay(text) or PINNED_RE.search(text[:200]):
                 continue
             x_links = re.findall(r'href="(https://(?:x|twitter)\.com/[^"]+)"', body.group(1))
             desc = text[120:600] + (f" [пост в X: {x_links[0]}]" if x_links else "")
