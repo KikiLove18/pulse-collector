@@ -569,7 +569,7 @@ def push_feed(feed, items, now, dry, state=None, cap=None):
         out.append({"block": f.get("block") or "us", "icon": (f.get("icon") or "")[:8], "title": ru_numbers(f["title"])[:120],
                     "text": ru_numbers(f.get("text", "")),
                     "sent": f.get("sent") if f.get("sent") in ("pos", "neg", "neu") else "neu", "url": src["link"],
-                    "source": name(src), "also": also[:10], "imp": imp, "ts": now.isoformat(), "_theme": f.get("theme"),
+                    "source": name(src), "also": also[:10], "imp": imp, "ts": held_ts(src, now), "_theme": f.get("theme"),
                     "metrics": [{"value": ru_numbers(str(x.get("value", ""))), "label": str(x.get("label", ""))[:24]}
                                 for x in (f.get("metrics") or []) if isinstance(x, dict) and x.get("value")
                                 and len(ru_numbers(str(x.get("value", "")))) <= 16][:3]})  # длиннее 16 знаков — без плашки: лучше без цифры, чем обрубок
@@ -623,6 +623,16 @@ def _fallback_lead(desc):
 
 def _fallback_block(title):
     return "commodities" if FALLBACK_COMM.search(title) else "crypto" if FALLBACK_CRYPTO.search(title) else "us" if FALLBACK_US.search(title) else "ru"
+
+
+def held_ts(src, now):
+    """Придержанная при сбое ИИ новость выходит со своим временем, а не временем возврата ИИ; свежая — как раньше, временем проверки."""
+    t = src.get("time")
+    return t.isoformat() if isinstance(t, datetime) and now - t > timedelta(minutes=HELD_MIN) else now.isoformat()
+
+
+HELD_MIN = 90   # старше — значит, лежала в очереди сбоя ИИ (обычное окно проверки — 35–60 мин)
+STALE_CHAT_MIN = 120  # в чат («Главное сейчас», «Срочно») — только свежее: придержанное старше 2 ч идёт лишь в Ленту
 
 
 def fallback_feed(items, now, state, dry):
@@ -692,8 +702,8 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
                          lst + "\n\nУже отправленные сегодня (не повторять): " + "; ".join(b["titles"])
                          + "\n\nУЖЕ В ЛЕНТЕ за сутки: " + "; ".join(r[1] for r in state.get("feed_recent", [])))
     except Exception as e:
-        print("Новости дня: разбор не удался:", e, file=sys.stderr)
-        ai_status(state, now, force, e, fallback_feed(items, now, state, force))
+        print("Новости дня: разбор не удался — новости придержаны до возврата ИИ (без ИИ не публикуем, владелец 03.11):", e, file=sys.stderr)
+        ai_status(state, now, force, e)
         return None
     if state.pop("ai_fail", None):
         ai_status(state, now, force)
@@ -712,6 +722,9 @@ def run_news_now(ask_ai, items, state, now, publish_channel, force=False):
         src = items[int(data.get("pick", 0))]
     except Exception:
         src = items[0]
+    if not force and isinstance(src.get("time"), datetime) and now - src["time"] > timedelta(minutes=STALE_CHAT_MIN):
+        print("Новости дня: новость придержана сбоем ИИ и устарела для чата — только в Ленте:", data.get("title"), file=sys.stderr)
+        return None
     ok, data["text"], data["metrics"] = factcheck.check_news(data.get("title", src["title"]), data.get("text", ""), data.get("metrics"), factcheck.source_text(src), "чат",
                                                              " ".join(factcheck.source_text(x) for x in items[:80]))
     if not ok and not force:  # в чат людям — только то, что сошлось
