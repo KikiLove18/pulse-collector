@@ -34,10 +34,17 @@ h1{left:60px;right:60px;top:172px;font:800 54px/1.08 Unbounded;letter-spacing:-.
 .nx .r{display:flex;gap:20px;align-items:baseline;padding:12px 0;border-top:2px solid rgba(22,32,58,.18)}
 .nx .r b{flex:none;width:220px;font:800 24px Unbounded;letter-spacing:-.02em}
 .nx .r span{font:500 23px/1.3 Inter}
+.why{left:60px;right:60px;border-left:6px solid #C9962B;background:rgba(255,255,255,.62);border-radius:0 18px 18px 0;padding:14px 22px;font:500 22px/1.36 Inter;color:#16203A}
+.why b{font-weight:800}
+.ch{left:60px;right:60px;display:flex;flex-direction:column;gap:0}
+.cn{display:flex;gap:22px;align-items:center;background:rgba(255,255,255,.66);border:2px solid rgba(22,32,58,.12);border-radius:18px;padding:13px 22px}
+.cn em{flex:none;width:58px;height:58px;border-radius:14px;background:#16203A;color:#F2C14E;font:800 26px/58px Unbounded;font-style:normal;text-align:center}
+.cn div{font:500 21px/1.32 Inter}.cn div b{display:block;font:800 25px/1.2 Inter;margin-bottom:2px}
+.ar{height:26px;margin-left:44px;border-left:4px solid #C9962B;position:relative}.ar:after{content:'';position:absolute;left:-11px;bottom:-4px;border:9px solid transparent;border-top:11px solid #C9962B}
 </style></head><body>
 <script>
 const LOGO='img/logo192.png', COPY='© Пульс рынка, 2026. Только для личного использования подписчика. Распространение запрещено';
-const T='НАРРАТИВ', N=6, NAVY='#16203A', GOLD='#C9962B', GREY='rgba(22,32,58,.28)';
+const T='НАРРАТИВ', N=7, NAVY='#16203A', GOLD='#C9962B', GREY='rgba(22,32,58,.28)';
 function S(id,inner,src,n,ph){return `<div class="s" id="${id}"><div class="hd"><div class="lg"><img src="${LOGO}">ПУЛЬС РЫНКА</div><div class="tag">${T}</div></div>${inner}
 <div class="src">${src}</div><div class="cnt">${n} / ${N}${n<N?' →':''}</div><div class="ft"><div>${COPY}</div><div>${ph}</div></div></div>`}
 const f=v=>String(v).replace('.',',').replace('-','−');
@@ -53,21 +60,22 @@ out.push(S('thu1',`
  <div style="left:56px;top:350px;font:800 130px/1 Unbounded;letter-spacing:-.04em">201,9 <span style="font-size:64px">млрд $</span></div>
  <div class="cap" style="top:500px;right:60px;font-size:24px;line-height:1.35">🇺🇸 капитальные вложения Microsoft, Alphabet, Amazon и Meta за III квартал. Год назад — 97,3 млрд $</div>
  <div class="note" style="top:610px">🇺🇸 Облака растут, но все четыре акции после отчётов снизились.<br>🇷🇺 <b>Яндекс</b> вложения не наращивает и отозвал прогноз на 2026 год.</div>
- <div class="cap" style="top:800px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:18px">Вложения · облака · реакция акций · Россия — листайте</div>`,
+ <div class="cap" style="top:770px;right:60px;font-size:24px;line-height:1.35;color:#16203A"><b>Главный вопрос рынка:</b> когда эти деньги вернутся прибылью — и что будет с акциями, пока не вернулись.</div>
+ <div class="cap" style="top:860px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:18px">Вложения · облака · реакция · цепочка связей · Россия</div>`,
  'Источники: '+SEC+' · Яндекс, 29.10',1,'Фото: Erik Möller, PD · WikiFido, CC BY-SA 4.0 (Wikimedia Commons)'));
 
 /* 2 · график капзатрат */
 const CX=[['Amazon',35.1,77.3],['Alphabet',24.0,51.4],['Microsoft',19.4,39.4],['Meta',18.8,33.9]];
-const cx=CX.map(([n,a,b],i)=>{const x=30+i*235,k=4.2,ha=a*k,hb=b*k;return `<rect x="${x}" y="${380-ha}" width="80" height="${ha}" rx="8" fill="${GREY}"/><rect x="${x+90}" y="${380-hb}" width="80" height="${hb}" rx="8" fill="${NAVY}"/>
+const cx=CX.map(([n,a,b],i)=>{const x=30+i*235,k=3.6,ha=a*k,hb=b*k;return `<rect x="${x}" y="${380-ha}" width="80" height="${ha}" rx="8" fill="${GREY}"/><rect x="${x+90}" y="${380-hb}" width="80" height="${hb}" rx="8" fill="${NAVY}"/>
 <text x="${x+40}" y="${370-ha}" font-family="Inter" font-size="22" font-weight="700" fill="#3A4566" text-anchor="middle">${f(a.toFixed(1))}</text>
 <text x="${x+130}" y="${370-hb}" font-family="Unbounded" font-size="26" font-weight="800" fill="${NAVY}" text-anchor="middle">${f(b.toFixed(1))}</text>
 <text x="${x+85}" y="418" font-family="Inter" font-size="24" font-weight="800" fill="${NAVY}" text-anchor="middle">${n}</text>`}).join('');
 out.push(S('thu2',`
  <div class="k">🇺🇸 США · капитальные вложения</div>
  <h1>Вложения выросли<br>вдвое за год</h1>
- <svg style="position:absolute;left:60px;top:340px" width="960" height="430" viewBox="0 0 960 430"><line x1="0" y1="380" x2="960" y2="380" stroke="rgba(22,32,58,.3)" stroke-width="2"/>${cx}</svg>
- <div class="cap" style="top:782px"><span class="lgd"><i style="background:${GREY}"></i>III кв. 2025</span><span class="lgd"><i style="background:${NAVY}"></i>III кв. 2026</span> млрд $, покупка оборудования и зданий</div>
- <div class="note" style="top:830px;font-size:22px;padding:16px 24px">Свободный денежный поток ушёл в минус: <b>Alphabet −9,1 млрд $</b> и <b>Meta −2,1 млрд $</b> за квартал.</div>`,
+ <svg style="position:absolute;left:60px;top:300px" width="960" height="360" viewBox="0 70 960 360"><line x1="0" y1="380" x2="960" y2="380" stroke="rgba(22,32,58,.3)" stroke-width="2"/>${cx}</svg>
+ <div class="cap" style="top:662px"><span class="lgd"><i style="background:${GREY}"></i>III кв. 2025</span><span class="lgd"><i style="background:${NAVY}"></i>III кв. 2026</span> млрд $, покупка оборудования и зданий</div>
+ <div class="why" style="top:708px"><b>Почему важно.</b> Стройку дата-центров компании оплачивают из денег, которые приносит бизнес. У Alphabet и Meta вложения уже больше этого потока — свободный денежный поток ушёл в минус: <b>−9,1</b> и <b>−2,1 млрд $</b> за квартал. Меньше свободных денег — меньше выкупа акций и запаса прочности.</div>`,
  'Источник: '+SEC,2,'Инфографика — Пульс рынка'));
 
 /* 3 · облака */
@@ -78,51 +86,68 @@ out.push(S('thu3',`
  <div class="k">🇺🇸 США · что тянет вверх</div>
  <h1 style="right:330px">Облака растут на спросе на ИИ</h1>
  <div class="pc" style="left:790px;top:120px;width:230px;height:190px;transform:rotate(5deg)"><img src="img/ev-msft-b92.jpg"><p>Microsoft</p></div>
- <svg style="position:absolute;left:60px;top:360px" width="960" height="440" viewBox="0 0 960 440">${cl}</svg>
- <div class="cap" style="top:810px;right:60px">Рост выручки облачных подразделений за III кв. 2026, год к году. Спрос на ИИ-мощности подтвердился.</div>`,
+ <svg style="position:absolute;left:60px;top:330px" width="960" height="440" viewBox="0 0 960 440">${cl}</svg>
+ <div class="cap" style="top:770px;right:60px;font-size:18px">Рост выручки облачных подразделений за III кв. 2026, год к году</div>
+ <div class="why" style="top:808px"><b>Связь.</b> Облако — место, где вложения возвращаются деньгами: компании сдают ИИ-мощности в аренду. Спрос есть — но облака растут на 39–103%, а вложения — на 80–120%. Отдача отстаёт от стройки.</div>`,
  'Источник: '+SEC,3,'Фото: Jiaqian AirplaneFan, CC BY 3.0, обр. (Wikimedia Commons)'));
 
 /* 4 · реакция акций */
 const RX=[['Alphabet','29.10',-12.6,-1.4,'прибыль на акцию 2,12 $ при ожиданиях ~3 $'],['Meta','22.10',-7.0,-2.6,'план вложений 135–145 млрд $'],['Amazon','30.10',-1.4,-2.9,'план вложений ~220 млрд $'],['Microsoft','29.10',-0.2,-1.4,'Azure +48%']];
-const rx=RX.map(([n,d,a,ix,t],i)=>{const y=i*128,k=26,wa=-a*k,wi=-ix*k;return `<text x="0" y="${y+34}" font-family="Unbounded" font-size="28" font-weight="800" fill="${NAVY}">${n}</text>
+const rx=RX.map(([n,d,a,ix,t],i)=>{const y=i*118,k=26,wa=-a*k,wi=-ix*k;return `<text x="0" y="${y+34}" font-family="Unbounded" font-size="28" font-weight="800" fill="${NAVY}">${n}</text>
 <text x="0" y="${y+64}" font-family="Inter" font-size="19" font-weight="500" fill="#3A4566">${d} · ${t}</text>
 <rect x="500" y="${y+8}" width="${wa}" height="34" rx="6" fill="#C0392B"/><text x="${510+wa}" y="${y+35}" font-family="Inter" font-size="24" font-weight="800" fill="#C0392B">${f(a.toFixed(1))}%</text>
 <rect x="500" y="${y+50}" width="${wi}" height="22" rx="5" fill="${GREY}"/><text x="${510+wi}" y="${y+69}" font-family="Inter" font-size="19" font-weight="600" fill="#3A4566">Nasdaq ${f(ix.toFixed(1))}%</text>`}).join('');
 out.push(S('thu4',`
  <div class="k">🇺🇸 Как отреагировал рынок</div>
  <h1>Акции после отчёта</h1>
- <svg style="position:absolute;left:60px;top:290px" width="960" height="510" viewBox="0 0 960 510">${rx}</svg>
- <div class="cap" style="top:800px;right:60px">Закрытие к закрытию, день после отчёта. Сильнее рынка упали те, у кого прибыль разочаровала или план вложений вырос.</div>`,
+ <svg style="position:absolute;left:60px;top:280px" width="960" height="480" viewBox="0 0 960 480">${rx}</svg>
+ <div class="cap" style="top:742px;right:60px;font-size:18px">Закрытие к закрытию, день после отчёта</div>
+ <div class="why" style="top:776px"><b>Как читать.</b> Рынок платит не за размер стройки, а за видимую отдачу. У Microsoft подписано контрактов на 677 млрд $ — акция почти не изменилась. Alphabet при облаке +103% не дотянул по прибыли — и упал сильнее всех.</div>`,
  'Источники: Yahoo Finance · Nasdaq · прогноз EPS — XTB, 28.10',4,'Инфографика — Пульс рынка'));
 
 /* 5 · Россия: Яндекс */
+/* 5 · цепочка связей */
 out.push(S('thu5',`
+ <div class="k">🇺🇸 Взаимосвязи · как одно тянет другое</div>
+ <h1>Цепочка: от стройки до индекса</h1>
+ <div class="ch" style="top:316px">
+  <div class="cn"><em>1</em><div><b>Вложения бигтеха — 201,9 млрд $</b>чипы, серверы, дата-центры; план Amazon на 2026 год — около 220 млрд $</div></div><div class="ar"></div>
+  <div class="cn"><em>2</em><div><b>Заказы поставщикам — Nvidia и другие</b>их выручка держится на этих чеках; отчёт Nvidia в ночь на 18.11 покажет, не тормозят ли заказы</div></div><div class="ar"></div>
+  <div class="cn"><em>3</em><div><b>Прибыль и денежный поток бигтеха</b>растут медленнее вложений — инвесторы требуют сроков окупаемости</div></div><div class="ar"></div>
+  <div class="cn"><em>4</em><div><b>Индексы S&amp;P 500 и Nasdaq</b>у этих компаний крупнейшие веса: их падение после отчётов тянет вниз весь индекс</div></div>
+ </div>
+ <div class="why" style="top:856px"><b>Цена денег.</b> 10-летние облигации США дают 4,93%: чем дороже деньги, тем строже рынок к долгой окупаемости.</div>`,
+ 'Источники: '+SEC+' · Nvidia · Yahoo Finance (^TNX, 30.10)',5,'Инфографика — Пульс рынка'));
+
+/* 6 · Россия: Яндекс */
+out.push(S('thu6',`
  <div class="k">🇷🇺 Россия · Яндекс, отчёт за III кв.</div>
  <h1 style="right:420px">Яндекс: ИИ растёт, стройку не наращивают</h1>
  <div class="pc" style="left:700px;top:118px;width:320px;height:240px;transform:rotate(4deg)"><img src="img/yandex-hq.jpg"><p>Москва · офис Яндекса</p></div>
- <div class="tiles" style="top:410px">
+ <div class="tiles" style="top:380px">
   <div class="tl"><b>411 млрд ₽</b><span>выручка, +12% г/г; скорр. EBITDA 88 млрд ₽ (+12%)</span></div>
   <div class="tl"><b>115 млрд ₽</b><span>капзатраты за 9 месяцев; наращивать в 2026 году не планируют</span></div>
   <div class="tl"><b>946 млрд</b><span>токенов через API Yandex AI Studio — в 4 раза больше, чем за весь 2025 год</span></div>
   <div class="tl"><b class="dn">−2,8%</b><span>акция в день отчёта, 29.10 — снижение сильнее индекса Мосбиржи</span></div>
  </div>
- <svg style="position:absolute;left:60px;top:735px" width="960" height="120" viewBox="0 0 960 120"><text x="0" y="34" font-family="Inter" font-size="24" font-weight="800" fill="#16203A">Яндекс, 29.10</text><rect x="260" y="10" width="${2.83*150}" height="34" rx="6" fill="#C0392B"/><text x="${272+2.83*150}" y="37" font-family="Inter" font-size="24" font-weight="800" fill="#C0392B">−2,8%</text><text x="0" y="94" font-family="Inter" font-size="22" font-weight="600" fill="#3A4566">Индекс Мосбиржи</text><rect x="260" y="70" width="${1.06*150}" height="34" rx="6" fill="rgba(22,32,58,.28)"/><text x="${272+1.06*150}" y="97" font-family="Inter" font-size="22" font-weight="700" fill="#3A4566">−1,1%</text></svg>
- <div class="cap" style="top:862px;right:60px">Прогноз выручки и EBITDA на 2026 год компания отозвала после повреждения дата-центров в октябре.</div>`,
- 'Источники: Яндекс 29.10 (Ведомости, CNews, Хабр) · Мосбиржа',5,'Фото: WikiFido, CC BY-SA 4.0, обр. (Wikimedia Commons)'));
+ <svg style="position:absolute;left:60px;top:690px" width="960" height="110" viewBox="0 0 960 110"><text x="0" y="34" font-family="Inter" font-size="24" font-weight="800" fill="#16203A">Яндекс, 29.10</text><rect x="260" y="10" width="${2.83*150}" height="34" rx="6" fill="#C0392B"/><text x="${272+2.83*150}" y="37" font-family="Inter" font-size="24" font-weight="800" fill="#C0392B">−2,8%</text><text x="0" y="94" font-family="Inter" font-size="22" font-weight="600" fill="#3A4566">Индекс Мосбиржи</text><rect x="260" y="70" width="${1.06*150}" height="34" rx="6" fill="rgba(22,32,58,.28)"/><text x="${272+1.06*150}" y="97" font-family="Inter" font-size="22" font-weight="700" fill="#3A4566">−1,1%</text></svg>
+ <div class="why" style="top:808px;font-size:21px"><b>Отличие от США.</b> Спрос на ИИ есть и здесь — токенов в 4 раза больше. Но деньги дороже (ставка ЦБ 14%), а прогноз на 2026 год отозван после повреждения дата-центров в октябре. Инвестор ждёт новый прогноз.</div>`,
+ 'Источники: Яндекс 29.10 (Ведомости, CNews, Хабр) · Мосбиржа',6,'Фото: WikiFido, CC BY-SA 4.0, обр. (Wikimedia Commons)'));
 
-/* 6 · вывод и календарь */
-out.push(S('thu6',`
+/* 7 · вывод и календарь */
+out.push(S('thu7',`
  <div class="k">Что это значит для инвестора</div>
- <h1>Два рынка —<br>два разных вопроса</h1>
- <div style="left:60px;right:60px;top:320px">
-  <div class="pt"><em>🇺🇸</em><div><b>Окупаемость.</b> Спрос подтвердился; давление снимется, если выручка облаков начнёт обгонять вложения. Фонд на индекс США получает эти колебания сам.</div></div>
-  <div class="pt"><em>🇷🇺</em><div><b>Мощности и прогноз.</b> Индекс Мосбиржи живёт нефтью, рублём и ставкой ЦБ 14%; у Яндекса вопрос — восстановление мощностей и новый прогноз.</div></div>
+ <h1>Два рынка —<br>один общий фактор</h1>
+ <div style="left:60px;right:60px;top:300px">
+  <div class="pt"><em>🇺🇸</em><div><b>Если</b> облака начнут расти быстрее вложений — давление на бигтех снимется. <b>Если</b> Nvidia покажет замедление заказов — под ударом вся цепочка. Фонд на индекс США получает эти колебания сам.</div></div>
+  <div class="pt"><em>🇷🇺</em><div>Прямой связи с бигтехом США у Мосбиржи нет: индекс живёт нефтью, рублём и ставкой ЦБ. У Яндекса вопрос — мощности и новый прогноз.</div></div>
+  <div class="pt"><em>🔗</em><div><b>Общее — цена денег.</b> ИИ окупается годами; снижение ставок ФРС и ЦБ облегчает ожидание в обеих странах.</div></div>
  </div>
- <div class="nx" style="left:60px;right:60px;top:640px">
+ <div class="nx" style="left:60px;right:60px;top:700px">
   <div class="r" style="border:0"><b>Пт 06.11, 16:30</b><span>Payrolls США за октябрь</span></div>
   <div class="r"><b>Ночь на 18.11</b><span>Отчёт Nvidia: спрос на ИИ-чипы</span></div>
   <div class="r"><b>09.12 · 18.12</b><span>Решения ФРС и Банка России по ставке</span></div>
  </div>`,
- 'Источники: ФРС · Банк России 23.10 · Nvidia · время МСК. Не рекомендация',6,'Иллюстрация — Пульс рынка'));
+ 'Источники: ФРС · Банк России 23.10 · Nvidia · время МСК',7,'Иллюстрация — Пульс рынка'));
 document.write(out.join(''));
 </script></body></html>
