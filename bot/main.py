@@ -1134,6 +1134,7 @@ def run_digest(state, now, dry, final=True):
         try:  # каталог для поиска в приложении (топ-100 в группе), воркер отдаёт его отдельно от state
             meta["catalog"] = {"v": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                                "items": catalog.build_catalog(http_get, q, QUOTE_NAMES, QUOTE_GROUPS["ru"])}
+            state["catalog_at"] = now.isoformat(timespec="seconds")
         except Exception as e:
             print("Каталог не собран:", e, file=sys.stderr)
         try:
@@ -1440,6 +1441,23 @@ def due_digest_slot(state, now):
     return None, False
 
 
+
+def run_catalog(state, now, dry, force=False):
+    """Каталог поиска приложения → meta.catalog без ИИ и рассылок. В auto — не чаще раза в 25 мин (запуск каждые 30), отметка state.catalog_at."""
+    last = state.get("catalog_at")
+    if not force and last:
+        try:
+            if (now - datetime.fromisoformat(last)).total_seconds() < 25 * 60:
+                return
+        except ValueError:
+            pass
+    items = catalog.build_catalog(http_get, fetch_markets(), QUOTE_NAMES, QUOTE_GROUPS["ru"])
+    print(f"Каталог: {len(items)} активов", file=sys.stderr)
+    if not dry and items:
+        push_to_bot(None, [], {"catalog": {"v": datetime.now(timezone.utc).isoformat(timespec="seconds"), "items": items}})
+        state["catalog_at"] = now.isoformat(timespec="seconds")
+
+
 def main():
     args = sys.argv[1:]
     dry = "--dry-run" in args
@@ -1507,10 +1525,7 @@ def main():
         mode = "preview"
 
     if mode == "catalog":  # только каталог поиска приложения → meta.catalog (без ИИ и рассылок): после выкладки, не дожидаясь выжимки 19:30
-        items = catalog.build_catalog(http_get, fetch_markets(), QUOTE_NAMES, QUOTE_GROUPS["ru"])
-        print(f"Каталог: {len(items)} активов", file=sys.stderr)
-        if not dry and items:
-            push_to_bot(None, [], {"catalog": {"v": datetime.now(timezone.utc).isoformat(timespec="seconds"), "items": items}})
+        run_catalog(state, now, dry, force=True)
         return
     if mode == "digest":
         run_digest_big(state, now, dry)
@@ -1602,6 +1617,10 @@ def main():
                 run_breaking(state, now, dry)
             except Exception as e:
                 print("Срочные: ошибка", e, file=sys.stderr)
+        try:  # цены каталога поиска — каждые 30 мин, без ИИ (Директор m-1793728800)
+            run_catalog(state, now, dry)
+        except Exception as e:
+            print("Каталог: ошибка", str(e)[:150], file=sys.stderr)
 
     if AI_CALLS:
         print(f"ИИ за запуск: {sum(AI_CALLS.values())} {AI_CALLS}", file=sys.stderr)
