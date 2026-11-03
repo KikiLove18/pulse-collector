@@ -429,7 +429,7 @@ STORY_FIRST_SKIP = {w[:5] for w in ("акции акция нефть индек
                                     "кредит кредиты вклады ипотека бюджет дефицит профицит производство продажи объем запасы поставки "
                                     "компания банк банки власти правительство центробанк регулятор суд глава президент "
                                     "премьер аналитики инвесторы трейдеры эксперты новые новый новая крупнейший крупнейшая").split()}
-STORY_OPP = [({"приос", "остан", "запре", "закры"}, {"возоб", "разре", "откры", "сняла", "снял", "отмен"}),
+STORY_OPP = [({"приос", "остан", "запре", "закры", "ввел", "ввела", "ввели", "введе", "вводи"}, {"возоб", "разре", "откры", "сняла", "снял", "отмен"}),
              ({"обвин"}, {"отвер", "опров"}),
              ({"повыс", "подня", "вырос", "рост", "увели", "подор"}, {"пониз", "сниз", "упала", "упал", "сокра", "подеш", "рухну", "паден"}),
              ({"одобр", "подде"}, {"откло", "отказ"})]
@@ -453,14 +453,27 @@ def _story_stems(title):
             if (len(w) >= 4 or w in STORY_SHORT) and w not in STORY_STOP}
 
 
+STORY_END = re.compile(r"(?:ами|ями|ов|ев|ом|ем|ой|ей|ам|ям|ах|ях|а|я|у|ю|е|ы|и|о)$")
+
+
 def _story_names(title):
-    """Имена: слова с заглавной (компании, страны, люди); первое слово тоже, кроме общих («Акции», «Нефть», «Индекс») — QA 03.11."""
+    """Имена: слова с заглавной (компании, страны, люди); первое слово тоже, кроме общих («Акции», «Нефть», «Индекс») — QA 03.11.
+    Имя — целое слово без окончания («Сбербанка» = «Сбербанк»), «Газпром нефть» — одно имя, не «Газпром»."""
     out = set()
+    title = re.sub(r"(?i)газпром[ау]?\s+нефт\w*", "Газпромнефть", title)
     for i, w in enumerate(re.findall(r"[\w-]+", title)):
-        k = w[:5].lower()
-        if w[:1].isupper() and k not in STORY_NAME_SKIP and (i > 0 or w.isupper() or k not in STORY_FIRST_SKIP):
-            out.add(k)
+        k = w.lower().replace("ё", "е")
+        if w[:1].isupper() and k[:5] not in STORY_NAME_SKIP and (i > 0 or w.isupper() or k[:5] not in STORY_FIRST_SKIP):
+            out.add(STORY_END.sub("", k) if len(k) > 4 else k)
     return out
+
+
+def _names_only(na, nb):
+    """Имена из na, которых нет в nb (с точностью до окончания: «Яндекс»/«Яндексу»)."""
+    return {x for x in na if not any(x == y or (x.startswith(y) or y.startswith(x)) and abs(len(x) - len(y)) <= 2 for y in nb)}
+
+
+STORY_NEG = re.compile(r"(?i)(?<![\w])(?:не|отказал\w*|отказ\w*)(?![\w])")
 
 
 def _same_story(a, b):
@@ -469,11 +482,14 @@ def _same_story(a, b):
     if (sa | wa) and (sb | wb) and not (sa | wa) & (sb | wb):
         return False  # разные числа — обновление или другое событие
     na, nb = _story_names(a), _story_names(b)
-    if na - nb and nb - na:
+    oa, ob = _names_only(na, nb), _names_only(nb, na)
+    if oa and ob:
         return False  # у каждого есть своё имя — разные компании, страны, люди («Лукойл»/«Роснефть», «из Канады»/«из Мексики»)
     ta, tb = _story_stems(a), _story_stems(b)
-    if (na - nb and tb - ta) or (nb - na and ta - tb):
+    if (oa and tb - ta) or (ob and ta - tb):
         return False  # имя у одного вместо слова у другого («на нефть»/«на СПГ»)
+    if bool(STORY_NEG.search(a)) != bool(STORY_NEG.search(b)):
+        return False  # у одного отрицание или отказ («выплатит»/«отказалась выплатить»)
     for x, y in STORY_OPP:
         if (ta & x and tb & y and not ta & y) or (ta & y and tb & x and not tb & y):
             return False  # противоположное действие
