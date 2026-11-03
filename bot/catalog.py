@@ -126,12 +126,24 @@ def _item(k, t, n, en, al, m, r, p, ch):
     return x
 
 
+# стейблкоины, токены фондов и золота — не активы для «Влияния» (t-1793693100): вместо них следующие по капитализации; что уже в quotes — остаётся
+NOT_ASSET = {"tether", "usd-coin", "usds", "dai", "ethena-usde", "paypal-usd", "usd1-wlfi", "ripple-usd", "global-dollar", "first-digital-usd",
+             "blackrock-usd-institutional-digital-liquidity-fund", "hashnote-usyc", "figure-heloc", "ondo-us-dollar-yield", "tether-gold",
+             "pax-gold", "spiko-amundi-overnight-swap-fund-eur", "susds", "sky-dollar", "falcon-finance", "true-usd", "frax", "eurc"}
+
+
+def _not_asset(c):
+    s = f"{c.get('id', '')} {c.get('symbol', '')} {c.get('name', '')}".lower()
+    return c.get("id") in NOT_ASSET or bool(re.search(r"usd|dollar|euro|eur[a-z]?\b|fund|treasur|yield|stable|gold", s))
+
+
 def build_catalog(http_get, q, names, ru_keys):
     """q — уже скачанные quotes (их цены не качаем второй раз; их активы всегда в каталоге), names — QUOTE_NAMES, ru_keys — акции Мосбиржи из quotes."""
     items = []
     # крипта: топ-100 по капитализации одним запросом
     try:
         cg = json.loads(http_get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1"))
+        cg = [c for c in cg if c["id"] in q or not _not_asset(c)]
         cg = cg[:TOP] + [c for c in cg[TOP:] if c["id"] in q]
         for i, c in enumerate(cg, 1):
             sym = (c.get("symbol") or "").upper()
