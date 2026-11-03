@@ -10,7 +10,7 @@ on:
         default: "auto"
 
 permissions:
-  contents: write             # чтобы сохранять state/state.json
+  contents: write             # чтобы сохранять state/state.json; токен — только в шаге «Сохранить состояние» (CI-05)
 
 concurrency: news-bot
 
@@ -20,6 +20,8 @@ jobs:
     timeout-minutes: 20       # 15.10 выжимка зависла на 56 мин и держала очередь; ИИ сам ограничен 15 мин (AI_RUN_BUDGET)
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false   # CI-05: токен не лежит в .git/config, пока идут pip install и сборщик с секретами
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.12"
@@ -46,7 +48,10 @@ jobs:
           FEED_SHARE: ${{ vars.FEED_SHARE }}              # доля тихих источников в Ленте: off — выкл
           PRO_AUTO: ${{ vars.PRO_AUTO }}                  # черновик «мощного поста» PRO каждое утро (07:30–10:00 МСК) → meta.pro_draft + тестовый канал; off — выкл
       - name: Сохранить состояние
+        env:
+          PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git remote set-url origin "https://x-access-token:${PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
           git add state/
