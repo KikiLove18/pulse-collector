@@ -30,7 +30,7 @@ from pathlib import Path
 
 import feedparser
 
-from bot import calendar_future, catalog, edition, factcheck, macro, pro, prompts, sources, weekly, pro_day, freech, pro_auto
+from bot import calendar_future, catalog, edition, factcheck, macro, pro, prompts, sources, weekly, pro_day, freech, pro_auto, own
 
 MSK = timezone(timedelta(hours=3))
 ROOT = Path(__file__).resolve().parent.parent
@@ -1548,6 +1548,8 @@ def main():
         run_results(state, now, dry)
     elif mode == "breaking":
         run_breaking(state, now, dry)
+    elif mode == "own":
+        own.run(ask_ai, state, f"{now.astimezone(MSK):%Y-%m-%d}")
     elif mode.startswith("morning:"):  # утро для пояса: python -m bot.main morning:420  (--test — только в тестовый канал)
         run_morning(state, now, dry, int(mode.split(":")[1]))
         return
@@ -1634,6 +1636,12 @@ def main():
             run_catalog(state, now, dry)
         except Exception as e:
             print("Каталог: ошибка", str(e)[:150], file=sys.stderr)
+        if not slot and not dry and own.due(state, now, MSK):  # свои каналы и сайты PRO раз в час; отметка заранее — только час, без адресов
+            state["own_hour"] = f"{now.astimezone(MSK):%Y-%m-%d %H}"
+            try:
+                own.run(ask_ai, state, f"{now.astimezone(MSK):%Y-%m-%d}")
+            except Exception as e:
+                print("Свои адреса: ошибка", type(e).__name__, file=sys.stderr)  # без текста: в нём мог бы быть адрес
 
     if AI_CALLS:
         print(f"ИИ за запуск: {sum(AI_CALLS.values())} {AI_CALLS}", file=sys.stderr)
