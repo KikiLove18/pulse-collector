@@ -1077,120 +1077,95 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-04T08:00:55.911829+00:00",
+  "breaking_ts": "2026-11-04T08:30:58.881070+00:00",
   "news_now": {
     "day": "2026-11-04",
-    "day_count": 2,
+    "day_count": 3,
     "urgent_count": 0,
-    "last": "2026-11-04T07:30:55.763181+00:00",
+    "last": "2026-11-04T08:30:58.881070+00:00",
     "titles": [
       "Биткоин упал до $75 700 на фоне победы демократов на выборах в США",
-      "Демократы взяли под контроль обеих палат Конгресса США"
+      "Демократы взяли под контроль обеих палат Конгресса США",
+      "Риксбанк Швеции повысил ставку до 2%"
     ]
   },
   "news_seen": [
-    "https://t.me/markettwits/391919",
-    "https://tass.ru/ekonomika/28285285",
-    "https://tass.ru/obschestvo/28285261",
-    "https://tass.ru/politika/28285283",
-    "https://tass.ru/proisshestviya/28285271",
-    "https://tass.ru/ekonomika/28285281",
-    "https://tass.ru/ekonomika/28285273",
-    "https://www.vedomosti.ru/politics/news/2026/11/04/1242604-vneshnyaya-politika-rossii",
+    "https://t.me/cbonds/26284",
+    "https://t.me/FinancialJuice/144708",
+    "https://tass.ru/mezhdunarodnaya-panorama/28285347",
+    "https://tass.ru/obschestvo/28285341",
+    "https://tass.ru/kultura/28285355",
+    "https://t.me/invest_zonaa/39262",
+    "https://tass.ru/proisshestviya/28285353",
+    "https://tass.ru/obschestvo/28285343",
+    "https://t.me/banksta/104758",
+    "https://t.me/rbc_news/160014",
+    "https://t.me/headlines_for_traders/88010",
+    "https://www.interfax.ru/world/1126955",
+    "https://www.vedomosti.ru/politics/news/2026/11/04/1242607-kndr-otkazalas",
+    "https://t.me/prime1/191882",
+    "https://tass.ru/obschestvo/28285333",
+    "https://tass.ru/sport/28285345",
+    "https://tass.ru/mezhdunarodnaya-panorama/28285335",
+    "https://www.rbc.ru/rbcfreenews/6a92c15299721015d60a4a0f",
+    "https://www.rbc.ru/sport/02/11/2026/6ae8d697b208f51c7b5c6070",
+    "https://www.interfax.ru/world/1126954",
+    "https://tass.ru/politika/28285327",
+    "https://tass.ru/obschestvo/28285307",
+    "https://tass.ru/mezhdunarodnaya-panorama/28285329",
+    "https://cryptoslate.com/south-korea-orders-massive-crypto-wallet-lockdown-following-the-binance-hack/",
+    "https://t.me/incrypted/33225",
+    "https://www.wsj.com/finance/stocks/nikkei-flat-supported-by-financial-airline-stocks-87443383?mod=rss_markets_main",
+    "https://tass.ru/mezhdunarodnaya-panorama/28285325",
+    "https://tass.ru/sport/28285337",
+    "https://t.me/invest_zonaa/39261",
+    "https://www.wsj.com/finance/investing/stock-futures-edge-lower-treasurys-strengthen-after-democratic-sweep-f2198d07?mod=rss_markets_main",
+    "https://tass.ru/obschestvo/28285323",
+    "https://www.interfax.ru/business/1126953",
+    "https://tass.ru/mezhdunarodnaya-panorama/28285305",
+    "https://tass.ru/obschestvo/28285319",
+    "https://tass.ru/obschestvo/28285331",
+    "https://www.rbc.ru/politics/28/10/2026/6ae0aa619a79479f04893061",
+    "https://www.rbc.ru/sport/24/08/2026/6a8ca6c89a79470ae5977622",
+    "https://t.me/russianmacro/23692",
+    "https://tass.ru/kosmos/28285315",
+    "https://t.me/markettwits/391921",
+    "https://www.cnbc.com/2026/11/04/democrats-congress-trump-foreign-policy.html",
+    "https://tass.ru/mezhdunarodnaya-panorama/28285311",
+    "https://t.me/banksta/104757",
+    "https://tass.ru/obschestvo/28285297",
+    "https://www.vedomosti.ru/politics/news/2026/11/04/1242606-musulmaninom-v-senate",
+    "https://t.me/FinancialJuice/144707",
+    "https://t.me/FinancialJuice/144706",
+    "https://tass.ru/obschestvo/28285299",
+    "https://www.interfax.ru/russia/1126952",
     "https://www.cnbc.com/2026/11/04/novo-q3-earnings-wegovy-sales.html",
-    "https://www.interfax.ru/world/1126949",
-    "https://www.rbc.ru/politics/04/11/2026/6aeae3737d37fe181e8f93f5",
-    "https://tass.ru/politika/28285279",
-    "https://www.rbc.ru/politics/04/11/2026/6aeabe9575e14a3e5c23333b",
-    "https://tass.ru/mezhdunarodnaya-panorama/28285253",
-    "https://tass.ru/obschestvo/28285269",
-    "https://tass.ru/ekonomika/28285277",
-    "https://www.rbc.ru/politics/04/11/2026/6aeaca403b9ad02e1086c8a5",
-    "https://www.rbc.ru/photoslider/6aeadff69a7947e3bfe29ea7",
-    "https://www.interfax.ru/world/1126948",
-    "https://www.rbc.ru/sport/02/11/2026/6ae83ff96b514a72023eafc5",
-    "https://tass.ru/ekonomika/28285251",
-    "https://tass.ru/mezhdunarodnaya-panorama/28285259",
-    "https://tass.ru/politika/28285263",
-    "https://cointelegraph.com/news/democrats-win-us-house-congress-control?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.kommersant.ru/doc/9080211",
-    "https://www.interfax.ru/russia/1126947",
-    "https://www.rbc.ru/politics/04/11/2026/6aeae250d7310db3ba6c4bb4",
-    "https://tass.ru/obschestvo/28285265",
-    "https://tass.ru/mezhdunarodnaya-panorama/28285249",
-    "https://t.me/rbc_news/160012",
-    "https://www.rbc.ru/society/20/07/2026/6a5e539f9a79475c444bb5d4",
-    "https://www.interfax.ru/russia/1126946",
-    "https://t.me/invest_zonaa/39259",
-    "https://t.me/wublockchainenglish/26679",
-    "https://tass.ru/proisshestviya/28285245",
-    "https://t.me/banksta/104756",
-    "https://tass.ru/obschestvo/28285241",
-    "https://tass.ru/politika/28285243",
-    "https://www.cnbc.com/2026/11/04/gold-silver-platinum-dollar-midterms.html",
-    "https://t.me/markettwits/391918",
-    "https://tass.ru/mezhdunarodnaya-panorama/28285231",
-    "https://www.vedomosti.ru/politics/news/2026/11/04/1242602-o-neudache-lazerov",
-    "https://tass.ru/armiya-i-opk/28285225",
-    "https://tass.ru/mezhdunarodnaya-panorama/28285235",
-    "https://tass.ru/proisshestviya/28285223",
-    "https://t.me/expert_mag/11180",
-    "https://www.interfax.ru/business/1126945",
-    "https://www.rbc.ru/rbcfreenews/6aeac401a5497ae345d6fb23",
-    "https://t.me/headlines_for_traders/88007",
-    "https://tass.ru/proisshestviya/28285237",
-    "https://t.me/frank_media/24613",
-    "https://tass.ru/obschestvo/28285233",
-    "https://www.vedomosti.ru/business/news/2026/11/04/1242601-prokat-elektrosamokatov",
-    "https://tass.ru/kultura/28285221",
-    "https://thedefiant.io/converge/tradfi-and-fintech/apple-joins-okxice-stock-token-objectors-as-total-reaches-59",
-    "https://www.rbc.ru/politics/02/11/2026/6ae8c292714fe8b386e13241",
-    "https://t.me/rbc_news/160011",
-    "https://www.interfax.ru/culture/1126944",
-    "https://t.me/forbesrussia/102643",
-    "https://thedefiant.io/news/regulation/democrats-win-house-gaining-new-leverage-over-crypto-legislation",
-    "https://t.me/markettwits/391917",
-    "https://t.me/FinancialJuice/144705",
-    "https://www.rbc.ru/sport/06/10/2026/6ac4a2e39a794720d0c40a1c",
-    "https://oilprice.com/Latest-Energy-News/World-News/China-Now-Home-to-Nearly-Half-of-Worlds-Clean-Industrial-Plants.html",
-    "https://www.rbc.ru/politics/04/11/2026/6aeab2d5ba8cf69562bd3dee",
-    "https://t.me/forklog/50534",
-    "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
-    "https://www.vedomosti.ru/politics/news/2026/11/04/1242600-kosmos-vseh-lyudei"
+    "https://tass.ru/sport/28285313",
+    "https://t.me/rbc_news/160013",
+    "https://www.rbc.ru/rbcfreenews/6aead6831729ac4f6ada1646",
+    "https://tass.ru/armiya-i-opk/28285309",
+    "https://t.me/invest_zonaa/39260",
+    "https://www.rbc.ru/rbcfreenews/6aead6831729ac4f6ada1646",
+    "https://t.me/markettwits/391920",
+    "https://t.me/CoinDeskGlobal/25343",
+    "https://www.coindesk.com/markets/2026/11/04/zcash-grants-committee-drops-plan-to-redirect-98-000-zec-to-future-mining-rewards",
+    "https://www.kommersant.ru/doc/9080227",
+    "https://www.vedomosti.ru/business/news/2026/11/04/1242603-neobhodim-gaz",
+    "https://tass.ru/armiya-i-opk/28285293",
+    "https://www.interfax.ru/business/1126951",
+    "https://t.me/if_market_news/86583",
+    "https://t.me/SberInvestments/13245",
+    "https://www.kommersant.ru/doc/9080229",
+    "https://tass.ru/sport/28285295",
+    "https://t.me/markettwits/391919",
+    "https://www.kommersant.ru/doc/9080107",
+    "https://www.interfax.ru/russia/1126950"
   ],
   "ai_dead": {
     "date": "2026-11-04",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-03T09:00:55.751723+00:00",
-      "Яндекс Банк предложил вклад со ставкой 30% годовых"
-    ],
-    [
-      "2026-11-03T09:00:55.751723+00:00",
-      "В 52 регионах России заключили соглашения по ценам на бензин"
-    ],
-    [
-      "2026-11-03T09:30:55.661002+00:00",
-      "Мосбиржа проводит дискретный аукцион по акциям МГКЛ после падения на 21%"
-    ],
-    [
-      "2026-11-03T09:30:55.661002+00:00",
-      "Brookfield планирует построить ЦОД для ИИ в Великобритании за $27 млрд"
-    ],
-    [
-      "2026-11-03T09:30:55.661002+00:00",
-      "Bloomberg: Disney планирует масштабные сокращения сотрудников для экономии"
-    ],
-    [
-      "2026-11-03T09:30:55.661002+00:00",
-      "МЭА: Европа лишится 30 млрд куб. м российского газа к 2027 году из-за запрета"
-    ],
-    [
-      "2026-11-03T09:30:55.661002+00:00",
-      "Российские «дочки» RBI зафиксировали убыток в 37 млн евро в третьем квартале"
-    ],
     [
       "2026-11-03T09:30:55.661002+00:00",
       "Т-Банк и СПБ Биржа добавили 10 новых неоактивов на мировые компании"
@@ -1790,6 +1765,26 @@
     [
       "2026-11-04T08:00:55.911829+00:00",
       "Турецкая лира обновила исторический минимум против доллара"
+    ],
+    [
+      "2026-11-04T08:30:58.881070+00:00",
+      "Риксбанк Швеции повысил ставку до 2%"
+    ],
+    [
+      "2026-11-04T08:30:58.881070+00:00",
+      "Объем новых международных облигаций упал на 35% в октябре"
+    ],
+    [
+      "2026-11-04T08:30:58.881070+00:00",
+      "Акции Novo Nordisk выросли на 6% после отчета"
+    ],
+    [
+      "2026-11-04T08:30:58.881070+00:00",
+      "Российские ретейлеры оптимизируют торговые сети"
+    ],
+    [
+      "2026-11-04T08:30:58.881070+00:00",
+      "Южная Корея усиливает контроль за криптокошельками"
     ]
   ],
   "results_fp": [
@@ -1905,7 +1900,7 @@
     "CoinMarketCap": "2026-11-03T16:01:01.250423+00:00",
     "СберИнвестиции": "2026-11-02T11:31:11.421906+00:00",
     "РБК Крипто": "2026-11-03T14:30:56.812103+00:00",
-    "ПРАЙМ": "2026-11-03T20:00:59.275192+00:00",
+    "ПРАЙМ": "2026-11-04T08:30:58.881070+00:00",
     "Walter Bloomberg": "2026-11-04T04:00:55.511077+00:00",
     "Московская биржа": "2026-11-04T04:30:59.609516+00:00",
     "MarketWatch": "2026-11-03T16:31:07.181074+00:00",
@@ -1915,8 +1910,8 @@
     "The Block": "2026-11-04T05:01:00.243898+00:00",
     "Нефть и Капитал": "2026-11-03T13:30:55.649448+00:00",
     "MMI": "2026-11-02T16:30:57.156819+00:00",
-    "FinancialJuice": "2026-11-04T05:30:57.220548+00:00",
-    "Cbonds": "2026-11-02T16:30:57.156819+00:00",
+    "FinancialJuice": "2026-11-04T08:30:58.881070+00:00",
+    "Cbonds": "2026-11-04T08:30:58.881070+00:00",
     "WSJ Markets": "2026-11-04T07:30:55.763181+00:00",
     "WSJ Economy": "2026-11-03T19:01:11.353373+00:00",
     "The Defiant": "2026-11-04T06:30:55.685494+00:00",
@@ -1929,8 +1924,8 @@
     "Protos": "2026-11-03T04:31:02.511972+00:00",
     "Агроинвестор": "2026-11-03T16:31:07.181074+00:00",
     "Газпромбанк Инвестиции": "2026-11-03T13:30:55.649448+00:00",
-    "CryptoSlate": "2026-11-03T11:00:57.825713+00:00",
-    "CNBC Markets": "2026-11-04T08:00:55.911829+00:00",
+    "CryptoSlate": "2026-11-04T08:30:58.881070+00:00",
+    "CNBC Markets": "2026-11-04T08:30:58.881070+00:00",
     "Natural Gas Intelligence": "2026-11-02T20:00:58.458275+00:00",
     "Правительство России": "2026-11-03T12:30:56.088453+00:00",
     "glassnode": "2026-11-03T04:31:02.511972+00:00",
@@ -1959,5 +1954,5 @@
     "Interfax": "2026-11-04T04:30:59.609516+00:00",
     "Invest Era": "2026-11-04T07:30:55.763181+00:00"
   },
-  "catalog_at": "2026-11-04T08:00:55+00:00"
+  "catalog_at": "2026-11-04T08:30:58+00:00"
 }
