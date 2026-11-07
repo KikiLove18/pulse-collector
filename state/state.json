@@ -1103,7 +1103,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-07T05:00:57.734084+00:00",
+  "breaking_ts": "2026-11-07T05:31:00.448270+00:00",
   "news_now": {
     "day": "2026-11-07",
     "day_count": 0,
@@ -1112,75 +1112,51 @@
     "titles": []
   },
   "news_seen": [
+    "https://tass.ru/obschestvo/28293885",
+    "https://www.rbc.ru/rbcfreenews/6ae6bcb74402c3b449e2783f",
+    "https://www.vedomosti.ru/politics/news/2026/11/07/1243370-rossiya-udar",
+    "https://www.rbc.ru/politics/07/11/2026/6aeeb52d5b36bc7c245dc3c8",
+    "https://www.vedomosti.ru/politics/news/2026/11/07/1243369-kiev-poluchil",
+    "https://t.me/rbc_news/160201",
+    "https://www.interfax.ru/russia/1127532",
+    "https://www.rbc.ru/politics/06/11/2026/6aed83c3e9d59f8076d51859",
+    "https://tass.ru/armiya-i-opk/28294235",
+    "https://t.me/headlines_for_traders/88218",
+    "https://www.interfax.ru/world/1127525",
+    "https://www.kommersant.ru/doc/9091828",
+    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
+    "https://tass.ru/nedvizhimost/28294225",
+    "https://tass.ru/obschestvo/28294223",
+    "https://www.interfax.ru/russia/1127531",
+    "https://tass.ru/armiya-i-opk/28294227",
+    "https://t.me/FinancialJuice/145458",
+    "https://t.me/headlines_for_traders/88217",
+    "https://t.me/rbc_news/160200",
+    "https://www.interfax.ru/world/1127530",
+    "https://tass.ru/obschestvo/28294221",
+    "https://tass.ru/ekonomika/28294213",
+    "https://t.me/FinancialJuice/145457",
+    "https://tass.ru/politika/28294215",
+    "https://t.me/headlines_for_traders/88215",
+    "https://t.me/headlines_for_traders/88216",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://t.me/forklog/50576",
+    "https://t.me/energytodaygroup/32657",
+    "https://tass.ru/armiya-i-opk/28294209",
+    "https://www.rbc.ru/business/06/11/2026/6aeca7e3405b7921eb711df8",
     "https://t.me/rosstat_official/4066",
+    "https://tass.ru/ekonomika/28294217",
+    "https://tass.ru/sport/28294201",
+    "https://www.interfax.ru/russia/1127526",
     "https://tass.ru/obschestvo/28294197",
     "https://tass.ru/sport/28294195",
-    "https://tass.ru/obschestvo/28294193",
-    "https://tass.ru/sport/28294191",
-    "https://tass.ru/mezhdunarodnaya-panorama/28294189",
-    "https://www.rbc.ru/politics/04/11/2026/6aea95ef9a9aff5e37370ede",
-    "https://t.me/CoinMarketCapAnnouncements/19599",
-    "https://www.interfax.ru/world/1127524",
-    "https://tass.ru/obschestvo/28294187",
-    "https://tass.ru/ekonomika/28294181",
-    "https://tass.ru/sport/28294185",
-    "https://www.rbc.ru/politics/07/11/2026/6aeeab7de62600c92ca060e1",
-    "https://www.kommersant.ru/doc/9091825",
-    "https://tass.ru/ekonomika/28294175",
-    "https://tass.ru/obschestvo/28294177",
-    "https://cryptoslate.com/moscow-exchange-sets-dec-1-to-launch-bitcoin-and-ethereum-trading/",
-    "https://tass.ru/obschestvo/28294173",
-    "https://www.interfax.ru/russia/1127529",
-    "https://tass.ru/obschestvo/28294167",
-    "https://tass.ru/obschestvo/28294171",
-    "https://tass.ru/proisshestviya/28294169",
-    "https://tass.ru/sport/28294165",
-    "https://tass.ru/proisshestviya/28294163",
-    "https://tass.ru/armiya-i-opk/28294161",
-    "https://tass.ru/armiya-i-opk/28294159",
-    "https://tass.ru/armiya-i-opk/28294155",
-    "https://tass.ru/armiya-i-opk/28294157",
-    "https://www.wsj.com/economy/central-banking/china-forex-reserves-edged-up-in-october-89c34113?mod=rss_socialeconomyfeed",
-    "https://t.me/wublockchainenglish/26726",
-    "https://tass.ru/ekonomika/28294153",
-    "https://www.interfax.ru/world/1127523",
-    "https://www.rbc.ru/politics/06/11/2026/6aed1751c4a073e7d4c860fe",
-    "https://tass.ru/kosmos/28294151",
-    "https://tass.ru/mezhdunarodnaya-panorama/28294139",
-    "https://tass.ru/armiya-i-opk/28294149",
-    "https://tass.ru/obschestvo/28294145",
-    "https://www.rbc.ru/rbcfreenews/6ad0d3f31a6289050cd2d886",
-    "https://www.kommersant.ru/doc/9091823",
-    "https://t.me/FinancialJuice/145456",
-    "https://t.me/wublockchainenglish/26725",
-    "https://www.kommersant.ru/doc/9091821",
-    "https://www.rbc.ru/business/08/10/2026/6ac46f0c9a7947f2f3884942"
+    "https://tass.ru/obschestvo/28294193"
   ],
   "ai_dead": {
     "date": "2026-11-06",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-06T05:30:57.042359+00:00",
-      "Китай сократил импорт палладия из России в сентябре на 70%"
-    ],
-    [
-      "2026-11-06T05:30:57.042359+00:00",
-      "Мощность ЦОД и майнинга в России выросла на 24,4%"
-    ],
-    [
-      "2026-11-06T06:00:57.443005+00:00",
-      "Nasdaq обвалился на 5,52% на фоне победы демократов в Конгрессе США"
-    ],
-    [
-      "2026-11-06T06:00:57.443005+00:00",
-      "Биткоин опустился до $75 500 на фоне распродаж на Уолл-стрит"
-    ],
-    [
-      "2026-11-06T06:00:57.443005+00:00",
-      "Нефть марки Brent поднялась до $99,66 за баррель"
-    ],
     [
       "2026-11-06T06:00:57.443005+00:00",
       "ЦБ России планирует ограничить выдачу ипотеки с «льготным» периодом"
@@ -1780,6 +1756,26 @@
     [
       "2026-11-07T05:00:57.734084+00:00",
       "Росстат зафиксировал инфляцию в РФ на уровне 99,96% с 27 октября по 2 ноября"
+    ],
+    [
+      "2026-11-07T05:31:00.448270+00:00",
+      "Росстат зафиксировал дефляцию в России на уровне 0,04% за неделю"
+    ],
+    [
+      "2026-11-07T05:31:00.448270+00:00",
+      "Путин подтвердил проведение трехсторонних переговоров по Украине 10 ноября"
+    ],
+    [
+      "2026-11-07T05:31:00.448270+00:00",
+      "Киев получил $49,4 млрд от G7 за счет доходов от российских активов"
+    ],
+    [
+      "2026-11-07T05:31:00.448270+00:00",
+      "Над Ростовской областью за ночь уничтожили более 50 беспилотников"
+    ],
+    [
+      "2026-11-07T05:31:00.448270+00:00",
+      "Кирилл Капризов первым в НХЛ набрал 30 очков в текущем сезоне"
     ]
   ],
   "results_fp": [
@@ -1872,15 +1868,15 @@
   "feed_src": {
     "OilPrice": "2026-11-06T18:30:56.273004+00:00",
     "Коммерсантъ": "2026-11-07T04:30:54.781550+00:00",
-    "Ведомости": "2026-11-06T18:00:58.226803+00:00",
-    "Интерфакс": "2026-11-07T04:00:55.982584+00:00",
-    "ТАСС": "2026-11-07T04:30:54.781550+00:00",
+    "Ведомости": "2026-11-07T05:31:00.448270+00:00",
+    "Интерфакс": "2026-11-07T05:31:00.448270+00:00",
+    "ТАСС": "2026-11-07T05:31:00.448270+00:00",
     "CoinDesk": "2026-11-06T12:00:56.711620+00:00",
-    "Headlines for Traders": "2026-11-06T18:30:56.273004+00:00",
+    "Headlines for Traders": "2026-11-07T05:31:00.448270+00:00",
     "MarketTwits": "2026-11-06T20:30:55.952669+00:00",
     "Сигналы РЦБ": "2026-11-07T04:30:54.781550+00:00",
     "Whale Alert": "2026-11-06T04:31:03.199558+00:00",
-    "РБК": "2026-11-07T04:30:54.781550+00:00",
+    "РБК": "2026-11-07T05:31:00.448270+00:00",
     "Wu Blockchain": "2026-11-07T05:00:57.734084+00:00",
     "Банкста": "2026-11-06T19:31:00.322274+00:00",
     "IF News": "2026-11-07T04:30:54.781550+00:00",
@@ -1901,7 +1897,7 @@
     "MarketWatch": "2026-11-06T18:00:58.226803+00:00",
     "Bitcoin Magazine": "2026-11-07T04:30:54.781550+00:00",
     "Watcher Guru": "2026-11-06T20:30:55.952669+00:00",
-    "РБК. Главное": "2026-11-06T19:00:57.359918+00:00",
+    "РБК. Главное": "2026-11-07T05:31:00.448270+00:00",
     "The Block": "2026-11-07T04:30:54.781550+00:00",
     "Нефть и Капитал": "2026-11-06T18:00:58.226803+00:00",
     "MMI": "2026-11-06T08:30:56.552344+00:00",
@@ -1949,7 +1945,7 @@
     "Interfax": "2026-11-05T16:31:03.442762+00:00",
     "Invest Era": "2026-11-04T07:30:55.763181+00:00",
     "Газпром": "2026-11-06T12:00:56.711620+00:00",
-    "Росстат": "2026-11-07T05:00:57.734084+00:00",
+    "Росстат": "2026-11-07T05:31:00.448270+00:00",
     "Коненков": "2026-11-04T13:01:03.854949+00:00",
     "CNBC Economy": "2026-11-06T14:00:58.795731+00:00",
     "Финам Инвестиции": "2026-11-04T14:30:59.809851+00:00",
@@ -1971,7 +1967,7 @@
     "Truth Social": "2026-11-06T16:30:57.622247+00:00",
     "INVEST ZONE": "2026-11-06T19:00:57.359918+00:00"
   },
-  "catalog_at": "2026-11-07T05:00:57+00:00",
+  "catalog_at": "2026-11-07T05:31:00+00:00",
   "own_hour": "2026-11-07 08",
   "digest_alert": "2026-11-05 19:30"
 }
