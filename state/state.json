@@ -1103,7 +1103,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-07T09:30:58.793785+00:00",
+  "breaking_ts": "2026-11-07T10:00:55.768604+00:00",
   "news_now": {
     "day": "2026-11-07",
     "day_count": 0,
@@ -1112,57 +1112,39 @@
     "titles": []
   },
   "news_seen": [
+    "https://t.me/cbonds/26315",
+    "https://t.me/FinancialJuice/145474",
+    "https://www.rbc.ru/rbcfreenews/6ae304901fb4447cf34fa0df",
+    "https://t.me/FinancialJuice/145473",
+    "https://t.me/FinancialJuice/145472",
+    "https://www.interfax.ru/world/1127564",
+    "https://www.rbc.ru/rbcfreenews/6aec73200dc7127b799c7340",
+    "https://tass.ru/sport/28294609",
+    "https://tass.ru/mezhdunarodnaya-panorama/28294607",
+    "https://www.vedomosti.ru/business/news/2026/11/07/1243388-sony-zayavku",
+    "https://t.me/FinancialJuice/145471",
+    "https://www.rbc.ru/sport/06/11/2026/6aedb808127f0434d87ff980",
+    "https://t.me/interfaxonline/81273",
+    "https://t.me/headlines_for_traders/88230",
+    "https://t.me/headlines_for_traders/88231",
+    "https://tass.ru/obschestvo/28294603",
+    "https://www.rbc.ru/politics/07/11/2026/6aeed081e02016d6a88ac7bb",
+    "https://tass.ru/proisshestviya/28294583",
+    "https://www.kommersant.ru/doc/9091901",
+    "https://t.me/whale_alert_io/104679",
+    "https://www.interfax.ru/world/1127556",
+    "https://www.vedomosti.ru/politics/news/2026/11/07/1243387-nablyudateli-uspeshno-proshli",
+    "https://www.interfax.ru/world/1127563",
+    "https://tass.ru/proisshestviya/28294599",
+    "https://tass.ru/mezhdunarodnaya-panorama/28294593",
+    "https://tass.ru/kosmos/28294597",
+    "https://tass.ru/obschestvo/28294579",
     "https://t.me/bitkogan_hotline/28161",
     "https://t.me/forbesrussia/102761",
     "https://www.rbc.ru/rbcfreenews/6acf15a269fdbd19e6518f5b",
     "https://tass.ru/mezhdunarodnaya-panorama/28294585",
     "https://tass.ru/obschestvo/28294587",
-    "https://www.vedomosti.ru/technology/news/2026/11/07/1243386-neuralink-paralizovannim",
-    "https://t.me/forbesrussia/102760",
-    "https://tass.ru/kultura/28294575",
-    "https://www.kommersant.ru/doc/9091896",
-    "https://t.me/banksta/105005",
-    "https://www.rbc.ru/finances/05/11/2026/6aec9a3bf17e12500ed49262",
-    "https://tass.ru/proisshestviya/28294571",
-    "https://tass.ru/mezhdunarodnaya-panorama/28294569",
-    "https://www.kommersant.ru/doc/9091895",
-    "https://www.vedomosti.ru/politics/news/2026/11/07/1243384-marshruta-trampa",
-    "https://tass.ru/sport/28294573",
-    "https://tass.ru/obschestvo/28294567",
-    "https://tass.ru/info/28294557",
-    "https://t.me/interfaxonline/81272",
-    "https://www.rbc.ru/sport/10/10/2026/6aca3e309a7947be944f13b6",
-    "https://tass.ru/kultura/28294549",
-    "https://cointelegraph.com/news/suspicious-prediction-market-activity-seen-before-election-poll-release-nyt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.interfax.ru/culture/1127562",
-    "https://t.me/FinancialJuice/145470",
-    "https://t.me/markettwits/392412",
-    "https://t.me/forbesrussia/102759",
-    "https://tass.ru/armiya-i-opk/28294547",
-    "https://tass.ru/proisshestviya/28294563",
-    "https://www.rbc.ru/rbcfreenews/6aee070cdacbc91c5c974a60",
-    "https://tass.ru/sport/28294561",
-    "https://t.me/CoinMarketCapAnnouncements/19601",
-    "https://t.me/forbesrussia/102758",
-    "https://t.me/headlines_for_traders/88229",
-    "https://www.interfax.ru/russia/1127561",
-    "https://www.vedomosti.ru/society/news/2026/11/07/1243385-umerla-fedoseeva-shukshina",
-    "https://www.kommersant.ru/doc/9091892",
-    "https://tass.ru/sport/28294545",
-    "https://t.me/rosstat_official/4067",
-    "https://t.me/rbc_news/160210",
-    "https://www.interfax.ru/russia/1127560",
-    "https://www.cnbc.com/2026/11/07/hoax-bomb-threats-flights-europe.html",
-    "https://t.me/interfaxonline/81271",
-    "https://t.me/markettwits/392411",
-    "https://tass.ru/kultura/28294551",
-    "https://t.me/rbc_news/160209",
-    "https://t.me/government_rus/34021",
-    "https://tass.ru/obschestvo/28294539",
-    "https://www.interfax.ru/russia/1127559",
-    "https://t.me/markettwits/392410",
-    "https://www.interfax.ru/russia/1127558",
-    "https://tass.ru/proisshestviya/28294535"
+    "https://www.vedomosti.ru/technology/news/2026/11/07/1243386-neuralink-paralizovannim"
   ],
   "ai_dead": {
     "date": "2026-11-07",
@@ -1752,6 +1734,30 @@
     [
       "2026-11-07T09:30:58.793785+00:00",
       "Правительство выделит 1,5 млрд рублей на жилье для жителей Курской области"
+    ],
+    [
+      "2026-11-07T10:00:55.768604+00:00",
+      "Иран сообщил о возгорании нефтяного танкера в Ормузском проливе"
+    ],
+    [
+      "2026-11-07T10:00:55.768604+00:00",
+      "Более 400 тыс. работников в Германии вышли на забастовки"
+    ],
+    [
+      "2026-11-07T10:00:55.768604+00:00",
+      "Tesla свернет производство пикапа Cybertruck в следующем году"
+    ],
+    [
+      "2026-11-07T10:00:55.768604+00:00",
+      "Sony подала заявку на регистрацию товарных знаков Playstation в РФ"
+    ],
+    [
+      "2026-11-07T10:00:55.768604+00:00",
+      "На Украине повреждены объекты энергетики в пяти областях"
+    ],
+    [
+      "2026-11-07T10:00:55.768604+00:00",
+      "Ученые зафиксировали на Солнце более 30 вспышек за двое суток"
     ]
   ],
   "results_fp": [
@@ -1844,15 +1850,15 @@
   "feed_src": {
     "OilPrice": "2026-11-06T18:30:56.273004+00:00",
     "Коммерсантъ": "2026-11-07T09:30:58.793785+00:00",
-    "Ведомости": "2026-11-07T06:00:58.152713+00:00",
-    "Интерфакс": "2026-11-07T09:30:58.793785+00:00",
-    "ТАСС": "2026-11-07T09:30:58.793785+00:00",
+    "Ведомости": "2026-11-07T10:00:55.768604+00:00",
+    "Интерфакс": "2026-11-07T10:00:55.768604+00:00",
+    "ТАСС": "2026-11-07T10:00:55.768604+00:00",
     "CoinDesk": "2026-11-06T12:00:56.711620+00:00",
     "Headlines for Traders": "2026-11-07T07:30:57.618018+00:00",
     "MarketTwits": "2026-11-07T09:00:57.861146+00:00",
     "Сигналы РЦБ": "2026-11-07T04:30:54.781550+00:00",
     "Whale Alert": "2026-11-07T09:00:57.861146+00:00",
-    "РБК": "2026-11-07T09:30:58.793785+00:00",
+    "РБК": "2026-11-07T10:00:55.768604+00:00",
     "Wu Blockchain": "2026-11-07T05:00:57.734084+00:00",
     "Банкста": "2026-11-07T08:30:55.735546+00:00",
     "IF News": "2026-11-07T04:30:54.781550+00:00",
@@ -1877,7 +1883,7 @@
     "The Block": "2026-11-07T04:30:54.781550+00:00",
     "Нефть и Капитал": "2026-11-07T07:30:57.618018+00:00",
     "MMI": "2026-11-06T08:30:56.552344+00:00",
-    "FinancialJuice": "2026-11-07T08:01:01.500313+00:00",
+    "FinancialJuice": "2026-11-07T10:00:55.768604+00:00",
     "Cbonds": "2026-11-06T15:30:58.427447+00:00",
     "WSJ Markets": "2026-11-07T04:30:54.781550+00:00",
     "WSJ Economy": "2026-11-07T04:30:54.781550+00:00",
@@ -1943,7 +1949,7 @@
     "Truth Social": "2026-11-06T16:30:57.622247+00:00",
     "INVEST ZONE": "2026-11-06T19:00:57.359918+00:00"
   },
-  "catalog_at": "2026-11-07T09:30:58+00:00",
-  "own_hour": "2026-11-07 12",
+  "catalog_at": "2026-11-07T10:00:55+00:00",
+  "own_hour": "2026-11-07 13",
   "digest_alert": "2026-11-05 19:30"
 }
