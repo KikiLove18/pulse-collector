@@ -1103,7 +1103,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-07T04:00:55.982584+00:00",
+  "breaking_ts": "2026-11-07T05:00:57.734084+00:00",
   "news_now": {
     "day": "2026-11-07",
     "day_count": 0,
@@ -1112,73 +1112,55 @@
     "titles": []
   },
   "news_seen": [
-    "https://t.me/cointelegraph/73105",
-    "https://www.rbc.ru/rbcfreenews/6ad06f04fb1ecb2f7afb8a89",
-    "https://tass.ru/ekonomika/28294105",
-    "https://tass.ru/obschestvo/28293939",
-    "https://tass.ru/ekonomika/28294103",
-    "https://www.rbc.ru/politics/26/10/2026/6adf8203caec548e6fd1551e",
-    "https://www.interfax.ru/world/1127522",
-    "https://tass.ru/nauka/28294053",
-    "https://www.kommersant.ru/doc/9091819",
-    "https://tass.ru/proisshestviya/28294091",
-    "https://tass.ru/ekonomika/28294089",
-    "https://tass.ru/ekonomika/28294081",
-    "https://tass.ru/armiya-i-opk/28294083",
-    "https://tass.ru/armiya-i-opk/28294077",
-    "https://tass.ru/armiya-i-opk/28294079",
-    "https://cryptoslate.com/zero-click-ios-exploits-drain-4m-usdt-from-active-tron-wallets/",
-    "https://tass.ru/proisshestviya/28294071",
-    "https://www.interfax.ru/russia/1127528",
-    "https://tass.ru/proisshestviya/28294073",
-    "https://www.rbc.ru/rbcfreenews/6ae7f4b6b6f380484a231132",
-    "https://tass.ru/obschestvo/28294063",
-    "https://www.interfax.ru/russia/1127521",
-    "https://tass.ru/obschestvo/28294065",
-    "https://tass.ru/proisshestviya/28294061",
-    "https://tass.ru/proisshestviya/28294059",
-    "https://t.me/wublockchainenglish/26724",
-    "https://tass.ru/ekonomika/28294057",
-    "https://tass.ru/ekonomika/28294051",
-    "https://www.kommersant.ru/doc/9091818",
-    "https://tass.ru/mezhdunarodnaya-panorama/28294039",
-    "https://t.me/WatcherGuru/15870",
-    "https://www.rbc.ru/business/06/11/2026/6aeca7e3405b7921eb711df8",
-    "https://tass.ru/armiya-i-opk/28294049",
-    "https://tass.ru/obschestvo/28294045",
-    "https://tass.ru/armiya-i-opk/28294055",
-    "https://tass.ru/obschestvo/28294047",
-    "https://tass.ru/armiya-i-opk/28294041"
+    "https://t.me/rosstat_official/4066",
+    "https://tass.ru/obschestvo/28294197",
+    "https://tass.ru/sport/28294195",
+    "https://tass.ru/obschestvo/28294193",
+    "https://tass.ru/sport/28294191",
+    "https://tass.ru/mezhdunarodnaya-panorama/28294189",
+    "https://www.rbc.ru/politics/04/11/2026/6aea95ef9a9aff5e37370ede",
+    "https://t.me/CoinMarketCapAnnouncements/19599",
+    "https://www.interfax.ru/world/1127524",
+    "https://tass.ru/obschestvo/28294187",
+    "https://tass.ru/ekonomika/28294181",
+    "https://tass.ru/sport/28294185",
+    "https://www.rbc.ru/politics/07/11/2026/6aeeab7de62600c92ca060e1",
+    "https://www.kommersant.ru/doc/9091825",
+    "https://tass.ru/ekonomika/28294175",
+    "https://tass.ru/obschestvo/28294177",
+    "https://cryptoslate.com/moscow-exchange-sets-dec-1-to-launch-bitcoin-and-ethereum-trading/",
+    "https://tass.ru/obschestvo/28294173",
+    "https://www.interfax.ru/russia/1127529",
+    "https://tass.ru/obschestvo/28294167",
+    "https://tass.ru/obschestvo/28294171",
+    "https://tass.ru/proisshestviya/28294169",
+    "https://tass.ru/sport/28294165",
+    "https://tass.ru/proisshestviya/28294163",
+    "https://tass.ru/armiya-i-opk/28294161",
+    "https://tass.ru/armiya-i-opk/28294159",
+    "https://tass.ru/armiya-i-opk/28294155",
+    "https://tass.ru/armiya-i-opk/28294157",
+    "https://www.wsj.com/economy/central-banking/china-forex-reserves-edged-up-in-october-89c34113?mod=rss_socialeconomyfeed",
+    "https://t.me/wublockchainenglish/26726",
+    "https://tass.ru/ekonomika/28294153",
+    "https://www.interfax.ru/world/1127523",
+    "https://www.rbc.ru/politics/06/11/2026/6aed1751c4a073e7d4c860fe",
+    "https://tass.ru/kosmos/28294151",
+    "https://tass.ru/mezhdunarodnaya-panorama/28294139",
+    "https://tass.ru/armiya-i-opk/28294149",
+    "https://tass.ru/obschestvo/28294145",
+    "https://www.rbc.ru/rbcfreenews/6ad0d3f31a6289050cd2d886",
+    "https://www.kommersant.ru/doc/9091823",
+    "https://t.me/FinancialJuice/145456",
+    "https://t.me/wublockchainenglish/26725",
+    "https://www.kommersant.ru/doc/9091821",
+    "https://www.rbc.ru/business/08/10/2026/6ac46f0c9a7947f2f3884942"
   ],
   "ai_dead": {
     "date": "2026-11-06",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-06T05:00:57.709692+00:00",
-      "Доходы IREN от майнинга биткоина упали на 58%"
-    ],
-    [
-      "2026-11-06T05:00:57.709692+00:00",
-      "Оператор «Турецкого потока» подал иск к «Нафтогазу»"
-    ],
-    [
-      "2026-11-06T05:00:57.709692+00:00",
-      "Rapidan Energy спрогнозировала рост нефти выше $100"
-    ],
-    [
-      "2026-11-06T05:30:57.042359+00:00",
-      "Доля расчетов за экспорт в нацвалютах приблизилась к 90%"
-    ],
-    [
-      "2026-11-06T05:30:57.042359+00:00",
-      "Нефть может превысить $100 из-за рисков вокруг Ирана"
-    ],
-    [
-      "2026-11-06T05:30:57.042359+00:00",
-      "В сети Zcash состоялось масштабное обновление NU7"
-    ],
     [
       "2026-11-06T05:30:57.042359+00:00",
       "Китай сократил импорт палладия из России в сентябре на 70%"
@@ -1778,6 +1760,26 @@
     [
       "2026-11-07T04:00:55.982584+00:00",
       "Предприятие в Орле повреждено после массированной ракетной атаки"
+    ],
+    [
+      "2026-11-07T05:00:57.734084+00:00",
+      "Московская биржа планирует запуск торги биткоином и эфириумом 1 декабря"
+    ],
+    [
+      "2026-11-07T05:00:57.734084+00:00",
+      "ЦБ Нигерии обязал эмитентов стейблкоинов получать лицензии"
+    ],
+    [
+      "2026-11-07T05:00:57.734084+00:00",
+      "ЦБ Сингапура призвал граждан избегать нерегулируемых криптобирж"
+    ],
+    [
+      "2026-11-07T05:00:57.734084+00:00",
+      "Адам Бэк ожидает третью волну принятия биткоина институционалами"
+    ],
+    [
+      "2026-11-07T05:00:57.734084+00:00",
+      "Росстат зафиксировал инфляцию в РФ на уровне 99,96% с 27 октября по 2 ноября"
     ]
   ],
   "results_fp": [
@@ -1842,7 +1844,7 @@
   },
   "pro_daily": "2026-11-06",
   "freech_day": "2026-11-06",
-  "pro_auto": "2026-11-06",
+  "pro_auto": "2026-11-07",
   "earn_memo": {
     "AAPL|2026-11-02": {
       "last": "$1.85",
@@ -1879,7 +1881,7 @@
     "Сигналы РЦБ": "2026-11-07T04:30:54.781550+00:00",
     "Whale Alert": "2026-11-06T04:31:03.199558+00:00",
     "РБК": "2026-11-07T04:30:54.781550+00:00",
-    "Wu Blockchain": "2026-11-07T04:30:54.781550+00:00",
+    "Wu Blockchain": "2026-11-07T05:00:57.734084+00:00",
     "Банкста": "2026-11-06T19:31:00.322274+00:00",
     "IF News": "2026-11-07T04:30:54.781550+00:00",
     "bitkogan": "2026-11-06T16:30:57.622247+00:00",
@@ -1890,7 +1892,7 @@
     "ForkLog": "2026-11-06T17:00:59.124054+00:00",
     "Decrypt": "2026-11-07T04:30:54.781550+00:00",
     "Cointelegraph": "2026-11-07T04:30:54.781550+00:00",
-    "CoinMarketCap": "2026-11-06T16:30:57.622247+00:00",
+    "CoinMarketCap": "2026-11-07T05:00:57.734084+00:00",
     "СберИнвестиции": "2026-11-07T04:30:54.781550+00:00",
     "РБК Крипто": "2026-11-06T15:30:58.427447+00:00",
     "ПРАЙМ": "2026-11-06T20:00:58.644781+00:00",
@@ -1917,7 +1919,7 @@
     "Protos": "2026-11-06T16:30:57.622247+00:00",
     "Агроинвестор": "2026-11-06T16:30:57.622247+00:00",
     "Газпромбанк Инвестиции": "2026-11-06T17:00:59.124054+00:00",
-    "CryptoSlate": "2026-11-07T04:30:54.781550+00:00",
+    "CryptoSlate": "2026-11-07T05:00:57.734084+00:00",
     "CNBC Markets": "2026-11-07T04:30:54.781550+00:00",
     "Natural Gas Intelligence": "2026-11-04T19:30:55.906483+00:00",
     "Правительство России": "2026-11-06T16:30:57.622247+00:00",
@@ -1947,7 +1949,7 @@
     "Interfax": "2026-11-05T16:31:03.442762+00:00",
     "Invest Era": "2026-11-04T07:30:55.763181+00:00",
     "Газпром": "2026-11-06T12:00:56.711620+00:00",
-    "Росстат": "2026-11-04T11:30:56.141285+00:00",
+    "Росстат": "2026-11-07T05:00:57.734084+00:00",
     "Коненков": "2026-11-04T13:01:03.854949+00:00",
     "CNBC Economy": "2026-11-06T14:00:58.795731+00:00",
     "Финам Инвестиции": "2026-11-04T14:30:59.809851+00:00",
@@ -1969,7 +1971,7 @@
     "Truth Social": "2026-11-06T16:30:57.622247+00:00",
     "INVEST ZONE": "2026-11-06T19:00:57.359918+00:00"
   },
-  "catalog_at": "2026-11-07T04:30:54+00:00",
-  "own_hour": "2026-11-06 21",
+  "catalog_at": "2026-11-07T05:00:57+00:00",
+  "own_hour": "2026-11-07 08",
   "digest_alert": "2026-11-05 19:30"
 }
