@@ -1104,7 +1104,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-07T18:00:54.800498+00:00",
+  "breaking_ts": "2026-11-07T18:30:55.346455+00:00",
   "news_now": {
     "day": "2026-11-07",
     "day_count": 2,
@@ -1116,84 +1116,50 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/obschestvo/28295253",
+    "https://www.vedomosti.ru/politics/news/2026/11/07/1243417-rf-ne-trevozhit",
+    "https://tass.ru/sport/28295255",
+    "https://www.rbc.ru/sport/06/11/2026/6ae8564f1cbe5894eaedf3dd",
+    "https://tass.ru/sport/28295251",
+    "https://t.me/markettwits/392414",
+    "https://tass.ru/politika/28295249",
+    "https://www.interfax.ru/world/1127607",
+    "https://tass.ru/proisshestviya/28295247",
+    "https://tass.ru/kosmos/28295245",
+    "https://www.rbc.ru/rbcfreenews/6aee070cdacbc91c5c974a60",
+    "https://www.kommersant.ru/doc/9092006",
+    "https://t.me/banksta/105023",
+    "https://tass.ru/mezhdunarodnaya-panorama/28295243",
+    "https://t.me/invest_zonaa/39320",
+    "https://t.me/BitcoinMagazineTelegram/11021",
+    "https://cryptoslate.com/higher-wages-dont-have-to-mean-higher-inflation-that-could-matter-for-bitcoin/",
+    "https://www.vedomosti.ru/politics/news/2026/11/07/1243426-v-krakove-obyavili-traur",
+    "https://www.interfax.ru/russia/1127606",
+    "https://thedefiant.io/news/regulation/sec-vs-cftc-who-regulates-crypto-in-the-us",
+    "https://tass.ru/proisshestviya/28295239",
+    "https://t.me/cointelegraph/73116",
+    "https://tass.ru/obschestvo/28295237",
+    "https://t.me/forbesrussia/102770",
+    "https://www.rbc.ru/technology_and_media/03/11/2026/6ae992705702fe89b02f5e6a",
+    "https://www.interfax.ru/world/1127605",
+    "https://tass.ru/mezhdunarodnaya-panorama/28295223",
+    "https://www.vedomosti.ru/politics/news/2026/11/07/1243425-sbili-28-bespilotnikov",
+    "https://www.kommersant.ru/doc/9092005",
+    "https://tass.ru/politika/28295231",
+    "https://tass.ru/politika/28295229",
     "https://oilprice.com/Geopolitics/Asia/Trump-Backed-Trade-Corridor-Advances-Despite-Geopolitical-Resistance.html",
+    "https://www.interfax.ru/russia/1127604",
     "https://tass.ru/proisshestviya/28295221",
     "https://www.rbc.ru/politics/07/11/2026/6aef55a1574adeb1ef6b333b",
     "https://www.rbc.ru/sport/03/11/2026/6aea360e75e14a3e5c2332d5",
     "https://tass.ru/sport/28295219",
-    "https://tass.ru/obschestvo/28295217",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295213",
-    "https://tass.ru/kosmos/28295211",
-    "https://t.me/interfaxonline/81284",
-    "https://www.interfax.ru/world/1127603",
-    "https://t.me/rbc_news/160230",
-    "https://tass.ru/obschestvo/28295205",
-    "https://www.cnbc.com/2026/11/07/dave-wehner-meta-fireworks-cfo.html",
-    "https://t.me/FinancialJuice/145495",
-    "https://tass.ru/proisshestviya/28295207",
-    "https://www.rbc.ru/politics/07/11/2026/6aef632fe6803857c9e78a98",
-    "https://www.vedomosti.ru/lifestyle/news/2026/11/07/1243424-sbornaya-rossii-pobedila",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295203",
-    "https://www.rbc.ru/rbcfreenews/6aef625a3993aeaad624519d",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295201",
-    "https://t.me/banksta/105022",
-    "https://tass.ru/obschestvo/28295199",
-    "https://thedefiant.io/news/security/keplr-says-recovery-effort-may-explain-empty-wallet-balances",
-    "https://www.marketwatch.com/story/democrats-big-election-win-revives-a-difficult-social-security-question-who-pays-17ba9448?mod=mw_rss_topstories",
-    "https://t.me/FinancialJuice/145494",
-    "https://t.me/FinancialJuice/145492",
-    "https://t.me/FinancialJuice/145493",
-    "https://www.vedomosti.ru/politics/news/2026/11/07/1243423-grazhdanin-polshi",
-    "https://www.rbc.ru/politics/25/09/2024/66f39b1a9a7947122851c959",
-    "https://tass.ru/ekonomika/28295195",
-    "https://www.interfax.ru/world/1127600",
-    "https://www.kommersant.ru/doc/9092001",
-    "https://t.me/CoinDeskGlobal/25395",
-    "https://tass.ru/sport/28295197",
-    "https://www.coindesk.com/business/2026/11/07/u-s-treasury-moves-to-cut-off-crypto-exchange-mexc-over-usd16-billion-in-alleged-illicit-flows",
-    "https://tass.ru/sport/28295193",
-    "https://www.rbc.ru/politics/07/11/2026/6aeeab7de62600c92ca060e1",
-    "https://t.me/interfaxonline/81283",
-    "https://www.marketwatch.com/story/im-65-and-worth-more-than-5-6-million-can-i-buy-a-200-000-camper-even-though-the-price-feels-crazy-high-55f668f8?mod=mw_rss_topstories",
-    "https://www.interfax.ru/world/1127602",
-    "https://tass.ru/proisshestviya/28295189",
-    "https://t.me/headlines_for_traders/88242",
-    "https://tass.ru/sport/28295191",
-    "https://t.me/proeconomics/20670",
-    "https://t.me/agroinvestor/21710",
-    "https://www.interfax.ru/russia/1127598",
-    "https://www.rbc.ru/rbcfreenews/6a941dea279d0c2045a7b567",
-    "https://tass.ru/obschestvo/28295187"
+    "https://tass.ru/obschestvo/28295217"
   ],
   "ai_dead": {
     "date": "2026-11-07",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-06T18:00:58.226803+00:00",
-      "Иран пригрозил нефтью по $150 и ударами вплоть до Европы"
-    ],
-    [
-      "2026-11-06T18:00:58.226803+00:00",
-      "Путин подтвердил трехсторонние переговоры по Украине 10 ноября в Абу-Даби"
-    ],
-    [
-      "2026-11-06T18:00:58.226803+00:00",
-      "Правительство внесло в Думу законопроект о конвертации накоплений в ПДС"
-    ],
-    [
-      "2026-11-06T18:00:58.226803+00:00",
-      "Акции DraftKings рухнули более чем на 26% из-за прогнозов по рынкам предложений"
-    ],
-    [
-      "2026-11-06T18:00:58.226803+00:00",
-      "Биткоин опустился ниже $75 000 на фоне слабых настроений в криптосекторе"
-    ],
-    [
-      "2026-11-06T18:00:58.226803+00:00",
-      "Microsoft сокращает закупку облачных мощностей у Oracle для ИИ"
-    ],
     [
       "2026-11-06T18:30:56.273004+00:00",
       "Совет директоров «Роснефти» рекомендовал дивиденды 9,44 рубля на акцию"
@@ -1757,6 +1723,22 @@
     [
       "2026-11-07T18:00:54.800498+00:00",
       "Демократы в США планируют пролоббировать пакет помощи Украине на $15 млрд"
+    ],
+    [
+      "2026-11-07T18:30:55.346455+00:00",
+      "Binance сменила финансового директора после взлома на $6 млрд"
+    ],
+    [
+      "2026-11-07T18:30:55.346455+00:00",
+      "Во Франции прошли протесты с участием около 150 тыс. человек"
+    ],
+    [
+      "2026-11-07T18:30:55.346455+00:00",
+      "Два майнера-одиночки добыли блоки Bitcoin на сумму более $230 тыс. каждый"
+    ],
+    [
+      "2026-11-07T18:30:55.346455+00:00",
+      "Число жертв стрельбы в центре Кракова увеличилось до шести человек"
     ]
   ],
   "results_fp": [
@@ -1848,23 +1830,23 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-06T18:30:56.273004+00:00",
-    "Коммерсантъ": "2026-11-07T16:00:57.326314+00:00",
-    "Ведомости": "2026-11-07T15:30:56.666187+00:00",
-    "Интерфакс": "2026-11-07T18:00:54.800498+00:00",
-    "ТАСС": "2026-11-07T18:00:54.800498+00:00",
+    "Коммерсантъ": "2026-11-07T18:30:55.346455+00:00",
+    "Ведомости": "2026-11-07T18:30:55.346455+00:00",
+    "Интерфакс": "2026-11-07T18:30:55.346455+00:00",
+    "ТАСС": "2026-11-07T18:30:55.346455+00:00",
     "CoinDesk": "2026-11-07T18:00:54.800498+00:00",
     "Headlines for Traders": "2026-11-07T07:30:57.618018+00:00",
     "MarketTwits": "2026-11-07T16:30:59.006765+00:00",
     "Сигналы РЦБ": "2026-11-07T04:30:54.781550+00:00",
     "Whale Alert": "2026-11-07T15:00:56.109622+00:00",
-    "РБК": "2026-11-07T18:00:54.800498+00:00",
+    "РБК": "2026-11-07T18:30:55.346455+00:00",
     "Wu Blockchain": "2026-11-07T17:00:55.446226+00:00",
     "Банкста": "2026-11-07T13:01:02.706939+00:00",
     "IF News": "2026-11-07T16:30:59.006765+00:00",
     "bitkogan": "2026-11-06T16:30:57.622247+00:00",
     "CryptoKogan": "2026-11-04T12:00:55.366041+00:00",
     "Energy Today": "2026-11-07T16:00:57.326314+00:00",
-    "Forbes Russia": "2026-11-07T13:01:02.706939+00:00",
+    "Forbes Russia": "2026-11-07T18:30:55.346455+00:00",
     "Frank Media": "2026-11-07T16:30:59.006765+00:00",
     "ForkLog": "2026-11-07T16:30:59.006765+00:00",
     "Decrypt": "2026-11-07T17:30:57.422947+00:00",
@@ -1876,7 +1858,7 @@
     "Walter Bloomberg": "2026-11-07T04:30:54.781550+00:00",
     "Московская биржа": "2026-11-06T08:30:56.552344+00:00",
     "MarketWatch": "2026-11-07T17:30:57.422947+00:00",
-    "Bitcoin Magazine": "2026-11-07T16:30:59.006765+00:00",
+    "Bitcoin Magazine": "2026-11-07T18:30:55.346455+00:00",
     "Watcher Guru": "2026-11-07T11:30:57.557576+00:00",
     "РБК. Главное": "2026-11-07T14:30:55.344989+00:00",
     "The Block": "2026-11-07T17:00:55.446226+00:00",
@@ -1949,7 +1931,7 @@
     "INVEST ZONE": "2026-11-06T19:00:57.359918+00:00",
     "ПАО «Газпром»": "2026-11-07T16:30:59.006765+00:00"
   },
-  "catalog_at": "2026-11-07T18:00:54+00:00",
+  "catalog_at": "2026-11-07T18:30:55+00:00",
   "own_hour": "2026-11-07 21",
   "digest_alert": "2026-11-05 19:30"
 }
