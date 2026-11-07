@@ -1104,52 +1104,66 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-07T17:30:57.422947+00:00",
+  "breaking_ts": "2026-11-07T18:00:54.800498+00:00",
   "news_now": {
     "day": "2026-11-07",
-    "day_count": 1,
+    "day_count": 2,
     "urgent_count": 0,
-    "last": "2026-11-07T17:00:55.446226+00:00",
+    "last": "2026-11-07T18:00:54.800498+00:00",
     "titles": [
-      "Отток капитала из биткоин-ETF достиг $1,28 млрд за неделю"
+      "Отток капитала из биткоин-ETF достиг $1,28 млрд за неделю",
+      "США ввели санкции против биржи MEXC из-за $16 млрд"
     ]
   },
   "news_seen": [
+    "https://oilprice.com/Geopolitics/Asia/Trump-Backed-Trade-Corridor-Advances-Despite-Geopolitical-Resistance.html",
+    "https://tass.ru/proisshestviya/28295221",
+    "https://www.rbc.ru/politics/07/11/2026/6aef55a1574adeb1ef6b333b",
+    "https://www.rbc.ru/sport/03/11/2026/6aea360e75e14a3e5c2332d5",
+    "https://tass.ru/sport/28295219",
+    "https://tass.ru/obschestvo/28295217",
+    "https://tass.ru/mezhdunarodnaya-panorama/28295213",
+    "https://tass.ru/kosmos/28295211",
+    "https://t.me/interfaxonline/81284",
+    "https://www.interfax.ru/world/1127603",
+    "https://t.me/rbc_news/160230",
+    "https://tass.ru/obschestvo/28295205",
+    "https://www.cnbc.com/2026/11/07/dave-wehner-meta-fireworks-cfo.html",
+    "https://t.me/FinancialJuice/145495",
+    "https://tass.ru/proisshestviya/28295207",
+    "https://www.rbc.ru/politics/07/11/2026/6aef632fe6803857c9e78a98",
+    "https://www.vedomosti.ru/lifestyle/news/2026/11/07/1243424-sbornaya-rossii-pobedila",
+    "https://tass.ru/mezhdunarodnaya-panorama/28295203",
+    "https://www.rbc.ru/rbcfreenews/6aef625a3993aeaad624519d",
+    "https://tass.ru/mezhdunarodnaya-panorama/28295201",
+    "https://t.me/banksta/105022",
+    "https://tass.ru/obschestvo/28295199",
+    "https://thedefiant.io/news/security/keplr-says-recovery-effort-may-explain-empty-wallet-balances",
+    "https://www.marketwatch.com/story/democrats-big-election-win-revives-a-difficult-social-security-question-who-pays-17ba9448?mod=mw_rss_topstories",
+    "https://t.me/FinancialJuice/145494",
+    "https://t.me/FinancialJuice/145492",
+    "https://t.me/FinancialJuice/145493",
+    "https://www.vedomosti.ru/politics/news/2026/11/07/1243423-grazhdanin-polshi",
+    "https://www.rbc.ru/politics/25/09/2024/66f39b1a9a7947122851c959",
+    "https://tass.ru/ekonomika/28295195",
+    "https://www.interfax.ru/world/1127600",
+    "https://www.kommersant.ru/doc/9092001",
+    "https://t.me/CoinDeskGlobal/25395",
+    "https://tass.ru/sport/28295197",
+    "https://www.coindesk.com/business/2026/11/07/u-s-treasury-moves-to-cut-off-crypto-exchange-mexc-over-usd16-billion-in-alleged-illicit-flows",
+    "https://tass.ru/sport/28295193",
+    "https://www.rbc.ru/politics/07/11/2026/6aeeab7de62600c92ca060e1",
+    "https://t.me/interfaxonline/81283",
+    "https://www.marketwatch.com/story/im-65-and-worth-more-than-5-6-million-can-i-buy-a-200-000-camper-even-though-the-price-feels-crazy-high-55f668f8?mod=mw_rss_topstories",
+    "https://www.interfax.ru/world/1127602",
+    "https://tass.ru/proisshestviya/28295189",
+    "https://t.me/headlines_for_traders/88242",
+    "https://tass.ru/sport/28295191",
+    "https://t.me/proeconomics/20670",
     "https://t.me/agroinvestor/21710",
+    "https://www.interfax.ru/russia/1127598",
     "https://www.rbc.ru/rbcfreenews/6a941dea279d0c2045a7b567",
-    "https://tass.ru/obschestvo/28295187",
-    "https://www.kommersant.ru/doc/9092000",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295181",
-    "https://www.rbc.ru/rbcfreenews/6ab4a9de881830e17211864d",
-    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
-    "https://tass.ru/politika/28295183",
-    "https://tass.ru/obschestvo/28295179",
-    "https://www.interfax.ru/russia/1127601",
-    "https://tass.ru/proisshestviya/28295169",
-    "https://t.me/forbesrussia/102769",
-    "https://t.me/rbc_news/160229",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295175",
-    "https://www.rbc.ru/society/05/11/2026/6aec714444645bf351561c4f",
-    "https://www.rbc.ru/rbcfreenews/6ae9fa039a79474f7bb29a2d",
-    "https://t.me/invest_zonaa/39319",
-    "https://www.rbc.ru/rbcfreenews/6aef49ece6803857c9e78a79",
-    "https://tass.ru/armiya-i-opk/28295173",
-    "https://tass.ru/sport/28295171",
-    "https://t.me/banksta/105021",
-    "https://www.interfax.ru/russia/1127599",
-    "https://www.rbc.ru/society/07/11/2026/6aef4bcc5da483d04b669cd6",
-    "https://cryptoslate.com/bitcoin-traders-could-mistake-this-binance-data-change-for-a-rush-to-sell/",
-    "https://tass.ru/sport/28295165",
-    "https://www.marketwatch.com/story/the-wealthiest-10-of-americans-are-pulling-ahead-of-everyone-else-this-is-whats-making-them-richer-bd83c2f6?mod=mw_rss_topstories",
-    "https://www.rbc.ru/sport/06/08/2026/6a746ff59a7947bae9aeb07d",
-    "https://tass.ru/sport/28295163",
-    "https://decrypt.co/382768/apple-meta-every-magnificent-seven-stock-opts-out-okx-ice-venue",
-    "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories",
-    "https://www.wsj.com/finance/currencies/the-shadowy-crypto-services-helping-the-binance-hackers-launder-stolen-billions-28641737?mod=rss_markets_main",
-    "https://tass.ru/politika/28295155",
-    "https://www.vedomosti.ru/politics/news/2026/11/07/1243422-ustroivshii-strelbu-bil-v-kamuflyazhe",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295157",
-    "https://tass.ru/armiya-i-opk/28295161"
+    "https://tass.ru/obschestvo/28295187"
   ],
   "ai_dead": {
     "date": "2026-11-07",
@@ -1719,6 +1733,30 @@
     [
       "2026-11-07T17:30:57.422947+00:00",
       "ПВО уничтожила 28 украинских беспилотников над Россией"
+    ],
+    [
+      "2026-11-07T18:00:54.800498+00:00",
+      "США ввели санкции против биржи MEXC из-за транзакций на $16 млрд"
+    ],
+    [
+      "2026-11-07T18:00:54.800498+00:00",
+      "Вблизи Ормузского пролива подорвался нефтяной танкер"
+    ],
+    [
+      "2026-11-07T18:00:54.800498+00:00",
+      "Иран планирует построить газопровод в Россию мощностью до 110 млрд куб. м"
+    ],
+    [
+      "2026-11-07T18:00:54.800498+00:00",
+      "Финдиректор Meta Дэйв Венер уходит в стартап Fireworks"
+    ],
+    [
+      "2026-11-07T18:00:54.800498+00:00",
+      "Во Франции 146 тыс. человек вышли на протесты против роста цен"
+    ],
+    [
+      "2026-11-07T18:00:54.800498+00:00",
+      "Демократы в США планируют пролоббировать пакет помощи Украине на $15 млрд"
     ]
   ],
   "results_fp": [
@@ -1812,14 +1850,14 @@
     "OilPrice": "2026-11-06T18:30:56.273004+00:00",
     "Коммерсантъ": "2026-11-07T16:00:57.326314+00:00",
     "Ведомости": "2026-11-07T15:30:56.666187+00:00",
-    "Интерфакс": "2026-11-07T17:30:57.422947+00:00",
-    "ТАСС": "2026-11-07T17:30:57.422947+00:00",
-    "CoinDesk": "2026-11-07T17:00:55.446226+00:00",
+    "Интерфакс": "2026-11-07T18:00:54.800498+00:00",
+    "ТАСС": "2026-11-07T18:00:54.800498+00:00",
+    "CoinDesk": "2026-11-07T18:00:54.800498+00:00",
     "Headlines for Traders": "2026-11-07T07:30:57.618018+00:00",
     "MarketTwits": "2026-11-07T16:30:59.006765+00:00",
     "Сигналы РЦБ": "2026-11-07T04:30:54.781550+00:00",
     "Whale Alert": "2026-11-07T15:00:56.109622+00:00",
-    "РБК": "2026-11-07T15:30:56.666187+00:00",
+    "РБК": "2026-11-07T18:00:54.800498+00:00",
     "Wu Blockchain": "2026-11-07T17:00:55.446226+00:00",
     "Банкста": "2026-11-07T13:01:02.706939+00:00",
     "IF News": "2026-11-07T16:30:59.006765+00:00",
@@ -1859,7 +1897,7 @@
     "Агроинвестор": "2026-11-07T17:00:55.446226+00:00",
     "Газпромбанк Инвестиции": "2026-11-06T17:00:59.124054+00:00",
     "CryptoSlate": "2026-11-07T17:30:57.422947+00:00",
-    "CNBC Markets": "2026-11-07T16:30:59.006765+00:00",
+    "CNBC Markets": "2026-11-07T18:00:54.800498+00:00",
     "Natural Gas Intelligence": "2026-11-04T19:30:55.906483+00:00",
     "Правительство России": "2026-11-06T16:30:57.622247+00:00",
     "glassnode": "2026-11-03T04:31:02.511972+00:00",
@@ -1911,7 +1949,7 @@
     "INVEST ZONE": "2026-11-06T19:00:57.359918+00:00",
     "ПАО «Газпром»": "2026-11-07T16:30:59.006765+00:00"
   },
-  "catalog_at": "2026-11-07T17:30:57+00:00",
-  "own_hour": "2026-11-07 20",
+  "catalog_at": "2026-11-07T18:00:54+00:00",
+  "own_hour": "2026-11-07 21",
   "digest_alert": "2026-11-05 19:30"
 }
