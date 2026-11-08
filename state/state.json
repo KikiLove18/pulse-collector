@@ -1105,7 +1105,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-08T05:30:55.949432+00:00",
+  "breaking_ts": "2026-11-08T06:02:47.889444+00:00",
   "news_now": {
     "day": "2026-11-08",
     "day_count": 0,
@@ -1114,80 +1114,51 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/armiya-i-opk/28295713",
-    "https://tass.ru/sport/28295711",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243449-minoboroni-soobschilo",
-    "https://tass.ru/obschestvo/28295637",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243448-wp-kushner-nazval",
-    "https://tass.ru/armiya-i-opk/28295705",
-    "https://tass.ru/armiya-i-opk/28295703",
-    "https://www.interfax.ru/russia/1127635",
-    "https://t.me/headlines_for_traders/88248",
-    "https://tass.ru/proisshestviya/28295701",
-    "https://t.me/interfaxonline/81294",
-    "https://t.me/FinancialJuice/145526",
-    "https://tass.ru/sport/28295697",
-    "https://www.kommersant.ru/doc/9092043",
-    "https://t.me/rbc_news/160235",
-    "https://t.me/headlines_for_traders/88247",
-    "https://tass.ru/obschestvo/28295691",
-    "https://tass.ru/ekonomika/28295689",
-    "https://www.vedomosti.ru/business/news/2026/11/08/1243447-rossiya-v-sentyabre",
-    "https://t.me/FinancialJuice/145525",
-    "https://tass.ru/sport/28295687",
-    "https://tass.ru/armiya-i-opk/28295685",
-    "https://tass.ru/obschestvo/28295677",
-    "https://tass.ru/armiya-i-opk/28295681",
-    "https://www.rbc.ru/sport/11/10/2026/6acb6ec19a7947de2d047f17",
-    "https://tass.ru/sport/28295683",
-    "https://t.me/FinancialJuice/145524",
-    "https://t.me/forklog/50584",
-    "https://t.me/banksta/105034",
-    "https://www.rbc.ru/education/05/11/2026/6adf37789a79472f715407bc",
-    "https://t.me/headlines_for_traders/88246",
-    "https://www.rbc.ru/rbcfreenews/6aedf3b5e824b280460c9627"
+    "https://t.me/investfuture/15489",
+    "https://t.me/rbc_news/160238",
+    "https://t.me/headlines_for_traders/88250",
+    "https://tass.ru/sport/28295749",
+    "https://www.kommersant.ru/doc/9092050",
+    "https://www.interfax.ru/russia/1127639",
+    "https://tass.ru/mezhdunarodnaya-panorama/28295747",
+    "https://tass.ru/mezhdunarodnaya-panorama/28295745",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243452-mid-rf-berlin-ne-stremitsya",
+    "https://www.rbc.ru/rbcfreenews/6ad98326046637335410b06d",
+    "https://tass.ru/armiya-i-opk/28295741",
+    "https://www.interfax.ru/world/1127638",
+    "https://tass.ru/armiya-i-opk/28295739",
+    "https://www.interfax.ru/world/1127636",
+    "https://tass.ru/sport/28295735",
+    "https://t.me/rbc_news/160237",
+    "https://tass.ru/obschestvo/28295737",
+    "https://www.rbc.ru/politics/07/11/2026/6aeec21fc1c74b39a63143da",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243451-sili-pvo",
+    "https://tass.ru/obschestvo/28295733",
+    "https://www.rbc.ru/politics/03/11/2026/6ae8a59d234eac52f49a0b18",
+    "https://t.me/interfaxonline/81295",
+    "https://tass.ru/obschestvo/28295727",
+    "https://tass.ru/obschestvo/28295715",
+    "https://www.interfax.ru/russia/1127637",
+    "https://www.rbc.ru/rbcfreenews/6af00a14a5387231a9b6ea86",
+    "https://tass.ru/sport/28295731",
+    "https://tass.ru/politika/28295729",
+    "https://www.rbc.ru/photoslider/6af00a179a7947a53c32265f",
+    "https://tass.ru/armiya-i-opk/28295723",
+    "https://t.me/FinancialJuice/145527",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://tass.ru/mezhdunarodnaya-panorama/28295719",
+    "https://t.me/headlines_for_traders/88249",
+    "https://www.rbc.ru/sport/01/11/2026/6ae74f8576ddd207a528d836",
+    "https://tass.ru/obschestvo/28295717",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243450-narodnii-artist",
+    "https://t.me/rbc_news/160236",
+    "https://tass.ru/armiya-i-opk/28295713"
   ],
   "ai_dead": {
     "date": "2026-11-07",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-07T05:31:00.448270+00:00",
-      "Росстат зафиксировал дефляцию в России на уровне 0,04% за неделю"
-    ],
-    [
-      "2026-11-07T05:31:00.448270+00:00",
-      "Путин подтвердил проведение трехсторонних переговоров по Украине 10 ноября"
-    ],
-    [
-      "2026-11-07T05:31:00.448270+00:00",
-      "Киев получил $49,4 млрд от G7 за счет доходов от российских активов"
-    ],
-    [
-      "2026-11-07T05:31:00.448270+00:00",
-      "Над Ростовской областью за ночь уничтожили более 50 беспилотников"
-    ],
-    [
-      "2026-11-07T05:31:00.448270+00:00",
-      "Кирилл Капризов первым в НХЛ набрал 30 очков в текущем сезоне"
-    ],
-    [
-      "2026-11-07T06:00:58.152713+00:00",
-      "Минобороны заявило об уничтожении 411 украинских дронов за ночь"
-    ],
-    [
-      "2026-11-07T06:00:58.152713+00:00",
-      "ВС РФ нанесли ночной удар по объектам ВПК и энергетики в Киеве"
-    ],
-    [
-      "2026-11-07T06:00:58.152713+00:00",
-      "В Госдуму внесли законопроект об автоконвертации накоплений в ПДС"
-    ],
-    [
-      "2026-11-07T06:00:58.152713+00:00",
-      "Акции «Циана» выросли на 18,8% на фоне планов «Т-Технологий» о выкупе"
-    ],
     [
       "2026-11-07T06:30:55.177783+00:00",
       "Годовая инфляция в РФ замедлилась до 6,95%"
@@ -1727,6 +1698,30 @@
     [
       "2026-11-08T05:30:55.949432+00:00",
       "Над российскими регионами за ночь сбили 142 беспилотника"
+    ],
+    [
+      "2026-11-08T06:02:47.889444+00:00",
+      "Силы ПВО за ночь уничтожили 142 украинских беспилотника"
+    ],
+    [
+      "2026-11-08T06:02:47.889444+00:00",
+      "США попросили Китай помочь в урегулировании конфликта с Ираном"
+    ],
+    [
+      "2026-11-08T06:02:47.889444+00:00",
+      "В Крыму ограничили электроснабжение из-за аварии на сетях"
+    ],
+    [
+      "2026-11-08T06:02:47.889444+00:00",
+      "Путин расширил управление активами Japan Tobacco"
+    ],
+    [
+      "2026-11-08T06:02:47.889444+00:00",
+      "Месси стал лучшим бомбардиром регулярного чемпионата MLS"
+    ],
+    [
+      "2026-11-08T06:02:47.889444+00:00",
+      "Замглавы аппарата Белого дома Ричард Уолтерс покидает пост"
     ]
   ],
   "results_fp": [
@@ -1818,16 +1813,16 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-08T04:30:55.987603+00:00",
-    "Коммерсантъ": "2026-11-08T05:30:55.949432+00:00",
-    "Ведомости": "2026-11-08T05:30:55.949432+00:00",
-    "Интерфакс": "2026-11-08T05:30:55.949432+00:00",
-    "ТАСС": "2026-11-08T05:30:55.949432+00:00",
+    "Коммерсантъ": "2026-11-08T06:02:47.889444+00:00",
+    "Ведомости": "2026-11-08T06:02:47.889444+00:00",
+    "Интерфакс": "2026-11-08T06:02:47.889444+00:00",
+    "ТАСС": "2026-11-08T06:02:47.889444+00:00",
     "CoinDesk": "2026-11-08T04:30:55.987603+00:00",
-    "Headlines for Traders": "2026-11-08T05:30:55.949432+00:00",
+    "Headlines for Traders": "2026-11-08T06:02:47.889444+00:00",
     "MarketTwits": "2026-11-07T20:30:59.702520+00:00",
     "Сигналы РЦБ": "2026-11-07T20:30:59.702520+00:00",
     "Whale Alert": "2026-11-07T15:00:56.109622+00:00",
-    "РБК": "2026-11-08T05:00:58.282382+00:00",
+    "РБК": "2026-11-08T06:02:47.889444+00:00",
     "Wu Blockchain": "2026-11-08T05:00:58.282382+00:00",
     "Банкста": "2026-11-08T04:30:55.987603+00:00",
     "IF News": "2026-11-07T19:30:57.464115+00:00",
@@ -1848,7 +1843,7 @@
     "MarketWatch": "2026-11-07T17:30:57.422947+00:00",
     "Bitcoin Magazine": "2026-11-07T18:30:55.346455+00:00",
     "Watcher Guru": "2026-11-08T04:30:55.987603+00:00",
-    "РБК. Главное": "2026-11-08T05:30:55.949432+00:00",
+    "РБК. Главное": "2026-11-08T06:02:47.889444+00:00",
     "The Block": "2026-11-08T04:30:55.987603+00:00",
     "Нефть и Капитал": "2026-11-07T16:30:59.006765+00:00",
     "MMI": "2026-11-06T08:30:56.552344+00:00",
@@ -1920,7 +1915,7 @@
     "ПАО «Газпром»": "2026-11-07T16:30:59.006765+00:00",
     "CoinDesk Global": "2026-11-08T04:30:55.987603+00:00"
   },
-  "catalog_at": "2026-11-08T05:30:55+00:00",
-  "own_hour": "2026-11-08 08",
+  "catalog_at": "2026-11-08T06:02:47+00:00",
+  "own_hour": "2026-11-08 09",
   "digest_alert": "2026-11-05 19:30"
 }
