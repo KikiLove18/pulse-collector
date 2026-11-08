@@ -1105,7 +1105,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-08T08:00:55.358368+00:00",
+  "breaking_ts": "2026-11-08T08:30:55.838823+00:00",
   "news_now": {
     "day": "2026-11-08",
     "day_count": 1,
@@ -1116,94 +1116,60 @@
     ]
   },
   "news_seen": [
+    "https://t.me/headlines_for_traders/88256",
+    "https://t.me/rbc_news/160244",
+    "https://tass.ru/politika/28295917",
+    "https://t.me/forbesrussia/102772",
+    "https://tass.ru/proisshestviya/28295915",
+    "https://www.interfax.ru/russia/1127653",
+    "https://t.me/nainspire/5673",
+    "https://www.rbc.ru/sport/06/11/2026/6aed7e114cb9bd7ea0d75cef",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243459-zamglavi-mid",
+    "https://t.me/forklog/50585",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243460-zaporozhskaya-aes-poteryala",
+    "https://tass.ru/sport/28295909",
+    "https://t.me/interfaxonline/81301",
+    "https://tass.ru/politika/28295905",
+    "https://tass.ru/obschestvo/28295907",
+    "https://t.me/if_market_news/86662",
+    "https://t.me/banksta/105037",
+    "https://www.rbc.ru/rbcfreenews/6a1104f49a79476a7d5e03bb",
+    "https://t.me/invest_zonaa/39322",
+    "https://www.kommersant.ru/doc/9092092",
+    "https://tass.ru/ekonomika/28295903",
+    "https://tass.ru/mezhdunarodnaya-panorama/28295899",
+    "https://tass.ru/info/28295897",
+    "https://cointelegraph.com/news/binances-finance-chief-kaiser-ng-to-leave-company-report-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://www.interfax.ru/russia/1127652",
+    "https://www.rbc.ru/rbcfreenews/693cf6ec9a79470554ac5145",
+    "https://www.interfax.ru/russia/1127651",
+    "https://t.me/alfa_investments/8555",
+    "https://www.rbc.ru/society/20/04/2026/69e611ab9a7947a60a051934",
+    "https://tass.ru/proisshestviya/28295901",
+    "https://t.me/markettwits/392432",
+    "https://t.me/headlines_for_traders/88255",
+    "https://t.me/if_market_news/86660",
+    "https://www.rbc.ru/society/08/11/2026/6aefa3bc3c02e1f36c5b67ff",
+    "https://tass.ru/ekonomika/28295895",
+    "https://t.me/government_rus/34022",
+    "https://t.me/energytodaygroup/32668",
+    "https://www.kommersant.ru/doc/9092085",
+    "https://t.me/gpb_investments/25218",
     "https://t.me/rbc_news/160243",
+    "https://tass.ru/obschestvo/28295885",
+    "https://tass.ru/obschestvo/28293275",
     "https://tass.ru/obschestvo/28295887",
     "https://t.me/whale_alert_io/104689",
     "https://www.rbc.ru/rbcfreenews/6ae835b91599c549eb70619d",
     "https://www.rbc.ru/politics/08/11/2026/6af029675b114771fd2e0711",
-    "https://t.me/markettwits/392431",
-    "https://tass.ru/proisshestviya/28295875",
-    "https://www.interfax.ru/russia/1127649",
-    "https://t.me/interfaxonline/81300",
-    "https://tass.ru/proisshestviya/28295881",
-    "https://t.me/forbesrussia/102771",
-    "https://www.rbc.ru/sport/06/11/2026/6aedce33a563aa1fde844f0d",
-    "https://www.kommersant.ru/doc/9092082",
-    "https://tass.ru/proisshestviya/28295879",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295877",
-    "https://tass.ru/proisshestviya/28295871",
-    "https://tass.ru/politika/28295873",
-    "https://t.me/minec_russia/13548",
-    "https://www.interfax.ru/russia/1127648",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243458-mid-rf-bryussel",
-    "https://t.me/markettwits/392430",
-    "https://t.me/interfaxonline/81299",
-    "https://tass.ru/proisshestviya/28295867",
-    "https://t.me/rbc_news/160242",
-    "https://www.kommersant.ru/doc/9092081",
-    "https://tass.ru/obschestvo/28295861",
-    "https://www.sport-interfax.ru/1127647",
-    "https://tass.ru/obschestvo/28295843",
-    "https://t.me/expert_mag/11225",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295857",
-    "https://t.me/headlines_for_traders/88254",
-    "https://tass.ru/proisshestviya/28295859",
-    "https://www.rbc.ru/rbcfreenews/6ae30d6106baddf5b24e13c5",
-    "https://t.me/banksta/105036",
-    "https://www.rbc.ru/rbcfreenews/6ae2719f6e4399aa2659bf81",
-    "https://www.kommersant.ru/doc/9092078",
-    "https://t.me/markettwits/392429",
-    "https://www.rbc.ru/politics/04/05/2023/6453319b9a79471637746925"
+    "https://www.interfax.ru/moscow/1127650",
+    "https://t.me/markettwits/392431"
   ],
   "ai_dead": {
     "date": "2026-11-08",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-07T08:01:01.500313+00:00",
-      "Кремль назвал состав делегации РФ на переговорах в Абу-Даби"
-    ],
-    [
-      "2026-11-07T08:01:01.500313+00:00",
-      "Американский рынок акций упал на фоне победы демократов"
-    ],
-    [
-      "2026-11-07T08:01:01.500313+00:00",
-      "Выплаты агростраховщиков по поголовью скота выросли на 85%"
-    ],
-    [
-      "2026-11-07T08:01:01.500313+00:00",
-      "Минобороны сообщило о перехвате 411 дронов над регионами России"
-    ],
-    [
-      "2026-11-07T08:01:01.500313+00:00",
-      "Эстония построит завод по производству боеприпасов с Турцией"
-    ],
-    [
-      "2026-11-07T08:01:01.500313+00:00",
-      "Цена якутского голубого алмаза после огранки может превысить $1 млн"
-    ],
-    [
-      "2026-11-07T08:30:55.735546+00:00",
-      "Соцфонд: средняя пенсия по старости в РФ превысила 27,3 тыс. рублей"
-    ],
-    [
-      "2026-11-07T08:30:55.735546+00:00",
-      "Финансирование льготных автокредитов в 2027 г. могут повысить"
-    ],
-    [
-      "2026-11-07T08:30:55.735546+00:00",
-      "Аналитики представили прогнозы цен на золото и серебро на 2027 год"
-    ],
-    [
-      "2026-11-07T08:30:55.735546+00:00",
-      "Румыния потребовала от Rheinmetall €8,7 млн за задержку ПВО"
-    ],
-    [
-      "2026-11-07T08:30:55.735546+00:00",
-      "Выручка Inter IKEA Group за год упала на 0,7% до 43,8 млрд евро"
-    ],
     [
       "2026-11-07T09:00:57.861146+00:00",
       "Binance France закроет счета клиентов к 31 декабря 2026 года"
@@ -1743,6 +1709,22 @@
     [
       "2026-11-08T08:00:55.358368+00:00",
       "Ученые предложили использовать солнечную энергию для производства аммиака"
+    ],
+    [
+      "2026-11-08T08:30:55.838823+00:00",
+      "В ТОР «Хабаровск» создадут кластер с инвестициями более 667 млрд рублей"
+    ],
+    [
+      "2026-11-08T08:30:55.838823+00:00",
+      "МГКЛ допустила невыплату купона по облигациям на 20,1 млн рублей"
+    ],
+    [
+      "2026-11-08T08:30:55.838823+00:00",
+      "Запорожская АЭС потеряла внешнее энергоснабжение из-за повреждения линии"
+    ],
+    [
+      "2026-11-08T08:30:55.838823+00:00",
+      "Оппозиция в Израиле получила шанс сформировать новое правительство"
     ]
   ],
   "results_fp": [
@@ -1835,12 +1817,12 @@
   "feed_src": {
     "OilPrice": "2026-11-08T04:30:55.987603+00:00",
     "Коммерсантъ": "2026-11-08T08:00:55.358368+00:00",
-    "Ведомости": "2026-11-08T06:02:47.889444+00:00",
-    "Интерфакс": "2026-11-08T08:00:55.358368+00:00",
+    "Ведомости": "2026-11-08T08:30:55.838823+00:00",
+    "Интерфакс": "2026-11-08T08:30:55.838823+00:00",
     "ТАСС": "2026-11-08T08:00:55.358368+00:00",
     "CoinDesk": "2026-11-08T04:30:55.987603+00:00",
-    "Headlines for Traders": "2026-11-08T08:00:55.358368+00:00",
-    "MarketTwits": "2026-11-07T20:30:59.702520+00:00",
+    "Headlines for Traders": "2026-11-08T08:30:55.838823+00:00",
+    "MarketTwits": "2026-11-08T08:30:55.838823+00:00",
     "Сигналы РЦБ": "2026-11-07T20:30:59.702520+00:00",
     "Whale Alert": "2026-11-08T08:00:55.358368+00:00",
     "РБК": "2026-11-08T08:00:55.358368+00:00",
@@ -1885,7 +1867,7 @@
     "CryptoSlate": "2026-11-08T04:30:55.987603+00:00",
     "CNBC Markets": "2026-11-08T04:30:55.987603+00:00",
     "Natural Gas Intelligence": "2026-11-04T19:30:55.906483+00:00",
-    "Правительство России": "2026-11-06T16:30:57.622247+00:00",
+    "Правительство России": "2026-11-08T08:30:55.838823+00:00",
     "glassnode": "2026-11-08T04:30:55.987603+00:00",
     "Минэкономразвития": "2026-11-08T08:00:55.358368+00:00",
     "Прайм": "2026-11-07T04:30:54.781550+00:00",
@@ -1936,7 +1918,7 @@
     "ПАО «Газпром»": "2026-11-07T16:30:59.006765+00:00",
     "CoinDesk Global": "2026-11-08T04:30:55.987603+00:00"
   },
-  "catalog_at": "2026-11-08T08:00:55+00:00",
+  "catalog_at": "2026-11-08T08:30:55+00:00",
   "own_hour": "2026-11-08 11",
   "digest_alert": "2026-11-05 19:30"
 }
