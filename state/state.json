@@ -1105,7 +1105,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-08T06:02:47.889444+00:00",
+  "breaking_ts": "2026-11-08T06:30:56.831045+00:00",
   "news_now": {
     "day": "2026-11-08",
     "day_count": 0,
@@ -1114,71 +1114,40 @@
     "titles": []
   },
   "news_seen": [
+    "https://t.me/bitkogan/29534",
+    "https://www.kommersant.ru/doc/9092058",
+    "https://tass.ru/obschestvo/28295761",
+    "https://t.me/energytodaygroup/32667",
+    "https://www.rbc.ru/rbcfreenews/6aeea88d5b36bc7c245dc3c5",
+    "https://t.me/rbc_news/160239",
+    "https://tass.ru/proisshestviya/28295775",
+    "https://t.me/banksta/105035",
+    "https://tass.ru/proisshestviya/28295771",
+    "https://www.vedomosti.ru/society/news/2026/11/08/1243453-v-krimu-iz-za-avarii",
+    "https://t.me/headlines_for_traders/88251",
+    "https://tass.ru/obschestvo/28295767",
+    "https://tass.ru/obschestvo/28295769",
+    "https://www.interfax.ru/russia/1127641",
+    "https://tass.ru/kosmos/28295765",
+    "https://tass.ru/sport/28295763",
+    "https://t.me/FinancialJuice/145528",
+    "https://t.me/interfaxonline/81296",
+    "https://tass.ru/proisshestviya/28295755",
+    "https://tass.ru/ekonomika/28295759",
+    "https://tass.ru/ekonomika/28295757",
     "https://t.me/investfuture/15489",
     "https://t.me/rbc_news/160238",
     "https://t.me/headlines_for_traders/88250",
+    "https://tass.ru/sport/28295751",
     "https://tass.ru/sport/28295749",
     "https://www.kommersant.ru/doc/9092050",
-    "https://www.interfax.ru/russia/1127639",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295747",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295745",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243452-mid-rf-berlin-ne-stremitsya",
-    "https://www.rbc.ru/rbcfreenews/6ad98326046637335410b06d",
-    "https://tass.ru/armiya-i-opk/28295741",
-    "https://www.interfax.ru/world/1127638",
-    "https://tass.ru/armiya-i-opk/28295739",
-    "https://www.interfax.ru/world/1127636",
-    "https://tass.ru/sport/28295735",
-    "https://t.me/rbc_news/160237",
-    "https://tass.ru/obschestvo/28295737",
-    "https://www.rbc.ru/politics/07/11/2026/6aeec21fc1c74b39a63143da",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243451-sili-pvo",
-    "https://tass.ru/obschestvo/28295733",
-    "https://www.rbc.ru/politics/03/11/2026/6ae8a59d234eac52f49a0b18",
-    "https://t.me/interfaxonline/81295",
-    "https://tass.ru/obschestvo/28295727",
-    "https://tass.ru/obschestvo/28295715",
-    "https://www.interfax.ru/russia/1127637",
-    "https://www.rbc.ru/rbcfreenews/6af00a14a5387231a9b6ea86",
-    "https://tass.ru/sport/28295731",
-    "https://tass.ru/politika/28295729",
-    "https://www.rbc.ru/photoslider/6af00a179a7947a53c32265f",
-    "https://tass.ru/armiya-i-opk/28295723",
-    "https://t.me/FinancialJuice/145527",
-    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295719",
-    "https://t.me/headlines_for_traders/88249",
-    "https://www.rbc.ru/sport/01/11/2026/6ae74f8576ddd207a528d836",
-    "https://tass.ru/obschestvo/28295717",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243450-narodnii-artist",
-    "https://t.me/rbc_news/160236",
-    "https://tass.ru/armiya-i-opk/28295713"
+    "https://www.interfax.ru/russia/1127640"
   ],
   "ai_dead": {
     "date": "2026-11-07",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-07T06:30:55.177783+00:00",
-      "Годовая инфляция в РФ замедлилась до 6,95%"
-    ],
-    [
-      "2026-11-07T06:30:55.177783+00:00",
-      "США выплатят до $20 млн за данные по ядерной программе Ирана"
-    ],
-    [
-      "2026-11-07T06:30:55.177783+00:00",
-      "Keplr приостановил авторизацию через Google и Apple из-за взлома"
-    ],
-    [
-      "2026-11-07T06:30:55.177783+00:00",
-      "Petrobras инвестирует $2,5 млрд в бурение скважин в Бразилии"
-    ],
-    [
-      "2026-11-07T06:30:55.177783+00:00",
-      "Трамп допустил кадровые перестановки в администрации США"
-    ],
     [
       "2026-11-07T07:00:57.774383+00:00",
       "В России зафиксирована недельная дефляция 0,04%"
@@ -1722,6 +1691,18 @@
     [
       "2026-11-08T06:02:47.889444+00:00",
       "Замглавы аппарата Белого дома Ричард Уолтерс покидает пост"
+    ],
+    [
+      "2026-11-08T06:30:56.831045+00:00",
+      "Европа отобрала из хранилищ 5% закачанного за лето газа"
+    ],
+    [
+      "2026-11-08T06:30:56.831045+00:00",
+      "Демократы в Конгрессе США готовят пакет помощи Украине на $15 млрд"
+    ],
+    [
+      "2026-11-08T06:30:56.831045+00:00",
+      "Минобороны РФ сообщило об ударе по электроподстанции в Житомирской области"
     ]
   ],
   "results_fp": [
@@ -1815,8 +1796,8 @@
     "OilPrice": "2026-11-08T04:30:55.987603+00:00",
     "Коммерсантъ": "2026-11-08T06:02:47.889444+00:00",
     "Ведомости": "2026-11-08T06:02:47.889444+00:00",
-    "Интерфакс": "2026-11-08T06:02:47.889444+00:00",
-    "ТАСС": "2026-11-08T06:02:47.889444+00:00",
+    "Интерфакс": "2026-11-08T06:30:56.831045+00:00",
+    "ТАСС": "2026-11-08T06:30:56.831045+00:00",
     "CoinDesk": "2026-11-08T04:30:55.987603+00:00",
     "Headlines for Traders": "2026-11-08T06:02:47.889444+00:00",
     "MarketTwits": "2026-11-07T20:30:59.702520+00:00",
@@ -1915,7 +1896,7 @@
     "ПАО «Газпром»": "2026-11-07T16:30:59.006765+00:00",
     "CoinDesk Global": "2026-11-08T04:30:55.987603+00:00"
   },
-  "catalog_at": "2026-11-08T06:02:47+00:00",
+  "catalog_at": "2026-11-08T06:30:56+00:00",
   "own_hour": "2026-11-08 09",
   "digest_alert": "2026-11-05 19:30"
 }
