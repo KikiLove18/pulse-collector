@@ -1105,60 +1105,58 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-08T07:30:58.231024+00:00",
+  "breaking_ts": "2026-11-08T08:00:55.358368+00:00",
   "news_now": {
     "day": "2026-11-08",
-    "day_count": 0,
+    "day_count": 1,
     "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "last": "2026-11-08T08:00:55.358368+00:00",
+    "titles": [
+      "За покупку криптовалюты через P2P могут ввести штрафы"
+    ]
   },
   "news_seen": [
+    "https://t.me/rbc_news/160243",
+    "https://tass.ru/obschestvo/28295887",
+    "https://t.me/whale_alert_io/104689",
+    "https://www.rbc.ru/rbcfreenews/6ae835b91599c549eb70619d",
+    "https://www.rbc.ru/politics/08/11/2026/6af029675b114771fd2e0711",
+    "https://t.me/markettwits/392431",
+    "https://tass.ru/proisshestviya/28295875",
+    "https://www.interfax.ru/russia/1127649",
+    "https://t.me/interfaxonline/81300",
+    "https://tass.ru/proisshestviya/28295881",
+    "https://t.me/forbesrussia/102771",
+    "https://www.rbc.ru/sport/06/11/2026/6aedce33a563aa1fde844f0d",
+    "https://www.kommersant.ru/doc/9092082",
+    "https://tass.ru/proisshestviya/28295879",
+    "https://tass.ru/mezhdunarodnaya-panorama/28295877",
+    "https://tass.ru/proisshestviya/28295871",
+    "https://tass.ru/politika/28295873",
+    "https://t.me/minec_russia/13548",
+    "https://www.interfax.ru/russia/1127648",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243458-mid-rf-bryussel",
+    "https://t.me/markettwits/392430",
+    "https://t.me/interfaxonline/81299",
+    "https://tass.ru/proisshestviya/28295867",
+    "https://t.me/rbc_news/160242",
+    "https://www.kommersant.ru/doc/9092081",
+    "https://tass.ru/obschestvo/28295861",
+    "https://www.sport-interfax.ru/1127647",
+    "https://tass.ru/obschestvo/28295843",
+    "https://t.me/expert_mag/11225",
+    "https://tass.ru/mezhdunarodnaya-panorama/28295857",
+    "https://t.me/headlines_for_traders/88254",
     "https://tass.ru/proisshestviya/28295859",
     "https://www.rbc.ru/rbcfreenews/6ae30d6106baddf5b24e13c5",
     "https://t.me/banksta/105036",
     "https://www.rbc.ru/rbcfreenews/6ae2719f6e4399aa2659bf81",
     "https://www.kommersant.ru/doc/9092078",
     "https://t.me/markettwits/392429",
-    "https://www.rbc.ru/politics/04/05/2023/6453319b9a79471637746925",
-    "https://tass.ru/proisshestviya/28295851",
-    "https://tass.ru/sport/28295853",
-    "https://www.rbc.ru/rbcfreenews/5a260ad69a7947e43f2df944",
-    "https://t.me/markettwits/392428",
-    "https://www.rbc.ru/politics/07/04/2026/69d4cf669a7947269bdd498a",
-    "https://www.vedomosti.ru/society/news/2026/11/08/1243457-voz-podtverzhdenii",
-    "https://tass.ru/armiya-i-opk/28295849",
-    "https://tass.ru/sport/28295841",
-    "https://www.kommersant.ru/doc/9092077",
-    "https://tass.ru/proisshestviya/28295847",
-    "https://t.me/whale_alert_io/104688",
-    "https://www.sport-interfax.ru/1127646",
-    "https://t.me/markettwits/392427",
-    "https://tass.ru/armiya-i-opk/28295845",
-    "https://tass.ru/armiya-i-opk/28295807",
-    "https://tass.ru/armiya-i-opk/28295835",
-    "https://www.kommersant.ru/doc/9092074",
-    "https://t.me/markettwits/392426",
-    "https://tass.ru/ekonomika/28295805",
-    "https://www.rbc.ru/technology_and_media/28/09/2025/68d6a4fc9a79474ed4900e63",
-    "https://www.kommersant.ru/doc/9092073",
-    "https://tass.ru/obschestvo/28295803",
-    "https://t.me/markettwits/392425",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243456-cnn-glava-ufc-uait",
-    "https://t.me/russianmacro/23705",
-    "https://t.me/headlines_for_traders/88253",
-    "https://t.me/rbc_news/160241",
-    "https://www.rbc.ru/rbcfreenews/6adf018852a7b61651ffed2d",
-    "https://www.rbc.ru/economics/07/11/2026/6aec207957b0bd02570b2bf9",
-    "https://www.rbc.ru/quote/08/11/2026/6ae8503d9a794769156a01f4",
-    "https://t.me/incrypted/33263",
-    "https://tass.ru/interviews/28291987",
-    "https://www.kommersant.ru/doc/9092071",
-    "https://tass.ru/proisshestviya/28295799",
-    "https://tass.ru/obschestvo/28295801"
+    "https://www.rbc.ru/politics/04/05/2023/6453319b9a79471637746925"
   ],
   "ai_dead": {
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "models": []
   },
   "feed_recent": [
@@ -1721,6 +1719,30 @@
     [
       "2026-11-08T07:30:58.231024+00:00",
       "В Оманском заливе спасли 22 человека с горящего судна"
+    ],
+    [
+      "2026-11-08T08:00:55.358368+00:00",
+      "В России могут ввести штрафы до 40% за покупку криптовалюты через P2P"
+    ],
+    [
+      "2026-11-08T08:00:55.358368+00:00",
+      "Keplr приостановил входы через Google и Apple после взлома Web3Auth"
+    ],
+    [
+      "2026-11-08T08:00:55.358368+00:00",
+      "Запорожская АЭС потеряла внешнее электроснабжение из-за повреждения ЛЭП"
+    ],
+    [
+      "2026-11-08T08:00:55.358368+00:00",
+      "НАТО столкнулось с дефицитом около €7 млрд на военную помощь Украине"
+    ],
+    [
+      "2026-11-08T08:00:55.358368+00:00",
+      "Российские фигуристы завоевали серебро и бронзу на Гран-при в Китае"
+    ],
+    [
+      "2026-11-08T08:00:55.358368+00:00",
+      "Ученые предложили использовать солнечную энергию для производства аммиака"
     ]
   ],
   "results_fp": [
@@ -1784,7 +1806,7 @@
     ]
   },
   "pro_daily": "2026-11-07",
-  "freech_day": "2026-11-07",
+  "freech_day": "2026-11-08",
   "pro_auto": "2026-11-08",
   "earn_memo": {
     "AAPL|2026-11-02": {
@@ -1812,16 +1834,16 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-08T04:30:55.987603+00:00",
-    "Коммерсантъ": "2026-11-08T07:30:58.231024+00:00",
+    "Коммерсантъ": "2026-11-08T08:00:55.358368+00:00",
     "Ведомости": "2026-11-08T06:02:47.889444+00:00",
-    "Интерфакс": "2026-11-08T07:00:58.344917+00:00",
-    "ТАСС": "2026-11-08T07:30:58.231024+00:00",
+    "Интерфакс": "2026-11-08T08:00:55.358368+00:00",
+    "ТАСС": "2026-11-08T08:00:55.358368+00:00",
     "CoinDesk": "2026-11-08T04:30:55.987603+00:00",
-    "Headlines for Traders": "2026-11-08T07:30:58.231024+00:00",
+    "Headlines for Traders": "2026-11-08T08:00:55.358368+00:00",
     "MarketTwits": "2026-11-07T20:30:59.702520+00:00",
     "Сигналы РЦБ": "2026-11-07T20:30:59.702520+00:00",
-    "Whale Alert": "2026-11-07T15:00:56.109622+00:00",
-    "РБК": "2026-11-08T07:30:58.231024+00:00",
+    "Whale Alert": "2026-11-08T08:00:55.358368+00:00",
+    "РБК": "2026-11-08T08:00:55.358368+00:00",
     "Wu Blockchain": "2026-11-08T05:00:58.282382+00:00",
     "Банкста": "2026-11-08T04:30:55.987603+00:00",
     "IF News": "2026-11-07T19:30:57.464115+00:00",
@@ -1842,7 +1864,7 @@
     "MarketWatch": "2026-11-07T17:30:57.422947+00:00",
     "Bitcoin Magazine": "2026-11-07T18:30:55.346455+00:00",
     "Watcher Guru": "2026-11-08T04:30:55.987603+00:00",
-    "РБК. Главное": "2026-11-08T06:02:47.889444+00:00",
+    "РБК. Главное": "2026-11-08T08:00:55.358368+00:00",
     "The Block": "2026-11-08T04:30:55.987603+00:00",
     "Нефть и Капитал": "2026-11-07T16:30:59.006765+00:00",
     "MMI": "2026-11-06T08:30:56.552344+00:00",
@@ -1865,7 +1887,7 @@
     "Natural Gas Intelligence": "2026-11-04T19:30:55.906483+00:00",
     "Правительство России": "2026-11-06T16:30:57.622247+00:00",
     "glassnode": "2026-11-08T04:30:55.987603+00:00",
-    "Минэкономразвития": "2026-11-05T16:31:03.442762+00:00",
+    "Минэкономразвития": "2026-11-08T08:00:55.358368+00:00",
     "Прайм": "2026-11-07T04:30:54.781550+00:00",
     "Хедлайнеры": "2026-11-05T18:30:57.305434+00:00",
     "Т-Инвестиции": "2026-11-06T06:00:57.443005+00:00",
@@ -1914,7 +1936,7 @@
     "ПАО «Газпром»": "2026-11-07T16:30:59.006765+00:00",
     "CoinDesk Global": "2026-11-08T04:30:55.987603+00:00"
   },
-  "catalog_at": "2026-11-08T07:30:58+00:00",
-  "own_hour": "2026-11-08 10",
+  "catalog_at": "2026-11-08T08:00:55+00:00",
+  "own_hour": "2026-11-08 11",
   "digest_alert": "2026-11-05 19:30"
 }
