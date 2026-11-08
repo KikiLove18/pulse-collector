@@ -1105,7 +1105,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-08T05:00:58.282382+00:00",
+  "breaking_ts": "2026-11-08T05:30:55.949432+00:00",
   "news_now": {
     "day": "2026-11-08",
     "day_count": 0,
@@ -1114,45 +1114,38 @@
     "titles": []
   },
   "news_seen": [
+    "https://tass.ru/armiya-i-opk/28295713",
+    "https://tass.ru/sport/28295711",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243449-minoboroni-soobschilo",
+    "https://tass.ru/obschestvo/28295637",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243448-wp-kushner-nazval",
+    "https://tass.ru/armiya-i-opk/28295705",
+    "https://tass.ru/armiya-i-opk/28295703",
+    "https://www.interfax.ru/russia/1127635",
+    "https://t.me/headlines_for_traders/88248",
+    "https://tass.ru/proisshestviya/28295701",
+    "https://t.me/interfaxonline/81294",
+    "https://t.me/FinancialJuice/145526",
+    "https://tass.ru/sport/28295697",
+    "https://www.kommersant.ru/doc/9092043",
+    "https://t.me/rbc_news/160235",
+    "https://t.me/headlines_for_traders/88247",
+    "https://tass.ru/obschestvo/28295691",
+    "https://tass.ru/ekonomika/28295689",
+    "https://www.vedomosti.ru/business/news/2026/11/08/1243447-rossiya-v-sentyabre",
+    "https://t.me/FinancialJuice/145525",
+    "https://tass.ru/sport/28295687",
+    "https://tass.ru/armiya-i-opk/28295685",
+    "https://tass.ru/obschestvo/28295677",
+    "https://tass.ru/armiya-i-opk/28295681",
+    "https://www.rbc.ru/sport/11/10/2026/6acb6ec19a7947de2d047f17",
+    "https://tass.ru/sport/28295683",
+    "https://t.me/FinancialJuice/145524",
+    "https://t.me/forklog/50584",
+    "https://t.me/banksta/105034",
+    "https://www.rbc.ru/education/05/11/2026/6adf37789a79472f715407bc",
     "https://t.me/headlines_for_traders/88246",
-    "https://www.rbc.ru/rbcfreenews/6aedf3b5e824b280460c9627",
-    "https://tass.ru/sport/28295675",
-    "https://tass.ru/obschestvo/28295673",
-    "https://www.vedomosti.ru/society/news/2026/11/08/1243446-rezultate-ataki",
-    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
-    "https://www.interfax.ru/russia/1127634",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243445-devyat-mesyatsev",
-    "https://tass.ru/sport/28295669",
-    "https://www.rbc.ru/rbcfreenews/6aeffcfee1de3648a1ea98bc",
-    "https://t.me/wublockchainenglish/26733",
-    "https://www.kommersant.ru/doc/9092041",
-    "https://www.rbc.ru/rbcfreenews/6ab94789780b2ab49cc5df63",
-    "https://tass.ru/obschestvo/28295665",
-    "https://t.me/FinancialJuice/145523",
-    "https://tass.ru/proisshestviya/28295661",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243443-aktrisa-natalya",
-    "https://t.me/headlines_for_traders/88245",
-    "https://tass.ru/sport/28295659",
-    "https://t.me/FinancialJuice/145522",
-    "https://tass.ru/armiya-i-opk/28295657",
-    "https://tass.ru/kultura/28295653",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243442-chislo-zhertv",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295649",
-    "https://tass.ru/nedvizhimost/28295645",
-    "https://tass.ru/obschestvo/28295647",
-    "https://t.me/FinancialJuice/145521",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243441-sbornaya-rossii",
-    "https://t.me/FinancialJuice/145520",
-    "https://tass.ru/obschestvo/28295641",
-    "https://t.me/wublockchainenglish/26732",
-    "https://tass.ru/ekonomika/28295643",
-    "https://www.kommersant.ru/doc/9092039",
-    "https://tass.ru/obschestvo/28295639",
-    "https://tass.ru/obschestvo/28295633",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243440-tolstoi-evropa-rasschitivala",
-    "https://t.me/headlines_for_traders/88244",
-    "https://tass.ru/politika/28295631",
-    "https://tass.ru/obschestvo/28295635"
+    "https://www.rbc.ru/rbcfreenews/6aedf3b5e824b280460c9627"
   ],
   "ai_dead": {
     "date": "2026-11-07",
@@ -1722,6 +1715,18 @@
     [
       "2026-11-08T05:00:58.282382+00:00",
       "Сборная России по хоккею заменит Норвегию на молодежном чемпионате мира 2027"
+    ],
+    [
+      "2026-11-08T05:30:55.949432+00:00",
+      "ЦБ РФ: экономика России вернулась в зону перегрева в третьем квартале"
+    ],
+    [
+      "2026-11-08T05:30:55.949432+00:00",
+      "WP: Кушнер предложил Совет Россия — НАТО как модель для переговоров"
+    ],
+    [
+      "2026-11-08T05:30:55.949432+00:00",
+      "Над российскими регионами за ночь сбили 142 беспилотника"
     ]
   ],
   "results_fp": [
@@ -1813,12 +1818,12 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-08T04:30:55.987603+00:00",
-    "Коммерсантъ": "2026-11-08T05:00:58.282382+00:00",
-    "Ведомости": "2026-11-08T05:00:58.282382+00:00",
-    "Интерфакс": "2026-11-08T05:00:58.282382+00:00",
-    "ТАСС": "2026-11-08T05:00:58.282382+00:00",
+    "Коммерсантъ": "2026-11-08T05:30:55.949432+00:00",
+    "Ведомости": "2026-11-08T05:30:55.949432+00:00",
+    "Интерфакс": "2026-11-08T05:30:55.949432+00:00",
+    "ТАСС": "2026-11-08T05:30:55.949432+00:00",
     "CoinDesk": "2026-11-08T04:30:55.987603+00:00",
-    "Headlines for Traders": "2026-11-08T05:00:58.282382+00:00",
+    "Headlines for Traders": "2026-11-08T05:30:55.949432+00:00",
     "MarketTwits": "2026-11-07T20:30:59.702520+00:00",
     "Сигналы РЦБ": "2026-11-07T20:30:59.702520+00:00",
     "Whale Alert": "2026-11-07T15:00:56.109622+00:00",
@@ -1843,7 +1848,7 @@
     "MarketWatch": "2026-11-07T17:30:57.422947+00:00",
     "Bitcoin Magazine": "2026-11-07T18:30:55.346455+00:00",
     "Watcher Guru": "2026-11-08T04:30:55.987603+00:00",
-    "РБК. Главное": "2026-11-07T20:00:56.845676+00:00",
+    "РБК. Главное": "2026-11-08T05:30:55.949432+00:00",
     "The Block": "2026-11-08T04:30:55.987603+00:00",
     "Нефть и Капитал": "2026-11-07T16:30:59.006765+00:00",
     "MMI": "2026-11-06T08:30:56.552344+00:00",
@@ -1915,7 +1920,7 @@
     "ПАО «Газпром»": "2026-11-07T16:30:59.006765+00:00",
     "CoinDesk Global": "2026-11-08T04:30:55.987603+00:00"
   },
-  "catalog_at": "2026-11-08T05:00:58+00:00",
+  "catalog_at": "2026-11-08T05:30:55+00:00",
   "own_hour": "2026-11-08 08",
   "digest_alert": "2026-11-05 19:30"
 }
