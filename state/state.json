@@ -986,7 +986,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-08T16:00:57.130083+00:00",
+  "breaking_ts": "2026-11-08T17:00:57.580883+00:00",
   "news_now": {
     "day": "2026-11-08",
     "day_count": 2,
@@ -998,87 +998,68 @@
     ]
   },
   "news_seen": [
-    "https://www.rbc.ru/economics/07/11/2026/6aec207957b0bd02570b2bf9",
-    "https://oilprice.com/Energy/Energy-General/How-New-York-Plans-to-Turn-Waste-Heat-Into-Clean-Energy.html",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296483",
-    "https://tass.ru/proisshestviya/28296479",
-    "https://tass.ru/sport/28296477",
-    "https://t.me/rbc_news/160258",
-    "https://tass.ru/sport/28296475",
-    "https://t.me/banksta/105058",
-    "https://t.me/markettwits/392448",
-    "https://www.theblock.co/news/ecosystems/2026-11-08-vitalik-buterin-says-eth-should-be-valued-as-a-store-of-value-not-a-fee-burning-token-436022",
-    "https://tass.ru/proisshestviya/28296471",
-    "https://tass.ru/kultura/28296465",
-    "https://www.rbc.ru/sport/21/10/2026/6ad8a07886b5f5f352f69834",
-    "https://www.interfax.ru/world/1127693",
-    "https://t.me/interfaxonline/81313",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296469",
-    "https://tass.ru/sport/28296463",
-    "https://t.me/markettwits/392447",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296457",
-    "https://www.kommersant.ru/doc/9092253",
-    "https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html",
-    "https://tass.ru/proisshestviya/28296453",
-    "https://tass.ru/sport/28296455",
-    "https://www.rbc.ru/society/08/11/2026/6af03b9998a7918b99e1820e",
-    "https://tass.ru/sport/28296451",
-    "https://www.sport-interfax.ru/1127692",
-    "https://www.rbc.ru/rbcfreenews/6aee817783a4611b5f50cc23",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296449",
-    "https://t.me/proeconomics/20672",
-    "https://www.rbc.ru/sport/08/11/2026/6af032fde6da72e1de7dca1e",
-    "https://cryptoslate.com/the-ai-boom-has-a-new-inflation-problem-consumers-are-paying-before-it-pays-off/",
-    "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories",
-    "https://t.me/rbc_news/160257",
-    "https://tass.ru/kultura/28296439",
-    "https://t.me/whale_alert_io/104691",
-    "https://tass.ru/politika/28296447",
-    "https://t.me/banksta/105057",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296441",
-    "https://t.me/WatcherGuru/15876"
+    "https://tass.ru/sport/28296529",
+    "https://tass.ru/proisshestviya/28296527",
+    "https://www.rbc.ru/politics/26/10/2026/6adf10fba45a7da03e263294",
+    "https://tass.ru/ekonomika/28296521",
+    "https://t.me/banksta/105060",
+    "https://www.rbc.ru/sport/07/11/2026/6aef28f36ac6a8f75005f976",
+    "https://www.rbc.ru/society/24/10/2026/6adc0a369765ed241acb0248",
+    "https://www.rbc.ru/economics/22/08/2026/6a86e2b79a794745ad2c14fc",
+    "https://www.rbc.ru/rbcfreenews/6aef49c4e1de3648a1ea9854",
+    "https://t.me/markettwits/392449",
+    "https://t.me/FinancialJuice/145545",
+    "https://tass.ru/sport/28296523",
+    "https://tass.ru/proisshestviya/28296515",
+    "https://t.me/rbc_news/160259",
+    "https://www.rbc.ru/politics/26/10/2026/6adf213c197cc1a652c88a7f",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243502-pogibli-grazhdane-avstrii-i-velikobritanii",
+    "https://t.me/forbesrussia/102783",
+    "https://tass.ru/sport/28296511",
+    "https://tass.ru/sport/28296509",
+    "https://www.kommersant.ru/doc/9092290",
+    "https://www.rbc.ru/rbcfreenews/69d27c589a79472776841c08",
+    "https://t.me/cointelegraph/73120",
+    "https://tass.ru/sport/28296507",
+    "https://t.me/agroinvestor/21714",
+    "https://t.me/bcs_express/26421",
+    "https://thedefiant.io/converge/regulation/bridge-s-occ-approval-opens-path-to-federal-stablecoin-trust-bank",
+    "https://tass.ru/sport/28296505",
+    "https://cryptoslate.com/nvidias-ceo-an-alleged-romance-and-a-suspected-chinese-spy-congress-wants-answers/",
+    "https://tass.ru/politika/28296501",
+    "https://tass.ru/sport/28296503",
+    "https://t.me/bitkogan_hotline/28170",
+    "https://www.interfax.ru/world/1127695",
+    "https://t.me/if_market_news/86667",
+    "https://tass.ru/sport/28296499",
+    "https://t.me/banksta/105059",
+    "https://www.kommersant.ru/doc/9092285",
+    "https://www.vedomosti.ru/business/news/2026/11/08/1243501-trassa-priostanovila-rabotu",
+    "https://tass.ru/sport/28296497",
+    "https://www.rbc.ru/rbcfreenews/6adb042f1d7b7febe17ef1fc",
+    "https://t.me/forklog/50591",
+    "https://tass.ru/obschestvo/28296377",
+    "https://t.me/headlines_for_traders/88273",
+    "https://tass.ru/sport/28296495",
+    "https://t.me/headlines_for_traders/88272",
+    "https://tass.ru/ekonomika/28296481",
+    "https://t.me/CoinMarketCapAnnouncements/19609",
+    "https://t.me/forbesrussia/102782",
+    "https://t.me/government_rus/34023",
+    "https://www.rbc.ru/rbcfreenews/6aeee9ad867e39a5978d25b2",
+    "https://www.sport-interfax.ru/1127694",
+    "https://tass.ru/mezhdunarodnaya-panorama/28296489",
+    "https://tass.ru/sport/28296493",
+    "https://tass.ru/nauka/28296419",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243498-otbrosili-ssha-v-proshloe",
+    "https://www.rbc.ru/politics/06/11/2026/6aee2f4ce62600c92ca060b8",
+    "https://www.trumpstruth.org/statuses/43527"
   ],
   "ai_dead": {
     "date": "2026-11-08",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-07T16:00:57.326314+00:00",
-      "Белоусов: очередь на жилье для военных сократится на 20 тыс."
-    ],
-    [
-      "2026-11-07T16:00:57.326314+00:00",
-      "Хуситы заявили об ударах по аэропорту Эр-Рияда и объектам Saudi Aramco"
-    ],
-    [
-      "2026-11-07T16:00:57.326314+00:00",
-      "МЭА прогнозирует рост мощности ВИЭ почти на 4800 ГВт"
-    ],
-    [
-      "2026-11-07T17:00:55.446226+00:00",
-      "Отток капитала из биткоин-ETF достиг $1,28 млрд за неделю"
-    ],
-    [
-      "2026-11-07T17:00:55.446226+00:00",
-      "Binance назначила Джастина Ека новым финансовым директором"
-    ],
-    [
-      "2026-11-07T17:00:55.446226+00:00",
-      "Биржи начали задерживать депозиты после санкций США против MEXC"
-    ],
-    [
-      "2026-11-07T17:00:55.446226+00:00",
-      "Токен STRK рухнул на 57% за четыре недели из-за оттока средств"
-    ],
-    [
-      "2026-11-07T17:00:55.446226+00:00",
-      "Уязвимость в Gnosis Pay раскрыла данные клиентов и криптокошельки"
-    ],
-    [
-      "2026-11-07T17:00:55.446226+00:00",
-      "Евразийская сахарная ассоциация оценила уборку свеклы в ЕАЭС"
-    ],
     [
       "2026-11-07T17:30:57.422947+00:00",
       "Apple и Meta отказались от листинга акций на OKX-ICE"
@@ -1638,6 +1619,22 @@
     [
       "2026-11-08T16:00:57.130083+00:00",
       "Саудовская Аравия отразила атаку хуситов на Эр-Рияд"
+    ],
+    [
+      "2026-11-08T17:00:57.580883+00:00",
+      "Bridge получила одобрение OCC для создания траст-банка"
+    ],
+    [
+      "2026-11-08T17:00:57.580883+00:00",
+      "Израиль заявил о незавершенности миссии против Ирана"
+    ],
+    [
+      "2026-11-08T17:00:57.580883+00:00",
+      "Нефтяной танкер загорелся в Ормузском проливе"
+    ],
+    [
+      "2026-11-08T17:00:57.580883+00:00",
+      "Виталик Бутерин высказался о приоритетах Ethereum"
     ]
   ],
   "results_fp": [
@@ -1735,10 +1732,10 @@
     "ТАСС": "2026-11-08T16:00:57.130083+00:00",
     "CoinDesk": "2026-11-08T13:00:55.421273+00:00",
     "Headlines for Traders": "2026-11-08T15:00:56.388932+00:00",
-    "MarketTwits": "2026-11-08T16:30:54.582684+00:00",
+    "MarketTwits": "2026-11-08T17:00:57.580883+00:00",
     "Сигналы РЦБ": "2026-11-08T15:30:56.644139+00:00",
     "Whale Alert": "2026-11-08T16:30:54.582684+00:00",
-    "РБК": "2026-11-08T16:30:54.582684+00:00",
+    "РБК": "2026-11-08T17:00:57.580883+00:00",
     "Wu Blockchain": "2026-11-08T16:30:54.582684+00:00",
     "Банкста": "2026-11-08T15:00:56.388932+00:00",
     "IF News": "2026-11-08T09:30:59.217295+00:00",
@@ -1749,7 +1746,7 @@
     "Frank Media": "2026-11-07T16:30:59.006765+00:00",
     "ForkLog": "2026-11-08T12:00:55.342955+00:00",
     "Decrypt": "2026-11-08T04:30:55.987603+00:00",
-    "Cointelegraph": "2026-11-08T16:30:54.582684+00:00",
+    "Cointelegraph": "2026-11-08T17:00:57.580883+00:00",
     "CoinMarketCap": "2026-11-08T16:30:54.582684+00:00",
     "СберИнвестиции": "2026-11-07T04:30:54.781550+00:00",
     "РБК Крипто": "2026-11-06T15:30:58.427447+00:00",
@@ -1763,11 +1760,11 @@
     "The Block": "2026-11-08T16:30:54.582684+00:00",
     "Нефть и Капитал": "2026-11-07T16:30:59.006765+00:00",
     "MMI": "2026-11-08T12:30:57.963787+00:00",
-    "FinancialJuice": "2026-11-08T15:30:56.644139+00:00",
+    "FinancialJuice": "2026-11-08T17:00:57.580883+00:00",
     "Cbonds": "2026-11-07T12:00:57.398961+00:00",
     "WSJ Markets": "2026-11-08T16:30:54.582684+00:00",
     "WSJ Economy": "2026-11-08T16:30:54.582684+00:00",
-    "The Defiant": "2026-11-08T04:30:55.987603+00:00",
+    "The Defiant": "2026-11-08T17:00:57.580883+00:00",
     "WSJ": "2026-11-07T16:30:59.006765+00:00",
     "Bitcoin Magazine Telegram": "2026-11-02T16:30:57.156819+00:00",
     "Lookonchain": "2026-11-08T10:30:54.536624+00:00",
@@ -1833,7 +1830,7 @@
     "Russian Macro": "2026-11-08T16:30:54.582684+00:00",
     "Минфин": "2026-11-08T16:30:54.582684+00:00"
   },
-  "catalog_at": "2026-11-08T16:30:54+00:00",
-  "own_hour": "2026-11-08 19",
+  "catalog_at": "2026-11-08T17:00:57+00:00",
+  "own_hour": "2026-11-08 20",
   "digest_alert": "2026-11-05 19:30"
 }
