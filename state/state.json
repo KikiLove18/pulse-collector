@@ -985,7 +985,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-08T13:30:54.999672+00:00",
+  "breaking_ts": "2026-11-08T14:00:59.944623+00:00",
   "news_now": {
     "day": "2026-11-08",
     "day_count": 2,
@@ -997,85 +997,67 @@
     ]
   },
   "news_seen": [
+    "https://decrypt.co/382761/bitcoin-developer-quantum-landmines-losing-bet",
+    "https://t.me/headlines_for_traders/88269",
+    "https://www.cnbc.com/2026/11/08/poppi-founders-jetty-hydration-gatorade.html",
+    "https://t.me/forklog/50589",
+    "https://www.marketwatch.com/story/stocks-are-moving-in-sync-again-for-the-first-time-in-a-while-theres-just-one-problem-c953bf72?mod=mw_rss_topstories",
+    "https://t.me/energytodaygroup/32671",
+    "https://t.me/banksta/105054",
+    "https://tass.ru/sport/28296341",
+    "https://www.rbc.ru/society/10/10/2026/6ac9aafa728f698a5291d400",
+    "https://tass.ru/sport/28296339",
+    "https://tass.ru/politika/28296333",
+    "https://t.me/BitcoinMagazineTelegram/11023",
+    "https://tass.ru/sport/28296335",
+    "https://tass.ru/obschestvo/28296327",
+    "https://tass.ru/mezhdunarodnaya-panorama/28296337",
+    "https://tass.ru/proisshestviya/28296329",
+    "https://t.me/markettwits/392443",
+    "https://www.vedomosti.ru/society/news/2026/11/08/1243489-aktrisa-kogut-umerla",
+    "https://www.kommersant.ru/doc/9092203",
+    "https://www.rbc.ru/sport/08/11/2026/6af054181407fcf1a3c88c6e",
+    "https://tass.ru/sport/28296331",
+    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
+    "https://tass.ru/obschestvo/28296323",
+    "https://www.interfax.ru/business/1127686",
+    "https://www.kommersant.ru/doc/9092213",
+    "https://tass.ru/sport/28296321",
+    "https://www.kommersant.ru/doc/9092210",
+    "https://www.interfax.ru/world/1127685",
+    "https://tass.ru/sport/28296319",
+    "https://www.kommersant.ru/doc/9092211",
+    "https://t.me/rbc_news/160254",
+    "https://t.me/FinancialJuice/145541",
+    "https://t.me/markettwits/392442",
+    "https://t.me/FinancialJuice/145540",
+    "https://www.kommersant.ru/doc/9092201",
+    "https://t.me/interfaxonline/81310",
+    "https://www.rbc.ru/society/07/10/2026/6ac631779a7947023c7fd7e2",
+    "https://t.me/banksta/105053",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243487-raneni-pri-shode-vagonov",
+    "https://www.kommersant.ru/doc/9092207",
+    "https://www.interfax.ru/world/1127684",
+    "https://tass.ru/ekonomika/28296313",
+    "https://tass.ru/sport/28296317",
+    "https://tass.ru/sport/28296315",
+    "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://www.kommersant.ru/doc/9092198",
+    "https://www.kommersant.ru/doc/9092209",
+    "https://t.me/headlines_for_traders/88268",
     "https://t.me/if_market_news/86666",
     "https://tass.ru/proisshestviya/28296309",
     "https://www.rbc.ru/sport/06/10/2026/6ac4a7ee9a794729acdf6770",
     "https://www.vedomosti.ru/politics/news/2026/11/08/1243488-dva-tankera-postradali",
     "https://tass.ru/sport/28296311",
     "https://tass.ru/obschestvo/28296305",
-    "https://t.me/forbesrussia/102777",
-    "https://tass.ru/proisshestviya/28296307",
-    "https://tass.ru/obschestvo/28296303",
-    "https://tass.ru/obschestvo/28296301",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296297",
-    "https://www.rbc.ru/rbcfreenews/6a7d770f9a7947e7c6da0833",
-    "https://tass.ru/obschestvo/28296295",
-    "https://www.rbc.ru/rbcfreenews/641e944e9a7947a936642e11",
-    "https://www.rbc.ru/politics/29/10/2026/6ae388730cd0f4f5e566b4f1",
-    "https://www.kommersant.ru/doc/9092200",
-    "https://tass.ru/sport/28296293",
-    "https://tass.ru/obschestvo/28296291",
-    "https://t.me/forbesrussia/102776",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296289",
-    "https://www.interfax.ru/world/1127683",
-    "https://www.rbc.ru/society/13/10/2024/670b80119a79478578b65bac",
-    "https://tass.ru/kultura/28296285",
-    "https://t.me/banksta/105052",
-    "https://tass.ru/obschestvo/28296277",
-    "https://www.kommersant.ru/doc/9092183",
-    "https://www.vedomosti.ru/technology/news/2026/11/08/1243485-chatgpt-sobiraet-dose",
-    "https://tass.ru/sport/28296281",
-    "https://www.kommersant.ru/doc/9092196",
-    "https://thedefiant.io/news/security/keplr-confirms-web3auth-recovery-addresses-after-wallet-breach",
-    "https://www.rbc.ru/rbcfreenews/6acb50251b889024d761267f",
-    "https://www.kommersant.ru/doc/9092186",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296247",
-    "https://www.rbc.ru/rbcfreenews/6aefe1ee2fca64e80dfad873",
-    "https://www.kommersant.ru/doc/9092193",
-    "https://t.me/forklog/50588",
-    "https://tass.ru/sport/28296249",
-    "https://www.rbc.ru/sport/06/11/2026/6aee11f01ffecd035bda8242",
-    "https://t.me/headlines_for_traders/88267",
-    "https://www.interfax.ru/world/1127682",
-    "https://www.kommersant.ru/doc/9092189",
-    "https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html",
-    "https://www.cnbc.com/2026/11/08/frequent-flyer-miles-points-thanksgiving.html",
-    "https://www.cnbc.com/2026/11/08/amazon-home-robot-fauna-sprout.html",
-    "https://www.cnbc.com/make-it/2026/11/08/brand-sponsorship-local-communities.html",
-    "https://t.me/rbc_news/160253",
-    "https://www.kommersant.ru/doc/9092192",
-    "https://t.me/oil_capital/26961",
-    "https://tass.ru/kultura/28296243",
-    "https://cointelegraph.com/news/binance-france-emails-announce-closure-of-its-users-accounts-on-dec-31?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://tass.ru/obschestvo/28296235",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243484-nahoditsya-v-stabilnom-sostoyanii",
-    "https://tass.ru/proisshestviya/28296245",
-    "https://tass.ru/proisshestviya/28296239",
-    "https://tass.ru/sport/28296241",
-    "https://t.me/CoinDeskGlobal/25397",
-    "https://www.coindesk.com/markets/2026/11/08/these-finland-homes-get-free-heat-from-bitcoin-miners-as-long-as-btc-stays-above-usd70-000"
+    "https://t.me/forbesrussia/102777"
   ],
   "ai_dead": {
     "date": "2026-11-08",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-07T13:30:55.747503+00:00",
-      "Майнер-одиночка добыл блок биткоина с наградой $238 000"
-    ],
-    [
-      "2026-11-07T13:30:55.747503+00:00",
-      "Крупный перевод биткоинов с биржи OKX"
-    ],
-    [
-      "2026-11-07T13:30:55.747503+00:00",
-      "Землетрясение магнитудой 6,1 произошло у побережья Японии"
-    ],
-    [
-      "2026-11-07T14:00:57.040304+00:00",
-      "На Солнце за два дня зафиксировано 35 вспышек"
-    ],
     [
       "2026-11-07T14:30:55.344989+00:00",
       "Прибыль Berkshire Hathaway упала на 28% из-за инвестиций"
@@ -1643,6 +1625,30 @@
     [
       "2026-11-08T13:30:54.999672+00:00",
       "Котировки технологических компаний в США приостановили падение"
+    ],
+    [
+      "2026-11-08T14:00:59.944623+00:00",
+      "Сеть АЗС «Трасса» приостановила работу всех 53 заправок"
+    ],
+    [
+      "2026-11-08T14:00:59.944623+00:00",
+      "Хуситы заявили об ударах по объектам Saudi Aramco в Абкайке"
+    ],
+    [
+      "2026-11-08T14:00:59.944623+00:00",
+      "UKMTO сообщил о повреждении двух танкеров в Ормузском проливе"
+    ],
+    [
+      "2026-11-08T14:00:59.944623+00:00",
+      "Совбез Ирана утвердил соглашение по ж/д Решт — Астара"
+    ],
+    [
+      "2026-11-08T14:00:59.944623+00:00",
+      "Не менее 150 человек пострадали при сходе вагонов поезда в Египте"
+    ],
+    [
+      "2026-11-08T14:00:59.944623+00:00",
+      "Во Франции на протестах 7 ноября задержали не менее 360 человек"
     ]
   ],
   "results_fp": [
@@ -1705,7 +1711,7 @@
       "Уровень безработицы"
     ]
   },
-  "pro_daily": "2026-11-07",
+  "pro_daily": "2026-11-08",
   "freech_day": "2026-11-08",
   "pro_auto": "2026-11-08",
   "earn_memo": {
@@ -1734,13 +1740,13 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-08T04:30:55.987603+00:00",
-    "Коммерсантъ": "2026-11-08T13:30:54.999672+00:00",
-    "Ведомости": "2026-11-08T13:30:54.999672+00:00",
-    "Интерфакс": "2026-11-08T13:00:55.421273+00:00",
-    "ТАСС": "2026-11-08T13:00:55.421273+00:00",
+    "Коммерсантъ": "2026-11-08T14:00:59.944623+00:00",
+    "Ведомости": "2026-11-08T14:00:59.944623+00:00",
+    "Интерфакс": "2026-11-08T14:00:59.944623+00:00",
+    "ТАСС": "2026-11-08T14:00:59.944623+00:00",
     "CoinDesk": "2026-11-08T13:00:55.421273+00:00",
     "Headlines for Traders": "2026-11-08T11:30:55.301498+00:00",
-    "MarketTwits": "2026-11-08T09:30:59.217295+00:00",
+    "MarketTwits": "2026-11-08T14:00:59.944623+00:00",
     "Сигналы РЦБ": "2026-11-07T20:30:59.702520+00:00",
     "Whale Alert": "2026-11-08T09:00:55.323980+00:00",
     "РБК": "2026-11-08T13:00:55.421273+00:00",
@@ -1768,7 +1774,7 @@
     "The Block": "2026-11-08T04:30:55.987603+00:00",
     "Нефть и Капитал": "2026-11-07T16:30:59.006765+00:00",
     "MMI": "2026-11-08T12:30:57.963787+00:00",
-    "FinancialJuice": "2026-11-08T12:00:55.342955+00:00",
+    "FinancialJuice": "2026-11-08T14:00:59.944623+00:00",
     "Cbonds": "2026-11-07T12:00:57.398961+00:00",
     "WSJ Markets": "2026-11-07T17:30:57.422947+00:00",
     "WSJ Economy": "2026-11-08T11:00:55.940976+00:00",
@@ -1836,7 +1842,7 @@
     "ПАО «Газпром»": "2026-11-07T16:30:59.006765+00:00",
     "CoinDesk Global": "2026-11-08T04:30:55.987603+00:00"
   },
-  "catalog_at": "2026-11-08T13:30:54+00:00",
-  "own_hour": "2026-11-08 16",
+  "catalog_at": "2026-11-08T14:00:59+00:00",
+  "own_hour": "2026-11-08 17",
   "digest_alert": "2026-11-05 19:30"
 }
