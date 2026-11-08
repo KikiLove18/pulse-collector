@@ -985,82 +985,59 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-08T12:30:57.963787+00:00",
+  "breaking_ts": "2026-11-08T13:00:55.421273+00:00",
   "news_now": {
     "day": "2026-11-08",
-    "day_count": 1,
+    "day_count": 2,
     "urgent_count": 0,
-    "last": "2026-11-08T08:00:55.358368+00:00",
+    "last": "2026-11-08T13:00:55.421273+00:00",
     "titles": [
-      "За покупку криптовалюты через P2P могут ввести штрафы"
+      "За покупку криптовалюты через P2P могут ввести штрафы",
+      "Танкеры загорелись в Ормузском проливе"
     ]
   },
   "news_seen": [
+    "https://t.me/rbc_news/160253",
+    "https://t.me/oil_capital/26961",
+    "https://tass.ru/kultura/28296243",
+    "https://tass.ru/obschestvo/28296235",
+    "https://www.vedomosti.ru/politics/news/2026/11/08/1243484-nahoditsya-v-stabilnom-sostoyanii",
+    "https://tass.ru/proisshestviya/28296245",
+    "https://tass.ru/proisshestviya/28296239",
+    "https://tass.ru/sport/28296241",
+    "https://t.me/CoinDeskGlobal/25397",
+    "https://www.coindesk.com/markets/2026/11/08/these-finland-homes-get-free-heat-from-bitcoin-miners-as-long-as-btc-stays-above-usd70-000",
+    "https://www.kommersant.ru/doc/9092191",
+    "https://tass.ru/sport/28296237",
+    "https://www.rbc.ru/politics/08/11/2026/6af06ecc06ff112d6db18e9b",
+    "https://t.me/rbc_news/160252",
+    "https://www.vedomosti.ru/business/news/2026/11/08/1243483-zapolnennost-phg-upala",
+    "https://t.me/interfaxonline/81309",
+    "https://www.rbc.ru/society/08/11/2026/6af04b5affababcec205e1a4",
+    "https://t.me/wublockchainenglish/26738",
+    "https://tass.ru/obschestvo/28296227",
+    "https://t.me/expert_mag/11227",
+    "https://www.kommersant.ru/doc/9092168",
+    "https://tass.ru/mezhdunarodnaya-panorama/28296233",
+    "https://tass.ru/obschestvo/28296231",
+    "https://t.me/banksta/105050",
+    "https://www.kommersant.ru/doc/9092179",
+    "https://t.me/proeconomics/20671",
+    "https://t.me/cbrstocks/83980",
+    "https://www.vedomosti.ru/society/news/2026/11/08/1243482-polovina-mesyachnoi-normi-osadkov",
+    "https://tass.ru/obschestvo/28296221",
+    "https://www.kommersant.ru/doc/9092175",
+    "https://tass.ru/kultura/28296223",
+    "https://t.me/headlines_for_traders/88266",
+    "https://www.interfax.ru/russia/1127681",
     "https://www.rbc.ru/rbcfreenews/6a8fc3b2feaad25e7796e7f7",
-    "https://tass.ru/proisshestviya/28296219",
-    "https://www.rbc.ru/rbcfreenews/6ae97816e2f23c723b0a8c10",
-    "https://tass.ru/obschestvo/28296215",
-    "https://www.kommersant.ru/doc/9092176",
-    "https://tass.ru/sport/28296217",
-    "https://www.rbc.ru/rbcfreenews/6321b3729a7947f031b2c044",
-    "https://www.rbc.ru/sport/21/09/2026/6ab1074b9a794722a0c78c45",
-    "https://tass.ru/sport/28296213",
-    "https://www.interfax.ru/world/1127680",
-    "https://tass.ru/proisshestviya/28296209",
-    "https://www.vedomosti.ru/society/news/2026/11/08/1243481-perekrili-dvizhenie",
-    "https://tass.ru/sport/28296211",
-    "https://www.rbc.ru/society/18/06/2024/66718e589a7947c962416adf",
-    "https://tass.ru/proisshestviya/28296205",
-    "https://t.me/rbc_news/160251",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296203",
-    "https://t.me/interfaxonline/81308",
-    "https://t.me/Metals_Mining/23852",
-    "https://t.me/banksta/105049",
-    "https://t.me/usamarke1/8239",
-    "https://tass.ru/obschestvo/28296195",
-    "https://www.interfax.ru/world/1127679",
-    "https://t.me/Metals_Mining/23851",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296193",
-    "https://t.me/headlines_for_traders/88265",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296187",
-    "https://t.me/FinancialJuice/145539",
-    "https://tass.ru/obschestvo/28296147",
-    "https://tass.ru/sport/28296189",
-    "https://t.me/investfuture/15490",
-    "https://www.marketwatch.com/story/this-market-signal-called-the-tech-selloff-now-its-sending-another-warning-f7f8eb9b?mod=mw_rss_topstories",
-    "https://t.me/finam_invest/5954",
-    "https://t.me/russianmacro/23707",
-    "https://www.wsj.com/articles/hakeem-jeffries-must-navigate-a-democratic-party-with-competing-priorities-6c679608?mod=rss_markets_main",
-    "https://www.vedomosti.ru/politics/news/2026/11/08/1243479-politico-nato-ne-hvataet",
-    "https://tass.ru/sport/28296185",
-    "https://tass.ru/obschestvo/28296183",
-    "https://t.me/interfaxonline/81307"
+    "https://tass.ru/proisshestviya/28296219"
   ],
   "ai_dead": {
     "date": "2026-11-08",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-07T12:30:59.125648+00:00",
-      "Страны G7 предоставили Украине $49,4 млрд кредитов за счет активов РФ"
-    ],
-    [
-      "2026-11-07T12:30:59.125648+00:00",
-      "Криптокит за неделю приобрел токенов Ethereum на $29,95 млн"
-    ],
-    [
-      "2026-11-07T12:30:59.125648+00:00",
-      "Биржа MEXC изучает распоряжение FinCEN после обвинений США"
-    ],
-    [
-      "2026-11-07T12:30:59.125648+00:00",
-      "«Газпром»: Европа в ноябре продолжает рекордный отбор газа из ПХГ"
-    ],
-    [
-      "2026-11-07T12:30:59.125648+00:00",
-      "Акции «Циана» выросли на новостях о выкупе по оферте"
-    ],
     [
       "2026-11-07T13:01:02.706939+00:00",
       "Tesla прекратит выпуск Cybertruck в 2027 году ради роботакси"
@@ -1628,6 +1605,30 @@
     [
       "2026-11-08T12:30:57.963787+00:00",
       "Politico сообщила о нехватке 7 млрд евро у НАТО на помощь Украине"
+    ],
+    [
+      "2026-11-08T13:00:55.421273+00:00",
+      "Три танкера загорелись в Ормузском проливе после инцидента"
+    ],
+    [
+      "2026-11-08T13:00:55.421273+00:00",
+      "Заполненность ПХГ Германии упала ниже 60%"
+    ],
+    [
+      "2026-11-08T13:00:55.421273+00:00",
+      "Франция анонсировала участие ЕС в трехсторонних переговорах"
+    ],
+    [
+      "2026-11-08T13:00:55.421273+00:00",
+      "Виталик Бутерин: Ethereum должен сделать упор на статус средства сбережения"
+    ],
+    [
+      "2026-11-08T13:00:55.421273+00:00",
+      "Более 66 тыс. жителей Владивостока остались без воды из-за аварии"
+    ],
+    [
+      "2026-11-08T13:00:55.421273+00:00",
+      "Финский стартап направляет тепло от майнинга биткоина в дома"
     ]
   ],
   "results_fp": [
@@ -1719,17 +1720,17 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-08T04:30:55.987603+00:00",
-    "Коммерсантъ": "2026-11-08T12:00:55.342955+00:00",
-    "Ведомости": "2026-11-08T12:30:57.963787+00:00",
-    "Интерфакс": "2026-11-08T12:30:57.963787+00:00",
-    "ТАСС": "2026-11-08T11:30:55.301498+00:00",
-    "CoinDesk": "2026-11-08T04:30:55.987603+00:00",
+    "Коммерсантъ": "2026-11-08T13:00:55.421273+00:00",
+    "Ведомости": "2026-11-08T13:00:55.421273+00:00",
+    "Интерфакс": "2026-11-08T13:00:55.421273+00:00",
+    "ТАСС": "2026-11-08T13:00:55.421273+00:00",
+    "CoinDesk": "2026-11-08T13:00:55.421273+00:00",
     "Headlines for Traders": "2026-11-08T11:30:55.301498+00:00",
     "MarketTwits": "2026-11-08T09:30:59.217295+00:00",
     "Сигналы РЦБ": "2026-11-07T20:30:59.702520+00:00",
     "Whale Alert": "2026-11-08T09:00:55.323980+00:00",
-    "РБК": "2026-11-08T12:30:57.963787+00:00",
-    "Wu Blockchain": "2026-11-08T12:00:55.342955+00:00",
+    "РБК": "2026-11-08T13:00:55.421273+00:00",
+    "Wu Blockchain": "2026-11-08T13:00:55.421273+00:00",
     "Банкста": "2026-11-08T12:30:57.963787+00:00",
     "IF News": "2026-11-08T09:30:59.217295+00:00",
     "bitkogan": "2026-11-06T16:30:57.622247+00:00",
@@ -1821,7 +1822,7 @@
     "ПАО «Газпром»": "2026-11-07T16:30:59.006765+00:00",
     "CoinDesk Global": "2026-11-08T04:30:55.987603+00:00"
   },
-  "catalog_at": "2026-11-08T12:30:57+00:00",
-  "own_hour": "2026-11-08 15",
+  "catalog_at": "2026-11-08T13:00:55+00:00",
+  "own_hour": "2026-11-08 16",
   "digest_alert": "2026-11-05 19:30"
 }
