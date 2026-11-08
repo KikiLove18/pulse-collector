@@ -77,7 +77,7 @@
   ],
   "last_digest_ts": "2026-11-07T16:30:59.006765+00:00",
   "calendar": {
-    "ts": "2026-11-07T16:31:23.693050+00:00",
+    "ts": "2026-11-08T04:00:58.150270+00:00",
     "data": [
       {
         "title": "Daylight Saving Time Shift",
@@ -1104,7 +1104,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-07T21:30:56.038385+00:00",
+  "breaking_ts": "2026-11-08T04:00:58.144279+00:00",
   "news_now": {
     "day": "2026-11-08",
     "day_count": 0,
@@ -1113,62 +1113,38 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/sport/28295421",
-    "https://tass.ru/sport/28295419",
-    "https://www.interfax.ru/world/1127620",
-    "https://thedefiant.io/news/cefi/binance-names-justin-yek-cfo-as-kaiser-ng-prepares-to-leave",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295415",
-    "https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html",
-    "https://www.rbc.ru/rbcfreenews/6ae047e60d56109cf3d31ca0",
-    "https://t.me/whale_alert_io/104683",
-    "https://t.me/nainspire/5672",
-    "https://t.me/FinancialJuice/145508",
-    "https://t.me/FinancialJuice/145507",
-    "https://t.me/WalterBloomberg/38052",
-    "https://www.rbc.ru/rbcfreenews/6aef9319a5387231a9b6ea7d",
-    "https://t.me/banksta/105030",
-    "https://tass.ru/obschestvo/28295405",
-    "https://tass.ru/kultura/28295403",
-    "https://tass.ru/armiya-i-opk/28295401",
-    "https://tass.ru/sport/28295397",
-    "https://tass.ru/kultura/28295395",
-    "https://www.rbc.ru/politics/08/11/2026/6aef9111867e39a5978d25c3",
-    "https://tass.ru/armiya-i-opk/28295209",
-    "https://www.kommersant.ru/doc/9092011",
-    "https://www.theblock.co/news/regulation/2026-11-07-ex-fbi-agent-pleads-guilty-to-stealing-2-47-million-in-crypto-from-wallets-tied-to-35-investigations-435988",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295391",
-    "https://tass.ru/mezhdunarodnaya-panorama/28295389",
-    "https://tass.ru/kultura/28295381"
+    "https://tass.ru/obschestvo/28295629",
+    "https://tass.ru/obschestvo/28295627",
+    "https://tass.ru/sport/28295625",
+    "https://www.rbc.ru/politics/04/04/2026/69d137479a79471b210f3bdf",
+    "https://tass.ru/politika/28295623",
+    "https://tass.ru/armiya-i-opk/28295621",
+    "https://www.rbc.ru/politics/08/11/2026/6aefeb72bd043ff61715b2c3",
+    "https://t.me/headlines_for_traders/88243",
+    "https://tass.ru/armiya-i-opk/28295619",
+    "https://tass.ru/obschestvo/28295615",
+    "https://tass.ru/armiya-i-opk/28295617",
+    "https://tass.ru/nedvizhimost/28295613",
+    "https://tass.ru/obschestvo/28295611",
+    "https://tass.ru/ekonomika/28295609",
+    "https://www.kommersant.ru/doc/9092035",
+    "https://tass.ru/obschestvo/28295607",
+    "https://t.me/whale_alert_io/104687",
+    "https://tass.ru/obschestvo/28295605",
+    "https://tass.ru/politika/28295603",
+    "https://tass.ru/armiya-i-opk/28295599",
+    "https://tass.ru/obschestvo/28295595",
+    "https://tass.ru/obschestvo/28295591",
+    "https://tass.ru/armiya-i-opk/28295597",
+    "https://tass.ru/obschestvo/28295593",
+    "https://tass.ru/armiya-i-opk/28295589",
+    "https://tass.ru/armiya-i-opk/28295601"
   ],
   "ai_dead": {
     "date": "2026-11-07",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-07T04:00:55.982584+00:00",
-      "Росстат сообщил о снижении потребительских цен в России на 0,04% за неделю"
-    ],
-    [
-      "2026-11-07T04:00:55.982584+00:00",
-      "Трамп сообщил об ударе американских военных по иранскому острову Кешм"
-    ],
-    [
-      "2026-11-07T04:00:55.982584+00:00",
-      "Уязвимость в iOS привела к краже $4 млн в USDT с кошельков TRON"
-    ],
-    [
-      "2026-11-07T04:00:55.982584+00:00",
-      "Глава Coinbase поддержал токенизацию акций своей компании"
-    ],
-    [
-      "2026-11-07T04:00:55.982584+00:00",
-      "Украина рассчитывает получить от Запада $89 млрд помощи в 2027 году"
-    ],
-    [
-      "2026-11-07T04:00:55.982584+00:00",
-      "Предприятие в Орле повреждено после массированной ракетной атаки"
-    ],
     [
       "2026-11-07T05:00:57.734084+00:00",
       "Московская биржа планирует запуск торги биткоином и эфириумом 1 декабря"
@@ -1724,6 +1700,10 @@
     [
       "2026-11-07T20:30:59.702520+00:00",
       "«Вашингтон» обыграл «Флориду» в матче НХЛ со счетом 4:3"
+    ],
+    [
+      "2026-11-08T04:00:58.144279+00:00",
+      "Россия увеличила импорт маргарина из США в 41 раз в сентябре"
     ]
   ],
   "results_fp": [
@@ -1815,7 +1795,7 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-06T18:30:56.273004+00:00",
-    "Коммерсантъ": "2026-11-07T20:00:56.845676+00:00",
+    "Коммерсантъ": "2026-11-08T04:00:58.144279+00:00",
     "Ведомости": "2026-11-07T19:00:57.778659+00:00",
     "Интерфакс": "2026-11-07T19:30:57.464115+00:00",
     "ТАСС": "2026-11-07T20:30:59.702520+00:00",
@@ -1916,7 +1896,7 @@
     "INVEST ZONE": "2026-11-06T19:00:57.359918+00:00",
     "ПАО «Газпром»": "2026-11-07T16:30:59.006765+00:00"
   },
-  "catalog_at": "2026-11-07T21:30:56+00:00",
+  "catalog_at": "2026-11-08T04:00:58+00:00",
   "own_hour": "2026-11-07 21",
   "digest_alert": "2026-11-05 19:30"
 }
