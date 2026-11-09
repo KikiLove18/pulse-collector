@@ -988,7 +988,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-09T19:00:59.845685+00:00",
+  "breaking_ts": "2026-11-09T19:30:57.351748+00:00",
   "news_now": {
     "day": "2026-11-09",
     "day_count": 4,
@@ -1002,10 +1002,69 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/mezhdunarodnaya-panorama/28300185",
+    "https://t.me/government_rus/34040",
+    "https://www.vedomosti.ru/politics/news/2026/11/09/1243858-glavnuyu-sistemu-bezopasnosti",
+    "https://tass.ru/ekonomika/28300175",
+    "https://thedefiant.io/news/defi/world-liberty-says-wlfi-buybacks-have-begun-on-aster",
+    "https://www.marketwatch.com/story/what-employers-should-do-to-build-a-pipeline-of-talented-gen-z-workers-31c0e9b9?mod=mw_rss_topstories",
+    "https://tass.ru/proisshestviya/28300189",
+    "https://tass.ru/mezhdunarodnaya-panorama/28300187",
+    "https://tass.ru/proisshestviya/28300173",
+    "https://tass.ru/mezhdunarodnaya-panorama/28300179",
+    "https://www.kommersant.ru/doc/9093210",
+    "https://www.rbc.ru/politics/09/11/2026/6af1d2b0867d3fb6ce8e335b",
+    "https://t.me/forbesrussia/102821",
+    "https://t.me/markettwits/392609",
+    "https://tass.ru/ekonomika/28300171",
+    "https://www.cnbc.com/2026/11/09/this-beaten-down-data-center-stock-could-be-worth-a-look-says-mike-khouw.html",
+    "https://tass.ru/ekonomika/28300169",
+    "https://tass.ru/mezhdunarodnaya-panorama/28300167",
+    "https://tass.ru/ekonomika/28300165",
+    "https://www.cnbc.com/2026/11/09/trump-unemployment-work-search-rule.html",
+    "https://tass.ru/mezhdunarodnaya-panorama/28300163",
+    "https://t.me/whale_alert_io/104721",
+    "https://www.vedomosti.ru/politics/news/2026/11/09/1243856-likud-dolzhna-vozglavit",
+    "https://t.me/markettwits/392608",
+    "https://www.rbc.ru/rbcfreenews/6af21b5d7b61ac853b47e176",
+    "https://tass.ru/mezhdunarodnaya-panorama/28300159",
+    "https://t.me/cbrstocks/84025",
+    "https://t.me/FinancialJuice/145773",
+    "https://tass.ru/obschestvo/28300155",
+    "https://t.me/WalterBloomberg/38112",
+    "https://tass.ru/obschestvo/28300103",
+    "https://www.rbc.ru/radio/09/11/2026/6af21a6d1a4cd585112c3e78",
+    "https://t.me/rbc_news/160334",
+    "https://t.me/WalterBloomberg/38111",
+    "https://tass.ru/mezhdunarodnaya-panorama/28300151",
+    "https://t.me/WatcherGuru/15914",
+    "https://t.me/WalterBloomberg/38110",
+    "https://cryptoslate.com/a-brazilian-crypto-exchange-plans-to-show-customers-their-money-not-let-them-move-it/",
+    "https://t.me/FinancialJuice/145772",
+    "https://t.me/WalterBloomberg/38109",
+    "https://tass.ru/ekonomika/28300149",
+    "https://decrypt.co/382861/bitcoin-limbo-stocks-rebound-us-inflation",
+    "https://www.rbc.ru/politics/09/11/2026/6af17b67066cbfbb659f5ef6",
+    "https://tass.ru/mezhdunarodnaya-panorama/28300147",
+    "https://t.me/WalterBloomberg/38108",
+    "https://www.interfax.ru/world/1127926",
+    "https://www.vedomosti.ru/politics/news/2026/11/09/1243855-mogut-posetit-rossiyu",
+    "https://t.me/WalterBloomberg/38107",
+    "https://t.me/invest_zonaa/39366",
+    "https://www.rbc.ru/rbcfreenews/6417e49c9a79475dcb9a7a17",
+    "https://t.me/prime1/191967",
+    "https://www.cnbc.com/2026/11/09/millions-of-dollars-poured-into-prediction-markets-on-election-night.html",
+    "https://www.kommersant.ru/doc/9093206",
+    "https://t.me/banksta/105122",
+    "https://t.me/WalterBloomberg/38106",
     "https://t.me/FinancialJuice/145771",
+    "https://t.me/glassnode/2093",
+    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
     "https://t.me/markettwits/392607",
+    "https://tass.ru/proisshestviya/28300145",
     "https://t.me/FinancialJuice/145770",
     "https://t.me/FinancialJuice/145769",
+    "https://www.kommersant.ru/doc/9093203",
     "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
     "https://oilprice.com/Energy/Energy-General/Central-Asia-Confronts-Growing-Threat-of-AI-Enabled-Extremism.html",
     "https://naturalgasintel.com/news/late-autumn-warmth-keeps-natgas-storage-builds-strong-spot-prices-under-pressure/",
@@ -1015,78 +1074,17 @@
     "https://www.rbc.ru/sport/05/11/2026/6aec9d3c19338dd0d684b760",
     "https://tass.ru/mezhdunarodnaya-panorama/28300143",
     "https://t.me/cointelegraph/73144",
+    "https://www.interfax.ru/world/1127925",
     "https://www.rbc.ru/sport/08/11/2026/6af09b025b114771fd2e0796",
     "https://tass.ru/mezhdunarodnaya-panorama/28300139",
     "https://tass.ru/mezhdunarodnaya-panorama/28300141",
-    "https://protos.com/can-nvidia-fire-ceo-jensen-huang-over-his-affair/",
-    "https://www.wsj.com/finance/commodities-futures/gold-edges-higher-amid-mixed-signals-00565ca1?mod=rss_markets_main",
-    "https://t.me/whale_alert_io/104720",
-    "https://www.kommersant.ru/doc/9093204",
-    "https://www.interfax.ru/russia/1127924",
-    "https://tass.ru/sport/28300137",
-    "https://www.rbc.ru/politics/09/11/2026/6af20c41880b9dc931df6def",
-    "https://tass.ru/sport/28300133",
-    "https://www.rbc.ru/society/09/11/2026/6af21349e0ff693c1d1487f6",
-    "https://naturalgasintel.com/news/sub-3-natural-gas-leaves-comstocks-western-haynesville-wells-at-breakeven/",
-    "https://tass.ru/obschestvo/28300129",
-    "https://tass.ru/proisshestviya/28300123",
-    "https://tass.ru/sport/28300127",
-    "https://t.me/energytodaygroup/32688",
-    "https://www.rbc.ru/technology_and_media/05/06/2025/6841c3ad9a794730bbe1a6f9",
-    "https://tass.ru/mezhdunarodnaya-panorama/28300121",
-    "https://t.me/minfin/9466",
-    "https://t.me/expert_mag/11243",
-    "https://www.kommersant.ru/doc/9093201",
-    "https://www.kommersant.ru/doc/9093202",
-    "https://www.cnbc.com/2026/11/09/a-massive-trade-in-nvidia-just-went-off-here-are-the-details.html",
-    "https://t.me/forbesrussia/102820",
-    "https://t.me/interfaxonline/81370",
-    "https://tass.ru/mezhdunarodnaya-panorama/28300117",
-    "https://tass.ru/mezhdunarodnaya-panorama/28300119",
-    "https://www.marketwatch.com/story/are-amd-and-broadcom-the-real-winners-of-the-nvidia-spy-scandal-d2343072?mod=mw_rss_topstories",
-    "https://www.interfax.ru/world/1127923",
-    "https://t.me/rbc_news/160333",
-    "https://tass.ru/mezhdunarodnaya-panorama/28300115",
-    "https://www.rbc.ru/politics/06/11/2026/6aee0eb06378fd4bafbb625e",
-    "https://decrypt.co/382838/nvidias-350-billion-scare-what-happens-if-jensen-huang-leaves",
-    "https://www.vedomosti.ru/politics/news/2026/11/09/1243853-iz-za-kiberatak-na-holodilniki",
-    "https://www.theblock.co/news/regulation/2026-11-09-ethereum-foundation-vitalik-buterin-sued-over-firing-suicide-pledge-dispute-436739",
-    "https://t.me/CoinMarketCapAnnouncements/19616",
-    "https://t.me/nainspire/5693",
-    "https://tass.ru/novosti-agentstva/28300113",
-    "https://t.me/markettwits/392605",
-    "https://naturalgasintel.com/news/european-chill-bolsters-us-lng-outlook-as-asian-demand-softens/",
-    "https://t.me/banksta/105121",
-    "https://t.me/WalterBloomberg/38105",
-    "https://tass.ru/obschestvo/28300107",
-    "https://www.rbc.ru/business/15/07/2026/6a5754579a79476ef6783817",
-    "https://www.marketwatch.com/story/think-the-bond-market-is-broken-history-says-a-massive-turnaround-could-be-coming-dfaae450?mod=mw_rss_topstories"
+    "https://protos.com/can-nvidia-fire-ceo-jensen-huang-over-his-affair/"
   ],
   "ai_dead": {
     "date": "2026-11-09",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-08T19:30:55.007423+00:00",
-      "Аракчи: результаты выборов в США привели к паузе в работе посредников"
-    ],
-    [
-      "2026-11-08T20:00:55.266839+00:00",
-      "Mercedes досрочно выиграла Кубок конструкторов Формулы-1"
-    ],
-    [
-      "2026-11-08T20:00:55.266839+00:00",
-      "Grayscale назвала Ethereum операционной системой новой финансовой системы"
-    ],
-    [
-      "2026-11-08T20:00:55.266839+00:00",
-      "LNbits призвала операторов серверов отключиться после атак"
-    ],
-    [
-      "2026-11-08T20:00:55.266839+00:00",
-      "Иран восстановил 80% нефтяной инфраструктуры после ударов"
-    ],
     [
       "2026-11-08T20:00:55.266839+00:00",
       "Иран сообщил о паузе в контактах с США из-за выборов"
@@ -1686,6 +1684,34 @@
     [
       "2026-11-09T19:00:59.845685+00:00",
       "Трейдеры оценивают вероятность ухода Дженсена Хуанга в 44%"
+    ],
+    [
+      "2026-11-09T19:30:57.351748+00:00",
+      "Рынок оценивает вероятность повышения ставки ФРС в декабре в 84,5%"
+    ],
+    [
+      "2026-11-09T19:30:57.351748+00:00",
+      "Глава Nvidia потерял $7,5 млрд из-за расследования"
+    ],
+    [
+      "2026-11-09T19:30:57.351748+00:00",
+      "Honda инвестирует $3 млрд в завод электрокаров"
+    ],
+    [
+      "2026-11-09T19:30:57.351748+00:00",
+      "Банк Франции ожидает роста экономики в четвертом квартале"
+    ],
+    [
+      "2026-11-09T19:30:57.351748+00:00",
+      "Германия пригрозила заблокировать бюджет ЕС из-за Украины"
+    ],
+    [
+      "2026-11-09T19:30:57.351748+00:00",
+      "В Турции открыли новые месторождения нефти"
+    ],
+    [
+      "2026-11-09T19:30:57.351748+00:00",
+      "Кыргызстан и Сальвадор обсудили создание резерва криптоактивов"
     ]
   ],
   "results_fp": [
@@ -1780,15 +1806,15 @@
     "Коммерсантъ": "2026-11-09T19:00:59.845685+00:00",
     "Ведомости": "2026-11-09T14:00:58.935589+00:00",
     "Интерфакс": "2026-11-09T18:30:57.748264+00:00",
-    "ТАСС": "2026-11-09T17:30:57.125077+00:00",
+    "ТАСС": "2026-11-09T19:30:57.351748+00:00",
     "CoinDesk": "2026-11-09T10:01:00.058370+00:00",
     "Headlines for Traders": "2026-11-09T12:01:01.050682+00:00",
-    "MarketTwits": "2026-11-09T19:00:59.845685+00:00",
+    "MarketTwits": "2026-11-09T19:30:57.351748+00:00",
     "Сигналы РЦБ": "2026-11-09T17:30:57.125077+00:00",
     "Whale Alert": "2026-11-09T08:30:59.296327+00:00",
     "РБК": "2026-11-09T17:30:57.125077+00:00",
     "Wu Blockchain": "2026-11-09T17:00:58.328177+00:00",
-    "Банкста": "2026-11-09T17:00:58.328177+00:00",
+    "Банкста": "2026-11-09T19:30:57.351748+00:00",
     "IF News": "2026-11-09T17:30:57.125077+00:00",
     "bitkogan": "2026-11-09T12:01:01.050682+00:00",
     "CryptoKogan": "2026-11-04T12:00:55.366041+00:00",
@@ -1797,12 +1823,12 @@
     "Frank Media": "2026-11-09T15:30:56.695150+00:00",
     "ForkLog": "2026-11-09T17:00:58.328177+00:00",
     "Decrypt": "2026-11-09T19:00:59.845685+00:00",
-    "Cointelegraph": "2026-11-09T19:00:59.845685+00:00",
+    "Cointelegraph": "2026-11-09T19:30:57.351748+00:00",
     "CoinMarketCap": "2026-11-09T18:30:57.748264+00:00",
     "СберИнвестиции": "2026-11-09T16:30:58.188711+00:00",
     "РБК Крипто": "2026-11-09T15:30:56.695150+00:00",
     "ПРАЙМ": "2026-11-09T13:00:56.703725+00:00",
-    "Walter Bloomberg": "2026-11-09T19:00:59.845685+00:00",
+    "Walter Bloomberg": "2026-11-09T19:30:57.351748+00:00",
     "Московская биржа": "2026-11-09T06:30:57.490703+00:00",
     "MarketWatch": "2026-11-09T18:30:57.748264+00:00",
     "Bitcoin Magazine": "2026-11-09T17:00:58.328177+00:00",
@@ -1822,11 +1848,11 @@
     "Банк России": "2026-11-06T04:31:03.199558+00:00",
     "InvestFuture": "2026-11-07T16:30:59.006765+00:00",
     "Rigzone": "2026-11-07T16:30:59.006765+00:00",
-    "Protos": "2026-11-09T19:00:59.845685+00:00",
+    "Protos": "2026-11-09T19:30:57.351748+00:00",
     "Агроинвестор": "2026-11-09T16:30:58.188711+00:00",
     "Газпромбанк Инвестиции": "2026-11-09T17:00:58.328177+00:00",
     "CryptoSlate": "2026-11-09T15:30:56.695150+00:00",
-    "CNBC Markets": "2026-11-09T19:00:59.845685+00:00",
+    "CNBC Markets": "2026-11-09T19:30:57.351748+00:00",
     "Natural Gas Intelligence": "2026-11-09T18:00:59.548003+00:00",
     "Правительство России": "2026-11-08T08:30:55.838823+00:00",
     "glassnode": "2026-11-08T04:30:55.987603+00:00",
@@ -1883,7 +1909,7 @@
     "IF Market News": "2026-11-09T04:30:55.610505+00:00",
     "BitKogan Hotline": "2026-11-09T16:30:58.188711+00:00"
   },
-  "catalog_at": "2026-11-09T19:00:59+00:00",
+  "catalog_at": "2026-11-09T19:30:57+00:00",
   "own_hour": "2026-11-09 21",
   "digest_alert": "2026-11-05 19:30"
 }
