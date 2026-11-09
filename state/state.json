@@ -79,7 +79,7 @@
   ],
   "last_digest_ts": "2026-11-08T16:30:54.582684+00:00",
   "calendar": {
-    "ts": "2026-11-08T16:31:25.128012+00:00",
+    "ts": "2026-11-09T04:00:55.388622+00:00",
     "data": [
       {
         "title": "RBA Assist Gov Hunter Speaks",
@@ -986,7 +986,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-08T21:30:57.858248+00:00",
+  "breaking_ts": "2026-11-09T04:00:55.384150+00:00",
   "news_now": {
     "day": "2026-11-09",
     "day_count": 0,
@@ -995,59 +995,61 @@
     "titles": []
   },
   "news_seen": [
-    "https://t.me/WalterBloomberg/38058",
-    "https://tass.ru/ekonomika/28296717",
-    "https://www.cnbc.com/2026/11/08/trump-iran-strikes-unlikely-talks-hormuz.html",
-    "https://t.me/banksta/105070",
-    "https://tass.ru/kultura/28296715",
-    "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
-    "https://t.me/markettwits/392470",
-    "https://tass.ru/kosmos/28296711",
-    "https://www.interfax.ru/world/1127715",
-    "https://www.rbc.ru/rbcfreenews/6aefcf97f07a758c7ac38ab0",
-    "https://tass.ru/politika/28296707",
-    "https://tass.ru/proisshestviya/28296705",
-    "https://tass.ru/obschestvo/28296701",
-    "https://tass.ru/armiya-i-opk/28296697",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296703",
-    "https://www.kommersant.ru/doc/9092346",
-    "https://t.me/interfaxonline/81321",
-    "https://tass.ru/obschestvo/28296695",
-    "https://tass.ru/armiya-i-opk/28296699",
-    "https://www.interfax.ru/russia/1127714",
-    "https://www.rbc.ru/technology_and_media/09/11/2026/6af0e11416a877722eec188a",
-    "https://www.vedomosti.ru/society/news/2026/11/08/1243525-rossiyane-hotyat-sohranit-kulturu",
-    "https://www.interfax.ru/russia/1127713",
-    "https://tass.ru/armiya-i-opk/28296561",
-    "https://tass.ru/mezhdunarodnaya-panorama/28296687",
-    "https://tass.ru/ekonomika/28296689",
-    "https://t.me/markettwits/392469"
+    "https://t.me/rbc_news/160270",
+    "https://tass.ru/mezhdunarodnaya-panorama/28297141",
+    "https://t.me/headlines_for_traders/88281",
+    "https://tass.ru/proisshestviya/28297139",
+    "https://www.vedomosti.ru/politics/news/2026/11/09/1243559-drozdenko-113-bespilotnikov",
+    "https://tass.ru/obschestvo/28297137",
+    "https://www.rbc.ru/business/09/11/2026/6af140da3c02e1f36c5b688e",
+    "https://t.me/FinancialJuice/145610",
+    "https://tass.ru/kosmos/28297131",
+    "https://t.me/FinancialJuice/145609",
+    "https://tass.ru/obschestvo/28297133",
+    "https://t.me/headlines_for_traders/88280",
+    "https://www.vedomosti.ru/politics/news/2026/11/09/1243558-tramp-zayavil",
+    "https://t.me/headlines_for_traders/88279",
+    "https://www.theblock.co/news/defi/2026-11-08-nvidia-perps-slide-jensen-huang-436047",
+    "https://www.kommersant.ru/doc/9092384",
+    "https://tass.ru/nauka/28297127",
+    "https://tass.ru/obschestvo/28297023",
+    "https://t.me/wublockchainenglish/26742",
+    "https://www.interfax.ru/world/1127748",
+    "https://tass.ru/politika/28297121",
+    "https://tass.ru/armiya-i-opk/28297125",
+    "https://tass.ru/armiya-i-opk/28297123",
+    "https://tass.ru/obschestvo/28292227",
+    "https://tass.ru/proisshestviya/28297119",
+    "https://www.vedomosti.ru/politics/news/2026/11/09/1243556-tramp-posle-uregulirovaniya",
+    "https://t.me/FinancialJuice/145608",
+    "https://tass.ru/ekonomika/28297111",
+    "https://t.me/CoinDeskGlobal/25400",
+    "https://tass.ru/obschestvo/28297115",
+    "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility",
+    "https://t.me/banksta/105076",
+    "https://tass.ru/proisshestviya/28297113",
+    "https://tass.ru/politika/28297109",
+    "https://tass.ru/ekonomika/28297107",
+    "https://www.kommersant.ru/doc/9092379",
+    "https://tass.ru/kultura/28297103",
+    "https://tass.ru/obschestvo/28297105",
+    "https://t.me/cointelegraph/73127",
+    "https://www.interfax.ru/russia/1127747",
+    "https://www.interfax.ru/russia/1127746",
+    "https://tass.ru/nedvizhimost/28297097",
+    "https://www.rbc.ru/society/29/07/2026/6a69d0909a794701d2f9807f",
+    "https://tass.ru/mezhdunarodnaya-panorama/28297075",
+    "https://tass.ru/proisshestviya/28297095",
+    "https://tass.ru/ekonomika/28297091",
+    "https://tass.ru/armiya-i-opk/28297079",
+    "https://tass.ru/obschestvo/28297083",
+    "https://t.me/FinancialJuice/145607"
   ],
   "ai_dead": {
     "date": "2026-11-08",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-07T20:30:59.702520+00:00",
-      "На юге Ирана прогремели взрывы в трех городах"
-    ],
-    [
-      "2026-11-07T20:30:59.702520+00:00",
-      "США ввели санкции против 41 компании из-за сети Prince Group"
-    ],
-    [
-      "2026-11-07T20:30:59.702520+00:00",
-      "Исследователь сообщил об ограничениях клавиатуры iPhone"
-    ],
-    [
-      "2026-11-07T20:30:59.702520+00:00",
-      "На Солнце зафиксирована новая вспышка класса M"
-    ],
-    [
-      "2026-11-07T20:30:59.702520+00:00",
-      "«Вашингтон» обыграл «Флориду» в матче НХЛ со счетом 4:3"
-    ],
     [
       "2026-11-08T04:00:58.144279+00:00",
       "Россия увеличила импорт маргарина из США в 41 раз в сентябре"
@@ -1623,6 +1625,30 @@
     [
       "2026-11-08T20:30:58.118885+00:00",
       "Anthropic планирует провести роуд-шоу в рамках IPO на следующей неделе"
+    ],
+    [
+      "2026-11-09T04:00:55.384150+00:00",
+      "Роберт Хуанг и расследование против главы Nvidia вызвали $650 млрд колебаний"
+    ],
+    [
+      "2026-11-09T04:00:55.384150+00:00",
+      "Трамп заявил о близости урегулирования украинского конфликта"
+    ],
+    [
+      "2026-11-09T04:00:55.384150+00:00",
+      "Криптоинвестор Эван Лутра потерял более $2 млн при похищении в Оксфорде"
+    ],
+    [
+      "2026-11-09T04:00:55.384150+00:00",
+      "FT назвала Сингапур крупнейшим налоговым убежищем для Apple"
+    ],
+    [
+      "2026-11-09T04:00:55.384150+00:00",
+      "Над Ленинградской областью за ночь сбили 113 беспилотников"
+    ],
+    [
+      "2026-11-09T04:00:55.384150+00:00",
+      "Экономический календарь недели: ключевые данные по инфляции и ВВП"
     ]
   ],
   "results_fp": [
@@ -1714,17 +1740,17 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-08T04:30:55.987603+00:00",
-    "Коммерсантъ": "2026-11-08T20:00:55.266839+00:00",
-    "Ведомости": "2026-11-08T20:00:55.266839+00:00",
+    "Коммерсантъ": "2026-11-09T04:00:55.384150+00:00",
+    "Ведомости": "2026-11-09T04:00:55.384150+00:00",
     "Интерфакс": "2026-11-08T20:00:55.266839+00:00",
     "ТАСС": "2026-11-08T19:00:56.603874+00:00",
-    "CoinDesk": "2026-11-08T13:00:55.421273+00:00",
-    "Headlines for Traders": "2026-11-08T15:00:56.388932+00:00",
+    "CoinDesk": "2026-11-09T04:00:55.384150+00:00",
+    "Headlines for Traders": "2026-11-09T04:00:55.384150+00:00",
     "MarketTwits": "2026-11-08T20:30:58.118885+00:00",
     "Сигналы РЦБ": "2026-11-08T15:30:56.644139+00:00",
     "Whale Alert": "2026-11-08T20:00:55.266839+00:00",
-    "РБК": "2026-11-08T19:30:55.007423+00:00",
-    "Wu Blockchain": "2026-11-08T16:30:54.582684+00:00",
+    "РБК": "2026-11-09T04:00:55.384150+00:00",
+    "Wu Blockchain": "2026-11-09T04:00:55.384150+00:00",
     "Банкста": "2026-11-08T19:30:55.007423+00:00",
     "IF News": "2026-11-08T20:30:58.118885+00:00",
     "bitkogan": "2026-11-06T16:30:57.622247+00:00",
@@ -1734,7 +1760,7 @@
     "Frank Media": "2026-11-07T16:30:59.006765+00:00",
     "ForkLog": "2026-11-08T12:00:55.342955+00:00",
     "Decrypt": "2026-11-08T04:30:55.987603+00:00",
-    "Cointelegraph": "2026-11-08T17:00:57.580883+00:00",
+    "Cointelegraph": "2026-11-09T04:00:55.384150+00:00",
     "CoinMarketCap": "2026-11-08T20:00:55.266839+00:00",
     "СберИнвестиции": "2026-11-07T04:30:54.781550+00:00",
     "РБК Крипто": "2026-11-06T15:30:58.427447+00:00",
@@ -1744,8 +1770,8 @@
     "MarketWatch": "2026-11-08T16:30:54.582684+00:00",
     "Bitcoin Magazine": "2026-11-08T16:30:54.582684+00:00",
     "Watcher Guru": "2026-11-08T20:30:58.118885+00:00",
-    "РБК. Главное": "2026-11-08T19:00:56.603874+00:00",
-    "The Block": "2026-11-08T19:00:56.603874+00:00",
+    "РБК. Главное": "2026-11-09T04:00:55.384150+00:00",
+    "The Block": "2026-11-09T04:00:55.384150+00:00",
     "Нефть и Капитал": "2026-11-07T16:30:59.006765+00:00",
     "MMI": "2026-11-08T12:30:57.963787+00:00",
     "FinancialJuice": "2026-11-08T20:30:58.118885+00:00",
@@ -1818,7 +1844,7 @@
     "Russian Macro": "2026-11-08T16:30:54.582684+00:00",
     "Минфин": "2026-11-08T16:30:54.582684+00:00"
   },
-  "catalog_at": "2026-11-08T21:30:57+00:00",
+  "catalog_at": "2026-11-09T04:00:55+00:00",
   "own_hour": "2026-11-08 21",
   "digest_alert": "2026-11-05 19:30"
 }
