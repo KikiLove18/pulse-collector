@@ -84,7 +84,7 @@
   ],
   "last_digest_ts": "2026-11-11T16:30:59.321033+00:00",
   "calendar": {
-    "ts": "2026-11-11T16:31:33.642019+00:00",
+    "ts": "2026-11-12T04:00:58.041671+00:00",
     "data": [
       {
         "title": "RBA Assist Gov Hunter Speaks",
@@ -1031,7 +1031,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-11T21:30:59.431792+00:00",
+  "breaking_ts": "2026-11-12T04:00:58.030677+00:00",
   "news_now": {
     "day": "2026-11-12",
     "day_count": 0,
@@ -1040,110 +1040,72 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/obschestvo/28308965",
-    "https://t.me/BitcoinMagazineTelegram/11065",
-    "https://tass.ru/kultura/28308955",
-    "https://www.wsj.com/finance/stocks/u-s-stocks-rise-as-coreweave-update-eases-some-ai-worries-f8bfbaa7?mod=rss_markets_main",
-    "https://t.me/FinancialJuice/146438",
-    "https://www.marketwatch.com/story/why-this-big-idea-to-fix-social-security-relies-on-a-massive-stock-market-gamble-5423f50f?mod=mw_rss_topstories",
-    "https://www.interfax.ru/russia/1128444",
-    "https://www.interfax.ru/russia/1128443",
-    "https://www.kommersant.ru/doc/9095062",
-    "https://www.interfax.ru/russia/1128442",
-    "https://t.me/WalterBloomberg/38264",
-    "https://www.wsj.com/finance/stocks/coreweave-jumps-boosting-the-ai-trade-e5c1569b?mod=rss_markets_main",
-    "https://www.interfax.ru/russia/1128441",
-    "https://t.me/FinancialJuice/146437",
-    "https://thedefiant.io/frontier/ai/trump-backed-nvidia-diversion-crackdown-axios-reports",
-    "https://decrypt.co/383077/bitcoin-short-term-holders-send-3-illion-btc-exchanges-loss",
-    "https://t.me/interfaxonline/81492",
-    "https://tass.ru/politika/28308959",
-    "https://t.me/banksta/105255",
-    "https://t.me/headlines_for_traders/88516",
-    "https://t.me/FinancialJuice/146436",
-    "https://t.me/WalterBloomberg/38263",
-    "https://www.rbc.ru/sport/11/11/2026/6af49ca4546495018bca950c",
-    "https://www.marketwatch.com/story/bloom-energys-stock-is-soaring-as-data-center-jitters-subside-5fda5689?mod=mw_rss_topstories",
-    "https://tass.ru/obschestvo/28308953",
-    "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html",
-    "https://tass.ru/ekonomika/28308935",
-    "https://t.me/FinancialJuice/146435",
-    "https://www.rbc.ru/rbcfreenews/6aedf3b5e824b280460c9627",
-    "https://tass.ru/obschestvo/28308947",
-    "https://tass.ru/kultura/28308937",
-    "https://tass.ru/ekonomika/28308943",
-    "https://tass.ru/sport/28308945",
-    "https://tass.ru/obschestvo/28308933",
-    "https://tass.ru/obschestvo/28308931",
-    "https://www.interfax.ru/russia/1128440",
-    "https://t.me/FinancialJuice/146433",
-    "https://t.me/FinancialJuice/146434",
-    "https://t.me/rbc_news/160503",
-    "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
-    "https://tass.ru/ekonomika/28308921",
-    "https://www.interfax.ru/russia/1128439",
-    "https://tass.ru/obschestvo/28308929",
-    "https://tass.ru/obschestvo/28308925",
-    "https://www.rbc.ru/rbcfreenews/6af458370723fe475016eb40",
-    "https://t.me/WalterBloomberg/38262",
-    "https://t.me/markettwits/393016",
-    "https://tass.ru/ekonomika/28308927",
-    "https://t.me/FinancialJuice/146432",
-    "https://tass.ru/kultura/28308923",
-    "https://www.rbc.ru/technology_and_media/26/02/2026/699f1fe09a7947ea3a14d0f3",
-    "https://tass.ru/armiya-i-opk/28308939",
-    "https://t.me/FinancialJuice/146431",
-    "https://t.me/WalterBloomberg/38261",
-    "https://www.rbc.ru/rbcfreenews/6a2d6c4a9a7947d17536362d",
-    "https://tass.ru/politika/28308913",
-    "https://tass.ru/politika/28308917",
-    "https://www.rbc.ru/sport/01/03/2026/69a476b99a794754d12e51df",
-    "https://tass.ru/politika/28308919",
-    "https://thedefiant.io/news/blockchains/ethlabs-puts-ethereum-quantum-defense-ahead-of-speed",
-    "https://www.rbc.ru/politics/30/06/2025/6862cdb79a7947505789a285",
-    "https://t.me/whale_alert_io/104806",
-    "https://tass.ru/armiya-i-opk/28305119",
-    "https://oilprice.com/Metals/Commodities/Yttriums-125-Fold-Price-Gap-Looms-Over-Trump-Xi-Talks-in-Shenzhen.html",
-    "https://www.vedomosti.ru/politics/news/2026/11/11/1244638-o-bezopasnosti-s-evropoi",
-    "https://www.cnbc.com/investingclub/2026/11/11/costco-is-giving-shareholders-a-big-early-holiday-gift-how-to-make-sure-you-get-it.html",
-    "https://t.me/markettwits/393015",
-    "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
-    "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
-    "https://t.me/banksta/105254"
+    "https://t.me/headlines_for_traders/88520",
+    "https://t.me/frank_media/24699",
+    "https://tass.ru/proisshestviya/28309435",
+    "https://t.me/markettwits/393019",
+    "https://tass.ru/ekonomika/28309439",
+    "https://tass.ru/sport/28309437",
+    "https://t.me/rbc_news/160507",
+    "https://www.kommersant.ru/doc/9095095",
+    "https://tass.ru/ekonomika/28309425",
+    "https://tass.ru/obschestvo/28309417",
+    "https://www.interfax.ru/russia/1128468",
+    "https://tass.ru/ekonomika/28309423",
+    "https://tass.ru/ekonomika/28309421",
+    "https://tass.ru/obschestvo/28309419",
+    "https://www.rbc.ru/rbcfreenews/671518179a794744b89d4c6e",
+    "https://tass.ru/proisshestviya/28309415",
+    "https://www.vedomosti.ru/politics/news/2026/11/12/1244652-pvo-sbili",
+    "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
+    "https://tass.ru/nauka/28309387",
+    "https://tass.ru/proisshestviya/28309413",
+    "https://tass.ru/obschestvo/28309409",
+    "https://tass.ru/sport/28309411",
+    "https://tass.ru/ekonomika/28309395",
+    "https://www.interfax.ru/russia/1128467",
+    "https://t.me/banksta/105269",
+    "https://tass.ru/obschestvo/28309405",
+    "https://tass.ru/mezhdunarodnaya-panorama/28309377",
+    "https://t.me/interfaxonline/81502",
+    "https://t.me/CoinMarketCapAnnouncements/19659",
+    "https://t.me/headlines_for_traders/88519",
+    "https://tass.ru/proisshestviya/28309393",
+    "https://www.cnbc.com/2026/11/12/rich-wealth-alternative-assets-.html",
+    "https://www.vedomosti.ru/society/news/2026/11/12/1244651-nikiforov-popal",
+    "https://tass.ru/ekonomika/28309363",
+    "https://tass.ru/armiya-i-opk/28309383",
+    "https://tass.ru/proisshestviya/28309375",
+    "https://t.me/banksta/105268",
+    "https://t.me/lookonchainchannel/11013",
+    "https://tass.ru/proisshestviya/28309353",
+    "https://tass.ru/obschestvo/28309355",
+    "https://tass.ru/mezhdunarodnaya-panorama/28309389",
+    "https://tass.ru/obschestvo/28309379",
+    "https://t.me/whale_alert_io/104809",
+    "https://tass.ru/armiya-i-opk/28309385",
+    "https://www.interfax.ru/world/1128466",
+    "https://www.interfax.ru/russia/1128465",
+    "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html",
+    "https://www.kommersant.ru/doc/9095091",
+    "https://t.me/wublockchainenglish/26791",
+    "https://t.me/cointelegraph/73218",
+    "https://t.me/headlines_for_traders/88518",
+    "https://cryptoslate.com/bitmine-posts-2-8b-quarterly-profit-but-yearly-net-loss-surpasses-6b/",
+    "https://www.rbc.ru/rbcfreenews/63c9ab679a7947c2c2e53284",
+    "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
+    "https://www.vedomosti.ru/politics/news/2026/11/12/1244650-putin-obsudil",
+    "https://www.marketwatch.com/story/heres-how-bernie-sanders-wants-to-keep-social-security-solvent-for-generations-f5666a38?mod=mw_rss_topstories",
+    "https://t.me/investfuture/15504",
+    "https://www.interfax.ru/world/1128463",
+    "https://t.me/headlines_for_traders/88517",
+    "https://www.cnbc.com/2026/11/12/nvidia-megaspeed-alice-huang-jensen-.html"
   ],
   "ai_dead": {
     "date": "2026-11-11",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-11T05:00:57.706385+00:00",
-      "Across Protocol восстановила сайт после взлома домена"
-    ],
-    [
-      "2026-11-11T05:30:57.470520+00:00",
-      "Производство стали в России сократилось в октябре на 2–4,7%"
-    ],
-    [
-      "2026-11-11T05:30:57.470520+00:00",
-      "Positive Technologies опубликовала сильный отчет за третий квартал"
-    ],
-    [
-      "2026-11-11T05:30:57.470520+00:00",
-      "Иена упала до минимума более чем за месяц на ожиданиях роста ставки ФРС"
-    ],
-    [
-      "2026-11-11T06:00:59.209944+00:00",
-      "Цены на нефть растут на фоне снижения оптимизма по поводу мира с Ираном"
-    ],
-    [
-      "2026-11-11T06:00:59.209944+00:00",
-      "Атака беспилотников затронула портовую зону Усть-Луги"
-    ],
-    [
-      "2026-11-11T06:00:59.209944+00:00",
-      "Россия, США и Китай обсудят применение ИИ в управлении ядерным оружием"
-    ],
     [
       "2026-11-11T06:00:59.209944+00:00",
       "Aave одобрил предложение о запуске нативного кредитования Bitcoin"
@@ -1743,6 +1705,26 @@
     [
       "2026-11-11T20:00:55.933559+00:00",
       "Pnc разрешила бизнесу принимать платежи в USDC"
+    ],
+    [
+      "2026-11-12T04:00:58.030677+00:00",
+      "Уолл-стрит выросла в среду на сильной отчетности CoreWeave"
+    ],
+    [
+      "2026-11-12T04:00:58.030677+00:00",
+      "Павел Дуров назвал токен GRAM недооцененным"
+    ],
+    [
+      "2026-11-12T04:00:58.030677+00:00",
+      "BitMine отчиталась о квартальной прибыли $2,8 млрд"
+    ],
+    [
+      "2026-11-12T04:00:58.030677+00:00",
+      "IPO Anthropic переподписано в несколько раз"
+    ],
+    [
+      "2026-11-12T04:00:58.030677+00:00",
+      "Трамп заработал $1 млн на платной подписке в соцсети"
     ]
   ],
   "results_fp": [
@@ -1813,16 +1795,16 @@
     "OilPrice": "2026-11-11T16:30:59.321033+00:00",
     "Коммерсантъ": "2026-11-11T20:00:55.933559+00:00",
     "Ведомости": "2026-11-11T20:00:55.933559+00:00",
-    "Интерфакс": "2026-11-11T19:00:57.645041+00:00",
+    "Интерфакс": "2026-11-12T04:00:58.030677+00:00",
     "ТАСС": "2026-11-11T18:30:56.044500+00:00",
     "CoinDesk": "2026-11-11T11:01:01.080362+00:00",
-    "Headlines for Traders": "2026-11-11T19:00:57.645041+00:00",
+    "Headlines for Traders": "2026-11-12T04:00:58.030677+00:00",
     "MarketTwits": "2026-11-11T20:00:55.933559+00:00",
     "Сигналы РЦБ": "2026-11-11T18:30:56.044500+00:00",
     "Whale Alert": "2026-11-11T19:00:57.645041+00:00",
     "РБК": "2026-11-11T19:30:57.524183+00:00",
-    "Wu Blockchain": "2026-11-11T19:30:57.524183+00:00",
-    "Банкста": "2026-11-11T20:00:55.933559+00:00",
+    "Wu Blockchain": "2026-11-12T04:00:58.030677+00:00",
+    "Банкста": "2026-11-12T04:00:58.030677+00:00",
     "IF News": "2026-11-11T19:30:57.524183+00:00",
     "bitkogan": "2026-11-11T11:30:56.573486+00:00",
     "CryptoKogan": "2026-11-11T14:30:58.431037+00:00",
@@ -1859,7 +1841,7 @@
     "Protos": "2026-11-10T17:30:57.484666+00:00",
     "Агроинвестор": "2026-11-11T07:00:58.696844+00:00",
     "Газпромбанк Инвестиции": "2026-11-11T13:00:56.977211+00:00",
-    "CryptoSlate": "2026-11-11T20:00:55.933559+00:00",
+    "CryptoSlate": "2026-11-12T04:00:58.030677+00:00",
     "CNBC Markets": "2026-11-11T16:01:03.139559+00:00",
     "Natural Gas Intelligence": "2026-11-10T20:30:57.635807+00:00",
     "Правительство России": "2026-11-10T09:00:57.907758+00:00",
@@ -1919,7 +1901,7 @@
     "OilCapital": "2026-11-10T16:30:58.070018+00:00",
     "GPB Investments": "2026-11-11T16:30:59.321033+00:00"
   },
-  "catalog_at": "2026-11-11T21:30:59+00:00",
+  "catalog_at": "2026-11-12T04:00:58+00:00",
   "own_hour": "2026-11-11 21",
   "digest_alert": "2026-11-10 19:30"
 }
