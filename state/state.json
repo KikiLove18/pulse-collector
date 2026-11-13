@@ -84,7 +84,7 @@
   ],
   "last_digest_ts": "2026-11-12T17:01:06.560255+00:00",
   "calendar": {
-    "ts": "2026-11-12T16:31:33.208008+00:00",
+    "ts": "2026-11-13T04:00:55.793057+00:00",
     "data": [
       {
         "title": "RBA Assist Gov Hunter Speaks",
@@ -671,14 +671,6 @@
         "previous": "-0.3%"
       },
       {
-        "title": "Mortgage Delinquencies",
-        "country": "USD",
-        "date": "2026-11-12T11:14:00-05:00",
-        "impact": "Low",
-        "forecast": "",
-        "previous": "4.37%"
-      },
-      {
         "title": "FOMC Member Goolsbee Speaks",
         "country": "USD",
         "date": "2026-11-12T11:15:00-05:00",
@@ -887,6 +879,14 @@
         "previous": ""
       },
       {
+        "title": "Mortgage Delinquencies",
+        "country": "USD",
+        "date": "2026-11-13T10:15:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": "4.37%"
+      },
+      {
         "title": "Natural Gas Storage",
         "country": "USD",
         "date": "2026-11-13T10:30:00-05:00",
@@ -1034,7 +1034,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-12T21:30:56.803898+00:00",
+  "breaking_ts": "2026-11-13T04:00:55.791955+00:00",
   "news_now": {
     "day": "2026-11-13",
     "day_count": 0,
@@ -1043,98 +1043,74 @@
     "titles": []
   },
   "news_seen": [
-    "https://t.me/FinancialJuice/146825",
-    "https://t.me/banksta/105349",
-    "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-    "https://decrypt.co/383204/why-msci-removing-bitcoin-treasury-strategy-stock-indexes",
-    "https://www.wsj.com/finance/stocks/u-s-stocks-fall-as-huang-ouster-sends-shockwaves-through-tech-5b0aa02a?mod=rss_markets_main",
-    "https://www.rbc.ru/politics/10/11/2026/6af2d67baa95ce292fb3dc9d",
-    "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html",
-    "https://www.vedomosti.ru/politics/news/2026/11/13/1245000-na-podlete",
-    "https://t.me/whale_alert_io/104849",
-    "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
-    "https://t.me/whale_alert_io/104848",
-    "https://t.me/BitcoinMagazineTelegram/11077",
-    "https://t.me/markettwits/393225",
-    "https://www.kommersant.ru/doc/9095976",
-    "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
-    "https://t.me/headlines_for_traders/88606",
-    "https://tass.ru/mezhdunarodnaya-panorama/28313579",
-    "https://t.me/markettwits/393224",
-    "https://www.vedomosti.ru/politics/news/2026/11/13/1244998-norvegiya-zapretit",
-    "https://t.me/WalterBloomberg/38358",
-    "https://www.wsj.com/finance/stocks/nvidia-tumbles-as-its-ceo-jensen-huang-departs-amid-multiplying-scandals-d380df1f?mod=rss_markets_main",
-    "https://tass.ru/obschestvo/28313577",
-    "https://t.me/banksta/105348",
-    "https://t.me/FinancialJuice/146824",
-    "https://www.rbc.ru/sport/12/11/2026/6af5b1cef0d28cda77e2e62b",
-    "https://t.me/FinancialJuice/146823",
-    "https://t.me/CoinDeskGlobal/25461",
-    "https://www.marketwatch.com/story/the-s-p-500-is-shrugging-off-nvidias-selloff-heres-whats-keeping-the-rest-of-the-market-afloat-7cdf2f05?mod=mw_rss_topstories",
-    "https://www.coindesk.com/policy/2026/11/12/kalshi-ends-donald-trump-jr-s-advisory-contract-over-1789-capital-s-polymarket-investment",
-    "https://t.me/FinancialJuice/146822",
-    "https://www.interfax.ru/world/1128726",
-    "https://tass.ru/armiya-i-opk/28313575",
-    "https://t.me/markettwits/393223",
-    "https://tass.ru/obschestvo/28313571",
-    "https://t.me/markettwits/393222",
-    "https://t.me/FinancialJuice/146821",
-    "https://tass.ru/ekonomika/28313549",
-    "https://tass.ru/armiya-i-opk/28313569",
-    "https://t.me/cointelegraph/73247",
-    "https://tass.ru/armiya-i-opk/28313567",
-    "https://tass.ru/armiya-i-opk/28313565",
-    "https://t.me/FinancialJuice/146820",
-    "https://www.rbc.ru/politics/27/10/2026/6ae0a21cb7cfe4a5fb8a4447",
-    "https://tass.ru/armiya-i-opk/28313573",
-    "https://t.me/forbesrussia/102972",
-    "https://t.me/markettwits/393221",
-    "https://www.kommersant.ru/doc/9095961",
-    "https://tass.ru/armiya-i-opk/28313555",
-    "https://tass.ru/armiya-i-opk/28313557",
-    "https://t.me/FinancialJuice/146819",
-    "https://t.me/FinancialJuice/146818",
-    "https://t.me/markettwits/393220",
-    "https://t.me/FinancialJuice/146817",
-    "https://tass.ru/armiya-i-opk/28309581",
-    "https://oilprice.com/Energy/Natural-Gas/Europe-Enters-Winter-With-Its-Lowest-Gas-Inventory-of-the-2020s.html",
-    "https://tass.ru/ekonomika/28313545",
-    "https://cointelegraph.com/news/us-justice-department-business-groups-defi-illinois-crypto-tax?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://tass.ru/proisshestviya/28313543",
-    "https://t.me/markettwits/393219",
-    "https://tass.ru/proisshestviya/28313537",
-    "https://t.me/WalterBloomberg/38357",
-    "https://tass.ru/mezhdunarodnaya-panorama/28313539"
+    "https://t.me/BitcoinMagazineTelegram/11081",
+    "https://tass.ru/proisshestviya/28314027",
+    "https://tass.ru/ekonomika/28314033",
+    "https://tass.ru/ekonomika/28314029",
+    "https://www.kommersant.ru/doc/9096020",
+    "https://www.vedomosti.ru/politics/news/2026/11/13/1245012-kushner-soobschil",
+    "https://www.wsj.com/world/asia/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15?mod=rss_markets_main",
+    "https://www.interfax.ru/world/1128764",
+    "https://www.interfax.ru/world/1128763",
+    "https://tass.ru/politika/28314025",
+    "https://www.rbc.ru/rbcfreenews/66b1e5439a79478a7f4bf6f9",
+    "https://tass.ru/ekonomika/28313991",
+    "https://www.rbc.ru/finances/07/11/2026/6aef6268574adeb1ef6b3341",
+    "https://tass.ru/sport/28314023",
+    "https://tass.ru/nedvizhimost/28314021",
+    "https://www.kommersant.ru/doc/9096011",
+    "https://tass.ru/nauka/28313979",
+    "https://t.me/wublockchainenglish/26808",
+    "https://t.me/FinancialJuice/146886",
+    "https://tass.ru/ekonomika/28313997",
+    "https://tass.ru/sport/28313999",
+    "https://t.me/CoinDeskGlobal/25464",
+    "https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace",
+    "https://tass.ru/armiya-i-opk/28314009",
+    "https://www.rbc.ru/politics/13/11/2026/6af5fc5a83f2da2dcf009cd8",
+    "https://tass.ru/armiya-i-opk/28314005",
+    "https://tass.ru/mezhdunarodnaya-panorama/28313989",
+    "https://tass.ru/obschestvo/28313971",
+    "https://tass.ru/armiya-i-opk/28314001",
+    "https://t.me/WatcherGuru/15996",
+    "https://tass.ru/armiya-i-opk/28314011",
+    "https://tass.ru/proisshestviya/28313995",
+    "https://cryptoslate.com/circle-hands-usdc-reserves-to-eu-regulators-risking-higher-fees/",
+    "https://tass.ru/ekonomika/28313993",
+    "https://www.rbc.ru/business/12/11/2026/6af6142ae0b7ef777dac39ec",
+    "https://tass.ru/nedvizhimost/28313977",
+    "https://tass.ru/ekonomika/28313987",
+    "https://www.interfax.ru/russia/1128761",
+    "https://t.me/FinancialJuice/146885",
+    "https://t.me/FinancialJuice/146884",
+    "https://tass.ru/ekonomika/28313965",
+    "https://t.me/lookonchainchannel/11030",
+    "https://tass.ru/nedvizhimost/28313951",
+    "https://www.rbc.ru/economics/26/08/2026/6a8e22479a794707ef7fbbf7",
+    "https://tass.ru/sport/28313981",
+    "https://tass.ru/obschestvo/28313983",
+    "https://www.kommersant.ru/doc/9096001",
+    "https://t.me/BitcoinMagazineTelegram/11080",
+    "https://www.interfax.ru/world/1128760",
+    "https://tass.ru/ekonomika/28313959",
+    "https://t.me/interfaxonline/81561",
+    "https://t.me/FinancialJuice/146883",
+    "https://t.me/FinancialJuice/146882",
+    "https://t.me/FinancialJuice/146881",
+    "https://www.interfax.ru/world/1128759",
+    "https://t.me/FinancialJuice/146880",
+    "https://www.kommersant.ru/doc/9096002",
+    "https://t.me/FinancialJuice/146879",
+    "https://t.me/FinancialJuice/146878",
+    "https://www.interfax.ru/world/1128758",
+    "https://t.me/wublockchainenglish/26807",
+    "https://t.me/WatcherGuru/15995"
   ],
   "ai_dead": {
     "date": "2026-11-12",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-12T05:00:56.214578+00:00",
-      "«КазТрансОйл» транспортировал более 8,3 млн тонн нефти в направлении Самары"
-    ],
-    [
-      "2026-11-12T05:00:56.214578+00:00",
-      "Жителя Лондона обвинили в инсценировке поглощения компании через ChatGPT"
-    ],
-    [
-      "2026-11-12T05:00:56.214578+00:00",
-      "Адам Бэк заявил о начале макробычьего тренда для биткоина"
-    ],
-    [
-      "2026-11-12T05:30:55.019320+00:00",
-      "Акции Nvidia падают на фоне слухов об отставке гендиректора"
-    ],
-    [
-      "2026-11-12T05:30:55.019320+00:00",
-      "Индекс Мосбиржи превысил 2500 пунктов"
-    ],
-    [
-      "2026-11-12T05:30:55.019320+00:00",
-      "Чистая прибыль HeadHunter снизилась на 16,5%"
-    ],
     [
       "2026-11-12T05:30:55.019320+00:00",
       "ЦБ РФ предложил открыть СБП для небанковских компаний"
@@ -1734,6 +1710,26 @@
     [
       "2026-11-12T20:30:59.375807+00:00",
       "Потребление алкоголя в РФ достигло минимума с 1996 года"
+    ],
+    [
+      "2026-11-13T04:00:55.791955+00:00",
+      "Биткоин опустился ниже $69 000 на фоне ликвидации позиций на $622 млн"
+    ],
+    [
+      "2026-11-13T04:00:55.791955+00:00",
+      "КСИР заявил об ударе по американскому радару в Бахрейне"
+    ],
+    [
+      "2026-11-13T04:00:55.791955+00:00",
+      "Товарооборот России и Вьетнама вырос на 14% в первом полугодии"
+    ],
+    [
+      "2026-11-13T04:00:55.791955+00:00",
+      "Google и Samsung выпустят очки с искусственным интеллектом в декабре"
+    ],
+    [
+      "2026-11-13T04:00:55.791955+00:00",
+      "Власти Венесуэлы направили 99% нефтедоходов на зарплаты и пенсии"
     ]
   ],
   "results_fp": [
@@ -1804,17 +1800,17 @@
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-12T18:01:00.885413+00:00",
-    "Коммерсантъ": "2026-11-12T20:30:59.375807+00:00",
+    "Коммерсантъ": "2026-11-13T04:00:55.791955+00:00",
     "Ведомости": "2026-11-12T20:30:59.375807+00:00",
-    "Интерфакс": "2026-11-12T20:30:59.375807+00:00",
-    "ТАСС": "2026-11-12T20:30:59.375807+00:00",
-    "CoinDesk": "2026-11-12T17:01:06.560255+00:00",
+    "Интерфакс": "2026-11-13T04:00:55.791955+00:00",
+    "ТАСС": "2026-11-13T04:00:55.791955+00:00",
+    "CoinDesk": "2026-11-13T04:00:55.791955+00:00",
     "Headlines for Traders": "2026-11-12T14:00:59.775116+00:00",
     "MarketTwits": "2026-11-12T20:30:59.375807+00:00",
     "Сигналы РЦБ": "2026-11-12T16:00:59.464010+00:00",
     "Whale Alert": "2026-11-12T17:30:55.097512+00:00",
-    "РБК": "2026-11-12T20:30:59.375807+00:00",
-    "Wu Blockchain": "2026-11-12T17:01:06.560255+00:00",
+    "РБК": "2026-11-13T04:00:55.791955+00:00",
+    "Wu Blockchain": "2026-11-13T04:00:55.791955+00:00",
     "Банкста": "2026-11-12T20:00:56.989588+00:00",
     "IF News": "2026-11-12T16:00:59.464010+00:00",
     "bitkogan": "2026-11-11T11:30:56.573486+00:00",
@@ -1832,8 +1828,8 @@
     "Walter Bloomberg": "2026-11-12T20:30:59.375807+00:00",
     "Московская биржа": "2026-11-12T13:30:56.552099+00:00",
     "MarketWatch": "2026-11-12T19:30:57.550902+00:00",
-    "Bitcoin Magazine": "2026-11-12T17:01:06.560255+00:00",
-    "Watcher Guru": "2026-11-12T20:30:59.375807+00:00",
+    "Bitcoin Magazine": "2026-11-13T04:00:55.791955+00:00",
+    "Watcher Guru": "2026-11-13T04:00:55.791955+00:00",
     "РБК. Главное": "2026-11-12T20:00:56.989588+00:00",
     "The Block": "2026-11-12T17:01:06.560255+00:00",
     "Нефть и Капитал": "2026-11-12T14:30:56.851698+00:00",
@@ -1845,7 +1841,7 @@
     "The Defiant": "2026-11-12T18:30:56.804082+00:00",
     "WSJ": "2026-11-12T17:01:06.560255+00:00",
     "Bitcoin Magazine Telegram": "2026-11-02T16:30:57.156819+00:00",
-    "Lookonchain": "2026-11-12T04:30:56.136413+00:00",
+    "Lookonchain": "2026-11-13T04:00:55.791955+00:00",
     "Банк России": "2026-11-12T17:01:06.560255+00:00",
     "InvestFuture": "2026-11-11T15:30:58.281529+00:00",
     "Rigzone": "2026-11-12T17:01:06.560255+00:00",
@@ -1915,7 +1911,7 @@
     "ФРС (пресс-релизы)": "2026-11-12T18:01:00.885413+00:00",
     "FJ": "2026-11-12T16:30:58.964574+00:00"
   },
-  "catalog_at": "2026-11-12T21:30:56+00:00",
+  "catalog_at": "2026-11-13T04:00:55+00:00",
   "own_hour": "2026-11-12 21",
   "digest_alert": "2026-11-10 19:30"
 }
