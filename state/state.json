@@ -1029,7 +1029,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-13T19:30:58.399877+00:00",
+  "breaking_ts": "2026-11-13T20:00:57.905349+00:00",
   "news_now": {
     "day": "2026-11-13",
     "day_count": 5,
@@ -1044,102 +1044,64 @@
     ]
   },
   "news_seen": [
+    "https://t.me/markettwits/393392",
     "https://www.cnbc.com/2026/11/13/robinhood-supreme-court-ipo-lawsuit.html",
+    "https://t.me/rbc_news/160652",
+    "https://naturalgasintel.com/news/natural-gas-storage-surplus-widens-weighs-on-futures/",
+    "https://www.cnbc.com/2026/11/13/kevin-hassett-white-house-nec.html",
+    "https://t.me/banksta/105413",
+    "https://www.kommersant.ru/doc/9109215",
+    "https://t.me/FinancialJuice/147113",
+    "https://t.me/markettwits/393391",
+    "https://t.me/FinancialJuice/147112",
+    "https://tass.ru/ekonomika/28316857",
+    "https://www.cnbc.com/2026/11/13/nvidia-huang-ceo-replacement-search.html",
+    "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
+    "https://www.kommersant.ru/doc/9109214",
+    "https://t.me/FinancialJuice/147111",
+    "https://tass.ru/proisshestviya/28316855",
+    "https://t.me/markettwits/393390",
+    "https://t.me/FinancialJuice/147110",
+    "https://tass.ru/mezhdunarodnaya-panorama/28316853",
+    "https://www.rbc.ru/society/30/10/2026/6ae4df085c53e7610efed450",
+    "https://tass.ru/obschestvo/28316851",
+    "https://www.vedomosti.ru/lifestyle/news/2026/11/13/1245321-sanktsii-protiv-sportsmenov",
+    "https://t.me/banksta/105412",
+    "https://t.me/prime1/192076",
+    "https://t.me/FinancialJuice/147109",
+    "https://t.me/markettwits/393389",
+    "https://thedefiant.io/news/defi/maple-ceo-defends-institutional-push-amid-departures",
+    "https://www.cnbc.com/investingclub/2026/11/13/goldman-sachs-looks-to-cash-in-on-anthropics-ipo-twice-heres-how-and-who-else-wants-to.html",
+    "https://t.me/government_rus/34143",
+    "https://tass.ru/obschestvo/28316847",
+    "https://t.me/FinancialJuice/147108",
+    "https://www.marketwatch.com/story/budget-airlines-are-going-upscale-with-first-class-seats-and-faster-wifi-999868ab?mod=mw_rss_topstories",
+    "https://thedefiant.io/news/infrastructure/mega-discloses-20-staff-cut-amid-ai-product-push",
+    "https://tass.ru/obschestvo/28316845",
+    "https://t.me/markettwits/393388",
+    "https://decrypt.co/383264/dormant-bitcoin-wallets-wake-up-after-16-years",
+    "https://t.me/markettwits/393387",
+    "https://tass.ru/mezhdunarodnaya-panorama/28316837",
+    "https://www.kommersant.ru/doc/9109213",
+    "https://t.me/FinancialJuice/147107",
+    "https://t.me/FinancialJuice/147106",
+    "https://t.me/FinancialJuice/147105",
+    "https://www.rbc.ru/education/11/11/2026/6aec8b729a7947bb4caf1be2",
+    "https://t.me/FinancialJuice/147104",
+    "https://www.cnbc.com/2026/11/13/a-trading-strategy-to-ride-out-the-nvidia-uncertainty-and-generate-income-in-the-process.html",
+    "https://tass.ru/mezhdunarodnaya-panorama/28316841",
+    "https://cryptoslate.com/fbi-warns-facestealer-turns-crypto-victims-into-bait-for-the-next-attack/",
     "https://www.kommersant.ru/doc/9109212",
     "https://tass.ru/obschestvo/28316839",
     "https://www.theblock.co/news/business/2026-11-13-megaeth-mega-layoffs-20-percent-restructuring-440206",
     "https://www.vedomosti.ru/auto/news/2026/11/13/1245320-bmw-otzovet-avtomobilei",
-    "https://www.cnbc.com/2026/11/13/nvidia-huang-ceo-replacement-search.html",
-    "https://www.marketwatch.com/story/its-not-medicare-for-all-but-medicare-for-more-what-this-could-mean-for-workers-over-50-4a5c51a3?mod=mw_rss_topstories",
-    "https://t.me/rbc_news/160651",
-    "https://t.me/rbc_news/160650",
-    "https://tass.ru/obschestvo/28316771",
-    "https://www.rbc.ru/rbcfreenews/6a7591c79a79471f55988c10",
-    "https://t.me/if_market_news/86896",
-    "https://t.me/banksta/105411",
-    "https://www.interfax.ru/russia/1128942",
-    "https://tass.ru/sport/28316835",
-    "https://tass.ru/mezhdunarodnaya-panorama/28316833",
-    "https://tass.ru/politika/28316779",
-    "https://www.kommersant.ru/doc/9109209",
-    "https://t.me/FinancialJuice/147103",
-    "https://www.kommersant.ru/doc/9109207",
-    "https://t.me/cointelegraph/73267",
-    "https://t.me/interfaxonline/81597",
-    "https://t.me/markettwits/393386",
-    "https://www.marketwatch.com/story/the-scandal-at-nvidia-is-exactly-whats-wrong-with-the-s-p-500-7307457e?mod=mw_rss_topstories",
-    "https://www.marketwatch.com/story/washingtons-efforts-to-block-beijings-access-to-nvidia-chips-could-spark-a-short-lived-u-s-china-trade-war-that-rattles-markets-83078d84?mod=mw_rss_topstories",
-    "https://t.me/bcs_express/26471",
-    "https://www.kommersant.ru/doc/9109202",
-    "https://tass.ru/nauka/28316821",
-    "https://tass.ru/politika/28316831",
-    "https://tass.ru/obschestvo/28316829",
-    "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
-    "https://t.me/WatcherGuru/16012",
-    "https://t.me/prime1/192075",
-    "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
-    "https://www.sport-interfax.ru/1128941",
-    "https://t.me/FinancialJuice/147102",
-    "https://t.me/FinancialJuice/147101",
-    "https://tass.ru/obschestvo/28316825",
-    "https://www.theblock.co/news/regulation/2026-11-13-house-oversight-chair-possible-ban-government-officials-prediction-market-bets-insider-trading-concerns-440207",
-    "https://t.me/forbesrussia/103013",
-    "https://t.me/FinancialJuice/147100",
-    "https://www.interfax.ru/world/1128940",
-    "https://www.rbc.ru/business/13/11/2026/6af72464cc91006dd903600b",
-    "https://www.vedomosti.ru/lifestyle/news/2026/11/13/1245319-umer-akter-kazins",
-    "https://tass.ru/obschestvo/28316827",
-    "https://t.me/incrypted/33322",
-    "https://t.me/rbc_news/160649",
-    "https://tass.ru/mezhdunarodnaya-panorama/28316823",
-    "https://tass.ru/politika/28316819",
-    "https://tass.ru/mezhdunarodnaya-panorama/28316817",
-    "https://t.me/konenkov_official/1670",
-    "https://www.cnbc.com/2026/11/13/retirement-401k-ira-withdrawal-taxes.html",
-    "https://t.me/coinpost/4308",
-    "https://www.marketwatch.com/story/strangely-calming-and-unnerving-how-microsofts-massive-outage-upended-the-corporate-workday-9a78d000?mod=mw_rss_topstories",
-    "https://t.me/banksta/105410",
-    "https://protos.com/how-quickly-did-polymarket-react-to-nvidia-news/",
-    "https://tass.ru/mezhdunarodnaya-panorama/28316815",
-    "https://t.me/invest_zonaa/39435",
-    "https://oilprice.com/Geopolitics/Asia/Beijing-Turns-to-Soft-Power-as-Washington-Expands-Central-Asia-Ties.html",
-    "https://tass.ru/mezhdunarodnaya-panorama/28316813",
-    "https://www.marketwatch.com/story/what-really-happens-during-medicare-counseling-6a4f618e?mod=mw_rss_topstories",
-    "https://www.kommersant.ru/doc/9109206",
-    "https://tass.ru/sport/28316811",
-    "https://tass.ru/ekonomika/28316805",
-    "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-    "https://t.me/interfaxonline/81596"
+    "https://www.marketwatch.com/story/its-not-medicare-for-all-but-medicare-for-more-what-this-could-mean-for-workers-over-50-4a5c51a3?mod=mw_rss_topstories"
   ],
   "ai_dead": {
     "date": "2026-11-13",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-12T20:00:56.989588+00:00",
-      "Нефть Brent выросла до $95,82 за баррель на вечерних торгах"
-    ],
-    [
-      "2026-11-12T20:00:56.989588+00:00",
-      "Индекс МосБиржи вырос в конце сессии на геополитических новостях"
-    ],
-    [
-      "2026-11-12T20:00:56.989588+00:00",
-      "SpaceX инвестирует более $74 млрд в строительство двух дата-центров"
-    ],
-    [
-      "2026-11-12T20:00:56.989588+00:00",
-      "США уведомили Израиль о необходимости подготовки к войне с Ираном"
-    ],
-    [
-      "2026-11-12T20:00:56.989588+00:00",
-      "Акции Nvidia сократили потери после отставки CEO Дженсена Хуанга"
-    ],
-    [
-      "2026-11-12T20:00:56.989588+00:00",
-      "Сбой в работе сервисов Microsoft затронул пользователей по всему миру"
-    ],
     [
       "2026-11-12T20:30:59.375807+00:00",
       "СМИ: экс-глава Nvidia Дженсен Хуанг связан с третьим романом"
@@ -1707,6 +1669,22 @@
     [
       "2026-11-13T19:30:58.399877+00:00",
       "Совкомбанк сохранит дивидендные выплаты на уровне прошлых лет"
+    ],
+    [
+      "2026-11-13T20:00:57.905349+00:00",
+      "Microsoft назвала причиной сбоя тех-ошибку"
+    ],
+    [
+      "2026-11-13T20:00:57.905349+00:00",
+      "BMW отзовет более 720 тысяч машин в США"
+    ],
+    [
+      "2026-11-13T20:00:57.905349+00:00",
+      "Биткоин-адреса перевели монеты после 16 лет"
+    ],
+    [
+      "2026-11-13T20:00:57.905349+00:00",
+      "Россия вдвое сократила импорт немецкого пива"
     ]
   ],
   "results_fp": [
@@ -1778,8 +1756,8 @@
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-13T18:30:58.139990+00:00",
-    "Коммерсантъ": "2026-11-13T19:30:58.399877+00:00",
-    "Ведомости": "2026-11-13T19:30:58.399877+00:00",
+    "Коммерсантъ": "2026-11-13T20:00:57.905349+00:00",
+    "Ведомости": "2026-11-13T20:00:57.905349+00:00",
     "Интерфакс": "2026-11-13T19:30:58.399877+00:00",
     "ТАСС": "2026-11-13T19:00:59.748746+00:00",
     "CoinDesk": "2026-11-13T19:00:59.748746+00:00",
@@ -1797,12 +1775,12 @@
     "Forbes Russia": "2026-11-13T18:30:58.139990+00:00",
     "Frank Media": "2026-11-13T17:30:55.348214+00:00",
     "ForkLog": "2026-11-13T17:01:00.144187+00:00",
-    "Decrypt": "2026-11-13T18:01:15.167530+00:00",
+    "Decrypt": "2026-11-13T20:00:57.905349+00:00",
     "Cointelegraph": "2026-11-13T18:30:58.139990+00:00",
     "CoinMarketCap": "2026-11-13T04:31:06.882155+00:00",
     "СберИнвестиции": "2026-11-13T07:00:55.037437+00:00",
     "РБК Крипто": "2026-11-13T15:30:58.234218+00:00",
-    "ПРАЙМ": "2026-11-13T18:01:15.167530+00:00",
+    "ПРАЙМ": "2026-11-13T20:00:57.905349+00:00",
     "Walter Bloomberg": "2026-11-13T18:30:58.139990+00:00",
     "Московская биржа": "2026-11-13T11:30:54.618275+00:00",
     "MarketWatch": "2026-11-13T04:31:06.882155+00:00",
@@ -1889,7 +1867,7 @@
     "ФРС (пресс-релизы)": "2026-11-12T18:01:00.885413+00:00",
     "FJ": "2026-11-12T16:30:58.964574+00:00"
   },
-  "catalog_at": "2026-11-13T19:30:58+00:00",
+  "catalog_at": "2026-11-13T20:00:57+00:00",
   "own_hour": "2026-11-13 21",
   "digest_alert": "2026-11-10 19:30"
 }
