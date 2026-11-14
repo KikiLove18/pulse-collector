@@ -1037,7 +1037,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-14T06:00:55.379583+00:00",
+  "breaking_ts": "2026-11-14T06:30:54.650040+00:00",
   "news_now": {
     "day": "2026-11-14",
     "day_count": 0,
@@ -1046,51 +1046,52 @@
     "titles": []
   },
   "news_seen": [
+    "https://www.rbc.ru/radio/14/11/2026/6af781a4e1d11afb922cd2ca",
+    "https://tass.ru/mezhdunarodnaya-panorama/28317477",
+    "https://t.me/banksta/105433",
+    "https://t.me/spydell_finance/10270",
+    "https://t.me/interfaxonline/81610",
+    "https://www.rbc.ru/rbcfreenews/6ad340196930dce2d397160b",
+    "https://t.me/cointelegraph/73274",
+    "https://www.kommersant.ru/doc/9109534",
+    "https://tass.ru/ekonomika/28317463",
+    "https://tass.ru/proisshestviya/28317459",
+    "https://www.vedomosti.ru/society/news/2026/11/14/1245353-pomilovanii-lerchek",
+    "https://www.vedomosti.ru/society/news/2026/11/14/1245351-mvd-utochnilo",
+    "https://tass.ru/proisshestviya/28317469",
+    "https://www.rbc.ru/society/14/11/2026/6af7fd35d7f3ee5a4ced78bc",
+    "https://t.me/rbc_news/160662",
+    "https://tass.ru/politika/28317471",
+    "https://tass.ru/kosmos/28317461",
+    "https://t.me/headlines_for_traders/88665",
+    "https://tass.ru/obschestvo/28317467",
+    "https://tass.ru/interviews/28315477",
+    "https://t.me/wublockchainenglish/26826",
+    "https://t.me/energytodaygroup/32743",
+    "https://tass.ru/sport/28317457",
+    "https://t.me/lookonchainchannel/11056",
+    "https://t.me/prime1/192077",
+    "https://www.rbc.ru/rbcfreenews/5cb0429d9a794746f1c2b40f",
+    "https://t.me/FinancialJuice/147249",
+    "https://tass.ru/obschestvo/28317447",
+    "https://www.kommersant.ru/doc/9109522",
+    "https://tass.ru/sport/28317453",
+    "https://www.rbc.ru/rbcfreenews/6a640e479a7947ac4d4eed4b",
+    "https://tass.ru/ekonomika/28317451",
+    "https://t.me/lookonchainchannel/11054",
+    "https://t.me/headlines_for_traders/88664",
     "https://t.me/headlines_for_traders/88663",
     "https://www.rbc.ru/quote/14/11/2026/6af422db88533eecabe91765",
+    "https://tass.ru/ekonomika/28317445",
+    "https://www.cnbc.com/2026/11/14/ecuador-biodiversity-green-finance-oil.html",
     "https://tass.ru/sport/28317443",
-    "https://t.me/rbc_news/160661",
-    "https://www.interfax.ru/world/1128978",
-    "https://tass.ru/mezhdunarodnaya-panorama/28317441",
-    "https://www.rbc.ru/politics/22/10/2026/6ad992d925b6bf66daa7b34d",
-    "https://tass.ru/ekonomika/28317437",
-    "https://tass.ru/kosmos/28317435",
-    "https://www.theblock.co/newsletters/the-daily/2026-11-14-meta-prediction-market-app-doj-binance-hack-more-crypto-news-440304",
-    "https://t.me/banksta/105432",
-    "https://tass.ru/proisshestviya/28317427",
-    "https://www.interfax.ru/russia/1128977",
-    "https://tass.ru/armiya-i-opk/28317431",
-    "https://t.me/headlines_for_traders/88662",
-    "https://www.vedomosti.ru/politics/news/2026/11/14/1245350-pvo-unichtozhila",
-    "https://tass.ru/obschestvo/28317421",
-    "https://www.rbc.ru/rbcfreenews/6ae6433405248f5986c38e62",
-    "https://t.me/investfuture/15516",
-    "https://www.vedomosti.ru/politics/news/2026/11/14/1245349-rossiya-nanesla-udari",
-    "https://t.me/rbc_news/160660",
-    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
-    "https://www.interfax.ru/world/1128970",
-    "https://t.me/interfaxonline/81609",
-    "https://tass.ru/armiya-i-opk/28317425",
-    "https://tass.ru/politika/28317419",
-    "https://www.interfax.ru/world/1128976"
+    "https://t.me/rbc_news/160661"
   ],
   "ai_dead": {
     "date": "2026-11-13",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-13T06:00:55.469168+00:00",
-      "Чистая прибыль Совкомбанка по МСФО за 9 месяцев удвоилась до 71,9 млрд рублей"
-    ],
-    [
-      "2026-11-13T06:00:55.469168+00:00",
-      "Акции Nvidia падают на фоне недельной серии убытков и отставки CEO"
-    ],
-    [
-      "2026-11-13T06:00:55.469168+00:00",
-      "Глобальный сбой в сервисах Microsoft затронул 74 страны и территории"
-    ],
     [
       "2026-11-13T06:30:57.964500+00:00",
       "Танкер с сжиженным газом подорвался на мине в Ормузском проливе"
@@ -1650,6 +1651,26 @@
     [
       "2026-11-14T06:00:55.379583+00:00",
       "Трамп проведет встречу с Путиным и Си Цзиньпином на АТЭС"
+    ],
+    [
+      "2026-11-14T06:30:54.650040+00:00",
+      "Спотовые биткоин-ETF в США потеряли $185 млн за день"
+    ],
+    [
+      "2026-11-14T06:30:54.650040+00:00",
+      "Nvidia назначила нового финансового директора Колетт Кресс"
+    ],
+    [
+      "2026-11-14T06:30:54.650040+00:00",
+      "Банк Англии допускает ставку около 5% в 2027 году"
+    ],
+    [
+      "2026-11-14T06:30:54.650040+00:00",
+      "Владимир Путин помиловал блогера Валерию Чекалину"
+    ],
+    [
+      "2026-11-14T06:30:54.650040+00:00",
+      "Лидеры роста российских акций за предыдущий день"
     ]
   ],
   "results_fp": [
@@ -1721,17 +1742,17 @@
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-14T04:30:57.352164+00:00",
-    "Коммерсантъ": "2026-11-14T05:00:58.635120+00:00",
-    "Ведомости": "2026-11-14T06:00:55.379583+00:00",
-    "Интерфакс": "2026-11-14T06:00:55.379583+00:00",
-    "ТАСС": "2026-11-14T06:00:55.379583+00:00",
+    "Коммерсантъ": "2026-11-14T06:30:54.650040+00:00",
+    "Ведомости": "2026-11-14T06:30:54.650040+00:00",
+    "Интерфакс": "2026-11-14T06:30:54.650040+00:00",
+    "ТАСС": "2026-11-14T06:30:54.650040+00:00",
     "CoinDesk": "2026-11-13T19:00:59.748746+00:00",
-    "Headlines for Traders": "2026-11-14T05:00:58.635120+00:00",
+    "Headlines for Traders": "2026-11-14T06:30:54.650040+00:00",
     "MarketTwits": "2026-11-14T05:00:58.635120+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-13T17:01:00.144187+00:00",
-    "РБК": "2026-11-14T06:00:55.379583+00:00",
-    "Wu Blockchain": "2026-11-14T05:00:58.635120+00:00",
+    "РБК": "2026-11-14T06:30:54.650040+00:00",
+    "Wu Blockchain": "2026-11-14T06:30:54.650040+00:00",
     "Банкста": "2026-11-14T05:00:58.635120+00:00",
     "IF News": "2026-11-13T19:30:58.399877+00:00",
     "bitkogan": "2026-11-13T09:00:55.287406+00:00",
@@ -1755,7 +1776,7 @@
     "The Block": "2026-11-14T04:30:57.352164+00:00",
     "Нефть и Капитал": "2026-11-13T11:01:01.626187+00:00",
     "MMI": "2026-11-12T07:30:56.076545+00:00",
-    "FinancialJuice": "2026-11-13T20:30:56.635289+00:00",
+    "FinancialJuice": "2026-11-14T06:30:54.650040+00:00",
     "Cbonds": "2026-11-12T12:30:56.062204+00:00",
     "WSJ Markets": "2026-11-14T04:30:57.352164+00:00",
     "WSJ Economy": "2026-11-14T04:30:57.352164+00:00",
@@ -1833,9 +1854,10 @@
     "FJ": "2026-11-12T16:30:58.964574+00:00",
     "Metals &amp; Mining": "2026-11-14T04:30:57.352164+00:00",
     "BCS Express": "2026-11-14T04:30:57.352164+00:00",
-    "Bitkogan HOTLINE": "2026-11-14T04:30:57.352164+00:00"
+    "Bitkogan HOTLINE": "2026-11-14T04:30:57.352164+00:00",
+    "Spydell Finance": "2026-11-14T06:30:54.650040+00:00"
   },
-  "catalog_at": "2026-11-14T06:00:55+00:00",
+  "catalog_at": "2026-11-14T06:30:54+00:00",
   "own_hour": "2026-11-14 09",
   "digest_alert": "2026-11-10 19:30"
 }
