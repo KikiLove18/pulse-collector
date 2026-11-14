@@ -86,7 +86,7 @@
   ],
   "last_digest_ts": "2026-11-13T17:01:00.144187+00:00",
   "calendar": {
-    "ts": "2026-11-13T17:01:50.360945+00:00",
+    "ts": "2026-11-14T04:00:58.691919+00:00",
     "data": [
       {
         "title": "RBA Assist Gov Hunter Speaks",
@@ -913,6 +913,14 @@
         "previous": ""
       },
       {
+        "title": "FOMC Financial Stability Report",
+        "country": "USD",
+        "date": "2026-11-13T16:00:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": ""
+      },
+      {
         "title": "FOMC Member Jefferson Speaks",
         "country": "USD",
         "date": "2026-11-13T19:00:00-05:00",
@@ -1029,7 +1037,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-13T21:30:58.489758+00:00",
+  "breaking_ts": "2026-11-14T04:00:58.686006+00:00",
   "news_now": {
     "day": "2026-11-14",
     "day_count": 0,
@@ -1038,143 +1046,50 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/sport/28316925",
-    "https://www.cnbc.com/2026/11/13/faa-ground-stop.html",
-    "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html",
-    "https://t.me/FinancialJuice/147159",
-    "https://t.me/banksta/105419",
-    "https://www.marketwatch.com/story/bitcoin-could-fall-even-further-if-investors-cash-out-to-buy-into-the-anthropic-ipo-5a14f46a?mod=mw_rss_topstories",
-    "https://t.me/FinancialJuice/147158",
-    "https://t.me/FinancialJuice/147157",
-    "https://t.me/WatcherGuru/16016",
-    "https://t.me/FinancialJuice/147156",
-    "https://www.kommersant.ru/doc/9109492",
-    "https://tass.ru/proisshestviya/28316921",
-    "https://t.me/FinancialJuice/147155",
-    "https://www.rbc.ru/sport/12/11/2026/6af4dd9f7c35d1073a15ee28",
-    "https://t.me/FinancialJuice/147154",
-    "https://tass.ru/mezhdunarodnaya-panorama/28316919",
-    "https://www.vedomosti.ru/politics/news/2026/11/14/1245327-priostanovili-vse-vileti",
-    "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-resignation-ai-financing.html",
-    "https://www.wsj.com/finance/stocks/tech-stocks-fall-as-next-week-brings-big-tests-for-the-ai-trade-6a346b49?mod=rss_markets_main",
-    "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
-    "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
-    "https://t.me/FinancialJuice/147153",
-    "https://tass.ru/proisshestviya/28316917",
-    "https://t.me/FinancialJuice/147152",
-    "https://www.cnbc.com/investingclub/2026/11/13/goldman-sachs-looks-to-cash-in-on-anthropics-ipo-twice-heres-how-and-who-else-wants-to.html",
-    "https://t.me/FinancialJuice/147151",
-    "https://t.me/FinancialJuice/147150",
-    "https://t.me/FinancialJuice/147149",
-    "https://t.me/headlines_for_traders/88657",
-    "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
-    "https://tass.ru/sport/28316915",
-    "https://t.me/markettwits/393397",
-    "https://thedefiant.io/frontier/markets/amd-sinks-9-as-chip-rally-falters-after-huang-exit",
-    "https://tass.ru/sport/28316909",
-    "https://t.me/FinancialJuice/147148",
-    "https://t.me/FinancialJuice/147147",
-    "https://t.me/FinancialJuice/147146",
-    "https://t.me/FinancialJuice/147145",
-    "https://www.rbc.ru/politics/14/11/2026/6af77cf540887869aaf286eb",
-    "https://thedefiant.io/converge/cefi/coinbase-wins-final-occ-clearance-for-us-trust-company",
-    "https://tass.ru/politika/28316911",
-    "https://t.me/FinancialJuice/147144",
-    "https://www.kommersant.ru/doc/9109491",
-    "https://www.marketwatch.com/story/amd-and-other-chip-stocks-slide-as-wall-street-rethinks-the-ai-trade-without-jensen-huang-2fb74547?mod=mw_rss_topstories",
-    "https://tass.ru/ekonomika/28316907",
-    "https://www.marketwatch.com/story/corporate-america-is-making-a-trillion-dollar-mistake-about-retirement-234c8996?mod=mw_rss_topstories",
-    "https://www.vedomosti.ru/politics/news/2026/11/13/1245326-v-nvidia-oprovergli-dannie",
-    "https://tass.ru/mezhdunarodnaya-panorama/28316903",
-    "https://www.interfax.ru/world/1128944",
-    "https://t.me/headlines_for_traders/88656",
-    "https://t.me/FinancialJuice/147143",
-    "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
-    "https://t.me/rbc_news/160655",
-    "https://www.rbc.ru/politics/12/11/2026/6af5e0fc9e4e3811d73a4d1a",
-    "https://t.me/banksta/105418",
-    "https://tass.ru/politika/28316901",
-    "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
-    "https://t.me/WatcherGuru/16014",
-    "https://t.me/FinancialJuice/147142",
-    "https://tass.ru/armiya-i-opk/28316899",
-    "https://t.me/FinancialJuice/147141",
-    "https://t.me/FinancialJuice/147140",
-    "https://t.me/FinancialJuice/147139",
-    "https://t.me/FinancialJuice/147138",
-    "https://t.me/FinancialJuice/147137",
-    "https://t.me/FinancialJuice/147136",
-    "https://cointelegraph.com/news/kraken-parent-payward-gains-market-share-slower-trading-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://tass.ru/kosmos/28316897",
-    "https://t.me/FinancialJuice/147135",
-    "https://t.me/FinancialJuice/147134",
-    "https://t.me/FinancialJuice/147133",
-    "https://www.wsj.com/economy/central-banking/federal-reserve-calendar-changes-890c4390?mod=rss_socialeconomyfeed",
-    "https://t.me/FinancialJuice/147132",
-    "https://t.me/FinancialJuice/147131",
-    "https://bitcoinmagazine.com/videos/joe-carlasare-on-extreme-fear-in-bitcoin-im-a-buyer-here",
-    "https://tass.ru/armiya-i-opk/28314173",
-    "https://t.me/cointelegraph/73269",
-    "https://oilprice.com/Energy/Energy-General/Will-the-Senates-BAAJA-Bill-Let-AI-Giants-Outmuscle-Utilities.html",
-    "https://www.rbc.ru/politics/13/11/2026/6af778d90189ce094ad0b0a1",
-    "https://t.me/banksta/105416",
-    "https://t.me/FinancialJuice/147130",
-    "https://t.me/markettwits/393396",
-    "https://t.me/FinancialJuice/147129",
-    "https://t.me/FinancialJuice/147128",
-    "https://t.me/FinancialJuice/147127",
-    "https://t.me/WatcherGuru/16013",
-    "https://t.me/rbc_news/160654"
+    "https://t.me/FinancialJuice/147239",
+    "https://www.rbc.ru/society/14/11/2026/6af7db180de4b07c4ce6c117",
+    "https://t.me/markettwits/393402",
+    "https://tass.ru/mezhdunarodnaya-panorama/28317303",
+    "https://www.interfax.ru/russia/1128969",
+    "https://t.me/markettwits/393401",
+    "https://www.kommersant.ru/doc/9109507",
+    "https://t.me/markettwits/393400",
+    "https://thedefiant.io/news/markets/ether-falls-below-1-900-as-losses-outpace-bitcoin",
+    "https://t.me/markettwits/393399",
+    "https://t.me/WatcherGuru/16026",
+    "https://t.me/markettwits/393398",
+    "https://tass.ru/nauka/28317299",
+    "https://tass.ru/armiya-i-opk/28317295",
+    "https://tass.ru/armiya-i-opk/28317297",
+    "https://tass.ru/politika/28317291",
+    "https://tass.ru/armiya-i-opk/28317293",
+    "https://www.rbc.ru/rbcfreenews/6ad86e9a15d6c11b3115e0ec",
+    "https://tass.ru/obschestvo/28317285",
+    "https://tass.ru/obschestvo/28317289",
+    "https://tass.ru/politika/28317283",
+    "https://t.me/CoinMarketCapAnnouncements/19691",
+    "https://www.kommersant.ru/doc/9109504",
+    "https://www.interfax.ru/russia/1128968",
+    "https://www.interfax.ru/world/1128967",
+    "https://t.me/wublockchainenglish/26823",
+    "https://t.me/interfaxonline/81607",
+    "https://www.interfax.ru/russia/1128966",
+    "https://tass.ru/ekonomika/28317273",
+    "https://tass.ru/obschestvo/28317269",
+    "https://tass.ru/kosmos/28317255",
+    "https://tass.ru/proisshestviya/28317267",
+    "https://tass.ru/obschestvo/28317263",
+    "https://tass.ru/ekonomika/28317259",
+    "https://tass.ru/armiya-i-opk/28317265",
+    "https://tass.ru/armiya-i-opk/28317261",
+    "https://tass.ru/obschestvo/28317257",
+    "https://tass.ru/armiya-i-opk/28317253"
   ],
   "ai_dead": {
     "date": "2026-11-13",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-12T20:30:59.375807+00:00",
-      "СМИ: экс-глава Nvidia Дженсен Хуанг связан с третьим романом"
-    ],
-    [
-      "2026-11-12T20:30:59.375807+00:00",
-      "Трамп допустил применение военной силы в Иране"
-    ],
-    [
-      "2026-11-12T20:30:59.375807+00:00",
-      "СМИ: обсуждение слияния SpaceX и Tesla прогрессирует"
-    ],
-    [
-      "2026-11-12T20:30:59.375807+00:00",
-      "Мэр Москвы сообщил об уничтожении 56 БПЛА за сутки"
-    ],
-    [
-      "2026-11-12T20:30:59.375807+00:00",
-      "DTCC планирует расширение токенизации на Solana к 2027 году"
-    ],
-    [
-      "2026-11-12T20:30:59.375807+00:00",
-      "Потребление алкоголя в РФ достигло минимума с 1996 года"
-    ],
-    [
-      "2026-11-13T04:00:55.791955+00:00",
-      "Биткоин опустился ниже $69 000 на фоне ликвидации позиций на $622 млн"
-    ],
-    [
-      "2026-11-13T04:00:55.791955+00:00",
-      "КСИР заявил об ударе по американскому радару в Бахрейне"
-    ],
-    [
-      "2026-11-13T04:00:55.791955+00:00",
-      "Товарооборот России и Вьетнама вырос на 14% в первом полугодии"
-    ],
-    [
-      "2026-11-13T04:00:55.791955+00:00",
-      "Google и Samsung выпустят очки с искусственным интеллектом в декабре"
-    ],
-    [
-      "2026-11-13T04:00:55.791955+00:00",
-      "Власти Венесуэлы направили 99% нефтедоходов на зарплаты и пенсии"
-    ],
     [
       "2026-11-13T05:00:55.204920+00:00",
       "Ликвидации на криптовалютном рынке превысили $440 млн"
@@ -1742,6 +1657,30 @@
     [
       "2026-11-13T20:30:56.635289+00:00",
       "Антон Силуанов обсудил финансовую поддержку Нижегородской области"
+    ],
+    [
+      "2026-11-14T04:00:58.686006+00:00",
+      "Биткоин упал ниже $67 000 на фоне ликвидаций на $330 млн"
+    ],
+    [
+      "2026-11-14T04:00:58.686006+00:00",
+      "В США возобновили полеты после сбоя диспетчерской системы"
+    ],
+    [
+      "2026-11-14T04:00:58.686006+00:00",
+      "Уровень судоходства в Ормузском проливе остается на 65% ниже довоенного"
+    ],
+    [
+      "2026-11-14T04:00:58.686006+00:00",
+      "Polkadot планирует запуск долларового стейблкоина dotUSD"
+    ],
+    [
+      "2026-11-14T04:00:58.686006+00:00",
+      "Силы ПВО за неделю уничтожили 426 беспилотников ВСУ"
+    ],
+    [
+      "2026-11-14T04:00:58.686006+00:00",
+      "Оттоки из спотовых Ethereum-ETF в США продолжились шестую сессию"
     ]
   ],
   "results_fp": [
@@ -1815,15 +1754,15 @@
     "OilPrice": "2026-11-13T18:30:58.139990+00:00",
     "Коммерсантъ": "2026-11-13T20:30:56.635289+00:00",
     "Ведомости": "2026-11-13T20:00:57.905349+00:00",
-    "Интерфакс": "2026-11-13T20:30:56.635289+00:00",
-    "ТАСС": "2026-11-13T19:00:59.748746+00:00",
+    "Интерфакс": "2026-11-14T04:00:58.686006+00:00",
+    "ТАСС": "2026-11-14T04:00:58.686006+00:00",
     "CoinDesk": "2026-11-13T19:00:59.748746+00:00",
     "Headlines for Traders": "2026-11-13T11:01:01.626187+00:00",
-    "MarketTwits": "2026-11-13T20:30:56.635289+00:00",
+    "MarketTwits": "2026-11-14T04:00:58.686006+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-13T17:01:00.144187+00:00",
-    "РБК": "2026-11-13T20:30:56.635289+00:00",
-    "Wu Blockchain": "2026-11-13T17:01:00.144187+00:00",
+    "РБК": "2026-11-14T04:00:58.686006+00:00",
+    "Wu Blockchain": "2026-11-14T04:00:58.686006+00:00",
     "Банкста": "2026-11-13T19:00:59.748746+00:00",
     "IF News": "2026-11-13T19:30:58.399877+00:00",
     "bitkogan": "2026-11-13T09:00:55.287406+00:00",
@@ -1842,7 +1781,7 @@
     "Московская биржа": "2026-11-13T11:30:54.618275+00:00",
     "MarketWatch": "2026-11-13T20:30:56.635289+00:00",
     "Bitcoin Magazine": "2026-11-13T17:01:00.144187+00:00",
-    "Watcher Guru": "2026-11-13T17:01:00.144187+00:00",
+    "Watcher Guru": "2026-11-14T04:00:58.686006+00:00",
     "РБК. Главное": "2026-11-13T14:01:06.224400+00:00",
     "The Block": "2026-11-13T19:30:58.399877+00:00",
     "Нефть и Капитал": "2026-11-13T11:01:01.626187+00:00",
@@ -1851,7 +1790,7 @@
     "Cbonds": "2026-11-12T12:30:56.062204+00:00",
     "WSJ Markets": "2026-11-13T20:30:56.635289+00:00",
     "WSJ Economy": "2026-11-13T18:30:58.139990+00:00",
-    "The Defiant": "2026-11-12T18:30:56.804082+00:00",
+    "The Defiant": "2026-11-14T04:00:58.686006+00:00",
     "WSJ": "2026-11-13T04:31:06.882155+00:00",
     "Bitcoin Magazine Telegram": "2026-11-13T17:01:00.144187+00:00",
     "Lookonchain": "2026-11-13T17:01:00.144187+00:00",
@@ -1924,7 +1863,7 @@
     "ФРС (пресс-релизы)": "2026-11-12T18:01:00.885413+00:00",
     "FJ": "2026-11-12T16:30:58.964574+00:00"
   },
-  "catalog_at": "2026-11-13T21:30:58+00:00",
+  "catalog_at": "2026-11-14T04:00:58+00:00",
   "own_hour": "2026-11-13 21",
   "digest_alert": "2026-11-10 19:30"
 }
