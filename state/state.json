@@ -1037,40 +1037,39 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-14T20:30:56.218766+00:00",
+  "breaking_ts": "2026-11-14T21:01:03.449912+00:00",
   "news_now": {
-    "day": "2026-11-14",
-    "day_count": 3,
+    "day": "2026-11-15",
+    "day_count": 0,
     "urgent_count": 0,
-    "last": "2026-11-14T15:00:55.520010+00:00",
-    "titles": [
-      "Отток из спотовых биткоин-ETF в США превысил $1 млрд за неделю",
-      "Отток ликвидности из стейблкоинов достиг максимума с 2022 года",
-      "Биткоин упал ниже $66 000 на фоне ликвидаций"
-    ]
+    "last": "",
+    "titles": []
   },
   "news_seen": [
+    "https://www.kommersant.ru/doc/9109721",
+    "https://tass.ru/ekonomika/28318401",
+    "https://tass.ru/sport/28318399",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318395",
+    "https://t.me/FinancialJuice/147294",
+    "https://t.me/markettwits/393425",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318373",
+    "https://t.me/interfaxonline/81623",
+    "https://www.interfax.ru/world/1129044",
+    "https://tass.ru/obschestvo/28318393",
+    "https://tass.ru/proisshestviya/28318391",
+    "https://tass.ru/sport/28318397",
+    "https://www.interfax.ru/world/1129043",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318377",
+    "https://t.me/markettwits/393424",
+    "https://tass.ru/ekonomika/28318387",
+    "https://tass.ru/sport/28318389",
+    "https://cryptoslate.com/evernorths-35-million-fundraising-could-buy-35-million-xrp-but-theres-a-catch/",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318381",
+    "https://t.me/cointelegraph/73283",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318363",
     "https://tass.ru/mezhdunarodnaya-panorama/28318371",
     "https://t.me/markettwits/393423",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318369",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318365",
-    "https://t.me/FinancialJuice/147293",
-    "https://t.me/banksta/105473",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318367",
-    "https://t.me/markettwits/393422",
-    "https://t.me/FinancialJuice/147292",
-    "https://t.me/markettwits/393421",
-    "https://t.me/FinancialJuice/147291",
-    "https://tass.ru/proisshestviya/28318361",
-    "https://t.me/WalterBloomberg/38407",
-    "https://t.me/interfaxonline/81622",
-    "https://www.interfax.ru/world/1129042",
-    "https://tass.ru/proisshestviya/28318357",
-    "https://t.me/rbc_news/160696",
-    "https://www.marketwatch.com/story/it-leaves-me-with-a-sour-taste-my-elderly-mother-gave-our-cousin-800-for-a-car-repair-should-i-be-worried-88dbd188?mod=mw_rss_topstories",
-    "https://oilprice.com/Energy/Energy-General/Iran-War-Accelerates-Southeast-Asias-Renewable-Energy-Push.html",
-    "https://www.vedomosti.ru/politics/news/2026/11/14/1245409-voiska-ssha-v-evrope",
-    "https://www.interfax.ru/russia/1129041"
+    "https://tass.ru/mezhdunarodnaya-panorama/28318369"
   ],
   "ai_dead": {
     "date": "2026-11-14",
@@ -1871,7 +1870,7 @@
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00",
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00"
   },
-  "catalog_at": "2026-11-14T20:30:56+00:00",
+  "catalog_at": "2026-11-14T21:01:03+00:00",
   "own_hour": "2026-11-14 21",
   "digest_alert": "2026-11-10 19:30"
 }
