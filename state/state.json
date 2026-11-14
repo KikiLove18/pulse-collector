@@ -1037,7 +1037,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-14T19:00:55.586277+00:00",
+  "breaking_ts": "2026-11-14T19:30:55.285060+00:00",
   "news_now": {
     "day": "2026-11-14",
     "day_count": 3,
@@ -1050,58 +1050,33 @@
     ]
   },
   "news_seen": [
+    "https://t.me/whale_alert_io/104882",
+    "https://tass.ru/sport/28318345",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318341",
+    "https://t.me/banksta/105471",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318339",
+    "https://www.kommersant.ru/doc/9109717",
+    "https://tass.ru/ekonomika/28318337",
+    "https://tass.ru/obschestvo/28318333",
+    "https://www.vedomosti.ru/business/news/2026/11/14/1245407-aviasoobschenie-vosstanovili",
+    "https://tass.ru/sport/28318335",
+    "https://www.rbc.ru/politics/14/11/2026/6af82cbf9ee0d1c2303b88e0",
+    "https://tass.ru/proisshestviya/28318331",
+    "https://t.me/markettwits/393419",
+    "https://www.theblock.co/news/regulation/2026-11-14-louisiana-ag-calls-cftc-chair-an-obsequious-standard-bearer-for-prediction-markets-following-agency-lawsuit-440342",
+    "https://tass.ru/sport/28318329",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318317",
+    "https://www.kommersant.ru/doc/9109716",
+    "https://www.rbc.ru/business/05/09/2025/68bab22f9a79476bcfc1c613",
+    "https://tass.ru/proisshestviya/28318327",
     "https://www.kommersant.ru/doc/9109715",
-    "https://www.rbc.ru/sport/13/11/2026/6af71659eac472e1139d2c57",
-    "https://tass.ru/obschestvo/28318321",
-    "https://t.me/banksta/105465",
-    "https://www.vedomosti.ru/politics/news/2026/11/14/1245405-v-aktsiyah-protesta",
-    "https://www.cnbc.com/investingclub/2026/11/14/nvidias-leadership-crisis-rattles-wall-street-how-were-adjusting.html",
-    "https://t.me/interfaxonline/81621",
-    "https://www.rbc.ru/politics/23/10/2026/6adad929526d4a348124a284",
-    "https://www.interfax.ru/world/1129040",
-    "https://tass.ru/ekonomika/28318319",
-    "https://t.me/rbc_news/160693",
-    "https://www.rbc.ru/rbcfreenews/6af8995ad5ed8db687222c15",
-    "https://cryptoslate.com/mica-gave-crypto-a-passport-but-customers-still-face-borders/",
-    "https://t.me/interfaxonline/81620",
-    "https://tass.ru/proisshestviya/28318309",
-    "https://www.interfax.ru/world/1129039",
-    "https://www.vedomosti.ru/lifestyle/news/2026/11/14/1245406-zavoevali-shest-medalei",
-    "https://tass.ru/proisshestviya/28318315",
-    "https://t.me/cointelegraph/73282",
-    "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-    "https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories",
-    "https://t.me/banksta/105464"
+    "https://www.rbc.ru/sport/13/11/2026/6af71659eac472e1139d2c57"
   ],
   "ai_dead": {
     "date": "2026-11-14",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-13T19:00:59.748746+00:00",
-      "Биткоин упал до $68 000 на фоне интереса к IPO Anthropic"
-    ],
-    [
-      "2026-11-13T19:00:59.748746+00:00",
-      "ЕГЭ в России планируют полностью перевести на ПО Linux к 2027 году"
-    ],
-    [
-      "2026-11-13T19:00:59.748746+00:00",
-      "Bloomberg назвал пять стран ЕС для новых переговоров по Украине"
-    ],
-    [
-      "2026-11-13T19:00:59.748746+00:00",
-      "OpenAI запустила ChatGPT Wallet для покупок через ИИ-агентов"
-    ],
-    [
-      "2026-11-13T19:00:59.748746+00:00",
-      "Открытый интерес на Hyperliquid достиг $16,8 млрд в третьем квартале"
-    ],
-    [
-      "2026-11-13T19:00:59.748746+00:00",
-      "Размещение акций Anthropic начнется 19 ноября"
-    ],
     [
       "2026-11-13T19:30:58.399877+00:00",
       "Трамп продлил на 90 дней действие закона Джонса для морских перевозок"
@@ -1689,6 +1664,26 @@
     [
       "2026-11-14T19:00:55.586277+00:00",
       "S&P 500 и Nasdaq завершили неделю в плюсе на фоне проблем Nvidia"
+    ],
+    [
+      "2026-11-14T19:30:55.285060+00:00",
+      "Итальянский регулятор оштрафовал Meta на €805 млн"
+    ],
+    [
+      "2026-11-14T19:30:55.285060+00:00",
+      "Unocoin сообщила о краже $200 000 с горячих кошельков"
+    ],
+    [
+      "2026-11-14T19:30:55.285060+00:00",
+      "Генпрокурор Луизианы раскритиковал главу CFTC из-за рынков предсказаний"
+    ],
+    [
+      "2026-11-14T19:30:55.285060+00:00",
+      "Врачи в США требуют снять с них ответственность за ошибки ИИ"
+    ],
+    [
+      "2026-11-14T19:30:55.285060+00:00",
+      "Сбой Microsoft привел к отравлению хлором в бассейне в Германии"
     ]
   ],
   "results_fp": [
@@ -1760,18 +1755,18 @@
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-14T18:30:54.486601+00:00",
-    "Коммерсантъ": "2026-11-14T18:30:54.486601+00:00",
+    "Коммерсантъ": "2026-11-14T19:30:55.285060+00:00",
     "Ведомости": "2026-11-14T18:00:55.999858+00:00",
     "Интерфакс": "2026-11-14T19:00:55.586277+00:00",
     "ТАСС": "2026-11-14T18:30:54.486601+00:00",
     "CoinDesk": "2026-11-14T16:30:56.201734+00:00",
     "Headlines for Traders": "2026-11-14T16:00:55.760130+00:00",
-    "MarketTwits": "2026-11-14T16:30:56.201734+00:00",
+    "MarketTwits": "2026-11-14T19:30:55.285060+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
-    "Whale Alert": "2026-11-14T15:00:55.520010+00:00",
+    "Whale Alert": "2026-11-14T19:30:55.285060+00:00",
     "РБК": "2026-11-14T18:30:54.486601+00:00",
     "Wu Blockchain": "2026-11-14T16:30:56.201734+00:00",
-    "Банкста": "2026-11-14T19:00:55.586277+00:00",
+    "Банкста": "2026-11-14T19:30:55.285060+00:00",
     "IF News": "2026-11-14T15:30:58.133627+00:00",
     "bitkogan": "2026-11-13T09:00:55.287406+00:00",
     "CryptoKogan": "2026-11-13T15:30:58.234218+00:00",
@@ -1791,7 +1786,7 @@
     "Bitcoin Magazine": "2026-11-14T15:30:58.133627+00:00",
     "Watcher Guru": "2026-11-14T18:30:54.486601+00:00",
     "РБК. Главное": "2026-11-14T18:00:55.999858+00:00",
-    "The Block": "2026-11-14T18:00:55.999858+00:00",
+    "The Block": "2026-11-14T19:30:55.285060+00:00",
     "Нефть и Капитал": "2026-11-14T07:30:55.693545+00:00",
     "MMI": "2026-11-12T07:30:56.076545+00:00",
     "FinancialJuice": "2026-11-14T17:00:55.228469+00:00",
@@ -1876,7 +1871,7 @@
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00",
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00"
   },
-  "catalog_at": "2026-11-14T19:00:55+00:00",
+  "catalog_at": "2026-11-14T19:30:55+00:00",
   "own_hour": "2026-11-14 21",
   "digest_alert": "2026-11-10 19:30"
 }
