@@ -1037,7 +1037,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-14T04:00:58.686006+00:00",
+  "breaking_ts": "2026-11-14T05:00:58.635120+00:00",
   "news_now": {
     "day": "2026-11-14",
     "day_count": 0,
@@ -1046,78 +1046,59 @@
     "titles": []
   },
   "news_seen": [
-    "https://t.me/FinancialJuice/147239",
-    "https://www.rbc.ru/society/14/11/2026/6af7db180de4b07c4ce6c117",
-    "https://t.me/markettwits/393402",
-    "https://tass.ru/mezhdunarodnaya-panorama/28317303",
-    "https://www.interfax.ru/russia/1128969",
-    "https://t.me/markettwits/393401",
-    "https://www.kommersant.ru/doc/9109507",
-    "https://t.me/markettwits/393400",
-    "https://thedefiant.io/news/markets/ether-falls-below-1-900-as-losses-outpace-bitcoin",
-    "https://t.me/markettwits/393399",
-    "https://t.me/WatcherGuru/16026",
-    "https://t.me/markettwits/393398",
-    "https://tass.ru/nauka/28317299",
-    "https://tass.ru/armiya-i-opk/28317295",
-    "https://tass.ru/armiya-i-opk/28317297",
-    "https://tass.ru/politika/28317291",
-    "https://tass.ru/armiya-i-opk/28317293",
-    "https://www.rbc.ru/rbcfreenews/6ad86e9a15d6c11b3115e0ec",
-    "https://tass.ru/obschestvo/28317285",
-    "https://tass.ru/obschestvo/28317289",
-    "https://tass.ru/politika/28317283",
-    "https://t.me/CoinMarketCapAnnouncements/19691",
-    "https://www.kommersant.ru/doc/9109504",
-    "https://www.interfax.ru/russia/1128968",
-    "https://www.interfax.ru/world/1128967",
-    "https://t.me/wublockchainenglish/26823",
-    "https://t.me/interfaxonline/81607",
-    "https://www.interfax.ru/russia/1128966",
-    "https://tass.ru/ekonomika/28317273",
-    "https://tass.ru/obschestvo/28317269",
-    "https://tass.ru/kosmos/28317255",
-    "https://tass.ru/proisshestviya/28317267",
-    "https://tass.ru/obschestvo/28317263",
-    "https://tass.ru/ekonomika/28317259",
-    "https://tass.ru/armiya-i-opk/28317265",
-    "https://tass.ru/armiya-i-opk/28317261",
-    "https://tass.ru/obschestvo/28317257",
-    "https://tass.ru/armiya-i-opk/28317253"
+    "https://t.me/rbc_news/160658",
+    "https://t.me/wublockchainenglish/26825",
+    "https://tass.ru/armiya-i-opk/28317377",
+    "https://tass.ru/armiya-i-opk/28317379",
+    "https://tass.ru/armiya-i-opk/28317375",
+    "https://tass.ru/ekonomika/28317373",
+    "https://tass.ru/armiya-i-opk/28317371",
+    "https://tass.ru/proisshestviya/28317369",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://tass.ru/proisshestviya/28317361",
+    "https://t.me/lookonchainchannel/11052",
+    "https://t.me/markettwits/393404",
+    "https://tass.ru/sport/28317359",
+    "https://t.me/headlines_for_traders/88660",
+    "https://t.me/lookonchainchannel/11051",
+    "https://t.me/wublockchainenglish/26824",
+    "https://tass.ru/sport/28317357",
+    "https://www.interfax.ru/russia/1128972",
+    "https://www.kommersant.ru/doc/9109512",
+    "https://t.me/banksta/105431",
+    "https://tass.ru/mezhdunarodnaya-panorama/28317355",
+    "https://tass.ru/obschestvo/28317351",
+    "https://tass.ru/armiya-i-opk/28317353",
+    "https://www.vedomosti.ru/politics/news/2026/11/14/1245346-belii-dom-anonsiroval",
+    "https://t.me/headlines_for_traders/88659",
+    "https://cryptoslate.com/coinbase-ai-trading-tool-pauses-bots-but-leaves-orders-open/",
+    "https://t.me/headlines_for_traders/88658",
+    "https://www.coindesk.com/markets/2026/11/13/satoshi-era-wallet-served-in-a-usd260-billion-lawsuit-moves-75-btc-it-held-since-2011",
+    "https://www.rbc.ru/politics/29/07/2026/6a6988759a7947c50b702977",
+    "https://tass.ru/sport/28317347",
+    "https://tass.ru/obschestvo/28317349",
+    "https://www.interfax.ru/russia/1128971",
+    "https://tass.ru/armiya-i-opk/28317323",
+    "https://t.me/lookonchainchannel/11050",
+    "https://www.rbc.ru/rbcfreenews/5cb0429d9a794746f1c2b40f",
+    "https://tass.ru/sport/28317341",
+    "https://tass.ru/proisshestviya/28317333",
+    "https://tass.ru/obschestvo/28317337",
+    "https://tass.ru/mezhdunarodnaya-panorama/28317339",
+    "https://www.kommersant.ru/doc/9109511",
+    "https://tass.ru/proisshestviya/28317329",
+    "https://tass.ru/armiya-i-opk/28317331",
+    "https://tass.ru/politika/28317315",
+    "https://t.me/markettwits/393403",
+    "https://tass.ru/kosmos/28317313",
+    "https://tass.ru/proisshestviya/28317317",
+    "https://tass.ru/ekonomika/28317309"
   ],
   "ai_dead": {
     "date": "2026-11-13",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-13T05:00:55.204920+00:00",
-      "Ликвидации на криптовалютном рынке превысили $440 млн"
-    ],
-    [
-      "2026-11-13T05:00:55.204920+00:00",
-      "Скидки на российскую нефть Urals в портах выросли до максимума с весны 2023 года"
-    ],
-    [
-      "2026-11-13T05:00:55.204920+00:00",
-      "Агрохолдинг Kernel остановил заводы из-за повреждений"
-    ],
-    [
-      "2026-11-13T05:00:55.204920+00:00",
-      "Mercedes-Benz заморозил инвестиции в Германии"
-    ],
-    [
-      "2026-11-13T05:00:55.204920+00:00",
-      "Добыча нефти в США достигла рекордных 14,013 млн баррелей в сутки"
-    ],
-    [
-      "2026-11-13T05:00:55.204920+00:00",
-      "Белый дом направил кандидатуры в SEC и CFTC"
-    ],
-    [
-      "2026-11-13T05:00:55.204920+00:00",
-      "ФБР заявило о хищении криптовалюты на $400 млн хакерами из КНДР"
-    ],
     [
       "2026-11-13T05:30:57.432539+00:00",
       "Биткоин впервые с августа опустился ниже $70 000"
@@ -1681,6 +1662,22 @@
     [
       "2026-11-14T04:00:58.686006+00:00",
       "Оттоки из спотовых Ethereum-ETF в США продолжились шестую сессию"
+    ],
+    [
+      "2026-11-14T05:00:58.635120+00:00",
+      "Microsoft сообщила о полном восстановлении сервисов после глобального сбоя"
+    ],
+    [
+      "2026-11-14T05:00:58.635120+00:00",
+      "Белый дом анонсировал встречу Трампа, Путина и Си Цзиньпина в Китае"
+    ],
+    [
+      "2026-11-14T05:00:58.635120+00:00",
+      "Pump.fun перевела на Kraken 64 666 Solana на сумму $5,19 млн"
+    ],
+    [
+      "2026-11-14T05:00:58.635120+00:00",
+      "Основатель Cardano заявил, что никогда не обещал роста ADA"
     ]
   ],
   "results_fp": [
@@ -1748,22 +1745,22 @@
   },
   "pro_daily": "2026-11-13",
   "freech_day": "2026-11-13",
-  "pro_auto": "2026-11-13",
+  "pro_auto": "2026-11-14",
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-14T04:30:57.352164+00:00",
-    "Коммерсантъ": "2026-11-14T04:30:57.352164+00:00",
-    "Ведомости": "2026-11-13T20:00:57.905349+00:00",
+    "Коммерсантъ": "2026-11-14T05:00:58.635120+00:00",
+    "Ведомости": "2026-11-14T05:00:58.635120+00:00",
     "Интерфакс": "2026-11-14T04:00:58.686006+00:00",
     "ТАСС": "2026-11-14T04:00:58.686006+00:00",
     "CoinDesk": "2026-11-13T19:00:59.748746+00:00",
-    "Headlines for Traders": "2026-11-13T11:01:01.626187+00:00",
-    "MarketTwits": "2026-11-14T04:00:58.686006+00:00",
+    "Headlines for Traders": "2026-11-14T05:00:58.635120+00:00",
+    "MarketTwits": "2026-11-14T05:00:58.635120+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-13T17:01:00.144187+00:00",
     "РБК": "2026-11-14T04:00:58.686006+00:00",
-    "Wu Blockchain": "2026-11-14T04:00:58.686006+00:00",
-    "Банкста": "2026-11-13T19:00:59.748746+00:00",
+    "Wu Blockchain": "2026-11-14T05:00:58.635120+00:00",
+    "Банкста": "2026-11-14T05:00:58.635120+00:00",
     "IF News": "2026-11-13T19:30:58.399877+00:00",
     "bitkogan": "2026-11-13T09:00:55.287406+00:00",
     "CryptoKogan": "2026-11-13T15:30:58.234218+00:00",
@@ -1793,7 +1790,7 @@
     "The Defiant": "2026-11-14T04:30:57.352164+00:00",
     "WSJ": "2026-11-14T04:30:57.352164+00:00",
     "Bitcoin Magazine Telegram": "2026-11-13T17:01:00.144187+00:00",
-    "Lookonchain": "2026-11-14T04:30:57.352164+00:00",
+    "Lookonchain": "2026-11-14T05:00:58.635120+00:00",
     "Банк России": "2026-11-13T09:30:57.888201+00:00",
     "InvestFuture": "2026-11-13T08:30:56.931284+00:00",
     "Rigzone": "2026-11-13T04:31:06.882155+00:00",
@@ -1866,7 +1863,7 @@
     "BCS Express": "2026-11-14T04:30:57.352164+00:00",
     "Bitkogan HOTLINE": "2026-11-14T04:30:57.352164+00:00"
   },
-  "catalog_at": "2026-11-14T04:30:57+00:00",
-  "own_hour": "2026-11-13 21",
+  "catalog_at": "2026-11-14T05:00:58+00:00",
+  "own_hour": "2026-11-14 08",
   "digest_alert": "2026-11-10 19:30"
 }
