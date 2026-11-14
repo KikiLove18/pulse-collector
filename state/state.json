@@ -1037,7 +1037,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-14T11:01:05.486475+00:00",
+  "breaking_ts": "2026-11-14T11:31:08.064583+00:00",
   "news_now": {
     "day": "2026-11-14",
     "day_count": 1,
@@ -1048,61 +1048,46 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/sport/28317889",
+    "https://t.me/forbesrussia/103021",
+    "https://tass.ru/proisshestviya/28317877",
+    "https://www.rbc.ru/sport/09/11/2026/6af1dae3a47758f3ea1e8527",
+    "https://tass.ru/sport/28317887",
+    "https://www.rbc.ru/rbcfreenews/6af4a8d8e0d103017e855492",
+    "https://t.me/banksta/105448",
+    "https://tass.ru/politika/28317883",
+    "https://www.kommersant.ru/doc/9109645",
+    "https://www.rbc.ru/rbcfreenews/6af82123df54b1d20417938a",
+    "https://www.interfax.ru/moscow/1129008",
+    "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+    "https://tass.ru/ekonomika/28317879",
+    "https://t.me/FinancialJuice/147264",
+    "https://www.vedomosti.ru/politics/news/2026/11/14/1245375-zaporozhe-perekrito",
+    "https://www.rbc.ru/sport/14/11/2026/6af75ca6e0b7ef777dac3a60",
+    "https://www.interfax.ru/russia/1129007",
+    "https://t.me/FinancialJuice/147263",
+    "https://tass.ru/sport/28317875",
+    "https://tass.ru/mezhdunarodnaya-panorama/28317873",
+    "https://www.rbc.ru/rbcfreenews/6aefda9d8575a3c3c097c53b",
+    "https://www.kommersant.ru/doc/9109640",
+    "https://tass.ru/politika/28317871",
+    "https://www.rbc.ru/rbcfreenews/6ac07fb622d985c7428467cb",
+    "https://tass.ru/ekonomika/28317869",
+    "https://tass.ru/kosmos/28317867",
+    "https://t.me/headlines_for_traders/88680",
+    "https://www.interfax.ru/world/1129006",
+    "https://www.rbc.ru/politics/23/09/2026/6ab3e25c7aa0603c315ec34c",
+    "https://tass.ru/mezhdunarodnaya-panorama/28317839",
     "https://www.kommersant.ru/doc/9109633",
-    "https://tass.ru/ekonomika/28317865",
-    "https://t.me/banksta/105447",
-    "https://tass.ru/obschestvo/28317861",
-    "https://t.me/energytodaygroup/32746",
-    "https://tass.ru/proisshestviya/28317859",
-    "https://t.me/bitsmedia/28973",
-    "https://tass.ru/ekonomika/28317857",
-    "https://tass.ru/proisshestviya/28317855",
-    "https://tass.ru/obschestvo/28317851",
-    "https://tass.ru/sport/28317853",
-    "https://tass.ru/proisshestviya/28317847",
-    "https://www.vedomosti.ru/politics/news/2026/11/14/1245372-razrabotki-rossiiskih",
-    "https://tass.ru/obschestvo/28317845",
-    "https://tass.ru/mezhdunarodnaya-panorama/28317849",
-    "https://tass.ru/obschestvo/28317843",
-    "https://www.kommersant.ru/doc/9109632",
-    "https://t.me/cbonds/26405",
-    "https://t.me/forklog/50677",
-    "https://tass.ru/sport/28317841",
-    "https://tass.ru/proisshestviya/28317837",
-    "https://t.me/bitsmedia/28972",
-    "https://www.kommersant.ru/doc/9109630",
-    "https://t.me/rbc_news/160675",
-    "https://cointelegraph.com/news/microsoft-365-outage-resolved-cyberattack-ruled-out?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://tass.ru/obschestvo/28317833",
-    "https://t.me/agroinvestor/21774",
-    "https://t.me/expert_mag/11357",
-    "https://t.me/rbc_news/160674",
-    "https://tass.ru/nauka/28317829",
-    "https://t.me/energytodaygroup/32745",
-    "https://tass.ru/proisshestviya/28317825",
-    "https://www.kommersant.ru/doc/9109623"
+    "https://www.rbc.ru/photoslider/6af83e18c8a1bac0e8b2a06d",
+    "https://www.interfax.ru/moscow/1129005",
+    "https://tass.ru/ekonomika/28317865"
   ],
   "ai_dead": {
     "date": "2026-11-14",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-13T11:30:54.618275+00:00",
-      "Мосбиржа запустит торги фьючерсами на сою и кукурузу"
-    ],
-    [
-      "2026-11-13T11:30:54.618275+00:00",
-      "МЭА понизило прогноз мирового спроса на нефть"
-    ],
-    [
-      "2026-11-13T11:30:54.618275+00:00",
-      "КСИР сообщил об уничтожении дрона США в районе Ирана"
-    ],
-    [
-      "2026-11-13T11:30:54.618275+00:00",
-      "ByteDance предложила выкуп акций на $6 млрд"
-    ],
     [
       "2026-11-13T12:00:56.783275+00:00",
       "Биткоин упал ниже $70 000 на фоне ликвидаций на $1,6 млрд"
@@ -1638,6 +1623,22 @@
     [
       "2026-11-14T11:01:05.486475+00:00",
       "Болгария и Польша прекратили финансовую и военную поддержку Украины"
+    ],
+    [
+      "2026-11-14T11:31:08.064583+00:00",
+      "Аэропорт Домодедово ввел временные ограничения на прием и выпуск рейсов"
+    ],
+    [
+      "2026-11-14T11:31:08.064583+00:00",
+      "Сенаторы США потребовали от Илона Маска сохранить данные по Starlink"
+    ],
+    [
+      "2026-11-14T11:31:08.064583+00:00",
+      "Адвокат заявил об освобождении Лерчек от штрафа в 763 млн рублей"
+    ],
+    [
+      "2026-11-14T11:31:08.064583+00:00",
+      "Макрон планирует договориться о поставках редкоземельных металлов"
     ]
   ],
   "results_fp": [
@@ -1709,16 +1710,16 @@
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-14T04:30:57.352164+00:00",
-    "Коммерсантъ": "2026-11-14T10:00:59.829115+00:00",
+    "Коммерсантъ": "2026-11-14T11:31:08.064583+00:00",
     "Ведомости": "2026-11-14T09:30:54.367804+00:00",
-    "Интерфакс": "2026-11-14T08:30:54.309954+00:00",
-    "ТАСС": "2026-11-14T10:00:59.829115+00:00",
+    "Интерфакс": "2026-11-14T11:31:08.064583+00:00",
+    "ТАСС": "2026-11-14T11:31:08.064583+00:00",
     "CoinDesk": "2026-11-13T19:00:59.748746+00:00",
     "Headlines for Traders": "2026-11-14T09:30:54.367804+00:00",
     "MarketTwits": "2026-11-14T05:00:58.635120+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-14T10:00:59.829115+00:00",
-    "РБК": "2026-11-14T08:00:55.285999+00:00",
+    "РБК": "2026-11-14T11:31:08.064583+00:00",
     "Wu Blockchain": "2026-11-14T06:30:54.650040+00:00",
     "Банкста": "2026-11-14T11:01:05.486475+00:00",
     "IF News": "2026-11-13T19:30:58.399877+00:00",
@@ -1824,7 +1825,7 @@
     "Bitkogan HOTLINE": "2026-11-14T04:30:57.352164+00:00",
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00"
   },
-  "catalog_at": "2026-11-14T11:01:05+00:00",
+  "catalog_at": "2026-11-14T11:31:08+00:00",
   "own_hour": "2026-11-14 14",
   "digest_alert": "2026-11-10 19:30"
 }
