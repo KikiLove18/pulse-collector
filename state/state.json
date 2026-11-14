@@ -1037,81 +1037,71 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-14T11:31:08.064583+00:00",
+  "breaking_ts": "2026-11-14T12:00:59.355952+00:00",
   "news_now": {
     "day": "2026-11-14",
-    "day_count": 1,
+    "day_count": 2,
     "urgent_count": 0,
-    "last": "2026-11-14T09:00:57.367451+00:00",
+    "last": "2026-11-14T12:00:59.355952+00:00",
     "titles": [
-      "Отток из спотовых биткоин-ETF в США превысил $1 млрд за неделю"
+      "Отток из спотовых биткоин-ETF в США превысил $1 млрд за неделю",
+      "Отток ликвидности из стейблкоинов достиг максимума с 2022 года"
     ]
   },
   "news_seen": [
+    "https://t.me/banksta/105449",
+    "https://t.me/glassnode/2106",
+    "https://t.me/headlines_for_traders/88681",
+    "https://t.me/minfin/9486",
+    "https://www.vedomosti.ru/politics/news/2026/11/14/1245379-bolgariya-ne-budet",
+    "https://www.marketwatch.com/story/chinas-hottest-stocks-these-days-have-one-thing-in-common-names-that-sound-like-sheep-6176e521?mod=mw_rss_topstories",
+    "https://t.me/rbc_news/160678",
+    "https://t.me/interfaxonline/81615",
+    "https://tass.ru/obschestvo/28317895",
+    "https://t.me/invest_zonaa/39436",
+    "https://www.kommersant.ru/doc/9109652",
+    "https://t.me/forbesrussia/103029",
+    "https://t.me/interfaxonline/81614",
+    "https://www.rbc.ru/politics/14/11/2026/6af84b2cc8a1bac0e8b2a07a",
+    "https://www.rbc.ru/politics/10/11/2026/6af302f4286191e6ebe0729b",
+    "https://tass.ru/sport/28317931",
+    "https://tass.ru/politika/28317927",
+    "https://t.me/forklog/50678",
+    "https://www.interfax.ru/russia/1129012",
+    "https://tass.ru/obschestvo/28317921",
+    "https://tass.ru/proisshestviya/28317903",
+    "https://tass.ru/politika/28317917",
+    "https://tass.ru/sport/28317919",
+    "https://www.rbc.ru/rbcfreenews/6ae8b89fa0661a3c59f81b7d",
+    "https://www.vedomosti.ru/politics/news/2026/11/14/1245377-tramp-skandal",
+    "https://www.rbc.ru/sport/27/03/2026/69c65bd99a79474822c6a324",
+    "https://tass.ru/politika/28317915",
+    "https://www.rbc.ru/finances/09/11/2026/6af189e5b53163712db0ed8a",
+    "https://t.me/rbc_news/160677",
+    "https://tass.ru/sport/28317913",
+    "https://tass.ru/proisshestviya/28317899",
+    "https://www.sport-interfax.ru/1129011",
+    "https://tass.ru/sport/28317911",
+    "https://www.interfax.ru/moscow/1129010",
+    "https://t.me/interfaxonline/81613",
+    "https://t.me/forbesrussia/103028",
+    "https://tass.ru/ekonomika/28317901",
+    "https://www.interfax.ru/world/1129009",
+    "https://t.me/expert_mag/11358",
+    "https://www.rbc.ru/politics/20/09/2023/646dcf549a7947ed7fcf32e2",
+    "https://cryptoslate.com/50000-people-installed-this-bitcoin-browser-extension-now-control-of-it-is-up-for-sale/",
+    "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
     "https://tass.ru/sport/28317889",
+    "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "https://t.me/forbesrussia/103021",
     "https://tass.ru/proisshestviya/28317877",
-    "https://www.rbc.ru/sport/09/11/2026/6af1dae3a47758f3ea1e8527",
-    "https://tass.ru/sport/28317887",
-    "https://www.rbc.ru/rbcfreenews/6af4a8d8e0d103017e855492",
-    "https://t.me/banksta/105448",
-    "https://tass.ru/politika/28317883",
-    "https://www.kommersant.ru/doc/9109645",
-    "https://www.rbc.ru/rbcfreenews/6af82123df54b1d20417938a",
-    "https://www.interfax.ru/moscow/1129008",
-    "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-    "https://tass.ru/ekonomika/28317879",
-    "https://t.me/FinancialJuice/147264",
-    "https://www.vedomosti.ru/politics/news/2026/11/14/1245375-zaporozhe-perekrito",
-    "https://www.rbc.ru/sport/14/11/2026/6af75ca6e0b7ef777dac3a60",
-    "https://www.interfax.ru/russia/1129007",
-    "https://t.me/FinancialJuice/147263",
-    "https://tass.ru/sport/28317875",
-    "https://tass.ru/mezhdunarodnaya-panorama/28317873",
-    "https://www.rbc.ru/rbcfreenews/6aefda9d8575a3c3c097c53b",
-    "https://www.kommersant.ru/doc/9109640",
-    "https://tass.ru/politika/28317871",
-    "https://www.rbc.ru/rbcfreenews/6ac07fb622d985c7428467cb",
-    "https://tass.ru/ekonomika/28317869",
-    "https://tass.ru/kosmos/28317867",
-    "https://t.me/headlines_for_traders/88680",
-    "https://www.interfax.ru/world/1129006",
-    "https://www.rbc.ru/politics/23/09/2026/6ab3e25c7aa0603c315ec34c",
-    "https://tass.ru/mezhdunarodnaya-panorama/28317839",
-    "https://www.kommersant.ru/doc/9109633",
-    "https://www.rbc.ru/photoslider/6af83e18c8a1bac0e8b2a06d",
-    "https://www.interfax.ru/moscow/1129005",
-    "https://tass.ru/ekonomika/28317865"
+    "https://www.rbc.ru/sport/09/11/2026/6af1dae3a47758f3ea1e8527"
   ],
   "ai_dead": {
     "date": "2026-11-14",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-13T12:00:56.783275+00:00",
-      "Биткоин упал ниже $70 000 на фоне ликвидаций на $1,6 млрд"
-    ],
-    [
-      "2026-11-13T12:00:56.783275+00:00",
-      "Т-Инвестиции вернули рекомендацию «Покупать» по акциям Яндекса"
-    ],
-    [
-      "2026-11-13T12:00:56.783275+00:00",
-      "Правительство направит более 48 млрд рублей на льготный кредит аграриев"
-    ],
-    [
-      "2026-11-13T12:00:56.783275+00:00",
-      "В Госдуму внесен законопроект о выходе региональных компаний на биржу"
-    ],
-    [
-      "2026-11-13T12:00:56.783275+00:00",
-      "Московская биржа запустит торги фьючерсами на сою и кукурузу"
-    ],
-    [
-      "2026-11-13T12:00:56.783275+00:00",
-      "Шереметьевская таможня пресекла попытку вывоза 136 млн рублей"
-    ],
     [
       "2026-11-13T12:30:56.924766+00:00",
       "Дефицит внешней торговли еврозоны в сентябре превысил €10 млрд"
@@ -1639,6 +1629,22 @@
     [
       "2026-11-14T11:31:08.064583+00:00",
       "Макрон планирует договориться о поставках редкоземельных металлов"
+    ],
+    [
+      "2026-11-14T12:00:59.355952+00:00",
+      "Отток ликвидности из стейблкоинов достиг максимума с 2022 года"
+    ],
+    [
+      "2026-11-14T12:00:59.355952+00:00",
+      "Аэропорт Домодедово возобновил работу после ограничений"
+    ],
+    [
+      "2026-11-14T12:00:59.355952+00:00",
+      "Болгария приостанавливает помощь Украине"
+    ],
+    [
+      "2026-11-14T12:00:59.355952+00:00",
+      "Авиасообщение в США возобновлено после сбоя"
     ]
   ],
   "results_fp": [
@@ -1711,9 +1717,9 @@
   "feed_src": {
     "OilPrice": "2026-11-14T04:30:57.352164+00:00",
     "Коммерсантъ": "2026-11-14T11:31:08.064583+00:00",
-    "Ведомости": "2026-11-14T09:30:54.367804+00:00",
-    "Интерфакс": "2026-11-14T11:31:08.064583+00:00",
-    "ТАСС": "2026-11-14T11:31:08.064583+00:00",
+    "Ведомости": "2026-11-14T12:00:59.355952+00:00",
+    "Интерфакс": "2026-11-14T12:00:59.355952+00:00",
+    "ТАСС": "2026-11-14T12:00:59.355952+00:00",
     "CoinDesk": "2026-11-13T19:00:59.748746+00:00",
     "Headlines for Traders": "2026-11-14T09:30:54.367804+00:00",
     "MarketTwits": "2026-11-14T05:00:58.635120+00:00",
@@ -1759,10 +1765,10 @@
     "Агроинвестор": "2026-11-14T11:01:05.486475+00:00",
     "Газпромбанк Инвестиции": "2026-11-11T13:00:56.977211+00:00",
     "CryptoSlate": "2026-11-14T04:30:57.352164+00:00",
-    "CNBC Markets": "2026-11-14T09:30:54.367804+00:00",
+    "CNBC Markets": "2026-11-14T12:00:59.355952+00:00",
     "Natural Gas Intelligence": "2026-11-14T04:30:57.352164+00:00",
     "Правительство России": "2026-11-14T09:30:54.367804+00:00",
-    "glassnode": "2026-11-11T16:30:59.321033+00:00",
+    "glassnode": "2026-11-14T12:00:59.355952+00:00",
     "Минэкономразвития": "2026-11-10T04:30:58.582529+00:00",
     "Прайм": "2026-11-10T04:30:58.582529+00:00",
     "Хедлайнеры": "2026-11-12T10:01:00.442135+00:00",
@@ -1825,7 +1831,7 @@
     "Bitkogan HOTLINE": "2026-11-14T04:30:57.352164+00:00",
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00"
   },
-  "catalog_at": "2026-11-14T11:31:08+00:00",
-  "own_hour": "2026-11-14 14",
+  "catalog_at": "2026-11-14T12:00:59+00:00",
+  "own_hour": "2026-11-14 15",
   "digest_alert": "2026-11-10 19:30"
 }
