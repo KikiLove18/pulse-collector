@@ -1037,7 +1037,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-14T07:30:55.693545+00:00",
+  "breaking_ts": "2026-11-14T08:00:55.285999+00:00",
   "news_now": {
     "day": "2026-11-14",
     "day_count": 0,
@@ -1046,95 +1046,63 @@
     "titles": []
   },
   "news_seen": [
+    "https://www.rbc.ru/rbcfreenews/699e8ac39a794718bdc1755a",
+    "https://www.kommersant.ru/doc/9109570",
+    "https://t.me/banksta/105439",
+    "https://www.rbc.ru/society/14/11/2026/6af813a6eac7a7bfa1343ad7",
+    "https://tass.ru/novosti-regionov/28317601",
+    "https://thedefiant.io/news/blockchains/ethereum-weighs-hegot-reset-for-post-quantum-security",
+    "https://tass.ru/politika/28317599",
+    "https://www.vedomosti.ru/technology/news/2026/11/14/1245360-microsoft-servisov",
+    "https://www.interfax.ru/russia/1128992",
+    "https://t.me/banksta/105438",
+    "https://tass.ru/proisshestviya/28317569",
+    "https://tass.ru/obschestvo/28317585",
+    "https://tass.ru/kosmos/28317595",
+    "https://t.me/banksta/105437",
+    "https://www.rbc.ru/sport/14/11/2026/6af80789552c4f94d09ea467",
+    "https://t.me/interfaxonline/81611",
+    "https://t.me/frank_media/24741",
+    "https://www.rbc.ru/rbcfreenews/6a53b46a9a79478d37cc4ac0",
+    "https://tass.ru/proisshestviya/28317593",
+    "https://tass.ru/proisshestviya/28317591",
+    "https://thedefiant.io/frontier/ai/anthropic-ipo-said-to-restrict-china-hong-kong-institutions",
+    "https://www.rbc.ru/rbcfreenews/6af810bbbe686526a9ce0d7c",
+    "https://t.me/headlines_for_traders/88670",
+    "https://www.interfax.ru/russia/1128991",
+    "https://thedefiant.io/frontier/ai/duffy-denies-faa-ai-tool-caused-nationwide-ground-stop",
+    "https://www.rbc.ru/society/03/11/2026/6ae97677fd1988a6ddeb1ff9",
+    "https://www.rbc.ru/technology_and_media/14/11/2026/6af7bf1ae48b802d2e4be81c",
+    "https://thedefiant.io/frontier/ai/openai-staff-discuss-military-ai-in-russian-hoax-call",
+    "https://t.me/expert_mag/11356",
+    "https://www.interfax.ru/russia/1128990",
+    "https://t.me/forbesrussia/103015",
+    "https://tass.ru/proisshestviya/28317571",
+    "https://www.vedomosti.ru/politics/news/2026/11/14/1245359-tanker-podorvalsya",
+    "https://tass.ru/obschestvo/28317587",
+    "https://t.me/banksta/105436",
+    "https://t.me/rbc_news/160664",
+    "https://t.me/Metals_Mining/23892",
+    "https://t.me/headlines_for_traders/88669",
+    "https://thedefiant.io/news/markets/strategy-s-bitcoin-cost-gap-widens-to-7-7-billion",
+    "https://thedefiant.io/frontier/technology/tesla-opens-cybercab-purchases-to-select-private-buyers",
+    "https://tass.ru/ekonomika/28317583",
+    "https://www.kommersant.ru/doc/9109559",
+    "https://tass.ru/obschestvo/28317581",
+    "https://www.rbc.ru/technology_and_media/13/11/2026/6af6ae7eefa060b593895ff9",
     "https://t.me/headlines_for_traders/88668",
     "https://www.rbc.ru/rbcfreenews/6ad0c6793ccf4c597e73c163",
     "https://www.vedomosti.ru/politics/news/2026/11/14/1245358-pashinyan-anonsiroval",
     "https://tass.ru/sport/28317577",
     "https://www.kommersant.ru/doc/9109556",
     "https://tass.ru/proisshestviya/28317579",
-    "https://tass.ru/proisshestviya/28317575",
-    "https://www.rbc.ru/sport/14/11/2026/6af75ca6e0b7ef777dac3a60",
-    "https://t.me/forbesrussia/103014",
-    "https://t.me/oil_capital/27000",
-    "https://thedefiant.io/converge/tradfi-and-fintech/kraken-opens-anthropic-ipo-requests-with-5-spread",
-    "https://thedefiant.io/news/markets/bitcoin-falls-below-69-000-as-ether-slides-under-2-000",
-    "https://www.kommersant.ru/doc/9109549",
-    "https://tass.ru/proisshestviya/28317559",
-    "https://www.rbc.ru/rbcfreenews/6abb2e221313ab36e0952a18",
-    "https://thedefiant.io/news/defi/stusdt-winds-down-sets-may-2027-redemption-deadline",
-    "https://tass.ru/proisshestviya/28317567",
-    "https://t.me/expert_mag/11355",
-    "https://www.rbc.ru/rbcfreenews/6a58e1729a79471e2a5940b8",
-    "https://thedefiant.io/news/markets/us-ppi-hits-6-5-as-bitcoin-and-ether-edge-higher",
-    "https://tass.ru/ekonomika/28317555",
-    "https://www.rbc.ru/radio/14/11/2026/6af808e968d8aea914f079af",
-    "https://www.rbc.ru/sport/13/11/2026/6af6b6168146c92f135f5bee",
-    "https://t.me/spydell_finance/10271",
-    "https://thedefiant.io/frontier/ai/scott-seeks-huang-lutnick-testimony-on-nvidia-exports",
-    "https://www.interfax.ru/russia/1128989",
-    "https://www.cnbc.com/2026/11/14/nvidia-jensen-huang-ceo-succession-risk.html",
-    "https://t.me/markettwits/393406",
-    "https://www.kommersant.ru/doc/9109548",
-    "https://www.rbc.ru/technology_and_media/14/11/2026/6af808300189ce094ad0b0ae",
-    "https://www.vedomosti.ru/society/news/2026/11/14/1245355-prigovor-eks-glavam-rzhd",
-    "https://thedefiant.io/frontier/infrastructure/microsoft-blames-365-outage-on-network-upgrade-issue",
-    "https://t.me/bitkogan/29558",
-    "https://tass.ru/politika/28317549",
-    "https://tass.ru/ekonomika/28317547",
-    "https://www.kommersant.ru/doc/9109545",
-    "https://t.me/forklog/50673",
-    "https://thedefiant.io/frontier/ai/blacklisted-chinese-university-bought-h200s-reuters",
-    "https://tass.ru/mezhdunarodnaya-panorama/28317499",
-    "https://tass.ru/armiya-i-opk/28317513",
-    "https://t.me/frank_media/24740",
-    "https://www.interfax.ru/russia/1128988",
-    "https://tass.ru/politika/28317505",
-    "https://thedefiant.io/news/hacks/mantra-announces-seven-day-pause-on-new-unstaking",
-    "https://thedefiant.io/frontier/ai/sacks-says-alice-huang-spy-narrative-is-collapsing",
-    "https://tass.ru/politika/28317507",
-    "https://www.rbc.ru/rbcfreenews/6adf4aad4e8e85f125c98794",
-    "https://t.me/incrypted/33323",
-    "https://www.rbc.ru/quote/14/11/2026/6af6fa17922de231f8d22ee6",
-    "https://www.rbc.ru/quote/14/11/2026/6af58bb5e1865c62f9b53c44",
-    "https://www.interfax.ru/interview/1128819",
-    "https://t.me/bitkogan_hotline/28270",
-    "https://tass.ru/obschestvo/28317473",
-    "https://www.interfax.ru/russia/1128984",
-    "https://tass.ru/kultura/28317495"
+    "https://tass.ru/proisshestviya/28317575"
   ],
   "ai_dead": {
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-13T07:30:56.216677+00:00",
-      "Ликвидации на криптовалютном рынке превысили $1,64 млрд за сутки"
-    ],
-    [
-      "2026-11-13T07:30:56.216677+00:00",
-      "Дефицит федерального бюджета США в октябре вырос почти в 15 раз"
-    ],
-    [
-      "2026-11-13T07:30:56.216677+00:00",
-      "Газовоз подорвался на мине в Ормузском проливе"
-    ],
-    [
-      "2026-11-13T07:30:56.216677+00:00",
-      "Масштабный сбой в Microsoft затронул 74 страны и продолжается более 13 часов"
-    ],
-    [
-      "2026-11-13T08:00:55.144618+00:00",
-      "Крупный криптокит докупил 10 380 Ethereum"
-    ],
-    [
-      "2026-11-13T08:00:55.144618+00:00",
-      "Минфин предложил увеличить вычет по НДПИ для Газпрома"
-    ],
-    [
-      "2026-11-13T08:00:55.144618+00:00",
-      "Frank RG: объем ипотеки в 2026 году составит 4,7 трлн рублей"
-    ],
     [
       "2026-11-13T08:30:56.931284+00:00",
       "Сбербанк представил стратегию до 2029 года с рентабельностью выше 21%"
@@ -1698,6 +1666,18 @@
     [
       "2026-11-14T07:30:55.693545+00:00",
       "Мирра Андреева побила рекорд Серены Уильямс на Итоговом турнире WTA"
+    ],
+    [
+      "2026-11-14T08:00:55.285999+00:00",
+      "Банки и операторы связи заключили договоры о маркировке звонков"
+    ],
+    [
+      "2026-11-14T08:00:55.285999+00:00",
+      "В США более 15 тыс. авиарейсов задержали или отменили из-за сбоя"
+    ],
+    [
+      "2026-11-14T08:00:55.285999+00:00",
+      "Биткоин опустился ниже отметки $67 000 на рынке"
     ]
   ],
   "results_fp": [
@@ -1764,29 +1744,29 @@
     ]
   },
   "pro_daily": "2026-11-13",
-  "freech_day": "2026-11-13",
+  "freech_day": "2026-11-14",
   "pro_auto": "2026-11-14",
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-14T04:30:57.352164+00:00",
     "Коммерсантъ": "2026-11-14T06:30:54.650040+00:00",
     "Ведомости": "2026-11-14T06:30:54.650040+00:00",
-    "Интерфакс": "2026-11-14T07:00:55.922574+00:00",
+    "Интерфакс": "2026-11-14T08:00:55.285999+00:00",
     "ТАСС": "2026-11-14T07:30:55.693545+00:00",
     "CoinDesk": "2026-11-13T19:00:59.748746+00:00",
     "Headlines for Traders": "2026-11-14T06:30:54.650040+00:00",
     "MarketTwits": "2026-11-14T05:00:58.635120+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-13T17:01:00.144187+00:00",
-    "РБК": "2026-11-14T07:30:55.693545+00:00",
+    "РБК": "2026-11-14T08:00:55.285999+00:00",
     "Wu Blockchain": "2026-11-14T06:30:54.650040+00:00",
-    "Банкста": "2026-11-14T05:00:58.635120+00:00",
+    "Банкста": "2026-11-14T08:00:55.285999+00:00",
     "IF News": "2026-11-13T19:30:58.399877+00:00",
     "bitkogan": "2026-11-13T09:00:55.287406+00:00",
     "CryptoKogan": "2026-11-13T15:30:58.234218+00:00",
     "Energy Today": "2026-11-13T10:00:54.903578+00:00",
     "Forbes Russia": "2026-11-14T04:30:57.352164+00:00",
-    "Frank Media": "2026-11-13T17:30:55.348214+00:00",
+    "Frank Media": "2026-11-14T08:00:55.285999+00:00",
     "ForkLog": "2026-11-13T17:01:00.144187+00:00",
     "Decrypt": "2026-11-14T04:30:57.352164+00:00",
     "Cointelegraph": "2026-11-14T07:00:55.922574+00:00",
@@ -1807,7 +1787,7 @@
     "Cbonds": "2026-11-12T12:30:56.062204+00:00",
     "WSJ Markets": "2026-11-14T04:30:57.352164+00:00",
     "WSJ Economy": "2026-11-14T04:30:57.352164+00:00",
-    "The Defiant": "2026-11-14T07:30:55.693545+00:00",
+    "The Defiant": "2026-11-14T08:00:55.285999+00:00",
     "WSJ": "2026-11-14T04:30:57.352164+00:00",
     "Bitcoin Magazine Telegram": "2026-11-13T17:01:00.144187+00:00",
     "Lookonchain": "2026-11-14T05:00:58.635120+00:00",
@@ -1828,7 +1808,7 @@
     "Т-Инвестиции": "2026-11-13T06:00:55.469168+00:00",
     "bitkogan HOTLINE": "2026-11-13T12:00:56.783275+00:00",
     "Металл и Минерал": "2026-11-13T04:31:06.882155+00:00",
-    "Эксперт": "2026-11-14T04:30:57.352164+00:00",
+    "Эксперт": "2026-11-14T08:00:55.285999+00:00",
     "БКС Экспресс": "2026-11-13T07:00:55.037437+00:00",
     "Proeconomics": "2026-11-13T12:30:56.924766+00:00",
     "Incrypted": "2026-11-14T07:30:55.693545+00:00",
@@ -1884,7 +1864,7 @@
     "Bitkogan HOTLINE": "2026-11-14T04:30:57.352164+00:00",
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00"
   },
-  "catalog_at": "2026-11-14T07:30:55+00:00",
-  "own_hour": "2026-11-14 10",
+  "catalog_at": "2026-11-14T08:00:55+00:00",
+  "own_hour": "2026-11-14 11",
   "digest_alert": "2026-11-10 19:30"
 }
