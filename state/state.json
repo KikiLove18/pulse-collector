@@ -1141,7 +1141,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-15T19:30:56.972069+00:00",
+  "breaking_ts": "2026-11-15T20:00:56.819761+00:00",
   "news_now": {
     "day": "2026-11-15",
     "day_count": 3,
@@ -1155,58 +1155,35 @@
     ]
   },
   "news_seen": [
+    "https://oilprice.com/Energy/Crude-Oil/The-130-Billion-Oil-Boom-Fueled-by-the-Iran-War.html",
+    "https://tass.ru/ekonomika/28319651",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245527-okr-pozhaluetsya",
+    "https://t.me/rbc_news/160731",
+    "https://tass.ru/mezhdunarodnaya-panorama/28319657",
+    "https://t.me/markettwits/393453",
+    "https://www.kommersant.ru/doc/9110041",
+    "https://www.rbc.ru/technology_and_media/27/10/2026/6ae095808b95e81ddde43019",
+    "https://tass.ru/mezhdunarodnaya-panorama/28319645",
+    "https://www.rbc.ru/sport/20/06/2026/6a3315ae9a79477e1a5c6881",
+    "https://www.interfax.ru/world/1129161",
+    "https://www.vedomosti.ru/business/news/2026/11/15/1245525-huang-obsuzhdaet-vozvraschenie",
+    "https://www.rbc.ru/finances/19/10/2026/6ad63a1c999a437636783c1e",
+    "https://tass.ru/sport/28319643",
+    "https://www.kommersant.ru/doc/9110040",
+    "https://t.me/banksta/105502",
+    "https://t.me/cointelegraph/73295",
+    "https://t.me/markettwits/393452",
+    "https://www.rbc.ru/rbcfreenews/6af98cef8ca78b70d1689284",
+    "https://www.rbc.ru/business/15/11/2026/6afa072242b21c4491aa0fdc",
+    "https://t.me/CoinDeskGlobal/25484",
     "https://www.coindesk.com/policy/2026/11/15/did-prediction-markets-call-the-u-s-midterm-election-state-of-crypto",
-    "https://www.rbc.ru/politics/15/11/2026/6afa066f4e7f19f04f524949",
-    "https://t.me/markettwits/393451",
-    "https://t.me/FinancialJuice/147329",
-    "https://t.me/FinancialJuice/147328",
-    "https://tass.ru/obschestvo/28319617",
-    "https://www.rbc.ru/rbcfreenews/6a6798619a7947bb0d9c7969",
-    "https://tass.ru/mezhdunarodnaya-panorama/28319637",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245518-husiti-ob-udarah",
-    "https://tass.ru/politika/28319633",
-    "https://t.me/rbc_news/160730",
-    "https://tass.ru/proisshestviya/28319631",
-    "https://t.me/markettwits/393450",
-    "https://t.me/FinancialJuice/147327",
-    "https://www.kommersant.ru/doc/9110038",
-    "https://t.me/WatcherGuru/16055",
-    "https://t.me/banksta/105501",
-    "https://tass.ru/mezhdunarodnaya-panorama/28319627",
-    "https://www.interfax.ru/russia/1129160",
-    "https://www.rbc.ru/politics/25/03/2026/69c404c09a794705d1eab2c4",
-    "https://tass.ru/sport/28319629",
-    "https://t.me/headlines_for_traders/88724",
-    "https://tass.ru/proisshestviya/28319625",
-    "https://tass.ru/obschestvo/28319621",
-    "https://tass.ru/obschestvo/28319607",
-    "https://tass.ru/obschestvo/28319623",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245516-fitso-otverg-ultimatum",
-    "https://t.me/konenkov_official/1674",
-    "https://tass.ru/proisshestviya/28319609",
-    "https://www.rbc.ru/politics/03/12/2025/69304d1f9a794775a78e2869"
+    "https://www.rbc.ru/politics/15/11/2026/6afa066f4e7f19f04f524949"
   ],
   "ai_dead": {
     "date": "2026-11-15",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-14T20:00:56.432821+00:00",
-      "Во Франции более 106 тыс. человек вышли на протесты против высокой стоимости"
-    ],
-    [
-      "2026-11-14T20:00:56.432821+00:00",
-      "Правительство выделило 2,4 млрд рублей на лизинг вертолетов для санавиации"
-    ],
-    [
-      "2026-11-14T20:00:56.432821+00:00",
-      "CryptoSlate предупредила о рисках потери средств на фейковых USDT"
-    ],
-    [
-      "2026-11-14T20:00:56.432821+00:00",
-      "Россия обыграла Украину в финале чемпионата Европы по настольному теннису U-13"
-    ],
     [
       "2026-11-14T20:30:56.218766+00:00",
       "Starship готовится к посадке при помощи манипуляторов в Техасе"
@@ -1802,6 +1779,26 @@
     [
       "2026-11-15T19:30:56.972069+00:00",
       "МИД России проверит данные о планах Эстонии закрыть границу"
+    ],
+    [
+      "2026-11-15T20:00:56.819761+00:00",
+      "Минфин США проверяет Nvidia на предмет обхода экспортных ограничений"
+    ],
+    [
+      "2026-11-15T20:00:56.819761+00:00",
+      "Москва проверит данные о планах Эстонии закрыть границу с 1 декабря"
+    ],
+    [
+      "2026-11-15T20:00:56.819761+00:00",
+      "Сергей Шойгу прибыл в Абу-Даби для переговоров с руководствм ОАЭ"
+    ],
+    [
+      "2026-11-15T20:00:56.819761+00:00",
+      "Иран объявил о завершении переговоров с Вашингтоном по семи условиям"
+    ],
+    [
+      "2026-11-15T20:00:56.819761+00:00",
+      "Основатель Binance прокомментировал текущую ситуацию на рынке криптовалют"
     ]
   ],
   "results_fp": [
@@ -1873,16 +1870,16 @@
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-15T04:30:56.781140+00:00",
-    "Коммерсантъ": "2026-11-15T19:00:59.920655+00:00",
-    "Ведомости": "2026-11-15T19:30:56.972069+00:00",
-    "Интерфакс": "2026-11-15T19:00:59.920655+00:00",
+    "Коммерсантъ": "2026-11-15T20:00:56.819761+00:00",
+    "Ведомости": "2026-11-15T20:00:56.819761+00:00",
+    "Интерфакс": "2026-11-15T20:00:56.819761+00:00",
     "ТАСС": "2026-11-15T19:30:56.972069+00:00",
     "CoinDesk": "2026-11-14T16:30:56.201734+00:00",
     "Headlines for Traders": "2026-11-15T08:01:04.103141+00:00",
-    "MarketTwits": "2026-11-15T19:30:56.972069+00:00",
+    "MarketTwits": "2026-11-15T20:00:56.819761+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-15T19:00:59.920655+00:00",
-    "РБК": "2026-11-15T19:30:56.972069+00:00",
+    "РБК": "2026-11-15T20:00:56.819761+00:00",
     "Wu Blockchain": "2026-11-15T16:30:55.522568+00:00",
     "Банкста": "2026-11-15T19:30:56.972069+00:00",
     "IF News": "2026-11-15T18:30:55.357735+00:00",
@@ -1893,7 +1890,7 @@
     "Frank Media": "2026-11-14T16:30:56.201734+00:00",
     "ForkLog": "2026-11-15T14:30:54.441426+00:00",
     "Decrypt": "2026-11-15T16:30:55.522568+00:00",
-    "Cointelegraph": "2026-11-15T16:30:55.522568+00:00",
+    "Cointelegraph": "2026-11-15T20:00:56.819761+00:00",
     "CoinMarketCap": "2026-11-14T04:30:57.352164+00:00",
     "СберИнвестиции": "2026-11-13T07:00:55.037437+00:00",
     "РБК Крипто": "2026-11-15T13:30:54.387137+00:00",
@@ -1903,7 +1900,7 @@
     "MarketWatch": "2026-11-15T16:30:55.522568+00:00",
     "Bitcoin Magazine": "2026-11-15T16:30:55.522568+00:00",
     "Watcher Guru": "2026-11-15T19:30:56.972069+00:00",
-    "РБК. Главное": "2026-11-15T19:00:59.920655+00:00",
+    "РБК. Главное": "2026-11-15T20:00:56.819761+00:00",
     "The Block": "2026-11-15T04:30:56.781140+00:00",
     "Нефть и Капитал": "2026-11-15T09:00:55.490860+00:00",
     "MMI": "2026-11-15T17:31:05.292544+00:00",
@@ -1989,7 +1986,7 @@
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00",
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00"
   },
-  "catalog_at": "2026-11-15T19:30:56+00:00",
+  "catalog_at": "2026-11-15T20:00:56+00:00",
   "own_hour": "2026-11-15 21",
   "digest_alert": "2026-11-10 19:30"
 }
