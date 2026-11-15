@@ -86,7 +86,7 @@
   ],
   "last_digest_ts": "2026-11-14T16:30:56.201734+00:00",
   "calendar": {
-    "ts": "2026-11-14T16:31:21.730926+00:00",
+    "ts": "2026-11-15T04:00:58.402321+00:00",
     "data": [
       {
         "title": "RBA Assist Gov Hunter Speaks",
@@ -1037,7 +1037,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-14T21:30:56.363420+00:00",
+  "breaking_ts": "2026-11-15T04:00:58.393769+00:00",
   "news_now": {
     "day": "2026-11-15",
     "day_count": 0,
@@ -1046,80 +1046,47 @@
     "titles": []
   },
   "news_seen": [
-    "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
-    "https://t.me/WatcherGuru/16042",
-    "https://t.me/interfaxonline/81624",
-    "https://t.me/nainspire/5725",
-    "https://www.rbc.ru/politics/10/11/2026/6af203c2762fc9ab336f2a4c",
-    "https://tass.ru/obschestvo/28318445",
-    "https://t.me/WatcherGuru/16041",
-    "https://tass.ru/proisshestviya/28318437",
-    "https://tass.ru/kosmos/28318443",
-    "https://tass.ru/sport/28318441",
-    "https://t.me/markettwits/393426",
-    "https://www.interfax.ru/russia/1129048",
-    "https://www.rbc.ru/rbcfreenews/6a918e43f3df40b24e150ed5",
-    "https://tass.ru/ekonomika/28318435",
-    "https://www.rbc.ru/economics/15/11/2026/6af8ce1c8e6e5c52e0f92941",
-    "https://tass.ru/ekonomika/28318431",
-    "https://www.interfax.ru/world/1129047",
-    "https://tass.ru/ekonomika/28318429",
-    "https://www.interfax.ru/russia/1129046",
-    "https://tass.ru/proisshestviya/28318427",
-    "https://t.me/banksta/105474",
-    "https://tass.ru/ekonomika/28318425",
-    "https://tass.ru/sport/28318423",
-    "https://tass.ru/ekonomika/28318417",
-    "https://tass.ru/armiya-i-opk/28318415",
-    "https://tass.ru/armiya-i-opk/28318413",
-    "https://tass.ru/armiya-i-opk/28318411",
-    "https://www.interfax.ru/world/1129045",
-    "https://tass.ru/armiya-i-opk/28318419",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318409",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318407",
-    "https://www.kommersant.ru/doc/9109721",
-    "https://tass.ru/interviews/28318291",
-    "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
-    "https://tass.ru/armiya-i-opk/28317501",
-    "https://tass.ru/ekonomika/28318401",
-    "https://tass.ru/sport/28318399",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318395",
-    "https://t.me/FinancialJuice/147294",
-    "https://www.rbc.ru/politics/14/11/2026/6af76fe82c34d7a05e35eee7"
+    "https://cryptoslate.com/solanas-retired-validators-still-vote-with-15-of-active-stake/",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318685",
+    "https://www.rbc.ru/politics/14/11/2026/6af792dd570f5714069fc22e",
+    "https://www.interfax.ru/russia/1129065",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318683",
+    "https://tass.ru/ekonomika/28318681",
+    "https://tass.ru/ekonomika/28318679",
+    "https://www.rbc.ru/politics/15/11/2026/6af92b2d62fcc9387112c21d",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318677",
+    "https://www.kommersant.ru/doc/9109737",
+    "https://tass.ru/obschestvo/28318675",
+    "https://tass.ru/ekonomika/28318673",
+    "https://tass.ru/kosmos/28318667",
+    "https://tass.ru/armiya-i-opk/28318671",
+    "https://tass.ru/armiya-i-opk/28318669",
+    "https://tass.ru/nauka/28318663",
+    "https://tass.ru/proisshestviya/28318665",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318659",
+    "https://tass.ru/ekonomika/28318661",
+    "https://www.interfax.ru/russia/1129064",
+    "https://tass.ru/obschestvo/28318655",
+    "https://tass.ru/obschestvo/28318653",
+    "https://www.kommersant.ru/doc/9109735",
+    "https://tass.ru/nedvizhimost/28318649",
+    "https://www.interfax.ru/russia/1129063",
+    "https://thedefiant.io/news/defi/aave-executive-reports-39-million-in-liquidations",
+    "https://tass.ru/ekonomika/28318651",
+    "https://t.me/WatcherGuru/16047",
+    "https://tass.ru/sport/28318647",
+    "https://thedefiant.io/news/markets/xrp-falls-to-89-cents-on-coinbase-its-lowest-since-november-2024",
+    "https://tass.ru/armiya-i-opk/28318641",
+    "https://tass.ru/armiya-i-opk/28318645",
+    "https://tass.ru/armiya-i-opk/28318643",
+    "https://www.rbc.ru/society/15/11/2026/6af91fe8acb2a01a5c8b424c",
+    "https://tass.ru/armiya-i-opk/28318639"
   ],
   "ai_dead": {
     "date": "2026-11-14",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-13T20:30:56.635289+00:00",
-      "Вложения JPMorgan в криптовалютные активы приблизились к $1 млрд"
-    ],
-    [
-      "2026-11-13T20:30:56.635289+00:00",
-      "Microsoft сообщила о глобальном сбое в работе своих сервисов"
-    ],
-    [
-      "2026-11-13T20:30:56.635289+00:00",
-      "Глава CFTC заявил об адаптации криптоиндустрии к правилам регулятора"
-    ],
-    [
-      "2026-11-13T20:30:56.635289+00:00",
-      "Nvidia пока не выбрала постоянного преемника Дженсена Хуанга"
-    ],
-    [
-      "2026-11-13T20:30:56.635289+00:00",
-      "Британская разведка увеличила интенсивность полетов у границ РФ"
-    ],
-    [
-      "2026-11-13T20:30:56.635289+00:00",
-      "Польша приостановила взносы в программу НАТО по закупкам оружия для Украины"
-    ],
-    [
-      "2026-11-13T20:30:56.635289+00:00",
-      "Антон Силуанов обсудил финансовую поддержку Нижегородской области"
-    ],
     [
       "2026-11-14T04:00:58.686006+00:00",
       "Биткоин упал ниже $67 000 на фоне ликвидаций на $330 млн"
@@ -1699,6 +1666,26 @@
     [
       "2026-11-14T20:30:56.218766+00:00",
       "Конфликт на Ближнем Востоке ускоряет переход стран Азии на ВИЭ"
+    ],
+    [
+      "2026-11-15T04:00:58.393769+00:00",
+      "Биткоин поднялся выше $65 000 на фоне ликвидаций шортов на $130 млн"
+    ],
+    [
+      "2026-11-15T04:00:58.393769+00:00",
+      "Aave сообщил о ликвидациях на $39 млн за два дня"
+    ],
+    [
+      "2026-11-15T04:00:58.393769+00:00",
+      "Курс XRP упал на Coinbase до 89 центов впервые с ноября 2024 года"
+    ],
+    [
+      "2026-11-15T04:00:58.393769+00:00",
+      "OneTwoTrip: бронирования отелей в Вологде на Новый год выросли в 2,5 раза"
+    ],
+    [
+      "2026-11-15T04:00:58.393769+00:00",
+      "В ФРГ 15 человек отравились хлором в бассейне из-за сбоя у Microsoft"
     ]
   ],
   "results_fp": [
@@ -1773,13 +1760,13 @@
     "Коммерсантъ": "2026-11-14T20:00:56.432821+00:00",
     "Ведомости": "2026-11-14T18:00:55.999858+00:00",
     "Интерфакс": "2026-11-14T20:30:56.218766+00:00",
-    "ТАСС": "2026-11-14T18:30:54.486601+00:00",
+    "ТАСС": "2026-11-15T04:00:58.393769+00:00",
     "CoinDesk": "2026-11-14T16:30:56.201734+00:00",
     "Headlines for Traders": "2026-11-14T16:00:55.760130+00:00",
     "MarketTwits": "2026-11-14T20:30:56.218766+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-14T19:30:55.285060+00:00",
-    "РБК": "2026-11-14T20:00:56.432821+00:00",
+    "РБК": "2026-11-15T04:00:58.393769+00:00",
     "Wu Blockchain": "2026-11-14T16:30:56.201734+00:00",
     "Банкста": "2026-11-14T20:30:56.218766+00:00",
     "IF News": "2026-11-14T15:30:58.133627+00:00",
@@ -1799,7 +1786,7 @@
     "Московская биржа": "2026-11-13T11:30:54.618275+00:00",
     "MarketWatch": "2026-11-14T14:30:54.427178+00:00",
     "Bitcoin Magazine": "2026-11-14T15:30:58.133627+00:00",
-    "Watcher Guru": "2026-11-14T18:30:54.486601+00:00",
+    "Watcher Guru": "2026-11-15T04:00:58.393769+00:00",
     "РБК. Главное": "2026-11-14T20:00:56.432821+00:00",
     "The Block": "2026-11-14T19:30:55.285060+00:00",
     "Нефть и Капитал": "2026-11-14T07:30:55.693545+00:00",
@@ -1808,7 +1795,7 @@
     "Cbonds": "2026-11-12T12:30:56.062204+00:00",
     "WSJ Markets": "2026-11-14T04:30:57.352164+00:00",
     "WSJ Economy": "2026-11-14T04:30:57.352164+00:00",
-    "The Defiant": "2026-11-14T16:30:56.201734+00:00",
+    "The Defiant": "2026-11-15T04:00:58.393769+00:00",
     "WSJ": "2026-11-14T04:30:57.352164+00:00",
     "Bitcoin Magazine Telegram": "2026-11-13T17:01:00.144187+00:00",
     "Lookonchain": "2026-11-14T13:00:55.462017+00:00",
@@ -1886,7 +1873,7 @@
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00",
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00"
   },
-  "catalog_at": "2026-11-14T21:30:56+00:00",
+  "catalog_at": "2026-11-15T04:00:58+00:00",
   "own_hour": "2026-11-14 21",
   "digest_alert": "2026-11-10 19:30"
 }
