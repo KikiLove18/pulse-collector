@@ -1037,7 +1037,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-15T04:00:58.393769+00:00",
+  "breaking_ts": "2026-11-15T05:00:54.642776+00:00",
   "news_now": {
     "day": "2026-11-15",
     "day_count": 0,
@@ -1046,71 +1046,53 @@
     "titles": []
   },
   "news_seen": [
-    "https://cryptoslate.com/solanas-retired-validators-still-vote-with-15-of-active-stake/",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318685",
-    "https://www.rbc.ru/politics/14/11/2026/6af792dd570f5714069fc22e",
-    "https://www.interfax.ru/russia/1129065",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318683",
-    "https://tass.ru/ekonomika/28318681",
-    "https://tass.ru/ekonomika/28318679",
-    "https://www.rbc.ru/politics/15/11/2026/6af92b2d62fcc9387112c21d",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318677",
-    "https://www.kommersant.ru/doc/9109737",
-    "https://tass.ru/obschestvo/28318675",
-    "https://tass.ru/ekonomika/28318673",
-    "https://tass.ru/kosmos/28318667",
-    "https://tass.ru/armiya-i-opk/28318671",
-    "https://tass.ru/armiya-i-opk/28318669",
-    "https://tass.ru/nauka/28318663",
-    "https://tass.ru/proisshestviya/28318665",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318659",
-    "https://tass.ru/ekonomika/28318661",
-    "https://www.interfax.ru/russia/1129064",
-    "https://tass.ru/obschestvo/28318655",
-    "https://tass.ru/obschestvo/28318653",
-    "https://www.kommersant.ru/doc/9109735",
-    "https://tass.ru/nedvizhimost/28318649",
-    "https://www.interfax.ru/russia/1129063",
-    "https://thedefiant.io/news/defi/aave-executive-reports-39-million-in-liquidations",
-    "https://tass.ru/ekonomika/28318651",
-    "https://t.me/WatcherGuru/16047",
-    "https://tass.ru/sport/28318647",
-    "https://thedefiant.io/news/markets/xrp-falls-to-89-cents-on-coinbase-its-lowest-since-november-2024",
-    "https://tass.ru/armiya-i-opk/28318641",
-    "https://tass.ru/armiya-i-opk/28318645",
-    "https://tass.ru/armiya-i-opk/28318643",
-    "https://www.rbc.ru/society/15/11/2026/6af91fe8acb2a01a5c8b424c",
-    "https://tass.ru/armiya-i-opk/28318639"
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245423-kushner-v-hode",
+    "https://tass.ru/sport/28318751",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://www.kommersant.ru/doc/9109744",
+    "https://www.interfax.ru/russia/1129070",
+    "https://www.rbc.ru/politics/12/11/2026/6af4d12e672b5134f84582a3",
+    "https://t.me/interfaxonline/81631",
+    "https://www.interfax.ru/russia/1129069",
+    "https://tass.ru/proisshestviya/28318749",
+    "https://tass.ru/sport/28318747",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245422-gruzovoi-i-passazhirskii",
+    "https://tass.ru/armiya-i-opk/28318745",
+    "https://tass.ru/proisshestviya/28318743",
+    "https://www.interfax.ru/russia/1129068",
+    "https://tass.ru/kosmos/28318731",
+    "https://tass.ru/sport/28318739",
+    "https://www.vedomosti.ru/society/news/2026/11/15/1245421-pri-atake-bespilotnikov",
+    "https://tass.ru/armiya-i-opk/28318733",
+    "https://tass.ru/ekonomika/28318735",
+    "https://www.kommersant.ru/doc/9109741",
+    "https://tass.ru/proisshestviya/28318727",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245420-spacex-vpervie",
+    "https://tass.ru/sport/28318725",
+    "https://tass.ru/proisshestviya/28318723",
+    "https://tass.ru/proisshestviya/28318721",
+    "https://tass.ru/sport/28318719",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318717",
+    "https://tass.ru/sport/28318713",
+    "https://tass.ru/kultura/28318709",
+    "https://tass.ru/obschestvo/28318711",
+    "https://t.me/cointelegraph/73288",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245419-rossiya-nachala-formirovat",
+    "https://tass.ru/proisshestviya/28318707",
+    "https://tass.ru/obschestvo/28318699",
+    "https://tass.ru/proisshestviya/28318703",
+    "https://tass.ru/proisshestviya/28318705",
+    "https://tass.ru/sport/28318701",
+    "https://www.interfax.ru/russia/1129067",
+    "https://tass.ru/proisshestviya/28318697",
+    "https://www.kommersant.ru/doc/9109739",
+    "https://tass.ru/politika/28318689"
   ],
   "ai_dead": {
     "date": "2026-11-14",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-14T04:00:58.686006+00:00",
-      "Биткоин упал ниже $67 000 на фоне ликвидаций на $330 млн"
-    ],
-    [
-      "2026-11-14T04:00:58.686006+00:00",
-      "В США возобновили полеты после сбоя диспетчерской системы"
-    ],
-    [
-      "2026-11-14T04:00:58.686006+00:00",
-      "Уровень судоходства в Ормузском проливе остается на 65% ниже довоенного"
-    ],
-    [
-      "2026-11-14T04:00:58.686006+00:00",
-      "Polkadot планирует запуск долларового стейблкоина dotUSD"
-    ],
-    [
-      "2026-11-14T04:00:58.686006+00:00",
-      "Силы ПВО за неделю уничтожили 426 беспилотников ВСУ"
-    ],
-    [
-      "2026-11-14T04:00:58.686006+00:00",
-      "Оттоки из спотовых Ethereum-ETF в США продолжились шестую сессию"
-    ],
     [
       "2026-11-14T05:00:58.635120+00:00",
       "Microsoft сообщила о полном восстановлении сервисов после глобального сбоя"
@@ -1686,6 +1668,30 @@
     [
       "2026-11-15T04:00:58.393769+00:00",
       "В ФРГ 15 человек отравились хлором в бассейне из-за сбоя у Microsoft"
+    ],
+    [
+      "2026-11-15T05:00:54.642776+00:00",
+      "Кушнер: в ходе переговоров по Украине появились новые идеи"
+    ],
+    [
+      "2026-11-15T05:00:54.642776+00:00",
+      "В Ростовской области повреждена электроподстанция при атаке БПЛА"
+    ],
+    [
+      "2026-11-15T05:00:54.642776+00:00",
+      "Кирилл Бородачев выиграл этап Кубка мира по фехтованию"
+    ],
+    [
+      "2026-11-15T05:00:54.642776+00:00",
+      "Над Воронежской областью минувшей ночью уничтожили 28 БПЛА"
+    ],
+    [
+      "2026-11-15T05:00:54.642776+00:00",
+      "Биткоин опускался до $62 112 на фоне ликвидации длинных позиций"
+    ],
+    [
+      "2026-11-15T05:00:54.642776+00:00",
+      "Абхазия планирует поставить в Россию до 50 тыс. тонн мандаринов"
     ]
   ],
   "results_fp": [
@@ -1753,20 +1759,20 @@
   },
   "pro_daily": "2026-11-14",
   "freech_day": "2026-11-14",
-  "pro_auto": "2026-11-14",
+  "pro_auto": "2026-11-15",
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-15T04:30:56.781140+00:00",
-    "Коммерсантъ": "2026-11-15T04:30:56.781140+00:00",
-    "Ведомости": "2026-11-14T18:00:55.999858+00:00",
-    "Интерфакс": "2026-11-15T04:30:56.781140+00:00",
-    "ТАСС": "2026-11-15T04:00:58.393769+00:00",
+    "Коммерсантъ": "2026-11-15T05:00:54.642776+00:00",
+    "Ведомости": "2026-11-15T05:00:54.642776+00:00",
+    "Интерфакс": "2026-11-15T05:00:54.642776+00:00",
+    "ТАСС": "2026-11-15T05:00:54.642776+00:00",
     "CoinDesk": "2026-11-14T16:30:56.201734+00:00",
     "Headlines for Traders": "2026-11-14T16:00:55.760130+00:00",
     "MarketTwits": "2026-11-15T04:30:56.781140+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-15T04:30:56.781140+00:00",
-    "РБК": "2026-11-15T04:30:56.781140+00:00",
+    "РБК": "2026-11-15T05:00:54.642776+00:00",
     "Wu Blockchain": "2026-11-15T04:30:56.781140+00:00",
     "Банкста": "2026-11-14T20:30:56.218766+00:00",
     "IF News": "2026-11-14T15:30:58.133627+00:00",
@@ -1777,7 +1783,7 @@
     "Frank Media": "2026-11-14T16:30:56.201734+00:00",
     "ForkLog": "2026-11-14T11:01:05.486475+00:00",
     "Decrypt": "2026-11-15T04:30:56.781140+00:00",
-    "Cointelegraph": "2026-11-15T04:30:56.781140+00:00",
+    "Cointelegraph": "2026-11-15T05:00:54.642776+00:00",
     "CoinMarketCap": "2026-11-14T04:30:57.352164+00:00",
     "СберИнвестиции": "2026-11-13T07:00:55.037437+00:00",
     "РБК Крипто": "2026-11-14T15:00:55.520010+00:00",
@@ -1873,7 +1879,7 @@
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00",
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00"
   },
-  "catalog_at": "2026-11-15T04:30:56+00:00",
-  "own_hour": "2026-11-14 21",
+  "catalog_at": "2026-11-15T05:00:54+00:00",
+  "own_hour": "2026-11-15 08",
   "digest_alert": "2026-11-10 19:30"
 }
