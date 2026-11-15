@@ -1141,7 +1141,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-15T16:00:58.498380+00:00",
+  "breaking_ts": "2026-11-15T17:00:56.610091+00:00",
   "news_now": {
     "day": "2026-11-15",
     "day_count": 3,
@@ -1155,81 +1155,70 @@
     ]
   },
   "news_seen": [
-    "https://oilprice.com/Energy/Energy-General/How-Brazil-Plans-to-Accelerate-the-Global-Shift-Away-From-Fossil-Fuels.html",
-    "https://t.me/government_rus/34151",
-    "https://tass.ru/armiya-i-opk/28319465",
-    "https://t.me/energytodaygroup/32753",
-    "https://tass.ru/mezhdunarodnaya-panorama/28319441",
-    "https://tass.ru/sport/28319467",
-    "https://tass.ru/armiya-i-opk/28319461",
-    "https://tass.ru/proisshestviya/28319459",
-    "https://www.rbc.ru/economics/10/12/2023/6575f5859a79473125138343",
-    "https://thedefiant.io/frontier/ai/ai-tops-financial-stability-risks-cited-in-fed-survey",
-    "https://t.me/banksta/105496",
-    "https://www.rbc.ru/rbcfreenews/6ae9b6d7d54c8a55deca5f38",
-    "https://tass.ru/proisshestviya/28319457",
-    "https://thedefiant.io/news/hacks/coinone-warns-of-identity-theft-after-support-breach",
-    "https://tass.ru/mezhdunarodnaya-panorama/28319429",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245474-elis-huang-ne-rabotaet",
-    "https://thedefiant.io/frontier/ai/wsj-details-china-s-offshore-access-to-nvidia-chips",
-    "https://tass.ru/mezhdunarodnaya-panorama/28319447",
-    "https://www.kommersant.ru/doc/9109982",
-    "https://thedefiant.io/news/hacks/binance-targets-full-withdrawal-reopening-next-week",
-    "https://thedefiant.io/news/defi/spark-tvl-falls-15-3-in-a-week-to-a-30-day-low",
-    "https://t.me/rbc_news/160724",
-    "https://thedefiant.io/news/markets/large-wallets-buy-eth-as-price-falls-below-1-800",
-    "https://t.me/interfaxonline/81646",
-    "https://thedefiant.io/news/markets/sol-hits-lowest-since-june-ahead-of-london-breakpoint",
-    "https://www.rbc.ru/politics/27/10/2026/6ae1014e92880e9ec3380ac8",
-    "https://www.interfax.ru/world/1129144",
-    "https://www.interfax.ru/business/1129143",
-    "https://tass.ru/proisshestviya/28319449",
-    "https://t.me/expert_mag/11367",
-    "https://t.me/headlines_for_traders/88719",
-    "https://tass.ru/ekonomika/28319445",
-    "https://www.kommersant.ru/doc/9109977",
-    "https://cryptoslate.com/bitcoins-new-value-alert-still-needs-proof-that-buyers-can-absorb-supply/",
-    "https://tass.ru/proisshestviya/28319439",
-    "https://t.me/energytodaygroup/32752",
-    "https://tass.ru/ekonomika/28319437",
-    "https://t.me/forklog/50689",
-    "https://www.rbc.ru/politics/10/11/2026/6af2e2f30227a3fc9f1ee522",
-    "https://www.kommersant.ru/doc/9109976",
-    "https://t.me/proeconomics/20717",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245472-estoniya-dopustila-zakritie",
-    "https://t.me/banksta/105495",
-    "https://tass.ru/sport/28319433",
-    "https://www.cnbc.com/investingclub/2026/11/15/3-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html"
+    "https://t.me/glassnode/2109",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245477-bessent-prizval-nvidia",
+    "https://tass.ru/mezhdunarodnaya-panorama/28319501",
+    "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html",
+    "https://tass.ru/proisshestviya/28319497",
+    "https://tass.ru/sport/28319499",
+    "https://www.interfax.ru/russia/1129147",
+    "https://www.kommersant.ru/doc/9110004",
+    "https://www.kommersant.ru/doc/9110003",
+    "https://tass.ru/ekonomika/28319491",
+    "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
+    "https://tass.ru/obschestvo/28319493",
+    "https://www.rbc.ru/rbcfreenews/6af8267d552c4f94d09ea4a3",
+    "https://t.me/WatcherGuru/16053",
+    "https://www.rbc.ru/politics/30/09/2026/6abc52813c33c710531b712d",
+    "https://tass.ru/obschestvo/28319479",
+    "https://tass.ru/ekonomika/28319489",
+    "https://t.me/government_rus/34152",
+    "https://t.me/rbc_news/160725",
+    "https://www.rbc.ru/sport/09/11/2026/6af180de9c53098928b20b30",
+    "https://tass.ru/mezhdunarodnaya-panorama/28319487",
+    "https://t.me/whale_alert_io/104894",
+    "https://www.rbc.ru/rbcfreenews/6af0c9466adff985c2ee4d48",
+    "https://www.rbc.ru/politics/14/11/2026/6af7b135e0b7ef777dac3a63",
+    "https://cryptoslate.com/how-10000-in-stablecoins-would-have-gained-e420-without-earning-interest/",
+    "https://t.me/FinancialJuice/147313",
+    "https://t.me/FinancialJuice/147312",
+    "https://tass.ru/mezhdunarodnaya-panorama/28319483",
+    "https://t.me/FinancialJuice/147311",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245476-estoniya-zakroet",
+    "https://t.me/WatcherGuru/16051",
+    "https://tass.ru/sport/28319485",
+    "https://tass.ru/obschestvo/28319469",
+    "https://tass.ru/sport/28319481",
+    "https://t.me/expert_mag/11368",
+    "https://t.me/whale_alert_io/104893",
+    "https://tass.ru/obschestvo/28319463",
+    "https://tass.ru/proisshestviya/28319475",
+    "https://tass.ru/sport/28319473",
+    "https://tass.ru/obschestvo/28319471",
+    "https://www.rbc.ru/sport/14/11/2026/6af80da4df54b1d20417936b",
+    "https://t.me/banksta/105497",
+    "https://www.kommersant.ru/doc/9109995",
+    "https://thedefiant.io/frontier/technology/duffy-sees-no-sign-of-foreign-cyberattack-in-faa-outage",
+    "https://www.rbc.ru/sport/02/11/2026/6ae8a2326ceccb58de039c0c",
+    "https://www.kommersant.ru/doc/9109992",
+    "https://www.vedomosti.ru/economics/news/2026/11/15/1245475-mogut-isklyuchit-dobichu-nekotorih",
+    "https://t.me/CoinMarketCapAnnouncements/19697",
+    "https://www.rbc.ru/rbcfreenews/6a7ea8259a79471ef1a8102e",
+    "https://www.interfax.ru/world/1129148",
+    "https://t.me/headlines_for_traders/88721",
+    "https://t.me/headlines_for_traders/88720",
+    "https://tass.ru/mezhdunarodnaya-panorama/28319435",
+    "https://www.interfax.ru/russia/1129146",
+    "https://thedefiant.io/news/regulation/cftc-sues-louisiana-over-prediction-market-shutdown",
+    "https://t.me/forbesrussia/103058",
+    "https://gcaptain.com/american-heritage-captain-crew-and-tug-operators-hailed-as-heroes-after-mississippi-river-capsizing/",
+    "https://t.me/WatcherGuru/16049"
   ],
   "ai_dead": {
     "date": "2026-11-15",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-14T17:00:55.228469+00:00",
-      "В США оценили последствия масштабного сбоя авиасообщения"
-    ],
-    [
-      "2026-11-14T17:00:55.228469+00:00",
-      "Во Франции на протесты вышли более 100 тыс. человек"
-    ],
-    [
-      "2026-11-14T17:00:55.228469+00:00",
-      "Сервис Numica с российскими корнями привлек $21 млн"
-    ],
-    [
-      "2026-11-14T17:00:55.228469+00:00",
-      "МАГАТЭ предупредило о рисках для ЗАЭС зимой"
-    ],
-    [
-      "2026-11-14T17:30:55.066056+00:00",
-      "Правительство Сербии выделило 66 тыс. тонн нефти из резервов"
-    ],
-    [
-      "2026-11-14T17:30:55.066056+00:00",
-      "Министр транспорта США связал сбой авиасистемы с проводкой"
-    ],
     [
       "2026-11-14T17:30:55.066056+00:00",
       "Binance заявила о замене украденных цифровых активов"
@@ -1829,6 +1818,22 @@
     [
       "2026-11-15T16:00:58.498380+00:00",
       "Правительство РФ установило лимиты для зеленой микрогенерации"
+    ],
+    [
+      "2026-11-15T17:00:56.610091+00:00",
+      "Киты увеличивают чистый приток биткоинов на биржи на $55 млн в день"
+    ],
+    [
+      "2026-11-15T17:00:56.610091+00:00",
+      "Скотт Бессент призвал Nvidia сменить генерального директора"
+    ],
+    [
+      "2026-11-15T17:00:56.610091+00:00",
+      "В Праге до 450 тысяч человек вышли на митинг в поддержку СМИ"
+    ],
+    [
+      "2026-11-15T17:00:56.610091+00:00",
+      "Минфин РФ предложил исключить добычу ряда металлов из налога на сверхдоходы"
     ]
   ],
   "results_fp": [
@@ -1900,10 +1905,10 @@
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-15T04:30:56.781140+00:00",
-    "Коммерсантъ": "2026-11-15T16:30:55.522568+00:00",
-    "Ведомости": "2026-11-15T16:00:58.498380+00:00",
+    "Коммерсантъ": "2026-11-15T17:00:56.610091+00:00",
+    "Ведомости": "2026-11-15T17:00:56.610091+00:00",
     "Интерфакс": "2026-11-15T16:30:55.522568+00:00",
-    "ТАСС": "2026-11-15T16:00:58.498380+00:00",
+    "ТАСС": "2026-11-15T17:00:56.610091+00:00",
     "CoinDesk": "2026-11-14T16:30:56.201734+00:00",
     "Headlines for Traders": "2026-11-15T08:01:04.103141+00:00",
     "MarketTwits": "2026-11-15T16:30:55.522568+00:00",
@@ -1929,7 +1934,7 @@
     "Московская биржа": "2026-11-13T11:30:54.618275+00:00",
     "MarketWatch": "2026-11-15T16:30:55.522568+00:00",
     "Bitcoin Magazine": "2026-11-15T16:30:55.522568+00:00",
-    "Watcher Guru": "2026-11-15T16:30:55.522568+00:00",
+    "Watcher Guru": "2026-11-15T17:00:56.610091+00:00",
     "РБК. Главное": "2026-11-15T16:00:58.498380+00:00",
     "The Block": "2026-11-15T04:30:56.781140+00:00",
     "Нефть и Капитал": "2026-11-15T09:00:55.490860+00:00",
@@ -1949,10 +1954,10 @@
     "Агроинвестор": "2026-11-15T11:00:55.371255+00:00",
     "Газпромбанк Инвестиции": "2026-11-11T13:00:56.977211+00:00",
     "CryptoSlate": "2026-11-15T04:30:56.781140+00:00",
-    "CNBC Markets": "2026-11-15T16:30:55.522568+00:00",
+    "CNBC Markets": "2026-11-15T17:00:56.610091+00:00",
     "Natural Gas Intelligence": "2026-11-14T04:30:57.352164+00:00",
     "Правительство России": "2026-11-15T16:30:55.522568+00:00",
-    "glassnode": "2026-11-15T12:30:59.418324+00:00",
+    "glassnode": "2026-11-15T17:00:56.610091+00:00",
     "Минэкономразвития": "2026-11-10T04:30:58.582529+00:00",
     "Прайм": "2026-11-10T04:30:58.582529+00:00",
     "Хедлайнеры": "2026-11-12T10:01:00.442135+00:00",
@@ -2016,7 +2021,7 @@
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00",
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00"
   },
-  "catalog_at": "2026-11-15T16:30:55+00:00",
-  "own_hour": "2026-11-15 19",
+  "catalog_at": "2026-11-15T17:00:56+00:00",
+  "own_hour": "2026-11-15 20",
   "digest_alert": "2026-11-10 19:30"
 }
