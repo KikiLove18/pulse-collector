@@ -1037,7 +1037,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-15T05:00:54.642776+00:00",
+  "breaking_ts": "2026-11-15T05:30:57.111978+00:00",
   "news_now": {
     "day": "2026-11-15",
     "day_count": 0,
@@ -1046,69 +1046,38 @@
     "titles": []
   },
   "news_seen": [
+    "https://t.me/interfaxonline/81632",
+    "https://www.rbc.ru/politics/14/11/2026/6af7fdb9e48b802d2e4be847",
+    "https://t.me/headlines_for_traders/88694",
+    "https://www.rbc.ru/rbcfreenews/6ac151e38b90fce7fd6f01d3",
+    "https://tass.ru/obschestvo/28318763",
+    "https://tass.ru/proisshestviya/28318783",
+    "https://tass.ru/sport/28318781",
+    "https://tass.ru/obschestvo/28318777",
+    "https://cryptoslate.com/ai-helped-hackers-gain-access-at-10-organizations-researchers-say/",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245424-nasledniki-vladeltsa",
+    "https://tass.ru/obschestvo/28318773",
+    "https://tass.ru/sport/28318775",
+    "https://www.rbc.ru/technology_and_media/14/11/2026/6af70e875b793dd521b7bce2",
+    "https://tass.ru/armiya-i-opk/28318769",
+    "https://tass.ru/armiya-i-opk/28318761",
+    "https://tass.ru/sport/28318767",
+    "https://tass.ru/ekonomika/28318771",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318753",
+    "https://t.me/rbc_news/160697",
+    "https://tass.ru/obschestvo/28318755",
+    "https://t.me/forklog/50682",
+    "https://www.rbc.ru/rbcfreenews/6aad2c09f7fed2ae237f893f",
     "https://www.vedomosti.ru/politics/news/2026/11/15/1245423-kushner-v-hode",
     "https://tass.ru/sport/28318751",
     "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
-    "https://www.kommersant.ru/doc/9109744",
-    "https://www.interfax.ru/russia/1129070",
-    "https://www.rbc.ru/politics/12/11/2026/6af4d12e672b5134f84582a3",
-    "https://t.me/interfaxonline/81631",
-    "https://www.interfax.ru/russia/1129069",
-    "https://tass.ru/proisshestviya/28318749",
-    "https://tass.ru/sport/28318747",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245422-gruzovoi-i-passazhirskii",
-    "https://tass.ru/armiya-i-opk/28318745",
-    "https://tass.ru/proisshestviya/28318743",
-    "https://www.interfax.ru/russia/1129068",
-    "https://tass.ru/kosmos/28318731",
-    "https://tass.ru/sport/28318739",
-    "https://www.vedomosti.ru/society/news/2026/11/15/1245421-pri-atake-bespilotnikov",
-    "https://tass.ru/armiya-i-opk/28318733",
-    "https://tass.ru/ekonomika/28318735",
-    "https://www.kommersant.ru/doc/9109741",
-    "https://tass.ru/proisshestviya/28318727",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245420-spacex-vpervie",
-    "https://tass.ru/sport/28318725",
-    "https://tass.ru/proisshestviya/28318723",
-    "https://tass.ru/proisshestviya/28318721",
-    "https://tass.ru/sport/28318719",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318717",
-    "https://tass.ru/sport/28318713",
-    "https://tass.ru/kultura/28318709",
-    "https://tass.ru/obschestvo/28318711",
-    "https://t.me/cointelegraph/73288",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245419-rossiya-nachala-formirovat",
-    "https://tass.ru/proisshestviya/28318707",
-    "https://tass.ru/obschestvo/28318699",
-    "https://tass.ru/proisshestviya/28318703",
-    "https://tass.ru/proisshestviya/28318705",
-    "https://tass.ru/sport/28318701",
-    "https://www.interfax.ru/russia/1129067",
-    "https://tass.ru/proisshestviya/28318697",
-    "https://www.kommersant.ru/doc/9109739",
-    "https://tass.ru/politika/28318689"
+    "https://www.kommersant.ru/doc/9109744"
   ],
   "ai_dead": {
     "date": "2026-11-14",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-14T05:00:58.635120+00:00",
-      "Microsoft сообщила о полном восстановлении сервисов после глобального сбоя"
-    ],
-    [
-      "2026-11-14T05:00:58.635120+00:00",
-      "Белый дом анонсировал встречу Трампа, Путина и Си Цзиньпина в Китае"
-    ],
-    [
-      "2026-11-14T05:00:58.635120+00:00",
-      "Pump.fun перевела на Kraken 64 666 Solana на сумму $5,19 млн"
-    ],
-    [
-      "2026-11-14T05:00:58.635120+00:00",
-      "Основатель Cardano заявил, что никогда не обещал роста ADA"
-    ],
     [
       "2026-11-14T06:00:55.379583+00:00",
       "Банки продолжили повышать ставки по вкладам при ключевой ставке 14%"
@@ -1692,6 +1661,26 @@
     [
       "2026-11-15T05:00:54.642776+00:00",
       "Абхазия планирует поставить в Россию до 50 тыс. тонн мандаринов"
+    ],
+    [
+      "2026-11-15T05:30:57.111978+00:00",
+      "Bitcoin обновил четырехмесячный минимум на фоне ликвидаций на $2 млрд"
+    ],
+    [
+      "2026-11-15T05:30:57.111978+00:00",
+      "В аэропорту Майами столкнулись два самолета"
+    ],
+    [
+      "2026-11-15T05:30:57.111978+00:00",
+      "Главное об атаках БПЛА на российские регионы к 15 ноября"
+    ],
+    [
+      "2026-11-15T05:30:57.111978+00:00",
+      "Форвард Миннесоты Юров оформил дубль в матче с Бостоном"
+    ],
+    [
+      "2026-11-15T05:30:57.111978+00:00",
+      "Кайла Харрисон защитила титул чемпионки UFC"
     ]
   ],
   "results_fp": [
@@ -1766,13 +1755,13 @@
     "Коммерсантъ": "2026-11-15T05:00:54.642776+00:00",
     "Ведомости": "2026-11-15T05:00:54.642776+00:00",
     "Интерфакс": "2026-11-15T05:00:54.642776+00:00",
-    "ТАСС": "2026-11-15T05:00:54.642776+00:00",
+    "ТАСС": "2026-11-15T05:30:57.111978+00:00",
     "CoinDesk": "2026-11-14T16:30:56.201734+00:00",
-    "Headlines for Traders": "2026-11-14T16:00:55.760130+00:00",
+    "Headlines for Traders": "2026-11-15T05:30:57.111978+00:00",
     "MarketTwits": "2026-11-15T04:30:56.781140+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-15T04:30:56.781140+00:00",
-    "РБК": "2026-11-15T05:00:54.642776+00:00",
+    "РБК": "2026-11-15T05:30:57.111978+00:00",
     "Wu Blockchain": "2026-11-15T04:30:56.781140+00:00",
     "Банкста": "2026-11-14T20:30:56.218766+00:00",
     "IF News": "2026-11-14T15:30:58.133627+00:00",
@@ -1879,7 +1868,7 @@
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00",
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00"
   },
-  "catalog_at": "2026-11-15T05:00:54+00:00",
+  "catalog_at": "2026-11-15T05:30:57+00:00",
   "own_hour": "2026-11-15 08",
   "digest_alert": "2026-11-10 19:30"
 }
