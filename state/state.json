@@ -1141,7 +1141,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-15T17:31:05.292544+00:00",
+  "breaking_ts": "2026-11-15T18:00:55.576719+00:00",
   "news_now": {
     "day": "2026-11-15",
     "day_count": 3,
@@ -1155,41 +1155,48 @@
     ]
   },
   "news_seen": [
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245479-sbili-chetire-bespilotnika",
-    "https://t.me/interfaxonline/81649",
-    "https://cryptoslate.com/tether-wants-its-gold-token-to-rival-etfs/",
-    "https://www.interfax.ru/russia/1129153",
-    "https://t.me/WalterBloomberg/38410",
-    "https://tass.ru/proisshestviya/28319521",
-    "https://t.me/interfaxonline/81648",
-    "https://t.me/rbc_news/160726",
-    "https://tass.ru/ekonomika/28319517",
-    "https://tass.ru/sport/28319519",
-    "https://t.me/russianmacro/23739",
-    "https://tass.ru/ekonomika/28319509",
-    "https://www.interfax.ru/russia/1129152",
-    "https://www.interfax.ru/russia/1129151",
-    "https://t.me/wublockchainenglish/26836",
-    "https://www.vedomosti.ru/society/news/2026/11/15/1245478-vnukovo-po-soglasovaniyu",
-    "https://tass.ru/armiya-i-opk/28319511",
-    "https://www.interfax.ru/moscow/1129150",
-    "https://t.me/interfaxonline/81647",
-    "https://tass.ru/sport/28319507",
-    "https://tass.ru/proisshestviya/28319503",
-    "https://t.me/glassnode/2109",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245477-bessent-prizval-nvidia",
-    "https://tass.ru/mezhdunarodnaya-panorama/28319501",
-    "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html"
+    "https://t.me/coinpost/4310",
+    "https://www.kommersant.ru/doc/9110020",
+    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
+    "https://t.me/markettwits/393444",
+    "https://t.me/FinancialJuice/147316",
+    "https://t.me/FinancialJuice/147315",
+    "https://t.me/headlines_for_traders/88723",
+    "https://www.interfax.ru/moscow/1129156",
+    "https://t.me/cointelegraph/73294",
+    "https://www.rbc.ru/rbcfreenews/6ae891481eb6f46c9372c0e6",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245480-sbili-230-bpla",
+    "https://tass.ru/proisshestviya/28319549",
+    "https://www.rbc.ru/sport/15/11/2026/6af9ef83b18dd4bb640ed54e",
+    "https://www.kommersant.ru/doc/9110019",
+    "https://t.me/forbesrussia/103059",
+    "https://www.rbc.ru/business/09/11/2026/6aec3199581c0063b21313d1",
+    "https://tass.ru/sport/28319547",
+    "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+    "https://tass.ru/sport/28319545",
+    "https://tass.ru/mezhdunarodnaya-panorama/28319541",
+    "https://www.kommersant.ru/doc/9110014",
+    "https://thedefiant.io/news/markets/aero-falls-27-in-a-week-lagging-bitcoin-and-ether",
+    "https://t.me/FinancialJuice/147314",
+    "https://tass.ru/proisshestviya/28319535",
+    "https://tass.ru/politika/28319531",
+    "https://www.kommersant.ru/doc/9110016",
+    "https://www.kommersant.ru/doc/9110017",
+    "https://www.interfax.ru/russia/1129155",
+    "https://t.me/banksta/105498",
+    "https://www.interfax.ru/moscow/1129154",
+    "https://t.me/energytodaygroup/32754",
+    "https://tass.ru/politika/28319523",
+    "https://www.kommersant.ru/doc/9110015",
+    "https://t.me/interfaxonline/81650",
+    "https://www.interfax.ru/russia/1129149",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245479-sbili-chetire-bespilotnika"
   ],
   "ai_dead": {
     "date": "2026-11-15",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-14T18:00:55.999858+00:00",
-      "Спотовые биткоин-ETF в США потеряли более $1 млрд за неделю"
-    ],
     [
       "2026-11-14T18:00:55.999858+00:00",
       "Минтранс США объяснил масштабный сбой в работе авиации"
@@ -1789,6 +1796,26 @@
     [
       "2026-11-15T17:31:05.292544+00:00",
       "Росстат оценил рост ВВП в третьем квартале в 1,0%"
+    ],
+    [
+      "2026-11-15T18:00:55.576719+00:00",
+      "Росстат оценил рост ВВП России в третьем квартале в 1%"
+    ],
+    [
+      "2026-11-15T18:00:55.576719+00:00",
+      "Эксперты связали падение криптовалют с подготовкой к крупным IPO"
+    ],
+    [
+      "2026-11-15T18:00:55.576719+00:00",
+      "Токен AERO подешевел на 27% за неделю"
+    ],
+    [
+      "2026-11-15T18:00:55.576719+00:00",
+      "Число сбитых на подлете к Москве беспилотников выросло до 25"
+    ],
+    [
+      "2026-11-15T18:00:55.576719+00:00",
+      "Сборную России по хоккею не допустили до молодежного ЧМ из-за позиции Канады"
     ]
   ],
   "results_fp": [
@@ -1860,16 +1887,16 @@
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-15T04:30:56.781140+00:00",
-    "Коммерсантъ": "2026-11-15T17:00:56.610091+00:00",
-    "Ведомости": "2026-11-15T17:31:05.292544+00:00",
-    "Интерфакс": "2026-11-15T16:30:55.522568+00:00",
-    "ТАСС": "2026-11-15T17:00:56.610091+00:00",
+    "Коммерсантъ": "2026-11-15T18:00:55.576719+00:00",
+    "Ведомости": "2026-11-15T18:00:55.576719+00:00",
+    "Интерфакс": "2026-11-15T18:00:55.576719+00:00",
+    "ТАСС": "2026-11-15T18:00:55.576719+00:00",
     "CoinDesk": "2026-11-14T16:30:56.201734+00:00",
     "Headlines for Traders": "2026-11-15T08:01:04.103141+00:00",
-    "MarketTwits": "2026-11-15T16:30:55.522568+00:00",
+    "MarketTwits": "2026-11-15T18:00:55.576719+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-15T10:30:56.941750+00:00",
-    "РБК": "2026-11-15T16:00:58.498380+00:00",
+    "РБК": "2026-11-15T18:00:55.576719+00:00",
     "Wu Blockchain": "2026-11-15T16:30:55.522568+00:00",
     "Банкста": "2026-11-15T14:30:54.441426+00:00",
     "IF News": "2026-11-15T16:30:55.522568+00:00",
@@ -1898,7 +1925,7 @@
     "Cbonds": "2026-11-12T12:30:56.062204+00:00",
     "WSJ Markets": "2026-11-14T04:30:57.352164+00:00",
     "WSJ Economy": "2026-11-14T04:30:57.352164+00:00",
-    "The Defiant": "2026-11-15T16:30:55.522568+00:00",
+    "The Defiant": "2026-11-15T18:00:55.576719+00:00",
     "WSJ": "2026-11-14T04:30:57.352164+00:00",
     "Bitcoin Magazine Telegram": "2026-11-13T17:01:00.144187+00:00",
     "Lookonchain": "2026-11-15T07:00:56.105112+00:00",
@@ -1942,7 +1969,7 @@
     "Коненков": "2026-11-10T12:01:01.611762+00:00",
     "CNBC Economy": "2026-11-14T04:30:57.352164+00:00",
     "Финам Инвестиции": "2026-11-11T09:00:57.157463+00:00",
-    "Coin Post": "2026-11-13T19:00:59.748746+00:00",
+    "Coin Post": "2026-11-15T18:00:55.576719+00:00",
     "CryptoQuant": "2026-11-11T04:30:59.566643+00:00",
     "пост в X": "2026-11-14T16:30:56.201734+00:00",
     "Konenkov": "2026-11-05T04:30:57.492642+00:00",
@@ -1976,7 +2003,7 @@
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00",
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00"
   },
-  "catalog_at": "2026-11-15T17:31:05+00:00",
-  "own_hour": "2026-11-15 20",
+  "catalog_at": "2026-11-15T18:00:55+00:00",
+  "own_hour": "2026-11-15 21",
   "digest_alert": "2026-11-10 19:30"
 }
