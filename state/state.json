@@ -1037,81 +1037,69 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-15T09:31:01.587038+00:00",
+  "breaking_ts": "2026-11-15T10:00:55.790235+00:00",
   "news_now": {
     "day": "2026-11-15",
-    "day_count": 1,
+    "day_count": 2,
     "urgent_count": 1,
-    "last": "2026-11-15T09:00:55.490860+00:00",
+    "last": "2026-11-15T10:00:55.790235+00:00",
     "titles": [
       "Биткоин рухнул ниже $63 000 на фоне массовых ликвидаций",
-      "Обострение на Ближнем Востоке: атаки на порты и танкеры"
+      "Обострение на Ближнем Востоке: атаки на порты и танкеры",
+      "Германия разрешила конфискацию криптовалют без уголовного дела"
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/rbcfreenews/67a621eb9a79470461817942",
+    "https://t.me/tb_invest_official/15189",
+    "https://tass.ru/proisshestviya/28319131",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245446-iran-atakoval",
+    "https://www.interfax.ru/russia/1129112",
+    "https://t.me/wublockchainenglish/26833",
+    "https://tass.ru/proisshestviya/28319115",
+    "https://tass.ru/proisshestviya/28319129",
+    "https://tass.ru/sport/28319119",
+    "https://t.me/if_market_news/86921",
+    "https://www.interfax.ru/world/1129111",
+    "https://www.rbc.ru/politics/15/11/2026/6af97ba6b03dd80b38f53641",
+    "https://t.me/wublockchainenglish/26832",
+    "https://tass.ru/proisshestviya/28319125",
+    "https://tass.ru/mezhdunarodnaya-panorama/28319123",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245447-eismont-belorusskie-korni",
+    "https://tass.ru/proisshestviya/28319107",
+    "https://www.kommersant.ru/doc/9109832",
+    "https://www.rbc.ru/politics/15/11/2026/6af97cc03c963e999814ddac",
+    "https://www.rbc.ru/photoslider/6af97d81d6d055496f775270",
+    "https://www.interfax.ru/russia/1129110",
+    "https://tass.ru/proisshestviya/28319117",
+    "https://t.me/markettwits/393436",
+    "https://www.rbc.ru/rbcfreenews/6af1da7775e895b707a109ce",
+    "https://t.me/rbc_news/160708",
+    "https://www.kommersant.ru/doc/9109830",
+    "https://t.me/rbc_news/160707",
+    "https://t.me/forbesrussia/103042",
+    "https://t.me/headlines_for_traders/88709",
+    "https://t.me/markettwits/393435",
+    "https://tass.ru/mezhdunarodnaya-panorama/28319109",
+    "https://t.me/interfaxonline/81638",
+    "https://tass.ru/obschestvo/28319099",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245444-sili-pvo-za-sutki",
+    "https://t.me/headlines_for_traders/88708",
+    "https://tass.ru/sport/28319105",
     "https://t.me/cointelegraph/73291",
+    "https://tass.ru/proisshestviya/28319103",
+    "https://tass.ru/politika/28319101",
     "https://www.kommersant.ru/doc/9109828",
     "https://tass.ru/proisshestviya/28319097",
+    "https://www.rbc.ru/politics/03/11/2026/6ae9da343e1b97c8d5240dab",
     "https://www.vedomosti.ru/politics/news/2026/11/15/1245443-peskov-evropa",
-    "https://t.me/wublockchainenglish/26831",
-    "https://www.interfax.ru/russia/1129109",
-    "https://t.me/markettwits/393434",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245442-lavrov-evropeitsi-hotyat",
-    "https://tass.ru/nedvizhimost/28318715",
-    "https://www.kommersant.ru/doc/9109827",
-    "https://tass.ru/proisshestviya/28319095",
-    "https://t.me/usamarke1/8250",
-    "https://www.interfax.ru/world/1129108",
-    "https://tass.ru/politika/28319089",
-    "https://t.me/markettwits/393433",
-    "https://t.me/banksta/105480",
-    "https://tass.ru/proisshestviya/28319081",
-    "https://tass.ru/sport/28319087",
-    "https://t.me/cbonds/26406",
-    "https://tass.ru/obschestvo/28319085",
-    "https://t.me/forbesrussia/103041",
-    "https://tass.ru/obschestvo/28319079",
-    "https://tass.ru/ekonomika/28319067",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245441-lavrov-sformulirovannie-putinim",
-    "https://t.me/rbc_news/160706",
-    "https://tass.ru/mezhdunarodnaya-panorama/28319073",
-    "https://www.interfax.ru/russia/1129107",
-    "https://tass.ru/proisshestviya/28319083",
-    "https://t.me/markettwits/393432",
-    "https://tass.ru/politika/28319057",
-    "https://tass.ru/proisshestviya/28319061",
-    "https://www.interfax.ru/russia/1129106",
-    "https://t.me/CoinMarketCapAnnouncements/19695",
-    "https://t.me/headlines_for_traders/88707",
-    "https://t.me/SberInvestments/13305",
-    "https://www.kommersant.ru/doc/9109820",
-    "https://www.interfax.ru/russia/1129105",
-    "https://www.interfax.ru/russia/1129104",
-    "https://tass.ru/proisshestviya/28319069",
-    "https://www.interfax.ru/russia/1129103",
-    "https://tass.ru/proisshestviya/28319051",
-    "https://www.kommersant.ru/doc/9109818",
-    "https://tass.ru/politika/28319047",
-    "https://tass.ru/armiya-i-opk/28319045",
-    "https://tass.ru/politika/28319043",
-    "https://tass.ru/politika/28319049",
-    "https://tass.ru/armiya-i-opk/28319039",
-    "https://tass.ru/armiya-i-opk/28319041",
-    "https://tass.ru/politika/28319033"
+    "https://t.me/wublockchainenglish/26831"
   ],
   "ai_dead": {
     "date": "2026-11-15",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-14T10:00:59.829115+00:00",
-      "Эфириум опустился ниже $1900 после продажи монет фондом"
-    ],
-    [
-      "2026-11-14T10:00:59.829115+00:00",
-      "В ССАГПЗ предупредили об угрозе продовольственного кризиса"
-    ],
     [
       "2026-11-14T10:00:59.829115+00:00",
       "Зеленский заявил о предложении США по НАТО и Донбассу"
@@ -1711,6 +1699,26 @@
     [
       "2026-11-15T09:31:01.587038+00:00",
       "Россия увеличила выручку от экспорта рыбы в Республику Корея до $833 млн"
+    ],
+    [
+      "2026-11-15T10:00:55.790235+00:00",
+      "Германия разрешила изымать криптовалюту без возбуждения уголовного дела"
+    ],
+    [
+      "2026-11-15T10:00:55.790235+00:00",
+      "Иран атаковал авиабазу США в Бахрейне"
+    ],
+    [
+      "2026-11-15T10:00:55.790235+00:00",
+      "SpaceX впервые поймала Starship манипуляторами башни Mechazilla"
+    ],
+    [
+      "2026-11-15T10:00:55.790235+00:00",
+      "Минобороны РФ: ПВО за сутки сбили 1065 украинских БПЛА"
+    ],
+    [
+      "2026-11-15T10:00:55.790235+00:00",
+      "Аналитики выделили топ-3 акции нефтегазового сектора РФ"
     ]
   ],
   "results_fp": [
@@ -1783,8 +1791,8 @@
   "feed_src": {
     "OilPrice": "2026-11-15T04:30:56.781140+00:00",
     "Коммерсантъ": "2026-11-15T09:00:55.490860+00:00",
-    "Ведомости": "2026-11-15T09:00:55.490860+00:00",
-    "Интерфакс": "2026-11-15T09:31:01.587038+00:00",
+    "Ведомости": "2026-11-15T10:00:55.790235+00:00",
+    "Интерфакс": "2026-11-15T10:00:55.790235+00:00",
     "ТАСС": "2026-11-15T09:31:01.587038+00:00",
     "CoinDesk": "2026-11-14T16:30:56.201734+00:00",
     "Headlines for Traders": "2026-11-15T08:01:04.103141+00:00",
@@ -1792,13 +1800,13 @@
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-15T04:30:56.781140+00:00",
     "РБК": "2026-11-15T09:00:55.490860+00:00",
-    "Wu Blockchain": "2026-11-15T09:31:01.587038+00:00",
+    "Wu Blockchain": "2026-11-15T10:00:55.790235+00:00",
     "Банкста": "2026-11-15T07:30:56.786762+00:00",
     "IF News": "2026-11-14T15:30:58.133627+00:00",
     "bitkogan": "2026-11-13T09:00:55.287406+00:00",
     "CryptoKogan": "2026-11-13T15:30:58.234218+00:00",
     "Energy Today": "2026-11-15T08:31:10.814414+00:00",
-    "Forbes Russia": "2026-11-14T17:00:55.228469+00:00",
+    "Forbes Russia": "2026-11-15T10:00:55.790235+00:00",
     "Frank Media": "2026-11-14T16:30:56.201734+00:00",
     "ForkLog": "2026-11-15T08:01:04.103141+00:00",
     "Decrypt": "2026-11-15T04:30:56.781140+00:00",
@@ -1838,7 +1846,7 @@
     "Минэкономразвития": "2026-11-10T04:30:58.582529+00:00",
     "Прайм": "2026-11-10T04:30:58.582529+00:00",
     "Хедлайнеры": "2026-11-12T10:01:00.442135+00:00",
-    "Т-Инвестиции": "2026-11-13T06:00:55.469168+00:00",
+    "Т-Инвестиции": "2026-11-15T10:00:55.790235+00:00",
     "bitkogan HOTLINE": "2026-11-15T06:31:01.834843+00:00",
     "Металл и Минерал": "2026-11-14T10:00:59.829115+00:00",
     "Эксперт": "2026-11-15T08:01:04.103141+00:00",
@@ -1898,7 +1906,7 @@
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00",
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00"
   },
-  "catalog_at": "2026-11-15T09:31:01+00:00",
-  "own_hour": "2026-11-15 12",
+  "catalog_at": "2026-11-15T10:00:55+00:00",
+  "own_hour": "2026-11-15 13",
   "digest_alert": "2026-11-10 19:30"
 }
