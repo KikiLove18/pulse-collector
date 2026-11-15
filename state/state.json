@@ -1141,7 +1141,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-15T11:30:55.237465+00:00",
+  "breaking_ts": "2026-11-15T12:00:57.365563+00:00",
   "news_now": {
     "day": "2026-11-15",
     "day_count": 3,
@@ -1155,76 +1155,37 @@
     ]
   },
   "news_seen": [
+    "https://t.me/forklog/50686",
+    "https://www.rbc.ru/rbcfreenews/6ae9b6d7d54c8a55deca5f38",
+    "https://cryptoslate.com/is-ethereum-the-worst-asset-of-all-time-amid-estimated-8-83-billion-bitmine-loss/",
+    "https://tass.ru/sport/28319215",
+    "https://t.me/banksta/105484",
+    "https://t.me/wublockchainenglish/26834",
+    "https://www.kommersant.ru/doc/9109882",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245455-zaharova-ironichno-prokommentirovala",
+    "https://www.kommersant.ru/doc/9109880",
+    "https://www.rbc.ru/rbcfreenews/6af4bf6a9473a39cc39e14fb",
+    "https://t.me/rbc_news/160716",
+    "https://www.kommersant.ru/doc/9109875",
+    "https://www.rbc.ru/sport/13/11/2026/6af725644958432250befcc8",
+    "https://tass.ru/obschestvo/28319209",
+    "https://t.me/konenkov_official/1673",
+    "https://t.me/forbesrussia/103051",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245454-frantsiya-vvela",
+    "https://t.me/proeconomics/20716",
+    "https://tass.ru/sport/28319213",
+    "https://tass.ru/mezhdunarodnaya-panorama/28319211",
     "https://www.rbc.ru/rbcfreenews/6af47c7d7b61ac853b47e217",
     "https://t.me/cbonds/26407",
     "https://t.me/headlines_for_traders/88713",
     "https://t.me/markettwits/393442",
-    "https://t.me/markettwits/393441",
-    "https://tass.ru/sport/28319207",
-    "https://t.me/banksta/105483",
-    "https://t.me/forbesrussia/103050",
-    "https://tass.ru/obschestvo/28319199",
-    "https://www.rbc.ru/rbcfreenews/6af8780b7ea0632d22f444c1",
-    "https://t.me/FinancialJuice/147304",
-    "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://tass.ru/obschestvo/28319203",
-    "https://www.kommersant.ru/doc/9109869",
-    "https://tass.ru/sport/28319201",
-    "https://t.me/rbc_news/160715",
-    "https://t.me/rbc_news/160714",
-    "https://www.rbc.ru/sport/13/11/2026/6af6c7309b35e68e6b53aca7",
-    "https://tass.ru/obschestvo/28319197",
-    "https://www.rbc.ru/technology_and_media/14/11/2026/6af84be5df54b1d2041793e1",
-    "https://tass.ru/sport/28319185",
-    "https://www.interfax.ru/russia/1129119",
-    "https://t.me/interfaxonline/81639",
-    "https://tass.ru/sport/28319193",
-    "https://tass.ru/obschestvo/28319183",
-    "https://t.me/markettwits/393440",
-    "https://www.interfax.ru/world/1129118",
-    "https://tass.ru/politika/28319189",
-    "https://t.me/headlines_for_traders/88712",
-    "https://t.me/markettwits/393439",
-    "https://tass.ru/proisshestviya/28319187",
-    "https://t.me/if_market_news/86922",
-    "https://www.interfax.ru/business/1129117",
-    "https://www.rbc.ru/rbcfreenews/6ace4201df92d56913b9a744",
-    "https://www.rbc.ru/quote/11/11/2026/6af440bb27f1d95defee45f7",
-    "https://www.kommersant.ru/doc/9109861",
-    "https://t.me/markettwits/393437",
-    "https://t.me/markettwits/393438",
-    "https://tass.ru/obschestvo/28319173",
-    "https://t.me/banksta/105482"
+    "https://t.me/markettwits/393441"
   ],
   "ai_dead": {
     "date": "2026-11-15",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-14T12:00:59.355952+00:00",
-      "Аэропорт Домодедово возобновил работу после ограничений"
-    ],
-    [
-      "2026-11-14T12:00:59.355952+00:00",
-      "Болгария приостанавливает помощь Украине"
-    ],
-    [
-      "2026-11-14T12:00:59.355952+00:00",
-      "Авиасообщение в США возобновлено после сбоя"
-    ],
-    [
-      "2026-11-14T12:30:54.721435+00:00",
-      "Meta оштрафована на €805 млн в Италии за использование данных"
-    ],
-    [
-      "2026-11-14T12:30:54.721435+00:00",
-      "Минфин распределил 97% межбюджетных трансфертов регионам"
-    ],
-    [
-      "2026-11-14T12:30:54.721435+00:00",
-      "В МИД РФ заявили о переплатах ЕС за газ из-за решений Брюсселя"
-    ],
     [
       "2026-11-14T13:00:55.462017+00:00",
       "В Британии предложили перенаправить излишки ветряной энергии в майнинг"
@@ -1824,6 +1785,18 @@
     [
       "2026-11-15T11:30:55.237465+00:00",
       "Путин примет участие во встрече с Си и Трампом"
+    ],
+    [
+      "2026-11-15T12:00:57.365563+00:00",
+      "Продажи квартир в новостройках РФ в октябре упали на 29,7%"
+    ],
+    [
+      "2026-11-15T12:00:57.365563+00:00",
+      "Южнокорейская биржа Coinone предупредила об утечке данных после взлома"
+    ],
+    [
+      "2026-11-15T12:00:57.365563+00:00",
+      "Реальная доходность 10-летних казначейских облигаций США достигла 2,7%"
     ]
   ],
   "results_fp": [
@@ -1895,13 +1868,13 @@
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-15T04:30:56.781140+00:00",
-    "Коммерсантъ": "2026-11-15T11:30:55.237465+00:00",
+    "Коммерсантъ": "2026-11-15T12:00:57.365563+00:00",
     "Ведомости": "2026-11-15T10:00:55.790235+00:00",
     "Интерфакс": "2026-11-15T11:30:55.237465+00:00",
     "ТАСС": "2026-11-15T11:30:55.237465+00:00",
     "CoinDesk": "2026-11-14T16:30:56.201734+00:00",
     "Headlines for Traders": "2026-11-15T08:01:04.103141+00:00",
-    "MarketTwits": "2026-11-15T11:30:55.237465+00:00",
+    "MarketTwits": "2026-11-15T12:00:57.365563+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-15T10:30:56.941750+00:00",
     "РБК": "2026-11-15T11:00:55.371255+00:00",
@@ -1913,7 +1886,7 @@
     "Energy Today": "2026-11-15T08:31:10.814414+00:00",
     "Forbes Russia": "2026-11-15T10:00:55.790235+00:00",
     "Frank Media": "2026-11-14T16:30:56.201734+00:00",
-    "ForkLog": "2026-11-15T10:30:56.941750+00:00",
+    "ForkLog": "2026-11-15T12:00:57.365563+00:00",
     "Decrypt": "2026-11-15T04:30:56.781140+00:00",
     "Cointelegraph": "2026-11-15T09:31:01.587038+00:00",
     "CoinMarketCap": "2026-11-14T04:30:57.352164+00:00",
@@ -1956,7 +1929,7 @@
     "Металл и Минерал": "2026-11-14T10:00:59.829115+00:00",
     "Эксперт": "2026-11-15T08:01:04.103141+00:00",
     "БКС Экспресс": "2026-11-13T07:00:55.037437+00:00",
-    "Proeconomics": "2026-11-14T10:00:59.829115+00:00",
+    "Proeconomics": "2026-11-15T12:00:57.365563+00:00",
     "Incrypted": "2026-11-15T11:00:55.371255+00:00",
     "Смарт-лаб": "2026-11-13T17:01:00.144187+00:00",
     "EIA Today in Energy": "2026-11-12T14:30:56.851698+00:00",
@@ -2011,7 +1984,7 @@
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00",
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00"
   },
-  "catalog_at": "2026-11-15T11:30:55+00:00",
-  "own_hour": "2026-11-15 14",
+  "catalog_at": "2026-11-15T12:00:57+00:00",
+  "own_hour": "2026-11-15 15",
   "digest_alert": "2026-11-10 19:30"
 }
