@@ -1037,68 +1037,51 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-15T07:30:56.786762+00:00",
+  "breaking_ts": "2026-11-15T08:01:04.103141+00:00",
   "news_now": {
     "day": "2026-11-15",
-    "day_count": 0,
+    "day_count": 1,
     "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "last": "2026-11-15T08:01:04.103141+00:00",
+    "titles": [
+      "Биткоин рухнул ниже $63 000 на фоне массовых ликвидаций"
+    ]
   },
   "news_seen": [
+    "https://t.me/forklog/50683",
+    "https://www.kommersant.ru/doc/9109794",
+    "https://tass.ru/proisshestviya/28318977",
+    "https://tass.ru/armiya-i-opk/28318969",
+    "https://tass.ru/obschestvo/28318975",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318971",
+    "https://t.me/rbc_news/160703",
+    "https://www.vedomosti.ru/politics/news/2026/11/15/1245435-makron-ukraina-imeet",
+    "https://www.interfax.ru/world/1129095",
+    "https://tass.ru/proisshestviya/28318963",
+    "https://www.kommersant.ru/doc/9109792",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318959",
+    "https://tass.ru/obschestvo/28318199",
+    "https://tass.ru/nauka/28318559",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318957",
+    "https://t.me/forbesrussia/103035",
+    "https://www.kommersant.ru/doc/9109790",
+    "https://tass.ru/proisshestviya/28318955",
+    "https://www.sport-interfax.ru/1129094",
+    "https://tass.ru/sport/28318953",
+    "https://t.me/headlines_for_traders/88703",
+    "https://tass.ru/mezhdunarodnaya-panorama/28318947",
+    "https://tass.ru/obschestvo/28318951",
+    "https://t.me/alfa_investments/8582",
     "https://t.me/expert_mag/11365",
     "https://www.vedomosti.ru/politics/news/2026/11/15/1245434-cheloveka-postradali",
     "https://t.me/rbc_news/160702",
-    "https://www.rbc.ru/politics/08/11/2026/6af09de6867d3fb6ce8e327a",
-    "https://t.me/headlines_for_traders/88702",
-    "https://www.rbc.ru/politics/29/07/2026/6a6988759a7947c50b702977",
-    "https://thedefiant.io/news/markets/bitcoin-hits-four-month-low-as-etf-outflows-persist",
-    "https://www.kommersant.ru/doc/9109786",
-    "https://tass.ru/sport/28318943",
-    "https://www.interfax.ru/russia/1129092",
-    "https://www.interfax.ru/world/1129089",
-    "https://www.rbc.ru/rbcfreenews/6ad11c4455b210ba5bae8080",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245433-chislo-postradavshih",
-    "https://www.interfax.ru/world/1129091",
-    "https://tass.ru/obschestvo/28318941",
-    "https://t.me/cointelegraph/73289",
-    "https://t.me/oil_capital/27004",
-    "https://www.kommersant.ru/doc/9109784",
-    "https://www.interfax.ru/russia/1129090",
-    "https://t.me/banksta/105478",
-    "https://tass.ru/obschestvo/28318897",
-    "https://www.interfax.ru/russia/1129088",
-    "https://www.vedomosti.ru/politics/news/2026/11/15/1245432-mossad-predupredil",
-    "https://tass.ru/sport/28318935",
-    "https://tass.ru/politika/28318899",
-    "https://www.kommersant.ru/doc/9109777",
-    "https://www.rbc.ru/quote/15/11/2026/6af6fa64e1d11afb922cd206",
-    "https://t.me/incrypted/33326",
-    "https://tass.ru/kultura/28318035",
-    "https://t.me/interfaxonline/81634",
-    "https://tass.ru/mezhdunarodnaya-panorama/28318893",
-    "https://tass.ru/proisshestviya/28318891",
-    "https://www.interfax.ru/russia/1129087",
-    "https://tass.ru/politika/28318887",
-    "https://tass.ru/sport/28318889"
+    "https://www.interfax.ru/world/1129093"
   ],
   "ai_dead": {
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-14T08:00:55.285999+00:00",
-      "Банки и операторы связи заключили договоры о маркировке звонков"
-    ],
-    [
-      "2026-11-14T08:00:55.285999+00:00",
-      "В США более 15 тыс. авиарейсов задержали или отменили из-за сбоя"
-    ],
-    [
-      "2026-11-14T08:00:55.285999+00:00",
-      "Биткоин опустился ниже отметки $67 000 на рынке"
-    ],
     [
       "2026-11-14T08:30:54.309954+00:00",
       "Отток из спотовых биткоин-ETF в США превысил $1 млрд за неделю"
@@ -1690,6 +1673,26 @@
     [
       "2026-11-15T07:30:56.786762+00:00",
       "Пять человек пострадали в Ростовской области после атаки беспилотников"
+    ],
+    [
+      "2026-11-15T08:01:04.103141+00:00",
+      "Биткоин рухнул ниже $63 000 на фоне ликвидаций на $1,95 млрд"
+    ],
+    [
+      "2026-11-15T08:01:04.103141+00:00",
+      "SpaceX впервые поймала корабль Starship механическими захватами"
+    ],
+    [
+      "2026-11-15T08:01:04.103141+00:00",
+      "КСИР заявил о новых ударах по американскому радару в Бахрейне"
+    ],
+    [
+      "2026-11-15T08:01:04.103141+00:00",
+      "Reuters: Китай выступает против обсуждения Украины на встрече с Путиным и Трампом"
+    ],
+    [
+      "2026-11-15T08:01:04.103141+00:00",
+      "На Мосбирже запустили девять новых вечных фьючерсов на акции США"
     ]
   ],
   "results_fp": [
@@ -1756,17 +1759,17 @@
     ]
   },
   "pro_daily": "2026-11-14",
-  "freech_day": "2026-11-14",
+  "freech_day": "2026-11-15",
   "pro_auto": "2026-11-15",
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-15T04:30:56.781140+00:00",
-    "Коммерсантъ": "2026-11-15T07:30:56.786762+00:00",
+    "Коммерсантъ": "2026-11-15T08:01:04.103141+00:00",
     "Ведомости": "2026-11-15T07:30:56.786762+00:00",
-    "Интерфакс": "2026-11-15T07:30:56.786762+00:00",
-    "ТАСС": "2026-11-15T07:00:56.105112+00:00",
+    "Интерфакс": "2026-11-15T08:01:04.103141+00:00",
+    "ТАСС": "2026-11-15T08:01:04.103141+00:00",
     "CoinDesk": "2026-11-14T16:30:56.201734+00:00",
-    "Headlines for Traders": "2026-11-15T07:30:56.786762+00:00",
+    "Headlines for Traders": "2026-11-15T08:01:04.103141+00:00",
     "MarketTwits": "2026-11-15T04:30:56.781140+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-15T04:30:56.781140+00:00",
@@ -1779,7 +1782,7 @@
     "Energy Today": "2026-11-15T06:31:01.834843+00:00",
     "Forbes Russia": "2026-11-14T17:00:55.228469+00:00",
     "Frank Media": "2026-11-14T16:30:56.201734+00:00",
-    "ForkLog": "2026-11-14T11:01:05.486475+00:00",
+    "ForkLog": "2026-11-15T08:01:04.103141+00:00",
     "Decrypt": "2026-11-15T04:30:56.781140+00:00",
     "Cointelegraph": "2026-11-15T05:00:54.642776+00:00",
     "CoinMarketCap": "2026-11-14T04:30:57.352164+00:00",
@@ -1820,7 +1823,7 @@
     "Т-Инвестиции": "2026-11-13T06:00:55.469168+00:00",
     "bitkogan HOTLINE": "2026-11-15T06:31:01.834843+00:00",
     "Металл и Минерал": "2026-11-14T10:00:59.829115+00:00",
-    "Эксперт": "2026-11-15T07:30:56.786762+00:00",
+    "Эксперт": "2026-11-15T08:01:04.103141+00:00",
     "БКС Экспресс": "2026-11-13T07:00:55.037437+00:00",
     "Proeconomics": "2026-11-14T10:00:59.829115+00:00",
     "Incrypted": "2026-11-15T07:30:56.786762+00:00",
@@ -1850,7 +1853,7 @@
     "EnergyToday": "2026-11-05T04:30:57.492642+00:00",
     "Telegram-канал cbrstocks": "2026-11-05T04:30:57.492642+00:00",
     "Telegram-канал BWEnews": "2026-11-05T04:30:57.492642+00:00",
-    "Альфа-Инвестиции": "2026-11-13T06:00:55.469168+00:00",
+    "Альфа-Инвестиции": "2026-11-15T08:01:04.103141+00:00",
     "Минфин России": "2026-11-14T12:30:54.721435+00:00",
     "Норникель": "2026-11-13T10:30:56.504287+00:00",
     "Finam Invest": "2026-11-05T16:31:03.442762+00:00",
@@ -1877,7 +1880,7 @@
     "Spydell Finance": "2026-11-14T06:30:54.650040+00:00",
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00"
   },
-  "catalog_at": "2026-11-15T07:30:56+00:00",
-  "own_hour": "2026-11-15 10",
+  "catalog_at": "2026-11-15T08:01:04+00:00",
+  "own_hour": "2026-11-15 11",
   "digest_alert": "2026-11-10 19:30"
 }
