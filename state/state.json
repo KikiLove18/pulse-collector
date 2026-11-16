@@ -1149,120 +1149,98 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-16T05:30:56.724269+00:00",
+  "breaking_ts": "2026-11-16T06:00:56.823536+00:00",
   "news_now": {
     "day": "2026-11-16",
     "day_count": 0,
-    "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "urgent_count": 1,
+    "last": "2026-11-16T06:00:56.823536+00:00",
+    "titles": [
+      "Массированная атака БПЛА на регионы России"
+    ]
   },
   "news_seen": [
+    "https://www.kommersant.ru/doc/9110150",
+    "https://t.me/rbc_news/160741",
+    "https://t.me/bitkogan/29564",
+    "https://t.me/incrypted/33329",
+    "https://t.me/RBCCrypto/23868",
+    "https://t.me/markettwits/393480",
+    "https://www.vedomosti.ru/society/news/2026/11/16/1245552-pri-pozhare-v-punkte",
+    "https://www.rbc.ru/politics/04/09/2026/6a9a8ed1cea2e2ea63103cac",
+    "https://t.me/if_market_news/86927",
+    "https://t.me/markettwits/393479",
+    "https://tass.ru/armiya-i-opk/28320451",
+    "https://www.rbc.ru/rbcfreenews/6ad6f1b8f5997594a2670f76",
+    "https://tass.ru/armiya-i-opk/28320445",
+    "https://tass.ru/proisshestviya/28320433",
+    "https://tass.ru/mezhdunarodnaya-panorama/28320441",
+    "https://t.me/FinancialJuice/147423",
+    "https://t.me/alfa_investments/8583",
+    "https://t.me/FinancialJuice/147421",
+    "https://t.me/FinancialJuice/147422",
+    "https://t.me/markettwits/393478",
+    "https://tass.ru/proisshestviya/28320435",
+    "https://www.interfax.ru/russia/1129212",
+    "https://www.kommersant.ru/doc/9110157",
+    "https://t.me/energytodaygroup/32757",
+    "https://tass.ru/proisshestviya/28320437",
+    "https://tass.ru/mezhdunarodnaya-panorama/28320427",
+    "https://tass.ru/proisshestviya/28320417",
+    "https://tass.ru/proisshestviya/28320431",
+    "https://t.me/headlines_for_traders/88745",
+    "https://t.me/Metals_Mining/23897",
+    "https://t.me/Metals_Mining/23898",
+    "https://t.me/Metals_Mining/23899",
+    "https://www.vedomosti.ru/management/news/2026/11/16/1245551-vosmi-otraslyah",
+    "https://tass.ru/mezhdunarodnaya-panorama/28320425",
+    "https://t.me/if_market_news/86926",
+    "https://tass.ru/obschestvo/28320411",
+    "https://t.me/bitsmedia/28976",
+    "https://www.rbc.ru/politics/16/11/2026/6afa911574a5ae2f43f9a91f",
+    "https://tass.ru/obschestvo/28320413",
+    "https://t.me/rbc_news/160740",
+    "https://tass.ru/proisshestviya/28320421",
+    "https://www.kommersant.ru/doc/9110134",
+    "https://t.me/FinancialJuice/147420",
+    "https://t.me/tb_invest_official/15191",
+    "https://tass.ru/armiya-i-opk/28320419",
+    "https://www.interfax.ru/business/1129211",
+    "https://tass.ru/obschestvo/28320385",
+    "https://tass.ru/proisshestviya/28320415",
+    "https://www.kommersant.ru/doc/9110153",
+    "https://www.rbc.ru/quote/16/11/2026/6afa88254fccb60abe4c0fcf",
+    "https://t.me/invest_zonaa/39445",
+    "https://tass.ru/ekonomika/28320409",
+    "https://www.vedomosti.ru/politics/news/2026/11/16/1245548-stoyanoglo-i-gagauz-lidiruyut",
+    "https://tass.ru/proisshestviya/28320407",
+    "https://www.vedomosti.ru/politics/news/2026/11/16/1245550-the-atlantic",
+    "https://www.wsj.com/finance/currencies/crypto-off-to-downbeat-start-this-week-after-selloff-abeb286e?mod=rss_markets_main",
+    "https://t.me/frank_media/24745",
+    "https://www.rbc.ru/rbcfreenews/6af067fb836318e6dcdc3266",
+    "https://tass.ru/proisshestviya/28320395",
+    "https://www.interfax.ru/business/1129210",
+    "https://tass.ru/armiya-i-opk/28320399",
+    "https://t.me/headlines_for_traders/88744",
+    "https://t.me/banksta/105513",
+    "https://tass.ru/ekonomika/28320391",
+    "https://www.rbc.ru/politics/16/11/2026/6afa64b24fccb60abe4c0fba",
+    "https://t.me/rbc_news/160739",
+    "https://tass.ru/sport/28320401",
+    "https://tass.ru/nedvizhimost/28320303",
+    "https://www.vedomosti.ru/politics/news/2026/11/16/1245547-storonu-moskvi",
+    "https://www.kommersant.ru/doc/9110119",
     "https://t.me/markettwits/393477",
     "https://www.kommersant.ru/doc/9110148",
     "https://tass.ru/sport/28320373",
-    "https://tass.ru/ekonomika/28320379",
-    "https://tass.ru/proisshestviya/28320383",
-    "https://tass.ru/kultura/28319405",
-    "https://tass.ru/ekonomika/28320369",
-    "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Fears-of-a-Global-Supply-Glut-Return.html",
-    "https://t.me/markettwits/393476",
-    "https://tass.ru/proisshestviya/28320377",
-    "https://tass.ru/obschestvo/28320371",
-    "https://www.rbc.ru/rbcfreenews/6af9601d938cd0f57ef524a9",
-    "https://tass.ru/obschestvo/28320301",
-    "https://www.interfax.ru/russia/1129209",
-    "https://www.kommersant.ru/doc/9110141",
-    "https://tass.ru/armiya-i-opk/28320335",
-    "https://t.me/headlines_for_traders/88743",
-    "https://tass.ru/proisshestviya/28320367",
-    "https://www.vedomosti.ru/society/news/2026/11/16/1245546-odin-chelovek-pogib",
-    "https://thedefiant.io/frontier/technology/pony-ai-adds-toyota-bz4x-to-guangzhou-driverless-service",
-    "https://www.rbc.ru/politics/16/11/2026/6afa911574a5ae2f43f9a91f",
-    "https://t.me/interfaxonline/81668",
-    "https://t.me/headlines_for_traders/88742",
-    "https://tass.ru/politika/28320353",
-    "https://tass.ru/ekonomika/28320297",
-    "https://www.kommersant.ru/doc/9110139",
-    "https://tass.ru/proisshestviya/28320351",
-    "https://www.rbc.ru/politics/16/11/2026/6afa9057cfb683f692e10c4f",
-    "https://t.me/markettwits/393475",
-    "https://www.interfax.ru/moscow/1129208",
-    "https://tass.ru/obschestvo/28320293",
-    "https://t.me/rbc_news/160738",
-    "https://t.me/markettwits/393474",
-    "https://t.me/energytodaygroup/32756",
-    "https://t.me/usamarke1/8251",
-    "https://tass.ru/armiya-i-opk/28320305",
-    "https://www.kommersant.ru/doc/9110133",
-    "https://www.wsj.com/economy/central-banking/hawkish-bank-of-japan-member-urges-nimble-rate-hikes-8ab6bf7e?mod=rss_socialeconomyfeed",
-    "https://t.me/FinancialJuice/147419",
-    "https://www.rbc.ru/politics/16/11/2026/6afa8e936e537f0950eecd18",
-    "https://www.kommersant.ru/doc/9110131",
-    "https://tass.ru/ekonomika/28320337",
-    "https://t.me/headlines_for_traders/88741",
-    "https://tass.ru/proisshestviya/28320347",
-    "https://tass.ru/obschestvo/28320287",
-    "https://t.me/markettwits/393473",
-    "https://tass.ru/armiya-i-opk/28320291",
-    "https://t.me/bitkogan_hotline/28275",
-    "https://tass.ru/obschestvo/28320331",
-    "https://t.me/markettwits/393472",
-    "https://t.me/headlines_for_traders/88740",
-    "https://tass.ru/proisshestviya/28320339",
-    "https://tass.ru/politika/28320329",
-    "https://tass.ru/mezhdunarodnaya-panorama/28320327",
-    "https://tass.ru/obschestvo/28320281",
-    "https://t.me/investfuture/15521",
-    "https://t.me/FinancialJuice/147418",
-    "https://tass.ru/proisshestviya/28320307",
-    "https://t.me/frank_media/24744",
-    "https://t.me/FinancialJuice/147417",
-    "https://t.me/forklog/50690",
-    "https://t.me/CoinDeskGlobal/25485",
-    "https://www.kommersant.ru/doc/9110117",
-    "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-biggest-bet-is-now-a-drop-below-usd60-000-not-a-rally-above-usd100-000",
-    "https://t.me/markettwits/393471",
-    "https://t.me/expert_mag/11370",
-    "https://t.me/energytodaygroup/32755",
-    "https://t.me/markettwits/393470",
-    "https://www.rbc.ru/politics/22/04/2025/68079f8b9a7947415ebba14a",
-    "https://t.me/banksta/105512",
-    "https://t.me/rbc_news/160737"
+    "https://cointelegraph.com/markets/aster-ceo-suspects-foul-play-after-token-plunges-32-in-minutes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://tass.ru/ekonomika/28320379"
   ],
   "ai_dead": {
     "date": "2026-11-15",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-15T05:30:57.111978+00:00",
-      "Кайла Харрисон защитила титул чемпионки UFC"
-    ],
-    [
-      "2026-11-15T06:00:56.811749+00:00",
-      "Минобороны: силы ПВО за ночь уничтожили 533 украинских беспилотника"
-    ],
-    [
-      "2026-11-15T06:00:56.811749+00:00",
-      "SpaceX впервые успешно поймала ракету Starship при помощи манипуляторов"
-    ],
-    [
-      "2026-11-15T06:00:56.811749+00:00",
-      "Минобороны РФ заявило об ударах по порту Черноморск и сухогрузу"
-    ],
-    [
-      "2026-11-15T06:00:56.811749+00:00",
-      "ВОЗ: более 40% людей с диабетом в мире не знают о своем диагнозе"
-    ],
-    [
-      "2026-11-15T06:31:01.834843+00:00",
-      "SpaceX впервые в истории посадила верхнюю ступень Starship на башню"
-    ],
-    [
-      "2026-11-15T06:31:01.834843+00:00",
-      "Дата-центр Google в Швеции может поднять счета за свет на 1000 крон"
-    ],
     [
       "2026-11-15T06:31:01.834843+00:00",
       "В Белгородской области за сутки зафиксировали 131 атаку ВСУ"
@@ -1862,6 +1840,26 @@
     [
       "2026-11-16T05:30:56.724269+00:00",
       "Т-Технологии показали рост чистой прибыли за третий квартал на 41%"
+    ],
+    [
+      "2026-11-16T06:00:56.823536+00:00",
+      "Минобороны РФ: за ночь сбито 1336 беспилотников"
+    ],
+    [
+      "2026-11-16T06:00:56.823536+00:00",
+      "СПБ Биржа начнет торги акциями Anthropic 19 ноября"
+    ],
+    [
+      "2026-11-16T06:00:56.823536+00:00",
+      "ЕК предложит кредит Украине на €45 млрд"
+    ],
+    [
+      "2026-11-16T06:00:56.823536+00:00",
+      "Казахстан запретил импорт куриных яиц на два месяца"
+    ],
+    [
+      "2026-11-16T06:00:56.823536+00:00",
+      "Нефть Brent подешевела до $95,38"
     ]
   ],
   "results_fp": [
@@ -1921,10 +1919,10 @@
     }
   },
   "pro_events": {
-    "day": "2026-11-15",
+    "day": "2026-11-16",
     "count": 1,
     "titles": [
-      "Обострение на Ближнем Востоке: атаки на порты и танкеры"
+      "Массированная атака БПЛА на регионы России"
     ]
   },
   "pro_daily": "2026-11-15",
@@ -1933,16 +1931,16 @@
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-16T05:30:56.724269+00:00",
-    "Коммерсантъ": "2026-11-16T05:30:56.724269+00:00",
-    "Ведомости": "2026-11-15T20:30:55.220042+00:00",
-    "Интерфакс": "2026-11-16T05:30:56.724269+00:00",
-    "ТАСС": "2026-11-16T05:30:56.724269+00:00",
+    "Коммерсантъ": "2026-11-16T06:00:56.823536+00:00",
+    "Ведомости": "2026-11-16T06:00:56.823536+00:00",
+    "Интерфакс": "2026-11-16T06:00:56.823536+00:00",
+    "ТАСС": "2026-11-16T06:00:56.823536+00:00",
     "CoinDesk": "2026-11-16T05:30:56.724269+00:00",
     "Headlines for Traders": "2026-11-16T05:30:56.724269+00:00",
-    "MarketTwits": "2026-11-16T05:30:56.724269+00:00",
+    "MarketTwits": "2026-11-16T06:00:56.823536+00:00",
     "Сигналы РЦБ": "2026-11-13T10:00:54.903578+00:00",
     "Whale Alert": "2026-11-16T04:30:54.116007+00:00",
-    "РБК": "2026-11-16T05:30:56.724269+00:00",
+    "РБК": "2026-11-16T06:00:56.823536+00:00",
     "Wu Blockchain": "2026-11-16T04:30:54.116007+00:00",
     "Банкста": "2026-11-16T04:30:54.116007+00:00",
     "IF News": "2026-11-16T05:01:01.766341+00:00",
@@ -1963,11 +1961,11 @@
     "MarketWatch": "2026-11-15T16:30:55.522568+00:00",
     "Bitcoin Magazine": "2026-11-15T16:30:55.522568+00:00",
     "Watcher Guru": "2026-11-16T04:30:54.116007+00:00",
-    "РБК. Главное": "2026-11-16T05:30:56.724269+00:00",
+    "РБК. Главное": "2026-11-16T06:00:56.823536+00:00",
     "The Block": "2026-11-16T04:30:54.116007+00:00",
     "Нефть и Капитал": "2026-11-15T09:00:55.490860+00:00",
     "MMI": "2026-11-16T04:30:54.116007+00:00",
-    "FinancialJuice": "2026-11-16T05:30:56.724269+00:00",
+    "FinancialJuice": "2026-11-16T06:00:56.823536+00:00",
     "Cbonds": "2026-11-12T12:30:56.062204+00:00",
     "WSJ Markets": "2026-11-14T04:30:57.352164+00:00",
     "WSJ Economy": "2026-11-14T04:30:57.352164+00:00",
@@ -1989,7 +1987,7 @@
     "Минэкономразвития": "2026-11-10T04:30:58.582529+00:00",
     "Прайм": "2026-11-10T04:30:58.582529+00:00",
     "Хедлайнеры": "2026-11-12T10:01:00.442135+00:00",
-    "Т-Инвестиции": "2026-11-15T10:30:56.941750+00:00",
+    "Т-Инвестиции": "2026-11-16T06:00:56.823536+00:00",
     "bitkogan HOTLINE": "2026-11-15T10:30:56.941750+00:00",
     "Металл и Минерал": "2026-11-14T10:00:59.829115+00:00",
     "Эксперт": "2026-11-15T16:00:58.498380+00:00",
@@ -2050,7 +2048,7 @@
     "Energy Today Group": "2026-11-14T16:30:56.201734+00:00",
     "Bloomberg": "2026-11-16T04:30:54.116007+00:00"
   },
-  "catalog_at": "2026-11-16T05:30:56+00:00",
-  "own_hour": "2026-11-16 08",
+  "catalog_at": "2026-11-16T06:00:56+00:00",
+  "own_hour": "2026-11-16 09",
   "digest_alert": "2026-11-10 19:30"
 }
