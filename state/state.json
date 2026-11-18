@@ -89,7 +89,7 @@
   ],
   "last_digest_ts": "2026-11-17T16:31:06.441323+00:00",
   "calendar": {
-    "ts": "2026-11-17T16:32:05.330846+00:00",
+    "ts": "2026-11-18T04:00:56.217565+00:00",
     "data": [
       {
         "title": "BusinessNZ Services Index",
@@ -542,7 +542,7 @@
       {
         "title": "MI Leading Index m/m",
         "country": "AUD",
-        "date": "2026-11-17T18:30:00-05:00",
+        "date": "2026-11-17T18:39:00-05:00",
         "impact": "Low",
         "forecast": "",
         "previous": "-0.1%"
@@ -704,7 +704,7 @@
         "country": "USD",
         "date": "2026-11-18T10:00:00-05:00",
         "impact": "Low",
-        "forecast": "-1.8%",
+        "forecast": "-2.0%",
         "previous": "-7.3%"
       },
       {
@@ -712,7 +712,7 @@
         "country": "USD",
         "date": "2026-11-18T10:30:00-05:00",
         "impact": "Low",
-        "forecast": "-0.3M",
+        "forecast": "0.4M",
         "previous": "4.7M"
       },
       {
@@ -848,7 +848,7 @@
         "country": "CAD",
         "date": "2026-11-19T08:30:00-05:00",
         "impact": "Low",
-        "forecast": "1.2%",
+        "forecast": "0.4%",
         "previous": "2.0%"
       },
       {
@@ -856,7 +856,7 @@
         "country": "CAD",
         "date": "2026-11-19T08:30:00-05:00",
         "impact": "Low",
-        "forecast": "2.0%",
+        "forecast": "0.9%",
         "previous": "4.8%"
       },
       {
@@ -872,7 +872,7 @@
         "country": "USD",
         "date": "2026-11-19T08:30:00-05:00",
         "impact": "Medium",
-        "forecast": "19.2",
+        "forecast": "20.6",
         "previous": "20.9"
       },
       {
@@ -880,7 +880,7 @@
         "country": "USD",
         "date": "2026-11-19T08:30:00-05:00",
         "impact": "Medium",
-        "forecast": "199K",
+        "forecast": "198K",
         "previous": "200K"
       },
       {
@@ -920,7 +920,7 @@
         "country": "USD",
         "date": "2026-11-19T10:30:00-05:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "25B",
         "previous": "61B"
       },
       {
@@ -1072,7 +1072,7 @@
         "country": "USD",
         "date": "2026-11-20T10:00:00-05:00",
         "impact": "Medium",
-        "forecast": "52.1",
+        "forecast": "51.7",
         "previous": "51.0"
       },
       {
@@ -1195,7 +1195,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-17T21:31:09.057529+00:00",
+  "breaking_ts": "2026-11-18T04:00:56.216569+00:00",
   "news_now": {
     "day": "2026-11-18",
     "day_count": 0,
@@ -1204,122 +1204,108 @@
     "titles": []
   },
   "news_seen": [
-    "https://t.me/FinancialJuice/148022",
-    "https://t.me/WatcherGuru/16114",
-    "https://t.me/FinancialJuice/148021",
-    "https://t.me/FinancialJuice/148020",
-    "https://tass.ru/armiya-i-opk/28328165",
-    "https://t.me/FinancialJuice/148019",
-    "https://t.me/BitcoinMagazineTelegram/11117",
-    "https://t.me/FinancialJuice/148018",
-    "https://t.me/FinancialJuice/148017",
-    "https://tass.ru/sport/28328243",
-    "https://t.me/FinancialJuice/148016",
-    "https://t.me/CoinDeskGlobal/25523",
-    "https://t.me/FinancialJuice/148015",
-    "https://www.coindesk.com/markets/2026/11/17/nvidia-tops-estimates-issues-strong-guidance-adds-usd150-billion-to-buyback-authorization",
-    "https://t.me/FinancialJuice/148014",
-    "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html",
-    "https://www.vedomosti.ru/politics/news/2026/11/18/1412764-podtverdilo-sboi",
-    "https://t.me/FinancialJuice/148013",
-    "https://t.me/FinancialJuice/148012",
-    "https://tass.ru/obschestvo/28328241",
-    "https://t.me/FinancialJuice/148011",
-    "https://t.me/WalterBloomberg/38586",
-    "https://t.me/banksta/105645",
-    "https://t.me/interfaxonline/81784",
-    "https://tass.ru/sport/28328239",
-    "https://www.wsj.com/finance/stocks/u-s-stocks-fall-as-ai-doubts-fester-a0979bdb?mod=rss_markets_main",
-    "https://t.me/WalterBloomberg/38585",
-    "https://t.me/markettwits/393762",
-    "https://cryptoslate.com/blackrock-holds-123056-strategy-shares-ahead-of-msci-exit-but-how-much-must-it-sell/",
-    "https://www.cnbc.com/2026/11/17/when-to-sell-a-stock.html",
-    "https://tass.ru/obschestvo/28328237",
-    "https://www.interfax.ru/world/1129686",
-    "https://tass.ru/armiya-i-opk/28328195",
-    "https://tass.ru/armiya-i-opk/28328187",
-    "https://tass.ru/armiya-i-opk/28328191",
-    "https://tass.ru/obschestvo/28328205",
-    "https://tass.ru/armiya-i-opk/28328183",
-    "https://tass.ru/armiya-i-opk/28328207",
-    "https://www.interfax.ru/world/1129685",
-    "https://tass.ru/nauka/28328143",
-    "https://tass.ru/politika/28328235",
-    "https://tass.ru/obschestvo/28328233",
-    "https://t.me/FinancialJuice/148010",
-    "https://tass.ru/armiya-i-opk/28328213",
-    "https://tass.ru/ekonomika/28328231",
-    "https://tass.ru/armiya-i-opk/28328197",
-    "https://t.me/headlines_for_traders/88895",
-    "https://tass.ru/proisshestviya/28328161",
-    "https://www.interfax.ru/russia/1129684",
-    "https://t.me/markettwits/393761",
-    "https://tass.ru/ekonomika/28328203",
-    "https://tass.ru/armiya-i-opk/28328149",
-    "https://www.marketwatch.com/story/why-salesforces-stock-is-leading-s-p-500-decliners-amid-tech-jitters-17510caf?mod=mw_rss_topstories",
-    "https://www.interfax.ru/world/1129683",
-    "https://tass.ru/armiya-i-opk/28328147",
-    "https://www.marketwatch.com/story/nows-the-perfect-time-for-networking-heres-how-to-send-a-cringe-free-email-73ad34ea?mod=mw_rss_topstories",
-    "https://tass.ru/ekonomika/28328225",
-    "https://tass.ru/obschestvo/28328219",
-    "https://tass.ru/armiya-i-opk/28328179",
-    "https://t.me/FinancialJuice/148009",
-    "https://tass.ru/obschestvo/28328175",
-    "https://t.me/FinancialJuice/148008",
-    "https://t.me/WalterBloomberg/38584",
-    "https://t.me/forbesrussia/103154",
-    "https://t.me/FinancialJuice/148007",
-    "https://www.cnbc.com/2026/11/17/nvidia-stock-earnings-jensen-huang-resignation.html",
-    "https://t.me/cointelegraph/73352",
-    "https://t.me/WatcherGuru/16111",
-    "https://t.me/markettwits/393760",
-    "https://bitcoinmagazine.com/markets/bitcoin-price-slips-near-64000-strategy",
-    "https://thedefiant.io/news/blockchains/the-graph-to-tie-indexer-reward-requirements-to-stake",
-    "https://t.me/headlines_for_traders/88894",
-    "https://www.marketwatch.com/story/it-leaves-me-with-a-sour-taste-my-elderly-mother-gave-our-cousin-800-for-a-car-repair-should-i-be-worried-88dbd188?mod=mw_rss_topstories",
-    "https://oilprice.com/Energy/Energy-General/China-Tests-250-Mile-Electric-Plane-in-Major-Aviation-Milestone.html",
-    "https://www.interfax.ru/world/1129682",
-    "https://www.vedomosti.ru/technology/news/2026/11/17/1412758-apple-obyasnila-prichinu-sboya",
-    "https://t.me/rbc_news/160899",
-    "https://t.me/markettwits/393759",
-    "https://t.me/FinancialJuice/148006",
-    "https://www.marketwatch.com/story/summit-therapeutics-stock-tumbles-again-as-fda-recommends-new-trial-for-lung-cancer-drug-dcb8ff55?mod=mw_rss_topstories",
-    "https://t.me/FinancialJuice/148005",
-    "https://t.me/banksta/105644"
+    "https://t.me/FinancialJuice/148130",
+    "https://tass.ru/sport/28328853",
+    "https://tass.ru/kultura/28328681",
+    "https://t.me/markettwits/393765",
+    "https://tass.ru/ekonomika/28328851",
+    "https://tass.ru/ekonomika/28328847",
+    "https://www.vedomosti.ru/politics/news/2026/11/18/1412781-putin-trehstoronnyaya-vstrecha",
+    "https://www.cnbc.com/2026/11/18/alaska-senate-mary-peltola-wins-election.html",
+    "https://www.kommersant.ru/doc/9112149",
+    "https://www.rbc.ru/rbcfreenews/6aef176ff8de70aa4e34c0b6",
+    "https://t.me/CoinMarketCapAnnouncements/19722",
+    "https://tass.ru/politika/28328843",
+    "https://www.interfax.ru/world/1129720",
+    "https://www.kommersant.ru/doc/9112150",
+    "https://tass.ru/sport/28328833",
+    "https://t.me/FinancialJuice/148129",
+    "https://t.me/interfaxonline/81796",
+    "https://tass.ru/obschestvo/28328827",
+    "https://www.cnbc.com/2026/11/18/putin-apec-eu-trump-xi-meeting.html",
+    "https://t.me/FinancialJuice/148128",
+    "https://t.me/FinancialJuice/148127",
+    "https://tass.ru/sport/28328823",
+    "https://t.me/FinancialJuice/148126",
+    "https://t.me/interfaxonline/81795",
+    "https://www.vedomosti.ru/politics/news/2026/11/18/1412779-putin-rossiya-dostoino",
+    "https://www.interfax.ru/world/1129719",
+    "https://tass.ru/armiya-i-opk/28328783",
+    "https://www.rbc.ru/politics/18/11/2026/6afd1efffa5c27fc8fac0710",
+    "https://t.me/headlines_for_traders/88899",
+    "https://www.interfax.ru/world/1129718",
+    "https://t.me/interfaxonline/81794",
+    "https://tass.ru/obschestvo/28328803",
+    "https://tass.ru/mezhdunarodnaya-panorama/28328807",
+    "https://t.me/FinancialJuice/148125",
+    "https://tass.ru/ekonomika/28328799",
+    "https://tass.ru/politika/28328801",
+    "https://t.me/FinancialJuice/148124",
+    "https://t.me/FinancialJuice/148123",
+    "https://tass.ru/obschestvo/28328733",
+    "https://tass.ru/politika/28328797",
+    "https://tass.ru/mezhdunarodnaya-panorama/28328793",
+    "https://tass.ru/politika/28328791",
+    "https://t.me/nainspire/5735",
+    "https://t.me/FinancialJuice/148122",
+    "https://tass.ru/mezhdunarodnaya-panorama/28328769",
+    "https://tass.ru/politika/28328789",
+    "https://tass.ru/ekonomika/28328739",
+    "https://t.me/FinancialJuice/148121",
+    "https://t.me/FinancialJuice/148120",
+    "https://t.me/FinancialJuice/148119",
+    "https://t.me/FinancialJuice/148118",
+    "https://t.me/FinancialJuice/148117",
+    "https://tass.ru/mezhdunarodnaya-panorama/28328787",
+    "https://t.me/FinancialJuice/148116",
+    "https://tass.ru/proisshestviya/28328755",
+    "https://tass.ru/mezhdunarodnaya-panorama/28328775",
+    "https://tass.ru/politika/28328759",
+    "https://www.vedomosti.ru/politics/news/2026/11/18/1412777-si-tszinpin-prizval",
+    "https://www.rbc.ru/politics/18/11/2026/6afd1d9940d49716fd0a0717",
+    "https://www.interfax.ru/world/1129717",
+    "https://tass.ru/mezhdunarodnaya-panorama/28328767",
+    "https://t.me/FinancialJuice/148115",
+    "https://t.me/FinancialJuice/148114",
+    "https://t.me/FinancialJuice/148113",
+    "https://t.me/lookonchainchannel/11125",
+    "https://t.me/headlines_for_traders/88898",
+    "https://t.me/FinancialJuice/148112",
+    "https://t.me/FinancialJuice/148111",
+    "https://www.rbc.ru/politics/17/11/2026/6afbea5cec3211e75aa371bc",
+    "https://www.vedomosti.ru/politics/news/2026/11/18/1412778-putin-nachal",
+    "https://www.rbc.ru/politics/18/11/2026/6afd1bfc73965399a73b1129",
+    "https://t.me/FinancialJuice/148110",
+    "https://www.kommersant.ru/doc/9112136",
+    "https://www.cnbc.com/2026/11/18/china-xi-trade-investment-barriers.html",
+    "https://t.me/FinancialJuice/148109",
+    "https://t.me/FinancialJuice/148108",
+    "https://www.cnbc.com/2026/11/18/apec-trump-xi-putin-shenzhen.html",
+    "https://www.rbc.ru/rbcfreenews/6afc023a09b01a461439ad4a",
+    "https://t.me/FinancialJuice/148107",
+    "https://www.rbc.ru/rbcfreenews/6a43b9169a7947c9486294e7",
+    "https://t.me/FinancialJuice/148106",
+    "https://t.me/FinancialJuice/148105",
+    "https://t.me/cointelegraph/73358",
+    "https://t.me/WatcherGuru/16122",
+    "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
+    "https://t.me/FinancialJuice/148104",
+    "https://t.me/FinancialJuice/148103",
+    "https://www.vedomosti.ru/politics/news/2026/11/18/1412776-delovoi-sammit",
+    "https://www.interfax.ru/world/1129716",
+    "https://cryptoslate.com/coingecko-secures-solana-foundation-backing-and-eyes-crypto-trading/",
+    "https://t.me/wublockchainenglish/26866",
+    "https://t.me/FinancialJuice/148102",
+    "https://thedefiant.io/news/defi/polymarket-moves-hourly-daily-crypto-bets-to-chainlink",
+    "https://t.me/FinancialJuice/148101",
+    "https://www.interfax.ru/world/1129714",
+    "https://t.me/headlines_for_traders/88897"
   ],
   "ai_dead": {
     "date": "2026-11-17",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-17T05:30:56.358426+00:00",
-      "Курс новозеландского доллара упал до минимума за шесть лет"
-    ],
-    [
-      "2026-11-17T05:30:56.358426+00:00",
-      "Хакеры получили данные тысяч заказов кошельков Trezor"
-    ],
-    [
-      "2026-11-17T06:00:55.032387+00:00",
-      "Стратегический резерв нефти США упал до минимума с 1982 года"
-    ],
-    [
-      "2026-11-17T06:00:55.032387+00:00",
-      "Минобороны сообщило об уничтожении более 1,4 тыс. беспилотников за ночь"
-    ],
-    [
-      "2026-11-17T06:00:55.032387+00:00",
-      "Выдачи автокредитов в России выросли до 190,4 млрд рублей"
-    ],
-    [
-      "2026-11-17T06:00:55.032387+00:00",
-      "Капитализация криптовалютного рынка составила $2,20 триллиона"
-    ],
-    [
-      "2026-11-17T06:30:58.470759+00:00",
-      "Индексы МосБиржи и РТС начали сессию снижением на 0,6%"
-    ],
     [
       "2026-11-17T06:30:58.470759+00:00",
       "ЕС хочет утвердить 22-й пакет санкций против России в декабре"
@@ -1919,6 +1905,30 @@
     [
       "2026-11-17T20:30:57.855293+00:00",
       "Криптопотоки в Восточной Европе упали на 7,9% за год"
+    ],
+    [
+      "2026-11-18T04:00:56.216569+00:00",
+      "Американские фондовые индексы снизились, S&P 500 обновил минимум с июля"
+    ],
+    [
+      "2026-11-18T04:00:56.216569+00:00",
+      "Путин заявил, что инфляция в России находится под контролем"
+    ],
+    [
+      "2026-11-18T04:00:56.216569+00:00",
+      "Си Цзиньпин заявил на саммите АТЭС, что Китай выступает за реформирование ВТО"
+    ],
+    [
+      "2026-11-18T04:00:56.216569+00:00",
+      "Демократ Мэри Пелтола победила на выборах в Сенат США на Аляске"
+    ],
+    [
+      "2026-11-18T04:00:56.216569+00:00",
+      "MARA Holdings перевела еще 366 биткоинов на фоне распродажи актива"
+    ],
+    [
+      "2026-11-18T04:00:56.216569+00:00",
+      "В Шэньчжэне открылся саммит АТЭС и началась встреча Путина и Си Цзиньпина"
     ]
   ],
   "results_fp": [
@@ -2000,16 +2010,16 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-17T17:30:57.685263+00:00",
-    "Коммерсантъ": "2026-11-17T20:00:57.612036+00:00",
-    "Ведомости": "2026-11-17T19:01:08.168467+00:00",
-    "Интерфакс": "2026-11-17T19:01:08.168467+00:00",
-    "ТАСС": "2026-11-17T20:30:57.855293+00:00",
+    "Коммерсантъ": "2026-11-18T04:00:56.216569+00:00",
+    "Ведомости": "2026-11-18T04:00:56.216569+00:00",
+    "Интерфакс": "2026-11-18T04:00:56.216569+00:00",
+    "ТАСС": "2026-11-18T04:00:56.216569+00:00",
     "CoinDesk": "2026-11-17T19:30:59.296425+00:00",
     "Headlines for Traders": "2026-11-17T13:30:58.744077+00:00",
-    "MarketTwits": "2026-11-17T20:30:57.855293+00:00",
+    "MarketTwits": "2026-11-18T04:00:56.216569+00:00",
     "Сигналы РЦБ": "2026-11-17T11:01:18.455300+00:00",
     "Whale Alert": "2026-11-17T07:01:04.092937+00:00",
-    "РБК": "2026-11-17T18:30:59.641396+00:00",
+    "РБК": "2026-11-18T04:00:56.216569+00:00",
     "Wu Blockchain": "2026-11-17T16:31:06.441323+00:00",
     "Банкста": "2026-11-17T19:30:59.296425+00:00",
     "IF News": "2026-11-17T18:30:59.641396+00:00",
@@ -2034,14 +2044,14 @@
     "The Block": "2026-11-17T16:31:06.441323+00:00",
     "Нефть и Капитал": "2026-11-17T15:31:00.357025+00:00",
     "MMI": "2026-11-17T16:31:06.441323+00:00",
-    "FinancialJuice": "2026-11-17T20:00:57.612036+00:00",
+    "FinancialJuice": "2026-11-18T04:00:56.216569+00:00",
     "Cbonds": "2026-11-16T15:30:57.662445+00:00",
     "WSJ Markets": "2026-11-17T20:30:57.855293+00:00",
     "WSJ Economy": "2026-11-17T16:31:06.441323+00:00",
     "The Defiant": "2026-11-17T20:00:57.612036+00:00",
     "WSJ": "2026-11-17T16:31:06.441323+00:00",
     "Bitcoin Magazine Telegram": "2026-11-17T16:31:06.441323+00:00",
-    "Lookonchain": "2026-11-17T10:31:00.858092+00:00",
+    "Lookonchain": "2026-11-18T04:00:56.216569+00:00",
     "Банк России": "2026-11-17T16:31:06.441323+00:00",
     "InvestFuture": "2026-11-16T16:30:59.322703+00:00",
     "Rigzone": "2026-11-16T12:30:58.382300+00:00",
@@ -2049,7 +2059,7 @@
     "Агроинвестор": "2026-11-15T11:00:55.371255+00:00",
     "Газпромбанк Инвестиции": "2026-11-17T09:30:58.748045+00:00",
     "CryptoSlate": "2026-11-17T04:00:55.519586+00:00",
-    "CNBC Markets": "2026-11-17T20:30:57.855293+00:00",
+    "CNBC Markets": "2026-11-18T04:00:56.216569+00:00",
     "Natural Gas Intelligence": "2026-11-16T14:31:00.254976+00:00",
     "Правительство России": "2026-11-15T16:30:55.522568+00:00",
     "glassnode": "2026-11-17T17:00:58.004052+00:00",
@@ -2125,7 +2135,7 @@
     "Expert Mag": "2026-11-17T16:31:06.441323+00:00",
     "Prime": "2026-11-17T16:31:06.441323+00:00"
   },
-  "catalog_at": "2026-11-17T21:31:09+00:00",
+  "catalog_at": "2026-11-18T04:00:56+00:00",
   "own_hour": "2026-11-17 21",
   "digest_alert": "2026-11-10 19:30"
 }
