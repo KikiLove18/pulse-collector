@@ -90,7 +90,7 @@
   ],
   "last_digest_ts": "2026-11-21T04:31:06.820963+00:00",
   "calendar": {
-    "ts": "2026-11-21T04:00:54.883306+00:00",
+    "ts": "2026-11-21T10:00:59.182556+00:00",
     "data": [
       {
         "title": "BusinessNZ Services Index",
@@ -1208,7 +1208,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-21T09:31:08.073236+00:00",
+  "breaking_ts": "2026-11-21T10:00:59.181724+00:00",
   "news_now": {
     "day": "2026-11-21",
     "day_count": 2,
@@ -1221,71 +1221,51 @@
     ]
   },
   "news_seen": [
+    "https://t.me/rosstat_official/4093",
+    "https://t.me/expert_mag/11498",
+    "https://t.me/finam_invest/5993",
+    "https://t.me/bitkogan/29588",
+    "https://tass.ru/armiya-i-opk/28335533",
+    "https://t.me/whale_alert_io/105156",
+    "https://www.kommersant.ru/doc/9127087",
+    "https://t.me/WatcherGuru/16235",
+    "https://t.me/nainspire/5754",
+    "https://tass.ru/sport/28342219",
+    "https://www.vedomosti.ru/politics/news/2026/11/21/1413970-udarila-soveschaniya",
+    "https://t.me/interfaxonline/81970",
+    "https://t.me/forbesrussia/103298",
+    "https://www.kommersant.ru/doc/9127084",
+    "https://t.me/whale_alert_io/105155",
+    "https://t.me/markettwits/394326",
+    "https://tass.ru/sport/28342215",
+    "https://cointelegraph.com/news/ecb-tokenized-deposits-securities-experiments-appia?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://thedefiant.io/news/security/chainflip-halts-swaps-over-potential-vault-exploit",
+    "https://tass.ru/obschestvo/28342211",
+    "https://t.me/headlines_for_traders/89205",
+    "https://t.me/rbc_news/161146",
+    "https://tass.ru/obschestvo/28342209",
+    "https://t.me/forklog/50768",
+    "https://www.interfax.ru/culture/1130566",
+    "https://tass.ru/politika/28342199",
+    "https://t.me/cointelegraph/73428",
+    "https://www.vedomosti.ru/investments/news/2026/11/21/1413968-bitkoin-minimuma",
+    "https://tass.ru/proisshestviya/28342205",
+    "https://tass.ru/proisshestviya/28342203",
+    "https://tass.ru/sport/28342201",
+    "https://t.me/interfaxonline/81969",
+    "https://t.me/agroinvestor/21843",
+    "https://www.vedomosti.ru/politics/news/2026/11/21/1413969-obstrelyan-ormuzskom",
     "https://t.me/markettwits/394325",
     "https://t.me/forbesrussia/103297",
-    "https://www.kommersant.ru/doc/9127074",
-    "https://t.me/rbc_news/161145",
-    "https://www.kommersant.ru/doc/9127070",
-    "https://tass.ru/proisshestviya/28342187",
-    "https://www.interfax.ru/russia/1130568",
-    "https://tass.ru/proisshestviya/28342185",
-    "https://tass.ru/politika/28342189",
-    "https://t.me/whale_alert_io/105154",
-    "https://thedefiant.io/news/defi/aave-voters-back-plan-to-narrow-v3-core-collateral",
-    "https://tass.ru/proisshestviya/28342183",
-    "https://www.kommersant.ru/doc/9127069",
-    "https://www.vedomosti.ru/business/news/2026/11/21/1413966-passazhiri-samoleta",
-    "https://t.me/whale_alert_io/105153",
-    "https://tass.ru/obschestvo/28342165",
-    "https://tass.ru/kultura/28342177",
-    "https://tass.ru/proisshestviya/28342167",
-    "https://t.me/whale_alert_io/105152",
-    "https://tass.ru/armiya-i-opk/28342161",
-    "https://tass.ru/armiya-i-opk/28342159",
-    "https://tass.ru/obschestvo/28341453",
-    "https://t.me/CoinMarketCapAnnouncements/19763",
-    "https://t.me/markettwits/394324",
-    "https://tass.ru/armiya-i-opk/28342157",
-    "https://tass.ru/obschestvo/28342151",
-    "https://t.me/banksta/105895",
-    "https://t.me/minfin/9516",
-    "https://t.me/headlines_for_traders/89204",
-    "https://t.me/rosstat_official/4092",
-    "https://tass.ru/proisshestviya/28342155",
-    "https://tass.ru/mezhdunarodnaya-panorama/28342153",
-    "https://tass.ru/proisshestviya/28342145",
-    "https://t.me/SberInvestments/13346",
-    "https://t.me/Metals_Mining/23938",
-    "https://tass.ru/obschestvo/28342143",
-    "https://www.vedomosti.ru/society/news/2026/11/21/1413964-normu-sna",
-    "https://tass.ru/obschestvo/28341015",
-    "https://www.interfax.ru/russia/1130567"
+    "https://www.interfax.ru/russia/1130570",
+    "https://www.interfax.ru/russia/1130569",
+    "https://www.kommersant.ru/doc/9127074"
   ],
   "ai_dead": {
     "date": "2026-11-21",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-20T11:00:55.245168+00:00",
-      "Генслер предупредил о риске рецессии в США из-за ИИ-пузыря"
-    ],
-    [
-      "2026-11-20T11:00:55.245168+00:00",
-      "КЛВЗ «Кристалл» допустил технические дефолты по двум выпускам облигаций"
-    ],
-    [
-      "2026-11-20T11:00:55.245168+00:00",
-      "Coinbase планирует запустить собственную платформу прогнозов в 2027 году"
-    ],
-    [
-      "2026-11-20T11:00:55.245168+00:00",
-      "В России с 1 марта 2027 года введут обязательную маркировку зарубежных звонков"
-    ],
-    [
-      "2026-11-20T11:30:54.791118+00:00",
-      "Индекс опережающих индикаторов США (LEI) снизился до 99,3 пункта в октябре"
-    ],
     [
       "2026-11-20T11:30:54.791118+00:00",
       "Гонконгский индекс Hang Seng TECH расширит состав до 50 компаний"
@@ -1885,6 +1865,26 @@
     [
       "2026-11-21T09:31:08.073236+00:00",
       "ВСУ за сутки потеряли около 1 185 военных в зоне СВО"
+    ],
+    [
+      "2026-11-21T10:00:59.181724+00:00",
+      "Обернутый Monero обвалился на 99,8% после взлома сервиса"
+    ],
+    [
+      "2026-11-21T10:00:59.181724+00:00",
+      "ЕЦБ ищет партнеров для тестирования токенизированных активов"
+    ],
+    [
+      "2026-11-21T10:00:59.181724+00:00",
+      "Второй танкер за сутки обстрелян в Ормузском проливе"
+    ],
+    [
+      "2026-11-21T10:00:59.181724+00:00",
+      "Индекс МосБиржи за неделю снизился на 6,8%"
+    ],
+    [
+      "2026-11-21T10:00:59.181724+00:00",
+      "Минобороны РФ отчиталось об ударе по совещанию военных ВСУ"
     ]
   ],
   "results_fp": [
@@ -1971,9 +1971,9 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-21T04:31:06.820963+00:00",
-    "Коммерсантъ": "2026-11-21T09:31:08.073236+00:00",
-    "Ведомости": "2026-11-21T09:00:58.444887+00:00",
-    "Интерфакс": "2026-11-21T09:31:08.073236+00:00",
+    "Коммерсантъ": "2026-11-21T10:00:59.181724+00:00",
+    "Ведомости": "2026-11-21T10:00:59.181724+00:00",
+    "Интерфакс": "2026-11-21T10:00:59.181724+00:00",
     "ТАСС": "2026-11-21T09:31:08.073236+00:00",
     "CoinDesk": "2026-11-21T06:00:56.410798+00:00",
     "Headlines for Traders": "2026-11-21T07:00:54.949343+00:00",
@@ -1989,9 +1989,9 @@
     "Energy Today": "2026-11-21T07:00:54.949343+00:00",
     "Forbes Russia": "2026-11-20T14:30:57.581325+00:00",
     "Frank Media": "2026-11-20T18:01:12.230720+00:00",
-    "ForkLog": "2026-11-20T17:30:55.759936+00:00",
+    "ForkLog": "2026-11-21T10:00:59.181724+00:00",
     "Decrypt": "2026-11-21T04:31:06.820963+00:00",
-    "Cointelegraph": "2026-11-21T08:00:57.052014+00:00",
+    "Cointelegraph": "2026-11-21T10:00:59.181724+00:00",
     "CoinMarketCap": "2026-11-20T10:00:55.143241+00:00",
     "СберИнвестиции": "2026-11-20T16:31:01.250078+00:00",
     "РБК Крипто": "2026-11-21T08:30:55.175929+00:00",
@@ -2000,7 +2000,7 @@
     "Московская биржа": "2026-11-20T04:30:55.460099+00:00",
     "MarketWatch": "2026-11-21T04:31:06.820963+00:00",
     "Bitcoin Magazine": "2026-11-21T04:31:06.820963+00:00",
-    "Watcher Guru": "2026-11-21T05:00:55.930547+00:00",
+    "Watcher Guru": "2026-11-21T10:00:59.181724+00:00",
     "РБК. Главное": "2026-11-21T09:31:08.073236+00:00",
     "The Block": "2026-11-21T04:31:06.820963+00:00",
     "Нефть и Капитал": "2026-11-21T07:30:55.756951+00:00",
@@ -2052,7 +2052,7 @@
     "Росстат": "2026-11-14T16:30:56.201734+00:00",
     "Коненков": "2026-11-10T12:01:01.611762+00:00",
     "CNBC Economy": "2026-11-18T08:30:55.433367+00:00",
-    "Финам Инвестиции": "2026-11-11T09:00:57.157463+00:00",
+    "Финам Инвестиции": "2026-11-21T10:00:59.181724+00:00",
     "Coin Post": "2026-11-19T18:00:59.340954+00:00",
     "CryptoQuant": "2026-11-11T04:30:59.566643+00:00",
     "пост в X": "2026-11-20T16:31:01.250078+00:00",
@@ -2100,7 +2100,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-21T09:31:08+00:00",
-  "own_hour": "2026-11-21 12",
+  "catalog_at": "2026-11-21T10:00:59+00:00",
+  "own_hour": "2026-11-21 13",
   "digest_alert": "2026-11-10 19:30"
 }
