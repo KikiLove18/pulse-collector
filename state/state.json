@@ -1208,69 +1208,76 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-21T08:30:55.175929+00:00",
+  "breaking_ts": "2026-11-21T09:00:58.444887+00:00",
   "news_now": {
     "day": "2026-11-21",
-    "day_count": 1,
+    "day_count": 2,
     "urgent_count": 1,
-    "last": "2026-11-21T08:00:57.052014+00:00",
+    "last": "2026-11-21T09:00:58.444887+00:00",
     "titles": [
       "Криптовалюты обвалились: биткоин ниже $57 000",
-      "Массированная атака БПЛА на Ленинградскую область"
+      "Массированная атака БПЛА на Ленинградскую область",
+      "Ликвидации на крипторынке превысили $2,55 млрд на фоне падения биткоина"
     ]
   },
   "news_seen": [
+    "https://t.me/SberInvestments/13346",
+    "https://www.rbc.ru/sport/20/11/2026/6afff99294dbd6972af786b3",
+    "https://t.me/Metals_Mining/23938",
+    "https://tass.ru/obschestvo/28342143",
+    "https://www.vedomosti.ru/society/news/2026/11/21/1413964-normu-sna",
+    "https://tass.ru/obschestvo/28341015",
+    "https://tass.ru/obschestvo/28342137",
+    "https://tass.ru/ekonomika/28342141",
+    "https://t.me/rbc_news/161144",
+    "https://tass.ru/ekonomika/28342135",
+    "https://tass.ru/sport/28342139",
+    "https://www.rbc.ru/rbcfreenews/699eda349a7947fc1402c0ce",
+    "https://t.me/markettwits/394323",
+    "https://tass.ru/obschestvo/28342133",
+    "https://tass.ru/obschestvo/28340603",
+    "https://tass.ru/politika/28342117",
+    "https://www.kommersant.ru/doc/9127058",
+    "https://www.rbc.ru/sport/13/11/2026/6af7371fd09c06b2eb22c9b8",
+    "https://tass.ru/obschestvo/28342129",
+    "https://tass.ru/sport/28342127",
+    "https://tass.ru/sport/28342119",
+    "https://t.me/FinancialJuice/149158",
+    "https://t.me/FinancialJuice/149157",
+    "https://t.me/FinancialJuice/149156",
+    "https://t.me/FinancialJuice/149155",
+    "https://t.me/FinancialJuice/149154",
+    "https://tass.ru/armiya-i-opk/28342125",
+    "https://t.me/interfaxonline/81968",
+    "https://www.interfax.ru/russia/1130565",
+    "https://tass.ru/politika/28342111",
+    "https://www.rbc.ru/rbcfreenews/6aecaff8b2becba06fa6162b",
+    "https://tass.ru/proisshestviya/28342115",
+    "https://tass.ru/proisshestviya/28342113",
+    "https://t.me/headlines_for_traders/89203",
+    "https://tass.ru/obschestvo/28342105",
+    "https://www.kommersant.ru/doc/9127055",
+    "https://www.vedomosti.ru/politics/news/2026/11/21/1413963-tramp-raskril",
+    "https://t.me/whale_alert_io/105151",
+    "https://www.interfax.ru/russia/1130564",
+    "https://www.rbc.ru/rbcfreenews/6accfd27a07c21bd383d3d79",
+    "https://tass.ru/proisshestviya/28342109",
+    "https://t.me/forbesrussia/103296",
+    "https://t.me/government_rus/34323",
+    "https://t.me/incrypted/33396",
+    "https://tass.ru/armiya-i-opk/28342103",
+    "https://t.me/cbonds/26479",
+    "https://tass.ru/obschestvo/28342093",
     "https://cryptoslate.com/binance-can-hold-mexc-deposits-even-after-the-blockchain-clears-them/",
     "https://t.me/bitkogan/29583",
     "https://tass.ru/proisshestviya/28342099",
-    "https://t.me/bitkogan_hotline/28359",
-    "https://tass.ru/armiya-i-opk/28342097",
-    "https://tass.ru/proisshestviya/28342091",
-    "https://t.me/RBCCrypto/23928",
-    "https://tass.ru/obschestvo/28342071",
-    "https://tass.ru/obschestvo/28342089",
-    "https://t.me/forklog/50767",
-    "https://tass.ru/proisshestviya/28342085",
-    "https://www.kommersant.ru/doc/9127050",
-    "https://tass.ru/ekonomika/28342087",
-    "https://t.me/FinancialJuice/149153",
-    "https://tass.ru/proisshestviya/28342081",
-    "https://www.rbc.ru/sport/31/07/2026/6a6cb99c9a7947fb365fa732",
-    "https://tass.ru/obschestvo/28342079",
-    "https://tass.ru/obschestvo/28342039",
-    "https://www.rbc.ru/technology_and_media/21/11/2026/6b010023280c57227fec8a48",
-    "https://t.me/headlines_for_traders/89202",
-    "https://www.rbc.ru/quote/18/11/2026/6afd833634567f786de81fcb",
-    "https://tass.ru/obschestvo/28341859",
-    "https://t.me/banksta/105894",
-    "https://tass.ru/sport/28342077",
-    "https://tass.ru/proisshestviya/28342075",
-    "https://www.interfax.ru/russia/1130563",
-    "https://t.me/forbesrussia/103295",
-    "https://www.vedomosti.ru/technology/news/2026/11/21/1413960-gta-implantom",
-    "https://www.kommersant.ru/doc/9127042",
-    "https://t.me/invest_zonaa/39527",
-    "https://www.rbc.ru/business/19/11/2026/6afe85bb87af1c6e0646fd32",
-    "https://www.kommersant.ru/doc/9127044",
-    "https://tass.ru/armiya-i-opk/28342069"
+    "https://t.me/bitkogan_hotline/28359"
   ],
   "ai_dead": {
     "date": "2026-11-21",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-20T10:00:55.143241+00:00",
-      "Выручка МТС выросла на 8,7% за девять месяцев 2026 года"
-    ],
-    [
-      "2026-11-20T10:00:55.143241+00:00",
-      "MoonPay подала заявку на получение банковской лицензии в США"
-    ],
-    [
-      "2026-11-20T10:00:55.143241+00:00",
-      "Доходность участников IPO ДОМ.РФ превысила 35% за год"
-    ],
     [
       "2026-11-20T10:30:59.035018+00:00",
       "Эстония закроет все автомобильные погранпереходы с Россией с 1 декабря"
@@ -1870,6 +1877,26 @@
     [
       "2026-11-21T08:30:55.175929+00:00",
       "Binance задерживает зачисление депозитов с MEXC для проверки"
+    ],
+    [
+      "2026-11-21T09:00:58.444887+00:00",
+      "Ликвидации на рынке криптовалют превысили $2,55 млрд из-за падения биткоина"
+    ],
+    [
+      "2026-11-21T09:00:58.444887+00:00",
+      "Индекс МосБиржи теряет около 2% в начале торгов выходного дня"
+    ],
+    [
+      "2026-11-21T09:00:58.444887+00:00",
+      "Средняя зарплата в России выросла на 12% и превысила 103 000 рублей"
+    ],
+    [
+      "2026-11-21T09:00:58.444887+00:00",
+      "Трамп обсудил с Си Цзиньпином увольнение Дженсена Хуанга из Nvidia"
+    ],
+    [
+      "2026-11-21T09:00:58.444887+00:00",
+      "ВОЗ предупредила о риске распространения «супербактерии» в Европе"
     ]
   ],
   "results_fp": [
@@ -1956,16 +1983,16 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-21T04:31:06.820963+00:00",
-    "Коммерсантъ": "2026-11-21T08:00:57.052014+00:00",
-    "Ведомости": "2026-11-21T08:30:55.175929+00:00",
+    "Коммерсантъ": "2026-11-21T09:00:58.444887+00:00",
+    "Ведомости": "2026-11-21T09:00:58.444887+00:00",
     "Интерфакс": "2026-11-21T08:00:57.052014+00:00",
-    "ТАСС": "2026-11-21T08:00:57.052014+00:00",
+    "ТАСС": "2026-11-21T09:00:58.444887+00:00",
     "CoinDesk": "2026-11-21T06:00:56.410798+00:00",
     "Headlines for Traders": "2026-11-21T07:00:54.949343+00:00",
     "MarketTwits": "2026-11-20T20:30:58.870659+00:00",
     "Сигналы РЦБ": "2026-11-20T20:30:58.870659+00:00",
     "Whale Alert": "2026-11-21T07:00:54.949343+00:00",
-    "РБК": "2026-11-21T08:30:55.175929+00:00",
+    "РБК": "2026-11-21T09:00:58.444887+00:00",
     "Wu Blockchain": "2026-11-21T04:31:06.820963+00:00",
     "Банкста": "2026-11-21T08:00:57.052014+00:00",
     "IF News": "2026-11-21T07:30:55.756951+00:00",
@@ -2013,12 +2040,12 @@
     "Прайм": "2026-11-10T04:30:58.582529+00:00",
     "Хедлайнеры": "2026-11-12T10:01:00.442135+00:00",
     "Т-Инвестиции": "2026-11-20T05:30:55.304919+00:00",
-    "bitkogan HOTLINE": "2026-11-21T07:30:55.756951+00:00",
+    "bitkogan HOTLINE": "2026-11-21T09:00:58.444887+00:00",
     "Металл и Минерал": "2026-11-21T07:30:55.756951+00:00",
     "Эксперт": "2026-11-20T17:00:55.759846+00:00",
     "БКС Экспресс": "2026-11-21T04:31:06.820963+00:00",
     "Proeconomics": "2026-11-17T19:30:59.296425+00:00",
-    "Incrypted": "2026-11-21T07:30:55.756951+00:00",
+    "Incrypted": "2026-11-21T09:00:58.444887+00:00",
     "Смарт-лаб": "2026-11-20T16:00:57.191555+00:00",
     "EIA Today in Energy": "2026-11-12T14:30:56.851698+00:00",
     "BWEnews": "2026-11-20T06:30:55.227002+00:00",
@@ -2085,7 +2112,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-21T08:30:55+00:00",
-  "own_hour": "2026-11-21 11",
+  "catalog_at": "2026-11-21T09:00:58+00:00",
+  "own_hour": "2026-11-21 12",
   "digest_alert": "2026-11-10 19:30"
 }
