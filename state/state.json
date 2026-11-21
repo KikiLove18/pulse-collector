@@ -1208,7 +1208,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-21T17:00:56.273245+00:00",
+  "breaking_ts": "2026-11-21T17:31:02.628943+00:00",
   "news_now": {
     "day": "2026-11-21",
     "day_count": 5,
@@ -1224,97 +1224,35 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/ural-news/28342779",
+    "https://tass.ru/mezhdunarodnaya-panorama/28342777",
+    "https://t.me/banksta/105911",
+    "https://www.kommersant.ru/doc/9127200",
+    "https://tass.ru/obschestvo/28342771",
+    "https://tass.ru/proisshestviya/28342769",
+    "https://tass.ru/obschestvo/28342765",
+    "https://tass.ru/mezhdunarodnaya-panorama/28342763",
+    "https://thedefiant.io/frontier/ai/lean-groups-certify-claude-assisted-riemann-proof",
+    "https://tass.ru/mezhdunarodnaya-panorama/28342761",
+    "https://tass.ru/sport/28342759",
+    "https://tass.ru/obschestvo/28342755",
+    "https://tass.ru/sport/28342757",
+    "https://t.me/whale_alert_io/105171",
+    "https://tass.ru/obschestvo/28342749",
+    "https://www.vedomosti.ru/politics/news/2026/11/21/1414003-k-hakerskoi-atake",
+    "https://tass.ru/mezhdunarodnaya-panorama/28342751",
+    "https://t.me/whale_alert_io/105170",
+    "https://www.kommersant.ru/doc/9127196",
+    "https://decrypt.co/383752/fraudsters-fake-crypto-exchanges-steal-37-million-sec",
+    "https://www.wsj.com/personal-finance/retirement/retire-in-thailand-6853f4a7?mod=rss_markets_main",
     "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html",
-    "https://t.me/banksta/105910",
-    "https://t.me/FinancialJuice/149187",
-    "https://www.interfax.ru/russia/1130603",
-    "https://t.me/FinancialJuice/149186",
-    "https://tass.ru/proisshestviya/28342745",
-    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
-    "https://t.me/interfaxonline/81981",
-    "https://www.interfax.ru/russia/1130604",
-    "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
-    "https://www.marketwatch.com/story/im-sick-of-flying-i-paid-for-priority-boarding-but-the-overhead-bins-were-full-was-i-duped-0badcc80?mod=mw_rss_topstories",
-    "https://www.interfax.ru/world/1130605",
-    "https://tass.ru/mezhdunarodnaya-panorama/28342743",
-    "https://t.me/coinpost/4321",
-    "https://t.me/rbc_news/161163",
-    "https://www.interfax.ru/moscow/1130602",
-    "https://tass.ru/mezhdunarodnaya-panorama/28342741",
-    "https://t.me/CoinDeskGlobal/25582",
-    "https://www.kommersant.ru/doc/9127193",
-    "https://www.coindesk.com/business/2026/11/21/cross-chain-protocol-chainflip-s-flip-tanks-30-after-suspected-usd4-86-million-vault-drain",
-    "https://www.rbc.ru/politics/13/10/2026/6ace97a5d2ead36224bc1792",
-    "https://t.me/whale_alert_io/105169",
-    "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
-    "https://t.me/interfaxonline/81980",
-    "https://cryptoslate.com/a-bitcoin-drop-toward-53000-could-put-240-million-in-collateral-at-risk/",
-    "https://www.interfax.ru/russia/1130601",
-    "https://www.vedomosti.ru/lifestyle/news/2026/11/21/1414000-umer-paolo-bulgari",
-    "https://gcaptain.com/russian-military-linked-cargo-ship-burns-after-suspected-drone-strike-in-gulf-of-finland/",
-    "https://t.me/agroinvestor/21845",
-    "https://t.me/energytodaygroup/32825",
-    "https://t.me/oil_capital/27053",
-    "https://tass.ru/proisshestviya/28342737",
-    "https://tass.ru/ekonomika/28342733",
-    "https://t.me/banksta/105909",
-    "https://www.rbc.ru/rbcfreenews/6b01925933f2cdc46fcd92b5",
-    "https://tass.ru/sport/28342735",
-    "https://t.me/wublockchainenglish/26908",
-    "https://tass.ru/sport/28342731",
-    "https://www.rbc.ru/sport/20/11/2026/6afee7f18a838ddce93a069c",
-    "https://www.sport-interfax.ru/1130600",
-    "https://www.rbc.ru/politics/13/07/2026/6a5456cf9a79479358baaac9",
-    "https://tass.ru/proisshestviya/28342721",
-    "https://tass.ru/proisshestviya/28342729",
-    "https://tass.ru/proisshestviya/28342727",
-    "https://www.kommersant.ru/doc/9127190",
-    "https://tass.ru/sport/28342725",
-    "https://tass.ru/proisshestviya/28342719",
-    "https://t.me/rbc_news/161162",
-    "https://tass.ru/sport/28342723",
-    "https://t.me/energytodaygroup/32824",
-    "https://tass.ru/proisshestviya/28342717",
-    "https://www.rbc.ru/politics/21/11/2026/6b01c3dd5a21a81371017675",
-    "https://www.sport-interfax.ru/1130599",
-    "https://www.rbc.ru/rbcfreenews/6af8d7dc288c43bfcc421fe6",
-    "https://tass.ru/mezhdunarodnaya-panorama/28342713",
-    "https://tass.ru/ekonomika/28342715",
-    "https://tass.ru/mezhdunarodnaya-panorama/28342709",
-    "https://www.rbc.ru/politics/21/11/2026/6b01c2a35a21a81371017673",
-    "https://tass.ru/sport/28342707",
-    "https://www.kommersant.ru/doc/9127188",
-    "https://t.me/FinancialJuice/149185",
-    "https://www.rbc.ru/sport/20/11/2026/6b0087b22e3b996defd56d27",
-    "https://www.vedomosti.ru/politics/news/2026/11/21/1414001-armiya-rossii-porazila",
-    "https://t.me/headlines_for_traders/89217",
-    "https://t.me/headlines_for_traders/89216",
-    "https://t.me/CoinMarketCapAnnouncements/19766",
-    "https://t.me/headlines_for_traders/89215",
-    "https://t.me/FinancialJuice/149184",
-    "https://t.me/incrypted/33400"
+    "https://t.me/banksta/105910"
   ],
   "ai_dead": {
     "date": "2026-11-21",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-20T18:01:12.230720+00:00",
-      "Акции Anthropic упали на 12% на второй день после IPO"
-    ],
-    [
-      "2026-11-20T18:01:12.230720+00:00",
-      "Трамп пригрозил огромными налогами за строительство дата-центров за рубежом"
-    ],
-    [
-      "2026-11-20T18:01:12.230720+00:00",
-      "Токен Wrapped Monero обвалился на 99% после взлома на $13 млн"
-    ],
-    [
-      "2026-11-20T18:01:12.230720+00:00",
-      "МГКЛ допустил третий дефолт по облигациям"
-    ],
     [
       "2026-11-20T18:01:12.230720+00:00",
       "В ЕАО построят газоперерабатывающий комплекс за 74,7 млрд рублей"
@@ -1914,6 +1852,10 @@
     [
       "2026-11-21T17:00:56.273245+00:00",
       "Индекс МосБиржи снизился на 1,20% по итогам торговой сессии"
+    ],
+    [
+      "2026-11-21T17:31:02.628943+00:00",
+      "SEC: мошенники украли более $37 млн через поддельные криптоплатформы"
     ]
   ],
   "results_fp": [
@@ -2008,7 +1950,7 @@
     "Headlines for Traders": "2026-11-21T17:00:56.273245+00:00",
     "MarketTwits": "2026-11-21T09:31:08.073236+00:00",
     "Сигналы РЦБ": "2026-11-20T20:30:58.870659+00:00",
-    "Whale Alert": "2026-11-21T13:30:54.685245+00:00",
+    "Whale Alert": "2026-11-21T17:31:02.628943+00:00",
     "РБК": "2026-11-21T17:00:56.273245+00:00",
     "Wu Blockchain": "2026-11-21T16:30:59.023749+00:00",
     "Банкста": "2026-11-21T16:30:59.023749+00:00",
@@ -2019,7 +1961,7 @@
     "Forbes Russia": "2026-11-21T14:00:55.580682+00:00",
     "Frank Media": "2026-11-21T10:30:58.464411+00:00",
     "ForkLog": "2026-11-21T14:30:57.458719+00:00",
-    "Decrypt": "2026-11-21T14:30:57.458719+00:00",
+    "Decrypt": "2026-11-21T17:31:02.628943+00:00",
     "Cointelegraph": "2026-11-21T16:30:59.023749+00:00",
     "CoinMarketCap": "2026-11-21T16:30:59.023749+00:00",
     "СберИнвестиции": "2026-11-20T16:31:01.250078+00:00",
@@ -2129,7 +2071,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-21T17:00:56+00:00",
+  "catalog_at": "2026-11-21T17:31:02+00:00",
   "own_hour": "2026-11-21 20",
   "digest_alert": "2026-11-10 19:30"
 }
