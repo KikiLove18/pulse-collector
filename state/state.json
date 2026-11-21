@@ -1208,90 +1208,74 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-21T04:00:54.882466+00:00",
+  "breaking_ts": "2026-11-21T05:00:55.930547+00:00",
   "news_now": {
     "day": "2026-11-21",
     "day_count": 0,
-    "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "urgent_count": 1,
+    "last": "2026-11-21T05:00:55.930547+00:00",
+    "titles": [
+      "Криптовалюты обвалились: биткоин ниже $57 000"
+    ]
   },
   "news_seen": [
-    "https://t.me/headlines_for_traders/89181",
-    "https://tass.ru/mezhdunarodnaya-panorama/28341757",
-    "https://tass.ru/mezhdunarodnaya-panorama/28341761",
-    "https://tass.ru/sport/28341763",
-    "https://www.kommersant.ru/doc/9126985",
-    "https://tass.ru/proisshestviya/28341755",
-    "https://tass.ru/mezhdunarodnaya-panorama/28341753",
-    "https://tass.ru/ekonomika/28341749",
-    "https://tass.ru/proisshestviya/28341751",
-    "https://thedefiant.io/news/markets/bitcoin-falls-below-57-000-to-two-year-low-on-coinbase",
-    "https://t.me/whale_alert_io/105144",
-    "https://tass.ru/ekonomika/28341741",
-    "https://tass.ru/mezhdunarodnaya-panorama/28341745",
-    "https://t.me/whale_alert_io/105143",
-    "https://tass.ru/kultura/28341743",
-    "https://t.me/WatcherGuru/16230",
-    "https://tass.ru/mezhdunarodnaya-panorama/28341725",
-    "https://tass.ru/obschestvo/28341733",
-    "https://www.interfax.ru/world/1130547",
-    "https://tass.ru/armiya-i-opk/28341727",
-    "https://www.rbc.ru/politics/29/07/2026/6a6988759a7947c50b702977",
-    "https://tass.ru/obschestvo/28341723",
-    "https://tass.ru/armiya-i-opk/28341731",
-    "https://tass.ru/armiya-i-opk/28341729",
-    "https://www.kommersant.ru/doc/9126984",
-    "https://www.interfax.ru/world/1130546",
-    "https://t.me/interfaxonline/81962",
-    "https://www.interfax.ru/russia/1130545",
-    "https://www.kommersant.ru/doc/9126983",
-    "https://www.rbc.ru/rbcfreenews/6afd8a6752ca4bd8a0f2fdd9",
-    "https://tass.ru/obschestvo/28341717",
-    "https://tass.ru/obschestvo/28341719",
-    "https://tass.ru/ekonomika/28341715",
-    "https://www.marketwatch.com/story/why-are-these-tech-outages-rattling-americans-so-much-that-theyre-stockpiling-cash-and-supplies-07516bdd?mod=mw_rss_topstories",
-    "https://tass.ru/mezhdunarodnaya-panorama/28341711",
-    "https://tass.ru/mezhdunarodnaya-panorama/28341705",
-    "https://tass.ru/obschestvo/28341679",
-    "https://tass.ru/obschestvo/28341709",
-    "https://tass.ru/obschestvo/28341703",
-    "https://tass.ru/obschestvo/28341707",
-    "https://t.me/headlines_for_traders/89180",
-    "https://t.me/WalterBloomberg/38868",
-    "https://t.me/lookonchainchannel/11199",
-    "https://t.me/whale_alert_io/105142",
-    "https://t.me/WalterBloomberg/38867"
+    "https://thedefiant.io/news/markets/ether-slides-near-1-550-down-about-35-in-four-weeks",
+    "https://tass.ru/politika/28341833",
+    "https://www.vedomosti.ru/politics/news/2026/11/21/1413950-uslovie-vizita",
+    "https://www.rbc.ru/rbcfreenews/6afee9d90bbcbd0cb8c83286",
+    "https://tass.ru/armiya-i-opk/28341831",
+    "https://tass.ru/armiya-i-opk/28341829",
+    "https://tass.ru/armiya-i-opk/28341827",
+    "https://tass.ru/armiya-i-opk/28341825",
+    "https://tass.ru/mezhdunarodnaya-panorama/28341823",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://www.kommersant.ru/doc/9126991",
+    "https://t.me/cointelegraph/73424",
+    "https://t.me/headlines_for_traders/89183",
+    "https://t.me/headlines_for_traders/89184",
+    "https://t.me/headlines_for_traders/89185",
+    "https://tass.ru/obschestvo/28341811",
+    "https://tass.ru/kosmos/28341813",
+    "https://tass.ru/obschestvo/28341809",
+    "https://tass.ru/armiya-i-opk/28341819",
+    "https://tass.ru/politika/28341815",
+    "https://tass.ru/ekonomika/28341807",
+    "https://www.theblock.co/newsletters/the-daily/2026-11-20-jpmorgan-bitcoin-price-drop-miners-senate-passes-death-bets-act-more-crypto-news-444786",
+    "https://t.me/whale_alert_io/105145",
+    "https://www.kommersant.ru/doc/9126990",
+    "https://tass.ru/mezhdunarodnaya-panorama/28341795",
+    "https://www.vedomosti.ru/politics/news/2026/11/21/1413949-leningradskoi-oblasti",
+    "https://tass.ru/obschestvo/28341801",
+    "https://www.rbc.ru/rbcfreenews/6b00fe7690970fd12214d5b5",
+    "https://tass.ru/kultura/28341797",
+    "https://tass.ru/sport/28341799",
+    "https://tass.ru/obschestvo/28341787",
+    "https://t.me/lookonchainchannel/11203",
+    "https://t.me/interfaxonline/81963",
+    "https://tass.ru/obschestvo/28341789",
+    "https://www.interfax.ru/russia/1130549",
+    "https://www.kommersant.ru/doc/9126988",
+    "https://t.me/WatcherGuru/16231",
+    "https://t.me/headlines_for_traders/89182",
+    "https://t.me/CoinDeskGlobal/25578",
+    "https://cryptoslate.com/sky-offers-nearly-30-yield-but-99-96-of-its-lending-vault-is-unavailable-for-immediate-withdrawals/",
+    "https://tass.ru/proisshestviya/28341785",
+    "https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone",
+    "https://tass.ru/nedvizhimost/28341783",
+    "https://tass.ru/nedvizhimost/28341781",
+    "https://tass.ru/obschestvo/28341765",
+    "https://tass.ru/obschestvo/28341767",
+    "https://t.me/wublockchainenglish/26906",
+    "https://tass.ru/mezhdunarodnaya-panorama/28341735",
+    "https://tass.ru/mezhdunarodnaya-panorama/28341777",
+    "https://t.me/lookonchainchannel/11201",
+    "https://www.rbc.ru/sport/19/11/2026/6afd97b02f5eb0e0dbf22dc6"
   ],
   "ai_dead": {
     "date": "2026-11-20",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-20T05:30:55.304919+00:00",
-      "Потребительские цены в Японии в октябре выросли на 2,3%"
-    ],
-    [
-      "2026-11-20T05:30:55.304919+00:00",
-      "Институциональные инвесторы купили криптофонды на $4 млрд в III квартале"
-    ],
-    [
-      "2026-11-20T05:30:55.304919+00:00",
-      "Мосбиржа планирует запустить централизованные торги ЦФА в 2027 году"
-    ],
-    [
-      "2026-11-20T05:30:55.304919+00:00",
-      "Разработчики Ethereum отложили обновление Glamsterdam на январь"
-    ],
-    [
-      "2026-11-20T05:30:55.304919+00:00",
-      "Binance близка к запуску торгов бессрочными фьючерсами в США"
-    ],
-    [
-      "2026-11-20T05:30:55.304919+00:00",
-      "Трамп призвал европейцев и Зеленского заключить сделку с Россией"
-    ],
     [
       "2026-11-20T05:30:55.304919+00:00",
       "Официальные курсы Банка России и котировки сырья на открытии дня"
@@ -1891,6 +1875,30 @@
     [
       "2026-11-21T04:00:54.882466+00:00",
       "Сакс заявил о росте шансов на мирное соглашение по Украине"
+    ],
+    [
+      "2026-11-21T05:00:55.930547+00:00",
+      "Криптовалюты обвалились: биткоин ниже $57 000"
+    ],
+    [
+      "2026-11-21T05:00:55.930547+00:00",
+      "Выручка GTA VI в первый день достигла $3,79 млрд"
+    ],
+    [
+      "2026-11-21T05:00:55.930547+00:00",
+      "Массированная атака БПЛА на Ленинградскую область"
+    ],
+    [
+      "2026-11-21T05:00:55.930547+00:00",
+      "Nasdaq упал на 5,3% за день"
+    ],
+    [
+      "2026-11-21T05:00:55.930547+00:00",
+      "Нефть дешевеет третью неделю подряд"
+    ],
+    [
+      "2026-11-21T05:00:55.930547+00:00",
+      "Вьетнам смягчил уголовный кодекс"
     ]
   ],
   "results_fp": [
@@ -1957,15 +1965,15 @@
     }
   },
   "pro_events": {
-    "day": "2026-11-20",
+    "day": "2026-11-21",
     "count": 1,
     "titles": [
-      "Криптовалютный рынок: ликвидации превысили $1 млрд"
+      "Криптовалюты обвалились: биткоин ниже $57 000"
     ]
   },
   "pro_daily": "2026-11-20",
   "freech_day": "2026-11-20",
-  "pro_auto": "2026-11-20",
+  "pro_auto": "2026-11-21",
   "earn_memo": {
     "NVDA|2026-11-17": {
       "last": "$1.24",
@@ -1977,16 +1985,16 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-21T04:31:06.820963+00:00",
-    "Коммерсантъ": "2026-11-21T04:00:54.882466+00:00",
-    "Ведомости": "2026-11-20T15:00:57.843515+00:00",
-    "Интерфакс": "2026-11-21T04:31:06.820963+00:00",
-    "ТАСС": "2026-11-21T04:00:54.882466+00:00",
-    "CoinDesk": "2026-11-20T16:31:01.250078+00:00",
-    "Headlines for Traders": "2026-11-21T04:00:54.882466+00:00",
+    "Коммерсантъ": "2026-11-21T05:00:55.930547+00:00",
+    "Ведомости": "2026-11-21T05:00:55.930547+00:00",
+    "Интерфакс": "2026-11-21T05:00:55.930547+00:00",
+    "ТАСС": "2026-11-21T05:00:55.930547+00:00",
+    "CoinDesk": "2026-11-21T05:00:55.930547+00:00",
+    "Headlines for Traders": "2026-11-21T05:00:55.930547+00:00",
     "MarketTwits": "2026-11-20T20:30:58.870659+00:00",
     "Сигналы РЦБ": "2026-11-20T20:30:58.870659+00:00",
     "Whale Alert": "2026-11-21T04:00:54.882466+00:00",
-    "РБК": "2026-11-21T04:00:54.882466+00:00",
+    "РБК": "2026-11-21T05:00:55.930547+00:00",
     "Wu Blockchain": "2026-11-21T04:31:06.820963+00:00",
     "Банкста": "2026-11-20T20:00:58.936341+00:00",
     "IF News": "2026-11-21T04:31:06.820963+00:00",
@@ -2006,7 +2014,7 @@
     "Московская биржа": "2026-11-20T04:30:55.460099+00:00",
     "MarketWatch": "2026-11-21T04:31:06.820963+00:00",
     "Bitcoin Magazine": "2026-11-21T04:31:06.820963+00:00",
-    "Watcher Guru": "2026-11-21T04:31:06.820963+00:00",
+    "Watcher Guru": "2026-11-21T05:00:55.930547+00:00",
     "РБК. Главное": "2026-11-20T19:00:57.945977+00:00",
     "The Block": "2026-11-21T04:31:06.820963+00:00",
     "Нефть и Капитал": "2026-11-19T12:31:05.477337+00:00",
@@ -2015,10 +2023,10 @@
     "Cbonds": "2026-11-21T04:31:06.820963+00:00",
     "WSJ Markets": "2026-11-21T04:31:06.820963+00:00",
     "WSJ Economy": "2026-11-21T04:31:06.820963+00:00",
-    "The Defiant": "2026-11-21T04:00:54.882466+00:00",
+    "The Defiant": "2026-11-21T05:00:55.930547+00:00",
     "WSJ": "2026-11-19T16:30:55.910295+00:00",
     "Bitcoin Magazine Telegram": "2026-11-19T16:30:55.910295+00:00",
-    "Lookonchain": "2026-11-21T04:00:54.882466+00:00",
+    "Lookonchain": "2026-11-21T05:00:55.930547+00:00",
     "Банк России": "2026-11-20T07:30:57.761076+00:00",
     "InvestFuture": "2026-11-21T04:31:06.820963+00:00",
     "Rigzone": "2026-11-20T16:31:01.250078+00:00",
@@ -2106,7 +2114,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-21T04:31:06+00:00",
-  "own_hour": "2026-11-20 21",
+  "catalog_at": "2026-11-21T05:00:55+00:00",
+  "own_hour": "2026-11-21 08",
   "digest_alert": "2026-11-10 19:30"
 }
