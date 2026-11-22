@@ -800,7 +800,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-22T20:00:54.697855+00:00",
+  "breaking_ts": "2026-11-22T20:31:02.112593+00:00",
   "news_now": {
     "day": "2026-11-22",
     "day_count": 3,
@@ -813,75 +813,44 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/sport/28344133",
+    "https://t.me/markettwits/394361",
+    "https://tass.ru/mezhdunarodnaya-panorama/28344131",
+    "https://www.marketwatch.com/story/social-security-should-be-shut-down-this-republican-senator-says-8f7fef81?mod=mw_rss_topstories",
+    "https://tass.ru/ekonomika/28344129",
+    "https://tass.ru/ekonomika/28344127",
+    "https://t.me/markettwits/394360",
+    "https://www.interfax.ru/world/1130699",
+    "https://t.me/markettwits/394359",
+    "https://tass.ru/proisshestviya/28344125",
+    "https://www.sport-interfax.ru/1130698",
+    "https://www.kommersant.ru/doc/9127554",
+    "https://t.me/rbc_news/161206",
+    "https://tass.ru/sport/28344123",
+    "https://t.me/konenkov_official/1686",
+    "https://tass.ru/proisshestviya/28344119",
+    "https://thedefiant.io/news/hacks/fusionist-urges-ace-trading-pause-after-exploit-alert",
+    "https://tass.ru/proisshestviya/28344121",
+    "https://t.me/rbc_news/161205",
+    "https://tass.ru/sport/28344117",
+    "https://cryptoslate.com/ai-just-exposed-a-major-weakness-in-anonymous-peer-reviews/",
+    "https://tass.ru/nauka/28344097",
+    "https://tass.ru/obschestvo/28344115",
+    "https://www.interfax.ru/moscow/1130697",
+    "https://t.me/banksta/105956",
+    "https://t.me/markettwits/394358",
+    "https://thedefiant.io/converge/tradfi-and-fintech/okxice-s-latest-launch-notice-lists-six-stock-tokens",
     "https://oilprice.com/Energy/Energy-General/Californias-Wildfire-Crisis-Is-Threatening-Its-Energy-Future.html",
-    "https://www.rbc.ru/rbcfreenews/6a639c7d9a7947b2d946beff",
     "https://tass.ru/sport/28344113",
     "https://tass.ru/proisshestviya/28344111",
     "https://www.kommersant.ru/doc/9127553",
-    "https://t.me/rbc_news/161204",
-    "https://tass.ru/mezhdunarodnaya-panorama/28344109",
-    "https://t.me/expert_mag/11517",
-    "https://www.rbc.ru/society/10/11/2026/6af2f556b84c27b3021f5654",
-    "https://www.interfax.ru/russia/1130696",
-    "https://tass.ru/mezhdunarodnaya-panorama/28344105",
-    "https://t.me/markettwits/394357",
-    "https://t.me/interfaxonline/82005",
-    "https://www.rbc.ru/rbcfreenews/6b019772fe72a4dc1cc1d4d2",
-    "https://www.rbc.ru/sport/22/11/2026/6b02e3f462a2fc82ba8b85b2",
-    "https://tass.ru/mezhdunarodnaya-panorama/28344103",
-    "https://tass.ru/sport/28344107",
-    "https://t.me/WatcherGuru/16253",
-    "https://www.rbc.ru/rbcfreenews/6aff341f514a158775e6322e",
-    "https://t.me/nainspire/5764",
-    "https://tass.ru/mezhdunarodnaya-panorama/28344099",
-    "https://tass.ru/armiya-i-opk/28344095",
-    "https://tass.ru/obschestvo/28344093",
-    "https://www.rbc.ru/photoreport/12/11/2026/6af57bdd8d03c416b7426b49",
-    "https://t.me/interfaxonline/82004",
-    "https://www.vedomosti.ru/politics/news/2026/11/22/1414136-garantii-dolzhni-ubedit",
-    "https://tass.ru/sport/28344101",
-    "https://www.rbc.ru/rbcfreenews/6afc971ab904d649ef22d16f",
-    "https://t.me/markettwits/394356",
-    "https://www.rbc.ru/rbcfreenews/6af7ec28d5ed8db687222bac",
-    "https://t.me/bwenews/16641",
-    "https://t.me/markettwits/394355",
-    "https://www.rbc.ru/sport/01/11/2026/6ae78b0a98193d61caf9e70d",
-    "https://www.coindesk.com/",
-    "https://www.interfax.ru/world/1130695",
-    "https://www.sport-interfax.ru/1130694",
-    "https://www.kommersant.ru/doc/9127551",
-    "https://t.me/banksta/105955",
-    "https://www.rbc.ru/quote/26/10/2026/6adf26ba9a7947714cbf25c2"
+    "https://t.me/rbc_news/161204"
   ],
   "ai_dead": {
     "date": "2026-11-22",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-21T20:30:57.370951+00:00",
-      "Словакия отказалась участвовать в кредите ЕС для Украины"
-    ],
-    [
-      "2026-11-21T20:30:57.370951+00:00",
-      "Трамп предупредил о риске банкротства США из-за долга"
-    ],
-    [
-      "2026-11-21T20:30:57.370951+00:00",
-      "В Конгрессе США призвали объявить импичмент главе Пентагона"
-    ],
-    [
-      "2026-11-22T04:00:55.241560+00:00",
-      "ТАСС: Украине не хватает 800 млн куб. м газа на отопительный сезон"
-    ],
-    [
-      "2026-11-22T05:00:54.581935+00:00",
-      "WSJ: сделки Nvidia зависели от личных договоренностей Хуанга"
-    ],
-    [
-      "2026-11-22T05:00:54.581935+00:00",
-      "Над Воронежской областью уничтожили 23 беспилотника"
-    ],
     [
       "2026-11-22T05:00:54.581935+00:00",
       "Британский пловец пересек Ормузский пролив в зоне конфликта"
@@ -1481,6 +1450,26 @@
     [
       "2026-11-22T20:00:54.697855+00:00",
       "CoreWeave накопила долговые обязательства на $47 млрд"
+    ],
+    [
+      "2026-11-22T20:31:02.112593+00:00",
+      "В России вступило в силу указание ЦБ о биржевой торговле криптовалютами"
+    ],
+    [
+      "2026-11-22T20:31:02.112593+00:00",
+      "Китай снижает маржинальные требования для поддержки фондового рынка"
+    ],
+    [
+      "2026-11-22T20:31:02.112593+00:00",
+      "AP: демократы получили 258 мест в Палате представителей США"
+    ],
+    [
+      "2026-11-22T20:31:02.112593+00:00",
+      "Протокол Fusionist столкнулся с эксплойтом моста на $1,04 млн"
+    ],
+    [
+      "2026-11-22T20:31:02.112593+00:00",
+      "Через Ормузский пролив прошло 114 судов за три дня"
     ]
   ],
   "results_fp": [
@@ -1569,11 +1558,11 @@
     "OilPrice": "2026-11-22T18:01:02.929153+00:00",
     "Коммерсантъ": "2026-11-22T20:00:54.697855+00:00",
     "Ведомости": "2026-11-22T19:30:56.283183+00:00",
-    "Интерфакс": "2026-11-22T20:00:54.697855+00:00",
-    "ТАСС": "2026-11-22T19:30:56.283183+00:00",
+    "Интерфакс": "2026-11-22T20:31:02.112593+00:00",
+    "ТАСС": "2026-11-22T20:31:02.112593+00:00",
     "CoinDesk": "2026-11-22T04:30:54.842014+00:00",
     "Headlines for Traders": "2026-11-22T08:30:54.850462+00:00",
-    "MarketTwits": "2026-11-22T20:00:54.697855+00:00",
+    "MarketTwits": "2026-11-22T20:31:02.112593+00:00",
     "Сигналы РЦБ": "2026-11-20T20:30:58.870659+00:00",
     "Whale Alert": "2026-11-22T09:30:59.611563+00:00",
     "РБК": "2026-11-22T20:00:54.697855+00:00",
@@ -1605,7 +1594,7 @@
     "Cbonds": "2026-11-21T16:30:59.023749+00:00",
     "WSJ Markets": "2026-11-21T04:31:06.820963+00:00",
     "WSJ Economy": "2026-11-21T04:31:06.820963+00:00",
-    "The Defiant": "2026-11-22T14:00:57.327636+00:00",
+    "The Defiant": "2026-11-22T20:31:02.112593+00:00",
     "WSJ": "2026-11-19T16:30:55.910295+00:00",
     "Bitcoin Magazine Telegram": "2026-11-19T16:30:55.910295+00:00",
     "Lookonchain": "2026-11-22T16:30:55.477355+00:00",
@@ -1696,7 +1685,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-22T20:00:54+00:00",
+  "catalog_at": "2026-11-22T20:31:02+00:00",
   "own_hour": "2026-11-22 21",
   "digest_alert": "2026-11-10 19:30"
 }
