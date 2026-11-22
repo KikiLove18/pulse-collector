@@ -800,51 +800,36 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-22T20:31:02.112593+00:00",
+  "breaking_ts": "2026-11-22T21:00:57.704532+00:00",
   "news_now": {
-    "day": "2026-11-22",
-    "day_count": 3,
+    "day": "2026-11-23",
+    "day_count": 0,
     "urgent_count": 0,
-    "last": "2026-11-22T13:30:56.876965+00:00",
-    "titles": [
-      "Индекс Мосбиржи отыгрывает падение",
-      "В России заработали правила биржевых торгов криптовалютами",
-      "Трафик через Ормузский пролив упал на 15% из-за атак на суда"
-    ]
+    "last": "",
+    "titles": []
   },
   "news_seen": [
+    "https://t.me/rbc_news/161207",
+    "https://www.theblock.co/news/ecosystems/2026-11-22-trump-to-host-second-memecoin-dinner-tonight-with-trump-down-99-from-peak-444828",
+    "https://t.me/markettwits/394363",
+    "https://t.me/banksta/105958",
+    "https://www.trumpstruth.org/statuses/43704",
+    "https://www.rbc.ru/rbcfreenews/6b017959cccf1d3a739b3556",
+    "https://t.me/WalterBloomberg/38878",
+    "https://t.me/WalterBloomberg/38877",
+    "https://tass.ru/ekonomika/28344139",
+    "https://t.me/markettwits/394362",
+    "https://www.rbc.ru/politics/22/11/2026/6b0351c40012904afd16541f",
+    "https://www.rbc.ru/politics/17/01/2026/696b45999a7947f768f33165",
+    "https://tass.ru/obschestvo/28344135",
+    "https://www.kommersant.ru/doc/9127556",
+    "https://www.rbc.ru/rbcfreenews/6ad46684baafe814541c75af",
+    "https://t.me/banksta/105957",
+    "https://t.me/cointelegraph/73441",
     "https://tass.ru/sport/28344133",
     "https://t.me/markettwits/394361",
     "https://tass.ru/mezhdunarodnaya-panorama/28344131",
-    "https://www.marketwatch.com/story/social-security-should-be-shut-down-this-republican-senator-says-8f7fef81?mod=mw_rss_topstories",
-    "https://tass.ru/ekonomika/28344129",
-    "https://tass.ru/ekonomika/28344127",
-    "https://t.me/markettwits/394360",
-    "https://www.interfax.ru/world/1130699",
-    "https://t.me/markettwits/394359",
-    "https://tass.ru/proisshestviya/28344125",
-    "https://www.sport-interfax.ru/1130698",
-    "https://www.kommersant.ru/doc/9127554",
-    "https://t.me/rbc_news/161206",
-    "https://tass.ru/sport/28344123",
-    "https://t.me/konenkov_official/1686",
-    "https://tass.ru/proisshestviya/28344119",
-    "https://thedefiant.io/news/hacks/fusionist-urges-ace-trading-pause-after-exploit-alert",
-    "https://tass.ru/proisshestviya/28344121",
-    "https://t.me/rbc_news/161205",
-    "https://tass.ru/sport/28344117",
-    "https://cryptoslate.com/ai-just-exposed-a-major-weakness-in-anonymous-peer-reviews/",
-    "https://tass.ru/nauka/28344097",
-    "https://tass.ru/obschestvo/28344115",
-    "https://www.interfax.ru/moscow/1130697",
-    "https://t.me/banksta/105956",
-    "https://t.me/markettwits/394358",
-    "https://thedefiant.io/converge/tradfi-and-fintech/okxice-s-latest-launch-notice-lists-six-stock-tokens",
-    "https://oilprice.com/Energy/Energy-General/Californias-Wildfire-Crisis-Is-Threatening-Its-Energy-Future.html",
-    "https://tass.ru/sport/28344113",
-    "https://tass.ru/proisshestviya/28344111",
-    "https://www.kommersant.ru/doc/9127553",
-    "https://t.me/rbc_news/161204"
+    "https://www.marketwatch.com/story/social-security-should-be-shut-down-this-republican-senator-says-8f7fef81?mod=mw_rss_topstories"
   ],
   "ai_dead": {
     "date": "2026-11-22",
@@ -1685,7 +1670,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-22T20:31:02+00:00",
+  "catalog_at": "2026-11-22T21:00:57+00:00",
   "own_hour": "2026-11-22 21",
   "digest_alert": "2026-11-10 19:30"
 }
