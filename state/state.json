@@ -90,7 +90,7 @@
   ],
   "last_digest_ts": "2026-11-21T16:30:59.023749+00:00",
   "calendar": {
-    "ts": "2026-11-21T16:01:08.873920+00:00",
+    "ts": "2026-11-22T04:00:55.242739+00:00",
     "data": [
       {
         "title": "BusinessNZ Services Index",
@@ -1208,7 +1208,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-21T21:30:55.135142+00:00",
+  "breaking_ts": "2026-11-22T04:00:55.241560+00:00",
   "news_now": {
     "day": "2026-11-22",
     "day_count": 0,
@@ -1217,84 +1217,41 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/sport/28342997",
-    "https://t.me/FinancialJuice/149207",
-    "https://www.kommersant.ru/doc/9127213",
-    "https://t.me/banksta/105920",
-    "https://t.me/whale_alert_io/105182",
-    "https://t.me/whale_alert_io/105181",
-    "https://tass.ru/obschestvo/28342995",
-    "https://tass.ru/mezhdunarodnaya-panorama/28342993",
-    "https://www.rbc.ru/rbcfreenews/66a780dd9a7947c959032e2b",
-    "https://www.theblock.co/news/regulation/2026-11-21-kalshi-faces-monday-hearing-on-new-york-order-it-says-would-shut-down-its-exchange-nationwide-444813",
-    "https://www.rbc.ru/politics/22/11/2026/6b0207755e2ed76366e4de5e",
-    "https://www.trumpstruth.org/statuses/43684",
-    "https://www.trumpstruth.org/statuses/43685",
-    "https://www.trumpstruth.org/statuses/43686",
-    "https://www.trumpstruth.org/statuses/43687",
-    "https://tass.ru/proisshestviya/28342989",
-    "https://tass.ru/sport/28342991",
-    "https://www.trumpstruth.org/statuses/43683",
-    "https://www.trumpstruth.org/statuses/43679",
-    "https://www.trumpstruth.org/statuses/43680",
-    "https://www.trumpstruth.org/statuses/43681",
-    "https://t.me/WatcherGuru/16241",
-    "https://www.trumpstruth.org/statuses/43682",
-    "https://www.interfax.ru/world/1130621",
-    "https://tass.ru/sport/28342987",
-    "https://tass.ru/mezhdunarodnaya-panorama/28342983",
-    "https://tass.ru/armiya-i-opk/28342981",
-    "https://tass.ru/armiya-i-opk/28342973",
-    "https://tass.ru/armiya-i-opk/28342975",
-    "https://www.rbc.ru/sport/15/11/2026/6af9e5678ca78b70d16892a3",
-    "https://tass.ru/ekonomika/28342979",
-    "https://tass.ru/ekonomika/28342977",
-    "https://www.rbc.ru/politics/20/11/2026/6b002632b009006485a4d03b",
-    "https://tass.ru/obschestvo/28342971",
-    "https://www.trumpstruth.org/statuses/43678",
-    "https://www.kommersant.ru/doc/9127212",
-    "https://tass.ru/armiya-i-opk/28342403",
-    "https://www.trumpstruth.org/statuses/43676",
-    "https://www.trumpstruth.org/statuses/43677",
-    "https://tass.ru/sport/28342967",
-    "https://www.trumpstruth.org/statuses/43675",
-    "https://t.me/markettwits/394334",
-    "https://tass.ru/obschestvo/28342965",
-    "https://www.trumpstruth.org/statuses/43669",
-    "https://www.trumpstruth.org/statuses/43670",
-    "https://www.trumpstruth.org/statuses/43671",
-    "https://www.trumpstruth.org/statuses/43672",
-    "https://www.trumpstruth.org/statuses/43673"
+    "https://tass.ru/proisshestviya/28343231",
+    "https://www.kommersant.ru/doc/9127231",
+    "https://tass.ru/sport/28343227",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343223",
+    "https://tass.ru/obschestvo/28343229",
+    "https://tass.ru/sport/28343225",
+    "https://tass.ru/obschestvo/28343221",
+    "https://www.rbc.ru/rbcfreenews/6aaec9dc67526b061c7d3b63",
+    "https://www.interfax.ru/world/1130629",
+    "https://tass.ru/obschestvo/28343217",
+    "https://www.kommersant.ru/doc/9127230",
+    "https://tass.ru/ekonomika/28343215",
+    "https://www.rbc.ru/rbcfreenews/606133689a794775257a5d7b",
+    "https://tass.ru/ekonomika/28343211",
+    "https://tass.ru/nedvizhimost/28343205",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343213",
+    "https://tass.ru/obschestvo/28343209",
+    "https://www.rbc.ru/politics/22/11/2026/6b025cdf73f60b5e24e93b33",
+    "https://tass.ru/obschestvo/28343207",
+    "https://tass.ru/obschestvo/28343171",
+    "https://tass.ru/obschestvo/28343197",
+    "https://www.rbc.ru/base/26/10/2026/6adba4959a794706a3b00a5e",
+    "https://tass.ru/armiya-i-opk/28343189",
+    "https://www.interfax.ru/world/1130628",
+    "https://tass.ru/sport/28343191",
+    "https://tass.ru/armiya-i-opk/28343201",
+    "https://tass.ru/obschestvo/28343195",
+    "https://tass.ru/obschestvo/28343187",
+    "https://tass.ru/armiya-i-opk/28343199"
   ],
   "ai_dead": {
     "date": "2026-11-21",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-21T04:00:54.882466+00:00",
-      "Сакс заявил о росте шансов на мирное соглашение по Украине"
-    ],
-    [
-      "2026-11-21T05:00:55.930547+00:00",
-      "Криптовалюты обвалились: биткоин ниже $57 000"
-    ],
-    [
-      "2026-11-21T05:00:55.930547+00:00",
-      "Выручка GTA VI в первый день достигла $3,79 млрд"
-    ],
-    [
-      "2026-11-21T05:00:55.930547+00:00",
-      "Массированная атака БПЛА на Ленинградскую область"
-    ],
-    [
-      "2026-11-21T05:00:55.930547+00:00",
-      "Nasdaq упал на 5,3% за день"
-    ],
-    [
-      "2026-11-21T05:00:55.930547+00:00",
-      "Нефть дешевеет третью неделю подряд"
-    ],
     [
       "2026-11-21T05:00:55.930547+00:00",
       "Вьетнам смягчил уголовный кодекс"
@@ -1894,6 +1851,10 @@
     [
       "2026-11-21T20:30:57.370951+00:00",
       "В Конгрессе США призвали объявить импичмент главе Пентагона"
+    ],
+    [
+      "2026-11-22T04:00:55.241560+00:00",
+      "ТАСС: Украине не хватает 800 млн куб. м газа на отопительный сезон"
     ]
   ],
   "results_fp": [
@@ -1983,7 +1944,7 @@
     "Коммерсантъ": "2026-11-21T20:30:57.370951+00:00",
     "Ведомости": "2026-11-21T19:00:56.726656+00:00",
     "Интерфакс": "2026-11-21T20:30:57.370951+00:00",
-    "ТАСС": "2026-11-21T20:30:57.370951+00:00",
+    "ТАСС": "2026-11-22T04:00:55.241560+00:00",
     "CoinDesk": "2026-11-21T16:30:59.023749+00:00",
     "Headlines for Traders": "2026-11-21T17:00:56.273245+00:00",
     "MarketTwits": "2026-11-21T20:30:57.370951+00:00",
@@ -2109,7 +2070,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-21T21:30:55+00:00",
+  "catalog_at": "2026-11-22T04:00:55+00:00",
   "own_hour": "2026-11-21 21",
   "digest_alert": "2026-11-10 19:30"
 }
