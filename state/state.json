@@ -800,7 +800,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-22T17:31:00.562348+00:00",
+  "breaking_ts": "2026-11-22T18:01:02.929153+00:00",
   "news_now": {
     "day": "2026-11-22",
     "day_count": 3,
@@ -813,73 +813,47 @@
     ]
   },
   "news_seen": [
+    "https://t.me/glassnode/2131",
+    "https://oilprice.com/Energy/Energy-General/Google-Backs-Superhot-Geothermal-in-50-MW-Oregon-Power-Deal.html",
+    "https://t.me/banksta/105952",
+    "https://tass.ru/obschestvo/28344027",
+    "https://tass.ru/sport/28344031",
+    "https://tass.ru/proisshestviya/28344023",
+    "https://tass.ru/obschestvo/28344025",
+    "https://tass.ru/sport/28344021",
+    "https://www.rbc.ru/rbcfreenews/6aef088dd9b88bea866e38a1",
+    "https://www.kommersant.ru/doc/9127534",
+    "https://www.interfax.ru/russia/1130684",
+    "https://t.me/WatcherGuru/16251",
+    "https://tass.ru/obschestvo/28344017",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414112-kipr-vislal-dvuh",
+    "https://t.me/FinancialJuice/149226",
+    "https://www.rbc.ru/rbcfreenews/6a626a659a794707d68e353f",
+    "https://tass.ru/proisshestviya/28344013",
+    "https://tass.ru/armiya-i-opk/28344015",
+    "https://t.me/rbc_news/161200",
+    "https://t.me/markettwits/394352",
+    "https://www.rbc.ru/society/24/06/2025/685a91269a794790da61eced",
+    "https://tass.ru/proisshestviya/28344011",
+    "https://t.me/forbesrussia/103328",
+    "https://www.cnbc.com/make-it/2026/11/22/parenting-habits-people-pleaser.html",
+    "https://t.me/agroinvestor/21852",
+    "https://t.me/interfaxonline/82001",
+    "https://tass.ru/obschestvo/28344009",
     "https://t.me/invest_zonaa/39573",
     "https://www.kommersant.ru/doc/9127478",
+    "https://www.interfax.ru/russia/1130683",
+    "https://www.interfax.ru/world/1130680",
     "https://tass.ru/obschestvo/28344007",
     "https://www.kommersant.ru/doc/9127532",
     "https://t.me/WatcherGuru/16250",
-    "https://www.kommersant.ru/doc/9127505",
-    "https://www.rbc.ru/rbcfreenews/6b005a5a643dc7ef466fd96f",
-    "https://t.me/markettwits/394350",
-    "https://t.me/nainspire/5763",
-    "https://www.trumpstruth.org/statuses/43702",
-    "https://tass.ru/sport/28344005",
-    "https://www.marketwatch.com/story/private-equity-has-been-buying-up-hospice-centers-with-striking-consequences-63642545?mod=mw_rss_topstories",
-    "https://tass.ru/sport/28344003",
-    "https://t.me/banksta/105951",
-    "https://www.trumpstruth.org/statuses/43700",
-    "https://t.me/rbc_news/161199",
-    "https://www.trumpstruth.org/statuses/43701",
-    "https://t.me/FinancialJuice/149225",
-    "https://www.vedomosti.ru/politics/news/2026/11/22/1414111-konferentsiya-oon",
-    "https://t.me/FinancialJuice/149224",
-    "https://t.me/CoinDeskGlobal/25584",
-    "https://tass.ru/sport/28344001",
-    "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
-    "https://t.me/markettwits/394349",
-    "https://tass.ru/sport/28343999",
-    "https://www.kommersant.ru/doc/9127530",
-    "https://tass.ru/proisshestviya/28343995",
-    "https://www.rbc.ru/sport/17/11/2026/6afc55607f0b6452f3f794c4",
-    "https://tass.ru/politika/28343997",
-    "https://tass.ru/proisshestviya/28343991",
-    "https://t.me/markettwits/394348",
-    "https://t.me/konenkov_official/1685",
-    "https://tass.ru/ekonomika/28343993",
-    "https://cryptoslate.com/xrps-institutional-adoption-story-has-a-catch-that-investors-may-be-overlooking/",
-    "https://www.interfax.ru/world/1130682",
-    "https://t.me/WatcherGuru/16248",
-    "https://t.me/interfaxonline/82000",
-    "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
-    "https://t.me/headlines_for_traders/89238",
-    "https://www.kommersant.ru/doc/9127526",
-    "https://www.rbc.ru/rbcfreenews/6a69c57c9a7947a6a2a39771"
+    "https://www.kommersant.ru/doc/9127505"
   ],
   "ai_dead": {
     "date": "2026-11-22",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-21T18:00:57.003452+00:00",
-      "Эмиссия стейблкоина USDC на $250 млн"
-    ],
-    [
-      "2026-11-21T18:30:54.236548+00:00",
-      "Криптовалюты восстанавливаются: биткоин вернулся выше $60 000"
-    ],
-    [
-      "2026-11-21T18:30:54.236548+00:00",
-      "Минобороны РФ отчиталось об уничтожении 47 украинских дронов"
-    ],
-    [
-      "2026-11-21T18:30:54.236548+00:00",
-      "Взрыв у берегов Ирана и инциденты в Ормузском проливе"
-    ],
-    [
-      "2026-11-21T18:30:54.236548+00:00",
-      "Число участников протестов во Франции снизилось до 82,5 тыс."
-    ],
     [
       "2026-11-21T18:30:54.236548+00:00",
       "ЕЦБ тестирует токенизированные депозиты в рамках проекта Appia"
@@ -1479,6 +1453,34 @@
     [
       "2026-11-22T17:31:00.562348+00:00",
       "Водитель погиб при атаке беспилотника на автомобиль в Брянской области"
+    ],
+    [
+      "2026-11-22T18:01:02.929153+00:00",
+      "Производители ИИ-серверов подняли цены по контрактам до 45%"
+    ],
+    [
+      "2026-11-22T18:01:02.929153+00:00",
+      "Трамп допустил удар по Ирану после Нового года"
+    ],
+    [
+      "2026-11-22T18:01:02.929153+00:00",
+      "Google поддержал проект геотермальной энергетики в Орегоне"
+    ],
+    [
+      "2026-11-22T18:01:02.929153+00:00",
+      "Трамп возложил на демократов вину за падение рынка акций"
+    ],
+    [
+      "2026-11-22T18:01:02.929153+00:00",
+      "Glassnode: объемы торгов биткоин-ETF упали ниже медианы"
+    ],
+    [
+      "2026-11-22T18:01:02.929153+00:00",
+      "Морской беспилотник атаковал торговое судно у Ливии"
+    ],
+    [
+      "2026-11-22T18:01:02.929153+00:00",
+      "Кипр выслал двух российских дипломатов по обвинению в шпионаже"
     ]
   ],
   "results_fp": [
@@ -1564,14 +1566,14 @@
     }
   },
   "feed_src": {
-    "OilPrice": "2026-11-21T19:31:00.953428+00:00",
-    "Коммерсантъ": "2026-11-22T17:31:00.562348+00:00",
-    "Ведомости": "2026-11-22T14:30:58.711801+00:00",
+    "OilPrice": "2026-11-22T18:01:02.929153+00:00",
+    "Коммерсантъ": "2026-11-22T18:01:02.929153+00:00",
+    "Ведомости": "2026-11-22T18:01:02.929153+00:00",
     "Интерфакс": "2026-11-22T17:31:00.562348+00:00",
     "ТАСС": "2026-11-22T17:31:00.562348+00:00",
     "CoinDesk": "2026-11-22T04:30:54.842014+00:00",
     "Headlines for Traders": "2026-11-22T08:30:54.850462+00:00",
-    "MarketTwits": "2026-11-22T17:31:00.562348+00:00",
+    "MarketTwits": "2026-11-22T18:01:02.929153+00:00",
     "Сигналы РЦБ": "2026-11-20T20:30:58.870659+00:00",
     "Whale Alert": "2026-11-22T09:30:59.611563+00:00",
     "РБК": "2026-11-22T16:30:55.477355+00:00",
@@ -1594,7 +1596,7 @@
     "Московская биржа": "2026-11-20T04:30:55.460099+00:00",
     "MarketWatch": "2026-11-22T13:00:55.199934+00:00",
     "Bitcoin Magazine": "2026-11-22T16:30:55.477355+00:00",
-    "Watcher Guru": "2026-11-22T17:31:00.562348+00:00",
+    "Watcher Guru": "2026-11-22T18:01:02.929153+00:00",
     "РБК. Главное": "2026-11-22T15:30:58.434306+00:00",
     "The Block": "2026-11-21T19:00:56.726656+00:00",
     "Нефть и Капитал": "2026-11-22T16:30:55.477355+00:00",
@@ -1617,7 +1619,7 @@
     "CNBC Markets": "2026-11-22T15:00:55.069796+00:00",
     "Natural Gas Intelligence": "2026-11-20T20:30:58.870659+00:00",
     "Правительство России": "2026-11-22T16:30:55.477355+00:00",
-    "glassnode": "2026-11-22T16:30:55.477355+00:00",
+    "glassnode": "2026-11-22T18:01:02.929153+00:00",
     "Минэкономразвития": "2026-11-20T12:30:56.056289+00:00",
     "Прайм": "2026-11-10T04:30:58.582529+00:00",
     "Хедлайнеры": "2026-11-12T10:01:00.442135+00:00",
@@ -1694,7 +1696,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-22T17:31:00+00:00",
-  "own_hour": "2026-11-22 20",
+  "catalog_at": "2026-11-22T18:01:02+00:00",
+  "own_hour": "2026-11-22 21",
   "digest_alert": "2026-11-10 19:30"
 }
