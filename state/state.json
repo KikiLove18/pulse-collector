@@ -800,7 +800,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-22T21:00:57.704532+00:00",
+  "breaking_ts": "2026-11-22T21:30:56.127841+00:00",
   "news_now": {
     "day": "2026-11-23",
     "day_count": 0,
@@ -809,27 +809,30 @@
     "titles": []
   },
   "news_seen": [
+    "https://www.marketwatch.com/story/ron-johnsons-social-security-gaffe-buried-important-news-b96e0ce8?mod=mw_rss_topstories",
+    "https://www.rbc.ru/sport/03/11/2026/6ae9862316b7d106462db7e1",
+    "https://t.me/banksta/105959",
+    "https://tass.ru/nauka/28344171",
+    "https://tass.ru/mezhdunarodnaya-panorama/28344169",
+    "https://www.trumpstruth.org/statuses/43705",
+    "https://www.kommersant.ru/doc/9127591",
+    "https://tass.ru/obschestvo/28344149",
+    "https://cryptoslate.com/xrp-ledger-trial-settled-213000-paid-ai-requests-in-6324-transactions/",
+    "https://www.kommersant.ru/doc/9127538",
+    "https://tass.ru/obschestvo/28344157",
+    "https://tass.ru/obschestvo/28344151",
+    "https://tass.ru/proisshestviya/28344161",
+    "https://tass.ru/obschestvo/28344145",
+    "https://tass.ru/obschestvo/28344153",
+    "https://tass.ru/armiya-i-opk/28344165",
+    "https://tass.ru/obschestvo/28344143",
+    "https://tass.ru/armiya-i-opk/28344163",
+    "https://tass.ru/obschestvo/28344147",
+    "https://tass.ru/armiya-i-opk/28343649",
     "https://t.me/rbc_news/161207",
     "https://www.theblock.co/news/ecosystems/2026-11-22-trump-to-host-second-memecoin-dinner-tonight-with-trump-down-99-from-peak-444828",
     "https://t.me/markettwits/394363",
-    "https://t.me/banksta/105958",
-    "https://www.trumpstruth.org/statuses/43704",
-    "https://www.rbc.ru/rbcfreenews/6b017959cccf1d3a739b3556",
-    "https://t.me/WalterBloomberg/38878",
-    "https://t.me/WalterBloomberg/38877",
-    "https://tass.ru/ekonomika/28344139",
-    "https://t.me/markettwits/394362",
-    "https://www.rbc.ru/politics/22/11/2026/6b0351c40012904afd16541f",
-    "https://www.rbc.ru/politics/17/01/2026/696b45999a7947f768f33165",
-    "https://tass.ru/obschestvo/28344135",
-    "https://www.kommersant.ru/doc/9127556",
-    "https://www.rbc.ru/rbcfreenews/6ad46684baafe814541c75af",
-    "https://t.me/banksta/105957",
-    "https://t.me/cointelegraph/73441",
-    "https://tass.ru/sport/28344133",
-    "https://t.me/markettwits/394361",
-    "https://tass.ru/mezhdunarodnaya-panorama/28344131",
-    "https://www.marketwatch.com/story/social-security-should-be-shut-down-this-republican-senator-says-8f7fef81?mod=mw_rss_topstories"
+    "https://t.me/banksta/105958"
   ],
   "ai_dead": {
     "date": "2026-11-22",
@@ -1670,7 +1673,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-22T21:00:57+00:00",
+  "catalog_at": "2026-11-22T21:30:56+00:00",
   "own_hour": "2026-11-22 21",
   "digest_alert": "2026-11-10 19:30"
 }
