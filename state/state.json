@@ -800,7 +800,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-22T12:30:56.320131+00:00",
+  "breaking_ts": "2026-11-22T13:00:55.199934+00:00",
   "news_now": {
     "day": "2026-11-22",
     "day_count": 2,
@@ -812,73 +812,52 @@
     ]
   },
   "news_seen": [
+    "https://www.kommersant.ru/doc/9127393",
+    "https://t.me/expert_mag/11513",
+    "https://tass.ru/sport/28343775",
+    "https://www.kommersant.ru/doc/9127396",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414077-v-chehii-nazvali",
+    "https://t.me/invest_zonaa/39567",
+    "https://www.rbc.ru/politics/22/11/2026/6b02e4abdcbd0c7f985b73bc",
+    "https://t.me/rbc_news/161191",
+    "https://t.me/interfaxonline/81997",
+    "https://t.me/FinancialJuice/149214",
+    "https://t.me/FinancialJuice/149213",
+    "https://t.me/FinancialJuice/149212",
+    "https://tass.ru/obschestvo/28343769",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343771",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414076-prezident-brazilii-predlozhil",
+    "https://www.kommersant.ru/doc/9127392",
+    "https://tass.ru/obschestvo/28343765",
+    "https://t.me/forbesrussia/103322",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343767",
+    "https://www.rbc.ru/politics/07/07/2026/6a4d41b79a7947c430ee3377",
+    "https://t.me/banksta/105940",
+    "https://tass.ru/proisshestviya/28343753",
+    "https://tass.ru/proisshestviya/28343763",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414075-kallas-ne-rassmatrivalas",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343761",
+    "https://www.interfax.ru/russia/1130667",
+    "https://www.rbc.ru/rbcfreenews/6b02c02aa4551ff5b509c8aa",
+    "https://tass.ru/proisshestviya/28343759",
+    "https://www.interfax.ru/world/1130666",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343755",
+    "https://www.vedomosti.ru/auto/news/2026/11/22/1414074-tesla-dobavila-vizualizatsiyu",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343751",
+    "https://www.kommersant.ru/doc/9127388",
+    "https://t.me/rbc_news/161190",
+    "https://www.interfax.ru/world/1130665",
     "https://www.vedomosti.ru/politics/news/2026/11/22/1414073-o-riske-paralicha-es",
     "https://www.kommersant.ru/doc/9127385",
+    "https://www.marketwatch.com/story/can-stocks-bounce-back-after-a-brutal-week-this-timing-model-says-history-is-on-the-markets-side-beff1753?mod=mw_rss_topstories",
     "https://t.me/interfaxonline/81996",
-    "https://tass.ru/obschestvo/28343723",
-    "https://tass.ru/sport/28343749",
-    "https://www.kommersant.ru/doc/9127379",
-    "https://tass.ru/sport/28343745",
-    "https://www.rbc.ru/rbcfreenews/6b02dca1c9f41af8b40c1d15",
-    "https://tass.ru/nauka/28343719",
-    "https://www.interfax.ru/world/1130664",
-    "https://tass.ru/proisshestviya/28343735",
-    "https://www.kommersant.ru/doc/9127371",
-    "https://t.me/banksta/105939",
-    "https://t.me/interfaxonline/81995",
-    "https://www.cnbc.com/2026/11/22/top-wall-street-analysts-favor-these-stocks-for-strong-returns.html",
-    "https://www.kommersant.ru/doc/9127365",
-    "https://tass.ru/proisshestviya/28343739",
-    "https://www.vedomosti.ru/politics/news/2026/11/22/1414071-politseiskii-zastrelil",
-    "https://www.kommersant.ru/doc/9127370",
-    "https://www.cnbc.com/2026/11/22/the-nasdaq-is-in-freefall-heres-one-stock-to-look-at.html",
-    "https://tass.ru/mezhdunarodnaya-panorama/28343729",
-    "https://www.kommersant.ru/doc/9127369",
-    "https://tass.ru/mezhdunarodnaya-panorama/28343733",
-    "https://tass.ru/obschestvo/28343727",
-    "https://tass.ru/politika/28343731",
-    "https://tass.ru/ekonomika/28343721",
-    "https://www.rbc.ru/sport/19/11/2026/6afef0a299ff4b92b5185d90",
-    "https://t.me/invest_zonaa/39564",
-    "https://tass.ru/politika/28343725",
-    "https://t.me/headlines_for_traders/89235",
-    "https://www.rbc.ru/politics/22/04/2026/69e84c9b9a7947bb8488a865",
-    "https://t.me/gpb_investments/25288",
-    "https://t.me/headlines_for_traders/89234",
-    "https://tass.ru/mezhdunarodnaya-panorama/28343713",
-    "https://t.me/rbc_news/161189",
-    "https://tass.ru/obschestvo/28343717",
-    "https://t.me/forklog/50777",
-    "https://www.interfax.ru/world/1130663",
-    "https://www.rbc.ru/rbcfreenews/6af867166cbf761730788f2a",
-    "https://t.me/glassnode/2129",
-    "https://cryptoslate.com/bitcoin-below-60000-fed-half-point-cpi/",
-    "https://tass.ru/obschestvo/28339341",
-    "https://tass.ru/ekonomika/28343703",
-    "https://www.interfax.ru/world/1130662",
-    "https://tass.ru/obschestvo/28343711"
+    "https://tass.ru/obschestvo/28343723"
   ],
   "ai_dead": {
     "date": "2026-11-22",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-21T13:00:57.502499+00:00",
-      "Взлом площадки Chainflip на $4,86 млн"
-    ],
-    [
-      "2026-11-21T13:00:57.502499+00:00",
-      "Суд в США одобрил выплаты до $7,25 млрд по искам к Bayer"
-    ],
-    [
-      "2026-11-21T13:00:57.502499+00:00",
-      "Биткоин и Ethereum замедлили падение"
-    ],
-    [
-      "2026-11-21T13:00:57.502499+00:00",
-      "Раннее разрушение полярного вихря угрожает газу в ЕС"
-    ],
     [
       "2026-11-21T13:00:57.502499+00:00",
       "BTCS предупредила о риске ликвидации долга на Aave"
@@ -1478,6 +1457,26 @@
     [
       "2026-11-22T12:30:56.320131+00:00",
       "Signal назвал искусственный интеллект угрозой для приватности"
+    ],
+    [
+      "2026-11-22T13:00:55.199934+00:00",
+      "Решетников: цены на электроэнергию в ЕС вдвое выше, чем в США"
+    ],
+    [
+      "2026-11-22T13:00:55.199934+00:00",
+      "Космический аппарат BepiColombo вышел на орбиту Меркурия"
+    ],
+    [
+      "2026-11-22T13:00:55.199934+00:00",
+      "Делегации на конференции COP31 отвергли проект финального заявления"
+    ],
+    [
+      "2026-11-22T13:00:55.199934+00:00",
+      "Четыре человека пострадали при атаках ВСУ на Белгородскую область"
+    ],
+    [
+      "2026-11-22T13:00:55.199934+00:00",
+      "Seasonality Timing System указывает на потенциал роста акций"
     ]
   ],
   "results_fp": [
@@ -1564,9 +1563,9 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-21T19:31:00.953428+00:00",
-    "Коммерсантъ": "2026-11-22T12:30:56.320131+00:00",
+    "Коммерсантъ": "2026-11-22T13:00:55.199934+00:00",
     "Ведомости": "2026-11-22T12:30:56.320131+00:00",
-    "Интерфакс": "2026-11-22T12:30:56.320131+00:00",
+    "Интерфакс": "2026-11-22T13:00:55.199934+00:00",
     "ТАСС": "2026-11-22T12:01:01.893689+00:00",
     "CoinDesk": "2026-11-22T04:30:54.842014+00:00",
     "Headlines for Traders": "2026-11-22T08:30:54.850462+00:00",
@@ -1591,7 +1590,7 @@
     "ПРАЙМ": "2026-11-22T11:00:55.803203+00:00",
     "Walter Bloomberg": "2026-11-22T04:30:54.842014+00:00",
     "Московская биржа": "2026-11-20T04:30:55.460099+00:00",
-    "MarketWatch": "2026-11-21T16:30:59.023749+00:00",
+    "MarketWatch": "2026-11-22T13:00:55.199934+00:00",
     "Bitcoin Magazine": "2026-11-21T14:00:55.580682+00:00",
     "Watcher Guru": "2026-11-22T04:30:54.842014+00:00",
     "РБК. Главное": "2026-11-22T12:30:56.320131+00:00",
@@ -1693,7 +1692,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-22T12:30:56+00:00",
-  "own_hour": "2026-11-22 15",
+  "catalog_at": "2026-11-22T13:00:55+00:00",
+  "own_hour": "2026-11-22 16",
   "digest_alert": "2026-11-10 19:30"
 }
