@@ -800,7 +800,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-22T15:00:55.069796+00:00",
+  "breaking_ts": "2026-11-22T15:30:58.434306+00:00",
   "news_now": {
     "day": "2026-11-22",
     "day_count": 3,
@@ -813,77 +813,62 @@
     ]
   },
   "news_seen": [
+    "https://www.kommersant.ru/doc/9127488",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343917",
+    "https://www.rbc.ru/sport/11/11/2026/6af47e73a0636aecebf94178",
+    "https://www.rbc.ru/business/09/11/2026/6af1f5903bad6acc7ddd6fb6",
+    "https://tass.ru/ekonomika/28343911",
+    "https://www.vedomosti.ru/technology/news/2026/11/22/1414096-uchenie-namereni-naiti",
+    "https://t.me/forbesrussia/103327",
+    "https://tass.ru/sport/28343915",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343907",
+    "https://t.me/banksta/105945",
+    "https://t.me/interfaxonline/81999",
+    "https://www.kommersant.ru/doc/9127486",
+    "https://www.interfax.ru/russia/1130676",
+    "https://www.trumpstruth.org/statuses/43698",
+    "https://www.trumpstruth.org/statuses/43699",
+    "https://t.me/rbc_news/161196",
+    "https://www.rbc.ru/rbcfreenews/64d9b42b9a79471d9429175d",
+    "https://t.me/bitsmedia/29010",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414094-pentagon-ogranichil",
+    "https://tass.ru/armiya-i-opk/28343903",
+    "https://www.interfax.ru/russia/1130675",
+    "https://tass.ru/armiya-i-opk/28343899",
+    "https://www.rbc.ru/politics/04/11/2026/6aeace61d7310db3ba6c4bab",
+    "https://www.interfax.ru/world/1130674",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414092-ft-uznala",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343897",
+    "https://www.cnbc.com/make-it/2026/11/22/parenting-habits-people-pleaser.html",
+    "https://t.me/forklog/50778",
+    "https://www.trumpstruth.org/statuses/43692",
+    "https://www.trumpstruth.org/statuses/43693",
+    "https://www.trumpstruth.org/statuses/43694",
+    "https://www.kommersant.ru/doc/9127481",
+    "https://www.kommersant.ru/doc/9127482",
+    "https://www.trumpstruth.org/statuses/43695",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414093-v-indii-skonchalis",
+    "https://www.trumpstruth.org/statuses/43696",
+    "https://www.trumpstruth.org/statuses/43697",
+    "https://www.trumpstruth.org/statuses/43690",
+    "https://www.trumpstruth.org/statuses/43691",
+    "https://www.marketwatch.com/story/corporate-america-hunts-for-generational-growth-in-ai-trading-cards-and-the-l-a-airport-3072eb1a?mod=mw_rss_topstories",
+    "https://tass.ru/proisshestviya/28343895",
+    "https://tass.ru/obschestvo/28343893",
     "https://www.rbc.ru/rbcfreenews/6a5c8bd99a7947bf9ca67b53",
+    "https://cryptoslate.com/ai-reviewers-flagged-corrected-drafts-almost-as-often-as-flawed-ones/",
+    "https://www.interfax.ru/world/1130673",
     "https://t.me/oil_capital/27057",
     "https://t.me/incrypted/33402",
     "https://t.me/forbesrussia/103326",
     "https://t.me/minec_russia/13595",
-    "https://tass.ru/proisshestviya/28343889",
-    "https://www.kommersant.ru/doc/9127476",
-    "https://t.me/banksta/105944",
-    "https://www.interfax.ru/world/1130672",
-    "https://www.vedomosti.ru/politics/news/2026/11/22/1414091-otkritie-granitsi",
-    "https://www.rbc.ru/politics/22/11/2026/6b02d1d55639478af8997a7e",
-    "https://www.cnbc.com/make-it/2026/11/22/parenting-habits-people-pleaser.html",
-    "https://www.kommersant.ru/doc/9127475",
-    "https://www.kommersant.ru/doc/9127474",
-    "https://www.vedomosti.ru/politics/news/2026/11/22/1414090-premer-kanadi-vismeyal",
-    "https://www.kommersant.ru/doc/9127471",
-    "https://t.me/rbc_news/161195",
-    "https://www.vedomosti.ru/business/news/2026/11/22/1414089-iz-dubaya-ushli",
-    "https://www.rbc.ru/politics/14/11/2026/6af8b6907ea0632d22f44507",
-    "https://www.rbc.ru/rbcfreenews/6b02af3205455188d33af251",
-    "https://t.me/cointelegraph/73438",
-    "https://tass.ru/sport/28343875",
-    "https://tass.ru/sport/28343883",
-    "https://tass.ru/mezhdunarodnaya-panorama/28343879",
-    "https://tass.ru/proisshestviya/28343877",
-    "https://gcaptain.com/russian-cargo-ship-still-on-fire-off-finland-after-attack/",
-    "https://t.me/rbc_news/161194",
-    "https://cryptoslate.com/bitcoin-reclaims-61000-before-giving-back-a-third-of-that-rally/",
-    "https://www.cnbc.com/2026/11/22/social-security-changes-cola-taxes-medicare.html",
-    "https://cointelegraph.com/opinion/future-onchain-fx-could-start-with-users-not-institutional-liquidity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.rbc.ru/sport/22/11/2026/6b02dc3adcbd0c7f985b73b8",
-    "https://www.rbc.ru/politics/21/11/2025/69202ad59a7947d8c4d16c55",
-    "https://www.rbc.ru/society/06/05/2020/5eb2c8b19a7947886709a127"
+    "https://tass.ru/proisshestviya/28343889"
   ],
   "ai_dead": {
     "date": "2026-11-22",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-21T15:01:04.479975+00:00",
-      "Abraxas Capital купила биткоины на $607 млн"
-    ],
-    [
-      "2026-11-21T15:01:04.479975+00:00",
-      "В России создали препарат против супербактерий"
-    ],
-    [
-      "2026-11-21T15:01:04.479975+00:00",
-      "Военно-Грузинскую дорогу закрыли для грузовиков"
-    ],
-    [
-      "2026-11-21T15:30:57.437336+00:00",
-      "Биткоин отыграл часть падения и поднялся выше $60 000"
-    ],
-    [
-      "2026-11-21T15:30:57.437336+00:00",
-      "Токен FLIP обвалился на 34% после взлома Chainflip на $4,86 млн"
-    ],
-    [
-      "2026-11-21T15:30:57.437336+00:00",
-      "Трамп предложил ограничить ставки по кредитным картам до 10%"
-    ],
-    [
-      "2026-11-21T15:30:57.437336+00:00",
-      "В Финском заливе атакован российский контейнеровоз Sparta II"
-    ],
-    [
-      "2026-11-21T15:30:57.437336+00:00",
-      "Основатель MiniMax Ян Цзюньцзе потерял $11,6 млрд и статус миллиардера"
-    ],
     [
       "2026-11-21T16:01:08.872726+00:00",
       "На бирже Kraken курс биткоин в паре с канадским долларом падал до $27 000"
@@ -1475,6 +1460,26 @@
     [
       "2026-11-22T15:00:55.069796+00:00",
       "НАТО созывает чрезвычайное заседание из-за падения ракет в Польше"
+    ],
+    [
+      "2026-11-22T15:30:58.434306+00:00",
+      "Минобороны РФ заявило об ударе по электроподстанции в Днепропетровской области"
+    ],
+    [
+      "2026-11-22T15:30:58.434306+00:00",
+      "В конгрессе США намерены добиться выделения пакета помощи Украине"
+    ],
+    [
+      "2026-11-22T15:30:58.434306+00:00",
+      "Argus: поставки топлива в Центральную Азию могут сократиться"
+    ],
+    [
+      "2026-11-22T15:30:58.434306+00:00",
+      "Расчеты «НиК»: динамика цен на российский газ для Китая и РФ"
+    ],
+    [
+      "2026-11-22T15:30:58.434306+00:00",
+      "Еженедельный дайджест крипторынка: страх и покупки BTC"
     ]
   ],
   "results_fp": [
@@ -1561,10 +1566,10 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-21T19:31:00.953428+00:00",
-    "Коммерсантъ": "2026-11-22T15:00:55.069796+00:00",
+    "Коммерсантъ": "2026-11-22T15:30:58.434306+00:00",
     "Ведомости": "2026-11-22T14:30:58.711801+00:00",
-    "Интерфакс": "2026-11-22T13:30:56.876965+00:00",
-    "ТАСС": "2026-11-22T13:30:56.876965+00:00",
+    "Интерфакс": "2026-11-22T15:30:58.434306+00:00",
+    "ТАСС": "2026-11-22T15:30:58.434306+00:00",
     "CoinDesk": "2026-11-22T04:30:54.842014+00:00",
     "Headlines for Traders": "2026-11-22T08:30:54.850462+00:00",
     "MarketTwits": "2026-11-22T08:00:57.809421+00:00",
@@ -1579,7 +1584,7 @@
     "Energy Today": "2026-11-22T06:30:59.597707+00:00",
     "Forbes Russia": "2026-11-22T13:30:56.876965+00:00",
     "Frank Media": "2026-11-21T10:30:58.464411+00:00",
-    "ForkLog": "2026-11-22T12:30:56.320131+00:00",
+    "ForkLog": "2026-11-22T15:30:58.434306+00:00",
     "Decrypt": "2026-11-22T14:30:58.711801+00:00",
     "Cointelegraph": "2026-11-22T10:00:56.957811+00:00",
     "CoinMarketCap": "2026-11-21T18:30:54.236548+00:00",
@@ -1591,9 +1596,9 @@
     "MarketWatch": "2026-11-22T13:00:55.199934+00:00",
     "Bitcoin Magazine": "2026-11-21T14:00:55.580682+00:00",
     "Watcher Guru": "2026-11-22T04:30:54.842014+00:00",
-    "РБК. Главное": "2026-11-22T12:30:56.320131+00:00",
+    "РБК. Главное": "2026-11-22T15:30:58.434306+00:00",
     "The Block": "2026-11-21T19:00:56.726656+00:00",
-    "Нефть и Капитал": "2026-11-22T15:00:55.069796+00:00",
+    "Нефть и Капитал": "2026-11-22T15:30:58.434306+00:00",
     "MMI": "2026-11-20T11:30:54.791118+00:00",
     "FinancialJuice": "2026-11-21T20:01:02.018731+00:00",
     "Cbonds": "2026-11-21T16:30:59.023749+00:00",
@@ -1623,7 +1628,7 @@
     "Эксперт": "2026-11-21T11:00:57.374263+00:00",
     "БКС Экспресс": "2026-11-21T04:31:06.820963+00:00",
     "Proeconomics": "2026-11-21T16:30:59.023749+00:00",
-    "Incrypted": "2026-11-22T07:30:57.265200+00:00",
+    "Incrypted": "2026-11-22T15:30:58.434306+00:00",
     "Смарт-лаб": "2026-11-20T16:00:57.191555+00:00",
     "EIA Today in Energy": "2026-11-12T14:30:56.851698+00:00",
     "BWEnews": "2026-11-20T06:30:55.227002+00:00",
@@ -1632,7 +1637,7 @@
     "РБК Новости": "2026-11-03T16:31:07.181074+00:00",
     "CNBC": "2026-11-22T04:30:54.842014+00:00",
     "Трамп (Truth Social)": "2026-11-18T04:30:59.775372+00:00",
-    "Bits.media": "2026-11-21T18:30:54.236548+00:00",
+    "Bits.media": "2026-11-22T15:30:58.434306+00:00",
     "ГПБ Инвестиции": "2026-11-19T16:30:55.910295+00:00",
     "Проэкономика": "2026-11-04T04:30:59.609516+00:00",
     "IFX-market": "2026-11-04T04:30:59.609516+00:00",
@@ -1690,7 +1695,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-22T15:00:55+00:00",
+  "catalog_at": "2026-11-22T15:30:58+00:00",
   "own_hour": "2026-11-22 18",
   "digest_alert": "2026-11-10 19:30"
 }
