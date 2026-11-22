@@ -800,7 +800,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-22T11:30:54.758928+00:00",
+  "breaking_ts": "2026-11-22T12:01:01.893689+00:00",
   "news_now": {
     "day": "2026-11-22",
     "day_count": 2,
@@ -812,63 +812,34 @@
     ]
   },
   "news_seen": [
-    "https://www.rbc.ru/politics/11/09/2026/6aa3da6120ab3460ac85b108",
-    "https://www.rbc.ru/rbcfreenews/6b015080ab1f876132176965",
+    "https://t.me/glassnode/2129",
+    "https://tass.ru/ekonomika/28343703",
+    "https://tass.ru/obschestvo/28343711",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414070-putin-na-predstoyaschei",
+    "https://www.kommersant.ru/doc/9127358",
+    "https://tass.ru/proisshestviya/28343709",
+    "https://www.kommersant.ru/doc/9127357",
+    "https://www.interfax.ru/world/1130661",
+    "https://tass.ru/proisshestviya/28343707",
+    "https://www.kommersant.ru/doc/9127350",
+    "https://t.me/banksta/105938",
+    "https://tass.ru/sport/28343705",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414069-na-zanzibare-pri-pozhare",
+    "https://t.me/invest_zonaa/39563",
+    "https://t.me/rbc_news/161188",
+    "https://www.interfax.ru/world/1130660",
+    "https://t.me/forbesrussia/103321",
+    "https://tass.ru/obschestvo/28343701",
+    "https://t.me/agroinvestor/21850",
+    "https://t.me/interfaxonline/81994",
     "https://tass.ru/obschestvo/28343699",
-    "https://www.kommersant.ru/doc/9127347",
-    "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.vedomosti.ru/society/news/2026/11/22/1414068-lerchek-soobschila",
-    "https://www.rbc.ru/society/14/11/2026/6af829963605fb427a01a639",
-    "https://www.interfax.ru/world/1130659",
-    "https://www.vedomosti.ru/society/news/2026/11/22/1414067-umer-avtor-skazki",
-    "https://www.kommersant.ru/doc/9127345",
-    "https://tass.ru/mezhdunarodnaya-panorama/28343697",
-    "https://www.vedomosti.ru/politics/news/2026/11/22/1414066-familiyu-vitse-premera",
-    "https://tass.ru/sport/28343695",
-    "https://tass.ru/proisshestviya/28343693",
-    "https://www.rbc.ru/sport/23/10/2026/6adba4b10d56109cf3d31bdf",
-    "https://t.me/oil_capital/27055",
-    "https://t.me/wublockchainenglish/26913",
-    "https://tass.ru/mezhdunarodnaya-panorama/28343689",
-    "https://t.me/rbc_news/161187",
-    "https://www.vedomosti.ru/politics/news/2026/11/22/1414064-lavrov-glavi-minoboroni",
-    "https://www.rbc.ru/rbcfreenews/6aac00a085847e9019a3685b",
-    "https://www.kommersant.ru/doc/9127343",
-    "https://tass.ru/mezhdunarodnaya-panorama/28343687",
-    "https://t.me/bitkogan/29591",
-    "https://www.vedomosti.ru/lifestyle/news/2026/11/22/1414065-skrituyu-pochti",
-    "https://www.kommersant.ru/doc/9127341",
-    "https://t.me/cbonds/26482",
-    "https://www.interfax.ru/russia/1130658",
-    "https://t.me/headlines_for_traders/89231",
-    "https://tass.ru/obschestvo/28343683",
-    "https://t.me/interfaxonline/81993"
+    "https://www.kommersant.ru/doc/9127347"
   ],
   "ai_dead": {
     "date": "2026-11-22",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-21T11:31:02.412596+00:00",
-      "На COP31 создали Глобальный альянс по хранению энергии"
-    ],
-    [
-      "2026-11-21T12:00:55.491322+00:00",
-      "Китайский миллиардер Янь Цзюньцзе потерял 90% состояния"
-    ],
-    [
-      "2026-11-21T12:00:55.491322+00:00",
-      "ФАО прогнозирует снижение мирового урожая риса впервые за четыре года из-за Эль-Ниньо"
-    ],
-    [
-      "2026-11-21T12:00:55.491322+00:00",
-      "Минобороны Польши заявило о падении ракеты Х-101"
-    ],
-    [
-      "2026-11-21T12:00:55.491322+00:00",
-      "Дания предложила ЕС запретить выдачу туристических виз россиянам"
-    ],
     [
       "2026-11-21T12:30:55.780447+00:00",
       "Glassnode: биткоин вычистил крупнейший кластер ликвидаций"
@@ -1468,6 +1439,22 @@
     [
       "2026-11-22T11:30:54.758928+00:00",
       "В Сочи из-за непогоды продлили штормовое предупреждение"
+    ],
+    [
+      "2026-11-22T12:01:01.893689+00:00",
+      "Китай снизит требования к обеспечению при покупке акций в кредит до 80%"
+    ],
+    [
+      "2026-11-22T12:01:01.893689+00:00",
+      "В Молуккском море зафиксировано землетрясение магнитудой 5,5"
+    ],
+    [
+      "2026-11-22T12:01:01.893689+00:00",
+      "Glassnode: спекулятивный ажиотаж вокруг альткоинов сошел на нет"
+    ],
+    [
+      "2026-11-22T12:01:01.893689+00:00",
+      "Бизнес Херсонщины увеличил привлечение средств с господдержкой в 13,1 раза"
     ]
   ],
   "results_fp": [
@@ -1554,10 +1541,10 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-21T19:31:00.953428+00:00",
-    "Коммерсантъ": "2026-11-22T11:30:54.758928+00:00",
+    "Коммерсантъ": "2026-11-22T12:01:01.893689+00:00",
     "Ведомости": "2026-11-22T08:30:54.850462+00:00",
-    "Интерфакс": "2026-11-22T11:30:54.758928+00:00",
-    "ТАСС": "2026-11-22T11:00:55.803203+00:00",
+    "Интерфакс": "2026-11-22T12:01:01.893689+00:00",
+    "ТАСС": "2026-11-22T12:01:01.893689+00:00",
     "CoinDesk": "2026-11-22T04:30:54.842014+00:00",
     "Headlines for Traders": "2026-11-22T08:30:54.850462+00:00",
     "MarketTwits": "2026-11-22T08:00:57.809421+00:00",
@@ -1606,7 +1593,7 @@
     "CNBC Markets": "2026-11-21T17:00:56.273245+00:00",
     "Natural Gas Intelligence": "2026-11-20T20:30:58.870659+00:00",
     "Правительство России": "2026-11-20T14:30:57.581325+00:00",
-    "glassnode": "2026-11-22T04:30:54.842014+00:00",
+    "glassnode": "2026-11-22T12:01:01.893689+00:00",
     "Минэкономразвития": "2026-11-20T12:30:56.056289+00:00",
     "Прайм": "2026-11-10T04:30:58.582529+00:00",
     "Хедлайнеры": "2026-11-12T10:01:00.442135+00:00",
@@ -1683,7 +1670,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-22T11:30:54+00:00",
-  "own_hour": "2026-11-22 14",
+  "catalog_at": "2026-11-22T12:01:01+00:00",
+  "own_hour": "2026-11-22 15",
   "digest_alert": "2026-11-10 19:30"
 }
