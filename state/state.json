@@ -1208,7 +1208,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-22T04:00:55.241560+00:00",
+  "breaking_ts": "2026-11-22T05:00:54.581935+00:00",
   "news_now": {
     "day": "2026-11-22",
     "day_count": 0,
@@ -1217,45 +1217,55 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/proisshestviya/28343231",
-    "https://www.kommersant.ru/doc/9127231",
-    "https://tass.ru/sport/28343227",
-    "https://tass.ru/mezhdunarodnaya-panorama/28343223",
-    "https://tass.ru/obschestvo/28343229",
-    "https://tass.ru/sport/28343225",
-    "https://tass.ru/obschestvo/28343221",
-    "https://www.rbc.ru/rbcfreenews/6aaec9dc67526b061c7d3b63",
-    "https://www.interfax.ru/world/1130629",
-    "https://tass.ru/obschestvo/28343217",
-    "https://www.kommersant.ru/doc/9127230",
-    "https://tass.ru/ekonomika/28343215",
-    "https://www.rbc.ru/rbcfreenews/606133689a794775257a5d7b",
-    "https://tass.ru/ekonomika/28343211",
-    "https://tass.ru/nedvizhimost/28343205",
-    "https://tass.ru/mezhdunarodnaya-panorama/28343213",
-    "https://tass.ru/obschestvo/28343209",
-    "https://www.rbc.ru/politics/22/11/2026/6b025cdf73f60b5e24e93b33",
-    "https://tass.ru/obschestvo/28343207",
-    "https://tass.ru/obschestvo/28343171",
-    "https://tass.ru/obschestvo/28343197",
-    "https://www.rbc.ru/base/26/10/2026/6adba4959a794706a3b00a5e",
-    "https://tass.ru/armiya-i-opk/28343189",
-    "https://www.interfax.ru/world/1130628",
-    "https://tass.ru/sport/28343191",
-    "https://tass.ru/armiya-i-opk/28343201",
-    "https://tass.ru/obschestvo/28343195",
-    "https://tass.ru/obschestvo/28343187",
-    "https://tass.ru/armiya-i-opk/28343199"
+    "https://tass.ru/sport/28343295",
+    "https://www.vedomosti.ru/society/news/2026/11/22/1414024-v-dtp-v-chili",
+    "https://tass.ru/sport/28343291",
+    "https://tass.ru/proisshestviya/28343289",
+    "https://www.interfax.ru/russia/1130632",
+    "https://tass.ru/obschestvo/28343287",
+    "https://www.kommersant.ru/doc/9127237",
+    "https://www.interfax.ru/russia/1130631",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414023-posle-pozhara-na",
+    "https://www.rbc.ru/rbcfreenews/6b01652ce5826b0635b972af",
+    "https://tass.ru/nauka/28343285",
+    "https://tass.ru/ekonomika/28343283",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414022-dmitriev-nazval",
+    "https://tass.ru/obschestvo/28343281",
+    "https://t.me/banksta/105929",
+    "https://tass.ru/obschestvo/28343277",
+    "https://www.rbc.ru/rbcfreenews/6afc2b2bceb67fb764c33241",
+    "https://tass.ru/sport/28343279",
+    "https://www.vedomosti.ru/business/news/2026/11/22/1414021-ribnii-soyuz-nazval",
+    "https://tass.ru/obschestvo/28343253",
+    "https://www.rbc.ru/rbcfreenews/6a7d47119a794745f2b27fc4",
+    "https://tass.ru/obschestvo/28343271",
+    "https://thedefiant.io/converge/tradfi-and-fintech/mufg-details-canton-test-for-intraday-jgb-repo-funding",
+    "https://www.rbc.ru/rbcfreenews/6acfa1b5d12ec00551c11818",
+    "https://tass.ru/armiya-i-opk/28343275",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414020-mid-litvi",
+    "https://tass.ru/obschestvo/28343257",
+    "https://www.kommersant.ru/doc/9127233",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343269",
+    "https://tass.ru/sport/28343267",
+    "https://tass.ru/obschestvo/28343263",
+    "https://tass.ru/proisshestviya/28343265",
+    "https://www.vedomosti.ru/politics/news/2026/11/22/1414019-tramp-opublikoval-foto-rukopozhatiya",
+    "https://tass.ru/sport/28343247",
+    "https://thedefiant.io/news/hacks/cysic-bridge-exploit-minted-10-million-tokens-on-bnb",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343255",
+    "https://tass.ru/proisshestviya/28343251",
+    "https://tass.ru/proisshestviya/28343249",
+    "https://www.kommersant.ru/doc/9127232",
+    "https://tass.ru/mezhdunarodnaya-panorama/28343241",
+    "https://tass.ru/kultura/28343239",
+    "https://tass.ru/sport/28343243",
+    "https://tass.ru/armiya-i-opk/28343233"
   ],
   "ai_dead": {
     "date": "2026-11-21",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-21T05:00:55.930547+00:00",
-      "Вьетнам смягчил уголовный кодекс"
-    ],
     [
       "2026-11-21T05:31:00.761077+00:00",
       "Биткоин упал на 8% на фоне ликвидаций на $2,38 млрд"
@@ -1855,6 +1865,26 @@
     [
       "2026-11-22T04:00:55.241560+00:00",
       "ТАСС: Украине не хватает 800 млн куб. м газа на отопительный сезон"
+    ],
+    [
+      "2026-11-22T05:00:54.581935+00:00",
+      "WSJ: сделки Nvidia зависели от личных договоренностей Хуанга"
+    ],
+    [
+      "2026-11-22T05:00:54.581935+00:00",
+      "Над Воронежской областью уничтожили 23 беспилотника"
+    ],
+    [
+      "2026-11-22T05:00:54.581935+00:00",
+      "Британский пловец пересек Ормузский пролив в зоне конфликта"
+    ],
+    [
+      "2026-11-22T05:00:54.581935+00:00",
+      "В Швейцарии пройдет референдум о поставках оружия Украине"
+    ],
+    [
+      "2026-11-22T05:00:54.581935+00:00",
+      "MUFG провел тестирование репо с цифровыми активами в Японии"
     ]
   ],
   "results_fp": [
@@ -1929,7 +1959,7 @@
   },
   "pro_daily": "2026-11-21",
   "freech_day": "2026-11-21",
-  "pro_auto": "2026-11-21",
+  "pro_auto": "2026-11-22",
   "earn_memo": {
     "NVDA|2026-11-17": {
       "last": "$1.24",
@@ -1943,14 +1973,14 @@
     "OilPrice": "2026-11-21T19:31:00.953428+00:00",
     "Коммерсантъ": "2026-11-22T04:30:54.842014+00:00",
     "Ведомости": "2026-11-21T19:00:56.726656+00:00",
-    "Интерфакс": "2026-11-22T04:30:54.842014+00:00",
-    "ТАСС": "2026-11-22T04:00:55.241560+00:00",
+    "Интерфакс": "2026-11-22T05:00:54.581935+00:00",
+    "ТАСС": "2026-11-22T05:00:54.581935+00:00",
     "CoinDesk": "2026-11-22T04:30:54.842014+00:00",
     "Headlines for Traders": "2026-11-21T17:00:56.273245+00:00",
     "MarketTwits": "2026-11-22T04:30:54.842014+00:00",
     "Сигналы РЦБ": "2026-11-20T20:30:58.870659+00:00",
     "Whale Alert": "2026-11-21T18:00:57.003452+00:00",
-    "РБК": "2026-11-22T04:30:54.842014+00:00",
+    "РБК": "2026-11-22T05:00:54.581935+00:00",
     "Wu Blockchain": "2026-11-21T16:30:59.023749+00:00",
     "Банкста": "2026-11-21T19:31:00.953428+00:00",
     "IF News": "2026-11-21T07:30:55.756951+00:00",
@@ -1979,7 +2009,7 @@
     "Cbonds": "2026-11-21T16:30:59.023749+00:00",
     "WSJ Markets": "2026-11-21T04:31:06.820963+00:00",
     "WSJ Economy": "2026-11-21T04:31:06.820963+00:00",
-    "The Defiant": "2026-11-21T20:01:02.018731+00:00",
+    "The Defiant": "2026-11-22T05:00:54.581935+00:00",
     "WSJ": "2026-11-19T16:30:55.910295+00:00",
     "Bitcoin Magazine Telegram": "2026-11-19T16:30:55.910295+00:00",
     "Lookonchain": "2026-11-22T04:30:54.842014+00:00",
@@ -2070,7 +2100,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-22T04:30:54+00:00",
-  "own_hour": "2026-11-21 21",
+  "catalog_at": "2026-11-22T05:00:54+00:00",
+  "own_hour": "2026-11-22 08",
   "digest_alert": "2026-11-10 19:30"
 }
