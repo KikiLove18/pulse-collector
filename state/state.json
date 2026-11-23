@@ -90,7 +90,7 @@
   ],
   "last_digest_ts": "2026-11-23T04:30:57.960871+00:00",
   "calendar": {
-    "ts": "2026-11-23T10:01:03.689700+00:00",
+    "ts": "2026-11-23T16:01:05.471734+00:00",
     "data": [
       {
         "title": "Core Retail Sales q/q",
@@ -207,7 +207,7 @@
       {
         "title": "Corporate Profits q/q",
         "country": "CAD",
-        "date": "2026-11-23T08:30:00-05:00",
+        "date": "2026-11-23T08:32:00-05:00",
         "impact": "Low",
         "forecast": "",
         "previous": "8.7%"
@@ -243,14 +243,6 @@
         "impact": "Low",
         "forecast": "53.5",
         "previous": "53.3"
-      },
-      {
-        "title": "Foreign Direct Investment ytd/y",
-        "country": "CNY",
-        "date": "2026-11-24T02:02:00-05:00",
-        "impact": "Low",
-        "forecast": "",
-        "previous": "-4.3%"
       },
       {
         "title": "German ifo Business Climate",
@@ -403,6 +395,14 @@
         "impact": "Low",
         "forecast": "0.2%",
         "previous": "0.2%"
+      },
+      {
+        "title": "Foreign Direct Investment ytd/y",
+        "country": "CNY",
+        "date": "2026-11-25T02:02:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": "-4.3%"
       },
       {
         "title": "UBS Economic Expectations",
@@ -1932,8 +1932,8 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-23T15:30:55+00:00",
-  "own_hour": "2026-11-23 18",
+  "catalog_at": "2026-11-23T16:01:05+00:00",
+  "own_hour": "2026-11-23 19",
   "digest_alert": "2026-11-10 19:30",
-  "ai_fail": "2026-11-23T15:30:55.252777+00:00"
+  "ai_fail": "2026-11-23T16:01:05.470546+00:00"
 }
