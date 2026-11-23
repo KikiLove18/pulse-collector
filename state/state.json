@@ -90,7 +90,7 @@
   ],
   "last_digest_ts": "2026-11-22T16:30:55.477355+00:00",
   "calendar": {
-    "ts": "2026-11-22T16:01:00.328808+00:00",
+    "ts": "2026-11-23T04:01:02.973590+00:00",
     "data": [
       {
         "title": "Core Retail Sales q/q",
@@ -210,7 +210,7 @@
         "date": "2026-11-23T08:30:00-05:00",
         "impact": "Low",
         "forecast": "",
-        "previous": ""
+        "previous": "8.7%"
       },
       {
         "title": "Flash Manufacturing PMI",
@@ -800,7 +800,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-22T21:30:56.127841+00:00",
+  "breaking_ts": "2026-11-23T04:01:02.972880+00:00",
   "news_now": {
     "day": "2026-11-23",
     "day_count": 0,
@@ -809,56 +809,75 @@
     "titles": []
   },
   "news_seen": [
-    "https://www.marketwatch.com/story/ron-johnsons-social-security-gaffe-buried-important-news-b96e0ce8?mod=mw_rss_topstories",
-    "https://www.rbc.ru/sport/03/11/2026/6ae9862316b7d106462db7e1",
-    "https://t.me/banksta/105959",
-    "https://tass.ru/nauka/28344171",
-    "https://tass.ru/mezhdunarodnaya-panorama/28344169",
-    "https://www.trumpstruth.org/statuses/43705",
-    "https://www.kommersant.ru/doc/9127591",
-    "https://tass.ru/obschestvo/28344149",
-    "https://cryptoslate.com/xrp-ledger-trial-settled-213000-paid-ai-requests-in-6324-transactions/",
-    "https://www.kommersant.ru/doc/9127538",
-    "https://tass.ru/obschestvo/28344157",
-    "https://tass.ru/obschestvo/28344151",
-    "https://tass.ru/proisshestviya/28344161",
-    "https://tass.ru/obschestvo/28344145",
-    "https://tass.ru/obschestvo/28344153",
-    "https://tass.ru/armiya-i-opk/28344165",
-    "https://tass.ru/obschestvo/28344143",
-    "https://tass.ru/armiya-i-opk/28344163",
-    "https://tass.ru/obschestvo/28344147",
-    "https://tass.ru/armiya-i-opk/28343649",
-    "https://t.me/rbc_news/161207",
-    "https://www.theblock.co/news/ecosystems/2026-11-22-trump-to-host-second-memecoin-dinner-tonight-with-trump-down-99-from-peak-444828",
-    "https://t.me/markettwits/394363",
-    "https://t.me/banksta/105958"
+    "https://t.me/headlines_for_traders/89242",
+    "https://www.kommersant.ru/doc/9127649",
+    "https://t.me/rbc_news/161208",
+    "https://www.vedomosti.ru/politics/news/2026/11/23/1414148-tramp-zayavil",
+    "https://tass.ru/mezhdunarodnaya-panorama/28344475",
+    "https://www.interfax.ru/russia/1130730",
+    "https://www.vedomosti.ru/society/news/2026/11/23/1414147-v-2027-godu-pensii",
+    "https://tass.ru/armiya-i-opk/28344473",
+    "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
+    "https://t.me/banksta/105964",
+    "https://t.me/lookonchainchannel/11232",
+    "https://t.me/headlines_for_traders/89241",
+    "https://t.me/lookonchainchannel/11231",
+    "https://t.me/headlines_for_traders/89240",
+    "https://www.interfax.ru/russia/1130729",
+    "https://www.wsj.com/economy/trade/eu-inks-trade-deal-with-indonesia-to-cut-tariffs-catalyze-investment-9810d41f?mod=rss_socialeconomyfeed",
+    "https://www.kommersant.ru/doc/9127645",
+    "https://tass.ru/ekonomika/28344471",
+    "https://cointelegraph.com/news/trump-renews-call-for-nvidia-to-rehire-jensen-huang-as-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://tass.ru/proisshestviya/28344455",
+    "https://t.me/headlines_for_traders/89239",
+    "https://www.interfax.ru/russia/1130728",
+    "https://tass.ru/proisshestviya/28344469",
+    "https://tass.ru/obschestvo/28344459",
+    "https://tass.ru/armiya-i-opk/28344467",
+    "https://tass.ru/armiya-i-opk/28344465",
+    "https://tass.ru/obschestvo/28344461",
+    "https://www.interfax.ru/business/1130727",
+    "https://tass.ru/mezhdunarodnaya-panorama/28344463",
+    "https://www.kommersant.ru/doc/9127598",
+    "https://www.interfax.ru/russia/1130726",
+    "https://www.kommersant.ru/doc/9127641",
+    "https://tass.ru/obschestvo/28339959",
+    "https://tass.ru/ekonomika/28344453",
+    "https://www.vedomosti.ru/society/news/2026/11/23/1414146-v-natsionalnom-tsentre",
+    "https://tass.ru/obschestvo/28344457",
+    "https://www.interfax.ru/russia/1130725",
+    "https://tass.ru/obschestvo/28344441",
+    "https://www.kommersant.ru/doc/9127639",
+    "https://tass.ru/obschestvo/28344445",
+    "https://tass.ru/ekonomika/28344447",
+    "https://t.me/markettwits/394368",
+    "https://www.kommersant.ru/doc/9127632",
+    "https://t.me/markettwits/394366",
+    "https://tass.ru/mezhdunarodnaya-panorama/28344439",
+    "https://t.me/cointelegraph/73448",
+    "https://tass.ru/proisshestviya/28344437",
+    "https://tass.ru/obschestvo/28344429",
+    "https://tass.ru/obschestvo/28344427",
+    "https://www.interfax.ru/world/1130723",
+    "https://tass.ru/ekonomika/28344435",
+    "https://t.me/interfaxonline/82011",
+    "https://www.vedomosti.ru/politics/news/2026/11/23/1414145-peskov-novii-raund",
+    "https://tass.ru/obschestvo/28344433",
+    "https://tass.ru/nedvizhimost/28344431",
+    "https://tass.ru/ekonomika/28344425",
+    "https://t.me/wublockchainenglish/26918",
+    "https://t.me/lookonchainchannel/11229",
+    "https://www.interfax.ru/russia/1130721",
+    "https://www.kommersant.ru/doc/9127628",
+    "https://cryptoslate.com/solanas-new-memory-checks-could-make-some-older-app-transactions-fail/",
+    "https://tass.ru/obschestvo/28344405",
+    "https://www.interfax.ru/world/1130722"
   ],
   "ai_dead": {
     "date": "2026-11-22",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-22T05:00:54.581935+00:00",
-      "Британский пловец пересек Ормузский пролив в зоне конфликта"
-    ],
-    [
-      "2026-11-22T05:00:54.581935+00:00",
-      "В Швейцарии пройдет референдум о поставках оружия Украине"
-    ],
-    [
-      "2026-11-22T05:00:54.581935+00:00",
-      "MUFG провел тестирование репо с цифровыми активами в Японии"
-    ],
-    [
-      "2026-11-22T05:30:54.968869+00:00",
-      "WSJ: украинскому ВПК мешает децентрализация"
-    ],
-    [
-      "2026-11-22T05:30:54.968869+00:00",
-      "Трамп допустил пользу от кибератаки на ФБР"
-    ],
     [
       "2026-11-22T05:30:54.968869+00:00",
       "Вторая британская деревня проголосовала за выход из состава страны"
@@ -1458,6 +1477,26 @@
     [
       "2026-11-22T20:31:02.112593+00:00",
       "Через Ормузский пролив прошло 114 судов за три дня"
+    ],
+    [
+      "2026-11-23T04:01:02.972880+00:00",
+      "Nasdaq упал на 5,3%, а акции Nvidia рухнули на 14%"
+    ],
+    [
+      "2026-11-23T04:01:02.972880+00:00",
+      "CoreWeave столкнулась с риском дефолта на фоне долга в $47 млрд"
+    ],
+    [
+      "2026-11-23T04:01:02.972880+00:00",
+      "Южная Кореяжесточит контроль за переводами криптоактивов за рубеж"
+    ],
+    [
+      "2026-11-23T04:01:02.972880+00:00",
+      "В 2027 году количество российских пенсионеров достигнет 43 млн человек"
+    ],
+    [
+      "2026-11-23T04:01:02.972880+00:00",
+      "Деловая активность и макростатистика: главные события недели"
     ]
   ],
   "results_fp": [
@@ -1545,17 +1584,17 @@
   "feed_src": {
     "OilPrice": "2026-11-22T18:01:02.929153+00:00",
     "Коммерсантъ": "2026-11-22T20:00:54.697855+00:00",
-    "Ведомости": "2026-11-22T19:30:56.283183+00:00",
-    "Интерфакс": "2026-11-22T20:31:02.112593+00:00",
-    "ТАСС": "2026-11-22T20:31:02.112593+00:00",
+    "Ведомости": "2026-11-23T04:01:02.972880+00:00",
+    "Интерфакс": "2026-11-23T04:01:02.972880+00:00",
+    "ТАСС": "2026-11-23T04:01:02.972880+00:00",
     "CoinDesk": "2026-11-22T04:30:54.842014+00:00",
-    "Headlines for Traders": "2026-11-22T08:30:54.850462+00:00",
+    "Headlines for Traders": "2026-11-23T04:01:02.972880+00:00",
     "MarketTwits": "2026-11-22T20:31:02.112593+00:00",
     "Сигналы РЦБ": "2026-11-20T20:30:58.870659+00:00",
     "Whale Alert": "2026-11-22T09:30:59.611563+00:00",
     "РБК": "2026-11-22T20:00:54.697855+00:00",
-    "Wu Blockchain": "2026-11-22T14:30:58.711801+00:00",
-    "Банкста": "2026-11-22T19:00:55.503798+00:00",
+    "Wu Blockchain": "2026-11-23T04:01:02.972880+00:00",
+    "Банкста": "2026-11-23T04:01:02.972880+00:00",
     "IF News": "2026-11-22T10:00:56.957811+00:00",
     "bitkogan": "2026-11-21T06:31:00.471540+00:00",
     "CryptoKogan": "2026-11-20T20:30:58.870659+00:00",
@@ -1581,7 +1620,7 @@
     "FinancialJuice": "2026-11-22T16:30:55.477355+00:00",
     "Cbonds": "2026-11-21T16:30:59.023749+00:00",
     "WSJ Markets": "2026-11-21T04:31:06.820963+00:00",
-    "WSJ Economy": "2026-11-21T04:31:06.820963+00:00",
+    "WSJ Economy": "2026-11-23T04:01:02.972880+00:00",
     "The Defiant": "2026-11-22T20:31:02.112593+00:00",
     "WSJ": "2026-11-19T16:30:55.910295+00:00",
     "Bitcoin Magazine Telegram": "2026-11-19T16:30:55.910295+00:00",
@@ -1673,7 +1712,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-22T21:30:56+00:00",
+  "catalog_at": "2026-11-23T04:01:02+00:00",
   "own_hour": "2026-11-22 21",
   "digest_alert": "2026-11-10 19:30"
 }
