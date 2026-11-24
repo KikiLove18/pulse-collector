@@ -90,7 +90,7 @@
   ],
   "last_digest_ts": "2026-11-23T17:00:57.218165+00:00",
   "calendar": {
-    "ts": "2026-11-23T16:01:05.471734+00:00",
+    "ts": "2026-11-24T04:00:57.010442+00:00",
     "data": [
       {
         "title": "Core Retail Sales q/q",
@@ -249,7 +249,7 @@
         "country": "EUR",
         "date": "2026-11-24T04:00:00-05:00",
         "impact": "Low",
-        "forecast": "90.6",
+        "forecast": "90.5",
         "previous": "90.2"
       },
       {
@@ -257,7 +257,7 @@
         "country": "GBP",
         "date": "2026-11-24T06:00:00-05:00",
         "impact": "Low",
-        "forecast": "-24",
+        "forecast": "-27",
         "previous": "-10"
       },
       {
@@ -289,7 +289,7 @@
         "country": "EUR",
         "date": "2026-11-24T09:00:00-05:00",
         "impact": "Low",
-        "forecast": "-9.3",
+        "forecast": "-9.4",
         "previous": "-9.8"
       },
       {
@@ -313,7 +313,7 @@
         "country": "USD",
         "date": "2026-11-24T10:00:00-05:00",
         "impact": "Medium",
-        "forecast": "92.1",
+        "forecast": "92.4",
         "previous": "91.7"
       },
       {
@@ -321,7 +321,7 @@
         "country": "USD",
         "date": "2026-11-24T10:00:00-05:00",
         "impact": "Low",
-        "forecast": "-3",
+        "forecast": "-2",
         "previous": "-2"
       },
       {
@@ -361,7 +361,7 @@
         "country": "AUD",
         "date": "2026-11-24T19:30:00-05:00",
         "impact": "High",
-        "forecast": "4.8%",
+        "forecast": "4.7%",
         "previous": "4.3%"
       },
       {
@@ -395,14 +395,6 @@
         "impact": "Low",
         "forecast": "0.2%",
         "previous": "0.2%"
-      },
-      {
-        "title": "Foreign Direct Investment ytd/y",
-        "country": "CNY",
-        "date": "2026-11-25T02:02:00-05:00",
-        "impact": "Low",
-        "forecast": "",
-        "previous": "-4.3%"
       },
       {
         "title": "UBS Economic Expectations",
@@ -445,14 +437,6 @@
         "previous": "2.3%"
       },
       {
-        "title": "Unemployment Claims",
-        "country": "USD",
-        "date": "2026-11-25T08:30:00-05:00",
-        "impact": "Medium",
-        "forecast": "201K",
-        "previous": "203K"
-      },
-      {
         "title": "Core Durable Goods Orders m/m",
         "country": "USD",
         "date": "2026-11-25T08:30:00-05:00",
@@ -465,7 +449,7 @@
         "country": "USD",
         "date": "2026-11-25T08:30:00-05:00",
         "impact": "Low",
-        "forecast": "0.5%",
+        "forecast": "0.7%",
         "previous": "1.8%"
       },
       {
@@ -485,11 +469,19 @@
         "previous": "0.5%"
       },
       {
+        "title": "Unemployment Claims",
+        "country": "USD",
+        "date": "2026-11-25T08:30:00-05:00",
+        "impact": "Low",
+        "forecast": "201K",
+        "previous": "203K"
+      },
+      {
         "title": "New Home Sales",
         "country": "USD",
         "date": "2026-11-25T10:00:00-05:00",
         "impact": "Low",
-        "forecast": "649K",
+        "forecast": "650K",
         "previous": "676K"
       },
       {
@@ -505,7 +497,7 @@
         "country": "USD",
         "date": "2026-11-25T12:00:00-05:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "-19B",
         "previous": "20B"
       },
       {
@@ -521,7 +513,7 @@
         "country": "AUD",
         "date": "2026-11-25T19:30:00-05:00",
         "impact": "Low",
-        "forecast": "4.4%",
+        "forecast": "4.5%",
         "previous": "-3.6%"
       },
       {
@@ -601,7 +593,7 @@
         "country": "JPY",
         "date": "2026-11-26T18:30:00-05:00",
         "impact": "Medium",
-        "forecast": "2.9%",
+        "forecast": "3.0%",
         "previous": "2.6%"
       },
       {
@@ -609,7 +601,7 @@
         "country": "EUR",
         "date": "2026-11-27T02:45:00-05:00",
         "impact": "Low",
-        "forecast": "0.2%",
+        "forecast": "0.1%",
         "previous": "-0.5%"
       },
       {
@@ -625,7 +617,7 @@
         "country": "EUR",
         "date": "2026-11-27T02:45:00-05:00",
         "impact": "Low",
-        "forecast": "-0.1%",
+        "forecast": "-0.2%",
         "previous": "0.4%"
       },
       {
@@ -641,7 +633,7 @@
         "country": "EUR",
         "date": "2026-11-27T03:00:00-05:00",
         "impact": "Low",
-        "forecast": "4.8%",
+        "forecast": "4.7%",
         "previous": "4.9%"
       },
       {
@@ -673,7 +665,7 @@
         "country": "CAD",
         "date": "2026-11-27T08:30:00-05:00",
         "impact": "Low",
-        "forecast": "9.6B",
+        "forecast": "9.5B",
         "previous": "8.8B"
       },
       {
@@ -681,7 +673,7 @@
         "country": "USD",
         "date": "2026-11-27T08:30:00-05:00",
         "impact": "Low",
-        "forecast": "-134.4B",
+        "forecast": "-135.9B",
         "previous": "-134.9B"
       },
       {
@@ -689,7 +681,7 @@
         "country": "USD",
         "date": "2026-11-27T08:30:00-05:00",
         "impact": "Low",
-        "forecast": "0.7%",
+        "forecast": "0.5%",
         "previous": "0.6%"
       }
     ]
@@ -803,7 +795,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-23T21:30:59.392398+00:00",
+  "breaking_ts": "2026-11-24T04:00:57.009609+00:00",
   "news_now": {
     "day": "2026-11-24",
     "day_count": 0,
@@ -813,91 +805,90 @@
   },
   "news_seen": [
     "https://www.kommersant.ru/doc/9128555",
-    "https://www.marketwatch.com/story/hpe-just-posted-its-strongest-growth-ever-and-its-stock-is-tacking-on-more-big-gains-4421cebb?mod=mw_rss_topstories",
-    "https://www.rbc.ru/rbcfreenews/6ae4267208abc341fd1f5b8f",
-    "https://t.me/rbc_news/161278",
-    "https://www.vedomosti.ru/politics/news/2026/11/24/1414560-melaniya-rasskazala",
-    "https://tass.ru/mezhdunarodnaya-panorama/28347451",
-    "https://t.me/FinancialJuice/149423",
-    "https://t.me/FinancialJuice/149422",
-    "https://tass.ru/obschestvo/28347455",
-    "https://t.me/WatcherGuru/16296",
-    "https://www.marketwatch.com/story/oracle-and-coreweave-stocks-stage-big-gains-as-investors-bet-the-ai-cash-will-keep-flowing-eeb1aa85?mod=mw_rss_topstories",
-    "https://t.me/FinancialJuice/149421",
-    "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
-    "https://www.wsj.com/finance/stocks/u-s-stocks-jump-as-huang-return-triggers-ai-rally-7c008308?mod=rss_markets_main",
-    "https://t.me/BitcoinMagazineTelegram/11154",
-    "https://www.marketwatch.com/story/short-sellers-get-smoked-as-nvidia-tallies-biggest-one-day-gain-in-stock-market-history-e9dc6e9c?mod=mw_rss_topstories",
-    "https://t.me/FinancialJuice/149420",
-    "https://thedefiant.io/news/defi/jito-proposal-would-cut-jitosol-validator-target-to-250",
-    "https://decrypt.co/383846/why-one-math-proof-ai-experts-warning-humans-lose-control",
-    "https://www.kommersant.ru/doc/9128341",
-    "https://tass.ru/ekonomika/28347439",
-    "https://tass.ru/ekonomika/28347441",
-    "https://t.me/headlines_for_traders/89342",
-    "https://www.wsj.com/finance/investing/u-s-european-bond-yields-rise-reversing-last-weeks-sharp-falls-9afadf09?mod=rss_markets_main",
-    "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
-    "https://www.rbc.ru/rbcfreenews/6aee09f8e824b280460c968d",
-    "https://t.me/expert_mag/11538",
-    "https://tass.ru/sport/28347421",
-    "https://www.wsj.com/finance/stocks/nvidia-chiefs-return-lifts-many-boats-3b515f16?mod=rss_markets_main",
-    "https://tass.ru/mezhdunarodnaya-panorama/28347431",
-    "https://tass.ru/mezhdunarodnaya-panorama/28347429",
-    "https://t.me/banksta/106024",
-    "https://www.kommersant.ru/doc/9128362",
-    "https://tass.ru/ekonomika/28347427",
-    "https://bitcoinmagazine.com/news/strive-asst-no-bitcoin-purchases-holdings",
-    "https://t.me/interfaxonline/82044",
-    "https://tass.ru/sport/28347419",
-    "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-    "https://t.me/FinancialJuice/149419",
-    "https://www.interfax.ru/russia/1130893",
-    "https://www.vedomosti.ru/politics/news/2026/11/23/1414559-liviya-podast-isk",
-    "https://www.kommersant.ru/doc/9128398",
-    "https://t.me/WatcherGuru/16295",
-    "https://tass.ru/mezhdunarodnaya-panorama/28347423",
-    "https://cointelegraph.com/news/us-seeks-11b-crypto-stolen-north-korea-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
-    "https://www.rbc.ru/rbcfreenews/6afd95a152ca4bd8a0f2fde3",
-    "https://tass.ru/armiya-i-opk/28347407",
-    "https://t.me/FinancialJuice/149418",
-    "https://www.interfax.ru/russia/1130892",
-    "https://tass.ru/obschestvo/28347411",
-    "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
-    "https://t.me/banksta/106023",
-    "https://www.wsj.com/finance/stocks/i-fell-off-my-chair-investors-marvel-as-huangs-return-sends-stocks-rocketing-98131bc6?mod=rss_markets_main",
-    "https://t.me/FinancialJuice/149417",
-    "https://t.me/FinancialJuice/149416",
-    "https://tass.ru/armiya-i-opk/28347415",
-    "https://tass.ru/obschestvo/28347391",
-    "https://t.me/FinancialJuice/149415",
-    "https://tass.ru/kultura/28347409",
-    "https://t.me/FinancialJuice/149414",
-    "https://tass.ru/ekonomika/28347413",
-    "https://t.me/FinancialJuice/149413",
-    "https://tass.ru/obschestvo/28347403",
-    "https://t.me/FinancialJuice/149412",
-    "https://t.me/FinancialJuice/149411",
-    "https://t.me/FinancialJuice/149410",
-    "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
-    "https://tass.ru/kultura/28347405",
-    "https://t.me/FinancialJuice/149409",
-    "https://tass.ru/obschestvo/28347401",
-    "https://t.me/FinancialJuice/149408",
-    "https://t.me/FinancialJuice/149407",
-    "https://www.rbc.ru/technology_and_media/20/10/2026/6ad63aef9a7947b4c37767e6",
-    "https://thedefiant.io/news/blockchains/stellar-s-bell-upgrade-goes-live-with-smart-account-tools",
-    "https://www.kommersant.ru/doc/9128249",
-    "https://t.me/glassnode/2138",
-    "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
-    "https://oilprice.com/Alternative-Energy/Renewable-Energy/Will-Batteries-Kill-Off-Gas-Turbines-at-Data-Centers.html",
-    "https://tass.ru/armiya-i-opk/28344611",
-    "https://tass.ru/mezhdunarodnaya-panorama/28347397",
-    "https://bitcoinmagazine.com/markets/bitcoin-price-fades-61000-huang",
-    "https://www.cnbc.com/2026/11/23/jensen-huang-nvidia-ceo-return.html",
-    "https://tass.ru/mezhdunarodnaya-panorama/28347393",
-    "https://t.me/FinancialJuice/149406",
-    "https://www.rbc.ru/politics/06/09/2026/6a9d858595fd21cffac51a59"
+    "https://t.me/frank_media/24854",
+    "https://t.me/markettwits/394548",
+    "https://t.me/headlines_for_traders/89347",
+    "https://t.me/markettwits/394547",
+    "https://tass.ru/sport/28347889",
+    "https://t.me/markettwits/394546",
+    "https://t.me/markettwits/394545",
+    "https://tass.ru/proisshestviya/28347883",
+    "https://t.me/interfaxonline/82054",
+    "https://thedefiant.io/converge/tradfi-and-fintech/samsung-wallet-usdc-sends-on-sui-go-live-sui-says",
+    "https://www.rbc.ru/politics/29/10/2026/6ae3885e5171f3bd6bffccab",
+    "https://www.interfax.ru/russia/1130919",
+    "https://www.kommersant.ru/doc/9128606",
+    "https://tass.ru/proisshestviya/28347877",
+    "https://thedefiant.io/frontier/ai/amazon-agrees-to-buy-decart-ai-tech-and-hire-its-team",
+    "https://t.me/banksta/106032",
+    "https://www.interfax.ru/russia/1130917",
+    "https://t.me/lookonchainchannel/11249",
+    "https://tass.ru/mezhdunarodnaya-panorama/28347857",
+    "https://thedefiant.io/converge/regulation/ecb-approves-wider-tokenized-collateral-access-for-2027",
+    "https://t.me/bwenews/16643",
+    "https://t.me/rbc_news/161281",
+    "https://thedefiant.io/frontier/regulation/oregon-virginia-sue-spacex-over-grok-image-safeguards",
+    "https://thedefiant.io/frontier/ai/anthropic-launches-claude-ship-to-fix-and-approve-code",
+    "https://www.interfax.ru/world/1130915",
+    "https://tass.ru/proisshestviya/28347873",
+    "https://tass.ru/ekonomika/28347869",
+    "https://cryptoslate.com/btcs-sold-more-ethereum-than-it-has-left-to-repay-43-8-million-in-debt/",
+    "https://tass.ru/obschestvo/28347843",
+    "https://t.me/headlines_for_traders/89346",
+    "https://www.interfax.ru/russia/1130916",
+    "https://t.me/interfaxonline/82053",
+    "https://www.rbc.ru/society/24/11/2026/6b0506fec13372d58a8775ca",
+    "https://tass.ru/obschestvo/28347851",
+    "https://tass.ru/proisshestviya/28347861",
+    "https://tass.ru/proisshestviya/28347853",
+    "https://thedefiant.io/frontier/ai/sierra-announces-1-75b-raise-at-a-30b-valuation",
+    "https://tass.ru/proisshestviya/28347859",
+    "https://tass.ru/ekonomika/28347855",
+    "https://tass.ru/mezhdunarodnaya-panorama/28347845",
+    "https://www.cnbc.com/2026/11/24/iowa-detonation-bomb-court-.html",
+    "https://www.vedomosti.ru/politics/news/2026/11/24/1414571-vvs-yuzhnoi-korei",
+    "https://tass.ru/armiya-i-opk/28347847",
+    "https://www.kommersant.ru/doc/9128589",
+    "https://tass.ru/proisshestviya/28347849",
+    "https://tass.ru/proisshestviya/28347821",
+    "https://tass.ru/armiya-i-opk/28347839",
+    "https://tass.ru/ekonomika/28347831",
+    "https://tass.ru/obschestvo/28347827",
+    "https://tass.ru/obschestvo/28347829",
+    "https://t.me/WatcherGuru/16301",
+    "https://thedefiant.io/frontier/ai/anthropic-publishes-claude-s-claimed-vp-vnp-proof",
+    "https://thedefiant.io/news/markets/bitcoin-falls-below-60-000-erasing-monday-s-rebound",
+    "https://tass.ru/proisshestviya/28347825",
+    "https://thedefiant.io/news/defi/aave-horizon-s-uscc-balance-fell-74-tvl-rebounded",
+    "https://tass.ru/proisshestviya/28347823",
+    "https://tass.ru/nedvizhimost/28347817",
+    "https://www.kommersant.ru/doc/9128599",
+    "https://tass.ru/proisshestviya/28347813",
+    "https://t.me/headlines_for_traders/89345",
+    "https://t.me/cointelegraph/73485",
+    "https://tass.ru/ekonomika/28347799",
+    "https://thedefiant.io/converge/regulation/hong-kong-gazettes-bill-to-expand-crypto-licensing",
+    "https://www.interfax.ru/russia/1130913",
+    "https://thedefiant.io/frontier/ai/openai-test-finds-gpt-6-2-astra-omits-blockers-twice-as-often",
+    "https://thedefiant.io/frontier/technology/riken-confirms-theft-of-430-private-keys-from-fugaku",
+    "https://thedefiant.io/news/regulation/senate-backs-war-and-death-bet-ban-for-registered-markets",
+    "https://thedefiant.io/converge/tradfi-and-fintech/fairmint-plans-stock-venue-on-canton-then-ethereum",
+    "https://thedefiant.io/news/cefi/binance-says-mexc-deposits-will-face-compliance-holds",
+    "https://cointelegraph.com/news/google-wants-make-you-star-your-own-ai-slop-movies?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://thedefiant.io/news/security/pump-fun-to-end-external-wallet-login-on-nov-30",
+    "https://thedefiant.io/news/defi/defillama-shows-tydro-tvl-quadrupled-by-nov-22",
+    "https://www.vedomosti.ru/politics/news/2026/11/24/1414570-sobyanin-sili-pvo-sbili",
+    "https://www.rbc.ru/business/23/11/2026/6b0496876430eddd3326a50e",
+    "https://thedefiant.io/news/cefi/upbit-bithumb-flag-sky-and-usds-for-trading-caution",
+    "https://thedefiant.io/news/defi/derive-announces-six-real-world-asset-options-markets",
+    "https://thedefiant.io/frontier/markets/nvidia-jumps-31-at-close-after-huang-returns-as-ceo",
+    "https://t.me/lookonchainchannel/11248",
+    "https://www.rbc.ru/rbcfreenews/6a3e71979a794736973d33bf",
+    "https://t.me/WatcherGuru/16299",
+    "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
+    "https://www.theblock.co/news/markets/2026-11-23-california-court-terminates-lawsuit-coinbase-terrausd-445448",
+    "https://t.me/headlines_for_traders/89344",
+    "https://www.interfax.ru/world/1130912"
   ],
   "ai_dead": {
     "date": "2026-11-23",
@@ -906,26 +897,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-11-22T20:31:02.112593+00:00",
-      "В России вступило в силу указание ЦБ о биржевой торговле криптовалютами"
-    ],
-    [
-      "2026-11-22T20:31:02.112593+00:00",
-      "Китай снижает маржинальные требования для поддержки фондового рынка"
-    ],
-    [
-      "2026-11-22T20:31:02.112593+00:00",
-      "AP: демократы получили 258 мест в Палате представителей США"
-    ],
-    [
-      "2026-11-22T20:31:02.112593+00:00",
-      "Протокол Fusionist столкнулся с эксплойтом моста на $1,04 млн"
-    ],
-    [
-      "2026-11-22T20:31:02.112593+00:00",
-      "Через Ормузский пролив прошло 114 судов за три дня"
-    ],
     [
       "2026-11-23T04:01:02.972880+00:00",
       "Nasdaq упал на 5,3%, а акции Nvidia рухнули на 14%"
@@ -1445,6 +1416,34 @@
     [
       "2026-11-23T20:30:56.161030+00:00",
       "Strategy увеличила программу обратного выкупа акций до $4 млрд"
+    ],
+    [
+      "2026-11-24T04:00:57.009609+00:00",
+      "Биткоин опустился ниже $60 000 на фоне ликвидаций длинных позиций"
+    ],
+    [
+      "2026-11-24T04:00:57.009609+00:00",
+      "«Совкомфлот» готовит экспериментальные рейсы по Севморпути"
+    ],
+    [
+      "2026-11-24T04:00:57.009609+00:00",
+      "Amazon договорилась о покупке разработчика ИИ-технологий Decart"
+    ],
+    [
+      "2026-11-24T04:00:57.009609+00:00",
+      "Sierra привлекла $1,75 млрд при оценке в $30 млрд"
+    ],
+    [
+      "2026-11-24T04:00:57.009609+00:00",
+      "ЕЦБ одобрил расширение доступа к токенизированному залогу с 2027 года"
+    ],
+    [
+      "2026-11-24T04:00:57.009609+00:00",
+      "ЦЦИ прогнозирует снижение экспорта подсолнечного масла из РФ на 15,2%"
+    ],
+    [
+      "2026-11-24T04:00:57.009609+00:00",
+      "Bithumb добавила торги Orochi Network, Sanctum и Subsquid за воны"
     ]
   ],
   "results_fp": [
@@ -1534,13 +1533,13 @@
   },
   "feed_src": {
     "OilPrice": "2026-11-23T17:31:00.269398+00:00",
-    "Коммерсантъ": "2026-11-23T19:00:56.599248+00:00",
+    "Коммерсантъ": "2026-11-24T04:00:57.009609+00:00",
     "Ведомости": "2026-11-23T19:00:56.599248+00:00",
     "Интерфакс": "2026-11-23T19:31:11.341913+00:00",
     "ТАСС": "2026-11-23T20:30:56.161030+00:00",
     "CoinDesk": "2026-11-23T12:00:56.700206+00:00",
     "Headlines for Traders": "2026-11-23T17:31:00.269398+00:00",
-    "MarketTwits": "2026-11-23T19:31:11.341913+00:00",
+    "MarketTwits": "2026-11-24T04:00:57.009609+00:00",
     "Сигналы РЦБ": "2026-11-23T20:30:56.161030+00:00",
     "Whale Alert": "2026-11-23T17:00:57.218165+00:00",
     "РБК": "2026-11-23T19:00:56.599248+00:00",
@@ -1554,7 +1553,7 @@
     "Frank Media": "2026-11-23T17:31:00.269398+00:00",
     "ForkLog": "2026-11-23T12:00:56.700206+00:00",
     "Decrypt": "2026-11-23T17:31:00.269398+00:00",
-    "Cointelegraph": "2026-11-23T19:00:56.599248+00:00",
+    "Cointelegraph": "2026-11-24T04:00:57.009609+00:00",
     "CoinMarketCap": "2026-11-21T18:30:54.236548+00:00",
     "СберИнвестиции": "2026-11-23T17:00:57.218165+00:00",
     "РБК Крипто": "2026-11-23T14:31:07.979673+00:00",
@@ -1572,10 +1571,10 @@
     "Cbonds": "2026-11-21T16:30:59.023749+00:00",
     "WSJ Markets": "2026-11-23T19:00:56.599248+00:00",
     "WSJ Economy": "2026-11-23T04:01:02.972880+00:00",
-    "The Defiant": "2026-11-23T20:30:56.161030+00:00",
+    "The Defiant": "2026-11-24T04:00:57.009609+00:00",
     "WSJ": "2026-11-19T16:30:55.910295+00:00",
     "Bitcoin Magazine Telegram": "2026-11-23T16:31:10.976804+00:00",
-    "Lookonchain": "2026-11-23T13:00:56.123909+00:00",
+    "Lookonchain": "2026-11-24T04:00:57.009609+00:00",
     "Банк России": "2026-11-20T07:30:57.761076+00:00",
     "InvestFuture": "2026-11-23T17:00:57.218165+00:00",
     "Rigzone": "2026-11-23T17:00:57.218165+00:00",
@@ -1599,7 +1598,7 @@
     "Incrypted": "2026-11-22T15:30:58.434306+00:00",
     "Смарт-лаб": "2026-11-20T16:00:57.191555+00:00",
     "EIA Today in Energy": "2026-11-12T14:30:56.851698+00:00",
-    "BWEnews": "2026-11-22T20:00:54.697855+00:00",
+    "BWEnews": "2026-11-24T04:00:57.009609+00:00",
     "ИнвестФорсайт": "2026-11-03T16:31:07.181074+00:00",
     "SmartLab": "2026-11-16T16:30:59.322703+00:00",
     "РБК Новости": "2026-11-03T16:31:07.181074+00:00",
@@ -1663,7 +1662,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-23T21:30:59+00:00",
+  "catalog_at": "2026-11-24T04:00:57+00:00",
   "own_hour": "2026-11-23 21",
   "digest_alert": "2026-11-10 19:30"
 }
