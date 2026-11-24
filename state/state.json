@@ -795,161 +795,110 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-24T07:30:56.704122+00:00",
+  "breaking_ts": "2026-11-24T08:00:59.454968+00:00",
   "news_now": {
     "day": "2026-11-24",
-    "day_count": 2,
+    "day_count": 3,
     "urgent_count": 0,
-    "last": "2026-11-24T06:30:55.898642+00:00",
+    "last": "2026-11-24T08:00:59.454968+00:00",
     "titles": [
       "Самолет обсуждает реструктуризацию долга и выкуп акций",
-      "Нефть Brent опустилась ниже $86 за баррель впервые с августа"
+      "Нефть Brent опустилась ниже $86 за баррель впервые с августа",
+      "ДР Конго снова приостанавливает экспорт кобальта"
     ]
   },
   "news_seen": [
-    "https://tass.ru/obschestvo/28348499",
-    "https://t.me/markettwits/394594",
-    "https://tass.ru/proisshestviya/28348537",
-    "https://t.me/forbesrussia/103398",
+    "https://t.me/FinancialJuice/149440",
+    "https://t.me/FinancialJuice/149439",
+    "https://t.me/cbonds/26490",
+    "https://tass.ru/mezhdunarodnaya-panorama/28348643",
+    "https://t.me/rbc_news/161297",
+    "https://t.me/interfaxonline/82066",
+    "https://t.me/interfaxonline/82065",
+    "https://t.me/markettwits/394602",
+    "https://t.me/prime1/192210",
+    "https://tass.ru/sport/28348659",
+    "https://t.me/agroinvestor/21867",
+    "https://www.rbc.ru/rbcfreenews/6afd6ab7e1537301603168ec",
+    "https://tass.ru/proisshestviya/28348651",
+    "https://tass.ru/ekonomika/28348653",
+    "https://tass.ru/mezhdunarodnaya-panorama/28348629",
+    "https://tass.ru/proisshestviya/28348605",
+    "https://t.me/forbesrussia/103399",
+    "https://www.interfax.ru/russia/1130961",
+    "https://t.me/markettwits/394601",
+    "https://www.vedomosti.ru/politics/news/2026/11/24/1414618-britaniya-zakupila",
+    "https://tass.ru/sport/28348645",
+    "https://tass.ru/ekonomika/28348637",
+    "https://www.rbc.ru/radio/24/11/2026/6b0541a46aa44b30090668ef",
+    "https://tass.ru/sport/28348633",
+    "https://tass.ru/politika/28348615",
+    "https://www.rbc.ru/quote/24/11/2026/6b053fecd3c986df7eb67a48",
+    "https://www.rbc.ru/rbcfreenews/6a8be2019a7947467c0182df",
+    "https://tass.ru/ekonomika/28348635",
+    "https://t.me/expert_mag/11542",
+    "https://tass.ru/mezhdunarodnaya-panorama/28348607",
+    "https://tass.ru/proisshestviya/28348625",
+    "https://t.me/forklog/50796",
+    "https://tass.ru/proisshestviya/28348619",
+    "https://www.rbc.ru/sport/21/11/2026/6b01a119573c7abe61d5c891",
+    "https://tass.ru/ekonomika/28348627",
+    "https://tass.ru/proisshestviya/28348613",
+    "https://tass.ru/ekonomika/28348621",
+    "https://tass.ru/ekonomika/28348611",
+    "https://www.kommersant.ru/doc/9128786",
+    "https://tass.ru/proisshestviya/28348603",
+    "https://tass.ru/proisshestviya/28348551",
+    "https://t.me/markettwits/394600",
+    "https://t.me/expert_mag/11541",
+    "https://t.me/rbc_news/161296",
     "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
+    "https://www.interfax.ru/business/1130962",
+    "https://t.me/markettwits/394599",
+    "https://t.me/bcs_express/26537",
+    "https://tass.ru/proisshestviya/28348545",
+    "https://tass.ru/proisshestviya/28348587",
+    "https://tass.ru/politika/28348601",
+    "https://www.rbc.ru/rbcfreenews/69e0ae1c9a7947630d7dfaf6",
+    "https://t.me/interfaxonline/82064",
+    "https://tass.ru/ekonomika/28348597",
+    "https://tass.ru/ekonomika/28348595",
+    "https://t.me/markettwits/394598",
+    "https://www.vedomosti.ru/society/news/2026/11/24/1414617-troyanovu-vinovnoi",
+    "https://cointelegraph.com/markets/bitcoin-etfs-bleed-ibit-shares-gain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "https://www.rbc.ru/sport/17/11/2026/6afc23c24edcf1dfab2e8dce",
+    "https://t.me/markettwits/394597",
+    "https://www.kommersant.ru/doc/9128774",
+    "https://t.me/headlines_for_traders/89370",
+    "https://www.vedomosti.ru/politics/news/2026/11/24/1414611-polovini-nemtsev",
+    "https://t.me/markettwits/394596",
+    "https://www.vedomosti.ru/business/news/2026/11/24/1414612-turpotok-iz-kitaya",
+    "https://www.rbc.ru/textonlines/18/04/2025/6216fb4d9a79474dc80e8821",
+    "https://t.me/markettwits/394595",
+    "https://www.vedomosti.ru/politics/news/2026/11/24/1414610-tramp-mog-zarabotat",
+    "https://www.rbc.ru/politics/24/11/2026/6b053136b223ea223a70b554",
+    "https://t.me/banksta/106041",
+    "https://t.me/agroinvestor/21866",
+    "https://t.me/wublockchainenglish/26935",
+    "https://www.vedomosti.ru/investments/news/2026/11/24/1414608-viruchka-arenadati",
+    "https://t.me/cbrstocks/84478",
+    "https://www.kommersant.ru/doc/9128780",
+    "https://t.me/cbonds/26489",
+    "https://www.kommersant.ru/doc/9128772",
+    "https://t.me/markettwits/394594",
+    "https://t.me/forbesrussia/103398",
     "https://t.me/oil_capital/27069",
-    "https://tass.ru/obschestvo/28348543",
     "https://t.me/proeconomics/20777",
     "https://t.me/rbc_news/161295",
     "https://thedefiant.io/news/regulation/south-korea-proposes-ico-return-exchange-ownership-cap",
     "https://www.rbc.ru/sport/16/11/2026/6afa98189f2ee49a640da060",
-    "https://tass.ru/obschestvo/28348511",
-    "https://t.me/minfin/9525",
-    "https://tass.ru/mezhdunarodnaya-panorama/28348539",
-    "https://tass.ru/ekonomika/28348533",
-    "https://tass.ru/obschestvo/28348531",
-    "https://www.interfax.ru/world/1130960",
-    "https://www.kommersant.ru/doc/9128764",
-    "https://tass.ru/politika/28348407",
-    "https://tass.ru/mezhdunarodnaya-panorama/28348523",
-    "https://t.me/prime1/192209",
-    "https://t.me/markettwits/394593",
-    "https://tass.ru/proisshestviya/28348525",
-    "https://tass.ru/obschestvo/28348267",
-    "https://t.me/if_market_news/87209",
-    "https://tass.ru/obschestvo/28348509",
-    "https://www.interfax.ru/world/1130959",
-    "https://tass.ru/obschestvo/28348517",
-    "https://www.rbc.ru/rbcfreenews/69fd6ed89a79472e736e3351",
-    "https://t.me/headlines_for_traders/89369",
-    "https://tass.ru/mezhdunarodnaya-panorama/28348491",
-    "https://t.me/alfa_investments/8619",
-    "https://t.me/markettwits/394592",
-    "https://t.me/forbesrussia/103397",
-    "https://www.vedomosti.ru/politics/news/2026/11/24/1414604-politico-evropa-rassmatrivaet",
-    "https://www.kommersant.ru/doc/9128760",
-    "https://www.kommersant.ru/doc/9128743",
-    "https://t.me/lookonchainchannel/11254",
-    "https://tass.ru/proisshestviya/28348503",
-    "https://tass.ru/obschestvo/28348489",
-    "https://tass.ru/proisshestviya/28348501",
-    "https://www.kommersant.ru/doc/9128753",
-    "https://tass.ru/kultura/28348485",
-    "https://t.me/cbrstocks/84477",
-    "https://tass.ru/sport/28348497",
-    "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
-    "https://t.me/markettwits/394591",
-    "https://www.interfax.ru/world/1130958",
-    "https://www.kommersant.ru/doc/9128752",
-    "https://t.me/forbesrussia/103396",
-    "https://tass.ru/sport/28348483",
-    "https://tass.ru/mezhdunarodnaya-panorama/28348487",
-    "https://t.me/headlines_for_traders/89368",
-    "https://t.me/incrypted/33418",
-    "https://tass.ru/proisshestviya/28348475",
-    "https://www.rbc.ru/quote/11/11/2026/6af440bb27f1d95defee45f7",
-    "https://tass.ru/proisshestviya/28348481",
-    "https://www.interfax.ru/russia/1130956",
-    "https://t.me/rbc_news/161294",
-    "https://tass.ru/obschestvo/28348477",
-    "https://www.vedomosti.ru/politics/news/2026/11/24/1414596-atakovannii-bpla-suhogruz",
-    "https://t.me/markettwits/394590",
-    "https://t.me/cbrstocks/84476",
-    "https://www.wsj.com/finance/jgb-futures-rise-buoyed-by-decline-in-crude-oil-prices-deebd8c8?mod=rss_markets_main",
-    "https://www.rbc.ru/rbcfreenews/6b03d841391419b5db3572ce",
-    "https://tass.ru/proisshestviya/28348479",
-    "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Hold-Near-Three-Month-Lows-Despite-Hormuz-Mine-Claims.html",
-    "https://www.interfax.ru/russia/1130957",
-    "https://www.vedomosti.ru/politics/news/2026/11/24/1414595-postradali-sem-chelovek",
-    "https://www.kommersant.ru/doc/9128746",
-    "https://t.me/markettwits/394589",
-    "https://t.me/invest_zonaa/39615",
-    "https://t.me/banksta/106040",
-    "https://www.wsj.com/finance/stocks/nikkei-rises-2-7-led-by-chip-metals-stocks-82c1bb9d?mod=rss_markets_main",
-    "https://t.me/markettwits/394588",
-    "https://www.vedomosti.ru/society/news/2026/11/24/1414597-fsb-predotvratila-terakt",
-    "https://t.me/forbesrussia/103395",
-    "https://t.me/markettwits/394587",
-    "https://t.me/headlines_for_traders/89367",
-    "https://t.me/headlines_for_traders/89365",
-    "https://www.rbc.ru/technology_and_media/09/06/2026/6a2709459a7947b5fee5b9af",
-    "https://t.me/expert_mag/11540",
-    "https://t.me/rbc_news/161293",
-    "https://www.kommersant.ru/doc/9128737",
-    "https://www.kommersant.ru/doc/9128740",
-    "https://www.interfax.ru/russia/1130955",
-    "https://t.me/markettwits/394585"
+    "https://t.me/minfin/9525"
   ],
   "ai_dead": {
-    "date": "2026-11-23",
-    "models": [
-      "gemini-3.6-flash"
-    ]
+    "date": "2026-11-24",
+    "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-23T07:30:58.437993+00:00",
-      "Чистая прибыль «Селигдара» по МСФО за 9 месяцев составила 4,53 млрд рублей"
-    ],
-    [
-      "2026-11-23T07:30:58.437993+00:00",
-      "Европейские производители зеленой энергетики раскритиковали сокращение бюджета ЕС на €40 млрд"
-    ],
-    [
-      "2026-11-23T07:30:58.437993+00:00",
-      "Доля льготной ипотеки в России в октябре снизилась до 20%"
-    ],
-    [
-      "2026-11-23T07:30:58.437993+00:00",
-      "Доля отказов по заявкам на микрозаймы в России в октябре достигла 66%"
-    ],
-    [
-      "2026-11-23T07:30:58.437993+00:00",
-      "Ark Invest купила акции Anthropic на $146 миллионов после IPO"
-    ],
-    [
-      "2026-11-23T07:30:58.437993+00:00",
-      "МТС увеличила чистую прибыль на 88% в третьем квартале"
-    ],
-    [
-      "2026-11-23T08:00:59.123165+00:00",
-      "Nvidia выбыла из тройки крупнейших компаний мира"
-    ],
-    [
-      "2026-11-23T08:00:59.123165+00:00",
-      "Цены на газ в Европе подскочили на фоне прогнозов холодов"
-    ],
-    [
-      "2026-11-23T08:00:59.123165+00:00",
-      "Правительство направит 50 млрд рублей на калининградские паромы"
-    ],
-    [
-      "2026-11-23T08:00:59.123165+00:00",
-      "Иранские военные заявили о подрыве четырех танкеров в Ормузском проливе"
-    ],
-    [
-      "2026-11-23T08:00:59.123165+00:00",
-      "В России продлили заморозку цен на удобрения до июня 2027 года"
-    ],
-    [
-      "2026-11-23T08:00:59.123165+00:00",
-      "Upbit и Bithumb приостановили переводы CYBER из-за подозрения во взломе"
-    ],
     [
       "2026-11-23T08:30:57.664962+00:00",
       "Иран сообщил о подрыве четырех танкеров в Ормузском проливе"
@@ -1449,6 +1398,34 @@
     [
       "2026-11-24T07:30:56.704122+00:00",
       "Германия пригрозила заблокировать бюджет ЕС из-за кредита Украине"
+    ],
+    [
+      "2026-11-24T08:00:59.454968+00:00",
+      "ДР Конго снова приостанавливает экспорт кобальта"
+    ],
+    [
+      "2026-11-24T08:00:59.454968+00:00",
+      "Equinor заключила контракт на поставки газа в Германию до 2044 года"
+    ],
+    [
+      "2026-11-24T08:00:59.454968+00:00",
+      "ВС РФ признал цифровую валюту имуществом для конфискации"
+    ],
+    [
+      "2026-11-24T08:00:59.454968+00:00",
+      "Миннефти Ирака возьмет под контроль курдские месторождения"
+    ],
+    [
+      "2026-11-24T08:00:59.454968+00:00",
+      "Прибыль банков РФ в 2026 году может составить рекордные 4 трлн рублей"
+    ],
+    [
+      "2026-11-24T08:00:59.454968+00:00",
+      "Чистая прибыль «Акрона» за 9 месяцев выросла на 17% до 43 млрд рублей"
+    ],
+    [
+      "2026-11-24T08:00:59.454968+00:00",
+      "«Виллина» допустила техдефолт по облигациям на 12,56 млн рублей"
     ]
   ],
   "results_fp": [
@@ -1525,7 +1502,7 @@
     ]
   },
   "pro_daily": "2026-11-23",
-  "freech_day": "2026-11-23",
+  "freech_day": "2026-11-24",
   "pro_auto": "2026-11-24",
   "earn_memo": {
     "NVDA|2026-11-17": {
@@ -1540,11 +1517,11 @@
     "OilPrice": "2026-11-23T17:31:00.269398+00:00",
     "Коммерсантъ": "2026-11-24T06:30:55.898642+00:00",
     "Ведомости": "2026-11-24T06:00:55.265524+00:00",
-    "Интерфакс": "2026-11-24T07:00:54.296040+00:00",
-    "ТАСС": "2026-11-24T06:00:55.265524+00:00",
+    "Интерфакс": "2026-11-24T08:00:59.454968+00:00",
+    "ТАСС": "2026-11-24T08:00:59.454968+00:00",
     "CoinDesk": "2026-11-23T12:00:56.700206+00:00",
     "Headlines for Traders": "2026-11-24T07:30:56.704122+00:00",
-    "MarketTwits": "2026-11-24T07:30:56.704122+00:00",
+    "MarketTwits": "2026-11-24T08:00:59.454968+00:00",
     "Сигналы РЦБ": "2026-11-23T20:30:56.161030+00:00",
     "Whale Alert": "2026-11-23T17:00:57.218165+00:00",
     "РБК": "2026-11-24T06:00:55.265524+00:00",
@@ -1572,8 +1549,8 @@
     "The Block": "2026-11-24T06:30:55.898642+00:00",
     "Нефть и Капитал": "2026-11-24T07:30:56.704122+00:00",
     "MMI": "2026-11-20T11:30:54.791118+00:00",
-    "FinancialJuice": "2026-11-23T20:30:56.161030+00:00",
-    "Cbonds": "2026-11-21T16:30:59.023749+00:00",
+    "FinancialJuice": "2026-11-24T08:00:59.454968+00:00",
+    "Cbonds": "2026-11-24T08:00:59.454968+00:00",
     "WSJ Markets": "2026-11-24T07:30:56.704122+00:00",
     "WSJ Economy": "2026-11-23T04:01:02.972880+00:00",
     "The Defiant": "2026-11-24T04:00:57.009609+00:00",
@@ -1667,7 +1644,7 @@
     "Bitkogan Hotline": "2026-11-18T16:30:59.664099+00:00",
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00"
   },
-  "catalog_at": "2026-11-24T07:30:56+00:00",
-  "own_hour": "2026-11-24 10",
+  "catalog_at": "2026-11-24T08:00:59+00:00",
+  "own_hour": "2026-11-24 11",
   "digest_alert": "2026-11-10 19:30"
 }
