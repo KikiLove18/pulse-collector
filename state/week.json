@@ -4881,6 +4881,14 @@
 "verdict": "worse",
 "impact": "Medium",
 "headline": "S&P Global Services PMI: 54,7 при прогнозе 55,6 (прошлое 56,1)"
+},
+{
+"key": "2026-11-24|доверие потребителей|10:00",
+"title": "Доверие потребителей (CB)",
+"dt": "2026-11-24T15:00:00+00:00",
+"verdict": "better",
+"impact": "Medium",
+"headline": "103,3 при прогнозе 92,4 (прошлое 91,9)"
 }
 ],
 "assets_done": [
