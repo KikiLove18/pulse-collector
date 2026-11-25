@@ -90,7 +90,7 @@
   ],
   "last_digest_ts": "2026-11-24T17:30:55.867920+00:00",
   "calendar": {
-    "ts": "2026-11-24T16:31:20.707130+00:00",
+    "ts": "2026-11-25T04:01:01.731202+00:00",
     "data": [
       {
         "title": "Core Retail Sales q/q",
@@ -413,6 +413,14 @@
         "previous": "3.37|1.1"
       },
       {
+        "title": "FOMC Member Bowman Speaks",
+        "country": "USD",
+        "date": "2026-11-25T07:25:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": ""
+      },
+      {
         "title": "Core PCE Price Index m/m",
         "country": "USD",
         "date": "2026-11-25T08:30:00-05:00",
@@ -489,7 +497,7 @@
         "country": "USD",
         "date": "2026-11-25T10:30:00-05:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "2.0M",
         "previous": "3.4M"
       },
       {
@@ -650,7 +658,7 @@
         "date": "2026-11-27T05:33:00-05:00",
         "impact": "Low",
         "forecast": "",
-        "previous": ""
+        "previous": "4.49|1.6"
       },
       {
         "title": "German Buba President Nagel Speaks",
@@ -796,7 +804,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-24T21:30:55.577582+00:00",
+  "breaking_ts": "2026-11-25T04:01:01.730530+00:00",
   "news_now": {
     "day": "2026-11-25",
     "day_count": 0,
@@ -805,66 +813,55 @@
     "titles": []
   },
   "news_seen": [
-    "https://t.me/FinancialJuice/149607",
-    "https://tass.ru/obschestvo/28351291",
-    "https://tass.ru/proisshestviya/28351289",
-    "https://t.me/forbesrussia/103437",
-    "https://tass.ru/obschestvo/28351287",
-    "https://www.interfax.ru/world/1131145",
-    "https://tass.ru/sport/28351283",
-    "https://www.kommersant.ru/doc/9129766",
-    "https://www.wsj.com/finance/stocks/nvidias-relief-rally-stalls-a9455613?mod=rss_markets_main",
-    "https://t.me/banksta/106093",
-    "https://www.marketwatch.com/story/microns-stock-falls-as-an-analyst-warns-about-a-future-supply-glut-f7fbeefb?mod=mw_rss_topstories",
-    "https://www.marketwatch.com/story/the-stock-market-is-hardly-cheap-even-taking-recent-declines-into-account-fe0a7989?mod=mw_rss_topstories",
-    "https://tass.ru/obschestvo/28351281",
-    "https://t.me/markettwits/394715",
-    "https://tass.ru/proisshestviya/28351277",
-    "https://www.vedomosti.ru/society/news/2026/11/25/1415021-listok-deda-kushnera",
-    "https://decrypt.co/383930/coldcard-bitcoin-exploit-how-hidden-flaw-survived-years-audits",
-    "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
-    "https://t.me/headlines_for_traders/89428",
-    "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
-    "https://www.rbc.ru/politics/24/11/2026/6b05b0fa82f2a6301539d254",
-    "https://t.me/whale_alert_io/105286",
-    "https://www.marketwatch.com/story/nvidias-stock-drops-as-these-major-questions-loom-over-jensen-huangs-return-9096636f?mod=mw_rss_topstories",
-    "https://www.marketwatch.com/story/dells-stock-rises-as-the-ai-boom-helps-sales-more-than-double-cfb8cf65?mod=mw_rss_topstories",
-    "https://www.cnbc.com/2026/11/24/trump-jensen-huang-nvidia.html",
-    "https://thedefiant.io/frontier/ai/openai-reports-lab-binders-from-gpt-6-2-protein-designs",
-    "https://tass.ru/ekonomika/28351273",
-    "https://t.me/whale_alert_io/105285",
-    "https://t.me/FinancialJuice/149606",
-    "https://t.me/FinancialJuice/149605",
-    "https://www.interfax.ru/russia/1131143",
-    "https://t.me/FinancialJuice/149604",
-    "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
-    "https://www.rbc.ru/rbcfreenews/68c4757b9a79478c7fd59d28",
-    "https://t.me/markettwits/394714",
-    "https://tass.ru/politika/28351253",
-    "https://tass.ru/obschestvo/28351255",
-    "https://t.me/markettwits/394713",
-    "https://tass.ru/kultura/28351263",
-    "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
-    "https://tass.ru/ekonomika/28351267",
-    "https://tass.ru/armiya-i-opk/28351269",
-    "https://tass.ru/obschestvo/28351261",
-    "https://tass.ru/armiya-i-opk/28351265",
-    "https://tass.ru/nedvizhimost/28351259",
-    "https://t.me/banksta/106092",
-    "https://t.me/whale_alert_io/105284",
-    "https://tass.ru/politika/28351257",
-    "https://tass.ru/obschestvo/28350719",
-    "https://tass.ru/armiya-i-opk/28348111",
-    "https://oilprice.com/Energy/Energy-General/Where-Does-Texas-Data-Center-Boom-Go-From-Here.html",
-    "https://tass.ru/ekonomika/28351249",
-    "https://t.me/cbrstocks/84508",
-    "https://tass.ru/obschestvo/28351247",
-    "https://tass.ru/obschestvo/28351245",
-    "https://www.marketwatch.com/story/grocery-stores-have-staggering-deals-for-thanksgiving-but-dont-get-used-to-these-lower-prices-just-yet-7adfc7f5?mod=mw_rss_topstories",
-    "https://www.interfax.ru/world/1131142",
-    "https://www.vedomosti.ru/politics/news/2026/11/24/1415020-vengriya-otkazalas",
-    "https://tass.ru/mezhdunarodnaya-panorama/28351239",
-    "https://tass.ru/ekonomika/28351243"
+    "https://t.me/frank_media/24871",
+    "https://www.theblock.co/news/regulation/2026-11-24-utah-moves-to-drop-criminal-charges-kalshi-446090",
+    "https://t.me/rbc_news/161369",
+    "https://tass.ru/ekonomika/28351793",
+    "https://tass.ru/obschestvo/28351799",
+    "https://tass.ru/obschestvo/28351791",
+    "https://tass.ru/proisshestviya/28351807",
+    "https://tass.ru/sport/28351803",
+    "https://t.me/markettwits/394717",
+    "https://tass.ru/proisshestviya/28351797",
+    "https://tass.ru/obschestvo/28351765",
+    "https://www.cnbc.com/2026/11/25/tech-stocks-softbank-group-advantest-sk-hynix-samsung.html",
+    "https://www.vedomosti.ru/politics/news/2026/11/25/1415031-dvoe-liviiskih",
+    "https://tass.ru/ekonomika/28351755",
+    "https://www.kommersant.ru/doc/9129799",
+    "https://tass.ru/politika/28351781",
+    "https://t.me/banksta/106106",
+    "https://tass.ru/armiya-i-opk/28351777",
+    "https://tass.ru/proisshestviya/28351785",
+    "https://tass.ru/armiya-i-opk/28351779",
+    "https://tass.ru/obschestvo/28351761",
+    "https://www.interfax.ru/world/1131175",
+    "https://tass.ru/proisshestviya/28351773",
+    "https://tass.ru/obschestvo/28351767",
+    "https://tass.ru/proisshestviya/28351763",
+    "https://t.me/WatcherGuru/16321",
+    "https://tass.ru/mezhdunarodnaya-panorama/28351743",
+    "https://tass.ru/proisshestviya/28351769",
+    "https://t.me/CoinDeskGlobal/25621",
+    "https://www.coindesk.com/policy/2026/11/24/trump-says-he-s-willing-to-give-nvidia-s-huang-a-pardon-doesn-t-think-he-needs-one",
+    "https://tass.ru/proisshestviya/28351757",
+    "https://tass.ru/ekonomika/28351735",
+    "https://t.me/interfaxonline/82100",
+    "https://t.me/lookonchainchannel/11270",
+    "https://tass.ru/armiya-i-opk/28351751",
+    "https://tass.ru/proisshestviya/28351753",
+    "https://tass.ru/armiya-i-opk/28351741",
+    "https://tass.ru/mezhdunarodnaya-panorama/28351749",
+    "https://tass.ru/armiya-i-opk/28351747",
+    "https://www.vedomosti.ru/politics/news/2026/11/25/1415030-tramp-zayavil",
+    "https://t.me/headlines_for_traders/89431",
+    "https://www.kommersant.ru/doc/9129760",
+    "https://www.interfax.ru/world/1131174",
+    "https://www.interfax.ru/russia/1131173",
+    "https://www.vedomosti.ru/politics/news/2026/11/25/1415029-tramp-vismeyal",
+    "https://t.me/cointelegraph/73507",
+    "https://thedefiant.io/frontier/markets/taiwan-stocks-sink-as-much-as-8-6-after-9-rally",
+    "https://www.kommersant.ru/doc/9129786",
+    "https://t.me/headlines_for_traders/89430"
   ],
   "ai_dead": {
     "date": "2026-11-24",
@@ -873,34 +870,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-11-24T04:00:57.009609+00:00",
-      "Биткоин опустился ниже $60 000 на фоне ликвидаций длинных позиций"
-    ],
-    [
-      "2026-11-24T04:00:57.009609+00:00",
-      "«Совкомфлот» готовит экспериментальные рейсы по Севморпути"
-    ],
-    [
-      "2026-11-24T04:00:57.009609+00:00",
-      "Amazon договорилась о покупке разработчика ИИ-технологий Decart"
-    ],
-    [
-      "2026-11-24T04:00:57.009609+00:00",
-      "Sierra привлекла $1,75 млрд при оценке в $30 млрд"
-    ],
-    [
-      "2026-11-24T04:00:57.009609+00:00",
-      "ЕЦБ одобрил расширение доступа к токенизированному залогу с 2027 года"
-    ],
-    [
-      "2026-11-24T04:00:57.009609+00:00",
-      "ЦЦИ прогнозирует снижение экспорта подсолнечного масла из РФ на 15,2%"
-    ],
-    [
-      "2026-11-24T04:00:57.009609+00:00",
-      "Bithumb добавила торги Orochi Network, Sanctum и Subsquid за воны"
-    ],
     [
       "2026-11-24T05:00:57.673328+00:00",
       "Совет директоров Самолета обсуждает реструктуризацию долга и выкуп бумаг"
@@ -1452,6 +1421,26 @@
     [
       "2026-11-24T20:30:56.442426+00:00",
       "Крупный перевод биткоинов на Coinbase"
+    ],
+    [
+      "2026-11-25T04:01:01.730530+00:00",
+      "Акции SoftBank рухнули на 15% на фоне распродажи в технологическом секторе"
+    ],
+    [
+      "2026-11-25T04:01:01.730530+00:00",
+      "SEC освободила платформу Molecule от регистрации исследовательских токенов"
+    ],
+    [
+      "2026-11-25T04:01:01.730530+00:00",
+      "Власти штата Юта отозвали уголовные обвинения против платформы Kalshi"
+    ],
+    [
+      "2026-11-25T04:01:01.730530+00:00",
+      "Фондовые индексы США завершили торги вторника разнонаправленно"
+    ],
+    [
+      "2026-11-25T04:01:01.730530+00:00",
+      "Европейские рынки акций закрыли торги вторника в минусе"
     ]
   ],
   "results_fp": [
@@ -1544,7 +1533,7 @@
     "OilPrice": "2026-11-24T17:30:55.867920+00:00",
     "Коммерсантъ": "2026-11-24T20:00:59.700758+00:00",
     "Ведомости": "2026-11-24T17:30:55.867920+00:00",
-    "Интерфакс": "2026-11-24T12:30:54.447145+00:00",
+    "Интерфакс": "2026-11-25T04:01:01.730530+00:00",
     "ТАСС": "2026-11-24T20:30:56.442426+00:00",
     "CoinDesk": "2026-11-24T18:00:59.673770+00:00",
     "Headlines for Traders": "2026-11-24T19:01:02.891271+00:00",
@@ -1562,7 +1551,7 @@
     "Frank Media": "2026-11-24T13:31:02.097757+00:00",
     "ForkLog": "2026-11-24T13:31:02.097757+00:00",
     "Decrypt": "2026-11-24T20:00:59.700758+00:00",
-    "Cointelegraph": "2026-11-24T20:30:56.442426+00:00",
+    "Cointelegraph": "2026-11-25T04:01:01.730530+00:00",
     "CoinMarketCap": "2026-11-24T11:00:58.103720+00:00",
     "СберИнвестиции": "2026-11-23T17:00:57.218165+00:00",
     "РБК Крипто": "2026-11-24T17:30:55.867920+00:00",
@@ -1573,14 +1562,14 @@
     "Bitcoin Magazine": "2026-11-24T17:30:55.867920+00:00",
     "Watcher Guru": "2026-11-24T20:00:59.700758+00:00",
     "РБК. Главное": "2026-11-24T12:30:54.447145+00:00",
-    "The Block": "2026-11-24T17:30:55.867920+00:00",
+    "The Block": "2026-11-25T04:01:01.730530+00:00",
     "Нефть и Капитал": "2026-11-24T19:01:02.891271+00:00",
     "MMI": "2026-11-20T11:30:54.791118+00:00",
     "FinancialJuice": "2026-11-24T20:30:56.442426+00:00",
     "Cbonds": "2026-11-24T08:00:59.454968+00:00",
     "WSJ Markets": "2026-11-24T19:01:02.891271+00:00",
     "WSJ Economy": "2026-11-24T18:00:59.673770+00:00",
-    "The Defiant": "2026-11-24T17:01:08.169765+00:00",
+    "The Defiant": "2026-11-25T04:01:01.730530+00:00",
     "WSJ": "2026-11-24T17:30:55.867920+00:00",
     "Bitcoin Magazine Telegram": "2026-11-23T16:31:10.976804+00:00",
     "Lookonchain": "2026-11-24T16:30:56.411370+00:00",
@@ -1591,7 +1580,7 @@
     "Агроинвестор": "2026-11-24T13:00:55.415295+00:00",
     "Газпромбанк Инвестиции": "2026-11-24T17:30:55.867920+00:00",
     "CryptoSlate": "2026-11-24T17:30:55.867920+00:00",
-    "CNBC Markets": "2026-11-24T17:30:55.867920+00:00",
+    "CNBC Markets": "2026-11-25T04:01:01.730530+00:00",
     "Natural Gas Intelligence": "2026-11-23T20:30:56.161030+00:00",
     "Правительство России": "2026-11-24T12:30:54.447145+00:00",
     "glassnode": "2026-11-24T17:30:55.867920+00:00",
@@ -1672,7 +1661,7 @@
     "TankerTrackers": "2026-11-20T04:30:55.460099+00:00",
     "CBR Stocks": "2026-11-24T17:30:55.867920+00:00"
   },
-  "catalog_at": "2026-11-24T21:30:55+00:00",
+  "catalog_at": "2026-11-25T04:01:01+00:00",
   "own_hour": "2026-11-24 21",
   "digest_alert": "2026-11-10 19:30"
 }
