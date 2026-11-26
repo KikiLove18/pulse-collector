@@ -92,7 +92,7 @@
   ],
   "last_digest_ts": "2026-11-25T04:30:55.495405+00:00",
   "calendar": {
-    "ts": "2026-11-25T16:31:22.075775+00:00",
+    "ts": "2026-11-26T04:00:57.585582+00:00",
     "data": [
       {
         "title": "Core Retail Sales q/q",
@@ -567,6 +567,14 @@
         "previous": "3.1%"
       },
       {
+        "title": "Euro Summit",
+        "country": "EUR",
+        "date": "2026-11-26T04:15:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": ""
+      },
+      {
         "title": "BOE Financial Stability Report",
         "country": "GBP",
         "date": "2026-11-26T05:30:00-05:00",
@@ -820,7 +828,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-25T21:30:56.268238+00:00",
+  "breaking_ts": "2026-11-26T04:00:57.584852+00:00",
   "news_now": {
     "day": "2026-11-26",
     "day_count": 0,
@@ -829,72 +837,75 @@
     "titles": []
   },
   "news_seen": [
-    "https://www.marketwatch.com/story/how-to-spot-bogus-boutiques-and-other-black-friday-shopping-scams-86cc182d?mod=mw_rss_topstories",
-    "https://t.me/forbesrussia/103494",
-    "https://www.cnbc.com/2026/11/25/bullish-hopes-spring-as-traders-bet-against-a-higher-vix-options-action-live.html",
-    "https://t.me/banksta/106205",
-    "https://www.cnbc.com/2026/11/25/macys-thanksgiving-day-parade-postponed.html",
-    "https://www.rbc.ru/technology_and_media/26/11/2026/6b075248d65ce6735f564edc",
-    "https://tass.ru/proisshestviya/28355681",
-    "https://t.me/whale_alert_io/105320",
-    "https://www.wsj.com/finance/stocks/stocks-finish-lower-after-wild-session-df50cdeb?mod=rss_markets_main",
-    "https://cointelegraph.com/news/braiins-warns-bitcoin-mining-attacks-affecting-1000-sites?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://t.me/whale_alert_io/105319",
-    "https://t.me/banksta/106204",
-    "https://t.me/whale_alert_io/105318",
-    "https://t.me/FinancialJuice/149836",
-    "https://tass.ru/mezhdunarodnaya-panorama/28355677",
-    "https://t.me/whale_alert_io/105317",
-    "https://tass.ru/proisshestviya/28355671",
-    "https://tass.ru/mezhdunarodnaya-panorama/28355679",
-    "https://decrypt.co/384002/1password-breach-vaults-phishing-emails",
-    "https://www.vedomosti.ru/politics/news/2026/11/26/1415441-posolstvo-predupredilo",
-    "https://t.me/headlines_for_traders/89535",
-    "https://thedefiant.io/frontier/technology/neuralink-says-fda-approved-pivotal-brain-implant-trial",
-    "https://thedefiant.io/news/markets/venice-token-gains-33-while-bitcoin-and-tao-retreat",
-    "https://t.me/FinancialJuice/149835",
-    "https://t.me/whale_alert_io/105316",
-    "https://tass.ru/mezhdunarodnaya-panorama/28355675",
-    "https://cointelegraph.com/news/why-ecb-collateral-eligibility-could-boost-demand-tokenized-bonds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://t.me/FinancialJuice/149834",
-    "https://t.me/FinancialJuice/149833",
-    "https://tass.ru/obschestvo/28355673",
-    "https://t.me/FinancialJuice/149832",
-    "https://t.me/FinancialJuice/149831",
-    "https://t.me/whale_alert_io/105315",
-    "https://t.me/FinancialJuice/149830",
-    "https://www.kommersant.ru/doc/9130728",
-    "https://t.me/whale_alert_io/105314",
-    "https://tass.ru/mezhdunarodnaya-panorama/28355669",
-    "https://tass.ru/obschestvo/28355665",
-    "https://t.me/markettwits/394876",
-    "https://oilprice.com/Energy/Crude-Oil/US-Rig-Count-Holds-Steady-as-Oil-Production-Hits-Fifth-Straight-Record.html",
-    "https://t.me/markettwits/394875",
-    "https://t.me/FinancialJuice/149829",
-    "https://t.me/WatcherGuru/16347",
-    "https://t.me/rbc_news/161451",
-    "https://t.me/FinancialJuice/149828",
-    "https://tass.ru/kultura/28355663",
-    "https://tass.ru/ekonomika/28355657",
-    "https://www.rbc.ru/rbcfreenews/6afd541bfc6b6c9557d0755c",
-    "https://tass.ru/ekonomika/28355653",
-    "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
-    "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-ahead-of-pce-inflation-data-dfeb7995?mod=rss_markets_main",
-    "https://tass.ru/obschestvo/28355659",
-    "https://tass.ru/armiya-i-opk/28355661",
-    "https://t.me/FinancialJuice/149827",
-    "https://tass.ru/ekonomika/28355651",
-    "https://tass.ru/obschestvo/28355655",
-    "https://t.me/whale_alert_io/105313",
-    "https://tass.ru/mezhdunarodnaya-panorama/28355645",
-    "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-    "https://oilprice.com/Energy/Energy-General/The-Pentagon-Wants-Detroit-to-Build-Americas-Next-Drone-Army.html",
-    "https://tass.ru/mezhdunarodnaya-panorama/28355647",
-    "https://tass.ru/armiya-i-opk/28351973",
-    "https://t.me/banksta/106194",
-    "https://tass.ru/mezhdunarodnaya-panorama/28355641",
-    "https://tass.ru/mezhdunarodnaya-panorama/28355643",
-    "https://www.interfax.ru/russia/1131441"
+    "https://t.me/frank_media/24891",
+    "https://t.me/markettwits/394877",
+    "https://tass.ru/obschestvo/28356183",
+    "https://tass.ru/ekonomika/28356185",
+    "https://t.me/wublockchainenglish/26957",
+    "https://tass.ru/obschestvo/28356165",
+    "https://tass.ru/obschestvo/28356177",
+    "https://tass.ru/ekonomika/28356175",
+    "https://tass.ru/sport/28356173",
+    "https://t.me/rbc_news/161454",
+    "https://tass.ru/armiya-i-opk/28356171",
+    "https://tass.ru/proisshestviya/28356169",
+    "https://tass.ru/armiya-i-opk/28356167",
+    "https://www.kommersant.ru/doc/9130834",
+    "https://tass.ru/ekonomika/28356157",
+    "https://www.interfax.ru/russia/1131479",
+    "https://tass.ru/obschestvo/28356161",
+    "https://www.interfax.ru/world/1131478",
+    "https://tass.ru/obschestvo/28356159",
+    "https://www.vedomosti.ru/politics/news/2026/11/26/1415451-britanskoe-minoboroni",
+    "https://www.interfax.ru/business/1131477",
+    "https://t.me/CoinMarketCapAnnouncements/19808",
+    "https://www.rbc.ru/rbcfreenews/6af60295e1892684dc04e21f",
+    "https://www.interfax.ru/world/1131476",
+    "https://t.me/banksta/106215",
+    "https://t.me/headlines_for_traders/89538",
+    "https://www.interfax.ru/business/1131475",
+    "https://tass.ru/mezhdunarodnaya-panorama/28356155",
+    "https://t.me/lookonchainchannel/11290",
+    "https://tass.ru/politika/28356153",
+    "https://www.kommersant.ru/doc/9130714",
+    "https://www.vedomosti.ru/media/news/2026/11/26/1415450-gitarist-duran-duran",
+    "https://www.cnbc.com/2026/11/26/bok-rate-decision-korea-gdp-inflation.html",
+    "https://tass.ru/armiya-i-opk/28356097",
+    "https://tass.ru/kultura/28356067",
+    "https://tass.ru/obschestvo/28356145",
+    "https://tass.ru/obschestvo/28356149",
+    "https://tass.ru/mezhdunarodnaya-panorama/28356143",
+    "https://www.kommersant.ru/doc/9130799",
+    "https://tass.ru/politika/28356147",
+    "https://www.rbc.ru/rbcfreenews/6978efa49a7947033df1c5ac",
+    "https://www.kommersant.ru/doc/9130660",
+    "https://tass.ru/kosmos/28353859",
+    "https://t.me/WatcherGuru/16352",
+    "https://tass.ru/ekonomika/28356113",
+    "https://tass.ru/mezhdunarodnaya-panorama/28356135",
+    "https://tass.ru/ekonomika/28356139",
+    "https://t.me/lookonchainchannel/11288",
+    "https://tass.ru/proisshestviya/28356133",
+    "https://www.kommersant.ru/doc/9130819",
+    "https://cryptoslate.com/crypto-host-who-once-promoted-a-50-billion-memecoin-vision-now-tells-traders-to-get-out/",
+    "https://t.me/headlines_for_traders/89537",
+    "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
+    "https://www.interfax.ru/world/1131474",
+    "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
+    "https://www.vedomosti.ru/society/news/2026/11/26/1415449-chislo-pogibshih",
+    "https://t.me/FinancialJuice/149845",
+    "https://www.cnbc.com/2026/11/26/k-beauty-firms-amazon-sales-black-friday.html",
+    "https://www.wsj.com/finance/asian-stocks-rise-as-investors-shrug-off-u-s-tariff-plan-f8daa85b?mod=rss_markets_main",
+    "https://www.rbc.ru/society/24/11/2026/6b0506fec13372d58a8775ca",
+    "https://www.interfax.ru/world/1131465",
+    "https://www.interfax.ru/world/1131473",
+    "https://www.rbc.ru/finances/24/11/2026/6b0419279483259bb206353e",
+    "https://www.theblock.co/news/regulation/2026-11-25-house-committee-advances-strategic-bitcoin-reserve-bill-446778",
+    "https://t.me/cointelegraph/73535",
+    "https://t.me/lookonchainchannel/11286",
+    "https://t.me/headlines_for_traders/89536",
+    "https://www.interfax.ru/russia/1131471",
+    "https://www.kommersant.ru/doc/9130818"
   ],
   "ai_dead": {
     "date": "2026-11-25",
@@ -903,30 +914,6 @@
     ]
   },
   "feed_recent": [
-    [
-      "2026-11-24T20:30:56.442426+00:00",
-      "Четвертый танкер подорвался на мине в Ормузском проливе"
-    ],
-    [
-      "2026-11-24T20:30:56.442426+00:00",
-      "Массовая распродажа акций технологических компаний США"
-    ],
-    [
-      "2026-11-24T20:30:56.442426+00:00",
-      "Nomura ожидает повышения ставки Банком Канады в декабре"
-    ],
-    [
-      "2026-11-24T20:30:56.442426+00:00",
-      "Кибератака на ЦРУ и разведку США"
-    ],
-    [
-      "2026-11-24T20:30:56.442426+00:00",
-      "Венгрия отказалась участвовать в кредите ЕС Украине"
-    ],
-    [
-      "2026-11-24T20:30:56.442426+00:00",
-      "Крупный перевод биткоинов на Coinbase"
-    ],
     [
       "2026-11-25T04:01:01.730530+00:00",
       "Акции SoftBank рухнули на 15% на фоне распродажи в технологическом секторе"
@@ -1434,6 +1421,26 @@
     [
       "2026-11-25T20:30:55.254616+00:00",
       "Ограничения США заставляют продавцов чипов Nvidia искать новых покупателей"
+    ],
+    [
+      "2026-11-26T04:00:57.584852+00:00",
+      "ФРС: ценовое давление в экономике США продолжает расти в октябре и ноябре"
+    ],
+    [
+      "2026-11-26T04:00:57.584852+00:00",
+      "ЦБ Южной Кореи повысил ключевую ставку на 25 базисных пунктов до 3,25%"
+    ],
+    [
+      "2026-11-26T04:00:57.584852+00:00",
+      "SpaceX получила разрешение FCC на запуск 1 миллиона спутников для ИИ"
+    ],
+    [
+      "2026-11-26T04:00:57.584852+00:00",
+      "S&P предупредило о рисках снижения кредитного рейтинга Nvidia"
+    ],
+    [
+      "2026-11-26T04:00:57.584852+00:00",
+      "Трейдер открыл крупные лонги по биткоину и эфиру на Aster DEX"
     ]
   ],
   "results_fp": [
@@ -1523,7 +1530,7 @@
     "OilPrice": "2026-11-25T18:00:56.526013+00:00",
     "Коммерсантъ": "2026-11-25T20:30:55.254616+00:00",
     "Ведомости": "2026-11-25T12:30:56.231764+00:00",
-    "Интерфакс": "2026-11-25T20:30:55.254616+00:00",
+    "Интерфакс": "2026-11-26T04:00:57.584852+00:00",
     "ТАСС": "2026-11-25T20:30:55.254616+00:00",
     "CoinDesk": "2026-11-25T18:30:58.099141+00:00",
     "Headlines for Traders": "2026-11-25T12:30:56.231764+00:00",
@@ -1562,7 +1569,7 @@
     "The Defiant": "2026-11-25T19:30:56.159033+00:00",
     "WSJ": "2026-11-24T17:30:55.867920+00:00",
     "Bitcoin Magazine Telegram": "2026-11-25T04:30:55.495405+00:00",
-    "Lookonchain": "2026-11-24T16:30:56.411370+00:00",
+    "Lookonchain": "2026-11-26T04:00:57.584852+00:00",
     "Банк России": "2026-11-20T07:30:57.761076+00:00",
     "InvestFuture": "2026-11-23T17:00:57.218165+00:00",
     "Rigzone": "2026-11-24T04:30:54.583389+00:00",
@@ -1570,7 +1577,7 @@
     "Агроинвестор": "2026-11-24T13:00:55.415295+00:00",
     "Газпромбанк Инвестиции": "2026-11-24T17:30:55.867920+00:00",
     "CryptoSlate": "2026-11-25T19:00:58.757350+00:00",
-    "CNBC Markets": "2026-11-25T19:30:56.159033+00:00",
+    "CNBC Markets": "2026-11-26T04:00:57.584852+00:00",
     "Natural Gas Intelligence": "2026-11-23T20:30:56.161030+00:00",
     "Правительство России": "2026-11-24T12:30:54.447145+00:00",
     "glassnode": "2026-11-24T17:30:55.867920+00:00",
@@ -1653,7 +1660,7 @@
     "Рынки Деньги Сеть": "2026-11-25T04:30:55.495405+00:00",
     "BEA": "2026-11-25T13:30:56.977445+00:00"
   },
-  "catalog_at": "2026-11-25T21:30:56+00:00",
+  "catalog_at": "2026-11-26T04:00:57+00:00",
   "own_hour": "2026-11-25 21",
   "digest_alert": "2026-11-25 19:30"
 }
