@@ -828,44 +828,39 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-26T20:30:56.020671+00:00",
+  "breaking_ts": "2026-11-26T21:00:53.019639+00:00",
   "news_now": {
-    "day": "2026-11-26",
-    "day_count": 4,
+    "day": "2026-11-27",
+    "day_count": 0,
     "urgent_count": 0,
-    "last": "2026-11-26T17:30:55.262226+00:00",
-    "titles": [
-      "Оттоки из спотовых биткоин-ETF в США превысили $520 млн",
-      "Чистая прибыль Мосбиржи выросла на 21% в III квартале",
-      "Танкеры подорвались на минах в Ормузском проливе",
-      "ЦБ РФ утвердил правила тестирования для покупки криптовалют"
-    ]
+    "last": "",
+    "titles": []
   },
   "news_seen": [
+    "https://t.me/invest_zonaa/39663",
+    "https://oilprice.com/Alternative-Energy/Renewable-Energy/Why-Making-Electricity-From-Seawater-Has-Failed.html",
+    "https://tass.ru/proisshestviya/28359981",
+    "https://t.me/banksta/106288",
+    "https://t.me/FinancialJuice/149937",
+    "https://tass.ru/politika/28359977",
+    "https://tass.ru/mezhdunarodnaya-panorama/28359979",
+    "https://www.vedomosti.ru/society/news/2026/11/26/1415822-ostanovili-iz-za-besporyadkov",
+    "https://t.me/rbc_news/161539",
+    "https://tass.ru/ekonomika/28359975",
+    "https://www.kommersant.ru/doc/9131816",
+    "https://tass.ru/mezhdunarodnaya-panorama/28359973",
+    "https://t.me/banksta/106287",
+    "https://t.me/markettwits/395009",
+    "https://www.rbc.ru/rbcfreenews/6aa1ce034d6a7fa13907bd35",
+    "https://tass.ru/mezhdunarodnaya-panorama/28359971",
+    "https://cryptoslate.com/chainlink-jumps-10-as-its-wall-street-ambitions-gain-momentum-on-two-fronts/",
+    "https://www.rbc.ru/politics/26/11/2026/6b0899131012411d6fd55ec2",
+    "https://www.interfax.ru/russia/1131713",
+    "https://tass.ru/mezhdunarodnaya-panorama/28359965",
+    "https://www.vedomosti.ru/politics/news/2026/11/26/1415821-germaniya-prizvala",
+    "https://t.me/russianmacro/23781",
     "https://t.me/rbc_news/161538",
-    "https://tass.ru/proisshestviya/28359959",
-    "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
-    "https://tass.ru/obschestvo/28359957",
-    "https://www.kommersant.ru/doc/9131815",
-    "https://tass.ru/kultura/28359953",
-    "https://www.rbc.ru/politics/25/11/2026/6b067b4064dabb8c26692ebb",
-    "https://t.me/banksta/106284",
-    "https://tass.ru/sport/28359951",
-    "https://www.vedomosti.ru/politics/news/2026/11/26/1415820-makron-usomnilsya",
-    "https://t.me/markettwits/395008",
-    "https://tass.ru/mezhdunarodnaya-panorama/28359943",
-    "https://tass.ru/sport/28359949",
-    "https://t.me/interfaxonline/82201",
-    "https://www.kommersant.ru/doc/9131814",
-    "https://cointelegraph.com/news/japan-tighter-oversight-defi-self-custodial-wallets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://www.vedomosti.ru/finance/news/2026/11/26/1415819-ii-puzir-sduvaetsya",
-    "https://www.kommersant.ru/doc/9131813",
-    "https://tass.ru/ekonomika/28359935",
-    "https://tass.ru/ekonomika/28359947",
-    "https://www.interfax.ru/moscow/1131712",
-    "https://tass.ru/mezhdunarodnaya-panorama/28359945",
-    "https://t.me/rbc_news/161537",
-    "https://oilprice.com/Energy/Energy-General/Norway-Pauses-Data-Center-Grid-Reservations-as-Requests-Top-Peak-Demand.html"
+    "https://tass.ru/proisshestviya/28359959"
   ],
   "ai_dead": {
     "date": "2026-11-26",
@@ -1708,7 +1703,7 @@
     "ФРС": "2026-11-26T04:30:59.704062+00:00",
     "ПРАЙМ в Макс": "2026-11-26T16:30:57.171435+00:00"
   },
-  "catalog_at": "2026-11-26T20:30:56+00:00",
+  "catalog_at": "2026-11-26T21:00:53+00:00",
   "own_hour": "2026-11-26 21",
   "digest_alert": "2026-11-25 19:30"
 }
