@@ -92,7 +92,7 @@
   ],
   "last_digest_ts": "2026-11-28T04:30:56.355760+00:00",
   "calendar": {
-    "ts": "2026-11-28T04:00:57.229540+00:00",
+    "ts": "2026-11-28T10:01:00.419695+00:00",
     "data": [
       {
         "title": "Core Retail Sales q/q",
@@ -828,7 +828,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-28T09:31:01.730143+00:00",
+  "breaking_ts": "2026-11-28T10:01:00.398113+00:00",
   "news_now": {
     "day": "2026-11-28",
     "day_count": 1,
@@ -839,86 +839,54 @@
     ]
   },
   "news_seen": [
+    "https://www.rbc.ru/technology_and_media/28/11/2026/6b0a811619819775a8ef285c",
+    "https://tass.ru/sport/28364809",
+    "https://www.rbc.ru/sport/21/11/2026/6b01d7dc2d0d7dd08f09b0fa",
+    "https://t.me/forklog/50857",
+    "https://www.kommersant.ru/doc/9145012",
+    "https://t.me/banksta/106397",
+    "https://www.interfax.ru/russia/1132018",
+    "https://tass.ru/proisshestviya/28364807",
+    "https://tass.ru/proisshestviya/28364805",
+    "https://tass.ru/sport/28364801",
+    "https://tass.ru/obschestvo/28364615",
+    "https://www.vedomosti.ru/politics/news/2026/11/28/1416236-pvo-sbili",
+    "https://tass.ru/proisshestviya/28364797",
+    "https://www.vedomosti.ru/politics/news/2026/11/28/1416235-pogibli-zaporozhskoi",
+    "https://tass.ru/politika/28364795",
+    "https://t.me/markettwits/395181",
+    "https://tass.ru/obschestvo/28364787",
+    "https://tass.ru/sport/28364793",
+    "https://www.vedomosti.ru/politics/news/2026/11/28/1416234-zahvatili-gruzovoe-sudno",
+    "https://t.me/rbc_news/161636",
+    "https://tass.ru/ekonomika/28364789",
+    "https://tass.ru/proisshestviya/28364791",
+    "https://tass.ru/obschestvo/28364783",
+    "https://tass.ru/proisshestviya/28364775",
+    "https://t.me/whale_alert_io/105383",
+    "https://www.rbc.ru/rbcfreenews/6b09e3ba38ef3b65fb2e4df6",
+    "https://tass.ru/ekonomika/28364781",
+    "https://www.kommersant.ru/doc/9145004",
+    "https://tass.ru/obschestvo/28364777",
+    "https://t.me/forbesrussia/103595",
+    "https://t.me/CoinDeskGlobal/25665",
+    "https://www.rbc.ru/sport/20/11/2026/6b009168234c42d820659466",
+    "https://www.coindesk.com/markets/2026/11/28/trump-linked-crypto-token-wlfi-plunges-over-50",
+    "https://t.me/markettwits/395180",
+    "https://www.vedomosti.ru/politics/news/2026/11/28/1416233-liviya-kompensatsiyu",
+    "https://tass.ru/obschestvo/28364773",
     "https://t.me/RBCCrypto/24014",
     "https://t.me/energytodaygroup/32917",
+    "https://www.rbc.ru/rbcfreenews/6b091568014b07ff52d3e3b9",
     "https://tass.ru/proisshestviya/28364771",
     "https://t.me/interfaxonline/82254",
-    "https://t.me/FinancialJuice/150061",
-    "https://t.me/banksta/106396",
-    "https://www.sport-interfax.ru/1132017",
-    "https://www.interfax.ru/russia/1132016",
-    "https://t.me/rbc_news/161635",
-    "https://www.kommersant.ru/doc/9145003",
-    "https://thedefiant.io/news/defi/dolomite-s-usd1-liquidity-thins-after-24-6m-withdrawn",
-    "https://tass.ru/mezhdunarodnaya-panorama/28364763",
-    "https://t.me/markettwits/395179",
-    "https://tass.ru/sport/28364765",
-    "https://t.me/energytodaygroup/32916",
-    "https://www.interfax.ru/russia/1132015",
-    "https://www.kommersant.ru/doc/9144999",
-    "https://tass.ru/proisshestviya/28364761",
-    "https://t.me/coinpost/4328",
-    "https://tass.ru/proisshestviya/28364757",
-    "https://www.interfax.ru/russia/1132014",
-    "https://www.kommersant.ru/doc/9144997",
-    "https://tass.ru/ekonomika/28364727",
-    "https://t.me/incrypted/33470",
-    "https://tass.ru/sport/28364753",
-    "https://www.sport-interfax.ru/1132013",
-    "https://tass.ru/proisshestviya/28364751",
-    "https://t.me/energytodaygroup/32915",
-    "https://www.interfax.ru/russia/1132012",
-    "https://www.interfax.ru/russia/1132011",
-    "https://tass.ru/ekonomika/28364745",
-    "https://t.me/RBCCrypto/24013",
-    "https://t.me/markettwits/395178",
-    "https://tass.ru/proisshestviya/28364741",
-    "https://t.me/forbesrussia/103594",
-    "https://t.me/expert_mag/11636",
-    "https://tass.ru/armiya-i-opk/28364735",
-    "https://t.me/minfin/9566",
-    "https://tass.ru/armiya-i-opk/28364733",
-    "https://tass.ru/proisshestviya/28364713",
-    "https://tass.ru/armiya-i-opk/28364731",
-    "https://tass.ru/armiya-i-opk/28364729",
-    "https://www.vedomosti.ru/politics/news/2026/11/28/1416231-macan-demobilizovalsya",
-    "https://tass.ru/nedvizhimost/28364711",
-    "https://t.me/markettwits/395177",
-    "https://t.me/SberInvestments/13384",
-    "https://tass.ru/obschestvo/28364715",
-    "https://www.kommersant.ru/doc/9144993",
-    "https://t.me/investfuture/15578",
-    "https://t.me/finam_invest/6012",
-    "https://www.interfax.ru/russia/1132010",
-    "https://www.kommersant.ru/doc/9144991",
-    "https://tass.ru/sport/28364721",
-    "https://tass.ru/obschestvo/28364705"
+    "https://t.me/FinancialJuice/150061"
   ],
   "ai_dead": {
     "date": "2026-11-28",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-27T10:30:56.104250+00:00",
-      "Минфин планирует предложить рынку ОФЗ с плавающей ставкой до конца года"
-    ],
-    [
-      "2026-11-27T10:30:56.104250+00:00",
-      "Кабмин предложил увеличить пошлины на импорт морепродуктов до 35%"
-    ],
-    [
-      "2026-11-27T10:30:56.104250+00:00",
-      "Индекс деловых настроений в еврозоне в ноябре снизился до 95,8 пункта"
-    ],
-    [
-      "2026-11-27T10:30:56.104250+00:00",
-      "Bluefin закроет платформу бессрочных фьючерсов на Sui 4 декабря"
-    ],
-    [
-      "2026-11-27T10:30:56.104250+00:00",
-      "Правительство установило временный запрет на вывоз гречихи из России"
-    ],
     [
       "2026-11-27T11:01:02.654475+00:00",
       "Совфед одобрил снижение цены отсечения нефти до $50"
@@ -1518,6 +1486,22 @@
     [
       "2026-11-28T09:31:01.730143+00:00",
       "Минфин разместил ОФЗ 26240 с доходностью 16,77%"
+    ],
+    [
+      "2026-11-28T10:01:00.398113+00:00",
+      "Binance перевела 7500 BTC из фонда SAFU на неизвестный кошелек"
+    ],
+    [
+      "2026-11-28T10:01:00.398113+00:00",
+      "Токен WLFI упал более чем на 50% до рекордных минимумов"
+    ],
+    [
+      "2026-11-28T10:01:00.398113+00:00",
+      "Ливия потребует от Украины компенсацию за удар по порту Бенгази"
+    ],
+    [
+      "2026-11-28T10:01:00.398113+00:00",
+      "Минобороны сообщило об уничтожении 1601 беспилотника за сутки"
     ]
   ],
   "results_fp": [
@@ -1605,16 +1589,16 @@
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-28T04:30:56.355760+00:00",
-    "Коммерсантъ": "2026-11-28T09:00:57.635280+00:00",
-    "Ведомости": "2026-11-28T08:30:59.045654+00:00",
-    "Интерфакс": "2026-11-28T09:00:57.635280+00:00",
+    "Коммерсантъ": "2026-11-28T10:01:00.398113+00:00",
+    "Ведомости": "2026-11-28T10:01:00.398113+00:00",
+    "Интерфакс": "2026-11-28T10:01:00.398113+00:00",
     "ТАСС": "2026-11-28T09:00:57.635280+00:00",
-    "CoinDesk": "2026-11-27T12:00:56.984781+00:00",
+    "CoinDesk": "2026-11-28T10:01:00.398113+00:00",
     "Headlines for Traders": "2026-11-28T07:00:54.652946+00:00",
     "MarketTwits": "2026-11-28T09:00:57.635280+00:00",
     "Сигналы РЦБ": "2026-11-28T04:30:56.355760+00:00",
-    "Whale Alert": "2026-11-28T09:00:57.635280+00:00",
-    "РБК": "2026-11-28T09:00:57.635280+00:00",
+    "Whale Alert": "2026-11-28T10:01:00.398113+00:00",
+    "РБК": "2026-11-28T10:01:00.398113+00:00",
     "Wu Blockchain": "2026-11-28T06:31:05.663294+00:00",
     "Банкста": "2026-11-28T09:31:01.730143+00:00",
     "IF News": "2026-11-27T19:00:54.786326+00:00",
@@ -1741,7 +1725,7 @@
     "Telegram": "2026-11-27T04:30:57.222138+00:00",
     "ЕЦБ": "2026-11-27T09:00:55.658728+00:00"
   },
-  "catalog_at": "2026-11-28T09:31:01+00:00",
-  "own_hour": "2026-11-28 12",
+  "catalog_at": "2026-11-28T10:01:00+00:00",
+  "own_hour": "2026-11-28 13",
   "digest_alert": "2026-11-25 19:30"
 }
