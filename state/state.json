@@ -828,84 +828,63 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-28T05:30:54.284692+00:00",
+  "breaking_ts": "2026-11-28T06:01:02.309043+00:00",
   "news_now": {
     "day": "2026-11-28",
-    "day_count": 0,
+    "day_count": 1,
     "urgent_count": 0,
-    "last": "",
-    "titles": []
+    "last": "2026-11-28T06:01:02.309043+00:00",
+    "titles": [
+      "Токен World Liberty Financial рухнул на 45% за сутки"
+    ]
   },
   "news_seen": [
-    "https://www.rbc.ru/sport/22/11/2026/6b033b58937b053921cca02d",
+    "https://t.me/investfuture/15577",
+    "https://t.me/prime1/192282",
+    "https://t.me/headlines_for_traders/89650",
+    "https://www.vedomosti.ru/politics/news/2026/11/28/1416223-pvo-noch-unichtozhila",
+    "https://www.vedomosti.ru/politics/news/2026/11/28/1416222-rossiya-nanesla-udari",
+    "https://t.me/rbc_news/161626",
+    "https://tass.ru/sport/28364469",
+    "https://www.kommersant.ru/doc/9144930",
+    "https://tass.ru/ekonomika/28364461",
+    "https://t.me/rbc_news/161625",
+    "https://tass.ru/armiya-i-opk/28364465",
+    "https://www.interfax.ru/russia/1131987",
+    "https://t.me/energytodaygroup/32911",
+    "https://tass.ru/mezhdunarodnaya-panorama/28364447",
+    "https://www.interfax.ru/russia/1131986",
+    "https://t.me/agroinvestor/21925",
+    "https://tass.ru/armiya-i-opk/28364457",
+    "https://t.me/WatcherGuru/16374",
+    "https://tass.ru/armiya-i-opk/28364455",
+    "https://tass.ru/armiya-i-opk/28364453",
+    "https://t.me/headlines_for_traders/89649",
+    "https://tass.ru/armiya-i-opk/28364451",
+    "https://tass.ru/armiya-i-opk/28364449",
+    "https://tass.ru/ekonomika/28364443",
+    "https://tass.ru/ekonomika/28364437",
+    "https://tass.ru/ekonomika/28364445",
+    "https://tass.ru/sport/28364441",
+    "https://tass.ru/obschestvo/28364435",
+    "https://www.vedomosti.ru/politics/news/2026/11/28/1416221-obsudyat-partnerstvo",
+    "https://www.interfax.ru/world/1131985",
+    "https://tass.ru/politika/28364433",
+    "https://t.me/cointelegraph/73579",
+    "https://tass.ru/obschestvo/28364431",
+    "https://tass.ru/ekonomika/28364427",
     "https://t.me/CoinMarketCapAnnouncements/19836",
     "https://tass.ru/obschestvo/28364423",
     "https://t.me/WatcherGuru/16373",
     "https://tass.ru/sport/28364421",
     "https://tass.ru/kultura/28364405",
-    "https://tass.ru/sport/28364425",
-    "https://t.me/headlines_for_traders/89647",
-    "https://t.me/headlines_for_traders/89648",
-    "https://tass.ru/obschestvo/28364419",
-    "https://thedefiant.io/news/infrastructure/chiliz-urges-holders-to-bridge-usdc-off-its-chain-before-chainport-shutdown",
-    "https://t.me/wublockchainenglish/26980",
-    "https://tass.ru/obschestvo/28364415",
-    "https://www.rbc.ru/society/21/11/2026/6b01aa3abf5163590ed6f5f4",
-    "https://tass.ru/obschestvo/28364413",
-    "https://www.kommersant.ru/doc/9144926",
-    "https://t.me/banksta/106390",
-    "https://www.interfax.ru/russia/1131983",
-    "https://tass.ru/proisshestviya/28364417",
-    "https://thedefiant.io/news/markets/world-liberty-s-wlfi-sinks-39-as-bitcoin-slips-2",
-    "https://tass.ru/mezhdunarodnaya-panorama/28364399",
-    "https://tass.ru/proisshestviya/28364411",
-    "https://tass.ru/obschestvo/28364401",
-    "https://www.vedomosti.ru/technology/news/2026/11/28/1416220-preduprezhdat-vladeltsev",
-    "https://tass.ru/proisshestviya/28364407",
-    "https://tass.ru/obschestvo/28364397",
-    "https://tass.ru/sport/28364409",
-    "https://tass.ru/proisshestviya/28364403",
-    "https://t.me/forklog/50854",
-    "https://t.me/rosstat_official/4109",
-    "https://www.rbc.ru/rbcfreenews/6aed87818bfacb8cdafe2083",
-    "https://www.rbc.ru/rbcfreenews/6ae4c116b044ae04a52d65d3",
-    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
-    "https://www.interfax.ru/russia/1131982",
-    "https://tass.ru/obschestvo/28359193",
-    "https://tass.ru/obschestvo/28364393",
-    "https://www.kommersant.ru/doc/9144925",
-    "https://www.rbc.ru/politics/05/07/2026/6a4a93119a7947c6f892196d",
-    "https://tass.ru/sport/28364391"
+    "https://tass.ru/sport/28364425"
   ],
   "ai_dead": {
     "date": "2026-11-27",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-27T07:00:57.075049+00:00",
-      "Брокер ВТБ открыл доступ к криптовалютам для инвесторов"
-    ],
-    [
-      "2026-11-27T07:00:57.075049+00:00",
-      "ВТБ увеличил чистую прибыль в октябре в 1,6 раза"
-    ],
-    [
-      "2026-11-27T07:00:57.075049+00:00",
-      "Правительство продлило запрет на экспорт авиакеросина"
-    ],
-    [
-      "2026-11-27T07:00:57.075049+00:00",
-      "Прибыль промпредприятий Китая выросла на 16% за 10 месяцев"
-    ],
-    [
-      "2026-11-27T07:00:57.075049+00:00",
-      "В составе основных акционеров «Циана» произошли изменения"
-    ],
-    [
-      "2026-11-27T07:00:57.075049+00:00",
-      "Минсельхоз оценил экспорт зерна из России в 40 млн тонн"
-    ],
     [
       "2026-11-27T07:30:57.276220+00:00",
       "Чистая прибыль ВТБ по МСФО в октябре выросла в 1,6 раза"
@@ -1505,6 +1484,26 @@
     [
       "2026-11-28T05:30:54.284692+00:00",
       "Stellantis предупредила о новых остановках заводов в Европе из-за конкуренции"
+    ],
+    [
+      "2026-11-28T06:01:02.309043+00:00",
+      "Токен WLFI рухнул на 45% за сутки до $0,02289"
+    ],
+    [
+      "2026-11-28T06:01:02.309043+00:00",
+      "В США закрылся United Fidelity Bank с активами на $6 млрд"
+    ],
+    [
+      "2026-11-28T06:01:02.309043+00:00",
+      "«Портовый Альянс» заключил контракт на перевалку 600 тыс. тонн пшеницы"
+    ],
+    [
+      "2026-11-28T06:01:02.309043+00:00",
+      "Росстат прогнозирует сокращение населения России до 138,8 млн к 2046 году"
+    ],
+    [
+      "2026-11-28T06:01:02.309043+00:00",
+      "Norse Atlantic Airways подала заявление о банкротстве из-за цен на топливо"
     ]
   ],
   "results_fp": [
@@ -1607,12 +1606,12 @@
     "IF News": "2026-11-27T19:00:54.786326+00:00",
     "bitkogan": "2026-11-27T10:00:59.826839+00:00",
     "CryptoKogan": "2026-11-26T16:30:57.171435+00:00",
-    "Energy Today": "2026-11-27T16:00:56.035911+00:00",
+    "Energy Today": "2026-11-28T06:01:02.309043+00:00",
     "Forbes Russia": "2026-11-28T04:30:56.355760+00:00",
     "Frank Media": "2026-11-27T06:30:55.621571+00:00",
     "ForkLog": "2026-11-26T16:30:57.171435+00:00",
     "Decrypt": "2026-11-28T04:30:56.355760+00:00",
-    "Cointelegraph": "2026-11-28T04:30:56.355760+00:00",
+    "Cointelegraph": "2026-11-28T06:01:02.309043+00:00",
     "CoinMarketCap": "2026-11-28T04:30:56.355760+00:00",
     "СберИнвестиции": "2026-11-27T17:00:58.384581+00:00",
     "РБК Крипто": "2026-11-28T05:00:54.688403+00:00",
@@ -1621,7 +1620,7 @@
     "Московская биржа": "2026-11-23T09:01:01.233997+00:00",
     "MarketWatch": "2026-11-27T16:30:55.449145+00:00",
     "Bitcoin Magazine": "2026-11-28T04:30:56.355760+00:00",
-    "Watcher Guru": "2026-11-28T05:30:54.284692+00:00",
+    "Watcher Guru": "2026-11-28T06:01:02.309043+00:00",
     "РБК. Главное": "2026-11-27T19:31:05.139419+00:00",
     "The Block": "2026-11-28T04:30:56.355760+00:00",
     "Нефть и Капитал": "2026-11-27T17:00:58.384581+00:00",
@@ -1635,10 +1634,10 @@
     "Bitcoin Magazine Telegram": "2026-11-25T04:30:55.495405+00:00",
     "Lookonchain": "2026-11-28T04:30:56.355760+00:00",
     "Банк России": "2026-11-26T16:30:57.171435+00:00",
-    "InvestFuture": "2026-11-27T04:30:57.222138+00:00",
+    "InvestFuture": "2026-11-28T06:01:02.309043+00:00",
     "Rigzone": "2026-11-26T16:30:57.171435+00:00",
     "Protos": "2026-11-26T04:30:59.704062+00:00",
-    "Агроинвестор": "2026-11-27T17:00:58.384581+00:00",
+    "Агроинвестор": "2026-11-28T06:01:02.309043+00:00",
     "Газпромбанк Инвестиции": "2026-11-27T16:30:55.449145+00:00",
     "CryptoSlate": "2026-11-28T05:00:54.688403+00:00",
     "CNBC Markets": "2026-11-28T04:30:56.355760+00:00",
@@ -1728,7 +1727,7 @@
     "Telegram": "2026-11-27T04:30:57.222138+00:00",
     "ЕЦБ": "2026-11-27T09:00:55.658728+00:00"
   },
-  "catalog_at": "2026-11-28T05:30:54+00:00",
-  "own_hour": "2026-11-28 08",
+  "catalog_at": "2026-11-28T06:01:02+00:00",
+  "own_hour": "2026-11-28 09",
   "digest_alert": "2026-11-25 19:30"
 }
