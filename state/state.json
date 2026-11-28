@@ -828,7 +828,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-28T04:00:57.228601+00:00",
+  "breaking_ts": "2026-11-28T05:00:54.688403+00:00",
   "news_now": {
     "day": "2026-11-28",
     "day_count": 0,
@@ -837,56 +837,62 @@
     "titles": []
   },
   "news_seen": [
-    "https://tass.ru/obschestvo/28364315",
-    "https://t.me/RBCCrypto/24009",
-    "https://tass.ru/obschestvo/28364313",
-    "https://t.me/CoinMarketCapAnnouncements/19832",
-    "https://tass.ru/mezhdunarodnaya-panorama/28364311",
-    "https://www.interfax.ru/world/1131979",
-    "https://t.me/interfaxonline/82250",
-    "https://www.rbc.ru/politics/27/11/2026/6b098804d4aceef29ba46bbf",
-    "https://tass.ru/obschestvo/28364305",
-    "https://tass.ru/obschestvo/28364307",
-    "https://tass.ru/mezhdunarodnaya-panorama/28364303",
-    "https://tass.ru/armiya-i-opk/28364301",
-    "https://tass.ru/armiya-i-opk/28364297",
-    "https://tass.ru/obschestvo/28364289",
-    "https://tass.ru/armiya-i-opk/28364295",
-    "https://tass.ru/obschestvo/28364293",
-    "https://tass.ru/politika/28364291",
-    "https://www.rbc.ru/politics/05/11/2026/6aecb79204b2d48e62e4b73a",
-    "https://tass.ru/mezhdunarodnaya-panorama/28364299",
-    "https://www.kommersant.ru/doc/9144909",
-    "https://tass.ru/mezhdunarodnaya-panorama/28364287",
-    "https://www.interfax.ru/russia/1131978",
-    "https://www.rbc.ru/rbcfreenews/6ada3d541ab142f2a84071b3",
-    "https://www.interfax.ru/russia/1131977",
-    "https://t.me/RBCCrypto/24008",
-    "https://tass.ru/obschestvo/28364285",
-    "https://t.me/headlines_for_traders/89642",
-    "https://tass.ru/mezhdunarodnaya-panorama/28364281",
-    "https://tass.ru/obschestvo/28364283",
-    "https://tass.ru/ekonomika/28364279",
-    "https://t.me/FinancialJuice/150054",
-    "https://tass.ru/mezhdunarodnaya-panorama/28364277",
-    "https://t.me/RBCCrypto/24007",
-    "https://www.rbc.ru/politics/27/07/2026/6a6738879a79473633020564",
-    "https://tass.ru/politika/28364263",
-    "https://tass.ru/armiya-i-opk/28364265",
-    "https://www.kommersant.ru/doc/9144915",
-    "https://tass.ru/armiya-i-opk/28364275",
-    "https://tass.ru/armiya-i-opk/28364273",
-    "https://tass.ru/armiya-i-opk/28364269"
+    "https://t.me/rosstat_official/4109",
+    "https://www.rbc.ru/rbcfreenews/6aed87818bfacb8cdafe2083",
+    "https://www.rbc.ru/rbcfreenews/6ae4c116b044ae04a52d65d3",
+    "https://www.rbc.ru/rbcfreenews/6ad14fda02be5980809f474b",
+    "https://tass.ru/obschestvo/28364393",
+    "https://www.rbc.ru/politics/05/07/2026/6a4a93119a7947c6f892196d",
+    "https://tass.ru/sport/28364391",
+    "https://www.rbc.ru/rbcfreenews/6aaa77f6a53ccbec39d4d93e",
+    "https://cryptoslate.com/bnb-chains-new-blockchain-could-make-the-same-pancakeswap-trade-27-more-expensive/",
+    "https://tass.ru/sport/28364389",
+    "https://tass.ru/obschestvo/28364385",
+    "https://tass.ru/obschestvo/28364383",
+    "https://www.rbc.ru/politics/18/03/2026/69ba72599a79478805505141",
+    "https://www.kommersant.ru/doc/9144922",
+    "https://tass.ru/ekonomika/28364387",
+    "https://www.rbc.ru/politics/05/11/2026/6aecadbfeb9a6a7d5043561b",
+    "https://t.me/headlines_for_traders/89646",
+    "https://tass.ru/armiya-i-opk/28364379",
+    "https://thedefiant.io/news/security/safepal-extends-august-breach-disclosure-to-older-orders",
+    "https://tass.ru/obschestvo/28364373",
+    "https://tass.ru/sport/28364377",
+    "https://t.me/cointelegraph/73577",
+    "https://tass.ru/sport/28364369",
+    "https://tass.ru/armiya-i-opk/28364371",
+    "https://tass.ru/kultura/28364345",
+    "https://t.me/RBCCrypto/24011",
+    "https://www.kommersant.ru/doc/9144920",
+    "https://tass.ru/ekonomika/28364359",
+    "https://tass.ru/politika/28364363",
+    "https://tass.ru/obschestvo/28364355",
+    "https://www.rbc.ru/rbcfreenews/5486d35acbb20fe52317e0e9",
+    "https://www.rbc.ru/rbcfreenews/6b0a1081c17330ad4b61497d",
+    "https://t.me/RBCCrypto/24010",
+    "https://tass.ru/proisshestviya/28364357",
+    "https://tass.ru/ekonomika/28364353",
+    "https://www.kommersant.ru/doc/9144918",
+    "https://www.vedomosti.ru/politics/news/2026/11/28/1416218-moskve-leteli-462",
+    "https://t.me/wublockchainenglish/26979",
+    "https://tass.ru/ekonomika/28364337",
+    "https://tass.ru/nedvizhimost/28364349",
+    "https://tass.ru/obschestvo/28364317",
+    "https://tass.ru/sport/28364347",
+    "https://tass.ru/obschestvo/28364343",
+    "https://www.theblock.co/newsletters/the-daily/2026-11-27-bitcoin-recovery-usdt-supply-ai-threat-bitcoin-more-crypto-news-447571",
+    "https://tass.ru/politika/28364341",
+    "https://tass.ru/proisshestviya/28364335",
+    "https://tass.ru/proisshestviya/28364333",
+    "https://t.me/headlines_for_traders/89645",
+    "https://t.me/headlines_for_traders/89643",
+    "https://t.me/headlines_for_traders/89644"
   ],
   "ai_dead": {
     "date": "2026-11-27",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-27T06:00:59.913166+00:00",
-      "Bluefin прекратит торговля бессрочными фьючерсами на блокчейне Sui 4 декабря"
-    ],
     [
       "2026-11-27T06:00:59.913166+00:00",
       "Нефть Brent подорожала до $97,02 за баррель на фоне ближневосточной напряженности"
@@ -1486,6 +1492,34 @@
     [
       "2026-11-28T04:00:57.228601+00:00",
       "На подлете к Москве с начала суток сбито 46 дронов"
+    ],
+    [
+      "2026-11-28T05:00:54.688403+00:00",
+      "СПБ Биржа объявила о запуске торгов криптовалютами с 1 декабря"
+    ],
+    [
+      "2026-11-28T05:00:54.688403+00:00",
+      "Собянин: в сторону Москвы за ночь выпустили 462 беспилотника"
+    ],
+    [
+      "2026-11-28T05:00:54.688403+00:00",
+      "Binance получила предварительное одобрение ЦБ Гелепху в Бутане"
+    ],
+    [
+      "2026-11-28T05:00:54.688403+00:00",
+      "Наследники Армани задумались о покупке части акций модного дома"
+    ],
+    [
+      "2026-11-28T05:00:54.688403+00:00",
+      "Новый блокчейн BNB Chain может увеличить комиссии PancakeSwap на 27%"
+    ],
+    [
+      "2026-11-28T05:00:54.688403+00:00",
+      "МИД Канады вызвал посла России из-за обломков ракет в Польше"
+    ],
+    [
+      "2026-11-28T05:00:54.688403+00:00",
+      "Росстат продлил сроки отправки первичных статистических форм"
     ]
   ],
   "results_fp": [
@@ -1569,20 +1603,20 @@
   },
   "pro_daily": "2026-11-27",
   "freech_day": "2026-11-27",
-  "pro_auto": "2026-11-27",
+  "pro_auto": "2026-11-28",
   "earn_memo": {},
   "feed_src": {
     "OilPrice": "2026-11-28T04:30:56.355760+00:00",
-    "Коммерсантъ": "2026-11-28T04:30:56.355760+00:00",
-    "Ведомости": "2026-11-27T20:00:55.556992+00:00",
+    "Коммерсантъ": "2026-11-28T05:00:54.688403+00:00",
+    "Ведомости": "2026-11-28T05:00:54.688403+00:00",
     "Интерфакс": "2026-11-28T04:00:57.228601+00:00",
-    "ТАСС": "2026-11-27T20:30:57.288068+00:00",
+    "ТАСС": "2026-11-28T05:00:54.688403+00:00",
     "CoinDesk": "2026-11-27T12:00:56.984781+00:00",
-    "Headlines for Traders": "2026-11-28T04:30:56.355760+00:00",
+    "Headlines for Traders": "2026-11-28T05:00:54.688403+00:00",
     "MarketTwits": "2026-11-28T04:30:56.355760+00:00",
     "Сигналы РЦБ": "2026-11-28T04:30:56.355760+00:00",
     "Whale Alert": "2026-11-27T20:30:57.288068+00:00",
-    "РБК": "2026-11-27T20:00:55.556992+00:00",
+    "РБК": "2026-11-28T05:00:54.688403+00:00",
     "Wu Blockchain": "2026-11-28T04:30:56.355760+00:00",
     "Банкста": "2026-11-27T17:30:54.982643+00:00",
     "IF News": "2026-11-27T19:00:54.786326+00:00",
@@ -1596,7 +1630,7 @@
     "Cointelegraph": "2026-11-28T04:30:56.355760+00:00",
     "CoinMarketCap": "2026-11-28T04:30:56.355760+00:00",
     "СберИнвестиции": "2026-11-27T17:00:58.384581+00:00",
-    "РБК Крипто": "2026-11-28T04:30:56.355760+00:00",
+    "РБК Крипто": "2026-11-28T05:00:54.688403+00:00",
     "ПРАЙМ": "2026-11-27T15:30:56.172313+00:00",
     "Walter Bloomberg": "2026-11-23T19:00:56.599248+00:00",
     "Московская биржа": "2026-11-23T09:01:01.233997+00:00",
@@ -1621,7 +1655,7 @@
     "Protos": "2026-11-26T04:30:59.704062+00:00",
     "Агроинвестор": "2026-11-27T17:00:58.384581+00:00",
     "Газпромбанк Инвестиции": "2026-11-27T16:30:55.449145+00:00",
-    "CryptoSlate": "2026-11-28T04:30:56.355760+00:00",
+    "CryptoSlate": "2026-11-28T05:00:54.688403+00:00",
     "CNBC Markets": "2026-11-28T04:30:56.355760+00:00",
     "Natural Gas Intelligence": "2026-11-23T20:30:56.161030+00:00",
     "Правительство России": "2026-11-27T10:30:56.104250+00:00",
@@ -1651,7 +1685,7 @@
     "Interfax": "2026-11-24T17:30:55.867920+00:00",
     "Invest Era": "2026-11-26T05:30:53.773564+00:00",
     "Газпром": "2026-11-27T15:30:56.172313+00:00",
-    "Росстат": "2026-11-14T16:30:56.201734+00:00",
+    "Росстат": "2026-11-28T05:00:54.688403+00:00",
     "Коненков": "2026-11-21T16:01:08.872726+00:00",
     "CNBC Economy": "2026-11-26T15:00:57.441692+00:00",
     "Финам Инвестиции": "2026-11-26T13:30:56.490095+00:00",
@@ -1709,7 +1743,7 @@
     "Telegram": "2026-11-27T04:30:57.222138+00:00",
     "ЕЦБ": "2026-11-27T09:00:55.658728+00:00"
   },
-  "catalog_at": "2026-11-28T04:30:56+00:00",
-  "own_hour": "2026-11-27 21",
+  "catalog_at": "2026-11-28T05:00:54+00:00",
+  "own_hour": "2026-11-28 08",
   "digest_alert": "2026-11-25 19:30"
 }
