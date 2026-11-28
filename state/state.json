@@ -828,7 +828,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-28T06:01:02.309043+00:00",
+  "breaking_ts": "2026-11-28T06:31:05.663294+00:00",
   "news_now": {
     "day": "2026-11-28",
     "day_count": 1,
@@ -839,72 +839,57 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/proisshestviya/28364511",
+    "https://thedefiant.io/news/markets/usd1-trades-at-0-9967-on-coinbase-after-wlfi-selloff",
+    "https://t.me/interfaxonline/82252",
+    "https://www.sport-interfax.ru/1131997",
+    "https://tass.ru/nauka/28364497",
+    "https://t.me/energytodaygroup/32913",
+    "https://www.interfax.ru/russia/1131996",
+    "https://t.me/rbc_news/161627",
+    "https://tass.ru/obschestvo/28364503",
+    "https://t.me/energytodaygroup/32912",
+    "https://www.interfax.ru/russia/1131995",
+    "https://tass.ru/obschestvo/28364489",
+    "https://www.interfax.ru/russia/1131994",
+    "https://t.me/Metals_Mining/23981",
+    "https://www.interfax.ru/russia/1131993",
+    "https://t.me/wublockchainenglish/26981",
+    "https://t.me/headlines_for_traders/89651",
+    "https://tass.ru/ekonomika/28364493",
+    "https://tass.ru/ekonomika/28364501",
+    "https://www.kommersant.ru/doc/9144933",
+    "https://t.me/bwenews/16651",
+    "https://tass.ru/obschestvo/28364485",
+    "https://t.me/interfaxonline/82251",
+    "https://tass.ru/ekonomika/28364481",
+    "https://tass.ru/ekonomika/28364491",
+    "https://tass.ru/armiya-i-opk/28364483",
+    "https://www.interfax.ru/russia/1131992",
+    "https://t.me/banksta/106391",
+    "https://www.interfax.ru/russia/1131991",
+    "https://tass.ru/kultura/28364479",
+    "https://www.interfax.ru/russia/1131990",
+    "https://tass.ru/sport/28364487",
+    "https://t.me/rosstat_official/4110",
     "https://t.me/investfuture/15577",
     "https://t.me/prime1/192282",
     "https://t.me/headlines_for_traders/89650",
     "https://www.vedomosti.ru/politics/news/2026/11/28/1416223-pvo-noch-unichtozhila",
+    "https://www.cnbc.com/2026/11/28/saudi-arabia-vision-2030-spending.html",
+    "https://www.cnbc.com/2026/11/28/dangote-refinery-oil-ipo-nigeria-africa-energy.html",
+    "https://www.cnbc.com/2026/11/28/saudi-arabia-vision-2030-spending.html",
     "https://www.vedomosti.ru/politics/news/2026/11/28/1416222-rossiya-nanesla-udari",
+    "https://www.interfax.ru/russia/1131989",
     "https://t.me/rbc_news/161626",
     "https://tass.ru/sport/28364469",
-    "https://www.kommersant.ru/doc/9144930",
-    "https://tass.ru/ekonomika/28364461",
-    "https://t.me/rbc_news/161625",
-    "https://tass.ru/armiya-i-opk/28364465",
-    "https://www.interfax.ru/russia/1131987",
-    "https://t.me/energytodaygroup/32911",
-    "https://tass.ru/mezhdunarodnaya-panorama/28364447",
-    "https://www.interfax.ru/russia/1131986",
-    "https://t.me/agroinvestor/21925",
-    "https://tass.ru/armiya-i-opk/28364457",
-    "https://t.me/WatcherGuru/16374",
-    "https://tass.ru/armiya-i-opk/28364455",
-    "https://tass.ru/armiya-i-opk/28364453",
-    "https://t.me/headlines_for_traders/89649",
-    "https://tass.ru/armiya-i-opk/28364451",
-    "https://tass.ru/armiya-i-opk/28364449",
-    "https://tass.ru/ekonomika/28364443",
-    "https://tass.ru/ekonomika/28364437",
-    "https://tass.ru/ekonomika/28364445",
-    "https://tass.ru/sport/28364441",
-    "https://tass.ru/obschestvo/28364435",
-    "https://www.vedomosti.ru/politics/news/2026/11/28/1416221-obsudyat-partnerstvo",
-    "https://www.interfax.ru/world/1131985",
-    "https://tass.ru/politika/28364433",
-    "https://t.me/cointelegraph/73579",
-    "https://tass.ru/obschestvo/28364431",
-    "https://tass.ru/ekonomika/28364427",
-    "https://t.me/CoinMarketCapAnnouncements/19836",
-    "https://tass.ru/obschestvo/28364423",
-    "https://t.me/WatcherGuru/16373",
-    "https://tass.ru/sport/28364421",
-    "https://tass.ru/kultura/28364405",
-    "https://tass.ru/sport/28364425"
+    "https://www.kommersant.ru/doc/9144930"
   ],
   "ai_dead": {
     "date": "2026-11-27",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-27T07:30:57.276220+00:00",
-      "Чистая прибыль ВТБ по МСФО в октябре выросла в 1,6 раза"
-    ],
-    [
-      "2026-11-27T07:30:57.276220+00:00",
-      "Нефть показала первый недельный рост за месяц на фоне атак"
-    ],
-    [
-      "2026-11-27T07:30:57.276220+00:00",
-      "SAP рассматривает сокращение 10 000 сотрудников из-за ИИ"
-    ],
-    [
-      "2026-11-27T07:30:57.276220+00:00",
-      "Канцлер Германии призвал сократить бюджет ЕС на 204 млрд евро"
-    ],
-    [
-      "2026-11-27T07:30:57.276220+00:00",
-      "В США суд взыскал $1,37 млрд с основателей криптопирамиды"
-    ],
     [
       "2026-11-27T08:00:59.076822+00:00",
       "При атаке на НПЗ в Саудовской Аравии погиб рабочий"
@@ -1504,6 +1489,10 @@
     [
       "2026-11-28T06:01:02.309043+00:00",
       "Norse Atlantic Airways подала заявление о банкротстве из-за цен на топливо"
+    ],
+    [
+      "2026-11-28T06:31:05.663294+00:00",
+      "Токен WLFI рухнул более чем на 59% за сутки"
     ]
   ],
   "results_fp": [
@@ -1601,7 +1590,7 @@
     "Сигналы РЦБ": "2026-11-28T04:30:56.355760+00:00",
     "Whale Alert": "2026-11-27T20:30:57.288068+00:00",
     "РБК": "2026-11-28T05:00:54.688403+00:00",
-    "Wu Blockchain": "2026-11-28T05:30:54.284692+00:00",
+    "Wu Blockchain": "2026-11-28T06:31:05.663294+00:00",
     "Банкста": "2026-11-28T05:30:54.284692+00:00",
     "IF News": "2026-11-27T19:00:54.786326+00:00",
     "bitkogan": "2026-11-27T10:00:59.826839+00:00",
@@ -1629,7 +1618,7 @@
     "Cbonds": "2026-11-28T04:30:56.355760+00:00",
     "WSJ Markets": "2026-11-28T04:30:56.355760+00:00",
     "WSJ Economy": "2026-11-26T16:30:57.171435+00:00",
-    "The Defiant": "2026-11-28T05:30:54.284692+00:00",
+    "The Defiant": "2026-11-28T06:31:05.663294+00:00",
     "WSJ": "2026-11-27T16:30:55.449145+00:00",
     "Bitcoin Magazine Telegram": "2026-11-25T04:30:55.495405+00:00",
     "Lookonchain": "2026-11-28T04:30:56.355760+00:00",
@@ -1656,7 +1645,7 @@
     "Incrypted": "2026-11-27T16:00:56.035911+00:00",
     "Смарт-лаб": "2026-11-27T10:00:59.826839+00:00",
     "EIA Today in Energy": "2026-11-12T14:30:56.851698+00:00",
-    "BWEnews": "2026-11-27T04:30:57.222138+00:00",
+    "BWEnews": "2026-11-28T06:31:05.663294+00:00",
     "ИнвестФорсайт": "2026-11-03T16:31:07.181074+00:00",
     "SmartLab": "2026-11-16T16:30:59.322703+00:00",
     "РБК Новости": "2026-11-03T16:31:07.181074+00:00",
@@ -1727,7 +1716,7 @@
     "Telegram": "2026-11-27T04:30:57.222138+00:00",
     "ЕЦБ": "2026-11-27T09:00:55.658728+00:00"
   },
-  "catalog_at": "2026-11-28T06:01:02+00:00",
+  "catalog_at": "2026-11-28T06:31:05+00:00",
   "own_hour": "2026-11-28 09",
   "digest_alert": "2026-11-25 19:30"
 }
