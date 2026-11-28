@@ -92,7 +92,7 @@
   ],
   "last_digest_ts": "2026-11-27T16:30:55.449145+00:00",
   "calendar": {
-    "ts": "2026-11-27T16:31:17.054862+00:00",
+    "ts": "2026-11-28T04:00:57.229540+00:00",
     "data": [
       {
         "title": "Core Retail Sales q/q",
@@ -828,7 +828,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-27T21:30:54.768795+00:00",
+  "breaking_ts": "2026-11-28T04:00:57.228601+00:00",
   "news_now": {
     "day": "2026-11-28",
     "day_count": 0,
@@ -837,75 +837,52 @@
     "titles": []
   },
   "news_seen": [
-    "https://www.rbc.ru/rbcfreenews/6b0941c02369b79e8b376be9",
-    "https://tass.ru/obschestvo/28364019",
-    "https://tass.ru/obschestvo/28364017",
-    "https://t.me/rbc_news/161623",
-    "https://www.rbc.ru/politics/26/11/2026/6b0881ebd825205c50e94c8b",
-    "https://www.vedomosti.ru/politics/news/2026/11/28/1416210-bloomberg-uznal",
-    "https://t.me/FinancialJuice/150046",
-    "https://t.me/FinancialJuice/150045",
-    "https://www.kommersant.ru/doc/9144630",
-    "https://t.me/FinancialJuice/150044",
-    "https://t.me/FinancialJuice/150043",
-    "https://tass.ru/obschestvo/28364013",
-    "https://www.wsj.com/finance/stocks/stocks-poised-to-end-week-strong-as-investors-take-break-from-ai-jitters-ce6b2846?mod=rss_markets_main",
-    "https://t.me/FinancialJuice/150042",
-    "https://t.me/markettwits/395167",
-    "https://cointelegraph.com/news/franklin-templeton-hype-crypto-index-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "https://t.me/headlines_for_traders/89641",
-    "https://tass.ru/ekonomika/28364009",
-    "https://t.me/FinancialJuice/150041",
-    "https://t.me/FinancialJuice/150040",
-    "https://t.me/banksta/106382",
-    "https://tass.ru/sport/28364003",
-    "https://www.wsj.com/finance/investing/short-term-jgb-yields-rise-on-elevated-tokyo-inflation-data-713a900b?mod=rss_markets_main",
-    "https://tass.ru/mezhdunarodnaya-panorama/28363999",
-    "https://t.me/WatcherGuru/16371",
-    "https://thedefiant.io/news/defi/world-liberty-linked-wallet-swaps-weth-and-meth-for-20m-in-stablecoins",
-    "https://tass.ru/kultura/28363983",
-    "https://tass.ru/politika/28363991",
-    "https://tass.ru/politika/28363997",
-    "https://t.me/rbc_news/161622",
-    "https://tass.ru/kultura/28363995",
-    "https://tass.ru/kultura/28363985",
-    "https://tass.ru/obschestvo/28363993",
-    "https://tass.ru/ekonomika/28363989",
-    "https://tass.ru/armiya-i-opk/28363987",
-    "https://tass.ru/armiya-i-opk/28360715",
-    "https://www.rigzone.com/news/wire/alberta_raises_projected_surplus_to_6b_as_oil_surges-27-nov-2026-185189-article/?rss=true",
-    "https://tass.ru/ekonomika/28363977",
-    "https://www.kommersant.ru/doc/9144628",
-    "https://tass.ru/obschestvo/28363963",
-    "https://www.interfax.ru/russia/1131964",
-    "https://tass.ru/politika/28363971",
-    "https://tass.ru/sport/28363969"
+    "https://tass.ru/obschestvo/28364315",
+    "https://t.me/RBCCrypto/24009",
+    "https://tass.ru/obschestvo/28364313",
+    "https://t.me/CoinMarketCapAnnouncements/19832",
+    "https://tass.ru/mezhdunarodnaya-panorama/28364311",
+    "https://www.interfax.ru/world/1131979",
+    "https://t.me/interfaxonline/82250",
+    "https://www.rbc.ru/politics/27/11/2026/6b098804d4aceef29ba46bbf",
+    "https://tass.ru/obschestvo/28364305",
+    "https://tass.ru/obschestvo/28364307",
+    "https://tass.ru/mezhdunarodnaya-panorama/28364303",
+    "https://tass.ru/armiya-i-opk/28364301",
+    "https://tass.ru/armiya-i-opk/28364297",
+    "https://tass.ru/obschestvo/28364289",
+    "https://tass.ru/armiya-i-opk/28364295",
+    "https://tass.ru/obschestvo/28364293",
+    "https://tass.ru/politika/28364291",
+    "https://www.rbc.ru/politics/05/11/2026/6aecb79204b2d48e62e4b73a",
+    "https://tass.ru/mezhdunarodnaya-panorama/28364299",
+    "https://www.kommersant.ru/doc/9144909",
+    "https://tass.ru/mezhdunarodnaya-panorama/28364287",
+    "https://www.interfax.ru/russia/1131978",
+    "https://www.rbc.ru/rbcfreenews/6ada3d541ab142f2a84071b3",
+    "https://www.interfax.ru/russia/1131977",
+    "https://t.me/RBCCrypto/24008",
+    "https://tass.ru/obschestvo/28364285",
+    "https://t.me/headlines_for_traders/89642",
+    "https://tass.ru/mezhdunarodnaya-panorama/28364281",
+    "https://tass.ru/obschestvo/28364283",
+    "https://tass.ru/ekonomika/28364279",
+    "https://t.me/FinancialJuice/150054",
+    "https://tass.ru/mezhdunarodnaya-panorama/28364277",
+    "https://t.me/RBCCrypto/24007",
+    "https://www.rbc.ru/politics/27/07/2026/6a6738879a79473633020564",
+    "https://tass.ru/politika/28364263",
+    "https://tass.ru/armiya-i-opk/28364265",
+    "https://www.kommersant.ru/doc/9144915",
+    "https://tass.ru/armiya-i-opk/28364275",
+    "https://tass.ru/armiya-i-opk/28364273",
+    "https://tass.ru/armiya-i-opk/28364269"
   ],
   "ai_dead": {
     "date": "2026-11-27",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-27T05:30:54.160246+00:00",
-      "Китайский индекс ChiNext вырос на 5% на фоне спроса на акции технологических компаний"
-    ],
-    [
-      "2026-11-27T05:30:54.160246+00:00",
-      "Основные акционеры Циана продали более 52% акций на сумму свыше 36 млрд рублей"
-    ],
-    [
-      "2026-11-27T05:30:54.160246+00:00",
-      "Альтернативный импорт новых автомобилей в Россию вырос на 55% за 10 месяцев"
-    ],
-    [
-      "2026-11-27T05:30:54.160246+00:00",
-      "Системы ПВО за ночь сбили 45 беспилотников над Ленинградской областью"
-    ],
-    [
-      "2026-11-27T06:00:59.913166+00:00",
-      "Правительство РФ продлило запрет на экспорт авиатоплива до 31 марта 2027 года"
-    ],
     [
       "2026-11-27T06:00:59.913166+00:00",
       "Bluefin прекратит торговля бессрочными фьючерсами на блокчейне Sui 4 декабря"
@@ -1505,6 +1482,10 @@
     [
       "2026-11-27T20:30:57.288068+00:00",
       "В Ledger предупредили об угрозах безопасности при использовании искусственного интеллекта"
+    ],
+    [
+      "2026-11-28T04:00:57.228601+00:00",
+      "На подлете к Москве с начала суток сбито 46 дронов"
     ]
   ],
   "results_fp": [
@@ -1594,7 +1575,7 @@
     "OilPrice": "2026-11-27T18:00:56.906693+00:00",
     "Коммерсантъ": "2026-11-27T20:00:55.556992+00:00",
     "Ведомости": "2026-11-27T20:00:55.556992+00:00",
-    "Интерфакс": "2026-11-27T17:30:54.982643+00:00",
+    "Интерфакс": "2026-11-28T04:00:57.228601+00:00",
     "ТАСС": "2026-11-27T20:30:57.288068+00:00",
     "CoinDesk": "2026-11-27T12:00:56.984781+00:00",
     "Headlines for Traders": "2026-11-27T12:30:56.743526+00:00",
@@ -1728,7 +1709,7 @@
     "Telegram": "2026-11-27T04:30:57.222138+00:00",
     "ЕЦБ": "2026-11-27T09:00:55.658728+00:00"
   },
-  "catalog_at": "2026-11-27T21:30:54+00:00",
+  "catalog_at": "2026-11-28T04:00:57+00:00",
   "own_hour": "2026-11-27 21",
   "digest_alert": "2026-11-25 19:30"
 }
