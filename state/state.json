@@ -828,7 +828,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-28T10:30:54.601295+00:00",
+  "breaking_ts": "2026-11-28T11:00:57.007779+00:00",
   "news_now": {
     "day": "2026-11-28",
     "day_count": 1,
@@ -839,74 +839,47 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/sport/28364893",
+    "https://tass.ru/proisshestviya/28364895",
+    "https://www.rbc.ru/politics/05/10/2026/6ac362c2cbc4cc4d2ae68898",
+    "https://tass.ru/mezhdunarodnaya-panorama/28364891",
+    "https://t.me/banksta/106399",
+    "https://t.me/rbc_news/161639",
+    "https://www.kommersant.ru/doc/9145034",
+    "https://tass.ru/sport/28364889",
+    "https://www.rbc.ru/politics/24/11/2026/6b04cc90464ad311ab6174c6",
+    "https://tass.ru/obschestvo/28364887",
+    "https://tass.ru/obschestvo/28364881",
+    "https://tass.ru/proisshestviya/28364877",
+    "https://www.sport-interfax.ru/1132021",
+    "https://tass.ru/kosmos/28364879",
+    "https://www.interfax.ru/business/1132020",
+    "https://t.me/cbonds/26554",
+    "https://www.rbc.ru/rbcfreenews/6ab35559338fd65aee662d29",
+    "https://tass.ru/sport/28364875",
+    "https://tass.ru/sport/28364873",
+    "https://www.vedomosti.ru/politics/news/2026/11/28/1416240-postradali-medikov",
+    "https://www.rbc.ru/sport/27/11/2026/6b097d6ef45f8e3d1b17eea7",
+    "https://www.kommersant.ru/doc/9145027",
+    "https://www.rbc.ru/society/28/11/2026/6b055dc94599dbcd882c53a8",
+    "https://t.me/bitsmedia/29036",
+    "https://t.me/forklog/50858",
+    "https://www.kommersant.ru/doc/9145026",
+    "https://t.me/rbc_news/161638",
+    "https://tass.ru/mezhdunarodnaya-panorama/28364867",
+    "https://cointelegraph.com/news/asean3-agrees-on-initiative-to-explore-crypto-payments-cooperation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "https://t.me/CoinMarketCapAnnouncements/19842",
     "https://www.rbc.ru/society/28/11/2026/6b0a9e04cc8a718ef0e2880c",
     "https://t.me/bitkogan/29621",
     "https://tass.ru/mezhdunarodnaya-panorama/28364863",
     "https://tass.ru/proisshestviya/28364865",
-    "https://www.rbc.ru/sport/21/11/2026/6af8ce5f527434ab3e497f94",
-    "https://t.me/banksta/106398",
-    "https://t.me/oil_capital/27114",
-    "https://www.rbc.ru/rbcfreenews/6a738c0e9a79477398228636",
-    "https://tass.ru/sport/28364861",
-    "https://www.rbc.ru/rbcfreenews/6b03f3b8cc3746aec713bbbb",
-    "https://tass.ru/obschestvo/28364851",
-    "https://tass.ru/kultura/28364849",
-    "https://t.me/bitsmedia/29035",
-    "https://www.kommersant.ru/doc/9145021",
-    "https://tass.ru/ekonomika/28364847",
-    "https://t.me/markettwits/395182",
-    "https://tass.ru/proisshestviya/28364845",
-    "https://tass.ru/proisshestviya/28364841",
-    "https://www.rbc.ru/rbcfreenews/6996d2ce9a79470aebf2557e",
-    "https://www.kommersant.ru/doc/9145019",
-    "https://tass.ru/nauka/28364833",
-    "https://t.me/bitkogan_hotline/28438",
-    "https://t.me/forbesrussia/103606",
-    "https://www.interfax.ru/world/1132019",
-    "https://tass.ru/obschestvo/28364819",
-    "https://www.vedomosti.ru/politics/news/2026/11/28/1416237-zaderzhali-peredavavshego",
-    "https://tass.ru/mezhdunarodnaya-panorama/28364829",
-    "https://tass.ru/proisshestviya/28364825",
-    "https://tass.ru/proisshestviya/28364827",
-    "https://tass.ru/nauka/28364815",
-    "https://www.kommersant.ru/doc/9145017",
-    "https://t.me/forbesrussia/103596",
-    "https://t.me/rbc_news/161637",
-    "https://tass.ru/mezhdunarodnaya-panorama/28364821",
-    "https://t.me/proeconomics/20804",
-    "https://tass.ru/ekonomika/28364817",
-    "https://tass.ru/proisshestviya/28364799",
-    "https://www.rbc.ru/rbcfreenews/6a59e3689a794713ed4cdaa7",
-    "https://www.kommersant.ru/doc/9145015",
-    "https://www.rbc.ru/technology_and_media/28/11/2026/6b0a811619819775a8ef285c",
-    "https://tass.ru/proisshestviya/28364813",
-    "https://www.wsj.com/personal-finance/long-term-care-insurance-is-it-worth-it-d1e9f610?mod=rss_markets_main",
-    "https://tass.ru/sport/28364809",
-    "https://www.rbc.ru/sport/21/11/2026/6b01d7dc2d0d7dd08f09b0fa",
-    "https://t.me/forklog/50857"
+    "https://www.rbc.ru/sport/21/11/2026/6af8ce5f527434ab3e497f94"
   ],
   "ai_dead": {
     "date": "2026-11-28",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-27T11:01:02.654475+00:00",
-      "Совфед одобрил снижение цены отсечения нефти до $50"
-    ],
-    [
-      "2026-11-27T11:01:02.654475+00:00",
-      "Акции в Китае выросли после заявлений Госсовета"
-    ],
-    [
-      "2026-11-27T11:01:02.654475+00:00",
-      "Госдума приняла закон о расчете НДФЛ по прогрессивной шкале с 2027 года"
-    ],
-    [
-      "2026-11-27T11:01:02.654475+00:00",
-      "Совфед одобрил закон о налоге на сверхдоходы для добывающих компаний"
-    ],
     [
       "2026-11-27T11:01:02.654475+00:00",
       "Бразильская биржа B3 и партнеры запустят стейблкоин"
@@ -1506,6 +1479,18 @@
     [
       "2026-11-28T10:01:00.398113+00:00",
       "Минобороны сообщило об уничтожении 1601 беспилотника за сутки"
+    ],
+    [
+      "2026-11-28T11:00:57.007779+00:00",
+      "Страны ASEAN+3 договорились изучить сотрудничество в криптоплатежах"
+    ],
+    [
+      "2026-11-28T11:00:57.007779+00:00",
+      "Бундестаг утвердил рекордный бюджет Германии на оборону"
+    ],
+    [
+      "2026-11-28T11:00:57.007779+00:00",
+      "«Транснефть» прогнозирует небольшое снижение прокачки КТК"
     ]
   ],
   "results_fp": [
@@ -1595,14 +1580,14 @@
     "OilPrice": "2026-11-28T04:30:56.355760+00:00",
     "Коммерсантъ": "2026-11-28T10:01:00.398113+00:00",
     "Ведомости": "2026-11-28T10:01:00.398113+00:00",
-    "Интерфакс": "2026-11-28T10:01:00.398113+00:00",
+    "Интерфакс": "2026-11-28T11:00:57.007779+00:00",
     "ТАСС": "2026-11-28T09:00:57.635280+00:00",
     "CoinDesk": "2026-11-28T10:01:00.398113+00:00",
     "Headlines for Traders": "2026-11-28T07:00:54.652946+00:00",
     "MarketTwits": "2026-11-28T09:00:57.635280+00:00",
     "Сигналы РЦБ": "2026-11-28T04:30:56.355760+00:00",
     "Whale Alert": "2026-11-28T10:01:00.398113+00:00",
-    "РБК": "2026-11-28T10:01:00.398113+00:00",
+    "РБК": "2026-11-28T11:00:57.007779+00:00",
     "Wu Blockchain": "2026-11-28T06:31:05.663294+00:00",
     "Банкста": "2026-11-28T09:31:01.730143+00:00",
     "IF News": "2026-11-27T19:00:54.786326+00:00",
@@ -1613,7 +1598,7 @@
     "Frank Media": "2026-11-27T06:30:55.621571+00:00",
     "ForkLog": "2026-11-26T16:30:57.171435+00:00",
     "Decrypt": "2026-11-28T04:30:56.355760+00:00",
-    "Cointelegraph": "2026-11-28T08:00:53.934226+00:00",
+    "Cointelegraph": "2026-11-28T11:00:57.007779+00:00",
     "CoinMarketCap": "2026-11-28T04:30:56.355760+00:00",
     "СберИнвестиции": "2026-11-27T17:00:58.384581+00:00",
     "РБК Крипто": "2026-11-28T05:00:54.688403+00:00",
@@ -1729,7 +1714,7 @@
     "Telegram": "2026-11-27T04:30:57.222138+00:00",
     "ЕЦБ": "2026-11-27T09:00:55.658728+00:00"
   },
-  "catalog_at": "2026-11-28T10:30:54+00:00",
-  "own_hour": "2026-11-28 13",
+  "catalog_at": "2026-11-28T11:00:57+00:00",
+  "own_hour": "2026-11-28 14",
   "digest_alert": "2026-11-25 19:30"
 }
