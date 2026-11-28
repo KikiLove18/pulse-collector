@@ -828,7 +828,7 @@
       "Хуситы атаковали аэропорт Эр-Рияда: 12 погибших, свыше 300 раненых"
     ]
   },
-  "breaking_ts": "2026-11-28T13:00:53.949502+00:00",
+  "breaking_ts": "2026-11-28T13:30:53.465066+00:00",
   "news_now": {
     "day": "2026-11-28",
     "day_count": 2,
@@ -840,76 +840,56 @@
     ]
   },
   "news_seen": [
+    "https://tass.ru/proisshestviya/28365127",
+    "https://www.kommersant.ru/doc/9145075",
+    "https://www.vedomosti.ru/politics/news/2026/11/28/1416252-orden-suvorova",
+    "https://tass.ru/proisshestviya/28365125",
+    "https://t.me/banksta/106405",
+    "https://tass.ru/sport/28365121",
+    "https://t.me/invest_zonaa/39690",
+    "https://tass.ru/proisshestviya/28365109",
+    "https://t.me/RBCCrypto/24018",
+    "https://www.kommersant.ru/doc/9145071",
+    "https://www.kommersant.ru/doc/9145070",
+    "https://www.rbc.ru/politics/24/11/2026/6b057703eec4f5ad58288a50",
+    "https://t.me/rbc_news/161645",
+    "https://tass.ru/proisshestviya/28365111",
+    "https://www.interfax.ru/world/1132029",
+    "https://t.me/incrypted/33473",
+    "https://tass.ru/obschestvo/28365105",
+    "https://tass.ru/proisshestviya/28365095",
+    "https://t.me/forklog/50860",
+    "https://www.rbc.ru/politics/09/08/2026/6a783fb39a79470079bd6e21",
+    "https://www.vedomosti.ru/politics/news/2026/11/28/1416251-proektnie-resheniya-prinyati",
+    "https://tass.ru/proisshestviya/28365097",
+    "https://t.me/gazprom/2618",
+    "https://www.kommersant.ru/doc/9145067",
+    "https://tass.ru/ekonomika/28365101",
+    "https://tass.ru/ekonomika/28365093",
+    "https://t.me/RBCCrypto/24017",
+    "https://t.me/if_market_news/87351",
+    "https://t.me/CoinDeskGlobal/25666",
+    "https://tass.ru/obschestvo/28365045",
+    "https://t.me/prime1/192283",
+    "https://www.coindesk.com/markets/2026/11/28/bitcoin-not-delivering-the-bear-market-has-digital-asset-veteran-questioning-btc-s-value",
+    "https://www.rbc.ru/sport/24/11/2026/6b05962a1e2f0e581752be76",
+    "https://tass.ru/mezhdunarodnaya-panorama/28365039",
+    "https://t.me/expert_mag/11637",
     "https://t.me/investfuture/15579",
+    "https://www.cnbc.com/make-it/2026/11/28/wearable-health-trackers-doctors.html",
+    "https://www.marketwatch.com/story/clearing-out-my-parents-house-was-a-legal-nightmare-how-can-i-downsize-without-putting-my-children-through-the-same-ordeal-6537d804?mod=mw_rss_topstories",
     "https://tass.ru/obschestvo/28365037",
     "https://www.vedomosti.ru/lifestyle/news/2026/11/28/1416249-stanet-aleksandr-zolotovitskii",
     "https://t.me/invest_zonaa/39689",
     "https://tass.ru/proisshestviya/28365043",
     "https://tass.ru/sport/28365041",
-    "https://t.me/forbesrussia/103610",
-    "https://www.rbc.ru/politics/28/10/2026/6ae1f6ec891614ddb86259ce",
-    "https://www.kommersant.ru/doc/9145064",
-    "https://tass.ru/obschestvo/28365035",
-    "https://t.me/banksta/106404",
-    "https://tass.ru/obschestvo/28365027",
-    "https://www.rbc.ru/rbcfreenews/6afedd8569115f4f25fa17dc",
-    "https://www.kommersant.ru/doc/9145061",
-    "https://thedefiant.io/news/markets/world-liberty-says-binance-closed-wlfi-futures-bets",
-    "https://tass.ru/armiya-i-opk/28365033",
-    "https://t.me/banksta/106403",
-    "https://www.rbc.ru/sport/28/11/2026/6b0728399144335a03e804f8",
-    "https://tass.ru/proisshestviya/28365025",
-    "https://www.interfax.ru/russia/1132027",
-    "https://www.rbc.ru/politics/18/08/2026/6a8466a89a7947a2e7fd33f5",
-    "https://www.vedomosti.ru/politics/news/2026/11/28/1416250-grossi-otreagiroval",
-    "https://www.rbc.ru/rbcfreenews/676b82dd9a79477f44fed023",
-    "https://t.me/rbc_news/161644",
-    "https://www.rbc.ru/business/01/04/2024/660a69499a794788993562fe",
-    "https://cryptoslate.com/us-saving-rate-october-income-medicare-rebate/",
-    "https://www.sport-interfax.ru/1132028",
-    "https://t.me/bitsmedia/29038",
-    "https://tass.ru/ekonomika/28365017",
-    "https://t.me/RBCCrypto/24016",
-    "https://tass.ru/proisshestviya/28365021",
-    "https://t.me/forbesrussia/103609",
-    "https://tass.ru/sport/28365015",
-    "https://www.kommersant.ru/doc/9145056",
-    "https://www.vedomosti.ru/business/news/2026/11/28/1416247-soglashenie-s-knr",
-    "https://www.marketwatch.com/story/these-tech-stocks-may-let-you-play-defense-without-giving-up-on-ai-523ce26d?mod=mw_rss_topstories",
-    "https://www.rbc.ru/finances/27/01/2016/56a8742c9a7947d44f4618a4",
-    "https://tass.ru/sport/28365011",
-    "https://www.kommersant.ru/doc/9145057",
-    "https://tass.ru/mezhdunarodnaya-panorama/28365005"
+    "https://t.me/forbesrussia/103610"
   ],
   "ai_dead": {
     "date": "2026-11-28",
     "models": []
   },
   "feed_recent": [
-    [
-      "2026-11-27T13:00:58.279667+00:00",
-      "Танкер подорвался на мине вблизи Омана в Ормузском проливе"
-    ],
-    [
-      "2026-11-27T13:00:58.279667+00:00",
-      "Whoosh сократил парк на 5% и отчитался о росте EBITDA на 10%"
-    ],
-    [
-      "2026-11-27T13:00:58.279667+00:00",
-      "Adobe Analytics прогнозирует рекордные траты в Черную пятницу"
-    ],
-    [
-      "2026-11-27T13:00:58.279667+00:00",
-      "Совфед одобрил 100% страхование по долгосрочным вкладам до 2 млн рублей"
-    ],
-    [
-      "2026-11-27T13:00:58.279667+00:00",
-      "Акции «Самолета» выросли на 5,4% на новостях о выкупе акций"
-    ],
-    [
-      "2026-11-27T13:00:58.279667+00:00",
-      "Reuters сообщил о взломе облачной платформы ВВС США"
-    ],
     [
       "2026-11-27T13:30:57.625180+00:00",
       "Новак: добыча нефти в России в 2026 году составит около 494 млн тонн"
@@ -1493,6 +1473,22 @@
     [
       "2026-11-28T13:00:53.949502+00:00",
       "Старейшая фортепианная мануфактура Sauter подала на банкротство"
+    ],
+    [
+      "2026-11-28T13:30:53.465066+00:00",
+      "«Газпром» превратит газовые объекты в электростанции для ЦОД"
+    ],
+    [
+      "2026-11-28T13:30:53.465066+00:00",
+      "Доходность нефтепереработки в России может упасть на 22%"
+    ],
+    [
+      "2026-11-28T13:30:53.465066+00:00",
+      "Европа продолжила рекордный отбор газа из подземных хранилищ"
+    ],
+    [
+      "2026-11-28T13:30:53.465066+00:00",
+      "ЕЦБ: 44% работников еврозоны используют ИИ на работе еженедельно"
     ]
   ],
   "results_fp": [
@@ -1591,20 +1587,20 @@
     "Whale Alert": "2026-11-28T10:01:00.398113+00:00",
     "РБК": "2026-11-28T13:00:53.949502+00:00",
     "Wu Blockchain": "2026-11-28T06:31:05.663294+00:00",
-    "Банкста": "2026-11-28T12:30:53.097038+00:00",
+    "Банкста": "2026-11-28T13:30:53.465066+00:00",
     "IF News": "2026-11-27T19:00:54.786326+00:00",
     "bitkogan": "2026-11-28T07:30:54.537908+00:00",
     "CryptoKogan": "2026-11-26T16:30:57.171435+00:00",
     "Energy Today": "2026-11-28T07:30:54.537908+00:00",
     "Forbes Russia": "2026-11-28T13:00:53.949502+00:00",
     "Frank Media": "2026-11-27T06:30:55.621571+00:00",
-    "ForkLog": "2026-11-28T11:30:55.303229+00:00",
+    "ForkLog": "2026-11-28T13:30:53.465066+00:00",
     "Decrypt": "2026-11-28T04:30:56.355760+00:00",
     "Cointelegraph": "2026-11-28T11:00:57.007779+00:00",
     "CoinMarketCap": "2026-11-28T04:30:56.355760+00:00",
     "СберИнвестиции": "2026-11-27T17:00:58.384581+00:00",
     "РБК Крипто": "2026-11-28T11:30:55.303229+00:00",
-    "ПРАЙМ": "2026-11-27T15:30:56.172313+00:00",
+    "ПРАЙМ": "2026-11-28T13:30:53.465066+00:00",
     "Walter Bloomberg": "2026-11-23T19:00:56.599248+00:00",
     "Московская биржа": "2026-11-23T09:01:01.233997+00:00",
     "MarketWatch": "2026-11-27T16:30:55.449145+00:00",
@@ -1657,7 +1653,7 @@
     "IFX-market": "2026-11-04T04:30:59.609516+00:00",
     "Interfax": "2026-11-24T17:30:55.867920+00:00",
     "Invest Era": "2026-11-26T05:30:53.773564+00:00",
-    "Газпром": "2026-11-27T15:30:56.172313+00:00",
+    "Газпром": "2026-11-28T13:30:53.465066+00:00",
     "Росстат": "2026-11-28T05:00:54.688403+00:00",
     "Коненков": "2026-11-21T16:01:08.872726+00:00",
     "CNBC Economy": "2026-11-26T15:00:57.441692+00:00",
@@ -1716,7 +1712,7 @@
     "Telegram": "2026-11-27T04:30:57.222138+00:00",
     "ЕЦБ": "2026-11-27T09:00:55.658728+00:00"
   },
-  "catalog_at": "2026-11-28T13:00:53+00:00",
+  "catalog_at": "2026-11-28T13:30:53+00:00",
   "own_hour": "2026-11-28 16",
   "digest_alert": "2026-11-25 19:30"
 }
